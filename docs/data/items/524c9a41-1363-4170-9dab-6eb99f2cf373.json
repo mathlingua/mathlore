@@ -1,0 +1,154 @@
+{
+  "id": "524c9a41-1363-4170-9dab-6eb99f2cf373",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e6d696e696d616c2e696e2e2f"
+  ],
+  "heading": "a \\.minimal.in./ X",
+  "heading_latex": "\\textrm{minimal element}",
+  "body_text": null,
+  "page": null,
+  "source": "[a \\.minimal.in./ X]\nStates:\nwhen:\n. a is \\set\n. X is \\set\nthat:\n. forAll: x is \\set\n  where:\n  . x \"in\" X\n  then:\n  . if:\n    . x \\:precedes:/ a\n    then:\n    . x = a\nDocumented:\n. called: \"minimal element\"\n. written: \"a? \\text{ is minimal in } X?\"\n. description: \"An element $a$ is minimal in $X$ when $x \\preceq a$ implies $x = a$ for all $x \\in X$; equivalently, no element strictly precedes $a$.\"\nId: \"524c9a41-1363-4170-9dab-6eb99f2cf373\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "a is \\set",
+          "latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "x \"in\" X",
+                  "latex": "x \\in X"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "x \\:precedes:/ a",
+                          "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{x \\preceq a}"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "x = a",
+                          "latex": "x = a"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"minimal element\"",
+              "inline_latex": "\\textrm{minimal element}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a? \\text{ is minimal in } X?\"",
+              "inline_latex": "a \\text{ is minimal in } X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"524c9a41-1363-4170-9dab-6eb99f2cf373\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "39f63de3-8e4a-4f4b-9aa6-5ec84972f708-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Every well ordered set is totally ordered: given $x, y \\in X$, the subset $\\{x, y\\}$ has a least element, so $x$ and $y$ are comparable."
+  },
+  "source": "",
+  "sections": []
+}

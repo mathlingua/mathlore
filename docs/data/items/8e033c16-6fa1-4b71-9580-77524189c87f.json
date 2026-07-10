@@ -1,0 +1,100 @@
+{
+  "id": "8e033c16-6fa1-4b71-9580-77524189c87f",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c7472616e7369746976653a3a736574"
+  ],
+  "heading": "\\(transitive)::set",
+  "heading_latex": "\\textrm{transitive}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(transitive)::set]\nRefines: X\nsatisfies:\n. forAll: a is \\set\n  where: a \"in\" X\n  then: a \\:subset?:/ X\nDocumented:\n. adjective: \"transitive\"\n. written: \"\\operatorname{transitive}\"\n. description: \"A set $X$ is transitive when each of its elements is also a subset of it: $a \\in X$ implies $a \\subseteq X$. Every natural number is a transitive set.\"\nId: \"8e033c16-6fa1-4b71-9580-77524189c87f\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "X",
+      "inline_latex": "X",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a is \\set",
+              "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "a \"in\" X",
+              "inline_latex": "a \\in X",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "a \\:subset?:/ X",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{a \\subseteq X}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"transitive\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{transitive}\"",
+              "inline_latex": "\\operatorname{transitive}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8e033c16-6fa1-4b71-9580-77524189c87f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "1de3c455-b09b-4d80-8b44-7dd223da2083-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function $f \\colon A \\to B$ is surjective when for every $b \\in B$ there exists $a \\in A$ such that $f(a) = b$; every element of the codomain is attained."
+  },
+  "source": "",
+  "sections": []
+}

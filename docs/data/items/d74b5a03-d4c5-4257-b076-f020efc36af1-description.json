@@ -1,0 +1,14 @@
+{
+  "id": "d74b5a03-d4c5-4257-b076-f020efc36af1-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The union over a collection $C$ of sets, guaranteed by the axiom of unions: $x \\in \\bigcup_{A \\in C} A$ if and only if there exists $A \\in C$ such that $x \\in A$. Its uniqueness follows from the axiom of extension."
+  },
+  "source": "",
+  "sections": []
+}

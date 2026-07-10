@@ -1,0 +1,87 @@
+{
+  "id": "67dfb9c9-12ca-496f-8dab-b36699677435",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c3a6c6573732e7468616e3a2f"
+  ],
+  "heading": "m \\:less.than:/ n",
+  "heading_latex": "m\\textrm{ less than }n",
+  "body_text": null,
+  "page": null,
+  "source": "[m \\:less.than:/ n]\nDescribes: m\nwhen: n is \\set.theoretic.natural.number\nextends: m is \\set.theoretic.natural.number\nsatisfies: m \"in\" n\nDocumented:\n. called: \"$m?$ less than $n?$\"\n. written: \"m? < n?\"\n. description: \"For natural numbers, $m < n$ is defined to mean $m \\in n$. This makes $<$ a relation on $\\omega$ capturing the usual order.\"\nId: \"67dfb9c9-12ca-496f-8dab-b36699677435\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "m",
+      "inline_latex": "m",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "n is \\set.theoretic.natural.number",
+      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "extends",
+      "inline_argument": "m is \\set.theoretic.natural.number",
+      "inline_latex": "m \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": "m \"in\" n",
+      "inline_latex": "m \\in n",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$m?$ less than $n?$\"",
+              "inline_latex": "m\\textrm{ less than }n",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"m? < n?\"",
+              "inline_latex": "m < n",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"67dfb9c9-12ca-496f-8dab-b36699677435\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

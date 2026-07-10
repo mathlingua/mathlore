@@ -1,0 +1,14 @@
+{
+  "id": "26a5755e-e596-46b5-8828-3fc5a39da156-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function $f \\colon A \\to B$ assigns to each $a \\in A$ a unique value $f(a) \\in B$. Here $A$ is the domain and $B$ the codomain of $f$. As a relation it is the set of pairs $(a, f(a))$."
+  },
+  "source": "",
+  "sections": []
+}

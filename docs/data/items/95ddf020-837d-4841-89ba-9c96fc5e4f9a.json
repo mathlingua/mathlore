@@ -1,0 +1,27 @@
+{
+  "id": "95ddf020-837d-4841-89ba-9c96fc5e4f9a",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "Arithmetic of the Natural Numbers"
+  },
+  "source": "SubsectionTitle: \"Arithmetic of the Natural Numbers\"\nId: \"95ddf020-837d-4841-89ba-9c96fc5e4f9a\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"Arithmetic of the Natural Numbers\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"95ddf020-837d-4841-89ba-9c96fc5e4f9a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

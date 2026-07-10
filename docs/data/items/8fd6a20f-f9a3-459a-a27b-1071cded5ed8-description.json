@@ -1,0 +1,14 @@
+{
+  "id": "8fd6a20f-f9a3-459a-a27b-1071cded5ed8-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The natural number $1 = 0^+ = \\{0\\}$, the successor of zero."
+  },
+  "source": "",
+  "sections": []
+}

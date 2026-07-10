@@ -1,0 +1,27 @@
+{
+  "id": "49db9d66-5144-4b35-b6e3-3c1e34166632",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Mathlore"
+  },
+  "source": "Title: \"Mathlore\"\nId: \"49db9d66-5144-4b35-b6e3-3c1e34166632\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Mathlore\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"49db9d66-5144-4b35-b6e3-3c1e34166632\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

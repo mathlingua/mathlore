@@ -1,0 +1,14 @@
+{
+  "id": "9c18d9ab-367c-4de4-99f8-ea03c28b9696-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An element $a$ is greatest, largest, or last in $X$ when $x \\preceq a$ for all $x \\in X$."
+  },
+  "source": "",
+  "sections": []
+}

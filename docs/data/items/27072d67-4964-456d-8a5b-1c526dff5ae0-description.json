@@ -1,0 +1,14 @@
+{
+  "id": "27072d67-4964-456d-8a5b-1c526dff5ae0-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For elements of a partially ordered set, $a \\prec b$ means $a \\preceq b$ and $a \\neq b$. The relation $\\prec$ is transitive, and $a \\prec b$ implies $b \\not\\preceq a$."
+  },
+  "source": "",
+  "sections": []
+}

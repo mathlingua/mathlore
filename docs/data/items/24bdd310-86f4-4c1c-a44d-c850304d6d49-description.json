@@ -1,0 +1,14 @@
+{
+  "id": "24bdd310-86f4-4c1c-a44d-c850304d6d49-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The product $m \\cdot n$, defined by recursion on $n$: $m \\cdot 0 = 0$ and $m \\cdot n^+ = m \\cdot n + m$. Multiplication is the binary operation given by $\\cdot$."
+  },
+  "source": "",
+  "sections": []
+}

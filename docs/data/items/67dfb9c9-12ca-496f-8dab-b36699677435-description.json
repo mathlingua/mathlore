@@ -1,0 +1,14 @@
+{
+  "id": "67dfb9c9-12ca-496f-8dab-b36699677435-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For natural numbers, $m < n$ is defined to mean $m \\in n$. This makes $<$ a relation on $\\omega$ capturing the usual order."
+  },
+  "source": "",
+  "sections": []
+}

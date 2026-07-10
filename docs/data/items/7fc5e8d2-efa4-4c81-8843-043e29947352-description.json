@@ -1,0 +1,14 @@
+{
+  "id": "7fc5e8d2-efa4-4c81-8843-043e29947352-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The successor $n^+ = n \\cup \\{n\\}$ of a natural number $n$. If $n$ has $n$ elements then $n^+$ has $n + 1$ elements, since $n^+$ adjoins $n$ itself as a new element. The same construction $x^+ = x \\cup \\{x\\}$ makes sense for any set."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "fadd3f72-a74c-4b92-b94e-240567e62754",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "The Recursion Theorem"
+  },
+  "source": "SubsectionTitle: \"The Recursion Theorem\"\nId: \"fadd3f72-a74c-4b92-b94e-240567e62754\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"The Recursion Theorem\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fadd3f72-a74c-4b92-b94e-240567e62754\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

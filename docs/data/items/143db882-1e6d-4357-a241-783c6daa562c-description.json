@@ -1,0 +1,14 @@
+{
+  "id": "143db882-1e6d-4357-a241-783c6daa562c-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The sum $m + n$, defined by recursion on $n$: $m + 0 = m$ and $m + n^+ = (m + n)^+$. Addition is the binary operation given by $+$."
+  },
+  "source": "",
+  "sections": []
+}

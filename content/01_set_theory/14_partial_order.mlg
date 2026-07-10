@@ -1,0 +1,206 @@
+SubsectionTitle: "Partial Order"
+Id: "3bff0e8c-bc0a-45a3-b7b3-51f9bb2291f9"
+
+[a \:precedes:/ b]
+Describes: a
+when:
+. a, b is \set
+extends:
+. a is \set
+Documented:
+. called: "precedes"
+. written: "a? \preceq b?"
+. description: "The abstract order relation $a \preceq b$ of a partially ordered set. Throughout the order theory a single symbol $\preceq$ denotes the order of whichever set is under discussion."
+Id: "f54fe011-55c5-4772-8495-159f214cbbf8"
+
+[a \:strictly.precedes:/ b]
+Describes: a
+when:
+. a, b is \set
+extends:
+. a is \set
+satisfies:
+. allOf:
+  . a \:precedes:/ b
+  . not:
+    . a = b
+Documented:
+. called: "strictly precedes"
+. written: "a? \prec b?"
+. description: "For elements of a partially ordered set, $a \prec b$ means $a \preceq b$ and $a \neq b$. The relation $\prec$ is transitive, and $a \prec b$ implies $b \not\preceq a$."
+Id: "27072d67-4964-456d-8a5b-1c526dff5ae0"
+
+[\partially.ordered{X}]
+States:
+when:
+. X is \set
+that:
+. allOf:
+  . forAll: a is \set
+    where:
+    . a "in" X
+    then:
+    . a \:precedes:/ a
+  . forAll: a, b is \set
+    where:
+    . a "in" X
+    . b "in" X
+    then:
+    . if:
+      . allOf:
+        . a \:precedes:/ b
+        . b \:precedes:/ a
+      then:
+      . a = b
+  . forAll: a, b, c is \set
+    where:
+    . a "in" X
+    . b "in" X
+    . c "in" X
+    then:
+    . if:
+      . allOf:
+        . a \:precedes:/ b
+        . b \:precedes:/ c
+      then:
+      . a \:precedes:/ c
+Documented:
+. called: "partially ordered"
+. written: "X? \text{ is partially ordered}"
+. description: "A set $X$ is partially ordered by $\preceq$ when $\preceq$ is reflexive, asymmetric, and transitive on $X$. Some pairs of elements may be incomparable."
+Id: "dc09bd71-fafe-42e4-a2cb-abefe68a04fd"
+
+[\totally.ordered{X}]
+States:
+when:
+. X is \set
+that:
+. allOf:
+  . \partially.ordered{X}
+  . forAll: a, b is \set
+    where:
+    . a "in" X
+    . b "in" X
+    then:
+    . anyOf:
+      . a \:precedes:/ b
+      . b \:precedes:/ a
+Documented:
+. called: "totally ordered"
+. written: "X? \text{ is totally ordered}"
+. description: "A partially ordered set $X$ is totally ordered, or a chain, when every two elements are comparable: $a \preceq b$ or $b \preceq a$ for all $a, b \in X$."
+Id: "0ef588f7-e574-42c7-9c95-f2fa289db366"
+
+[\initial.segment:in{X}:of{a}]
+Defines: S is \set
+when:
+. X is \set
+. a is \set
+. a "in" X
+expresses:
+. forAll: x is \set
+  then:
+  . have:
+    . allOf:
+      . x "in" X
+      . x \:strictly.precedes:/ a
+    iff: x "in" S
+Documented:
+. called: "initial segment of $a?$"
+. written: "s(a?)"
+. description: "The strict initial segment $s(a) = \{x \in X \mid x \prec a\}$ of an element $a$ in a partially ordered set $X$."
+Id: "b2e99d99-7024-4401-93bf-ab1f8afb1ffa"
+
+[\weak.initial.segment:in{X}:of{a}]
+Defines: S is \set
+when:
+. X is \set
+. a is \set
+. a "in" X
+expresses:
+. forAll: x is \set
+  then:
+  . have:
+    . allOf:
+      . x "in" X
+      . x \:precedes:/ a
+    iff: x "in" S
+Documented:
+. called: "weak initial segment of $a?$"
+. written: "\overline{s}(a?)"
+. description: "The weak initial segment $\overline{s}(a) = \{x \in X \mid x \preceq a\}$ of an element $a$ in a partially ordered set $X$."
+Id: "352c164f-8ad4-4747-916a-2938c0888ae5"
+
+[a \.least.in./ X]
+States:
+when:
+. a is \set
+. X is \set
+that:
+. forAll: x is \set
+  where:
+  . x "in" X
+  then:
+  . a \:precedes:/ x
+Documented:
+. called: "least element"
+. written: "a? \text{ is least in } X?"
+. description: "An element $a$ is least, smallest, or first in $X$ when $a \preceq x$ for all $x \in X$."
+Id: "ea4a57e7-19d9-4241-9dba-9ddea2a49564"
+
+[a \.greatest.in./ X]
+States:
+when:
+. a is \set
+. X is \set
+that:
+. forAll: x is \set
+  where:
+  . x "in" X
+  then:
+  . x \:precedes:/ a
+Documented:
+. called: "greatest element"
+. written: "a? \text{ is greatest in } X?"
+. description: "An element $a$ is greatest, largest, or last in $X$ when $x \preceq a$ for all $x \in X$."
+Id: "9c18d9ab-367c-4de4-99f8-ea03c28b9696"
+
+[a \.minimal.in./ X]
+States:
+when:
+. a is \set
+. X is \set
+that:
+. forAll: x is \set
+  where:
+  . x "in" X
+  then:
+  . if:
+    . x \:precedes:/ a
+    then:
+    . x = a
+Documented:
+. called: "minimal element"
+. written: "a? \text{ is minimal in } X?"
+. description: "An element $a$ is minimal in $X$ when $x \preceq a$ implies $x = a$ for all $x \in X$; equivalently, no element strictly precedes $a$."
+Id: "524c9a41-1363-4170-9dab-6eb99f2cf373"
+
+[a \.maximal.in./ X]
+States:
+when:
+. a is \set
+. X is \set
+that:
+. forAll: x is \set
+  where:
+  . x "in" X
+  then:
+  . if:
+    . a \:precedes:/ x
+    then:
+    . x = a
+Documented:
+. called: "maximal element"
+. written: "a? \text{ is maximal in } X?"
+. description: "An element $a$ is maximal in $X$ when $a \preceq x$ implies $x = a$ for all $x \in X$; equivalently, $a$ strictly precedes no element."
+Id: "47cae71f-185e-431a-bd38-a3ab7d08d070"

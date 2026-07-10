@@ -1,0 +1,98 @@
+{
+  "id": "b557b79f-5179-4fff-a20f-a93d742231a4",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c63686f6963652e66756e6374696f6e3a6f6e"
+  ],
+  "heading": "\\choice.function:on{X}",
+  "heading_latex": "\\textrm{choice function on }X",
+  "body_text": null,
+  "page": null,
+  "source": "[\\choice.function:on{X}]\nDescribes: f(x__) ::= y_\nwhen:\n. X is \\set\nspecifies:\n. x__ \"in\" X\n. y_ is \\set\nDocumented:\n. called: \"choice function on $X?$\"\n. written: \"f?\"\n. description: \"A choice function on a collection $X$ of sets is a function $f \\colon X \\to \\bigcup_{A \\in X} A$ such that $f(A) \\in A$ for every $A \\in X$. It selects one element from each set in the collection.\"\nId: \"b557b79f-5179-4fff-a20f-a93d742231a4\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "f(x__) ::= y_",
+      "inline_latex": "f(x) ::= y",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "specifies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "x__ \"in\" X",
+          "latex": "x \\in X"
+        },
+        {
+          "kind": "formulation",
+          "text": "y_ is \\set",
+          "latex": "y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"choice function on $X?$\"",
+              "inline_latex": "\\textrm{choice function on }X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"f?\"",
+              "inline_latex": "f",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b557b79f-5179-4fff-a20f-a93d742231a4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

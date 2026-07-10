@@ -1,0 +1,27 @@
+{
+  "id": "8f66079c-6e4d-47d1-bb13-9798c5a9d36a",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "\nBefore beginning with the axioms of Zermelo-Fraenkel set theory, it is\nworthwhile to engage with the reader's intuitive notion of a set and to justify\nthe axiomatic approach to set theory.\n"
+  },
+  "source": "Text: \"\nBefore beginning with the axioms of Zermelo-Fraenkel set theory, it is\nworthwhile to engage with the reader's intuitive notion of a set and to justify\nthe axiomatic approach to set theory.\n\"\nId: \"8f66079c-6e4d-47d1-bb13-9798c5a9d36a\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"\nBefore beginning with the axioms of Zermelo-Fraenkel set theory, it is\nworthwhile to engage with the reader's intuitive notion of a set and to justify\nthe axiomatic approach to set theory.\n\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8f66079c-6e4d-47d1-bb13-9798c5a9d36a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

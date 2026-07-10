@@ -1,0 +1,86 @@
+{
+  "id": "68bcb5f8-d1d4-4e0b-ab0b-3b3c3d4e8d4d",
+  "kind": "Corollary",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Corollary: \"Corollary 3.20\"\nof: \"Lemma 3.7 and the trichotomy law\"\ngiven: n, m is \\set.theoretic.natural.number\nwhere: n != m\nthen:\n. have: n \\:proper.subset?:/ m\n  iff: n \"in\" m\nDocumented:\n. description: \"For all $n, m \\in \\omega$ with $n \\neq m$, $n \\in m$ if and only if $n \\subsetneq m$. This ties membership among natural numbers to proper containment.\"\nId: \"68bcb5f8-d1d4-4e0b-ab0b-3b3c3d4e8d4d\"",
+  "sections": [
+    {
+      "label": "Corollary",
+      "inline_argument": "\"Corollary 3.20\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "of",
+      "inline_argument": "\"Lemma 3.7 and the trichotomy law\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "n, m is \\set.theoretic.natural.number",
+      "inline_latex": "n, m \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "where",
+      "inline_argument": "n != m",
+      "inline_latex": "n \\ne m",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "have",
+              "inline_argument": "n \\:proper.subset?:/ m",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a70726f7065722e7375627365743a2f}{n \\subsetneq m}",
+              "arguments": []
+            },
+            {
+              "label": "iff",
+              "inline_argument": "n \"in\" m",
+              "inline_latex": "n \\in m",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"68bcb5f8-d1d4-4e0b-ab0b-3b3c3d4e8d4d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

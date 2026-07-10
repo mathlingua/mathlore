@@ -1,0 +1,14 @@
+{
+  "id": "fb02b92c-b803-414e-b46c-a882237acf3d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For natural numbers, $m \\leq n$ means $m < n$ or $m = n$; equivalently $m \\subseteq n$. This order is transitive, inheriting transitivity from the subset relation."
+  },
+  "source": "",
+  "sections": []
+}

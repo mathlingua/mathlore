@@ -1,0 +1,149 @@
+{
+  "id": "d74b5a03-d4c5-4257-b076-f020efc36af1",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e756e696f6e3a6f766572"
+  ],
+  "heading": "\\set.theoretic.union:over{C}",
+  "heading_latex": "\\textrm{union over }C",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.union:over{C}]\nDefines: U is \\set\nwhen: C is \\set\nexpresses:\n. forAll: x is \\set\n  then:\n  . have:\n    . exists: A is \\set\n      suchThat:\n      . A \"in\" C\n      . x \"in\" A\n    iff: x \"in\" U\nDocumented:\n. called: \"union over $C?$\"\n. written: \"\\bigcup_{A \\in C?} A\"\n. description: \"The union over a collection $C$ of sets, guaranteed by the axiom of unions: $x \\in \\bigcup_{A \\in C} A$ if and only if there exists $A \\in C$ such that $x \\in A$. Its uniqueness follows from the axiom of extension.\"\nId: \"d74b5a03-d4c5-4257-b076-f020efc36af1\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "U is \\set",
+      "inline_latex": "U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "C is \\set",
+      "inline_latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "exists",
+                              "inline_argument": "A is \\set",
+                              "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                              "arguments": []
+                            },
+                            {
+                              "label": "suchThat",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "A \"in\" C",
+                                  "latex": "A \\in C"
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "x \"in\" A",
+                                  "latex": "x \\in A"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "x \"in\" U",
+                      "inline_latex": "x \\in U",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"union over $C?$\"",
+              "inline_latex": "\\textrm{union over }C",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\bigcup_{A \\in C?} A\"",
+              "inline_latex": "\\bigcup_{A \\in C} A",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d74b5a03-d4c5-4257-b076-f020efc36af1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

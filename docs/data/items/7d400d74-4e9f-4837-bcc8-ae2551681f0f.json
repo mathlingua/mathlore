@@ -1,0 +1,27 @@
+{
+  "id": "7d400d74-4e9f-4837-bcc8-ae2551681f0f",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "\nThe proof that the axiom of choice implies Zorn's lemma proceeds by a tower\nargument. Fix a choice function $f$ on $\\mathcal{P}(X) \\setminus \\{\\emptyset\\}$.\nFor each set $A$ of chains one forms $\\hat{A}$, the set of elements whose\nadjunction keeps $A$ a chain, and defines $g(A) = A \\cup \\{f(\\hat{A} \\setminus A)\\}$\nwhen $\\hat{A} \\setminus A \\neq \\emptyset$ and $g(A) = A$ otherwise, so that $A$ is\nmaximal exactly when $g(A) = A$. A collection is called a tower if it contains\n$\\emptyset$, is closed under $g$, and is closed under unions of chains. The\nintersection $\\tau_0$ of all towers is itself a tower, and a sequence of lemmas\nshows every element of $\\tau_0$ is comparable, so $\\tau_0$ is a chain. Its union\n$A$ then satisfies $g(A) = A$, which forces $\\hat{A} \\setminus A = \\emptyset$ and\nproduces the required maximal element.\n"
+  },
+  "source": "Text: \"\nThe proof that the axiom of choice implies Zorn's lemma proceeds by a tower\nargument. Fix a choice function $f$ on $\\mathcal{P}(X) \\setminus \\{\\emptyset\\}$.\nFor each set $A$ of chains one forms $\\hat{A}$, the set of elements whose\nadjunction keeps $A$ a chain, and defines $g(A) = A \\cup \\{f(\\hat{A} \\setminus A)\\}$\nwhen $\\hat{A} \\setminus A \\neq \\emptyset$ and $g(A) = A$ otherwise, so that $A$ is\nmaximal exactly when $g(A) = A$. A collection is called a tower if it contains\n$\\emptyset$, is closed under $g$, and is closed under unions of chains. The\nintersection $\\tau_0$ of all towers is itself a tower, and a sequence of lemmas\nshows every element of $\\tau_0$ is comparable, so $\\tau_0$ is a chain. Its union\n$A$ then satisfies $g(A) = A$, which forces $\\hat{A} \\setminus A = \\emptyset$ and\nproduces the required maximal element.\n\"\nId: \"7d400d74-4e9f-4837-bcc8-ae2551681f0f\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"\nThe proof that the axiom of choice implies Zorn's lemma proceeds by a tower\nargument. Fix a choice function $f$ on $\\mathcal{P}(X) \\setminus \\{\\emptyset\\}$.\nFor each set $A$ of chains one forms $\\hat{A}$, the set of elements whose\nadjunction keeps $A$ a chain, and defines $g(A) = A \\cup \\{f(\\hat{A} \\setminus A)\\}$\nwhen $\\hat{A} \\setminus A \\neq \\emptyset$ and $g(A) = A$ otherwise, so that $A$ is\nmaximal exactly when $g(A) = A$. A collection is called a tower if it contains\n$\\emptyset$, is closed under $g$, and is closed under unions of chains. The\nintersection $\\tau_0$ of all towers is itself a tower, and a sequence of lemmas\nshows every element of $\\tau_0$ is comparable, so $\\tau_0$ is a chain. Its union\n$A$ then satisfies $g(A) = A$, which forces $\\hat{A} \\setminus A = \\emptyset$ and\nproduces the required maximal element.\n\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7d400d74-4e9f-4837-bcc8-ae2551681f0f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "c065b70c-33a1-434d-afb4-d87cfb2755ac",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c7265666c65786976653a3a7365742e7468656f72657469632e72656c6174696f6e3a6f6e"
+  ],
+  "heading": "\\(reflexive)::set.theoretic.relation:on{X}",
+  "heading_latex": "\\textrm{reflexive}\\textrm{ }\\htmlData{mlg-ref=5c7365742e7468656f72657469632e72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(reflexive)::set.theoretic.relation:on{X}]\nRefines: R\nwhen:\n. X is \\set\nsatisfies:\n. forAll: a is \\set\n  where:\n  . a \"in\" X\n  then:\n  . \\set.theoretic.ordered.pair:of{a}:and{a} \"in\" R\nDocumented:\n. adjective: \"reflexive\"\n. written: \"\\operatorname{reflexive}\"\n. description: \"A relation $R$ on $X$ is reflexive when $a \\mathbin{R} a$ for all $a \\in X$.\"\nId: \"c065b70c-33a1-434d-afb4-d87cfb2755ac\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "R",
+      "inline_latex": "R",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a is \\set",
+              "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "a \"in\" X",
+                  "latex": "a \\in X"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "\\set.theoretic.ordered.pair:of{a}:and{a} \"in\" R",
+                  "latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64}{(a, a)} \\in R"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"reflexive\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{reflexive}\"",
+              "inline_latex": "\\operatorname{reflexive}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c065b70c-33a1-434d-afb4-d87cfb2755ac\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

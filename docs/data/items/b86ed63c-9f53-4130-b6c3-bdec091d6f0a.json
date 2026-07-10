@@ -1,0 +1,27 @@
+{
+  "id": "b86ed63c-9f53-4130-b6c3-bdec091d6f0a",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The First Axioms of ZF Set Theory"
+  },
+  "source": "SectionTitle: \"The First Axioms of ZF Set Theory\"\nId: \"b86ed63c-9f53-4130-b6c3-bdec091d6f0a\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The First Axioms of ZF Set Theory\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b86ed63c-9f53-4130-b6c3-bdec091d6f0a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

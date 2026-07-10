@@ -1,0 +1,14 @@
+{
+  "id": "a8f91b22-3648-4301-8119-a5b63753eaf9-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The set $\\{a\\}$ whose only element is $a$, obtained by pairing $a$ with itself so that $\\{a, a\\} = \\{a\\}$."
+  },
+  "source": "",
+  "sections": []
+}

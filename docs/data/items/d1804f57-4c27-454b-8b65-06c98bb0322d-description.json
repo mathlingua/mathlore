@@ -1,0 +1,14 @@
+{
+  "id": "d1804f57-4c27-454b-8b65-06c98bb0322d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The difference $A \\setminus B = \\{x \\in A \\mid x \\notin B\\}$, the set of elements of $A$ which are not elements of $B$, guaranteed by the axiom of specification."
+  },
+  "source": "",
+  "sections": []
+}

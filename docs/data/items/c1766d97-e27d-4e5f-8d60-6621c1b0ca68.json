@@ -1,0 +1,75 @@
+{
+  "id": "c1766d97-e27d-4e5f-8d60-6621c1b0ca68",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e696e74657273656374696f6e3a6f663a616e64"
+  ],
+  "heading": "\\set.theoretic.intersection:of{A}:and{B}",
+  "heading_latex": "\\textrm{intersection of }A\\textrm{ and }B",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.intersection:of{A}:and{B}]\nDefines: I := \\set.theoretic.intersection:over{\\set.theoretic.pair:of{A}:and{B}} is \\set\nwhen: A, B is \\set\nDocumented:\n. called: \"intersection of $A?$ and $B?$\"\n. written: \"A? \\cap B?\"\n. description: \"The intersection $A \\cap B$, defined as the intersection over the collection $\\{A, B\\}$, so that $x \\in A \\cap B$ if and only if $x \\in A$ and $x \\in B$.\"\nId: \"c1766d97-e27d-4e5f-8d60-6621c1b0ca68\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "I := \\set.theoretic.intersection:over{\\set.theoretic.pair:of{A}:and{B}} is \\set",
+      "inline_latex": "I := \\htmlData{mlg-ref=5c7365742e7468656f72657469632e696e74657273656374696f6e3a6f766572}{\\bigcap_{A \\in \\htmlData{mlg-ref=5c7365742e7468656f72657469632e706169723a6f663a616e64}{\\{A, B\\}}} A} \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"intersection of $A?$ and $B?$\"",
+              "inline_latex": "\\textrm{intersection of }A\\textrm{ and }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\cap B?\"",
+              "inline_latex": "A \\cap B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c1766d97-e27d-4e5f-8d60-6621c1b0ca68\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

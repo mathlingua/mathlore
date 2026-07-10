@@ -1,0 +1,85 @@
+{
+  "id": "f51545ea-8d12-45e3-8405-9ccb0bcb5c43",
+  "kind": "Resource",
+  "definition_keys": [],
+  "heading": "$halmos.naive.set.theory",
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "[$halmos.naive.set.theory]\nResource:\n. title: \"Naive Set Theory\"\n. author: \"Paul Halmos\"\n. publisher: \"Van Nostrand\"\n. year: \"1960\"\n. description: \"The primary influence on the structure and content of these notes.\"\nId: \"f51545ea-8d12-45e3-8405-9ccb0bcb5c43\"",
+  "sections": [
+    {
+      "label": "Resource",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "title",
+              "inline_argument": "\"Naive Set Theory\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "author",
+              "inline_argument": "\"Paul Halmos\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "publisher",
+              "inline_argument": "\"Van Nostrand\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "year",
+              "inline_argument": "\"1960\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "\"The primary influence on the structure and content of these notes.\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f51545ea-8d12-45e3-8405-9ccb0bcb5c43\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

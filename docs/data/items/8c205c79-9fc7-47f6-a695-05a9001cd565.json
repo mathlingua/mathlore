@@ -1,0 +1,163 @@
+{
+  "id": "8c205c79-9fc7-47f6-a695-05a9001cd565",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem: \"The Peano Axioms\"\nthen:\n. \\set.theoretic.zero is \\set.theoretic.natural.number\n. forAll: n is \\set.theoretic.natural.number\n  then: \\set.theoretic.successor{n} is? \\set.theoretic.natural.number\n. forAll: n is \\set.theoretic.natural.number\n  then: \\set.theoretic.successor{n} != \\set.theoretic.zero\n. forAll: n, m is \\set.theoretic.natural.number\n  then:\n  . if: \\set.theoretic.successor{n} = \\set.theoretic.successor{m}\n    then: n = m\n. forAll: A is \\set\n  where:\n  . A is? \\(inductive)::set\n  . A \\:subset?:/ \\set.theoretic.naturals\n  then: A = \\set.theoretic.naturals\nDocumented:\n. description: \"The natural numbers are the set $\\omega$ with successor function $S \\colon \\omega \\to \\omega$ satisfying: (I) there is an element $0 \\in \\omega$; (II) if $n \\in \\omega$ then $S(n) \\in \\omega$; (III) $S(n) \\neq 0$; (IV) $S$ is injective; and (V) the principle of mathematical induction: any inductive subset of $\\omega$ equals $\\omega$.\"\nId: \"8c205c79-9fc7-47f6-a695-05a9001cd565\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": "\"The Peano Axioms\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\set.theoretic.zero is \\set.theoretic.natural.number",
+          "latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0} \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}"
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n is \\set.theoretic.natural.number",
+              "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "\\set.theoretic.successor{n} is? \\set.theoretic.natural.number",
+              "inline_latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{n^+} \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n is \\set.theoretic.natural.number",
+              "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "\\set.theoretic.successor{n} != \\set.theoretic.zero",
+              "inline_latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{n^+} \\ne \\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n, m is \\set.theoretic.natural.number",
+              "inline_latex": "n, m \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": "\\set.theoretic.successor{n} = \\set.theoretic.successor{m}",
+                      "inline_latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{n^+} = \\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{m^+}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "n = m",
+                      "inline_latex": "n = m",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A is \\set",
+              "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "A is? \\(inductive)::set",
+                  "latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c696e647563746976653a3a736574}{\\textrm{inductive}}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "A \\:subset?:/ \\set.theoretic.naturals",
+                  "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c73}{\\omega}}"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "A = \\set.theoretic.naturals",
+              "inline_latex": "A = \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c73}{\\omega}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8c205c79-9fc7-47f6-a695-05a9001cd565\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

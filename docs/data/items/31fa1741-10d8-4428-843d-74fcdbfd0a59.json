@@ -1,0 +1,27 @@
+{
+  "id": "31fa1741-10d8-4428-843d-74fcdbfd0a59",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The Natural Numbers"
+  },
+  "source": "SectionTitle: \"The Natural Numbers\"\nId: \"31fa1741-10d8-4428-843d-74fcdbfd0a59\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The Natural Numbers\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"31fa1741-10d8-4428-843d-74fcdbfd0a59\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

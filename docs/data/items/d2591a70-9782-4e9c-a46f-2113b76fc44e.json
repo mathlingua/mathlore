@@ -1,0 +1,27 @@
+{
+  "id": "d2591a70-9782-4e9c-a46f-2113b76fc44e",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "\nAt this point, the intrepid reader may think sets could be created in a\nstraightforward manner. Namely, one can try to define a set as the collection\nof all objects $x$ which satisfy a particular property $P(x)$, written\n$A = \\{x \\mid P(x)\\}$. Such a theory is said to allow unrestricted\ncomprehension. Theories of unrestricted comprehension were common in the early\ndays of attempting to formalize mathematics via logic; a particularly famous\nexample is the theory developed by Gottlob Frege in his work Grundgesetze der\nArithmetik.\n"
+  },
+  "source": "Text: \"\nAt this point, the intrepid reader may think sets could be created in a\nstraightforward manner. Namely, one can try to define a set as the collection\nof all objects $x$ which satisfy a particular property $P(x)$, written\n$A = \\{x \\mid P(x)\\}$. Such a theory is said to allow unrestricted\ncomprehension. Theories of unrestricted comprehension were common in the early\ndays of attempting to formalize mathematics via logic; a particularly famous\nexample is the theory developed by Gottlob Frege in his work Grundgesetze der\nArithmetik.\n\"\nId: \"d2591a70-9782-4e9c-a46f-2113b76fc44e\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"\nAt this point, the intrepid reader may think sets could be created in a\nstraightforward manner. Namely, one can try to define a set as the collection\nof all objects $x$ which satisfy a particular property $P(x)$, written\n$A = \\{x \\mid P(x)\\}$. Such a theory is said to allow unrestricted\ncomprehension. Theories of unrestricted comprehension were common in the early\ndays of attempting to formalize mathematics via logic; a particularly famous\nexample is the theory developed by Gottlob Frege in his work Grundgesetze der\nArithmetik.\n\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d2591a70-9782-4e9c-a46f-2113b76fc44e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

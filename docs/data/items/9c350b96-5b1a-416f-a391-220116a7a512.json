@@ -1,0 +1,72 @@
+{
+  "id": "9c350b96-5b1a-416f-a391-220116a7a512",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven: A, B is \\set\nthen: A = B\niff:\n. A \\:subset?:/ B\n. B \\:subset?:/ A\nDocumented:\n. description: \"Two sets are equal if and only if each is a subset of the other. This restates the axiom of extension in terms of the subset relation.\"\nId: \"9c350b96-5b1a-416f-a391-220116a7a512\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": "A = B",
+      "inline_latex": "A = B",
+      "arguments": []
+    },
+    {
+      "label": "iff",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A \\:subset?:/ B",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq B}"
+        },
+        {
+          "kind": "formulation",
+          "text": "B \\:subset?:/ A",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{B \\subseteq A}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"9c350b96-5b1a-416f-a391-220116a7a512\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

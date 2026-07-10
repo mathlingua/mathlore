@@ -1,0 +1,154 @@
+{
+  "id": "64578792-cf4f-4497-9c79-3fc0189a08e4",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e63617274657369616e2e70726f647563743a6f663a616e64"
+  ],
+  "heading": "\\set.theoretic.cartesian.product:of{A}:and{B}",
+  "heading_latex": "\\textrm{cartesian product of }A\\textrm{ and }B",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.cartesian.product:of{A}:and{B}]\nDefines: P is \\set\nwhen: A, B is \\set\nexpresses:\n. forAll: z is \\set\n  then:\n  . have:\n    . exists: a, b is \\set\n      suchThat:\n      . a \"in\" A\n      . b \"in\" B\n      . z = \\set.theoretic.ordered.pair:of{a}:and{b}\n    iff: z \"in\" P\nDocumented:\n. called: \"cartesian product of $A?$ and $B?$\"\n. written: \"A? \\times B?\"\n. description: \"The cartesian product $A \\times B = \\{z \\in \\mathcal{P}(\\mathcal{P}(A \\cup B)) \\mid z = (a, b) \\text{ for some } a \\in A, b \\in B\\}$, the set of all ordered pairs $(a, b)$ with $a \\in A$ and $b \\in B$.\"\nId: \"64578792-cf4f-4497-9c79-3fc0189a08e4\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "P is \\set",
+      "inline_latex": "P \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "z is \\set",
+              "inline_latex": "z \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "exists",
+                              "inline_argument": "a, b is \\set",
+                              "inline_latex": "a, b \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                              "arguments": []
+                            },
+                            {
+                              "label": "suchThat",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "a \"in\" A",
+                                  "latex": "a \\in A"
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "b \"in\" B",
+                                  "latex": "b \\in B"
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "z = \\set.theoretic.ordered.pair:of{a}:and{b}",
+                                  "latex": "z = \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64}{(a, b)}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "z \"in\" P",
+                      "inline_latex": "z \\in P",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"cartesian product of $A?$ and $B?$\"",
+              "inline_latex": "\\textrm{cartesian product of }A\\textrm{ and }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\times B?\"",
+              "inline_latex": "A \\times B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"64578792-cf4f-4497-9c79-3fc0189a08e4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

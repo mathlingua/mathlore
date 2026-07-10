@@ -1,0 +1,14 @@
+{
+  "id": "abd5b742-bb8b-4787-bfb5-9cc96e45c1cf-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "If $E$ is a set and $n \\in \\omega$ with $E \\sim n$, then $n$ is the unique natural number equivalent to $E$. The pigeonhole principle guarantees that distinct natural numbers are never equivalent."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "b1357417-28e9-4f0d-b306-119f8abcafe8",
+  "kind": "Axiom",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Axiom: \"Axiom of Infinity\"\nthen:\n. exists: A is \\(inductive)::set\nDocumented:\n. description: \"There exists an inductive set. This is the final axiom of ZF set theory and it guarantees the existence of infinite sets, in particular the set of natural numbers.\"\nId: \"b1357417-28e9-4f0d-b306-119f8abcafe8\"",
+  "sections": [
+    {
+      "label": "Axiom",
+      "inline_argument": "\"Axiom of Infinity\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "A is \\(inductive)::set",
+              "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c696e647563746976653a3a736574}{\\textrm{inductive}}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b1357417-28e9-4f0d-b306-119f8abcafe8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "4dfbec25-22ff-4600-8b57-b50a5b1dd2c8",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e636861696e2e696e2e2f"
+  ],
+  "heading": "A \\.chain.in./ X",
+  "heading_latex": "\\textrm{chain}",
+  "body_text": null,
+  "page": null,
+  "source": "[A \\.chain.in./ X]\nStates:\nwhen:\n. A is \\set\n. X is \\set\nthat:\n. allOf:\n  . A \\:subset:/ X\n  . \\totally.ordered{A}\nDocumented:\n. called: \"chain\"\n. written: \"A? \\text{ is a chain in } X?\"\n. description: \"A chain in a partially ordered set $X$ is a totally ordered subset $A \\subseteq X$: any two elements of $A$ are comparable.\"\nId: \"4dfbec25-22ff-4600-8b57-b50a5b1dd2c8\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A is \\set",
+          "latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "allOf",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "A \\:subset:/ X",
+                  "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq X}"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "\\totally.ordered{A}",
+                  "latex": "\\htmlData{mlg-ref=5c746f74616c6c792e6f726465726564}{A \\text{ is totally ordered}}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"chain\"",
+              "inline_latex": "\\textrm{chain}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\text{ is a chain in } X?\"",
+              "inline_latex": "A \\text{ is a chain in } X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4dfbec25-22ff-4600-8b57-b50a5b1dd2c8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

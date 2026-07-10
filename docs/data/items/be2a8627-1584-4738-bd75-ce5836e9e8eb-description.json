@@ -1,0 +1,14 @@
+{
+  "id": "be2a8627-1584-4738-bd75-ce5836e9e8eb-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation $R$ on $X$ is asymmetric (in the sense of antisymmetric) when $a \\mathbin{R} b$ and $b \\mathbin{R} a$ together imply $a = b$."
+  },
+  "source": "",
+  "sections": []
+}

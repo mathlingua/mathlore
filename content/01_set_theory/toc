@@ -1,0 +1,17 @@
+00_introduction.mlg -> Introduction
+01_axioms.mlg -> Axioms
+02_subsets.mlg -> Subsets
+03_operations.mlg -> Operations
+04_power_and_pairs.mlg -> Power and Pairs
+05_relations_functions.mlg -> Relations Functions
+06_peano_infinity.mlg -> Peano Infinity
+07_transitive.mlg -> Transitive
+08_recursion.mlg -> Recursion
+09_arithmetic.mlg -> Arithmetic
+10_order.mlg -> Order
+11_relations_equivalence.mlg -> Relations Equivalence
+12_finite.mlg -> Finite
+13_choice.mlg -> Choice
+14_partial_order.mlg -> Partial Order
+15_zorn.mlg -> Zorn
+16_well_ordering.mlg -> Well Ordering

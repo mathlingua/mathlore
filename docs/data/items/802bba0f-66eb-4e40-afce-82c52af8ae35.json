@@ -1,0 +1,93 @@
+{
+  "id": "802bba0f-66eb-4e40-afce-82c52af8ae35",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c3a70726f7065722e7375627365743a2f"
+  ],
+  "heading": "A \\:proper.subset:/ B",
+  "heading_latex": "\\textrm{proper subset}",
+  "body_text": null,
+  "page": null,
+  "source": "[A \\:proper.subset:/ B]\nDescribes: A\nwhen: B is \\set\nextends: A \\:subset:/ B\nsatisfies:\n. A != B\nDocumented:\n. called: \"proper subset\"\n. written: \"A? \\subsetneq B?\"\n. description: \"$A$ is a proper subset of $B$, written $A \\subsetneq B$, when $A \\subseteq B$ and $A \\neq B$.\"\nId: \"802bba0f-66eb-4e40-afce-82c52af8ae35\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "A",
+      "inline_latex": "A",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "B is \\set",
+      "inline_latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "extends",
+      "inline_argument": "A \\:subset:/ B",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq B}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A != B",
+          "latex": "A \\ne B"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"proper subset\"",
+              "inline_latex": "\\textrm{proper subset}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\subsetneq B?\"",
+              "inline_latex": "A \\subsetneq B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"802bba0f-66eb-4e40-afce-82c52af8ae35\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "9ca0f4aa-82e4-46e2-bcd7-a6e2843423a1-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "All natural numbers are comparable: for any $m, n \\in \\omega$, one of $m \\in n$, $n \\in m$, or $m = n$ holds. The proof is a double induction using that each natural number is transitive."
+  },
+  "source": "",
+  "sections": []
+}

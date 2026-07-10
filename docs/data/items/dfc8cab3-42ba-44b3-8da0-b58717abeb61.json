@@ -1,0 +1,119 @@
+{
+  "id": "dfc8cab3-42ba-44b3-8da0-b58717abeb61",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e706f7765722e736574"
+  ],
+  "heading": "\\set.theoretic.power.set{X}",
+  "heading_latex": "\\textrm{power set of }X",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.power.set{X}]\nDefines: P is \\set\nwhen: X is \\set\nexpresses:\n. forAll: A is \\set\n  then:\n  . have: A \\:subset?:/ X\n    iff: A \"in\" P\nDocumented:\n. called: \"power set of $X?$\"\n. written: \"\\mathcal{P}(X?)\"\n. description: \"The power set $\\mathcal{P}(X)$, guaranteed by the axiom of powers: for every set $X$ there exists a set $\\mathcal{P}(X)$ such that $A \\in \\mathcal{P}(X)$ if and only if $A \\subseteq X$.\"\nId: \"dfc8cab3-42ba-44b3-8da0-b58717abeb61\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "P is \\set",
+      "inline_latex": "P \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A is \\set",
+              "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "A \\:subset?:/ X",
+                      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq X}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "A \"in\" P",
+                      "inline_latex": "A \\in P",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"power set of $X?$\"",
+              "inline_latex": "\\textrm{power set of }X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\mathcal{P}(X?)\"",
+              "inline_latex": "\\mathcal{P}(X)",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dfc8cab3-42ba-44b3-8da0-b58717abeb61\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

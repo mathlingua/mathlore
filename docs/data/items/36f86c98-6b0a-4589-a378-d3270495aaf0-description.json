@@ -1,0 +1,14 @@
+{
+  "id": "36f86c98-6b0a-4589-a378-d3270495aaf0-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The set $\\omega$ of natural numbers, defined as the minimal inductive set: the intersection of all inductive sets. A natural number is precisely an element of $\\omega$."
+  },
+  "source": "",
+  "sections": []
+}

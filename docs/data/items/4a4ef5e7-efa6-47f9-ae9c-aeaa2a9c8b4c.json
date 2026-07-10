@@ -1,0 +1,98 @@
+{
+  "id": "4a4ef5e7-efa6-47f9-ae9c-aeaa2a9c8b4c",
+  "kind": "Lemma",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Lemma:\ngiven: n is \\set.theoretic.natural.number\nthen:\n. forAll: x is \\set\n  where: x \"in\" n\n  then:\n  . not: n \\:subset:/ x\n. n is? \\(transitive)::set\nDocumented:\n. description: \"Let $n$ be a natural number. Then (a) if $x \\in n$ then $n \\not\\subseteq x$, and (b) $n$ is transitive. Both parts are proved by induction on $n$, and part (b) is the key fact used to show that the successor function on $\\omega$ is injective.\"\nId: \"4a4ef5e7-efa6-47f9-ae9c-aeaa2a9c8b4c\"",
+  "sections": [
+    {
+      "label": "Lemma",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "n is \\set.theoretic.natural.number",
+      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "x \"in\" n",
+              "inline_latex": "x \\in n",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "not",
+                      "inline_argument": "n \\:subset:/ x",
+                      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{n \\subseteq x}",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "n is? \\(transitive)::set",
+          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c7472616e7369746976653a3a736574}{\\textrm{transitive}}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4a4ef5e7-efa6-47f9-ae9c-aeaa2a9c8b4c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

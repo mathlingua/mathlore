@@ -1,0 +1,69 @@
+{
+  "id": "36f86c98-6b0a-4589-a378-d3270495aaf0",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e6e61747572616c73"
+  ],
+  "heading": "\\set.theoretic.naturals",
+  "heading_latex": "\\textrm{set of natural numbers}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.naturals]\nDefines: W is \\set\nDocumented:\n. called: \"set of natural numbers\"\n. written: \"\\omega\"\n. description: \"The set $\\omega$ of natural numbers, defined as the minimal inductive set: the intersection of all inductive sets. A natural number is precisely an element of $\\omega$.\"\nId: \"36f86c98-6b0a-4589-a378-d3270495aaf0\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "W is \\set",
+      "inline_latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"set of natural numbers\"",
+              "inline_latex": "\\textrm{set of natural numbers}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\omega\"",
+              "inline_latex": "\\omega",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"36f86c98-6b0a-4589-a378-d3270495aaf0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

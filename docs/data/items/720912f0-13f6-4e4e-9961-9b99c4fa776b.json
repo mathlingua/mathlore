@@ -1,0 +1,27 @@
+{
+  "id": "720912f0-13f6-4e4e-9961-9b99c4fa776b",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "\nInformally, a set is often thought of as a collection of objects. The\nprimitive, undefined concept of sets is that of belonging. If $x$ and $A$ are\nsets, either $x$ is in $A$, in which case we write $x \\in A$, or $x$ is not in\n$A$, in which case we write $x \\notin A$. This excludes duplication: either an\nobject is in a set or it is not, and it does not make sense to think of an\nobject as being in a set multiple times.\n"
+  },
+  "source": "Text: \"\nInformally, a set is often thought of as a collection of objects. The\nprimitive, undefined concept of sets is that of belonging. If $x$ and $A$ are\nsets, either $x$ is in $A$, in which case we write $x \\in A$, or $x$ is not in\n$A$, in which case we write $x \\notin A$. This excludes duplication: either an\nobject is in a set or it is not, and it does not make sense to think of an\nobject as being in a set multiple times.\n\"\nId: \"720912f0-13f6-4e4e-9961-9b99c4fa776b\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"\nInformally, a set is often thought of as a collection of objects. The\nprimitive, undefined concept of sets is that of belonging. If $x$ and $A$ are\nsets, either $x$ is in $A$, in which case we write $x \\in A$, or $x$ is not in\n$A$, in which case we write $x \\notin A$. This excludes duplication: either an\nobject is in a set or it is not, and it does not make sense to think of an\nobject as being in a set multiple times.\n\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"720912f0-13f6-4e4e-9961-9b99c4fa776b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

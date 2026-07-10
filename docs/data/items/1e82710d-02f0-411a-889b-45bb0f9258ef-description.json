@@ -1,0 +1,14 @@
+{
+  "id": "1e82710d-02f0-411a-889b-45bb0f9258ef-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The range of a relation $R$, the set $\\{b \\mid \\exists a \\text{ such that } a \\mathbin{R} b\\}$ of second coordinates of the pairs in $R$."
+  },
+  "source": "",
+  "sections": []
+}

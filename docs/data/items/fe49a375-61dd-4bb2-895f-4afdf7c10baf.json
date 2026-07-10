@@ -1,0 +1,136 @@
+{
+  "id": "fe49a375-61dd-4bb2-895f-4afdf7c10baf",
+  "kind": "Axiom",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Axiom:\n. \"Axiom of Choice\"\ngiven:\n. X is \\set\nwhere:\n. forAll: A is \\set\n  where:\n  . A \"in\" X\n  then:\n  . not:\n    . A = \\empty.set\nthen:\n. exists: f is \\choice.function:on{X}\nDocumented:\n. description: \"Let $X$ be a collection of non-empty sets. Then there exists a choice function on $X$. For finite collections this is a theorem, but in the infinite case there is in general no rule specifying which element to choose, and so the existence of a choice function must be taken as an axiom. Adjoining it to the axioms of ZF yields the system ZFC.\"\nId: \"fe49a375-61dd-4bb2-895f-4afdf7c10baf\"",
+  "sections": [
+    {
+      "label": "Axiom",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Axiom of Choice",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A is \\set",
+              "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "A \"in\" X",
+                  "latex": "A \\in X"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "not",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "A = \\empty.set",
+                          "latex": "A = \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "f is \\choice.function:on{X}",
+              "inline_latex": "\\htmlData{mlg-ref=5c63686f6963652e66756e6374696f6e3a6f6e}{f}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fe49a375-61dd-4bb2-895f-4afdf7c10baf\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

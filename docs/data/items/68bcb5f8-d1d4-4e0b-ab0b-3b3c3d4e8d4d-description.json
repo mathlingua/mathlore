@@ -1,0 +1,14 @@
+{
+  "id": "68bcb5f8-d1d4-4e0b-ab0b-3b3c3d4e8d4d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For all $n, m \\in \\omega$ with $n \\neq m$, $n \\in m$ if and only if $n \\subsetneq m$. This ties membership among natural numbers to proper containment."
+  },
+  "source": "",
+  "sections": []
+}

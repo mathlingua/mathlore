@@ -1,0 +1,14 @@
+{
+  "id": "c08206ff-de4f-44c5-bc78-be658fef5be1-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A set is infinite when it is not finite, that is, when it is equivalent to no natural number."
+  },
+  "source": "",
+  "sections": []
+}

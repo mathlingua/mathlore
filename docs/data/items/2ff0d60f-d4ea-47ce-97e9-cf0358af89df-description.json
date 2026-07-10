@@ -1,0 +1,14 @@
+{
+  "id": "2ff0d60f-d4ea-47ce-97e9-cf0358af89df-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An equivalence relation on $X$ is a relation that is reflexive, symmetric, and transitive. Equality is the most obvious equivalence relation."
+  },
+  "source": "",
+  "sections": []
+}

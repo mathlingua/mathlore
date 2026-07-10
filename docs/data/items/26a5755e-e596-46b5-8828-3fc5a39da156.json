@@ -1,0 +1,92 @@
+{
+  "id": "26a5755e-e596-46b5-8828-3fc5a39da156",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c66756e6374696f6e3a66726f6d3a746f"
+  ],
+  "heading": "\\function:from{A}:to{B}",
+  "heading_latex": "\\textrm{function from }A\\textrm{ to }B",
+  "body_text": null,
+  "page": null,
+  "source": "[\\function:from{A}:to{B}]\nDescribes: f(x__) ::= y_\nwhen: A, B is \\set\nspecifies:\n. x__ \"in\" A\n. y_ \"in\" B\nDocumented:\n. called: \"function from $A?$ to $B?$\"\n. written: \"f? \\colon A? \\to B?\"\n. description: \"A function $f \\colon A \\to B$ assigns to each $a \\in A$ a unique value $f(a) \\in B$. Here $A$ is the domain and $B$ the codomain of $f$. As a relation it is the set of pairs $(a, f(a))$.\"\nId: \"26a5755e-e596-46b5-8828-3fc5a39da156\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "f(x__) ::= y_",
+      "inline_latex": "f(x) ::= y",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "x__ \"in\" A",
+          "latex": "x \\in A"
+        },
+        {
+          "kind": "formulation",
+          "text": "y_ \"in\" B",
+          "latex": "y \\in B"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"function from $A?$ to $B?$\"",
+              "inline_latex": "\\textrm{function from }A\\textrm{ to }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"f? \\colon A? \\to B?\"",
+              "inline_latex": "f \\colon A \\to B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"26a5755e-e596-46b5-8828-3fc5a39da156\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

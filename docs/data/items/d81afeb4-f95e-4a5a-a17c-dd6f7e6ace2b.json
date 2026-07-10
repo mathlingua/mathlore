@@ -1,0 +1,144 @@
+{
+  "id": "d81afeb4-f95e-4a5a-a17c-dd6f7e6ace2b",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e696e74657273656374696f6e3a6f766572"
+  ],
+  "heading": "\\set.theoretic.intersection:over{C}",
+  "heading_latex": "\\textrm{intersection over }C",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.intersection:over{C}]\nDefines: I is \\set\nwhen: C is \\set\nexpresses:\n. forAll: x is \\set\n  then:\n  . have:\n    . forAll: A is \\set\n      where: A \"in\" C\n      then: x \"in\" A\n    iff: x \"in\" I\nDocumented:\n. called: \"intersection over $C?$\"\n. written: \"\\bigcap_{A \\in C?} A\"\n. description: \"The intersection over a nonempty collection $C$ of sets, defined by specification: $x \\in \\bigcap_{A \\in C} A$ if and only if $x \\in A$ for every $A \\in C$. The collection must be nonempty, since the intersection over the empty collection would be the set of all sets.\"\nId: \"d81afeb4-f95e-4a5a-a17c-dd6f7e6ace2b\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "I is \\set",
+      "inline_latex": "I \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "C is \\set",
+      "inline_latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "forAll",
+                              "inline_argument": "A is \\set",
+                              "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                              "arguments": []
+                            },
+                            {
+                              "label": "where",
+                              "inline_argument": "A \"in\" C",
+                              "inline_latex": "A \\in C",
+                              "arguments": []
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": "x \"in\" A",
+                              "inline_latex": "x \\in A",
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "x \"in\" I",
+                      "inline_latex": "x \\in I",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"intersection over $C?$\"",
+              "inline_latex": "\\textrm{intersection over }C",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\bigcap_{A \\in C?} A\"",
+              "inline_latex": "\\bigcap_{A \\in C} A",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d81afeb4-f95e-4a5a-a17c-dd6f7e6ace2b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

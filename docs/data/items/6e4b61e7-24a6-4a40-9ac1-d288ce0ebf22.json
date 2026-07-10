@@ -1,0 +1,72 @@
+{
+  "id": "6e4b61e7-24a6-4a40-9ac1-d288ce0ebf22",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven: a, b, c, d is \\set\nthen: \\set.theoretic.ordered.pair:of{a}:and{b} = \\set.theoretic.ordered.pair:of{c}:and{d}\niff:\n. a = c\n. b = d\nDocumented:\n. description: \"Two ordered pairs are equal if and only if their first coordinates are equal and their second coordinates are equal. This justifies thinking of an ordered pair $(a, b)$ as having a first coordinate $a$ and a second coordinate $b$.\"\nId: \"6e4b61e7-24a6-4a40-9ac1-d288ce0ebf22\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "a, b, c, d is \\set",
+      "inline_latex": "a, b, c, d \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": "\\set.theoretic.ordered.pair:of{a}:and{b} = \\set.theoretic.ordered.pair:of{c}:and{d}",
+      "inline_latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64}{(a, b)} = \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64}{(c, d)}",
+      "arguments": []
+    },
+    {
+      "label": "iff",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "a = c",
+          "latex": "a = c"
+        },
+        {
+          "kind": "formulation",
+          "text": "b = d",
+          "latex": "b = d"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6e4b61e7-24a6-4a40-9ac1-d288ce0ebf22\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

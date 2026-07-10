@@ -1,0 +1,14 @@
+{
+  "id": "27f9dbd5-5b5e-4be3-b280-1afef8411f2d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The primitive object of the theory. Belonging is the undefined notion: for a set $x$ and a set $A$, either $x \\in A$ or $x \\notin A$."
+  },
+  "source": "",
+  "sections": []
+}

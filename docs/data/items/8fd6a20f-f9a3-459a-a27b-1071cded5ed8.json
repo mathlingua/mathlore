@@ -1,0 +1,69 @@
+{
+  "id": "8fd6a20f-f9a3-459a-a27b-1071cded5ed8",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c6f6e65"
+  ],
+  "heading": "\\one",
+  "heading_latex": "\\textrm{one}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\one]\nDefines: o := \\set.theoretic.successor{\\set.theoretic.zero} is \\set.theoretic.natural.number\nDocumented:\n. called: \"one\"\n. written: \"1\"\n. description: \"The natural number $1 = 0^+ = \\{0\\}$, the successor of zero.\"\nId: \"8fd6a20f-f9a3-459a-a27b-1071cded5ed8\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "o := \\set.theoretic.successor{\\set.theoretic.zero} is \\set.theoretic.natural.number",
+      "inline_latex": "o := \\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{\\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0}^+} \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"one\"",
+              "inline_latex": "\\textrm{one}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"1\"",
+              "inline_latex": "1",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8fd6a20f-f9a3-459a-a27b-1071cded5ed8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

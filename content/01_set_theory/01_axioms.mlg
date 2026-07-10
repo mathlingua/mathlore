@@ -1,0 +1,71 @@
+SectionTitle: "The First Axioms of ZF Set Theory"
+Id: "b86ed63c-9f53-4130-b6c3-bdec091d6f0a"
+
+
+SubsectionTitle: "Extension, Specification, and the Empty Set"
+Id: "82a246f0-023f-4a1c-b9f5-6b9be328316c"
+
+
+[\set]
+Describes: X
+satisfies:
+. forAll: Y is \set
+  then: \axiom.of.extension#given{A := X; B := Y}
+. \axiom.of.specification#given{X}
+. \axiom.of.empty.set
+Enables:
+. capability: x_ "in" X :-> \\abstract
+Documented:
+. called: "set"
+. description: "The primitive object of the theory. Belonging is the undefined notion: for a set $x$ and a set $A$, either $x \in A$ or $x \notin A$."
+Id: "27f9dbd5-5b5e-4be3-b280-1afef8411f2d"
+
+
+[\axiom.of.extension]
+Axiom: "Axiom of Extension"
+given: A, B is \set
+then: A = B
+iff:
+. forAll: x is \set
+  then:
+  . have: x "in" A
+    iff: x "in" B
+Documented:
+. description: "Two sets are equal if and only if they contain precisely the same elements, so the only thing which matters about a set is which elements it has."
+Id: "7b04025f-2483-4935-8ed4-11d22b87b354"
+
+
+[\axiom.of.specification]
+Axiom: "Axiom of Specification"
+given: A is \set
+then:
+. exists: B \:subset:/ A
+Documented:
+. description: "If $A$ is a set and $P(x)$ is a formula of first order logic, then there exists a set $B = \{x \in A \mid P(x)\}$ containing precisely each $x \in A$ such that $P(x)$ is true. The set $B$ is unique by the axiom of extension."
+Id: "1a505620-e0b9-42a8-955a-9480abb85a3e"
+
+
+[\empty.set]
+Defines: E is \set
+expresses:
+. forAll: x is \set
+  then:
+  . not: x "in" E
+Documented:
+. called: "empty set"
+. written: "\emptyset"
+. description: "The unique set with no elements, also denoted $\{\}$. Its existence is guaranteed by the axiom of the empty set, and its uniqueness by the axiom of extension."
+Id: "6953e4a8-96c5-44f5-8c58-b55a02116d4a"
+
+
+[\axiom.of.empty.set]
+Axiom: "Axiom of Empty Set"
+then:
+. exists: E is \set
+  suchThat:
+  . forAll: x is \set
+    then:
+    . not: x "in" E
+Documented:
+. description: "There exists a set $\emptyset$ such that for every set $x$, $x \notin \emptyset$. This set is a reasonable starting point from which further sets are built."
+Id: "eeec7d4c-0615-4a7b-a0d0-d110c8a6f033"

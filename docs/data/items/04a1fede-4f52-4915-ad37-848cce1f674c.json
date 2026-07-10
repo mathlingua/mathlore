@@ -1,0 +1,158 @@
+{
+  "id": "04a1fede-4f52-4915-ad37-848cce1f674c",
+  "kind": "Lemma",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Lemma:\n. \"Lemma 4.35\"\ngiven:\n. C is \\set\nwhere:\n. forAll: A, B is \\set\n  where:\n  . A \"in\" C\n  . B \"in\" C\n  then:\n  . anyOf:\n    . A \\.continuation.of./ B\n    . B \\.continuation.of./ A\nthen:\n. exists: U is \\set\n  suchThat:\n  . \\well.ordered{U}\nDocumented:\n. description: \"Let $C$ be a chain with respect to continuation and $U = \\bigcup_{D \\in C} D$. Then there is a unique well ordering of $U$ making $U$ a continuation of each element of $C$ distinct from $U$. This lets one build a well ordered set from a chain of initial segments.\"\nId: \"04a1fede-4f52-4915-ad37-848cce1f674c\"",
+  "sections": [
+    {
+      "label": "Lemma",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Lemma 4.35",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "C is \\set",
+          "latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A, B is \\set",
+              "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "A \"in\" C",
+                  "latex": "A \\in C"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "B \"in\" C",
+                  "latex": "B \\in C"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "anyOf",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "A \\.continuation.of./ B",
+                          "latex": "\\htmlData{mlg-ref=5c2e636f6e74696e756174696f6e2e6f662e2f}{A \\text{ is a continuation of } B}"
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "B \\.continuation.of./ A",
+                          "latex": "\\htmlData{mlg-ref=5c2e636f6e74696e756174696f6e2e6f662e2f}{B \\text{ is a continuation of } A}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "U is \\set",
+              "inline_latex": "U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "\\well.ordered{U}",
+                  "latex": "\\htmlData{mlg-ref=5c77656c6c2e6f726465726564}{U \\text{ is well ordered}}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"04a1fede-4f52-4915-ad37-848cce1f674c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

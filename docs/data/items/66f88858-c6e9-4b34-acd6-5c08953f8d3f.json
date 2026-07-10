@@ -1,0 +1,27 @@
+{
+  "id": "66f88858-c6e9-4b34-acd6-5c08953f8d3f",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Finite and Infinite Sets, Partial Order, and Choice"
+  },
+  "source": "SectionTitle: \"Finite and Infinite Sets, Partial Order, and Choice\"\nId: \"66f88858-c6e9-4b34-acd6-5c08953f8d3f\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Finite and Infinite Sets, Partial Order, and Choice\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"66f88858-c6e9-4b34-acd6-5c08953f8d3f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

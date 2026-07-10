@@ -1,0 +1,94 @@
+SubsectionTitle: "Arithmetic of the Natural Numbers"
+Id: "95ddf020-837d-4841-89ba-9c96fc5e4f9a"
+
+
+[\one]
+Defines: o := \set.theoretic.successor{\set.theoretic.zero} is \set.theoretic.natural.number
+Documented:
+. called: "one"
+. written: "1"
+. description: "The natural number $1 = 0^+ = \{0\}$, the successor of zero."
+Id: "8fd6a20f-f9a3-459a-a27b-1071cded5ed8"
+
+
+[\sum:of{m}:and{n}]
+Defines: s is \set.theoretic.natural.number
+when: m, n is \set.theoretic.natural.number
+expresses:
+. \sum:of{m}:and{\set.theoretic.zero} = m
+. forAll: k is \set.theoretic.natural.number
+  then: \sum:of{m}:and{\set.theoretic.successor{k}} = \set.theoretic.successor{\sum:of{m}:and{k}}
+Documented:
+. called: "sum of $m?$ and $n?$"
+. written: "m? + n?"
+. description: "The sum $m + n$, defined by recursion on $n$: $m + 0 = m$ and $m + n^+ = (m + n)^+$. Addition is the binary operation given by $+$."
+Id: "143db882-1e6d-4357-a241-783c6daa562c"
+
+
+[\product:of{m}:and{n}]
+Defines: p is \set.theoretic.natural.number
+when: m, n is \set.theoretic.natural.number
+expresses:
+. \product:of{m}:and{\set.theoretic.zero} = \set.theoretic.zero
+. forAll: k is \set.theoretic.natural.number
+  then: \product:of{m}:and{\set.theoretic.successor{k}} = \sum:of{\product:of{m}:and{k}}:and{m}
+Documented:
+. called: "product of $m?$ and $n?$"
+. written: "m? \cdot n?"
+. description: "The product $m \cdot n$, defined by recursion on $n$: $m \cdot 0 = 0$ and $m \cdot n^+ = m \cdot n + m$. Multiplication is the binary operation given by $\cdot$."
+Id: "24bdd310-86f4-4c1c-a44d-c850304d6d49"
+
+
+[\power:base{m}:exponent{n}]
+Defines: e is \set.theoretic.natural.number
+when: m, n is \set.theoretic.natural.number
+expresses:
+. \power:base{m}:exponent{\set.theoretic.zero} = \one
+. forAll: k is \set.theoretic.natural.number
+  then: \power:base{m}:exponent{\set.theoretic.successor{k}} = \product:of{\power:base{m}:exponent{k}}:and{m}
+Documented:
+. called: "$m?$ to the power $n?$"
+. written: "m?^{n?}"
+. description: "The power $m^n$, defined by recursion on $n$: $m^0 = 1$ and $m^{n^+} = m^n \cdot m$."
+Id: "671ceb2a-9714-424f-813e-6a971a462a3d"
+
+
+Theorem:
+given: k, m, n is \set.theoretic.natural.number
+then:
+. \sum:of{\sum:of{k}:and{m}}:and{n} = \sum:of{k}:and{\sum:of{m}:and{n}}
+. \sum:of{m}:and{n} = \sum:of{n}:and{m}
+Documented:
+. description: "Addition is associative and commutative: for all $k, m, n \in \omega$, $(k + m) + n = k + (m + n)$ and $m + n = n + m$. Both are proved by induction using the recursive definition of addition."
+Id: "ff7967ab-f54e-4124-bb1b-e74888d23635"
+
+Theorem:
+given: k, m, n is \set.theoretic.natural.number
+then:
+. \product:of{k}:and{\sum:of{m}:and{n}} = \sum:of{\product:of{k}:and{m}}:and{\product:of{k}:and{n}}
+. \product:of{\sum:of{k}:and{m}}:and{n} = \sum:of{\product:of{k}:and{n}}:and{\product:of{m}:and{n}}
+Documented:
+. description: "Multiplication distributes over addition: for all $k, m, n \in \omega$, $k(m + n) = km + kn$ and $(k + m)n = kn + mn$."
+Id: "77b4c732-08a1-4e48-9ead-d13457f0c09b"
+
+
+Corollary: "Associativity and Commutativity of Multiplication"
+of: "Theorem 3.13 (Distributivity)"
+given:
+. k, m, n is \set.theoretic.natural.number
+then:
+. \product:of{\product:of{k}:and{m}}:and{n} = \product:of{k}:and{\product:of{m}:and{n}}
+. \product:of{m}:and{n} = \product:of{n}:and{m}
+Documented:
+. description: "Multiplication is associative and commutative: for all $k, m, n \in \omega$, $(k \cdot m) \cdot n = k \cdot (m \cdot n)$ and $m \cdot n = n \cdot m$. These follow from distributivity by induction."
+Id: "c1571597-e7ce-45b2-829e-88011eb561aa"
+
+Theorem: "Theorem 3.16 (Laws of Exponents)"
+given: k, m, n is \set.theoretic.natural.number
+then:
+. \power:base{k}:exponent{\sum:of{m}:and{n}} = \product:of{\power:base{k}:exponent{m}}:and{\power:base{k}:exponent{n}}
+. \product:of{\power:base{k}:exponent{n}}:and{\power:base{m}:exponent{n}} = \power:base{\product:of{k}:and{m}}:exponent{n}
+. \power:base{\power:base{k}:exponent{m}}:exponent{n} = \power:base{k}:exponent{\product:of{m}:and{n}}
+Documented:
+. description: "For all $k, m, n \in \omega$: (a) $k^{m + n} = k^m k^n$; (b) $k^n m^n = (km)^n$; and (c) $(k^m)^n = k^{mn}$. Each is proved by induction on $n$."
+Id: "90e417b1-bf66-4c30-8d90-10bfb011da6c"

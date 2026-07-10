@@ -1,0 +1,107 @@
+{
+  "id": "6953e4a8-96c5-44f5-8c58-b55a02116d4a",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c656d7074792e736574"
+  ],
+  "heading": "\\empty.set",
+  "heading_latex": "\\textrm{empty set}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\empty.set]\nDefines: E is \\set\nexpresses:\n. forAll: x is \\set\n  then:\n  . not: x \"in\" E\nDocumented:\n. called: \"empty set\"\n. written: \"\\emptyset\"\n. description: \"The unique set with no elements, also denoted $\\{\\}$. Its existence is guaranteed by the axiom of the empty set, and its uniqueness by the axiom of extension.\"\nId: \"6953e4a8-96c5-44f5-8c58-b55a02116d4a\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "E is \\set",
+      "inline_latex": "E \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "not",
+                      "inline_argument": "x \"in\" E",
+                      "inline_latex": "x \\in E",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"empty set\"",
+              "inline_latex": "\\textrm{empty set}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\emptyset\"",
+              "inline_latex": "\\emptyset",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6953e4a8-96c5-44f5-8c58-b55a02116d4a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

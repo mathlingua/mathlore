@@ -1,0 +1,14 @@
+{
+  "id": "532996b0-e015-492f-9ea7-c312ebf89aa0-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A finite collection $X$ of sets has a choice function if and only if no set in $X$ is empty. The forward direction is Proposition 4.10; the reverse is proved by induction on the cardinality of $X$."
+  },
+  "source": "",
+  "sections": []
+}

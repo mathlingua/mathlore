@@ -1,0 +1,14 @@
+{
+  "id": "91178a56-7d69-4e73-b56a-1cf593c93c92-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The natural numbers are well ordered. If a nonempty $A \\subseteq \\omega$ had no least element, induction would show that no natural number lies in $A$, so $A = \\emptyset$, a contradiction."
+  },
+  "source": "",
+  "sections": []
+}

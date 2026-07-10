@@ -1,0 +1,75 @@
+{
+  "id": "19662b6b-7e78-4d4a-9455-11879fcf36b2",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e756e696f6e3a6f663a616e64"
+  ],
+  "heading": "\\set.theoretic.union:of{A}:and{B}",
+  "heading_latex": "\\textrm{union of }A\\textrm{ and }B",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.union:of{A}:and{B}]\nDefines: U := \\set.theoretic.union:over{\\set.theoretic.pair:of{A}:and{B}} is \\set\nwhen: A, B is \\set\nDocumented:\n. called: \"union of $A?$ and $B?$\"\n. written: \"A? \\cup B?\"\n. description: \"The union $A \\cup B$, defined as the union over the collection $\\{A, B\\}$, so that $x \\in A \\cup B$ if and only if $x \\in A$ or $x \\in B$.\"\nId: \"19662b6b-7e78-4d4a-9455-11879fcf36b2\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "U := \\set.theoretic.union:over{\\set.theoretic.pair:of{A}:and{B}} is \\set",
+      "inline_latex": "U := \\htmlData{mlg-ref=5c7365742e7468656f72657469632e756e696f6e3a6f766572}{\\bigcup_{A \\in \\htmlData{mlg-ref=5c7365742e7468656f72657469632e706169723a6f663a616e64}{\\{A, B\\}}} A} \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"union of $A?$ and $B?$\"",
+              "inline_latex": "\\textrm{union of }A\\textrm{ and }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\cup B?\"",
+              "inline_latex": "A \\cup B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"19662b6b-7e78-4d4a-9455-11879fcf36b2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

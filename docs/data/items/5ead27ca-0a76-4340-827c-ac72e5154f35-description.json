@@ -1,0 +1,14 @@
+{
+  "id": "5ead27ca-0a76-4340-827c-ac72e5154f35-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A partially ordered set $X$ is well ordered when every nonempty subset of $X$ has a least element. The natural numbers are the prototypical well ordered set."
+  },
+  "source": "",
+  "sections": []
+}

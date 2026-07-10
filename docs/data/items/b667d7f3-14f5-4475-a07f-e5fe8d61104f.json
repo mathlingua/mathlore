@@ -1,0 +1,27 @@
+{
+  "id": "b667d7f3-14f5-4475-a07f-e5fe8d61104f",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "The Peano Axioms and the Axiom of Infinity"
+  },
+  "source": "SubsectionTitle: \"The Peano Axioms and the Axiom of Infinity\"\nId: \"b667d7f3-14f5-4475-a07f-e5fe8d61104f\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"The Peano Axioms and the Axiom of Infinity\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b667d7f3-14f5-4475-a07f-e5fe8d61104f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

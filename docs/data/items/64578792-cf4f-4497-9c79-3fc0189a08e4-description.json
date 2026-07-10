@@ -1,0 +1,14 @@
+{
+  "id": "64578792-cf4f-4497-9c79-3fc0189a08e4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The cartesian product $A \\times B = \\{z \\in \\mathcal{P}(\\mathcal{P}(A \\cup B)) \\mid z = (a, b) \\text{ for some } a \\in A, b \\in B\\}$, the set of all ordered pairs $(a, b)$ with $a \\in A$ and $b \\in B$."
+  },
+  "source": "",
+  "sections": []
+}

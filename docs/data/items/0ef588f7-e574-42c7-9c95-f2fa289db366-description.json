@@ -1,0 +1,14 @@
+{
+  "id": "0ef588f7-e574-42c7-9c95-f2fa289db366-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A partially ordered set $X$ is totally ordered, or a chain, when every two elements are comparable: $a \\preceq b$ or $b \\preceq a$ for all $a, b \\in X$."
+  },
+  "source": "",
+  "sections": []
+}

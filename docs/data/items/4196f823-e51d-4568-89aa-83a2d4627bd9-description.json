@@ -1,0 +1,14 @@
+{
+  "id": "4196f823-e51d-4568-89aa-83a2d4627bd9-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "$A$ is a subset of $B$, written $A \\subseteq B$, when every element of $A$ is also an element of $B$."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "84a18ba5-ea52-4fef-b5eb-dc3488a5f93b",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "Pairing, Union, Intersection, and Difference"
+  },
+  "source": "SubsectionTitle: \"Pairing, Union, Intersection, and Difference\"\nId: \"84a18ba5-ea52-4fef-b5eb-dc3488a5f93b\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"Pairing, Union, Intersection, and Difference\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"84a18ba5-ea52-4fef-b5eb-dc3488a5f93b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

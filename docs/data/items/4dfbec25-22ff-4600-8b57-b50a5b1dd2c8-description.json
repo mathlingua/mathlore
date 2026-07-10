@@ -1,0 +1,14 @@
+{
+  "id": "4dfbec25-22ff-4600-8b57-b50a5b1dd2c8-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A chain in a partially ordered set $X$ is a totally ordered subset $A \\subseteq X$: any two elements of $A$ are comparable."
+  },
+  "source": "",
+  "sections": []
+}

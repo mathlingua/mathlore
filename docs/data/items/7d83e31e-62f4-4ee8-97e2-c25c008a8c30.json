@@ -1,0 +1,27 @@
+{
+  "id": "7d83e31e-62f4-4ee8-97e2-c25c008a8c30",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "\nAcknowledgments. The author thanks his mentor Tung Nguyen for guidance and\nfeedback, Professor May for organizing the REU and for his comments, and\nProfessor Malliaris for her comments. The structure and content of these notes\nare heavily influenced by Naive Set Theory by Paul Halmos, and most of the proofs\nare the same as or highly similar to those found in that text.\n"
+  },
+  "source": "Text: \"\nAcknowledgments. The author thanks his mentor Tung Nguyen for guidance and\nfeedback, Professor May for organizing the REU and for his comments, and\nProfessor Malliaris for her comments. The structure and content of these notes\nare heavily influenced by Naive Set Theory by Paul Halmos, and most of the proofs\nare the same as or highly similar to those found in that text.\n\"\nId: \"7d83e31e-62f4-4ee8-97e2-c25c008a8c30\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"\nAcknowledgments. The author thanks his mentor Tung Nguyen for guidance and\nfeedback, Professor May for organizing the REU and for his comments, and\nProfessor Malliaris for her comments. The structure and content of these notes\nare heavily influenced by Naive Set Theory by Paul Halmos, and most of the proofs\nare the same as or highly similar to those found in that text.\n\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7d83e31e-62f4-4ee8-97e2-c25c008a8c30\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

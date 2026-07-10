@@ -1,0 +1,111 @@
+{
+  "id": "27f9dbd5-5b5e-4be3-b280-1afef8411f2d",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c736574"
+  ],
+  "heading": "\\set",
+  "heading_latex": "\\textrm{set}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set]\nDescribes: X\nsatisfies:\n. forAll: Y is \\set\n  then: \\axiom.of.extension#given{A := X; B := Y}\n. \\axiom.of.specification#given{X}\n. \\axiom.of.empty.set\nEnables:\n. capability: x_ \"in\" X :-> \\\\abstract\nDocumented:\n. called: \"set\"\n. description: \"The primitive object of the theory. Belonging is the undefined notion: for a set $x$ and a set $A$, either $x \\in A$ or $x \\notin A$.\"\nId: \"27f9dbd5-5b5e-4be3-b280-1afef8411f2d\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "X",
+      "inline_latex": "X",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "Y is \\set",
+              "inline_latex": "Y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "\\axiom.of.extension#given{A := X; B := Y}",
+              "inline_latex": "\\htmlData{mlg-ref=5c6178696f6d2e6f662e657874656e73696f6e}{\\textrm{Axiom of Extension}} \\textrm{ given } X; Y",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "\\axiom.of.specification#given{X}",
+          "latex": "\\htmlData{mlg-ref=5c6178696f6d2e6f662e73706563696669636174696f6e}{\\textrm{Axiom of Specification}} \\textrm{ given } X"
+        },
+        {
+          "kind": "formulation",
+          "text": "\\axiom.of.empty.set",
+          "latex": "\\htmlData{mlg-ref=5c6178696f6d2e6f662e656d7074792e736574}{\\textrm{Axiom of Empty Set}}"
+        }
+      ]
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "x_ \"in\" X :-> \\\\abstract",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"set\"",
+              "inline_latex": "\\textrm{set}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"27f9dbd5-5b5e-4be3-b280-1afef8411f2d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

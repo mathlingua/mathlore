@@ -1,0 +1,14 @@
+{
+  "id": "eeec7d4c-0615-4a7b-a0d0-d110c8a6f033-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "There exists a set $\\emptyset$ such that for every set $x$, $x \\notin \\emptyset$. This set is a reasonable starting point from which further sets are built."
+  },
+  "source": "",
+  "sections": []
+}

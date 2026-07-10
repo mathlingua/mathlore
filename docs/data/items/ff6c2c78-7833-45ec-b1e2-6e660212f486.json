@@ -1,0 +1,27 @@
+{
+  "id": "ff6c2c78-7833-45ec-b1e2-6e660212f486",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "\nHowever, theories of unrestricted comprehension are fundamentally unsound.\nRussell's Paradox is a well known example of an inconsistency which arises in\nsuch a theory. Namely, if unrestricted comprehension is assumed, one could\nconsider the set $A = \\{x \\mid x \\notin x\\}$, that is, the set of all sets which\ndo not contain themselves. Asking whether $A \\in A$ leads to a contradiction:\nif $A \\in A$, then by the definition of $A$ we conclude $A \\notin A$, and if\n$A \\notin A$, then again by the definition of $A$ we conclude $A \\in A$. One is\nleft with the highly problematic statement that $A \\in A \\iff A \\notin A$.\nThus, this development proceeds with an axiomatic characterization of sets which\nmore carefully characterizes them and allows one to avoid such paradoxes.\n"
+  },
+  "source": "Text: \"\nHowever, theories of unrestricted comprehension are fundamentally unsound.\nRussell's Paradox is a well known example of an inconsistency which arises in\nsuch a theory. Namely, if unrestricted comprehension is assumed, one could\nconsider the set $A = \\{x \\mid x \\notin x\\}$, that is, the set of all sets which\ndo not contain themselves. Asking whether $A \\in A$ leads to a contradiction:\nif $A \\in A$, then by the definition of $A$ we conclude $A \\notin A$, and if\n$A \\notin A$, then again by the definition of $A$ we conclude $A \\in A$. One is\nleft with the highly problematic statement that $A \\in A \\iff A \\notin A$.\nThus, this development proceeds with an axiomatic characterization of sets which\nmore carefully characterizes them and allows one to avoid such paradoxes.\n\"\nId: \"ff6c2c78-7833-45ec-b1e2-6e660212f486\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"\nHowever, theories of unrestricted comprehension are fundamentally unsound.\nRussell's Paradox is a well known example of an inconsistency which arises in\nsuch a theory. Namely, if unrestricted comprehension is assumed, one could\nconsider the set $A = \\{x \\mid x \\notin x\\}$, that is, the set of all sets which\ndo not contain themselves. Asking whether $A \\in A$ leads to a contradiction:\nif $A \\in A$, then by the definition of $A$ we conclude $A \\notin A$, and if\n$A \\notin A$, then again by the definition of $A$ we conclude $A \\in A$. One is\nleft with the highly problematic statement that $A \\in A \\iff A \\notin A$.\nThus, this development proceeds with an axiomatic characterization of sets which\nmore carefully characterizes them and allows one to avoid such paradoxes.\n\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ff6c2c78-7833-45ec-b1e2-6e660212f486\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

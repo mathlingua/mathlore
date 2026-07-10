@@ -1,0 +1,106 @@
+{
+  "id": "4196f823-e51d-4568-89aa-83a2d4627bd9",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c3a7375627365743a2f"
+  ],
+  "heading": "A \\:subset:/ B",
+  "heading_latex": "\\textrm{subset}",
+  "body_text": null,
+  "page": null,
+  "source": "[A \\:subset:/ B]\nDescribes: A\nwhen: B is \\set\nextends: A is \\set\nsatisfies:\n. forAll: x \"in\" A\n  then: x \"in\" B\nDocumented:\n. called: \"subset\"\n. written: \"A? \\subseteq B?\"\n. description: \"$A$ is a subset of $B$, written $A \\subseteq B$, when every element of $A$ is also an element of $B$.\"\nId: \"4196f823-e51d-4568-89aa-83a2d4627bd9\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "A",
+      "inline_latex": "A",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "B is \\set",
+      "inline_latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "extends",
+      "inline_argument": "A is \\set",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" A",
+              "inline_latex": "x \\in A",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "x \"in\" B",
+              "inline_latex": "x \\in B",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"subset\"",
+              "inline_latex": "\\textrm{subset}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\subseteq B?\"",
+              "inline_latex": "A \\subseteq B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4196f823-e51d-4568-89aa-83a2d4627bd9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

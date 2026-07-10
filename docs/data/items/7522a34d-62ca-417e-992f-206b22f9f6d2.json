@@ -1,0 +1,30 @@
+{
+  "id": "7522a34d-62ca-417e-992f-206b22f9f6d2",
+  "kind": "Person",
+  "definition_keys": [],
+  "heading": "@christopher.wilson",
+  "heading_latex": "\\textrm{Christopher Wilson}",
+  "body_text": "Author of a brief introduction to Zermelo-Fraenkel and Choice set theory.",
+  "page": null,
+  "source": "[@christopher.wilson]\nPerson: \"Christopher Wilson\"\nbiography: \"Author of a brief introduction to Zermelo-Fraenkel and Choice set theory.\"\nId: \"7522a34d-62ca-417e-992f-206b22f9f6d2\"",
+  "sections": [
+    {
+      "label": "Person",
+      "inline_argument": "\"Christopher Wilson\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "biography",
+      "inline_argument": "\"Author of a brief introduction to Zermelo-Fraenkel and Choice set theory.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7522a34d-62ca-417e-992f-206b22f9f6d2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

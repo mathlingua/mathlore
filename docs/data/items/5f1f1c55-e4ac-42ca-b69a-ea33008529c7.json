@@ -1,0 +1,203 @@
+{
+  "id": "5f1f1c55-e4ac-42ca-b69a-ea33008529c7",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e636f6e74696e756174696f6e2e6f662e2f"
+  ],
+  "heading": "A \\.continuation.of./ B",
+  "heading_latex": "\\textrm{continuation}",
+  "body_text": null,
+  "page": null,
+  "source": "[A \\.continuation.of./ B]\nStates:\nwhen:\n. A is \\set\n. B is \\set\nthat:\n. allOf:\n  . B \\:subset:/ A\n  . forAll: b is \\set\n    where:\n    . b \"in\" B\n    then:\n    . forAll: a is \\set\n      where:\n      . a \"in\" A\n      then:\n      . if:\n        . a \\:precedes:/ b\n        then:\n        . a \"in\" B\nDocumented:\n. called: \"continuation\"\n. written: \"A? \\text{ is a continuation of } B?\"\n. description: \"A well ordered set $A$ is a continuation of a well ordered set $B$ when $B \\subseteq A$, $B$ is an initial segment of $A$, and the ordering of $B$ is preserved in $A$.\"\nId: \"5f1f1c55-e4ac-42ca-b69a-ea33008529c7\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A is \\set",
+          "latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "B is \\set",
+          "latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "allOf",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "B \\:subset:/ A",
+                  "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{B \\subseteq A}"
+                },
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "b is \\set",
+                      "inline_latex": "b \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "b \"in\" B",
+                          "latex": "b \\in B"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "forAll",
+                              "inline_argument": "a is \\set",
+                              "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                              "arguments": []
+                            },
+                            {
+                              "label": "where",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "a \"in\" A",
+                                  "latex": "a \\in A"
+                                }
+                              ]
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "group",
+                                  "heading": null,
+                                  "sections": [
+                                    {
+                                      "label": "if",
+                                      "inline_argument": null,
+                                      "inline_latex": null,
+                                      "arguments": [
+                                        {
+                                          "kind": "formulation",
+                                          "text": "a \\:precedes:/ b",
+                                          "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{a \\preceq b}"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "label": "then",
+                                      "inline_argument": null,
+                                      "inline_latex": null,
+                                      "arguments": [
+                                        {
+                                          "kind": "formulation",
+                                          "text": "a \"in\" B",
+                                          "latex": "a \\in B"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"continuation\"",
+              "inline_latex": "\\textrm{continuation}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\text{ is a continuation of } B?\"",
+              "inline_latex": "A \\text{ is a continuation of } B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5f1f1c55-e4ac-42ca-b69a-ea33008529c7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

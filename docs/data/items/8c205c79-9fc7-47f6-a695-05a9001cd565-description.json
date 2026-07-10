@@ -1,0 +1,14 @@
+{
+  "id": "8c205c79-9fc7-47f6-a695-05a9001cd565-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The natural numbers are the set $\\omega$ with successor function $S \\colon \\omega \\to \\omega$ satisfying: (I) there is an element $0 \\in \\omega$; (II) if $n \\in \\omega$ then $S(n) \\in \\omega$; (III) $S(n) \\neq 0$; (IV) $S$ is injective; and (V) the principle of mathematical induction: any inductive subset of $\\omega$ equals $\\omega$."
+  },
+  "source": "",
+  "sections": []
+}

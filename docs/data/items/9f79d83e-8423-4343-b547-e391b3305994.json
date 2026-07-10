@@ -1,0 +1,143 @@
+{
+  "id": "9f79d83e-8423-4343-b547-e391b3305994",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e706169723a6f663a616e64"
+  ],
+  "heading": "\\set.theoretic.pair:of{a}:and{b}",
+  "heading_latex": "\\textrm{pair of }a\\textrm{ and }b",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.pair:of{a}:and{b}]\nDefines: P is \\set\nwhen: a, b is \\set\nexpresses:\n. forAll: x is \\set\n  then:\n  . have:\n    . anyOf:\n      . x = a\n      . x = b\n    iff: x \"in\" P\nDocumented:\n. called: \"pair of $a?$ and $b?$\"\n. written: \"\\{a?, b?\\}\"\n. description: \"The set $\\{a, b\\}$ containing precisely $a$ and $b$, guaranteed by the axiom of pairing: if $a$ and $b$ are sets, then there exists a set containing precisely $a$ and $b$.\"\nId: \"9f79d83e-8423-4343-b547-e391b3305994\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "P is \\set",
+      "inline_latex": "P \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "a, b is \\set",
+      "inline_latex": "a, b \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "anyOf",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "x = a",
+                                  "latex": "x = a"
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "x = b",
+                                  "latex": "x = b"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "x \"in\" P",
+                      "inline_latex": "x \\in P",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"pair of $a?$ and $b?$\"",
+              "inline_latex": "\\textrm{pair of }a\\textrm{ and }b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\{a?, b?\\}\"",
+              "inline_latex": "\\{a, b\\}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"9f79d83e-8423-4343-b547-e391b3305994\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

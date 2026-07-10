@@ -1,0 +1,27 @@
+{
+  "id": "fce2c58a-edeb-4af2-b2a3-c1f67b8d31d0",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "\nA basic axiomatic development of Zermelo-Fraenkel and Choice set theory,\ncommonly abbreviated ZFC. This work is aimed in particular at students of\nmathematics who are familiar with set theory from a naive perspective and\nare interested in the underlying axiomatic development. It quickly reviews some\nbasic concepts of set theory before focusing on the set theoretic definition of\nthe natural numbers and the equivalence of the axiom of choice, Zorn's lemma,\nand the well ordering principle.\n"
+  },
+  "source": "Text: \"\nA basic axiomatic development of Zermelo-Fraenkel and Choice set theory,\ncommonly abbreviated ZFC. This work is aimed in particular at students of\nmathematics who are familiar with set theory from a naive perspective and\nare interested in the underlying axiomatic development. It quickly reviews some\nbasic concepts of set theory before focusing on the set theoretic definition of\nthe natural numbers and the equivalence of the axiom of choice, Zorn's lemma,\nand the well ordering principle.\n\"\nId: \"fce2c58a-edeb-4af2-b2a3-c1f67b8d31d0\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"\nA basic axiomatic development of Zermelo-Fraenkel and Choice set theory,\ncommonly abbreviated ZFC. This work is aimed in particular at students of\nmathematics who are familiar with set theory from a naive perspective and\nare interested in the underlying axiomatic development. It quickly reviews some\nbasic concepts of set theory before focusing on the set theoretic definition of\nthe natural numbers and the equivalence of the axiom of choice, Zorn's lemma,\nand the well ordering principle.\n\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fce2c58a-edeb-4af2-b2a3-c1f67b8d31d0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

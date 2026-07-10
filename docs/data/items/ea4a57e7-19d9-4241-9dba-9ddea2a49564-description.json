@@ -1,0 +1,14 @@
+{
+  "id": "ea4a57e7-19d9-4241-9dba-9ddea2a49564-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An element $a$ is least, smallest, or first in $X$ when $a \\preceq x$ for all $x \\in X$."
+  },
+  "source": "",
+  "sections": []
+}

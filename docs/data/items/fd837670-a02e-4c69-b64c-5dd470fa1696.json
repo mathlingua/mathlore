@@ -1,0 +1,156 @@
+{
+  "id": "fd837670-a02e-4c69-b64c-5dd470fa1696",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\n. \"Theorem 4.33 (Transfinite Induction)\"\ngiven:\n. X is \\set\n. S is \\set\nwhere:\n. \\well.ordered{X}\n. S \\:subset:/ X\n. forAll: x is \\set\n  where:\n  . x \"in\" X\n  then:\n  . if:\n    . \\initial.segment:in{X}:of{x} \\:subset:/ S\n    then:\n    . x \"in\" S\nthen:\n. S = X\nDocumented:\n. description: \"Suppose $X$ is well ordered and $S \\subseteq X$ is such that for all $x \\in X$, if $s(x) \\subseteq S$ then $x \\in S$. Then $S = X$. This is the analogue for well ordered sets of the principle of mathematical induction.\"\nId: \"fd837670-a02e-4c69-b64c-5dd470fa1696\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Theorem 4.33 (Transfinite Induction)",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "S is \\set",
+          "latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\well.ordered{X}",
+          "latex": "\\htmlData{mlg-ref=5c77656c6c2e6f726465726564}{X \\text{ is well ordered}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "S \\:subset:/ X",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq X}"
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "x \"in\" X",
+                  "latex": "x \\in X"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "\\initial.segment:in{X}:of{x} \\:subset:/ S",
+                          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{\\htmlData{mlg-ref=5c696e697469616c2e7365676d656e743a696e3a6f66}{s(x)} \\subseteq S}"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "x \"in\" S",
+                          "latex": "x \\in S"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "S = X",
+          "latex": "S = X"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fd837670-a02e-4c69-b64c-5dd470fa1696\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

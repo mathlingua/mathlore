@@ -1,0 +1,87 @@
+{
+  "id": "7c607037-392f-451e-9945-d1676222c368",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\nthen:\n. exists: W is \\(inductive)::set\n  suchThat:\n  . forAll: B is \\(inductive)::set\n    then: W \\:subset?:/ B\nDocumented:\n. description: \"There exists a minimal inductive set; that is, an inductive set $\\omega$ such that for every inductive set $B$, $\\omega \\subseteq B$. It is obtained as the intersection of all inductive subsets of a given inductive set, and it is unique by extension. This minimal inductive set is the set $\\omega$ of natural numbers.\"\nId: \"7c607037-392f-451e-9945-d1676222c368\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "W is \\(inductive)::set",
+              "inline_latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c696e647563746976653a3a736574}{\\textrm{inductive}}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "B is \\(inductive)::set",
+                      "inline_latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c696e647563746976653a3a736574}{\\textrm{inductive}}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "W \\:subset?:/ B",
+                      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{W \\subseteq B}",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7c607037-392f-451e-9945-d1676222c368\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

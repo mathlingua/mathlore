@@ -1,0 +1,14 @@
+{
+  "id": "a2451abb-cfc3-4655-a641-ff6826592e7d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A family of sets is a function $A$ with domain $I$. When $A$ is a family over $I$ one writes $\\{A_i\\}_{i \\in I}$ and $A_i$ for $A(i)$."
+  },
+  "source": "",
+  "sections": []
+}

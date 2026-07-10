@@ -1,0 +1,55 @@
+{
+  "id": "027aff39-d5a5-4e39-954d-5b23027e8814",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven: A is \\set\nthen: \\empty.set \\:subset:/ A\nDocumented:\n. description: \"The empty set is a subset of every set, since the defining condition of subset is vacuously satisfied when there are no elements to check.\"\nId: \"027aff39-d5a5-4e39-954d-5b23027e8814\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "A is \\set",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": "\\empty.set \\:subset:/ A",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{\\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset} \\subseteq A}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"027aff39-d5a5-4e39-954d-5b23027e8814\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

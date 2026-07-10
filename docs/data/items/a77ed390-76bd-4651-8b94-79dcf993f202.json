@@ -1,0 +1,103 @@
+{
+  "id": "a77ed390-76bd-4651-8b94-79dcf993f202",
+  "kind": "Lemma",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Lemma:\n. \"Lemma 4.5 (Pigeonhole Principle)\"\ngiven:\n. n is \\set.theoretic.natural.number\n. A is \\set\nwhere:\n. A \\:proper.subset:/ n\nthen:\n. not:\n  . n \\:equivalent:/ A\nDocumented:\n. description: \"If $n \\in \\omega$, then $n$ is not equivalent to any of its proper subsets. Equivalently, every injective function from $n$ to $n$ is surjective. This is proved by induction on $n$.\"\nId: \"a77ed390-76bd-4651-8b94-79dcf993f202\"",
+  "sections": [
+    {
+      "label": "Lemma",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Lemma 4.5 (Pigeonhole Principle)",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "n is \\set.theoretic.natural.number",
+          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "A is \\set",
+          "latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A \\:proper.subset:/ n",
+          "latex": "\\htmlData{mlg-ref=5c3a70726f7065722e7375627365743a2f}{A \\subsetneq n}"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "not",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "n \\:equivalent:/ A",
+                  "latex": "\\htmlData{mlg-ref=5c3a6571756976616c656e743a2f}{n \\sim A}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a77ed390-76bd-4651-8b94-79dcf993f202\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

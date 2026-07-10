@@ -1,0 +1,14 @@
+{
+  "id": "a46ca3e5-e2bd-448d-bf45-8a89973ce143-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "If $X$ is a collection of sets with $\\emptyset \\in X$, then there is no choice function on $X$, since a choice function would have to select an element of the empty set."
+  },
+  "source": "",
+  "sections": []
+}

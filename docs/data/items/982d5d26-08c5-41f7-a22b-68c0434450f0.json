@@ -1,0 +1,106 @@
+{
+  "id": "982d5d26-08c5-41f7-a22b-68c0434450f0",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e72656c6174696f6e3a66726f6d3a746f"
+  ],
+  "heading": "\\set.theoretic.relation:from{A}:to{B}",
+  "heading_latex": "\\textrm{relation from }A\\textrm{ to }B",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.relation:from{A}:to{B}]\nDescribes: R\nwhen: A, B is \\set\nextends: R \\:subset:/ \\set.theoretic.cartesian.product:of{A}:and{B}\nEnables:\n. capability: R(a_, b_) :-> (a_, b_) \"in\" R\n  written: \"a_? \\: R \\: b_?\"\nDocumented:\n. called: \"relation from $A?$ to $B?$\"\n. written: \"R? \\subseteq A? \\times B?\"\n. description: \"A relation $R$ from $A$ to $B$ is a subset of $A \\times B$. When $(a, b) \\in R$ one writes $a \\mathbin{R} b$. A relation from $A$ to $A$ is called a relation in $A$.\"\nId: \"982d5d26-08c5-41f7-a22b-68c0434450f0\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "R",
+      "inline_latex": "R",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "extends",
+      "inline_argument": "R \\:subset:/ \\set.theoretic.cartesian.product:of{A}:and{B}",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{R \\subseteq \\htmlData{mlg-ref=5c7365742e7468656f72657469632e63617274657369616e2e70726f647563743a6f663a616e64}{A \\times B}}",
+      "arguments": []
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "R(a_, b_) :-> (a_, b_) \"in\" R",
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "written",
+              "inline_argument": "\"a_? \\: R \\: b_?\"",
+              "inline_latex": "a \\: R \\: b",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"relation from $A?$ to $B?$\"",
+              "inline_latex": "\\textrm{relation from }A\\textrm{ to }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"R? \\subseteq A? \\times B?\"",
+              "inline_latex": "R \\subseteq A \\times B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"982d5d26-08c5-41f7-a22b-68c0434450f0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

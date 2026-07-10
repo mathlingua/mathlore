@@ -1,0 +1,14 @@
+{
+  "id": "9f79d83e-8423-4343-b547-e391b3305994-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The set $\\{a, b\\}$ containing precisely $a$ and $b$, guaranteed by the axiom of pairing: if $a$ and $b$ are sets, then there exists a set containing precisely $a$ and $b$."
+  },
+  "source": "",
+  "sections": []
+}

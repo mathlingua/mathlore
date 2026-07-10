@@ -1,0 +1,116 @@
+{
+  "id": "2ff0d60f-d4ea-47ce-97e9-cf0358af89df",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c6571756976616c656e63653a3a7365742e7468656f72657469632e72656c6174696f6e3a6f6e"
+  ],
+  "heading": "\\(equivalence)::set.theoretic.relation:on{X}",
+  "heading_latex": "\\textrm{equivalence}\\textrm{ }\\htmlData{mlg-ref=5c7365742e7468656f72657469632e72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(equivalence)::set.theoretic.relation:on{X}]\nRefines: R\nwhen:\n. X is \\set\nsatisfies:\n. allOf:\n  . R is? \\(reflexive)::set.theoretic.relation:on{X}\n  . R is? \\(symmetric)::set.theoretic.relation:on{X}\n  . R is? \\(transitive)::set.theoretic.relation:on{X}\nDocumented:\n. adjective: \"equivalence\"\n. written: \"\\operatorname{equivalence}\"\n. description: \"An equivalence relation on $X$ is a relation that is reflexive, symmetric, and transitive. Equality is the most obvious equivalence relation.\"\nId: \"2ff0d60f-d4ea-47ce-97e9-cf0358af89df\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "R",
+      "inline_latex": "R",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "allOf",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "R is? \\(reflexive)::set.theoretic.relation:on{X}",
+                  "latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c7265666c65786976653a3a7365742e7468656f72657469632e72656c6174696f6e3a6f6e}{\\textrm{reflexive}}\\textrm{ }\\htmlData{mlg-ref=5c7365742e7468656f72657469632e72656c6174696f6e3a6f6e}{\\textrm{relation on }X}"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "R is? \\(symmetric)::set.theoretic.relation:on{X}",
+                  "latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c73796d6d65747269633a3a7365742e7468656f72657469632e72656c6174696f6e3a6f6e}{\\textrm{symmetric}}\\textrm{ }\\htmlData{mlg-ref=5c7365742e7468656f72657469632e72656c6174696f6e3a6f6e}{\\textrm{relation on }X}"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "R is? \\(transitive)::set.theoretic.relation:on{X}",
+                  "latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c7472616e7369746976653a3a7365742e7468656f72657469632e72656c6174696f6e3a6f6e}{\\textrm{transitive}}\\textrm{ }\\htmlData{mlg-ref=5c7365742e7468656f72657469632e72656c6174696f6e3a6f6e}{\\textrm{relation on }X}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"equivalence\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{equivalence}\"",
+              "inline_latex": "\\operatorname{equivalence}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2ff0d60f-d4ea-47ce-97e9-cf0358af89df\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

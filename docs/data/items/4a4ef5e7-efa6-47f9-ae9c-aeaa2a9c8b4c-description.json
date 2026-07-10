@@ -1,0 +1,14 @@
+{
+  "id": "4a4ef5e7-efa6-47f9-ae9c-aeaa2a9c8b4c-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Let $n$ be a natural number. Then (a) if $x \\in n$ then $n \\not\\subseteq x$, and (b) $n$ is transitive. Both parts are proved by induction on $n$, and part (b) is the key fact used to show that the successor function on $\\omega$ is injective."
+  },
+  "source": "",
+  "sections": []
+}

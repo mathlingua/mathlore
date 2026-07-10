@@ -1,0 +1,14 @@
+{
+  "id": "6e4b61e7-24a6-4a40-9ac1-d288ce0ebf22-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two ordered pairs are equal if and only if their first coordinates are equal and their second coordinates are equal. This justifies thinking of an ordered pair $(a, b)$ as having a first coordinate $a$ and a second coordinate $b$."
+  },
+  "source": "",
+  "sections": []
+}

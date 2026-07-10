@@ -1,0 +1,14 @@
+{
+  "id": "9223333f-9416-4f97-9595-f982fd0f4f66-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Natural numbers $m$ and $n$ are comparable when $m \\in n$, $n \\in m$, or $m = n$."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "c1571597-e7ce-45b2-829e-88011eb561aa-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Multiplication is associative and commutative: for all $k, m, n \\in \\omega$, $(k \\cdot m) \\cdot n = k \\cdot (m \\cdot n)$ and $m \\cdot n = n \\cdot m$. These follow from distributivity by induction."
+  },
+  "source": "",
+  "sections": []
+}

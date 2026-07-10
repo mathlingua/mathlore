@@ -1,0 +1,27 @@
+{
+  "id": "3bff0e8c-bc0a-45a3-b7b3-51f9bb2291f9",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "Partial Order"
+  },
+  "source": "SubsectionTitle: \"Partial Order\"\nId: \"3bff0e8c-bc0a-45a3-b7b3-51f9bb2291f9\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"Partial Order\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3bff0e8c-bc0a-45a3-b7b3-51f9bb2291f9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

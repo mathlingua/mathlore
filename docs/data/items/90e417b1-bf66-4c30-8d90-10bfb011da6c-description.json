@@ -1,0 +1,14 @@
+{
+  "id": "90e417b1-bf66-4c30-8d90-10bfb011da6c-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For all $k, m, n \\in \\omega$: (a) $k^{m + n} = k^m k^n$; (b) $k^n m^n = (km)^n$; and (c) $(k^m)^n = k^{mn}$. Each is proved by induction on $n$."
+  },
+  "source": "",
+  "sections": []
+}

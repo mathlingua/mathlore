@@ -1,0 +1,27 @@
+{
+  "id": "11006328-2a35-4c6b-9946-ba40cfc472d4",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "Order on Omega"
+  },
+  "source": "SubsectionTitle: \"Order on Omega\"\nId: \"11006328-2a35-4c6b-9946-ba40cfc472d4\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"Order on Omega\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"11006328-2a35-4c6b-9946-ba40cfc472d4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

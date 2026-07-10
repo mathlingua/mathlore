@@ -1,0 +1,14 @@
+{
+  "id": "dfc8cab3-42ba-44b3-8da0-b58717abeb61-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The power set $\\mathcal{P}(X)$, guaranteed by the axiom of powers: for every set $X$ there exists a set $\\mathcal{P}(X)$ such that $A \\in \\mathcal{P}(X)$ if and only if $A \\subseteq X$."
+  },
+  "source": "",
+  "sections": []
+}

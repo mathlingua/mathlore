@@ -1,0 +1,14 @@
+{
+  "id": "fd837670-a02e-4c69-b64c-5dd470fa1696-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Suppose $X$ is well ordered and $S \\subseteq X$ is such that for all $x \\in X$, if $s(x) \\subseteq S$ then $x \\in S$. Then $S = X$. This is the analogue for well ordered sets of the principle of mathematical induction."
+  },
+  "source": "",
+  "sections": []
+}

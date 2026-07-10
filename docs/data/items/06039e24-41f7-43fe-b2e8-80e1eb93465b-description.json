@@ -1,0 +1,14 @@
+{
+  "id": "06039e24-41f7-43fe-b2e8-80e1eb93465b-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Let $k, m, n \\in \\omega$ with $k < m$. Then (a) $k + n < m + n$, and (b) $kn < mn$ when $n > 0$. Order is preserved by adding a constant and by multiplying by a positive constant."
+  },
+  "source": "",
+  "sections": []
+}

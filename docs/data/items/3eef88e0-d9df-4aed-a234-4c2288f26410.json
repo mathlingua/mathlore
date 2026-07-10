@@ -1,0 +1,100 @@
+{
+  "id": "3eef88e0-d9df-4aed-a234-4c2288f26410",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c66696e6974653a3a736574"
+  ],
+  "heading": "\\(finite)::set",
+  "heading_latex": "\\textrm{finite}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(finite)::set]\nRefines: X\nsatisfies:\n. exists: n is \\set.theoretic.natural.number\n  suchThat:\n  . X \\:equivalent:/ n\nDocumented:\n. adjective: \"finite\"\n. written: \"\\operatorname{finite}\"\n. description: \"A set $E$ is finite when it is equivalent to some natural number, that is, when there is a bijection between $E$ and some $n \\in \\omega$.\"\nId: \"3eef88e0-d9df-4aed-a234-4c2288f26410\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "X",
+      "inline_latex": "X",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "n is \\set.theoretic.natural.number",
+              "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "X \\:equivalent:/ n",
+                  "latex": "\\htmlData{mlg-ref=5c3a6571756976616c656e743a2f}{X \\sim n}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"finite\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{finite}\"",
+              "inline_latex": "\\operatorname{finite}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3eef88e0-d9df-4aed-a234-4c2288f26410\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

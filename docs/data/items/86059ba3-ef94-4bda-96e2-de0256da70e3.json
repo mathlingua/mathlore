@@ -1,0 +1,177 @@
+{
+  "id": "86059ba3-ef94-4bda-96e2-de0256da70e3",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c7472616e7369746976653a3a7365742e7468656f72657469632e72656c6174696f6e3a6f6e"
+  ],
+  "heading": "\\(transitive)::set.theoretic.relation:on{X}",
+  "heading_latex": "\\textrm{transitive}\\textrm{ }\\htmlData{mlg-ref=5c7365742e7468656f72657469632e72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(transitive)::set.theoretic.relation:on{X}]\nRefines: R\nwhen:\n. X is \\set\nsatisfies:\n. forAll: a, b, c is \\set\n  where:\n  . a \"in\" X\n  . b \"in\" X\n  . c \"in\" X\n  then:\n  . if:\n    . allOf:\n      . \\set.theoretic.ordered.pair:of{a}:and{b} \"in\" R\n      . \\set.theoretic.ordered.pair:of{b}:and{c} \"in\" R\n    then:\n    . \\set.theoretic.ordered.pair:of{a}:and{c} \"in\" R\nDocumented:\n. adjective: \"transitive\"\n. written: \"\\operatorname{transitive}\"\n. description: \"A relation $R$ on $X$ is transitive when $a \\mathbin{R} b$ and $b \\mathbin{R} c$ imply $a \\mathbin{R} c$ for all $a, b, c \\in X$.\"\nId: \"86059ba3-ef94-4bda-96e2-de0256da70e3\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "R",
+      "inline_latex": "R",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a, b, c is \\set",
+              "inline_latex": "a, b, c \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "a \"in\" X",
+                  "latex": "a \\in X"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "b \"in\" X",
+                  "latex": "b \\in X"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "c \"in\" X",
+                  "latex": "c \\in X"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "allOf",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "\\set.theoretic.ordered.pair:of{a}:and{b} \"in\" R",
+                                  "latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64}{(a, b)} \\in R"
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "\\set.theoretic.ordered.pair:of{b}:and{c} \"in\" R",
+                                  "latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64}{(b, c)} \\in R"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "\\set.theoretic.ordered.pair:of{a}:and{c} \"in\" R",
+                          "latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64}{(a, c)} \\in R"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"transitive\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{transitive}\"",
+              "inline_latex": "\\operatorname{transitive}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"86059ba3-ef94-4bda-96e2-de0256da70e3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

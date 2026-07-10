@@ -1,0 +1,27 @@
+{
+  "id": "eb0082a7-0204-4860-ab6f-a745b4ad779f",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "\nIn some cases a choice function is easy to name. For instance, if $X$ is the\ncollection of all nonempty open intervals $(a, b)$ of real numbers, the map\n$(a, b) \\mapsto \\frac{a + b}{2}$ sending each interval to its midpoint is a choice\nfunction. In other cases there is no obvious choice function: if $X$ is the\ncollection of all nonempty subsets of the reals, there is no evident rule\nassigning to each subset one of its elements, and the inductive construction used\nfor finite collections fails because $X$ is infinite. To guarantee a choice\nfunction in general, one must take its existence as an axiom.\n"
+  },
+  "source": "Text: \"\nIn some cases a choice function is easy to name. For instance, if $X$ is the\ncollection of all nonempty open intervals $(a, b)$ of real numbers, the map\n$(a, b) \\mapsto \\frac{a + b}{2}$ sending each interval to its midpoint is a choice\nfunction. In other cases there is no obvious choice function: if $X$ is the\ncollection of all nonempty subsets of the reals, there is no evident rule\nassigning to each subset one of its elements, and the inductive construction used\nfor finite collections fails because $X$ is infinite. To guarantee a choice\nfunction in general, one must take its existence as an axiom.\n\"\nId: \"eb0082a7-0204-4860-ab6f-a745b4ad779f\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"\nIn some cases a choice function is easy to name. For instance, if $X$ is the\ncollection of all nonempty open intervals $(a, b)$ of real numbers, the map\n$(a, b) \\mapsto \\frac{a + b}{2}$ sending each interval to its midpoint is a choice\nfunction. In other cases there is no obvious choice function: if $X$ is the\ncollection of all nonempty subsets of the reals, there is no evident rule\nassigning to each subset one of its elements, and the inductive construction used\nfor finite collections fails because $X$ is infinite. To guarantee a choice\nfunction in general, one must take its existence as an axiom.\n\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"eb0082a7-0204-4860-ab6f-a745b4ad779f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

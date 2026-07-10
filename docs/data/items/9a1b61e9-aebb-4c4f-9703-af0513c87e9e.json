@@ -1,0 +1,27 @@
+{
+  "id": "9a1b61e9-aebb-4c4f-9703-af0513c87e9e",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Mathlore is an open, collaborative, hand-crafted collection of mathematical\nknowledge encoded in the [Mathlingua](https://www.mathlingua.org) language.\n\nAll contributions, questions, comments, and feedback are greatly appreciated\nand can be sent to DominicKramer@gmail.com.\n\nTo get started, use the menu in the top-left corner of the page to navigate\nthrough the collection.\n"
+  },
+  "source": "Text: \"Mathlore is an open, collaborative, hand-crafted collection of mathematical\nknowledge encoded in the [Mathlingua](https://www.mathlingua.org) language.\n\nAll contributions, questions, comments, and feedback are greatly appreciated\nand can be sent to DominicKramer@gmail.com.\n\nTo get started, use the menu in the top-left corner of the page to navigate\nthrough the collection.\n\"\nId: \"9a1b61e9-aebb-4c4f-9703-af0513c87e9e\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Mathlore is an open, collaborative, hand-crafted collection of mathematical\nknowledge encoded in the [Mathlingua](https://www.mathlingua.org) language.\n\nAll contributions, questions, comments, and feedback are greatly appreciated\nand can be sent to DominicKramer@gmail.com.\n\nTo get started, use the menu in the top-left corner of the page to navigate\nthrough the collection.\n\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"9a1b61e9-aebb-4c4f-9703-af0513c87e9e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

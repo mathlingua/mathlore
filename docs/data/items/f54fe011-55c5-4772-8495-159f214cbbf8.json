@@ -1,0 +1,93 @@
+{
+  "id": "f54fe011-55c5-4772-8495-159f214cbbf8",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c3a70726563656465733a2f"
+  ],
+  "heading": "a \\:precedes:/ b",
+  "heading_latex": "\\textrm{precedes}",
+  "body_text": null,
+  "page": null,
+  "source": "[a \\:precedes:/ b]\nDescribes: a\nwhen:\n. a, b is \\set\nextends:\n. a is \\set\nDocumented:\n. called: \"precedes\"\n. written: \"a? \\preceq b?\"\n. description: \"The abstract order relation $a \\preceq b$ of a partially ordered set. Throughout the order theory a single symbol $\\preceq$ denotes the order of whichever set is under discussion.\"\nId: \"f54fe011-55c5-4772-8495-159f214cbbf8\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "a",
+      "inline_latex": "a",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "a, b is \\set",
+          "latex": "a, b \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "extends",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "a is \\set",
+          "latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"precedes\"",
+              "inline_latex": "\\textrm{precedes}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a? \\preceq b?\"",
+              "inline_latex": "a \\preceq b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f54fe011-55c5-4772-8495-159f214cbbf8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

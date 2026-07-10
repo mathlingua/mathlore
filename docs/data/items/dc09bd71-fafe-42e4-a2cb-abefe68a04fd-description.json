@@ -1,0 +1,14 @@
+{
+  "id": "dc09bd71-fafe-42e4-a2cb-abefe68a04fd-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A set $X$ is partially ordered by $\\preceq$ when $\\preceq$ is reflexive, asymmetric, and transitive on $X$. Some pairs of elements may be incomparable."
+  },
+  "source": "",
+  "sections": []
+}

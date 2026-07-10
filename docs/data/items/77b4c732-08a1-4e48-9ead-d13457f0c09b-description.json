@@ -1,0 +1,14 @@
+{
+  "id": "77b4c732-08a1-4e48-9ead-d13457f0c09b-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Multiplication distributes over addition: for all $k, m, n \\in \\omega$, $k(m + n) = km + kn$ and $(k + m)n = kn + mn$."
+  },
+  "source": "",
+  "sections": []
+}

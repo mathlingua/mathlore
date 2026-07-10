@@ -1,0 +1,27 @@
+{
+  "id": "d000b46c-059b-4e87-98fc-e6827ee5a138",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "The Power Set, Ordered Pairs, Relations, and Functions"
+  },
+  "source": "SubsectionTitle: \"The Power Set, Ordered Pairs, Relations, and Functions\"\nId: \"d000b46c-059b-4e87-98fc-e6827ee5a138\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"The Power Set, Ordered Pairs, Relations, and Functions\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d000b46c-059b-4e87-98fc-e6827ee5a138\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "86059ba3-ef94-4bda-96e2-de0256da70e3-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation $R$ on $X$ is transitive when $a \\mathbin{R} b$ and $b \\mathbin{R} c$ imply $a \\mathbin{R} c$ for all $a, b, c \\in X$."
+  },
+  "source": "",
+  "sections": []
+}

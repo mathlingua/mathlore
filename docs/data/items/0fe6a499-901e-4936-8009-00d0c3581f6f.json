@@ -1,0 +1,154 @@
+{
+  "id": "0fe6a499-901e-4936-8009-00d0c3581f6f",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c73796d6d65747269633a3a7365742e7468656f72657469632e72656c6174696f6e3a6f6e"
+  ],
+  "heading": "\\(symmetric)::set.theoretic.relation:on{X}",
+  "heading_latex": "\\textrm{symmetric}\\textrm{ }\\htmlData{mlg-ref=5c7365742e7468656f72657469632e72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(symmetric)::set.theoretic.relation:on{X}]\nRefines: R\nwhen:\n. X is \\set\nsatisfies:\n. forAll: a, b is \\set\n  where:\n  . a \"in\" X\n  . b \"in\" X\n  then:\n  . if:\n    . \\set.theoretic.ordered.pair:of{a}:and{b} \"in\" R\n    then:\n    . \\set.theoretic.ordered.pair:of{b}:and{a} \"in\" R\nDocumented:\n. adjective: \"symmetric\"\n. written: \"\\operatorname{symmetric}\"\n. description: \"A relation $R$ on $X$ is symmetric when $a \\mathbin{R} b$ implies $b \\mathbin{R} a$ for all $a, b \\in X$.\"\nId: \"0fe6a499-901e-4936-8009-00d0c3581f6f\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "R",
+      "inline_latex": "R",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a, b is \\set",
+              "inline_latex": "a, b \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "a \"in\" X",
+                  "latex": "a \\in X"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "b \"in\" X",
+                  "latex": "b \\in X"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "\\set.theoretic.ordered.pair:of{a}:and{b} \"in\" R",
+                          "latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64}{(a, b)} \\in R"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "\\set.theoretic.ordered.pair:of{b}:and{a} \"in\" R",
+                          "latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64}{(b, a)} \\in R"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"symmetric\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{symmetric}\"",
+              "inline_latex": "\\operatorname{symmetric}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0fe6a499-901e-4936-8009-00d0c3581f6f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

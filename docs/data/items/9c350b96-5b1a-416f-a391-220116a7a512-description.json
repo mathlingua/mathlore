@@ -1,0 +1,14 @@
+{
+  "id": "9c350b96-5b1a-416f-a391-220116a7a512-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two sets are equal if and only if each is a subset of the other. This restates the axiom of extension in terms of the subset relation."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "42c845dc-e030-4087-83cc-b4fe011d3cd3",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "\nIn summary, assuming the axioms of ZF, the axiom of choice implies Zorn's lemma,\nZorn's lemma implies the well ordering principle, and the well ordering principle\nimplies the axiom of choice. The three statements are therefore equivalent over\nZF. One important fact not proven here is that the axiom of choice is independent\nof the axioms of ZF: they neither imply it nor imply its negation.\n"
+  },
+  "source": "Text: \"\nIn summary, assuming the axioms of ZF, the axiom of choice implies Zorn's lemma,\nZorn's lemma implies the well ordering principle, and the well ordering principle\nimplies the axiom of choice. The three statements are therefore equivalent over\nZF. One important fact not proven here is that the axiom of choice is independent\nof the axioms of ZF: they neither imply it nor imply its negation.\n\"\nId: \"42c845dc-e030-4087-83cc-b4fe011d3cd3\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"\nIn summary, assuming the axioms of ZF, the axiom of choice implies Zorn's lemma,\nZorn's lemma implies the well ordering principle, and the well ordering principle\nimplies the axiom of choice. The three statements are therefore equivalent over\nZF. One important fact not proven here is that the axiom of choice is independent\nof the axioms of ZF: they neither imply it nor imply its negation.\n\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"42c845dc-e030-4087-83cc-b4fe011d3cd3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

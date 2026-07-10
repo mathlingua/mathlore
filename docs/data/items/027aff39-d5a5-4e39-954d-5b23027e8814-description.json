@@ -1,0 +1,14 @@
+{
+  "id": "027aff39-d5a5-4e39-954d-5b23027e8814-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The empty set is a subset of every set, since the defining condition of subset is vacuously satisfied when there are no elements to check."
+  },
+  "source": "",
+  "sections": []
+}

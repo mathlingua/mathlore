@@ -1,0 +1,75 @@
+{
+  "id": "5c0b41a7-2272-454b-925a-0da28aa822d4",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64"
+  ],
+  "heading": "\\set.theoretic.ordered.pair:of{a}:and{b}",
+  "heading_latex": "\\textrm{ordered pair of }a\\textrm{ and }b",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.ordered.pair:of{a}:and{b}]\nDefines: p := \\set.theoretic.pair:of{\\set.theoretic.singleton{a}}:and{\\set.theoretic.pair:of{a}:and{b}} is \\set\nwhen: a, b is \\set\nDocumented:\n. called: \"ordered pair of $a?$ and $b?$\"\n. written: \"(a?, b?)\"\n. description: \"The ordered pair $(a, b)$, defined as the set $\\{\\{a\\}, \\{a, b\\}\\}$. This construction encodes order using only the machinery of sets.\"\nId: \"5c0b41a7-2272-454b-925a-0da28aa822d4\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "p := \\set.theoretic.pair:of{\\set.theoretic.singleton{a}}:and{\\set.theoretic.pair:of{a}:and{b}} is \\set",
+      "inline_latex": "p := \\htmlData{mlg-ref=5c7365742e7468656f72657469632e706169723a6f663a616e64}{\\{\\htmlData{mlg-ref=5c7365742e7468656f72657469632e73696e676c65746f6e}{\\{a\\}}, \\htmlData{mlg-ref=5c7365742e7468656f72657469632e706169723a6f663a616e64}{\\{a, b\\}}\\}} \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "a, b is \\set",
+      "inline_latex": "a, b \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"ordered pair of $a?$ and $b?$\"",
+              "inline_latex": "\\textrm{ordered pair of }a\\textrm{ and }b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"(a?, b?)\"",
+              "inline_latex": "(a, b)",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5c0b41a7-2272-454b-925a-0da28aa822d4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

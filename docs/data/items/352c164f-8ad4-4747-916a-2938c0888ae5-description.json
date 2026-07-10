@@ -1,0 +1,14 @@
+{
+  "id": "352c164f-8ad4-4747-916a-2938c0888ae5-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The weak initial segment $\\overline{s}(a) = \\{x \\in X \\mid x \\preceq a\\}$ of an element $a$ in a partially ordered set $X$."
+  },
+  "source": "",
+  "sections": []
+}

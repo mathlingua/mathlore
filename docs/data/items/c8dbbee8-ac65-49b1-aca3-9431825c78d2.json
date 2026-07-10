@@ -1,0 +1,69 @@
+{
+  "id": "c8dbbee8-ac65-49b1-aca3-9431825c78d2",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e7a65726f"
+  ],
+  "heading": "\\set.theoretic.zero",
+  "heading_latex": "\\textrm{zero}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.zero]\nDefines: z := \\empty.set is \\set.theoretic.natural.number\nDocumented:\n. called: \"zero\"\n. written: \"0\"\n. description: \"The natural number $0$, defined to be the empty set $\\emptyset$, so that $0$ has no elements.\"\nId: \"c8dbbee8-ac65-49b1-aca3-9431825c78d2\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "z := \\empty.set is \\set.theoretic.natural.number",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset} \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"zero\"",
+              "inline_latex": "\\textrm{zero}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"0\"",
+              "inline_latex": "0",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c8dbbee8-ac65-49b1-aca3-9431825c78d2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

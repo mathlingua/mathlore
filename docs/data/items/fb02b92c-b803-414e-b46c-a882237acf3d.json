@@ -1,0 +1,111 @@
+{
+  "id": "fb02b92c-b803-414e-b46c-a882237acf3d",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c3a6c6573732e7468616e2e6f722e657175616c3a2f"
+  ],
+  "heading": "m \\:less.than.or.equal:/ n",
+  "heading_latex": "\\textrm{less than or equal to}",
+  "body_text": null,
+  "page": null,
+  "source": "[m \\:less.than.or.equal:/ n]\nDescribes: m\nwhen: n is \\set.theoretic.natural.number\nextends: m is \\set.theoretic.natural.number\nsatisfies:\n. anyOf:\n  . m \\:less.than?:/ n\n  . m = n\nDocumented:\n. called: \"less than or equal to\"\n. written: \"m? \\leq n?\"\n. description: \"For natural numbers, $m \\leq n$ means $m < n$ or $m = n$; equivalently $m \\subseteq n$. This order is transitive, inheriting transitivity from the subset relation.\"\nId: \"fb02b92c-b803-414e-b46c-a882237acf3d\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "m",
+      "inline_latex": "m",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "n is \\set.theoretic.natural.number",
+      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "extends",
+      "inline_argument": "m is \\set.theoretic.natural.number",
+      "inline_latex": "m \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "anyOf",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "m \\:less.than?:/ n",
+                  "latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e3a2f}{m < n}"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "m = n",
+                  "latex": "m = n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"less than or equal to\"",
+              "inline_latex": "\\textrm{less than or equal to}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"m? \\leq n?\"",
+              "inline_latex": "m \\leq n",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fb02b92c-b803-414e-b46c-a882237acf3d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

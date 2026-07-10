@@ -1,0 +1,119 @@
+{
+  "id": "1de3c455-b09b-4d80-8b44-7dd223da2083",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c7375726a6563746976653a3a66756e6374696f6e3a66726f6d3a746f"
+  ],
+  "heading": "\\(surjective)::function:from{A}:to{B}",
+  "heading_latex": "\\textrm{surjective}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a66726f6d3a746f}{\\textrm{function from }A\\textrm{ to }B}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(surjective)::function:from{A}:to{B}]\nRefines: f(x__)\nwhen: A, B is \\set\nsatisfies:\n. forAll: y \"in\" B\n  then:\n  . exists: x \"in\" A\n    suchThat: f(x) = y\nDocumented:\n. adjective: \"surjective\"\n. written: \"\\operatorname{surjective}\"\n. description: \"A function $f \\colon A \\to B$ is surjective when for every $b \\in B$ there exists $a \\in A$ such that $f(a) = b$; every element of the codomain is attained.\"\nId: \"1de3c455-b09b-4d80-8b44-7dd223da2083\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "f(x__)",
+      "inline_latex": "f(x)",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "y \"in\" B",
+              "inline_latex": "y \\in B",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "x \"in\" A",
+                      "inline_latex": "x \\in A",
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "f(x) = y",
+                      "inline_latex": "f(x) = y",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"surjective\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{surjective}\"",
+              "inline_latex": "\\operatorname{surjective}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1de3c455-b09b-4d80-8b44-7dd223da2083\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

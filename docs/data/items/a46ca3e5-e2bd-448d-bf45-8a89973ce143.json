@@ -1,0 +1,105 @@
+{
+  "id": "a46ca3e5-e2bd-448d-bf45-8a89973ce143",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\n. \"Proposition 4.10\"\ngiven:\n. X is \\set\nwhere:\n. \\empty.set \"in\" X\nthen:\n. not:\n  . exists: f is \\choice.function:on{X}\nDocumented:\n. description: \"If $X$ is a collection of sets with $\\emptyset \\in X$, then there is no choice function on $X$, since a choice function would have to select an element of the empty set.\"\nId: \"a46ca3e5-e2bd-448d-bf45-8a89973ce143\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Proposition 4.10",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\empty.set \"in\" X",
+          "latex": "\\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset} \\in X"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "not",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "f is \\choice.function:on{X}",
+                      "inline_latex": "\\htmlData{mlg-ref=5c63686f6963652e66756e6374696f6e3a6f6e}{f}",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a46ca3e5-e2bd-448d-bf45-8a89973ce143\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

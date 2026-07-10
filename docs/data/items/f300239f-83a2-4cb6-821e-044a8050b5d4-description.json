@@ -1,0 +1,14 @@
+{
+  "id": "f300239f-83a2-4cb6-821e-044a8050b5d4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The cardinality $|E|$ of a finite set $E$ is the unique natural number which is equivalent to $E$. It is well defined by the previous corollary."
+  },
+  "source": "",
+  "sections": []
+}

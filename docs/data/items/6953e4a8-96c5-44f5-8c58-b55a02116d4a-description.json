@@ -1,0 +1,14 @@
+{
+  "id": "6953e4a8-96c5-44f5-8c58-b55a02116d4a-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The unique set with no elements, also denoted $\\{\\}$. Its existence is guaranteed by the axiom of the empty set, and its uniqueness by the axiom of extension."
+  },
+  "source": "",
+  "sections": []
+}

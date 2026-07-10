@@ -1,0 +1,14 @@
+{
+  "id": "1a505620-e0b9-42a8-955a-9480abb85a3e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "If $A$ is a set and $P(x)$ is a formula of first order logic, then there exists a set $B = \\{x \\in A \\mid P(x)\\}$ containing precisely each $x \\in A$ such that $P(x)$ is true. The set $B$ is unique by the axiom of extension."
+  },
+  "source": "",
+  "sections": []
+}

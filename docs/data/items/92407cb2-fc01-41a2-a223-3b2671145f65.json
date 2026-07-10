@@ -1,0 +1,105 @@
+{
+  "id": "92407cb2-fc01-41a2-a223-3b2671145f65",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c696e647563746976653a3a736574"
+  ],
+  "heading": "\\(inductive)::set",
+  "heading_latex": "\\textrm{inductive}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(inductive)::set]\nRefines: A\nsatisfies:\n. \\set.theoretic.zero \"in\" A\n. forAll: x is \\set.theoretic.natural.number\n  where: x \"in\" A\n  then: \\set.theoretic.successor{x} \"in\" A\nDocumented:\n. adjective: \"inductive\"\n. written: \"\\operatorname{inductive}\"\n. description: \"A set $A$ is inductive, or a successor set, when $0 \\in A$ and $x \\in A$ implies $x^+ \\in A$. Inductive sets are the sets closed under the successor operation and containing zero.\"\nId: \"92407cb2-fc01-41a2-a223-3b2671145f65\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "A",
+      "inline_latex": "A",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\set.theoretic.zero \"in\" A",
+          "latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0} \\in A"
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set.theoretic.natural.number",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "x \"in\" A",
+              "inline_latex": "x \\in A",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "\\set.theoretic.successor{x} \"in\" A",
+              "inline_latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{x^+} \\in A",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"inductive\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{inductive}\"",
+              "inline_latex": "\\operatorname{inductive}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"92407cb2-fc01-41a2-a223-3b2671145f65\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

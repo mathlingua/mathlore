@@ -1,0 +1,14 @@
+{
+  "id": "982d5d26-08c5-41f7-a22b-68c0434450f0-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation $R$ from $A$ to $B$ is a subset of $A \\times B$. When $(a, b) \\in R$ one writes $a \\mathbin{R} b$. A relation from $A$ to $A$ is called a relation in $A$."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "fe49a375-61dd-4bb2-895f-4afdf7c10baf-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Let $X$ be a collection of non-empty sets. Then there exists a choice function on $X$. For finite collections this is a theorem, but in the infinite case there is in general no rule specifying which element to choose, and so the existence of a choice function must be taken as an axiom. Adjoining it to the axioms of ZF yields the system ZFC."
+  },
+  "source": "",
+  "sections": []
+}

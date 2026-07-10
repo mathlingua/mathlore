@@ -1,0 +1,14 @@
+{
+  "id": "7395d1bd-f430-4b75-a515-9b992034553c-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Suppose $X$ is a non-empty partially ordered set such that every chain in $X$ has an upper bound in $X$. Then $X$ contains a maximal element. Zorn's lemma is the first of the two major statements shown to be equivalent to the axiom of choice."
+  },
+  "source": "",
+  "sections": []
+}

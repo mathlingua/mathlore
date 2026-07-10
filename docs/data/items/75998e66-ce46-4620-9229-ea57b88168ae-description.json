@@ -1,0 +1,14 @@
+{
+  "id": "75998e66-ce46-4620-9229-ea57b88168ae-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For $k, m \\in \\omega$, $k < m$ if and only if there exists $n \\in \\omega$ such that $n > 0$ and $k + n = m$. This characterizes the order in terms of addition."
+  },
+  "source": "",
+  "sections": []
+}

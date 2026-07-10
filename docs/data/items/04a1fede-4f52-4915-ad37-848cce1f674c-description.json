@@ -1,0 +1,14 @@
+{
+  "id": "04a1fede-4f52-4915-ad37-848cce1f674c-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Let $C$ be a chain with respect to continuation and $U = \\bigcup_{D \\in C} D$. Then there is a unique well ordering of $U$ making $U$ a continuation of each element of $C$ distinct from $U$. This lets one build a well ordered set from a chain of initial segments."
+  },
+  "source": "",
+  "sections": []
+}

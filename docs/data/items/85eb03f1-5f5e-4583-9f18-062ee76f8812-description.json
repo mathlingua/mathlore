@@ -1,0 +1,14 @@
+{
+  "id": "85eb03f1-5f5e-4583-9f18-062ee76f8812-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two sets $E$ and $F$ are equivalent, written $E \\sim F$, when there exists a bijection between $E$ and $F$. Equivalence of sets is itself an equivalence relation."
+  },
+  "source": "",
+  "sections": []
+}

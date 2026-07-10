@@ -1,0 +1,105 @@
+{
+  "id": "24bdd310-86f4-4c1c-a44d-c850304d6d49",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c70726f647563743a6f663a616e64"
+  ],
+  "heading": "\\product:of{m}:and{n}",
+  "heading_latex": "\\textrm{product of }m\\textrm{ and }n",
+  "body_text": null,
+  "page": null,
+  "source": "[\\product:of{m}:and{n}]\nDefines: p is \\set.theoretic.natural.number\nwhen: m, n is \\set.theoretic.natural.number\nexpresses:\n. \\product:of{m}:and{\\set.theoretic.zero} = \\set.theoretic.zero\n. forAll: k is \\set.theoretic.natural.number\n  then: \\product:of{m}:and{\\set.theoretic.successor{k}} = \\sum:of{\\product:of{m}:and{k}}:and{m}\nDocumented:\n. called: \"product of $m?$ and $n?$\"\n. written: \"m? \\cdot n?\"\n. description: \"The product $m \\cdot n$, defined by recursion on $n$: $m \\cdot 0 = 0$ and $m \\cdot n^+ = m \\cdot n + m$. Multiplication is the binary operation given by $\\cdot$.\"\nId: \"24bdd310-86f4-4c1c-a44d-c850304d6d49\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "p is \\set.theoretic.natural.number",
+      "inline_latex": "p \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "m, n is \\set.theoretic.natural.number",
+      "inline_latex": "m, n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\product:of{m}:and{\\set.theoretic.zero} = \\set.theoretic.zero",
+          "latex": "\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{m \\cdot \\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0}} = \\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0}"
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "k is \\set.theoretic.natural.number",
+              "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "\\product:of{m}:and{\\set.theoretic.successor{k}} = \\sum:of{\\product:of{m}:and{k}}:and{m}",
+              "inline_latex": "\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{m \\cdot \\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{k^+}} = \\htmlData{mlg-ref=5c73756d3a6f663a616e64}{\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{m \\cdot k} + m}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"product of $m?$ and $n?$\"",
+              "inline_latex": "\\textrm{product of }m\\textrm{ and }n",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"m? \\cdot n?\"",
+              "inline_latex": "m \\cdot n",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"24bdd310-86f4-4c1c-a44d-c850304d6d49\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

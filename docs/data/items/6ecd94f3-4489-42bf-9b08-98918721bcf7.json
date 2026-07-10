@@ -1,0 +1,27 @@
+{
+  "id": "6ecd94f3-4489-42bf-9b08-98918721bcf7",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "People"
+  },
+  "source": "Title: \"People\"\nId: \"6ecd94f3-4489-42bf-9b08-98918721bcf7\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"People\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6ecd94f3-4489-42bf-9b08-98918721bcf7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

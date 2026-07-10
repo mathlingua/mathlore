@@ -1,0 +1,154 @@
+{
+  "id": "47cae71f-185e-431a-bd38-a3ab7d08d070",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e6d6178696d616c2e696e2e2f"
+  ],
+  "heading": "a \\.maximal.in./ X",
+  "heading_latex": "\\textrm{maximal element}",
+  "body_text": null,
+  "page": null,
+  "source": "[a \\.maximal.in./ X]\nStates:\nwhen:\n. a is \\set\n. X is \\set\nthat:\n. forAll: x is \\set\n  where:\n  . x \"in\" X\n  then:\n  . if:\n    . a \\:precedes:/ x\n    then:\n    . x = a\nDocumented:\n. called: \"maximal element\"\n. written: \"a? \\text{ is maximal in } X?\"\n. description: \"An element $a$ is maximal in $X$ when $a \\preceq x$ implies $x = a$ for all $x \\in X$; equivalently, $a$ strictly precedes no element.\"\nId: \"47cae71f-185e-431a-bd38-a3ab7d08d070\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "a is \\set",
+          "latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "x \"in\" X",
+                  "latex": "x \\in X"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "a \\:precedes:/ x",
+                          "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{a \\preceq x}"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "x = a",
+                          "latex": "x = a"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"maximal element\"",
+              "inline_latex": "\\textrm{maximal element}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a? \\text{ is maximal in } X?\"",
+              "inline_latex": "a \\text{ is maximal in } X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"47cae71f-185e-431a-bd38-a3ab7d08d070\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

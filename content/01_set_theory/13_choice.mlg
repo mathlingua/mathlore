@@ -1,0 +1,77 @@
+SubsectionTitle: "The Axiom of Choice"
+Id: "734f1839-bd3c-476f-988e-cb9e002996f5"
+
+[\choice.function:on{X}]
+Describes: f(x__) ::= y_
+when:
+. X is \set
+specifies:
+. x__ "in" X
+. y_ is \set
+Documented:
+. called: "choice function on $X?$"
+. written: "f?"
+. description: "A choice function on a collection $X$ of sets is a function $f \colon X \to \bigcup_{A \in X} A$ such that $f(A) \in A$ for every $A \in X$. It selects one element from each set in the collection."
+Id: "b557b79f-5179-4fff-a20f-a93d742231a4"
+
+Theorem:
+. "Proposition 4.10"
+given:
+. X is \set
+where:
+. \empty.set "in" X
+then:
+. not:
+  . exists: f is \choice.function:on{X}
+Documented:
+. description: "If $X$ is a collection of sets with $\emptyset \in X$, then there is no choice function on $X$, since a choice function would have to select an element of the empty set."
+Id: "a46ca3e5-e2bd-448d-bf45-8a89973ce143"
+
+Theorem:
+. "Theorem 4.11"
+given:
+. X is \set
+where:
+. X is? \(finite)::set
+then:
+. have:
+  . forAll: A is \set
+    where:
+    . A "in" X
+    then:
+    . not:
+      . A = \empty.set
+  iff:
+  . exists: f is \choice.function:on{X}
+Documented:
+. description: "A finite collection $X$ of sets has a choice function if and only if no set in $X$ is empty. The forward direction is Proposition 4.10; the reverse is proved by induction on the cardinality of $X$."
+Id: "532996b0-e015-492f-9ea7-c312ebf89aa0"
+
+Text: "
+In some cases a choice function is easy to name. For instance, if $X$ is the
+collection of all nonempty open intervals $(a, b)$ of real numbers, the map
+$(a, b) \mapsto \frac{a + b}{2}$ sending each interval to its midpoint is a choice
+function. In other cases there is no obvious choice function: if $X$ is the
+collection of all nonempty subsets of the reals, there is no evident rule
+assigning to each subset one of its elements, and the inductive construction used
+for finite collections fails because $X$ is infinite. To guarantee a choice
+function in general, one must take its existence as an axiom.
+"
+Id: "eb0082a7-0204-4860-ab6f-a745b4ad779f"
+
+Axiom:
+. "Axiom of Choice"
+given:
+. X is \set
+where:
+. forAll: A is \set
+  where:
+  . A "in" X
+  then:
+  . not:
+    . A = \empty.set
+then:
+. exists: f is \choice.function:on{X}
+Documented:
+. description: "Let $X$ be a collection of non-empty sets. Then there exists a choice function on $X$. For finite collections this is a theorem, but in the infinite case there is in general no rule specifying which element to choose, and so the existence of a choice function must be taken as an axiom. Adjoining it to the axioms of ZF yields the system ZFC."
+Id: "fe49a375-61dd-4bb2-895f-4afdf7c10baf"

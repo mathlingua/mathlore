@@ -1,0 +1,14 @@
+{
+  "id": "47cae71f-185e-431a-bd38-a3ab7d08d070-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An element $a$ is maximal in $X$ when $a \\preceq x$ implies $x = a$ for all $x \\in X$; equivalently, $a$ strictly precedes no element."
+  },
+  "source": "",
+  "sections": []
+}

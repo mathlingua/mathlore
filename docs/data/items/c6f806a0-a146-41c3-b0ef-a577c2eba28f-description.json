@@ -1,0 +1,14 @@
+{
+  "id": "c6f806a0-a146-41c3-b0ef-a577c2eba28f-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Let $m, n, q \\in \\omega$. Then (a) if $m < n$ then $m^+ \\leq n$; (b) $m \\leq m + n$; and (c) if $q > 0$ and $n > 0$ then $qn > 0$."
+  },
+  "source": "",
+  "sections": []
+}

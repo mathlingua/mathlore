@@ -1,0 +1,85 @@
+{
+  "id": "39f63de3-8e4a-4f4b-9aa6-5ec84972f708",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\n. \"Theorem 4.31\"\ngiven:\n. X is \\set\nwhere:\n. \\well.ordered{X}\nthen:\n. \\totally.ordered{X}\nDocumented:\n. description: \"Every well ordered set is totally ordered: given $x, y \\in X$, the subset $\\{x, y\\}$ has a least element, so $x$ and $y$ are comparable.\"\nId: \"39f63de3-8e4a-4f4b-9aa6-5ec84972f708\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Theorem 4.31",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\well.ordered{X}",
+          "latex": "\\htmlData{mlg-ref=5c77656c6c2e6f726465726564}{X \\text{ is well ordered}}"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\totally.ordered{X}",
+          "latex": "\\htmlData{mlg-ref=5c746f74616c6c792e6f726465726564}{X \\text{ is totally ordered}}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"39f63de3-8e4a-4f4b-9aa6-5ec84972f708\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

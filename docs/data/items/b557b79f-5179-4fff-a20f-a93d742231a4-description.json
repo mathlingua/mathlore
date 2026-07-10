@@ -1,0 +1,14 @@
+{
+  "id": "b557b79f-5179-4fff-a20f-a93d742231a4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A choice function on a collection $X$ of sets is a function $f \\colon X \\to \\bigcup_{A \\in X} A$ such that $f(A) \\in A$ for every $A \\in X$. It selects one element from each set in the collection."
+  },
+  "source": "",
+  "sections": []
+}

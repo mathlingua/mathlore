@@ -1,0 +1,90 @@
+{
+  "id": "92b0c011-730b-4e42-81f8-dcedb68f93d6",
+  "kind": "Corollary",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Corollary: \"Trichotomy\"\nof: \"Lemma 3.18\"\ngiven: n, m is \\set.theoretic.natural.number\nthen:\n. oneOf:\n  . n = m\n  . n \"in\" m\n  . m \"in\" n\nDocumented:\n. description: \"For any $n, m \\in \\omega$, exactly one of the following holds: $n = m$, $n \\in m$, or $m \\in n$. Comparability gives at least one, and Lemma 3.7 rules out more than one.\"\nId: \"92b0c011-730b-4e42-81f8-dcedb68f93d6\"",
+  "sections": [
+    {
+      "label": "Corollary",
+      "inline_argument": "\"Trichotomy\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "of",
+      "inline_argument": "\"Lemma 3.18\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "n, m is \\set.theoretic.natural.number",
+      "inline_latex": "n, m \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "oneOf",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "n = m",
+                  "latex": "n = m"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "n \"in\" m",
+                  "latex": "n \\in m"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "m \"in\" n",
+                  "latex": "m \\in n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"92b0c011-730b-4e42-81f8-dcedb68f93d6\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

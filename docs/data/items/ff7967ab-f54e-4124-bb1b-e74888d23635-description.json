@@ -1,0 +1,14 @@
+{
+  "id": "ff7967ab-f54e-4124-bb1b-e74888d23635-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Addition is associative and commutative: for all $k, m, n \\in \\omega$, $(k + m) + n = k + (m + n)$ and $m + n = n + m$. Both are proved by induction using the recursive definition of addition."
+  },
+  "source": "",
+  "sections": []
+}

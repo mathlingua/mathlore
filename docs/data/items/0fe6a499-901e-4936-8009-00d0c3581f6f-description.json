@@ -1,0 +1,14 @@
+{
+  "id": "0fe6a499-901e-4936-8009-00d0c3581f6f-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation $R$ on $X$ is symmetric when $a \\mathbin{R} b$ implies $b \\mathbin{R} a$ for all $a, b \\in X$."
+  },
+  "source": "",
+  "sections": []
+}

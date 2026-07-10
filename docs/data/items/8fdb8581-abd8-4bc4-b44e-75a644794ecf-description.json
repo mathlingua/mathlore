@@ -1,0 +1,14 @@
+{
+  "id": "8fdb8581-abd8-4bc4-b44e-75a644794ecf-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An element $u$ is an upper bound of a chain $A$ when $a \\preceq u$ for all $a \\in A$. An upper bound of $A$ need not be a member of $A$."
+  },
+  "source": "",
+  "sections": []
+}

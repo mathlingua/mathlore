@@ -1,0 +1,58 @@
+SubsectionTitle: "The Power Set, Ordered Pairs, Relations, and Functions"
+Id: "d000b46c-059b-4e87-98fc-e6827ee5a138"
+
+
+[\set.theoretic.power.set{X}]
+Defines: P is \set
+when: X is \set
+expresses:
+. forAll: A is \set
+  then:
+  . have: A \:subset?:/ X
+    iff: A "in" P
+Documented:
+. called: "power set of $X?$"
+. written: "\mathcal{P}(X?)"
+. description: "The power set $\mathcal{P}(X)$, guaranteed by the axiom of powers: for every set $X$ there exists a set $\mathcal{P}(X)$ such that $A \in \mathcal{P}(X)$ if and only if $A \subseteq X$."
+Id: "dfc8cab3-42ba-44b3-8da0-b58717abeb61"
+
+
+[\set.theoretic.ordered.pair:of{a}:and{b}]
+Defines: p := \set.theoretic.pair:of{\set.theoretic.singleton{a}}:and{\set.theoretic.pair:of{a}:and{b}} is \set
+when: a, b is \set
+Documented:
+. called: "ordered pair of $a?$ and $b?$"
+. written: "(a?, b?)"
+. description: "The ordered pair $(a, b)$, defined as the set $\{\{a\}, \{a, b\}\}$. This construction encodes order using only the machinery of sets."
+Id: "5c0b41a7-2272-454b-925a-0da28aa822d4"
+
+
+Theorem:
+given: a, b, c, d is \set
+then: \set.theoretic.ordered.pair:of{a}:and{b} = \set.theoretic.ordered.pair:of{c}:and{d}
+iff:
+. a = c
+. b = d
+Documented:
+. description: "Two ordered pairs are equal if and only if their first coordinates are equal and their second coordinates are equal. This justifies thinking of an ordered pair $(a, b)$ as having a first coordinate $a$ and a second coordinate $b$."
+Id: "6e4b61e7-24a6-4a40-9ac1-d288ce0ebf22"
+
+
+[\set.theoretic.cartesian.product:of{A}:and{B}]
+Defines: P is \set
+when: A, B is \set
+expresses:
+. forAll: z is \set
+  then:
+  . have:
+    . exists: a, b is \set
+      suchThat:
+      . a "in" A
+      . b "in" B
+      . z = \set.theoretic.ordered.pair:of{a}:and{b}
+    iff: z "in" P
+Documented:
+. called: "cartesian product of $A?$ and $B?$"
+. written: "A? \times B?"
+. description: "The cartesian product $A \times B = \{z \in \mathcal{P}(\mathcal{P}(A \cup B)) \mid z = (a, b) \text{ for some } a \in A, b \in B\}$, the set of all ordered pairs $(a, b)$ with $a \in A$ and $b \in B$."
+Id: "64578792-cf4f-4497-9c79-3fc0189a08e4"

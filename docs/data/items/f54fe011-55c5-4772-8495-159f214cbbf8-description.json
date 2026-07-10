@@ -1,0 +1,14 @@
+{
+  "id": "f54fe011-55c5-4772-8495-159f214cbbf8-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The abstract order relation $a \\preceq b$ of a partially ordered set. Throughout the order theory a single symbol $\\preceq$ denotes the order of whichever set is under discussion."
+  },
+  "source": "",
+  "sections": []
+}

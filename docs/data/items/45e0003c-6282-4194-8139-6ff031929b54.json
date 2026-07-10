@@ -1,0 +1,27 @@
+{
+  "id": "45e0003c-6282-4194-8139-6ff031929b54",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "Well Ordering"
+  },
+  "source": "SubsectionTitle: \"Well Ordering\"\nId: \"45e0003c-6282-4194-8139-6ff031929b54\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"Well Ordering\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"45e0003c-6282-4194-8139-6ff031929b54\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "c8dbbee8-ac65-49b1-aca3-9431825c78d2-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The natural number $0$, defined to be the empty set $\\emptyset$, so that $0$ has no elements."
+  },
+  "source": "",
+  "sections": []
+}

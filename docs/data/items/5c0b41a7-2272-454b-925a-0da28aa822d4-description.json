@@ -1,0 +1,14 @@
+{
+  "id": "5c0b41a7-2272-454b-925a-0da28aa822d4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The ordered pair $(a, b)$, defined as the set $\\{\\{a\\}, \\{a, b\\}\\}$. This construction encodes order using only the machinery of sets."
+  },
+  "source": "",
+  "sections": []
+}

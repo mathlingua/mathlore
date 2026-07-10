@@ -1,0 +1,140 @@
+{
+  "id": "06039e24-41f7-43fe-b2e8-80e1eb93465b",
+  "kind": "Corollary",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Corollary:\n. \"Corollary 3.25\"\nof:\n. \"Theorem 3.24\"\ngiven:\n. k, m, n is \\set.theoretic.natural.number\nwhere:\n. k \\:less.than:/ m\nthen:\n. allOf:\n  . \\sum:of{k}:and{n} \\:less.than:/ \\sum:of{m}:and{n}\n  . if:\n    . \\set.theoretic.zero \\:less.than:/ n\n    then:\n    . \\product:of{k}:and{n} \\:less.than:/ \\product:of{m}:and{n}\nDocumented:\n. description: \"Let $k, m, n \\in \\omega$ with $k < m$. Then (a) $k + n < m + n$, and (b) $kn < mn$ when $n > 0$. Order is preserved by adding a constant and by multiplying by a positive constant.\"\nId: \"06039e24-41f7-43fe-b2e8-80e1eb93465b\"",
+  "sections": [
+    {
+      "label": "Corollary",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Corollary 3.25",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "of",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Theorem 3.24",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "k, m, n is \\set.theoretic.natural.number",
+          "latex": "k, m, n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "k \\:less.than:/ m",
+          "latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e3a2f}{k < m}"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "allOf",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "\\sum:of{k}:and{n} \\:less.than:/ \\sum:of{m}:and{n}",
+                  "latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e3a2f}{\\htmlData{mlg-ref=5c73756d3a6f663a616e64}{k + n} < \\htmlData{mlg-ref=5c73756d3a6f663a616e64}{m + n}}"
+                },
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "\\set.theoretic.zero \\:less.than:/ n",
+                          "latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e3a2f}{\\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0} < n}"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "\\product:of{k}:and{n} \\:less.than:/ \\product:of{m}:and{n}",
+                          "latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e3a2f}{\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{k \\cdot n} < \\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{m \\cdot n}}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"06039e24-41f7-43fe-b2e8-80e1eb93465b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

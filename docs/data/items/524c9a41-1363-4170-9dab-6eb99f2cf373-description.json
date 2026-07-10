@@ -1,0 +1,14 @@
+{
+  "id": "524c9a41-1363-4170-9dab-6eb99f2cf373-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An element $a$ is minimal in $X$ when $x \\preceq a$ implies $x = a$ for all $x \\in X$; equivalently, no element strictly precedes $a$."
+  },
+  "source": "",
+  "sections": []
+}

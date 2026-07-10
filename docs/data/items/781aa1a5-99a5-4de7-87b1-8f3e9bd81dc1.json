@@ -1,0 +1,84 @@
+{
+  "id": "781aa1a5-99a5-4de7-87b1-8f3e9bd81dc1",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven:\n. X is \\set\n. f is \\function:from{X}:to{X}\n. a \"in\" X\nthen:\n. exists: u is \\function:from{\\set.theoretic.naturals}:to{X}\nDocumented:\n. description: \"Let $X$ be a set, $a \\in X$, and $f \\colon X \\to X$. Then there exists a function $u \\colon \\omega \\to X$ such that $u(0) = a$ and $u(n^+) = f(u(n))$ for all $n \\in \\omega$. The function $u$ is built as the intersection of all subsets of $\\omega \\times X$ that contain $(0, a)$ and are closed under the rule sending $(n, x)$ to $(n^+, f(x))$; induction shows this intersection is a function. Recursion is the tool used to define arithmetic on the natural numbers.\"\nId: \"781aa1a5-99a5-4de7-87b1-8f3e9bd81dc1\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "f is \\function:from{X}:to{X}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a66726f6d3a746f}{f \\colon X \\to X}"
+        },
+        {
+          "kind": "formulation",
+          "text": "a \"in\" X",
+          "latex": "a \\in X"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "u is \\function:from{\\set.theoretic.naturals}:to{X}",
+              "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a66726f6d3a746f}{u \\colon \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c73}{\\omega} \\to X}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"781aa1a5-99a5-4de7-87b1-8f3e9bd81dc1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

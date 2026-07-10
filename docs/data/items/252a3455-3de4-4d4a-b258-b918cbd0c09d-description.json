@@ -1,0 +1,14 @@
+{
+  "id": "252a3455-3de4-4d4a-b258-b918cbd0c09d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Assuming the axioms of ZF and the well ordering principle, the axiom of choice holds. Well order $\\bigcup_{A \\in X} A$; then the function sending each $A \\in X$ to its least element is a choice function. This completes the equivalence of the axiom of choice, Zorn's lemma, and the well ordering principle."
+  },
+  "source": "",
+  "sections": []
+}

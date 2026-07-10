@@ -1,0 +1,81 @@
+{
+  "id": "f300239f-83a2-4cb6-821e-044a8050b5d4",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c63617264696e616c697479"
+  ],
+  "heading": "\\cardinality{E}",
+  "heading_latex": "\\textrm{cardinality of }E",
+  "body_text": null,
+  "page": null,
+  "source": "[\\cardinality{E}]\nDefines: c is \\set.theoretic.natural.number\nwhen:\n. E is \\set\nDocumented:\n. called: \"cardinality of $E?$\"\n. written: \"|E?|\"\n. description: \"The cardinality $|E|$ of a finite set $E$ is the unique natural number which is equivalent to $E$. It is well defined by the previous corollary.\"\nId: \"f300239f-83a2-4cb6-821e-044a8050b5d4\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "c is \\set.theoretic.natural.number",
+      "inline_latex": "c \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "E is \\set",
+          "latex": "E \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"cardinality of $E?$\"",
+              "inline_latex": "\\textrm{cardinality of }E",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"|E?|\"",
+              "inline_latex": "|E|",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f300239f-83a2-4cb6-821e-044a8050b5d4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

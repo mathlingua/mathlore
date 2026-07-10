@@ -1,0 +1,137 @@
+{
+  "id": "d1804f57-4c27-454b-8b65-06c98bb0322d",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e646966666572656e63653a6f663a616e64"
+  ],
+  "heading": "\\set.theoretic.difference:of{A}:and{B}",
+  "heading_latex": "\\textrm{difference of }A\\textrm{ and }B",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.difference:of{A}:and{B}]\nDefines: D is \\set\nwhen: A, B is \\set\nexpresses:\n. forAll: x is \\set\n  then:\n  . have:\n    . x \"in\" A\n    . not: x \"in\" B\n    iff: x \"in\" D\nDocumented:\n. called: \"difference of $A?$ and $B?$\"\n. written: \"A? \\setminus B?\"\n. description: \"The difference $A \\setminus B = \\{x \\in A \\mid x \\notin B\\}$, the set of elements of $A$ which are not elements of $B$, guaranteed by the axiom of specification.\"\nId: \"d1804f57-4c27-454b-8b65-06c98bb0322d\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "D is \\set",
+      "inline_latex": "D \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "x \"in\" A",
+                          "latex": "x \\in A"
+                        },
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "not",
+                              "inline_argument": "x \"in\" B",
+                              "inline_latex": "x \\in B",
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "x \"in\" D",
+                      "inline_latex": "x \\in D",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"difference of $A?$ and $B?$\"",
+              "inline_latex": "\\textrm{difference of }A\\textrm{ and }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\setminus B?\"",
+              "inline_latex": "A \\setminus B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d1804f57-4c27-454b-8b65-06c98bb0322d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

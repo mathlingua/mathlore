@@ -1,0 +1,14 @@
+{
+  "id": "7b04025f-2483-4935-8ed4-11d22b87b354-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two sets are equal if and only if they contain precisely the same elements, so the only thing which matters about a set is which elements it has."
+  },
+  "source": "",
+  "sections": []
+}

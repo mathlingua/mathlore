@@ -1,0 +1,101 @@
+{
+  "id": "7b04025f-2483-4935-8ed4-11d22b87b354",
+  "kind": "Axiom",
+  "definition_keys": [
+    "5c6178696f6d2e6f662e657874656e73696f6e"
+  ],
+  "heading": "\\axiom.of.extension",
+  "heading_latex": "\\textrm{Axiom of Extension}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\axiom.of.extension]\nAxiom: \"Axiom of Extension\"\ngiven: A, B is \\set\nthen: A = B\niff:\n. forAll: x is \\set\n  then:\n  . have: x \"in\" A\n    iff: x \"in\" B\nDocumented:\n. description: \"Two sets are equal if and only if they contain precisely the same elements, so the only thing which matters about a set is which elements it has.\"\nId: \"7b04025f-2483-4935-8ed4-11d22b87b354\"",
+  "sections": [
+    {
+      "label": "Axiom",
+      "inline_argument": "\"Axiom of Extension\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": "A = B",
+      "inline_latex": "A = B",
+      "arguments": []
+    },
+    {
+      "label": "iff",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "x \"in\" A",
+                      "inline_latex": "x \\in A",
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "x \"in\" B",
+                      "inline_latex": "x \\in B",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7b04025f-2483-4935-8ed4-11d22b87b354\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

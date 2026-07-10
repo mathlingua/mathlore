@@ -1,0 +1,97 @@
+{
+  "id": "7d9d55a2-a00a-46ba-a4a8-733237822e8a",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265737472696374696f6e3a6f663a746f"
+  ],
+  "heading": "\\restriction:of{f}:to{C}",
+  "heading_latex": "\\textrm{restriction of }f\\textrm{ to }C",
+  "body_text": null,
+  "page": null,
+  "source": "[\\restriction:of{f}:to{C}]\nDefines: g is \\function:from{C}:to{B}\nusing: A, B is \\set\nwhen:\n. C is \\set\n. f is \\function:from{A}:to{B}\n. C \\:subset:/ A\nDocumented:\n. called: \"restriction of $f?$ to $C?$\"\n. written: \"f? |_{C?}\"\n. description: \"The restriction $f|_{C}$ of a function $f \\colon A \\to B$ to a subset $C \\subseteq A$: the function from $C$ to $B$ defined by $f|_{C}(x) = f(x)$ for all $x \\in C$.\"\nId: \"7d9d55a2-a00a-46ba-a4a8-733237822e8a\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "g is \\function:from{C}:to{B}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a66726f6d3a746f}{g \\colon C \\to B}",
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "C is \\set",
+          "latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "f is \\function:from{A}:to{B}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a66726f6d3a746f}{f \\colon A \\to B}"
+        },
+        {
+          "kind": "formulation",
+          "text": "C \\:subset:/ A",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{C \\subseteq A}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"restriction of $f?$ to $C?$\"",
+              "inline_latex": "\\textrm{restriction of }f\\textrm{ to }C",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"f? |_{C?}\"",
+              "inline_latex": "f |_{C}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7d9d55a2-a00a-46ba-a4a8-733237822e8a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

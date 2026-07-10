@@ -1,0 +1,94 @@
+{
+  "id": "c08206ff-de4f-44c5-bc78-be658fef5be1",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c696e66696e6974653a3a736574"
+  ],
+  "heading": "\\(infinite)::set",
+  "heading_latex": "\\textrm{infinite}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(infinite)::set]\nRefines: X\nsatisfies:\n. not:\n  . X is? \\(finite)::set\nDocumented:\n. adjective: \"infinite\"\n. written: \"\\operatorname{infinite}\"\n. description: \"A set is infinite when it is not finite, that is, when it is equivalent to no natural number.\"\nId: \"c08206ff-de4f-44c5-bc78-be658fef5be1\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "X",
+      "inline_latex": "X",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "not",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "X is? \\(finite)::set",
+                  "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c66696e6974653a3a736574}{\\textrm{finite}}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"infinite\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{infinite}\"",
+              "inline_latex": "\\operatorname{infinite}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c08206ff-de4f-44c5-bc78-be658fef5be1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

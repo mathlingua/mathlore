@@ -1,0 +1,78 @@
+{
+  "id": "c1571597-e7ce-45b2-829e-88011eb561aa",
+  "kind": "Corollary",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Corollary: \"Associativity and Commutativity of Multiplication\"\nof: \"Theorem 3.13 (Distributivity)\"\ngiven:\n. k, m, n is \\set.theoretic.natural.number\nthen:\n. \\product:of{\\product:of{k}:and{m}}:and{n} = \\product:of{k}:and{\\product:of{m}:and{n}}\n. \\product:of{m}:and{n} = \\product:of{n}:and{m}\nDocumented:\n. description: \"Multiplication is associative and commutative: for all $k, m, n \\in \\omega$, $(k \\cdot m) \\cdot n = k \\cdot (m \\cdot n)$ and $m \\cdot n = n \\cdot m$. These follow from distributivity by induction.\"\nId: \"c1571597-e7ce-45b2-829e-88011eb561aa\"",
+  "sections": [
+    {
+      "label": "Corollary",
+      "inline_argument": "\"Associativity and Commutativity of Multiplication\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "of",
+      "inline_argument": "\"Theorem 3.13 (Distributivity)\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "k, m, n is \\set.theoretic.natural.number",
+          "latex": "k, m, n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\product:of{\\product:of{k}:and{m}}:and{n} = \\product:of{k}:and{\\product:of{m}:and{n}}",
+          "latex": "\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{k \\cdot m} \\cdot n} = \\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{k \\cdot \\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{m \\cdot n}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "\\product:of{m}:and{n} = \\product:of{n}:and{m}",
+          "latex": "\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{m \\cdot n} = \\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{n \\cdot m}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c1571597-e7ce-45b2-829e-88011eb561aa\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

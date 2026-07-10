@@ -1,0 +1,14 @@
+{
+  "id": "781aa1a5-99a5-4de7-87b1-8f3e9bd81dc1-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Let $X$ be a set, $a \\in X$, and $f \\colon X \\to X$. Then there exists a function $u \\colon \\omega \\to X$ such that $u(0) = a$ and $u(n^+) = f(u(n))$ for all $n \\in \\omega$. The function $u$ is built as the intersection of all subsets of $\\omega \\times X$ that contain $(0, a)$ and are closed under the rule sending $(n, x)$ to $(n^+, f(x))$; induction shows this intersection is a function. Recursion is the tool used to define arithmetic on the natural numbers."
+  },
+  "source": "",
+  "sections": []
+}

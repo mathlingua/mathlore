@@ -1,0 +1,108 @@
+{
+  "id": "c6f806a0-a146-41c3-b0ef-a577c2eba28f",
+  "kind": "Lemma",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Lemma: \"Lemma 3.23\"\ngiven: m, n, q is \\set.theoretic.natural.number\nthen:\n. if: m \\:less.than?:/ n\n  then: \\set.theoretic.successor{m} \\:less.than.or.equal:/ n\n. m \\:less.than.or.equal?:/ \\sum:of{m}:and{n}\n. if:\n  . \\set.theoretic.zero \\:less.than?:/ q\n  . \\set.theoretic.zero \\:less.than?:/ n\n  then: \\set.theoretic.zero \\:less.than?:/ \\product:of{q}:and{n}\nDocumented:\n. description: \"Let $m, n, q \\in \\omega$. Then (a) if $m < n$ then $m^+ \\leq n$; (b) $m \\leq m + n$; and (c) if $q > 0$ and $n > 0$ then $qn > 0$.\"\nId: \"c6f806a0-a146-41c3-b0ef-a577c2eba28f\"",
+  "sections": [
+    {
+      "label": "Lemma",
+      "inline_argument": "\"Lemma 3.23\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "m, n, q is \\set.theoretic.natural.number",
+      "inline_latex": "m, n, q \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "if",
+              "inline_argument": "m \\:less.than?:/ n",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e3a2f}{m < n}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "\\set.theoretic.successor{m} \\:less.than.or.equal:/ n",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e2e6f722e657175616c3a2f}{\\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{m^+} \\leq n}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "m \\:less.than.or.equal?:/ \\sum:of{m}:and{n}",
+          "latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e2e6f722e657175616c3a2f}{m \\leq \\htmlData{mlg-ref=5c73756d3a6f663a616e64}{m + n}}"
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "if",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "\\set.theoretic.zero \\:less.than?:/ q",
+                  "latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e3a2f}{\\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0} < q}"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "\\set.theoretic.zero \\:less.than?:/ n",
+                  "latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e3a2f}{\\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0} < n}"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "\\set.theoretic.zero \\:less.than?:/ \\product:of{q}:and{n}",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a6c6573732e7468616e3a2f}{\\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0} < \\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{q \\cdot n}}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c6f806a0-a146-41c3-b0ef-a577c2eba28f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

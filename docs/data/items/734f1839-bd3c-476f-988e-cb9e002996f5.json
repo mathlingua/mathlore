@@ -1,0 +1,27 @@
+{
+  "id": "734f1839-bd3c-476f-988e-cb9e002996f5",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "The Axiom of Choice"
+  },
+  "source": "SubsectionTitle: \"The Axiom of Choice\"\nId: \"734f1839-bd3c-476f-988e-cb9e002996f5\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"The Axiom of Choice\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"734f1839-bd3c-476f-988e-cb9e002996f5\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

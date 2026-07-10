@@ -1,0 +1,14 @@
+{
+  "id": "8e033c16-6fa1-4b71-9580-77524189c87f-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A set $X$ is transitive when each of its elements is also a subset of it: $a \\in X$ implies $a \\subseteq X$. Every natural number is a transitive set."
+  },
+  "source": "",
+  "sections": []
+}

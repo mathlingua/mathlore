@@ -1,0 +1,14 @@
+{
+  "id": "7d9d55a2-a00a-46ba-a4a8-733237822e8a-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The restriction $f|_{C}$ of a function $f \\colon A \\to B$ to a subset $C \\subseteq A$: the function from $C$ to $B$ defined by $f|_{C}(x) = f(x)$ for all $x \\in C$."
+  },
+  "source": "",
+  "sections": []
+}

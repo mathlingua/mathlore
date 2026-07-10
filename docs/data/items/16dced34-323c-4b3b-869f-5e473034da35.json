@@ -1,0 +1,81 @@
+{
+  "id": "16dced34-323c-4b3b-869f-5e473034da35",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e72656c6174696f6e3a6f6e"
+  ],
+  "heading": "\\set.theoretic.relation:on{X}",
+  "heading_latex": "\\textrm{relation on }X",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.relation:on{X}]\nDescribes: R\nwhen: X is \\set\nextends: R is \\set.theoretic.relation:from{X}:to{X}\nDocumented:\n. called: \"relation on $X?$\"\n. written: \"R? \\subseteq X? \\times X?\"\n. description: \"A relation on the set $X$, that is, a relation from $X$ to $X$: a subset of $X \\times X$.\"\nId: \"16dced34-323c-4b3b-869f-5e473034da35\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "R",
+      "inline_latex": "R",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "extends",
+      "inline_argument": "R is \\set.theoretic.relation:from{X}:to{X}",
+      "inline_latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e72656c6174696f6e3a66726f6d3a746f}{R \\subseteq X \\times X}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"relation on $X?$\"",
+              "inline_latex": "\\textrm{relation on }X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"R? \\subseteq X? \\times X?\"",
+              "inline_latex": "R \\subseteq X \\times X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"16dced34-323c-4b3b-869f-5e473034da35\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

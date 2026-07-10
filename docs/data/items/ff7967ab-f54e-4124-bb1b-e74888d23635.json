@@ -1,0 +1,66 @@
+{
+  "id": "ff7967ab-f54e-4124-bb1b-e74888d23635",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven: k, m, n is \\set.theoretic.natural.number\nthen:\n. \\sum:of{\\sum:of{k}:and{m}}:and{n} = \\sum:of{k}:and{\\sum:of{m}:and{n}}\n. \\sum:of{m}:and{n} = \\sum:of{n}:and{m}\nDocumented:\n. description: \"Addition is associative and commutative: for all $k, m, n \\in \\omega$, $(k + m) + n = k + (m + n)$ and $m + n = n + m$. Both are proved by induction using the recursive definition of addition.\"\nId: \"ff7967ab-f54e-4124-bb1b-e74888d23635\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "k, m, n is \\set.theoretic.natural.number",
+      "inline_latex": "k, m, n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\sum:of{\\sum:of{k}:and{m}}:and{n} = \\sum:of{k}:and{\\sum:of{m}:and{n}}",
+          "latex": "\\htmlData{mlg-ref=5c73756d3a6f663a616e64}{\\htmlData{mlg-ref=5c73756d3a6f663a616e64}{k + m} + n} = \\htmlData{mlg-ref=5c73756d3a6f663a616e64}{k + \\htmlData{mlg-ref=5c73756d3a6f663a616e64}{m + n}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "\\sum:of{m}:and{n} = \\sum:of{n}:and{m}",
+          "latex": "\\htmlData{mlg-ref=5c73756d3a6f663a616e64}{m + n} = \\htmlData{mlg-ref=5c73756d3a6f663a616e64}{n + m}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ff7967ab-f54e-4124-bb1b-e74888d23635\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

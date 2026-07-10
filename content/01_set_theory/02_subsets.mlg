@@ -1,0 +1,47 @@
+SubsectionTitle: "Subsets"
+Id: "f72843cf-4e4f-4dd4-a4ea-9520da8751e5"
+
+
+[A \:subset:/ B]
+Describes: A
+when: B is \set
+extends: A is \set
+satisfies:
+. forAll: x "in" A
+  then: x "in" B
+Documented:
+. called: "subset"
+. written: "A? \subseteq B?"
+. description: "$A$ is a subset of $B$, written $A \subseteq B$, when every element of $A$ is also an element of $B$."
+Id: "4196f823-e51d-4568-89aa-83a2d4627bd9"
+
+
+[A \:proper.subset:/ B]
+Describes: A
+when: B is \set
+extends: A \:subset:/ B
+satisfies:
+. A != B
+Documented:
+. called: "proper subset"
+. written: "A? \subsetneq B?"
+. description: "$A$ is a proper subset of $B$, written $A \subsetneq B$, when $A \subseteq B$ and $A \neq B$."
+Id: "802bba0f-66eb-4e40-afce-82c52af8ae35"
+
+
+Theorem:
+given: A, B is \set
+then: A = B
+iff:
+. A \:subset?:/ B
+. B \:subset?:/ A
+Documented:
+. description: "Two sets are equal if and only if each is a subset of the other. This restates the axiom of extension in terms of the subset relation."
+Id: "9c350b96-5b1a-416f-a391-220116a7a512"
+
+Theorem:
+given: A is \set
+then: \empty.set \:subset:/ A
+Documented:
+. description: "The empty set is a subset of every set, since the defining condition of subset is vacuously satisfied when there are no elements to check."
+Id: "027aff39-d5a5-4e39-954d-5b23027e8814"

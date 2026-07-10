@@ -1,0 +1,105 @@
+{
+  "id": "671ceb2a-9714-424f-813e-6a971a462a3d",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c706f7765723a626173653a6578706f6e656e74"
+  ],
+  "heading": "\\power:base{m}:exponent{n}",
+  "heading_latex": "m\\textrm{ to the power }n",
+  "body_text": null,
+  "page": null,
+  "source": "[\\power:base{m}:exponent{n}]\nDefines: e is \\set.theoretic.natural.number\nwhen: m, n is \\set.theoretic.natural.number\nexpresses:\n. \\power:base{m}:exponent{\\set.theoretic.zero} = \\one\n. forAll: k is \\set.theoretic.natural.number\n  then: \\power:base{m}:exponent{\\set.theoretic.successor{k}} = \\product:of{\\power:base{m}:exponent{k}}:and{m}\nDocumented:\n. called: \"$m?$ to the power $n?$\"\n. written: \"m?^{n?}\"\n. description: \"The power $m^n$, defined by recursion on $n$: $m^0 = 1$ and $m^{n^+} = m^n \\cdot m$.\"\nId: \"671ceb2a-9714-424f-813e-6a971a462a3d\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "e is \\set.theoretic.natural.number",
+      "inline_latex": "e \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "m, n is \\set.theoretic.natural.number",
+      "inline_latex": "m, n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\power:base{m}:exponent{\\set.theoretic.zero} = \\one",
+          "latex": "\\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{m^{\\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0}}} = \\htmlData{mlg-ref=5c6f6e65}{1}"
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "k is \\set.theoretic.natural.number",
+              "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "\\power:base{m}:exponent{\\set.theoretic.successor{k}} = \\product:of{\\power:base{m}:exponent{k}}:and{m}",
+              "inline_latex": "\\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{m^{\\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{k^+}}} = \\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{\\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{m^{k}} \\cdot m}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$m?$ to the power $n?$\"",
+              "inline_latex": "m\\textrm{ to the power }n",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"m?^{n?}\"",
+              "inline_latex": "m^{n}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"671ceb2a-9714-424f-813e-6a971a462a3d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

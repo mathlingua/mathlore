@@ -1,0 +1,14 @@
+{
+  "id": "0678dcc0-116f-4043-8f24-b033a4914f5e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A natural number is an element of the set $\\omega$ of natural numbers. Each natural number is itself a set, and the natural number $n$ has exactly $n$ elements."
+  },
+  "source": "",
+  "sections": []
+}

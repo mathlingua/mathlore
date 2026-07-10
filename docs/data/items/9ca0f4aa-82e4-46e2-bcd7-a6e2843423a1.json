@@ -1,0 +1,55 @@
+{
+  "id": "9ca0f4aa-82e4-46e2-bcd7-a6e2843423a1",
+  "kind": "Lemma",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Lemma:\ngiven: m, n is \\set.theoretic.natural.number\nthen: m \\.comparable./ n\nDocumented:\n. description: \"All natural numbers are comparable: for any $m, n \\in \\omega$, one of $m \\in n$, $n \\in m$, or $m = n$ holds. The proof is a double induction using that each natural number is transitive.\"\nId: \"9ca0f4aa-82e4-46e2-bcd7-a6e2843423a1\"",
+  "sections": [
+    {
+      "label": "Lemma",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "m, n is \\set.theoretic.natural.number",
+      "inline_latex": "m, n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": "m \\.comparable./ n",
+      "inline_latex": "\\htmlData{mlg-ref=5c2e636f6d70617261626c652e2f}{m \\text{ and } n \\text{ are comparable}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"9ca0f4aa-82e4-46e2-bcd7-a6e2843423a1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

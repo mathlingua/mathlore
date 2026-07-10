@@ -1,0 +1,14 @@
+{
+  "id": "d81afeb4-f95e-4a5a-a17c-dd6f7e6ace2b-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The intersection over a nonempty collection $C$ of sets, defined by specification: $x \\in \\bigcap_{A \\in C} A$ if and only if $x \\in A$ for every $A \\in C$. The collection must be nonempty, since the intersection over the empty collection would be the set of all sets."
+  },
+  "source": "",
+  "sections": []
+}

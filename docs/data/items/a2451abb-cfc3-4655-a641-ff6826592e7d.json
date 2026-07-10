@@ -1,0 +1,92 @@
+{
+  "id": "a2451abb-cfc3-4655-a641-ff6826592e7d",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c66616d696c793a6f766572"
+  ],
+  "heading": "\\family:over{I}",
+  "heading_latex": "\\textrm{family indexed by }I",
+  "body_text": null,
+  "page": null,
+  "source": "[\\family:over{I}]\nDescribes: A(x__) ::= y_\nwhen: I is \\set\nspecifies:\n. x__ \"in\" I\n. y_ is \\set\nDocumented:\n. called: \"family indexed by $I?$\"\n. written: \"\\{A?_i\\}_{i \\in I?}\"\n. description: \"A family of sets is a function $A$ with domain $I$. When $A$ is a family over $I$ one writes $\\{A_i\\}_{i \\in I}$ and $A_i$ for $A(i)$.\"\nId: \"a2451abb-cfc3-4655-a641-ff6826592e7d\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "A(x__) ::= y_",
+      "inline_latex": "A(x) ::= y",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "I is \\set",
+      "inline_latex": "I \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "x__ \"in\" I",
+          "latex": "x \\in I"
+        },
+        {
+          "kind": "formulation",
+          "text": "y_ is \\set",
+          "latex": "y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"family indexed by $I?$\"",
+              "inline_latex": "\\textrm{family indexed by }I",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\{A?_i\\}_{i \\in I?}\"",
+              "inline_latex": "\\{A_i\\}_{i \\in I}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a2451abb-cfc3-4655-a641-ff6826592e7d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

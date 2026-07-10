@@ -1,0 +1,14 @@
+{
+  "id": "92407cb2-fc01-41a2-a223-3b2671145f65-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A set $A$ is inductive, or a successor set, when $0 \\in A$ and $x \\in A$ implies $x^+ \\in A$. Inductive sets are the sets closed under the successor operation and containing zero."
+  },
+  "source": "",
+  "sections": []
+}

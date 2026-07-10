@@ -1,0 +1,161 @@
+{
+  "id": "532996b0-e015-492f-9ea7-c312ebf89aa0",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\n. \"Theorem 4.11\"\ngiven:\n. X is \\set\nwhere:\n. X is? \\(finite)::set\nthen:\n. have:\n  . forAll: A is \\set\n    where:\n    . A \"in\" X\n    then:\n    . not:\n      . A = \\empty.set\n  iff:\n  . exists: f is \\choice.function:on{X}\nDocumented:\n. description: \"A finite collection $X$ of sets has a choice function if and only if no set in $X$ is empty. The forward direction is Proposition 4.10; the reverse is proved by induction on the cardinality of $X$.\"\nId: \"532996b0-e015-492f-9ea7-c312ebf89aa0\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Theorem 4.11",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is? \\(finite)::set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c66696e6974653a3a736574}{\\textrm{finite}}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "have",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "A is \\set",
+                      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "A \"in\" X",
+                          "latex": "A \\in X"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "not",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "A = \\empty.set",
+                                  "latex": "A = \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "iff",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "f is \\choice.function:on{X}",
+                      "inline_latex": "\\htmlData{mlg-ref=5c63686f6963652e66756e6374696f6e3a6f6e}{f}",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"532996b0-e015-492f-9ea7-c312ebf89aa0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

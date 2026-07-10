@@ -1,0 +1,14 @@
+{
+  "id": "f365ada7-50a7-4c7f-b4ec-3910633d25e6-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The set $\\omega$ is infinite. Indeed $\\omega \\sim \\omega \\setminus \\{0\\}$ under the map $n \\mapsto n^+$, so $\\omega$ is equivalent to a proper subset of itself, which no finite set can be."
+  },
+  "source": "",
+  "sections": []
+}

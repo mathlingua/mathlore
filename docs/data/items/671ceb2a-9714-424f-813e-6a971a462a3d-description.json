@@ -1,0 +1,14 @@
+{
+  "id": "671ceb2a-9714-424f-813e-6a971a462a3d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The power $m^n$, defined by recursion on $n$: $m^0 = 1$ and $m^{n^+} = m^n \\cdot m$."
+  },
+  "source": "",
+  "sections": []
+}

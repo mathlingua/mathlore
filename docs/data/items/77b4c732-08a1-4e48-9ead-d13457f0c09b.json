@@ -1,0 +1,66 @@
+{
+  "id": "77b4c732-08a1-4e48-9ead-d13457f0c09b",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven: k, m, n is \\set.theoretic.natural.number\nthen:\n. \\product:of{k}:and{\\sum:of{m}:and{n}} = \\sum:of{\\product:of{k}:and{m}}:and{\\product:of{k}:and{n}}\n. \\product:of{\\sum:of{k}:and{m}}:and{n} = \\sum:of{\\product:of{k}:and{n}}:and{\\product:of{m}:and{n}}\nDocumented:\n. description: \"Multiplication distributes over addition: for all $k, m, n \\in \\omega$, $k(m + n) = km + kn$ and $(k + m)n = kn + mn$.\"\nId: \"77b4c732-08a1-4e48-9ead-d13457f0c09b\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "k, m, n is \\set.theoretic.natural.number",
+      "inline_latex": "k, m, n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\product:of{k}:and{\\sum:of{m}:and{n}} = \\sum:of{\\product:of{k}:and{m}}:and{\\product:of{k}:and{n}}",
+          "latex": "\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{k \\cdot \\htmlData{mlg-ref=5c73756d3a6f663a616e64}{m + n}} = \\htmlData{mlg-ref=5c73756d3a6f663a616e64}{\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{k \\cdot m} + \\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{k \\cdot n}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "\\product:of{\\sum:of{k}:and{m}}:and{n} = \\sum:of{\\product:of{k}:and{n}}:and{\\product:of{m}:and{n}}",
+          "latex": "\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{\\htmlData{mlg-ref=5c73756d3a6f663a616e64}{k + m} \\cdot n} = \\htmlData{mlg-ref=5c73756d3a6f663a616e64}{\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{k \\cdot n} + \\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{m \\cdot n}}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"77b4c732-08a1-4e48-9ead-d13457f0c09b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

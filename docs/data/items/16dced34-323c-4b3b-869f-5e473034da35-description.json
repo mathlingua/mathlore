@@ -1,0 +1,14 @@
+{
+  "id": "16dced34-323c-4b3b-869f-5e473034da35-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation on the set $X$, that is, a relation from $X$ to $X$: a subset of $X \\times X$."
+  },
+  "source": "",
+  "sections": []
+}

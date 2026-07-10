@@ -1,0 +1,14 @@
+{
+  "id": "2e0546a7-28b9-4d11-a575-a3ee3fb45f3d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function $f$ is injective when $f(x) = f(y)$ implies $x = y$ for all $x, y$ in its domain; distinct inputs yield distinct outputs."
+  },
+  "source": "",
+  "sections": []
+}

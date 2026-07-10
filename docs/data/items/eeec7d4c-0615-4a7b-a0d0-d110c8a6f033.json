@@ -1,0 +1,102 @@
+{
+  "id": "eeec7d4c-0615-4a7b-a0d0-d110c8a6f033",
+  "kind": "Axiom",
+  "definition_keys": [
+    "5c6178696f6d2e6f662e656d7074792e736574"
+  ],
+  "heading": "\\axiom.of.empty.set",
+  "heading_latex": "\\textrm{Axiom of Empty Set}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\axiom.of.empty.set]\nAxiom: \"Axiom of Empty Set\"\nthen:\n. exists: E is \\set\n  suchThat:\n  . forAll: x is \\set\n    then:\n    . not: x \"in\" E\nDocumented:\n. description: \"There exists a set $\\emptyset$ such that for every set $x$, $x \\notin \\emptyset$. This set is a reasonable starting point from which further sets are built.\"\nId: \"eeec7d4c-0615-4a7b-a0d0-d110c8a6f033\"",
+  "sections": [
+    {
+      "label": "Axiom",
+      "inline_argument": "\"Axiom of Empty Set\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "E is \\set",
+              "inline_latex": "E \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "x is \\set",
+                      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "not",
+                              "inline_argument": "x \"in\" E",
+                              "inline_latex": "x \\in E",
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"eeec7d4c-0615-4a7b-a0d0-d110c8a6f033\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

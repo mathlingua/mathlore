@@ -1,0 +1,14 @@
+{
+  "id": "92b0c011-730b-4e42-81f8-dcedb68f93d6-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For any $n, m \\in \\omega$, exactly one of the following holds: $n = m$, $n \\in m$, or $m \\in n$. Comparability gives at least one, and Lemma 3.7 rules out more than one."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,75 @@
+{
+  "id": "a8f91b22-3648-4301-8119-a5b63753eaf9",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e73696e676c65746f6e"
+  ],
+  "heading": "\\set.theoretic.singleton{a}",
+  "heading_latex": "\\textrm{singleton }a",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.singleton{a}]\nDefines: S := \\set.theoretic.pair:of{a}:and{a} is \\set\nwhen: a is \\set\nDocumented:\n. called: \"singleton $a?$\"\n. written: \"\\{a?\\}\"\n. description: \"The set $\\{a\\}$ whose only element is $a$, obtained by pairing $a$ with itself so that $\\{a, a\\} = \\{a\\}$.\"\nId: \"a8f91b22-3648-4301-8119-a5b63753eaf9\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "S := \\set.theoretic.pair:of{a}:and{a} is \\set",
+      "inline_latex": "S := \\htmlData{mlg-ref=5c7365742e7468656f72657469632e706169723a6f663a616e64}{\\{a, a\\}} \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "a is \\set",
+      "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"singleton $a?$\"",
+              "inline_latex": "\\textrm{singleton }a",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\{a?\\}\"",
+              "inline_latex": "\\{a\\}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a8f91b22-3648-4301-8119-a5b63753eaf9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

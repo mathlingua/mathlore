@@ -1,0 +1,14 @@
+{
+  "id": "64d05ce0-11a9-4d4c-8808-4e401f6f6fa9-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function is bijective when it is both injective and surjective; equivalently, every element of the codomain is the image of exactly one element of the domain."
+  },
+  "source": "",
+  "sections": []
+}

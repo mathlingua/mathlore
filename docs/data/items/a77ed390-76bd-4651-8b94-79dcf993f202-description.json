@@ -1,0 +1,14 @@
+{
+  "id": "a77ed390-76bd-4651-8b94-79dcf993f202-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "If $n \\in \\omega$, then $n$ is not equivalent to any of its proper subsets. Equivalently, every injective function from $n$ to $n$ is surjective. This is proved by induction on $n$."
+  },
+  "source": "",
+  "sections": []
+}

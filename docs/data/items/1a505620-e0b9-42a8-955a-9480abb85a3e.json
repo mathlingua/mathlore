@@ -1,0 +1,70 @@
+{
+  "id": "1a505620-e0b9-42a8-955a-9480abb85a3e",
+  "kind": "Axiom",
+  "definition_keys": [
+    "5c6178696f6d2e6f662e73706563696669636174696f6e"
+  ],
+  "heading": "\\axiom.of.specification",
+  "heading_latex": "\\textrm{Axiom of Specification}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\axiom.of.specification]\nAxiom: \"Axiom of Specification\"\ngiven: A is \\set\nthen:\n. exists: B \\:subset:/ A\nDocumented:\n. description: \"If $A$ is a set and $P(x)$ is a formula of first order logic, then there exists a set $B = \\{x \\in A \\mid P(x)\\}$ containing precisely each $x \\in A$ such that $P(x)$ is true. The set $B$ is unique by the axiom of extension.\"\nId: \"1a505620-e0b9-42a8-955a-9480abb85a3e\"",
+  "sections": [
+    {
+      "label": "Axiom",
+      "inline_argument": "\"Axiom of Specification\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "A is \\set",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "B \\:subset:/ A",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{B \\subseteq A}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1a505620-e0b9-42a8-955a-9480abb85a3e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "8671e667-d056-44e4-a56a-e0fc963f753f-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Assuming the axioms of ZF and Zorn's lemma, every set can be well ordered. One applies Zorn's lemma to the collection of well orderings of subsets of $X$, ordered by continuation; a maximal element must well order all of $X$."
+  },
+  "source": "",
+  "sections": []
+}

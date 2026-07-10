@@ -1,0 +1,14 @@
+{
+  "id": "046391ea-6a1b-452e-9ef5-07319ebd5362-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The domain of a relation $R$, the set $\\{a \\mid \\exists b \\text{ such that } a \\mathbin{R} b\\}$ of first coordinates of the pairs in $R$."
+  },
+  "source": "",
+  "sections": []
+}

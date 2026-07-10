@@ -1,0 +1,136 @@
+{
+  "id": "252a3455-3de4-4d4a-b258-b918cbd0c09d",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\n. \"Theorem 4.37\"\ngiven:\n. X is \\set\nwhere:\n. forAll: A is \\set\n  where:\n  . A \"in\" X\n  then:\n  . not:\n    . A = \\empty.set\nthen:\n. exists: f is \\choice.function:on{X}\nDocumented:\n. description: \"Assuming the axioms of ZF and the well ordering principle, the axiom of choice holds. Well order $\\bigcup_{A \\in X} A$; then the function sending each $A \\in X$ to its least element is a choice function. This completes the equivalence of the axiom of choice, Zorn's lemma, and the well ordering principle.\"\nId: \"252a3455-3de4-4d4a-b258-b918cbd0c09d\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Theorem 4.37",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A is \\set",
+              "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "A \"in\" X",
+                  "latex": "A \\in X"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "not",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "A = \\empty.set",
+                          "latex": "A = \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "f is \\choice.function:on{X}",
+              "inline_latex": "\\htmlData{mlg-ref=5c63686f6963652e66756e6374696f6e3a6f6e}{f}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"252a3455-3de4-4d4a-b258-b918cbd0c09d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

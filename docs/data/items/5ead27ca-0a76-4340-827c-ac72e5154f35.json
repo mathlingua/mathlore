@@ -1,0 +1,161 @@
+{
+  "id": "5ead27ca-0a76-4340-827c-ac72e5154f35",
+  "kind": "States",
+  "definition_keys": [
+    "5c77656c6c2e6f726465726564"
+  ],
+  "heading": "\\well.ordered{X}",
+  "heading_latex": "\\textrm{well ordered}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\well.ordered{X}]\nStates:\nwhen:\n. X is \\set\nthat:\n. forAll: A is \\set\n  where:\n  . A \\:subset:/ X\n  . not:\n    . A = \\empty.set\n  then:\n  . exists: m is \\set\n    suchThat:\n    . m \\.least.in./ A\nDocumented:\n. called: \"well ordered\"\n. written: \"X? \\text{ is well ordered}\"\n. description: \"A partially ordered set $X$ is well ordered when every nonempty subset of $X$ has a least element. The natural numbers are the prototypical well ordered set.\"\nId: \"5ead27ca-0a76-4340-827c-ac72e5154f35\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A is \\set",
+              "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "A \\:subset:/ X",
+                  "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq X}"
+                },
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "not",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "A = \\empty.set",
+                          "latex": "A = \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "m is \\set",
+                      "inline_latex": "m \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "m \\.least.in./ A",
+                          "latex": "\\htmlData{mlg-ref=5c2e6c656173742e696e2e2f}{m \\text{ is least in } A}"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"well ordered\"",
+              "inline_latex": "\\textrm{well ordered}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"X? \\text{ is well ordered}\"",
+              "inline_latex": "X \\text{ is well ordered}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5ead27ca-0a76-4340-827c-ac72e5154f35\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

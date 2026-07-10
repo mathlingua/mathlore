@@ -1,0 +1,74 @@
+SubsectionTitle: "Zorn's Lemma"
+Id: "98486459-7fe8-49ee-b4e0-1a1c621d09ab"
+
+[A \.chain.in./ X]
+States:
+when:
+. A is \set
+. X is \set
+that:
+. allOf:
+  . A \:subset:/ X
+  . \totally.ordered{A}
+Documented:
+. called: "chain"
+. written: "A? \text{ is a chain in } X?"
+. description: "A chain in a partially ordered set $X$ is a totally ordered subset $A \subseteq X$: any two elements of $A$ are comparable."
+Id: "4dfbec25-22ff-4600-8b57-b50a5b1dd2c8"
+
+[u \.upper.bound.of./ A]
+States:
+when:
+. u is \set
+. A is \set
+that:
+. forAll: a is \set
+  where:
+  . a "in" A
+  then:
+  . a \:precedes:/ u
+Documented:
+. called: "upper bound"
+. written: "u? \text{ is an upper bound of } A?"
+. description: "An element $u$ is an upper bound of a chain $A$ when $a \preceq u$ for all $a \in A$. An upper bound of $A$ need not be a member of $A$."
+Id: "8fdb8581-abd8-4bc4-b44e-75a644794ecf"
+
+Theorem:
+. "Theorem 4.22 (Zorn's Lemma)"
+given:
+. X is \set
+where:
+. \partially.ordered{X}
+. not:
+  . X = \empty.set
+. forAll: A is \set
+  where:
+  . A \.chain.in./ X
+  then:
+  . exists: u is \set
+    suchThat:
+    . allOf:
+      . u "in" X
+      . u \.upper.bound.of./ A
+then:
+. exists: m is \set
+  suchThat:
+  . m \.maximal.in./ X
+Documented:
+. description: "Suppose $X$ is a non-empty partially ordered set such that every chain in $X$ has an upper bound in $X$. Then $X$ contains a maximal element. Zorn's lemma is the first of the two major statements shown to be equivalent to the axiom of choice."
+Id: "7395d1bd-f430-4b75-a515-9b992034553c"
+
+Text: "
+The proof that the axiom of choice implies Zorn's lemma proceeds by a tower
+argument. Fix a choice function $f$ on $\mathcal{P}(X) \setminus \{\emptyset\}$.
+For each set $A$ of chains one forms $\hat{A}$, the set of elements whose
+adjunction keeps $A$ a chain, and defines $g(A) = A \cup \{f(\hat{A} \setminus A)\}$
+when $\hat{A} \setminus A \neq \emptyset$ and $g(A) = A$ otherwise, so that $A$ is
+maximal exactly when $g(A) = A$. A collection is called a tower if it contains
+$\emptyset$, is closed under $g$, and is closed under unions of chains. The
+intersection $\tau_0$ of all towers is itself a tower, and a sequence of lemmas
+shows every element of $\tau_0$ is comparable, so $\tau_0$ is a chain. Its union
+$A$ then satisfies $g(A) = A$, which forces $\hat{A} \setminus A = \emptyset$ and
+produces the required maximal element.
+"
+Id: "7d400d74-4e9f-4837-bcc8-ae2551681f0f"

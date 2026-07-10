@@ -1,0 +1,14 @@
+{
+  "id": "c1766d97-e27d-4e5f-8d60-6621c1b0ca68-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The intersection $A \\cap B$, defined as the intersection over the collection $\\{A, B\\}$, so that $x \\in A \\cap B$ if and only if $x \\in A$ and $x \\in B$."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,129 @@
+{
+  "id": "ea4a57e7-19d9-4241-9dba-9ddea2a49564",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e6c656173742e696e2e2f"
+  ],
+  "heading": "a \\.least.in./ X",
+  "heading_latex": "\\textrm{least element}",
+  "body_text": null,
+  "page": null,
+  "source": "[a \\.least.in./ X]\nStates:\nwhen:\n. a is \\set\n. X is \\set\nthat:\n. forAll: x is \\set\n  where:\n  . x \"in\" X\n  then:\n  . a \\:precedes:/ x\nDocumented:\n. called: \"least element\"\n. written: \"a? \\text{ is least in } X?\"\n. description: \"An element $a$ is least, smallest, or first in $X$ when $a \\preceq x$ for all $x \\in X$.\"\nId: \"ea4a57e7-19d9-4241-9dba-9ddea2a49564\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "a is \\set",
+          "latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "x \"in\" X",
+                  "latex": "x \\in X"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "a \\:precedes:/ x",
+                  "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{a \\preceq x}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"least element\"",
+              "inline_latex": "\\textrm{least element}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a? \\text{ is least in } X?\"",
+              "inline_latex": "a \\text{ is least in } X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ea4a57e7-19d9-4241-9dba-9ddea2a49564\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

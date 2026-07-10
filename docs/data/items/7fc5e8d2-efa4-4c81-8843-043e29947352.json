@@ -1,0 +1,75 @@
+{
+  "id": "7fc5e8d2-efa4-4c81-8843-043e29947352",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e737563636573736f72"
+  ],
+  "heading": "\\set.theoretic.successor{n}",
+  "heading_latex": "\\textrm{successor of }n",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.successor{n}]\nDefines: s := \\set.theoretic.union:of{n}:and{\\set.theoretic.singleton{n}} is \\set.theoretic.natural.number\nwhen: n is \\set.theoretic.natural.number\nDocumented:\n. called: \"successor of $n?$\"\n. written: \"n?^+\"\n. description: \"The successor $n^+ = n \\cup \\{n\\}$ of a natural number $n$. If $n$ has $n$ elements then $n^+$ has $n + 1$ elements, since $n^+$ adjoins $n$ itself as a new element. The same construction $x^+ = x \\cup \\{x\\}$ makes sense for any set.\"\nId: \"7fc5e8d2-efa4-4c81-8843-043e29947352\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "s := \\set.theoretic.union:of{n}:and{\\set.theoretic.singleton{n}} is \\set.theoretic.natural.number",
+      "inline_latex": "s := \\htmlData{mlg-ref=5c7365742e7468656f72657469632e756e696f6e3a6f663a616e64}{n \\cup \\htmlData{mlg-ref=5c7365742e7468656f72657469632e73696e676c65746f6e}{\\{n\\}}} \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "n is \\set.theoretic.natural.number",
+      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"successor of $n?$\"",
+              "inline_latex": "\\textrm{successor of }n",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"n?^+\"",
+              "inline_latex": "n^+",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7fc5e8d2-efa4-4c81-8843-043e29947352\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "abd5b742-bb8b-4787-bfb5-9cc96e45c1cf",
+  "kind": "Corollary",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Corollary:\n. \"Corollary 4.6\"\nof:\n. \"Lemma 4.5 (Pigeonhole Principle)\"\ngiven:\n. E is \\set\n. n is \\set.theoretic.natural.number\nwhere:\n. E \\:equivalent:/ n\nthen:\n. forAll: m is \\set.theoretic.natural.number\n  where:\n  . E \\:equivalent:/ m\n  then:\n  . m = n\nDocumented:\n. description: \"If $E$ is a set and $n \\in \\omega$ with $E \\sim n$, then $n$ is the unique natural number equivalent to $E$. The pigeonhole principle guarantees that distinct natural numbers are never equivalent.\"\nId: \"abd5b742-bb8b-4787-bfb5-9cc96e45c1cf\"",
+  "sections": [
+    {
+      "label": "Corollary",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Corollary 4.6",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "of",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Lemma 4.5 (Pigeonhole Principle)",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "E is \\set",
+          "latex": "E \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "n is \\set.theoretic.natural.number",
+          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "E \\:equivalent:/ n",
+          "latex": "\\htmlData{mlg-ref=5c3a6571756976616c656e743a2f}{E \\sim n}"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "m is \\set.theoretic.natural.number",
+              "inline_latex": "m \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "E \\:equivalent:/ m",
+                  "latex": "\\htmlData{mlg-ref=5c3a6571756976616c656e743a2f}{E \\sim m}"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "m = n",
+                  "latex": "m = n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"abd5b742-bb8b-4787-bfb5-9cc96e45c1cf\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

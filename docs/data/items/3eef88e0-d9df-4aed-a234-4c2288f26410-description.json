@@ -1,0 +1,14 @@
+{
+  "id": "3eef88e0-d9df-4aed-a234-4c2288f26410-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A set $E$ is finite when it is equivalent to some natural number, that is, when there is a bijection between $E$ and some $n \\in \\omega$."
+  },
+  "source": "",
+  "sections": []
+}

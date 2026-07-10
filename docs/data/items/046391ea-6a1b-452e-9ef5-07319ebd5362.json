@@ -1,0 +1,138 @@
+{
+  "id": "046391ea-6a1b-452e-9ef5-07319ebd5362",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e646f6d61696e"
+  ],
+  "heading": "\\set.theoretic.domain{R}",
+  "heading_latex": "\\textrm{domain of }R",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.domain{R}]\nDefines: D is \\set\nwhen: R is \\set\nexpresses:\n. forAll: a is \\set\n  then:\n  . have: a \"in\" D\n    iff:\n    . exists: b is \\set\n      suchThat: \\set.theoretic.ordered.pair:of{a}:and{b} \"in\" R\nDocumented:\n. called: \"domain of $R?$\"\n. written: \"\\operatorname{dom}(R?)\"\n. description: \"The domain of a relation $R$, the set $\\{a \\mid \\exists b \\text{ such that } a \\mathbin{R} b\\}$ of first coordinates of the pairs in $R$.\"\nId: \"046391ea-6a1b-452e-9ef5-07319ebd5362\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "D is \\set",
+      "inline_latex": "D \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "R is \\set",
+      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a is \\set",
+              "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "a \"in\" D",
+                      "inline_latex": "a \\in D",
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "exists",
+                              "inline_argument": "b is \\set",
+                              "inline_latex": "b \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                              "arguments": []
+                            },
+                            {
+                              "label": "suchThat",
+                              "inline_argument": "\\set.theoretic.ordered.pair:of{a}:and{b} \"in\" R",
+                              "inline_latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e6f7264657265642e706169723a6f663a616e64}{(a, b)} \\in R",
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"domain of $R?$\"",
+              "inline_latex": "\\textrm{domain of }R",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{dom}(R?)\"",
+              "inline_latex": "\\operatorname{dom}(R)",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"046391ea-6a1b-452e-9ef5-07319ebd5362\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

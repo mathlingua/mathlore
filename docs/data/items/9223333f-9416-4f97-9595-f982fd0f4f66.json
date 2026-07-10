@@ -1,0 +1,110 @@
+{
+  "id": "9223333f-9416-4f97-9595-f982fd0f4f66",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e636f6d70617261626c652e2f"
+  ],
+  "heading": "m \\.comparable./ n",
+  "heading_latex": "\\textrm{comparable}",
+  "body_text": null,
+  "page": null,
+  "source": "[m \\.comparable./ n]\nStates:\nwhen: m, n is \\set.theoretic.natural.number\nthat:\n. anyOf:\n  . m \"in\" n\n  . n \"in\" m\n  . m = n\nDocumented:\n. called: \"comparable\"\n. written: \"m? \\text{ and } n? \\text{ are comparable}\"\n. description: \"Natural numbers $m$ and $n$ are comparable when $m \\in n$, $n \\in m$, or $m = n$.\"\nId: \"9223333f-9416-4f97-9595-f982fd0f4f66\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "m, n is \\set.theoretic.natural.number",
+      "inline_latex": "m, n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "anyOf",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "m \"in\" n",
+                  "latex": "m \\in n"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "n \"in\" m",
+                  "latex": "n \\in m"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "m = n",
+                  "latex": "m = n"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"comparable\"",
+              "inline_latex": "\\textrm{comparable}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"m? \\text{ and } n? \\text{ are comparable}\"",
+              "inline_latex": "m \\text{ and } n \\text{ are comparable}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"9223333f-9416-4f97-9595-f982fd0f4f66\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

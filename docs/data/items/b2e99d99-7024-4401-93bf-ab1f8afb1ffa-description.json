@@ -1,0 +1,14 @@
+{
+  "id": "b2e99d99-7024-4401-93bf-ab1f8afb1ffa-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The strict initial segment $s(a) = \\{x \\in X \\mid x \\prec a\\}$ of an element $a$ in a partially ordered set $X$."
+  },
+  "source": "",
+  "sections": []
+}

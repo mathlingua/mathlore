@@ -1,0 +1,63 @@
+{
+  "id": "0678dcc0-116f-4043-8f24-b033a4914f5e",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572"
+  ],
+  "heading": "\\set.theoretic.natural.number",
+  "heading_latex": "\\textrm{natural number}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.theoretic.natural.number]\nDescribes: n\nextends: n is \\set\nDocumented:\n. called: \"natural number\"\n. description: \"A natural number is an element of the set $\\omega$ of natural numbers. Each natural number is itself a set, and the natural number $n$ has exactly $n$ elements.\"\nId: \"0678dcc0-116f-4043-8f24-b033a4914f5e\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "n",
+      "inline_latex": "n",
+      "arguments": []
+    },
+    {
+      "label": "extends",
+      "inline_argument": "n is \\set",
+      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"natural number\"",
+              "inline_latex": "\\textrm{natural number}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0678dcc0-116f-4043-8f24-b033a4914f5e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

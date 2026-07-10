@@ -1,0 +1,14 @@
+{
+  "id": "7c607037-392f-451e-9945-d1676222c368-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "There exists a minimal inductive set; that is, an inductive set $\\omega$ such that for every inductive set $B$, $\\omega \\subseteq B$. It is obtained as the intersection of all inductive subsets of a given inductive set, and it is unique by extension. This minimal inductive set is the set $\\omega$ of natural numbers."
+  },
+  "source": "",
+  "sections": []
+}

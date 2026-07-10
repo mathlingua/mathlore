@@ -1,0 +1,14 @@
+{
+  "id": "5f1f1c55-e4ac-42ca-b69a-ea33008529c7-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A well ordered set $A$ is a continuation of a well ordered set $B$ when $B \\subseteq A$, $B$ is an initial segment of $A$, and the ordering of $B$ is preserved in $A$."
+  },
+  "source": "",
+  "sections": []
+}

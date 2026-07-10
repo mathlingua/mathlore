@@ -1,0 +1,112 @@
+{
+  "id": "85eb03f1-5f5e-4583-9f18-062ee76f8812",
+  "kind": "Describes",
+  "definition_keys": [
+    "5c3a6571756976616c656e743a2f"
+  ],
+  "heading": "E \\:equivalent:/ F",
+  "heading_latex": "\\textrm{equivalent}",
+  "body_text": null,
+  "page": null,
+  "source": "[E \\:equivalent:/ F]\nDescribes: E\nwhen:\n. E, F is \\set\nsatisfies:\n. exists: f is \\function:from{E}:to{F}\n  suchThat:\n  . f is? \\(bijective)::function:from{E}:to{F}\nDocumented:\n. called: \"equivalent\"\n. written: \"E? \\sim F?\"\n. description: \"Two sets $E$ and $F$ are equivalent, written $E \\sim F$, when there exists a bijection between $E$ and $F$. Equivalence of sets is itself an equivalence relation.\"\nId: \"85eb03f1-5f5e-4583-9f18-062ee76f8812\"",
+  "sections": [
+    {
+      "label": "Describes",
+      "inline_argument": "E",
+      "inline_latex": "E",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "E, F is \\set",
+          "latex": "E, F \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "f is \\function:from{E}:to{F}",
+              "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a66726f6d3a746f}{f \\colon E \\to F}",
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "f is? \\(bijective)::function:from{E}:to{F}",
+                  "latex": "f \\textrm{ is } \\htmlData{mlg-ref=5c62696a6563746976653a3a66756e6374696f6e3a66726f6d3a746f}{\\textrm{bijective}}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a66726f6d3a746f}{\\textrm{function from }E\\textrm{ to }F}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"equivalent\"",
+              "inline_latex": "\\textrm{equivalent}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"E? \\sim F?\"",
+              "inline_latex": "E \\sim F",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"85eb03f1-5f5e-4583-9f18-062ee76f8812\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

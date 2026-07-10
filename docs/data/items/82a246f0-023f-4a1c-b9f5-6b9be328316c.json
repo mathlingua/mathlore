@@ -1,0 +1,27 @@
+{
+  "id": "82a246f0-023f-4a1c-b9f5-6b9be328316c",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "Extension, Specification, and the Empty Set"
+  },
+  "source": "SubsectionTitle: \"Extension, Specification, and the Empty Set\"\nId: \"82a246f0-023f-4a1c-b9f5-6b9be328316c\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"Extension, Specification, and the Empty Set\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"82a246f0-023f-4a1c-b9f5-6b9be328316c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

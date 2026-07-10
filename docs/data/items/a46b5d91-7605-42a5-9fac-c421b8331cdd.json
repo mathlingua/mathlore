@@ -1,0 +1,27 @@
+{
+  "id": "a46b5d91-7605-42a5-9fac-c421b8331cdd",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Resources"
+  },
+  "source": "Title: \"Resources\"\nId: \"a46b5d91-7605-42a5-9fac-c421b8331cdd\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Resources\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a46b5d91-7605-42a5-9fac-c421b8331cdd\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

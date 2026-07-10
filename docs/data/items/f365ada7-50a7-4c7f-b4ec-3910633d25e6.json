@@ -1,0 +1,73 @@
+{
+  "id": "f365ada7-50a7-4c7f-b4ec-3910633d25e6",
+  "kind": "Corollary",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Corollary:\n. \"Corollary 4.8\"\nof:\n. \"Lemma 4.5 (Pigeonhole Principle)\"\nthen:\n. \\set.theoretic.naturals is? \\(infinite)::set\nDocumented:\n. description: \"The set $\\omega$ is infinite. Indeed $\\omega \\sim \\omega \\setminus \\{0\\}$ under the map $n \\mapsto n^+$, so $\\omega$ is equivalent to a proper subset of itself, which no finite set can be.\"\nId: \"f365ada7-50a7-4c7f-b4ec-3910633d25e6\"",
+  "sections": [
+    {
+      "label": "Corollary",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Corollary 4.8",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "of",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Lemma 4.5 (Pigeonhole Principle)",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\set.theoretic.naturals is? \\(infinite)::set",
+          "latex": "\\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c73}{\\omega} \\textrm{ is } \\htmlData{mlg-ref=5c696e66696e6974653a3a736574}{\\textrm{infinite}}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f365ada7-50a7-4c7f-b4ec-3910633d25e6\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

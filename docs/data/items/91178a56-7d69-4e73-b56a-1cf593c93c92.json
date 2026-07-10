@@ -1,0 +1,61 @@
+{
+  "id": "91178a56-7d69-4e73-b56a-1cf593c93c92",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\n. \"Theorem 4.32\"\nthen:\n. \\well.ordered{\\set.theoretic.naturals}\nDocumented:\n. description: \"The natural numbers are well ordered. If a nonempty $A \\subseteq \\omega$ had no least element, induction would show that no natural number lies in $A$, so $A = \\emptyset$, a contradiction.\"\nId: \"91178a56-7d69-4e73-b56a-1cf593c93c92\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Theorem 4.32",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\well.ordered{\\set.theoretic.naturals}",
+          "latex": "\\htmlData{mlg-ref=5c77656c6c2e6f726465726564}{\\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c73}{\\omega} \\text{ is well ordered}}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"91178a56-7d69-4e73-b56a-1cf593c93c92\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

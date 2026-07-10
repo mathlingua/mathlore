@@ -1,0 +1,27 @@
+{
+  "id": "d021d971-2210-4f4a-b61f-86d45f7077b0",
+  "kind": "SubsectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SubsectionTitle",
+    "text": "Finite and Infinite Sets"
+  },
+  "source": "SubsectionTitle: \"Finite and Infinite Sets\"\nId: \"d021d971-2210-4f4a-b61f-86d45f7077b0\"",
+  "sections": [
+    {
+      "label": "SubsectionTitle",
+      "inline_argument": "\"Finite and Infinite Sets\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d021d971-2210-4f4a-b61f-86d45f7077b0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

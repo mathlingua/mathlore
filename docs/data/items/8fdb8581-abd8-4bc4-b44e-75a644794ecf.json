@@ -1,0 +1,129 @@
+{
+  "id": "8fdb8581-abd8-4bc4-b44e-75a644794ecf",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e75707065722e626f756e642e6f662e2f"
+  ],
+  "heading": "u \\.upper.bound.of./ A",
+  "heading_latex": "\\textrm{upper bound}",
+  "body_text": null,
+  "page": null,
+  "source": "[u \\.upper.bound.of./ A]\nStates:\nwhen:\n. u is \\set\n. A is \\set\nthat:\n. forAll: a is \\set\n  where:\n  . a \"in\" A\n  then:\n  . a \\:precedes:/ u\nDocumented:\n. called: \"upper bound\"\n. written: \"u? \\text{ is an upper bound of } A?\"\n. description: \"An element $u$ is an upper bound of a chain $A$ when $a \\preceq u$ for all $a \\in A$. An upper bound of $A$ need not be a member of $A$.\"\nId: \"8fdb8581-abd8-4bc4-b44e-75a644794ecf\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "u is \\set",
+          "latex": "u \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "A is \\set",
+          "latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a is \\set",
+              "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "a \"in\" A",
+                  "latex": "a \\in A"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "a \\:precedes:/ u",
+                  "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{a \\preceq u}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"upper bound\"",
+              "inline_latex": "\\textrm{upper bound}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"u? \\text{ is an upper bound of } A?\"",
+              "inline_latex": "u \\text{ is an upper bound of } A",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8fdb8581-abd8-4bc4-b44e-75a644794ecf\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

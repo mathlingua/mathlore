@@ -1,0 +1,159 @@
+{
+  "id": "352c164f-8ad4-4747-916a-2938c0888ae5",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7765616b2e696e697469616c2e7365676d656e743a696e3a6f66"
+  ],
+  "heading": "\\weak.initial.segment:in{X}:of{a}",
+  "heading_latex": "\\textrm{weak initial segment of }a",
+  "body_text": null,
+  "page": null,
+  "source": "[\\weak.initial.segment:in{X}:of{a}]\nDefines: S is \\set\nwhen:\n. X is \\set\n. a is \\set\n. a \"in\" X\nexpresses:\n. forAll: x is \\set\n  then:\n  . have:\n    . allOf:\n      . x \"in\" X\n      . x \\:precedes:/ a\n    iff: x \"in\" S\nDocumented:\n. called: \"weak initial segment of $a?$\"\n. written: \"\\overline{s}(a?)\"\n. description: \"The weak initial segment $\\overline{s}(a) = \\{x \\in X \\mid x \\preceq a\\}$ of an element $a$ in a partially ordered set $X$.\"\nId: \"352c164f-8ad4-4747-916a-2938c0888ae5\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "S is \\set",
+      "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "a is \\set",
+          "latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "a \"in\" X",
+          "latex": "a \\in X"
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "allOf",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "x \"in\" X",
+                                  "latex": "x \\in X"
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "x \\:precedes:/ a",
+                                  "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{x \\preceq a}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "x \"in\" S",
+                      "inline_latex": "x \\in S",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"weak initial segment of $a?$\"",
+              "inline_latex": "\\textrm{weak initial segment of }a",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\overline{s}(a?)\"",
+              "inline_latex": "\\overline{s}(a)",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"352c164f-8ad4-4747-916a-2938c0888ae5\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

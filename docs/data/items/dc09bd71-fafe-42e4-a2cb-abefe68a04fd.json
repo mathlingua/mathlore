@@ -1,0 +1,310 @@
+{
+  "id": "dc09bd71-fafe-42e4-a2cb-abefe68a04fd",
+  "kind": "States",
+  "definition_keys": [
+    "5c7061727469616c6c792e6f726465726564"
+  ],
+  "heading": "\\partially.ordered{X}",
+  "heading_latex": "\\textrm{partially ordered}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\partially.ordered{X}]\nStates:\nwhen:\n. X is \\set\nthat:\n. allOf:\n  . forAll: a is \\set\n    where:\n    . a \"in\" X\n    then:\n    . a \\:precedes:/ a\n  . forAll: a, b is \\set\n    where:\n    . a \"in\" X\n    . b \"in\" X\n    then:\n    . if:\n      . allOf:\n        . a \\:precedes:/ b\n        . b \\:precedes:/ a\n      then:\n      . a = b\n  . forAll: a, b, c is \\set\n    where:\n    . a \"in\" X\n    . b \"in\" X\n    . c \"in\" X\n    then:\n    . if:\n      . allOf:\n        . a \\:precedes:/ b\n        . b \\:precedes:/ c\n      then:\n      . a \\:precedes:/ c\nDocumented:\n. called: \"partially ordered\"\n. written: \"X? \\text{ is partially ordered}\"\n. description: \"A set $X$ is partially ordered by $\\preceq$ when $\\preceq$ is reflexive, asymmetric, and transitive on $X$. Some pairs of elements may be incomparable.\"\nId: \"dc09bd71-fafe-42e4-a2cb-abefe68a04fd\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "allOf",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "a is \\set",
+                      "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "a \"in\" X",
+                          "latex": "a \\in X"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "a \\:precedes:/ a",
+                          "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{a \\preceq a}"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "a, b is \\set",
+                      "inline_latex": "a, b \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "a \"in\" X",
+                          "latex": "a \\in X"
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "b \"in\" X",
+                          "latex": "b \\in X"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "if",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "group",
+                                  "heading": null,
+                                  "sections": [
+                                    {
+                                      "label": "allOf",
+                                      "inline_argument": null,
+                                      "inline_latex": null,
+                                      "arguments": [
+                                        {
+                                          "kind": "formulation",
+                                          "text": "a \\:precedes:/ b",
+                                          "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{a \\preceq b}"
+                                        },
+                                        {
+                                          "kind": "formulation",
+                                          "text": "b \\:precedes:/ a",
+                                          "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{b \\preceq a}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "a = b",
+                                  "latex": "a = b"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "a, b, c is \\set",
+                      "inline_latex": "a, b, c \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "a \"in\" X",
+                          "latex": "a \\in X"
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "b \"in\" X",
+                          "latex": "b \\in X"
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "c \"in\" X",
+                          "latex": "c \\in X"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "if",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "group",
+                                  "heading": null,
+                                  "sections": [
+                                    {
+                                      "label": "allOf",
+                                      "inline_argument": null,
+                                      "inline_latex": null,
+                                      "arguments": [
+                                        {
+                                          "kind": "formulation",
+                                          "text": "a \\:precedes:/ b",
+                                          "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{a \\preceq b}"
+                                        },
+                                        {
+                                          "kind": "formulation",
+                                          "text": "b \\:precedes:/ c",
+                                          "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{b \\preceq c}"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "a \\:precedes:/ c",
+                                  "latex": "\\htmlData{mlg-ref=5c3a70726563656465733a2f}{a \\preceq c}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"partially ordered\"",
+              "inline_latex": "\\textrm{partially ordered}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"X? \\text{ is partially ordered}\"",
+              "inline_latex": "X \\text{ is partially ordered}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dc09bd71-fafe-42e4-a2cb-abefe68a04fd\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

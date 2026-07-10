@@ -1,0 +1,105 @@
+{
+  "id": "143db882-1e6d-4357-a241-783c6daa562c",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c73756d3a6f663a616e64"
+  ],
+  "heading": "\\sum:of{m}:and{n}",
+  "heading_latex": "\\textrm{sum of }m\\textrm{ and }n",
+  "body_text": null,
+  "page": null,
+  "source": "[\\sum:of{m}:and{n}]\nDefines: s is \\set.theoretic.natural.number\nwhen: m, n is \\set.theoretic.natural.number\nexpresses:\n. \\sum:of{m}:and{\\set.theoretic.zero} = m\n. forAll: k is \\set.theoretic.natural.number\n  then: \\sum:of{m}:and{\\set.theoretic.successor{k}} = \\set.theoretic.successor{\\sum:of{m}:and{k}}\nDocumented:\n. called: \"sum of $m?$ and $n?$\"\n. written: \"m? + n?\"\n. description: \"The sum $m + n$, defined by recursion on $n$: $m + 0 = m$ and $m + n^+ = (m + n)^+$. Addition is the binary operation given by $+$.\"\nId: \"143db882-1e6d-4357-a241-783c6daa562c\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "s is \\set.theoretic.natural.number",
+      "inline_latex": "s \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "m, n is \\set.theoretic.natural.number",
+      "inline_latex": "m, n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\sum:of{m}:and{\\set.theoretic.zero} = m",
+          "latex": "\\htmlData{mlg-ref=5c73756d3a6f663a616e64}{m + \\htmlData{mlg-ref=5c7365742e7468656f72657469632e7a65726f}{0}} = m"
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "k is \\set.theoretic.natural.number",
+              "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "\\sum:of{m}:and{\\set.theoretic.successor{k}} = \\set.theoretic.successor{\\sum:of{m}:and{k}}",
+              "inline_latex": "\\htmlData{mlg-ref=5c73756d3a6f663a616e64}{m + \\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{k^+}} = \\htmlData{mlg-ref=5c7365742e7468656f72657469632e737563636573736f72}{\\htmlData{mlg-ref=5c73756d3a6f663a616e64}{m + k}^+}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"sum of $m?$ and $n?$\"",
+              "inline_latex": "\\textrm{sum of }m\\textrm{ and }n",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"m? + n?\"",
+              "inline_latex": "m + n",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"143db882-1e6d-4357-a241-783c6daa562c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

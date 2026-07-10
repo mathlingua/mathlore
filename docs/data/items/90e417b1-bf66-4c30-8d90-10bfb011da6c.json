@@ -1,0 +1,71 @@
+{
+  "id": "90e417b1-bf66-4c30-8d90-10bfb011da6c",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem: \"Theorem 3.16 (Laws of Exponents)\"\ngiven: k, m, n is \\set.theoretic.natural.number\nthen:\n. \\power:base{k}:exponent{\\sum:of{m}:and{n}} = \\product:of{\\power:base{k}:exponent{m}}:and{\\power:base{k}:exponent{n}}\n. \\product:of{\\power:base{k}:exponent{n}}:and{\\power:base{m}:exponent{n}} = \\power:base{\\product:of{k}:and{m}}:exponent{n}\n. \\power:base{\\power:base{k}:exponent{m}}:exponent{n} = \\power:base{k}:exponent{\\product:of{m}:and{n}}\nDocumented:\n. description: \"For all $k, m, n \\in \\omega$: (a) $k^{m + n} = k^m k^n$; (b) $k^n m^n = (km)^n$; and (c) $(k^m)^n = k^{mn}$. Each is proved by induction on $n$.\"\nId: \"90e417b1-bf66-4c30-8d90-10bfb011da6c\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": "\"Theorem 3.16 (Laws of Exponents)\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "k, m, n is \\set.theoretic.natural.number",
+      "inline_latex": "k, m, n \\textrm{ is } \\htmlData{mlg-ref=5c7365742e7468656f72657469632e6e61747572616c2e6e756d626572}{\\textrm{natural number}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\power:base{k}:exponent{\\sum:of{m}:and{n}} = \\product:of{\\power:base{k}:exponent{m}}:and{\\power:base{k}:exponent{n}}",
+          "latex": "\\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{k^{\\htmlData{mlg-ref=5c73756d3a6f663a616e64}{m + n}}} = \\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{\\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{k^{m}} \\cdot \\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{k^{n}}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "\\product:of{\\power:base{k}:exponent{n}}:and{\\power:base{m}:exponent{n}} = \\power:base{\\product:of{k}:and{m}}:exponent{n}",
+          "latex": "\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{\\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{k^{n}} \\cdot \\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{m^{n}}} = \\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{k \\cdot m}^{n}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "\\power:base{\\power:base{k}:exponent{m}}:exponent{n} = \\power:base{k}:exponent{\\product:of{m}:and{n}}",
+          "latex": "\\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{\\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{k^{m}}^{n}} = \\htmlData{mlg-ref=5c706f7765723a626173653a6578706f6e656e74}{k^{\\htmlData{mlg-ref=5c70726f647563743a6f663a616e64}{m \\cdot n}}}"
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"90e417b1-bf66-4c30-8d90-10bfb011da6c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

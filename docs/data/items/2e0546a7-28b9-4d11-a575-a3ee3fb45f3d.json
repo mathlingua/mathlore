@@ -1,0 +1,119 @@
+{
+  "id": "2e0546a7-28b9-4d11-a575-a3ee3fb45f3d",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c696e6a6563746976653a3a66756e6374696f6e3a66726f6d3a746f"
+  ],
+  "heading": "\\(injective)::function:from{A}:to{B}",
+  "heading_latex": "\\textrm{injective}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a66726f6d3a746f}{\\textrm{function from }A\\textrm{ to }B}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(injective)::function:from{A}:to{B}]\nRefines: f(x__)\nwhen: A, B is \\set\nsatisfies:\n. forAll: x1, x2 \"in\" A\n  then:\n  . if: f(x1) = f(x2)\n    then: x1 = x2\nDocumented:\n. adjective: \"injective\"\n. written: \"\\operatorname{injective}\"\n. description: \"A function $f$ is injective when $f(x) = f(y)$ implies $x = y$ for all $x, y$ in its domain; distinct inputs yield distinct outputs.\"\nId: \"2e0546a7-28b9-4d11-a575-a3ee3fb45f3d\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "f(x__)",
+      "inline_latex": "f(x)",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x1, x2 \"in\" A",
+              "inline_latex": "x_1, x_2 \\in A",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": "f(x1) = f(x2)",
+                      "inline_latex": "f(x_1) = f(x_2)",
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "x1 = x2",
+                      "inline_latex": "x_1 = x_2",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"injective\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{injective}\"",
+              "inline_latex": "\\operatorname{injective}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2e0546a7-28b9-4d11-a575-a3ee3fb45f3d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

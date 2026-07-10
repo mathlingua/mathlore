@@ -1,0 +1,195 @@
+{
+  "id": "7395d1bd-f430-4b75-a515-9b992034553c",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\n. \"Theorem 4.22 (Zorn's Lemma)\"\ngiven:\n. X is \\set\nwhere:\n. \\partially.ordered{X}\n. not:\n  . X = \\empty.set\n. forAll: A is \\set\n  where:\n  . A \\.chain.in./ X\n  then:\n  . exists: u is \\set\n    suchThat:\n    . allOf:\n      . u \"in\" X\n      . u \\.upper.bound.of./ A\nthen:\n. exists: m is \\set\n  suchThat:\n  . m \\.maximal.in./ X\nDocumented:\n. description: \"Suppose $X$ is a non-empty partially ordered set such that every chain in $X$ has an upper bound in $X$. Then $X$ contains a maximal element. Zorn's lemma is the first of the two major statements shown to be equivalent to the axiom of choice.\"\nId: \"7395d1bd-f430-4b75-a515-9b992034553c\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "Theorem 4.22 (Zorn's Lemma)",
+          "latex": null
+        }
+      ]
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\partially.ordered{X}",
+          "latex": "\\htmlData{mlg-ref=5c7061727469616c6c792e6f726465726564}{X \\text{ is partially ordered}}"
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "not",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "X = \\empty.set",
+                  "latex": "X = \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A is \\set",
+              "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "A \\.chain.in./ X",
+                  "latex": "\\htmlData{mlg-ref=5c2e636861696e2e696e2e2f}{A \\text{ is a chain in } X}"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "u is \\set",
+                      "inline_latex": "u \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "allOf",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "u \"in\" X",
+                                  "latex": "u \\in X"
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "u \\.upper.bound.of./ A",
+                                  "latex": "\\htmlData{mlg-ref=5c2e75707065722e626f756e642e6f662e2f}{u \\text{ is an upper bound of } A}"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "m is \\set",
+              "inline_latex": "m \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "m \\.maximal.in./ X",
+                  "latex": "\\htmlData{mlg-ref=5c2e6d6178696d616c2e696e2e2f}{m \\text{ is maximal in } X}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7395d1bd-f430-4b75-a515-9b992034553c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

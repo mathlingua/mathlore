@@ -1,0 +1,14 @@
+{
+  "id": "802bba0f-66eb-4e40-afce-82c52af8ae35-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "$A$ is a proper subset of $B$, written $A \\subsetneq B$, when $A \\subseteq B$ and $A \\neq B$."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0753f0a4-9924-46a7-b415-147dbc35c077",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Zermelo-Frankel Set Theory"
+  },
+  "source": "Title: \"Zermelo-Frankel Set Theory\"\nId: \"0753f0a4-9924-46a7-b415-147dbc35c077\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Zermelo-Frankel Set Theory\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0753f0a4-9924-46a7-b415-147dbc35c077\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}
