@@ -2,5 +2,6 @@
   "name": "testbed",
   "version": "0",
   "margin": 80,
-  "formatOnCheck": true
+  "formatOnCheck": true,
+  "outputDir": "docs"
 }

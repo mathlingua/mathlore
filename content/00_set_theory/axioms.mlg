@@ -1,0 +1,74 @@
+
+[\set]
+Defines: X
+satisfies:
+. \axiom.of.empty.set
+. forAll: A, B is \set
+  then: \axiom.of.extensionality#given{A := A; B := B}
+Requires:
+. capability: x_ "in" X :-> \\abstract
+Enables:
+. from: Y ::= {y__ : ...}
+  capability: x_ "in" X :-> x_ member_of Y
+Documented:
+. called: "set"
+Id: "a0759217-e1f6-412c-982a-0038cd17a3a1"
+
+
+[\empty.set]
+Declares: X is \set
+expresses:
+. not:
+  . exists: Y is \set
+    suchThat: Y "in" X
+Documented:
+. called: "empty set"
+. written: "\emptyset"
+Id: "96908ddf-5fc5-455d-9cfd-eaf0fd6ada38"
+
+
+[\(nonempty)::set]
+Refines: X
+satisfies: X != \empty.set
+Documented:
+. adjective: "nonempty"
+Id: "616950f0-7d70-48ff-a5ac-9d5d49272150"
+
+
+[\axiom.of.extensionality]
+Axiom:
+given: A, B is \set
+where:
+. forAll: X is \set
+  then:
+  . have: X "in" A
+    iff: X "in" B
+then: A = B
+Id: "6fc3a89f-f8ef-420e-b1b6-6e5ed4905611"
+
+
+[\axiom.of.empty.set]
+Axiom:
+then:
+. exists: E is \set
+  suchThat:
+  . forAll: X is \set
+    then:
+    . not: X "in" E
+Id: "f2180719-568d-4084-982b-a71c5f195bf6"
+
+
+[\axiom.of.pairing]
+Axiom:
+given: a, b is \set
+then:
+. exists: A is \set
+  suchThat:
+  . forAll: x is \set
+    then:
+    . have: x "in" A
+      iff:
+      . oneOf:
+        . x = a
+        . x = b
+Id: "3219aca1-fba1-42a6-9a1f-209aa430c677"

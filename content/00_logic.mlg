@@ -1,0 +1,64 @@
+
+[P \.implies./ Q]
+States:
+when: P, Q is \\statement
+that:
+. if: P
+  then: Q
+Documented:
+. written: "P+? \Rightarrow Q+?"
+Id: "dc7e213d-76c2-43d7-acf1-c5978daaab33"
+
+
+[P \.iff./ Q]
+States:
+when: P, Q is \\statement
+that:
+. have: P
+  iff: Q
+Documented:
+. written: "P+? \iff Q+?"
+Id: "96440ac7-3331-4467-a7ac-593dbca0761b"
+
+
+[P \.and./ Q]
+States:
+when: P, Q is \\statement
+that:
+. allOf:
+  . P
+  . Q
+Documented:
+. written: "P? \text{ and } Q?"
+Id: "e024d041-fcf1-476e-b29e-b75d88b04fa8"
+
+
+[P \.or./ Q]
+States:
+when: P, Q is \\statement
+that:
+. anyOf:
+  . P
+  . Q
+Documented:
+. written: "P? \text{ or } Q?"
+Id: "fd7a79c3-4380-4621-a699-eb6902667669"
+
+
+[\not{P}]
+States:
+when: P is \\statement
+that:
+. not: P
+Documented:
+. written: "\neg P?"
+Id: "856ad9cc-c17e-4cff-ad32-10ee78ab20c4"
+
+
+[P \.xor./ Q]
+States:
+when: P, Q is \\statement
+that: (P \.or./ Q) \.and./ (.\not{(P \.and./ Q)}.)
+Documented:
+. written: "P+? \text{ xor } Q+?"
+Id: "1c7bc638-0db8-416f-a0d0-f5c0d7d92842"
