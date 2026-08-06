@@ -13,7 +13,9 @@ expresses:
 Documented:
 . called: "power set of $X?$"
 . written: "\mathcal{P}(X?)"
-. description: "The power set $\mathcal{P}(X)$, guaranteed by the axiom of powers: for every set $X$ there exists a set $\mathcal{P}(X)$ such that $A \in \mathcal{P}(X)$ if and only if $A \subseteq X$."
+. description: "The power set $\mathcal{P}(X)$, guaranteed by the axiom of
+                powers: for every set $X$ there exists a set $\mathcal{P}(X)$
+                such that $A \in \mathcal{P}(X)$ if and only if $A \subseteq X$."
 Id: "dfc8cab3-42ba-44b3-8da0-b58717abeb61"
 
 
@@ -23,7 +25,9 @@ when: a, b is \set
 Documented:
 . called: "ordered pair of $a?$ and $b?$"
 . written: "(a?, b?)"
-. description: "The ordered pair $(a, b)$, defined as the set $\{\{a\}, \{a, b\}\}$. This construction encodes order using only the machinery of sets."
+. description: "The ordered pair $(a, b)$, defined as the set
+                $\{\{a\}, \{a, b\}\}$. This construction encodes order using
+                only the machinery of sets."
 Id: "5c0b41a7-2272-454b-925a-0da28aa822d4"
 
 
@@ -34,7 +38,10 @@ iff:
 . a = c
 . b = d
 Documented:
-. description: "Two ordered pairs are equal if and only if their first coordinates are equal and their second coordinates are equal. This justifies thinking of an ordered pair $(a, b)$ as having a first coordinate $a$ and a second coordinate $b$."
+. description: "Two ordered pairs are equal if and only if their first
+                coordinates are equal and their second coordinates are equal.
+                This justifies thinking of an ordered pair $(a, b)$ as having a
+                first coordinate $a$ and a second coordinate $b$."
 Id: "6e4b61e7-24a6-4a40-9ac1-d288ce0ebf22"
 
 

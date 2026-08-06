@@ -7,8 +7,11 @@ satisfies:
 Documented:
 . adjective: "finite"
 . written: "\operatorname{finite}"
-. description: "A set $E$ is finite when it is equivalent to some natural number, that is, when there is a bijection between $E$ and some $n \in \omega$."
+. description: "A set $E$ is finite when it is equivalent to some natural
+                number, that is, when there is a bijection between $E$ and some
+                $n \in \omega$."
 Id: "3eef88e0-d9df-4aed-a234-4c2288f26410"
+
 
 [\(infinite)::set]
 Refines: X
@@ -18,8 +21,10 @@ satisfies:
 Documented:
 . adjective: "infinite"
 . written: "\operatorname{infinite}"
-. description: "A set is infinite when it is not finite, that is, when it is equivalent to no natural number."
+. description: "A set is infinite when it is not finite, that is, when it is
+                equivalent to no natural number."
 Id: "c08206ff-de4f-44c5-bc78-be658fef5be1"
+
 
 Lemma:
 . "Lemma 4.5 (Pigeonhole Principle)"
@@ -32,8 +37,11 @@ then:
 . not:
   . n \:equivalent:/ A
 Documented:
-. description: "If $n \in \omega$, then $n$ is not equivalent to any of its proper subsets. Equivalently, every injective function from $n$ to $n$ is surjective. This is proved by induction on $n$."
+. description: "If $n \in \omega$, then $n$ is not equivalent to any of its
+                proper subsets. Equivalently, every injective function from $n$
+                to $n$ is surjective. This is proved by induction on $n$."
 Id: "a77ed390-76bd-4651-8b94-79dcf993f202"
+
 
 Corollary:
 . "Corollary 4.6"
@@ -51,8 +59,12 @@ then:
   then:
   . m = n
 Documented:
-. description: "If $E$ is a set and $n \in \omega$ with $E \sim n$, then $n$ is the unique natural number equivalent to $E$. The pigeonhole principle guarantees that distinct natural numbers are never equivalent."
+. description: "If $E$ is a set and $n \in \omega$ with $E \sim n$, then $n$ is
+                the unique natural number equivalent to $E$. The pigeonhole
+                principle guarantees that distinct natural numbers are never
+                equivalent."
 Id: "abd5b742-bb8b-4787-bfb5-9cc96e45c1cf"
+
 
 [\cardinality{E}]
 Defines: c is \set.theoretic.natural.number
@@ -61,8 +73,11 @@ when:
 Documented:
 . called: "cardinality of $E?$"
 . written: "|E?|"
-. description: "The cardinality $|E|$ of a finite set $E$ is the unique natural number which is equivalent to $E$. It is well defined by the previous corollary."
+. description: "The cardinality $|E|$ of a finite set $E$ is the unique natural
+                number which is equivalent to $E$. It is well defined by the
+                previous corollary."
 Id: "f300239f-83a2-4cb6-821e-044a8050b5d4"
+
 
 Corollary:
 . "Corollary 4.8"
@@ -71,5 +86,8 @@ of:
 then:
 . \set.theoretic.naturals is? \(infinite)::set
 Documented:
-. description: "The set $\omega$ is infinite. Indeed $\omega \sim \omega \setminus \{0\}$ under the map $n \mapsto n^+$, so $\omega$ is equivalent to a proper subset of itself, which no finite set can be."
+. description: "The set $\omega$ is infinite. Indeed
+                $\omega \sim \omega \setminus \{0\}$ under the map
+                $n \mapsto n^+$, so $\omega$ is equivalent to a proper subset of
+                itself, which no finite set can be."
 Id: "f365ada7-50a7-4c7f-b4ec-3910633d25e6"

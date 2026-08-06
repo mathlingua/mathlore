@@ -1,4 +1,6 @@
 {
   "name": "testbed",
-  "version": "0"
+  "version": "0",
+  "margin": 80,
+  "formatOnCheck": true
 }

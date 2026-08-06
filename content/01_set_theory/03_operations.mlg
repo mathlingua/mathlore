@@ -16,7 +16,9 @@ expresses:
 Documented:
 . called: "pair of $a?$ and $b?$"
 . written: "\{a?, b?\}"
-. description: "The set $\{a, b\}$ containing precisely $a$ and $b$, guaranteed by the axiom of pairing: if $a$ and $b$ are sets, then there exists a set containing precisely $a$ and $b$."
+. description: "The set $\{a, b\}$ containing precisely $a$ and $b$, guaranteed
+                by the axiom of pairing: if $a$ and $b$ are sets, then there
+                exists a set containing precisely $a$ and $b$."
 Id: "9f79d83e-8423-4343-b547-e391b3305994"
 
 
@@ -26,7 +28,8 @@ when: a is \set
 Documented:
 . called: "singleton $a?$"
 . written: "\{a?\}"
-. description: "The set $\{a\}$ whose only element is $a$, obtained by pairing $a$ with itself so that $\{a, a\} = \{a\}$."
+. description: "The set $\{a\}$ whose only element is $a$, obtained by pairing
+                $a$ with itself so that $\{a, a\} = \{a\}$."
 Id: "a8f91b22-3648-4301-8119-a5b63753eaf9"
 
 
@@ -45,7 +48,10 @@ expresses:
 Documented:
 . called: "union over $C?$"
 . written: "\bigcup_{A \in C?} A"
-. description: "The union over a collection $C$ of sets, guaranteed by the axiom of unions: $x \in \bigcup_{A \in C} A$ if and only if there exists $A \in C$ such that $x \in A$. Its uniqueness follows from the axiom of extension."
+. description: "The union over a collection $C$ of sets, guaranteed by the axiom
+                of unions: $x \in \bigcup_{A \in C} A$ if and only if there
+                exists $A \in C$ such that $x \in A$. Its uniqueness follows
+                from the axiom of extension."
 Id: "d74b5a03-d4c5-4257-b076-f020efc36af1"
 
 
@@ -55,7 +61,9 @@ when: A, B is \set
 Documented:
 . called: "union of $A?$ and $B?$"
 . written: "A? \cup B?"
-. description: "The union $A \cup B$, defined as the union over the collection $\{A, B\}$, so that $x \in A \cup B$ if and only if $x \in A$ or $x \in B$."
+. description: "The union $A \cup B$, defined as the union over the collection
+                $\{A, B\}$, so that $x \in A \cup B$ if and only if $x \in A$ or
+                $x \in B$."
 Id: "19662b6b-7e78-4d4a-9455-11879fcf36b2"
 
 
@@ -73,7 +81,11 @@ expresses:
 Documented:
 . called: "intersection over $C?$"
 . written: "\bigcap_{A \in C?} A"
-. description: "The intersection over a nonempty collection $C$ of sets, defined by specification: $x \in \bigcap_{A \in C} A$ if and only if $x \in A$ for every $A \in C$. The collection must be nonempty, since the intersection over the empty collection would be the set of all sets."
+. description: "The intersection over a nonempty collection $C$ of sets, defined
+                by specification: $x \in \bigcap_{A \in C} A$ if and only if
+                $x \in A$ for every $A \in C$. The collection must be nonempty,
+                since the intersection over the empty collection would be the
+                set of all sets."
 Id: "d81afeb4-f95e-4a5a-a17c-dd6f7e6ace2b"
 
 
@@ -83,7 +95,9 @@ when: A, B is \set
 Documented:
 . called: "intersection of $A?$ and $B?$"
 . written: "A? \cap B?"
-. description: "The intersection $A \cap B$, defined as the intersection over the collection $\{A, B\}$, so that $x \in A \cap B$ if and only if $x \in A$ and $x \in B$."
+. description: "The intersection $A \cap B$, defined as the intersection over
+                the collection $\{A, B\}$, so that $x \in A \cap B$ if and only
+                if $x \in A$ and $x \in B$."
 Id: "c1766d97-e27d-4e5f-8d60-6621c1b0ca68"
 
 
@@ -100,5 +114,7 @@ expresses:
 Documented:
 . called: "difference of $A?$ and $B?$"
 . written: "A? \setminus B?"
-. description: "The difference $A \setminus B = \{x \in A \mid x \notin B\}$, the set of elements of $A$ which are not elements of $B$, guaranteed by the axiom of specification."
+. description: "The difference $A \setminus B = \{x \in A \mid x \notin B\}$,
+                the set of elements of $A$ which are not elements of $B$,
+                guaranteed by the axiom of specification."
 Id: "d1804f57-4c27-454b-8b65-06c98bb0322d"

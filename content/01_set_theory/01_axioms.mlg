@@ -17,7 +17,9 @@ Enables:
 . capability: x_ "in" X :-> \\abstract
 Documented:
 . called: "set"
-. description: "The primitive object of the theory. Belonging is the undefined notion: for a set $x$ and a set $A$, either $x \in A$ or $x \notin A$."
+. description: "The primitive object of the theory. Belonging is the undefined
+                notion: for a set $x$ and a set $A$, either $x \in A$ or
+                $x \notin A$."
 Id: "27f9dbd5-5b5e-4be3-b280-1afef8411f2d"
 
 
@@ -31,7 +33,9 @@ iff:
   . have: x "in" A
     iff: x "in" B
 Documented:
-. description: "Two sets are equal if and only if they contain precisely the same elements, so the only thing which matters about a set is which elements it has."
+. description: "Two sets are equal if and only if they contain precisely the
+                same elements, so the only thing which matters about a set is
+                which elements it has."
 Id: "7b04025f-2483-4935-8ed4-11d22b87b354"
 
 
@@ -41,7 +45,10 @@ given: A is \set
 then:
 . exists: B \:subset:/ A
 Documented:
-. description: "If $A$ is a set and $P(x)$ is a formula of first order logic, then there exists a set $B = \{x \in A \mid P(x)\}$ containing precisely each $x \in A$ such that $P(x)$ is true. The set $B$ is unique by the axiom of extension."
+. description: "If $A$ is a set and $P(x)$ is a formula of first order logic,
+                then there exists a set $B = \{x \in A \mid P(x)\}$ containing
+                precisely each $x \in A$ such that $P(x)$ is true. The set $B$
+                is unique by the axiom of extension."
 Id: "1a505620-e0b9-42a8-955a-9480abb85a3e"
 
 
@@ -54,7 +61,9 @@ expresses:
 Documented:
 . called: "empty set"
 . written: "\emptyset"
-. description: "The unique set with no elements, also denoted $\{\}$. Its existence is guaranteed by the axiom of the empty set, and its uniqueness by the axiom of extension."
+. description: "The unique set with no elements, also denoted $\{\}$. Its
+                existence is guaranteed by the axiom of the empty set, and its
+                uniqueness by the axiom of extension."
 Id: "6953e4a8-96c5-44f5-8c58-b55a02116d4a"
 
 
@@ -67,5 +76,7 @@ then:
     then:
     . not: x "in" E
 Documented:
-. description: "There exists a set $\emptyset$ such that for every set $x$, $x \notin \emptyset$. This set is a reasonable starting point from which further sets are built."
+. description: "There exists a set $\emptyset$ such that for every set $x$,
+                $x \notin \emptyset$. This set is a reasonable starting point
+                from which further sets are built."
 Id: "eeec7d4c-0615-4a7b-a0d0-d110c8a6f033"

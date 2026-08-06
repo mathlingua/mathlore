@@ -8,7 +8,9 @@ Enables:
 Documented:
 . called: "relation from $A?$ to $B?$"
 . written: "R? \subseteq A? \times B?"
-. description: "A relation $R$ from $A$ to $B$ is a subset of $A \times B$. When $(a, b) \in R$ one writes $a \mathbin{R} b$. A relation from $A$ to $A$ is called a relation in $A$."
+. description: "A relation $R$ from $A$ to $B$ is a subset of $A \times B$. When
+                $(a, b) \in R$ one writes $a \mathbin{R} b$. A relation from $A$
+                to $A$ is called a relation in $A$."
 Id: "982d5d26-08c5-41f7-a22b-68c0434450f0"
 
 
@@ -19,7 +21,8 @@ extends: R is \set.theoretic.relation:from{X}:to{X}
 Documented:
 . called: "relation on $X?$"
 . written: "R? \subseteq X? \times X?"
-. description: "A relation on the set $X$, that is, a relation from $X$ to $X$: a subset of $X \times X$."
+. description: "A relation on the set $X$, that is, a relation from $X$ to $X$:
+                a subset of $X \times X$."
 Id: "16dced34-323c-4b3b-869f-5e473034da35"
 
 
@@ -36,7 +39,9 @@ expresses:
 Documented:
 . called: "domain of $R?$"
 . written: "\operatorname{dom}(R?)"
-. description: "The domain of a relation $R$, the set $\{a \mid \exists b \text{ such that } a \mathbin{R} b\}$ of first coordinates of the pairs in $R$."
+. description: "The domain of a relation $R$, the set
+                $\{a \mid \exists b \text{ such that } a \mathbin{R} b\}$ of
+                first coordinates of the pairs in $R$."
 Id: "046391ea-6a1b-452e-9ef5-07319ebd5362"
 
 
@@ -53,7 +58,9 @@ expresses:
 Documented:
 . called: "range of $R?$"
 . written: "\operatorname{ran}(R?)"
-. description: "The range of a relation $R$, the set $\{b \mid \exists a \text{ such that } a \mathbin{R} b\}$ of second coordinates of the pairs in $R$."
+. description: "The range of a relation $R$, the set
+                $\{b \mid \exists a \text{ such that } a \mathbin{R} b\}$ of
+                second coordinates of the pairs in $R$."
 Id: "1e82710d-02f0-411a-889b-45bb0f9258ef"
 
 
@@ -66,7 +73,9 @@ specifies:
 Documented:
 . called: "function from $A?$ to $B?$"
 . written: "f? \colon A? \to B?"
-. description: "A function $f \colon A \to B$ assigns to each $a \in A$ a unique value $f(a) \in B$. Here $A$ is the domain and $B$ the codomain of $f$. As a relation it is the set of pairs $(a, f(a))$."
+. description: "A function $f \colon A \to B$ assigns to each $a \in A$ a unique
+                value $f(a) \in B$. Here $A$ is the domain and $B$ the codomain
+                of $f$. As a relation it is the set of pairs $(a, f(a))$."
 Id: "26a5755e-e596-46b5-8828-3fc5a39da156"
 
 
@@ -81,7 +90,9 @@ satisfies:
 Documented:
 . adjective: "injective"
 . written: "\operatorname{injective}"
-. description: "A function $f$ is injective when $f(x) = f(y)$ implies $x = y$ for all $x, y$ in its domain; distinct inputs yield distinct outputs."
+. description: "A function $f$ is injective when $f(x) = f(y)$ implies $x = y$
+                for all $x, y$ in its domain; distinct inputs yield distinct
+                outputs."
 Id: "2e0546a7-28b9-4d11-a575-a3ee3fb45f3d"
 
 
@@ -96,7 +107,9 @@ satisfies:
 Documented:
 . adjective: "surjective"
 . written: "\operatorname{surjective}"
-. description: "A function $f \colon A \to B$ is surjective when for every $b \in B$ there exists $a \in A$ such that $f(a) = b$; every element of the codomain is attained."
+. description: "A function $f \colon A \to B$ is surjective when for every
+                $b \in B$ there exists $a \in A$ such that $f(a) = b$; every
+                element of the codomain is attained."
 Id: "1de3c455-b09b-4d80-8b44-7dd223da2083"
 
 
@@ -107,7 +120,9 @@ extends: f is \(injective, surjective)::[[f]]
 Documented:
 . adjective: "bijective"
 . written: "\operatorname{bijective}"
-. description: "A function is bijective when it is both injective and surjective; equivalently, every element of the codomain is the image of exactly one element of the domain."
+. description: "A function is bijective when it is both injective and
+                surjective; equivalently, every element of the codomain is the
+                image of exactly one element of the domain."
 Id: "64d05ce0-11a9-4d4c-8808-4e401f6f6fa9"
 
 
@@ -121,7 +136,9 @@ when:
 Documented:
 . called: "restriction of $f?$ to $C?$"
 . written: "f? |_{C?}"
-. description: "The restriction $f|_{C}$ of a function $f \colon A \to B$ to a subset $C \subseteq A$: the function from $C$ to $B$ defined by $f|_{C}(x) = f(x)$ for all $x \in C$."
+. description: "The restriction $f|_{C}$ of a function $f \colon A \to B$ to a
+                subset $C \subseteq A$: the function from $C$ to $B$ defined by
+                $f|_{C}(x) = f(x)$ for all $x \in C$."
 Id: "7d9d55a2-a00a-46ba-a4a8-733237822e8a"
 
 
@@ -134,5 +151,7 @@ specifies:
 Documented:
 . called: "family indexed by $I?$"
 . written: "\{A?_i\}_{i \in I?}"
-. description: "A family of sets is a function $A$ with domain $I$. When $A$ is a family over $I$ one writes $\{A_i\}_{i \in I}$ and $A_i$ for $A(i)$."
+. description: "A family of sets is a function $A$ with domain $I$. When $A$ is
+                a family over $I$ one writes $\{A_i\}_{i \in I}$ and $A_i$ for
+                $A(i)$."
 Id: "a2451abb-cfc3-4655-a641-ff6826592e7d"

@@ -1,6 +1,7 @@
 SubsectionTitle: "Well Ordering"
 Id: "45e0003c-6282-4194-8139-6ff031929b54"
 
+
 [\well.ordered{X}]
 States:
 when:
@@ -18,8 +19,11 @@ that:
 Documented:
 . called: "well ordered"
 . written: "X? \text{ is well ordered}"
-. description: "A partially ordered set $X$ is well ordered when every nonempty subset of $X$ has a least element. The natural numbers are the prototypical well ordered set."
+. description: "A partially ordered set $X$ is well ordered when every nonempty
+                subset of $X$ has a least element. The natural numbers are the
+                prototypical well ordered set."
 Id: "5ead27ca-0a76-4340-827c-ac72e5154f35"
+
 
 Theorem:
 . "Theorem 4.31"
@@ -30,16 +34,23 @@ where:
 then:
 . \totally.ordered{X}
 Documented:
-. description: "Every well ordered set is totally ordered: given $x, y \in X$, the subset $\{x, y\}$ has a least element, so $x$ and $y$ are comparable."
+. description: "Every well ordered set is totally ordered: given $x, y \in X$,
+                the subset $\{x, y\}$ has a least element, so $x$ and $y$ are
+                comparable."
 Id: "39f63de3-8e4a-4f4b-9aa6-5ec84972f708"
+
 
 Theorem:
 . "Theorem 4.32"
 then:
 . \well.ordered{\set.theoretic.naturals}
 Documented:
-. description: "The natural numbers are well ordered. If a nonempty $A \subseteq \omega$ had no least element, induction would show that no natural number lies in $A$, so $A = \emptyset$, a contradiction."
+. description: "The natural numbers are well ordered. If a nonempty
+                $A \subseteq \omega$ had no least element, induction would show
+                that no natural number lies in $A$, so $A = \emptyset$, a
+                contradiction."
 Id: "91178a56-7d69-4e73-b56a-1cf593c93c92"
+
 
 Theorem:
 . "Theorem 4.33 (Transfinite Induction)"
@@ -60,8 +71,12 @@ where:
 then:
 . S = X
 Documented:
-. description: "Suppose $X$ is well ordered and $S \subseteq X$ is such that for all $x \in X$, if $s(x) \subseteq S$ then $x \in S$. Then $S = X$. This is the analogue for well ordered sets of the principle of mathematical induction."
+. description: "Suppose $X$ is well ordered and $S \subseteq X$ is such that for
+                all $x \in X$, if $s(x) \subseteq S$ then $x \in S$. Then
+                $S = X$. This is the analogue for well ordered sets of the
+                principle of mathematical induction."
 Id: "fd837670-a02e-4c69-b64c-5dd470fa1696"
+
 
 [A \.continuation.of./ B]
 States:
@@ -86,8 +101,11 @@ that:
 Documented:
 . called: "continuation"
 . written: "A? \text{ is a continuation of } B?"
-. description: "A well ordered set $A$ is a continuation of a well ordered set $B$ when $B \subseteq A$, $B$ is an initial segment of $A$, and the ordering of $B$ is preserved in $A$."
+. description: "A well ordered set $A$ is a continuation of a well ordered set
+                $B$ when $B \subseteq A$, $B$ is an initial segment of $A$, and
+                the ordering of $B$ is preserved in $A$."
 Id: "5f1f1c55-e4ac-42ca-b69a-ea33008529c7"
+
 
 Lemma:
 . "Lemma 4.35"
@@ -107,8 +125,13 @@ then:
   suchThat:
   . \well.ordered{U}
 Documented:
-. description: "Let $C$ be a chain with respect to continuation and $U = \bigcup_{D \in C} D$. Then there is a unique well ordering of $U$ making $U$ a continuation of each element of $C$ distinct from $U$. This lets one build a well ordered set from a chain of initial segments."
+. description: "Let $C$ be a chain with respect to continuation and
+                $U = \bigcup_{D \in C} D$. Then there is a unique well ordering
+                of $U$ making $U$ a continuation of each element of $C$ distinct
+                from $U$. This lets one build a well ordered set from a chain of
+                initial segments."
 Id: "04a1fede-4f52-4915-ad37-848cce1f674c"
+
 
 Theorem:
 . "Theorem 4.36 (Well Ordering Principle)"
@@ -117,8 +140,12 @@ given:
 then:
 . \well.ordered{X}
 Documented:
-. description: "Assuming the axioms of ZF and Zorn's lemma, every set can be well ordered. One applies Zorn's lemma to the collection of well orderings of subsets of $X$, ordered by continuation; a maximal element must well order all of $X$."
+. description: "Assuming the axioms of ZF and Zorn's lemma, every set can be
+                well ordered. One applies Zorn's lemma to the collection of well
+                orderings of subsets of $X$, ordered by continuation; a maximal
+                element must well order all of $X$."
 Id: "8671e667-d056-44e4-a56a-e0fc963f753f"
+
 
 Theorem:
 . "Theorem 4.37"
@@ -134,23 +161,27 @@ where:
 then:
 . exists: f is \choice.function:on{X}
 Documented:
-. description: "Assuming the axioms of ZF and the well ordering principle, the axiom of choice holds. Well order $\bigcup_{A \in X} A$; then the function sending each $A \in X$ to its least element is a choice function. This completes the equivalence of the axiom of choice, Zorn's lemma, and the well ordering principle."
+. description: "Assuming the axioms of ZF and the well ordering principle, the
+                axiom of choice holds. Well order $\bigcup_{A \in X} A$; then
+                the function sending each $A \in X$ to its least element is a
+                choice function. This completes the equivalence of the axiom of
+                choice, Zorn's lemma, and the well ordering principle."
 Id: "252a3455-3de4-4d4a-b258-b918cbd0c09d"
 
-Text: "
-In summary, assuming the axioms of ZF, the axiom of choice implies Zorn's lemma,
-Zorn's lemma implies the well ordering principle, and the well ordering principle
-implies the axiom of choice. The three statements are therefore equivalent over
-ZF. One important fact not proven here is that the axiom of choice is independent
-of the axioms of ZF: they neither imply it nor imply its negation.
-"
+
+Text: "In summary, assuming the axioms of ZF, the axiom of choice implies Zorn's
+       lemma, Zorn's lemma implies the well ordering principle, and the well
+       ordering principle implies the axiom of choice. The three statements are
+       therefore equivalent over ZF. One important fact not proven here is that
+       the axiom of choice is independent of the axioms of ZF: they neither
+       imply it nor imply its negation."
 Id: "42c845dc-e030-4087-83cc-b4fe011d3cd3"
 
-Text: "
-Acknowledgments. The author thanks his mentor Tung Nguyen for guidance and
-feedback, Professor May for organizing the REU and for his comments, and
-Professor Malliaris for her comments. The structure and content of these notes
-are heavily influenced by Naive Set Theory by Paul Halmos, and most of the proofs
-are the same as or highly similar to those found in that text.
-"
+
+Text: "Acknowledgments. The author thanks his mentor Tung Nguyen for guidance
+       and feedback, Professor May for organizing the REU and for his comments,
+       and Professor Malliaris for her comments. The structure and content of
+       these notes are heavily influenced by Naive Set Theory by Paul Halmos,
+       and most of the proofs are the same as or highly similar to those found
+       in that text."
 Id: "7d83e31e-62f4-4ee8-97e2-c25c008a8c30"

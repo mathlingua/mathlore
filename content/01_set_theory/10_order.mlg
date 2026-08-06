@@ -13,7 +13,8 @@ that:
 Documented:
 . called: "comparable"
 . written: "m? \text{ and } n? \text{ are comparable}"
-. description: "Natural numbers $m$ and $n$ are comparable when $m \in n$, $n \in m$, or $m = n$."
+. description: "Natural numbers $m$ and $n$ are comparable when $m \in n$,
+                $n \in m$, or $m = n$."
 Id: "9223333f-9416-4f97-9595-f982fd0f4f66"
 
 
@@ -25,7 +26,8 @@ satisfies: m "in" n
 Documented:
 . called: "$m?$ less than $n?$"
 . written: "m? < n?"
-. description: "For natural numbers, $m < n$ is defined to mean $m \in n$. This makes $<$ a relation on $\omega$ capturing the usual order."
+. description: "For natural numbers, $m < n$ is defined to mean $m \in n$. This
+                makes $<$ a relation on $\omega$ capturing the usual order."
 Id: "67dfb9c9-12ca-496f-8dab-b36699677435"
 
 
@@ -40,7 +42,9 @@ satisfies:
 Documented:
 . called: "less than or equal to"
 . written: "m? \leq n?"
-. description: "For natural numbers, $m \leq n$ means $m < n$ or $m = n$; equivalently $m \subseteq n$. This order is transitive, inheriting transitivity from the subset relation."
+. description: "For natural numbers, $m \leq n$ means $m < n$ or $m = n$;
+                equivalently $m \subseteq n$. This order is transitive,
+                inheriting transitivity from the subset relation."
 Id: "fb02b92c-b803-414e-b46c-a882237acf3d"
 
 
@@ -48,7 +52,9 @@ Lemma:
 given: m, n is \set.theoretic.natural.number
 then: m \.comparable./ n
 Documented:
-. description: "All natural numbers are comparable: for any $m, n \in \omega$, one of $m \in n$, $n \in m$, or $m = n$ holds. The proof is a double induction using that each natural number is transitive."
+. description: "All natural numbers are comparable: for any $m, n \in \omega$,
+                one of $m \in n$, $n \in m$, or $m = n$ holds. The proof is a
+                double induction using that each natural number is transitive."
 Id: "9ca0f4aa-82e4-46e2-bcd7-a6e2843423a1"
 
 
@@ -61,7 +67,9 @@ then:
   . n "in" m
   . m "in" n
 Documented:
-. description: "For any $n, m \in \omega$, exactly one of the following holds: $n = m$, $n \in m$, or $m \in n$. Comparability gives at least one, and Lemma 3.7 rules out more than one."
+. description: "For any $n, m \in \omega$, exactly one of the following holds:
+                $n = m$, $n \in m$, or $m \in n$. Comparability gives at least
+                one, and Lemma 3.7 rules out more than one."
 Id: "92b0c011-730b-4e42-81f8-dcedb68f93d6"
 
 
@@ -73,7 +81,9 @@ then:
 . have: n \:proper.subset?:/ m
   iff: n "in" m
 Documented:
-. description: "For all $n, m \in \omega$ with $n \neq m$, $n \in m$ if and only if $n \subsetneq m$. This ties membership among natural numbers to proper containment."
+. description: "For all $n, m \in \omega$ with $n \neq m$, $n \in m$ if and only
+                if $n \subsetneq m$. This ties membership among natural numbers
+                to proper containment."
 Id: "68bcb5f8-d1d4-4e0b-ab0b-3b3c3d4e8d4d"
 
 
@@ -88,7 +98,9 @@ then:
   . \set.theoretic.zero \:less.than?:/ n
   then: \set.theoretic.zero \:less.than?:/ \product:of{q}:and{n}
 Documented:
-. description: "Let $m, n, q \in \omega$. Then (a) if $m < n$ then $m^+ \leq n$; (b) $m \leq m + n$; and (c) if $q > 0$ and $n > 0$ then $qn > 0$."
+. description: "Let $m, n, q \in \omega$. Then (a) if $m < n$ then $m^+ \leq n$;
+                (b) $m \leq m + n$; and (c) if $q > 0$ and $n > 0$ then
+                $qn > 0$."
 Id: "c6f806a0-a146-41c3-b0ef-a577c2eba28f"
 
 
@@ -102,7 +114,9 @@ then:
     . \sum:of{k}:and{n} = m
   iff: k \:less.than?:/ m
 Documented:
-. description: "For $k, m \in \omega$, $k < m$ if and only if there exists $n \in \omega$ such that $n > 0$ and $k + n = m$. This characterizes the order in terms of addition."
+. description: "For $k, m \in \omega$, $k < m$ if and only if there exists
+                $n \in \omega$ such that $n > 0$ and $k + n = m$. This
+                characterizes the order in terms of addition."
 Id: "75998e66-ce46-4620-9229-ea57b88168ae"
 
 
@@ -122,5 +136,7 @@ then:
     then:
     . \product:of{k}:and{n} \:less.than:/ \product:of{m}:and{n}
 Documented:
-. description: "Let $k, m, n \in \omega$ with $k < m$. Then (a) $k + n < m + n$, and (b) $kn < mn$ when $n > 0$. Order is preserved by adding a constant and by multiplying by a positive constant."
+. description: "Let $k, m, n \in \omega$ with $k < m$. Then (a) $k + n < m + n$,
+                and (b) $kn < mn$ when $n > 0$. Order is preserved by adding a
+                constant and by multiplying by a positive constant."
 Id: "06039e24-41f7-43fe-b2e8-80e1eb93465b"

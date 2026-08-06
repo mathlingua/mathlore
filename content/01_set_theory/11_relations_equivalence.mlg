@@ -1,8 +1,10 @@
 SectionTitle: "Finite and Infinite Sets, Partial Order, and Choice"
 Id: "66f88858-c6e9-4b34-acd6-5c08953f8d3f"
 
+
 SubsectionTitle: "Finite and Infinite Sets"
 Id: "d021d971-2210-4f4a-b61f-86d45f7077b0"
+
 
 [\(reflexive)::set.theoretic.relation:on{X}]
 Refines: R
@@ -17,8 +19,10 @@ satisfies:
 Documented:
 . adjective: "reflexive"
 . written: "\operatorname{reflexive}"
-. description: "A relation $R$ on $X$ is reflexive when $a \mathbin{R} a$ for all $a \in X$."
+. description: "A relation $R$ on $X$ is reflexive when $a \mathbin{R} a$ for
+                all $a \in X$."
 Id: "c065b70c-33a1-434d-afb4-d87cfb2755ac"
+
 
 [\(symmetric)::set.theoretic.relation:on{X}]
 Refines: R
@@ -37,8 +41,10 @@ satisfies:
 Documented:
 . adjective: "symmetric"
 . written: "\operatorname{symmetric}"
-. description: "A relation $R$ on $X$ is symmetric when $a \mathbin{R} b$ implies $b \mathbin{R} a$ for all $a, b \in X$."
+. description: "A relation $R$ on $X$ is symmetric when $a \mathbin{R} b$
+                implies $b \mathbin{R} a$ for all $a, b \in X$."
 Id: "0fe6a499-901e-4936-8009-00d0c3581f6f"
+
 
 [\(asymmetric)::set.theoretic.relation:on{X}]
 Refines: R
@@ -59,8 +65,11 @@ satisfies:
 Documented:
 . adjective: "asymmetric"
 . written: "\operatorname{asymmetric}"
-. description: "A relation $R$ on $X$ is asymmetric (in the sense of antisymmetric) when $a \mathbin{R} b$ and $b \mathbin{R} a$ together imply $a = b$."
+. description: "A relation $R$ on $X$ is asymmetric (in the sense of
+                antisymmetric) when $a \mathbin{R} b$ and $b \mathbin{R} a$
+                together imply $a = b$."
 Id: "be2a8627-1584-4738-bd75-ce5836e9e8eb"
+
 
 [\(transitive)::set.theoretic.relation:on{X}]
 Refines: R
@@ -82,8 +91,11 @@ satisfies:
 Documented:
 . adjective: "transitive"
 . written: "\operatorname{transitive}"
-. description: "A relation $R$ on $X$ is transitive when $a \mathbin{R} b$ and $b \mathbin{R} c$ imply $a \mathbin{R} c$ for all $a, b, c \in X$."
+. description: "A relation $R$ on $X$ is transitive when $a \mathbin{R} b$ and
+                $b \mathbin{R} c$ imply $a \mathbin{R} c$ for all
+                $a, b, c \in X$."
 Id: "86059ba3-ef94-4bda-96e2-de0256da70e3"
+
 
 [\(equivalence)::set.theoretic.relation:on{X}]
 Refines: R
@@ -97,8 +109,11 @@ satisfies:
 Documented:
 . adjective: "equivalence"
 . written: "\operatorname{equivalence}"
-. description: "An equivalence relation on $X$ is a relation that is reflexive, symmetric, and transitive. Equality is the most obvious equivalence relation."
+. description: "An equivalence relation on $X$ is a relation that is reflexive,
+                symmetric, and transitive. Equality is the most obvious
+                equivalence relation."
 Id: "2ff0d60f-d4ea-47ce-97e9-cf0358af89df"
+
 
 [E \:equivalent:/ F]
 Describes: E
@@ -111,5 +126,7 @@ satisfies:
 Documented:
 . called: "equivalent"
 . written: "E? \sim F?"
-. description: "Two sets $E$ and $F$ are equivalent, written $E \sim F$, when there exists a bijection between $E$ and $F$. Equivalence of sets is itself an equivalence relation."
+. description: "Two sets $E$ and $F$ are equivalent, written $E \sim F$, when
+                there exists a bijection between $E$ and $F$. Equivalence of
+                sets is itself an equivalence relation."
 Id: "85eb03f1-5f5e-4583-9f18-062ee76f8812"
