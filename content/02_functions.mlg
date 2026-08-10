@@ -1,3 +1,16 @@
+Title: "Functions"
+Id: "40c5a61d-19e7-4856-8fb0-57d09ac6a6ed"
+
+
+Text: "A function is the mathematical embodiment of a rule that assigns to each
+       input exactly one output. Having built sets and their Cartesian products,
+       we can now say precisely what a function is: a way of associating with
+       every element of one set a unique element of another. Functions, and the
+       binary operations that are a special case of them, are the tools with
+       which the algebraic structures of the next chapter are described."
+Id: "37f9c062-435f-4310-b511-2d2d59281683"
+
+
 [\function:?on{A}:?to{B}]
 Defines: f(x__) ::= y_
 when: A, B is \set
@@ -12,7 +25,19 @@ satisfies:
 Documented:
 . called: "function@[A]{ on $A?$}@[B]{ to $B?}$"
 . written: "@[A, B]{f? \: : \: A? \rightarrow B?}"
+. description: "A function $f : A \rightarrow B$ assigns to each element $x$ of
+                the domain $A$ exactly one element $f(x)$ of the codomain $B$.
+                The defining requirement is existence and uniqueness of the
+                output: for every $x \in A$ there is one and only one $y \in B$
+                with $f(x) = y$."
 Id: "1e0cb28d-bc8f-42db-bcfa-86a215e88c7a"
+
+
+Text: "A binary operation is a function of two arguments that returns a value in
+       the same set. Addition and multiplication are the familiar examples, and
+       operations of this kind are exactly what an algebraic structure equips a
+       set with."
+Id: "dd492fce-0357-4b6a-810f-40764b5245f9"
 
 
 [\binary.operation:on{X}]
@@ -21,7 +46,17 @@ when: X is \set
 means: * is \function:on{X \.set.cross./ X}:to{X}
 Documented:
 . called: "binary operation on $X?$"
+. description: "A binary operation on $X$ takes two elements of $X$ and returns
+                an element of $X$. Formally it is a function from $X \times X$
+                to $X$, written in infix form as $x * y$."
 Id: "82c8948a-c30d-464b-8ab0-1c7bdb2ed770"
+
+
+Text: "Two properties of a binary operation recur constantly. An operation is
+       *associative* when the way its arguments are grouped does not matter, and
+       *commutative* when their order does not matter. We record both as
+       refinements of a binary operation."
+Id: "ded59881-7811-4fef-a95c-77f9801814e2"
 
 
 [\(associative)::binary.operation:on{X}]
@@ -43,7 +78,14 @@ satisfies:
   then: x * y = y * x
 Documented:
 . adjective: "commutative"
-Id: "ada35071-5d93-4e3c-bc69-96935d5394ed"
+Id: "fc0223f8-7053-44ae-a251-94b6c35bc31d"
+
+
+Text: "A function may be cut down to a smaller domain simply by ignoring the
+       inputs outside it. This *restriction* agrees with the original function
+       wherever both are defined, and is used later to view an operation on a
+       set as an operation on a subset."
+Id: "fc9215b0-5d36-4ee6-b3d6-e0007b8e39f5"
 
 
 [\restriction:of{g(x__)}:on{X}]
@@ -55,4 +97,8 @@ expresses: f(x__) := g(x__)
 Documented:
 . called: "restriction of $g?$ on $X?$"
 . written: "g?\big |_{X?}"
+. description: "The restriction $g|_X$ of a function $g : A \rightarrow B$ to a
+                subset $X$ of $A$ is the function on $X$ that takes each input
+                to the same value $g$ does. It keeps the rule and shrinks the
+                domain."
 Id: "ea7eab01-792c-427f-91dc-a75f43513b38"

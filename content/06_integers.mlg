@@ -1,3 +1,26 @@
+Title: "Integers"
+Id: "3919403c-8205-49f9-aebb-fc23b59961ae"
+
+
+Text: "The natural numbers can be added but not freely subtracted: there is no
+       natural number equal to $3 - 5$. The integers repair this by adjoining
+       negative numbers. The classical construction, carried out here,
+       represents each integer as a difference of two naturals -- the pair
+       $(n, m)$ standing for $n - m$ -- and then identifies pairs that ought to
+       name the same difference. This is exactly a quotient by an equivalence
+       relation, so it draws on every earlier chapter at once: the naturals,
+       their addition, the Cartesian product, and the quotient of a set by a
+       relation."
+Id: "6ab727ff-4d3c-467a-a090-23baa9056340"
+
+
+Text: "Two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same integer when
+       $n_1 - m_1 = n_2 - m_2$. Since subtraction is not yet available, this is
+       phrased using addition alone, as $n_1 + m_2 = n_2 + m_1$. The relation so
+       defined is an equivalence relation on pairs of naturals."
+Id: "86f693bc-1d69-4bfd-bef4-c67033b73acb"
+
+
 [\integer.equivalence]
 Declares: R is \equivalence.relation:on{\naturals.set \.set.cross./ \naturals.set}
 expresses:
@@ -8,7 +31,19 @@ expresses:
 Documented:
 . called: "integer equivalence relation"
 . written: "\sim_{\mathbb{Z}}"
+. description: "The relation on pairs of naturals that identifies $(n_1, m_1)$
+                with $(n_2, m_2)$ exactly when $n_1 + m_2 = n_2 + m_1$. This is
+                the cross-multiplied form of $n_1 - m_1 = n_2 - m_2$, expressed
+                with addition alone, and it is an equivalence relation."
 Id: "ee34451f-a1b6-4339-9ec4-f260c0a4d395"
+
+
+Text: "The set of integers is then the quotient of the pairs of naturals by this
+       relation. Each integer is an equivalence class of differences, so that
+       $2 - 5$ and $0 - 3$ name the same integer, written $-3$. With
+       $\mathbb{Z}$ in hand, subtraction becomes total and the arithmetic of the
+       naturals extends to negative numbers."
+Id: "7dedd212-2822-4340-bab5-11991187596f"
 
 
 [\integers.set]
@@ -16,4 +51,9 @@ Declares: Z := (\naturals.set \.set.cross./ \naturals.set) \.mod./ \integer.equi
 Documented:
 . called: "integers"
 . written: "\mathbb{Z}"
+. description: "The set $\mathbb{Z}$ of integers, constructed as the quotient of
+                $\mathbb{N} \times \mathbb{N}$ by the integer equivalence
+                relation. Each integer is a class of pairs $(n, m)$ representing
+                the difference $n - m$, so $\mathbb{Z}$ contains the naturals
+                together with their negatives."
 Id: "2879813a-8202-4d27-b248-83687c132e84"

@@ -1,3 +1,22 @@
+Title: "Logic"
+Id: "2675f869-5535-45d3-9009-0a76ffa07961"
+
+
+Text: "Before any mathematics can be stated precisely, we need a small
+       vocabulary for combining and relating statements. This opening chapter
+       records that vocabulary: the logical connectives that turn one or two
+       statements into a new one. Everything here operates on statements alone,
+       independently of what those statements happen to be about, so the
+       connectives defined below are used unchanged in every later chapter."
+Id: "b03f7ce2-7aed-4c81-a6e7-d998ccf65747"
+
+
+Text: "We begin with the conditional, the connective that expresses logical
+       consequence. It is the backbone of every definition and proof that
+       follows, since to prove a theorem is almost always to show that some
+       conclusion follows from a collection of hypotheses."
+Id: "7529a4ce-e5cc-46c7-85b9-fdcd19351351"
+
 
 [P \.implies./ Q]
 States:
@@ -7,7 +26,17 @@ that:
   then: Q
 Documented:
 . written: "P+? \Rightarrow Q+?"
+. description: "The conditional *if $P$ then $Q$*, written $P \Rightarrow Q$. It
+                asserts that whenever $P$ holds, $Q$ holds as well. It makes no
+                claim at all in the case that $P$ fails, so a conditional with a
+                false hypothesis is regarded as holding vacuously."
 Id: "dc7e213d-76c2-43d7-acf1-c5978daaab33"
+
+
+Text: "When each of two statements implies the other, they stand or fall
+       together. This mutual implication is the biconditional, and it is the
+       form in which most definitions and characterizations are cast."
+Id: "b60eca2f-6be8-4e23-a2f2-b56e2378684b"
 
 
 [P \.iff./ Q]
@@ -18,7 +47,17 @@ that:
   iff: Q
 Documented:
 . written: "P+? \iff Q+?"
+. description: "The biconditional of $P$ and $Q$, read *$P$ if and only if $Q$*.
+                It holds exactly when $P$ and $Q$ have the same truth value --
+                each implies the other -- and it is the connective used to state
+                that two conditions are equivalent."
 Id: "96440ac7-3331-4467-a7ac-593dbca0761b"
+
+
+Text: "The remaining connectives build compound statements from simpler ones.
+       Conjunction asserts that two statements both hold, disjunction that at
+       least one of them does, and negation that a statement fails."
+Id: "1d61c6bd-bf4c-4c3e-a6dd-769d5c662a6f"
 
 
 [P \.and./ Q]
@@ -30,6 +69,9 @@ that:
   . Q
 Documented:
 . written: "P+? \text{ and } Q+?"
+. description: "The conjunction of $P$ and $Q$. The statement $P \text{ and } Q$
+                holds precisely when $P$ holds and $Q$ holds; if either fails,
+                the conjunction fails."
 Id: "e024d041-fcf1-476e-b29e-b75d88b04fa8"
 
 
@@ -42,6 +84,9 @@ that:
   . Q
 Documented:
 . written: "P+? \text{ or } Q+?"
+. description: "The disjunction of $P$ and $Q$. The statement $P \text{ or } Q$
+                holds when at least one of $P$ and $Q$ holds. As is standard in
+                mathematics, the *or* is inclusive: it also holds when both do."
 Id: "fd7a79c3-4380-4621-a699-eb6902667669"
 
 
@@ -52,7 +97,16 @@ that:
 . not: P
 Documented:
 . written: "\neg P+?"
+. description: "The negation of $P$, written $\neg P$. It holds exactly when $P$
+                does not, and so reverses the truth value of the statement it is
+                applied to."
 Id: "856ad9cc-c17e-4cff-ad32-10ee78ab20c4"
+
+
+Text: "The connectives above suffice to define any others by combination. As one
+       example we record the exclusive *or*, which holds when the two statements
+       differ in truth value -- that is, when one of them holds but not both."
+Id: "009e13c8-8dba-4b31-9958-f8531eb5ec04"
 
 
 [P \.xor./ Q]
@@ -61,4 +115,8 @@ when: P, Q is \\statement
 that: (P \.or./ Q) \.and./ \not{P \.and./ Q}
 Documented:
 . written: "P+? \text{ xor } Q+?"
+. description: "The exclusive disjunction of $P$ and $Q$. It holds when $P$ or
+                $Q$ holds but *not* both, and is defined here as $(P \text{ or }
+                Q) \text{ and } \neg(P \text{ and } Q)$ -- inclusive *or* with
+                the both-true case removed."
 Id: "1c7bc638-0db8-416f-a0d0-f5c0d7d92842"

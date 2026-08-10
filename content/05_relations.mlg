@@ -1,3 +1,17 @@
+Title: "Relations"
+Id: "61ac6940-a021-4d54-bc78-910c75ce3a04"
+
+
+Text: "A relation records how the elements of a set stand to one another.
+       Formally it is nothing more than a set of ordered pairs -- a subset of
+       the Cartesian square -- but this simple idea is remarkably powerful. This
+       chapter treats relations in general and then singles out the *equivalence
+       relations*, whose classes partition a set and let one pass to a quotient.
+       The construction of the integers in the next chapter rests entirely on
+       this machinery."
+Id: "c29d6027-fe93-4e6d-94df-f72a802fedcb"
+
+
 [\relation:?on{X}]
 Defines: R
 when: X is \set
@@ -7,7 +21,20 @@ Enables:
   written: "x_? \: R \: y_?"
 Documented:
 . called: "relation on $X?$"
+. description: "A relation on a set $X$ is a subset $R$ of $X \times X$. One
+                writes $x \mathrel{R} y$ to mean that the pair $(x, y)$ belongs
+                to $R$, so a relation is just a precise record of which ordered
+                pairs are related."
 Id: "5ace60a2-cc66-4cea-818a-538f877b5f97"
+
+
+Text: "The most important relations are those that behave like a generalized
+       equality. An *equivalence relation* is reflexive, symmetric, and
+       transitive: every element is related to itself, the relation is symmetric
+       between pairs, and it chains through intermediate elements. These three
+       laws are exactly what is needed to regard related elements as
+       interchangeable."
+Id: "b906ce0b-34d4-4b24-b168-d6a8d05efc92"
 
 
 [\equivalence.relation:on{X}]
@@ -30,7 +57,18 @@ satisfies:
   then: R(x, z)
 Documented:
 . called: "equivalence relation on $X?$"
+. description: "An equivalence relation on $X$ is a relation that is reflexive
+                ($x \mathrel{R} x$), symmetric (if $x \mathrel{R} y$ then $y
+                \mathrel{R} x$), and transitive (if $x \mathrel{R} y$ and $y
+                \mathrel{R} z$ then $x \mathrel{R} z$). Such a relation sorts the
+                elements of $X$ into classes of mutually related elements."
 Id: "2394a97b-5960-4919-98db-b95ec3870343"
+
+
+Text: "Each element gives rise to its *equivalence class*, the set of all
+       elements related to it. Two classes are either identical or disjoint, so
+       the classes carve $X$ into non-overlapping pieces."
+Id: "308e4d46-7205-4977-9583-486771d4ca48"
 
 
 [\equivalence.class:of{x}:over{R}]
@@ -42,7 +80,18 @@ when:
 Documented:
 . called: "equivalence class of $x?$ on $R?$"
 . written: "\left [ x? \right ]_{R?}"
+. description: "The equivalence class $[x]_R$ of an element $x$ is the set of
+                all elements related to $x$ by $R$. Every element lies in
+                exactly one class, and two elements share a class precisely when
+                they are related."
 Id: "2fae575c-13c9-498b-b14a-e471f0e3cfdc"
+
+
+Text: "Gathering the equivalence classes into a single set forms the *quotient*
+       of $X$ by $R$. Passing to the quotient is the standard way of turning a
+       relation of sameness into genuine equality, and it is the tool used next
+       to build the integers from the naturals."
+Id: "7435ef90-380d-4429-a369-37d652479b85"
 
 
 [X \.mod./ R]
@@ -53,4 +102,8 @@ when:
 Documented:
 . called: "$X?$ mod $R?$"
 . written: "X? / R?"
+. description: "The quotient set $X / R$ is the set whose elements are the
+                equivalence classes of $R$. It collapses each class to a single
+                point, so that elements related by $R$ become equal in the
+                quotient."
 Id: "cea0d898-a18d-44dc-b04c-ffb2f0cde26e"

@@ -1,3 +1,24 @@
+Title: "Set Theory"
+Id: "4b9a150c-46bd-49da-83b4-b106f402c3a4"
+
+
+Text: "The whole of the mathematics developed in these pages is built from a
+       single kind of object -- the *set* -- and a single primitive relation
+       between sets -- *membership*. Numbers, ordered pairs, functions, and the
+       algebraic structures of later chapters are all, in the end, particular
+       sets. This chapter fixes the rules that sets obey, in the form of the
+       axioms of Zermelo and Fraenkel, and then uses those rules to construct
+       the first sets we need."
+Id: "a5b9d42b-f22f-4fd4-a867-29de537158c3"
+
+
+Text: "A set is taken as undefined; the only thing one may ask of it is which
+       sets belong to it. For sets $x$ and $X$, either $x \in X$ or
+       $x \notin X$, and this membership relation carries all the information a
+       set has to offer. The axioms below are collected as the defining
+       conditions of what it means to be a set."
+Id: "cbc6feb5-4f5e-41ef-bf59-342c981aa217"
+
 
 [\set]
 Defines: X
@@ -17,7 +38,16 @@ Enables:
   capability: x_ "in" X :-> x_ member_of Y
 Documented:
 . called: "set"
+. description: "A set is the sole primitive object of the theory. The only
+                question one may put to a set is which sets are its members, and
+                two sets with the same members are the same set. Every other
+                object built in this collection is ultimately a set."
 Id: "a0759217-e1f6-412c-982a-0038cd17a3a1"
+
+
+Text: "It is convenient to have notation for the failure of membership. Writing
+       $x \notin X$ is nothing more than denying that $x \in X$."
+Id: "48b22b9f-2acc-4e80-9148-667489d48ee1"
 
 
 [x \.not.in./ X]
@@ -27,7 +57,21 @@ that:
 . not: x "in"? X
 Documented:
 . written: "x? \notin X?"
+. description: "The negation of membership: $x \notin X$ asserts that the set
+                $x$ is not an element of the set $X$. It is shorthand for the
+                statement that $x \in X$ fails to hold."
 Id: "756e0f48-1c0e-4e05-b97a-9c4fcd577603"
+
+
+SectionTitle: "The empty set"
+Id: "8dc697a3-2ef0-4af9-8852-a994bdd8882d"
+
+
+Text: "The theory needs at least one set to exist before it can build any
+       others. The simplest such set is the one with no elements at all. Its
+       existence is granted by the axiom of the empty set, and, as with every
+       set, its uniqueness is a consequence of extensionality."
+Id: "7a54c26a-ea2e-4e38-ac69-3426f651c4d4"
 
 
 [\empty.set]
@@ -39,7 +83,16 @@ expresses:
 Documented:
 . called: "empty set"
 . written: "\emptyset"
+. description: "The empty set $\emptyset$ is the unique set having no members
+                whatsoever. It is the seed from which the entire universe of
+                sets -- and eventually the natural number $0$ -- is grown."
 Id: "96908ddf-5fc5-455d-9cfd-eaf0fd6ada38"
+
+
+Text: "A set that is not the empty set has at least one element. It is worth
+       naming this condition, since many constructions require a set to be
+       nonempty."
+Id: "6a19c255-0426-440b-a2e3-c97b1fe06bc4"
 
 
 [\(nonempty)::set]
@@ -50,6 +103,16 @@ Documented:
 Id: "616950f0-7d70-48ff-a5ac-9d5d49272150"
 
 
+SectionTitle: "The axioms"
+Id: "f2e995e5-7f69-49c8-90bc-46d8f77811f1"
+
+
+Text: "The following axioms are the rules a set must obey. The axiom of the
+       empty set asserts that a set with no members exists, providing the
+       starting point just discussed."
+Id: "287b3b2f-e440-43b5-98be-b7310daf6aaf"
+
+
 [\axiom.of.empty.set]
 Axiom:
 then:
@@ -58,7 +121,21 @@ then:
   . forAll: Z is \set
     then:
     . not: Z "in"? X
+Documented:
+. called: "Axiom of Empty Set"
+. description: "There is a set having no members: for every set $Z$, $Z \notin
+                X$. This is the one axiom that outright asserts a set into
+                existence; every other set is built, directly or indirectly,
+                starting from it."
 Id: "f2180719-568d-4084-982b-a71c5f195bf6"
+
+
+Text: "The axiom of extensionality fixes what it means for two sets to be equal:
+       a set is completely determined by its members. Not the way it was
+       described, not the order of its elements, and not any repetition -- only
+       membership counts. This is what lets us speak of *the* empty set or *the*
+       union of two sets."
+Id: "7f76409d-9233-44bf-984a-ede2358dcee5"
 
 
 [\axiom.of.extensionality]
@@ -68,7 +145,19 @@ where:
 . forAll: Z is \set
   then: (Z "in"? X) \.iff./ (Z "in"? Y)
 then: X = Y
+Documented:
+. called: "Axiom of Extensionality"
+. description: "Two sets are equal if and only if they have exactly the same
+                elements. The identity of a set is therefore nothing more than
+                the collection of its members, so any two constructions that
+                yield the same elements yield the same set."
 Id: "6fc3a89f-f8ef-420e-b1b6-6e5ed4905611"
+
+
+Text: "The axiom of pairing lets us gather any two sets into a single set. From
+       it, together with union, the finite sets and ordered structures used
+       later can be assembled."
+Id: "7b45fe82-a42a-4591-9453-350baec1df28"
 
 
 [\axiom.of.pairing]
@@ -79,7 +168,18 @@ then:
   suchThat:
   . forAll: Z is \set
     then: (Z "in"? U) \.iff./ ((.Z = X.) \.or./ (.Z = Y.))
+Documented:
+. called: "Axiom of Pairing"
+. description: "For any two sets $X$ and $Y$ there is a set $U$ whose members
+                are exactly $X$ and $Y$. Applying it with $X = Y$ produces the
+                set whose only member is $X$."
 Id: "3219aca1-fba1-42a6-9a1f-209aa430c677"
+
+
+Text: "The axiom of union collapses a set of sets into a single set containing
+       every element of every member. It is what makes it possible to pool the
+       contents of a whole family of sets at once."
+Id: "c0f76644-e25f-4e0c-8cf0-6daf86ad59df"
 
 
 [\axiom.of.union]
@@ -96,7 +196,23 @@ then:
         suchThat:
         . W "in"? X
         . Z "in"? W
+Documented:
+. called: "Axiom of Union"
+. description: "For a set $X$ whose members are themselves sets, there is a set
+                $U$ containing exactly those $Z$ that belong to some member $W$
+                of $X$. It flattens one level of nesting, combining the elements
+                of all the members of $X$."
 Id: "60bcea09-6bf1-4917-b90f-64ceeb941558"
+
+
+SectionTitle: "Subsets"
+Id: "d1d71d30-1ce6-427e-bbc4-dd3ccf53fe53"
+
+
+Text: "One set is a subset of another when every element of the first is also an
+       element of the second. Subsethood is the basic way of comparing sets by
+       inclusion, and the power set axiom that follows depends on it."
+Id: "7bfbdad3-bf51-4e2d-ae06-8dd2fa3a220d"
 
 
 [A \:set.theoretic.subset:/ B]
@@ -111,7 +227,15 @@ Requires:
 Documented:
 . called: "$A?$ is a subset of $B?$"
 . written: "A? \subseteq B?"
+. description: "$A \subseteq B$ holds when every element of $A$ is also an
+                element of $B$. By extensionality, two sets are equal exactly
+                when each is a subset of the other."
 Id: "2b2b89a1-d106-4377-ae48-14c704063e5e"
+
+
+Text: "A subset that is not the whole set is called a *proper* subset: it is
+       contained in the larger set but differs from it."
+Id: "c27fbf42-311e-4efd-b4c8-2da3ad6370a7"
 
 
 [A \:set.theoretic.proper.subset:/ B]
@@ -121,7 +245,15 @@ means: A \:set.theoretic.subset:/ B
 satisfies: A != B
 Documented:
 . written: "A? \subsetneq B?"
+. description: "$A \subsetneq B$ holds when $A$ is a subset of $B$ but is not
+                equal to $B$; that is, $B$ has at least one element not in $A$."
 Id: "7d070f37-61a5-4c62-b8da-4831c222e4b2"
+
+
+Text: "The axiom of the power set asserts that all the subsets of a given set
+       can themselves be gathered into a set. This is the first axiom that
+       produces a set strictly larger than the ones it starts from."
+Id: "139b6eca-d1e5-4fae-97a4-1b05d96726f1"
 
 
 [\axiom.of.power.set]
@@ -132,7 +264,22 @@ then:
   suchThat:
   . forAll: x is \set
     then: (x "in"? P) \.iff./ (x \:set.theoretic.subset?:/ A)
+Documented:
+. called: "Axiom of Power Set"
+. description: "For every set $A$ there is a set $P$ whose members are exactly
+                the subsets of $A$. This power set collects together all of the
+                ways of selecting elements from $A$."
 Id: "8557cdb3-e02f-4b75-aed1-3dfd1cdee895"
+
+
+SectionTitle: "Building new sets"
+Id: "b49297d0-a6d3-4843-85a0-2241c30b5a05"
+
+
+Text: "With the axioms in place, we can name several standard constructions. The
+       singleton of a set is the set whose only member is that set, obtained
+       from pairing."
+Id: "032576ab-7fc3-4075-b24a-cd06583d18cd"
 
 
 [\singleton.set:of{X}]
@@ -145,7 +292,16 @@ expresses:
     iff: Z = X
 Documented:
 . written: "\left \{ X? \right \}"
+. description: "The singleton $\{X\}$ is the set whose sole member is $X$: a set
+                $Z$ belongs to it exactly when $Z = X$. Its existence follows
+                from pairing applied to $X$ with itself."
 Id: "08f35257-d0a7-42af-9866-7d138c56fc4c"
+
+
+Text: "The successor of a set adjoins the set itself as a new element to its
+       singleton. Iterating this operation from the empty set is precisely how
+       the natural numbers will be built in a later chapter."
+Id: "f49b05f5-b826-45d0-b327-b248946e28fc"
 
 
 [\set.successor:of{X}]
@@ -159,7 +315,17 @@ expresses:
     . (Z = X) \.or./ (Z = \singleton.set:of{X})
 Documented:
 . written: "X? \cup \left \{ X? \right \}"
+. description: "The successor of $X$ is the set $X \cup \{X\}$, whose members
+                are the members of $X$ together with $X$ itself. Starting from
+                $\emptyset$ and repeating this step generates the natural
+                numbers."
 Id: "002b9914-ad06-4f5a-a3fb-803bd86e6c4b"
+
+
+Text: "The last axiom guarantees that this process never terminates: there is a
+       set closed under successor and containing the empty set, hence an
+       infinite set. Without it, only finite sets could be shown to exist."
+Id: "9196ed0a-391f-4fb5-af13-ac8c65db0ae9"
 
 
 [\axiom.of.infinity]
@@ -173,6 +339,11 @@ then:
       then:
       . if: Y "in"? I
         then: \set.successor:of{Y} "in"? I
+Documented:
+. called: "Axiom of Infinity"
+. description: "There is a set $I$ that contains the empty set and is closed
+                under the successor operation. Such a set cannot be finite, so
+                this axiom is what first admits an infinite set into the theory."
 Id: "a0f45971-fcc1-419b-bcd5-f4c4717bb37f"
 
 
@@ -180,10 +351,24 @@ Writing: phi :~> \varphi
 Id: "c51b2bbc-d8f1-406c-b7c8-317e5409a2d8"
 
 
+SectionTitle: "Set-builder notation"
+Id: "55851b31-9fa9-4b8e-b61b-315b7559c66d"
+
+
+Text: "Sets are most often described by a property their elements satisfy. The
+       remaining definitions of this chapter set up that notation -- properties
+       of sets, sets listed by their elements, ordered pairs, and the Cartesian
+       product -- which is used throughout the rest of the collection."
+Id: "b218d7dd-c01a-476d-9975-b05de57b8b8f"
+
+
 [\set.property(X_)]
 Defines: phi(X_) is (? is \set) -> (? is \\statement)
 Documented:
 . called: "set property"
+. description: "A set property is a predicate on sets: given a set it yields a
+                statement, true or false. Properties are what the specification
+                axiom uses to carve subsets out of existing sets."
 Id: "cc680a81-3338-4848-8b9d-fcf368dd759e"
 
 
@@ -200,7 +385,17 @@ expresses:
 Documented:
 . called: "set of $\left \{ x? \right \}$"
 . written: "\left \{ x? \right \}"
+. description: "The set $\{x_1, \dots, x_n\}$ listed by its elements: a value
+                belongs to it exactly when it equals one of the listed $x_i$.
+                This is the finite, roster form of set-builder notation."
 Id: "61c901bc-5f36-479b-a32c-c37b7f98a9fb"
+
+
+Text: "From unordered pairs one can encode *ordered* pairs, in which the two
+       components can be told apart. Kuratowski's device below records the first
+       component as a singleton and the pair together, so that the order is
+       recoverable."
+Id: "da7d91b3-693b-4ca2-ac2a-e94555b18c5f"
 
 
 [\set.pair:of{x, y}]
@@ -209,7 +404,17 @@ when: x, y is \set
 Documented:
 . called: "pair of $x?$ and $y?$"
 . written: "\langle x?, y? \rangle"
+. description: "The ordered pair $\langle x, y \rangle$, encoded as the set
+                $\{x, \{x, y\}\}$. This encoding lets the first and second
+                components be recovered from the set alone, so order is
+                meaningful even though sets are unordered."
 Id: "8fd9d494-2882-4639-bb50-44a56626d1c4"
+
+
+Text: "Subsethood is transitive: a subset of a subset is a subset of the whole.
+       This is the first small theorem of the collection, and it follows
+       directly from the definition of subset."
+Id: "370b0f76-ab0f-4f7f-80fa-120bb7ffe9e2"
 
 
 Theorem:
@@ -222,6 +427,12 @@ then:
 Id: "6a4bcb50-97bc-4d1b-a9b2-750c963bb720"
 
 
+Text: "The characterization of equality by mutual inclusion, promised when
+       extensionality was stated, is recorded here as a theorem: two sets are
+       equal exactly when each is a subset of the other."
+Id: "a0b6d62f-1f1d-4be5-997b-40aa03cc4ac7"
+
+
 Theorem:
 given: A, B is \set
 then: A = B
@@ -231,10 +442,21 @@ iff:
 Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"
 
 
+Text: "Finally, the Cartesian product forms the set of all ordered pairs drawn
+       from two sets. It is the setting in which relations and functions are
+       defined, and so is one of the most heavily used constructions in what
+       follows."
+Id: "331daec2-edc7-4316-8fb6-0c801c3692ed"
+
+
 [A \.set.cross./ B]
 Declares: X := \set@{(a_, b_) : a_ "in" A; b_ "in" B}
 when: A, B is \set
 Documented:
 . called: "Cartesian product of $A?$ and $B?$"
 . written: "A? \times B?"
+. description: "The Cartesian product $A \times B$ is the set of all ordered
+                pairs $(a, b)$ with $a \in A$ and $b \in B$. Relations on a set
+                are subsets of its product with itself, and functions are
+                relations of a special kind."
 Id: "3bdd9cfb-f836-4d44-880a-873bb772cdef"

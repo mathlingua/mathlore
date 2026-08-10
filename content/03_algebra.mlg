@@ -1,3 +1,27 @@
+Title: "Algebra"
+Id: "b66194ab-1d9d-4b6f-bf99-d68a98b4cc00"
+
+
+Text: "Abstract algebra studies sets equipped with operations, asking what can
+       be proved from the properties of the operations alone, regardless of what
+       the elements are. This chapter climbs a ladder of such structures. Each
+       rung adds one requirement to the one below it: a bare set with an
+       operation becomes, in turn, a magma, a semigroup, a monoid, and finally a
+       group, the central object of elementary algebra."
+Id: "02a8aafc-c012-4d2a-92ed-b36b902d05a0"
+
+
+SectionTitle: "Magmas"
+Id: "399425a0-d94d-4548-953d-5dc82ac91e36"
+
+
+Text: "The most basic structure is a set together with a single binary
+       operation, with no further conditions imposed. This is a *magma*.
+       Everything that follows is a magma with extra properties, so a magma
+       marks the ground floor of the entire chapter."
+Id: "b6b6f241-917e-4090-8269-5060f249b80c"
+
+
 [\magma]
 Defines: M ::= (X, *)
 means: M is \set via X
@@ -8,6 +32,10 @@ Enables:
   written: "x_? \in M?"
 Documented:
 . called: "magma"
+. description: "A magma is a set $X$ together with a binary operation $*$ on it,
+                subject to no further axioms. It is the weakest algebraic
+                structure of this chapter, and every later structure is a magma
+                with additional properties."
 Id: "91ffd40c-72fa-4a93-83f3-80ceb1ae124a"
 
 
@@ -20,7 +48,17 @@ Enables:
   written: "x_? *? y_?"
 Documented:
 . called: "element of magma $M?$"
+. description: "An element of a magma $M$ is simply a member of its underlying
+                set. Naming it as its own notion lets the operation of $M$ be
+                written directly between two of its elements as $x * y$."
 Id: "d9405849-68a5-4721-9090-42eb0b9775d2"
+
+
+Text: "A quasigroup is a magma in which the operation can always be undone on
+       either side: each of the equations $a * x = b$ and $y * a = b$ has a
+       unique solution. This is the abstract form of the demand that division be
+       possible, and it is where the study of invertibility begins."
+Id: "55b0749b-4e2f-4112-a5be-c20a9879d6a3"
 
 
 [\quasigroup]
@@ -38,6 +76,10 @@ Enables:
   written: "x_? \in Q?"
 Documented:
 . called: "quasigroup"
+. description: "A quasigroup is a magma in which left and right division are
+                always possible: for all $a$ and $b$ the equations $a * x = b$
+                and $y * a = b$ each have a unique solution. It captures
+                invertibility without requiring associativity or an identity."
 Id: "49582242-a047-48ae-aced-77654d9a48aa"
 
 
@@ -50,6 +92,17 @@ Documented:
 Id: "2f5a9f56-286c-4703-a953-316fa32e57dc"
 
 
+SectionTitle: "Semigroups and monoids"
+Id: "57daae70-4d40-44bf-9640-46c26d8a4898"
+
+
+Text: "Imposing associativity on a magma yields a *semigroup*. Associativity is
+       what lets a product of several elements be written without parentheses,
+       and it is assumed by nearly every structure in mathematics that is called
+       an algebra."
+Id: "e077a5db-c372-4759-a880-d74270032560"
+
+
 [\semigroup]
 Defines: S ::= (X, *)
 means: S is \magma via (X, *)
@@ -59,6 +112,10 @@ Enables:
   written: "x_? \in S?"
 Documented:
 . called: "semigroup"
+. description: "A semigroup is a magma whose operation is associative, so that
+                $(a * b) * c = a * (b * c)$ for all elements. Associativity
+                makes repeated products unambiguous, so one may write
+                $a * b * c$ without parentheses."
 Id: "6ec2faf5-7d2c-4918-a559-6415b94f2b1f"
 
 
@@ -69,6 +126,13 @@ means: x is \magma.element:of{S}
 Documented:
 . called: "element of semigroup $S?$"
 Id: "5ce95378-5760-4728-b0d2-334848109a32"
+
+
+Text: "A *monoid* is a semigroup with an identity element -- a distinguished
+       element that leaves every element unchanged when combined with it. The
+       identity is the algebraic counterpart of the number $1$ under
+       multiplication, or $0$ under addition."
+Id: "c647adb5-0f98-4f7d-ae6a-8ff2229e3437"
 
 
 [\monoid]
@@ -85,6 +149,10 @@ Enables:
   written: "x_? \in M?"
 Documented:
 . called: "monoid"
+. description: "A monoid is a semigroup possessing an identity element $e$, one
+                that satisfies $x * e = x = e * x$ for every $x$. The identity
+                is unique, and it plays the role that $0$ plays for addition or
+                $1$ for multiplication."
 Id: "034bf6ff-ba6e-4fac-b47e-65cc85d15642"
 
 
@@ -95,6 +163,17 @@ means: x is \semigroup.element:of{M}
 Documented:
 . called: "element of monoid $M?$"
 Id: "fee7d2ca-5ebc-48a6-8eed-06d623b5520f"
+
+
+SectionTitle: "Groups"
+Id: "5bc745b6-657d-446f-b5f0-cae8c199112a"
+
+
+Text: "A *group* is a monoid in which every element has an inverse: for each $x$
+       there is a $y$ with $x * y = e$ and $y * x = e$. Groups are the central
+       structure of elementary algebra, being exactly the structures whose
+       operation can always be undone. They are the abstract theory of symmetry."
+Id: "5fb80940-d8de-44bf-8117-eeee203d4755"
 
 
 [\group]
@@ -112,7 +191,18 @@ Enables:
   written: "x_? \in G?"
 Documented:
 . called: "group"
+. description: "A group is a monoid in which every element $x$ has an inverse
+                $y$, so that $x * y = e = y * x$. Equivalently it is an
+                associative structure with identity in which every element is
+                invertible; this makes it a quasigroup as well as a monoid."
 Id: "e4d7371d-29bd-431f-ab09-e114fe89e5cf"
+
+
+Text: "A group is *finite* when its underlying set has finitely many elements.
+       The size of a finite group, its order, governs a great deal of its
+       structure, and finiteness is inherited directly from the underlying
+       monoid."
+Id: "6c628805-5df1-4ad5-b2c3-23bf7dad5acc"
 
 
 [\(finite)::group]
@@ -124,6 +214,12 @@ Documented:
 Id: "28d2a1c1-89a5-4163-93e3-fbc21c97ec9a"
 
 
+Text: "The elements of a group inherit the operation of the group, and each also
+       carries an inverse. Writing $x^{-1}$ for the inverse of $x$ gives the
+       familiar notation used in computations."
+Id: "bb323028-2831-4d67-b784-b0918774ab3a"
+
+
 [\group.element:of{G}]
 Defines: x
 when: G is \group
@@ -133,6 +229,10 @@ Enables:
   written: "x+?^{-1}"
 Documented:
 . called: "element of group $G?$"
+. description: "An element of a group is a member of its underlying set. Because
+                the ambient structure is a group, each such element $x$ has a
+                well-defined inverse $x^{-1}$, accessible through its inverse
+                operation."
 Id: "858abdda-c416-4a4e-a0bf-27ecf84cf008"
 
 
@@ -147,7 +247,17 @@ expresses:
 Documented:
 . called: "group inverse of $x?$"
 . written: "x+?^{-1}"
+. description: "The inverse $x^{-1}$ of an element $x$ of a group is the unique
+                element $y$ satisfying $x * y = e = y * x$. Its uniqueness is
+                proved below; it is what allows every equation in a group to be
+                solved."
 Id: "9b52b844-0cfa-4238-8c73-8b38265cca81"
+
+
+Text: "Two elements of a magma *commute* when the order in which they are
+       combined does not affect the result. In a general group most pairs do not
+       commute; the ones that do are of particular interest."
+Id: "a36041ed-5bdd-4e9c-84ce-719a69b7708b"
 
 
 [x \.commutes.with:?in{M ::= (X, *)}./ y]
@@ -158,7 +268,21 @@ when:
 that: x * y = y * x
 Documented:
 . called: "$x?$ commutes with $y?$@[M]{ in $M?$}"
+. description: "Two elements $x$ and $y$ of a magma commute when $x * y = y *
+                x$. An operation in which every pair of elements commutes is
+                exactly a commutative one."
 Id: "3d7a204c-966d-47e7-a5b4-8f9e20fd749c"
+
+
+SectionTitle: "Subgroups"
+Id: "29c1456f-88a5-4b56-a5b8-57859c40aedc"
+
+
+Text: "Before defining subgroups we record a small set-theoretic fact that the
+       definition needs: forming the Cartesian square of a subset lands inside
+       the Cartesian square of the whole set. It lets a subgroup's operation be
+       recognized as a restriction of the parent operation."
+Id: "7541e6eb-f20a-497b-ae90-65c891609d26"
 
 
 [\cross.of.subset.is.subset.of.cross]
@@ -169,6 +293,14 @@ given:
 then:
 . (.Y \.set.cross./ Y.) \:set.theoretic.subset?:/ (.X \.set.cross./ X.)
 Id: "db0160ae-5d28-4ad1-b2b6-d22964a88a2b"
+
+
+Text: "A *subgroup* is a subset of a group that is itself a group under the
+       inherited operation. It must contain the identity, be closed under the
+       operation, and contain the inverse of each of its elements. Subgroups are
+       the substructures through which the internal architecture of a group is
+       studied."
+Id: "91933534-107f-44fe-9ad6-4829664f8cd6"
 
 
 [H ::= (X', *', e') \:subgroup:/ G ::= (X, *, e)]
@@ -192,6 +324,10 @@ satisfies:
 Documented:
 . called: "$H?$ is a subgroup of $G?$"
 . written: "H? \leq G?"
+. description: "A subgroup $H \leq G$ is a nonempty subset of $G$ that is closed
+                under the group operation and under taking inverses, and whose
+                operation is the restriction of that of $G$. Under these
+                conditions $H$ is again a group in its own right."
 Justification:
 . [1]
   have: *' := \restriction:of{`*`}:on{X' \.set.cross./ X'}
@@ -201,6 +337,11 @@ Justification:
 Id: "d8fe82d3-6f50-4711-ad64-76d4eb0615ff"
 
 
+Text: "That a subgroup is genuinely a group is recorded as a theorem, making
+       explicit the property the definition was arranged to secure."
+Id: "5a7d1bd6-3a8d-4584-bc3d-505eb0ba0680"
+
+
 [\subgroup.is.group]
 Theorem:
 given:
@@ -208,6 +349,17 @@ given:
 . H \:subgroup:/ G
 then: H is? \group
 Id: "946d3180-8614-4bd2-8fd6-d9bdce721e04"
+
+
+SectionTitle: "Products and further structure"
+Id: "786f4620-5e2a-4871-856e-ae9220f82f4b"
+
+
+Text: "New groups can be assembled from old ones. The *direct product* of two
+       groups operates on ordered pairs, applying each group's operation in its
+       own coordinate. It is the simplest way of combining groups, and it builds
+       larger groups out of smaller building blocks."
+Id: "aa01e2aa-23e6-428f-8555-cabb841d1543"
 
 
 [G1 ::= (X1, *_1, e1) \.group.direct.product./ G2 ::= (X2, *_2, e2)]
@@ -220,7 +372,16 @@ expresses:
 Documented:
 . called: "direct product of groups $G1?$ and $G2?$"
 . written: "G1? \times G2?"
+. description: "The direct product $G_1 \times G_2$ has as elements the ordered
+                pairs $(x_1, x_2)$ with $x_i \in G_i$, and multiplies them
+                coordinatewise. Its identity is the pair of identities, and it
+                is itself a group."
 Id: "3a354c63-fc8c-4873-9751-62ecc651a5a9"
+
+
+Text: "As with subgroups, the fact that the direct product is a group is stated
+       as a theorem in its own right."
+Id: "16235348-2acd-494b-ae40-6814eab32507"
 
 
 Theorem:
@@ -229,12 +390,24 @@ then: G1 \.group.direct.product./ G2 is? \group
 Id: "d65025cf-8bf1-454f-9507-55890ab9f88c"
 
 
+Text: "A first computation in the group axioms: the inverse of a product is the
+       product of the inverses taken in the reverse order. The reversal is
+       essential, since the operation need not be commutative."
+Id: "a71309b4-a9ab-464d-a885-34cbcf992013"
+
+
 Theorem:
 given:
 . G is \group
 . x, y "in" G
 then: (x * y).inv = y.inv * x.inv
 Id: "ef1b2ca8-1e12-4779-8e32-ed5cf8787c68"
+
+
+Text: "When the operation of a group *is* commutative, the group is called
+       *abelian*. Abelian groups are far more tractable than groups in general,
+       and they are the setting for much of number theory and linear algebra."
+Id: "a608ecec-59d4-4939-a43e-3296c77eff39"
 
 
 [\(abelian)::group]
@@ -247,12 +420,23 @@ Documented:
 Id: "1dc777cd-31a5-489a-8b5a-05b94c647fb9"
 
 
+Text: "The chapter closes with two more consequences of the axioms. The first is
+       that inverting an element twice returns the original element."
+Id: "6619e809-8d59-4180-820d-ff40b5914fdf"
+
+
 Theorem:
 given:
 . G ::= (X, *, e) is \group
 . x "in" G
 then: (x.inv).inv = x
 Id: "8c61fb44-d5ab-4be8-804a-0d6a95d83331"
+
+
+Text: "The second is the uniqueness of inverses, promised when the inverse was
+       defined: any two elements that both act as an inverse of $x$ must be
+       equal. Uniqueness is what justifies writing $x^{-1}$ for *the* inverse."
+Id: "de8e5629-d42e-4d98-b713-62d92e61d306"
 
 
 Theorem:
