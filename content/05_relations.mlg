@@ -1,0 +1,56 @@
+[\relation:?on{X}]
+Defines: R
+when: X is \set
+means: R \:set.theoretic.subset:/ (.X \.set.cross./ X.)
+Enables:
+. capability: R(x_, y_) :=> (x_, y_) "in"? R
+  written: "x_? \: R \: y_?"
+Documented:
+. called: "relation on $X?$"
+Id: "5ace60a2-cc66-4cea-818a-538f877b5f97"
+
+
+[\equivalence.relation:on{X}]
+Defines: R
+when: X is \set
+means: R is \relation:on{X}
+satisfies:
+. [reflexive]
+  forAll: x "in" X
+  then: R(x, x)
+. [symmetric]
+  forAll: x, y "in" R
+  where: R(x, y)
+  then: R(y, x)
+. [transitive]
+  forAll: x, y, z "in" R
+  where:
+  . R(x, y)
+  . R(y, z)
+  then: R(x, z)
+Documented:
+. called: "equivalence relation on $X?$"
+Id: "2394a97b-5960-4919-98db-b95ec3870343"
+
+
+[\equivalence.class:of{x}:over{R}]
+Declares: C := \set@{y_ : y_ "in" X | R(x, y_)}
+using: X is \set
+when:
+. x "in" X
+. R is \equivalence.relation:on{X}
+Documented:
+. called: "equivalence class of $x?$ on $R?$"
+. written: "\left [ x? \right ]_{R?}"
+Id: "2fae575c-13c9-498b-b14a-e471f0e3cfdc"
+
+
+[X \.mod./ R]
+Declares: I := \set@{ \equivalence.class:of{x_}:over{R} : x_ "in" X }
+when:
+. X is \set
+. R is \equivalence.relation:on{X}
+Documented:
+. called: "$X?$ mod $R?$"
+. written: "X? / R?"
+Id: "cea0d898-a18d-44dc-b04c-ffb2f0cde26e"

@@ -1,0 +1,19 @@
+[\integer.equivalence]
+Declares: R is \equivalence.relation:on{\naturals.set \.set.cross./ \naturals.set}
+expresses:
+. let: (n1, m1), (n2, m2) "in" (.\naturals.set \.set.cross./ \naturals.set.)
+  then:
+  . have: R( (n1, m1), (n2, m2) )
+    iff: n1 + m2 = n2 + m1
+Documented:
+. called: "integer equivalence relation"
+. written: "\sim_{\mathbb{Z}}"
+Id: "ee34451f-a1b6-4339-9ec4-f260c0a4d395"
+
+
+[\integers.set]
+Declares: Z := (\naturals.set \.set.cross./ \naturals.set) \.mod./ \integer.equivalence is \set
+Documented:
+. called: "integers"
+. written: "\mathbb{Z}"
+Id: "2879813a-8202-4d27-b248-83687c132e84"

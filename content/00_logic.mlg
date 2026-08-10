@@ -29,7 +29,7 @@ that:
   . P
   . Q
 Documented:
-. written: "P? \text{ and } Q?"
+. written: "P+? \text{ and } Q+?"
 Id: "e024d041-fcf1-476e-b29e-b75d88b04fa8"
 
 
@@ -41,7 +41,7 @@ that:
   . P
   . Q
 Documented:
-. written: "P? \text{ or } Q?"
+. written: "P+? \text{ or } Q+?"
 Id: "fd7a79c3-4380-4621-a699-eb6902667669"
 
 
@@ -51,14 +51,14 @@ when: P is \\statement
 that:
 . not: P
 Documented:
-. written: "\neg P?"
+. written: "\neg P+?"
 Id: "856ad9cc-c17e-4cff-ad32-10ee78ab20c4"
 
 
 [P \.xor./ Q]
 States:
 when: P, Q is \\statement
-that: (P \.or./ Q) \.and./ (.\not{(P \.and./ Q)}.)
+that: (P \.or./ Q) \.and./ \not{P \.and./ Q}
 Documented:
 . written: "P+? \text{ xor } Q+?"
 Id: "1c7bc638-0db8-416f-a0d0-f5c0d7d92842"

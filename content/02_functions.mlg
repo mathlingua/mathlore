@@ -1,0 +1,58 @@
+[\function:?on{A}:?to{B}]
+Defines: f(x__) ::= y_
+when: A, B is \set
+declares:
+. x__ "in" A
+. y_ "in" B
+satisfies:
+. forAll: x "in" A
+  then:
+  . existsUnique: y "in" B
+    suchThat: f(x) = y
+Documented:
+. called: "function@[A]{ on $A?$}@[B]{ to $B?}$"
+. written: "@[A, B]{f? \: : \: A? \rightarrow B?}"
+Id: "1e0cb28d-bc8f-42db-bcfa-86a215e88c7a"
+
+
+[\binary.operation:on{X}]
+Defines: x_ * y_
+when: X is \set
+means: * is \function:on{X \.set.cross./ X}:to{X}
+Documented:
+. called: "binary operation on $X?$"
+Id: "82c8948a-c30d-464b-8ab0-1c7bdb2ed770"
+
+
+[\(associative)::binary.operation:on{X}]
+Refines: x_ * y_
+when: X is \set
+satisfies:
+. forAll: a, b, c "in" X
+  then: (a * b) * c = a * (b * c)
+Documented:
+. adjective: "associative"
+Id: "e23d5d7d-eed8-4efc-bdda-d316af89684e"
+
+
+[\(commutative)::binary.operation:on{X}]
+Refines: x_ * y_
+when: X is \set
+satisfies:
+. forAll: x, y "in" X
+  then: x * y = y * x
+Documented:
+. adjective: "commutative"
+Id: "ada35071-5d93-4e3c-bc69-96935d5394ed"
+
+
+[\restriction:of{g(x__)}:on{X}]
+Declares: f is \function:on{X}:to{B}
+when:
+. g is \function:on{A?}:to{B?}
+. X \:set.theoretic.subset:/ A
+expresses: f(x__) := g(x__)
+Documented:
+. called: "restriction of $g?$ on $X?$"
+. written: "g?\big |_{X?}"
+Id: "ea7eab01-792c-427f-91dc-a75f43513b38"

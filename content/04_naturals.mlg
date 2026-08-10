@@ -1,0 +1,114 @@
+[\abstract.naturals]
+Defines: N ::= (X, 0, succ)
+declares:
+. X is \set
+. 0 "in" X
+. succ is (? "in" X) -> (? "in" X)
+satisfies:
+. 0 "in" X
+. let: n "in" X
+  then: succ(n) "in" X
+. not:
+  . exists: n "in" X
+    suchThat: succ(n) = 0
+. let: n, m "in" X
+  then:
+  . if: succ(n) = succ(m)
+    then: n = m
+Documented:
+. called: "abstract naturals"
+Id: "7d1762ec-ee47-4d7d-86b9-cc0150b06bd0"
+
+
+[\natural.0]
+Declares: 0 is \natural
+Documented:
+. written: "0"
+Id: "812550b8-d357-4564-96de-1053d332b817"
+
+
+[\natural.succ(n_)]
+Declares: succ(n_) is (? is \natural) -> (? is \natural)
+Documented:
+. called: "successor of $n?$"
+. written: "n?+\!\!+"
+Id: "ffa1fbbf-8be1-4fd7-b759-5f39b30840e7"
+
+
+[\natural]
+Defines: n
+satisfies:
+. oneOf:
+  . n = \natural.0
+  . exists: m is \natural
+    suchThat: n = \natural.succ(m)
+Requires:
+. definition: \natural.0 is \natural
+. definition: \natural.succ is (? is \natural) -> (? is \natural)
+Enables:
+. capability: x_++ :=> \natural.succ(x_)
+. capability: x_ + y_ :=> x_ \.natural.+./ y_
+Documented:
+. called: "natural"
+Id: "d88e480c-de0e-4e48-92b0-54bd232a346e"
+
+
+[\naturals.set]
+Declares: N := \set@{n_ : n_ is \natural}
+Documented:
+. written: "\mathbb{N}"
+Id: "114560d1-ffbf-4c9a-ba3f-243483ccfa2b"
+
+
+[\naturals]
+Declares: N ::= (X, 0, succ) is \abstract.naturals
+expresses:
+. X := \naturals.set
+. 0 := \natural.0
+. succ := \natural.succ
+Enables:
+. relation:
+  to: Y := X is \set
+  represents: \\coercion
+Documented:
+. called: "naturals"
+Id: "06fc295f-367d-4069-9f52-817e2894e3eb"
+
+
+[\(positive)::natural]
+Refines: n
+satisfies: n != \natural.0
+Documented:
+. adjective: "positive"
+Id: "0fd2f7cb-f348-4982-a873-40e3e4e87c19"
+
+
+[n \.natural.=./ m]
+States:
+when: n, m is \natural
+that:
+. if: n = 0
+  then: m = 0
+. if: n != 0
+  then:
+  . exists: k is \natural
+    suchThat: n = \natural.succ(k)
+Documented:
+. written: "n? = m?"
+Id: "3c49908d-060c-44c3-8f68-763b227e93d4"
+
+
+[n_ \.natural.+./ m_]
+Declares: n_ + m_ is \binary.operation:on{\naturals.set}
+expresses:
+. piecewise:
+  if: n_ = 0
+  then: n_ + m_ := m_
+  else:
+  . let:
+    . k is \natural
+    . n_ := \natural.succ(k)
+    then: n_ + m_ := \natural.succ(n_ + k)
+Documented:
+. written: "n_? + m_?"
+Id: "5fd063d9-a3bd-4549-b060-259a727afab2"

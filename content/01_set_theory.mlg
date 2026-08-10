@@ -1,0 +1,240 @@
+
+[\set]
+Defines: X
+satisfies:
+. \axiom.of.empty.set
+. forAll: Y is \set
+  then:
+  . \axiom.of.extensionality#given{X := X; Y := Y}
+  . \axiom.of.pairing#given{X := X; Y := Y}
+. \axiom.of.union#given{X}
+. \axiom.of.power.set#given{X}
+. \axiom.of.infinity
+Requires:
+. capability: x_ "in" X :-> \\abstract
+Enables:
+. from: Y ::= {y__ : ...}
+  capability: x_ "in" X :-> x_ member_of Y
+Documented:
+. called: "set"
+Id: "a0759217-e1f6-412c-982a-0038cd17a3a1"
+
+
+[x \.not.in./ X]
+States:
+when: x, X is \set
+that:
+. not: x "in"? X
+Documented:
+. written: "x? \notin X?"
+Id: "756e0f48-1c0e-4e05-b97a-9c4fcd577603"
+
+
+[\empty.set]
+Declares: X is \set
+expresses:
+. not:
+  . exists: Y is \set
+    suchThat: Y "in" X
+Documented:
+. called: "empty set"
+. written: "\emptyset"
+Id: "96908ddf-5fc5-455d-9cfd-eaf0fd6ada38"
+
+
+[\(nonempty)::set]
+Refines: X
+satisfies: X != \empty.set
+Documented:
+. adjective: "nonempty"
+Id: "616950f0-7d70-48ff-a5ac-9d5d49272150"
+
+
+[\axiom.of.empty.set]
+Axiom:
+then:
+. exists: X is \set
+  suchThat:
+  . forAll: Z is \set
+    then:
+    . not: Z "in"? X
+Id: "f2180719-568d-4084-982b-a71c5f195bf6"
+
+
+[\axiom.of.extensionality]
+Axiom:
+given: X, Y is \set
+where:
+. forAll: Z is \set
+  then: (Z "in"? X) \.iff./ (Z "in"? Y)
+then: X = Y
+Id: "6fc3a89f-f8ef-420e-b1b6-6e5ed4905611"
+
+
+[\axiom.of.pairing]
+Axiom:
+given: X, Y is \set
+then:
+. exists: U is \set
+  suchThat:
+  . forAll: Z is \set
+    then: (Z "in"? U) \.iff./ ((.Z = X.) \.or./ (.Z = Y.))
+Id: "3219aca1-fba1-42a6-9a1f-209aa430c677"
+
+
+[\axiom.of.union]
+Axiom:
+given: X is \set
+then:
+. exists: U is \set
+  suchThat:
+  . forAll: Z is \set
+    then:
+    . have: Z "in" U
+      iff:
+      . exists: W is \set
+        suchThat:
+        . W "in"? X
+        . Z "in"? W
+Id: "60bcea09-6bf1-4917-b90f-64ceeb941558"
+
+
+[A \:set.theoretic.subset:/ B]
+Defines: A
+when: B is \set
+means: A is \set
+satisfies:
+. forAll: X "in" A
+  then: X "in"? B
+Requires:
+. capability: x_ "in" A :-> x_ "in" B
+Documented:
+. called: "$A?$ is a subset of $B?$"
+. written: "A? \subseteq B?"
+Id: "2b2b89a1-d106-4377-ae48-14c704063e5e"
+
+
+[A \:set.theoretic.proper.subset:/ B]
+Defines: A
+when: B is \set
+means: A \:set.theoretic.subset:/ B
+satisfies: A != B
+Documented:
+. written: "A? \subsetneq B?"
+Id: "7d070f37-61a5-4c62-b8da-4831c222e4b2"
+
+
+[\axiom.of.power.set]
+Axiom:
+given: A is \set
+then:
+. exists: P is \set
+  suchThat:
+  . forAll: x is \set
+    then: (x "in"? P) \.iff./ (x \:set.theoretic.subset?:/ A)
+Id: "8557cdb3-e02f-4b75-aed1-3dfd1cdee895"
+
+
+[\singleton.set:of{X}]
+Declares: Y is \set
+when: X is \set
+expresses:
+. let: Z is \set
+  then:
+  . have: Z "in"? Y
+    iff: Z = X
+Documented:
+. written: "\left \{ X? \right \}"
+Id: "08f35257-d0a7-42af-9866-7d138c56fc4c"
+
+
+[\set.successor:of{X}]
+Declares: Y is \set
+when: X is \set
+expresses:
+. let: Z is \set
+  then:
+  . have: Z "in"? Y
+    iff:
+    . (Z = X) \.or./ (Z = \singleton.set:of{X})
+Documented:
+. written: "X? \cup \left \{ X? \right \}"
+Id: "002b9914-ad06-4f5a-a3fb-803bd86e6c4b"
+
+
+[\axiom.of.infinity]
+Axiom:
+then:
+. exists: I is \set
+  suchThat:
+  . oneOf:
+    . \empty.set "in"? I
+    . forAll: Y is \set
+      then:
+      . if: Y "in"? I
+        then: \set.successor:of{Y} "in"? I
+Id: "a0f45971-fcc1-419b-bcd5-f4c4717bb37f"
+
+
+Writing: phi :~> \varphi
+Id: "c51b2bbc-d8f1-406c-b7c8-317e5409a2d8"
+
+
+[\set.property(X_)]
+Defines: phi(X_) is (? is \set) -> (? is \\statement)
+Documented:
+. called: "set property"
+Id: "cc680a81-3338-4848-8b9d-fcf368dd759e"
+
+
+[\set:of{x[i_ := 1...n]}]
+Declares: X is \set
+when: x[1...n] is \\opaque
+expresses:
+. let: y is \\opaque
+  then:
+  . have: y "in"? X
+    iff:
+    . anyOf:
+      . x[1...n] = y
+Documented:
+. called: "set of $\left \{ x? \right \}$"
+. written: "\left \{ x? \right \}"
+Id: "61c901bc-5f36-479b-a32c-c37b7f98a9fb"
+
+
+[\set.pair:of{x, y}]
+Declares: p := \set:of{x, \set:of{x, y}} is \set
+when: x, y is \set
+Documented:
+. called: "pair of $x?$ and $y?$"
+. written: "\langle x?, y? \rangle"
+Id: "8fd9d494-2882-4639-bb50-44a56626d1c4"
+
+
+Theorem:
+given:
+. C is \set
+. B \:set.theoretic.subset:/ C
+. A \:set.theoretic.subset:/ B
+then:
+. A \:set.theoretic.subset?:/ C
+Id: "6a4bcb50-97bc-4d1b-a9b2-750c963bb720"
+
+
+Theorem:
+given: A, B is \set
+then: A = B
+iff:
+. A \:set.theoretic.subset?:/ B
+. B \:set.theoretic.subset?:/ A
+Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"
+
+
+[A \.set.cross./ B]
+Declares: X := \set@{(a_, b_) : a_ "in" A; b_ "in" B}
+when: A, B is \set
+Documented:
+. called: "Cartesian product of $A?$ and $B?$"
+. written: "A? \times B?"
+Id: "3bdd9cfb-f836-4d44-880a-873bb772cdef"

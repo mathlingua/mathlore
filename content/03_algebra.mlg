@@ -1,0 +1,268 @@
+[\magma]
+Defines: M ::= (X, *)
+means: M is \set via X
+declares:
+. * is \binary.operation:on{M}
+Enables:
+. capability: x_ "in" M :-> x_ is \magma.element:of{M}
+  written: "x_? \in M?"
+Documented:
+. called: "magma"
+Id: "91ffd40c-72fa-4a93-83f3-80ceb1ae124a"
+
+
+[\magma.element:of{M ::= (X, *)}]
+Defines: x
+when: M is \magma
+means: x "in" X
+Enables:
+. capability: x_ [*] y_ :=> x_ |M.*| y_
+  written: "x_? *? y_?"
+Documented:
+. called: "element of magma $M?$"
+Id: "d9405849-68a5-4721-9090-42eb0b9775d2"
+
+
+[\quasigroup]
+Defines: Q ::= (X, *)
+means: Q is \magma via (X, *)
+satisfies:
+. forAll: a, b "in" Q
+  then:
+  . existsUnique: x, y "in" Q
+    suchThat:
+    . a * x = b
+    . y * a = b
+Enables:
+. capability: x_ "in" Q :-> x_ is \quasigroup.element:of{Q}
+  written: "x_? \in Q?"
+Documented:
+. called: "quasigroup"
+Id: "49582242-a047-48ae-aced-77654d9a48aa"
+
+
+[\quasigroup.element:of{Q ::= (X, *)}]
+Defines: x
+when: Q is \quasigroup
+means: x is \magma.element:of{Q}
+Documented:
+. called: "element of quasigroup $Q?$"
+Id: "2f5a9f56-286c-4703-a953-316fa32e57dc"
+
+
+[\semigroup]
+Defines: S ::= (X, *)
+means: S is \magma via (X, *)
+declares: * is \(associative)::binary.operation:on{X}
+Enables:
+. capability: x_ "in" S :-> x_ is \semigroup.element:of{S}
+  written: "x_? \in S?"
+Documented:
+. called: "semigroup"
+Id: "6ec2faf5-7d2c-4918-a559-6415b94f2b1f"
+
+
+[\semigroup.element:of{S ::= (X, *)}]
+Defines: x
+when: S is \semigroup
+means: x is \magma.element:of{S}
+Documented:
+. called: "element of semigroup $S?$"
+Id: "5ce95378-5760-4728-b0d2-334848109a32"
+
+
+[\monoid]
+Defines: M ::= (X, *, e)
+means: M is \semigroup via (X, *)
+declares: e "in" X
+satisfies:
+. forAll: x "in" M
+  then:
+  . x * e = x
+  . e * x = x
+Enables:
+. capability: x_ "in" M :-> x is \monoid.element:of{M}
+  written: "x_? \in M?"
+Documented:
+. called: "monoid"
+Id: "034bf6ff-ba6e-4fac-b47e-65cc85d15642"
+
+
+[\monoid.element:of{M}]
+Defines: x
+when: M is \monoid
+means: x is \semigroup.element:of{M}
+Documented:
+. called: "element of monoid $M?$"
+Id: "fee7d2ca-5ebc-48a6-8eed-06d623b5520f"
+
+
+[\group]
+Defines: G ::= (X, *, e)
+means: G is \monoid via (X, *, e)
+satisfies:
+. forAll: x "in" G
+  then:
+  . exists: y "in" G
+    suchThat:
+    . x * y = e
+    . y * x = e
+Enables:
+. capability: x_ "in" G :-> x_ is \group.element:of{G}
+  written: "x_? \in G?"
+Documented:
+. called: "group"
+Id: "e4d7371d-29bd-431f-ab09-e114fe89e5cf"
+
+
+[\(finite)::group]
+Refines: G
+implicitly:
+means: G is \(finite)::monoid
+Documented:
+. adjective: "finite"
+Id: "28d2a1c1-89a5-4163-93e3-fbc21c97ec9a"
+
+
+[\group.element:of{G}]
+Defines: x
+when: G is \group
+means: x is \monoid.element:of{G}
+Enables:
+. capability: x.inv :=> \group.inverse:of{x}:in{G}
+  written: "x+?^{-1}"
+Documented:
+. called: "element of group $G?$"
+Id: "858abdda-c416-4a4e-a0bf-27ecf84cf008"
+
+
+[\group.inverse:of{x}:in{G ::= (X, *, e)}]
+Declares: y "in" G
+when:
+. G is \group
+. x "in" G
+expresses:
+. x * y = e
+. y * x = e
+Documented:
+. called: "group inverse of $x?$"
+. written: "x+?^{-1}"
+Id: "9b52b844-0cfa-4238-8c73-8b38265cca81"
+
+
+[x \.commutes.with:?in{M ::= (X, *)}./ y]
+States:
+when:
+. M is \magma
+. x, y "in" M
+that: x * y = y * x
+Documented:
+. called: "$x?$ commutes with $y?$@[M]{ in $M?$}"
+Id: "3d7a204c-966d-47e7-a5b4-8f9e20fd749c"
+
+
+[\cross.of.subset.is.subset.of.cross]
+Theorem:
+given:
+. X is \set
+. Y \:set.theoretic.subset:/ X
+then:
+. (.Y \.set.cross./ Y.) \:set.theoretic.subset?:/ (.X \.set.cross./ X.)
+Id: "db0160ae-5d28-4ad1-b2b6-d22964a88a2b"
+
+
+[H ::= (X', *', e') \:subgroup:/ G ::= (X, *, e)]
+Defines: H ::= (X', *', e')
+when: G is \group
+means: H is \set via X'
+declares:
+. X' \:(nonempty)::set.theoretic.subset:/ X
+. *' is \binary.operation:on{X'}
+. e' "in" X'
+satisfies:
+. (.*' := \restriction:of{`*`}:on{X' \.set.cross./ X'}.)[:1:]
+. have:
+  . forAll: x, y "in" H
+    then:
+    . x *' y "in" H
+    . x *' y = x * y
+  . forAll: x "in" H
+    then: x.inv "in" H
+  asserting: H is \group
+Documented:
+. called: "$H?$ is a subgroup of $G?$"
+. written: "H? \leq G?"
+Justification:
+. [1]
+  have: *' := \restriction:of{`*`}:on{X' \.set.cross./ X'}
+  asserting: (.X' \.set.cross./ X'.) \:set.theoretic.subset?:/ (.G \.set.cross./ G.)
+  because: X' \:set.theoretic.subset?:/ X
+  by: \cross.of.subset.is.subset.of.cross#given{X := X; Y := X'}
+Id: "d8fe82d3-6f50-4711-ad64-76d4eb0615ff"
+
+
+[\subgroup.is.group]
+Theorem:
+given:
+. G is \group
+. H \:subgroup:/ G
+then: H is? \group
+Id: "946d3180-8614-4bd2-8fd6-d9bdce721e04"
+
+
+[G1 ::= (X1, *_1, e1) \.group.direct.product./ G2 ::= (X2, *_2, e2)]
+Declares: G3 ::= (X3, *_3, e3) is \group
+when: G1, G2 is \group
+expresses:
+. X3 := {(x1, x2) : x1 "in" X1; x2 "in" X2}
+. (a1_, a2_) *_3 (b1_, b2_) := (a1_ *_1 b1_, a2_ *_2 b2_)
+. e3 := (e1, e2)
+Documented:
+. called: "direct product of groups $G1?$ and $G2?$"
+. written: "G1? \times G2?"
+Id: "3a354c63-fc8c-4873-9751-62ecc651a5a9"
+
+
+Theorem:
+given: G1, G2 is \group
+then: G1 \.group.direct.product./ G2 is? \group
+Id: "d65025cf-8bf1-454f-9507-55890ab9f88c"
+
+
+Theorem:
+given:
+. G is \group
+. x, y "in" G
+then: (x * y).inv = y.inv * x.inv
+Id: "ef1b2ca8-1e12-4779-8e32-ed5cf8787c68"
+
+
+[\(abelian)::group]
+Refines: G ::= (X, *, e)
+satisfies:
+. forAll: x, y "in" G
+  then: x * y = y * x
+Documented:
+. adjective: "abelian"
+Id: "1dc777cd-31a5-489a-8b5a-05b94c647fb9"
+
+
+Theorem:
+given:
+. G ::= (X, *, e) is \group
+. x "in" G
+then: (x.inv).inv = x
+Id: "8c61fb44-d5ab-4be8-804a-0d6a95d83331"
+
+
+Theorem:
+given:
+. G ::= (X, *, e) is \group
+. x, y1, y2 "in" G
+where:
+. x * y1 = e
+. y1 * x = e
+. x * y2 = e
+. y2 * x = e
+then: y1 = y2
+Id: "a27fd487-85b4-4f18-b0ab-4be63db69f43"
