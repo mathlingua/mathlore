@@ -1,0 +1,27 @@
+{
+  "id": "b03f7ce2-7aed-4c81-a6e7-d998ccf65747",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Before any mathematics can be stated precisely, we need a small\nvocabulary for combining and relating statements. This opening chapter\nrecords that vocabulary: the logical connectives that turn one or two\nstatements into a new one. Everything here operates on statements alone,\nindependently of what those statements happen to be about, so the\nconnectives defined below are used unchanged in every later chapter."
+  },
+  "source": "Text: \"Before any mathematics can be stated precisely, we need a small\n       vocabulary for combining and relating statements. This opening chapter\n       records that vocabulary: the logical connectives that turn one or two\n       statements into a new one. Everything here operates on statements alone,\n       independently of what those statements happen to be about, so the\n       connectives defined below are used unchanged in every later chapter.\"\nId: \"b03f7ce2-7aed-4c81-a6e7-d998ccf65747\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Before any mathematics can be stated precisely, we need a small\n       vocabulary for combining and relating statements. This opening chapter\n       records that vocabulary: the logical connectives that turn one or two\n       statements into a new one. Everything here operates on statements alone,\n       independently of what those statements happen to be about, so the\n       connectives defined below are used unchanged in every later chapter.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b03f7ce2-7aed-4c81-a6e7-d998ccf65747\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

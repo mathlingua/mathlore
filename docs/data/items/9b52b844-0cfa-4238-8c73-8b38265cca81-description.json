@@ -1,0 +1,14 @@
+{
+  "id": "9b52b844-0cfa-4238-8c73-8b38265cca81-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The inverse $x^{-1}$ of an element $x$ of a group is the unique\nelement $y$ satisfying $x * y = e = y * x$. Its uniqueness is\nproved below; it is what allows every equation in a group to be\nsolved."
+  },
+  "source": "",
+  "sections": []
+}

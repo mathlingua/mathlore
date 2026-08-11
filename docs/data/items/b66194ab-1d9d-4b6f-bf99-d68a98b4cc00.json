@@ -1,0 +1,27 @@
+{
+  "id": "b66194ab-1d9d-4b6f-bf99-d68a98b4cc00",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Algebra"
+  },
+  "source": "Title: \"Algebra\"\nId: \"b66194ab-1d9d-4b6f-bf99-d68a98b4cc00\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Algebra\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b66194ab-1d9d-4b6f-bf99-d68a98b4cc00\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

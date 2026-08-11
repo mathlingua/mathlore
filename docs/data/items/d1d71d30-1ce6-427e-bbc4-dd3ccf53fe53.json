@@ -1,0 +1,27 @@
+{
+  "id": "d1d71d30-1ce6-427e-bbc4-dd3ccf53fe53",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Subsets"
+  },
+  "source": "SectionTitle: \"Subsets\"\nId: \"d1d71d30-1ce6-427e-bbc4-dd3ccf53fe53\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Subsets\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d1d71d30-1ce6-427e-bbc4-dd3ccf53fe53\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

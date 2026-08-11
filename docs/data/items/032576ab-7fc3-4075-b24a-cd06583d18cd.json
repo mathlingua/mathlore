@@ -1,0 +1,27 @@
+{
+  "id": "032576ab-7fc3-4075-b24a-cd06583d18cd",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "With the axioms in place, we can name several standard constructions. The\nsingleton of a set is the set whose only member is that set, obtained\nfrom pairing."
+  },
+  "source": "Text: \"With the axioms in place, we can name several standard constructions. The\n       singleton of a set is the set whose only member is that set, obtained\n       from pairing.\"\nId: \"032576ab-7fc3-4075-b24a-cd06583d18cd\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"With the axioms in place, we can name several standard constructions. The\n       singleton of a set is the set whose only member is that set, obtained\n       from pairing.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"032576ab-7fc3-4075-b24a-cd06583d18cd\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

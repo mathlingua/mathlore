@@ -1,0 +1,27 @@
+{
+  "id": "acc9e650-ac98-4a0b-821a-5bc440a9388e",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Natural Numbers"
+  },
+  "source": "Title: \"Natural Numbers\"\nId: \"acc9e650-ac98-4a0b-821a-5bc440a9388e\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Natural Numbers\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"acc9e650-ac98-4a0b-821a-5bc440a9388e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

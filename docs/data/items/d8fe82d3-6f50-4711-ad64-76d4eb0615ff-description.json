@@ -1,0 +1,14 @@
+{
+  "id": "d8fe82d3-6f50-4711-ad64-76d4eb0615ff-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A subgroup $H \\leq G$ is a nonempty subset of $G$ that is closed\nunder the group operation and under taking inverses, and whose\noperation is the restriction of that of $G$. Under these\nconditions $H$ is again a group in its own right."
+  },
+  "source": "",
+  "sections": []
+}

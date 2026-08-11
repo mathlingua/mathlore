@@ -1,0 +1,57 @@
+{
+  "id": "28d2a1c1-89a5-4163-93e3-fbc21c97ec9a",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c66696e6974653a3a67726f7570"
+  ],
+  "heading": "\\(finite)::group",
+  "heading_latex": "\\textrm{finite}\\textrm{ }\\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(finite)::group]\nRefines: G\nimplicitly:\nmeans: G is \\(finite)::monoid\nDocumented:\n. adjective: \"finite\"\nId: \"28d2a1c1-89a5-4163-93e3-fbc21c97ec9a\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "G",
+      "inline_latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+      "arguments": []
+    },
+    {
+      "label": "implicitly",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "means",
+      "inline_argument": "G is \\(finite)::monoid",
+      "inline_latex": "G \\textrm{ is } \\textrm{finite}\\textrm{ }\\htmlData{mlg-ref=5c6d6f6e6f6964}{\\textrm{monoid}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"finite\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"28d2a1c1-89a5-4163-93e3-fbc21c97ec9a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

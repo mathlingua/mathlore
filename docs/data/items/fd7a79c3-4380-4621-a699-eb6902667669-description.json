@@ -1,0 +1,14 @@
+{
+  "id": "fd7a79c3-4380-4621-a699-eb6902667669-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The disjunction of $P$ and $Q$. The statement $P \\text{ or } Q$\nholds when at least one of $P$ and $Q$ holds. As is standard in\nmathematics, the *or* is inclusive: it also holds when both do."
+  },
+  "source": "",
+  "sections": []
+}

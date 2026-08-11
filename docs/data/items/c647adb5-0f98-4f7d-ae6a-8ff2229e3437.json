@@ -1,0 +1,27 @@
+{
+  "id": "c647adb5-0f98-4f7d-ae6a-8ff2229e3437",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A *monoid* is a semigroup with an identity element -- a distinguished\nelement that leaves every element unchanged when combined with it. The\nidentity is the algebraic counterpart of the number $1$ under\nmultiplication, or $0$ under addition."
+  },
+  "source": "Text: \"A *monoid* is a semigroup with an identity element -- a distinguished\n       element that leaves every element unchanged when combined with it. The\n       identity is the algebraic counterpart of the number $1$ under\n       multiplication, or $0$ under addition.\"\nId: \"c647adb5-0f98-4f7d-ae6a-8ff2229e3437\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A *monoid* is a semigroup with an identity element -- a distinguished\n       element that leaves every element unchanged when combined with it. The\n       identity is the algebraic counterpart of the number $1$ under\n       multiplication, or $0$ under addition.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c647adb5-0f98-4f7d-ae6a-8ff2229e3437\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

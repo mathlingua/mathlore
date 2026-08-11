@@ -1,0 +1,27 @@
+{
+  "id": "399425a0-d94d-4548-953d-5dc82ac91e36",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Magmas"
+  },
+  "source": "SectionTitle: \"Magmas\"\nId: \"399425a0-d94d-4548-953d-5dc82ac91e36\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Magmas\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"399425a0-d94d-4548-953d-5dc82ac91e36\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

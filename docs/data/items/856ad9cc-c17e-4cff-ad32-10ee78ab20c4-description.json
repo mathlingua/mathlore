@@ -1,0 +1,14 @@
+{
+  "id": "856ad9cc-c17e-4cff-ad32-10ee78ab20c4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The negation of $P$, written $\\neg P$. It holds exactly when $P$\ndoes not, and so reverses the truth value of the statement it is\napplied to."
+  },
+  "source": "",
+  "sections": []
+}

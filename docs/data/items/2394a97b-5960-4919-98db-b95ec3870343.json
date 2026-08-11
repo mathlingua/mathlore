@@ -1,0 +1,153 @@
+{
+  "id": "2394a97b-5960-4919-98db-b95ec3870343",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c6571756976616c656e63652e72656c6174696f6e3a6f6e"
+  ],
+  "heading": "\\equivalence.relation:on{X}",
+  "heading_latex": "\\textrm{equivalence relation on }X",
+  "body_text": null,
+  "page": null,
+  "source": "[\\equivalence.relation:on{X}]\nDefines: R\nwhen: X is \\set\nmeans: R is \\relation:on{X}\nsatisfies:\n. [reflexive]\n  forAll: x \"in\" X\n  then: R(x, x)\n. [symmetric]\n  forAll: x, y \"in\" R\n  where: R(x, y)\n  then: R(y, x)\n. [transitive]\n  forAll: x, y, z \"in\" R\n  where:\n  . R(x, y)\n  . R(y, z)\n  then: R(x, z)\nDocumented:\n. called: \"equivalence relation on $X?$\"\n. description: \"An equivalence relation on $X$ is a relation that is reflexive\n                ($x \\mathrel{R} x$), symmetric (if $x \\mathrel{R} y$ then $y\n                \\mathrel{R} x$), and transitive (if $x \\mathrel{R} y$ and $y\n                \\mathrel{R} z$ then $x \\mathrel{R} z$). Such a relation sorts the\n                elements of $X$ into classes of mutually related elements.\"\nId: \"2394a97b-5960-4919-98db-b95ec3870343\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "R",
+      "inline_latex": "R",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "means",
+      "inline_argument": "R is \\relation:on{X}",
+      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": "reflexive",
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" X",
+              "inline_latex": "x \\in X",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "R(x, x)",
+              "inline_latex": "x \\: R \\: x",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": "symmetric",
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x, y \"in\" R",
+              "inline_latex": "x, y \\in R",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "R(x, y)",
+              "inline_latex": "x \\: R \\: y",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "R(y, x)",
+              "inline_latex": "y \\: R \\: x",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": "transitive",
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x, y, z \"in\" R",
+              "inline_latex": "x, y, z \\in R",
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "R(x, y)",
+                  "latex": "x \\: R \\: y"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "R(y, z)",
+                  "latex": "y \\: R \\: z"
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "R(x, z)",
+              "inline_latex": "x \\: R \\: z",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"equivalence relation on $X?$\"",
+              "inline_latex": "\\textrm{equivalence relation on }X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2394a97b-5960-4919-98db-b95ec3870343\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

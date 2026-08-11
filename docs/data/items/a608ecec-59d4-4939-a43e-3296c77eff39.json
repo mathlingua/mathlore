@@ -1,0 +1,27 @@
+{
+  "id": "a608ecec-59d4-4939-a43e-3296c77eff39",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "When the operation of a group *is* commutative, the group is called\n*abelian*. Abelian groups are far more tractable than groups in general,\nand they are the setting for much of number theory and linear algebra."
+  },
+  "source": "Text: \"When the operation of a group *is* commutative, the group is called\n       *abelian*. Abelian groups are far more tractable than groups in general,\n       and they are the setting for much of number theory and linear algebra.\"\nId: \"a608ecec-59d4-4939-a43e-3296c77eff39\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"When the operation of a group *is* commutative, the group is called\n       *abelian*. Abelian groups are far more tractable than groups in general,\n       and they are the setting for much of number theory and linear algebra.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a608ecec-59d4-4939-a43e-3296c77eff39\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

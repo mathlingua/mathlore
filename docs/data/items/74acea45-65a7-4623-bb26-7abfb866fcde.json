@@ -1,0 +1,27 @@
+{
+  "id": "74acea45-65a7-4623-bb26-7abfb866fcde",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The abstract characterization and the concrete set fit together: the set\n$\\mathbb{N}$, with its zero and successor, is a model of the abstract\nnaturals, and may be coerced to its underlying set when only the set is\nneeded."
+  },
+  "source": "Text: \"The abstract characterization and the concrete set fit together: the set\n       $\\mathbb{N}$, with its zero and successor, is a model of the abstract\n       naturals, and may be coerced to its underlying set when only the set is\n       needed.\"\nId: \"74acea45-65a7-4623-bb26-7abfb866fcde\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The abstract characterization and the concrete set fit together: the set\n       $\\mathbb{N}$, with its zero and successor, is a model of the abstract\n       naturals, and may be coerced to its underlying set when only the set is\n       needed.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"74acea45-65a7-4623-bb26-7abfb866fcde\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

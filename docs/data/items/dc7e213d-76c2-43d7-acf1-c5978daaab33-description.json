@@ -1,0 +1,14 @@
+{
+  "id": "dc7e213d-76c2-43d7-acf1-c5978daaab33-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The conditional *if $P$ then $Q$*, written $P \\Rightarrow Q$. It\nasserts that whenever $P$ holds, $Q$ holds as well. It makes no\nclaim at all in the case that $P$ fails, so a conditional with a\nfalse hypothesis is regarded as holding vacuously."
+  },
+  "source": "",
+  "sections": []
+}

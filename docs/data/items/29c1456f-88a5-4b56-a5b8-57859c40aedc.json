@@ -1,0 +1,27 @@
+{
+  "id": "29c1456f-88a5-4b56-a5b8-57859c40aedc",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Subgroups"
+  },
+  "source": "SectionTitle: \"Subgroups\"\nId: \"29c1456f-88a5-4b56-a5b8-57859c40aedc\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Subgroups\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"29c1456f-88a5-4b56-a5b8-57859c40aedc\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

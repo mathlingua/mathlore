@@ -1,0 +1,14 @@
+{
+  "id": "7d070f37-61a5-4c62-b8da-4831c222e4b2-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "$A \\subsetneq B$ holds when $A$ is a subset of $B$ but is not\nequal to $B$; that is, $B$ has at least one element not in $A$."
+  },
+  "source": "",
+  "sections": []
+}

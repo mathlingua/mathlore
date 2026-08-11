@@ -1,0 +1,27 @@
+{
+  "id": "7a54c26a-ea2e-4e38-ac69-3426f651c4d4",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The theory needs at least one set to exist before it can build any\nothers. The simplest such set is the one with no elements at all. Its\nexistence is granted by the axiom of the empty set, and, as with every\nset, its uniqueness is a consequence of extensionality."
+  },
+  "source": "Text: \"The theory needs at least one set to exist before it can build any\n       others. The simplest such set is the one with no elements at all. Its\n       existence is granted by the axiom of the empty set, and, as with every\n       set, its uniqueness is a consequence of extensionality.\"\nId: \"7a54c26a-ea2e-4e38-ac69-3426f651c4d4\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The theory needs at least one set to exist before it can build any\n       others. The simplest such set is the one with no elements at all. Its\n       existence is granted by the axiom of the empty set, and, as with every\n       set, its uniqueness is a consequence of extensionality.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7a54c26a-ea2e-4e38-ac69-3426f651c4d4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

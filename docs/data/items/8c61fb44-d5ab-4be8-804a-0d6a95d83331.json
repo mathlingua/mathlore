@@ -1,0 +1,47 @@
+{
+  "id": "8c61fb44-d5ab-4be8-804a-0d6a95d83331",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven:\n. G ::= (X, *, e) is \\group\n. x \"in\" G\nthen: (x.inv).inv = x\nId: \"8c61fb44-d5ab-4be8-804a-0d6a95d83331\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "G ::= (X, *, e) is \\group",
+          "latex": "G ::= \\left(X, \\ast, e\\right) \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "x \"in\" G",
+          "latex": "x \\in G"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": "(x.inv).inv = x",
+      "inline_latex": "\\left(x^{-1}\\right)^{-1} = x",
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8c61fb44-d5ab-4be8-804a-0d6a95d83331\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

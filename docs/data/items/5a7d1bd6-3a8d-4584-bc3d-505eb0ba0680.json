@@ -1,0 +1,27 @@
+{
+  "id": "5a7d1bd6-3a8d-4584-bc3d-505eb0ba0680",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "That a subgroup is genuinely a group is recorded as a theorem, making\nexplicit the property the definition was arranged to secure."
+  },
+  "source": "Text: \"That a subgroup is genuinely a group is recorded as a theorem, making\n       explicit the property the definition was arranged to secure.\"\nId: \"5a7d1bd6-3a8d-4584-bc3d-505eb0ba0680\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"That a subgroup is genuinely a group is recorded as a theorem, making\n       explicit the property the definition was arranged to secure.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5a7d1bd6-3a8d-4584-bc3d-505eb0ba0680\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "8fd9d494-2882-4639-bb50-44a56626d1c4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The ordered pair $\\langle x, y \\rangle$, encoded as the set\n$\\{x, \\{x, y\\}\\}$. This encoding lets the first and second\ncomponents be recovered from the set alone, so order is\nmeaningful even though sets are unordered."
+  },
+  "source": "",
+  "sections": []
+}

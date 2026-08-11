@@ -1,0 +1,27 @@
+{
+  "id": "fc9215b0-5d36-4ee6-b3d6-e0007b8e39f5",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function may be cut down to a smaller domain simply by ignoring the\ninputs outside it. This *restriction* agrees with the original function\nwherever both are defined, and is used later to view an operation on a\nset as an operation on a subset."
+  },
+  "source": "Text: \"A function may be cut down to a smaller domain simply by ignoring the\n       inputs outside it. This *restriction* agrees with the original function\n       wherever both are defined, and is used later to view an operation on a\n       set as an operation on a subset.\"\nId: \"fc9215b0-5d36-4ee6-b3d6-e0007b8e39f5\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A function may be cut down to a smaller domain simply by ignoring the\n       inputs outside it. This *restriction* agrees with the original function\n       wherever both are defined, and is used later to view an operation on a\n       set as an operation on a subset.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fc9215b0-5d36-4ee6-b3d6-e0007b8e39f5\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

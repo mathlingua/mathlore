@@ -1,0 +1,27 @@
+{
+  "id": "308e4d46-7205-4977-9583-486771d4ca48",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Each element gives rise to its *equivalence class*, the set of all\nelements related to it. Two classes are either identical or disjoint, so\nthe classes carve $X$ into non-overlapping pieces."
+  },
+  "source": "Text: \"Each element gives rise to its *equivalence class*, the set of all\n       elements related to it. Two classes are either identical or disjoint, so\n       the classes carve $X$ into non-overlapping pieces.\"\nId: \"308e4d46-7205-4977-9583-486771d4ca48\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Each element gives rise to its *equivalence class*, the set of all\n       elements related to it. Two classes are either identical or disjoint, so\n       the classes carve $X$ into non-overlapping pieces.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"308e4d46-7205-4977-9583-486771d4ca48\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

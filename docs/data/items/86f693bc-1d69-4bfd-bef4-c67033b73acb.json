@@ -1,0 +1,27 @@
+{
+  "id": "86f693bc-1d69-4bfd-bef4-c67033b73acb",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same integer when\n$n_1 - m_1 = n_2 - m_2$. Since subtraction is not yet available, this is\nphrased using addition alone, as $n_1 + m_2 = n_2 + m_1$. The relation so\ndefined is an equivalence relation on pairs of naturals."
+  },
+  "source": "Text: \"Two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same integer when\n       $n_1 - m_1 = n_2 - m_2$. Since subtraction is not yet available, this is\n       phrased using addition alone, as $n_1 + m_2 = n_2 + m_1$. The relation so\n       defined is an equivalence relation on pairs of naturals.\"\nId: \"86f693bc-1d69-4bfd-bef4-c67033b73acb\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same integer when\n       $n_1 - m_1 = n_2 - m_2$. Since subtraction is not yet available, this is\n       phrased using addition alone, as $n_1 + m_2 = n_2 + m_1$. The relation so\n       defined is an equivalence relation on pairs of naturals.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"86f693bc-1d69-4bfd-bef4-c67033b73acb\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

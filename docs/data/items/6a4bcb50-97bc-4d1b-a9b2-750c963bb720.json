@@ -1,0 +1,58 @@
+{
+  "id": "6a4bcb50-97bc-4d1b-a9b2-750c963bb720",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven:\n. C is \\set\n. B \\:set.theoretic.subset:/ C\n. A \\:set.theoretic.subset:/ B\nthen:\n. A \\:set.theoretic.subset?:/ C\nId: \"6a4bcb50-97bc-4d1b-a9b2-750c963bb720\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "C is \\set",
+          "latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "B \\:set.theoretic.subset:/ C",
+          "latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{B \\subseteq C}"
+        },
+        {
+          "kind": "formulation",
+          "text": "A \\:set.theoretic.subset:/ B",
+          "latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{A \\subseteq B}"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A \\:set.theoretic.subset?:/ C",
+          "latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{A \\subseteq C}"
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6a4bcb50-97bc-4d1b-a9b2-750c963bb720\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

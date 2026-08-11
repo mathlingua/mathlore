@@ -1,0 +1,57 @@
+{
+  "id": "114560d1-ffbf-4c9a-ba3f-243483ccfa2b",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c6e61747572616c732e736574"
+  ],
+  "heading": "\\naturals.set",
+  "heading_latex": "\\mathbb{N}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\naturals.set]\nDeclares: N := \\set@{n_ : n_ is \\natural}\nDocumented:\n. written: \"\\mathbb{N}\"\n. description: \"The set $\\mathbb{N}$ of all natural numbers, gathered from the\n                individual naturals by set-builder notation. It is the domain of\n                the addition and order defined in this chapter.\"\nId: \"114560d1-ffbf-4c9a-ba3f-243483ccfa2b\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "N := \\set@{n_ : n_ is \\natural}",
+      "inline_latex": "N := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ n \\: : \\: n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}} \\right\\}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\mathbb{N}\"",
+              "inline_latex": "\\mathbb{N}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"114560d1-ffbf-4c9a-ba3f-243483ccfa2b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

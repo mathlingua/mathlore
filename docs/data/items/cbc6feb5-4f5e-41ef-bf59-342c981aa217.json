@@ -1,0 +1,27 @@
+{
+  "id": "cbc6feb5-4f5e-41ef-bf59-342c981aa217",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A set is taken as undefined; the only thing one may ask of it is which\nsets belong to it. For sets $x$ and $X$, either $x \\in X$ or\n$x \\notin X$, and this membership relation carries all the information a\nset has to offer. The axioms below are collected as the defining\nconditions of what it means to be a set."
+  },
+  "source": "Text: \"A set is taken as undefined; the only thing one may ask of it is which\n       sets belong to it. For sets $x$ and $X$, either $x \\in X$ or\n       $x \\notin X$, and this membership relation carries all the information a\n       set has to offer. The axioms below are collected as the defining\n       conditions of what it means to be a set.\"\nId: \"cbc6feb5-4f5e-41ef-bf59-342c981aa217\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A set is taken as undefined; the only thing one may ask of it is which\n       sets belong to it. For sets $x$ and $X$, either $x \\in X$ or\n       $x \\notin X$, and this membership relation carries all the information a\n       set has to offer. The axioms below are collected as the defining\n       conditions of what it means to be a set.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"cbc6feb5-4f5e-41ef-bf59-342c981aa217\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "6fc3a89f-f8ef-420e-b1b6-6e5ed4905611-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two sets are equal if and only if they have exactly the same\nelements. The identity of a set is therefore nothing more than\nthe collection of its members, so any two constructions that\nyield the same elements yield the same set."
+  },
+  "source": "",
+  "sections": []
+}

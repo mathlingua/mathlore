@@ -1,0 +1,69 @@
+{
+  "id": "1c7bc638-0db8-416f-a0d0-f5c0d7d92842",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e786f722e2f"
+  ],
+  "heading": "P \\.xor./ Q",
+  "heading_latex": "P \\text{ xor } Q",
+  "body_text": null,
+  "page": null,
+  "source": "[P \\.xor./ Q]\nStates:\nwhen: P, Q is \\\\statement\nthat: (P \\.or./ Q) \\.and./ \\not{P \\.and./ Q}\nDocumented:\n. written: \"P+? \\text{ xor } Q+?\"\n. description: \"The exclusive disjunction of $P$ and $Q$. It holds when $P$ or\n                $Q$ holds but *not* both, and is defined here as $(P \\text{ or }\n                Q) \\text{ and } \\neg(P \\text{ and } Q)$ -- inclusive *or* with\n                the both-true case removed.\"\nId: \"1c7bc638-0db8-416f-a0d0-f5c0d7d92842\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "P, Q is \\\\statement",
+      "inline_latex": "P, Q \\textrm{ is } \\textrm{statement}",
+      "arguments": []
+    },
+    {
+      "label": "that",
+      "inline_argument": "(P \\.or./ Q) \\.and./ \\not{P \\.and./ Q}",
+      "inline_latex": "\\htmlData{mlg-ref=5c2e616e642e2f}{\\left(\\htmlData{mlg-ref=5c2e6f722e2f}{P \\text{ or } Q}\\right) \\text{ and } \\left(\\htmlData{mlg-ref=5c6e6f74}{\\neg \\left(\\htmlData{mlg-ref=5c2e616e642e2f}{P \\text{ and } Q}\\right)}\\right)}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"P+? \\text{ xor } Q+?\"",
+              "inline_latex": "P \\text{ xor } Q",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1c7bc638-0db8-416f-a0d0-f5c0d7d92842\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

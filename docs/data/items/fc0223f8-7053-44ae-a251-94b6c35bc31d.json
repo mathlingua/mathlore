@@ -1,0 +1,76 @@
+{
+  "id": "fc0223f8-7053-44ae-a251-94b6c35bc31d",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c636f6d6d757461746976653a3a62696e6172792e6f7065726174696f6e3a6f6e"
+  ],
+  "heading": "\\(commutative)::binary.operation:on{X}",
+  "heading_latex": "\\textrm{commutative}\\textrm{ }\\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }X}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(commutative)::binary.operation:on{X}]\nRefines: x_ * y_\nwhen: X is \\set\nsatisfies:\n. forAll: x, y \"in\" X\n  then: x * y = y * x\nDocumented:\n. adjective: \"commutative\"\nId: \"fc0223f8-7053-44ae-a251-94b6c35bc31d\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "x_ * y_",
+      "inline_latex": "x \\ast y \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }X}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x, y \"in\" X",
+              "inline_latex": "x, y \\in X",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "x * y = y * x",
+              "inline_latex": "x \\ast y = y \\ast x",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"commutative\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fc0223f8-7053-44ae-a251-94b6c35bc31d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

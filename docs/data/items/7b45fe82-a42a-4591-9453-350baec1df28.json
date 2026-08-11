@@ -1,0 +1,27 @@
+{
+  "id": "7b45fe82-a42a-4591-9453-350baec1df28",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The axiom of pairing lets us gather any two sets into a single set. From\nit, together with union, the finite sets and ordered structures used\nlater can be assembled."
+  },
+  "source": "Text: \"The axiom of pairing lets us gather any two sets into a single set. From\n       it, together with union, the finite sets and ordered structures used\n       later can be assembled.\"\nId: \"7b45fe82-a42a-4591-9453-350baec1df28\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The axiom of pairing lets us gather any two sets into a single set. From\n       it, together with union, the finite sets and ordered structures used\n       later can be assembled.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7b45fe82-a42a-4591-9453-350baec1df28\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

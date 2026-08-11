@@ -1,0 +1,138 @@
+{
+  "id": "a0f45971-fcc1-419b-bcd5-f4c4717bb37f",
+  "kind": "Axiom",
+  "definition_keys": [
+    "5c6178696f6d2e6f662e696e66696e697479"
+  ],
+  "heading": "\\axiom.of.infinity",
+  "heading_latex": "\\textrm{Axiom of Infinity}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\axiom.of.infinity]\nAxiom:\nthen:\n. exists: I is \\set\n  suchThat:\n  . oneOf:\n    . \\empty.set \"in\"? I\n    . forAll: Y is \\set\n      then:\n      . if: Y \"in\"? I\n        then: \\set.successor:of{Y} \"in\"? I\nDocumented:\n. called: \"Axiom of Infinity\"\n. description: \"There is a set $I$ that contains the empty set and is closed\n                under the successor operation. Such a set cannot be finite, so\n                this axiom is what first admits an infinite set into the theory.\"\nId: \"a0f45971-fcc1-419b-bcd5-f4c4717bb37f\"",
+  "sections": [
+    {
+      "label": "Axiom",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "I is \\set",
+              "inline_latex": "I \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "oneOf",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "\\empty.set \"in\"? I",
+                          "latex": "\\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset} \\in I"
+                        },
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "forAll",
+                              "inline_argument": "Y is \\set",
+                              "inline_latex": "Y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                              "arguments": []
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "group",
+                                  "heading": null,
+                                  "sections": [
+                                    {
+                                      "label": "if",
+                                      "inline_argument": "Y \"in\"? I",
+                                      "inline_latex": "Y \\in I",
+                                      "arguments": []
+                                    },
+                                    {
+                                      "label": "then",
+                                      "inline_argument": "\\set.successor:of{Y} \"in\"? I",
+                                      "inline_latex": "\\htmlData{mlg-ref=5c7365742e737563636573736f723a6f66}{Y \\cup \\left \\{ Y \\right \\}} \\in I",
+                                      "arguments": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Axiom of Infinity\"",
+              "inline_latex": "\\textrm{Axiom of Infinity}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a0f45971-fcc1-419b-bcd5-f4c4717bb37f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

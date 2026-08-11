@@ -1,0 +1,27 @@
+{
+  "id": "b60eca2f-6be8-4e23-a2f2-b56e2378684b",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "When each of two statements implies the other, they stand or fall\ntogether. This mutual implication is the biconditional, and it is the\nform in which most definitions and characterizations are cast."
+  },
+  "source": "Text: \"When each of two statements implies the other, they stand or fall\n       together. This mutual implication is the biconditional, and it is the\n       form in which most definitions and characterizations are cast.\"\nId: \"b60eca2f-6be8-4e23-a2f2-b56e2378684b\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"When each of two statements implies the other, they stand or fall\n       together. This mutual implication is the biconditional, and it is the\n       form in which most definitions and characterizations are cast.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b60eca2f-6be8-4e23-a2f2-b56e2378684b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

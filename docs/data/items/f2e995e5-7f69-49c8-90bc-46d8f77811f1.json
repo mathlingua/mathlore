@@ -1,0 +1,27 @@
+{
+  "id": "f2e995e5-7f69-49c8-90bc-46d8f77811f1",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The axioms"
+  },
+  "source": "SectionTitle: \"The axioms\"\nId: \"f2e995e5-7f69-49c8-90bc-46d8f77811f1\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The axioms\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f2e995e5-7f69-49c8-90bc-46d8f77811f1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

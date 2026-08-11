@@ -1,0 +1,27 @@
+{
+  "id": "55b0749b-4e2f-4112-a5be-c20a9879d6a3",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A quasigroup is a magma in which the operation can always be undone on\neither side: each of the equations $a * x = b$ and $y * a = b$ has a\nunique solution. This is the abstract form of the demand that division be\npossible, and it is where the study of invertibility begins."
+  },
+  "source": "Text: \"A quasigroup is a magma in which the operation can always be undone on\n       either side: each of the equations $a * x = b$ and $y * a = b$ has a\n       unique solution. This is the abstract form of the demand that division be\n       possible, and it is where the study of invertibility begins.\"\nId: \"55b0749b-4e2f-4112-a5be-c20a9879d6a3\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A quasigroup is a magma in which the operation can always be undone on\n       either side: each of the equations $a * x = b$ and $y * a = b$ has a\n       unique solution. This is the abstract form of the demand that division be\n       possible, and it is where the study of invertibility begins.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"55b0749b-4e2f-4112-a5be-c20a9879d6a3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

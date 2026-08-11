@@ -1,0 +1,27 @@
+{
+  "id": "da7d91b3-693b-4ca2-ac2a-e94555b18c5f",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "From unordered pairs one can encode *ordered* pairs, in which the two\ncomponents can be told apart. Kuratowski's device below records the first\ncomponent as a singleton and the pair together, so that the order is\nrecoverable."
+  },
+  "source": "Text: \"From unordered pairs one can encode *ordered* pairs, in which the two\n       components can be told apart. Kuratowski's device below records the first\n       component as a singleton and the pair together, so that the order is\n       recoverable.\"\nId: \"da7d91b3-693b-4ca2-ac2a-e94555b18c5f\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"From unordered pairs one can encode *ordered* pairs, in which the two\n       components can be told apart. Kuratowski's device below records the first\n       component as a singleton and the pair together, so that the order is\n       recoverable.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"da7d91b3-693b-4ca2-ac2a-e94555b18c5f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

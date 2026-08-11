@@ -1,0 +1,27 @@
+{
+  "id": "1d61c6bd-bf4c-4c3e-a6dd-769d5c662a6f",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The remaining connectives build compound statements from simpler ones.\nConjunction asserts that two statements both hold, disjunction that at\nleast one of them does, and negation that a statement fails."
+  },
+  "source": "Text: \"The remaining connectives build compound statements from simpler ones.\n       Conjunction asserts that two statements both hold, disjunction that at\n       least one of them does, and negation that a statement fails.\"\nId: \"1d61c6bd-bf4c-4c3e-a6dd-769d5c662a6f\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The remaining connectives build compound statements from simpler ones.\n       Conjunction asserts that two statements both hold, disjunction that at\n       least one of them does, and negation that a statement fails.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1d61c6bd-bf4c-4c3e-a6dd-769d5c662a6f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

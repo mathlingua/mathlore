@@ -1,0 +1,14 @@
+{
+  "id": "a0759217-e1f6-412c-982a-0038cd17a3a1-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A set is the sole primitive object of the theory. The only\nquestion one may put to a set is which sets are its members, and\ntwo sets with the same members are the same set. Every other\nobject built in this collection is ultimately a set."
+  },
+  "source": "",
+  "sections": []
+}

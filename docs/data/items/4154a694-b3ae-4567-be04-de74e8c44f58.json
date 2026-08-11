@@ -1,0 +1,27 @@
+{
+  "id": "4154a694-b3ae-4567-be04-de74e8c44f58",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "We now name the individual pieces. The number zero is the base case, the\none natural number that starts the whole sequence."
+  },
+  "source": "Text: \"We now name the individual pieces. The number zero is the base case, the\n       one natural number that starts the whole sequence.\"\nId: \"4154a694-b3ae-4567-be04-de74e8c44f58\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"We now name the individual pieces. The number zero is the base case, the\n       one natural number that starts the whole sequence.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4154a694-b3ae-4567-be04-de74e8c44f58\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "06fc295f-367d-4069-9f52-817e2894e3eb",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c6e61747572616c73"
+  ],
+  "heading": "\\naturals",
+  "heading_latex": "\\textrm{naturals}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\naturals]\nDeclares: N ::= (X, 0, succ) is \\abstract.naturals\nexpresses:\n. X := \\naturals.set\n. 0 := \\natural.0\n. succ := \\natural.succ\nEnables:\n. relation:\n  to: Y := X is \\set\n  represents: \\\\coercion\nDocumented:\n. called: \"naturals\"\n. description: \"The natural numbers packaged as a concrete instance of the\n                abstract naturals: the set $\\mathbb{N}$ with the element $0$ and\n                the successor map. This exhibits $\\mathbb{N}$ as a genuine Peano\n                system.\"\nId: \"06fc295f-367d-4069-9f52-817e2894e3eb\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "N ::= (X, 0, succ) is \\abstract.naturals",
+      "inline_latex": "N ::= \\left(X, 0, succ\\right) \\textrm{ is } \\htmlData{mlg-ref=5c61627374726163742e6e61747572616c73}{\\textrm{abstract naturals}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X := \\naturals.set",
+          "latex": "X := \\htmlData{mlg-ref=5c6e61747572616c732e736574}{\\mathbb{N}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "0 := \\natural.0",
+          "latex": "0 := \\htmlData{mlg-ref=5c6e61747572616c2e30}{0}"
+        },
+        {
+          "kind": "formulation",
+          "text": "succ := \\natural.succ",
+          "latex": "succ := \\htmlData{mlg-ref=5c6e61747572616c2e73756363}{n+\\!\\!+}"
+        }
+      ]
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "relation",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "to",
+              "inline_argument": "Y := X is \\set",
+              "inline_latex": "Y := X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "represents",
+              "inline_argument": "\\\\coercion",
+              "inline_latex": "\\operatorname{coercion}\\left(\\right)",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"naturals\"",
+              "inline_latex": "\\textrm{naturals}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"06fc295f-367d-4069-9f52-817e2894e3eb\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

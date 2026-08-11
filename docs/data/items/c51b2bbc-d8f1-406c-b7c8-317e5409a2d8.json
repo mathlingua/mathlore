@@ -1,0 +1,24 @@
+{
+  "id": "c51b2bbc-d8f1-406c-b7c8-317e5409a2d8",
+  "kind": "Writing",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Writing: phi :~> \\varphi\nId: \"c51b2bbc-d8f1-406c-b7c8-317e5409a2d8\"",
+  "sections": [
+    {
+      "label": "Writing",
+      "inline_argument": "phi :~> \\varphi",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c51b2bbc-d8f1-406c-b7c8-317e5409a2d8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "16235348-2acd-494b-ae40-6814eab32507",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "As with subgroups, the fact that the direct product is a group is stated\nas a theorem in its own right."
+  },
+  "source": "Text: \"As with subgroups, the fact that the direct product is a group is stated\n       as a theorem in its own right.\"\nId: \"16235348-2acd-494b-ae40-6814eab32507\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"As with subgroups, the fact that the direct product is a group is stated\n       as a theorem in its own right.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"16235348-2acd-494b-ae40-6814eab32507\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

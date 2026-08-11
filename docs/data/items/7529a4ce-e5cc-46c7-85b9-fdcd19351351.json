@@ -1,0 +1,27 @@
+{
+  "id": "7529a4ce-e5cc-46c7-85b9-fdcd19351351",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "We begin with the conditional, the connective that expresses logical\nconsequence. It is the backbone of every definition and proof that\nfollows, since to prove a theorem is almost always to show that some\nconclusion follows from a collection of hypotheses."
+  },
+  "source": "Text: \"We begin with the conditional, the connective that expresses logical\n       consequence. It is the backbone of every definition and proof that\n       follows, since to prove a theorem is almost always to show that some\n       conclusion follows from a collection of hypotheses.\"\nId: \"7529a4ce-e5cc-46c7-85b9-fdcd19351351\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"We begin with the conditional, the connective that expresses logical\n       consequence. It is the backbone of every definition and proof that\n       follows, since to prove a theorem is almost always to show that some\n       conclusion follows from a collection of hypotheses.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7529a4ce-e5cc-46c7-85b9-fdcd19351351\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

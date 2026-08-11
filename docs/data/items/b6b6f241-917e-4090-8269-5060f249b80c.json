@@ -1,0 +1,27 @@
+{
+  "id": "b6b6f241-917e-4090-8269-5060f249b80c",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The most basic structure is a set together with a single binary\noperation, with no further conditions imposed. This is a *magma*.\nEverything that follows is a magma with extra properties, so a magma\nmarks the ground floor of the entire chapter."
+  },
+  "source": "Text: \"The most basic structure is a set together with a single binary\n       operation, with no further conditions imposed. This is a *magma*.\n       Everything that follows is a magma with extra properties, so a magma\n       marks the ground floor of the entire chapter.\"\nId: \"b6b6f241-917e-4090-8269-5060f249b80c\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The most basic structure is a set together with a single binary\n       operation, with no further conditions imposed. This is a *magma*.\n       Everything that follows is a magma with extra properties, so a magma\n       marks the ground floor of the entire chapter.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b6b6f241-917e-4090-8269-5060f249b80c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

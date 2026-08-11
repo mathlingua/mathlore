@@ -1,0 +1,124 @@
+{
+  "id": "5fd063d9-a3bd-4549-b060-259a727afab2",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c2e6e61747572616c2e2b2e2f"
+  ],
+  "heading": "n_ \\.natural.+./ m_",
+  "heading_latex": "n_ + m_",
+  "body_text": null,
+  "page": null,
+  "source": "[n_ \\.natural.+./ m_]\nDeclares: n_ + m_ is \\binary.operation:on{\\naturals.set}\nexpresses:\n. piecewise:\n  if: n_ = 0\n  then: n_ + m_ := m_\n  else:\n  . let:\n    . k is \\natural\n    . n_ := \\natural.succ(k)\n    then: n_ + m_ := \\natural.succ(n_ + k)\nDocumented:\n. written: \"n_? + m_?\"\n. description: \"Addition of natural numbers, defined by recursion: $0 + m = m$,\n                and the sum with a successor is the successor of the sum. This\n                recursive definition determines $n + m$ for all naturals and\n                underlies the properties of arithmetic.\"\nId: \"5fd063d9-a3bd-4549-b060-259a727afab2\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "n_ + m_ is \\binary.operation:on{\\naturals.set}",
+      "inline_latex": "n + m \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }\\htmlData{mlg-ref=5c6e61747572616c732e736574}{\\mathbb{N}}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "piecewise",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "if",
+              "inline_argument": "n_ = 0",
+              "inline_latex": "n = 0",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "n_ + m_ := m_",
+              "inline_latex": "n + m := m",
+              "arguments": []
+            },
+            {
+              "label": "else",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "let",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "k is \\natural",
+                          "latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}"
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "n_ := \\natural.succ(k)",
+                          "latex": "n := \\htmlData{mlg-ref=5c6e61747572616c2e73756363}{k+\\!\\!+}"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "n_ + m_ := \\natural.succ(n_ + k)",
+                      "inline_latex": "n + m := \\htmlData{mlg-ref=5c6e61747572616c2e73756363}{n + k+\\!\\!+}",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"n_? + m_?\"",
+              "inline_latex": "n + m",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5fd063d9-a3bd-4549-b060-259a727afab2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

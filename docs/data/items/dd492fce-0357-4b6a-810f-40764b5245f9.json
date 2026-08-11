@@ -1,0 +1,27 @@
+{
+  "id": "dd492fce-0357-4b6a-810f-40764b5245f9",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A binary operation is a function of two arguments that returns a value in\nthe same set. Addition and multiplication are the familiar examples, and\noperations of this kind are exactly what an algebraic structure equips a\nset with."
+  },
+  "source": "Text: \"A binary operation is a function of two arguments that returns a value in\n       the same set. Addition and multiplication are the familiar examples, and\n       operations of this kind are exactly what an algebraic structure equips a\n       set with.\"\nId: \"dd492fce-0357-4b6a-810f-40764b5245f9\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A binary operation is a function of two arguments that returns a value in\n       the same set. Addition and multiplication are the familiar examples, and\n       operations of this kind are exactly what an algebraic structure equips a\n       set with.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dd492fce-0357-4b6a-810f-40764b5245f9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

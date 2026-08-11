@@ -1,0 +1,27 @@
+{
+  "id": "139b6eca-d1e5-4fae-97a4-1b05d96726f1",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The axiom of the power set asserts that all the subsets of a given set\ncan themselves be gathered into a set. This is the first axiom that\nproduces a set strictly larger than the ones it starts from."
+  },
+  "source": "Text: \"The axiom of the power set asserts that all the subsets of a given set\n       can themselves be gathered into a set. This is the first axiom that\n       produces a set strictly larger than the ones it starts from.\"\nId: \"139b6eca-d1e5-4fae-97a4-1b05d96726f1\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The axiom of the power set asserts that all the subsets of a given set\n       can themselves be gathered into a set. This is the first axiom that\n       produces a set strictly larger than the ones it starts from.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"139b6eca-d1e5-4fae-97a4-1b05d96726f1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

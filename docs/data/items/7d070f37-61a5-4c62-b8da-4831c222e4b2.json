@@ -1,0 +1,75 @@
+{
+  "id": "7d070f37-61a5-4c62-b8da-4831c222e4b2",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c3a7365742e7468656f72657469632e70726f7065722e7375627365743a2f"
+  ],
+  "heading": "A \\:set.theoretic.proper.subset:/ B",
+  "heading_latex": "A \\subsetneq B",
+  "body_text": null,
+  "page": null,
+  "source": "[A \\:set.theoretic.proper.subset:/ B]\nDefines: A\nwhen: B is \\set\nmeans: A \\:set.theoretic.subset:/ B\nsatisfies: A != B\nDocumented:\n. written: \"A? \\subsetneq B?\"\n. description: \"$A \\subsetneq B$ holds when $A$ is a subset of $B$ but is not\n                equal to $B$; that is, $B$ has at least one element not in $A$.\"\nId: \"7d070f37-61a5-4c62-b8da-4831c222e4b2\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "A",
+      "inline_latex": "A",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "B is \\set",
+      "inline_latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "means",
+      "inline_argument": "A \\:set.theoretic.subset:/ B",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{A \\subseteq B}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": "A != B",
+      "inline_latex": "A \\ne B",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\subsetneq B?\"",
+              "inline_latex": "A \\subsetneq B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7d070f37-61a5-4c62-b8da-4831c222e4b2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

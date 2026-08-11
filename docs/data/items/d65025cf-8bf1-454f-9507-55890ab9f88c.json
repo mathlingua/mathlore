@@ -1,0 +1,36 @@
+{
+  "id": "d65025cf-8bf1-454f-9507-55890ab9f88c",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven: G1, G2 is \\group\nthen: G1 \\.group.direct.product./ G2 is? \\group\nId: \"d65025cf-8bf1-454f-9507-55890ab9f88c\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "G1, G2 is \\group",
+      "inline_latex": "G_1, G_2 \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": "G1 \\.group.direct.product./ G2 is? \\group",
+      "inline_latex": "\\htmlData{mlg-ref=5c2e67726f75702e6469726563742e70726f647563742e2f}{G_1 \\times G_2} \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d65025cf-8bf1-454f-9507-55890ab9f88c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

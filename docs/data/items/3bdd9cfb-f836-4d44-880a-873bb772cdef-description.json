@@ -1,0 +1,14 @@
+{
+  "id": "3bdd9cfb-f836-4d44-880a-873bb772cdef-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The Cartesian product $A \\times B$ is the set of all ordered\npairs $(a, b)$ with $a \\in A$ and $b \\in B$. Relations on a set\nare subsets of its product with itself, and functions are\nrelations of a special kind."
+  },
+  "source": "",
+  "sections": []
+}

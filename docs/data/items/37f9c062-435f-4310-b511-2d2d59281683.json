@@ -1,0 +1,27 @@
+{
+  "id": "37f9c062-435f-4310-b511-2d2d59281683",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function is the mathematical embodiment of a rule that assigns to each\ninput exactly one output. Having built sets and their Cartesian products,\nwe can now say precisely what a function is: a way of associating with\nevery element of one set a unique element of another. Functions, and the\nbinary operations that are a special case of them, are the tools with\nwhich the algebraic structures of the next chapter are described."
+  },
+  "source": "Text: \"A function is the mathematical embodiment of a rule that assigns to each\n       input exactly one output. Having built sets and their Cartesian products,\n       we can now say precisely what a function is: a way of associating with\n       every element of one set a unique element of another. Functions, and the\n       binary operations that are a special case of them, are the tools with\n       which the algebraic structures of the next chapter are described.\"\nId: \"37f9c062-435f-4310-b511-2d2d59281683\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A function is the mathematical embodiment of a rule that assigns to each\n       input exactly one output. Having built sets and their Cartesian products,\n       we can now say precisely what a function is: a way of associating with\n       every element of one set a unique element of another. Functions, and the\n       binary operations that are a special case of them, are the tools with\n       which the algebraic structures of the next chapter are described.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"37f9c062-435f-4310-b511-2d2d59281683\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

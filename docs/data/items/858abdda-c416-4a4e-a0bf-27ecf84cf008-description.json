@@ -1,0 +1,14 @@
+{
+  "id": "858abdda-c416-4a4e-a0bf-27ecf84cf008-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An element of a group is a member of its underlying set. Because\nthe ambient structure is a group, each such element $x$ has a\nwell-defined inverse $x^{-1}$, accessible through its inverse\noperation."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "d88e480c-de0e-4e48-92b0-54bd232a346e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A natural number is either $0$ or the successor of a natural\nnumber, and these two cases are exclusive. Every natural number\nis reached from $0$ by finitely many successors, which is the\nbasis for defining operations on the naturals by recursion."
+  },
+  "source": "",
+  "sections": []
+}

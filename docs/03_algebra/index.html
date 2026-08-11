@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <meta name="description" content="Rendered Mathlingua collection viewer" />
+    <link rel="icon" href="./icon.png" />
+    <link rel="apple-touch-icon" href="./apple-icon.png" />
+    <title>MathLingua Viewer</title>
+    <script>
+      (() => {
+        try {
+          const theme = window.localStorage.getItem("mlg-view-theme");
+          if (
+            !/^(classic|mono|flat-gray|sepia|retro|dark)$/.test(theme ?? "")
+          ) {
+            return;
+          }
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme =
+            theme === "dark" ? "dark" : "light";
+        } catch (_) {}
+      })();
+      window.__MLG_VIEW_CONFIG__ = {"staticDataBasePath":"/data"};
+    </script>
+    <script type="module" crossorigin src="./assets/index-wJJRDLFd.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Ddjq8Deh.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

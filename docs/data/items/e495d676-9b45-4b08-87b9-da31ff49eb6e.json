@@ -1,0 +1,27 @@
+{
+  "id": "e495d676-9b45-4b08-87b9-da31ff49eb6e",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Equality of naturals can be described recursively, mirroring their\nrecursive construction: two naturals are equal when they are both zero or\nare the successors of equal naturals."
+  },
+  "source": "Text: \"Equality of naturals can be described recursively, mirroring their\n       recursive construction: two naturals are equal when they are both zero or\n       are the successors of equal naturals.\"\nId: \"e495d676-9b45-4b08-87b9-da31ff49eb6e\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Equality of naturals can be described recursively, mirroring their\n       recursive construction: two naturals are equal when they are both zero or\n       are the successors of equal naturals.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e495d676-9b45-4b08-87b9-da31ff49eb6e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

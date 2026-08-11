@@ -1,0 +1,27 @@
+{
+  "id": "4b9a150c-46bd-49da-83b4-b106f402c3a4",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Set Theory"
+  },
+  "source": "Title: \"Set Theory\"\nId: \"4b9a150c-46bd-49da-83b4-b106f402c3a4\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Set Theory\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4b9a150c-46bd-49da-83b4-b106f402c3a4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "946d3180-8614-4bd2-8fd6-d9bdce721e04",
+  "kind": "Theorem",
+  "definition_keys": [
+    "5c73756267726f75702e69732e67726f7570"
+  ],
+  "heading": "\\subgroup.is.group",
+  "heading_latex": "\\textrm{Subgroup Is Group}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\subgroup.is.group]\nTheorem:\ngiven:\n. G is \\group\n. H \\:subgroup:/ G\nthen: H is? \\group\nId: \"946d3180-8614-4bd2-8fd6-d9bdce721e04\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "G is \\group",
+          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "H \\:subgroup:/ G",
+          "latex": "\\htmlData{mlg-ref=5c3a73756267726f75703a2f}{H \\leq G}"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": "H is? \\group",
+      "inline_latex": "H \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"946d3180-8614-4bd2-8fd6-d9bdce721e04\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

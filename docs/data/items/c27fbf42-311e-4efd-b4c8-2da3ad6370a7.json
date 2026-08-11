@@ -1,0 +1,27 @@
+{
+  "id": "c27fbf42-311e-4efd-b4c8-2da3ad6370a7",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A subset that is not the whole set is called a *proper* subset: it is\ncontained in the larger set but differs from it."
+  },
+  "source": "Text: \"A subset that is not the whole set is called a *proper* subset: it is\n       contained in the larger set but differs from it.\"\nId: \"c27fbf42-311e-4efd-b4c8-2da3ad6370a7\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A subset that is not the whole set is called a *proper* subset: it is\n       contained in the larger set but differs from it.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c27fbf42-311e-4efd-b4c8-2da3ad6370a7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

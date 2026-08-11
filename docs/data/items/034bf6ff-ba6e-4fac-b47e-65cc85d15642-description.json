@@ -1,0 +1,14 @@
+{
+  "id": "034bf6ff-ba6e-4fac-b47e-65cc85d15642-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A monoid is a semigroup possessing an identity element $e$, one\nthat satisfies $x * e = x = e * x$ for every $x$. The identity\nis unique, and it plays the role that $0$ plays for addition or\n$1$ for multiplication."
+  },
+  "source": "",
+  "sections": []
+}

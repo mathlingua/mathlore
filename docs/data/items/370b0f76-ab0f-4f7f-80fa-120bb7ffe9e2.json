@@ -1,0 +1,27 @@
+{
+  "id": "370b0f76-ab0f-4f7f-80fa-120bb7ffe9e2",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Subsethood is transitive: a subset of a subset is a subset of the whole.\nThis is the first small theorem of the collection, and it follows\ndirectly from the definition of subset."
+  },
+  "source": "Text: \"Subsethood is transitive: a subset of a subset is a subset of the whole.\n       This is the first small theorem of the collection, and it follows\n       directly from the definition of subset.\"\nId: \"370b0f76-ab0f-4f7f-80fa-120bb7ffe9e2\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Subsethood is transitive: a subset of a subset is a subset of the whole.\n       This is the first small theorem of the collection, and it follows\n       directly from the definition of subset.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"370b0f76-ab0f-4f7f-80fa-120bb7ffe9e2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

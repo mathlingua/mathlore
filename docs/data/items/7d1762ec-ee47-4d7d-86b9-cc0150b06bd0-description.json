@@ -1,0 +1,14 @@
+{
+  "id": "7d1762ec-ee47-4d7d-86b9-cc0150b06bd0-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An abstract natural number system is a set $X$ with an element\n$0$ and a successor map, satisfying the Peano axioms: $0$ is not\na successor, distinct numbers have distinct successors, and $X$\nis exactly what is reached from $0$ by successors. Any two such\nsystems are isomorphic."
+  },
+  "source": "",
+  "sections": []
+}

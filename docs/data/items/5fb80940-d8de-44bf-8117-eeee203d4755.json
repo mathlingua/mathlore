@@ -1,0 +1,27 @@
+{
+  "id": "5fb80940-d8de-44bf-8117-eeee203d4755",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A *group* is a monoid in which every element has an inverse: for each $x$\nthere is a $y$ with $x * y = e$ and $y * x = e$. Groups are the central\nstructure of elementary algebra, being exactly the structures whose\noperation can always be undone. They are the abstract theory of symmetry."
+  },
+  "source": "Text: \"A *group* is a monoid in which every element has an inverse: for each $x$\n       there is a $y$ with $x * y = e$ and $y * x = e$. Groups are the central\n       structure of elementary algebra, being exactly the structures whose\n       operation can always be undone. They are the abstract theory of symmetry.\"\nId: \"5fb80940-d8de-44bf-8117-eeee203d4755\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A *group* is a monoid in which every element has an inverse: for each $x$\n       there is a $y$ with $x * y = e$ and $y * x = e$. Groups are the central\n       structure of elementary algebra, being exactly the structures whose\n       operation can always be undone. They are the abstract theory of symmetry.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5fb80940-d8de-44bf-8117-eeee203d4755\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

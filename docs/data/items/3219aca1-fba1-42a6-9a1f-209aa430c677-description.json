@@ -1,0 +1,14 @@
+{
+  "id": "3219aca1-fba1-42a6-9a1f-209aa430c677-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For any two sets $X$ and $Y$ there is a set $U$ whose members\nare exactly $X$ and $Y$. Applying it with $X = Y$ produces the\nset whose only member is $X$."
+  },
+  "source": "",
+  "sections": []
+}

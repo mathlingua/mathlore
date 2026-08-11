@@ -1,0 +1,27 @@
+{
+  "id": "e077a5db-c372-4759-a880-d74270032560",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Imposing associativity on a magma yields a *semigroup*. Associativity is\nwhat lets a product of several elements be written without parentheses,\nand it is assumed by nearly every structure in mathematics that is called\nan algebra."
+  },
+  "source": "Text: \"Imposing associativity on a magma yields a *semigroup*. Associativity is\n       what lets a product of several elements be written without parentheses,\n       and it is assumed by nearly every structure in mathematics that is called\n       an algebra.\"\nId: \"e077a5db-c372-4759-a880-d74270032560\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Imposing associativity on a magma yields a *semigroup*. Associativity is\n       what lets a product of several elements be written without parentheses,\n       and it is assumed by nearly every structure in mathematics that is called\n       an algebra.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e077a5db-c372-4759-a880-d74270032560\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

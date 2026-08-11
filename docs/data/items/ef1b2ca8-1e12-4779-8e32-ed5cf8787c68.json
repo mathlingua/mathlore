@@ -1,0 +1,47 @@
+{
+  "id": "ef1b2ca8-1e12-4779-8e32-ed5cf8787c68",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven:\n. G is \\group\n. x, y \"in\" G\nthen: (x * y).inv = y.inv * x.inv\nId: \"ef1b2ca8-1e12-4779-8e32-ed5cf8787c68\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "G is \\group",
+          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "x, y \"in\" G",
+          "latex": "x, y \\in G"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": "(x * y).inv = y.inv * x.inv",
+      "inline_latex": "\\left(x \\ast y\\right)^{-1} = y^{-1} \\ast x^{-1}",
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ef1b2ca8-1e12-4779-8e32-ed5cf8787c68\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

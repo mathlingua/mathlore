@@ -1,0 +1,113 @@
+{
+  "id": "3c49908d-060c-44c3-8f68-763b227e93d4",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e6e61747572616c2e3d2e2f"
+  ],
+  "heading": "n \\.natural.=./ m",
+  "heading_latex": "n = m",
+  "body_text": null,
+  "page": null,
+  "source": "[n \\.natural.=./ m]\nStates:\nwhen: n, m is \\natural\nthat:\n. if: n = 0\n  then: m = 0\n. if: n != 0\n  then:\n  . exists: k is \\natural\n    suchThat: n = \\natural.succ(k)\nDocumented:\n. written: \"n? = m?\"\nId: \"3c49908d-060c-44c3-8f68-763b227e93d4\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "n, m is \\natural",
+      "inline_latex": "n, m \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "arguments": []
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "if",
+              "inline_argument": "n = 0",
+              "inline_latex": "n = 0",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "m = 0",
+              "inline_latex": "m = 0",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "if",
+              "inline_argument": "n != 0",
+              "inline_latex": "n \\ne 0",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "k is \\natural",
+                      "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "n = \\natural.succ(k)",
+                      "inline_latex": "n = \\htmlData{mlg-ref=5c6e61747572616c2e73756363}{k+\\!\\!+}",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"n? = m?\"",
+              "inline_latex": "n = m",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3c49908d-060c-44c3-8f68-763b227e93d4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

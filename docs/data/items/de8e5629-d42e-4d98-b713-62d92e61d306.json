@@ -1,0 +1,27 @@
+{
+  "id": "de8e5629-d42e-4d98-b713-62d92e61d306",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The second is the uniqueness of inverses, promised when the inverse was\ndefined: any two elements that both act as an inverse of $x$ must be\nequal. Uniqueness is what justifies writing $x^{-1}$ for *the* inverse."
+  },
+  "source": "Text: \"The second is the uniqueness of inverses, promised when the inverse was\n       defined: any two elements that both act as an inverse of $x$ must be\n       equal. Uniqueness is what justifies writing $x^{-1}$ for *the* inverse.\"\nId: \"de8e5629-d42e-4d98-b713-62d92e61d306\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The second is the uniqueness of inverses, promised when the inverse was\n       defined: any two elements that both act as an inverse of $x$ must be\n       equal. Uniqueness is what justifies writing $x^{-1}$ for *the* inverse.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"de8e5629-d42e-4d98-b713-62d92e61d306\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "ea7eab01-792c-427f-91dc-a75f43513b38",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c7265737472696374696f6e3a6f663a6f6e"
+  ],
+  "heading": "\\restriction:of{g(x__)}:on{X}",
+  "heading_latex": "\\textrm{restriction of }g(x)\\textrm{ on }X\\quad\\htmlClass{mlg-title-written}{g(x)\\big |_{X}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\restriction:of{g(x__)}:on{X}]\nDeclares: f is \\function:on{X}:to{B}\nwhen:\n. g is \\function:on{A?}:to{B?}\n. X \\:set.theoretic.subset:/ A\nexpresses: f(x__) := g(x__)\nDocumented:\n. called: \"restriction of $g?$ on $X?$\"\n. written: \"g?\\big |_{X?}\"\n. description: \"The restriction $g|_X$ of a function $g : A \\rightarrow B$ to a\n                subset $X$ of $A$ is the function on $X$ that takes each input\n                to the same value $g$ does. It keeps the rule and shrinks the\n                domain.\"\nId: \"ea7eab01-792c-427f-91dc-a75f43513b38\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "f is \\function:on{X}:to{B}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: X \\rightarrow B}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "g is \\function:on{A?}:to{B?}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{g \\: : \\: A \\rightarrow B}"
+        },
+        {
+          "kind": "formulation",
+          "text": "X \\:set.theoretic.subset:/ A",
+          "latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{X \\subseteq A}"
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "f(x__) := g(x__)",
+      "inline_latex": "f(x) := g(x)",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"restriction of $g?$ on $X?$\"",
+              "inline_latex": "\\textrm{restriction of }g\\textrm{ on }X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"g?\\big |_{X?}\"",
+              "inline_latex": "g\\big |_{X}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ea7eab01-792c-427f-91dc-a75f43513b38\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

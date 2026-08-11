@@ -1,0 +1,27 @@
+{
+  "id": "786f4620-5e2a-4871-856e-ae9220f82f4b",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Products and further structure"
+  },
+  "source": "SectionTitle: \"Products and further structure\"\nId: \"786f4620-5e2a-4871-856e-ae9220f82f4b\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Products and further structure\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"786f4620-5e2a-4871-856e-ae9220f82f4b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

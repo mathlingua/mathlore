@@ -1,0 +1,14 @@
+{
+  "id": "1c7bc638-0db8-416f-a0d0-f5c0d7d92842-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The exclusive disjunction of $P$ and $Q$. It holds when $P$ or\n$Q$ holds but *not* both, and is defined here as $(P \\text{ or }\nQ) \\text{ and } \\neg(P \\text{ and } Q)$ -- inclusive *or* with\nthe both-true case removed."
+  },
+  "source": "",
+  "sections": []
+}

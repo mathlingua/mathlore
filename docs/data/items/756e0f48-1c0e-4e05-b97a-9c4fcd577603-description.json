@@ -1,0 +1,14 @@
+{
+  "id": "756e0f48-1c0e-4e05-b97a-9c4fcd577603-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The negation of membership: $x \\notin X$ asserts that the set\n$x$ is not an element of the set $X$. It is shorthand for the\nstatement that $x \\in X$ fails to hold."
+  },
+  "source": "",
+  "sections": []
+}

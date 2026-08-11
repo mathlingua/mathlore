@@ -1,0 +1,14 @@
+{
+  "id": "96440ac7-3331-4467-a7ac-593dbca0761b-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The biconditional of $P$ and $Q$, read *$P$ if and only if $Q$*.\nIt holds exactly when $P$ and $Q$ have the same truth value --\neach implies the other -- and it is the connective used to state\nthat two conditions are equivalent."
+  },
+  "source": "",
+  "sections": []
+}

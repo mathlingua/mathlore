@@ -1,0 +1,27 @@
+{
+  "id": "9f2d601b-cdb2-4cbc-a213-a70d5b0dc291",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Zero, successor, and the naturals"
+  },
+  "source": "SectionTitle: \"Zero, successor, and the naturals\"\nId: \"9f2d601b-cdb2-4cbc-a213-a70d5b0dc291\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Zero, successor, and the naturals\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"9f2d601b-cdb2-4cbc-a213-a70d5b0dc291\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

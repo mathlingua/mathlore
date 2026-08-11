@@ -1,0 +1,27 @@
+{
+  "id": "c0f76644-e25f-4e0c-8cf0-6daf86ad59df",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The axiom of union collapses a set of sets into a single set containing\nevery element of every member. It is what makes it possible to pool the\ncontents of a whole family of sets at once."
+  },
+  "source": "Text: \"The axiom of union collapses a set of sets into a single set containing\n       every element of every member. It is what makes it possible to pool the\n       contents of a whole family of sets at once.\"\nId: \"c0f76644-e25f-4e0c-8cf0-6daf86ad59df\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The axiom of union collapses a set of sets into a single set containing\n       every element of every member. It is what makes it possible to pool the\n       contents of a whole family of sets at once.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c0f76644-e25f-4e0c-8cf0-6daf86ad59df\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

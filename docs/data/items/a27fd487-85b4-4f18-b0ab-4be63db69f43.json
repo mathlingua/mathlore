@@ -1,0 +1,74 @@
+{
+  "id": "a27fd487-85b4-4f18-b0ab-4be63db69f43",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven:\n. G ::= (X, *, e) is \\group\n. x, y1, y2 \"in\" G\nwhere:\n. x * y1 = e\n. y1 * x = e\n. x * y2 = e\n. y2 * x = e\nthen: y1 = y2\nId: \"a27fd487-85b4-4f18-b0ab-4be63db69f43\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "G ::= (X, *, e) is \\group",
+          "latex": "G ::= \\left(X, \\ast, e\\right) \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}"
+        },
+        {
+          "kind": "formulation",
+          "text": "x, y1, y2 \"in\" G",
+          "latex": "x, y_1, y_2 \\in G"
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "x * y1 = e",
+          "latex": "x \\ast y_1 = e"
+        },
+        {
+          "kind": "formulation",
+          "text": "y1 * x = e",
+          "latex": "y_1 \\ast x = e"
+        },
+        {
+          "kind": "formulation",
+          "text": "x * y2 = e",
+          "latex": "x \\ast y_2 = e"
+        },
+        {
+          "kind": "formulation",
+          "text": "y2 * x = e",
+          "latex": "y_2 \\ast x = e"
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": "y1 = y2",
+      "inline_latex": "y_1 = y_2",
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a27fd487-85b4-4f18-b0ab-4be63db69f43\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

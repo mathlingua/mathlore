@@ -1,0 +1,27 @@
+{
+  "id": "b218d7dd-c01a-476d-9975-b05de57b8b8f",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Sets are most often described by a property their elements satisfy. The\nremaining definitions of this chapter set up that notation -- properties\nof sets, sets listed by their elements, ordered pairs, and the Cartesian\nproduct -- which is used throughout the rest of the collection."
+  },
+  "source": "Text: \"Sets are most often described by a property their elements satisfy. The\n       remaining definitions of this chapter set up that notation -- properties\n       of sets, sets listed by their elements, ordered pairs, and the Cartesian\n       product -- which is used throughout the rest of the collection.\"\nId: \"b218d7dd-c01a-476d-9975-b05de57b8b8f\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Sets are most often described by a property their elements satisfy. The\n       remaining definitions of this chapter set up that notation -- properties\n       of sets, sets listed by their elements, ordered pairs, and the Cartesian\n       product -- which is used throughout the rest of the collection.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b218d7dd-c01a-476d-9975-b05de57b8b8f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

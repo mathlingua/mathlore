@@ -1,0 +1,107 @@
+{
+  "id": "08f35257-d0a7-42af-9866-7d138c56fc4c",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c73696e676c65746f6e2e7365743a6f66"
+  ],
+  "heading": "\\singleton.set:of{X}",
+  "heading_latex": "\\left \\{ X \\right \\}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\singleton.set:of{X}]\nDeclares: Y is \\set\nwhen: X is \\set\nexpresses:\n. let: Z is \\set\n  then:\n  . have: Z \"in\"? Y\n    iff: Z = X\nDocumented:\n. written: \"\\left \\{ X? \\right \\}\"\n. description: \"The singleton $\\{X\\}$ is the set whose sole member is $X$: a set\n                $Z$ belongs to it exactly when $Z = X$. Its existence follows\n                from pairing applied to $X$ with itself.\"\nId: \"08f35257-d0a7-42af-9866-7d138c56fc4c\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "Y is \\set",
+      "inline_latex": "Y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "let",
+              "inline_argument": "Z is \\set",
+              "inline_latex": "Z \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "Z \"in\"? Y",
+                      "inline_latex": "Z \\in Y",
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "Z = X",
+                      "inline_latex": "Z = X",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\left \\{ X? \\right \\}\"",
+              "inline_latex": "\\left \\{ X \\right \\}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"08f35257-d0a7-42af-9866-7d138c56fc4c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

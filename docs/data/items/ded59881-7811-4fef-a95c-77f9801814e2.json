@@ -1,0 +1,27 @@
+{
+  "id": "ded59881-7811-4fef-a95c-77f9801814e2",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two properties of a binary operation recur constantly. An operation is\n*associative* when the way its arguments are grouped does not matter, and\n*commutative* when their order does not matter. We record both as\nrefinements of a binary operation."
+  },
+  "source": "Text: \"Two properties of a binary operation recur constantly. An operation is\n       *associative* when the way its arguments are grouped does not matter, and\n       *commutative* when their order does not matter. We record both as\n       refinements of a binary operation.\"\nId: \"ded59881-7811-4fef-a95c-77f9801814e2\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Two properties of a binary operation recur constantly. An operation is\n       *associative* when the way its arguments are grouped does not matter, and\n       *commutative* when their order does not matter. We record both as\n       refinements of a binary operation.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ded59881-7811-4fef-a95c-77f9801814e2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

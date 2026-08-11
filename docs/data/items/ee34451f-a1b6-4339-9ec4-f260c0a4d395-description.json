@@ -1,0 +1,14 @@
+{
+  "id": "ee34451f-a1b6-4339-9ec4-f260c0a4d395-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The relation on pairs of naturals that identifies $(n_1, m_1)$\nwith $(n_2, m_2)$ exactly when $n_1 + m_2 = n_2 + m_1$. This is\nthe cross-multiplied form of $n_1 - m_1 = n_2 - m_2$, expressed\nwith addition alone, and it is an equivalence relation."
+  },
+  "source": "",
+  "sections": []
+}

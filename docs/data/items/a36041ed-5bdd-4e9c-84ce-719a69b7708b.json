@@ -1,0 +1,27 @@
+{
+  "id": "a36041ed-5bdd-4e9c-84ce-719a69b7708b",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two elements of a magma *commute* when the order in which they are\ncombined does not affect the result. In a general group most pairs do not\ncommute; the ones that do are of particular interest."
+  },
+  "source": "Text: \"Two elements of a magma *commute* when the order in which they are\n       combined does not affect the result. In a general group most pairs do not\n       commute; the ones that do are of particular interest.\"\nId: \"a36041ed-5bdd-4e9c-84ce-719a69b7708b\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Two elements of a magma *commute* when the order in which they are\n       combined does not affect the result. In a general group most pairs do not\n       commute; the ones that do are of particular interest.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a36041ed-5bdd-4e9c-84ce-719a69b7708b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

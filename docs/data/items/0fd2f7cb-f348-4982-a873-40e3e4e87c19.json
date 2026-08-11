@@ -1,0 +1,51 @@
+{
+  "id": "0fd2f7cb-f348-4982-a873-40e3e4e87c19",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c706f7369746976653a3a6e61747572616c"
+  ],
+  "heading": "\\(positive)::natural",
+  "heading_latex": "\\textrm{positive}\\textrm{ }\\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(positive)::natural]\nRefines: n\nsatisfies: n != \\natural.0\nDocumented:\n. adjective: \"positive\"\nId: \"0fd2f7cb-f348-4982-a873-40e3e4e87c19\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "n",
+      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": "n != \\natural.0",
+      "inline_latex": "n \\ne \\htmlData{mlg-ref=5c6e61747572616c2e30}{0}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"positive\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0fd2f7cb-f348-4982-a873-40e3e4e87c19\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

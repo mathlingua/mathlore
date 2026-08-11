@@ -1,0 +1,27 @@
+{
+  "id": "6c628805-5df1-4ad5-b2c3-23bf7dad5acc",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A group is *finite* when its underlying set has finitely many elements.\nThe size of a finite group, its order, governs a great deal of its\nstructure, and finiteness is inherited directly from the underlying\nmonoid."
+  },
+  "source": "Text: \"A group is *finite* when its underlying set has finitely many elements.\n       The size of a finite group, its order, governs a great deal of its\n       structure, and finiteness is inherited directly from the underlying\n       monoid.\"\nId: \"6c628805-5df1-4ad5-b2c3-23bf7dad5acc\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A group is *finite* when its underlying set has finitely many elements.\n       The size of a finite group, its order, governs a great deal of its\n       structure, and finiteness is inherited directly from the underlying\n       monoid.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6c628805-5df1-4ad5-b2c3-23bf7dad5acc\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

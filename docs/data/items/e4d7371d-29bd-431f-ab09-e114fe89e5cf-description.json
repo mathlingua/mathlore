@@ -1,0 +1,14 @@
+{
+  "id": "e4d7371d-29bd-431f-ab09-e114fe89e5cf-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A group is a monoid in which every element $x$ has an inverse\n$y$, so that $x * y = e = y * x$. Equivalently it is an\nassociative structure with identity in which every element is\ninvertible; this makes it a quasigroup as well as a monoid."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,88 @@
+{
+  "id": "dc7e213d-76c2-43d7-acf1-c5978daaab33",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e696d706c6965732e2f"
+  ],
+  "heading": "P \\.implies./ Q",
+  "heading_latex": "P \\Rightarrow Q",
+  "body_text": null,
+  "page": null,
+  "source": "[P \\.implies./ Q]\nStates:\nwhen: P, Q is \\\\statement\nthat:\n. if: P\n  then: Q\nDocumented:\n. written: \"P+? \\Rightarrow Q+?\"\n. description: \"The conditional *if $P$ then $Q$*, written $P \\Rightarrow Q$. It\n                asserts that whenever $P$ holds, $Q$ holds as well. It makes no\n                claim at all in the case that $P$ fails, so a conditional with a\n                false hypothesis is regarded as holding vacuously.\"\nId: \"dc7e213d-76c2-43d7-acf1-c5978daaab33\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "P, Q is \\\\statement",
+      "inline_latex": "P, Q \\textrm{ is } \\textrm{statement}",
+      "arguments": []
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "if",
+              "inline_argument": "P",
+              "inline_latex": "P",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "Q",
+              "inline_latex": "Q",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"P+? \\Rightarrow Q+?\"",
+              "inline_latex": "P \\Rightarrow Q",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dc7e213d-76c2-43d7-acf1-c5978daaab33\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

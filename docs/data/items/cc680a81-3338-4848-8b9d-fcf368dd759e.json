@@ -1,0 +1,57 @@
+{
+  "id": "cc680a81-3338-4848-8b9d-fcf368dd759e",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e70726f7065727479"
+  ],
+  "heading": "\\set.property(X_)",
+  "heading_latex": "\\textrm{set property}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.property(X_)]\nDefines: phi(X_) is (? is \\set) -> (? is \\\\statement)\nDocumented:\n. called: \"set property\"\n. description: \"A set property is a predicate on sets: given a set it yields a\n                statement, true or false. Properties are what the specification\n                axiom uses to carve subsets out of existing sets.\"\nId: \"cc680a81-3338-4848-8b9d-fcf368dd759e\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "phi(X_) is (? is \\set) -> (? is \\\\statement)",
+      "inline_latex": "\\varphi(X) \\textrm{ is } \\left(? \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\right) \\to \\left(? \\textrm{ is } \\textrm{statement}\\right)",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"set property\"",
+              "inline_latex": "\\textrm{set property}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"cc680a81-3338-4848-8b9d-fcf368dd759e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

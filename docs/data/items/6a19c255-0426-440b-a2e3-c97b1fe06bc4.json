@@ -1,0 +1,27 @@
+{
+  "id": "6a19c255-0426-440b-a2e3-c97b1fe06bc4",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A set that is not the empty set has at least one element. It is worth\nnaming this condition, since many constructions require a set to be\nnonempty."
+  },
+  "source": "Text: \"A set that is not the empty set has at least one element. It is worth\n       naming this condition, since many constructions require a set to be\n       nonempty.\"\nId: \"6a19c255-0426-440b-a2e3-c97b1fe06bc4\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A set that is not the empty set has at least one element. It is worth\n       naming this condition, since many constructions require a set to be\n       nonempty.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6a19c255-0426-440b-a2e3-c97b1fe06bc4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

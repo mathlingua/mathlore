@@ -1,0 +1,70 @@
+{
+  "id": "1dc777cd-31a5-489a-8b5a-05b94c647fb9",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c6162656c69616e3a3a67726f7570"
+  ],
+  "heading": "\\(abelian)::group",
+  "heading_latex": "\\textrm{abelian}\\textrm{ }\\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(abelian)::group]\nRefines: G ::= (X, *, e)\nsatisfies:\n. forAll: x, y \"in\" G\n  then: x * y = y * x\nDocumented:\n. adjective: \"abelian\"\nId: \"1dc777cd-31a5-489a-8b5a-05b94c647fb9\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "G ::= (X, *, e)",
+      "inline_latex": "G ::= \\left(X, \\ast, e\\right) \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x, y \"in\" G",
+              "inline_latex": "x, y \\in G",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "x * y = y * x",
+              "inline_latex": "x \\ast y = y \\ast x",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"abelian\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1dc777cd-31a5-489a-8b5a-05b94c647fb9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "3219aca1-fba1-42a6-9a1f-209aa430c677",
+  "kind": "Axiom",
+  "definition_keys": [
+    "5c6178696f6d2e6f662e70616972696e67"
+  ],
+  "heading": "\\axiom.of.pairing",
+  "heading_latex": "\\textrm{Axiom of Pairing}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\axiom.of.pairing]\nAxiom:\ngiven: X, Y is \\set\nthen:\n. exists: U is \\set\n  suchThat:\n  . forAll: Z is \\set\n    then: (Z \"in\"? U) \\.iff./ ((.Z = X.) \\.or./ (.Z = Y.))\nDocumented:\n. called: \"Axiom of Pairing\"\n. description: \"For any two sets $X$ and $Y$ there is a set $U$ whose members\n                are exactly $X$ and $Y$. Applying it with $X = Y$ produces the\n                set whose only member is $X$.\"\nId: \"3219aca1-fba1-42a6-9a1f-209aa430c677\"",
+  "sections": [
+    {
+      "label": "Axiom",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "X, Y is \\set",
+      "inline_latex": "X, Y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "U is \\set",
+              "inline_latex": "U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "Z is \\set",
+                      "inline_latex": "Z \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "(Z \"in\"? U) \\.iff./ ((.Z = X.) \\.or./ (.Z = Y.))",
+                      "inline_latex": "\\htmlData{mlg-ref=5c2e6966662e2f}{\\left(Z \\in U\\right) \\iff \\left(\\htmlData{mlg-ref=5c2e6f722e2f}{\\left(Z = X\\right) \\text{ or } \\left(Z = Y\\right)}\\right)}",
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Axiom of Pairing\"",
+              "inline_latex": "\\textrm{Axiom of Pairing}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3219aca1-fba1-42a6-9a1f-209aa430c677\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

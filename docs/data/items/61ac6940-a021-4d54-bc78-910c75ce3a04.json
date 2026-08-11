@@ -1,0 +1,27 @@
+{
+  "id": "61ac6940-a021-4d54-bc78-910c75ce3a04",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Relations"
+  },
+  "source": "Title: \"Relations\"\nId: \"61ac6940-a021-4d54-bc78-910c75ce3a04\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Relations\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"61ac6940-a021-4d54-bc78-910c75ce3a04\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

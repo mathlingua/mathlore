@@ -1,0 +1,27 @@
+{
+  "id": "2675f869-5535-45d3-9009-0a76ffa07961",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Logic"
+  },
+  "source": "Title: \"Logic\"\nId: \"2675f869-5535-45d3-9009-0a76ffa07961\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Logic\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2675f869-5535-45d3-9009-0a76ffa07961\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

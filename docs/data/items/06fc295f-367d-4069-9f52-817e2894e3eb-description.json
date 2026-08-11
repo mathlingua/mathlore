@@ -1,0 +1,14 @@
+{
+  "id": "06fc295f-367d-4069-9f52-817e2894e3eb-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The natural numbers packaged as a concrete instance of the\nabstract naturals: the set $\\mathbb{N}$ with the element $0$ and\nthe successor map. This exhibits $\\mathbb{N}$ as a genuine Peano\nsystem."
+  },
+  "source": "",
+  "sections": []
+}

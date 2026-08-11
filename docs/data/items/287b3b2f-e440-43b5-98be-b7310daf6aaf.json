@@ -1,0 +1,27 @@
+{
+  "id": "287b3b2f-e440-43b5-98be-b7310daf6aaf",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The following axioms are the rules a set must obey. The axiom of the\nempty set asserts that a set with no members exists, providing the\nstarting point just discussed."
+  },
+  "source": "Text: \"The following axioms are the rules a set must obey. The axiom of the\n       empty set asserts that a set with no members exists, providing the\n       starting point just discussed.\"\nId: \"287b3b2f-e440-43b5-98be-b7310daf6aaf\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The following axioms are the rules a set must obey. The axiom of the\n       empty set asserts that a set with no members exists, providing the\n       starting point just discussed.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"287b3b2f-e440-43b5-98be-b7310daf6aaf\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

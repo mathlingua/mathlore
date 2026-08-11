@@ -1,0 +1,14 @@
+{
+  "id": "f2180719-568d-4084-982b-a71c5f195bf6-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "There is a set having no members: for every set $Z$, $Z \\notin\nX$. This is the one axiom that outright asserts a set into\nexistence; every other set is built, directly or indirectly,\nstarting from it."
+  },
+  "source": "",
+  "sections": []
+}

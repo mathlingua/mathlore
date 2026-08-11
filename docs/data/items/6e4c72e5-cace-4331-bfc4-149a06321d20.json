@@ -1,0 +1,27 @@
+{
+  "id": "6e4c72e5-cace-4331-bfc4-149a06321d20",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A natural number is then defined to be either zero or the successor of\nsome natural number. This recursive description is the definitional form\nof the induction principle: it says the naturals are built up from zero,\none successor at a time, and nothing else."
+  },
+  "source": "Text: \"A natural number is then defined to be either zero or the successor of\n       some natural number. This recursive description is the definitional form\n       of the induction principle: it says the naturals are built up from zero,\n       one successor at a time, and nothing else.\"\nId: \"6e4c72e5-cace-4331-bfc4-149a06321d20\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A natural number is then defined to be either zero or the successor of\n       some natural number. This recursive description is the definitional form\n       of the induction principle: it says the naturals are built up from zero,\n       one successor at a time, and nothing else.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6e4c72e5-cace-4331-bfc4-149a06321d20\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

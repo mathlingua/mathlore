@@ -1,0 +1,27 @@
+{
+  "id": "02a8aafc-c012-4d2a-92ed-b36b902d05a0",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Abstract algebra studies sets equipped with operations, asking what can\nbe proved from the properties of the operations alone, regardless of what\nthe elements are. This chapter climbs a ladder of such structures. Each\nrung adds one requirement to the one below it: a bare set with an\noperation becomes, in turn, a magma, a semigroup, a monoid, and finally a\ngroup, the central object of elementary algebra."
+  },
+  "source": "Text: \"Abstract algebra studies sets equipped with operations, asking what can\n       be proved from the properties of the operations alone, regardless of what\n       the elements are. This chapter climbs a ladder of such structures. Each\n       rung adds one requirement to the one below it: a bare set with an\n       operation becomes, in turn, a magma, a semigroup, a monoid, and finally a\n       group, the central object of elementary algebra.\"\nId: \"02a8aafc-c012-4d2a-92ed-b36b902d05a0\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Abstract algebra studies sets equipped with operations, asking what can\n       be proved from the properties of the operations alone, regardless of what\n       the elements are. This chapter climbs a ladder of such structures. Each\n       rung adds one requirement to the one below it: a bare set with an\n       operation becomes, in turn, a magma, a semigroup, a monoid, and finally a\n       group, the central object of elementary algebra.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"02a8aafc-c012-4d2a-92ed-b36b902d05a0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "5fd063d9-a3bd-4549-b060-259a727afab2-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Addition of natural numbers, defined by recursion: $0 + m = m$,\nand the sum with a successor is the successor of the sum. This\nrecursive definition determines $n + m$ for all naturals and\nunderlies the properties of arithmetic."
+  },
+  "source": "",
+  "sections": []
+}

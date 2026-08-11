@@ -1,0 +1,27 @@
+{
+  "id": "bb323028-2831-4d67-b784-b0918774ab3a",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The elements of a group inherit the operation of the group, and each also\ncarries an inverse. Writing $x^{-1}$ for the inverse of $x$ gives the\nfamiliar notation used in computations."
+  },
+  "source": "Text: \"The elements of a group inherit the operation of the group, and each also\n       carries an inverse. Writing $x^{-1}$ for the inverse of $x$ gives the\n       familiar notation used in computations.\"\nId: \"bb323028-2831-4d67-b784-b0918774ab3a\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The elements of a group inherit the operation of the group, and each also\n       carries an inverse. Writing $x^{-1}$ for the inverse of $x$ gives the\n       familiar notation used in computations.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"bb323028-2831-4d67-b784-b0918774ab3a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

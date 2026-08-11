@@ -1,0 +1,14 @@
+{
+  "id": "2b2b89a1-d106-4377-ae48-14c704063e5e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "$A \\subseteq B$ holds when every element of $A$ is also an\nelement of $B$. By extensionality, two sets are equal exactly\nwhen each is a subset of the other."
+  },
+  "source": "",
+  "sections": []
+}

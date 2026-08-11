@@ -1,0 +1,27 @@
+{
+  "id": "91933534-107f-44fe-9ad6-4829664f8cd6",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A *subgroup* is a subset of a group that is itself a group under the\ninherited operation. It must contain the identity, be closed under the\noperation, and contain the inverse of each of its elements. Subgroups are\nthe substructures through which the internal architecture of a group is\nstudied."
+  },
+  "source": "Text: \"A *subgroup* is a subset of a group that is itself a group under the\n       inherited operation. It must contain the identity, be closed under the\n       operation, and contain the inverse of each of its elements. Subgroups are\n       the substructures through which the internal architecture of a group is\n       studied.\"\nId: \"91933534-107f-44fe-9ad6-4829664f8cd6\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A *subgroup* is a subset of a group that is itself a group under the\n       inherited operation. It must contain the identity, be closed under the\n       operation, and contain the inverse of each of its elements. Subgroups are\n       the substructures through which the internal architecture of a group is\n       studied.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"91933534-107f-44fe-9ad6-4829664f8cd6\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

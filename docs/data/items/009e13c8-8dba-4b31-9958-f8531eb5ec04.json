@@ -1,0 +1,27 @@
+{
+  "id": "009e13c8-8dba-4b31-9958-f8531eb5ec04",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The connectives above suffice to define any others by combination. As one\nexample we record the exclusive *or*, which holds when the two statements\ndiffer in truth value -- that is, when one of them holds but not both."
+  },
+  "source": "Text: \"The connectives above suffice to define any others by combination. As one\n       example we record the exclusive *or*, which holds when the two statements\n       differ in truth value -- that is, when one of them holds but not both.\"\nId: \"009e13c8-8dba-4b31-9958-f8531eb5ec04\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The connectives above suffice to define any others by combination. As one\n       example we record the exclusive *or*, which holds when the two statements\n       differ in truth value -- that is, when one of them holds but not both.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"009e13c8-8dba-4b31-9958-f8531eb5ec04\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

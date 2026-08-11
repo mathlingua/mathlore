@@ -1,0 +1,82 @@
+{
+  "id": "856ad9cc-c17e-4cff-ad32-10ee78ab20c4",
+  "kind": "States",
+  "definition_keys": [
+    "5c6e6f74"
+  ],
+  "heading": "\\not{P}",
+  "heading_latex": "\\neg P",
+  "body_text": null,
+  "page": null,
+  "source": "[\\not{P}]\nStates:\nwhen: P is \\\\statement\nthat:\n. not: P\nDocumented:\n. written: \"\\neg P+?\"\n. description: \"The negation of $P$, written $\\neg P$. It holds exactly when $P$\n                does not, and so reverses the truth value of the statement it is\n                applied to.\"\nId: \"856ad9cc-c17e-4cff-ad32-10ee78ab20c4\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "P is \\\\statement",
+      "inline_latex": "P \\textrm{ is } \\textrm{statement}",
+      "arguments": []
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "not",
+              "inline_argument": "P",
+              "inline_latex": "P",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\neg P+?\"",
+              "inline_latex": "\\neg P",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"856ad9cc-c17e-4cff-ad32-10ee78ab20c4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

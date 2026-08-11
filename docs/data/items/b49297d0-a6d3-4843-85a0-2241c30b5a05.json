@@ -1,0 +1,27 @@
+{
+  "id": "b49297d0-a6d3-4843-85a0-2241c30b5a05",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Building new sets"
+  },
+  "source": "SectionTitle: \"Building new sets\"\nId: \"b49297d0-a6d3-4843-85a0-2241c30b5a05\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Building new sets\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b49297d0-a6d3-4843-85a0-2241c30b5a05\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

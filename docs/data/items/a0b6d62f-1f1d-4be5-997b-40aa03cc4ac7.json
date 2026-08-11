@@ -1,0 +1,27 @@
+{
+  "id": "a0b6d62f-1f1d-4be5-997b-40aa03cc4ac7",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The characterization of equality by mutual inclusion, promised when\nextensionality was stated, is recorded here as a theorem: two sets are\nequal exactly when each is a subset of the other."
+  },
+  "source": "Text: \"The characterization of equality by mutual inclusion, promised when\n       extensionality was stated, is recorded here as a theorem: two sets are\n       equal exactly when each is a subset of the other.\"\nId: \"a0b6d62f-1f1d-4be5-997b-40aa03cc4ac7\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The characterization of equality by mutual inclusion, promised when\n       extensionality was stated, is recorded here as a theorem: two sets are\n       equal exactly when each is a subset of the other.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a0b6d62f-1f1d-4be5-997b-40aa03cc4ac7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

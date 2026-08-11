@@ -1,0 +1,76 @@
+{
+  "id": "e23d5d7d-eed8-4efc-bdda-d316af89684e",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c6173736f636961746976653a3a62696e6172792e6f7065726174696f6e3a6f6e"
+  ],
+  "heading": "\\(associative)::binary.operation:on{X}",
+  "heading_latex": "\\textrm{associative}\\textrm{ }\\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }X}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(associative)::binary.operation:on{X}]\nRefines: x_ * y_\nwhen: X is \\set\nsatisfies:\n. forAll: a, b, c \"in\" X\n  then: (a * b) * c = a * (b * c)\nDocumented:\n. adjective: \"associative\"\nId: \"e23d5d7d-eed8-4efc-bdda-d316af89684e\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "x_ * y_",
+      "inline_latex": "x \\ast y \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }X}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a, b, c \"in\" X",
+              "inline_latex": "a, b, c \\in X",
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "(a * b) * c = a * (b * c)",
+              "inline_latex": "\\left(a \\ast b\\right) \\ast c = a \\ast \\left(b \\ast c\\right)",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"associative\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e23d5d7d-eed8-4efc-bdda-d316af89684e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

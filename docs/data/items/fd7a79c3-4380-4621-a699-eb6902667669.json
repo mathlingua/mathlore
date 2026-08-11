@@ -1,0 +1,93 @@
+{
+  "id": "fd7a79c3-4380-4621-a699-eb6902667669",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e6f722e2f"
+  ],
+  "heading": "P \\.or./ Q",
+  "heading_latex": "P \\text{ or } Q",
+  "body_text": null,
+  "page": null,
+  "source": "[P \\.or./ Q]\nStates:\nwhen: P, Q is \\\\statement\nthat:\n. anyOf:\n  . P\n  . Q\nDocumented:\n. written: \"P+? \\text{ or } Q+?\"\n. description: \"The disjunction of $P$ and $Q$. The statement $P \\text{ or } Q$\n                holds when at least one of $P$ and $Q$ holds. As is standard in\n                mathematics, the *or* is inclusive: it also holds when both do.\"\nId: \"fd7a79c3-4380-4621-a699-eb6902667669\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "P, Q is \\\\statement",
+      "inline_latex": "P, Q \\textrm{ is } \\textrm{statement}",
+      "arguments": []
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "anyOf",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "P",
+                  "latex": "P"
+                },
+                {
+                  "kind": "formulation",
+                  "text": "Q",
+                  "latex": "Q"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"P+? \\text{ or } Q+?\"",
+              "inline_latex": "P \\text{ or } Q",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fd7a79c3-4380-4621-a699-eb6902667669\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "7435ef90-380d-4429-a369-37d652479b85",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Gathering the equivalence classes into a single set forms the *quotient*\nof $X$ by $R$. Passing to the quotient is the standard way of turning a\nrelation of sameness into genuine equality, and it is the tool used next\nto build the integers from the naturals."
+  },
+  "source": "Text: \"Gathering the equivalence classes into a single set forms the *quotient*\n       of $X$ by $R$. Passing to the quotient is the standard way of turning a\n       relation of sameness into genuine equality, and it is the tool used next\n       to build the integers from the naturals.\"\nId: \"7435ef90-380d-4429-a369-37d652479b85\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Gathering the equivalence classes into a single set forms the *quotient*\n       of $X$ by $R$. Passing to the quotient is the standard way of turning a\n       relation of sameness into genuine equality, and it is the tool used next\n       to build the integers from the naturals.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7435ef90-380d-4429-a369-37d652479b85\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

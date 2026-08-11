@@ -1,0 +1,27 @@
+{
+  "id": "5bc745b6-657d-446f-b5f0-cae8c199112a",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Groups"
+  },
+  "source": "SectionTitle: \"Groups\"\nId: \"5bc745b6-657d-446f-b5f0-cae8c199112a\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Groups\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5bc745b6-657d-446f-b5f0-cae8c199112a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "fee7d2ca-5ebc-48a6-8eed-06d623b5520f",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c6d6f6e6f69642e656c656d656e743a6f66"
+  ],
+  "heading": "\\monoid.element:of{M}",
+  "heading_latex": "\\textrm{element of monoid }M",
+  "body_text": null,
+  "page": null,
+  "source": "[\\monoid.element:of{M}]\nDefines: x\nwhen: M is \\monoid\nmeans: x is \\semigroup.element:of{M}\nDocumented:\n. called: \"element of monoid $M?$\"\nId: \"fee7d2ca-5ebc-48a6-8eed-06d623b5520f\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "x",
+      "inline_latex": "x",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "M is \\monoid",
+      "inline_latex": "M \\textrm{ is } \\htmlData{mlg-ref=5c6d6f6e6f6964}{\\textrm{monoid}}",
+      "arguments": []
+    },
+    {
+      "label": "means",
+      "inline_argument": "x is \\semigroup.element:of{M}",
+      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c73656d6967726f75702e656c656d656e743a6f66}{\\textrm{element of semigroup }M}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"element of monoid $M?$\"",
+              "inline_latex": "\\textrm{element of monoid }M",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fee7d2ca-5ebc-48a6-8eed-06d623b5520f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

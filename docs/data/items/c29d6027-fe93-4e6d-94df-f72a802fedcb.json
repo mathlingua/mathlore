@@ -1,0 +1,27 @@
+{
+  "id": "c29d6027-fe93-4e6d-94df-f72a802fedcb",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation records how the elements of a set stand to one another.\nFormally it is nothing more than a set of ordered pairs -- a subset of\nthe Cartesian square -- but this simple idea is remarkably powerful. This\nchapter treats relations in general and then singles out the *equivalence\nrelations*, whose classes partition a set and let one pass to a quotient.\nThe construction of the integers in the next chapter rests entirely on\nthis machinery."
+  },
+  "source": "Text: \"A relation records how the elements of a set stand to one another.\n       Formally it is nothing more than a set of ordered pairs -- a subset of\n       the Cartesian square -- but this simple idea is remarkably powerful. This\n       chapter treats relations in general and then singles out the *equivalence\n       relations*, whose classes partition a set and let one pass to a quotient.\n       The construction of the integers in the next chapter rests entirely on\n       this machinery.\"\nId: \"c29d6027-fe93-4e6d-94df-f72a802fedcb\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A relation records how the elements of a set stand to one another.\n       Formally it is nothing more than a set of ordered pairs -- a subset of\n       the Cartesian square -- but this simple idea is remarkably powerful. This\n       chapter treats relations in general and then singles out the *equivalence\n       relations*, whose classes partition a set and let one pass to a quotient.\n       The construction of the integers in the next chapter rests entirely on\n       this machinery.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c29d6027-fe93-4e6d-94df-f72a802fedcb\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}
