@@ -11,7 +11,7 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\semigroup.element:of{S ::= (X, *)}]\nDefines: x\nwhen: S is \\semigroup\nmeans: x is \\magma.element:of{S}\nDocumented:\n. called: \"element of semigroup $S?$\"\nId: \"5ce95378-5760-4728-b0d2-334848109a32\"",
+  "source": "[\\semigroup.element:of{S ::= (X, *)}]\nDefines: x\nwhen: S is \\semigroup\nextends: x is \\magma.element:of{S}\nDocumented:\n. called: \"element of semigroup $S?$\"\nId: \"5ce95378-5760-4728-b0d2-334848109a32\"",
   "sections": [
     {
       "label": "Defines",
@@ -26,7 +26,7 @@
       "arguments": []
     },
     {
-      "label": "means",
+      "label": "extends",
       "inline_argument": "x is \\magma.element:of{S}",
       "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d612e656c656d656e743a6f66}{\\textrm{element of magma }S}",
       "arguments": []

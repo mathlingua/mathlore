@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{equivalence relation on }X",
   "body_text": null,
   "page": null,
-  "source": "[\\equivalence.relation:on{X}]\nDefines: R\nwhen: X is \\set\nmeans: R is \\relation:on{X}\nsatisfies:\n. [reflexive]\n  forAll: x \"in\" X\n  then: R(x, x)\n. [symmetric]\n  forAll: x, y \"in\" R\n  where: R(x, y)\n  then: R(y, x)\n. [transitive]\n  forAll: x, y, z \"in\" R\n  where:\n  . R(x, y)\n  . R(y, z)\n  then: R(x, z)\nDocumented:\n. called: \"equivalence relation on $X?$\"\n. description: \"An equivalence relation on $X$ is a relation that is reflexive\n                ($x \\mathrel{R} x$), symmetric (if $x \\mathrel{R} y$ then $y\n                \\mathrel{R} x$), and transitive (if $x \\mathrel{R} y$ and $y\n                \\mathrel{R} z$ then $x \\mathrel{R} z$). Such a relation sorts the\n                elements of $X$ into classes of mutually related elements.\"\nId: \"2394a97b-5960-4919-98db-b95ec3870343\"",
+  "source": "[\\equivalence.relation:on{X}]\nDefines: R\nwhen: X is \\set\nextends: R is \\relation:on{X}\nsatisfies:\n. [reflexive]\n  forAll: x \"in\" X\n  then: R(x, x)\n. [symmetric]\n  forAll: x, y \"in\" R\n  where: R(x, y)\n  then: R(y, x)\n. [transitive]\n  forAll: x, y, z \"in\" R\n  where:\n  . R(x, y)\n  . R(y, z)\n  then: R(x, z)\nDocumented:\n. called: \"equivalence relation on $X?$\"\n. description: \"An equivalence relation on $X$ is a relation that is reflexive\n                ($x \\mathrel{R} x$), symmetric (if $x \\mathrel{R} y$ then $y\n                \\mathrel{R} x$), and transitive (if $x \\mathrel{R} y$ and $y\n                \\mathrel{R} z$ then $x \\mathrel{R} z$). Such a relation sorts the\n                elements of $X$ into classes of mutually related elements.\"\nId: \"2394a97b-5960-4919-98db-b95ec3870343\"",
   "sections": [
     {
       "label": "Defines",
@@ -23,7 +23,7 @@
       "arguments": []
     },
     {
-      "label": "means",
+      "label": "extends",
       "inline_argument": "R is \\relation:on{X}",
       "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
       "arguments": []

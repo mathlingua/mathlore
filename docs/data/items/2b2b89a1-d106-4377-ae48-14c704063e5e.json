@@ -8,7 +8,7 @@
   "heading_latex": "A\\textrm{ is a subset of }B\\quad\\htmlClass{mlg-title-written}{A \\subseteq B}",
   "body_text": null,
   "page": null,
-  "source": "[A \\:set.theoretic.subset:/ B]\nDefines: A\nwhen: B is \\set\nmeans: A is \\set\nsatisfies:\n. forAll: X \"in\" A\n  then: X \"in\"? B\nRequires:\n. capability: x_ \"in\" A :-> x_ \"in\" B\nDocumented:\n. called: \"$A?$ is a subset of $B?$\"\n. written: \"A? \\subseteq B?\"\n. description: \"$A \\subseteq B$ holds when every element of $A$ is also an\n                element of $B$. By extensionality, two sets are equal exactly\n                when each is a subset of the other.\"\nId: \"2b2b89a1-d106-4377-ae48-14c704063e5e\"",
+  "source": "[A \\:set.theoretic.subset:/ B]\nDefines: A\nwhen: B is \\set\nextends: A is \\set\nsatisfies:\n. forAll: X \"in\" A\n  then: X \"in\"? B\nRequires:\n. capability: x_ \"in\" A :-> x_ \"in\" B\nDocumented:\n. called: \"$A?$ is a subset of $B?$\"\n. written: \"A? \\subseteq B?\"\n. description: \"$A \\subseteq B$ holds when every element of $A$ is also an\n                element of $B$. By extensionality, two sets are equal exactly\n                when each is a subset of the other.\"\nId: \"2b2b89a1-d106-4377-ae48-14c704063e5e\"",
   "sections": [
     {
       "label": "Defines",
@@ -23,7 +23,7 @@
       "arguments": []
     },
     {
-      "label": "means",
+      "label": "extends",
       "inline_argument": "A is \\set",
       "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
       "arguments": []

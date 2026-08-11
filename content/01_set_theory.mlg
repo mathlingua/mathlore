@@ -218,7 +218,7 @@ Id: "7bfbdad3-bf51-4e2d-ae06-8dd2fa3a220d"
 [A \:set.theoretic.subset:/ B]
 Defines: A
 when: B is \set
-means: A is \set
+extends: A is \set
 satisfies:
 . forAll: X "in" A
   then: X "in"? B
@@ -241,7 +241,7 @@ Id: "c27fbf42-311e-4efd-b4c8-2da3ad6370a7"
 [A \:set.theoretic.proper.subset:/ B]
 Defines: A
 when: B is \set
-means: A \:set.theoretic.subset:/ B
+extends: A \:set.theoretic.subset:/ B
 satisfies: A != B
 Documented:
 . written: "A? \subsetneq B?"

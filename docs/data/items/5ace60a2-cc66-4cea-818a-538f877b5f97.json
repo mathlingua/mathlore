@@ -9,7 +9,7 @@
   "heading_latex": "\\textrm{relation on }X",
   "body_text": null,
   "page": null,
-  "source": "[\\relation:?on{X}]\nDefines: R\nwhen: X is \\set\nmeans: R \\:set.theoretic.subset:/ (.X \\.set.cross./ X.)\nEnables:\n. capability: R(x_, y_) :=> (x_, y_) \"in\"? R\n  written: \"x_? \\: R \\: y_?\"\nDocumented:\n. called: \"relation on $X?$\"\n. description: \"A relation on a set $X$ is a subset $R$ of $X \\times X$. One\n                writes $x \\mathrel{R} y$ to mean that the pair $(x, y)$ belongs\n                to $R$, so a relation is just a precise record of which ordered\n                pairs are related.\"\nId: \"5ace60a2-cc66-4cea-818a-538f877b5f97\"",
+  "source": "[\\relation:?on{X}]\nDefines: R\nwhen: X is \\set\nextends: R \\:set.theoretic.subset:/ (.X \\.set.cross./ X.)\nEnables:\n. capability: R(x_, y_) :=> (x_, y_) \"in\"? R\n  written: \"x_? \\: R \\: y_?\"\nDocumented:\n. called: \"relation on $X?$\"\n. description: \"A relation on a set $X$ is a subset $R$ of $X \\times X$. One\n                writes $x \\mathrel{R} y$ to mean that the pair $(x, y)$ belongs\n                to $R$, so a relation is just a precise record of which ordered\n                pairs are related.\"\nId: \"5ace60a2-cc66-4cea-818a-538f877b5f97\"",
   "sections": [
     {
       "label": "Defines",
@@ -24,7 +24,7 @@
       "arguments": []
     },
     {
-      "label": "means",
+      "label": "extends",
       "inline_argument": "R \\:set.theoretic.subset:/ (.X \\.set.cross./ X.)",
       "inline_latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{R \\subseteq \\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{X \\times X}}",
       "arguments": []

@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{group}",
   "body_text": null,
   "page": null,
-  "source": "[\\group]\nDefines: G ::= (X, *, e)\nmeans: G is \\monoid via (X, *, e)\nsatisfies:\n. forAll: x \"in\" G\n  then:\n  . exists: y \"in\" G\n    suchThat:\n    . x * y = e\n    . y * x = e\nEnables:\n. capability: x_ \"in\" G :-> x_ is \\group.element:of{G}\n  written: \"x_? \\in G?\"\nDocumented:\n. called: \"group\"\n. description: \"A group is a monoid in which every element $x$ has an inverse\n                $y$, so that $x * y = e = y * x$. Equivalently it is an\n                associative structure with identity in which every element is\n                invertible; this makes it a quasigroup as well as a monoid.\"\nId: \"e4d7371d-29bd-431f-ab09-e114fe89e5cf\"",
+  "source": "[\\group]\nDefines: G ::= (X, *, e)\nextends: G is \\monoid via (X, *, e)\nsatisfies:\n. forAll: x \"in\" G\n  then:\n  . exists: y \"in\" G\n    suchThat:\n    . x * y = e\n    . y * x = e\nEnables:\n. capability: x_ \"in\" G :-> x_ is \\group.element:of{G}\n  written: \"x_? \\in G?\"\nDocumented:\n. called: \"group\"\n. description: \"A group is a monoid in which every element $x$ has an inverse\n                $y$, so that $x * y = e = y * x$. Equivalently it is an\n                associative structure with identity in which every element is\n                invertible; this makes it a quasigroup as well as a monoid.\"\nId: \"e4d7371d-29bd-431f-ab09-e114fe89e5cf\"",
   "sections": [
     {
       "label": "Defines",
@@ -17,7 +17,7 @@
       "arguments": []
     },
     {
-      "label": "means",
+      "label": "extends",
       "inline_argument": "G is \\monoid via (X, *, e)",
       "inline_latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c6d6f6e6f6964}{\\textrm{monoid}} \\textrm{ via } \\left(X, \\ast, e\\right)",
       "arguments": []

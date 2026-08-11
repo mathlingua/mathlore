@@ -8,7 +8,7 @@
   "heading_latex": "A \\subsetneq B",
   "body_text": null,
   "page": null,
-  "source": "[A \\:set.theoretic.proper.subset:/ B]\nDefines: A\nwhen: B is \\set\nmeans: A \\:set.theoretic.subset:/ B\nsatisfies: A != B\nDocumented:\n. written: \"A? \\subsetneq B?\"\n. description: \"$A \\subsetneq B$ holds when $A$ is a subset of $B$ but is not\n                equal to $B$; that is, $B$ has at least one element not in $A$.\"\nId: \"7d070f37-61a5-4c62-b8da-4831c222e4b2\"",
+  "source": "[A \\:set.theoretic.proper.subset:/ B]\nDefines: A\nwhen: B is \\set\nextends: A \\:set.theoretic.subset:/ B\nsatisfies: A != B\nDocumented:\n. written: \"A? \\subsetneq B?\"\n. description: \"$A \\subsetneq B$ holds when $A$ is a subset of $B$ but is not\n                equal to $B$; that is, $B$ has at least one element not in $A$.\"\nId: \"7d070f37-61a5-4c62-b8da-4831c222e4b2\"",
   "sections": [
     {
       "label": "Defines",
@@ -23,7 +23,7 @@
       "arguments": []
     },
     {
-      "label": "means",
+      "label": "extends",
       "inline_argument": "A \\:set.theoretic.subset:/ B",
       "inline_latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{A \\subseteq B}",
       "arguments": []

@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{finite}\\textrm{ }\\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
   "body_text": null,
   "page": null,
-  "source": "[\\(finite)::group]\nRefines: G\nimplicitly:\nmeans: G is \\(finite)::monoid\nDocumented:\n. adjective: \"finite\"\nId: \"28d2a1c1-89a5-4163-93e3-fbc21c97ec9a\"",
+  "source": "[\\(finite)::group]\nRefines: G\nimplicitly:\nextends: G is \\(finite)::monoid\nDocumented:\n. adjective: \"finite\"\nId: \"28d2a1c1-89a5-4163-93e3-fbc21c97ec9a\"",
   "sections": [
     {
       "label": "Refines",
@@ -23,7 +23,7 @@
       "arguments": []
     },
     {
-      "label": "means",
+      "label": "extends",
       "inline_argument": "G is \\(finite)::monoid",
       "inline_latex": "G \\textrm{ is } \\textrm{finite}\\textrm{ }\\htmlData{mlg-ref=5c6d6f6e6f6964}{\\textrm{monoid}}",
       "arguments": []

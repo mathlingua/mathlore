@@ -12,7 +12,7 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[H ::= (X', *', e') \\:subgroup:/ G ::= (X, *, e)]\nDefines: H ::= (X', *', e')\nwhen: G is \\group\nmeans: H is \\set via X'\ndeclares:\n. X' \\:(nonempty)::set.theoretic.subset:/ X\n. *' is \\binary.operation:on{X'}\n. e' \"in\" X'\nsatisfies:\n. (.*' := \\restriction:of{`*`}:on{X' \\.set.cross./ X'}.)[:1:]\n. have:\n  . forAll: x, y \"in\" H\n    then:\n    . x *' y \"in\" H\n    . x *' y = x * y\n  . forAll: x \"in\" H\n    then: x.inv \"in\" H\n  asserting: H is \\group\nDocumented:\n. called: \"$H?$ is a subgroup of $G?$\"\n. written: \"H? \\leq G?\"\n. description: \"A subgroup $H \\leq G$ is a nonempty subset of $G$ that is closed\n                under the group operation and under taking inverses, and whose\n                operation is the restriction of that of $G$. Under these\n                conditions $H$ is again a group in its own right.\"\nJustification:\n. [1]\n  have: *' := \\restriction:of{`*`}:on{X' \\.set.cross./ X'}\n  asserting: (.X' \\.set.cross./ X'.) \\:set.theoretic.subset?:/ (.G \\.set.cross./ G.)\n  because: X' \\:set.theoretic.subset?:/ X\n  by: \\cross.of.subset.is.subset.of.cross#given{X := X; Y := X'}\nId: \"d8fe82d3-6f50-4711-ad64-76d4eb0615ff\"",
+  "source": "[H ::= (X', *', e') \\:subgroup:/ G ::= (X, *, e)]\nDefines: H ::= (X', *', e')\nwhen: G is \\group\nextends: H is \\set via X'\ndeclares:\n. X' \\:(nonempty)::set.theoretic.subset:/ X\n. *' is \\binary.operation:on{X'}\n. e' \"in\" X'\nsatisfies:\n. (.*' := \\restriction:of{`*`}:on{X' \\.set.cross./ X'}.)[:1:]\n. have:\n  . forAll: x, y \"in\" H\n    then:\n    . x *' y \"in\" H\n    . x *' y = x * y\n  . forAll: x \"in\" H\n    then: x.inv \"in\" H\n  asserting: H is \\group\nDocumented:\n. called: \"$H?$ is a subgroup of $G?$\"\n. written: \"H? \\leq G?\"\n. description: \"A subgroup $H \\leq G$ is a nonempty subset of $G$ that is closed\n                under the group operation and under taking inverses, and whose\n                operation is the restriction of that of $G$. Under these\n                conditions $H$ is again a group in its own right.\"\nJustification:\n. [1]\n  have: *' := \\restriction:of{`*`}:on{X' \\.set.cross./ X'}\n  asserting: (.X' \\.set.cross./ X'.) \\:set.theoretic.subset?:/ (.G \\.set.cross./ G.)\n  because: X' \\:set.theoretic.subset?:/ X\n  by: \\cross.of.subset.is.subset.of.cross#given{X := X; Y := X'}\nId: \"d8fe82d3-6f50-4711-ad64-76d4eb0615ff\"",
   "sections": [
     {
       "label": "Defines",
@@ -27,7 +27,7 @@
       "arguments": []
     },
     {
-      "label": "means",
+      "label": "extends",
       "inline_argument": "H is \\set via X'",
       "inline_latex": "H \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}} \\textrm{ via } X'",
       "arguments": []

@@ -24,7 +24,7 @@ Id: "b6b6f241-917e-4090-8269-5060f249b80c"
 
 [\magma]
 Defines: M ::= (X, *)
-means: M is \set via X
+extends: M is \set via X
 declares:
 . * is \binary.operation:on{M}
 Enables:
@@ -42,7 +42,7 @@ Id: "91ffd40c-72fa-4a93-83f3-80ceb1ae124a"
 [\magma.element:of{M ::= (X, *)}]
 Defines: x
 when: M is \magma
-means: x "in" X
+extends: x "in" X
 Enables:
 . capability: x_ [*] y_ :=> x_ |M.*| y_
   written: "x_? *? y_?"
@@ -63,7 +63,7 @@ Id: "55b0749b-4e2f-4112-a5be-c20a9879d6a3"
 
 [\quasigroup]
 Defines: Q ::= (X, *)
-means: Q is \magma via (X, *)
+extends: Q is \magma via (X, *)
 satisfies:
 . forAll: a, b "in" Q
   then:
@@ -86,7 +86,7 @@ Id: "49582242-a047-48ae-aced-77654d9a48aa"
 [\quasigroup.element:of{Q ::= (X, *)}]
 Defines: x
 when: Q is \quasigroup
-means: x is \magma.element:of{Q}
+extends: x is \magma.element:of{Q}
 Documented:
 . called: "element of quasigroup $Q?$"
 Id: "2f5a9f56-286c-4703-a953-316fa32e57dc"
@@ -105,7 +105,7 @@ Id: "e077a5db-c372-4759-a880-d74270032560"
 
 [\semigroup]
 Defines: S ::= (X, *)
-means: S is \magma via (X, *)
+extends: S is \magma via (X, *)
 declares: * is \(associative)::binary.operation:on{X}
 Enables:
 . capability: x_ "in" S :-> x_ is \semigroup.element:of{S}
@@ -122,7 +122,7 @@ Id: "6ec2faf5-7d2c-4918-a559-6415b94f2b1f"
 [\semigroup.element:of{S ::= (X, *)}]
 Defines: x
 when: S is \semigroup
-means: x is \magma.element:of{S}
+extends: x is \magma.element:of{S}
 Documented:
 . called: "element of semigroup $S?$"
 Id: "5ce95378-5760-4728-b0d2-334848109a32"
@@ -137,7 +137,7 @@ Id: "c647adb5-0f98-4f7d-ae6a-8ff2229e3437"
 
 [\monoid]
 Defines: M ::= (X, *, e)
-means: M is \semigroup via (X, *)
+extends: M is \semigroup via (X, *)
 declares: e "in" X
 satisfies:
 . forAll: x "in" M
@@ -159,7 +159,7 @@ Id: "034bf6ff-ba6e-4fac-b47e-65cc85d15642"
 [\monoid.element:of{M}]
 Defines: x
 when: M is \monoid
-means: x is \semigroup.element:of{M}
+extends: x is \semigroup.element:of{M}
 Documented:
 . called: "element of monoid $M?$"
 Id: "fee7d2ca-5ebc-48a6-8eed-06d623b5520f"
@@ -178,7 +178,7 @@ Id: "5fb80940-d8de-44bf-8117-eeee203d4755"
 
 [\group]
 Defines: G ::= (X, *, e)
-means: G is \monoid via (X, *, e)
+extends: G is \monoid via (X, *, e)
 satisfies:
 . forAll: x "in" G
   then:
@@ -208,7 +208,7 @@ Id: "6c628805-5df1-4ad5-b2c3-23bf7dad5acc"
 [\(finite)::group]
 Refines: G
 implicitly:
-means: G is \(finite)::monoid
+extends: G is \(finite)::monoid
 Documented:
 . adjective: "finite"
 Id: "28d2a1c1-89a5-4163-93e3-fbc21c97ec9a"
@@ -223,7 +223,7 @@ Id: "bb323028-2831-4d67-b784-b0918774ab3a"
 [\group.element:of{G}]
 Defines: x
 when: G is \group
-means: x is \monoid.element:of{G}
+extends: x is \monoid.element:of{G}
 Enables:
 . capability: x.inv :=> \group.inverse:of{x}:in{G}
   written: "x+?^{-1}"
@@ -306,7 +306,7 @@ Id: "91933534-107f-44fe-9ad6-4829664f8cd6"
 [H ::= (X', *', e') \:subgroup:/ G ::= (X, *, e)]
 Defines: H ::= (X', *', e')
 when: G is \group
-means: H is \set via X'
+extends: H is \set via X'
 declares:
 . X' \:(nonempty)::set.theoretic.subset:/ X
 . *' is \binary.operation:on{X'}

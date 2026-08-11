@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{element of group }G",
   "body_text": null,
   "page": null,
-  "source": "[\\group.element:of{G}]\nDefines: x\nwhen: G is \\group\nmeans: x is \\monoid.element:of{G}\nEnables:\n. capability: x.inv :=> \\group.inverse:of{x}:in{G}\n  written: \"x+?^{-1}\"\nDocumented:\n. called: \"element of group $G?$\"\n. description: \"An element of a group is a member of its underlying set. Because\n                the ambient structure is a group, each such element $x$ has a\n                well-defined inverse $x^{-1}$, accessible through its inverse\n                operation.\"\nId: \"858abdda-c416-4a4e-a0bf-27ecf84cf008\"",
+  "source": "[\\group.element:of{G}]\nDefines: x\nwhen: G is \\group\nextends: x is \\monoid.element:of{G}\nEnables:\n. capability: x.inv :=> \\group.inverse:of{x}:in{G}\n  written: \"x+?^{-1}\"\nDocumented:\n. called: \"element of group $G?$\"\n. description: \"An element of a group is a member of its underlying set. Because\n                the ambient structure is a group, each such element $x$ has a\n                well-defined inverse $x^{-1}$, accessible through its inverse\n                operation.\"\nId: \"858abdda-c416-4a4e-a0bf-27ecf84cf008\"",
   "sections": [
     {
       "label": "Defines",
@@ -23,7 +23,7 @@
       "arguments": []
     },
     {
-      "label": "means",
+      "label": "extends",
       "inline_argument": "x is \\monoid.element:of{G}",
       "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c6d6f6e6f69642e656c656d656e743a6f66}{\\textrm{element of monoid }G}",
       "arguments": []

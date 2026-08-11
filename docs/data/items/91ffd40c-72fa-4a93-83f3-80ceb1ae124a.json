@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{magma}",
   "body_text": null,
   "page": null,
-  "source": "[\\magma]\nDefines: M ::= (X, *)\nmeans: M is \\set via X\ndeclares:\n. * is \\binary.operation:on{M}\nEnables:\n. capability: x_ \"in\" M :-> x_ is \\magma.element:of{M}\n  written: \"x_? \\in M?\"\nDocumented:\n. called: \"magma\"\n. description: \"A magma is a set $X$ together with a binary operation $*$ on it,\n                subject to no further axioms. It is the weakest algebraic\n                structure of this chapter, and every later structure is a magma\n                with additional properties.\"\nId: \"91ffd40c-72fa-4a93-83f3-80ceb1ae124a\"",
+  "source": "[\\magma]\nDefines: M ::= (X, *)\nextends: M is \\set via X\ndeclares:\n. * is \\binary.operation:on{M}\nEnables:\n. capability: x_ \"in\" M :-> x_ is \\magma.element:of{M}\n  written: \"x_? \\in M?\"\nDocumented:\n. called: \"magma\"\n. description: \"A magma is a set $X$ together with a binary operation $*$ on it,\n                subject to no further axioms. It is the weakest algebraic\n                structure of this chapter, and every later structure is a magma\n                with additional properties.\"\nId: \"91ffd40c-72fa-4a93-83f3-80ceb1ae124a\"",
   "sections": [
     {
       "label": "Defines",
@@ -17,7 +17,7 @@
       "arguments": []
     },
     {
-      "label": "means",
+      "label": "extends",
       "inline_argument": "M is \\set via X",
       "inline_latex": "M \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}} \\textrm{ via } X",
       "arguments": []

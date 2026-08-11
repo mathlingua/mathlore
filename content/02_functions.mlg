@@ -43,7 +43,7 @@ Id: "dd492fce-0357-4b6a-810f-40764b5245f9"
 [\binary.operation:on{X}]
 Defines: x_ * y_
 when: X is \set
-means: * is \function:on{X \.set.cross./ X}:to{X}
+extends: * is \function:on{X \.set.cross./ X}:to{X}
 Documented:
 . called: "binary operation on $X?$"
 . description: "A binary operation on $X$ takes two elements of $X$ and returns
