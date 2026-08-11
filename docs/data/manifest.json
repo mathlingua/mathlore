@@ -1,42 +1,42 @@
 {
   "schemaVersion": 1,
-  "title": "testbed",
+  "title": "Mathlore",
   "directories": [],
   "files": [
     {
       "path": "content/00_logic.mlg",
-      "title": null,
+      "title": "Logic",
       "dataPath": "pages/00_logic.json"
     },
     {
       "path": "content/01_set_theory.mlg",
-      "title": null,
+      "title": "Set Theory",
       "dataPath": "pages/01_set_theory.json"
     },
     {
       "path": "content/02_functions.mlg",
-      "title": null,
+      "title": "Functions",
       "dataPath": "pages/02_functions.json"
     },
     {
-      "path": "content/03_algebra.mlg",
-      "title": null,
-      "dataPath": "pages/03_algebra.json"
-    },
-    {
-      "path": "content/04_naturals.mlg",
-      "title": null,
-      "dataPath": "pages/04_naturals.json"
-    },
-    {
       "path": "content/05_relations.mlg",
-      "title": null,
+      "title": "Relations",
       "dataPath": "pages/05_relations.json"
     },
     {
+      "path": "content/04_naturals.mlg",
+      "title": "Naturals",
+      "dataPath": "pages/04_naturals.json"
+    },
+    {
       "path": "content/06_integers.mlg",
-      "title": null,
+      "title": "Integers",
       "dataPath": "pages/06_integers.json"
+    },
+    {
+      "path": "content/03_algebra.mlg",
+      "title": "Algebra",
+      "dataPath": "pages/03_algebra.json"
     }
   ],
   "definitions": {
