@@ -1,0 +1,30 @@
+{
+  "id": "7581a6dc-6d87-4042-96f2-8f9903c64a74",
+  "kind": "Person",
+  "definition_keys": [],
+  "heading": "@royden",
+  "heading_latex": "\\textrm{Royden}",
+  "body_text": "This is a biography.",
+  "page": null,
+  "source": "[@royden]\nPerson: \"Royden\"\nbiography: \"This is a biography.\"\nId: \"7581a6dc-6d87-4042-96f2-8f9903c64a74\"",
+  "sections": [
+    {
+      "label": "Person",
+      "inline_argument": "\"Royden\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "biography",
+      "inline_argument": "\"This is a biography.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7581a6dc-6d87-4042-96f2-8f9903c64a74\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

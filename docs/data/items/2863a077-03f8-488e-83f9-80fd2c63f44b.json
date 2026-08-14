@@ -1,0 +1,36 @@
+{
+  "id": "2863a077-03f8-488e-83f9-80fd2c63f44b",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven: a, b, c, x, y, z is \\natural\nthen: \\matrix:of{a, b, c; x, y, z + z}\nId: \"2863a077-03f8-488e-83f9-80fd2c63f44b\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "a, b, c, x, y, z is \\natural",
+      "inline_latex": "a, b, c, x, y, z \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": "\\matrix:of{a, b, c; x, y, z + z}",
+      "inline_latex": "\\htmlData{mlg-ref=5c6d61747269783a6f66}{\\begin{pmatrix} a&b&c\\\\x&y&z + z\\\\ \\end{pmatrix}}",
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2863a077-03f8-488e-83f9-80fd2c63f44b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

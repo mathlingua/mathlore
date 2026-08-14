@@ -1,0 +1,30 @@
+{
+  "id": "34c5b970-9bde-4f01-8ab2-22a702f6fe15",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\nthen: \\integral[u_, v_ is \\natural]{u_ + v_}:d{u_} = 0\nId: \"34c5b970-9bde-4f01-8ab2-22a702f6fe15\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": "\\integral[u_, v_ is \\natural]{u_ + v_}:d{u_} = 0",
+      "inline_latex": "\\htmlData{mlg-ref=5c696e74656772616c7b5f2832297d3a647b23317d}{\\displaystyle \\int u + v \\: d u} = 0",
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"34c5b970-9bde-4f01-8ab2-22a702f6fe15\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

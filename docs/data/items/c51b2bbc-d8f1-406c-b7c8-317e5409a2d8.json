@@ -6,13 +6,24 @@
   "heading_latex": null,
   "body_text": null,
   "page": null,
-  "source": "Writing: phi :~> \\varphi\nId: \"c51b2bbc-d8f1-406c-b7c8-317e5409a2d8\"",
+  "source": "Writing:\n. \"phi :~> \\varphi\"\n. \"Xb :~> \\mathbb{X}\"\nId: \"c51b2bbc-d8f1-406c-b7c8-317e5409a2d8\"",
   "sections": [
     {
       "label": "Writing",
-      "inline_argument": "phi :~> \\varphi",
+      "inline_argument": null,
       "inline_latex": null,
-      "arguments": []
+      "arguments": [
+        {
+          "kind": "text",
+          "text": "phi :~> \\varphi",
+          "latex": "\\textrm{phi} \\mathrel{:\\!\\rightsquigarrow} \\varphi"
+        },
+        {
+          "kind": "text",
+          "text": "Xb :~> \\mathbb{X}",
+          "latex": "\\textrm{Xb} \\mathrel{:\\!\\rightsquigarrow} \\mathbb{X}"
+        }
+      ]
     },
     {
       "label": "Id",

@@ -1,0 +1,45 @@
+{
+  "id": "562657db-4eb1-426f-8042-91541b61f45c",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c6d6174726978"
+  ],
+  "heading": "\\matrix",
+  "heading_latex": "\\textrm{matrix}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\matrix]\nDefines: X\nDocumented:\n. called: \"matrix\"\nId: \"562657db-4eb1-426f-8042-91541b61f45c\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "X",
+      "inline_latex": "X",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"matrix\"",
+              "inline_latex": "\\textrm{matrix}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"562657db-4eb1-426f-8042-91541b61f45c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}
