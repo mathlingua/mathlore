@@ -57,3 +57,85 @@ Documented:
                 the difference $n - m$, so $\mathbb{Z}$ contains the naturals
                 together with their negatives."
 Id: "2879813a-8202-4d27-b248-83687c132e84"
+
+
+[\natural.seqence]
+Defines: Xb ::= x(i_)
+extends: x is \function:on{\naturals.set}:to{\naturals.set}
+Documented:
+. writing: x(i)
+  as: "x?_{i?}"
+. writing: x(i_)
+  as: "\left \{ x?_{i_?} \right \}_{i_?=1}^\infty"
+. called: "natural sequence"
+Writing:
+. "Xb :~> Y"
+Id: "62d63f10-f723-4744-bef7-9c47d821dcfc"
+
+
+Theorem:
+given: x(i_) is \natural.seqence
+then:
+. forAll: i is \natural
+  then: x(i) is? \natural
+References:
+. "$royden.real.analysis"
+. "$royden.real.analysis:page{4}"
+Id: "fb5d306e-e1ed-4970-ba0e-03884d28ae7b"
+
+
+[$royden.real.analysis]
+Resource:
+. title: "Real Analysis"
+. author: "Royden"
+. publisher: "someone"
+. type: "book"
+. offset: "3"
+. url: "https://mezbanhabibi.ir/wp-content/uploads/2020/01/Royden_Real_Analysis_Solutions-www.mezbanhabibi.ir_.pdf"
+Id: "32dd9150-8f43-46ee-aa6c-97809fc9ea8d"
+
+
+[@royden]
+Person: "Royden"
+biography: "This is a biography."
+Id: "7581a6dc-6d87-4042-96f2-8f9903c64a74"
+
+
+[\integral{f(x_, y_)}:d{f.x_}]
+Declares: g(x_, y_) is \function
+when: f is \function:on{\naturals.set}:to{\naturals.set}
+Documented:
+. written: "\displaystyle \int f? \: d x_?"
+Id: "a687abaa-b0ac-4797-a8f2-04efe4ec6ee1"
+
+
+Theorem:
+then: \integral[u_, v_ is \natural]{u_ + v_}:d{u_} = 0
+Id: "34c5b970-9bde-4f01-8ab2-22a702f6fe15"
+
+
+[\matrix]
+Defines: X
+Documented:
+. called: "matrix"
+Id: "562657db-4eb1-426f-8042-91541b61f45c"
+
+
+[\matrix:of{x[(i_,j_):=(1,1)...(m,n)]}]
+Declares: X is \matrix
+when: x[..., ...] is \natural
+Documented:
+. written: "\begin{pmatrix} x?{{...&...}...\\} \end{pmatrix}"
+Id: "27a745d4-dab8-4985-bd4d-73befa8a9314"
+
+
+Theorem:
+given: a, b, c, x, y, z is \natural
+then: \matrix:of{a, b, c; x, y, z + z}
+Id: "2863a077-03f8-488e-83f9-80fd2c63f44b"
+
+
+Specify:
+. positiveInt:
+  is: \natural
+Id: "5eb84a17-0cb9-4118-8a35-1a161864f553"

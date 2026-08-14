@@ -107,6 +107,7 @@ Requires:
 Enables:
 . capability: x_++ :=> \natural.succ(x_)
 . capability: x_ + y_ :=> x_ \.natural.+./ y_
+. capability: x_ +_+--+*' y_ :=> x_ \.natural.+./ y_
 Documented:
 . called: "natural"
 . description: "A natural number is either $0$ or the successor of a natural

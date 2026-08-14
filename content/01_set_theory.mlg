@@ -347,7 +347,9 @@ Documented:
 Id: "a0f45971-fcc1-419b-bcd5-f4c4717bb37f"
 
 
-Writing: phi :~> \varphi
+Writing:
+. "phi :~> \varphi"
+. "Xb :~> \mathbb{X}"
 Id: "c51b2bbc-d8f1-406c-b7c8-317e5409a2d8"
 
 
