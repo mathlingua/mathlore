@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{abstract naturals}",
   "body_text": null,
   "page": null,
-  "source": "[\\abstract.naturals]\nDefines: N ::= (X, 0, succ)\ndeclares:\n. X is \\set\n. 0 \"in\" X\n. succ is (? \"in\" X) -> (? \"in\" X)\nsatisfies:\n. 0 \"in\" X\n. let: n \"in\" X\n  then: succ(n) \"in\" X\n. not:\n  . exists: n \"in\" X\n    suchThat: succ(n) = 0\n. let: n, m \"in\" X\n  then:\n  . if: succ(n) = succ(m)\n    then: n = m\nDocumented:\n. called: \"abstract naturals\"\n. description: \"An abstract natural number system is a set $X$ with an element\n                $0$ and a successor map, satisfying the Peano axioms: $0$ is not\n                a successor, distinct numbers have distinct successors, and $X$\n                is exactly what is reached from $0$ by successors. Any two such\n                systems are isomorphic.\"\nId: \"7d1762ec-ee47-4d7d-86b9-cc0150b06bd0\"",
+  "source": "[\\abstract.naturals]\nDefines: N ::= (X, 0, succ)\nmeans:\n. X is \\set\n. 0 \"in\" X\n. succ is (? \"in\" X) -> (? \"in\" X)\nsatisfies:\n. 0 \"in\" X\n. let: n \"in\" X\n  then: succ(n) \"in\" X\n. not:\n  . exists: n \"in\" X\n    suchThat: succ(n) = 0\n. let: n, m \"in\" X\n  then:\n  . if: succ(n) = succ(m)\n    then: n = m\nDocumented:\n. called: \"abstract naturals\"\n. description: \"An abstract natural number system is a set $X$ with an element\n                $0$ and a successor map, satisfying the Peano axioms: $0$ is not\n                a successor, distinct numbers have distinct successors, and $X$\n                is exactly what is reached from $0$ by successors. Any two such\n                systems are isomorphic.\"\nId: \"7d1762ec-ee47-4d7d-86b9-cc0150b06bd0\"",
   "sections": [
     {
       "label": "Defines",

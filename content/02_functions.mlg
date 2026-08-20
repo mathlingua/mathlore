@@ -14,7 +14,7 @@ Id: "37f9c062-435f-4310-b511-2d2d59281683"
 [\function:?on{A}:?to{B}]
 Defines: f(x__) ::= y_
 when: A, B is \set
-declares:
+means:
 . x__ "in" A
 . y_ "in" B
 satisfies:
@@ -41,9 +41,8 @@ Id: "dd492fce-0357-4b6a-810f-40764b5245f9"
 
 
 [\binary.operation:on{X}]
-Defines: x_ * y_
+Defines: x_ * y_ is \function:on{X \.set.cross./ X}:to{X}
 when: X is \set
-extends: * is \function:on{X \.set.cross./ X}:to{X}
 Documented:
 . called: "binary operation on $X?$"
 . description: "A binary operation on $X$ takes two elements of $X$ and returns
