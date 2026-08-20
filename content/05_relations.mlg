@@ -13,9 +13,8 @@ Id: "c29d6027-fe93-4e6d-94df-f72a802fedcb"
 
 
 [\relation:?on{X}]
-Defines: R
+Defines: R \:set.theoretic.subset:/ (.X \.set.cross./ X.)
 when: X is \set
-extends: R \:set.theoretic.subset:/ (.X \.set.cross./ X.)
 Enables:
 . capability: R(x_, y_) :=> (x_, y_) "in"? R
   written: "x_? \: R \: y_?"
@@ -38,9 +37,8 @@ Id: "b906ce0b-34d4-4b24-b168-d6a8d05efc92"
 
 
 [\equivalence.relation:on{X}]
-Defines: R
+Defines: R is \relation:on{X}
 when: X is \set
-extends: R is \relation:on{X}
 satisfies:
 . [reflexive]
   forAll: x "in" X
