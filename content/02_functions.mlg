@@ -12,7 +12,7 @@ Id: "37f9c062-435f-4310-b511-2d2d59281683"
 
 
 [\function:?on{A}:?to{B}]
-Defines: f(x__) ::= y_
+Declares: f(x__) ::= y_
 when: A, B is \set
 means:
 . x__ "in" A
@@ -41,7 +41,7 @@ Id: "dd492fce-0357-4b6a-810f-40764b5245f9"
 
 
 [\binary.operation:on{X}]
-Defines: x_ * y_ is \function:on{X \.set.cross./ X}:to{X}
+Declares: x_ * y_ is \function:on{X \.set.cross./ X}:to{X}
 when: X is \set
 Documented:
 . called: "binary operation on $X?$"
@@ -88,7 +88,7 @@ Id: "fc9215b0-5d36-4ee6-b3d6-e0007b8e39f5"
 
 
 [\restriction:of{g(x__)}:on{X}]
-Declares: f is \function:on{X}:to{B}
+Defines: f is \function:on{X}:to{B}
 when:
 . g is \function:on{A?}:to{B?}
 . X \:set.theoretic.subset:/ A

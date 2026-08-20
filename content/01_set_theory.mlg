@@ -21,7 +21,7 @@ Id: "cbc6feb5-4f5e-41ef-bf59-342c981aa217"
 
 
 [\set]
-Defines: X
+Declares: X
 satisfies:
 . \axiom.of.empty.set
 . forAll: Y is \set
@@ -75,7 +75,7 @@ Id: "7a54c26a-ea2e-4e38-ac69-3426f651c4d4"
 
 
 [\empty.set]
-Declares: X is \set
+Defines: X is \set
 expresses:
 . not:
   . exists: Y is \set
@@ -216,7 +216,7 @@ Id: "7bfbdad3-bf51-4e2d-ae06-8dd2fa3a220d"
 
 
 [A \:set.theoretic.subset:/ B]
-Defines: A is \set
+Declares: A is \set
 when: B is \set
 satisfies:
 . forAll: X "in" A
@@ -238,7 +238,7 @@ Id: "c27fbf42-311e-4efd-b4c8-2da3ad6370a7"
 
 
 [A \:set.theoretic.proper.subset:/ B]
-Defines: A \:set.theoretic.subset:/ B
+Declares: A \:set.theoretic.subset:/ B
 when: B is \set
 satisfies: A != B
 Documented:
@@ -281,7 +281,7 @@ Id: "032576ab-7fc3-4075-b24a-cd06583d18cd"
 
 
 [\singleton.set:of{X}]
-Declares: Y is \set
+Defines: Y is \set
 when: X is \set
 expresses:
 . let: Z is \set
@@ -303,7 +303,7 @@ Id: "f49b05f5-b826-45d0-b327-b248946e28fc"
 
 
 [\set.successor:of{X}]
-Declares: Y is \set
+Defines: Y is \set
 when: X is \set
 expresses:
 . let: Z is \set
@@ -363,7 +363,7 @@ Id: "b218d7dd-c01a-476d-9975-b05de57b8b8f"
 
 
 [\set.property(X_)]
-Defines: phi(X_) is (? is \set) -> (? is \\statement)
+Declares: phi(X_) is (? is \set) -> (? is \\statement)
 Documented:
 . called: "set property"
 . description: "A set property is a predicate on sets: given a set it yields a
@@ -373,7 +373,7 @@ Id: "cc680a81-3338-4848-8b9d-fcf368dd759e"
 
 
 [\set:of{x[i_ := 1...n]}]
-Declares: X is \set
+Defines: X is \set
 when: x[1...n] is \\opaque
 expresses:
 . let: y is \\opaque
@@ -399,7 +399,7 @@ Id: "da7d91b3-693b-4ca2-ac2a-e94555b18c5f"
 
 
 [\set.pair:of{x, y}]
-Declares: p := \set:of{x, \set:of{x, y}} is \set
+Defines: p := \set:of{x, \set:of{x, y}} is \set
 when: x, y is \set
 Documented:
 . called: "pair of $x?$ and $y?$"
@@ -450,7 +450,7 @@ Id: "331daec2-edc7-4316-8fb6-0c801c3692ed"
 
 
 [A \.set.cross./ B]
-Declares: X := \set@{(a_, b_) : a_ "in" A; b_ "in" B}
+Defines: X := \set@{(a_, b_) : a_ "in" A; b_ "in" B}
 when: A, B is \set
 Documented:
 . called: "Cartesian product of $A?$ and $B?$"

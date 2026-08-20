@@ -22,7 +22,7 @@ Id: "86f693bc-1d69-4bfd-bef4-c67033b73acb"
 
 
 [\integer.equivalence]
-Declares: R is \equivalence.relation:on{\naturals.set \.set.cross./ \naturals.set}
+Defines: R is \equivalence.relation:on{\naturals.set \.set.cross./ \naturals.set}
 expresses:
 . let: (n1, m1), (n2, m2) "in" (.\naturals.set \.set.cross./ \naturals.set.)
   then:
@@ -47,7 +47,7 @@ Id: "7dedd212-2822-4340-bab5-11991187596f"
 
 
 [\integers.set]
-Declares: Z := (\naturals.set \.set.cross./ \naturals.set) \.mod./ \integer.equivalence is \set
+Defines: Z := (\naturals.set \.set.cross./ \naturals.set) \.mod./ \integer.equivalence is \set
 Documented:
 . called: "integers"
 . written: "\mathbb{Z}"
@@ -60,7 +60,7 @@ Id: "2879813a-8202-4d27-b248-83687c132e84"
 
 
 [\natural.seqence]
-Defines: Xb ::= x(i_)
+Declares: Xb ::= x(i_)
 extends: x is \function:on{\naturals.set}:to{\naturals.set}
 Documented:
 . writing: x(i)
@@ -102,7 +102,7 @@ Id: "7581a6dc-6d87-4042-96f2-8f9903c64a74"
 
 
 [\integral{f(x_, y_)}:d{f.x_}]
-Declares: g(x_, y_) is \function
+Defines: g(x_, y_) is \function
 when: f is \function:on{\naturals.set}:to{\naturals.set}
 Documented:
 . written: "\displaystyle \int f? \: d x_?"
@@ -115,14 +115,14 @@ Id: "34c5b970-9bde-4f01-8ab2-22a702f6fe15"
 
 
 [\matrix]
-Defines: X
+Declares: X
 Documented:
 . called: "matrix"
 Id: "562657db-4eb1-426f-8042-91541b61f45c"
 
 
 [\matrix:of{x[(i_,j_):=(1,1)...(m,n)]}]
-Declares: X is \matrix
+Defines: X is \matrix
 when: x[..., ...] is \natural
 Documented:
 . written: "\begin{pmatrix} x?{{...&...}...\\} \end{pmatrix}"

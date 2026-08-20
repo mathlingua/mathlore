@@ -13,7 +13,7 @@ Id: "c29d6027-fe93-4e6d-94df-f72a802fedcb"
 
 
 [\relation:?on{X}]
-Defines: R \:set.theoretic.subset:/ (.X \.set.cross./ X.)
+Declares: R \:set.theoretic.subset:/ (.X \.set.cross./ X.)
 when: X is \set
 Enables:
 . capability: R(x_, y_) :=> (x_, y_) "in"? R
@@ -37,7 +37,7 @@ Id: "b906ce0b-34d4-4b24-b168-d6a8d05efc92"
 
 
 [\equivalence.relation:on{X}]
-Defines: R is \relation:on{X}
+Declares: R is \relation:on{X}
 when: X is \set
 satisfies:
 . [reflexive]
@@ -70,7 +70,7 @@ Id: "308e4d46-7205-4977-9583-486771d4ca48"
 
 
 [\equivalence.class:of{x}:over{R}]
-Declares: C := \set@{y_ : y_ "in" X | R(x, y_)}
+Defines: C := \set@{y_ : y_ "in" X | R(x, y_)}
 using: X is \set
 when:
 . x "in" X
@@ -93,7 +93,7 @@ Id: "7435ef90-380d-4429-a369-37d652479b85"
 
 
 [X \.mod./ R]
-Declares: I := \set@{ \equivalence.class:of{x_}:over{R} : x_ "in" X }
+Defines: I := \set@{ \equivalence.class:of{x_}:over{R} : x_ "in" X }
 when:
 . X is \set
 . R is \equivalence.relation:on{X}

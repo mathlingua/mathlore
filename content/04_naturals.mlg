@@ -25,7 +25,7 @@ Id: "fbe31158-8082-4444-82f6-a8049d0bb921"
 
 
 [\abstract.naturals]
-Defines: N ::= (X, 0, succ)
+Declares: N ::= (X, 0, succ)
 means:
 . X is \set
 . 0 "in" X
@@ -61,7 +61,7 @@ Id: "4154a694-b3ae-4567-be04-de74e8c44f58"
 
 
 [\natural.0]
-Declares: 0 is \natural
+Defines: 0 is \natural
 Documented:
 . written: "0"
 . description: "The natural number zero, the base of the number system. It is
@@ -77,7 +77,7 @@ Id: "e86827d5-dce2-458d-b1c6-fd2e2036f737"
 
 
 [\natural.succ(n_)]
-Declares: succ(n_) is (? is \natural) -> (? is \natural)
+Defines: succ(n_) is (? is \natural) -> (? is \natural)
 Documented:
 . called: "successor of $n?$"
 . written: "n?+\!\!+"
@@ -95,7 +95,7 @@ Id: "6e4c72e5-cace-4331-bfc4-149a06321d20"
 
 
 [\natural]
-Defines: n
+Declares: n
 satisfies:
 . oneOf:
   . n = \natural.0
@@ -123,7 +123,7 @@ Id: "709b99f1-7e8b-4c6b-a94d-4ac6a166c6d1"
 
 
 [\naturals.set]
-Declares: N := \set@{n_ : n_ is \natural}
+Defines: N := \set@{n_ : n_ is \natural}
 Documented:
 . written: "\mathbb{N}"
 . description: "The set $\mathbb{N}$ of all natural numbers, gathered from the
@@ -140,7 +140,7 @@ Id: "74acea45-65a7-4623-bb26-7abfb866fcde"
 
 
 [\naturals]
-Declares: N ::= (X, 0, succ) is \abstract.naturals
+Defines: N ::= (X, 0, succ) is \abstract.naturals
 expresses:
 . X := \naturals.set
 . 0 := \natural.0
@@ -205,7 +205,7 @@ Id: "4bdc5f2a-4b93-4d8e-b14a-d8dbec7dfb4f"
 
 
 [n_ \.natural.+./ m_]
-Declares: n_ + m_ is \binary.operation:on{\naturals.set}
+Defines: n_ + m_ is \binary.operation:on{\naturals.set}
 expresses:
 . piecewise:
   if: n_ = 0

@@ -23,7 +23,7 @@ Id: "b6b6f241-917e-4090-8269-5060f249b80c"
 
 
 [\magma]
-Defines: M ::= (X, *) is \set via X
+Declares: M ::= (X, *) is \set via X
 means: * is \binary.operation:on{M}
 Enables:
 . capability: x_ "in" M :-> x_ is \magma.element:of{M}
@@ -38,7 +38,7 @@ Id: "91ffd40c-72fa-4a93-83f3-80ceb1ae124a"
 
 
 [\magma.element:of{M ::= (X, *)}]
-Defines: x "in" X
+Declares: x "in" X
 when: M is \magma
 Enables:
 . capability: x_ [*] y_ :=> x_ |M.*| y_
@@ -59,7 +59,7 @@ Id: "55b0749b-4e2f-4112-a5be-c20a9879d6a3"
 
 
 [\quasigroup]
-Defines: Q ::= (X, *) is \magma via (X, *)
+Declares: Q ::= (X, *) is \magma via (X, *)
 satisfies:
 . forAll: a, b "in" Q
   then:
@@ -80,7 +80,7 @@ Id: "49582242-a047-48ae-aced-77654d9a48aa"
 
 
 [\quasigroup.element:of{Q ::= (X, *)}]
-Defines: x is \magma.element:of{Q}
+Declares: x is \magma.element:of{Q}
 when: Q is \quasigroup
 Documented:
 . called: "element of quasigroup $Q?$"
@@ -99,7 +99,7 @@ Id: "e077a5db-c372-4759-a880-d74270032560"
 
 
 [\semigroup]
-Defines: S ::= (X, *) is \magma via (X, *)
+Declares: S ::= (X, *) is \magma via (X, *)
 means: * is \(associative)::binary.operation:on{X}
 Enables:
 . capability: x_ "in" S :-> x_ is \semigroup.element:of{S}
@@ -114,7 +114,7 @@ Id: "6ec2faf5-7d2c-4918-a559-6415b94f2b1f"
 
 
 [\semigroup.element:of{S ::= (X, *)}]
-Defines: x is \magma.element:of{S}
+Declares: x is \magma.element:of{S}
 when: S is \semigroup
 Documented:
 . called: "element of semigroup $S?$"
@@ -129,7 +129,7 @@ Id: "c647adb5-0f98-4f7d-ae6a-8ff2229e3437"
 
 
 [\monoid]
-Defines: M ::= (X, *, e) is \semigroup via (X, *)
+Declares: M ::= (X, *, e) is \semigroup via (X, *)
 means: e "in" X
 satisfies:
 . forAll: x "in" M
@@ -149,7 +149,7 @@ Id: "034bf6ff-ba6e-4fac-b47e-65cc85d15642"
 
 
 [\monoid.element:of{M}]
-Defines: x is \semigroup.element:of{M}
+Declares: x is \semigroup.element:of{M}
 when: M is \monoid
 Documented:
 . called: "element of monoid $M?$"
@@ -168,7 +168,7 @@ Id: "5fb80940-d8de-44bf-8117-eeee203d4755"
 
 
 [\group]
-Defines: G ::= (X, *, e) is \monoid via (X, *, e)
+Declares: G ::= (X, *, e) is \monoid via (X, *, e)
 satisfies:
 . forAll: x "in" G
   then:
@@ -211,7 +211,7 @@ Id: "bb323028-2831-4d67-b784-b0918774ab3a"
 
 
 [\group.element:of{G}]
-Defines: x is \monoid.element:of{G}
+Declares: x is \monoid.element:of{G}
 when: G is \group
 Enables:
 . capability: x.inv :=> \group.inverse:of{x}:in{G}
@@ -226,7 +226,7 @@ Id: "858abdda-c416-4a4e-a0bf-27ecf84cf008"
 
 
 [\group.inverse:of{x}:in{G ::= (X, *, e)}]
-Declares: y "in" G
+Defines: y "in" G
 when:
 . G is \group
 . x "in" G
@@ -293,7 +293,7 @@ Id: "91933534-107f-44fe-9ad6-4829664f8cd6"
 
 
 [H ::= (X', *', e') \:subgroup:/ G ::= (X, *, e)]
-Defines: H ::= (X', *', e')
+Declares: H ::= (X', *', e')
 when: G is \group
 means:
 . X' \:(nonempty)::set.theoretic.subset:/ X
@@ -351,7 +351,7 @@ Id: "aa01e2aa-23e6-428f-8555-cabb841d1543"
 
 
 [G1 ::= (X1, *_1, e1) \.group.direct.product./ G2 ::= (X2, *_2, e2)]
-Declares: G3 ::= (X3, *_3, e3) is \group
+Defines: G3 ::= (X3, *_3, e3) is \group
 when: G1, G2 is \group
 expresses:
 . X3 := {(x1, x2) : x1 "in" X1; x2 "in" X2}
