@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Axiom of Power Set}",
   "body_text": null,
   "page": null,
-  "source": "[\\axiom.of.power.set]\nAxiom:\ngiven: A is \\set\nthen:\n. exists: P is \\set\n  suchThat:\n  . forAll: x is \\set\n    then: (x \"in\"? P) \\.iff./ (x \\:set.theoretic.subset?:/ A)\nDocumented:\n. called: \"Axiom of Power Set\"\n. description: \"For every set $A$ there is a set $P$ whose members are exactly\n                the subsets of $A$. This power set collects together all of the\n                ways of selecting elements from $A$.\"\nId: \"8557cdb3-e02f-4b75-aed1-3dfd1cdee895\"",
+  "source": "[\\axiom.of.power.set]\nAxiom:\ngiven: A is \\set\nthen:\n. exists: P is \\set\n  suchThat:\n  . forAll: x is \\set\n    then: (.x \"in\"? P.) \\.iff./ (.x \\:subset?:/ A.)\nDocumented:\n. called: \"Axiom of Power Set\"\n. description: \"For every set $A$ there is a set $P$ whose members are exactly\n                the subsets of $A$. This power set collects together all of the\n                ways of selecting elements from $A$.\"\nId: \"8557cdb3-e02f-4b75-aed1-3dfd1cdee895\"",
   "sections": [
     {
       "label": "Axiom",
@@ -20,6 +20,15 @@
       "label": "given",
       "inline_argument": "A is \\set",
       "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A is \\set",
+          "types": [
+            "asserts A is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -35,6 +44,15 @@
               "label": "exists",
               "inline_argument": "P is \\set",
               "inline_latex": "P \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "P is \\set",
+                  "types": [
+                    "asserts P is \\set"
+                  ]
+                }
+              ],
               "arguments": []
             },
             {
@@ -50,12 +68,77 @@
                       "label": "forAll",
                       "inline_argument": "x is \\set",
                       "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x is \\set",
+                          "types": [
+                            "asserts x is \\set"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     },
                     {
                       "label": "then",
-                      "inline_argument": "(x \"in\"? P) \\.iff./ (x \\:set.theoretic.subset?:/ A)",
-                      "inline_latex": "\\htmlData{mlg-ref=5c2e6966662e2f}{\\left(x \\in P\\right) \\iff \\left(\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{x \\subseteq A}\\right)}",
+                      "inline_argument": "(.x \"in\"? P.) \\.iff./ (.x \\:subset?:/ A.)",
+                      "inline_latex": "\\htmlData{mlg-ref=5c2e6966662e2f}{x \\in P \\iff \\htmlData{mlg-ref=5c3a7375627365743a2f}{x \\subseteq A}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "(.x \"in\"? P.) \\.iff./ (.x \\:subset?:/ A.)",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x\"in\"?P",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x\"in\"?P",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "x",
+                          "types": [
+                            "is \\set"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x\\:subset?:/A",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x\\:subset?:/A",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "x",
+                          "types": [
+                            "is \\set"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "A",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     }
                   ]

@@ -1,6 +1,6 @@
 {
   "id": "562657db-4eb1-426f-8042-91541b61f45c",
-  "kind": "Defines",
+  "kind": "Declares",
   "definition_keys": [
     "5c6d6174726978"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": "\\textrm{matrix}",
   "body_text": null,
   "page": null,
-  "source": "[\\matrix]\nDefines: X\nDocumented:\n. called: \"matrix\"\nId: \"562657db-4eb1-426f-8042-91541b61f45c\"",
+  "source": "[\\matrix]\nDeclares: X\nDocumented:\n. called: \"matrix\"\nId: \"562657db-4eb1-426f-8042-91541b61f45c\"",
   "sections": [
     {
-      "label": "Defines",
+      "label": "Declares",
       "inline_argument": "X",
       "inline_latex": "X",
       "arguments": []

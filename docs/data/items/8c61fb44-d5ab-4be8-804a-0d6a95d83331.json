@@ -22,12 +22,37 @@
         {
           "kind": "formulation",
           "text": "G ::= (X, *, e) is \\group",
-          "latex": "G ::= \\left(X, \\ast, e\\right) \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}"
+          "latex": "G ::= \\left(X, \\ast, e\\right) \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "G ::= (X, *, e) is \\group",
+              "types": [
+                "asserts G is \\group"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "x \"in\" G",
-          "latex": "x \\in G"
+          "latex": "x \\in G",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x \"in\" G",
+              "types": [
+                "asserts x \"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "G",
+              "types": [
+                "is \\group"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -35,6 +60,48 @@
       "label": "then",
       "inline_argument": "(x.inv).inv = x",
       "inline_latex": "\\left(x^{-1}\\right)^{-1} = x",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "(x.inv).inv = x",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "x.inv.inv",
+          "types": []
+        },
+        {
+          "depth": 2,
+          "text": "x.inv",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "x.inv",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 4,
+          "text": "x",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "x",
+          "types": [
+            "\"in\" G"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

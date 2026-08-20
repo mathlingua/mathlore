@@ -5,10 +5,10 @@
     "5c6e6f74"
   ],
   "heading": "\\not{P}",
-  "heading_latex": "\\neg P",
+  "heading_latex": "\\textrm{not }P\\quad\\htmlClass{mlg-title-written}{\\neg P}",
   "body_text": null,
   "page": null,
-  "source": "[\\not{P}]\nStates:\nwhen: P is \\\\statement\nthat:\n. not: P\nDocumented:\n. written: \"\\neg P+?\"\n. description: \"The negation of $P$, written $\\neg P$. It holds exactly when $P$\n                does not, and so reverses the truth value of the statement it is\n                applied to.\"\nId: \"856ad9cc-c17e-4cff-ad32-10ee78ab20c4\"",
+  "source": "[\\not{P}]\nStates:\nwhen: P is \\\\statement\nthat:\n. not: P\nDocumented:\n. called: \"not $P?$\"\n. written: \"\\neg P+?\"\n. description: \"The negation of $P$, written $\\neg P$. It holds exactly when $P$\n                does not, and so reverses the truth value of the statement it is\n                applied to.\"\nId: \"856ad9cc-c17e-4cff-ad32-10ee78ab20c4\"",
   "sections": [
     {
       "label": "States",
@@ -20,6 +20,15 @@
       "label": "when",
       "inline_argument": "P is \\\\statement",
       "inline_latex": "P \\textrm{ is } \\textrm{statement}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "P is \\\\statement",
+          "types": [
+            "asserts P is \\\\statement"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -35,6 +44,13 @@
               "label": "not",
               "inline_argument": "P",
               "inline_latex": "P",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "P",
+                  "types": []
+                }
+              ],
               "arguments": []
             }
           ]
@@ -46,6 +62,18 @@
       "inline_argument": null,
       "inline_latex": null,
       "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"not $P?$\"",
+              "inline_latex": "\\textrm{not }P",
+              "arguments": []
+            }
+          ]
+        },
         {
           "kind": "group",
           "heading": null,

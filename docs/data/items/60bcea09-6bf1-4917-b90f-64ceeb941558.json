@@ -20,6 +20,15 @@
       "label": "given",
       "inline_argument": "X is \\set",
       "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is \\set",
+          "types": [
+            "asserts X is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -35,6 +44,15 @@
               "label": "exists",
               "inline_argument": "U is \\set",
               "inline_latex": "U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "U is \\set",
+                  "types": [
+                    "asserts U is \\set"
+                  ]
+                }
+              ],
               "arguments": []
             },
             {
@@ -50,6 +68,15 @@
                       "label": "forAll",
                       "inline_argument": "Z is \\set",
                       "inline_latex": "Z \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "Z is \\set",
+                          "types": [
+                            "asserts Z is \\set"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     },
                     {
@@ -65,6 +92,22 @@
                               "label": "have",
                               "inline_argument": "Z \"in\" U",
                               "inline_latex": "Z \\in U",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "Z \"in\" U",
+                                  "types": [
+                                    "asserts Z \"in\" U"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "U",
+                                  "types": [
+                                    "is \\set"
+                                  ]
+                                }
+                              ],
                               "arguments": []
                             },
                             {
@@ -80,6 +123,15 @@
                                       "label": "exists",
                                       "inline_argument": "W is \\set",
                                       "inline_latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                                      "inline_type_info": [
+                                        {
+                                          "depth": 0,
+                                          "text": "W is \\set",
+                                          "types": [
+                                            "asserts W is \\set"
+                                          ]
+                                        }
+                                      ],
                                       "arguments": []
                                     },
                                     {
@@ -90,12 +142,44 @@
                                         {
                                           "kind": "formulation",
                                           "text": "W \"in\"? X",
-                                          "latex": "W \\in X"
+                                          "latex": "W \\in X",
+                                          "type_info": [
+                                            {
+                                              "depth": 0,
+                                              "text": "W \"in\"? X",
+                                              "types": [
+                                                "is \\\\statement"
+                                              ]
+                                            },
+                                            {
+                                              "depth": 1,
+                                              "text": "W",
+                                              "types": [
+                                                "is \\set"
+                                              ]
+                                            }
+                                          ]
                                         },
                                         {
                                           "kind": "formulation",
                                           "text": "Z \"in\"? W",
-                                          "latex": "Z \\in W"
+                                          "latex": "Z \\in W",
+                                          "type_info": [
+                                            {
+                                              "depth": 0,
+                                              "text": "Z \"in\"? W",
+                                              "types": [
+                                                "is \\\\statement"
+                                              ]
+                                            },
+                                            {
+                                              "depth": 1,
+                                              "text": "Z",
+                                              "types": [
+                                                "is \\set"
+                                              ]
+                                            }
+                                          ]
                                         }
                                       ]
                                     }

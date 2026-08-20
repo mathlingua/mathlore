@@ -1,6 +1,6 @@
 {
   "id": "82c8948a-c30d-464b-8ab0-1c7bdb2ed770",
-  "kind": "Defines",
+  "kind": "Declares",
   "definition_keys": [
     "5c62696e6172792e6f7065726174696f6e3a6f6e"
   ],
@@ -8,24 +8,36 @@
   "heading_latex": "\\textrm{binary operation on }X",
   "body_text": null,
   "page": null,
-  "source": "[\\binary.operation:on{X}]\nDefines: x_ * y_\nwhen: X is \\set\nextends: * is \\function:on{X \\.set.cross./ X}:to{X}\nDocumented:\n. called: \"binary operation on $X?$\"\n. description: \"A binary operation on $X$ takes two elements of $X$ and returns\n                an element of $X$. Formally it is a function from $X \\times X$\n                to $X$, written in infix form as $x * y$.\"\nId: \"82c8948a-c30d-464b-8ab0-1c7bdb2ed770\"",
+  "source": "[\\binary.operation:on{X}]\nDeclares: x_ * y_ is \\function:on{X \\.set.cross./ X}:to{X}\nwhen: X is \\set\nDocumented:\n. called: \"binary operation on $X?$\"\n. description: \"A binary operation on $X$ takes two elements of $X$ and returns\n                an element of $X$. Formally it is a function from $X \\times X$\n                to $X$, written in infix form as $x * y$.\"\nId: \"82c8948a-c30d-464b-8ab0-1c7bdb2ed770\"",
   "sections": [
     {
-      "label": "Defines",
-      "inline_argument": "x_ * y_",
-      "inline_latex": "x \\ast y",
+      "label": "Declares",
+      "inline_argument": "x_ * y_ is \\function:on{X \\.set.cross./ X}:to{X}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{x \\ast y \\: : \\: \\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{X \\times X} \\rightarrow X}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x_ * y_ is \\function:on{X \\.set.cross./ X}:to{X}",
+          "types": [
+            "asserts x*y is \\function:on{X\\.set.cross./X}:to{X}"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "when",
       "inline_argument": "X is \\set",
       "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-      "arguments": []
-    },
-    {
-      "label": "extends",
-      "inline_argument": "* is \\function:on{X \\.set.cross./ X}:to{X}",
-      "inline_latex": "\\ast \\textrm{ is } \\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{X \\times X}\\textrm{ to }X}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is \\set",
+          "types": [
+            "asserts X is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

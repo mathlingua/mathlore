@@ -8,7 +8,7 @@
   "heading_latex": "P \\text{ xor } Q",
   "body_text": null,
   "page": null,
-  "source": "[P \\.xor./ Q]\nStates:\nwhen: P, Q is \\\\statement\nthat: (P \\.or./ Q) \\.and./ \\not{P \\.and./ Q}\nDocumented:\n. written: \"P+? \\text{ xor } Q+?\"\n. description: \"The exclusive disjunction of $P$ and $Q$. It holds when $P$ or\n                $Q$ holds but *not* both, and is defined here as $(P \\text{ or }\n                Q) \\text{ and } \\neg(P \\text{ and } Q)$ -- inclusive *or* with\n                the both-true case removed.\"\nId: \"1c7bc638-0db8-416f-a0d0-f5c0d7d92842\"",
+  "source": "[P \\.xor./ Q]\nStates:\nwhen: P, Q is \\\\statement\nthat: (P \\.or./ Q) \\.and./ \\not{P \\.and./ Q}\nDocumented:\n. written: \"P? \\text{ xor } Q?\"\n. description: \"The exclusive disjunction of $P$ and $Q$. It holds when $P$ or\n                $Q$ holds but *not* both, and is defined here as $(P \\text{ or }\n                Q) \\text{ and } \\neg(P \\text{ and } Q)$ -- inclusive *or* with\n                the both-true case removed.\"\nId: \"1c7bc638-0db8-416f-a0d0-f5c0d7d92842\"",
   "sections": [
     {
       "label": "States",
@@ -20,12 +20,79 @@
       "label": "when",
       "inline_argument": "P, Q is \\\\statement",
       "inline_latex": "P, Q \\textrm{ is } \\textrm{statement}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "P, Q is \\\\statement",
+          "types": [
+            "asserts P is \\\\statement",
+            "asserts Q is \\\\statement"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "that",
       "inline_argument": "(P \\.or./ Q) \\.and./ \\not{P \\.and./ Q}",
-      "inline_latex": "\\htmlData{mlg-ref=5c2e616e642e2f}{\\left(\\htmlData{mlg-ref=5c2e6f722e2f}{P \\text{ or } Q}\\right) \\text{ and } \\left(\\htmlData{mlg-ref=5c6e6f74}{\\neg \\left(\\htmlData{mlg-ref=5c2e616e642e2f}{P \\text{ and } Q}\\right)}\\right)}",
+      "inline_latex": "\\htmlData{mlg-ref=5c2e616e642e2f}{\\left(\\htmlData{mlg-ref=5c2e6f722e2f}{P \\lor Q}\\right) \\land \\htmlData{mlg-ref=5c6e6f74}{\\neg \\left(\\htmlData{mlg-ref=5c2e616e642e2f}{P \\land Q}\\right)}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "(P \\.or./ Q) \\.and./ \\not{P \\.and./ Q}",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "P\\.or./Q",
+          "types": []
+        },
+        {
+          "depth": 2,
+          "text": "P\\.or./Q",
+          "types": []
+        },
+        {
+          "depth": 3,
+          "text": "P",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "Q",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\not{P\\.and./Q}",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "P\\.and./Q",
+          "types": []
+        },
+        {
+          "depth": 3,
+          "text": "P",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "Q",
+          "types": [
+            "is \\\\statement"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -39,7 +106,7 @@
           "sections": [
             {
               "label": "written",
-              "inline_argument": "\"P+? \\text{ xor } Q+?\"",
+              "inline_argument": "\"P? \\text{ xor } Q?\"",
               "inline_latex": "P \\text{ xor } Q",
               "arguments": []
             }

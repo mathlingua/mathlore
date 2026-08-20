@@ -1,37 +1,92 @@
 {
   "id": "7d070f37-61a5-4c62-b8da-4831c222e4b2",
-  "kind": "Defines",
+  "kind": "Refines",
   "definition_keys": [
-    "5c3a7365742e7468656f72657469632e70726f7065722e7375627365743a2f"
+    "5c3a70726f7065723a3a7375627365743a2f"
   ],
-  "heading": "A \\:set.theoretic.proper.subset:/ B",
-  "heading_latex": "A \\subsetneq B",
+  "heading": "A \\:(proper)::subset:/ B",
+  "heading_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A\\textrm{ is a subset of }B}\\textrm{ }\\left(\\textrm{proper}\\right)",
   "body_text": null,
   "page": null,
-  "source": "[A \\:set.theoretic.proper.subset:/ B]\nDefines: A\nwhen: B is \\set\nextends: A \\:set.theoretic.subset:/ B\nsatisfies: A != B\nDocumented:\n. written: \"A? \\subsetneq B?\"\n. description: \"$A \\subsetneq B$ holds when $A$ is a subset of $B$ but is not\n                equal to $B$; that is, $B$ has at least one element not in $A$.\"\nId: \"7d070f37-61a5-4c62-b8da-4831c222e4b2\"",
+  "source": "[A \\:(proper)::subset:/ B]\nRefines: A\nwhen: B is \\set\nspecifies: A \\:subset:/ B\nsatisfies: A != B\nDocumented:\n. adjective: \"proper\"\n. written: \"A? \\subsetneq B?\"\n. description: \"$A \\subsetneq B$ holds when $A$ is a subset of $B$ but is not\n                equal to $B$; that is, $B$ has at least one element not in $A$.\"\nId: \"7d070f37-61a5-4c62-b8da-4831c222e4b2\"",
   "sections": [
     {
-      "label": "Defines",
+      "label": "Refines",
       "inline_argument": "A",
       "inline_latex": "A",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A",
+          "types": [
+            "\\:subset:/ B"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "when",
       "inline_argument": "B is \\set",
       "inline_latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "B is \\set",
+          "types": [
+            "asserts B is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
-      "label": "extends",
-      "inline_argument": "A \\:set.theoretic.subset:/ B",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{A \\subseteq B}",
+      "label": "specifies",
+      "inline_argument": "A \\:subset:/ B",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq B}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A \\:subset:/ B",
+          "types": [
+            "asserts A \\:subset:/ B"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "B",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "satisfies",
       "inline_argument": "A != B",
       "inline_latex": "A \\ne B",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A != B",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "A",
+          "types": [
+            "\\:subset:/ B"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "B",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -39,6 +94,18 @@
       "inline_argument": null,
       "inline_latex": null,
       "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"proper\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
         {
           "kind": "group",
           "heading": null,

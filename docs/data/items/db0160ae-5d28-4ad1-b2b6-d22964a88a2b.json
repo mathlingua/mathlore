@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Cross of Subset Is Subset of Cross}",
   "body_text": null,
   "page": null,
-  "source": "[\\cross.of.subset.is.subset.of.cross]\nTheorem:\ngiven:\n. X is \\set\n. Y \\:set.theoretic.subset:/ X\nthen:\n. (.Y \\.set.cross./ Y.) \\:set.theoretic.subset?:/ (.X \\.set.cross./ X.)\nId: \"db0160ae-5d28-4ad1-b2b6-d22964a88a2b\"",
+  "source": "[\\cross.of.subset.is.subset.of.cross]\nTheorem:\ngiven:\n. X is \\set\n. Y \\:subset:/ X\nthen:\n. (.Y \\.set.cross./ Y.) \\:subset?:/ (.X \\.set.cross./ X.)\nId: \"db0160ae-5d28-4ad1-b2b6-d22964a88a2b\"",
   "sections": [
     {
       "label": "Theorem",
@@ -24,12 +24,37 @@
         {
           "kind": "formulation",
           "text": "X is \\set",
-          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X is \\set",
+              "types": [
+                "asserts X is \\set"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
-          "text": "Y \\:set.theoretic.subset:/ X",
-          "latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{Y \\subseteq X}"
+          "text": "Y \\:subset:/ X",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{Y \\subseteq X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "Y \\:subset:/ X",
+              "types": [
+                "asserts Y \\:subset:/ X"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -40,8 +65,73 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "(.Y \\.set.cross./ Y.) \\:set.theoretic.subset?:/ (.X \\.set.cross./ X.)",
-          "latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{Y \\times Y} \\subseteq \\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{X \\times X}}"
+          "text": "(.Y \\.set.cross./ Y.) \\:subset?:/ (.X \\.set.cross./ X.)",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{Y \\times Y} \\subseteq \\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{X \\times X}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.Y \\.set.cross./ Y.) \\:subset?:/ (.X \\.set.cross./ X.)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "Y\\.set.cross./Y",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "Y\\.set.cross./Y",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "Y",
+              "types": [
+                "\\:subset:/ X"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "Y",
+              "types": [
+                "\\:subset:/ X"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "X\\.set.cross./X",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "X\\.set.cross./X",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
         }
       ]
     },

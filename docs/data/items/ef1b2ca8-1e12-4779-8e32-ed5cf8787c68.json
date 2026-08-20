@@ -22,12 +22,38 @@
         {
           "kind": "formulation",
           "text": "G is \\group",
-          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}"
+          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "G is \\group",
+              "types": [
+                "asserts G is \\group"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "x, y \"in\" G",
-          "latex": "x, y \\in G"
+          "latex": "x, y \\in G",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x, y \"in\" G",
+              "types": [
+                "asserts x \"in\" G",
+                "asserts y \"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "G",
+              "types": [
+                "is \\group"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -35,6 +61,83 @@
       "label": "then",
       "inline_argument": "(x * y).inv = y.inv * x.inv",
       "inline_latex": "\\left(x \\ast y\\right)^{-1} = y^{-1} \\ast x^{-1}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "(x * y).inv = y.inv * x.inv",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "x * y.inv",
+          "types": []
+        },
+        {
+          "depth": 2,
+          "text": "x * y",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "x * y",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 4,
+          "text": "x",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 4,
+          "text": "y",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "y.inv * x.inv",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "y.inv",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "y",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "x.inv",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "x",
+          "types": [
+            "\"in\" G"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

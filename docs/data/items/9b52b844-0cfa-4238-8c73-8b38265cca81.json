@@ -1,6 +1,6 @@
 {
   "id": "9b52b844-0cfa-4238-8c73-8b38265cca81",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c67726f75702e696e76657273653a6f663a696e"
   ],
@@ -11,10 +11,10 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\group.inverse:of{x}:in{G ::= (X, *, e)}]\nDeclares: y \"in\" G\nwhen:\n. G is \\group\n. x \"in\" G\nexpresses:\n. x * y = e\n. y * x = e\nDocumented:\n. called: \"group inverse of $x?$\"\n. written: \"x+?^{-1}\"\n. description: \"The inverse $x^{-1}$ of an element $x$ of a group is the unique\n                element $y$ satisfying $x * y = e = y * x$. Its uniqueness is\n                proved below; it is what allows every equation in a group to be\n                solved.\"\nId: \"9b52b844-0cfa-4238-8c73-8b38265cca81\"",
+  "source": "[\\group.inverse:of{x}:in{G ::= (X, *, e)}]\nDefines: y \"in\" G\nwhen:\n. G is \\group\n. x \"in\" G\nexpresses:\n. x * y = e\n. y * x = e\nDocumented:\n. called: \"group inverse of $x?$\"\n. written: \"x+?^{-1}\"\n. description: \"The inverse $x^{-1}$ of an element $x$ of a group is the unique\n                element $y$ satisfying $x * y = e = y * x$. Its uniqueness is\n                proved below; it is what allows every equation in a group to be\n                solved.\"\nId: \"9b52b844-0cfa-4238-8c73-8b38265cca81\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "y \"in\" G",
       "inline_latex": "y \\in G",
       "arguments": []
@@ -27,12 +27,37 @@
         {
           "kind": "formulation",
           "text": "G is \\group",
-          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}"
+          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "G is \\group",
+              "types": [
+                "asserts G is \\group"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "x \"in\" G",
-          "latex": "x \\in G"
+          "latex": "x \\in G",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x \"in\" G",
+              "types": [
+                "asserts x \"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "G",
+              "types": [
+                "is \\group"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -44,12 +69,86 @@
         {
           "kind": "formulation",
           "text": "x * y = e",
-          "latex": "x \\ast y = e"
+          "latex": "x \\ast y = e",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x * y = e",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "x * y",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "x",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "y",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "e",
+              "types": [
+                "\"in\" X"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "y * x = e",
-          "latex": "y \\ast x = e"
+          "latex": "y \\ast x = e",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "y * x = e",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "y * x",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "y",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "x",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "e",
+              "types": [
+                "\"in\" X"
+              ]
+            }
+          ]
         }
       ]
     },

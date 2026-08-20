@@ -24,13 +24,13 @@ Id: "cbc6feb5-4f5e-41ef-bf59-342c981aa217"
 Declares: X
 satisfies:
 . \axiom.of.empty.set
+. \axiom.of.infinity
+. \axiom.of.union#given{X}
+. \axiom.of.power.set#given{X}
 . forAll: Y is \set
   then:
   . \axiom.of.extensionality#given{X := X; Y := Y}
   . \axiom.of.pairing#given{X := X; Y := Y}
-. \axiom.of.union#given{X}
-. \axiom.of.power.set#given{X}
-. \axiom.of.infinity
 Requires:
 . capability: x_ "in" X :-> \\abstract
 Enables:
@@ -143,7 +143,7 @@ Axiom:
 given: X, Y is \set
 where:
 . forAll: Z is \set
-  then: (Z "in"? X) \.iff./ (Z "in"? Y)
+  then: (.Z "in"? X.) \.iff./ (.Z "in"? Y.)
 then: X = Y
 Documented:
 . called: "Axiom of Extensionality"
@@ -167,7 +167,7 @@ then:
 . exists: U is \set
   suchThat:
   . forAll: Z is \set
-    then: (Z "in"? U) \.iff./ ((.Z = X.) \.or./ (.Z = Y.))
+    then: (.Z "in"? U.) \.iff./ ((.Z = X.) \.or./ (.Z = Y.))
 Documented:
 . called: "Axiom of Pairing"
 . description: "For any two sets $X$ and $Y$ there is a set $U$ whose members
@@ -215,7 +215,7 @@ Text: "One set is a subset of another when every element of the first is also an
 Id: "7bfbdad3-bf51-4e2d-ae06-8dd2fa3a220d"
 
 
-[A \:set.theoretic.subset:/ B]
+[A \:subset:/ B]
 Declares: A is \set
 when: B is \set
 satisfies:
@@ -237,11 +237,13 @@ Text: "A subset that is not the whole set is called a *proper* subset: it is
 Id: "c27fbf42-311e-4efd-b4c8-2da3ad6370a7"
 
 
-[A \:set.theoretic.proper.subset:/ B]
-Declares: A \:set.theoretic.subset:/ B
+[A \:(proper)::subset:/ B]
+Refines: A
 when: B is \set
+specifies: A \:subset:/ B
 satisfies: A != B
 Documented:
+. adjective: "proper"
 . written: "A? \subsetneq B?"
 . description: "$A \subsetneq B$ holds when $A$ is a subset of $B$ but is not
                 equal to $B$; that is, $B$ has at least one element not in $A$."
@@ -261,7 +263,7 @@ then:
 . exists: P is \set
   suchThat:
   . forAll: x is \set
-    then: (x "in"? P) \.iff./ (x \:set.theoretic.subset?:/ A)
+    then: (.x "in"? P.) \.iff./ (.x \:subset?:/ A.)
 Documented:
 . called: "Axiom of Power Set"
 . description: "For every set $A$ there is a set $P$ whose members are exactly
@@ -289,6 +291,7 @@ expresses:
   . have: Z "in"? Y
     iff: Z = X
 Documented:
+. called: "The singleton set of $X?$"
 . written: "\left \{ X? \right \}"
 . description: "The singleton $\{X\}$ is the set whose sole member is $X$: a set
                 $Z$ belongs to it exactly when $Z = X$. Its existence follows
@@ -310,8 +313,9 @@ expresses:
   then:
   . have: Z "in"? Y
     iff:
-    . (Z = X) \.or./ (Z = \singleton.set:of{X})
+    . (.Z = X.) \.or./ (.Z = \singleton.set:of{X}.)
 Documented:
+. called: "The set successor of $X?$"
 . written: "X? \cup \left \{ X? \right \}"
 . description: "The successor of $X$ is the set $X \cup \{X\}$, whose members
                 are the members of $X$ together with $X$ itself. Starting from
@@ -334,9 +338,7 @@ then:
   . oneOf:
     . \empty.set "in"? I
     . forAll: Y is \set
-      then:
-      . if: Y "in"? I
-        then: \set.successor:of{Y} "in"? I
+      then: (.Y "in"? I.) \.implies./ (.\set.successor:of{Y} "in"? I.)
 Documented:
 . called: "Axiom of Infinity"
 . description: "There is a set $I$ that contains the empty set and is closed
@@ -420,10 +422,10 @@ Id: "370b0f76-ab0f-4f7f-80fa-120bb7ffe9e2"
 Theorem:
 given:
 . C is \set
-. B \:set.theoretic.subset:/ C
-. A \:set.theoretic.subset:/ B
+. B \:subset:/ C
+. A \:subset:/ B
 then:
-. A \:set.theoretic.subset?:/ C
+. A \:subset?:/ C
 Id: "6a4bcb50-97bc-4d1b-a9b2-750c963bb720"
 
 
@@ -437,8 +439,8 @@ Theorem:
 given: A, B is \set
 then: A = B
 iff:
-. A \:set.theoretic.subset?:/ B
-. B \:set.theoretic.subset?:/ A
+. A \:subset?:/ B
+. B \:subset?:/ A
 Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"
 
 

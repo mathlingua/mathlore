@@ -1,6 +1,6 @@
 {
   "id": "114560d1-ffbf-4c9a-ba3f-243483ccfa2b",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c6e61747572616c732e736574"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": "\\mathbb{N}",
   "body_text": null,
   "page": null,
-  "source": "[\\naturals.set]\nDeclares: N := \\set@{n_ : n_ is \\natural}\nDocumented:\n. written: \"\\mathbb{N}\"\n. description: \"The set $\\mathbb{N}$ of all natural numbers, gathered from the\n                individual naturals by set-builder notation. It is the domain of\n                the addition and order defined in this chapter.\"\nId: \"114560d1-ffbf-4c9a-ba3f-243483ccfa2b\"",
+  "source": "[\\naturals.set]\nDefines: N := \\set@{n_ : n_ is \\natural}\nDocumented:\n. written: \"\\mathbb{N}\"\n. description: \"The set $\\mathbb{N}$ of all natural numbers, gathered from the\n                individual naturals by set-builder notation. It is the domain of\n                the addition and order defined in this chapter.\"\nId: \"114560d1-ffbf-4c9a-ba3f-243483ccfa2b\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "N := \\set@{n_ : n_ is \\natural}",
       "inline_latex": "N := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ n \\: : \\: n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}} \\right\\}",
       "arguments": []

@@ -1,0 +1,182 @@
+{
+  "id": "c33dd972-b742-4aed-8bbc-797ecdb2b5af",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c696e6a6563746976653a3a66756e6374696f6e",
+    "5c696e6a6563746976653a3a66756e6374696f6e3a6f6e",
+    "5c696e6a6563746976653a3a66756e6374696f6e3a746f",
+    "5c696e6a6563746976653a3a66756e6374696f6e3a6f6e3a746f"
+  ],
+  "heading": "\\(injective)::function:?on{A}:?to{B}",
+  "heading_latex": "\\textrm{injective}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }A\\textrm{ to }B}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(injective)::function:?on{A}:?to{B}]\nRefines: f(x__) ::= y_\nsatisfies:\n. forAll: x1, x2 \"in\" A\n  then:\n  . if: f(x1) = f(x2)\n    then: x1 = x2\nDocumented:\n. adjective:\n  . \"injective\"\n  . \"one-to-one\"\nId: \"c33dd972-b742-4aed-8bbc-797ecdb2b5af\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "f(x__) ::= y_",
+      "inline_latex": "f(x) ::= y \\textrm{ is } \\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }A\\textrm{ to }B}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x1, x2 \"in\" A",
+              "inline_latex": "x_1, x_2 \\in A",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x1, x2 \"in\" A",
+                  "types": [
+                    "asserts x1 \"in\" A",
+                    "asserts x2 \"in\" A"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "A",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": "f(x1) = f(x2)",
+                      "inline_latex": "f(x_1) = f(x_2)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "f(x1) = f(x2)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "f(x1)",
+                          "types": [
+                            "\"in\" #",
+                            "\"in\" ##",
+                            "\"in\" B"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x1",
+                          "types": [
+                            "\"in\" A"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "f(x2)",
+                          "types": [
+                            "\"in\" #",
+                            "\"in\" ##",
+                            "\"in\" B"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x2",
+                          "types": [
+                            "\"in\" A"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "x1 = x2",
+                      "inline_latex": "x_1 = x_2",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x1 = x2",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x1",
+                          "types": [
+                            "\"in\" A"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x2",
+                          "types": [
+                            "\"in\" A"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "text",
+                  "text": "injective",
+                  "latex": null
+                },
+                {
+                  "kind": "text",
+                  "text": "one-to-one",
+                  "latex": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c33dd972-b742-4aed-8bbc-797ecdb2b5af\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

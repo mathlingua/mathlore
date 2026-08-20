@@ -5,10 +5,10 @@
     "5c2e616e642e2f"
   ],
   "heading": "P \\.and./ Q",
-  "heading_latex": "P \\text{ and } Q",
+  "heading_latex": "P\\textrm{ and }Q\\quad\\htmlClass{mlg-title-written}{P \\land Q}",
   "body_text": null,
   "page": null,
-  "source": "[P \\.and./ Q]\nStates:\nwhen: P, Q is \\\\statement\nthat:\n. allOf:\n  . P\n  . Q\nDocumented:\n. written: \"P+? \\text{ and } Q+?\"\n. description: \"The conjunction of $P$ and $Q$. The statement $P \\text{ and } Q$\n                holds precisely when $P$ holds and $Q$ holds; if either fails,\n                the conjunction fails.\"\nId: \"e024d041-fcf1-476e-b29e-b75d88b04fa8\"",
+  "source": "[P \\.and./ Q]\nStates:\nwhen: P, Q is \\\\statement\nthat:\n. allOf:\n  . P\n  . Q\nDocumented:\n. called: \"$P?$ and $Q?$\"\n. written: \"P? \\land Q?\"\n. description: \"The conjunction of $P$ and $Q$. The statement $P \\text{ and } Q$\n                holds precisely when $P$ holds and $Q$ holds; if either fails,\n                the conjunction fails.\"\nId: \"e024d041-fcf1-476e-b29e-b75d88b04fa8\"",
   "sections": [
     {
       "label": "States",
@@ -20,6 +20,16 @@
       "label": "when",
       "inline_argument": "P, Q is \\\\statement",
       "inline_latex": "P, Q \\textrm{ is } \\textrm{statement}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "P, Q is \\\\statement",
+          "types": [
+            "asserts P is \\\\statement",
+            "asserts Q is \\\\statement"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -39,12 +49,26 @@
                 {
                   "kind": "formulation",
                   "text": "P",
-                  "latex": "P"
+                  "latex": "P",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "P",
+                      "types": []
+                    }
+                  ]
                 },
                 {
                   "kind": "formulation",
                   "text": "Q",
-                  "latex": "Q"
+                  "latex": "Q",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "Q",
+                      "types": []
+                    }
+                  ]
                 }
               ]
             }
@@ -62,9 +86,21 @@
           "heading": null,
           "sections": [
             {
+              "label": "called",
+              "inline_argument": "\"$P?$ and $Q?$\"",
+              "inline_latex": "P\\textrm{ and }Q",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
               "label": "written",
-              "inline_argument": "\"P+? \\text{ and } Q+?\"",
-              "inline_latex": "P \\text{ and } Q",
+              "inline_argument": "\"P? \\land Q?\"",
+              "inline_latex": "P \\land Q",
               "arguments": []
             }
           ]

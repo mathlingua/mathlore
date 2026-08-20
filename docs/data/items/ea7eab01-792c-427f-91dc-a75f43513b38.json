@@ -1,6 +1,6 @@
 {
   "id": "ea7eab01-792c-427f-91dc-a75f43513b38",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c7265737472696374696f6e3a6f663a6f6e"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": "\\textrm{restriction of }g(x)\\textrm{ on }X\\quad\\htmlClass{mlg-title-written}{g(x)\\big |_{X}}",
   "body_text": null,
   "page": null,
-  "source": "[\\restriction:of{g(x__)}:on{X}]\nDeclares: f is \\function:on{X}:to{B}\nwhen:\n. g is \\function:on{A?}:to{B?}\n. X \\:set.theoretic.subset:/ A\nexpresses: f(x__) := g(x__)\nDocumented:\n. called: \"restriction of $g?$ on $X?$\"\n. written: \"g?\\big |_{X?}\"\n. description: \"The restriction $g|_X$ of a function $g : A \\rightarrow B$ to a\n                subset $X$ of $A$ is the function on $X$ that takes each input\n                to the same value $g$ does. It keeps the rule and shrinks the\n                domain.\"\nId: \"ea7eab01-792c-427f-91dc-a75f43513b38\"",
+  "source": "[\\restriction:of{g(x__)}:on{X}]\nDefines: f is \\function:on{X}:to{B}\nwhen:\n. g is \\function:on{A?}:to{B?}\n. X \\:subset:/ A\nexpresses: f(x__) := g(x__)\nDocumented:\n. called: \"restriction of $g?$ on $X?$\"\n. written: \"g?\\big |_{X?}\"\n. description: \"The restriction $g|_X$ of a function $g : A \\rightarrow B$ to a\n                subset $X$ of $A$ is the function on $X$ that takes each input\n                to the same value $g$ does. It keeps the rule and shrinks the\n                domain.\"\nId: \"ea7eab01-792c-427f-91dc-a75f43513b38\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "f is \\function:on{X}:to{B}",
       "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: X \\rightarrow B}",
       "arguments": []
@@ -24,12 +24,37 @@
         {
           "kind": "formulation",
           "text": "g is \\function:on{A?}:to{B?}",
-          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{g \\: : \\: A \\rightarrow B}"
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{g \\: : \\: A \\rightarrow B}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "g is \\function:on{A?}:to{B?}",
+              "types": [
+                "asserts g is \\function:on{A}:to{B}"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
-          "text": "X \\:set.theoretic.subset:/ A",
-          "latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{X \\subseteq A}"
+          "text": "X \\:subset:/ A",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{X \\subseteq A}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X \\:subset:/ A",
+              "types": [
+                "asserts X \\:subset:/ A"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -37,6 +62,25 @@
       "label": "expresses",
       "inline_argument": "f(x__) := g(x__)",
       "inline_latex": "f(x) := g(x)",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "f(x__) := g(x__)",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "g(x)",
+          "types": [
+            "\"in\" B"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "x",
+          "types": []
+        }
+      ],
       "arguments": []
     },
     {

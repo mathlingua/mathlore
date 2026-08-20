@@ -1,17 +1,17 @@
 {
   "id": "002b9914-ad06-4f5a-a3fb-803bd86e6c4b",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c7365742e737563636573736f723a6f66"
   ],
   "heading": "\\set.successor:of{X}",
-  "heading_latex": "X \\cup \\left \\{ X \\right \\}",
+  "heading_latex": "\\textrm{The set successor of }X\\quad\\htmlClass{mlg-title-written}{X \\cup \\left \\{ X \\right \\}}",
   "body_text": null,
   "page": null,
-  "source": "[\\set.successor:of{X}]\nDeclares: Y is \\set\nwhen: X is \\set\nexpresses:\n. let: Z is \\set\n  then:\n  . have: Z \"in\"? Y\n    iff:\n    . (Z = X) \\.or./ (Z = \\singleton.set:of{X})\nDocumented:\n. written: \"X? \\cup \\left \\{ X? \\right \\}\"\n. description: \"The successor of $X$ is the set $X \\cup \\{X\\}$, whose members\n                are the members of $X$ together with $X$ itself. Starting from\n                $\\emptyset$ and repeating this step generates the natural\n                numbers.\"\nId: \"002b9914-ad06-4f5a-a3fb-803bd86e6c4b\"",
+  "source": "[\\set.successor:of{X}]\nDefines: Y is \\set\nwhen: X is \\set\nexpresses:\n. let: Z is \\set\n  then:\n  . have: Z \"in\"? Y\n    iff:\n    . (.Z = X.) \\.or./ (.Z = \\singleton.set:of{X}.)\nDocumented:\n. called: \"The set successor of $X?$\"\n. written: \"X? \\cup \\left \\{ X? \\right \\}\"\n. description: \"The successor of $X$ is the set $X \\cup \\{X\\}$, whose members\n                are the members of $X$ together with $X$ itself. Starting from\n                $\\emptyset$ and repeating this step generates the natural\n                numbers.\"\nId: \"002b9914-ad06-4f5a-a3fb-803bd86e6c4b\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "Y is \\set",
       "inline_latex": "Y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
       "arguments": []
@@ -20,6 +20,15 @@
       "label": "when",
       "inline_argument": "X is \\set",
       "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is \\set",
+          "types": [
+            "asserts X is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -35,6 +44,15 @@
               "label": "let",
               "inline_argument": "Z is \\set",
               "inline_latex": "Z \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "Z is \\set",
+                  "types": [
+                    "asserts Z is \\set"
+                  ]
+                }
+              ],
               "arguments": []
             },
             {
@@ -50,6 +68,22 @@
                       "label": "have",
                       "inline_argument": "Z \"in\"? Y",
                       "inline_latex": "Z \\in Y",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "Z \"in\"? Y",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "Z",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     },
                     {
@@ -59,8 +93,78 @@
                       "arguments": [
                         {
                           "kind": "formulation",
-                          "text": "(Z = X) \\.or./ (Z = \\singleton.set:of{X})",
-                          "latex": "\\htmlData{mlg-ref=5c2e6f722e2f}{\\left(Z = X\\right) \\text{ or } \\left(Z = \\htmlData{mlg-ref=5c73696e676c65746f6e2e7365743a6f66}{\\left \\{ X \\right \\}}\\right)}"
+                          "text": "(.Z = X.) \\.or./ (.Z = \\singleton.set:of{X}.)",
+                          "latex": "\\htmlData{mlg-ref=5c2e6f722e2f}{Z = X \\lor Z = \\htmlData{mlg-ref=5c73696e676c65746f6e2e7365743a6f66}{\\left \\{ X \\right \\}}}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "(.Z = X.) \\.or./ (.Z = \\singleton.set:of{X}.)",
+                              "types": []
+                            },
+                            {
+                              "depth": 1,
+                              "text": "Z = X",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "Z = X",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 3,
+                              "text": "Z",
+                              "types": [
+                                "is \\set"
+                              ]
+                            },
+                            {
+                              "depth": 3,
+                              "text": "X",
+                              "types": [
+                                "is \\set"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "Z = \\singleton.set:of{X}",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "Z = \\singleton.set:of{X}",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 3,
+                              "text": "Z",
+                              "types": [
+                                "is \\set"
+                              ]
+                            },
+                            {
+                              "depth": 3,
+                              "text": "\\singleton.set:of{X}",
+                              "types": [
+                                "is \\set"
+                              ]
+                            },
+                            {
+                              "depth": 4,
+                              "text": "X",
+                              "types": [
+                                "is \\set"
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }
@@ -77,6 +181,18 @@
       "inline_argument": null,
       "inline_latex": null,
       "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"The set successor of $X?$\"",
+              "inline_latex": "\\textrm{The set successor of }X",
+              "arguments": []
+            }
+          ]
+        },
         {
           "kind": "group",
           "heading": null,

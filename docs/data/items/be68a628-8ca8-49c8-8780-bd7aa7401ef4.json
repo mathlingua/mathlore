@@ -1,0 +1,163 @@
+{
+  "id": "be68a628-8ca8-49c8-8780-bd7aa7401ef4",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c7375726a6563746976653a3a66756e6374696f6e",
+    "5c7375726a6563746976653a3a66756e6374696f6e3a6f6e",
+    "5c7375726a6563746976653a3a66756e6374696f6e3a746f",
+    "5c7375726a6563746976653a3a66756e6374696f6e3a6f6e3a746f"
+  ],
+  "heading": "\\(surjective)::function:?on{A}:?to{B}",
+  "heading_latex": "\\textrm{surjective}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }A\\textrm{ to }B}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(surjective)::function:?on{A}:?to{B}]\nRefines: f(x__) ::= y_\nsatisfies:\n. forAll: y \"in\" B\n  then:\n  . exists: x \"in\" A\n    suchThat: f(x) = y\nDocumented:\n. adjective:\n  . \"surjective\"\n  . \"onto\"\nId: \"be68a628-8ca8-49c8-8780-bd7aa7401ef4\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "f(x__) ::= y_",
+      "inline_latex": "f(x) ::= y \\textrm{ is } \\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }A\\textrm{ to }B}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "y \"in\" B",
+              "inline_latex": "y \\in B",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "y \"in\" B",
+                  "types": [
+                    "asserts y \"in\" B"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "B",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "x \"in\" A",
+                      "inline_latex": "x \\in A",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x \"in\" A",
+                          "types": [
+                            "asserts x \"in\" A"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "A",
+                          "types": []
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "f(x) = y",
+                      "inline_latex": "f(x) = y",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "f(x) = y",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "f(x)",
+                          "types": [
+                            "\"in\" #",
+                            "\"in\" ##",
+                            "\"in\" B"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x",
+                          "types": [
+                            "\"in\" A"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "y",
+                          "types": [
+                            "\"in\" B"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "text",
+                  "text": "surjective",
+                  "latex": null
+                },
+                {
+                  "kind": "text",
+                  "text": "onto",
+                  "latex": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"be68a628-8ca8-49c8-8780-bd7aa7401ef4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

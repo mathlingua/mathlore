@@ -1,6 +1,6 @@
 {
   "id": "ffa1fbbf-8be1-4fd7-b759-5f39b30840e7",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c6e61747572616c2e73756363"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": "\\textrm{successor of }n\\quad\\htmlClass{mlg-title-written}{n+\\!\\!+}",
   "body_text": null,
   "page": null,
-  "source": "[\\natural.succ(n_)]\nDeclares: succ(n_) is (? is \\natural) -> (? is \\natural)\nDocumented:\n. called: \"successor of $n?$\"\n. written: \"n?+\\!\\!+\"\n. description: \"The successor of a natural number $n$ is the natural number\n                immediately after it, informally $n + 1$. Every natural number\n                other than zero is the successor of exactly one natural number.\"\nId: \"ffa1fbbf-8be1-4fd7-b759-5f39b30840e7\"",
+  "source": "[\\natural.succ(n_)]\nDefines: succ(n_) is (? is \\natural) -> (? is \\natural)\nDocumented:\n. called: \"successor of $n?$\"\n. written: \"n?+\\!\\!+\"\n. description: \"The successor of a natural number $n$ is the natural number\n                immediately after it, informally $n + 1$. Every natural number\n                other than zero is the successor of exactly one natural number.\"\nId: \"ffa1fbbf-8be1-4fd7-b759-5f39b30840e7\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "succ(n_) is (? is \\natural) -> (? is \\natural)",
       "inline_latex": "succ(n) \\textrm{ is } \\left(? \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}\\right) \\to \\left(? \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}\\right)",
       "arguments": []

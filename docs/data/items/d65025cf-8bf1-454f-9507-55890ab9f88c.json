@@ -18,12 +18,52 @@
       "label": "given",
       "inline_argument": "G1, G2 is \\group",
       "inline_latex": "G_1, G_2 \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "G1, G2 is \\group",
+          "types": [
+            "asserts G1 is \\group",
+            "asserts G2 is \\group"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "then",
       "inline_argument": "G1 \\.group.direct.product./ G2 is? \\group",
       "inline_latex": "\\htmlData{mlg-ref=5c2e67726f75702e6469726563742e70726f647563742e2f}{G_1 \\times G_2} \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "G1 \\.group.direct.product./ G2 is? \\group",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "G1\\.group.direct.product./G2",
+          "types": [
+            "is \\group"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "G1",
+          "types": [
+            "is \\group"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "G2",
+          "types": [
+            "is \\group"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

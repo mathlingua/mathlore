@@ -1,17 +1,17 @@
 {
   "id": "08f35257-d0a7-42af-9866-7d138c56fc4c",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c73696e676c65746f6e2e7365743a6f66"
   ],
   "heading": "\\singleton.set:of{X}",
-  "heading_latex": "\\left \\{ X \\right \\}",
+  "heading_latex": "\\textrm{The singleton set of }X\\quad\\htmlClass{mlg-title-written}{\\left \\{ X \\right \\}}",
   "body_text": null,
   "page": null,
-  "source": "[\\singleton.set:of{X}]\nDeclares: Y is \\set\nwhen: X is \\set\nexpresses:\n. let: Z is \\set\n  then:\n  . have: Z \"in\"? Y\n    iff: Z = X\nDocumented:\n. written: \"\\left \\{ X? \\right \\}\"\n. description: \"The singleton $\\{X\\}$ is the set whose sole member is $X$: a set\n                $Z$ belongs to it exactly when $Z = X$. Its existence follows\n                from pairing applied to $X$ with itself.\"\nId: \"08f35257-d0a7-42af-9866-7d138c56fc4c\"",
+  "source": "[\\singleton.set:of{X}]\nDefines: Y is \\set\nwhen: X is \\set\nexpresses:\n. let: Z is \\set\n  then:\n  . have: Z \"in\"? Y\n    iff: Z = X\nDocumented:\n. called: \"The singleton set of $X?$\"\n. written: \"\\left \\{ X? \\right \\}\"\n. description: \"The singleton $\\{X\\}$ is the set whose sole member is $X$: a set\n                $Z$ belongs to it exactly when $Z = X$. Its existence follows\n                from pairing applied to $X$ with itself.\"\nId: \"08f35257-d0a7-42af-9866-7d138c56fc4c\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "Y is \\set",
       "inline_latex": "Y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
       "arguments": []
@@ -20,6 +20,15 @@
       "label": "when",
       "inline_argument": "X is \\set",
       "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is \\set",
+          "types": [
+            "asserts X is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -35,6 +44,15 @@
               "label": "let",
               "inline_argument": "Z is \\set",
               "inline_latex": "Z \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "Z is \\set",
+                  "types": [
+                    "asserts Z is \\set"
+                  ]
+                }
+              ],
               "arguments": []
             },
             {
@@ -50,12 +68,51 @@
                       "label": "have",
                       "inline_argument": "Z \"in\"? Y",
                       "inline_latex": "Z \\in Y",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "Z \"in\"? Y",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "Z",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     },
                     {
                       "label": "iff",
                       "inline_argument": "Z = X",
                       "inline_latex": "Z = X",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "Z = X",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "Z",
+                          "types": [
+                            "is \\set"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "X",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     }
                   ]
@@ -71,6 +128,18 @@
       "inline_argument": null,
       "inline_latex": null,
       "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"The singleton set of $X?$\"",
+              "inline_latex": "\\textrm{The singleton set of }X",
+              "arguments": []
+            }
+          ]
+        },
         {
           "kind": "group",
           "heading": null,

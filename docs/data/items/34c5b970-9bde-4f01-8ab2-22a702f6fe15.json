@@ -18,6 +18,72 @@
       "label": "then",
       "inline_argument": "\\integral[u_, v_ is \\natural]{u_ + v_}:d{u_} = 0",
       "inline_latex": "\\htmlData{mlg-ref=5c696e74656772616c7b5f2832297d3a647b23317d}{\\displaystyle \\int u + v \\: d u} = 0",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "\\integral[u_, v_ is \\natural]{u_ + v_}:d{u_} = 0",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\integral{(u,v is \\natural) => u + v}:d{u}",
+          "types": []
+        },
+        {
+          "depth": 2,
+          "text": "(u,v is \\natural) => u + v",
+          "types": []
+        },
+        {
+          "depth": 3,
+          "text": "(u,v is \\natural)",
+          "types": []
+        },
+        {
+          "depth": 4,
+          "text": "u",
+          "types": []
+        },
+        {
+          "depth": 4,
+          "text": "v is \\natural",
+          "types": [
+            "asserts v is \\natural"
+          ]
+        },
+        {
+          "depth": 5,
+          "text": "v",
+          "types": []
+        },
+        {
+          "depth": 3,
+          "text": "u + v",
+          "types": []
+        },
+        {
+          "depth": 4,
+          "text": "u",
+          "types": []
+        },
+        {
+          "depth": 4,
+          "text": "v",
+          "types": []
+        },
+        {
+          "depth": 2,
+          "text": "u",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "0",
+          "types": []
+        }
+      ],
       "arguments": []
     },
     {

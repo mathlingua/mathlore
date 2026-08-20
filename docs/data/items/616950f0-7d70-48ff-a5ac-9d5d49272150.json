@@ -14,12 +14,42 @@
       "label": "Refines",
       "inline_argument": "X",
       "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "satisfies",
       "inline_argument": "X != \\empty.set",
       "inline_latex": "X \\ne \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X != \\empty.set",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "X",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\empty.set",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

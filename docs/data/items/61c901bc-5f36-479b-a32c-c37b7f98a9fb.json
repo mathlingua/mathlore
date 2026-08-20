@@ -1,6 +1,6 @@
 {
   "id": "61c901bc-5f36-479b-a32c-c37b7f98a9fb",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c7365743a6f66"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": "\\textrm{set of }\\left \\{ x_{1}, \\ldots, x_{i}, \\ldots, x_{n} \\right \\}\\quad\\htmlClass{mlg-title-written}{\\left \\{ x_{1}, \\ldots, x_{i}, \\ldots, x_{n} \\right \\}}",
   "body_text": null,
   "page": null,
-  "source": "[\\set:of{x[i_ := 1...n]}]\nDeclares: X is \\set\nwhen: x[1...n] is \\\\opaque\nexpresses:\n. let: y is \\\\opaque\n  then:\n  . have: y \"in\"? X\n    iff:\n    . anyOf:\n      . x[1...n] = y\nDocumented:\n. called: \"set of $\\left \\{ x? \\right \\}$\"\n. written: \"\\left \\{ x? \\right \\}\"\n. description: \"The set $\\{x_1, \\dots, x_n\\}$ listed by its elements: a value\n                belongs to it exactly when it equals one of the listed $x_i$.\n                This is the finite, roster form of set-builder notation.\"\nId: \"61c901bc-5f36-479b-a32c-c37b7f98a9fb\"",
+  "source": "[\\set:of{x[i_ := 1...n]}]\nDefines: X is \\set\nwhen: x[1...n] is \\\\opaque\nexpresses:\n. let: y is \\\\opaque\n  then:\n  . have: y \"in\"? X\n    iff:\n    . anyOf:\n      . x[1...n] = y\nDocumented:\n. called: \"set of $\\left \\{ x? \\right \\}$\"\n. written: \"\\left \\{ x? \\right \\}\"\n. description: \"The set $\\{x_1, \\dots, x_n\\}$ listed by its elements: a value\n                belongs to it exactly when it equals one of the listed $x_i$.\n                This is the finite, roster form of set-builder notation.\"\nId: \"61c901bc-5f36-479b-a32c-c37b7f98a9fb\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "X is \\set",
       "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
       "arguments": []
@@ -20,6 +20,20 @@
       "label": "when",
       "inline_argument": "x[1...n] is \\\\opaque",
       "inline_latex": "x_{1} \\textrm{ is } \\textrm{opaque}, \\; \\ldots, \\; x_{n} \\textrm{ is } \\textrm{opaque}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x[1...n] is \\\\opaque",
+          "types": [
+            "asserts x[1...n] is \\\\opaque"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "x[1...n]",
+          "types": []
+        }
+      ],
       "arguments": []
     },
     {
@@ -35,6 +49,15 @@
               "label": "let",
               "inline_argument": "y is \\\\opaque",
               "inline_latex": "y \\textrm{ is } \\textrm{opaque}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "y is \\\\opaque",
+                  "types": [
+                    "asserts y is \\\\opaque"
+                  ]
+                }
+              ],
               "arguments": []
             },
             {
@@ -50,6 +73,22 @@
                       "label": "have",
                       "inline_argument": "y \"in\"? X",
                       "inline_latex": "y \\in X",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "y \"in\"? X",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "y",
+                          "types": [
+                            "is \\\\opaque"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     },
                     {
@@ -69,7 +108,30 @@
                                 {
                                   "kind": "formulation",
                                   "text": "x[1...n] = y",
-                                  "latex": "x_{1} = y, \\; \\ldots, \\; x_{n} = y"
+                                  "latex": "x_{1} = y, \\; \\ldots, \\; x_{n} = y",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "x[1...n] = y",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "x[1...n]",
+                                      "types": [
+                                        "is \\\\opaque"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "y",
+                                      "types": [
+                                        "is \\\\opaque"
+                                      ]
+                                    }
+                                  ]
                                 }
                               ]
                             }

@@ -1,6 +1,6 @@
 {
   "id": "62d63f10-f723-4744-bef7-9c47d821dcfc",
-  "kind": "Defines",
+  "kind": "Declares",
   "definition_keys": [
     "5c6e61747572616c2e736571656e6365"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": "\\textrm{natural sequence}",
   "body_text": null,
   "page": null,
-  "source": "[\\natural.seqence]\nDefines: Xb ::= x(i_)\nextends: x is \\function:on{\\naturals.set}:to{\\naturals.set}\nDocumented:\n. writing: x(i)\n  as: \"x?_{i?}\"\n. writing: x(i_)\n  as: \"\\left \\{ x?_{i_?} \\right \\}_{i_?=1}^\\infty\"\n. called: \"natural sequence\"\nWriting:\n. \"Xb :~> Y\"\nId: \"62d63f10-f723-4744-bef7-9c47d821dcfc\"",
+  "source": "[\\natural.seqence]\nDeclares: Xb ::= x(i_)\nextends: x is \\function:on{\\naturals.set}:to{\\naturals.set}\nDocumented:\n. writing: x(i)\n  as: \"x?_{i?}\"\n. writing: x(i_)\n  as: \"\\left \\{ x?_{i_?} \\right \\}_{i_?=1}^\\infty\"\n. called: \"natural sequence\"\nWriting:\n. \"Xb :~> Y\"\nId: \"62d63f10-f723-4744-bef7-9c47d821dcfc\"",
   "sections": [
     {
-      "label": "Defines",
+      "label": "Declares",
       "inline_argument": "Xb ::= x(i_)",
       "inline_latex": "Y ::= \\left \\{ x_{i} \\right \\}_{i=1}^\\infty",
       "arguments": []
@@ -20,6 +20,15 @@
       "label": "extends",
       "inline_argument": "x is \\function:on{\\naturals.set}:to{\\naturals.set}",
       "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{x \\: : \\: \\htmlData{mlg-ref=5c6e61747572616c732e736574}{\\mathbb{N}} \\rightarrow \\htmlData{mlg-ref=5c6e61747572616c732e736574}{\\mathbb{N}}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x is \\function:on{\\naturals.set}:to{\\naturals.set}",
+          "types": [
+            "asserts x is \\function:on{\\naturals.set}:to{\\naturals.set}"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

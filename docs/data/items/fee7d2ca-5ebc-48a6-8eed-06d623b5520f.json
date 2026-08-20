@@ -1,6 +1,6 @@
 {
   "id": "fee7d2ca-5ebc-48a6-8eed-06d623b5520f",
-  "kind": "Defines",
+  "kind": "Declares",
   "definition_keys": [
     "5c6d6f6e6f69642e656c656d656e743a6f66"
   ],
@@ -8,24 +8,36 @@
   "heading_latex": "\\textrm{element of monoid }M",
   "body_text": null,
   "page": null,
-  "source": "[\\monoid.element:of{M}]\nDefines: x\nwhen: M is \\monoid\nextends: x is \\semigroup.element:of{M}\nDocumented:\n. called: \"element of monoid $M?$\"\nId: \"fee7d2ca-5ebc-48a6-8eed-06d623b5520f\"",
+  "source": "[\\monoid.element:of{M}]\nDeclares: x is \\semigroup.element:of{M}\nwhen: M is \\monoid\nDocumented:\n. called: \"element of monoid $M?$\"\nId: \"fee7d2ca-5ebc-48a6-8eed-06d623b5520f\"",
   "sections": [
     {
-      "label": "Defines",
-      "inline_argument": "x",
-      "inline_latex": "x",
+      "label": "Declares",
+      "inline_argument": "x is \\semigroup.element:of{M}",
+      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c73656d6967726f75702e656c656d656e743a6f66}{\\textrm{element of semigroup }M}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x is \\semigroup.element:of{M}",
+          "types": [
+            "asserts x is \\semigroup.element:of{M}"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "when",
       "inline_argument": "M is \\monoid",
       "inline_latex": "M \\textrm{ is } \\htmlData{mlg-ref=5c6d6f6e6f6964}{\\textrm{monoid}}",
-      "arguments": []
-    },
-    {
-      "label": "extends",
-      "inline_argument": "x is \\semigroup.element:of{M}",
-      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c73656d6967726f75702e656c656d656e743a6f66}{\\textrm{element of semigroup }M}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "M is \\monoid",
+          "types": [
+            "asserts M is \\monoid"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

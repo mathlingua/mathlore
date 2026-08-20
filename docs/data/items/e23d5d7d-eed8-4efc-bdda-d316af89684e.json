@@ -20,6 +20,15 @@
       "label": "when",
       "inline_argument": "X is \\set",
       "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is \\set",
+          "types": [
+            "asserts X is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -35,12 +44,111 @@
               "label": "forAll",
               "inline_argument": "a, b, c \"in\" X",
               "inline_latex": "a, b, c \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a, b, c \"in\" X",
+                  "types": [
+                    "asserts a \"in\" X",
+                    "asserts b \"in\" X",
+                    "asserts c \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
               "arguments": []
             },
             {
               "label": "then",
               "inline_argument": "(a * b) * c = a * (b * c)",
               "inline_latex": "\\left(a \\ast b\\right) \\ast c = a \\ast \\left(b \\ast c\\right)",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "(a * b) * c = a * (b * c)",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "a * b * c",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "a * b",
+                  "types": []
+                },
+                {
+                  "depth": 3,
+                  "text": "a * b",
+                  "types": []
+                },
+                {
+                  "depth": 4,
+                  "text": "a",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 4,
+                  "text": "b",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "c",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "a * b * c",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "a",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "b * c",
+                  "types": []
+                },
+                {
+                  "depth": 3,
+                  "text": "b * c",
+                  "types": []
+                },
+                {
+                  "depth": 4,
+                  "text": "b",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 4,
+                  "text": "c",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                }
+              ],
               "arguments": []
             }
           ]

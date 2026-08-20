@@ -1,6 +1,6 @@
 {
   "id": "d88e480c-de0e-4e48-92b0-54bd232a346e",
-  "kind": "Defines",
+  "kind": "Declares",
   "definition_keys": [
     "5c6e61747572616c"
   ],
@@ -8,12 +8,21 @@
   "heading_latex": "\\textrm{natural}",
   "body_text": null,
   "page": null,
-  "source": "[\\natural]\nDefines: n\nsatisfies:\n. oneOf:\n  . n = \\natural.0\n  . exists: m is \\natural\n    suchThat: n = \\natural.succ(m)\nRequires:\n. definition: \\natural.0 is \\natural\n. definition: \\natural.succ is (? is \\natural) -> (? is \\natural)\nEnables:\n. capability: x_++ :=> \\natural.succ(x_)\n. capability: x_ + y_ :=> x_ \\.natural.+./ y_\n. capability: x_ +_+--+*' y_ :=> x_ \\.natural.+./ y_\nDocumented:\n. called: \"natural\"\n. description: \"A natural number is either $0$ or the successor of a natural\n                number, and these two cases are exclusive. Every natural number\n                is reached from $0$ by finitely many successors, which is the\n                basis for defining operations on the naturals by recursion.\"\nId: \"d88e480c-de0e-4e48-92b0-54bd232a346e\"",
+  "source": "[\\natural]\nDeclares: n\nsatisfies:\n. oneOf:\n  . n = \\natural.0\n  . exists: m is \\natural\n    suchThat: n = \\natural.succ(m)\nRequires:\n. definition: \\natural.0 is \\natural\n. definition: \\natural.succ is (? is \\natural) -> (? is \\natural)\nEnables:\n. capability: x_++ :=> \\natural.succ(x_)\n. capability: x_ + y_ :=> x_ \\.natural.+./ y_\n. capability: x_ +_+--+*' y_ :=> x_ \\.natural.+./ y_\nDocumented:\n. called: \"natural\"\n. description: \"A natural number is either $0$ or the successor of a natural\n                number, and these two cases are exclusive. Every natural number\n                is reached from $0$ by finitely many successors, which is the\n                basis for defining operations on the naturals by recursion.\"\nId: \"d88e480c-de0e-4e48-92b0-54bd232a346e\"",
   "sections": [
     {
-      "label": "Defines",
+      "label": "Declares",
       "inline_argument": "n",
       "inline_latex": "n",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "n",
+          "types": [
+            "is \\natural"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -33,7 +42,30 @@
                 {
                   "kind": "formulation",
                   "text": "n = \\natural.0",
-                  "latex": "n = \\htmlData{mlg-ref=5c6e61747572616c2e30}{0}"
+                  "latex": "n = \\htmlData{mlg-ref=5c6e61747572616c2e30}{0}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "n = \\natural.0",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "n",
+                      "types": [
+                        "is \\natural"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "\\natural.0",
+                      "types": [
+                        "is \\natural"
+                      ]
+                    }
+                  ]
                 },
                 {
                   "kind": "group",
@@ -43,12 +75,51 @@
                       "label": "exists",
                       "inline_argument": "m is \\natural",
                       "inline_latex": "m \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "m is \\natural",
+                          "types": [
+                            "asserts m is \\natural"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     },
                     {
                       "label": "suchThat",
                       "inline_argument": "n = \\natural.succ(m)",
                       "inline_latex": "n = \\htmlData{mlg-ref=5c6e61747572616c2e73756363}{m+\\!\\!+}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "n = \\natural.succ(m)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "n",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\natural.succ(m)",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "m",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     }
                   ]

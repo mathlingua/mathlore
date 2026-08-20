@@ -22,12 +22,39 @@
         {
           "kind": "formulation",
           "text": "G ::= (X, *, e) is \\group",
-          "latex": "G ::= \\left(X, \\ast, e\\right) \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}"
+          "latex": "G ::= \\left(X, \\ast, e\\right) \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "G ::= (X, *, e) is \\group",
+              "types": [
+                "asserts G is \\group"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "x, y1, y2 \"in\" G",
-          "latex": "x, y_1, y_2 \\in G"
+          "latex": "x, y_1, y_2 \\in G",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x, y1, y2 \"in\" G",
+              "types": [
+                "asserts x \"in\" G",
+                "asserts y1 \"in\" G",
+                "asserts y2 \"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "G",
+              "types": [
+                "is \\group"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -39,22 +66,170 @@
         {
           "kind": "formulation",
           "text": "x * y1 = e",
-          "latex": "x \\ast y_1 = e"
+          "latex": "x \\ast y_1 = e",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x * y1 = e",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "x * y1",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "x",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "y1",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "e",
+              "types": [
+                "\"in\" X"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "y1 * x = e",
-          "latex": "y_1 \\ast x = e"
+          "latex": "y_1 \\ast x = e",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "y1 * x = e",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "y1 * x",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "y1",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "x",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "e",
+              "types": [
+                "\"in\" X"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "x * y2 = e",
-          "latex": "x \\ast y_2 = e"
+          "latex": "x \\ast y_2 = e",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x * y2 = e",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "x * y2",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "x",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "y2",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "e",
+              "types": [
+                "\"in\" X"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "y2 * x = e",
-          "latex": "y_2 \\ast x = e"
+          "latex": "y_2 \\ast x = e",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "y2 * x = e",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "y2 * x",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "y2",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "x",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "e",
+              "types": [
+                "\"in\" X"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -62,6 +237,29 @@
       "label": "then",
       "inline_argument": "y1 = y2",
       "inline_latex": "y_1 = y_2",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "y1 = y2",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "y1",
+          "types": [
+            "\"in\" G"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "y2",
+          "types": [
+            "\"in\" G"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

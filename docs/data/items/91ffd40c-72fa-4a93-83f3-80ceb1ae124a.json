@@ -1,6 +1,6 @@
 {
   "id": "91ffd40c-72fa-4a93-83f3-80ceb1ae124a",
-  "kind": "Defines",
+  "kind": "Declares",
   "definition_keys": [
     "5c6d61676d61"
   ],
@@ -8,31 +8,28 @@
   "heading_latex": "\\textrm{magma}",
   "body_text": null,
   "page": null,
-  "source": "[\\magma]\nDefines: M ::= (X, *)\nextends: M is \\set via X\nmeans:\n. * is \\binary.operation:on{M}\nEnables:\n. capability: x_ \"in\" M :-> x_ is \\magma.element:of{M}\n  written: \"x_? \\in M?\"\nDocumented:\n. called: \"magma\"\n. description: \"A magma is a set $X$ together with a binary operation $*$ on it,\n                subject to no further axioms. It is the weakest algebraic\n                structure of this chapter, and every later structure is a magma\n                with additional properties.\"\nId: \"91ffd40c-72fa-4a93-83f3-80ceb1ae124a\"",
+  "source": "[\\magma]\nDeclares: M ::= (X, *) is \\set via X\nspecifies: * is \\binary.operation:on{M}\nEnables:\n. capability: x_ \"in\" M :-> x_ is \\magma.element:of{M}\n  written: \"x_? \\in M?\"\nDocumented:\n. called: \"magma\"\n. description: \"A magma is a set $X$ together with a binary operation $*$ on it,\n                subject to no further axioms. It is the weakest algebraic\n                structure of this chapter, and every later structure is a magma\n                with additional properties.\"\nId: \"91ffd40c-72fa-4a93-83f3-80ceb1ae124a\"",
   "sections": [
     {
-      "label": "Defines",
-      "inline_argument": "M ::= (X, *)",
-      "inline_latex": "M ::= \\left(X, \\ast\\right)",
+      "label": "Declares",
+      "inline_argument": "M ::= (X, *) is \\set via X",
+      "inline_latex": "M ::= \\left(X, \\ast\\right) \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}} \\textrm{ via } X",
       "arguments": []
     },
     {
-      "label": "extends",
-      "inline_argument": "M is \\set via X",
-      "inline_latex": "M \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}} \\textrm{ via } X",
-      "arguments": []
-    },
-    {
-      "label": "declares",
-      "inline_argument": null,
-      "inline_latex": null,
-      "arguments": [
+      "label": "specifies",
+      "inline_argument": "* is \\binary.operation:on{M}",
+      "inline_latex": "\\ast \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }M}",
+      "inline_type_info": [
         {
-          "kind": "formulation",
+          "depth": 0,
           "text": "* is \\binary.operation:on{M}",
-          "latex": "\\ast \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }M}"
+          "types": [
+            "asserts * is \\binary.operation:on{M}"
+          ]
         }
-      ]
+      ],
+      "arguments": []
     },
     {
       "label": "Enables",

@@ -1,6 +1,6 @@
 {
   "id": "49582242-a047-48ae-aced-77654d9a48aa",
-  "kind": "Defines",
+  "kind": "Declares",
   "definition_keys": [
     "5c717561736967726f7570"
   ],
@@ -8,18 +8,12 @@
   "heading_latex": "\\textrm{quasigroup}",
   "body_text": null,
   "page": null,
-  "source": "[\\quasigroup]\nDefines: Q ::= (X, *)\nextends: Q is \\magma via (X, *)\nsatisfies:\n. forAll: a, b \"in\" Q\n  then:\n  . existsUnique: x, y \"in\" Q\n    suchThat:\n    . a * x = b\n    . y * a = b\nEnables:\n. capability: x_ \"in\" Q :-> x_ is \\quasigroup.element:of{Q}\n  written: \"x_? \\in Q?\"\nDocumented:\n. called: \"quasigroup\"\n. description: \"A quasigroup is a magma in which left and right division are\n                always possible: for all $a$ and $b$ the equations $a * x = b$\n                and $y * a = b$ each have a unique solution. It captures\n                invertibility without requiring associativity or an identity.\"\nId: \"49582242-a047-48ae-aced-77654d9a48aa\"",
+  "source": "[\\quasigroup]\nDeclares: Q ::= (X, *) is \\magma via (X, *)\nsatisfies:\n. forAll: a, b \"in\" Q\n  then:\n  . existsUnique: x, y \"in\" Q\n    suchThat:\n    . a * x = b\n    . y * a = b\nEnables:\n. capability: x_ \"in\" Q :-> x_ is \\quasigroup.element:of{Q}\n  written: \"x_? \\in Q?\"\nDocumented:\n. called: \"quasigroup\"\n. description: \"A quasigroup is a magma in which left and right division are\n                always possible: for all $a$ and $b$ the equations $a * x = b$\n                and $y * a = b$ each have a unique solution. It captures\n                invertibility without requiring associativity or an identity.\"\nId: \"49582242-a047-48ae-aced-77654d9a48aa\"",
   "sections": [
     {
-      "label": "Defines",
-      "inline_argument": "Q ::= (X, *)",
-      "inline_latex": "Q ::= \\left(X, \\ast\\right)",
-      "arguments": []
-    },
-    {
-      "label": "extends",
-      "inline_argument": "Q is \\magma via (X, *)",
-      "inline_latex": "Q \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d61}{\\textrm{magma}} \\textrm{ via } \\left(X, \\ast\\right)",
+      "label": "Declares",
+      "inline_argument": "Q ::= (X, *) is \\magma via (X, *)",
+      "inline_latex": "Q ::= \\left(X, \\ast\\right) \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d61}{\\textrm{magma}} \\textrm{ via } \\left(X, \\ast\\right)",
       "arguments": []
     },
     {
@@ -35,6 +29,23 @@
               "label": "forAll",
               "inline_argument": "a, b \"in\" Q",
               "inline_latex": "a, b \\in Q",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a, b \"in\" Q",
+                  "types": [
+                    "asserts a \"in\" Q",
+                    "asserts b \"in\" Q"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "Q",
+                  "types": [
+                    "is \\quasigroup"
+                  ]
+                }
+              ],
               "arguments": []
             },
             {
@@ -50,6 +61,23 @@
                       "label": "existsUnique",
                       "inline_argument": "x, y \"in\" Q",
                       "inline_latex": "x, y \\in Q",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x, y \"in\" Q",
+                          "types": [
+                            "asserts x \"in\" Q",
+                            "asserts y \"in\" Q"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "Q",
+                          "types": [
+                            "is \\quasigroup"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     },
                     {
@@ -60,12 +88,86 @@
                         {
                           "kind": "formulation",
                           "text": "a * x = b",
-                          "latex": "a \\ast x = b"
+                          "latex": "a \\ast x = b",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "a * x = b",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "a * x",
+                              "types": [
+                                "\"in\" Q"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "a",
+                              "types": [
+                                "\"in\" Q"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "x",
+                              "types": [
+                                "\"in\" Q"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "b",
+                              "types": [
+                                "\"in\" Q"
+                              ]
+                            }
+                          ]
                         },
                         {
                           "kind": "formulation",
                           "text": "y * a = b",
-                          "latex": "y \\ast a = b"
+                          "latex": "y \\ast a = b",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "y * a = b",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "y * a",
+                              "types": [
+                                "\"in\" Q"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "y",
+                              "types": [
+                                "\"in\" Q"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "a",
+                              "types": [
+                                "\"in\" Q"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "b",
+                              "types": [
+                                "\"in\" Q"
+                              ]
+                            }
+                          ]
                         }
                       ]
                     }

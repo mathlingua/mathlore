@@ -1,6 +1,6 @@
 {
   "id": "8fd9d494-2882-4639-bb50-44a56626d1c4",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c7365742e706169723a6f66"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": "\\textrm{pair of }x\\textrm{ and }y\\quad\\htmlClass{mlg-title-written}{\\langle x, y \\rangle}",
   "body_text": null,
   "page": null,
-  "source": "[\\set.pair:of{x, y}]\nDeclares: p := \\set:of{x, \\set:of{x, y}} is \\set\nwhen: x, y is \\set\nDocumented:\n. called: \"pair of $x?$ and $y?$\"\n. written: \"\\langle x?, y? \\rangle\"\n. description: \"The ordered pair $\\langle x, y \\rangle$, encoded as the set\n                $\\{x, \\{x, y\\}\\}$. This encoding lets the first and second\n                components be recovered from the set alone, so order is\n                meaningful even though sets are unordered.\"\nId: \"8fd9d494-2882-4639-bb50-44a56626d1c4\"",
+  "source": "[\\set.pair:of{x, y}]\nDefines: p := \\set:of{x, \\set:of{x, y}} is \\set\nwhen: x, y is \\set\nDocumented:\n. called: \"pair of $x?$ and $y?$\"\n. written: \"\\langle x?, y? \\rangle\"\n. description: \"The ordered pair $\\langle x, y \\rangle$, encoded as the set\n                $\\{x, \\{x, y\\}\\}$. This encoding lets the first and second\n                components be recovered from the set alone, so order is\n                meaningful even though sets are unordered.\"\nId: \"8fd9d494-2882-4639-bb50-44a56626d1c4\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "p := \\set:of{x, \\set:of{x, y}} is \\set",
       "inline_latex": "p := \\htmlData{mlg-ref=5c7365743a6f66}{\\left \\{ x, \\htmlData{mlg-ref=5c7365743a6f66}{\\left \\{ x, y \\right \\}} \\right \\}} \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
       "arguments": []
@@ -20,6 +20,16 @@
       "label": "when",
       "inline_argument": "x, y is \\set",
       "inline_latex": "x, y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x, y is \\set",
+          "types": [
+            "asserts x is \\set",
+            "asserts y is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

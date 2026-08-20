@@ -6,7 +6,7 @@
   "heading_latex": null,
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven:\n. C is \\set\n. B \\:set.theoretic.subset:/ C\n. A \\:set.theoretic.subset:/ B\nthen:\n. A \\:set.theoretic.subset?:/ C\nId: \"6a4bcb50-97bc-4d1b-a9b2-750c963bb720\"",
+  "source": "Theorem:\ngiven:\n. C is \\set\n. B \\:subset:/ C\n. A \\:subset:/ B\nthen:\n. A \\:subset?:/ C\nId: \"6a4bcb50-97bc-4d1b-a9b2-750c963bb720\"",
   "sections": [
     {
       "label": "Theorem",
@@ -22,17 +22,58 @@
         {
           "kind": "formulation",
           "text": "C is \\set",
-          "latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}"
+          "latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "C is \\set",
+              "types": [
+                "asserts C is \\set"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
-          "text": "B \\:set.theoretic.subset:/ C",
-          "latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{B \\subseteq C}"
+          "text": "B \\:subset:/ C",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{B \\subseteq C}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "B \\:subset:/ C",
+              "types": [
+                "asserts B \\:subset:/ C"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
-          "text": "A \\:set.theoretic.subset:/ B",
-          "latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{A \\subseteq B}"
+          "text": "A \\:subset:/ B",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq B}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "A \\:subset:/ B",
+              "types": [
+                "asserts A \\:subset:/ B"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "B",
+              "types": [
+                "\\:subset:/ C"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -43,8 +84,31 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "A \\:set.theoretic.subset?:/ C",
-          "latex": "\\htmlData{mlg-ref=5c3a7365742e7468656f72657469632e7375627365743a2f}{A \\subseteq C}"
+          "text": "A \\:subset?:/ C",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq C}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "A \\:subset?:/ C",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A",
+              "types": [
+                "\\:subset:/ B"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
         }
       ]
     },

@@ -18,6 +18,15 @@
       "label": "given",
       "inline_argument": "x(i_) is \\natural.seqence",
       "inline_latex": "\\left \\{ x_{i} \\right \\}_{i=1}^\\infty \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c2e736571656e6365}{\\textrm{natural sequence}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x(i_) is \\natural.seqence",
+          "types": [
+            "asserts x is \\natural.seqence"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -33,12 +42,44 @@
               "label": "forAll",
               "inline_argument": "i is \\natural",
               "inline_latex": "i \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "i is \\natural",
+                  "types": [
+                    "asserts i is \\natural"
+                  ]
+                }
+              ],
               "arguments": []
             },
             {
               "label": "then",
               "inline_argument": "x(i) is? \\natural",
               "inline_latex": "x_{i} \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x(i) is? \\natural",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x(i)",
+                  "types": [
+                    "\"in\" \\naturals.set"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "i",
+                  "types": [
+                    "is \\natural"
+                  ]
+                }
+              ],
               "arguments": []
             }
           ]

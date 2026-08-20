@@ -18,12 +18,91 @@
       "label": "given",
       "inline_argument": "a, b, c, x, y, z is \\natural",
       "inline_latex": "a, b, c, x, y, z \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "a, b, c, x, y, z is \\natural",
+          "types": [
+            "asserts a is \\natural",
+            "asserts b is \\natural",
+            "asserts c is \\natural",
+            "asserts x is \\natural",
+            "asserts y is \\natural",
+            "asserts z is \\natural"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "then",
       "inline_argument": "\\matrix:of{a, b, c; x, y, z + z}",
       "inline_latex": "\\htmlData{mlg-ref=5c6d61747269783a6f66}{\\begin{pmatrix} a&b&c\\\\x&y&z + z\\\\ \\end{pmatrix}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "\\matrix:of{a, b, c; x, y, z + z}",
+          "types": [
+            "is \\matrix"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "a",
+          "types": [
+            "is \\natural"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "b",
+          "types": [
+            "is \\natural"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "c",
+          "types": [
+            "is \\natural"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "x",
+          "types": [
+            "is \\natural"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "y",
+          "types": [
+            "is \\natural"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "z + z",
+          "types": [
+            "\"in\" \\naturals.set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "z",
+          "types": [
+            "is \\natural"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "z",
+          "types": [
+            "is \\natural"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

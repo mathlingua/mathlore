@@ -20,6 +20,16 @@
       "label": "when",
       "inline_argument": "n, m is \\natural",
       "inline_latex": "n, m \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "n, m is \\natural",
+          "types": [
+            "asserts n is \\natural",
+            "asserts m is \\natural"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -35,12 +45,54 @@
               "label": "if",
               "inline_argument": "n = 0",
               "inline_latex": "n = 0",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n = 0",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "n",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "0",
+                  "types": []
+                }
+              ],
               "arguments": []
             },
             {
               "label": "then",
               "inline_argument": "m = 0",
               "inline_latex": "m = 0",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "m = 0",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "m",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "0",
+                  "types": []
+                }
+              ],
               "arguments": []
             }
           ]
@@ -53,6 +105,25 @@
               "label": "if",
               "inline_argument": "n != 0",
               "inline_latex": "n \\ne 0",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n != 0",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "n",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "0",
+                  "types": []
+                }
+              ],
               "arguments": []
             },
             {
@@ -68,12 +139,51 @@
                       "label": "exists",
                       "inline_argument": "k is \\natural",
                       "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "k is \\natural",
+                          "types": [
+                            "asserts k is \\natural"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     },
                     {
                       "label": "suchThat",
                       "inline_argument": "n = \\natural.succ(k)",
                       "inline_latex": "n = \\htmlData{mlg-ref=5c6e61747572616c2e73756363}{k+\\!\\!+}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "n = \\natural.succ(k)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "n",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\natural.succ(k)",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "k",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
                       "arguments": []
                     }
                   ]

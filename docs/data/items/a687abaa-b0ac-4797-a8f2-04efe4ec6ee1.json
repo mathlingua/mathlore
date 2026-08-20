@@ -1,6 +1,6 @@
 {
   "id": "a687abaa-b0ac-4797-a8f2-04efe4ec6ee1",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c696e74656772616c7b5f2832297d3a647b23317d"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": null,
   "body_text": null,
   "page": null,
-  "source": "[\\integral{f(x_, y_)}:d{f.x_}]\nDeclares: g(x_, y_) is \\function\nwhen: f is \\function:on{\\naturals.set}:to{\\naturals.set}\nDocumented:\n. written: \"\\displaystyle \\int f? \\: d x_?\"\nId: \"a687abaa-b0ac-4797-a8f2-04efe4ec6ee1\"",
+  "source": "[\\integral{f(x_, y_)}:d{f.x_}]\nDefines: g(x_, y_) is \\function\nwhen: f is \\function:on{\\naturals.set}:to{\\naturals.set}\nDocumented:\n. written: \"\\displaystyle \\int f? \\: d x_?\"\nId: \"a687abaa-b0ac-4797-a8f2-04efe4ec6ee1\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "g(x_, y_) is \\function",
       "inline_latex": "g(x, y) \\textrm{ is } \\htmlData{mlg-ref=5c66756e6374696f6e}{\\textrm{function}}",
       "arguments": []
@@ -20,6 +20,15 @@
       "label": "when",
       "inline_argument": "f is \\function:on{\\naturals.set}:to{\\naturals.set}",
       "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c6e61747572616c732e736574}{\\mathbb{N}} \\rightarrow \\htmlData{mlg-ref=5c6e61747572616c732e736574}{\\mathbb{N}}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "f is \\function:on{\\naturals.set}:to{\\naturals.set}",
+          "types": [
+            "asserts f is \\function:on{\\naturals.set}:to{\\naturals.set}"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

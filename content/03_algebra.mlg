@@ -198,7 +198,7 @@ Id: "6c628805-5df1-4ad5-b2c3-23bf7dad5acc"
 [\(finite)::group]
 Refines: G
 implicitly:
-extends: G is \(finite)::monoid
+specifies: G is \(finite)::monoid
 Documented:
 . adjective: "finite"
 Id: "28d2a1c1-89a5-4163-93e3-fbc21c97ec9a"
@@ -278,9 +278,9 @@ Id: "7541e6eb-f20a-497b-ae90-65c891609d26"
 Theorem:
 given:
 . X is \set
-. Y \:set.theoretic.subset:/ X
+. Y \:subset:/ X
 then:
-. (.Y \.set.cross./ Y.) \:set.theoretic.subset?:/ (.X \.set.cross./ X.)
+. (.Y \.set.cross./ Y.) \:subset?:/ (.X \.set.cross./ X.)
 Id: "db0160ae-5d28-4ad1-b2b6-d22964a88a2b"
 
 
@@ -296,7 +296,7 @@ Id: "91933534-107f-44fe-9ad6-4829664f8cd6"
 Declares: H ::= (X', *', e')
 when: G is \group
 specifies:
-. X' \:(nonempty)::set.theoretic.subset:/ X
+. X' \:(nonempty)::subset:/ X
 . *' is \binary.operation:on{X'}
 . e' "in" X'
 satisfies:
@@ -319,8 +319,8 @@ Documented:
 Justification:
 . [1]
   have: *' := \restriction:of{`*`}:on{X' \.set.cross./ X'}
-  asserting: (.X' \.set.cross./ X'.) \:set.theoretic.subset?:/ (.G \.set.cross./ G.)
-  because: X' \:set.theoretic.subset?:/ X
+  asserting: (.X' \.set.cross./ X'.) \:subset?:/ (.G \.set.cross./ G.)
+  because: X' \:subset?:/ X
   by: \cross.of.subset.is.subset.of.cross#given{X := X; Y := X'}
 Id: "d8fe82d3-6f50-4711-ad64-76d4eb0615ff"
 

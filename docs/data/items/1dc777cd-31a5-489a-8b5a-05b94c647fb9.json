@@ -29,12 +29,80 @@
               "label": "forAll",
               "inline_argument": "x, y \"in\" G",
               "inline_latex": "x, y \\in G",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x, y \"in\" G",
+                  "types": [
+                    "asserts x \"in\" G",
+                    "asserts y \"in\" G"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "G",
+                  "types": [
+                    "is \\group"
+                  ]
+                }
+              ],
               "arguments": []
             },
             {
               "label": "then",
               "inline_argument": "x * y = y * x",
               "inline_latex": "x \\ast y = y \\ast x",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x * y = y * x",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x * y",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "x",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "y",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "y * x",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "y",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "x",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                }
+              ],
               "arguments": []
             }
           ]

@@ -1,6 +1,6 @@
 {
   "id": "2879813a-8202-4d27-b248-83687c132e84",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c696e7465676572732e736574"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": "\\textrm{integers}\\quad\\htmlClass{mlg-title-written}{\\mathbb{Z}}",
   "body_text": null,
   "page": null,
-  "source": "[\\integers.set]\nDeclares: Z := (\\naturals.set \\.set.cross./ \\naturals.set) \\.mod./ \\integer.equivalence is \\set\nDocumented:\n. called: \"integers\"\n. written: \"\\mathbb{Z}\"\n. description: \"The set $\\mathbb{Z}$ of integers, constructed as the quotient of\n                $\\mathbb{N} \\times \\mathbb{N}$ by the integer equivalence\n                relation. Each integer is a class of pairs $(n, m)$ representing\n                the difference $n - m$, so $\\mathbb{Z}$ contains the naturals\n                together with their negatives.\"\nId: \"2879813a-8202-4d27-b248-83687c132e84\"",
+  "source": "[\\integers.set]\nDefines: Z := (\\naturals.set \\.set.cross./ \\naturals.set) \\.mod./ \\integer.equivalence is \\set\nDocumented:\n. called: \"integers\"\n. written: \"\\mathbb{Z}\"\n. description: \"The set $\\mathbb{Z}$ of integers, constructed as the quotient of\n                $\\mathbb{N} \\times \\mathbb{N}$ by the integer equivalence\n                relation. Each integer is a class of pairs $(n, m)$ representing\n                the difference $n - m$, so $\\mathbb{Z}$ contains the naturals\n                together with their negatives.\"\nId: \"2879813a-8202-4d27-b248-83687c132e84\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "Z := (\\naturals.set \\.set.cross./ \\naturals.set) \\.mod./ \\integer.equivalence is \\set",
       "inline_latex": "Z := \\htmlData{mlg-ref=5c2e6d6f642e2f}{\\left(\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c6e61747572616c732e736574}{\\mathbb{N}} \\times \\htmlData{mlg-ref=5c6e61747572616c732e736574}{\\mathbb{N}}}\\right) / \\htmlData{mlg-ref=5c696e74656765722e6571756976616c656e6365}{\\sim_{\\mathbb{Z}}}} \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
       "arguments": []

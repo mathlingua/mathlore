@@ -1,6 +1,6 @@
 {
   "id": "858abdda-c416-4a4e-a0bf-27ecf84cf008",
-  "kind": "Defines",
+  "kind": "Declares",
   "definition_keys": [
     "5c67726f75702e656c656d656e743a6f66"
   ],
@@ -8,24 +8,36 @@
   "heading_latex": "\\textrm{element of group }G",
   "body_text": null,
   "page": null,
-  "source": "[\\group.element:of{G}]\nDefines: x\nwhen: G is \\group\nextends: x is \\monoid.element:of{G}\nEnables:\n. capability: x.inv :=> \\group.inverse:of{x}:in{G}\n  written: \"x+?^{-1}\"\nDocumented:\n. called: \"element of group $G?$\"\n. description: \"An element of a group is a member of its underlying set. Because\n                the ambient structure is a group, each such element $x$ has a\n                well-defined inverse $x^{-1}$, accessible through its inverse\n                operation.\"\nId: \"858abdda-c416-4a4e-a0bf-27ecf84cf008\"",
+  "source": "[\\group.element:of{G}]\nDeclares: x is \\monoid.element:of{G}\nwhen: G is \\group\nEnables:\n. capability: x.inv :=> \\group.inverse:of{x}:in{G}\n  written: \"x+?^{-1}\"\nDocumented:\n. called: \"element of group $G?$\"\n. description: \"An element of a group is a member of its underlying set. Because\n                the ambient structure is a group, each such element $x$ has a\n                well-defined inverse $x^{-1}$, accessible through its inverse\n                operation.\"\nId: \"858abdda-c416-4a4e-a0bf-27ecf84cf008\"",
   "sections": [
     {
-      "label": "Defines",
-      "inline_argument": "x",
-      "inline_latex": "x",
+      "label": "Declares",
+      "inline_argument": "x is \\monoid.element:of{G}",
+      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c6d6f6e6f69642e656c656d656e743a6f66}{\\textrm{element of monoid }G}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x is \\monoid.element:of{G}",
+          "types": [
+            "asserts x is \\monoid.element:of{G}"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "when",
       "inline_argument": "G is \\group",
       "inline_latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
-      "arguments": []
-    },
-    {
-      "label": "extends",
-      "inline_argument": "x is \\monoid.element:of{G}",
-      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c6d6f6e6f69642e656c656d656e743a6f66}{\\textrm{element of monoid }G}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "G is \\group",
+          "types": [
+            "asserts G is \\group"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

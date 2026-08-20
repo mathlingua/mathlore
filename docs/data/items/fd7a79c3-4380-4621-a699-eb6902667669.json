@@ -5,10 +5,10 @@
     "5c2e6f722e2f"
   ],
   "heading": "P \\.or./ Q",
-  "heading_latex": "P \\text{ or } Q",
+  "heading_latex": "P\\textrm{ or }Q\\quad\\htmlClass{mlg-title-written}{P \\lor Q}",
   "body_text": null,
   "page": null,
-  "source": "[P \\.or./ Q]\nStates:\nwhen: P, Q is \\\\statement\nthat:\n. anyOf:\n  . P\n  . Q\nDocumented:\n. written: \"P+? \\text{ or } Q+?\"\n. description: \"The disjunction of $P$ and $Q$. The statement $P \\text{ or } Q$\n                holds when at least one of $P$ and $Q$ holds. As is standard in\n                mathematics, the *or* is inclusive: it also holds when both do.\"\nId: \"fd7a79c3-4380-4621-a699-eb6902667669\"",
+  "source": "[P \\.or./ Q]\nStates:\nwhen: P, Q is \\\\statement\nthat:\n. anyOf:\n  . P\n  . Q\nDocumented:\n. called: \"$P?$ or $Q?$\"\n. written: \"P? \\lor Q?\"\n. description: \"The disjunction of $P$ and $Q$. The statement $P \\text{ or } Q$\n                holds when at least one of $P$ and $Q$ holds. As is standard in\n                mathematics, the *or* is inclusive: it also holds when both do.\"\nId: \"fd7a79c3-4380-4621-a699-eb6902667669\"",
   "sections": [
     {
       "label": "States",
@@ -20,6 +20,16 @@
       "label": "when",
       "inline_argument": "P, Q is \\\\statement",
       "inline_latex": "P, Q \\textrm{ is } \\textrm{statement}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "P, Q is \\\\statement",
+          "types": [
+            "asserts P is \\\\statement",
+            "asserts Q is \\\\statement"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -39,12 +49,26 @@
                 {
                   "kind": "formulation",
                   "text": "P",
-                  "latex": "P"
+                  "latex": "P",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "P",
+                      "types": []
+                    }
+                  ]
                 },
                 {
                   "kind": "formulation",
                   "text": "Q",
-                  "latex": "Q"
+                  "latex": "Q",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "Q",
+                      "types": []
+                    }
+                  ]
                 }
               ]
             }
@@ -62,9 +86,21 @@
           "heading": null,
           "sections": [
             {
+              "label": "called",
+              "inline_argument": "\"$P?$ or $Q?$\"",
+              "inline_latex": "P\\textrm{ or }Q",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
               "label": "written",
-              "inline_argument": "\"P+? \\text{ or } Q+?\"",
-              "inline_latex": "P \\text{ or } Q",
+              "inline_argument": "\"P? \\lor Q?\"",
+              "inline_latex": "P \\lor Q",
               "arguments": []
             }
           ]

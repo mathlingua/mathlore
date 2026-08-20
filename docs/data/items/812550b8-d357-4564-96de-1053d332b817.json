@@ -1,6 +1,6 @@
 {
   "id": "812550b8-d357-4564-96de-1053d332b817",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c6e61747572616c2e30"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": "0",
   "body_text": null,
   "page": null,
-  "source": "[\\natural.0]\nDeclares: 0 is \\natural\nDocumented:\n. written: \"0\"\n. description: \"The natural number zero, the base of the number system. It is\n                the unique natural number that is not the successor of any\n                other.\"\nId: \"812550b8-d357-4564-96de-1053d332b817\"",
+  "source": "[\\natural.0]\nDefines: 0 is \\natural\nDocumented:\n. written: \"0\"\n. description: \"The natural number zero, the base of the number system. It is\n                the unique natural number that is not the successor of any\n                other.\"\nId: \"812550b8-d357-4564-96de-1053d332b817\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "0 is \\natural",
       "inline_latex": "0 \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
       "arguments": []

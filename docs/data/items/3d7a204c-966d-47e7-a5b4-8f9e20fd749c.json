@@ -28,12 +28,38 @@
         {
           "kind": "formulation",
           "text": "M is \\magma",
-          "latex": "M \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d61}{\\textrm{magma}}"
+          "latex": "M \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d61}{\\textrm{magma}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "M is \\magma",
+              "types": [
+                "asserts M is \\magma"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "x, y \"in\" M",
-          "latex": "x, y \\in M"
+          "latex": "x, y \\in M",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x, y \"in\" M",
+              "types": [
+                "asserts x \"in\" M",
+                "asserts y \"in\" M"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "M",
+              "types": [
+                "is \\magma"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -41,6 +67,57 @@
       "label": "that",
       "inline_argument": "x * y = y * x",
       "inline_latex": "x \\ast y = y \\ast x",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x * y = y * x",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "x * y",
+          "types": [
+            "\"in\" M"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "x",
+          "types": [
+            "\"in\" M"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "y",
+          "types": [
+            "\"in\" M"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "y * x",
+          "types": [
+            "\"in\" M"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "y",
+          "types": [
+            "\"in\" M"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "x",
+          "types": [
+            "\"in\" M"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

@@ -1,6 +1,6 @@
 {
   "id": "d9405849-68a5-4721-9090-42eb0b9775d2",
-  "kind": "Defines",
+  "kind": "Declares",
   "definition_keys": [
     "5c6d61676d612e656c656d656e743a6f66"
   ],
@@ -11,24 +11,43 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\magma.element:of{M ::= (X, *)}]\nDefines: x\nwhen: M is \\magma\nextends: x \"in\" X\nEnables:\n. capability: x_ [*] y_ :=> x_ |M.*| y_\n  written: \"x_? *? y_?\"\nDocumented:\n. called: \"element of magma $M?$\"\n. description: \"An element of a magma $M$ is simply a member of its underlying\n                set. Naming it as its own notion lets the operation of $M$ be\n                written directly between two of its elements as $x * y$.\"\nId: \"d9405849-68a5-4721-9090-42eb0b9775d2\"",
+  "source": "[\\magma.element:of{M ::= (X, *)}]\nDeclares: x \"in\" X\nwhen: M is \\magma\nEnables:\n. capability: x_ [*] y_ :=> x_ |M.*| y_\n  written: \"x_? *? y_?\"\nDocumented:\n. called: \"element of magma $M?$\"\n. description: \"An element of a magma $M$ is simply a member of its underlying\n                set. Naming it as its own notion lets the operation of $M$ be\n                written directly between two of its elements as $x * y$.\"\nId: \"d9405849-68a5-4721-9090-42eb0b9775d2\"",
   "sections": [
     {
-      "label": "Defines",
-      "inline_argument": "x",
-      "inline_latex": "x",
+      "label": "Declares",
+      "inline_argument": "x \"in\" X",
+      "inline_latex": "x \\in X",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x \"in\" X",
+          "types": [
+            "asserts x \"in\" X"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "X",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "when",
       "inline_argument": "M is \\magma",
       "inline_latex": "M \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d61}{\\textrm{magma}}",
-      "arguments": []
-    },
-    {
-      "label": "extends",
-      "inline_argument": "x \"in\" X",
-      "inline_latex": "x \\in X",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "M is \\magma",
+          "types": [
+            "asserts M is \\magma"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

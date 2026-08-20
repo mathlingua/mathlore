@@ -1,6 +1,6 @@
 {
   "id": "06fc295f-367d-4069-9f52-817e2894e3eb",
-  "kind": "Declares",
+  "kind": "Defines",
   "definition_keys": [
     "5c6e61747572616c73"
   ],
@@ -8,10 +8,10 @@
   "heading_latex": "\\textrm{naturals}",
   "body_text": null,
   "page": null,
-  "source": "[\\naturals]\nDeclares: N ::= (X, 0, succ) is \\abstract.naturals\nexpresses:\n. X := \\naturals.set\n. 0 := \\natural.0\n. succ := \\natural.succ\nEnables:\n. relation:\n  to: Y := X is \\set\n  represents: \\\\coercion\nDocumented:\n. called: \"naturals\"\n. description: \"The natural numbers packaged as a concrete instance of the\n                abstract naturals: the set $\\mathbb{N}$ with the element $0$ and\n                the successor map. This exhibits $\\mathbb{N}$ as a genuine Peano\n                system.\"\nId: \"06fc295f-367d-4069-9f52-817e2894e3eb\"",
+  "source": "[\\naturals]\nDefines: N ::= (X, 0, succ) is \\abstract.naturals\nexpresses:\n. X := \\naturals.set\n. 0 := \\natural.0\n. succ := \\natural.succ\nEnables:\n. relation:\n  to: Y := X is \\set\n  represents: \\\\coercion\nDocumented:\n. called: \"naturals\"\n. description: \"The natural numbers packaged as a concrete instance of the\n                abstract naturals: the set $\\mathbb{N}$ with the element $0$ and\n                the successor map. This exhibits $\\mathbb{N}$ as a genuine Peano\n                system.\"\nId: \"06fc295f-367d-4069-9f52-817e2894e3eb\"",
   "sections": [
     {
-      "label": "Declares",
+      "label": "Defines",
       "inline_argument": "N ::= (X, 0, succ) is \\abstract.naturals",
       "inline_latex": "N ::= \\left(X, 0, succ\\right) \\textrm{ is } \\htmlData{mlg-ref=5c61627374726163742e6e61747572616c73}{\\textrm{abstract naturals}}",
       "arguments": []
@@ -24,17 +24,59 @@
         {
           "kind": "formulation",
           "text": "X := \\naturals.set",
-          "latex": "X := \\htmlData{mlg-ref=5c6e61747572616c732e736574}{\\mathbb{N}}"
+          "latex": "X := \\htmlData{mlg-ref=5c6e61747572616c732e736574}{\\mathbb{N}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X := \\naturals.set",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\naturals.set",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "0 := \\natural.0",
-          "latex": "0 := \\htmlData{mlg-ref=5c6e61747572616c2e30}{0}"
+          "latex": "0 := \\htmlData{mlg-ref=5c6e61747572616c2e30}{0}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 := \\natural.0",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\natural.0",
+              "types": [
+                "is \\natural"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "succ := \\natural.succ",
-          "latex": "succ := \\htmlData{mlg-ref=5c6e61747572616c2e73756363}{n+\\!\\!+}"
+          "latex": "succ := \\htmlData{mlg-ref=5c6e61747572616c2e73756363}{n+\\!\\!+}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "succ := \\natural.succ",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\natural.succ",
+              "types": [
+                "is (_ is \\natural) => (_ is \\natural)"
+              ]
+            }
+          ]
         }
       ]
     },

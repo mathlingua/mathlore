@@ -24,12 +24,37 @@
         {
           "kind": "formulation",
           "text": "G is \\group",
-          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}"
+          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "G is \\group",
+              "types": [
+                "asserts G is \\group"
+              ]
+            }
+          ]
         },
         {
           "kind": "formulation",
           "text": "H \\:subgroup:/ G",
-          "latex": "\\htmlData{mlg-ref=5c3a73756267726f75703a2f}{H \\leq G}"
+          "latex": "\\htmlData{mlg-ref=5c3a73756267726f75703a2f}{H \\leq G}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "H \\:subgroup:/ G",
+              "types": [
+                "asserts H \\:subgroup:/ G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "G",
+              "types": [
+                "is \\group"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -37,6 +62,22 @@
       "label": "then",
       "inline_argument": "H is? \\group",
       "inline_latex": "H \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "H is? \\group",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "H",
+          "types": [
+            "\\:subgroup:/ G"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

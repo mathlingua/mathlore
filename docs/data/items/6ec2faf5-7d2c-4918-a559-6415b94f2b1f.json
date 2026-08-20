@@ -1,6 +1,6 @@
 {
   "id": "6ec2faf5-7d2c-4918-a559-6415b94f2b1f",
-  "kind": "Defines",
+  "kind": "Declares",
   "definition_keys": [
     "5c73656d6967726f7570"
   ],
@@ -8,22 +8,16 @@
   "heading_latex": "\\textrm{semigroup}",
   "body_text": null,
   "page": null,
-  "source": "[\\semigroup]\nDefines: S ::= (X, *)\nextends: S is \\magma via (X, *)\nmeans: * is \\(associative)::binary.operation:on{X}\nEnables:\n. capability: x_ \"in\" S :-> x_ is \\semigroup.element:of{S}\n  written: \"x_? \\in S?\"\nDocumented:\n. called: \"semigroup\"\n. description: \"A semigroup is a magma whose operation is associative, so that\n                $(a * b) * c = a * (b * c)$ for all elements. Associativity\n                makes repeated products unambiguous, so one may write\n                $a * b * c$ without parentheses.\"\nId: \"6ec2faf5-7d2c-4918-a559-6415b94f2b1f\"",
+  "source": "[\\semigroup]\nDeclares: S ::= (X, *) is \\magma via (X, *)\nspecifies: * is \\(associative)::binary.operation:on{X}\nEnables:\n. capability: x_ \"in\" S :-> x_ is \\semigroup.element:of{S}\n  written: \"x_? \\in S?\"\nDocumented:\n. called: \"semigroup\"\n. description: \"A semigroup is a magma whose operation is associative, so that\n                $(a * b) * c = a * (b * c)$ for all elements. Associativity\n                makes repeated products unambiguous, so one may write\n                $a * b * c$ without parentheses.\"\nId: \"6ec2faf5-7d2c-4918-a559-6415b94f2b1f\"",
   "sections": [
     {
-      "label": "Defines",
-      "inline_argument": "S ::= (X, *)",
-      "inline_latex": "S ::= \\left(X, \\ast\\right)",
+      "label": "Declares",
+      "inline_argument": "S ::= (X, *) is \\magma via (X, *)",
+      "inline_latex": "S ::= \\left(X, \\ast\\right) \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d61}{\\textrm{magma}} \\textrm{ via } \\left(X, \\ast\\right)",
       "arguments": []
     },
     {
-      "label": "extends",
-      "inline_argument": "S is \\magma via (X, *)",
-      "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d61}{\\textrm{magma}} \\textrm{ via } \\left(X, \\ast\\right)",
-      "arguments": []
-    },
-    {
-      "label": "declares",
+      "label": "specifies",
       "inline_argument": "* is \\(associative)::binary.operation:on{X}",
       "inline_latex": "\\ast \\textrm{ is } \\htmlData{mlg-ref=5c6173736f636961746976653a3a62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{associative}}\\textrm{ }\\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }X}",
       "arguments": []

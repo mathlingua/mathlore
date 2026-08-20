@@ -14,12 +14,42 @@
       "label": "Refines",
       "inline_argument": "n",
       "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "n",
+          "types": [
+            "is \\natural"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "satisfies",
       "inline_argument": "n != \\natural.0",
       "inline_latex": "n \\ne \\htmlData{mlg-ref=5c6e61747572616c2e30}{0}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "n != \\natural.0",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "n",
+          "types": [
+            "is \\natural"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\natural.0",
+          "types": [
+            "is \\natural"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

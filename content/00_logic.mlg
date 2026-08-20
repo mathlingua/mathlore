@@ -25,6 +25,7 @@ that:
 . if: P
   then: Q
 Documented:
+. called: "$P?$ implies $Q?$"
 . written: "P? \Rightarrow Q?"
 . description: "The conditional *if $P$ then $Q$*, written $P \Rightarrow Q$. It
                 asserts that whenever $P$ holds, $Q$ holds as well. It makes no
@@ -46,6 +47,9 @@ that:
 . have: P
   iff: Q
 Documented:
+. called:
+  . "$P?$ if and only if $Q?$"
+  . "$P?$ iff $Q?$"
 . written: "P? \iff Q?"
 . description: "The biconditional of $P$ and $Q$, read *$P$ if and only if $Q$*.
                 It holds exactly when $P$ and $Q$ have the same truth value --
@@ -68,7 +72,8 @@ that:
   . P
   . Q
 Documented:
-. written: "P? \text{ and } Q?"
+. called: "$P?$ and $Q?$"
+. written: "P? \land Q?"
 . description: "The conjunction of $P$ and $Q$. The statement $P \text{ and } Q$
                 holds precisely when $P$ holds and $Q$ holds; if either fails,
                 the conjunction fails."
@@ -83,7 +88,8 @@ that:
   . P
   . Q
 Documented:
-. written: "P? \text{ or } Q?"
+. called: "$P?$ or $Q?$"
+. written: "P? \lor Q?"
 . description: "The disjunction of $P$ and $Q$. The statement $P \text{ or } Q$
                 holds when at least one of $P$ and $Q$ holds. As is standard in
                 mathematics, the *or* is inclusive: it also holds when both do."
@@ -96,7 +102,8 @@ when: P is \\statement
 that:
 . not: P
 Documented:
-. written: "\neg P?"
+. called: "not $P?$"
+. written: "\neg P+?"
 . description: "The negation of $P$, written $\neg P$. It holds exactly when $P$
                 does not, and so reverses the truth value of the statement it is
                 applied to."

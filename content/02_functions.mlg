@@ -40,6 +40,42 @@ Text: "A binary operation is a function of two arguments that returns a value in
 Id: "dd492fce-0357-4b6a-810f-40764b5245f9"
 
 
+[\(injective)::function:?on{A}:?to{B}]
+Refines: f(x__) ::= y_
+satisfies:
+. forAll: x1, x2 "in" A
+  then:
+  . if: f(x1) = f(x2)
+    then: x1 = x2
+Documented:
+. adjective:
+  . "injective"
+  . "one-to-one"
+Id: "c33dd972-b742-4aed-8bbc-797ecdb2b5af"
+
+
+[\(surjective)::function:?on{A}:?to{B}]
+Refines: f(x__) ::= y_
+satisfies:
+. forAll: y "in" B
+  then:
+  . exists: x "in" A
+    suchThat: f(x) = y
+Documented:
+. adjective:
+  . "surjective"
+  . "onto"
+Id: "be68a628-8ca8-49c8-8780-bd7aa7401ef4"
+
+
+[\(bijective)::function:?on{A}:?to{B}]
+Refines: f
+specifies: f is \(injective, surjective)::[[f]]
+Documented:
+. adjective: "bijective"
+Id: "554dad1c-22e4-47ae-9d4f-b0fb088de488"
+
+
 [\binary.operation:on{X}]
 Declares: x_ * y_ is \function:on{X \.set.cross./ X}:to{X}
 when: X is \set
@@ -91,7 +127,7 @@ Id: "fc9215b0-5d36-4ee6-b3d6-e0007b8e39f5"
 Defines: f is \function:on{X}:to{B}
 when:
 . g is \function:on{A?}:to{B?}
-. X \:set.theoretic.subset:/ A
+. X \:subset:/ A
 expresses: f(x__) := g(x__)
 Documented:
 . called: "restriction of $g?$ on $X?$"
