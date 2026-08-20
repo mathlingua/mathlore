@@ -1,0 +1,162 @@
+{
+  "id": "502e2a50-cced-461a-bdcf-03e2221a598f",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c6e61747572616c73"
+  ],
+  "heading": "\\naturals",
+  "heading_latex": "\\textrm{the naturals}\\quad\\htmlClass{mlg-title-written}{\\mathbb{N}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\naturals]\nDefines: Nb ::= (N, 0, S(n_))\nabstractly:\nspecifies:\n. N is \\set\n. 0 \"in\" N\n. S is \\function:on{N}:to{N}\nEnables:\n. capability: n_ \"in\" Nb :-> n_ is \\natural\n. relation:\n  to: N is \\set\n  represents: \\\\coercion\nDocumented:\n. called: \"the naturals\"\n. written: \"\\mathbb{N}\"\nId: \"502e2a50-cced-461a-bdcf-03e2221a598f\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "Nb ::= (N, 0, S(n_))",
+      "inline_latex": "Nb ::= \\left(N, 0, S(n)\\right)",
+      "arguments": []
+    },
+    {
+      "label": "abstractly",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "N is \\set",
+          "latex": "N \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "N is \\set",
+              "types": [
+                "asserts N is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "0 \"in\" N",
+          "latex": "0 \\in N",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 \"in\" N",
+              "types": [
+                "asserts 0 \"in\" N"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "N",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "S is \\function:on{N}:to{N}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{S \\: : \\: N \\rightarrow N}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "S is \\function:on{N}:to{N}",
+              "types": [
+                "asserts S is \\function:on{N}:to{N}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "n_ \"in\" Nb :-> n_ is \\natural",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "relation",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "to",
+              "inline_argument": "N is \\set",
+              "inline_latex": "N \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            },
+            {
+              "label": "represents",
+              "inline_argument": "\\\\coercion",
+              "inline_latex": "\\operatorname{coercion}\\left(\\right)",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"the naturals\"",
+              "inline_latex": "\\textrm{the naturals}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\mathbb{N}\"",
+              "inline_latex": "\\mathbb{N}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"502e2a50-cced-461a-bdcf-03e2221a598f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

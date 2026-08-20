@@ -1,19 +1,19 @@
 {
-  "id": "562657db-4eb1-426f-8042-91541b61f45c",
+  "id": "6c240df6-c06d-4fc4-ab16-31fa5aebb4d7",
   "kind": "Declares",
   "definition_keys": [
-    "5c6d6174726978"
+    "5c6e61747572616c"
   ],
-  "heading": "\\matrix",
-  "heading_latex": "\\textrm{matrix}",
+  "heading": "\\natural",
+  "heading_latex": "\\textrm{natural}",
   "body_text": null,
   "page": null,
-  "source": "[\\matrix]\nDeclares: X\nDocumented:\n. called: \"matrix\"\nId: \"562657db-4eb1-426f-8042-91541b61f45c\"",
+  "source": "[\\natural]\nDeclares: n\nDocumented:\n. called: \"natural\"\nId: \"6c240df6-c06d-4fc4-ab16-31fa5aebb4d7\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "X",
-      "inline_latex": "X",
+      "inline_argument": "n",
+      "inline_latex": "n",
       "arguments": []
     },
     {
@@ -27,8 +27,8 @@
           "sections": [
             {
               "label": "called",
-              "inline_argument": "\"matrix\"",
-              "inline_latex": "\\textrm{matrix}",
+              "inline_argument": "\"natural\"",
+              "inline_latex": "\\textrm{natural}",
               "arguments": []
             }
           ]
@@ -37,7 +37,7 @@
     },
     {
       "label": "Id",
-      "inline_argument": "\"562657db-4eb1-426f-8042-91541b61f45c\"",
+      "inline_argument": "\"6c240df6-c06d-4fc4-ab16-31fa5aebb4d7\"",
       "inline_latex": null,
       "arguments": []
     }
