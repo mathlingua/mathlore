@@ -14,7 +14,7 @@ Id: "37f9c062-435f-4310-b511-2d2d59281683"
 [\function:?on{A}:?to{B}]
 Declares: f(x__) ::= y_
 when: A, B is \set
-means:
+specifies:
 . x__ "in" A
 . y_ "in" B
 satisfies:

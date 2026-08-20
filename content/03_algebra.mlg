@@ -24,7 +24,7 @@ Id: "b6b6f241-917e-4090-8269-5060f249b80c"
 
 [\magma]
 Declares: M ::= (X, *) is \set via X
-means: * is \binary.operation:on{M}
+specifies: * is \binary.operation:on{M}
 Enables:
 . capability: x_ "in" M :-> x_ is \magma.element:of{M}
   written: "x_? \in M?"
@@ -100,7 +100,7 @@ Id: "e077a5db-c372-4759-a880-d74270032560"
 
 [\semigroup]
 Declares: S ::= (X, *) is \magma via (X, *)
-means: * is \(associative)::binary.operation:on{X}
+specifies: * is \(associative)::binary.operation:on{X}
 Enables:
 . capability: x_ "in" S :-> x_ is \semigroup.element:of{S}
   written: "x_? \in S?"
@@ -130,7 +130,7 @@ Id: "c647adb5-0f98-4f7d-ae6a-8ff2229e3437"
 
 [\monoid]
 Declares: M ::= (X, *, e) is \semigroup via (X, *)
-means: e "in" X
+specifies: e "in" X
 satisfies:
 . forAll: x "in" M
   then:
@@ -295,7 +295,7 @@ Id: "91933534-107f-44fe-9ad6-4829664f8cd6"
 [H ::= (X', *', e') \:subgroup:/ G ::= (X, *, e)]
 Declares: H ::= (X', *', e')
 when: G is \group
-means:
+specifies:
 . X' \:(nonempty)::set.theoretic.subset:/ X
 . *' is \binary.operation:on{X'}
 . e' "in" X'

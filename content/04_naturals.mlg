@@ -26,7 +26,7 @@ Id: "fbe31158-8082-4444-82f6-a8049d0bb921"
 
 [\abstract.naturals]
 Declares: N ::= (X, 0, succ)
-means:
+specifies:
 . X is \set
 . 0 "in" X
 . succ is (? "in" X) -> (? "in" X)
