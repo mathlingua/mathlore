@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{monoid}",
   "body_text": null,
   "page": null,
-  "source": "[\\monoid]\nDeclares: M ::= (X, *, e) is \\semigroup via (X, *)\nspecifies: e \"in\" X\nsatisfies:\n. forAll: x \"in\" M\n  then:\n  . x * e = x\n  . e * x = x\nEnables:\n. capability: x_ \"in\" M :-> x is \\monoid.element:of{M}\n  written: \"x_? \\in M?\"\nDocumented:\n. called: \"monoid\"\n. description: \"A monoid is a semigroup possessing an identity element $e$, one\n                that satisfies $x * e = x = e * x$ for every $x$. The identity\n                is unique, and it plays the role that $0$ plays for addition or\n                $1$ for multiplication.\"\nId: \"034bf6ff-ba6e-4fac-b47e-65cc85d15642\"",
+  "source": "[\\monoid]\nDeclares: M ::= (X, *, e) is \\semigroup via (X, *)\nspecifies: e \"in\" X\nsatisfies:\n. forAll: x \"in\" M\n  then:\n  . x * e = x\n  . e * x = x\nEnables:\n. capability: x_ \"in\" M :<->: x is \\monoid.element:of{M}\n  written: \"x_? \\in M?\"\nDocumented:\n. called: \"monoid\"\n. description: \"A monoid is a semigroup possessing an identity element $e$, one\n                that satisfies $x * e = x = e * x$ for every $x$. The identity\n                is unique, and it plays the role that $0$ plays for addition or\n                $1$ for multiplication.\"\nId: \"034bf6ff-ba6e-4fac-b47e-65cc85d15642\"",
   "sections": [
     {
       "label": "Declares",
@@ -175,7 +175,7 @@
           "sections": [
             {
               "label": "capability",
-              "inline_argument": "x_ \"in\" M :-> x is \\monoid.element:of{M}",
+              "inline_argument": "x_ \"in\" M :<->: x is \\monoid.element:of{M}",
               "inline_latex": null,
               "arguments": []
             },

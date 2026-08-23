@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{semigroup}",
   "body_text": null,
   "page": null,
-  "source": "[\\semigroup]\nDeclares: S ::= (X, *) is \\magma via (X, *)\nspecifies: * is \\(associative)::binary.operation:on{X}\nEnables:\n. capability: x_ \"in\" S :-> x_ is \\semigroup.element:of{S}\n  written: \"x_? \\in S?\"\nDocumented:\n. called: \"semigroup\"\n. description: \"A semigroup is a magma whose operation is associative, so that\n                $(a * b) * c = a * (b * c)$ for all elements. Associativity\n                makes repeated products unambiguous, so one may write\n                $a * b * c$ without parentheses.\"\nId: \"6ec2faf5-7d2c-4918-a559-6415b94f2b1f\"",
+  "source": "[\\semigroup]\nDeclares: S ::= (X, *) is \\magma via (X, *)\nspecifies: * is \\(associative)::binary.operation:on{X}\nEnables:\n. capability: x_ \"in\" S :<->: x_ is \\semigroup.element:of{S}\n  written: \"x_? \\in S?\"\nDocumented:\n. called: \"semigroup\"\n. description: \"A semigroup is a magma whose operation is associative, so that\n                $(a * b) * c = a * (b * c)$ for all elements. Associativity\n                makes repeated products unambiguous, so one may write\n                $a * b * c$ without parentheses.\"\nId: \"6ec2faf5-7d2c-4918-a559-6415b94f2b1f\"",
   "sections": [
     {
       "label": "Declares",
@@ -33,7 +33,7 @@
           "sections": [
             {
               "label": "capability",
-              "inline_argument": "x_ \"in\" S :-> x_ is \\semigroup.element:of{S}",
+              "inline_argument": "x_ \"in\" S :<->: x_ is \\semigroup.element:of{S}",
               "inline_latex": null,
               "arguments": []
             },

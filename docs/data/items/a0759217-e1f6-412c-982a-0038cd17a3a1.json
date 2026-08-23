@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{set}",
   "body_text": null,
   "page": null,
-  "source": "[\\set]\nDeclares: X\nsatisfies:\n. \\axiom.of.empty.set\n. \\axiom.of.infinity\n. \\axiom.of.union#given{X}\n. \\axiom.of.power.set#given{X}\n. forAll: Y is \\set\n  then:\n  . \\axiom.of.extensionality#given{X := X; Y := Y}\n  . \\axiom.of.pairing#given{X := X; Y := Y}\nRequires:\n. capability: x_ \"in\" X :-> \\\\abstract\nEnables:\n. from: Y ::= {y__ : ...}\n  capability: x_ \"in\" X :-> x_ member_of Y\nDocumented:\n. called: \"set\"\n. description: \"A set is the sole primitive object of the theory. The only\n                question one may put to a set is which sets are its members, and\n                two sets with the same members are the same set. Every other\n                object built in this collection is ultimately a set.\"\nId: \"a0759217-e1f6-412c-982a-0038cd17a3a1\"",
+  "source": "[\\set]\nDeclares: X\nsatisfies:\n. \\axiom.of.empty.set\n. \\axiom.of.infinity\n. \\axiom.of.union#given{X}\n. \\axiom.of.power.set#given{X}\n. forAll: Y is \\set\n  then:\n  . \\axiom.of.extensionality#given{X := X; Y := Y}\n  . \\axiom.of.pairing#given{X := X; Y := Y}\nRequires:\n. capability: x_ \"in\" X :-> \\\\abstract\nEnables:\n. from: Y ::= {y__ : ...}\n  capability: x_ \"in\" X :<->: x_ member_of Y\nDocumented:\n. called: \"set\"\n. description: \"A set is the sole primitive object of the theory. The only\n                question one may put to a set is which sets are its members, and\n                two sets with the same members are the same set. Every other\n                object built in this collection is ultimately a set.\"\nId: \"a0759217-e1f6-412c-982a-0038cd17a3a1\"",
   "sections": [
     {
       "label": "Declares",
@@ -178,7 +178,7 @@
             },
             {
               "label": "capability",
-              "inline_argument": "x_ \"in\" X :-> x_ member_of Y",
+              "inline_argument": "x_ \"in\" X :<->: x_ member_of Y",
               "inline_latex": null,
               "arguments": []
             }

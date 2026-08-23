@@ -35,7 +35,7 @@ Requires:
 . capability: x_ "in" X :-> \\abstract
 Enables:
 . from: Y ::= {y__ : ...}
-  capability: x_ "in" X :-> x_ member_of Y
+  capability: x_ "in" X :<->: x_ member_of Y
 Documented:
 . called: "set"
 . description: "A set is the sole primitive object of the theory. The only
@@ -350,6 +350,7 @@ Id: "a0f45971-fcc1-419b-bcd5-f4c4717bb37f"
 Writing:
 . "phi :~> \varphi"
 . "Xb :~> \mathbb{X}"
+. "Nb :~> \mathbb{N}"
 Id: "c51b2bbc-d8f1-406c-b7c8-317e5409a2d8"
 
 

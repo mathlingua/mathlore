@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{magma}",
   "body_text": null,
   "page": null,
-  "source": "[\\magma]\nDeclares: M ::= (X, *) is \\set via X\nspecifies: * is \\binary.operation:on{M}\nEnables:\n. capability: x_ \"in\" M :-> x_ is \\magma.element:of{M}\n  written: \"x_? \\in M?\"\nDocumented:\n. called: \"magma\"\n. description: \"A magma is a set $X$ together with a binary operation $*$ on it,\n                subject to no further axioms. It is the weakest algebraic\n                structure of this chapter, and every later structure is a magma\n                with additional properties.\"\nId: \"91ffd40c-72fa-4a93-83f3-80ceb1ae124a\"",
+  "source": "[\\magma]\nDeclares: M ::= (X, *) is \\set via X\nspecifies: * is \\binary.operation:on{M}\nEnables:\n. capability: x_ \"in\" M :<->: x_ is \\magma.element:of{M}\n  written: \"x_? \\in M?\"\nDocumented:\n. called: \"magma\"\n. description: \"A magma is a set $X$ together with a binary operation $*$ on it,\n                subject to no further axioms. It is the weakest algebraic\n                structure of this chapter, and every later structure is a magma\n                with additional properties.\"\nId: \"91ffd40c-72fa-4a93-83f3-80ceb1ae124a\"",
   "sections": [
     {
       "label": "Declares",
@@ -42,7 +42,7 @@
           "sections": [
             {
               "label": "capability",
-              "inline_argument": "x_ \"in\" M :-> x_ is \\magma.element:of{M}",
+              "inline_argument": "x_ \"in\" M :<->: x_ is \\magma.element:of{M}",
               "inline_latex": null,
               "arguments": []
             },

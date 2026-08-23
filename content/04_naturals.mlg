@@ -22,11 +22,22 @@ specifies:
 . N is \set
 . 0 "in" N
 . S is \function:on{N}:to{N}
+expresses:
+. forAll: n "in" N
+  then: S(n) != 0
+. forAll: m, n "in" N
+  then: (.S(m) = S(n).) \.implies./ (.m = n.)
+. forAll: A \:subset:/ N
+  then:
+  . if:
+    . 0 "in" A
+    . forAll: n "in" A
+      then: S(n) "in" A
+    then: A = N
 Enables:
 . capability: n_ "in" Nb :-> n_ is \natural
-. relation:
-  to: N is \set
-  represents: \\coercion
+. view:
+  as: S := N is \set
 Documented:
 . called: "the naturals"
 . written: "\mathbb{N}"
@@ -38,3 +49,9 @@ Declares: n
 Documented:
 . called: "natural"
 Id: "6c240df6-c06d-4fc4-ab16-31fa5aebb4d7"
+
+
+Theorem:
+given: n "in" \naturals
+then: n is? \natural
+Id: "f0a6e4c4-4ef2-470a-bfbf-4d33eaf2e2ee"

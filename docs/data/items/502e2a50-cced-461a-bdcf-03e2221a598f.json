@@ -8,12 +8,12 @@
   "heading_latex": "\\textrm{the naturals}\\quad\\htmlClass{mlg-title-written}{\\mathbb{N}}",
   "body_text": null,
   "page": null,
-  "source": "[\\naturals]\nDefines: Nb ::= (N, 0, S(n_))\nabstractly:\nspecifies:\n. N is \\set\n. 0 \"in\" N\n. S is \\function:on{N}:to{N}\nEnables:\n. capability: n_ \"in\" Nb :-> n_ is \\natural\n. relation:\n  to: N is \\set\n  represents: \\\\coercion\nDocumented:\n. called: \"the naturals\"\n. written: \"\\mathbb{N}\"\nId: \"502e2a50-cced-461a-bdcf-03e2221a598f\"",
+  "source": "[\\naturals]\nDefines: Nb ::= (N, 0, S(n_))\nabstractly:\nspecifies:\n. N is \\set\n. 0 \"in\" N\n. S is \\function:on{N}:to{N}\nexpresses:\n. forAll: n \"in\" N\n  then: S(n) != 0\n. forAll: m, n \"in\" N\n  then: (.S(m) = S(n).) \\.implies./ (.m = n.)\n. forAll: A \\:subset:/ N\n  then:\n  . if:\n    . 0 \"in\" A\n    . forAll: n \"in\" A\n      then: S(n) \"in\" A\n    then: A = N\nEnables:\n. capability: n_ \"in\" Nb :-> n_ is \\natural\n. view:\n  as: S := N is \\set\nDocumented:\n. called: \"the naturals\"\n. written: \"\\mathbb{N}\"\nId: \"502e2a50-cced-461a-bdcf-03e2221a598f\"",
   "sections": [
     {
       "label": "Defines",
       "inline_argument": "Nb ::= (N, 0, S(n_))",
-      "inline_latex": "Nb ::= \\left(N, 0, S(n)\\right)",
+      "inline_latex": "\\mathbb{N} ::= \\left(N, 0, S(n)\\right)",
       "arguments": []
     },
     {
@@ -79,6 +79,342 @@
       ]
     },
     {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n \"in\" N",
+              "inline_latex": "n \\in N",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n \"in\" N",
+                  "types": [
+                    "asserts n \"in\" N"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "N",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "S(n) != 0",
+              "inline_latex": "S(n) \\ne 0",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "S(n) != 0",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "S(n)",
+                  "types": [
+                    "\"in\" N"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "n",
+                  "types": [
+                    "\"in\" N"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "0",
+                  "types": [
+                    "\"in\" N"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "m, n \"in\" N",
+              "inline_latex": "m, n \\in N",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "m, n \"in\" N",
+                  "types": [
+                    "asserts m \"in\" N",
+                    "asserts n \"in\" N"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "N",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "(.S(m) = S(n).) \\.implies./ (.m = n.)",
+              "inline_latex": "\\htmlData{mlg-ref=5c2e696d706c6965732e2f}{S(m) = S(n) \\Rightarrow m = n}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "(.S(m) = S(n).) \\.implies./ (.m = n.)",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "S(m) = S(n)",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "S(m) = S(n)",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "S(m)",
+                  "types": [
+                    "\"in\" N"
+                  ]
+                },
+                {
+                  "depth": 4,
+                  "text": "m",
+                  "types": [
+                    "\"in\" N"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "S(n)",
+                  "types": [
+                    "\"in\" N"
+                  ]
+                },
+                {
+                  "depth": 4,
+                  "text": "n",
+                  "types": [
+                    "\"in\" N"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "m = n",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "m = n",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "m",
+                  "types": [
+                    "\"in\" N"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "n",
+                  "types": [
+                    "\"in\" N"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A \\:subset:/ N",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq N}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "A \\:subset:/ N",
+                  "types": [
+                    "asserts A \\:subset:/ N"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "N",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "0 \"in\" A",
+                          "latex": "0 \\in A",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "0 \"in\" A",
+                              "types": [
+                                "asserts 0 \"in\" A"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "A",
+                              "types": [
+                                "\\:subset:/ N"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "forAll",
+                              "inline_argument": "n \"in\" A",
+                              "inline_latex": "n \\in A",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "n \"in\" A",
+                                  "types": [
+                                    "asserts n \"in\" A"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "A",
+                                  "types": [
+                                    "\\:subset:/ N"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": "S(n) \"in\" A",
+                              "inline_latex": "S(n) \\in A",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "S(n) \"in\" A",
+                                  "types": [
+                                    "asserts S(n) \"in\" A"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "S(n)",
+                                  "types": [
+                                    "\"in\" N"
+                                  ]
+                                },
+                                {
+                                  "depth": 2,
+                                  "text": "n",
+                                  "types": [
+                                    "\"in\" A"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "A = N",
+                      "inline_latex": "A = N",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "A = N",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "A",
+                          "types": [
+                            "\\:subset:/ N"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "N",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "label": "Enables",
       "inline_argument": null,
       "inline_latex": null,
@@ -100,21 +436,15 @@
           "heading": null,
           "sections": [
             {
-              "label": "relation",
+              "label": "view",
               "inline_argument": null,
               "inline_latex": null,
               "arguments": []
             },
             {
-              "label": "to",
-              "inline_argument": "N is \\set",
-              "inline_latex": "N \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-              "arguments": []
-            },
-            {
-              "label": "represents",
-              "inline_argument": "\\\\coercion",
-              "inline_latex": "\\operatorname{coercion}\\left(\\right)",
+              "label": "as",
+              "inline_argument": "S := N is \\set",
+              "inline_latex": "S := N \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
               "arguments": []
             }
           ]

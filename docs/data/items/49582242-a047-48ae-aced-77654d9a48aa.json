@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{quasigroup}",
   "body_text": null,
   "page": null,
-  "source": "[\\quasigroup]\nDeclares: Q ::= (X, *) is \\magma via (X, *)\nsatisfies:\n. forAll: a, b \"in\" Q\n  then:\n  . existsUnique: x, y \"in\" Q\n    suchThat:\n    . a * x = b\n    . y * a = b\nEnables:\n. capability: x_ \"in\" Q :-> x_ is \\quasigroup.element:of{Q}\n  written: \"x_? \\in Q?\"\nDocumented:\n. called: \"quasigroup\"\n. description: \"A quasigroup is a magma in which left and right division are\n                always possible: for all $a$ and $b$ the equations $a * x = b$\n                and $y * a = b$ each have a unique solution. It captures\n                invertibility without requiring associativity or an identity.\"\nId: \"49582242-a047-48ae-aced-77654d9a48aa\"",
+  "source": "[\\quasigroup]\nDeclares: Q ::= (X, *) is \\magma via (X, *)\nsatisfies:\n. forAll: a, b \"in\" Q\n  then:\n  . existsUnique: x, y \"in\" Q\n    suchThat:\n    . a * x = b\n    . y * a = b\nEnables:\n. capability: x_ \"in\" Q :<->: x_ is \\quasigroup.element:of{Q}\n  written: \"x_? \\in Q?\"\nDocumented:\n. called: \"quasigroup\"\n. description: \"A quasigroup is a magma in which left and right division are\n                always possible: for all $a$ and $b$ the equations $a * x = b$\n                and $y * a = b$ each have a unique solution. It captures\n                invertibility without requiring associativity or an identity.\"\nId: \"49582242-a047-48ae-aced-77654d9a48aa\"",
   "sections": [
     {
       "label": "Declares",
@@ -190,7 +190,7 @@
           "sections": [
             {
               "label": "capability",
-              "inline_argument": "x_ \"in\" Q :-> x_ is \\quasigroup.element:of{Q}",
+              "inline_argument": "x_ \"in\" Q :<->: x_ is \\quasigroup.element:of{Q}",
               "inline_latex": null,
               "arguments": []
             },
