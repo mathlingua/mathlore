@@ -1,0 +1,14 @@
+{
+  "id": "3e224a1e-0519-4e11-b080-e748b38de02a-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A unary operation on $X$ is an endofunction from $X$ to $X$."
+  },
+  "source": "",
+  "sections": []
+}

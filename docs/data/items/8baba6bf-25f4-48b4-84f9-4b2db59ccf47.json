@@ -1,0 +1,196 @@
+{
+  "id": "8baba6bf-25f4-48b4-84f9-4b2db59ccf47",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c7472616e7369746976653a3a72656c6174696f6e",
+    "5c7472616e7369746976653a3a72656c6174696f6e3a6f6e"
+  ],
+  "heading": "\\(transitive)::relation:?on{X}",
+  "heading_latex": "\\textrm{transitive}\\textrm{ }\\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(transitive)::relation:?on{X}]\nRefines: R\nwhen: X is \\set\nsatisfies:\n. forAll: x, y, z \"in\" X\n  where:\n  . R(x, y)\n  . R(y, z)\n  then: R(x, z)\nDocumented:\n. adjective: \"transitive\"\n. description: \"A relation $R$ on $X$ is transitive if $x \\mathrel{R} y$ and\n                $y \\mathrel{R} z$ imply $x \\mathrel{R} z$.\"\nId: \"8baba6bf-25f4-48b4-84f9-4b2db59ccf47\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "R",
+      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is \\set",
+          "types": [
+            "asserts X is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x, y, z \"in\" X",
+              "inline_latex": "x, y, z \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x, y, z \"in\" X",
+                  "types": [
+                    "asserts x \"in\" X",
+                    "asserts y \"in\" X",
+                    "asserts z \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "R(x, y)",
+                  "latex": "x \\: R \\: y",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "R(x, y)",
+                      "types": []
+                    },
+                    {
+                      "depth": 1,
+                      "text": "x",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "y",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "R(y, z)",
+                  "latex": "y \\: R \\: z",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "R(y, z)",
+                      "types": []
+                    },
+                    {
+                      "depth": 1,
+                      "text": "y",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "z",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "R(x, z)",
+              "inline_latex": "x \\: R \\: z",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "R(x, z)",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "z",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"transitive\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8baba6bf-25f4-48b4-84f9-4b2db59ccf47\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

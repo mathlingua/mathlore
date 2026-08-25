@@ -1,0 +1,189 @@
+{
+  "id": "40d12e9b-449e-49b9-a292-9388147d3e69",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c746f74616c2e6f726465723a6f6e"
+  ],
+  "heading": "\\total.order:on{X}",
+  "heading_latex": "\\textrm{total order on }X",
+  "body_text": null,
+  "page": null,
+  "source": "[\\total.order:on{X}]\nDeclares: R is \\partial.order:on{X}\nwhen: X is \\set\nsatisfies:\n. forAll: x, y \"in\" X\n  then:\n  . anyOf:\n    . R(x, y)\n    . R(y, x)\nDocumented:\n. called: \"total order on $X?$\"\n. description: \"A total (or linear) order on $X$ is a partial order in which\n                every two elements are comparable.\"\nId: \"40d12e9b-449e-49b9-a292-9388147d3e69\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "R is \\partial.order:on{X}",
+      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c7061727469616c2e6f726465723a6f6e}{\\textrm{partial order on }X}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "R is \\partial.order:on{X}",
+          "types": [
+            "asserts R is \\partial.order:on{X}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is \\set",
+          "types": [
+            "asserts X is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x, y \"in\" X",
+              "inline_latex": "x, y \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x, y \"in\" X",
+                  "types": [
+                    "asserts x \"in\" X",
+                    "asserts y \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "anyOf",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "R(x, y)",
+                          "latex": "x \\: R \\: y",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "R(x, y)",
+                              "types": []
+                            },
+                            {
+                              "depth": 1,
+                              "text": "x",
+                              "types": [
+                                "\"in\" X"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "y",
+                              "types": [
+                                "\"in\" X"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "R(y, x)",
+                          "latex": "y \\: R \\: x",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "R(y, x)",
+                              "types": []
+                            },
+                            {
+                              "depth": 1,
+                              "text": "y",
+                              "types": [
+                                "\"in\" X"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "x",
+                              "types": [
+                                "\"in\" X"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"total order on $X?$\"",
+              "inline_latex": "\\textrm{total order on }X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"40d12e9b-449e-49b9-a292-9388147d3e69\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

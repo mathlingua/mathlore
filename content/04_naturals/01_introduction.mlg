@@ -7,6 +7,10 @@ Text: "The natural numbers are the numbers of counting: zero, one, two, and so
 Id: "3079172c-5778-44bd-9391-60ce0f0b12e7"
 
 
+SectionTitle: "The Peano Axioms"
+Id: "1bf121c7-8539-4a95-8870-6ef558c2a240"
+
+
 [\naturals]
 Defines: Nb ::= (N, 0, S(n_))
 abstractly:
@@ -33,6 +37,9 @@ Enables:
 Documented:
 . called: "the naturals"
 . written: "\mathbb{N}"
+. description: "The natural numbers $(\mathbb{N}, 0, S)$ axiomatized via the
+                Peano postulates: $0$ is not a successor, the successor function
+                $S$ is injective, and induction holds."
 Id: "502e2a50-cced-461a-bdcf-03e2221a598f"
 
 
@@ -42,7 +49,39 @@ Enables:
 . capability: n_ + m_ :=> n_ \.natural.+./ m_
 Documented:
 . called: "natural"
+. description: "A natural number is a member of the underlying set $\mathbb{N}$."
 Id: "6c240df6-c06d-4fc4-ab16-31fa5aebb4d7"
+
+
+SectionTitle: "Constants and Arithmetic"
+Id: "d11de551-8fdb-461b-bb19-787caa038d69"
+
+
+Text: "The initial natural number is zero, and its successor is one."
+Id: "428700ea-91a3-4f0a-9418-1e0bd3a8c0d7"
+
+
+[\natural.zero]
+Defines: z := \naturals..0 is \natural
+Documented:
+. called: "natural zero"
+. written: "0"
+. description: "The distinguished element $0 \in \mathbb{N}$."
+Id: "3c4f37ab-1bff-4a4a-90ea-8f808863dbfc"
+
+
+[\natural.one]
+Defines: o := \naturals..S(\natural.zero) is \natural
+Documented:
+. called: "natural one"
+. written: "1"
+. description: "The natural number $1$, defined as the successor $S(0)$."
+Id: "8ced2d1f-741d-4996-84f8-b2c2afd293e8"
+
+
+Text: "Addition of natural numbers is defined recursively: adding zero leaves a
+       number unchanged, and adding a successor steps forward by successor."
+Id: "f4dd2fa3-9c90-4e21-ac5e-ef4f4052e599"
 
 
 [n_ \.natural.+./ m_]
@@ -56,5 +95,53 @@ expresses:
     where: n_ = \naturals..S(k)
     then: n_ + m_ := \naturals..S(n_ \.natural.+./ k)
 Documented:
+. called: "$n_?$ plus $m_?$"
 . written: "n_? + m_?"
+. description: "Addition of natural numbers defined by recursion on the first
+                argument: $0 + m = m$ and $S(k) + m = S(k + m)$."
 Id: "a8dda59b-29db-4ac2-8d70-e9010ccae3e7"
+
+
+Text: "Multiplication is defined by repeated addition via primitive recursion."
+Id: "2334b955-ab67-4bb6-baf5-b7f8e72cae55"
+
+
+[n_ \.natural.*./ m_]
+Defines: n_ * m_ is \binary.operation:on{\naturals}
+expresses:
+. piecewise:
+  if: n_ = 0
+  then: n_ * m_ := 0
+  else:
+  . let: k is \natural
+    where: n_ = \naturals..S(k)
+    then: n_ * m_ := (k \.natural.*./ m_) \.natural.+./ m_
+Documented:
+. called: "$n_?$ times $m_?$"
+. written: "n_? \cdot m_?"
+. description: "Multiplication of natural numbers defined by recursion:
+                $0 \cdot m = 0$ and $S(k) \cdot m = (k \cdot m) + m$."
+Id: "46c21a80-12cd-45f6-8e74-07731d18d220"
+
+
+SectionTitle: "Order on the Natural Numbers"
+Id: "c2be9441-a886-483d-ac05-cbf63c49eb49"
+
+
+Text: "A natural number $n$ is less than or equal to $m$ if $m$ can be reached
+       from $n$ by adding some natural number $k$."
+Id: "95c0a40d-4f64-4ab4-a7c4-fbc86a103719"
+
+
+[n \:natural.leq:/ m]
+Declares: n is \natural
+when: m is \natural
+satisfies:
+. exists: k is \natural
+  suchThat: n \.natural.+./ k = m
+Documented:
+. called: "$n?$ is less than or equal to $m?$"
+. written: "n? \leq m?"
+. description: "The canonical order on natural numbers: $n \leq m$ if and only
+                if there exists $k \in \mathbb{N}$ such that $n + k = m$."
+Id: "8c997826-bcef-4032-816b-c6dd2aa635e7"

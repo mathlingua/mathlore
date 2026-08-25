@@ -1,0 +1,14 @@
+{
+  "id": "8c997826-bcef-4032-816b-c6dd2aa635e7-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The canonical order on natural numbers: $n \\leq m$ if and only\nif there exists $k \\in \\mathbb{N}$ such that $n + k = m$."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "23196d3d-7a1f-44a8-899c-3c39d65bb331-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The concrete realization of the Peano natural numbers as the Von\nNeumann ordinal structure $(\\omega, \\emptyset, S)$."
+  },
+  "source": "",
+  "sections": []
+}

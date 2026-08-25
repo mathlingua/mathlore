@@ -1,0 +1,269 @@
+{
+  "id": "3aa2a394-dea8-48d6-8b73-6ad032408fe2",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c746f2e766f6e2e6e65756d616e6e2e6e61747572616c"
+  ],
+  "heading": "\\to.von.neumann.natural{n}",
+  "heading_latex": "\\textrm{Von Neumann Numeral Equivalent of }n\\quad\\htmlClass{mlg-title-written}{[n]}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\to.von.neumann.natural{n}]\nDefines: m \"in\" \\von.neumann.naturals\nwhen: n is \\natural\nexpresses:\n. piecewise:\n  if: n = 0\n  then: m = \\empty.set\n  else:\n  . let: k is \\natural\n    where: n = \\naturals..S(k)\n    then: m = \\set.successor:of{\\to.von.neumann.natural{k}}\nDocumented:\n. called: \"Von Neumann Numeral Equivalent of $n?$\"\n. written: \"[n?]\"\n. description: \"The canonical map from abstract Peano naturals to their Von\n                Neumann set-theoretic numeral representatives.\"\nId: \"3aa2a394-dea8-48d6-8b73-6ad032408fe2\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "m \"in\" \\von.neumann.naturals",
+      "inline_latex": "m \\in \\htmlData{mlg-ref=5c766f6e2e6e65756d616e6e2e6e61747572616c73}{\\textrm{Von Neumann Naturals}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "n is \\natural",
+      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "n is \\natural",
+          "types": [
+            "asserts n is \\natural"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "piecewise",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "if",
+              "inline_argument": "n = 0",
+              "inline_latex": "n = 0",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n = 0",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "n",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "0",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "m = \\empty.set",
+              "inline_latex": "m = \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "m = \\empty.set",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "m",
+                  "types": [
+                    "\"in\" \\von.neumann.naturals"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\empty.set",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "else",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "let",
+                      "inline_argument": "k is \\natural",
+                      "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "k is \\natural",
+                          "types": [
+                            "asserts k is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": "n = \\naturals..S(k)",
+                      "inline_latex": "n = \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..S(k)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "n = \\naturals..S(k)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "n",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\naturals..S(k)",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\naturals",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "k",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "m = \\set.successor:of{\\to.von.neumann.natural{k}}",
+                      "inline_latex": "m = \\htmlData{mlg-ref=5c7365742e737563636573736f723a6f66}{\\htmlData{mlg-ref=5c746f2e766f6e2e6e65756d616e6e2e6e61747572616c}{[k]} \\cup \\left \\{ \\htmlData{mlg-ref=5c746f2e766f6e2e6e65756d616e6e2e6e61747572616c}{[k]} \\right \\}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "m = \\set.successor:of{\\to.von.neumann.natural{k}}",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "m",
+                          "types": [
+                            "\"in\" \\von.neumann.naturals"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\set.successor:of{\\to.von.neumann.natural{k}}",
+                          "types": [
+                            "is \\set"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\to.von.neumann.natural{k}",
+                          "types": [
+                            "\"in\" \\von.neumann.naturals"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "k",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Von Neumann Numeral Equivalent of $n?$\"",
+              "inline_latex": "\\textrm{Von Neumann Numeral Equivalent of }n",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"[n?]\"",
+              "inline_latex": "[n]",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3aa2a394-dea8-48d6-8b73-6ad032408fe2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

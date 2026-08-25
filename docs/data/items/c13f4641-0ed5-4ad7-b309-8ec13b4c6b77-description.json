@@ -1,0 +1,14 @@
+{
+  "id": "c13f4641-0ed5-4ad7-b309-8ec13b4c6b77-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The set $\\omega$ of all Von Neumann numerals, the smallest\ninductive set."
+  },
+  "source": "",
+  "sections": []
+}

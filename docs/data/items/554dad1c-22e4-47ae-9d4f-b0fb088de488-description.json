@@ -1,0 +1,14 @@
+{
+  "id": "554dad1c-22e4-47ae-9d4f-b0fb088de488-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A bijective function is both injective and surjective,\nestablishing a one-to-one correspondence between its domain and\ncodomain."
+  },
+  "source": "",
+  "sections": []
+}

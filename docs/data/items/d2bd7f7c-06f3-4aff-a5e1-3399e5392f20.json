@@ -1,0 +1,230 @@
+{
+  "id": "d2bd7f7c-06f3-4aff-a5e1-3399e5392f20",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c66756e6374696f6e2e707265696d6167653a6f663a6f6e"
+  ],
+  "heading": "\\function.preimage:of{f(x__)}:on{Y}",
+  "heading_latex": "\\textrm{preimage of }Y\\textrm{ under }f(x)\\quad\\htmlClass{mlg-title-written}{f(x)^{-1}[Y]}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\function.preimage:of{f(x__)}:on{Y}]\nDefines: X is \\set\nwhen:\n. f is \\function:on{A?}:to{B?}\n. Y \\:subset:/ B\nexpresses:\n. let: x is \\set\n  then:\n  . have: x \"in\"? X\n    iff:\n    . x \"in\"? A\n    . f(x) \"in\" Y\nDocumented:\n. called: \"preimage of $Y?$ under $f?$\"\n. written: \"f+?^{-1}[Y?]\"\n. description: \"The preimage (inverse image) $f^{-1}[Y]$ is the set of domain\n                elements mapped by $f$ into $Y$.\"\nId: \"d2bd7f7c-06f3-4aff-a5e1-3399e5392f20\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "f is \\function:on{A?}:to{B?}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: A \\rightarrow B}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "f is \\function:on{A?}:to{B?}",
+              "types": [
+                "asserts f is \\function:on{A}:to{B}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "Y \\:subset:/ B",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{Y \\subseteq B}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "Y \\:subset:/ B",
+              "types": [
+                "asserts Y \\:subset:/ B"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "let",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x is \\set",
+                  "types": [
+                    "asserts x is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "x \"in\"? X",
+                      "inline_latex": "x \\in X",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x \"in\"? X",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "x \"in\"? A",
+                          "latex": "x \\in A",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "x \"in\"? A",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "x",
+                              "types": [
+                                "is \\set"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "f(x) \"in\" Y",
+                          "latex": "f(x) \\in Y",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "f(x) \"in\" Y",
+                              "types": [
+                                "asserts f(x) \"in\" Y"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "f(x)",
+                              "types": [
+                                "\"in\" B"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "x",
+                              "types": [
+                                "is \\set"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"preimage of $Y?$ under $f?$\"",
+              "inline_latex": "\\textrm{preimage of }Y\\textrm{ under }f",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"f+?^{-1}[Y?]\"",
+              "inline_latex": "f^{-1}[Y]",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d2bd7f7c-06f3-4aff-a5e1-3399e5392f20\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

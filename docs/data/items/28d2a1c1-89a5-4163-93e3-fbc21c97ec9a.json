@@ -26,6 +26,15 @@
       "label": "specifies",
       "inline_argument": "G is \\(finite)::monoid",
       "inline_latex": "G \\textrm{ is } \\textrm{finite}\\textrm{ }\\htmlData{mlg-ref=5c6d6f6e6f6964}{\\textrm{monoid}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "G is \\(finite)::monoid",
+          "types": [
+            "asserts G is \\finite::monoid"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

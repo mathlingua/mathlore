@@ -1,0 +1,14 @@
+{
+  "id": "fe3288e5-96fd-4839-bd2f-1bc13160214f-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The integers $(\\mathbb{Z}, 0, 1, +, \\cdot, -)$ as an algebraic\nring constructed from the differences of natural numbers."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "c7eca060-3bf4-4bc8-a372-210f25fb71cc",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "John von Neumann provided a canonical set-theoretic realization of the\nnatural numbers. In this construction, zero is the empty set $\\emptyset$,\nand each successive number is the set of all numbers preceding it:\n$0 = \\emptyset$, $1 = \\{0\\} = \\{\\emptyset\\}$, $2 = \\{0, 1\\}$, and in\ngeneral $S(n) = n \\cup \\{n\\}$. This elegant encoding makes the membership\nrelation $\\in$ coincide with the strict order $<$ on the naturals."
+  },
+  "source": "Text: \"John von Neumann provided a canonical set-theoretic realization of the\n       natural numbers. In this construction, zero is the empty set $\\emptyset$,\n       and each successive number is the set of all numbers preceding it:\n       $0 = \\emptyset$, $1 = \\{0\\} = \\{\\emptyset\\}$, $2 = \\{0, 1\\}$, and in\n       general $S(n) = n \\cup \\{n\\}$. This elegant encoding makes the membership\n       relation $\\in$ coincide with the strict order $<$ on the naturals.\"\nId: \"c7eca060-3bf4-4bc8-a372-210f25fb71cc\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"John von Neumann provided a canonical set-theoretic realization of the\n       natural numbers. In this construction, zero is the empty set $\\emptyset$,\n       and each successive number is the set of all numbers preceding it:\n       $0 = \\emptyset$, $1 = \\{0\\} = \\{\\emptyset\\}$, $2 = \\{0, 1\\}$, and in\n       general $S(n) = n \\cup \\{n\\}$. This elegant encoding makes the membership\n       relation $\\in$ coincide with the strict order $<$ on the naturals.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c7eca060-3bf4-4bc8-a372-210f25fb71cc\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

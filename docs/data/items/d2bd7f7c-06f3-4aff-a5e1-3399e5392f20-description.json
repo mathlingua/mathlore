@@ -1,0 +1,14 @@
+{
+  "id": "d2bd7f7c-06f3-4aff-a5e1-3399e5392f20-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The preimage (inverse image) $f^{-1}[Y]$ is the set of domain\nelements mapped by $f$ into $Y$."
+  },
+  "source": "",
+  "sections": []
+}

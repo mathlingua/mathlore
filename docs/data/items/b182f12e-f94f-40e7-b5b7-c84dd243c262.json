@@ -1,0 +1,202 @@
+{
+  "id": "b182f12e-f94f-40e7-b5b7-c84dd243c262",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c72656c6174696f6e2e696e76657273653a6f66"
+  ],
+  "heading": "\\relation.inverse:of{R}",
+  "heading_latex": "\\textrm{inverse relation of }R\\quad\\htmlClass{mlg-title-written}{R^{-1}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\relation.inverse:of{R}]\nDefines: S \\:subset:/ (.X \\.set.cross./ X.)\nusing: X is \\set\nwhen: R is \\relation:on{X}\nexpresses:\n. let: x, y \"in\" X\n  then:\n  . have: S(x, y)\n    iff: R(y, x)\nDocumented:\n. called: \"inverse relation of $R?$\"\n. written: \"R+?^{-1}\"\n. description: \"The inverse relation $R^{-1}$ consists of all pairs $(x, y)$\n                such that $(y, x) \\in R$.\"\nId: \"b182f12e-f94f-40e7-b5b7-c84dd243c262\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "S \\:subset:/ (.X \\.set.cross./ X.)",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq \\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{X \\times X}}",
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is \\set",
+          "types": [
+            "asserts X is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "R is \\relation:on{X}",
+      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "R is \\relation:on{X}",
+          "types": [
+            "asserts R is \\relation:on{X}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "let",
+              "inline_argument": "x, y \"in\" X",
+              "inline_latex": "x, y \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x, y \"in\" X",
+                  "types": [
+                    "asserts x \"in\" X",
+                    "asserts y \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "S(x, y)",
+                      "inline_latex": "S(x, y)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "S(x, y)",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "\"in\" X"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "y",
+                          "types": [
+                            "\"in\" X"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "R(y, x)",
+                      "inline_latex": "y \\: R \\: x",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "R(y, x)",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "y",
+                          "types": [
+                            "\"in\" X"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "\"in\" X"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"inverse relation of $R?$\"",
+              "inline_latex": "\\textrm{inverse relation of }R",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"R+?^{-1}\"",
+              "inline_latex": "R^{-1}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b182f12e-f94f-40e7-b5b7-c84dd243c262\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "5965ba24-25b8-4a16-92fc-035988cfb21c",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation is transitive if relationships chain through intermediate\nelements."
+  },
+  "source": "Text: \"A relation is transitive if relationships chain through intermediate\n       elements.\"\nId: \"5965ba24-25b8-4a16-92fc-035988cfb21c\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A relation is transitive if relationships chain through intermediate\n       elements.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5965ba24-25b8-4a16-92fc-035988cfb21c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

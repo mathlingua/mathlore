@@ -1,0 +1,14 @@
+{
+  "id": "7e51f2cf-8568-4819-af9d-80949b74d813-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An element of a ring $R$ is a member of its carrier set $X$."
+  },
+  "source": "",
+  "sections": []
+}

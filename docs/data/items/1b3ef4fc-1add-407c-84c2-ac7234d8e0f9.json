@@ -1,0 +1,27 @@
+{
+  "id": "1b3ef4fc-1add-407c-84c2-ac7234d8e0f9",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Fundamental Laws of Propositional Logic"
+  },
+  "source": "SectionTitle: \"Fundamental Laws of Propositional Logic\"\nId: \"1b3ef4fc-1add-407c-84c2-ac7234d8e0f9\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Fundamental Laws of Propositional Logic\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1b3ef4fc-1add-407c-84c2-ac7234d8e0f9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

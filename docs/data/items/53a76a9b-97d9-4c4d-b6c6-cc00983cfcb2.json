@@ -1,0 +1,238 @@
+{
+  "id": "53a76a9b-97d9-4c4d-b6c6-cc00983cfcb2",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c6669656c64"
+  ],
+  "heading": "\\field",
+  "heading_latex": "\\textrm{field}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\field]\nDeclares: F ::= (X, +, *, 0, 1) is \\(commutative)::ring via (X, +, *, 0, 1)\nsatisfies:\n. 0 != 1\n. forAll: x \"in\" F\n  where: x != 0\n  then:\n  . exists: y \"in\" F\n    suchThat: x * y = 1\nEnables:\n. capability: x_ \"in\" F :<->: x_ is \\field.element:of{F}\n  written: \"x_? \\in F?\"\nDocumented:\n. called: \"field\"\n. description: \"A field is a commutative ring $(F, +, *, 0, 1)$ with $0 \\neq 1$\n                in which every non-zero element has a multiplicative inverse.\"\nId: \"53a76a9b-97d9-4c4d-b6c6-cc00983cfcb2\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "F ::= (X, +, *, 0, 1) is \\(commutative)::ring via (X, +, *, 0, 1)",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "0 != 1",
+          "latex": "0 \\ne 1",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 != 1",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "0",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "1",
+              "types": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" F",
+              "inline_latex": "x \\in F",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" F",
+                  "types": [
+                    "asserts x \"in\" F"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "F",
+                  "types": [
+                    "is \\field"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "x != 0",
+              "inline_latex": "x \\ne 0",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x != 0",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": [
+                    "\"in\" F"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "0",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "y \"in\" F",
+                      "inline_latex": "y \\in F",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "y \"in\" F",
+                          "types": [
+                            "asserts y \"in\" F"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "F",
+                          "types": [
+                            "is \\field"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "x * y = 1",
+                      "inline_latex": "x \\ast y = 1",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x * y = 1",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x * y",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x",
+                          "types": [
+                            "\"in\" F"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "y",
+                          "types": [
+                            "\"in\" F"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "1",
+                          "types": []
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "x_ \"in\" F :<->: x_ is \\field.element:of{F}",
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "written",
+              "inline_argument": "\"x_? \\in F?\"",
+              "inline_latex": "x \\in F",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"field\"",
+              "inline_latex": "\\textrm{field}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"53a76a9b-97d9-4c4d-b6c6-cc00983cfcb2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

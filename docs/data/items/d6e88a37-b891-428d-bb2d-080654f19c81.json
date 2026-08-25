@@ -1,0 +1,27 @@
+{
+  "id": "d6e88a37-b891-428d-bb2d-080654f19c81",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "When the codomain of one function matches the domain of another, they can\nbe composed into a single pipeline."
+  },
+  "source": "Text: \"When the codomain of one function matches the domain of another, they can\n       be composed into a single pipeline.\"\nId: \"d6e88a37-b891-428d-bb2d-080654f19c81\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"When the codomain of one function matches the domain of another, they can\n       be composed into a single pipeline.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d6e88a37-b891-428d-bb2d-080654f19c81\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

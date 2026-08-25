@@ -1,0 +1,14 @@
+{
+  "id": "8ed4e2b2-f1b7-4131-8ae2-2834e71805fa-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation $R$ on $X$ is antisymmetric if $x \\mathrel{R} y$ and\n$y \\mathrel{R} x$ imply $x = y$."
+  },
+  "source": "",
+  "sections": []
+}

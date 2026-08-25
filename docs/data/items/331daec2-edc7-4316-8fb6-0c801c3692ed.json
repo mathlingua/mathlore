@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Finally, the Cartesian product forms the set of all ordered pairs drawn\nfrom two sets. It is the setting in which relations and functions are\ndefined, and so is one of the most heavily used constructions in what\nfollows."
+    "text": "The Cartesian product forms the set of all ordered pairs drawn from two\nsets. It is the setting in which relations and functions are defined, and\nso is one of the most heavily used constructions in what follows."
   },
-  "source": "Text: \"Finally, the Cartesian product forms the set of all ordered pairs drawn\n       from two sets. It is the setting in which relations and functions are\n       defined, and so is one of the most heavily used constructions in what\n       follows.\"\nId: \"331daec2-edc7-4316-8fb6-0c801c3692ed\"",
+  "source": "Text: \"The Cartesian product forms the set of all ordered pairs drawn from two\n       sets. It is the setting in which relations and functions are defined, and\n       so is one of the most heavily used constructions in what follows.\"\nId: \"331daec2-edc7-4316-8fb6-0c801c3692ed\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Finally, the Cartesian product forms the set of all ordered pairs drawn\n       from two sets. It is the setting in which relations and functions are\n       defined, and so is one of the most heavily used constructions in what\n       follows.\"",
+      "inline_argument": "\"The Cartesian product forms the set of all ordered pairs drawn from two\n       sets. It is the setting in which relations and functions are defined, and\n       so is one of the most heavily used constructions in what follows.\"",
       "inline_latex": null,
       "arguments": []
     },

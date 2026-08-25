@@ -1,0 +1,27 @@
+{
+  "id": "b1e96b53-1a5b-49bf-a250-bb2fb3114191",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The Structure of the Integers"
+  },
+  "source": "SectionTitle: \"The Structure of the Integers\"\nId: \"b1e96b53-1a5b-49bf-a250-bb2fb3114191\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The Structure of the Integers\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b1e96b53-1a5b-49bf-a250-bb2fb3114191\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

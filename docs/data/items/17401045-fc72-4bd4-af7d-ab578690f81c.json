@@ -1,0 +1,217 @@
+{
+  "id": "17401045-fc72-4bd4-af7d-ab578690f81c",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365742e756e6f7264657265642e706169723a6f66"
+  ],
+  "heading": "\\set.unordered.pair:of{x, y}",
+  "heading_latex": "\\textrm{unordered pair of }x\\textrm{ and }y\\quad\\htmlClass{mlg-title-written}{\\left \\{ x, y \\right \\}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\set.unordered.pair:of{x, y}]\nDefines: U is \\set\nwhen: x, y is \\set\nexpresses:\n. let: z is \\set\n  then:\n  . have: z \"in\"? U\n    iff: (.z = x.) \\.or./ (.z = y.)\nDocumented:\n. called: \"unordered pair of $x?$ and $y?$\"\n. written: \"\\left \\{ x?, y? \\right \\}\"\n. description: \"The unordered pair $\\{x, y\\}$ is the set whose members are\n                precisely $x$ and $y$.\"\nId: \"17401045-fc72-4bd4-af7d-ab578690f81c\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "U is \\set",
+      "inline_latex": "U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "x, y is \\set",
+      "inline_latex": "x, y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x, y is \\set",
+          "types": [
+            "asserts x is \\set",
+            "asserts y is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "let",
+              "inline_argument": "z is \\set",
+              "inline_latex": "z \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "z is \\set",
+                  "types": [
+                    "asserts z is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "z \"in\"? U",
+                      "inline_latex": "z \\in U",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "z \"in\"? U",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "z",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "(.z = x.) \\.or./ (.z = y.)",
+                      "inline_latex": "\\htmlData{mlg-ref=5c2e6f722e2f}{z = x \\lor z = y}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "(.z = x.) \\.or./ (.z = y.)",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "z = x",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "z = x",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "z",
+                          "types": [
+                            "is \\set"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "x",
+                          "types": [
+                            "is \\set"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "z = y",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "z = y",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "z",
+                          "types": [
+                            "is \\set"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "y",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"unordered pair of $x?$ and $y?$\"",
+              "inline_latex": "\\textrm{unordered pair of }x\\textrm{ and }y",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\left \\{ x?, y? \\right \\}\"",
+              "inline_latex": "\\left \\{ x, y \\right \\}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"17401045-fc72-4bd4-af7d-ab578690f81c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

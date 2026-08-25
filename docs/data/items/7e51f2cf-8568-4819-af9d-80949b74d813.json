@@ -1,0 +1,134 @@
+{
+  "id": "7e51f2cf-8568-4819-af9d-80949b74d813",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c72696e672e656c656d656e743a6f66"
+  ],
+  "heading": "\\ring.element:of{R ::= (X, +, *, 0, 1)}",
+  "heading_latex": "\\textrm{element of ring }R",
+  "parameter_destructurings": [
+    "R ::= \\left(X, +, \\ast, 0, 1\\right)"
+  ],
+  "body_text": null,
+  "page": null,
+  "source": "[\\ring.element:of{R ::= (X, +, *, 0, 1)}]\nDeclares: x \"in\" X\nwhen: R is \\ring\nEnables:\n. capability: x_ [+] y_ :=> x_ |R.+| y_\n  written: \"x_? +? y_?\"\n. capability: x_ [*] y_ :=> x_ |R.*| y_\n  written: \"x_? *? y_?\"\nDocumented:\n. called: \"element of ring $R?$\"\n. description: \"An element of a ring $R$ is a member of its carrier set $X$.\"\nId: \"7e51f2cf-8568-4819-af9d-80949b74d813\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "x \"in\" X",
+      "inline_latex": "x \\in X",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x \"in\" X",
+          "types": [
+            "asserts x \"in\" X"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "X",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "R is \\ring",
+      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c72696e67}{\\textrm{ring}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "R is \\ring",
+          "types": [
+            "asserts R is \\ring"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "x_ [+] y_ :=> x_ |R.+| y_",
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "written",
+              "inline_argument": "\"x_? +? y_?\"",
+              "inline_latex": "x +? y",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "x_ [*] y_ :=> x_ |R.*| y_",
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "written",
+              "inline_argument": "\"x_? *? y_?\"",
+              "inline_latex": "x *? y",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"element of ring $R?$\"",
+              "inline_latex": "\\textrm{element of ring }R",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7e51f2cf-8568-4819-af9d-80949b74d813\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

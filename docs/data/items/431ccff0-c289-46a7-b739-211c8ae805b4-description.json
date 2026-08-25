@@ -1,0 +1,14 @@
+{
+  "id": "431ccff0-c289-46a7-b739-211c8ae805b4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The Von Neumann successor function $S(n) = n \\cup \\{n\\}$ on\n$\\omega$."
+  },
+  "source": "",
+  "sections": []
+}

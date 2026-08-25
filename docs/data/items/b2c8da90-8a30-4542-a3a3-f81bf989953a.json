@@ -1,0 +1,27 @@
+{
+  "id": "b2c8da90-8a30-4542-a3a3-f81bf989953a",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation is symmetric if the order of elements in a related pair can be\nreversed."
+  },
+  "source": "Text: \"A relation is symmetric if the order of elements in a related pair can be\n       reversed.\"\nId: \"b2c8da90-8a30-4542-a3a3-f81bf989953a\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A relation is symmetric if the order of elements in a related pair can be\n       reversed.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b2c8da90-8a30-4542-a3a3-f81bf989953a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

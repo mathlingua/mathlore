@@ -1,0 +1,14 @@
+{
+  "id": "8baba6bf-25f4-48b4-84f9-4b2db59ccf47-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation $R$ on $X$ is transitive if $x \\mathrel{R} y$ and\n$y \\mathrel{R} z$ imply $x \\mathrel{R} z$."
+  },
+  "source": "",
+  "sections": []
+}

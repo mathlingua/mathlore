@@ -1,0 +1,27 @@
+{
+  "id": "c128a6a8-b892-4177-8622-29ba3cfa473a",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Similarly, pairing gives the unordered pair of any two sets $x$ and $y$."
+  },
+  "source": "Text: \"Similarly, pairing gives the unordered pair of any two sets $x$ and $y$.\"\nId: \"c128a6a8-b892-4177-8622-29ba3cfa473a\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Similarly, pairing gives the unordered pair of any two sets $x$ and $y$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c128a6a8-b892-4177-8622-29ba3cfa473a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

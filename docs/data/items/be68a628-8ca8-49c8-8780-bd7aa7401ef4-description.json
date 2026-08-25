@@ -1,0 +1,14 @@
+{
+  "id": "be68a628-8ca8-49c8-8780-bd7aa7401ef4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A surjective (onto) function hits every element of its codomain."
+  },
+  "source": "",
+  "sections": []
+}

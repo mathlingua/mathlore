@@ -1,0 +1,27 @@
+{
+  "id": "b69a5d44-be1d-4f87-bab6-f5c4eccf221c",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "While equivalence relations model symmetry and indistinguishability,\n*order relations* model hierarchy, comparison, and precedence."
+  },
+  "source": "Text: \"While equivalence relations model symmetry and indistinguishability,\n       *order relations* model hierarchy, comparison, and precedence.\"\nId: \"b69a5d44-be1d-4f87-bab6-f5c4eccf221c\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"While equivalence relations model symmetry and indistinguishability,\n       *order relations* model hierarchy, comparison, and precedence.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b69a5d44-be1d-4f87-bab6-f5c4eccf221c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

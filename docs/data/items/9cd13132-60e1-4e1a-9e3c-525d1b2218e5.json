@@ -1,0 +1,27 @@
+{
+  "id": "9cd13132-60e1-4e1a-9e3c-525d1b2218e5",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The set $\\omega$ of all Von Neumann numerals is the intersection of all\ninductive sets, existing by virtue of the Axiom of Infinity."
+  },
+  "source": "Text: \"The set $\\omega$ of all Von Neumann numerals is the intersection of all\n       inductive sets, existing by virtue of the Axiom of Infinity.\"\nId: \"9cd13132-60e1-4e1a-9e3c-525d1b2218e5\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The set $\\omega$ of all Von Neumann numerals is the intersection of all\n       inductive sets, existing by virtue of the Axiom of Infinity.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"9cd13132-60e1-4e1a-9e3c-525d1b2218e5\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -12,6 +12,10 @@ Text: "A relation records how the elements of a set stand to one another.
 Id: "c29d6027-fe93-4e6d-94df-f72a802fedcb"
 
 
+SectionTitle: "Binary Relations and Their Properties"
+Id: "c43de393-3ca6-474f-9c32-2996cb1b320b"
+
+
 [\relation:?on{X}]
 Declares: R \:subset:/ (.X \.set.cross./ X.)
 when: X is \set
@@ -25,6 +29,109 @@ Documented:
                 to $R$, so a relation is just a precise record of which ordered
                 pairs are related."
 Id: "5ace60a2-cc66-4cea-818a-538f877b5f97"
+
+
+Text: "A relation is reflexive if every element is related to itself."
+Id: "35a87f95-8d23-44a0-ae4f-70d4384a3db6"
+
+
+[\(reflexive)::relation:?on{X}]
+Refines: R
+when: X is \set
+satisfies:
+. forAll: x "in" X
+  then: R(x, x)
+Documented:
+. adjective: "reflexive"
+. description: "A relation $R$ on $X$ is reflexive if $x \mathrel{R} x$ for all
+                $x \in X$."
+Id: "8db6967b-79de-4fd6-8769-fcd651c7c6ee"
+
+
+Text: "A relation is symmetric if the order of elements in a related pair can be
+       reversed."
+Id: "b2c8da90-8a30-4542-a3a3-f81bf989953a"
+
+
+[\(symmetric)::relation:?on{X}]
+Refines: R
+when: X is \set
+satisfies:
+. forAll: x, y "in" X
+  where: R(x, y)
+  then: R(y, x)
+Documented:
+. adjective: "symmetric"
+. description: "A relation $R$ on $X$ is symmetric if $x \mathrel{R} y$ implies
+                $y \mathrel{R} x$."
+Id: "273288f5-a313-4140-a28c-16ac7e8ba72b"
+
+
+Text: "A relation is transitive if relationships chain through intermediate
+       elements."
+Id: "5965ba24-25b8-4a16-92fc-035988cfb21c"
+
+
+[\(transitive)::relation:?on{X}]
+Refines: R
+when: X is \set
+satisfies:
+. forAll: x, y, z "in" X
+  where:
+  . R(x, y)
+  . R(y, z)
+  then: R(x, z)
+Documented:
+. adjective: "transitive"
+. description: "A relation $R$ on $X$ is transitive if $x \mathrel{R} y$ and
+                $y \mathrel{R} z$ imply $x \mathrel{R} z$."
+Id: "8baba6bf-25f4-48b4-84f9-4b2db59ccf47"
+
+
+Text: "A relation is antisymmetric if two elements can only be mutually related
+       when they are identical."
+Id: "bdbeccce-dfdb-4d54-8b0c-92cae82c56d7"
+
+
+[\(antisymmetric)::relation:?on{X}]
+Refines: R
+when: X is \set
+satisfies:
+. forAll: x, y "in" X
+  where:
+  . R(x, y)
+  . R(y, x)
+  then: x = y
+Documented:
+. adjective: "antisymmetric"
+. description: "A relation $R$ on $X$ is antisymmetric if $x \mathrel{R} y$ and
+                $y \mathrel{R} x$ imply $x = y$."
+Id: "8ed4e2b2-f1b7-4131-8ae2-2834e71805fa"
+
+
+Text: "The inverse relation swaps the roles of the two arguments in every pair."
+Id: "ece9bae3-c088-459e-9cd1-7a650d9b3681"
+
+
+[\relation.inverse:of{R}]
+Defines: S \:subset:/ (.X \.set.cross./ X.)
+using: X is \set
+when: R is \relation:on{X}
+expresses:
+. let: x, y "in" X
+  then:
+  . have: S(x, y)
+    iff: R(y, x)
+Documented:
+. called: "inverse relation of $R?$"
+. written: "R+?^{-1}"
+. description: "The inverse relation $R^{-1}$ consists of all pairs $(x, y)$
+                such that $(y, x) \in R$."
+Id: "b182f12e-f94f-40e7-b5b7-c84dd243c262"
+
+
+SectionTitle: "Equivalence Relations and Quotients"
+Id: "66f53348-5a61-4763-9645-64390784903b"
 
 
 Text: "The most important relations are those that behave like a generalized
@@ -44,11 +151,11 @@ satisfies:
   forAll: x "in" X
   then: R(x, x)
 . [symmetric]
-  forAll: x, y "in" R
+  forAll: x, y "in" X
   where: R(x, y)
   then: R(y, x)
 . [transitive]
-  forAll: x, y, z "in" R
+  forAll: x, y, z "in" X
   where:
   . R(x, y)
   . R(y, z)
@@ -105,3 +212,54 @@ Documented:
                 point, so that elements related by $R$ become equal in the
                 quotient."
 Id: "cea0d898-a18d-44dc-b04c-ffb2f0cde26e"
+
+
+SectionTitle: "Order Relations"
+Id: "88c4093d-566b-48bb-baea-9926345a182f"
+
+
+Text: "While equivalence relations model symmetry and indistinguishability,
+       *order relations* model hierarchy, comparison, and precedence."
+Id: "b69a5d44-be1d-4f87-bab6-f5c4eccf221c"
+
+
+[\partial.order:on{X}]
+Declares: R is \relation:on{X}
+when: X is \set
+satisfies:
+. [reflexive]
+  forAll: x "in" X
+  then: R(x, x)
+. [antisymmetric]
+  forAll: x, y "in" X
+  where:
+  . R(x, y)
+  . R(y, x)
+  then: x = y
+. [transitive]
+  forAll: x, y, z "in" X
+  where:
+  . R(x, y)
+  . R(y, z)
+  then: R(x, z)
+Documented:
+. called: "partial order on $X?$"
+. description: "A partial order on $X$ is a reflexive, antisymmetric, and
+                transitive relation."
+Id: "656a5a0a-77e8-42ea-857c-4f7d8eda00ac"
+
+
+[\total.order:on{X}]
+Declares: R is \partial.order:on{X}
+when: X is \set
+satisfies:
+. forAll: x, y "in" X
+  then:
+  . anyOf:
+    . R(x, y)
+    . R(y, x)
+Documented:
+. called: "total order on $X?$"
+. description: "A total (or linear) order on $X$ is a partial order in which
+                every two elements are comparable."
+Id: "40d12e9b-449e-49b9-a292-9388147d3e69"

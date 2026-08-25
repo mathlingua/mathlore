@@ -1,5 +1,5 @@
 {
-  "id": "08e79326-5fb2-4d0e-8f35-1b437d85b38b",
+  "id": "1bf121c7-8539-4a95-8870-6ef558c2a240",
   "kind": "SectionTitle",
   "definition_keys": [],
   "heading": null,
@@ -7,19 +7,19 @@
   "body_text": null,
   "page": {
     "kind": "SectionTitle",
-    "text": "The Peano axioms"
+    "text": "The Peano Axioms"
   },
-  "source": "SectionTitle: \"The Peano axioms\"\nId: \"08e79326-5fb2-4d0e-8f35-1b437d85b38b\"",
+  "source": "SectionTitle: \"The Peano Axioms\"\nId: \"1bf121c7-8539-4a95-8870-6ef558c2a240\"",
   "sections": [
     {
       "label": "SectionTitle",
-      "inline_argument": "\"The Peano axioms\"",
+      "inline_argument": "\"The Peano Axioms\"",
       "inline_latex": null,
       "arguments": []
     },
     {
       "label": "Id",
-      "inline_argument": "\"08e79326-5fb2-4d0e-8f35-1b437d85b38b\"",
+      "inline_argument": "\"1bf121c7-8539-4a95-8870-6ef558c2a240\"",
       "inline_latex": null,
       "arguments": []
     }

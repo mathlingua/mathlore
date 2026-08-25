@@ -11,6 +11,10 @@ Text: "Before any mathematics can be stated precisely, we need a small
 Id: "b03f7ce2-7aed-4c81-a6e7-d998ccf65747"
 
 
+SectionTitle: "Conditionals and Equivalence"
+Id: "706c5ccb-8690-478e-b0fd-90e906f0276e"
+
+
 Text: "We begin with the conditional, the connective that expresses logical
        consequence. It is the backbone of every definition and proof that
        follows, since to prove a theorem is almost always to show that some
@@ -58,9 +62,13 @@ Documented:
 Id: "96440ac7-3331-4467-a7ac-593dbca0761b"
 
 
-Text: "The remaining connectives build compound statements from simpler ones.
-       Conjunction asserts that two statements both hold, disjunction that at
-       least one of them does, and negation that a statement fails."
+SectionTitle: "Boolean Connectives"
+Id: "faacb189-b227-404c-8a8a-b6e976fc828a"
+
+
+Text: "The primary Boolean connectives build compound statements from simpler
+       ones. Conjunction asserts that two statements both hold, disjunction that
+       at least one of them does, and negation that a statement fails."
 Id: "1d61c6bd-bf4c-4c3e-a6dd-769d5c662a6f"
 
 
@@ -121,9 +129,82 @@ States:
 when: P, Q is \\statement
 that: (P \.or./ Q) \.and./ \not{P \.and./ Q}
 Documented:
+. called: "$P?$ xor $Q?$"
 . written: "P? \text{ xor } Q?"
 . description: "The exclusive disjunction of $P$ and $Q$. It holds when $P$ or
                 $Q$ holds but *not* both, and is defined here as $(P \text{ or }
                 Q) \text{ and } \neg(P \text{ and } Q)$ -- inclusive *or* with
                 the both-true case removed."
 Id: "1c7bc638-0db8-416f-a0d0-f5c0d7d92842"
+
+
+Text: "Two other notable derived connectives are the Sheffer stroke (NAND) and
+       the Peirce arrow (NOR). Each of these connectives is functionally
+       complete on its own, meaning that every truth-functional operator can be
+       expressed purely in terms of NAND alone or NOR alone."
+Id: "2d5efb63-58bb-436f-9aa6-648a2c05e6b6"
+
+
+[P \.nand./ Q]
+States:
+when: P, Q is \\statement
+that: \not{P \.and./ Q}
+Documented:
+. called: "$P?$ nand $Q?$"
+. written: "P? \barwedge Q?"
+. description: "The alternative denial (Sheffer stroke) of $P$ and $Q$. It is
+                true if and only if at least one of the propositions is false,
+                failing only when both $P$ and $Q$ are simultaneously true."
+Id: "ac552ed6-48a1-4639-940a-9d9a291c76e4"
+
+
+[P \.nor./ Q]
+States:
+when: P, Q is \\statement
+that: \not{P \.or./ Q}
+Documented:
+. called: "$P?$ nor $Q?$"
+. written: "P? \downarrow Q?"
+. description: "The joint denial (Peirce arrow) of $P$ and $Q$. It asserts that
+                neither $P$ nor $Q$ holds, being true precisely when both
+                statements are false."
+Id: "a16193ad-6084-494c-afd2-b4f7c6a70a7d"
+
+
+SectionTitle: "Fundamental Laws of Propositional Logic"
+Id: "1b3ef4fc-1add-407c-84c2-ac7234d8e0f9"
+
+
+Text: "Classical propositional logic satisfies several fundamental algebraic
+       laws. The first is the law of double negation, which states that denying
+       a negated proposition returns the original proposition."
+Id: "ddf66eda-3e4a-4b16-a628-eaa5d5dbc270"
+
+
+Theorem:
+given: P is \\statement
+then: \not{\not{P}} \.iff./ P
+Documented:
+. called: "Law of Double Negation"
+. description: "A proposition $P$ is logically equivalent to the negation of its
+                negation $\neg(\neg P)$."
+Id: "eb21571a-d245-427d-a014-d29407d09f9a"
+
+
+Text: "De Morgan's laws describe the duality between conjunction and disjunction
+       under negation: the negation of a conjunction is the disjunction of the
+       negations, and the negation of a disjunction is the conjunction of the
+       negations."
+Id: "2f552add-aa29-4824-b7d0-40345e29c312"
+
+
+Theorem:
+given: P, Q is \\statement
+then:
+. \not{P \.and./ Q} \.iff./ (\not{P} \.or./ \not{Q})
+. \not{P \.or./ Q} \.iff./ (\not{P} \.and./ \not{Q})
+Documented:
+. called: "De Morgan's Laws for Logic"
+. description: "Negation interchanges conjunction and disjunction: $\neg(P \land Q)
+                \iff (\neg P \lor \neg Q)$ and $\neg(P \lor Q) \iff (\neg P \land \neg Q)$."
+Id: "e4c6ef38-dd37-448b-a1f5-377df32138ce"

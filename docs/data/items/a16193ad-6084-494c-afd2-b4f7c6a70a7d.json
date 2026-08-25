@@ -1,0 +1,119 @@
+{
+  "id": "a16193ad-6084-494c-afd2-b4f7c6a70a7d",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e6e6f722e2f"
+  ],
+  "heading": "P \\.nor./ Q",
+  "heading_latex": "P\\textrm{ nor }Q\\quad\\htmlClass{mlg-title-written}{P \\downarrow Q}",
+  "body_text": null,
+  "page": null,
+  "source": "[P \\.nor./ Q]\nStates:\nwhen: P, Q is \\\\statement\nthat: \\not{P \\.or./ Q}\nDocumented:\n. called: \"$P?$ nor $Q?$\"\n. written: \"P? \\downarrow Q?\"\n. description: \"The joint denial (Peirce arrow) of $P$ and $Q$. It asserts that\n                neither $P$ nor $Q$ holds, being true precisely when both\n                statements are false.\"\nId: \"a16193ad-6084-494c-afd2-b4f7c6a70a7d\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "P, Q is \\\\statement",
+      "inline_latex": "P, Q \\textrm{ is } \\textrm{statement}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "P, Q is \\\\statement",
+          "types": [
+            "asserts P is \\\\statement",
+            "asserts Q is \\\\statement"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "that",
+      "inline_argument": "\\not{P \\.or./ Q}",
+      "inline_latex": "\\htmlData{mlg-ref=5c6e6f74}{\\neg \\left(\\htmlData{mlg-ref=5c2e6f722e2f}{P \\lor Q}\\right)}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "\\not{P \\.or./ Q}",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "P\\.or./Q",
+          "types": []
+        },
+        {
+          "depth": 2,
+          "text": "P",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "Q",
+          "types": [
+            "is \\\\statement"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$P?$ nor $Q?$\"",
+              "inline_latex": "P\\textrm{ nor }Q",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"P? \\downarrow Q?\"",
+              "inline_latex": "P \\downarrow Q",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a16193ad-6084-494c-afd2-b4f7c6a70a7d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

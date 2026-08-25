@@ -1,0 +1,27 @@
+{
+  "id": "ece9bae3-c088-459e-9cd1-7a650d9b3681",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The inverse relation swaps the roles of the two arguments in every pair."
+  },
+  "source": "Text: \"The inverse relation swaps the roles of the two arguments in every pair.\"\nId: \"ece9bae3-c088-459e-9cd1-7a650d9b3681\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The inverse relation swaps the roles of the two arguments in every pair.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ece9bae3-c088-459e-9cd1-7a650d9b3681\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

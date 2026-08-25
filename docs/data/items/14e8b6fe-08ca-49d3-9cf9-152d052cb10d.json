@@ -1,0 +1,69 @@
+{
+  "id": "14e8b6fe-08ca-49d3-9cf9-152d052cb10d",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c696e74656765722e7a65726f"
+  ],
+  "heading": "\\integer.zero",
+  "heading_latex": "\\textrm{integer zero}\\quad\\htmlClass{mlg-title-written}{0}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integer.zero]\nDefines: z := \\integers..0 is \\integer\nDocumented:\n. called: \"integer zero\"\n. written: \"0\"\n. description: \"The integer zero $0 \\in \\mathbb{Z}$.\"\nId: \"14e8b6fe-08ca-49d3-9cf9-152d052cb10d\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "z := \\integers..0 is \\integer",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}..0 \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integer zero\"",
+              "inline_latex": "\\textrm{integer zero}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"0\"",
+              "inline_latex": "0",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"14e8b6fe-08ca-49d3-9cf9-152d052cb10d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "fa87c699-877a-4604-8cf0-ba2bb87bbfe8",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The standard Boolean algebra of sets provides the operations of union,\nintersection, and set difference. Union combines elements from either\nset, intersection takes elements common to both, and difference removes\nelements of the second set from the first."
+  },
+  "source": "Text: \"The standard Boolean algebra of sets provides the operations of union,\n       intersection, and set difference. Union combines elements from either\n       set, intersection takes elements common to both, and difference removes\n       elements of the second set from the first.\"\nId: \"fa87c699-877a-4604-8cf0-ba2bb87bbfe8\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The standard Boolean algebra of sets provides the operations of union,\n       intersection, and set difference. Union combines elements from either\n       set, intersection takes elements common to both, and difference removes\n       elements of the second set from the first.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fa87c699-877a-4604-8cf0-ba2bb87bbfe8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

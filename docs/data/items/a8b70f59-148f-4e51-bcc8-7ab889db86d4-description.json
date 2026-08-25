@@ -1,0 +1,14 @@
+{
+  "id": "a8b70f59-148f-4e51-bcc8-7ab889db86d4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Union and intersection are commutative: $A \\cup B = B \\cup A$\nand $A \\cap B = B \\cap A$."
+  },
+  "source": "",
+  "sections": []
+}

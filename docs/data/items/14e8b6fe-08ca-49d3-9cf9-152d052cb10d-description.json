@@ -1,0 +1,14 @@
+{
+  "id": "14e8b6fe-08ca-49d3-9cf9-152d052cb10d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The integer zero $0 \\in \\mathbb{Z}$."
+  },
+  "source": "",
+  "sections": []
+}

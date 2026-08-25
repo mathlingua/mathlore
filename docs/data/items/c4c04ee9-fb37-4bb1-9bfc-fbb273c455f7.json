@@ -1,0 +1,27 @@
+{
+  "id": "c4c04ee9-fb37-4bb1-9bfc-fbb273c455f7",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The Integer Equivalence Relation"
+  },
+  "source": "SectionTitle: \"The Integer Equivalence Relation\"\nId: \"c4c04ee9-fb37-4bb1-9bfc-fbb273c455f7\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The Integer Equivalence Relation\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c4c04ee9-fb37-4bb1-9bfc-fbb273c455f7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

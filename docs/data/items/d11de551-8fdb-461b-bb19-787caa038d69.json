@@ -1,0 +1,27 @@
+{
+  "id": "d11de551-8fdb-461b-bb19-787caa038d69",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Constants and Arithmetic"
+  },
+  "source": "SectionTitle: \"Constants and Arithmetic\"\nId: \"d11de551-8fdb-461b-bb19-787caa038d69\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Constants and Arithmetic\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d11de551-8fdb-461b-bb19-787caa038d69\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

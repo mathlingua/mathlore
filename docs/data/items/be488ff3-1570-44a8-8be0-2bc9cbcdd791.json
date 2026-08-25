@@ -1,0 +1,102 @@
+{
+  "id": "be488ff3-1570-44a8-8be0-2bc9cbcdd791",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c6964656e746974792e66756e6374696f6e3a6f6e"
+  ],
+  "heading": "\\identity.function:on{A}",
+  "heading_latex": "\\textrm{identity function on }A\\quad\\htmlClass{mlg-title-written}{\\text{id}_{A}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\identity.function:on{A}]\nDefines: f is \\function:on{A}:to{A}\nwhen: A is \\set\nexpresses: f(x__) := x__\nDocumented:\n. called: \"identity function on $A?$\"\n. written: \"\\text{id}_{A?}\"\n. description: \"The identity function $\\text{id}_A$ maps every element of $A$ to\n                itself: $\\text{id}_A(x) = x$.\"\nId: \"be488ff3-1570-44a8-8be0-2bc9cbcdd791\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "f is \\function:on{A}:to{A}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: A \\rightarrow A}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A is \\set",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A is \\set",
+          "types": [
+            "asserts A is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "f(x__) := x__",
+      "inline_latex": "f(x) := x",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "f(x__) := x__",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "x",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"identity function on $A?$\"",
+              "inline_latex": "\\textrm{identity function on }A",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\text{id}_{A?}\"",
+              "inline_latex": "\\text{id}_{A}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"be488ff3-1570-44a8-8be0-2bc9cbcdd791\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

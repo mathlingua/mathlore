@@ -1,0 +1,123 @@
+{
+  "id": "3607e1a0-1e2c-40e7-93f1-728cdec9968e",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e6469736a6f696e742e66726f6d2e2f"
+  ],
+  "heading": "A \\.disjoint.from./ B",
+  "heading_latex": "A\\textrm{ is disjoint from }B",
+  "body_text": null,
+  "page": null,
+  "source": "[A \\.disjoint.from./ B]\nStates:\nwhen: A, B is \\set\nthat: (A \\.set.intersect./ B) = \\empty.set\nDocumented:\n. called: \"$A?$ is disjoint from $B?$\"\n. description: \"Two sets $A$ and $B$ are disjoint if their intersection is\n                empty: $A \\cap B = \\emptyset$.\"\nId: \"3607e1a0-1e2c-40e7-93f1-728cdec9968e\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A, B is \\set",
+          "types": [
+            "asserts A is \\set",
+            "asserts B is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "that",
+      "inline_argument": "(A \\.set.intersect./ B) = \\empty.set",
+      "inline_latex": "\\left(\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap B}\\right) = \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "(A \\.set.intersect./ B) = \\empty.set",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "A\\.set.intersect./B",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "A\\.set.intersect./B",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "A",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "B",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\empty.set",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$A?$ is disjoint from $B?$\"",
+              "inline_latex": "A\\textrm{ is disjoint from }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3607e1a0-1e2c-40e7-93f1-728cdec9968e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "20e77baa-c3d2-4104-a8dc-3fe1e02717e8",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The empty set acts as the identity element for set union."
+  },
+  "source": "Text: \"The empty set acts as the identity element for set union.\"\nId: \"20e77baa-c3d2-4104-a8dc-3fe1e02717e8\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The empty set acts as the identity element for set union.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"20e77baa-c3d2-4104-a8dc-3fe1e02717e8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

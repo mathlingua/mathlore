@@ -1,0 +1,27 @@
+{
+  "id": "ddf66eda-3e4a-4b16-a628-eaa5d5dbc270",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Classical propositional logic satisfies several fundamental algebraic\nlaws. The first is the law of double negation, which states that denying\na negated proposition returns the original proposition."
+  },
+  "source": "Text: \"Classical propositional logic satisfies several fundamental algebraic\n       laws. The first is the law of double negation, which states that denying\n       a negated proposition returns the original proposition.\"\nId: \"ddf66eda-3e4a-4b16-a628-eaa5d5dbc270\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Classical propositional logic satisfies several fundamental algebraic\n       laws. The first is the law of double negation, which states that denying\n       a negated proposition returns the original proposition.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ddf66eda-3e4a-4b16-a628-eaa5d5dbc270\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

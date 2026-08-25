@@ -8,16 +8,16 @@
   "heading_latex": "\\textrm{set property}",
   "body_text": null,
   "page": null,
-  "source": "[\\set.property(X_)]\nDeclares: phi(X_) is (? is \\set) -> (? is \\\\statement)\nDocumented:\n. called: \"set property\"\n. description: \"A set property is a predicate on sets: given a set it yields a\n                statement, true or false. Properties are what the specification\n                axiom uses to carve subsets out of existing sets.\"\nId: \"cc680a81-3338-4848-8b9d-fcf368dd759e\"",
+  "source": "[\\set.property(X_)]\nDeclares: phi(X_) is (_ is \\set) -> (_ is \\\\statement)\nDocumented:\n. called: \"set property\"\n. description: \"A set property is a predicate on sets: given a set it yields a\n                statement, true or false. Properties are what the specification\n                axiom uses to carve subsets out of existing sets.\"\nId: \"cc680a81-3338-4848-8b9d-fcf368dd759e\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "phi(X_) is (? is \\set) -> (? is \\\\statement)",
-      "inline_latex": "\\varphi(X) \\textrm{ is } \\left(? \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\right) \\to \\left(? \\textrm{ is } \\textrm{statement}\\right)",
+      "inline_argument": "phi(X_) is (_ is \\set) -> (_ is \\\\statement)",
+      "inline_latex": "\\varphi(X) \\textrm{ is } \\left(\\cdot \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\right) \\to \\left(\\cdot \\textrm{ is } \\textrm{statement}\\right)",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "phi(X_) is (? is \\set) -> (? is \\\\statement)",
+          "text": "phi(X_) is (_ is \\set) -> (_ is \\\\statement)",
           "types": [
             "asserts phi is (_ is \\set) => (_ is \\\\statement)"
           ]

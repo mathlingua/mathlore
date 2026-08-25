@@ -1,0 +1,138 @@
+{
+  "id": "a5c4b516-227b-4893-aa18-5f04c1f005a4",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e66756e6374696f6e2e636f6d706f73652e2f"
+  ],
+  "heading": "g(y__) \\.function.compose./ f(x__)",
+  "heading_latex": "\\textrm{composition of }g(y)\\textrm{ and }f(x)\\quad\\htmlClass{mlg-title-written}{g(y) \\circ f(x)}",
+  "body_text": null,
+  "page": null,
+  "source": "[g(y__) \\.function.compose./ f(x__)]\nDefines: h(x__) is \\function:on{A}:to{C}\nwhen:\n. f is \\function:on{A?}:to{B?}\n. g is \\function:on{B}:to{C?}\nexpresses: h(x__) := g(f(x__))\nDocumented:\n. called: \"composition of $g?$ and $f?$\"\n. written: \"g? \\circ f?\"\n. description: \"The composition $g \\circ f : A \\rightarrow C$ applies $f$ first\n                and then $g$, so $(g \\circ f)(x) = g(f(x))$.\"\nId: \"a5c4b516-227b-4893-aa18-5f04c1f005a4\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "h(x__) is \\function:on{A}:to{C}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{h(x) \\: : \\: A \\rightarrow C}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "f is \\function:on{A?}:to{B?}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: A \\rightarrow B}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "f is \\function:on{A?}:to{B?}",
+              "types": [
+                "asserts f is \\function:on{A}:to{B}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "g is \\function:on{B}:to{C?}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{g \\: : \\: B \\rightarrow C}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "g is \\function:on{B}:to{C?}",
+              "types": [
+                "asserts g is \\function:on{B}:to{C}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "h(x__) := g(f(x__))",
+      "inline_latex": "h(x) := g(f(x))",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "h(x__) := g(f(x__))",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "g(f(x))",
+          "types": [
+            "\"in\" C"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "f(x)",
+          "types": [
+            "\"in\" B"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "x",
+          "types": [
+            "\"in\" A"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"composition of $g?$ and $f?$\"",
+              "inline_latex": "\\textrm{composition of }g\\textrm{ and }f",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"g? \\circ f?\"",
+              "inline_latex": "g \\circ f",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a5c4b516-227b-4893-aa18-5f04c1f005a4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

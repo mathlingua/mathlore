@@ -1,0 +1,27 @@
+{
+  "id": "667c2087-7c50-4b19-b052-b9fa56d77656",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Every integer $a$ has a unique additive inverse $-a$ satisfying\n$a + (-a) = 0$."
+  },
+  "source": "Text: \"Every integer $a$ has a unique additive inverse $-a$ satisfying\n       $a + (-a) = 0$.\"\nId: \"667c2087-7c50-4b19-b052-b9fa56d77656\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Every integer $a$ has a unique additive inverse $-a$ satisfying\n       $a + (-a) = 0$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"667c2087-7c50-4b19-b052-b9fa56d77656\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

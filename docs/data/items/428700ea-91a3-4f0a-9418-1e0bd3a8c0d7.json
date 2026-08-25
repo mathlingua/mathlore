@@ -1,0 +1,27 @@
+{
+  "id": "428700ea-91a3-4f0a-9418-1e0bd3a8c0d7",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The initial natural number is zero, and its successor is one."
+  },
+  "source": "Text: \"The initial natural number is zero, and its successor is one.\"\nId: \"428700ea-91a3-4f0a-9418-1e0bd3a8c0d7\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The initial natural number is zero, and its successor is one.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"428700ea-91a3-4f0a-9418-1e0bd3a8c0d7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

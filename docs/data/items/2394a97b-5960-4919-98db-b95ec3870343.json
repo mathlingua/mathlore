@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{equivalence relation on }X",
   "body_text": null,
   "page": null,
-  "source": "[\\equivalence.relation:on{X}]\nDeclares: R is \\relation:on{X}\nwhen: X is \\set\nsatisfies:\n. [reflexive]\n  forAll: x \"in\" X\n  then: R(x, x)\n. [symmetric]\n  forAll: x, y \"in\" R\n  where: R(x, y)\n  then: R(y, x)\n. [transitive]\n  forAll: x, y, z \"in\" R\n  where:\n  . R(x, y)\n  . R(y, z)\n  then: R(x, z)\nDocumented:\n. called: \"equivalence relation on $X?$\"\n. description: \"An equivalence relation on $X$ is a relation that is reflexive\n                ($x \\mathrel{R} x$), symmetric (if $x \\mathrel{R} y$ then $y\n                \\mathrel{R} x$), and transitive (if $x \\mathrel{R} y$ and $y\n                \\mathrel{R} z$ then $x \\mathrel{R} z$). Such a relation sorts the\n                elements of $X$ into classes of mutually related elements.\"\nId: \"2394a97b-5960-4919-98db-b95ec3870343\"",
+  "source": "[\\equivalence.relation:on{X}]\nDeclares: R is \\relation:on{X}\nwhen: X is \\set\nsatisfies:\n. [reflexive]\n  forAll: x \"in\" X\n  then: R(x, x)\n. [symmetric]\n  forAll: x, y \"in\" X\n  where: R(x, y)\n  then: R(y, x)\n. [transitive]\n  forAll: x, y, z \"in\" X\n  where:\n  . R(x, y)\n  . R(y, z)\n  then: R(x, z)\nDocumented:\n. called: \"equivalence relation on $X?$\"\n. description: \"An equivalence relation on $X$ is a relation that is reflexive\n                ($x \\mathrel{R} x$), symmetric (if $x \\mathrel{R} y$ then $y\n                \\mathrel{R} x$), and transitive (if $x \\mathrel{R} y$ and $y\n                \\mathrel{R} z$ then $x \\mathrel{R} z$). Such a relation sorts the\n                elements of $X$ into classes of mutually related elements.\"\nId: \"2394a97b-5960-4919-98db-b95ec3870343\"",
   "sections": [
     {
       "label": "Declares",
@@ -106,22 +106,22 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "x, y \"in\" R",
-              "inline_latex": "x, y \\in R",
+              "inline_argument": "x, y \"in\" X",
+              "inline_latex": "x, y \\in X",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "x, y \"in\" R",
+                  "text": "x, y \"in\" X",
                   "types": [
-                    "asserts x \"in\" R",
-                    "asserts y \"in\" R"
+                    "asserts x \"in\" X",
+                    "asserts y \"in\" X"
                   ]
                 },
                 {
                   "depth": 1,
-                  "text": "R",
+                  "text": "X",
                   "types": [
-                    "is \\equivalence.relation:on{X}"
+                    "is \\set"
                   ]
                 }
               ],
@@ -141,14 +141,14 @@
                   "depth": 1,
                   "text": "x",
                   "types": [
-                    "\"in\" R"
+                    "\"in\" X"
                   ]
                 },
                 {
                   "depth": 1,
                   "text": "y",
                   "types": [
-                    "\"in\" R"
+                    "\"in\" X"
                   ]
                 }
               ],
@@ -168,14 +168,14 @@
                   "depth": 1,
                   "text": "y",
                   "types": [
-                    "\"in\" R"
+                    "\"in\" X"
                   ]
                 },
                 {
                   "depth": 1,
                   "text": "x",
                   "types": [
-                    "\"in\" R"
+                    "\"in\" X"
                   ]
                 }
               ],
@@ -189,23 +189,23 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "x, y, z \"in\" R",
-              "inline_latex": "x, y, z \\in R",
+              "inline_argument": "x, y, z \"in\" X",
+              "inline_latex": "x, y, z \\in X",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "x, y, z \"in\" R",
+                  "text": "x, y, z \"in\" X",
                   "types": [
-                    "asserts x \"in\" R",
-                    "asserts y \"in\" R",
-                    "asserts z \"in\" R"
+                    "asserts x \"in\" X",
+                    "asserts y \"in\" X",
+                    "asserts z \"in\" X"
                   ]
                 },
                 {
                   "depth": 1,
-                  "text": "R",
+                  "text": "X",
                   "types": [
-                    "is \\equivalence.relation:on{X}"
+                    "is \\set"
                   ]
                 }
               ],
@@ -230,14 +230,14 @@
                       "depth": 1,
                       "text": "x",
                       "types": [
-                        "\"in\" R"
+                        "\"in\" X"
                       ]
                     },
                     {
                       "depth": 1,
                       "text": "y",
                       "types": [
-                        "\"in\" R"
+                        "\"in\" X"
                       ]
                     }
                   ]
@@ -256,14 +256,14 @@
                       "depth": 1,
                       "text": "y",
                       "types": [
-                        "\"in\" R"
+                        "\"in\" X"
                       ]
                     },
                     {
                       "depth": 1,
                       "text": "z",
                       "types": [
-                        "\"in\" R"
+                        "\"in\" X"
                       ]
                     }
                   ]
@@ -284,14 +284,14 @@
                   "depth": 1,
                   "text": "x",
                   "types": [
-                    "\"in\" R"
+                    "\"in\" X"
                   ]
                 },
                 {
                   "depth": 1,
                   "text": "z",
                   "types": [
-                    "\"in\" R"
+                    "\"in\" X"
                   ]
                 }
               ],

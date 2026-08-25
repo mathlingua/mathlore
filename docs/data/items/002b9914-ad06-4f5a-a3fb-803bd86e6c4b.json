@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{The set successor of }X\\quad\\htmlClass{mlg-title-written}{X \\cup \\left \\{ X \\right \\}}",
   "body_text": null,
   "page": null,
-  "source": "[\\set.successor:of{X}]\nDefines: Y is \\set\nwhen: X is \\set\nexpresses:\n. let: Z is \\set\n  then:\n  . have: Z \"in\"? Y\n    iff:\n    . (.Z = X.) \\.or./ (.Z = \\singleton.set:of{X}.)\nDocumented:\n. called: \"The set successor of $X?$\"\n. written: \"X? \\cup \\left \\{ X? \\right \\}\"\n. description: \"The successor of $X$ is the set $X \\cup \\{X\\}$, whose members\n                are the members of $X$ together with $X$ itself. Starting from\n                $\\emptyset$ and repeating this step generates the natural\n                numbers.\"\nId: \"002b9914-ad06-4f5a-a3fb-803bd86e6c4b\"",
+  "source": "[\\set.successor:of{X}]\nDefines: Y is \\set\nwhen: X is \\set\nexpresses:\n. let: Z is \\set\n  then:\n  . have: Z \"in\"? Y\n    iff:\n    . (.Z = X.) \\.or./ (.Z = \\set.singleton.set:of{X}.)\nDocumented:\n. called: \"The set successor of $X?$\"\n. written: \"X? \\cup \\left \\{ X? \\right \\}\"\n. description: \"The successor of $X$ is the set $X \\cup \\{X\\}$, whose members\n                are the members of $X$ together with $X$ itself. Starting from\n                $\\emptyset$ and repeating this step generates the natural\n                numbers.\"\nId: \"002b9914-ad06-4f5a-a3fb-803bd86e6c4b\"",
   "sections": [
     {
       "label": "Defines",
@@ -93,12 +93,12 @@
                       "arguments": [
                         {
                           "kind": "formulation",
-                          "text": "(.Z = X.) \\.or./ (.Z = \\singleton.set:of{X}.)",
-                          "latex": "\\htmlData{mlg-ref=5c2e6f722e2f}{Z = X \\lor Z = \\htmlData{mlg-ref=5c73696e676c65746f6e2e7365743a6f66}{\\left \\{ X \\right \\}}}",
+                          "text": "(.Z = X.) \\.or./ (.Z = \\set.singleton.set:of{X}.)",
+                          "latex": "\\htmlData{mlg-ref=5c2e6f722e2f}{Z = X \\lor Z = \\htmlData{mlg-ref=5c7365742e73696e676c65746f6e2e7365743a6f66}{\\left \\{ X \\right \\}}}",
                           "type_info": [
                             {
                               "depth": 0,
-                              "text": "(.Z = X.) \\.or./ (.Z = \\singleton.set:of{X}.)",
+                              "text": "(.Z = X.) \\.or./ (.Z = \\set.singleton.set:of{X}.)",
                               "types": []
                             },
                             {
@@ -131,14 +131,14 @@
                             },
                             {
                               "depth": 1,
-                              "text": "Z = \\singleton.set:of{X}",
+                              "text": "Z = \\set.singleton.set:of{X}",
                               "types": [
                                 "is \\\\statement"
                               ]
                             },
                             {
                               "depth": 2,
-                              "text": "Z = \\singleton.set:of{X}",
+                              "text": "Z = \\set.singleton.set:of{X}",
                               "types": [
                                 "is \\\\statement"
                               ]
@@ -152,7 +152,7 @@
                             },
                             {
                               "depth": 3,
-                              "text": "\\singleton.set:of{X}",
+                              "text": "\\set.singleton.set:of{X}",
                               "types": [
                                 "is \\set"
                               ]

@@ -1,0 +1,146 @@
+{
+  "id": "2ddbe95a-149f-4596-8496-b214741d64a4",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c636f6d6d757461746976653a3a72696e67"
+  ],
+  "heading": "\\(commutative)::ring",
+  "heading_latex": "\\textrm{commutative}\\textrm{ }\\htmlData{mlg-ref=5c72696e67}{\\textrm{ring}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(commutative)::ring]\nRefines: R ::= (X, +, *, 0, 1)\nsatisfies:\n. forAll: x, y \"in\" R\n  then: x * y = y * x\nDocumented:\n. adjective: \"commutative\"\n. description: \"A commutative ring is a ring in which $x * y = y * x$ for all\n                elements.\"\nId: \"2ddbe95a-149f-4596-8496-b214741d64a4\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "R ::= (X, +, *, 0, 1)",
+      "inline_latex": "R ::= \\left(X, +, \\ast, 0, 1\\right) \\textrm{ is } \\htmlData{mlg-ref=5c72696e67}{\\textrm{ring}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x, y \"in\" R",
+              "inline_latex": "x, y \\in R",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x, y \"in\" R",
+                  "types": [
+                    "asserts x \"in\" R",
+                    "asserts y \"in\" R"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "R",
+                  "types": [
+                    "is \\ring"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "x * y = y * x",
+              "inline_latex": "x \\ast y = y \\ast x",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x * y = y * x",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x * y",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "x",
+                  "types": [
+                    "\"in\" R"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "y",
+                  "types": [
+                    "\"in\" R"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "y * x",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "y",
+                  "types": [
+                    "\"in\" R"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "x",
+                  "types": [
+                    "\"in\" R"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"commutative\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2ddbe95a-149f-4596-8496-b214741d64a4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

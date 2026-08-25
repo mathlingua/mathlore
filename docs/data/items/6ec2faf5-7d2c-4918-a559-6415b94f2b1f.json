@@ -20,6 +20,15 @@
       "label": "specifies",
       "inline_argument": "* is \\(associative)::binary.operation:on{X}",
       "inline_latex": "\\ast \\textrm{ is } \\htmlData{mlg-ref=5c6173736f636961746976653a3a62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{associative}}\\textrm{ }\\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }X}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "* is \\(associative)::binary.operation:on{X}",
+          "types": [
+            "asserts * is \\associative::binary.operation:on{X}"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

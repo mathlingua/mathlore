@@ -1,0 +1,27 @@
+{
+  "id": "35a87f95-8d23-44a0-ae4f-70d4384a3db6",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation is reflexive if every element is related to itself."
+  },
+  "source": "Text: \"A relation is reflexive if every element is related to itself.\"\nId: \"35a87f95-8d23-44a0-ae4f-70d4384a3db6\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A relation is reflexive if every element is related to itself.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"35a87f95-8d23-44a0-ae4f-70d4384a3db6\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

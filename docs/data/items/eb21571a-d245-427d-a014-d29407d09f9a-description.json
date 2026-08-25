@@ -1,0 +1,14 @@
+{
+  "id": "eb21571a-d245-427d-a014-d29407d09f9a-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A proposition $P$ is logically equivalent to the negation of its\nnegation $\\neg(\\neg P)$."
+  },
+  "source": "",
+  "sections": []
+}

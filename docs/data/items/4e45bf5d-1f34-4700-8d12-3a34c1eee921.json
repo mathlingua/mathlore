@@ -1,0 +1,27 @@
+{
+  "id": "4e45bf5d-1f34-4700-8d12-3a34c1eee921",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A unary operation is a function from a set to itself, transforming\nindividual elements."
+  },
+  "source": "Text: \"A unary operation is a function from a set to itself, transforming\n       individual elements.\"\nId: \"4e45bf5d-1f34-4700-8d12-3a34c1eee921\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A unary operation is a function from a set to itself, transforming\n       individual elements.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4e45bf5d-1f34-4700-8d12-3a34c1eee921\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

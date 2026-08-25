@@ -1,0 +1,14 @@
+{
+  "id": "5d137355-ba4e-44ca-bf58-2f7b3f667dcc-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The intersection $A \\cap B$ is the set of elements common to\nboth $A$ and $B$, containing only those elements that belong to\nboth."
+  },
+  "source": "",
+  "sections": []
+}

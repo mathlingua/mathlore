@@ -1,0 +1,27 @@
+{
+  "id": "66a4fe57-0841-4c98-afd8-1ab256038d71",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Addition of integers is commutative and associative, with zero as\nidentity."
+  },
+  "source": "Text: \"Addition of integers is commutative and associative, with zero as\n       identity.\"\nId: \"66a4fe57-0841-4c98-afd8-1ab256038d71\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Addition of integers is commutative and associative, with zero as\n       identity.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"66a4fe57-0841-4c98-afd8-1ab256038d71\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

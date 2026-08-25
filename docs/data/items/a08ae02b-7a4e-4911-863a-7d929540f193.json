@@ -1,0 +1,203 @@
+{
+  "id": "a08ae02b-7a4e-4911-863a-7d929540f193",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e7365742e756e696f6e2e2f"
+  ],
+  "heading": "A \\.set.union./ B",
+  "heading_latex": "\\textrm{union of }A\\textrm{ and }B\\quad\\htmlClass{mlg-title-written}{A \\cup B}",
+  "body_text": null,
+  "page": null,
+  "source": "[A \\.set.union./ B]\nDefines: U is \\set\nwhen: A, B is \\set\nexpresses:\n. let: x is \\set\n  then:\n  . have: x \"in\"? U\n    iff: (.x \"in\"? A.) \\.or./ (.x \"in\"? B.)\nDocumented:\n. called: \"union of $A?$ and $B?$\"\n. written: \"A? \\cup B?\"\n. description: \"The union $A \\cup B$ is the set containing all elements that\n                belong to $A$, to $B$, or to both.\"\nId: \"a08ae02b-7a4e-4911-863a-7d929540f193\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "U is \\set",
+      "inline_latex": "U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A, B is \\set",
+          "types": [
+            "asserts A is \\set",
+            "asserts B is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "let",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x is \\set",
+                  "types": [
+                    "asserts x is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "x \"in\"? U",
+                      "inline_latex": "x \\in U",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x \"in\"? U",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "(.x \"in\"? A.) \\.or./ (.x \"in\"? B.)",
+                      "inline_latex": "\\htmlData{mlg-ref=5c2e6f722e2f}{x \\in A \\lor x \\in B}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "(.x \"in\"? A.) \\.or./ (.x \"in\"? B.)",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x\"in\"?A",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x\"in\"?A",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "x",
+                          "types": [
+                            "is \\set"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x\"in\"?B",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x\"in\"?B",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "x",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"union of $A?$ and $B?$\"",
+              "inline_latex": "\\textrm{union of }A\\textrm{ and }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\cup B?\"",
+              "inline_latex": "A \\cup B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a08ae02b-7a4e-4911-863a-7d929540f193\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

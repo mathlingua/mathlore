@@ -1,0 +1,27 @@
+{
+  "id": "2334b955-ab67-4bb6-baf5-b7f8e72cae55",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Multiplication is defined by repeated addition via primitive recursion."
+  },
+  "source": "Text: \"Multiplication is defined by repeated addition via primitive recursion.\"\nId: \"2334b955-ab67-4bb6-baf5-b7f8e72cae55\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Multiplication is defined by repeated addition via primitive recursion.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2334b955-ab67-4bb6-baf5-b7f8e72cae55\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

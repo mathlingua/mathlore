@@ -11,7 +11,7 @@
   "heading_latex": "\\textrm{bijective}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }A\\textrm{ to }B}",
   "body_text": null,
   "page": null,
-  "source": "[\\(bijective)::function:?on{A}:?to{B}]\nRefines: f\nspecifies: f is \\(injective, surjective)::[[f]]\nDocumented:\n. adjective: \"bijective\"\nId: \"554dad1c-22e4-47ae-9d4f-b0fb088de488\"",
+  "source": "[\\(bijective)::function:?on{A}:?to{B}]\nRefines: f\nspecifies: f is \\(injective, surjective)::[[f]]\nDocumented:\n. adjective: \"bijective\"\n. description: \"A bijective function is both injective and surjective,\n                establishing a one-to-one correspondence between its domain and\n                codomain.\"\nId: \"554dad1c-22e4-47ae-9d4f-b0fb088de488\"",
   "sections": [
     {
       "label": "Refines",
@@ -38,6 +38,18 @@
               "label": "adjective",
               "inline_argument": "\"bijective\"",
               "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
               "arguments": []
             }
           ]

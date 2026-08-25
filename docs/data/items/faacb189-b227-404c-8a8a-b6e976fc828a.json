@@ -1,0 +1,27 @@
+{
+  "id": "faacb189-b227-404c-8a8a-b6e976fc828a",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Boolean Connectives"
+  },
+  "source": "SectionTitle: \"Boolean Connectives\"\nId: \"faacb189-b227-404c-8a8a-b6e976fc828a\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Boolean Connectives\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"faacb189-b227-404c-8a8a-b6e976fc828a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

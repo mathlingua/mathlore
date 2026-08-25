@@ -1,0 +1,697 @@
+{
+  "id": "5ca5fdca-692d-4f04-8420-aa01c909955d",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c72696e67"
+  ],
+  "heading": "\\ring",
+  "heading_latex": "\\textrm{ring}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\ring]\nDeclares: R ::= (X, +, *, 0, 1) is \\set via X\nspecifies:\n. + is \\(associative, commutative)::binary.operation:on{X}\n. * is \\(associative)::binary.operation:on{X}\n. 0 \"in\" X\n. 1 \"in\" X\nsatisfies:\n. [additive.identity]\n  forAll: x \"in\" X\n  then: x + 0 = x\n. [additive.inverse]\n  forAll: x \"in\" X\n  then:\n  . exists: y \"in\" X\n    suchThat: x + y = 0\n. [multiplicative.identity]\n  forAll: x \"in\" X\n  then:\n  . x * 1 = x\n  . 1 * x = x\n. [distributive]\n  forAll: a, b, c \"in\" X\n  then:\n  . a * (b + c) = (a * b) + (a * c)\n  . (a + b) * c = (a * c) + (b * c)\nEnables:\n. capability: x_ \"in\" R :<->: x_ is \\ring.element:of{R}\n  written: \"x_? \\in R?\"\nDocumented:\n. called: \"ring\"\n. description: \"A ring $(R, +, *, 0, 1)$ consists of an abelian addition group,\n                an associative multiplication with identity $1$, and two-sided\n                distributivity.\"\nId: \"5ca5fdca-692d-4f04-8420-aa01c909955d\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "R ::= (X, +, *, 0, 1) is \\set via X",
+      "inline_latex": "R ::= \\left(X, +, \\ast, 0, 1\\right) \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}} \\textrm{ via } X",
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "+ is \\(associative, commutative)::binary.operation:on{X}",
+          "latex": "+ \\textrm{ is } \\left(\\htmlData{mlg-ref=5c6173736f636961746976653a3a62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{associative}}\\textrm{ and }\\htmlData{mlg-ref=5c636f6d6d757461746976653a3a62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{commutative}}\\right)\\textrm{ }\\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "+ is \\(associative, commutative)::binary.operation:on{X}",
+              "types": [
+                "asserts + is \\associative::commutative::binary.operation:on{X}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "* is \\(associative)::binary.operation:on{X}",
+          "latex": "\\ast \\textrm{ is } \\htmlData{mlg-ref=5c6173736f636961746976653a3a62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{associative}}\\textrm{ }\\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "* is \\(associative)::binary.operation:on{X}",
+              "types": [
+                "asserts * is \\associative::binary.operation:on{X}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "0 \"in\" X",
+          "latex": "0 \\in X",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 \"in\" X",
+              "types": [
+                "asserts 0 \"in\" X"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "1 \"in\" X",
+          "latex": "1 \\in X",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "1 \"in\" X",
+              "types": [
+                "asserts 1 \"in\" X"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": "additive.identity",
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" X",
+              "inline_latex": "x \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" X",
+                  "types": [
+                    "asserts x \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "x + 0 = x",
+              "inline_latex": "x + 0 = x",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x + 0 = x",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x + 0",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "x",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "0",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": "additive.inverse",
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" X",
+              "inline_latex": "x \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" X",
+                  "types": [
+                    "asserts x \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "y \"in\" X",
+                      "inline_latex": "y \\in X",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "y \"in\" X",
+                          "types": [
+                            "asserts y \"in\" X"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "X",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "x + y = 0",
+                      "inline_latex": "x + y = 0",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x + y = 0",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x + y",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x",
+                          "types": [
+                            "\"in\" X"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "y",
+                          "types": [
+                            "\"in\" X"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "0",
+                          "types": [
+                            "\"in\" X"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": "multiplicative.identity",
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" X",
+              "inline_latex": "x \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" X",
+                  "types": [
+                    "asserts x \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "x * 1 = x",
+                  "latex": "x \\ast 1 = x",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "x * 1 = x",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "x * 1",
+                      "types": []
+                    },
+                    {
+                      "depth": 2,
+                      "text": "x",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "1",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "x",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "1 * x = x",
+                  "latex": "1 \\ast x = x",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "1 * x = x",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "1 * x",
+                      "types": []
+                    },
+                    {
+                      "depth": 2,
+                      "text": "1",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "x",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "x",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": "distributive",
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a, b, c \"in\" X",
+              "inline_latex": "a, b, c \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a, b, c \"in\" X",
+                  "types": [
+                    "asserts a \"in\" X",
+                    "asserts b \"in\" X",
+                    "asserts c \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "a * (b + c) = (a * b) + (a * c)",
+                  "latex": "a \\ast \\left(b + c\\right) = \\left(a \\ast b\\right) + \\left(a \\ast c\\right)",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a * (b + c) = (a * b) + (a * c)",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b + c",
+                      "types": []
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b + c",
+                      "types": []
+                    },
+                    {
+                      "depth": 3,
+                      "text": "b + c",
+                      "types": []
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b + a * c",
+                      "types": []
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a * b",
+                      "types": []
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a * b",
+                      "types": []
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a * c",
+                      "types": []
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a * c",
+                      "types": []
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "(a + b) * c = (a * c) + (b * c)",
+                  "latex": "\\left(a + b\\right) \\ast c = \\left(a \\ast c\\right) + \\left(b \\ast c\\right)",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "(a + b) * c = (a * c) + (b * c)",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a + b * c",
+                      "types": []
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a + b",
+                      "types": []
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a + b",
+                      "types": []
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "c",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * c + b * c",
+                      "types": []
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a * c",
+                      "types": []
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a * c",
+                      "types": []
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b * c",
+                      "types": []
+                    },
+                    {
+                      "depth": 3,
+                      "text": "b * c",
+                      "types": []
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "x_ \"in\" R :<->: x_ is \\ring.element:of{R}",
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "written",
+              "inline_argument": "\"x_? \\in R?\"",
+              "inline_latex": "x \\in R",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"ring\"",
+              "inline_latex": "\\textrm{ring}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5ca5fdca-692d-4f04-8420-aa01c909955d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

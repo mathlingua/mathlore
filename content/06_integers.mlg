@@ -14,8 +14,147 @@ Text: "The natural numbers can be added but not freely subtracted: there is no
 Id: "6ab727ff-4d3c-467a-a090-23baa9056340"
 
 
+SectionTitle: "The Integer Equivalence Relation"
+Id: "c4c04ee9-fb37-4bb1-9bfc-fbb273c455f7"
+
+
 Text: "Two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same integer when
        $n_1 - m_1 = n_2 - m_2$. Since subtraction is not yet available, this is
        phrased using addition alone, as $n_1 + m_2 = n_2 + m_1$. The relation so
        defined is an equivalence relation on pairs of naturals."
 Id: "86f693bc-1d69-4bfd-bef4-c67033b73acb"
+
+
+[\integers.relation]
+Declares: R is \equivalence.relation:on{\naturals..N \.set.cross./ \naturals..N}
+satisfies:
+. forAll: n1, m1, n2, m2 is \natural
+  then:
+  . have: R((n1, m1), (n2, m2))
+    iff: (n1 \.natural.+./ m2) = (n2 \.natural.+./ m1)
+Documented:
+. called: "integer equivalence relation"
+. description: "The equivalence relation on $\mathbb{N} \times \mathbb{N}$
+                identifying pairs $(n_1, m_1)$ and $(n_2, m_2)$ when
+                $n_1 + m_2 = n_2 + m_1$."
+Id: "fd0234b9-545e-4dcf-bc4f-8c1c6f306e25"
+
+
+SectionTitle: "The Structure of the Integers"
+Id: "b1e96b53-1a5b-49bf-a250-bb2fb3114191"
+
+
+[\integers]
+Defines: Zb ::= (Z, 0, 1, +, *, neg(z_))
+abstractly:
+specifies:
+. Z is \set
+. 0 "in" Z
+. 1 "in" Z
+. + is \binary.operation:on{Z}
+. * is \binary.operation:on{Z}
+. neg is \function:on{Z}:to{Z}
+expresses:
+. forAll: a, b, c "in" Z
+  then:
+  . (a + b) + c = a + (b + c)
+  . a + b = b + a
+  . a + 0 = a
+  . a + neg(a) = 0
+  . (a * b) * c = a * (b * c)
+  . a * 1 = a
+  . 1 * a = a
+  . a * (b + c) = (a * b) + (a * c)
+Enables:
+. capability: z_ "in" Zb :-> z_ is \integer
+. view:
+  as: S := Z is \set
+Documented:
+. called: "the integers"
+. written: "\mathbb{Z}"
+. description: "The integers $(\mathbb{Z}, 0, 1, +, \cdot, -)$ as an algebraic
+                ring constructed from the differences of natural numbers."
+Id: "fe3288e5-96fd-4839-bd2f-1bc13160214f"
+
+
+[\integer]
+Declares: z "in" \integers..Z
+Enables:
+. capability: a_ + b_ :=> a_ \.integer.+./ b_
+. capability: a_ * b_ :=> a_ \.integer.*./ b_
+. capability: -a_ :=> \integer.neg(a_)
+Documented:
+. called: "integer"
+. description: "An integer is an element of the underlying set of integers
+                $\mathbb{Z}$."
+Id: "a97ad153-f94d-4eb6-b91e-84f49114ab6e"
+
+
+SectionTitle: "Integer Constants and Operations"
+Id: "c0a1f8a4-c48a-4a84-8f81-0b741cd08c77"
+
+
+Text: "The zero integer is the additive identity, and one is the multiplicative
+       identity."
+Id: "c29a27c7-6869-4b83-8183-70312240df75"
+
+
+[\integer.zero]
+Defines: z := \integers..0 is \integer
+Documented:
+. called: "integer zero"
+. written: "0"
+. description: "The integer zero $0 \in \mathbb{Z}$."
+Id: "14e8b6fe-08ca-49d3-9cf9-152d052cb10d"
+
+
+[\integer.one]
+Defines: o := \integers..1 is \integer
+Documented:
+. called: "integer one"
+. written: "1"
+. description: "The integer one $1 \in \mathbb{Z}$."
+Id: "5cda05b0-3930-47cc-b00c-386456f52ab0"
+
+
+Text: "Addition of integers is commutative and associative, with zero as
+       identity."
+Id: "66a4fe57-0841-4c98-afd8-1ab256038d71"
+
+
+[a_ \.integer.+./ b_]
+Defines: a_ + b_ is \binary.operation:on{\integers}
+expresses: a_ + b_ := \integers..`+`(a_, b_)
+Documented:
+. called: "$a_?$ plus $b_?$"
+. written: "a_? + b_?"
+. description: "Addition of integers."
+Id: "d2bd8cc9-3dd0-4a49-8e85-cf5009edb9a4"
+
+
+Text: "Multiplication of integers is associative and distributes over addition."
+Id: "52cc558f-f07b-4b85-a932-7f4448a88b65"
+
+
+[a_ \.integer.*./ b_]
+Defines: a_ * b_ is \binary.operation:on{\integers}
+expresses: a_ * b_ := \integers..`*`(a_, b_)
+Documented:
+. called: "$a_?$ times $b_?$"
+. written: "a_? \cdot b_?"
+. description: "Multiplication of integers."
+Id: "155efde4-346b-4674-8578-dfbffcdc188d"
+
+
+Text: "Every integer $a$ has a unique additive inverse $-a$ satisfying
+       $a + (-a) = 0$."
+Id: "667c2087-7c50-4b19-b052-b9fa56d77656"
+
+
+[\integer.neg(a_)]
+Defines: n := \integers..neg(a_) is \integer
+Documented:
+. called: "negative of $a_?$"
+. written: "-a_?"
+. description: "The additive inverse (negation) of an integer $-a$."
+Id: "c17b9934-2a9c-4ccc-8556-c76abd992020"

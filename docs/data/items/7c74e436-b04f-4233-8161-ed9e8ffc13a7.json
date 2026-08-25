@@ -1,0 +1,27 @@
+{
+  "id": "7c74e436-b04f-4233-8161-ed9e8ffc13a7",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Equipping a set with both addition and multiplication gives rise to rings\nand fields. In a ring, addition forms an abelian group, multiplication\nforms a monoid, and multiplication distributes over addition."
+  },
+  "source": "Text: \"Equipping a set with both addition and multiplication gives rise to rings\n       and fields. In a ring, addition forms an abelian group, multiplication\n       forms a monoid, and multiplication distributes over addition.\"\nId: \"7c74e436-b04f-4233-8161-ed9e8ffc13a7\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Equipping a set with both addition and multiplication gives rise to rings\n       and fields. In a ring, addition forms an abelian group, multiplication\n       forms a monoid, and multiplication distributes over addition.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7c74e436-b04f-4233-8161-ed9e8ffc13a7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

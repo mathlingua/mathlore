@@ -1,0 +1,247 @@
+{
+  "id": "46c21a80-12cd-45f6-8e74-07731d18d220",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e6e61747572616c2e2a2e2f"
+  ],
+  "heading": "n_ \\.natural.*./ m_",
+  "heading_latex": "n\\textrm{ times }m\\quad\\htmlClass{mlg-title-written}{n \\cdot m}",
+  "body_text": null,
+  "page": null,
+  "source": "[n_ \\.natural.*./ m_]\nDefines: n_ * m_ is \\binary.operation:on{\\naturals}\nexpresses:\n. piecewise:\n  if: n_ = 0\n  then: n_ * m_ := 0\n  else:\n  . let: k is \\natural\n    where: n_ = \\naturals..S(k)\n    then: n_ * m_ := (k \\.natural.*./ m_) \\.natural.+./ m_\nDocumented:\n. called: \"$n_?$ times $m_?$\"\n. written: \"n_? \\cdot m_?\"\n. description: \"Multiplication of natural numbers defined by recursion:\n                $0 \\cdot m = 0$ and $S(k) \\cdot m = (k \\cdot m) + m$.\"\nId: \"46c21a80-12cd-45f6-8e74-07731d18d220\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "n_ * m_ is \\binary.operation:on{\\naturals}",
+      "inline_latex": "n \\ast m \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }\\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "piecewise",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "if",
+              "inline_argument": "n_ = 0",
+              "inline_latex": "n = 0",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n_ = 0",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "n",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "0",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "n_ * m_ := 0",
+              "inline_latex": "n \\ast m := 0",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n_ * m_ := 0",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "0",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "else",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "let",
+                      "inline_argument": "k is \\natural",
+                      "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "k is \\natural",
+                          "types": [
+                            "asserts k is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": "n_ = \\naturals..S(k)",
+                      "inline_latex": "n = \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..S(k)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "n_ = \\naturals..S(k)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "n",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\naturals..S(k)",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\naturals",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "k",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "n_ * m_ := (k \\.natural.*./ m_) \\.natural.+./ m_",
+                      "inline_latex": "n \\ast m := \\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{\\left(\\htmlData{mlg-ref=5c2e6e61747572616c2e2a2e2f}{k \\cdot m}\\right) + m}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "n_ * m_ := (k \\.natural.*./ m_) \\.natural.+./ m_",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "k\\.natural.*./m\\.natural.+./m",
+                          "types": [
+                            "is \\binary.operation:on{\\naturals}"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "k\\.natural.*./m",
+                          "types": [
+                            "is \\binary.operation:on{\\naturals}"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "k\\.natural.*./m",
+                          "types": [
+                            "is \\binary.operation:on{\\naturals}"
+                          ]
+                        },
+                        {
+                          "depth": 4,
+                          "text": "k",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 4,
+                          "text": "m",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "m",
+                          "types": []
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$n_?$ times $m_?$\"",
+              "inline_latex": "n\\textrm{ times }m",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"n_? \\cdot m_?\"",
+              "inline_latex": "n \\cdot m",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"46c21a80-12cd-45f6-8e74-07731d18d220\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

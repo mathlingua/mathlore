@@ -1,0 +1,232 @@
+{
+  "id": "fd0234b9-545e-4dcf-bc4f-8c1c6f306e25",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c696e7465676572732e72656c6174696f6e"
+  ],
+  "heading": "\\integers.relation",
+  "heading_latex": "\\textrm{integer equivalence relation}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integers.relation]\nDeclares: R is \\equivalence.relation:on{\\naturals..N \\.set.cross./ \\naturals..N}\nsatisfies:\n. forAll: n1, m1, n2, m2 is \\natural\n  then:\n  . have: R((n1, m1), (n2, m2))\n    iff: (n1 \\.natural.+./ m2) = (n2 \\.natural.+./ m1)\nDocumented:\n. called: \"integer equivalence relation\"\n. description: \"The equivalence relation on $\\mathbb{N} \\times \\mathbb{N}$\n                identifying pairs $(n_1, m_1)$ and $(n_2, m_2)$ when\n                $n_1 + m_2 = n_2 + m_1$.\"\nId: \"fd0234b9-545e-4dcf-bc4f-8c1c6f306e25\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "R is \\equivalence.relation:on{\\naturals..N \\.set.cross./ \\naturals..N}",
+      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c6571756976616c656e63652e72656c6174696f6e3a6f6e}{\\textrm{equivalence relation on }\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..N \\times \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..N}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "R is \\equivalence.relation:on{\\naturals..N \\.set.cross./ \\naturals..N}",
+          "types": [
+            "asserts R is \\equivalence.relation:on{\\naturals..N\\.set.cross./\\naturals..N}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n1, m1, n2, m2 is \\natural",
+              "inline_latex": "n_1, m_1, n_2, m_2 \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n1, m1, n2, m2 is \\natural",
+                  "types": [
+                    "asserts n1 is \\natural",
+                    "asserts m1 is \\natural",
+                    "asserts n2 is \\natural",
+                    "asserts m2 is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "R((n1, m1), (n2, m2))",
+                      "inline_latex": "\\left(n_1, m_1\\right) \\: R \\: \\left(n_2, m_2\\right)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "R((n1, m1), (n2, m2))",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "(n1,m1)",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "n1",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "m1",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "(n2,m2)",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "n2",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "m2",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": "(n1 \\.natural.+./ m2) = (n2 \\.natural.+./ m1)",
+                      "inline_latex": "\\left(\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n_1 + m_2}\\right) = \\left(\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n_2 + m_1}\\right)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "(n1 \\.natural.+./ m2) = (n2 \\.natural.+./ m1)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "n1\\.natural.+./m2",
+                          "types": [
+                            "\"in\" \\naturals"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "n1\\.natural.+./m2",
+                          "types": [
+                            "\"in\" \\naturals"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "n1",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "m2",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "n2\\.natural.+./m1",
+                          "types": [
+                            "\"in\" \\naturals"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "n2\\.natural.+./m1",
+                          "types": [
+                            "\"in\" \\naturals"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "n2",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "m1",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integer equivalence relation\"",
+              "inline_latex": "\\textrm{integer equivalence relation}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fd0234b9-545e-4dcf-bc4f-8c1c6f306e25\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

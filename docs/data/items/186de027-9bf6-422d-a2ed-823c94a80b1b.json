@@ -1,0 +1,204 @@
+{
+  "id": "186de027-9bf6-422d-a2ed-823c94a80b1b",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e7365742e646966666572656e63652e2f"
+  ],
+  "heading": "A \\.set.difference./ B",
+  "heading_latex": "\\textrm{set difference of }A\\textrm{ and }B\\quad\\htmlClass{mlg-title-written}{A \\setminus B}",
+  "body_text": null,
+  "page": null,
+  "source": "[A \\.set.difference./ B]\nDefines: D is \\set\nwhen: A, B is \\set\nexpresses:\n. let: x is \\set\n  then:\n  . have: x \"in\"? D\n    iff:\n    . x \"in\"? A\n    . not: x \"in\"? B\nDocumented:\n. called: \"set difference of $A?$ and $B?$\"\n. written: \"A? \\setminus B?\"\n. description: \"The set difference (relative complement) $A \\setminus B$ is the\n                set of elements that belong to $A$ but do not belong to $B$.\"\nId: \"186de027-9bf6-422d-a2ed-823c94a80b1b\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "D is \\set",
+      "inline_latex": "D \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A, B is \\set",
+          "types": [
+            "asserts A is \\set",
+            "asserts B is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "let",
+              "inline_argument": "x is \\set",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x is \\set",
+                  "types": [
+                    "asserts x is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "x \"in\"? D",
+                      "inline_latex": "x \\in D",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x \"in\"? D",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "x \"in\"? A",
+                          "latex": "x \\in A",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "x \"in\"? A",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "x",
+                              "types": [
+                                "is \\set"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "not",
+                              "inline_argument": "x \"in\"? B",
+                              "inline_latex": "x \\in B",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "x \"in\"? B",
+                                  "types": [
+                                    "is \\\\statement"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "x",
+                                  "types": [
+                                    "is \\set"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"set difference of $A?$ and $B?$\"",
+              "inline_latex": "\\textrm{set difference of }A\\textrm{ and }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? \\setminus B?\"",
+              "inline_latex": "A \\setminus B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"186de027-9bf6-422d-a2ed-823c94a80b1b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

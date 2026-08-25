@@ -1,0 +1,14 @@
+{
+  "id": "a97ad153-f94d-4eb6-b91e-84f49114ab6e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An integer is an element of the underlying set of integers\n$\\mathbb{Z}$."
+  },
+  "source": "",
+  "sections": []
+}

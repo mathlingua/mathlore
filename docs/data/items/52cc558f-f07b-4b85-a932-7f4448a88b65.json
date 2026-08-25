@@ -1,0 +1,27 @@
+{
+  "id": "52cc558f-f07b-4b85-a932-7f4448a88b65",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Multiplication of integers is associative and distributes over addition."
+  },
+  "source": "Text: \"Multiplication of integers is associative and distributes over addition.\"\nId: \"52cc558f-f07b-4b85-a932-7f4448a88b65\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Multiplication of integers is associative and distributes over addition.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"52cc558f-f07b-4b85-a932-7f4448a88b65\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -11,7 +11,7 @@
   "heading_latex": "\\textrm{injective}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }A\\textrm{ to }B}",
   "body_text": null,
   "page": null,
-  "source": "[\\(injective)::function:?on{A}:?to{B}]\nRefines: f(x__) ::= y_\nsatisfies:\n. forAll: x1, x2 \"in\" A\n  then:\n  . if: f(x1) = f(x2)\n    then: x1 = x2\nDocumented:\n. adjective:\n  . \"injective\"\n  . \"one-to-one\"\nId: \"c33dd972-b742-4aed-8bbc-797ecdb2b5af\"",
+  "source": "[\\(injective)::function:?on{A}:?to{B}]\nRefines: f(x__) ::= y_\nsatisfies:\n. forAll: x1, x2 \"in\" A\n  then:\n  . if: f(x1) = f(x2)\n    then: x1 = x2\nDocumented:\n. adjective:\n  . \"injective\"\n  . \"one-to-one\"\n. description: \"An injective (one-to-one) function never sends two distinct\n                domain elements to the same codomain element.\"\nId: \"c33dd972-b742-4aed-8bbc-797ecdb2b5af\"",
   "sections": [
     {
       "label": "Refines",
@@ -167,6 +167,18 @@
                   "latex": null
                 }
               ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
             }
           ]
         }

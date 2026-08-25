@@ -1,0 +1,238 @@
+{
+  "id": "a8dda59b-29db-4ac2-8d70-e9010ccae3e7",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e6e61747572616c2e2b2e2f"
+  ],
+  "heading": "n_ \\.natural.+./ m_",
+  "heading_latex": "n\\textrm{ plus }m\\quad\\htmlClass{mlg-title-written}{n + m}",
+  "body_text": null,
+  "page": null,
+  "source": "[n_ \\.natural.+./ m_]\nDefines: n_ + m_ is \\binary.operation:on{\\naturals}\nexpresses:\n. piecewise:\n  if: n_ = 0\n  then: n_ + m_ := m_\n  else:\n  . let: k is \\natural\n    where: n_ = \\naturals..S(k)\n    then: n_ + m_ := \\naturals..S(n_ \\.natural.+./ k)\nDocumented:\n. called: \"$n_?$ plus $m_?$\"\n. written: \"n_? + m_?\"\n. description: \"Addition of natural numbers defined by recursion on the first\n                argument: $0 + m = m$ and $S(k) + m = S(k + m)$.\"\nId: \"a8dda59b-29db-4ac2-8d70-e9010ccae3e7\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "n_ + m_ is \\binary.operation:on{\\naturals}",
+      "inline_latex": "n + m \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }\\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "piecewise",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "if",
+              "inline_argument": "n_ = 0",
+              "inline_latex": "n = 0",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n_ = 0",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "n",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "0",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "n_ + m_ := m_",
+              "inline_latex": "n + m := m",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n_ + m_ := m_",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "m",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "else",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "let",
+                      "inline_argument": "k is \\natural",
+                      "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "k is \\natural",
+                          "types": [
+                            "asserts k is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": "n_ = \\naturals..S(k)",
+                      "inline_latex": "n = \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..S(k)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "n_ = \\naturals..S(k)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "n",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\naturals..S(k)",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\naturals",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "k",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "n_ + m_ := \\naturals..S(n_ \\.natural.+./ k)",
+                      "inline_latex": "n + m := \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..S(\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n + k})",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "n_ + m_ := \\naturals..S(n_ \\.natural.+./ k)",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\naturals..S(n\\.natural.+./k)",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\naturals",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "n\\.natural.+./k",
+                          "types": [
+                            "is \\binary.operation:on{\\naturals}"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "n",
+                          "types": []
+                        },
+                        {
+                          "depth": 3,
+                          "text": "k",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$n_?$ plus $m_?$\"",
+              "inline_latex": "n\\textrm{ plus }m",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"n_? + m_?\"",
+              "inline_latex": "n + m",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a8dda59b-29db-4ac2-8d70-e9010ccae3e7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

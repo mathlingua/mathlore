@@ -1,0 +1,14 @@
+{
+  "id": "e0a17409-7d0a-4286-9a25-9c8eb00a40df-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Union of any set $A$ with the empty set yields $A$:\n$A \\cup \\emptyset = A$."
+  },
+  "source": "",
+  "sections": []
+}

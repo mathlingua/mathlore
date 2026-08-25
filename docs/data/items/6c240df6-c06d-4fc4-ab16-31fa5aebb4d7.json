@@ -8,13 +8,53 @@
   "heading_latex": "\\textrm{natural}",
   "body_text": null,
   "page": null,
-  "source": "[\\natural]\nDeclares: n\nDocumented:\n. called: \"natural\"\nId: \"6c240df6-c06d-4fc4-ab16-31fa5aebb4d7\"",
+  "source": "[\\natural]\nDeclares: n \"in\" \\naturals..N\nEnables:\n. capability: n_ + m_ :=> n_ \\.natural.+./ m_\nDocumented:\n. called: \"natural\"\n. description: \"A natural number is a member of the underlying set $\\mathbb{N}$.\"\nId: \"6c240df6-c06d-4fc4-ab16-31fa5aebb4d7\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "n",
-      "inline_latex": "n",
+      "inline_argument": "n \"in\" \\naturals..N",
+      "inline_latex": "n \\in \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..N",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "n \"in\" \\naturals..N",
+          "types": [
+            "asserts n \"in\" \\naturals..N"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\naturals..N",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\naturals",
+          "types": []
+        }
+      ],
       "arguments": []
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "n_ + m_ :=> n_ \\.natural.+./ m_",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Documented",
@@ -29,6 +69,18 @@
               "label": "called",
               "inline_argument": "\"natural\"",
               "inline_latex": "\\textrm{natural}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
               "arguments": []
             }
           ]

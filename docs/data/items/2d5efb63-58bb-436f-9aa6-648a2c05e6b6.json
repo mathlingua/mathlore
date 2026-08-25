@@ -1,0 +1,27 @@
+{
+  "id": "2d5efb63-58bb-436f-9aa6-648a2c05e6b6",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two other notable derived connectives are the Sheffer stroke (NAND) and\nthe Peirce arrow (NOR). Each of these connectives is functionally\ncomplete on its own, meaning that every truth-functional operator can be\nexpressed purely in terms of NAND alone or NOR alone."
+  },
+  "source": "Text: \"Two other notable derived connectives are the Sheffer stroke (NAND) and\n       the Peirce arrow (NOR). Each of these connectives is functionally\n       complete on its own, meaning that every truth-functional operator can be\n       expressed purely in terms of NAND alone or NOR alone.\"\nId: \"2d5efb63-58bb-436f-9aa6-648a2c05e6b6\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Two other notable derived connectives are the Sheffer stroke (NAND) and\n       the Peirce arrow (NOR). Each of these connectives is functionally\n       complete on its own, meaning that every truth-functional operator can be\n       expressed purely in terms of NAND alone or NOR alone.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2d5efb63-58bb-436f-9aa6-648a2c05e6b6\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

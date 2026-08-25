@@ -8,7 +8,7 @@
   "heading_latex": "x \\notin X",
   "body_text": null,
   "page": null,
-  "source": "[x \\.not.in./ X]\nStates:\nwhen: x, X is \\set\nthat:\n. not: x \"in\"? X\nDocumented:\n. written: \"x? \\notin X?\"\n. description: \"The negation of membership: $x \\notin X$ asserts that the set\n                $x$ is not an element of the set $X$. It is shorthand for the\n                statement that $x \\in X$ fails to hold.\"\nId: \"756e0f48-1c0e-4e05-b97a-9c4fcd577603\"",
+  "source": "[x \\.not.in./ X]\nStates:\nwhen:\n. x is \\\\anything\n. X is \\set\nthat:\n. not: x \"in\"? X\nDocumented:\n. written: \"x? \\notin X?\"\n. description: \"The negation of membership: $x \\notin X$ asserts that the set\n                $x$ is not an element of the set $X$. It is shorthand for the\n                statement that $x \\in X$ fails to hold.\"\nId: \"756e0f48-1c0e-4e05-b97a-9c4fcd577603\"",
   "sections": [
     {
       "label": "States",
@@ -18,19 +18,38 @@
     },
     {
       "label": "when",
-      "inline_argument": "x, X is \\set",
-      "inline_latex": "x, X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-      "inline_type_info": [
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
         {
-          "depth": 0,
-          "text": "x, X is \\set",
-          "types": [
-            "asserts x is \\set",
-            "asserts X is \\set"
+          "kind": "formulation",
+          "text": "x is \\\\anything",
+          "latex": "x \\textrm{ is } \\textrm{anything}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x is \\\\anything",
+              "types": [
+                "asserts x is \\\\anything"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X is \\set",
+              "types": [
+                "asserts X is \\set"
+              ]
+            }
           ]
         }
-      ],
-      "arguments": []
+      ]
     },
     {
       "label": "that",
@@ -57,7 +76,7 @@
                   "depth": 1,
                   "text": "x",
                   "types": [
-                    "is \\set"
+                    "is \\\\anything"
                   ]
                 }
               ],

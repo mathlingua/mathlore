@@ -2,13 +2,13 @@
   "id": "08f35257-d0a7-42af-9866-7d138c56fc4c",
   "kind": "Defines",
   "definition_keys": [
-    "5c73696e676c65746f6e2e7365743a6f66"
+    "5c7365742e73696e676c65746f6e2e7365743a6f66"
   ],
-  "heading": "\\singleton.set:of{X}",
+  "heading": "\\set.singleton.set:of{X}",
   "heading_latex": "\\textrm{The singleton set of }X\\quad\\htmlClass{mlg-title-written}{\\left \\{ X \\right \\}}",
   "body_text": null,
   "page": null,
-  "source": "[\\singleton.set:of{X}]\nDefines: Y is \\set\nwhen: X is \\set\nexpresses:\n. let: Z is \\set\n  then:\n  . have: Z \"in\"? Y\n    iff: Z = X\nDocumented:\n. called: \"The singleton set of $X?$\"\n. written: \"\\left \\{ X? \\right \\}\"\n. description: \"The singleton $\\{X\\}$ is the set whose sole member is $X$: a set\n                $Z$ belongs to it exactly when $Z = X$. Its existence follows\n                from pairing applied to $X$ with itself.\"\nId: \"08f35257-d0a7-42af-9866-7d138c56fc4c\"",
+  "source": "[\\set.singleton.set:of{X}]\nDefines: Y is \\set\nwhen: X is \\set\nexpresses:\n. let: Z is \\set\n  then:\n  . have: Z \"in\"? Y\n    iff: Z = X\nDocumented:\n. called: \"The singleton set of $X?$\"\n. written: \"\\left \\{ X? \\right \\}\"\n. description: \"The singleton $\\{X\\}$ is the set whose sole member is $X$: a set\n                $Z$ belongs to it exactly when $Z = X$. Its existence follows\n                from pairing applied to $X$ with itself.\"\nId: \"08f35257-d0a7-42af-9866-7d138c56fc4c\"",
   "sections": [
     {
       "label": "Defines",

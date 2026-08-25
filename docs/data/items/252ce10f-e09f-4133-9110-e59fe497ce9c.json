@@ -1,0 +1,27 @@
+{
+  "id": "252ce10f-e09f-4133-9110-e59fe497ce9c",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Functions can be classified by how they map inputs to outputs. An\ninjective function maps distinct inputs to distinct outputs, a surjective\nfunction covers every element of its codomain, and a bijection does both."
+  },
+  "source": "Text: \"Functions can be classified by how they map inputs to outputs. An\n       injective function maps distinct inputs to distinct outputs, a surjective\n       function covers every element of its codomain, and a bijection does both.\"\nId: \"252ce10f-e09f-4133-9110-e59fe497ce9c\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Functions can be classified by how they map inputs to outputs. An\n       injective function maps distinct inputs to distinct outputs, a surjective\n       function covers every element of its codomain, and a bijection does both.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"252ce10f-e09f-4133-9110-e59fe497ce9c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

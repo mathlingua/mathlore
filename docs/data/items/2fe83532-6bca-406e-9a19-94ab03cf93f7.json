@@ -1,0 +1,27 @@
+{
+  "id": "2fe83532-6bca-406e-9a19-94ab03cf93f7",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Boolean Operations on Sets"
+  },
+  "source": "SectionTitle: \"Boolean Operations on Sets\"\nId: \"2fe83532-6bca-406e-9a19-94ab03cf93f7\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Boolean Operations on Sets\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2fe83532-6bca-406e-9a19-94ab03cf93f7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

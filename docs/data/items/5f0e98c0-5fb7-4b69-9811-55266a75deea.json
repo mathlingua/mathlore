@@ -1,0 +1,27 @@
+{
+  "id": "5f0e98c0-5fb7-4b69-9811-55266a75deea",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Every bijection admits a unique two-sided inverse function that unwinds\nits action."
+  },
+  "source": "Text: \"Every bijection admits a unique two-sided inverse function that unwinds\n       its action.\"\nId: \"5f0e98c0-5fb7-4b69-9811-55266a75deea\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Every bijection admits a unique two-sided inverse function that unwinds\n       its action.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5f0e98c0-5fb7-4b69-9811-55266a75deea\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

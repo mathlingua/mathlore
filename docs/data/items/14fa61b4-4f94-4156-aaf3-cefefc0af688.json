@@ -1,0 +1,27 @@
+{
+  "id": "14fa61b4-4f94-4156-aaf3-cefefc0af688",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function can also be applied to subsets of its domain to yield the\nforward image, or pulled back from subsets of its codomain to yield the\npreimage."
+  },
+  "source": "Text: \"A function can also be applied to subsets of its domain to yield the\n       forward image, or pulled back from subsets of its codomain to yield the\n       preimage.\"\nId: \"14fa61b4-4f94-4156-aaf3-cefefc0af688\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A function can also be applied to subsets of its domain to yield the\n       forward image, or pulled back from subsets of its codomain to yield the\n       preimage.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"14fa61b4-4f94-4156-aaf3-cefefc0af688\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

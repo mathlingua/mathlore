@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The remaining connectives build compound statements from simpler ones.\nConjunction asserts that two statements both hold, disjunction that at\nleast one of them does, and negation that a statement fails."
+    "text": "The primary Boolean connectives build compound statements from simpler\nones. Conjunction asserts that two statements both hold, disjunction that\nat least one of them does, and negation that a statement fails."
   },
-  "source": "Text: \"The remaining connectives build compound statements from simpler ones.\n       Conjunction asserts that two statements both hold, disjunction that at\n       least one of them does, and negation that a statement fails.\"\nId: \"1d61c6bd-bf4c-4c3e-a6dd-769d5c662a6f\"",
+  "source": "Text: \"The primary Boolean connectives build compound statements from simpler\n       ones. Conjunction asserts that two statements both hold, disjunction that\n       at least one of them does, and negation that a statement fails.\"\nId: \"1d61c6bd-bf4c-4c3e-a6dd-769d5c662a6f\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The remaining connectives build compound statements from simpler ones.\n       Conjunction asserts that two statements both hold, disjunction that at\n       least one of them does, and negation that a statement fails.\"",
+      "inline_argument": "\"The primary Boolean connectives build compound statements from simpler\n       ones. Conjunction asserts that two statements both hold, disjunction that\n       at least one of them does, and negation that a statement fails.\"",
       "inline_latex": null,
       "arguments": []
     },

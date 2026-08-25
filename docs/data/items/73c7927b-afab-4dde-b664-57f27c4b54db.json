@@ -1,0 +1,27 @@
+{
+  "id": "73c7927b-afab-4dde-b664-57f27c4b54db",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Fundamental Function Types"
+  },
+  "source": "SectionTitle: \"Fundamental Function Types\"\nId: \"73c7927b-afab-4dde-b664-57f27c4b54db\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Fundamental Function Types\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"73c7927b-afab-4dde-b664-57f27c4b54db\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

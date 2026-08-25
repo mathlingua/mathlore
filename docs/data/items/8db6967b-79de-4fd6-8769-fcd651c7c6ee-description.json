@@ -1,0 +1,14 @@
+{
+  "id": "8db6967b-79de-4fd6-8769-fcd651c7c6ee-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A relation $R$ on $X$ is reflexive if $x \\mathrel{R} x$ for all\n$x \\in X$."
+  },
+  "source": "",
+  "sections": []
+}

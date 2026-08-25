@@ -1,0 +1,27 @@
+{
+  "id": "c43de393-3ca6-474f-9c32-2996cb1b320b",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Binary Relations and Their Properties"
+  },
+  "source": "SectionTitle: \"Binary Relations and Their Properties\"\nId: \"c43de393-3ca6-474f-9c32-2996cb1b320b\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Binary Relations and Their Properties\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c43de393-3ca6-474f-9c32-2996cb1b320b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

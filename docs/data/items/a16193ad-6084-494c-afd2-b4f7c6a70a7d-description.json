@@ -1,0 +1,14 @@
+{
+  "id": "a16193ad-6084-494c-afd2-b4f7c6a70a7d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The joint denial (Peirce arrow) of $P$ and $Q$. It asserts that\nneither $P$ nor $Q$ holds, being true precisely when both\nstatements are false."
+  },
+  "source": "",
+  "sections": []
+}

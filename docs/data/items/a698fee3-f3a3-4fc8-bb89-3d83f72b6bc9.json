@@ -1,0 +1,27 @@
+{
+  "id": "a698fee3-f3a3-4fc8-bb89-3d83f72b6bc9",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The simplest function on any set is the identity function, which leaves\nevery element fixed."
+  },
+  "source": "Text: \"The simplest function on any set is the identity function, which leaves\n       every element fixed.\"\nId: \"a698fee3-f3a3-4fc8-bb89-3d83f72b6bc9\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The simplest function on any set is the identity function, which leaves\n       every element fixed.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a698fee3-f3a3-4fc8-bb89-3d83f72b6bc9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

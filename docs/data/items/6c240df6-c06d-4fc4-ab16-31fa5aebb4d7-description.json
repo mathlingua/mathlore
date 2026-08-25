@@ -1,0 +1,14 @@
+{
+  "id": "6c240df6-c06d-4fc4-ab16-31fa5aebb4d7-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A natural number is a member of the underlying set $\\mathbb{N}$."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,253 @@
+{
+  "id": "894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c696e76657273652e66756e6374696f6e3a6f66"
+  ],
+  "heading": "\\inverse.function:of{f(x__)}",
+  "heading_latex": "\\textrm{inverse function of }f(x)\\quad\\htmlClass{mlg-title-written}{f(x)^{-1}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\inverse.function:of{f(x__)}]\nDefines: g(y__) is \\function:on{B}:to{A}\nwhen:\n. f is \\function:on{A?}:to{B?}\n. f is \\(bijective)::function\nexpresses:\n. forAll: x \"in\" A\n  then: g(f(x)) = x\n. forAll: y \"in\" B\n  then: f(g(y)) = y\nDocumented:\n. called: \"inverse function of $f?$\"\n. written: \"f+?^{-1}\"\n. description: \"The inverse function $f^{-1} : B \\rightarrow A$ of a bijection\n                $f$ reverses the mapping, sending each output back to its unique\n                source input.\"\nId: \"894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "g(y__) is \\function:on{B}:to{A}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{g(y) \\: : \\: B \\rightarrow A}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "f is \\function:on{A?}:to{B?}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: A \\rightarrow B}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "f is \\function:on{A?}:to{B?}",
+              "types": [
+                "asserts f is \\function:on{A}:to{B}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "f is \\(bijective)::function",
+          "latex": "f \\textrm{ is } \\htmlData{mlg-ref=5c62696a6563746976653a3a66756e6374696f6e}{\\textrm{bijective}}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e}{\\textrm{function}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "f is \\(bijective)::function",
+              "types": [
+                "asserts f is \\bijective::function"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" A",
+              "inline_latex": "x \\in A",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" A",
+                  "types": [
+                    "asserts x \"in\" A"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "A",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "g(f(x)) = x",
+              "inline_latex": "g(f(x)) = x",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "g(f(x)) = x",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "g(f(x))",
+                  "types": [
+                    "\"in\" A"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "f(x)",
+                  "types": [
+                    "\"in\" B"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "x",
+                  "types": [
+                    "\"in\" A"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": [
+                    "\"in\" A"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "y \"in\" B",
+              "inline_latex": "y \\in B",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "y \"in\" B",
+                  "types": [
+                    "asserts y \"in\" B"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "B",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "f(g(y)) = y",
+              "inline_latex": "f(g(y)) = y",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "f(g(y)) = y",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "f(g(y))",
+                  "types": [
+                    "\"in\" B"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "g(y)",
+                  "types": [
+                    "\"in\" A"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "y",
+                  "types": [
+                    "\"in\" B"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "y",
+                  "types": [
+                    "\"in\" B"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"inverse function of $f?$\"",
+              "inline_latex": "\\textrm{inverse function of }f",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"f+?^{-1}\"",
+              "inline_latex": "f^{-1}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

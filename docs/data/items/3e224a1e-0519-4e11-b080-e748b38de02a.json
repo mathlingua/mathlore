@@ -1,0 +1,81 @@
+{
+  "id": "3e224a1e-0519-4e11-b080-e748b38de02a",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c756e6172792e6f7065726174696f6e3a6f6e"
+  ],
+  "heading": "\\unary.operation:on{X}",
+  "heading_latex": "\\textrm{unary operation on }X",
+  "body_text": null,
+  "page": null,
+  "source": "[\\unary.operation:on{X}]\nDeclares: u(x__) is \\function:on{X}:to{X}\nwhen: X is \\set\nDocumented:\n. called: \"unary operation on $X?$\"\n. description: \"A unary operation on $X$ is an endofunction from $X$ to $X$.\"\nId: \"3e224a1e-0519-4e11-b080-e748b38de02a\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "u(x__) is \\function:on{X}:to{X}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{u(x) \\: : \\: X \\rightarrow X}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "u(x__) is \\function:on{X}:to{X}",
+          "types": [
+            "asserts u is \\function:on{X}:to{X}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is \\set",
+          "types": [
+            "asserts X is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"unary operation on $X?$\"",
+              "inline_latex": "\\textrm{unary operation on }X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3e224a1e-0519-4e11-b080-e748b38de02a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

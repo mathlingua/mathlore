@@ -1,0 +1,96 @@
+{
+  "id": "431ccff0-c289-46a7-b739-211c8ae805b4",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c766f6e2e6e65756d616e6e2e53"
+  ],
+  "heading": "\\von.neumann.S(n_)",
+  "heading_latex": "\\textrm{Von Neumann Successor}\\quad\\htmlClass{mlg-title-written}{S(n)}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\von.neumann.S(n_)]\nDefines: S(n_) is \\function:on{\\von.neumann.omega}:to{\\von.neumann.omega}\nexpresses: S(n_) := \\set.successor:of{n_}\nDocumented:\n. written: \"S(n_?)\"\n. called: \"Von Neumann Successor\"\n. description: \"The Von Neumann successor function $S(n) = n \\cup \\{n\\}$ on\n                $\\omega$.\"\nId: \"431ccff0-c289-46a7-b739-211c8ae805b4\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "S(n_) is \\function:on{\\von.neumann.omega}:to{\\von.neumann.omega}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{S(n) \\: : \\: \\htmlData{mlg-ref=5c766f6e2e6e65756d616e6e2e6f6d656761}{\\omega} \\rightarrow \\htmlData{mlg-ref=5c766f6e2e6e65756d616e6e2e6f6d656761}{\\omega}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "S(n_) := \\set.successor:of{n_}",
+      "inline_latex": "S(n) := \\htmlData{mlg-ref=5c7365742e737563636573736f723a6f66}{n \\cup \\left \\{ n \\right \\}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "S(n_) := \\set.successor:of{n_}",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "\\set.successor:of{n}",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "n",
+          "types": [
+            "\"in\" \\von.neumann.omega"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"S(n_?)\"",
+              "inline_latex": "S(n)",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Von Neumann Successor\"",
+              "inline_latex": "\\textrm{Von Neumann Successor}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"431ccff0-c289-46a7-b739-211c8ae805b4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

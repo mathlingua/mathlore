@@ -1,0 +1,14 @@
+{
+  "id": "894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The inverse function $f^{-1} : B \\rightarrow A$ of a bijection\n$f$ reverses the mapping, sending each output back to its unique\nsource input."
+  },
+  "source": "",
+  "sections": []
+}

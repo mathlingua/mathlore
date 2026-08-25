@@ -301,6 +301,26 @@ Documented:
 Id: "08f35257-d0a7-42af-9866-7d138c56fc4c"
 
 
+Text: "Similarly, pairing gives the unordered pair of any two sets $x$ and $y$."
+Id: "c128a6a8-b892-4177-8622-29ba3cfa473a"
+
+
+[\set.unordered.pair:of{x, y}]
+Defines: U is \set
+when: x, y is \set
+expresses:
+. let: z is \set
+  then:
+  . have: z "in"? U
+    iff: (.z = x.) \.or./ (.z = y.)
+Documented:
+. called: "unordered pair of $x?$ and $y?$"
+. written: "\left \{ x?, y? \right \}"
+. description: "The unordered pair $\{x, y\}$ is the set whose members are
+                precisely $x$ and $y$."
+Id: "17401045-fc72-4bd4-af7d-ab578690f81c"
+
+
 Text: "The successor of a set adjoins the set itself as a new element to its
        singleton. Iterating this operation from the empty set is precisely how
        the natural numbers will be built in a later chapter."
@@ -440,10 +460,9 @@ iff:
 Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"
 
 
-Text: "Finally, the Cartesian product forms the set of all ordered pairs drawn
-       from two sets. It is the setting in which relations and functions are
-       defined, and so is one of the most heavily used constructions in what
-       follows."
+Text: "The Cartesian product forms the set of all ordered pairs drawn from two
+       sets. It is the setting in which relations and functions are defined, and
+       so is one of the most heavily used constructions in what follows."
 Id: "331daec2-edc7-4316-8fb6-0c801c3692ed"
 
 
@@ -458,3 +477,138 @@ Documented:
                 are subsets of its product with itself, and functions are
                 relations of a special kind."
 Id: "3bdd9cfb-f836-4d44-880a-873bb772cdef"
+
+
+SectionTitle: "Boolean Operations on Sets"
+Id: "2fe83532-6bca-406e-9a19-94ab03cf93f7"
+
+
+Text: "The standard Boolean algebra of sets provides the operations of union,
+       intersection, and set difference. Union combines elements from either
+       set, intersection takes elements common to both, and difference removes
+       elements of the second set from the first."
+Id: "fa87c699-877a-4604-8cf0-ba2bb87bbfe8"
+
+
+[A \.set.union./ B]
+Defines: U is \set
+when: A, B is \set
+expresses:
+. let: x is \set
+  then:
+  . have: x "in"? U
+    iff: (.x "in"? A.) \.or./ (.x "in"? B.)
+Documented:
+. called: "union of $A?$ and $B?$"
+. written: "A? \cup B?"
+. description: "The union $A \cup B$ is the set containing all elements that
+                belong to $A$, to $B$, or to both."
+Id: "a08ae02b-7a4e-4911-863a-7d929540f193"
+
+
+[A \.set.intersect./ B]
+Defines: I is \set
+when: A, B is \set
+expresses:
+. let: x is \set
+  then:
+  . have: x "in"? I
+    iff:
+    . x "in"? A
+    . x "in"? B
+Documented:
+. called: "intersection of $A?$ and $B?$"
+. written: "A? \cap B?"
+. description: "The intersection $A \cap B$ is the set of elements common to
+                both $A$ and $B$, containing only those elements that belong to
+                both."
+Id: "5d137355-ba4e-44ca-bf58-2f7b3f667dcc"
+
+
+[A \.set.difference./ B]
+Defines: D is \set
+when: A, B is \set
+expresses:
+. let: x is \set
+  then:
+  . have: x "in"? D
+    iff:
+    . x "in"? A
+    . not: x "in"? B
+Documented:
+. called: "set difference of $A?$ and $B?$"
+. written: "A? \setminus B?"
+. description: "The set difference (relative complement) $A \setminus B$ is the
+                set of elements that belong to $A$ but do not belong to $B$."
+Id: "186de027-9bf6-422d-a2ed-823c94a80b1b"
+
+
+Text: "The power set constructor gathers all subsets of a given set into a
+       single ambient set."
+Id: "e3164791-b17c-427a-8c8c-02ec40801629"
+
+
+[\power.set:of{A}]
+Defines: P is \set
+when: A is \set
+expresses:
+. let: X is \set
+  then:
+  . have: X "in"? P
+    iff: X \:subset?:/ A
+Documented:
+. called: "power set of $A?$"
+. written: "\mathcal{P}(A?)"
+. description: "The power set $\mathcal{P}(A)$ is the set of all subsets of $A$."
+Id: "3c3133ac-1cc2-4c76-8e84-fb332c7b08af"
+
+
+Text: "Two sets are disjoint when they have no elements in common, meaning their
+       intersection is the empty set."
+Id: "185d9e5d-1d5e-4478-863e-792c9889a309"
+
+
+[A \.disjoint.from./ B]
+States:
+when: A, B is \set
+that: (A \.set.intersect./ B) = \empty.set
+Documented:
+. called: "$A?$ is disjoint from $B?$"
+. description: "Two sets $A$ and $B$ are disjoint if their intersection is
+                empty: $A \cap B = \emptyset$."
+Id: "3607e1a0-1e2c-40e7-93f1-728cdec9968e"
+
+
+SectionTitle: "Algebraic Properties of Set Operations"
+Id: "e8c4cfac-dbb8-4e62-a5c1-20dfcd50799e"
+
+
+Text: "Set union and intersection obey commutative laws analogous to addition
+       and multiplication of numbers."
+Id: "aebe6956-53f1-4b24-af92-63732dfe1544"
+
+
+Theorem:
+given: A, B is \set
+then:
+. (A \.set.union./ B) = (B \.set.union./ A)
+. (A \.set.intersect./ B) = (B \.set.intersect./ A)
+Documented:
+. called: "Commutativity of Set Operations"
+. description: "Union and intersection are commutative: $A \cup B = B \cup A$
+                and $A \cap B = B \cap A$."
+Id: "a8b70f59-148f-4e51-bcc8-7ab889db86d4"
+
+
+Text: "The empty set acts as the identity element for set union."
+Id: "20e77baa-c3d2-4104-a8dc-3fe1e02717e8"
+
+
+Theorem:
+given: A is \set
+then: (A \.set.union./ \empty.set) = A
+Documented:
+. called: "Empty Set Union Identity"
+. description: "Union of any set $A$ with the empty set yields $A$:
+                $A \cup \emptyset = A$."
+Id: "e0a17409-7d0a-4286-9a25-9c8eb00a40df"

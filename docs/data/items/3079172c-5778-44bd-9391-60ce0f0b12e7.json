@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The natural numbers are the numbers of counting: zero, one, two, and so\non without end. This chapter builds them from the ground already laid.\nFirst they are characterized abstractly by the Peano axioms -- a starting\npoint, a successor operation, and the principle of induction -- and then\na concrete set of naturals is assembled from the sets of the earlier\nchapter, with addition defined by recursion."
+    "text": "The natural numbers are the numbers of counting: zero, one, two, and so\non without end. This chapter builds them from the ground already laid."
   },
-  "source": "Text: \"The natural numbers are the numbers of counting: zero, one, two, and so\n       on without end. This chapter builds them from the ground already laid.\n       First they are characterized abstractly by the Peano axioms -- a starting\n       point, a successor operation, and the principle of induction -- and then\n       a concrete set of naturals is assembled from the sets of the earlier\n       chapter, with addition defined by recursion.\"\nId: \"3079172c-5778-44bd-9391-60ce0f0b12e7\"",
+  "source": "Text: \"The natural numbers are the numbers of counting: zero, one, two, and so\n       on without end. This chapter builds them from the ground already laid.\"\nId: \"3079172c-5778-44bd-9391-60ce0f0b12e7\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The natural numbers are the numbers of counting: zero, one, two, and so\n       on without end. This chapter builds them from the ground already laid.\n       First they are characterized abstractly by the Peano axioms -- a starting\n       point, a successor operation, and the principle of induction -- and then\n       a concrete set of naturals is assembled from the sets of the earlier\n       chapter, with addition defined by recursion.\"",
+      "inline_argument": "\"The natural numbers are the numbers of counting: zero, one, two, and so\n       on without end. This chapter builds them from the ground already laid.\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -1,0 +1,27 @@
+{
+  "id": "625a71c4-ff3b-411f-aa1c-85d6db7642e7",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The center of a group consists of all elements that commute with every\nelement in the group."
+  },
+  "source": "Text: \"The center of a group consists of all elements that commute with every\n       element in the group.\"\nId: \"625a71c4-ff3b-411f-aa1c-85d6db7642e7\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The center of a group consists of all elements that commute with every\n       element in the group.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"625a71c4-ff3b-411f-aa1c-85d6db7642e7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

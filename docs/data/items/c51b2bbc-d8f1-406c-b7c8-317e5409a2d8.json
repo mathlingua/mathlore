@@ -6,7 +6,7 @@
   "heading_latex": null,
   "body_text": null,
   "page": null,
-  "source": "Writing:\n. \"phi :~> \\varphi\"\n. \"Xb :~> \\mathbb{X}\"\n. \"Nb :~> \\mathbb{N}\"\nId: \"c51b2bbc-d8f1-406c-b7c8-317e5409a2d8\"",
+  "source": "Writing:\n. \"phi :~> \\varphi\"\n. \"omega :~> \\omega\"\n. \"Xb :~> \\mathbb{X}\"\n. \"Nb :~> \\mathbb{N}\"\nId: \"c51b2bbc-d8f1-406c-b7c8-317e5409a2d8\"",
   "sections": [
     {
       "label": "Writing",
@@ -17,6 +17,11 @@
           "kind": "text",
           "text": "phi :~> \\varphi",
           "latex": "\\textrm{phi} \\mathrel{:\\!\\rightsquigarrow} \\varphi"
+        },
+        {
+          "kind": "text",
+          "text": "omega :~> \\omega",
+          "latex": "\\textrm{omega} \\mathrel{:\\!\\rightsquigarrow} \\omega"
         },
         {
           "kind": "text",

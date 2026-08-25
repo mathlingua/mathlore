@@ -1,0 +1,27 @@
+{
+  "id": "e3164791-b17c-427a-8c8c-02ec40801629",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The power set constructor gathers all subsets of a given set into a\nsingle ambient set."
+  },
+  "source": "Text: \"The power set constructor gathers all subsets of a given set into a\n       single ambient set.\"\nId: \"e3164791-b17c-427a-8c8c-02ec40801629\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The power set constructor gathers all subsets of a given set into a\n       single ambient set.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e3164791-b17c-427a-8c8c-02ec40801629\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

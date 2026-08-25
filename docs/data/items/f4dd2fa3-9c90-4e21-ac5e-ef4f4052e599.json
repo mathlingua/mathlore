@@ -1,0 +1,27 @@
+{
+  "id": "f4dd2fa3-9c90-4e21-ac5e-ef4f4052e599",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Addition of natural numbers is defined recursively: adding zero leaves a\nnumber unchanged, and adding a successor steps forward by successor."
+  },
+  "source": "Text: \"Addition of natural numbers is defined recursively: adding zero leaves a\n       number unchanged, and adding a successor steps forward by successor.\"\nId: \"f4dd2fa3-9c90-4e21-ac5e-ef4f4052e599\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Addition of natural numbers is defined recursively: adding zero leaves a\n       number unchanged, and adding a successor steps forward by successor.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f4dd2fa3-9c90-4e21-ac5e-ef4f4052e599\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

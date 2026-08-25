@@ -1,0 +1,27 @@
+{
+  "id": "0f52cdf6-2164-4f6c-ba77-b2a163364e82",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A group homomorphism is a function between groups that preserves the\nalgebraic multiplication operation."
+  },
+  "source": "Text: \"A group homomorphism is a function between groups that preserves the\n       algebraic multiplication operation.\"\nId: \"0f52cdf6-2164-4f6c-ba77-b2a163364e82\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A group homomorphism is a function between groups that preserves the\n       algebraic multiplication operation.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0f52cdf6-2164-4f6c-ba77-b2a163364e82\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

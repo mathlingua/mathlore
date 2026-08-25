@@ -1,0 +1,14 @@
+{
+  "id": "502e2a50-cced-461a-bdcf-03e2221a598f-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The natural numbers $(\\mathbb{N}, 0, S)$ axiomatized via the\nPeano postulates: $0$ is not a successor, the successor function\n$S$ is injective, and induction holds."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "2ddbe95a-149f-4596-8496-b214741d64a4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A commutative ring is a ring in which $x * y = y * x$ for all\nelements."
+  },
+  "source": "",
+  "sections": []
+}

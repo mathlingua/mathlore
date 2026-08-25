@@ -1,0 +1,27 @@
+{
+  "id": "64b4ac6a-9629-4aa7-89e2-9f0ea27e9a48",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A commutative ring is a ring whose multiplication operation is\ncommutative."
+  },
+  "source": "Text: \"A commutative ring is a ring whose multiplication operation is\n       commutative.\"\nId: \"64b4ac6a-9629-4aa7-89e2-9f0ea27e9a48\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A commutative ring is a ring whose multiplication operation is\n       commutative.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"64b4ac6a-9629-4aa7-89e2-9f0ea27e9a48\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

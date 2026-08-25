@@ -11,7 +11,7 @@
   "heading_latex": "\\textrm{surjective}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }A\\textrm{ to }B}",
   "body_text": null,
   "page": null,
-  "source": "[\\(surjective)::function:?on{A}:?to{B}]\nRefines: f(x__) ::= y_\nsatisfies:\n. forAll: y \"in\" B\n  then:\n  . exists: x \"in\" A\n    suchThat: f(x) = y\nDocumented:\n. adjective:\n  . \"surjective\"\n  . \"onto\"\nId: \"be68a628-8ca8-49c8-8780-bd7aa7401ef4\"",
+  "source": "[\\(surjective)::function:?on{A}:?to{B}]\nRefines: f(x__) ::= y_\nsatisfies:\n. forAll: y \"in\" B\n  then:\n  . exists: x \"in\" A\n    suchThat: f(x) = y\nDocumented:\n. adjective:\n  . \"surjective\"\n  . \"onto\"\n. description: \"A surjective (onto) function hits every element of its codomain.\"\nId: \"be68a628-8ca8-49c8-8780-bd7aa7401ef4\"",
   "sections": [
     {
       "label": "Refines",
@@ -148,6 +148,18 @@
                   "latex": null
                 }
               ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
             }
           ]
         }

@@ -1,0 +1,27 @@
+{
+  "id": "185d9e5d-1d5e-4478-863e-792c9889a309",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two sets are disjoint when they have no elements in common, meaning their\nintersection is the empty set."
+  },
+  "source": "Text: \"Two sets are disjoint when they have no elements in common, meaning their\n       intersection is the empty set.\"\nId: \"185d9e5d-1d5e-4478-863e-792c9889a309\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Two sets are disjoint when they have no elements in common, meaning their\n       intersection is the empty set.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"185d9e5d-1d5e-4478-863e-792c9889a309\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

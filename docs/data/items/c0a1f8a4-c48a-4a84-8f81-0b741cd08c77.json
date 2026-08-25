@@ -1,0 +1,27 @@
+{
+  "id": "c0a1f8a4-c48a-4a84-8f81-0b741cd08c77",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Integer Constants and Operations"
+  },
+  "source": "SectionTitle: \"Integer Constants and Operations\"\nId: \"c0a1f8a4-c48a-4a84-8f81-0b741cd08c77\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Integer Constants and Operations\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c0a1f8a4-c48a-4a84-8f81-0b741cd08c77\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

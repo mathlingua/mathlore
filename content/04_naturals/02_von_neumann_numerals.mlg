@@ -1,3 +1,19 @@
+Title: "Von Neumann Numerals"
+Id: "b21aeb46-c87a-41ea-8a30-8bf598aee2f6"
+
+
+Text: "John von Neumann provided a canonical set-theoretic realization of the
+       natural numbers. In this construction, zero is the empty set $\emptyset$,
+       and each successive number is the set of all numbers preceding it:
+       $0 = \emptyset$, $1 = \{0\} = \{\emptyset\}$, $2 = \{0, 1\}$, and in
+       general $S(n) = n \cup \{n\}$. This elegant encoding makes the membership
+       relation $\in$ coincide with the strict order $<$ on the naturals."
+Id: "c7eca060-3bf4-4bc8-a372-210f25fb71cc"
+
+
+SectionTitle: "Inductive Sets and the Minimal Inductive Set"
+Id: "ce4cc152-49d8-4c94-a23e-7c5d615e1d11"
+
 
 [\(inductive)::set]
 Refines: I
@@ -8,7 +24,14 @@ satisfies:
   then: \set.successor:of{X} "in"? I
 Documented:
 . adjective: "inductive"
+. description: "An inductive set is a set containing the empty set and closed
+                under the set successor operation $X \mapsto X \cup \{X\}$."
 Id: "68ba43e9-1329-4103-819e-16e20e8e7c9f"
+
+
+Text: "The set $\omega$ of all Von Neumann numerals is the intersection of all
+       inductive sets, existing by virtue of the Axiom of Infinity."
+Id: "9cd13132-60e1-4e1a-9e3c-525d1b2218e5"
 
 
 [\von.neumann.omega]
@@ -28,11 +51,17 @@ Enables:
 Documented:
 . called: "Von Neumann Numerals"
 . written: "\omega"
+. description: "The set $\omega$ of all Von Neumann numerals, the smallest
+                inductive set."
 Justification:
 . [1]
   have: A is \(inductive)::set
   by: \axiom.of.infinity
 Id: "c13f4641-0ed5-4ad7-b309-8ec13b4c6b77"
+
+
+SectionTitle: "Successor and Canonical Realization"
+Id: "54bc28ae-1234-4b56-8a90-33cd78912ef0"
 
 
 [\von.neumann.S(n_)]
@@ -41,6 +70,8 @@ expresses: S(n_) := \set.successor:of{n_}
 Documented:
 . written: "S(n_?)"
 . called: "Von Neumann Successor"
+. description: "The Von Neumann successor function $S(n) = n \cup \{n\}$ on
+                $\omega$."
 Id: "431ccff0-c289-46a7-b739-211c8ae805b4"
 
 
@@ -54,6 +85,8 @@ Enables:
 . capability: x_ "in" Nb :<->: x_ "in" N
 Documented:
 . called: "Von Neumann Naturals"
+. description: "The concrete realization of the Peano natural numbers as the Von
+                Neumann ordinal structure $(\omega, \emptyset, S)$."
 Id: "23196d3d-7a1f-44a8-899c-3c39d65bb331"
 
 
@@ -69,6 +102,8 @@ expresses:
     where: n = \naturals..S(k)
     then: m = \set.successor:of{\to.von.neumann.natural{k}}
 Documented:
-. called: "Von Nuemann Numeral Equivalent of $n?$"
+. called: "Von Neumann Numeral Equivalent of $n?$"
 . written: "[n?]"
+. description: "The canonical map from abstract Peano naturals to their Von
+                Neumann set-theoretic numeral representatives."
 Id: "3aa2a394-dea8-48d6-8b73-6ad032408fe2"

@@ -1,0 +1,14 @@
+{
+  "id": "46c21a80-12cd-45f6-8e74-07731d18d220-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Multiplication of natural numbers defined by recursion:\n$0 \\cdot m = 0$ and $S(k) \\cdot m = (k \\cdot m) + m$."
+  },
+  "source": "",
+  "sections": []
+}

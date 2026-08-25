@@ -1,0 +1,27 @@
+{
+  "id": "e8c4cfac-dbb8-4e62-a5c1-20dfcd50799e",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Algebraic Properties of Set Operations"
+  },
+  "source": "SectionTitle: \"Algebraic Properties of Set Operations\"\nId: \"e8c4cfac-dbb8-4e62-a5c1-20dfcd50799e\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Algebraic Properties of Set Operations\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e8c4cfac-dbb8-4e62-a5c1-20dfcd50799e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "3607e1a0-1e2c-40e7-93f1-728cdec9968e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two sets $A$ and $B$ are disjoint if their intersection is\nempty: $A \\cap B = \\emptyset$."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "3aa2a394-dea8-48d6-8b73-6ad032408fe2-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The canonical map from abstract Peano naturals to their Von\nNeumann set-theoretic numeral representatives."
+  },
+  "source": "",
+  "sections": []
+}

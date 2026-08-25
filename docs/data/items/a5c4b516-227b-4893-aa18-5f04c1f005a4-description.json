@@ -1,0 +1,14 @@
+{
+  "id": "a5c4b516-227b-4893-aa18-5f04c1f005a4-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The composition $g \\circ f : A \\rightarrow C$ applies $f$ first\nand then $g$, so $(g \\circ f)(x) = g(f(x))$."
+  },
+  "source": "",
+  "sections": []
+}

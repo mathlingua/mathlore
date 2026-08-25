@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{set of }\\left \\{ x_{1}, \\ldots, x_{i}, \\ldots, x_{n} \\right \\}\\quad\\htmlClass{mlg-title-written}{\\left \\{ x_{1}, \\ldots, x_{i}, \\ldots, x_{n} \\right \\}}",
   "body_text": null,
   "page": null,
-  "source": "[\\set:of{x[i_ := 1...n]}]\nDefines: X is \\set\nwhen: x[1...n] is \\\\opaque\nexpresses:\n. let: y is \\\\opaque\n  then:\n  . have: y \"in\"? X\n    iff:\n    . anyOf:\n      . x[1...n] = y\nDocumented:\n. called: \"set of $\\left \\{ x? \\right \\}$\"\n. written: \"\\left \\{ x? \\right \\}\"\n. description: \"The set $\\{x_1, \\dots, x_n\\}$ listed by its elements: a value\n                belongs to it exactly when it equals one of the listed $x_i$.\n                This is the finite, roster form of set-builder notation.\"\nId: \"61c901bc-5f36-479b-a32c-c37b7f98a9fb\"",
+  "source": "[\\set:of{x[i_ := 1...n]}]\nDefines: X is \\set\nwhen: x[1...n] is \\\\anything\nexpresses:\n. let: y is \\\\anything\n  then:\n  . have: y \"in\"? X\n    iff:\n    . anyOf:\n      . x[1...n] = y\nDocumented:\n. called: \"set of $\\left \\{ x? \\right \\}$\"\n. written: \"\\left \\{ x? \\right \\}\"\n. description: \"The set $\\{x_1, \\dots, x_n\\}$ listed by its elements: a value\n                belongs to it exactly when it equals one of the listed $x_i$.\n                This is the finite, roster form of set-builder notation.\"\nId: \"61c901bc-5f36-479b-a32c-c37b7f98a9fb\"",
   "sections": [
     {
       "label": "Defines",
@@ -18,14 +18,14 @@
     },
     {
       "label": "when",
-      "inline_argument": "x[1...n] is \\\\opaque",
-      "inline_latex": "x_{1} \\textrm{ is } \\textrm{opaque}, \\; \\ldots, \\; x_{n} \\textrm{ is } \\textrm{opaque}",
+      "inline_argument": "x[1...n] is \\\\anything",
+      "inline_latex": "x_{1} \\textrm{ is } \\textrm{anything}, \\; \\ldots, \\; x_{n} \\textrm{ is } \\textrm{anything}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "x[1...n] is \\\\opaque",
+          "text": "x[1...n] is \\\\anything",
           "types": [
-            "asserts x[1...n] is \\\\opaque"
+            "asserts x[1...n] is \\\\anything"
           ]
         },
         {
@@ -47,14 +47,14 @@
           "sections": [
             {
               "label": "let",
-              "inline_argument": "y is \\\\opaque",
-              "inline_latex": "y \\textrm{ is } \\textrm{opaque}",
+              "inline_argument": "y is \\\\anything",
+              "inline_latex": "y \\textrm{ is } \\textrm{anything}",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "y is \\\\opaque",
+                  "text": "y is \\\\anything",
                   "types": [
-                    "asserts y is \\\\opaque"
+                    "asserts y is \\\\anything"
                   ]
                 }
               ],
@@ -85,7 +85,7 @@
                           "depth": 1,
                           "text": "y",
                           "types": [
-                            "is \\\\opaque"
+                            "is \\\\anything"
                           ]
                         }
                       ],
@@ -121,14 +121,14 @@
                                       "depth": 1,
                                       "text": "x[1...n]",
                                       "types": [
-                                        "is \\\\opaque"
+                                        "is \\\\anything"
                                       ]
                                     },
                                     {
                                       "depth": 1,
                                       "text": "y",
                                       "types": [
-                                        "is \\\\opaque"
+                                        "is \\\\anything"
                                       ]
                                     }
                                   ]

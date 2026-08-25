@@ -1,0 +1,27 @@
+{
+  "id": "2f552add-aa29-4824-b7d0-40345e29c312",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "De Morgan's laws describe the duality between conjunction and disjunction\nunder negation: the negation of a conjunction is the disjunction of the\nnegations, and the negation of a disjunction is the conjunction of the\nnegations."
+  },
+  "source": "Text: \"De Morgan's laws describe the duality between conjunction and disjunction\n       under negation: the negation of a conjunction is the disjunction of the\n       negations, and the negation of a disjunction is the conjunction of the\n       negations.\"\nId: \"2f552add-aa29-4824-b7d0-40345e29c312\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"De Morgan's laws describe the duality between conjunction and disjunction\n       under negation: the negation of a conjunction is the disjunction of the\n       negations, and the negation of a disjunction is the conjunction of the\n       negations.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2f552add-aa29-4824-b7d0-40345e29c312\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

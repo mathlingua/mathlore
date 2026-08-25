@@ -1,0 +1,27 @@
+{
+  "id": "93eece57-714d-474a-8c52-840bbb3f6621",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A field is a non-trivial commutative ring where every non-zero element\npossesses a multiplicative inverse."
+  },
+  "source": "Text: \"A field is a non-trivial commutative ring where every non-zero element\n       possesses a multiplicative inverse.\"\nId: \"93eece57-714d-474a-8c52-840bbb3f6621\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A field is a non-trivial commutative ring where every non-zero element\n       possesses a multiplicative inverse.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"93eece57-714d-474a-8c52-840bbb3f6621\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

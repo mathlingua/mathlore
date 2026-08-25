@@ -1,0 +1,164 @@
+{
+  "id": "8c997826-bcef-4032-816b-c6dd2aa635e7",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c3a6e61747572616c2e6c65713a2f"
+  ],
+  "heading": "n \\:natural.leq:/ m",
+  "heading_latex": "n\\textrm{ is less than or equal to }m\\quad\\htmlClass{mlg-title-written}{n \\leq m}",
+  "body_text": null,
+  "page": null,
+  "source": "[n \\:natural.leq:/ m]\nDeclares: n is \\natural\nwhen: m is \\natural\nsatisfies:\n. exists: k is \\natural\n  suchThat: n \\.natural.+./ k = m\nDocumented:\n. called: \"$n?$ is less than or equal to $m?$\"\n. written: \"n? \\leq m?\"\n. description: \"The canonical order on natural numbers: $n \\leq m$ if and only\n                if there exists $k \\in \\mathbb{N}$ such that $n + k = m$.\"\nId: \"8c997826-bcef-4032-816b-c6dd2aa635e7\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "n is \\natural",
+      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "n is \\natural",
+          "types": [
+            "asserts n is \\natural"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "m is \\natural",
+      "inline_latex": "m \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "m is \\natural",
+          "types": [
+            "asserts m is \\natural"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "k is \\natural",
+              "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "k is \\natural",
+                  "types": [
+                    "asserts k is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": "n \\.natural.+./ k = m",
+              "inline_latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n + k = m}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n \\.natural.+./ k = m",
+                  "types": [
+                    "is \\binary.operation:on{\\naturals}"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "n",
+                  "types": [
+                    "\\:natural.leq:/ m"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "k = m",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "k",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "m",
+                  "types": [
+                    "is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$n?$ is less than or equal to $m?$\"",
+              "inline_latex": "n\\textrm{ is less than or equal to }m",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"n? \\leq m?\"",
+              "inline_latex": "n \\leq m",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8c997826-bcef-4032-816b-c6dd2aa635e7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

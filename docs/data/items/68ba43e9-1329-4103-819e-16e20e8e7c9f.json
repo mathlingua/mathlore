@@ -1,0 +1,157 @@
+{
+  "id": "68ba43e9-1329-4103-819e-16e20e8e7c9f",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c696e647563746976653a3a736574"
+  ],
+  "heading": "\\(inductive)::set",
+  "heading_latex": "\\textrm{inductive}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(inductive)::set]\nRefines: I\nsatisfies:\n. \\empty.set \"in\"? I\n. forAll: X is \\set\n  where: X \"in\"? I\n  then: \\set.successor:of{X} \"in\"? I\nDocumented:\n. adjective: \"inductive\"\n. description: \"An inductive set is a set containing the empty set and closed\n                under the set successor operation $X \\mapsto X \\cup \\{X\\}$.\"\nId: \"68ba43e9-1329-4103-819e-16e20e8e7c9f\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "I",
+      "inline_latex": "I \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\empty.set \"in\"? I",
+          "latex": "\\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset} \\in I",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "\\empty.set \"in\"? I",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "\\empty.set",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "X is \\set",
+              "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "X is \\set",
+                  "types": [
+                    "asserts X is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "X \"in\"? I",
+              "inline_latex": "X \\in I",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "X \"in\"? I",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "\\set.successor:of{X} \"in\"? I",
+              "inline_latex": "\\htmlData{mlg-ref=5c7365742e737563636573736f723a6f66}{X \\cup \\left \\{ X \\right \\}} \\in I",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "\\set.successor:of{X} \"in\"? I",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\set.successor:of{X}",
+                  "types": [
+                    "is \\set"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"inductive\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"68ba43e9-1329-4103-819e-16e20e8e7c9f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}
