@@ -1,0 +1,74 @@
+
+[\(inductive)::set]
+Refines: I
+satisfies:
+. \empty.set "in"? I
+. forAll: X is \set
+  where: X "in"? I
+  then: \set.successor:of{X} "in"? I
+Documented:
+. adjective: "inductive"
+Id: "68ba43e9-1329-4103-819e-16e20e8e7c9f"
+
+
+[\von.neumann.omega]
+Defines: omega is \set
+expresses:
+. let:
+  . (.A is \(inductive)::set.)[:1:]
+  . X is \set
+  then:
+  . have: X "in"? omega
+    iff:
+    . X "in"? A
+    . forAll: I is \(inductive)::set
+      then: X "in"? I
+Enables:
+. capability: X_ "in" omega :-> X_ is \set
+Documented:
+. called: "Von Neumann Numerals"
+. written: "\omega"
+Justification:
+. [1]
+  have: A is \(inductive)::set
+  by: \axiom.of.infinity
+Id: "c13f4641-0ed5-4ad7-b309-8ec13b4c6b77"
+
+
+[\von.neumann.S(n_)]
+Defines: S(n_) is \function:on{\von.neumann.omega}:to{\von.neumann.omega}
+expresses: S(n_) := \set.successor:of{n_}
+Documented:
+. written: "S(n_?)"
+. called: "Von Neumann Successor"
+Id: "431ccff0-c289-46a7-b739-211c8ae805b4"
+
+
+[\von.neumann.naturals]
+Realizes: Nb ::= (N, 0, S(n_)) := \naturals
+specifies:
+. N := \von.neumann.omega
+. 0 := \empty.set
+. S(n_) := \von.neumann.S(n_)
+Enables:
+. capability: x_ "in" Nb :<->: x_ "in" N
+Documented:
+. called: "Von Neumann Naturals"
+Id: "23196d3d-7a1f-44a8-899c-3c39d65bb331"
+
+
+[\to.von.neumann.natural{n}]
+Defines: m "in" \von.neumann.naturals
+when: n is \natural
+expresses:
+. piecewise:
+  if: n = 0
+  then: m = \empty.set
+  else:
+  . let: k is \natural
+    where: n = \naturals..S(k)
+    then: m = \set.successor:of{\to.von.neumann.natural{k}}
+Documented:
+. called: "Von Nuemann Numeral Equivalent of $n?$"
+. written: "[n?]"
+Id: "3aa2a394-dea8-48d6-8b73-6ad032408fe2"
