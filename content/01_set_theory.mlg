@@ -52,7 +52,9 @@ Id: "48b22b9f-2acc-4e80-9148-667489d48ee1"
 
 [x \.not.in./ X]
 States:
-when: x, X is \set
+when:
+. x is \\anything
+. X is \set
 that:
 . not: x "in"? X
 Documented:
@@ -282,7 +284,7 @@ Text: "With the axioms in place, we can name several standard constructions. The
 Id: "032576ab-7fc3-4075-b24a-cd06583d18cd"
 
 
-[\singleton.set:of{X}]
+[\set.singleton.set:of{X}]
 Defines: Y is \set
 when: X is \set
 expresses:
@@ -313,7 +315,7 @@ expresses:
   then:
   . have: Z "in"? Y
     iff:
-    . (.Z = X.) \.or./ (.Z = \singleton.set:of{X}.)
+    . (.Z = X.) \.or./ (.Z = \set.singleton.set:of{X}.)
 Documented:
 . called: "The set successor of $X?$"
 . written: "X? \cup \left \{ X? \right \}"
@@ -347,13 +349,6 @@ Documented:
 Id: "a0f45971-fcc1-419b-bcd5-f4c4717bb37f"
 
 
-Writing:
-. "phi :~> \varphi"
-. "Xb :~> \mathbb{X}"
-. "Nb :~> \mathbb{N}"
-Id: "c51b2bbc-d8f1-406c-b7c8-317e5409a2d8"
-
-
 SectionTitle: "Set-builder notation"
 Id: "55851b31-9fa9-4b8e-b61b-315b7559c66d"
 
@@ -366,7 +361,7 @@ Id: "b218d7dd-c01a-476d-9975-b05de57b8b8f"
 
 
 [\set.property(X_)]
-Declares: phi(X_) is (? is \set) -> (? is \\statement)
+Declares: phi(X_) is (_ is \set) -> (_ is \\statement)
 Documented:
 . called: "set property"
 . description: "A set property is a predicate on sets: given a set it yields a
@@ -377,9 +372,9 @@ Id: "cc680a81-3338-4848-8b9d-fcf368dd759e"
 
 [\set:of{x[i_ := 1...n]}]
 Defines: X is \set
-when: x[1...n] is \\opaque
+when: x[1...n] is \\anything
 expresses:
-. let: y is \\opaque
+. let: y is \\anything
   then:
   . have: y "in"? X
     iff:
