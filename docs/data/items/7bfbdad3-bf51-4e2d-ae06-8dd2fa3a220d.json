@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "One set is a subset of another when every element of the first is also an\nelement of the second. Subsethood is the basic way of comparing sets by\ninclusion, and the power set axiom that follows depends on it."
+    "text": "One set is a subset of another when every element of the first is also an\nelement of the second. Subsethood is the basic way of comparing sets by\ninclusion, and the power set axiom depends on it."
   },
-  "source": "Text: \"One set is a subset of another when every element of the first is also an\n       element of the second. Subsethood is the basic way of comparing sets by\n       inclusion, and the power set axiom that follows depends on it.\"\nId: \"7bfbdad3-bf51-4e2d-ae06-8dd2fa3a220d\"",
+  "source": "Text: \"One set is a subset of another when every element of the first is also an\n       element of the second. Subsethood is the basic way of comparing sets by\n       inclusion, and the power set axiom depends on it.\"\nId: \"7bfbdad3-bf51-4e2d-ae06-8dd2fa3a220d\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"One set is a subset of another when every element of the first is also an\n       element of the second. Subsethood is the basic way of comparing sets by\n       inclusion, and the power set axiom that follows depends on it.\"",
+      "inline_argument": "\"One set is a subset of another when every element of the first is also an\n       element of the second. Subsethood is the basic way of comparing sets by\n       inclusion, and the power set axiom depends on it.\"",
       "inline_latex": null,
       "arguments": []
     },

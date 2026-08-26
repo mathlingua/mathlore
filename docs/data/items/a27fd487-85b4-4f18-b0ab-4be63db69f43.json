@@ -3,10 +3,10 @@
   "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": null,
+  "heading_latex": "\\textrm{Uniqueness of Inverses}",
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven:\n. G ::= (X, *, e) is \\group\n. x, y1, y2 \"in\" G\nwhere:\n. x * y1 = e\n. y1 * x = e\n. x * y2 = e\n. y2 * x = e\nthen: y1 = y2\nId: \"a27fd487-85b4-4f18-b0ab-4be63db69f43\"",
+  "source": "Theorem:\ngiven:\n. G ::= (X, *, e) is \\group\n. x, y1, y2 \"in\" G\nwhere:\n. x * y1 = e\n. y1 * x = e\n. x * y2 = e\n. y2 * x = e\nthen: y1 = y2\nDocumented:\n. called: \"Uniqueness of Inverses\"\n. description: \"If $y_1$ and $y_2$ both act as inverses for $x$, then\n                $y_1 = y_2$.\"\nId: \"a27fd487-85b4-4f18-b0ab-4be63db69f43\"",
   "sections": [
     {
       "label": "Theorem",
@@ -261,6 +261,37 @@
         }
       ],
       "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Uniqueness of Inverses\"",
+              "inline_latex": "\\textrm{Uniqueness of Inverses}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

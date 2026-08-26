@@ -1,0 +1,27 @@
+{
+  "id": "a0c525d6-17bc-4b59-b828-e46ae3040f15",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Direct Products"
+  },
+  "source": "SectionTitle: \"Direct Products\"\nId: \"a0c525d6-17bc-4b59-b828-e46ae3040f15\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Direct Products\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a0c525d6-17bc-4b59-b828-e46ae3040f15\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

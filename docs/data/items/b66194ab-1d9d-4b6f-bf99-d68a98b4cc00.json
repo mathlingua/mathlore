@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Title",
-    "text": "Algebra"
+    "text": "Magmas and Monoids"
   },
-  "source": "Title: \"Algebra\"\nId: \"b66194ab-1d9d-4b6f-bf99-d68a98b4cc00\"",
+  "source": "Title: \"Magmas and Monoids\"\nId: \"b66194ab-1d9d-4b6f-bf99-d68a98b4cc00\"",
   "sections": [
     {
       "label": "Title",
-      "inline_argument": "\"Algebra\"",
+      "inline_argument": "\"Magmas and Monoids\"",
       "inline_latex": null,
       "arguments": []
     },

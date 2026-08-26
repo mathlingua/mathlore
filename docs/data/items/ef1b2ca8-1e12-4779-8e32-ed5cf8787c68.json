@@ -3,10 +3,10 @@
   "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": null,
+  "heading_latex": "\\textrm{Inverse of a Product}",
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven:\n. G is \\group\n. x, y \"in\" G\nthen: (x * y).inv = y.inv * x.inv\nId: \"ef1b2ca8-1e12-4779-8e32-ed5cf8787c68\"",
+  "source": "Theorem:\ngiven:\n. G is \\group\n. x, y \"in\" G\nthen: (x * y).inv = y.inv * x.inv\nDocumented:\n. called: \"Inverse of a Product\"\n. description: \"In any group, $(x * y)^{-1} = y^{-1} * x^{-1}$.\"\nId: \"ef1b2ca8-1e12-4779-8e32-ed5cf8787c68\"",
   "sections": [
     {
       "label": "Theorem",
@@ -139,6 +139,37 @@
         }
       ],
       "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Inverse of a Product\"",
+              "inline_latex": "\\textrm{Inverse of a Product}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

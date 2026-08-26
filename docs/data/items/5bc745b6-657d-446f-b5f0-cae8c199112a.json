@@ -1,19 +1,19 @@
 {
   "id": "5bc745b6-657d-446f-b5f0-cae8c199112a",
-  "kind": "SectionTitle",
+  "kind": "Title",
   "definition_keys": [],
   "heading": null,
   "heading_latex": null,
   "body_text": null,
   "page": {
-    "kind": "SectionTitle",
-    "text": "Groups"
+    "kind": "Title",
+    "text": "Groups and Subgroups"
   },
-  "source": "SectionTitle: \"Groups\"\nId: \"5bc745b6-657d-446f-b5f0-cae8c199112a\"",
+  "source": "Title: \"Groups and Subgroups\"\nId: \"5bc745b6-657d-446f-b5f0-cae8c199112a\"",
   "sections": [
     {
-      "label": "SectionTitle",
-      "inline_argument": "\"Groups\"",
+      "label": "Title",
+      "inline_argument": "\"Groups and Subgroups\"",
       "inline_latex": null,
       "arguments": []
     },

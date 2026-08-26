@@ -1,0 +1,251 @@
+Title: "Set Theory: Axioms"
+Id: "4b9a150c-46bd-49da-83b4-b106f402c3a4"
+
+
+Text: "The whole of the mathematics developed in these pages is built from a
+       single kind of object -- the *set* -- and a single primitive relation
+       between sets -- *membership*. Numbers, ordered pairs, functions, and the
+       algebraic structures of later chapters are all, in the end, particular
+       sets. This chapter fixes the rules that sets obey, in the form of the
+       axioms of Zermelo and Fraenkel, and then uses those rules to construct
+       the first sets we need."
+Id: "a5b9d42b-f22f-4fd4-a867-29de537158c3"
+
+
+Text: "A set is taken as undefined; the only thing one may ask of it is which
+       sets belong to it. For sets $x$ and $X$, either $x \in X$ or
+       $x \notin X$, and this membership relation carries all the information a
+       set has to offer. The axioms below are collected as the defining
+       conditions of what it means to be a set."
+Id: "cbc6feb5-4f5e-41ef-bf59-342c981aa217"
+
+
+[\set]
+Declares: X
+satisfies:
+. \axiom.of.empty.set
+. \axiom.of.infinity
+. \axiom.of.union#given{X}
+. \axiom.of.power.set#given{X}
+. forAll: Y is \set
+  then:
+  . \axiom.of.extensionality#given{X := X; Y := Y}
+  . \axiom.of.pairing#given{X := X; Y := Y}
+Requires:
+. capability: x_ "in" X :-> \\abstract
+Enables:
+. from: Y ::= {y__ : ...}
+  capability: x_ "in" X :<->: x_ member_of Y
+Documented:
+. called: "set"
+. description: "A set is the sole primitive object of the theory. The only
+                question one may put to a set is which sets are its members, and
+                two sets with the same members are the same set. Every other
+                object built in this collection is ultimately a set."
+Id: "a0759217-e1f6-412c-982a-0038cd17a3a1"
+
+
+Text: "It is convenient to have notation for the failure of membership. Writing
+       $x \notin X$ is nothing more than denying that $x \in X$."
+Id: "48b22b9f-2acc-4e80-9148-667489d48ee1"
+
+
+[x \.not.in./ X]
+States:
+when:
+. x is \\anything
+. X is \set
+that:
+. not: x "in"? X
+Documented:
+. written: "x? \notin X?"
+. description: "The negation of membership: $x \notin X$ asserts that the set
+                $x$ is not an element of the set $X$. It is shorthand for the
+                statement that $x \in X$ fails to hold."
+Id: "756e0f48-1c0e-4e05-b97a-9c4fcd577603"
+
+
+SectionTitle: "The Empty Set"
+Id: "8dc697a3-2ef0-4af9-8852-a994bdd8882d"
+
+
+Text: "The theory needs at least one set to exist before it can build any
+       others. The simplest such set is the one with no elements at all. Its
+       existence is granted by the axiom of the empty set, and, as with every
+       set, its uniqueness is a consequence of extensionality."
+Id: "7a54c26a-ea2e-4e38-ac69-3426f651c4d4"
+
+
+[\empty.set]
+Defines: X is \set
+expresses:
+. not:
+  . exists: Y is \set
+    suchThat: Y "in" X
+Documented:
+. called: "empty set"
+. written: "\emptyset"
+. description: "The empty set $\emptyset$ is the unique set having no members
+                whatsoever. It is the seed from which the entire universe of
+                sets -- and eventually the natural number $0$ -- is grown."
+Id: "96908ddf-5fc5-455d-9cfd-eaf0fd6ada38"
+
+
+Text: "A set that is not the empty set has at least one element. It is worth
+       naming this condition, since many constructions require a set to be
+       nonempty."
+Id: "6a19c255-0426-440b-a2e3-c97b1fe06bc4"
+
+
+[\(nonempty)::set]
+Refines: X
+satisfies: X != \empty.set
+Documented:
+. adjective: "nonempty"
+Id: "616950f0-7d70-48ff-a5ac-9d5d49272150"
+
+
+SectionTitle: "The Core Axioms"
+Id: "f2e995e5-7f69-49c8-90bc-46d8f77811f1"
+
+
+Text: "The following axioms are the rules a set must obey. The axiom of the
+       empty set asserts that a set with no members exists, providing the
+       starting point just discussed."
+Id: "287b3b2f-e440-43b5-98be-b7310daf6aaf"
+
+
+[\axiom.of.empty.set]
+Axiom:
+then:
+. exists: X is \set
+  suchThat:
+  . forAll: Z is \set
+    then:
+    . not: Z "in"? X
+Documented:
+. called: "Axiom of Empty Set"
+. description: "There is a set having no members: for every set $Z$, $Z \notin
+                X$. This is the one axiom that outright asserts a set into
+                existence; every other set is built, directly or indirectly,
+                starting from it."
+Id: "f2180719-568d-4084-982b-a71c5f195bf6"
+
+
+Text: "The axiom of extensionality fixes what it means for two sets to be equal:
+       a set is completely determined by its members. Not the way it was
+       described, not the order of its elements, and not any repetition -- only
+       membership counts. This is what lets us speak of *the* empty set or *the*
+       union of two sets."
+Id: "7f76409d-9233-44bf-984a-ede2358dcee5"
+
+
+[\axiom.of.extensionality]
+Axiom:
+given: X, Y is \set
+where:
+. forAll: Z is \set
+  then: (.Z "in"? X.) \.iff./ (.Z "in"? Y.)
+then: X = Y
+Documented:
+. called: "Axiom of Extensionality"
+. description: "Two sets are equal if and only if they have exactly the same
+                elements. The identity of a set is therefore nothing more than
+                the collection of its members, so any two constructions that
+                yield the same elements yield the same set."
+Id: "6fc3a89f-f8ef-420e-b1b6-6e5ed4905611"
+
+
+Text: "The axiom of pairing lets us gather any two sets into a single set. From
+       it, together with union, the finite sets and ordered structures used
+       later can be assembled."
+Id: "7b45fe82-a42a-4591-9453-350baec1df28"
+
+
+[\axiom.of.pairing]
+Axiom:
+given: X, Y is \set
+then:
+. exists: U is \set
+  suchThat:
+  . forAll: Z is \set
+    then: (.Z "in"? U.) \.iff./ ((.Z = X.) \.or./ (.Z = Y.))
+Documented:
+. called: "Axiom of Pairing"
+. description: "For any two sets $X$ and $Y$ there is a set $U$ whose members
+                are exactly $X$ and $Y$. Applying it with $X = Y$ produces the
+                set whose only member is $X$."
+Id: "3219aca1-fba1-42a6-9a1f-209aa430c677"
+
+
+Text: "The axiom of union collapses a set of sets into a single set containing
+       every element of every member. It is what makes it possible to pool the
+       contents of a whole family of sets at once."
+Id: "c0f76644-e25f-4e0c-8cf0-6daf86ad59df"
+
+
+[\axiom.of.union]
+Axiom:
+given: X is \set
+then:
+. exists: U is \set
+  suchThat:
+  . forAll: Z is \set
+    then:
+    . have: Z "in" U
+      iff:
+      . exists: W is \set
+        suchThat:
+        . W "in"? X
+        . Z "in"? W
+Documented:
+. called: "Axiom of Union"
+. description: "For a set $X$ whose members are themselves sets, there is a set
+                $U$ containing exactly those $Z$ that belong to some member $W$
+                of $X$. It flattens one level of nesting, combining the elements
+                of all the members of $X$."
+Id: "60bcea09-6bf1-4917-b90f-64ceeb941558"
+
+
+Text: "The axiom of the power set asserts that all the subsets of a given set
+       can themselves be gathered into a set. This is the first axiom that
+       produces a set strictly larger than the ones it starts from."
+Id: "139b6eca-d1e5-4fae-97a4-1b05d96726f1"
+
+
+[\axiom.of.power.set]
+Axiom:
+given: A is \set
+then:
+. exists: P is \set
+  suchThat:
+  . forAll: x is \set
+    then: (.x "in"? P.) \.iff./ (.x \:subset?:/ A.)
+Documented:
+. called: "Axiom of Power Set"
+. description: "For every set $A$ there is a set $P$ whose members are exactly
+                the subsets of $A$. This power set collects together all of the
+                ways of selecting elements from $A$."
+Id: "8557cdb3-e02f-4b75-aed1-3dfd1cdee895"
+
+
+Text: "The axiom of infinity guarantees that an infinite set exists, being
+       closed under successor and containing the empty set."
+Id: "9196ed0a-391f-4fb5-af13-ac8c65db0ae9"
+
+
+[\axiom.of.infinity]
+Axiom:
+then:
+. exists: I is \set
+  suchThat:
+  . oneOf:
+    . \empty.set "in"? I
+    . forAll: Y is \set
+      then: (.Y "in"? I.) \.implies./ (.\set.successor:of{Y} "in"? I.)
+Documented:
+. called: "Axiom of Infinity"
+. description: "There is a set $I$ that contains the empty set and is closed
+                under the successor operation. Such a set cannot be finite, so
+                this axiom is what first admits an infinite set into the theory."
+Id: "a0f45971-fcc1-419b-bcd5-f4c4717bb37f"

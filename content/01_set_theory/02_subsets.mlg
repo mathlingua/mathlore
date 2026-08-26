@@ -1,0 +1,81 @@
+Title: "Subsets"
+Id: "d1d71d30-1ce6-427e-bbc4-dd3ccf53fe53"
+
+
+Text: "One set is a subset of another when every element of the first is also an
+       element of the second. Subsethood is the basic way of comparing sets by
+       inclusion, and the power set axiom depends on it."
+Id: "7bfbdad3-bf51-4e2d-ae06-8dd2fa3a220d"
+
+
+[A \:subset:/ B]
+Declares: A is \set
+when: B is \set
+satisfies:
+. forAll: X "in" A
+  then: X "in"? B
+Requires:
+. capability: x_ "in" A :-> x_ "in" B
+Documented:
+. called: "$A?$ is a subset of $B?$"
+. written: "A? \subseteq B?"
+. description: "$A \subseteq B$ holds when every element of $A$ is also an
+                element of $B$. By extensionality, two sets are equal exactly
+                when each is a subset of the other."
+Id: "2b2b89a1-d106-4377-ae48-14c704063e5e"
+
+
+Text: "A subset that is not the whole set is called a *proper* subset: it is
+       contained in the larger set but differs from it."
+Id: "c27fbf42-311e-4efd-b4c8-2da3ad6370a7"
+
+
+[A \:(proper)::subset:/ B]
+Refines: A
+when: B is \set
+specifies: A \:subset:/ B
+satisfies: A != B
+Documented:
+. adjective: "proper"
+. written: "A? \subsetneq B?"
+. description: "$A \subsetneq B$ holds when $A$ is a subset of $B$ but is not
+                equal to $B$; that is, $B$ has at least one element not in $A$."
+Id: "7d070f37-61a5-4c62-b8da-4831c222e4b2"
+
+
+Text: "Subsethood is transitive: a subset of a subset is a subset of the whole.
+       This is the first small theorem of the collection, and it follows
+       directly from the definition of subset."
+Id: "370b0f76-ab0f-4f7f-80fa-120bb7ffe9e2"
+
+
+Theorem:
+given:
+. C is \set
+. B \:subset:/ C
+. A \:subset:/ B
+then:
+. A \:subset?:/ C
+Documented:
+. called: "Transitivity of Subset Relation"
+. description: "If $A \subseteq B$ and $B \subseteq C$, then $A \subseteq C$."
+Id: "6a4bcb50-97bc-4d1b-a9b2-750c963bb720"
+
+
+Text: "The characterization of equality by mutual inclusion, promised when
+       extensionality was stated, is recorded here as a theorem: two sets are
+       equal exactly when each is a subset of the other."
+Id: "a0b6d62f-1f1d-4be5-997b-40aa03cc4ac7"
+
+
+Theorem:
+given: A, B is \set
+then: A = B
+iff:
+. A \:subset?:/ B
+. B \:subset?:/ A
+Documented:
+. called: "Set Equality via Mutual Inclusion"
+. description: "Two sets $A$ and $B$ are equal if and only if $A \subseteq B$
+                and $B \subseteq A$."
+Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"

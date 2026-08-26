@@ -3,10 +3,10 @@
   "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": null,
+  "heading_latex": "\\textrm{Direct Product of Groups is a Group}",
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven: G1, G2 is \\group\nthen: G1 \\.group.direct.product./ G2 is? \\group\nId: \"d65025cf-8bf1-454f-9507-55890ab9f88c\"",
+  "source": "Theorem:\ngiven: G1, G2 is \\group\nthen: G1 \\.group.direct.product./ G2 is? \\group\nDocumented:\n. called: \"Direct Product of Groups is a Group\"\nId: \"d65025cf-8bf1-454f-9507-55890ab9f88c\"",
   "sections": [
     {
       "label": "Theorem",
@@ -65,6 +65,25 @@
         }
       ],
       "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Direct Product of Groups is a Group\"",
+              "inline_latex": "\\textrm{Direct Product of Groups is a Group}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

@@ -1,0 +1,27 @@
+{
+  "id": "0c54d423-2239-4bcc-9398-cff3fa696e7c",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Fields"
+  },
+  "source": "SectionTitle: \"Fields\"\nId: \"0c54d423-2239-4bcc-9398-cff3fa696e7c\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Fields\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0c54d423-2239-4bcc-9398-cff3fa696e7c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

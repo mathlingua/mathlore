@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The chapter closes with two more consequences of the axioms. The first is\nthat inverting an element twice returns the original element."
+    "text": "Inverting an element twice returns the original element."
   },
-  "source": "Text: \"The chapter closes with two more consequences of the axioms. The first is\n       that inverting an element twice returns the original element.\"\nId: \"6619e809-8d59-4180-820d-ff40b5914fdf\"",
+  "source": "Text: \"Inverting an element twice returns the original element.\"\nId: \"6619e809-8d59-4180-820d-ff40b5914fdf\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The chapter closes with two more consequences of the axioms. The first is\n       that inverting an element twice returns the original element.\"",
+      "inline_argument": "\"Inverting an element twice returns the original element.\"",
       "inline_latex": null,
       "arguments": []
     },

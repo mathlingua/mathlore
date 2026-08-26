@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "SectionTitle",
-    "text": "Set-builder notation"
+    "text": "Set-Builder Notation"
   },
-  "source": "SectionTitle: \"Set-builder notation\"\nId: \"55851b31-9fa9-4b8e-b61b-315b7559c66d\"",
+  "source": "SectionTitle: \"Set-Builder Notation\"\nId: \"55851b31-9fa9-4b8e-b61b-315b7559c66d\"",
   "sections": [
     {
       "label": "SectionTitle",
-      "inline_argument": "\"Set-builder notation\"",
+      "inline_argument": "\"Set-Builder Notation\"",
       "inline_latex": null,
       "arguments": []
     },

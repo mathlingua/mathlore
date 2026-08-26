@@ -1,0 +1,153 @@
+Title: "Set Constructions"
+Id: "b49297d0-a6d3-4843-85a0-2241c30b5a05"
+
+
+Text: "With the axioms in place, we can name several standard constructions. The
+       singleton of a set is the set whose only member is that set, obtained
+       from pairing."
+Id: "032576ab-7fc3-4075-b24a-cd06583d18cd"
+
+
+[\set.singleton.set:of{X}]
+Defines: Y is \set
+when: X is \set
+expresses:
+. let: Z is \set
+  then:
+  . have: Z "in"? Y
+    iff: Z = X
+Documented:
+. called: "The singleton set of $X?$"
+. written: "\left \{ X? \right \}"
+. description: "The singleton $\{X\}$ is the set whose sole member is $X$: a set
+                $Z$ belongs to it exactly when $Z = X$. Its existence follows
+                from pairing applied to $X$ with itself."
+Id: "08f35257-d0a7-42af-9866-7d138c56fc4c"
+
+
+Text: "Similarly, pairing gives the unordered pair of any two sets $x$ and $y$."
+Id: "c128a6a8-b892-4177-8622-29ba3cfa473a"
+
+
+[\set.unordered.pair:of{x, y}]
+Defines: U is \set
+when: x, y is \set
+expresses:
+. let: z is \set
+  then:
+  . have: z "in"? U
+    iff: (.z = x.) \.or./ (.z = y.)
+Documented:
+. called: "unordered pair of $x?$ and $y?$"
+. written: "\left \{ x?, y? \right \}"
+. description: "The unordered pair $\{x, y\}$ is the set whose members are
+                precisely $x$ and $y$."
+Id: "17401045-fc72-4bd4-af7d-ab578690f81c"
+
+
+Text: "The successor of a set adjoins the set itself as a new element to its
+       singleton. Iterating this operation from the empty set is precisely how
+       the natural numbers will be built in a later chapter."
+Id: "f49b05f5-b826-45d0-b327-b248946e28fc"
+
+
+[\set.successor:of{X}]
+Defines: Y is \set
+when: X is \set
+expresses:
+. let: Z is \set
+  then:
+  . have: Z "in"? Y
+    iff:
+    . (.Z = X.) \.or./ (.Z = \set.singleton.set:of{X}.)
+Documented:
+. called: "The set successor of $X?$"
+. written: "X? \cup \left \{ X? \right \}"
+. description: "The successor of $X$ is the set $X \cup \{X\}$, whose members
+                are the members of $X$ together with $X$ itself. Starting from
+                $\emptyset$ and repeating this step generates the natural
+                numbers."
+Id: "002b9914-ad06-4f5a-a3fb-803bd86e6c4b"
+
+
+SectionTitle: "Set-Builder Notation"
+Id: "55851b31-9fa9-4b8e-b61b-315b7559c66d"
+
+
+Text: "Sets are most often described by a property their elements satisfy. The
+       remaining definitions of this chapter set up that notation -- properties
+       of sets, sets listed by their elements, ordered pairs, and the Cartesian
+       product -- which is used throughout the rest of the collection."
+Id: "b218d7dd-c01a-476d-9975-b05de57b8b8f"
+
+
+[\set.property(X_)]
+Declares: phi(X_) is (_ is \set) -> (_ is \\statement)
+Documented:
+. called: "set property"
+. description: "A set property is a predicate on sets: given a set it yields a
+                statement, true or false. Properties are what the specification
+                axiom uses to carve subsets out of existing sets."
+Id: "cc680a81-3338-4848-8b9d-fcf368dd759e"
+
+
+[\set:of{x[i_ := 1...n]}]
+Defines: X is \set
+when: x[1...n] is \\anything
+expresses:
+. let: y is \\anything
+  then:
+  . have: y "in"? X
+    iff:
+    . anyOf:
+      . x[1...n] = y
+Documented:
+. called: "set of $\left \{ x? \right \}$"
+. written: "\left \{ x? \right \}"
+. description: "The set $\{x_1, \dots, x_n\}$ listed by its elements: a value
+                belongs to it exactly when it equals one of the listed $x_i$.
+                This is the finite, roster form of set-builder notation."
+Id: "61c901bc-5f36-479b-a32c-c37b7f98a9fb"
+
+
+SectionTitle: "Ordered Pairs and Products"
+Id: "b61f3f41-454a-4ea1-a69c-35fe7fb2ceb3"
+
+
+Text: "From unordered pairs one can encode *ordered* pairs, in which the two
+       components can be told apart. Kuratowski's device below records the first
+       component as a singleton and the pair together, so that the order is
+       recoverable."
+Id: "da7d91b3-693b-4ca2-ac2a-e94555b18c5f"
+
+
+[\set.pair:of{x, y}]
+Defines: p := \set:of{x, \set:of{x, y}} is \set
+when: x, y is \set
+Documented:
+. called: "pair of $x?$ and $y?$"
+. written: "\langle x?, y? \rangle"
+. description: "The ordered pair $\langle x, y \rangle$, encoded as the set
+                $\{x, \{x, y\}\}$. This encoding lets the first and second
+                components be recovered from the set alone, so order is
+                meaningful even though sets are unordered."
+Id: "8fd9d494-2882-4639-bb50-44a56626d1c4"
+
+
+Text: "The Cartesian product forms the set of all ordered pairs drawn from two
+       sets. It is the setting in which relations and functions are defined, and
+       so is one of the most heavily used constructions in what follows."
+Id: "331daec2-edc7-4316-8fb6-0c801c3692ed"
+
+
+[A \.set.cross./ B]
+Defines: X := \set@{(a_, b_) : a_ "in" A; b_ "in" B}
+when: A, B is \set
+Documented:
+. called: "Cartesian product of $A?$ and $B?$"
+. written: "A? \times B?"
+. description: "The Cartesian product $A \times B$ is the set of all ordered
+                pairs $(a, b)$ with $a \in A$ and $b \in B$. Relations on a set
+                are subsets of its product with itself, and functions are
+                relations of a special kind."
+Id: "3bdd9cfb-f836-4d44-880a-873bb772cdef"

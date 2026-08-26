@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "SectionTitle",
-    "text": "The empty set"
+    "text": "The Empty Set"
   },
-  "source": "SectionTitle: \"The empty set\"\nId: \"8dc697a3-2ef0-4af9-8852-a994bdd8882d\"",
+  "source": "SectionTitle: \"The Empty Set\"\nId: \"8dc697a3-2ef0-4af9-8852-a994bdd8882d\"",
   "sections": [
     {
       "label": "SectionTitle",
-      "inline_argument": "\"The empty set\"",
+      "inline_argument": "\"The Empty Set\"",
       "inline_latex": null,
       "arguments": []
     },

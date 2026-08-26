@@ -1,0 +1,14 @@
+{
+  "id": "6a4bcb50-97bc-4d1b-a9b2-750c963bb720-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "If $A \\subseteq B$ and $B \\subseteq C$, then $A \\subseteq C$."
+  },
+  "source": "",
+  "sections": []
+}

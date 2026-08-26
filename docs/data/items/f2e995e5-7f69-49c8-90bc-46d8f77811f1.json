@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "SectionTitle",
-    "text": "The axioms"
+    "text": "The Core Axioms"
   },
-  "source": "SectionTitle: \"The axioms\"\nId: \"f2e995e5-7f69-49c8-90bc-46d8f77811f1\"",
+  "source": "SectionTitle: \"The Core Axioms\"\nId: \"f2e995e5-7f69-49c8-90bc-46d8f77811f1\"",
   "sections": [
     {
       "label": "SectionTitle",
-      "inline_argument": "\"The axioms\"",
+      "inline_argument": "\"The Core Axioms\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -3,10 +3,10 @@
   "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": null,
+  "heading_latex": "\\textrm{Double Inversion Law}",
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven:\n. G ::= (X, *, e) is \\group\n. x \"in\" G\nthen: (x.inv).inv = x\nId: \"8c61fb44-d5ab-4be8-804a-0d6a95d83331\"",
+  "source": "Theorem:\ngiven:\n. G ::= (X, *, e) is \\group\n. x \"in\" G\nthen: (x.inv).inv = x\nDocumented:\n. called: \"Double Inversion Law\"\n. description: \"$(x^{-1})^{-1} = x$ for every element in a group.\"\nId: \"8c61fb44-d5ab-4be8-804a-0d6a95d83331\"",
   "sections": [
     {
       "label": "Theorem",
@@ -103,6 +103,37 @@
         }
       ],
       "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Double Inversion Law\"",
+              "inline_latex": "\\textrm{Double Inversion Law}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

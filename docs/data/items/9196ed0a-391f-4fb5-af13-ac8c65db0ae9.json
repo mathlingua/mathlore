@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The last axiom guarantees that this process never terminates: there is a\nset closed under successor and containing the empty set, hence an\ninfinite set. Without it, only finite sets could be shown to exist."
+    "text": "The axiom of infinity guarantees that an infinite set exists, being\nclosed under successor and containing the empty set."
   },
-  "source": "Text: \"The last axiom guarantees that this process never terminates: there is a\n       set closed under successor and containing the empty set, hence an\n       infinite set. Without it, only finite sets could be shown to exist.\"\nId: \"9196ed0a-391f-4fb5-af13-ac8c65db0ae9\"",
+  "source": "Text: \"The axiom of infinity guarantees that an infinite set exists, being\n       closed under successor and containing the empty set.\"\nId: \"9196ed0a-391f-4fb5-af13-ac8c65db0ae9\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The last axiom guarantees that this process never terminates: there is a\n       set closed under successor and containing the empty set, hence an\n       infinite set. Without it, only finite sets could be shown to exist.\"",
+      "inline_argument": "\"The axiom of infinity guarantees that an infinite set exists, being\n       closed under successor and containing the empty set.\"",
       "inline_latex": null,
       "arguments": []
     },

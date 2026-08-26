@@ -1,0 +1,90 @@
+Title: "Group Products and Morphisms"
+Id: "786f4620-5e2a-4871-856e-ae9220f82f4b"
+
+
+Text: "New groups can be assembled from old ones. The *direct product* of two
+       groups operates on ordered pairs, applying each group's operation in its
+       own coordinate. It is the simplest way of combining groups, and it builds
+       larger groups out of smaller building blocks."
+Id: "aa01e2aa-23e6-428f-8555-cabb841d1543"
+
+
+SectionTitle: "Direct Products"
+Id: "a0c525d6-17bc-4b59-b828-e46ae3040f15"
+
+
+[G1 ::= (X1, *_1, e1) \.group.direct.product./ G2 ::= (X2, *_2, e2)]
+Defines: G3 ::= (X3, *_3, e3) is \group
+when: G1, G2 is \group
+expresses:
+. X3 := {(x1, x2) : x1 "in" X1; x2 "in" X2}
+. (a1_, a2_) *_3 (b1_, b2_) := (a1_ *_1 b1_, a2_ *_2 b2_)
+. e3 := (e1, e2)
+Documented:
+. called: "direct product of groups $G1?$ and $G2?$"
+. written: "G1? \times G2?"
+. description: "The direct product $G_1 \times G_2$ has as elements the ordered
+                pairs $(x_1, x_2)$ with $x_i \in G_i$, and multiplies them
+                coordinatewise. Its identity is the pair of identities, and it
+                is itself a group."
+Id: "3a354c63-fc8c-4873-9751-62ecc651a5a9"
+
+
+Text: "As with subgroups, the fact that the direct product is a group is stated
+       as a theorem in its own right."
+Id: "16235348-2acd-494b-ae40-6814eab32507"
+
+
+Theorem:
+given: G1, G2 is \group
+then: G1 \.group.direct.product./ G2 is? \group
+Documented:
+. called: "Direct Product of Groups is a Group"
+Id: "d65025cf-8bf1-454f-9507-55890ab9f88c"
+
+
+SectionTitle: "Group Homomorphisms and Center"
+Id: "d6bcea01-5a5a-42ca-bdb8-a9bed72b97b6"
+
+
+Text: "A group homomorphism is a function between groups that preserves the
+       algebraic multiplication operation."
+Id: "0f52cdf6-2164-4f6c-ba77-b2a163364e82"
+
+
+[\group.homomorphism:from{G1 ::= (X1, *_1, e1)}:to{G2 ::= (X2, *_2, e2)}]
+Declares: phi(x__) is \function:on{X1}:to{X2}
+when: G1, G2 is \group
+satisfies:
+. forAll: a, b "in" G1
+  then: phi(a *_1 b) = phi(a) *_2 phi(b)
+Documented:
+. called: "group homomorphism from $G1?$ to $G2?$"
+. description: "A group homomorphism $\phi : G_1 \rightarrow G_2$ is a
+                structure-preserving map satisfying
+                $\phi(a * b) = \phi(a) * \phi(b)$."
+Id: "b3809339-6511-4a87-84eb-8e3278f3524b"
+
+
+Text: "The center of a group consists of all elements that commute with every
+       element in the group."
+Id: "625a71c4-ff3b-411f-aa1c-85d6db7642e7"
+
+
+[\center:of{G ::= (X, *, e)}]
+Defines: Z is \set
+when: G is \group
+expresses:
+. let: z is \set
+  then:
+  . have: z "in"? Z
+    iff:
+    . z "in"? G
+    . forAll: g "in" G
+      then: z * g = g * z
+Documented:
+. called: "center of group $G?$"
+. written: "Z(G?)"
+. description: "The center $Z(G)$ is the subgroup of elements that commute with
+                all elements of $G$."
+Id: "db5c05bc-8e04-4326-ba15-689df15c140a"

@@ -3,10 +3,10 @@
   "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": null,
+  "heading_latex": "\\textrm{Transitivity of Subset Relation}",
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven:\n. C is \\set\n. B \\:subset:/ C\n. A \\:subset:/ B\nthen:\n. A \\:subset?:/ C\nId: \"6a4bcb50-97bc-4d1b-a9b2-750c963bb720\"",
+  "source": "Theorem:\ngiven:\n. C is \\set\n. B \\:subset:/ C\n. A \\:subset:/ B\nthen:\n. A \\:subset?:/ C\nDocumented:\n. called: \"Transitivity of Subset Relation\"\n. description: \"If $A \\subseteq B$ and $B \\subseteq C$, then $A \\subseteq C$.\"\nId: \"6a4bcb50-97bc-4d1b-a9b2-750c963bb720\"",
   "sections": [
     {
       "label": "Theorem",
@@ -107,6 +107,37 @@
               "types": [
                 "is \\set"
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Transitivity of Subset Relation\"",
+              "inline_latex": "\\textrm{Transitivity of Subset Relation}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
             }
           ]
         }

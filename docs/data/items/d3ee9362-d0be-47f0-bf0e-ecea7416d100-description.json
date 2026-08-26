@@ -1,0 +1,14 @@
+{
+  "id": "d3ee9362-d0be-47f0-bf0e-ecea7416d100-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two sets $A$ and $B$ are equal if and only if $A \\subseteq B$\nand $B \\subseteq A$."
+  },
+  "source": "",
+  "sections": []
+}

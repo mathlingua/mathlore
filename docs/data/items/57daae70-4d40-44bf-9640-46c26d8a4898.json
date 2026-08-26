@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "SectionTitle",
-    "text": "Semigroups and monoids"
+    "text": "Semigroups and Monoids"
   },
-  "source": "SectionTitle: \"Semigroups and monoids\"\nId: \"57daae70-4d40-44bf-9640-46c26d8a4898\"",
+  "source": "SectionTitle: \"Semigroups and Monoids\"\nId: \"57daae70-4d40-44bf-9640-46c26d8a4898\"",
   "sections": [
     {
       "label": "SectionTitle",
-      "inline_argument": "\"Semigroups and monoids\"",
+      "inline_argument": "\"Semigroups and Monoids\"",
       "inline_latex": null,
       "arguments": []
     },

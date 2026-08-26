@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <meta name="description" content="Rendered Mathlingua collection viewer" />
+    <link rel="icon" href="./icon.png" />
+    <link rel="apple-touch-icon" href="./apple-icon.png" />
+    <title>MathLingua Viewer</title>
+    <script>
+      (() => {
+        try {
+          const theme = window.localStorage.getItem("mlg-view-theme");
+          const themeSchemes = {
+            classic: "light",
+            "classic-dark": "dark",
+            mono: "light",
+            dark: "dark",
+            "flat-gray": "light",
+            "flat-gray-dark": "dark",
+            sepia: "light",
+            "sepia-dark": "dark",
+            retro: "light",
+            "retro-dark": "dark",
+            lcd: "light",
+            "lcd-dark": "dark",
+            atomic: "light",
+            "atomic-dark": "dark",
+          };
+          const colorScheme = themeSchemes[theme];
+          if (!colorScheme) {
+            return;
+          }
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.style.colorScheme = colorScheme;
+        } catch (_) {}
+      })();
+      window.__MLG_VIEW_CONFIG__ = {"staticDataBasePath":"/data"};
+    </script>
+    <script type="module" crossorigin src="./assets/index-BPiZ5FNw.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C7FTPk3G.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

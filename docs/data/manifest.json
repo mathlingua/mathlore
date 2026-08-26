@@ -32,8 +32,103 @@
   ],
   "directories": [
     {
+      "path": "content/01_set_theory",
+      "title": "Set Theory",
+      "preface": [
+        {
+          "id": "229c342e-e482-48b1-91ee-1f80364f88e0",
+          "kind": "Text",
+          "definition_keys": [],
+          "heading": null,
+          "heading_latex": null,
+          "body_text": null,
+          "page": {
+            "kind": "Text",
+            "text": "Set theory is the foundational substrate of classical mathematics. In this\nsystem, mathematical objects—from natural numbers to functions and algebraic\nstructures—are constructed as sets obeying the Zermelo-Fraenkel axioms.\nThe theory proceeds from the primitive membership relation $\\in$ through\nsubsets, products, and standard Boolean operations."
+          },
+          "source": "Text: \"Set theory is the foundational substrate of classical mathematics. In this\n       system, mathematical objects—from natural numbers to functions and algebraic\n       structures—are constructed as sets obeying the Zermelo-Fraenkel axioms.\n       The theory proceeds from the primitive membership relation $\\in$ through\n       subsets, products, and standard Boolean operations.\"\nId: \"229c342e-e482-48b1-91ee-1f80364f88e0\"",
+          "sections": [
+            {
+              "label": "Text",
+              "inline_argument": "\"Set theory is the foundational substrate of classical mathematics. In this\n       system, mathematical objects—from natural numbers to functions and algebraic\n       structures—are constructed as sets obeying the Zermelo-Fraenkel axioms.\n       The theory proceeds from the primitive membership relation $\\in$ through\n       subsets, products, and standard Boolean operations.\"",
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "Id",
+              "inline_argument": "\"229c342e-e482-48b1-91ee-1f80364f88e0\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "path": "content/04_naturals",
-      "title": "Naturals"
+      "title": "Naturals",
+      "preface": [
+        {
+          "id": "a338a613-ef12-4fab-9b9f-f0a9f6760515",
+          "kind": "Text",
+          "definition_keys": [],
+          "heading": null,
+          "heading_latex": null,
+          "body_text": null,
+          "page": {
+            "kind": "Text",
+            "text": "The natural numbers represent the arithmetic foundation of counting. This section\ndevelops the natural numbers abstractly through the Peano postulates—introducing\nrecursive arithmetic and order—and provides their canonical set-theoretic\nrealization as the Von Neumann finite ordinals $\\omega$."
+          },
+          "source": "Text: \"The natural numbers represent the arithmetic foundation of counting. This section\n       develops the natural numbers abstractly through the Peano postulates—introducing\n       recursive arithmetic and order—and provides their canonical set-theoretic\n       realization as the Von Neumann finite ordinals $\\omega$.\"\nId: \"a338a613-ef12-4fab-9b9f-f0a9f6760515\"",
+          "sections": [
+            {
+              "label": "Text",
+              "inline_argument": "\"The natural numbers represent the arithmetic foundation of counting. This section\n       develops the natural numbers abstractly through the Peano postulates—introducing\n       recursive arithmetic and order—and provides their canonical set-theoretic\n       realization as the Von Neumann finite ordinals $\\omega$.\"",
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "Id",
+              "inline_argument": "\"a338a613-ef12-4fab-9b9f-f0a9f6760515\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "content/03_algebra",
+      "title": "Algebra",
+      "preface": [
+        {
+          "id": "b9195008-47f2-4dae-be3e-0886194e6bd0",
+          "kind": "Text",
+          "definition_keys": [],
+          "heading": null,
+          "heading_latex": null,
+          "body_text": null,
+          "page": {
+            "kind": "Text",
+            "text": "Abstract algebra investigates sets equipped with operations, establishing theorems\nthat depend solely on operational properties rather than the concrete nature of\nelements. This chapter ascends the algebraic ladder from magmas, semigroups, and\nmonoids to groups, and culminates in rings and fields."
+          },
+          "source": "Text: \"Abstract algebra investigates sets equipped with operations, establishing theorems\n       that depend solely on operational properties rather than the concrete nature of\n       elements. This chapter ascends the algebraic ladder from magmas, semigroups, and\n       monoids to groups, and culminates in rings and fields.\"\nId: \"b9195008-47f2-4dae-be3e-0886194e6bd0\"",
+          "sections": [
+            {
+              "label": "Text",
+              "inline_argument": "\"Abstract algebra investigates sets equipped with operations, establishing theorems\n       that depend solely on operational properties rather than the concrete nature of\n       elements. This chapter ascends the algebraic ladder from magmas, semigroups, and\n       monoids to groups, and culminates in rings and fields.\"",
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "Id",
+              "inline_argument": "\"b9195008-47f2-4dae-be3e-0886194e6bd0\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
     }
   ],
   "files": [
@@ -43,9 +138,24 @@
       "dataPath": "pages/00_logic.json"
     },
     {
-      "path": "content/01_set_theory.mlg",
-      "title": "Set Theory",
-      "dataPath": "pages/01_set_theory.json"
+      "path": "content/01_set_theory/01_axioms.mlg",
+      "title": "Axioms",
+      "dataPath": "pages/01_set_theory/01_axioms.json"
+    },
+    {
+      "path": "content/01_set_theory/02_subsets.mlg",
+      "title": "Subsets",
+      "dataPath": "pages/01_set_theory/02_subsets.json"
+    },
+    {
+      "path": "content/01_set_theory/03_constructions.mlg",
+      "title": "Constructions",
+      "dataPath": "pages/01_set_theory/03_constructions.json"
+    },
+    {
+      "path": "content/01_set_theory/04_operations.mlg",
+      "title": "Boolean Operations",
+      "dataPath": "pages/01_set_theory/04_operations.json"
     },
     {
       "path": "content/02_functions.mlg",
@@ -73,9 +183,24 @@
       "dataPath": "pages/06_integers.json"
     },
     {
-      "path": "content/03_algebra.mlg",
-      "title": "Algebra",
-      "dataPath": "pages/03_algebra.json"
+      "path": "content/03_algebra/01_magmas_and_monoids.mlg",
+      "title": "Magmas and Monoids",
+      "dataPath": "pages/03_algebra/01_magmas_and_monoids.json"
+    },
+    {
+      "path": "content/03_algebra/02_groups.mlg",
+      "title": "Groups and Subgroups",
+      "dataPath": "pages/03_algebra/02_groups.json"
+    },
+    {
+      "path": "content/03_algebra/03_products_and_morphisms.mlg",
+      "title": "Products and Morphisms",
+      "dataPath": "pages/03_algebra/03_products_and_morphisms.json"
+    },
+    {
+      "path": "content/03_algebra/04_rings_and_fields.mlg",
+      "title": "Rings and Fields",
+      "dataPath": "pages/03_algebra/04_rings_and_fields.json"
     },
     {
       "path": "content/99_appendix.mlg",
@@ -209,12 +334,14 @@
     "002b9914-ad06-4f5a-a3fb-803bd86e6c4b": "items/002b9914-ad06-4f5a-a3fb-803bd86e6c4b.json",
     "002b9914-ad06-4f5a-a3fb-803bd86e6c4b-description": "items/002b9914-ad06-4f5a-a3fb-803bd86e6c4b-description.json",
     "009e13c8-8dba-4b31-9958-f8531eb5ec04": "items/009e13c8-8dba-4b31-9958-f8531eb5ec04.json",
+    "0297b76e-dfa0-495e-a363-8f9f27d2ded3": "items/0297b76e-dfa0-495e-a363-8f9f27d2ded3.json",
     "02a8aafc-c012-4d2a-92ed-b36b902d05a0": "items/02a8aafc-c012-4d2a-92ed-b36b902d05a0.json",
     "032576ab-7fc3-4075-b24a-cd06583d18cd": "items/032576ab-7fc3-4075-b24a-cd06583d18cd.json",
     "034bf6ff-ba6e-4fac-b47e-65cc85d15642": "items/034bf6ff-ba6e-4fac-b47e-65cc85d15642.json",
     "034bf6ff-ba6e-4fac-b47e-65cc85d15642-description": "items/034bf6ff-ba6e-4fac-b47e-65cc85d15642-description.json",
     "08f35257-d0a7-42af-9866-7d138c56fc4c": "items/08f35257-d0a7-42af-9866-7d138c56fc4c.json",
     "08f35257-d0a7-42af-9866-7d138c56fc4c-description": "items/08f35257-d0a7-42af-9866-7d138c56fc4c-description.json",
+    "0c54d423-2239-4bcc-9398-cff3fa696e7c": "items/0c54d423-2239-4bcc-9398-cff3fa696e7c.json",
     "0f52cdf6-2164-4f6c-ba77-b2a163364e82": "items/0f52cdf6-2164-4f6c-ba77-b2a163364e82.json",
     "139b6eca-d1e5-4fae-97a4-1b05d96726f1": "items/139b6eca-d1e5-4fae-97a4-1b05d96726f1.json",
     "14e8b6fe-08ca-49d3-9cf9-152d052cb10d": "items/14e8b6fe-08ca-49d3-9cf9-152d052cb10d.json",
@@ -300,6 +427,7 @@
     "49582242-a047-48ae-aced-77654d9a48aa-description": "items/49582242-a047-48ae-aced-77654d9a48aa-description.json",
     "4b9a150c-46bd-49da-83b4-b106f402c3a4": "items/4b9a150c-46bd-49da-83b4-b106f402c3a4.json",
     "4e45bf5d-1f34-4700-8d12-3a34c1eee921": "items/4e45bf5d-1f34-4700-8d12-3a34c1eee921.json",
+    "4f086ee9-6118-4df5-903c-f2463f65c0f1": "items/4f086ee9-6118-4df5-903c-f2463f65c0f1.json",
     "502e2a50-cced-461a-bdcf-03e2221a598f": "items/502e2a50-cced-461a-bdcf-03e2221a598f.json",
     "502e2a50-cced-461a-bdcf-03e2221a598f-description": "items/502e2a50-cced-461a-bdcf-03e2221a598f-description.json",
     "52cc558f-f07b-4b85-a932-7f4448a88b65": "items/52cc558f-f07b-4b85-a932-7f4448a88b65.json",
@@ -344,6 +472,7 @@
     "68ba43e9-1329-4103-819e-16e20e8e7c9f-description": "items/68ba43e9-1329-4103-819e-16e20e8e7c9f-description.json",
     "6a19c255-0426-440b-a2e3-c97b1fe06bc4": "items/6a19c255-0426-440b-a2e3-c97b1fe06bc4.json",
     "6a4bcb50-97bc-4d1b-a9b2-750c963bb720": "items/6a4bcb50-97bc-4d1b-a9b2-750c963bb720.json",
+    "6a4bcb50-97bc-4d1b-a9b2-750c963bb720-description": "items/6a4bcb50-97bc-4d1b-a9b2-750c963bb720-description.json",
     "6ab727ff-4d3c-467a-a090-23baa9056340": "items/6ab727ff-4d3c-467a-a090-23baa9056340.json",
     "6c240df6-c06d-4fc4-ab16-31fa5aebb4d7": "items/6c240df6-c06d-4fc4-ab16-31fa5aebb4d7.json",
     "6c240df6-c06d-4fc4-ab16-31fa5aebb4d7-description": "items/6c240df6-c06d-4fc4-ab16-31fa5aebb4d7-description.json",
@@ -387,6 +516,7 @@
     "8baba6bf-25f4-48b4-84f9-4b2db59ccf47": "items/8baba6bf-25f4-48b4-84f9-4b2db59ccf47.json",
     "8baba6bf-25f4-48b4-84f9-4b2db59ccf47-description": "items/8baba6bf-25f4-48b4-84f9-4b2db59ccf47-description.json",
     "8c61fb44-d5ab-4be8-804a-0d6a95d83331": "items/8c61fb44-d5ab-4be8-804a-0d6a95d83331.json",
+    "8c61fb44-d5ab-4be8-804a-0d6a95d83331-description": "items/8c61fb44-d5ab-4be8-804a-0d6a95d83331-description.json",
     "8c997826-bcef-4032-816b-c6dd2aa635e7": "items/8c997826-bcef-4032-816b-c6dd2aa635e7.json",
     "8c997826-bcef-4032-816b-c6dd2aa635e7-description": "items/8c997826-bcef-4032-816b-c6dd2aa635e7-description.json",
     "8ced2d1f-741d-4996-84f8-b2c2afd293e8": "items/8ced2d1f-741d-4996-84f8-b2c2afd293e8.json",
@@ -417,11 +547,13 @@
     "a08ae02b-7a4e-4911-863a-7d929540f193": "items/a08ae02b-7a4e-4911-863a-7d929540f193.json",
     "a08ae02b-7a4e-4911-863a-7d929540f193-description": "items/a08ae02b-7a4e-4911-863a-7d929540f193-description.json",
     "a0b6d62f-1f1d-4be5-997b-40aa03cc4ac7": "items/a0b6d62f-1f1d-4be5-997b-40aa03cc4ac7.json",
+    "a0c525d6-17bc-4b59-b828-e46ae3040f15": "items/a0c525d6-17bc-4b59-b828-e46ae3040f15.json",
     "a0f45971-fcc1-419b-bcd5-f4c4717bb37f": "items/a0f45971-fcc1-419b-bcd5-f4c4717bb37f.json",
     "a0f45971-fcc1-419b-bcd5-f4c4717bb37f-description": "items/a0f45971-fcc1-419b-bcd5-f4c4717bb37f-description.json",
     "a16193ad-6084-494c-afd2-b4f7c6a70a7d": "items/a16193ad-6084-494c-afd2-b4f7c6a70a7d.json",
     "a16193ad-6084-494c-afd2-b4f7c6a70a7d-description": "items/a16193ad-6084-494c-afd2-b4f7c6a70a7d-description.json",
     "a27fd487-85b4-4f18-b0ab-4be63db69f43": "items/a27fd487-85b4-4f18-b0ab-4be63db69f43.json",
+    "a27fd487-85b4-4f18-b0ab-4be63db69f43-description": "items/a27fd487-85b4-4f18-b0ab-4be63db69f43-description.json",
     "a36041ed-5bdd-4e9c-84ce-719a69b7708b": "items/a36041ed-5bdd-4e9c-84ce-719a69b7708b.json",
     "a5b9d42b-f22f-4fd4-a867-29de537158c3": "items/a5b9d42b-f22f-4fd4-a867-29de537158c3.json",
     "a5c4b516-227b-4893-aa18-5f04c1f005a4": "items/a5c4b516-227b-4893-aa18-5f04c1f005a4.json",
@@ -451,6 +583,7 @@
     "b3809339-6511-4a87-84eb-8e3278f3524b-description": "items/b3809339-6511-4a87-84eb-8e3278f3524b-description.json",
     "b49297d0-a6d3-4843-85a0-2241c30b5a05": "items/b49297d0-a6d3-4843-85a0-2241c30b5a05.json",
     "b60eca2f-6be8-4e23-a2f2-b56e2378684b": "items/b60eca2f-6be8-4e23-a2f2-b56e2378684b.json",
+    "b61f3f41-454a-4ea1-a69c-35fe7fb2ceb3": "items/b61f3f41-454a-4ea1-a69c-35fe7fb2ceb3.json",
     "b66194ab-1d9d-4b6f-bf99-d68a98b4cc00": "items/b66194ab-1d9d-4b6f-bf99-d68a98b4cc00.json",
     "b69a5d44-be1d-4f87-bab6-f5c4eccf221c": "items/b69a5d44-be1d-4f87-bab6-f5c4eccf221c.json",
     "b6b6f241-917e-4090-8269-5060f249b80c": "items/b6b6f241-917e-4090-8269-5060f249b80c.json",
@@ -492,6 +625,7 @@
     "d2bd8cc9-3dd0-4a49-8e85-cf5009edb9a4": "items/d2bd8cc9-3dd0-4a49-8e85-cf5009edb9a4.json",
     "d2bd8cc9-3dd0-4a49-8e85-cf5009edb9a4-description": "items/d2bd8cc9-3dd0-4a49-8e85-cf5009edb9a4-description.json",
     "d3ee9362-d0be-47f0-bf0e-ecea7416d100": "items/d3ee9362-d0be-47f0-bf0e-ecea7416d100.json",
+    "d3ee9362-d0be-47f0-bf0e-ecea7416d100-description": "items/d3ee9362-d0be-47f0-bf0e-ecea7416d100-description.json",
     "d65025cf-8bf1-454f-9507-55890ab9f88c": "items/d65025cf-8bf1-454f-9507-55890ab9f88c.json",
     "d6bcea01-5a5a-42ca-bdb8-a9bed72b97b6": "items/d6bcea01-5a5a-42ca-bdb8-a9bed72b97b6.json",
     "d6e88a37-b891-428d-bb2d-080654f19c81": "items/d6e88a37-b891-428d-bb2d-080654f19c81.json",
@@ -528,6 +662,7 @@
     "eb21571a-d245-427d-a014-d29407d09f9a-description": "items/eb21571a-d245-427d-a014-d29407d09f9a-description.json",
     "ece9bae3-c088-459e-9cd1-7a650d9b3681": "items/ece9bae3-c088-459e-9cd1-7a650d9b3681.json",
     "ef1b2ca8-1e12-4779-8e32-ed5cf8787c68": "items/ef1b2ca8-1e12-4779-8e32-ed5cf8787c68.json",
+    "ef1b2ca8-1e12-4779-8e32-ed5cf8787c68-description": "items/ef1b2ca8-1e12-4779-8e32-ed5cf8787c68-description.json",
     "f2180719-568d-4084-982b-a71c5f195bf6": "items/f2180719-568d-4084-982b-a71c5f195bf6.json",
     "f2180719-568d-4084-982b-a71c5f195bf6-description": "items/f2180719-568d-4084-982b-a71c5f195bf6-description.json",
     "f2e995e5-7f69-49c8-90bc-46d8f77811f1": "items/f2e995e5-7f69-49c8-90bc-46d8f77811f1.json",
