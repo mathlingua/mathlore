@@ -13,7 +13,7 @@
     {
       "label": "Refines",
       "inline_argument": "S ::= a(n_)",
-      "inline_latex": "S ::= \\left\\{ a_{n} \\right\\}_{n=1}^{\\infty} \\textrm{ is } \\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+      "inline_latex": "S ::= a(n) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
       "arguments": []
     },
     {
@@ -58,7 +58,7 @@
             {
               "label": "then",
               "inline_argument": "a(n) \\:real.leq?:/ a(n \\.natural.+./ 1)",
-              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{a_{n} \\leq a_{\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n + 1}}}",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{a(n) \\leq a(\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n + 1})}",
               "inline_type_info": [
                 {
                   "depth": 0,

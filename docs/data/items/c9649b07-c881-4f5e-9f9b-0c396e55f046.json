@@ -1,5 +1,5 @@
 {
-  "id": "c9649b07-c881-4f5e-9f9b-0c396e66f046",
+  "id": "c9649b07-c881-4f5e-9f9b-0c396e55f046",
   "kind": "Declares",
   "definition_keys": [
     "5c7265616c2e73657175656e6365"
@@ -8,24 +8,24 @@
   "heading_latex": "\\textrm{real sequence}",
   "body_text": null,
   "page": null,
-  "source": "[\\real.sequence]\nDeclares: S ::= a(n_)\nspecifies: a is \\function:on{\\naturals}:to{\\reals}\nDocumented:\n. called: \"real sequence\"\n. writing: a(n)\n  as: \"a?_{n?}\"\n. writing: a(n_)\n  as: \"\\left\\{ a?_{n_?} \\right\\}_{n_?=1}^{\\infty}\"\n. description: \"A sequence of real numbers $\\{a_n\\}_{n=1}^\\infty$.\"\nId: \"c9649b07-c881-4f5e-9f9b-0c396e66f046\"",
+  "source": "[\\real.sequence]\nDeclares: X ::= x(i_)\nspecifies: X is \\function:on{\\naturals}:to{\\reals}\nDocumented:\n. called: \"real sequence\"\n. writing: x(i)\n  as: \"x?_{i?}\"\n. writing: x(i_)\n  as: \"\\left\\{ x?_{i_?} \\right\\}_{i_?=1}^{\\infty}\"\n. description: \"A sequence of real numbers $\\{x_i\\}_{i=1}^\\infty$.\"\nId: \"c9649b07-c881-4f5e-9f9b-0c396e55f046\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "S ::= a(n_)",
-      "inline_latex": "S ::= \\left\\{ a_{n} \\right\\}_{n=1}^{\\infty}",
+      "inline_argument": "X ::= x(i_)",
+      "inline_latex": "X ::= \\left\\{ x_{i} \\right\\}_{i=1}^{\\infty}",
       "arguments": []
     },
     {
       "label": "specifies",
-      "inline_argument": "a is \\function:on{\\naturals}:to{\\reals}",
-      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{a \\: : \\: \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}} \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
+      "inline_argument": "X is \\function:on{\\naturals}:to{\\reals}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{X \\: : \\: \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}} \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "a is \\function:on{\\naturals}:to{\\reals}",
+          "text": "X is \\function:on{\\naturals}:to{\\reals}",
           "types": [
-            "asserts a is \\function:on{\\naturals}:to{\\reals}"
+            "asserts X is \\function:on{\\naturals}:to{\\reals}"
           ]
         }
       ],
@@ -54,13 +54,13 @@
           "sections": [
             {
               "label": "writing",
-              "inline_argument": "a(n)",
-              "inline_latex": "a_{n}",
+              "inline_argument": "x(i)",
+              "inline_latex": "x_{i}",
               "arguments": []
             },
             {
               "label": "as",
-              "inline_argument": "\"a?_{n?}\"",
+              "inline_argument": "\"x?_{i?}\"",
               "inline_latex": null,
               "arguments": []
             }
@@ -72,13 +72,13 @@
           "sections": [
             {
               "label": "writing",
-              "inline_argument": "a(n_)",
-              "inline_latex": "\\left\\{ a_{n} \\right\\}_{n=1}^{\\infty}",
+              "inline_argument": "x(i_)",
+              "inline_latex": "\\left\\{ x_{i} \\right\\}_{i=1}^{\\infty}",
               "arguments": []
             },
             {
               "label": "as",
-              "inline_argument": "\"\\left\\{ a?_{n_?} \\right\\}_{n_?=1}^{\\infty}\"",
+              "inline_argument": "\"\\left\\{ x?_{i_?} \\right\\}_{i_?=1}^{\\infty}\"",
               "inline_latex": null,
               "arguments": []
             }
@@ -100,7 +100,7 @@
     },
     {
       "label": "Id",
-      "inline_argument": "\"c9649b07-c881-4f5e-9f9b-0c396e66f046\"",
+      "inline_argument": "\"c9649b07-c881-4f5e-9f9b-0c396e55f046\"",
       "inline_latex": null,
       "arguments": []
     }

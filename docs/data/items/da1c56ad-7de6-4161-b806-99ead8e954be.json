@@ -19,7 +19,7 @@
     {
       "label": "given",
       "inline_argument": "S ::= a(n_) is \\real.sequence",
-      "inline_latex": "S ::= \\left\\{ a_{n} \\right\\}_{n=1}^{\\infty} \\textrm{ is } \\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+      "inline_latex": "S ::= a(n) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
       "inline_type_info": [
         {
           "depth": 0,

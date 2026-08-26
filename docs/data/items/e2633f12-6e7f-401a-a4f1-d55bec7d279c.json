@@ -13,7 +13,7 @@
     {
       "label": "Refines",
       "inline_argument": "S ::= a(n_)",
-      "inline_latex": "S ::= \\left\\{ a_{n} \\right\\}_{n=1}^{\\infty} \\textrm{ is } \\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+      "inline_latex": "S ::= a(n) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
       "arguments": []
     },
     {
@@ -82,7 +82,7 @@
                     {
                       "label": "then",
                       "inline_argument": "\\real.abs(a(n)) \\:real.leq?:/ M",
-                      "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| a_{n} \\right|} \\leq M}",
+                      "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| a(n) \\right|} \\leq M}",
                       "inline_type_info": [
                         {
                           "depth": 0,

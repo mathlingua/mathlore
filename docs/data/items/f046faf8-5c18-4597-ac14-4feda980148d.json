@@ -187,7 +187,7 @@
                             {
                               "label": "then",
                               "inline_argument": "\\real.abs(a(n) \\.real.-./ L) \\:real.less?:/ epsilon",
-                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{a_{n} - L} \\right|} < \\epsilon}",
+                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{a(n) - L} \\right|} < \\epsilon}",
                               "inline_type_info": [
                                 {
                                   "depth": 0,
