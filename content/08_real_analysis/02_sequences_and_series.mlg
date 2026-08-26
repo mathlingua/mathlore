@@ -13,16 +13,16 @@ Id: "ce15af9b-016e-4053-ab26-af72a29c45a6"
 
 
 [\real.sequence]
-Declares: S ::= a(n_)
-specifies: a is \function:on{\naturals}:to{\reals}
+Declares: X ::= x(i_)
+specifies: X is \function:on{\naturals}:to{\reals}
 Documented:
 . called: "real sequence"
-. writing: a(n)
-  as: "a?_{n?}"
-. writing: a(n_)
-  as: "\left\{ a?_{n_?} \right\}_{n_?=1}^{\infty}"
-. description: "A sequence of real numbers $\{a_n\}_{n=1}^\infty$."
-Id: "c9649b07-c881-4f5e-9f9b-0c396e66f046"
+. writing: x(i)
+  as: "x?_{i?}"
+. writing: x(i_)
+  as: "\left\{ x?_{i_?} \right\}_{i_?=1}^{\infty}"
+. description: "A sequence of real numbers $\{x_i\}_{i=1}^\infty$."
+Id: "c9649b07-c881-4f5e-9f9b-0c396e55f046"
 
 
 SectionTitle: "Convergence and Cauchy Criteria"
