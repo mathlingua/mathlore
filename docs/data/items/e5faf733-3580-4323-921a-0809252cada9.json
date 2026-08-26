@@ -1,0 +1,69 @@
+{
+  "id": "e5faf733-3580-4323-921a-0809252cada9",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c636f6d706c65782e6d6f64756c7573"
+  ],
+  "heading": "\\complex.modulus(z_)",
+  "heading_latex": "\\textrm{modulus of }z\\quad\\htmlClass{mlg-title-written}{\\left| z \\right|}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\complex.modulus(z_)]\nDefines: r is \\real\nDocumented:\n. called: \"modulus of $z_?$\"\n. written: \"\\left| z_? \\right|\"\n. description: \"The modulus (absolute value)\n                $|z| = \\sqrt{\\operatorname{Re}(z)^2 + \\operatorname{Im}(z)^2}$.\"\nId: \"e5faf733-3580-4323-921a-0809252cada9\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "r is \\real",
+      "inline_latex": "r \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"modulus of $z_?$\"",
+              "inline_latex": "\\textrm{modulus of }z",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\left| z_? \\right|\"",
+              "inline_latex": "\\left| z \\right|",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e5faf733-3580-4323-921a-0809252cada9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

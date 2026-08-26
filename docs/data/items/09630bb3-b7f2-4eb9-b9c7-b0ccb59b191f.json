@@ -1,0 +1,57 @@
+{
+  "id": "09630bb3-b7f2-4eb9-b9c7-b0ccb59b191f",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c636f6d706c65782e6f6e65"
+  ],
+  "heading": "\\complex.one",
+  "heading_latex": "\\textrm{complex one}\\quad\\htmlClass{mlg-title-written}{1}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\complex.one]\nDefines: o := \\complex.numbers..1 is \\complex\nDocumented:\n. called: \"complex one\"\n. written: \"1\"\nId: \"09630bb3-b7f2-4eb9-b9c7-b0ccb59b191f\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "o := \\complex.numbers..1 is \\complex",
+      "inline_latex": "o := \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..1 \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"complex one\"",
+              "inline_latex": "\\textrm{complex one}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"1\"",
+              "inline_latex": "1",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"09630bb3-b7f2-4eb9-b9c7-b0ccb59b191f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

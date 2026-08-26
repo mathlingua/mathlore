@@ -1,0 +1,112 @@
+Title: "Linear Transformations"
+Id: "165a0b80-16b8-4616-9d9d-95efe4751d2d"
+
+
+Text: "A linear transformation is a function between vector spaces over the same
+       field that preserves vector addition and scalar multiplication. Linear
+       maps are the structure-preserving morphisms of linear algebra."
+Id: "4467454a-53b1-4a53-b40f-76086fdf6fbe"
+
+
+SectionTitle: "Linear Maps"
+Id: "bb7bb487-0b2a-4844-bafe-31c3d02c3f4d"
+
+
+[\linear.map:from{V}:to{W}]
+Declares: T(v__)
+using:
+. F is \field
+. V is \vector.space:over{F}
+. W is \vector.space:over{F}
+when:
+. V is \set
+. W is \set
+specifies: T is \function:on{V}:to{W}
+Documented:
+. called: "linear map from $V?$ to $W?$"
+. description: "A linear transformation $T : V \to W$ is a map preserving vector
+                addition and scalar multiplication."
+Id: "e18d1a96-65a7-42f8-9f22-8458b4aab35f"
+
+
+SectionTitle: "Kernel and Image"
+Id: "a86d1afc-c089-469e-ac6c-dcbd2e42e696"
+
+
+Text: "The kernel of a linear map consists of all vectors that are mapped to the
+       zero vector."
+Id: "ab265e43-99d4-4a94-bbcc-11ccc4490b62"
+
+
+[\kernel:of{T(v__)}]
+Defines: K is \set
+using:
+. V is \set
+. W is \set
+when: T is \function:on{V}:to{W}
+Documented:
+. called: "kernel of $T?$"
+. written: "\ker(T?)"
+. description: "The kernel $\ker(T) = \{v \in V \mid T(v) = 0_W\}$ is a subspace
+                of $V$."
+Id: "75e0201a-11d9-4c46-8b45-447b6610ca15"
+
+
+Text: "The image of a linear map is the subspace of all output vectors attained
+       by $T$."
+Id: "844e6471-8710-46bd-acde-bffc5b914a93"
+
+
+[\image:of{T(v__)}]
+Defines: Im is \set
+using:
+. V is \set
+. W is \set
+when: T is \function:on{V}:to{W}
+Documented:
+. called: "image of $T?$"
+. written: "\operatorname{im}(T?)"
+. description: "The image $\operatorname{im}(T) = \{T(v) \mid v \in V\}$ is a
+                subspace of $W$."
+Id: "fa8a1bfb-bd31-4f60-8b55-02e1f4e878f7"
+
+
+SectionTitle: "Isomorphisms and Rank-Nullity"
+Id: "bf47d72c-46ac-41b4-874d-89923f888495"
+
+
+[\(isomorphic)::vector.space:over{F}]
+Refines: V
+when: F is \field
+specifies: V is \vector.space:over{F}
+satisfies:
+. exists: W is \vector.space:over{F}
+  suchThat:
+  . exists: T(v__) is \linear.map:from{V}:to{W}
+    suchThat: T is? \(bijective)::function:?on{V}:?to{W}
+Documented:
+. adjective: "isomorphic"
+. description: "Two vector spaces are isomorphic if there exists a bijective
+                linear transformation between them."
+Id: "d1239479-6b9d-429a-b3e5-2e70a1529638"
+
+
+Text: "The Fundamental Theorem of Linear Maps relates the dimensions of the
+       kernel, image, and domain."
+Id: "0fd6e4c3-760e-41e1-a76d-86b9f5f12a39"
+
+
+[\rank.nullity.theorem]
+Theorem:
+given:
+. V is \set
+. W is \set
+. T(v__) is \function:on{V}:to{W}
+then:
+. exists: d1, d2, d3 is \natural
+  suchThat: d1 \.natural.+./ d2 = d3
+Documented:
+. called: "Rank-Nullity Theorem"
+. description: "For any linear transformation on a finite-dimensional space,
+                $\dim(\ker T) + \dim(\operatorname{im} T) = \dim(V)$."
+Id: "13696819-0077-4466-954d-be89bc6a62af"

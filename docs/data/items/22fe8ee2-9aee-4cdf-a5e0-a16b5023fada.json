@@ -1,0 +1,27 @@
+{
+  "id": "22fe8ee2-9aee-4cdf-a5e0-a16b5023fada",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A basis is a linearly independent subset that spans the entire vector\nspace."
+  },
+  "source": "Text: \"A basis is a linearly independent subset that spans the entire vector\n       space.\"\nId: \"22fe8ee2-9aee-4cdf-a5e0-a16b5023fada\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A basis is a linearly independent subset that spans the entire vector\n       space.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"22fe8ee2-9aee-4cdf-a5e0-a16b5023fada\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

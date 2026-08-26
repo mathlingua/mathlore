@@ -1,0 +1,141 @@
+{
+  "id": "ab389a4a-5187-4af5-b2f3-c62e0c3b08db",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e6d61747269782e2a2e2f"
+  ],
+  "heading": "A(i_, k_) \\.matrix.*./ B(k_, j_)",
+  "heading_latex": "A(i, k)\\textrm{ times }B(k, j)\\quad\\htmlClass{mlg-title-written}{A(i, k) B(k, j)}",
+  "body_text": null,
+  "page": null,
+  "source": "[A(i_, k_) \\.matrix.*./ B(k_, j_)]\nDefines: C(i_, j_) is \\matrix:of.dim{m, p}:over{F}\nusing:\n. m, n, p is \\natural\n. F is \\field\nwhen:\n. A is \\matrix:of.dim{m, n}:over{F}\n. B is \\matrix:of.dim{n, p}:over{F}\nDocumented:\n. called: \"$A?$ times $B?$\"\n. written: \"A? B?\"\n. description: \"Matrix multiplication $C = AB$, where\n                $C_{i,j} = \\sum_k A_{i,k} B_{k,j}$.\"\nId: \"ab389a4a-5187-4af5-b2f3-c62e0c3b08db\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "C(i_, j_) is \\matrix:of.dim{m, p}:over{F}",
+      "inline_latex": "C(i, j) \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }m \\times p\\textrm{ over }F}",
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "m, n, p is \\natural",
+          "latex": "m, n, p \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "m, n, p is \\natural",
+              "types": [
+                "asserts m is \\natural",
+                "asserts n is \\natural",
+                "asserts p is \\natural"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "F is \\field",
+          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "F is \\field",
+              "types": [
+                "asserts F is \\field"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A is \\matrix:of.dim{m, n}:over{F}",
+          "latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }m \\times n\\textrm{ over }F}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "A is \\matrix:of.dim{m, n}:over{F}",
+              "types": [
+                "asserts A is \\matrix:of.dim{m,n}:over{F}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "B is \\matrix:of.dim{n, p}:over{F}",
+          "latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }n \\times p\\textrm{ over }F}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "B is \\matrix:of.dim{n, p}:over{F}",
+              "types": [
+                "asserts B is \\matrix:of.dim{n,p}:over{F}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$A?$ times $B?$\"",
+              "inline_latex": "A\\textrm{ times }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? B?\"",
+              "inline_latex": "A B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ab389a4a-5187-4af5-b2f3-c62e0c3b08db\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

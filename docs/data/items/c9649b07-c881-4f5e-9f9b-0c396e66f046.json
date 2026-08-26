@@ -1,0 +1,108 @@
+{
+  "id": "c9649b07-c881-4f5e-9f9b-0c396e66f046",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c7265616c2e73657175656e6365"
+  ],
+  "heading": "\\real.sequence",
+  "heading_latex": "\\textrm{real sequence}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.sequence]\nDeclares: S ::= a(n_)\nspecifies: a is \\function:on{\\naturals..N}:to{\\reals..R}\nDocumented:\n. called: \"real sequence\"\n. writing: a(n)\n  as: \"a?_{n?}\"\n. writing: a(n_)\n  as: \"\\left\\{ a?_{n_?} \\right\\}_{n_?=1}^{\\infty}\"\n. description: \"A sequence of real numbers $\\{a_n\\}_{n=1}^\\infty$.\"\nId: \"c9649b07-c881-4f5e-9f9b-0c396e66f046\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "S ::= a(n_)",
+      "inline_latex": "S ::= \\left\\{ a_{n} \\right\\}_{n=1}^{\\infty}",
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": "a is \\function:on{\\naturals..N}:to{\\reals..R}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{a \\: : \\: \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..N \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "a is \\function:on{\\naturals..N}:to{\\reals..R}",
+          "types": [
+            "asserts a is \\function:on{\\naturals..N}:to{\\reals..R}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"real sequence\"",
+              "inline_latex": "\\textrm{real sequence}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "writing",
+              "inline_argument": "a(n)",
+              "inline_latex": "a_{n}",
+              "arguments": []
+            },
+            {
+              "label": "as",
+              "inline_argument": "\"a?_{n?}\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "writing",
+              "inline_argument": "a(n_)",
+              "inline_latex": "\\left\\{ a_{n} \\right\\}_{n=1}^{\\infty}",
+              "arguments": []
+            },
+            {
+              "label": "as",
+              "inline_argument": "\"\\left\\{ a?_{n_?} \\right\\}_{n_?=1}^{\\infty}\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c9649b07-c881-4f5e-9f9b-0c396e66f046\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

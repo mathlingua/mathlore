@@ -1,0 +1,14 @@
+{
+  "id": "bddc1b83-707b-40f9-9b7f-c03513735f35-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function is differentiable on $U$ if its derivative exists at\nevery point of $U$."
+  },
+  "source": "",
+  "sections": []
+}

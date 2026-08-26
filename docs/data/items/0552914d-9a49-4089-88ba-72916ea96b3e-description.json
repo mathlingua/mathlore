@@ -1,0 +1,14 @@
+{
+  "id": "0552914d-9a49-4089-88ba-72916ea96b3e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The determinant $\\det(A)$ is the unique alternating multilinear\nfunction of the columns mapping $I_n$ to $1$."
+  },
+  "source": "",
+  "sections": []
+}

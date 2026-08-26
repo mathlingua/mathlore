@@ -1,0 +1,84 @@
+{
+  "id": "d9cbb77c-c12f-40ab-9a47-2e72f8efc719",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7365726965732e73756d3a6f66"
+  ],
+  "heading": "\\series.sum:of{S}",
+  "heading_latex": "\\textrm{sum of series }S\\quad\\htmlClass{mlg-title-written}{\\sum_{n=1}^{\\infty} S}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\series.sum:of{S}]\nDefines: s is \\real\nwhen: S is \\real.sequence\nDocumented:\n. called: \"sum of series $S?$\"\n. written: \"\\sum_{n=1}^{\\infty} S?\"\n. description: \"The sum of the infinite series.\"\nId: \"d9cbb77c-c12f-40ab-9a47-2e72f8efc719\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "s is \\real",
+      "inline_latex": "s \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "S is \\real.sequence",
+      "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "S is \\real.sequence",
+          "types": [
+            "asserts S is \\real.sequence"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"sum of series $S?$\"",
+              "inline_latex": "\\textrm{sum of series }S",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\sum_{n=1}^{\\infty} S?\"",
+              "inline_latex": "\\sum_{n=1}^{\\infty} S",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d9cbb77c-c12f-40ab-9a47-2e72f8efc719\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

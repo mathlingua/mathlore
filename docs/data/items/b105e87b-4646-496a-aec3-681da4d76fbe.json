@@ -1,0 +1,27 @@
+{
+  "id": "b105e87b-4646-496a-aec3-681da4d76fbe",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A vector space is an algebraic system consisting of a set of vectors that\ncan be added together and scaled by elements of an underlying field\n(scalars). The axioms guarantee that vector addition forms an abelian\ngroup and that scalar multiplication distributes over addition."
+  },
+  "source": "Text: \"A vector space is an algebraic system consisting of a set of vectors that\n       can be added together and scaled by elements of an underlying field\n       (scalars). The axioms guarantee that vector addition forms an abelian\n       group and that scalar multiplication distributes over addition.\"\nId: \"b105e87b-4646-496a-aec3-681da4d76fbe\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A vector space is an algebraic system consisting of a set of vectors that\n       can be added together and scaled by elements of an underlying field\n       (scalars). The axioms guarantee that vector addition forms an abelian\n       group and that scalar multiplication distributes over addition.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b105e87b-4646-496a-aec3-681da4d76fbe\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

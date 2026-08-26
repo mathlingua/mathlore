@@ -1,0 +1,14 @@
+{
+  "id": "ba6ab675-4730-4cee-905c-ec081e05d378-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The integral of a holomorphic function along any closed contour\nin a simply connected domain is zero."
+  },
+  "source": "",
+  "sections": []
+}

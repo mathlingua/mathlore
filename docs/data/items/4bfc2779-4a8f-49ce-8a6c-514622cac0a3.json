@@ -1,0 +1,149 @@
+{
+  "id": "4bfc2779-4a8f-49ce-8a6c-514622cac0a3",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c766563746f723a696e"
+  ],
+  "heading": "\\vector:in{V ::= (X, +, *, 0)}",
+  "heading_latex": "\\textrm{vector in }V",
+  "parameter_destructurings": [
+    "V ::= \\left(X, +, \\ast, 0\\right)"
+  ],
+  "body_text": null,
+  "page": null,
+  "source": "[\\vector:in{V ::= (X, +, *, 0)}]\nDeclares: v \"in\" X\nusing: F is \\field\nwhen: V is \\vector.space:over{F}\nEnables:\n. capability: u_ [+] v_ :=> u_ |V.+| v_\n  written: \"u_? +? v_?\"\n. capability: c_ [*] v_ :=> c_ |V.*| v_\n  written: \"c_? *? v_?\"\nDocumented:\n. called: \"vector in $V?$\"\n. description: \"An element of a vector space is called a vector.\"\nId: \"4bfc2779-4a8f-49ce-8a6c-514622cac0a3\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "v \"in\" X",
+      "inline_latex": "v \\in X",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "v \"in\" X",
+          "types": [
+            "asserts v \"in\" X"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "X",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": "F is \\field",
+      "inline_latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "F is \\field",
+          "types": [
+            "asserts F is \\field"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "V is \\vector.space:over{F}",
+      "inline_latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "V is \\vector.space:over{F}",
+          "types": [
+            "asserts V is \\vector.space:over{F}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "u_ [+] v_ :=> u_ |V.+| v_",
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "written",
+              "inline_argument": "\"u_? +? v_?\"",
+              "inline_latex": "u +? v",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "c_ [*] v_ :=> c_ |V.*| v_",
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "written",
+              "inline_argument": "\"c_? *? v_?\"",
+              "inline_latex": "c *? v",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"vector in $V?$\"",
+              "inline_latex": "\\textrm{vector in }V",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4bfc2779-4a8f-49ce-8a6c-514622cac0a3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

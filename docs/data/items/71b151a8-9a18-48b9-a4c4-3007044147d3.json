@@ -1,0 +1,27 @@
+{
+  "id": "71b151a8-9a18-48b9-a4c4-3007044147d3",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Limits and Continuity"
+  },
+  "source": "Title: \"Limits and Continuity\"\nId: \"71b151a8-9a18-48b9-a4c4-3007044147d3\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Limits and Continuity\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"71b151a8-9a18-48b9-a4c4-3007044147d3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

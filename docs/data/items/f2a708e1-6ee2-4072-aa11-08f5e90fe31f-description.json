@@ -1,0 +1,14 @@
+{
+  "id": "f2a708e1-6ee2-4072-aa11-08f5e90fe31f-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function is holomorphic on $U$ if it is complex-differentiable\nat every point in $U$."
+  },
+  "source": "",
+  "sections": []
+}

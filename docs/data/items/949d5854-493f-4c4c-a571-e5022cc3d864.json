@@ -1,0 +1,87 @@
+{
+  "id": "949d5854-493f-4c4c-a571-e5022cc3d864",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c6c696e6561726c792e696e646570656e64656e743a3a7375627365743a6f66"
+  ],
+  "heading": "\\(linearly.independent)::subset:of{V}",
+  "heading_latex": "\\textrm{linearly independent}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(linearly.independent)::subset:of{V}]\nRefines: S\nwhen: V is \\set\nspecifies: S is \\set\nDocumented:\n. adjective: \"linearly independent\"\n. description: \"A set of vectors is linearly independent if the zero vector\n                cannot be formed by any nontrivial linear combination.\"\nId: \"949d5854-493f-4c4c-a571-e5022cc3d864\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "S",
+      "inline_latex": "S",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "V is \\set",
+      "inline_latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "V is \\set",
+          "types": [
+            "asserts V is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": "S is \\set",
+      "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "S is \\set",
+          "types": [
+            "asserts S is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"linearly independent\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"949d5854-493f-4c4c-a571-e5022cc3d864\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

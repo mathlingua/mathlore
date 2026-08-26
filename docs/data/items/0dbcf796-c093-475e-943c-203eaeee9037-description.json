@@ -1,0 +1,14 @@
+{
+  "id": "0dbcf796-c093-475e-943c-203eaeee9037-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function satisfying Laplace's equation $\\nabla^2 u = 0$. The\nreal and imaginary components of any holomorphic function are\nharmonic."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "6daad43c-b638-4a51-b600-4c17a3d9a066",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e7265616c2e2d2e2f"
+  ],
+  "heading": "a_ \\.real.-./ b_",
+  "heading_latex": "a\\textrm{ minus }b\\quad\\htmlClass{mlg-title-written}{a - b}",
+  "body_text": null,
+  "page": null,
+  "source": "[a_ \\.real.-./ b_]\nDefines: a_ - b_ := \\reals..`-`(a_, b_) is \\real\nDocumented:\n. called: \"$a_?$ minus $b_?$\"\n. written: \"a_? - b_?\"\nId: \"6daad43c-b638-4a51-b600-4c17a3d9a066\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "a_ - b_ := \\reals..`-`(a_, b_) is \\real",
+      "inline_latex": "a - b := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..-(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$a_?$ minus $b_?$\"",
+              "inline_latex": "a\\textrm{ minus }b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a_? - b_?\"",
+              "inline_latex": "a - b",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6daad43c-b638-4a51-b600-4c17a3d9a066\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,840 @@
+{
+  "id": "aeec4453-1166-47cd-a5f4-3eed295b3d15",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265616c73"
+  ],
+  "heading": "\\reals",
+  "heading_latex": "\\textrm{the reals}\\quad\\htmlClass{mlg-title-written}{\\mathbb{R}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\reals]\nDefines: Rb ::= (R, 0, 1, +, *, -, /, <=, neg(x_))\nabstractly:\nspecifies:\n. R is \\set\n. 0 \"in\" R\n. 1 \"in\" R\n. + is \\binary.operation:on{R}\n. * is \\binary.operation:on{R}\n. - is \\binary.operation:on{R}\n. / is \\binary.operation:on{R}\n. <= is \\total.order:on{R}\n. neg is \\function:on{R}:to{R}\nexpresses:\n. 0 != 1\n. forAll: a, b, c \"in\" R\n  then:\n  . (a + b) + c = a + (b + c)\n  . a + b = b + a\n  . a + 0 = a\n  . (a * b) * c = a * (b * c)\n  . a * b = b * a\n  . a * 1 = a\n  . a * (b + c) = (a * b) + (a * c)\nEnables:\n. capability: x_ \"in\" Rb :-> x_ is \\real\n. view:\n  as: S := R is \\set\nDocumented:\n. called: \"the reals\"\n. written: \"\\mathbb{R}\"\n. description: \"The real numbers $(\\mathbb{R}, 0, 1, +, \\cdot, \\le)$ as a\n                complete ordered field.\"\nId: \"aeec4453-1166-47cd-a5f4-3eed295b3d15\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "Rb ::= (R, 0, 1, +, *, -, /, <=, neg(x_))",
+      "inline_latex": "\\mathbb{R} ::= \\left(R, 0, 1, +, \\ast, -, /, <=, neg(x)\\right)",
+      "arguments": []
+    },
+    {
+      "label": "abstractly",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "R is \\set",
+          "latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R is \\set",
+              "types": [
+                "asserts R is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "0 \"in\" R",
+          "latex": "0 \\in R",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 \"in\" R",
+              "types": [
+                "asserts 0 \"in\" R"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "R",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "1 \"in\" R",
+          "latex": "1 \\in R",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "1 \"in\" R",
+              "types": [
+                "asserts 1 \"in\" R"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "R",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "+ is \\binary.operation:on{R}",
+          "latex": "+ \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }R}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "+ is \\binary.operation:on{R}",
+              "types": [
+                "asserts + is \\binary.operation:on{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "* is \\binary.operation:on{R}",
+          "latex": "\\ast \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }R}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "* is \\binary.operation:on{R}",
+              "types": [
+                "asserts * is \\binary.operation:on{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "- is \\binary.operation:on{R}",
+          "latex": "- \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }R}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "- is \\binary.operation:on{R}",
+              "types": [
+                "asserts - is \\binary.operation:on{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "/ is \\binary.operation:on{R}",
+          "latex": "/ \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }R}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "/ is \\binary.operation:on{R}",
+              "types": [
+                "asserts / is \\binary.operation:on{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "<= is \\total.order:on{R}",
+          "latex": "<= \\textrm{ is } \\htmlData{mlg-ref=5c746f74616c2e6f726465723a6f6e}{\\textrm{total order on }R}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "<= is \\total.order:on{R}",
+              "types": [
+                "asserts <= is \\total.order:on{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "neg is \\function:on{R}:to{R}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{neg \\: : \\: R \\rightarrow R}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "neg is \\function:on{R}:to{R}",
+              "types": [
+                "asserts neg is \\function:on{R}:to{R}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "0 != 1",
+          "latex": "0 \\ne 1",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 != 1",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "0",
+              "types": [
+                "\"in\" R"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "1",
+              "types": [
+                "\"in\" R"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a, b, c \"in\" R",
+              "inline_latex": "a, b, c \\in R",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a, b, c \"in\" R",
+                  "types": [
+                    "asserts a \"in\" R",
+                    "asserts b \"in\" R",
+                    "asserts c \"in\" R"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "R",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "(a + b) + c = a + (b + c)",
+                  "latex": "\\left(a + b\\right) + c = a + \\left(b + c\\right)",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "(a + b) + c = a + (b + c)",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a + b + c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a + b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a + b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a + b + c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b + c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "b + c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "a + b = b + a",
+                  "latex": "a + b = b + a",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a + b = b + a",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a + b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "b + a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "a + 0 = a",
+                  "latex": "a + 0 = a",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a + 0 = a",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a + 0",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "0",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "(a * b) * c = a * (b * c)",
+                  "latex": "\\left(a \\ast b\\right) \\ast c = a \\ast \\left(b \\ast c\\right)",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "(a * b) * c = a * (b * c)",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b * c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b * c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b * c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "b * c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "a * b = b * a",
+                  "latex": "a \\ast b = b \\ast a",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a * b = b * a",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "b * a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "a * 1 = a",
+                  "latex": "a \\ast 1 = a",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a * 1 = a",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * 1",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "1",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "a * (b + c) = (a * b) + (a * c)",
+                  "latex": "a \\ast \\left(b + c\\right) = \\left(a \\ast b\\right) + \\left(a \\ast c\\right)",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a * (b + c) = (a * b) + (a * c)",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b + c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b + c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "b + c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b + a * c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a * c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a * c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "x_ \"in\" Rb :-> x_ is \\real",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "view",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "as",
+              "inline_argument": "S := R is \\set",
+              "inline_latex": "S := R \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"the reals\"",
+              "inline_latex": "\\textrm{the reals}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\mathbb{R}\"",
+              "inline_latex": "\\mathbb{R}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"aeec4453-1166-47cd-a5f4-3eed295b3d15\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

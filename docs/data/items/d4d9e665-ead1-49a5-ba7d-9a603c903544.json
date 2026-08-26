@@ -1,0 +1,27 @@
+{
+  "id": "d4d9e665-ead1-49a5-ba7d-9a603c903544",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Subspaces and Span"
+  },
+  "source": "SectionTitle: \"Subspaces and Span\"\nId: \"d4d9e665-ead1-49a5-ba7d-9a603c903544\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Subspaces and Span\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d4d9e665-ead1-49a5-ba7d-9a603c903544\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

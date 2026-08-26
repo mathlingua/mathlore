@@ -1,0 +1,27 @@
+{
+  "id": "800b7c32-41b4-4c27-a8d6-bb213da36a62",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Limits and continuity capture the notion of approximation and unbroken\nchange in real-valued functions. The $\\epsilon$-$\\delta$ formalism\nprovides the precise criterion for functional proximity."
+  },
+  "source": "Text: \"Limits and continuity capture the notion of approximation and unbroken\n       change in real-valued functions. The $\\epsilon$-$\\delta$ formalism\n       provides the precise criterion for functional proximity.\"\nId: \"800b7c32-41b4-4c27-a8d6-bb213da36a62\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Limits and continuity capture the notion of approximation and unbroken\n       change in real-valued functions. The $\\epsilon$-$\\delta$ formalism\n       provides the precise criterion for functional proximity.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"800b7c32-41b4-4c27-a8d6-bb213da36a62\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

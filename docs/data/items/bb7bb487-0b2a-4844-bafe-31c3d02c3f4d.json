@@ -1,0 +1,27 @@
+{
+  "id": "bb7bb487-0b2a-4844-bafe-31c3d02c3f4d",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Linear Maps"
+  },
+  "source": "SectionTitle: \"Linear Maps\"\nId: \"bb7bb487-0b2a-4844-bafe-31c3d02c3f4d\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Linear Maps\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"bb7bb487-0b2a-4844-bafe-31c3d02c3f4d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

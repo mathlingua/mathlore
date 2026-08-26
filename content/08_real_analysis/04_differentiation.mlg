@@ -1,0 +1,83 @@
+Title: "Differentiation and Integration"
+Id: "5c64e9bc-323f-470e-b56b-3812afd2a703"
+
+
+Text: "Differential calculus quantifies the instantaneous rate of change of a
+       function, while integral calculus formalizes the accumulation of
+       quantities and area. The Fundamental Theorem of Calculus establishes that
+       differentiation and integration are inverse processes."
+Id: "e33f5272-051b-41b6-af7f-e193d1108154"
+
+
+SectionTitle: "Differentiation"
+Id: "d3e7ecb7-d361-4548-bbd1-4cf6cee3a2b5"
+
+
+[\derivative:of{f}:at{x0}]
+Defines: d is \real
+when:
+. x0 is \\anything
+. f is \\anything
+Documented:
+. called: "derivative of $f?$ at $x0?$"
+. written: "f?'(x0?)"
+. description: "The derivative
+                $f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}$."
+Id: "a8704cca-424a-4f17-a321-d5c3725e2090"
+
+
+[\(differentiable)::real.function:on{U}]
+Refines: f
+when: U \:subset:/ \reals..R
+specifies: f is \function:on{U}:to{\reals..R}
+satisfies:
+. forAll: x0 "in" U
+  then:
+  . exists: d is \real
+    suchThat: d = \derivative:of{f}:at{x0}
+Documented:
+. adjective: "differentiable"
+. description: "A function is differentiable on $U$ if its derivative exists at
+                every point of $U$."
+Id: "bddc1b83-707b-40f9-9b7f-c03513735f35"
+
+
+SectionTitle: "The Mean Value Theorem"
+Id: "20b85fa7-bbfb-4518-b953-1ee73f9b3eb3"
+
+
+[\mean.value.theorem]
+Theorem:
+given:
+. a, b is \real
+. f is \function:on{\reals..R}:to{\reals..R}
+where:
+. a \:real.less?:/ b
+then:
+. exists: c is \real
+  suchThat:
+  . a \:real.less?:/ c
+  . c \:real.less?:/ b
+  . f(b) \.real.-./ f(a) = (\derivative:of{f}:at{c}) \.real.*./ (b \.real.-./ a)
+Documented:
+. called: "Mean Value Theorem"
+. description: "For differentiable $f$, there is a point $c \in (a, b)$ where
+                the instantaneous rate of change equals the average rate of
+                change."
+Id: "31c0c6c3-b04e-48c3-b6b3-37990aa819cd"
+
+
+SectionTitle: "Riemann Integration"
+Id: "d60a18d3-c041-4705-9663-6c5e3f2c31ab"
+
+
+[\riemann.integral:of{f}:on{a, b}]
+Defines: I is \real
+when:
+. a, b is \real
+. f is \function:on{\reals..R}:to{\reals..R}
+Documented:
+. called: "Riemann integral of $f?$ on $[a?, b?]$"
+. written: "\int_{a?}^{b?} f?(x) \, dx"
+. description: "The definite Riemann integral $\int_a^b f(x) dx$."
+Id: "06b220c2-ee50-4d69-8de7-c1cbbd81e3bb"

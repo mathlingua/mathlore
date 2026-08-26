@@ -1,0 +1,57 @@
+{
+  "id": "c6dc7fde-38f1-4e5b-a80a-2153567efe6f",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e7265616c2e2b2e2f"
+  ],
+  "heading": "a_ \\.real.+./ b_",
+  "heading_latex": "a\\textrm{ plus }b\\quad\\htmlClass{mlg-title-written}{a + b}",
+  "body_text": null,
+  "page": null,
+  "source": "[a_ \\.real.+./ b_]\nDefines: a_ + b_ := \\reals..`+`(a_, b_) is \\real\nDocumented:\n. called: \"$a_?$ plus $b_?$\"\n. written: \"a_? + b_?\"\nId: \"c6dc7fde-38f1-4e5b-a80a-2153567efe6f\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "a_ + b_ := \\reals..`+`(a_, b_) is \\real",
+      "inline_latex": "a + b := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..+(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$a_?$ plus $b_?$\"",
+              "inline_latex": "a\\textrm{ plus }b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a_? + b_?\"",
+              "inline_latex": "a + b",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c6dc7fde-38f1-4e5b-a80a-2153567efe6f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

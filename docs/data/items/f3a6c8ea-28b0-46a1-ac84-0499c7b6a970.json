@@ -1,0 +1,131 @@
+{
+  "id": "f3a6c8ea-28b0-46a1-ac84-0499c7b6a970",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c636c6f7365643a3a636f6d706c65782e706174683a6f6e"
+  ],
+  "heading": "\\(closed)::complex.path:on{a, b}",
+  "heading_latex": "\\textrm{closed}\\textrm{ }\\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(closed)::complex.path:on{a, b}]\nRefines: gamma\nwhen: a, b is \\real\nspecifies: gamma is \\complex.path:on{a, b}\nsatisfies: gamma(a) = gamma(b)\nDocumented:\n. adjective: \"closed\"\n. description: \"A complex path is closed if its endpoints coincide:\n                $\\gamma(a) = \\gamma(b)$.\"\nId: \"f3a6c8ea-28b0-46a1-ac84-0499c7b6a970\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "gamma",
+      "inline_latex": "gamma \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "a, b is \\real",
+      "inline_latex": "a, b \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "a, b is \\real",
+          "types": [
+            "asserts a is \\real",
+            "asserts b is \\real"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": "gamma is \\complex.path:on{a, b}",
+      "inline_latex": "gamma \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "gamma is \\complex.path:on{a, b}",
+          "types": [
+            "asserts gamma is \\complex.path:on{a,b}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": "gamma(a) = gamma(b)",
+      "inline_latex": "gamma(a) = gamma(b)",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "gamma(a) = gamma(b)",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "gamma(a)",
+          "types": [
+            "\"in\" \\complex.numbers..C"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "a",
+          "types": [
+            "is \\real"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "gamma(b)",
+          "types": [
+            "\"in\" \\complex.numbers..C"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "b",
+          "types": [
+            "is \\real"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"closed\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f3a6c8ea-28b0-46a1-ac84-0499c7b6a970\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

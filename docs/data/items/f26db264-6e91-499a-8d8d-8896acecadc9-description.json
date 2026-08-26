@@ -1,0 +1,14 @@
+{
+  "id": "f26db264-6e91-499a-8d8d-8896acecadc9-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A basis for $V$ is a linearly independent spanning set."
+  },
+  "source": "",
+  "sections": []
+}

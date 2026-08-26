@@ -1,0 +1,27 @@
+{
+  "id": "0fd6e4c3-760e-41e1-a76d-86b9f5f12a39",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The Fundamental Theorem of Linear Maps relates the dimensions of the\nkernel, image, and domain."
+  },
+  "source": "Text: \"The Fundamental Theorem of Linear Maps relates the dimensions of the\n       kernel, image, and domain.\"\nId: \"0fd6e4c3-760e-41e1-a76d-86b9f5f12a39\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The Fundamental Theorem of Linear Maps relates the dimensions of the\n       kernel, image, and domain.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0fd6e4c3-760e-41e1-a76d-86b9f5f12a39\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

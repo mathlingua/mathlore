@@ -1,0 +1,27 @@
+{
+  "id": "42e6f00e-b0dc-4e31-8070-31f87aaacb8b",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Holomorphic Functions and Cauchy-Riemann"
+  },
+  "source": "Title: \"Holomorphic Functions and Cauchy-Riemann\"\nId: \"42e6f00e-b0dc-4e31-8070-31f87aaacb8b\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Holomorphic Functions and Cauchy-Riemann\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"42e6f00e-b0dc-4e31-8070-31f87aaacb8b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "e1f3d3b0-7dd5-4d9d-bc94-62aa17e94846",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Paths and Contour Integrals"
+  },
+  "source": "SectionTitle: \"Paths and Contour Integrals\"\nId: \"e1f3d3b0-7dd5-4d9d-bc94-62aa17e94846\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Paths and Contour Integrals\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e1f3d3b0-7dd5-4d9d-bc94-62aa17e94846\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

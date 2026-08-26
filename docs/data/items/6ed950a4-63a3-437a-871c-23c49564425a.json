@@ -1,0 +1,135 @@
+{
+  "id": "6ed950a4-63a3-437a-871c-23c49564425a",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c656967656e76616c75653a6f66"
+  ],
+  "heading": "\\eigenvalue:of{A(i_, j_)}",
+  "heading_latex": "\\textrm{eigenvalue of }A(i, j)\\quad\\htmlClass{mlg-title-written}{\\lambda}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\eigenvalue:of{A(i_, j_)}]\nDeclares: lambda \"in\" F\nusing:\n. n is \\natural\n. F is \\field\nwhen: A is \\matrix:of.dim{n, n}:over{F}\nDocumented:\n. called: \"eigenvalue of $A?$\"\n. written: \"\\lambda\"\n. description: \"A scalar $\\lambda$ such that $Av = \\lambda v$ for some nonzero\n                vector $v$.\"\nId: \"6ed950a4-63a3-437a-871c-23c49564425a\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "lambda \"in\" F",
+      "inline_latex": "lambda \\in F",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "lambda \"in\" F",
+          "types": [
+            "asserts lambda \"in\" F"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "F",
+          "types": [
+            "is \\field"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "n is \\natural",
+          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "n is \\natural",
+              "types": [
+                "asserts n is \\natural"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "F is \\field",
+          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "F is \\field",
+              "types": [
+                "asserts F is \\field"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "when",
+      "inline_argument": "A is \\matrix:of.dim{n, n}:over{F}",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }n \\times n\\textrm{ over }F}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A is \\matrix:of.dim{n, n}:over{F}",
+          "types": [
+            "asserts A is \\matrix:of.dim{n,n}:over{F}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"eigenvalue of $A?$\"",
+              "inline_latex": "\\textrm{eigenvalue of }A",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\lambda\"",
+              "inline_latex": "\\lambda",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6ed950a4-63a3-437a-871c-23c49564425a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

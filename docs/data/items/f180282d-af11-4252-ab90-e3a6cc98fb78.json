@@ -1,0 +1,139 @@
+{
+  "id": "f180282d-af11-4252-ab90-e3a6cc98fb78",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7370616e3a6f663a696e"
+  ],
+  "heading": "\\span:of{S}:in{V}",
+  "heading_latex": "\\textrm{linear span of }S\\textrm{ in }V\\quad\\htmlClass{mlg-title-written}{\\operatorname{span}(S)}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\span:of{S}:in{V}]\nDefines: W is \\set\nusing:\n. F is \\field\n. V ::= (X, +, *, 0) is \\vector.space:over{F}\nwhen:\n. V is \\set\n. S is \\set\nDocumented:\n. called: \"linear span of $S?$ in $V?$\"\n. written: \"\\operatorname{span}(S?)\"\n. description: \"The linear span $\\operatorname{span}(S)$ is the set of all\n                linear combinations formed from elements of $S$.\"\nId: \"f180282d-af11-4252-ab90-e3a6cc98fb78\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "W is \\set",
+      "inline_latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "F is \\field",
+          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "F is \\field",
+              "types": [
+                "asserts F is \\field"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "V ::= (X, +, *, 0) is \\vector.space:over{F}",
+          "latex": "V ::= \\left(X, +, \\ast, 0\\right) \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "V ::= (X, +, *, 0) is \\vector.space:over{F}",
+              "types": [
+                "asserts V is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "V is \\set",
+          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "V is \\set",
+              "types": [
+                "asserts V is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "S is \\set",
+          "latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "S is \\set",
+              "types": [
+                "asserts S is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"linear span of $S?$ in $V?$\"",
+              "inline_latex": "\\textrm{linear span of }S\\textrm{ in }V",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{span}(S?)\"",
+              "inline_latex": "\\operatorname{span}(S)",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f180282d-af11-4252-ab90-e3a6cc98fb78\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

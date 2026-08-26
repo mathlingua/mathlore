@@ -1,0 +1,27 @@
+{
+  "id": "ad8cf71b-7b92-4811-8375-694f86854f97",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The Cauchy-Riemann System and Harmonicity"
+  },
+  "source": "SectionTitle: \"The Cauchy-Riemann System and Harmonicity\"\nId: \"ad8cf71b-7b92-4811-8375-694f86854f97\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The Cauchy-Riemann System and Harmonicity\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ad8cf71b-7b92-4811-8375-694f86854f97\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

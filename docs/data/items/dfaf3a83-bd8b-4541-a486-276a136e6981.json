@@ -1,0 +1,27 @@
+{
+  "id": "dfaf3a83-bd8b-4541-a486-276a136e6981",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Vector Spaces"
+  },
+  "source": "SectionTitle: \"Vector Spaces\"\nId: \"dfaf3a83-bd8b-4541-a486-276a136e6981\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Vector Spaces\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dfaf3a83-bd8b-4541-a486-276a136e6981\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

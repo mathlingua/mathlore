@@ -1,7 +1,11 @@
-
 Writing:
 . "phi :~> \varphi"
 . "omega :~> \omega"
 . "Xb :~> \mathbb{X}"
 . "Nb :~> \mathbb{N}"
+. "Zb :~> \mathbb{Z}"
+. "Rb :~> \mathbb{R}"
+. "Cb :~> \mathbb{C}"
+. "Fb :~> \mathbb{F}"
+. "Vb :~> \mathbb{V}"
 Id: "c51b2bbc-d8f1-406c-b7c8-317e5409a2d8"

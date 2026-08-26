@@ -1,0 +1,14 @@
+{
+  "id": "88fa45dd-3b56-49ae-8617-08fbab297577-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The trace $\\operatorname{tr}(A) = \\sum_{i=1}^n A_{i,i}$ is the\nsum of the diagonal elements."
+  },
+  "source": "",
+  "sections": []
+}

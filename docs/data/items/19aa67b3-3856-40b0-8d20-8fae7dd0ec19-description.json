@@ -1,0 +1,14 @@
+{
+  "id": "19aa67b3-3856-40b0-8d20-8fae7dd0ec19-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The coefficient $a_{-1}$ in the Laurent expansion of $f$ around\nisolated singularity $z_0$."
+  },
+  "source": "",
+  "sections": []
+}

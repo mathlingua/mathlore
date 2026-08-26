@@ -1,0 +1,151 @@
+{
+  "id": "da1c56ad-7de6-4161-b806-99ead8e954be",
+  "kind": "Theorem",
+  "definition_keys": [
+    "5c6361756368792e636f6d706c6574656e6573732e7468656f72656d"
+  ],
+  "heading": "\\cauchy.completeness.theorem",
+  "heading_latex": "\\textrm{Cauchy Completeness of the Real Numbers}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\cauchy.completeness.theorem]\nTheorem:\ngiven: S ::= a(n_) is \\real.sequence\nthen: S is? \\(cauchy)::real.sequence\niff:\n. exists: L is \\real\n  suchThat: \\converges.to{L}:for{S}\nDocumented:\n. called: \"Cauchy Completeness of the Real Numbers\"\n. description: \"In the real numbers, every Cauchy sequence converges to a limit.\"\nId: \"da1c56ad-7de6-4161-b806-99ead8e954be\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "S ::= a(n_) is \\real.sequence",
+      "inline_latex": "S ::= \\left\\{ a_{n} \\right\\}_{n=1}^{\\infty} \\textrm{ is } \\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "S ::= a(n_) is \\real.sequence",
+          "types": [
+            "asserts S is \\real.sequence"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": "S is? \\(cauchy)::real.sequence",
+      "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c6361756368793a3a7265616c2e73657175656e6365}{\\textrm{Cauchy}}\\textrm{ }\\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "S is? \\(cauchy)::real.sequence",
+          "types": [
+            "asserts S is \\cauchy::real.sequence"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "S",
+          "types": [
+            "is \\real.sequence"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "iff",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "L is \\real",
+              "inline_latex": "L \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "L is \\real",
+                  "types": [
+                    "asserts L is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": "\\converges.to{L}:for{S}",
+              "inline_latex": "\\htmlData{mlg-ref=5c636f6e7665726765732e746f3a666f72}{a_{n} \\to L}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "\\converges.to{L}:for{S}",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "L",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "S",
+                  "types": [
+                    "is \\real.sequence"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Cauchy Completeness of the Real Numbers\"",
+              "inline_latex": "\\textrm{Cauchy Completeness of the Real Numbers}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"da1c56ad-7de6-4161-b806-99ead8e954be\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

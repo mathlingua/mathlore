@@ -1,0 +1,403 @@
+{
+  "id": "f69d925b-5ae6-4969-9d22-4d4eeea90a08",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c756e69666f726d6c792e636f6e74696e756f75733a3a7265616c2e66756e6374696f6e3a6f6e"
+  ],
+  "heading": "\\(uniformly.continuous)::real.function:on{U}",
+  "heading_latex": "\\textrm{uniformly continuous}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(uniformly.continuous)::real.function:on{U}]\nRefines: f\nwhen: U \\:subset:/ \\reals..R\nspecifies: f is \\function:on{U}:to{\\reals..R}\nsatisfies:\n. forAll: eps is \\real\n  where: eps \\:real.greater?:/ \\real.zero\n  then:\n  . exists: delta is \\real\n    suchThat:\n    . delta \\:real.greater?:/ \\real.zero\n    . forAll: x, y is \\real\n      where:\n      . x \"in\" U\n      . y \"in\" U\n      . \\real.abs(x \\.real.-./ y) \\:real.less?:/ delta\n      then: \\real.abs(f(x) \\.real.-./ f(y)) \\:real.less?:/ eps\nDocumented:\n. adjective: \"uniformly continuous\"\n. description: \"A function is uniformly continuous if a single $\\delta$ works\n                across the entire domain.\"\nId: \"f69d925b-5ae6-4969-9d22-4d4eeea90a08\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "f",
+      "inline_latex": "f",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "U \\:subset:/ \\reals..R",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "U \\:subset:/ \\reals..R",
+          "types": [
+            "asserts U \\:subset:/ \\reals..R"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\reals..R",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\reals",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": "f is \\function:on{U}:to{\\reals..R}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "f is \\function:on{U}:to{\\reals..R}",
+          "types": [
+            "asserts f is \\function:on{U}:to{\\reals..R}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "eps is \\real",
+              "inline_latex": "eps \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "eps is \\real",
+                  "types": [
+                    "asserts eps is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "eps \\:real.greater?:/ \\real.zero",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{eps > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "eps \\:real.greater?:/ \\real.zero",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "eps",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\real.zero",
+                  "types": [
+                    "is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "delta is \\real",
+                      "inline_latex": "delta \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "delta is \\real",
+                          "types": [
+                            "asserts delta is \\real"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "delta \\:real.greater?:/ \\real.zero",
+                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{delta > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "delta \\:real.greater?:/ \\real.zero",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "delta",
+                              "types": [
+                                "is \\real"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "\\real.zero",
+                              "types": [
+                                "is \\real"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "forAll",
+                              "inline_argument": "x, y is \\real",
+                              "inline_latex": "x, y \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "x, y is \\real",
+                                  "types": [
+                                    "asserts x is \\real",
+                                    "asserts y is \\real"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "where",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "x \"in\" U",
+                                  "latex": "x \\in U",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "x \"in\" U",
+                                      "types": [
+                                        "asserts x \"in\" U"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "U",
+                                      "types": [
+                                        "\\:subset:/ \\reals..R"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "y \"in\" U",
+                                  "latex": "y \\in U",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "y \"in\" U",
+                                      "types": [
+                                        "asserts y \"in\" U"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "U",
+                                      "types": [
+                                        "\\:subset:/ \\reals..R"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "\\real.abs(x \\.real.-./ y) \\:real.less?:/ delta",
+                                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{x - y} \\right|} < delta}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "\\real.abs(x \\.real.-./ y) \\:real.less?:/ delta",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "\\real.abs(x\\.real.-./y)",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "x\\.real.-./y",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 3,
+                                      "text": "x",
+                                      "types": [
+                                        "\"in\" U",
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 3,
+                                      "text": "y",
+                                      "types": [
+                                        "\"in\" U",
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "delta",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": "\\real.abs(f(x) \\.real.-./ f(y)) \\:real.less?:/ eps",
+                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{f(x) - f(y)} \\right|} < eps}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "\\real.abs(f(x) \\.real.-./ f(y)) \\:real.less?:/ eps",
+                                  "types": [
+                                    "is \\\\statement"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "\\real.abs(f(x)\\.real.-./f(y))",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 2,
+                                  "text": "f(x)\\.real.-./f(y)",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 3,
+                                  "text": "f(x)",
+                                  "types": []
+                                },
+                                {
+                                  "depth": 4,
+                                  "text": "x",
+                                  "types": [
+                                    "\"in\" U",
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 3,
+                                  "text": "f(y)",
+                                  "types": []
+                                },
+                                {
+                                  "depth": 4,
+                                  "text": "y",
+                                  "types": [
+                                    "\"in\" U",
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "eps",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"uniformly continuous\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f69d925b-5ae6-4969-9d22-4d4eeea90a08\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

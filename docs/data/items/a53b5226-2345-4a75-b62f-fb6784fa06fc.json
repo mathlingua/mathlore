@@ -1,0 +1,27 @@
+{
+  "id": "a53b5226-2345-4a75-b62f-fb6784fa06fc",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Integration in the complex plane takes place along directed curves\n(contours). Cauchy's integral theorem and formula demonstrate that values\nand derivatives of holomorphic functions inside a region are entirely\ndetermined by their boundary values."
+  },
+  "source": "Text: \"Integration in the complex plane takes place along directed curves\n       (contours). Cauchy's integral theorem and formula demonstrate that values\n       and derivatives of holomorphic functions inside a region are entirely\n       determined by their boundary values.\"\nId: \"a53b5226-2345-4a75-b62f-fb6784fa06fc\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Integration in the complex plane takes place along directed curves\n       (contours). Cauchy's integral theorem and formula demonstrate that values\n       and derivatives of holomorphic functions inside a region are entirely\n       determined by their boundary values.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a53b5226-2345-4a75-b62f-fb6784fa06fc\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+Title: "Complex Integration and Cauchy's Theorem"
+Id: "260b80fb-86c6-40ac-a46a-486164aea02b"
+
+
+Text: "Integration in the complex plane takes place along directed curves
+       (contours). Cauchy's integral theorem and formula demonstrate that values
+       and derivatives of holomorphic functions inside a region are entirely
+       determined by their boundary values."
+Id: "a53b5226-2345-4a75-b62f-fb6784fa06fc"
+
+
+SectionTitle: "Paths and Contour Integrals"
+Id: "e1f3d3b0-7dd5-4d9d-bc94-62aa17e94846"
+
+
+[\complex.path:on{a, b}]
+Declares: gamma(t_) is \function:on{\reals..R}:to{\complex.numbers..C}
+when: a, b is \real
+Documented:
+. called: "complex path on $[a?, b?]$"
+. description: "A continuous parameterized curve
+                $\gamma : [a, b] \to \mathbb{C}$."
+Id: "28c63b3c-de18-42f8-b10b-04695ee6410a"
+
+
+[\(closed)::complex.path:on{a, b}]
+Refines: gamma
+when: a, b is \real
+specifies: gamma is \complex.path:on{a, b}
+satisfies: gamma(a) = gamma(b)
+Documented:
+. adjective: "closed"
+. description: "A complex path is closed if its endpoints coincide:
+                $\gamma(a) = \gamma(b)$."
+Id: "f3a6c8ea-28b0-46a1-ac84-0499c7b6a970"
+
+
+[\contour.integral:of{f}:along{gamma}]
+Defines: I is \complex
+using: a, b is \real
+when:
+. gamma is \complex.path:on{a, b}
+. f is \function:on{\complex.numbers..C}:to{\complex.numbers..C}
+Documented:
+. called: "contour integral of $f?$ along $\gamma?$"
+. written: "\oint_{\gamma?} f?(z) \, dz"
+. description: "The contour integral $\oint_\gamma f(z) dz$ along curve
+                $\gamma$."
+Id: "e6283364-d507-4dfb-bbeb-a2e09a538cef"
+
+
+SectionTitle: "Cauchy's Theorem and Residues"
+Id: "03283fcd-c542-49a4-92a2-19ded30ed498"
+
+
+[\cauchy.integral.theorem]
+Theorem:
+given:
+. a, b is \real
+. gamma is \(closed)::complex.path:on{a, b}
+. f is \function:on{\complex.numbers..C}:to{\complex.numbers..C}
+then: \contour.integral:of{f}:along{gamma} = \complex.zero
+Documented:
+. called: "Cauchy's Integral Theorem"
+. description: "The integral of a holomorphic function along any closed contour
+                in a simply connected domain is zero."
+Id: "ba6ab675-4730-4cee-905c-ec081e05d378"
+
+
+[\residue:of{f}:at{z0}]
+Defines: Res is \complex
+when:
+. z0 is \complex
+. f is \function:on{\complex.numbers..C}:to{\complex.numbers..C}
+Documented:
+. called: "residue of $f?$ at $z0?$"
+. written: "\operatorname{Res}(f?, z0?)"
+. description: "The coefficient $a_{-1}$ in the Laurent expansion of $f$ around
+                isolated singularity $z_0$."
+Id: "19aa67b3-3856-40b0-8d20-8fae7dd0ec19"

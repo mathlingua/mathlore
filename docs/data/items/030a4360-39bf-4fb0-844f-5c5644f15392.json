@@ -1,0 +1,27 @@
+{
+  "id": "030a4360-39bf-4fb0-844f-5c5644f15392",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Matrix Definitions"
+  },
+  "source": "SectionTitle: \"Matrix Definitions\"\nId: \"030a4360-39bf-4fb0-844f-5c5644f15392\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Matrix Definitions\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"030a4360-39bf-4fb0-844f-5c5644f15392\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

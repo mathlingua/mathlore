@@ -1,0 +1,14 @@
+{
+  "id": "82ba3c4b-40a8-4dfc-8adc-69eabb25f1ec-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The transpose $A^T$ obtained by reflecting $A$ across its main\ndiagonal."
+  },
+  "source": "",
+  "sections": []
+}

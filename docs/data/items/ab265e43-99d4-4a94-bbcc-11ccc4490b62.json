@@ -1,0 +1,27 @@
+{
+  "id": "ab265e43-99d4-4a94-bbcc-11ccc4490b62",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The kernel of a linear map consists of all vectors that are mapped to the\nzero vector."
+  },
+  "source": "Text: \"The kernel of a linear map consists of all vectors that are mapped to the\n       zero vector.\"\nId: \"ab265e43-99d4-4a94-bbcc-11ccc4490b62\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The kernel of a linear map consists of all vectors that are mapped to the\n       zero vector.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ab265e43-99d4-4a94-bbcc-11ccc4490b62\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

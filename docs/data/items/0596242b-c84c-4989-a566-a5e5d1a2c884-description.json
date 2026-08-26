@@ -1,0 +1,14 @@
+{
+  "id": "0596242b-c84c-4989-a566-a5e5d1a2c884-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function is continuous at a point $x_0$ if small changes in\ninput yield arbitrarily small changes in output."
+  },
+  "source": "",
+  "sections": []
+}

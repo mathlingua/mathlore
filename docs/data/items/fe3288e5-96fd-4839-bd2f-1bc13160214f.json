@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "Zb ::= (Z, 0, 1, +, *, neg(z_))",
-      "inline_latex": "Zb ::= \\left(Z, 0, 1, +, \\ast, neg(z)\\right)",
+      "inline_latex": "\\mathbb{Z} ::= \\left(Z, 0, 1, +, \\ast, neg(z)\\right)",
       "arguments": []
     },
     {

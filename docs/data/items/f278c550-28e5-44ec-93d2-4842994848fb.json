@@ -1,0 +1,57 @@
+{
+  "id": "f278c550-28e5-44ec-93d2-4842994848fb",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c636f6d706c65782e7a65726f"
+  ],
+  "heading": "\\complex.zero",
+  "heading_latex": "\\textrm{complex zero}\\quad\\htmlClass{mlg-title-written}{0}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\complex.zero]\nDefines: z := \\complex.numbers..0 is \\complex\nDocumented:\n. called: \"complex zero\"\n. written: \"0\"\nId: \"f278c550-28e5-44ec-93d2-4842994848fb\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "z := \\complex.numbers..0 is \\complex",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..0 \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"complex zero\"",
+              "inline_latex": "\\textrm{complex zero}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"0\"",
+              "inline_latex": "0",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f278c550-28e5-44ec-93d2-4842994848fb\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

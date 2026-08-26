@@ -1,0 +1,239 @@
+Title: "The Real Numbers"
+Id: "d18bf879-7408-48c4-b09f-60d5fb20b183"
+
+
+Text: "The real number system $\mathbb{R}$ extends the rational numbers to form
+       a complete continuum. It is uniquely characterized up to isomorphism as a
+       complete ordered field, ensuring that every bounded set of reals
+       possesses a least upper bound (supremum)."
+Id: "2f7605c2-086a-4429-a969-dd003a83531e"
+
+
+SectionTitle: "The Real Field"
+Id: "0d082d38-e717-4330-b29d-e67f0717341c"
+
+
+[\reals]
+Defines: Rb ::= (R, 0, 1, +, *, -, /, <=, neg(x_))
+abstractly:
+specifies:
+. R is \set
+. 0 "in" R
+. 1 "in" R
+. + is \binary.operation:on{R}
+. * is \binary.operation:on{R}
+. - is \binary.operation:on{R}
+. / is \binary.operation:on{R}
+. <= is \total.order:on{R}
+. neg is \function:on{R}:to{R}
+expresses:
+. 0 != 1
+. forAll: a, b, c "in" R
+  then:
+  . (a + b) + c = a + (b + c)
+  . a + b = b + a
+  . a + 0 = a
+  . (a * b) * c = a * (b * c)
+  . a * b = b * a
+  . a * 1 = a
+  . a * (b + c) = (a * b) + (a * c)
+Enables:
+. capability: x_ "in" Rb :-> x_ is \real
+. view:
+  as: S := R is \set
+Documented:
+. called: "the reals"
+. written: "\mathbb{R}"
+. description: "The real numbers $(\mathbb{R}, 0, 1, +, \cdot, \le)$ as a
+                complete ordered field."
+Id: "aeec4453-1166-47cd-a5f4-3eed295b3d15"
+
+
+[\real]
+Declares: x "in" \reals..R
+Enables:
+. capability: a_ + b_ :=> a_ \.real.+./ b_
+. capability: a_ - b_ :=> a_ \.real.-./ b_
+. capability: a_ * b_ :=> a_ \.real.*./ b_
+. capability: a_ / b_ :=> a_ \.real.div./ b_
+. capability: -a_ :=> \real.neg(a_)
+Documented:
+. called: "real"
+. description: "A real number is a member of the underlying carrier set
+                $\mathbb{R}$."
+Id: "cc52bbbc-d925-469e-9252-2fad913ba14b"
+
+
+[\real.zero]
+Defines: z := \reals..0 is \real
+Documented:
+. called: "real zero"
+. written: "0"
+Id: "945650d9-8dab-4716-b4f7-2714e2219af9"
+
+
+[\real.one]
+Defines: o := \reals..1 is \real
+Documented:
+. called: "real one"
+. written: "1"
+Id: "1965d580-9b4d-4d19-93ee-82ebb75d1834"
+
+
+[a_ \.real.+./ b_]
+Defines: a_ + b_ := \reals..`+`(a_, b_) is \real
+Documented:
+. called: "$a_?$ plus $b_?$"
+. written: "a_? + b_?"
+Id: "c6dc7fde-38f1-4e5b-a80a-2153567efe6f"
+
+
+[a_ \.real.-./ b_]
+Defines: a_ - b_ := \reals..`-`(a_, b_) is \real
+Documented:
+. called: "$a_?$ minus $b_?$"
+. written: "a_? - b_?"
+Id: "6daad43c-b638-4a51-b600-4c17a3d9a066"
+
+
+[a_ \.real.*./ b_]
+Defines: a_ * b_ := \reals..`*`(a_, b_) is \real
+Documented:
+. called: "$a_?$ times $b_?$"
+. written: "a_? \cdot b_?"
+Id: "cde6b01e-d8c3-4996-b69a-1fdca9e69385"
+
+
+[a_ \.real.div./ b_]
+Defines: a_ / b_ := \reals..`/`(a_, b_) is \real
+Documented:
+. called: "$a_?$ divided by $b_?$"
+. written: "\frac{a_?}{b_?}"
+Id: "33d587f9-8ec0-4f27-8c65-42daae86748a"
+
+
+[\real.neg(a_)]
+Defines: n := \reals..neg(a_) is \real
+Documented:
+. called: "negative of $a_?$"
+. written: "-a_?"
+Id: "9b876af6-034f-4fb7-bc5f-af41345891fb"
+
+
+[a \:real.leq:/ b]
+Declares: a is \real
+when: b is \\anything
+Documented:
+. called: "$a?$ is less than or equal to $b?$"
+. written: "a? \leq b?"
+Id: "d6f542fa-34a7-4359-9b32-78bb28af098a"
+
+
+[a \:real.less:/ b]
+Declares: a is \real
+when: b is \\anything
+Documented:
+. called: "$a?$ is less than $b?$"
+. written: "a? < b?"
+Id: "5b8f85c7-135a-4702-b5aa-1d61f526ae99"
+
+
+[a \:real.geq:/ b]
+Declares: a is \real
+when: b is \\anything
+Documented:
+. called: "$a?$ is greater than or equal to $b?$"
+. written: "a? \geq b?"
+Id: "53068503-7473-4378-a2bd-d6aa98d1f9d5"
+
+
+[a \:real.greater:/ b]
+Declares: a is \real
+when: b is \\anything
+Documented:
+. called: "$a?$ is greater than $b?$"
+. written: "a? > b?"
+Id: "b0fef5ae-f1c8-46ab-b057-4000e9fda5d1"
+
+
+SectionTitle: "Absolute Value and Bounds"
+Id: "231d1127-646d-4845-88b1-f0ee9114a0a4"
+
+
+[\real.abs(x_)]
+Defines: a is \real
+Documented:
+. called: "absolute value of $x_?$"
+. written: "\left| x_? \right|"
+. description: "The absolute value $|x|$ of a real number."
+Id: "f75ee806-0ba7-4585-8183-d7f6355ed4cc"
+
+
+[\real.supremum:of{S}]
+Defines: M is \real
+when: S \:(nonempty)::subset:/ \reals..R
+expresses:
+. forAll: x is \real
+  where: x "in" S
+  then: x \:real.leq?:/ M
+. forAll: M' is \real
+  where:
+  . forAll: x is \real
+    where: x "in" S
+    then: x \:real.leq?:/ M'
+  then: M \:real.leq?:/ M'
+Documented:
+. called: "supremum of $S?$"
+. written: "\sup(S?)"
+. description: "The least upper bound (supremum) $\sup(S)$ of a set of real
+                numbers."
+Id: "d9762902-b78e-43a8-981d-47ec829c9552"
+
+
+[\real.infimum:of{S}]
+Defines: m is \real
+when: S \:(nonempty)::subset:/ \reals..R
+expresses:
+. forAll: x is \real
+  where: x "in" S
+  then: m \:real.leq?:/ x
+. forAll: m' is \real
+  where:
+  . forAll: x is \real
+    where: x "in" S
+    then: m' \:real.leq?:/ x
+  then: m' \:real.leq?:/ m
+Documented:
+. called: "infimum of $S?$"
+. written: "\inf(S?)"
+. description: "The greatest lower bound (infimum) $\inf(S)$ of a set of real
+                numbers."
+Id: "181bf9bc-8b82-4962-9a70-1f64dd384ea7"
+
+
+SectionTitle: "The Completeness Axiom"
+Id: "04cc8ce6-8bdd-49d3-8e76-52dd47ef4e73"
+
+
+Text: "The hallmark of the real numbers is Dedekind completeness: every nonempty
+       subset that is bounded above has a supremum."
+Id: "bc931815-1d01-4658-817f-efe57c5b2cf3"
+
+
+[\completeness.of.reals]
+Theorem:
+given: S \:(nonempty)::subset:/ \reals..R
+where:
+. exists: M is \real
+  suchThat:
+  . forAll: x is \real
+    where: x "in" S
+    then: x \:real.leq?:/ M
+then:
+. exists: sup is \real
+  suchThat: sup = \real.supremum:of{S}
+Documented:
+. called: "Completeness of the Real Numbers"
+. description: "Every nonempty set of real numbers bounded above has a least
+                upper bound in $\mathbb{R}$."
+Id: "b4fc64c6-378b-4e44-87c5-610045a90fe3"

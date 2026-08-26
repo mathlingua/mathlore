@@ -1,0 +1,179 @@
+{
+  "id": "13696819-0077-4466-954d-be89bc6a62af",
+  "kind": "Theorem",
+  "definition_keys": [
+    "5c72616e6b2e6e756c6c6974792e7468656f72656d"
+  ],
+  "heading": "\\rank.nullity.theorem",
+  "heading_latex": "\\textrm{Rank-Nullity Theorem}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\rank.nullity.theorem]\nTheorem:\ngiven:\n. V is \\set\n. W is \\set\n. T(v__) is \\function:on{V}:to{W}\nthen:\n. exists: d1, d2, d3 is \\natural\n  suchThat: d1 \\.natural.+./ d2 = d3\nDocumented:\n. called: \"Rank-Nullity Theorem\"\n. description: \"For any linear transformation on a finite-dimensional space,\n                $\\dim(\\ker T) + \\dim(\\operatorname{im} T) = \\dim(V)$.\"\nId: \"13696819-0077-4466-954d-be89bc6a62af\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "V is \\set",
+          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "V is \\set",
+              "types": [
+                "asserts V is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "W is \\set",
+          "latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "W is \\set",
+              "types": [
+                "asserts W is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "T(v__) is \\function:on{V}:to{W}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{T(v) \\: : \\: V \\rightarrow W}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "T(v__) is \\function:on{V}:to{W}",
+              "types": [
+                "asserts T is \\function:on{V}:to{W}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "d1, d2, d3 is \\natural",
+              "inline_latex": "d_1, d_2, d_3 \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "d1, d2, d3 is \\natural",
+                  "types": [
+                    "asserts d1 is \\natural",
+                    "asserts d2 is \\natural",
+                    "asserts d3 is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": "d1 \\.natural.+./ d2 = d3",
+              "inline_latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{d_1 + d_2 = d_3}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "d1 \\.natural.+./ d2 = d3",
+                  "types": [
+                    "is \\binary.operation:on{\\naturals}"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "d1",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "d2 = d3",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "d2",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "d3",
+                  "types": [
+                    "is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Rank-Nullity Theorem\"",
+              "inline_latex": "\\textrm{Rank-Nullity Theorem}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"13696819-0077-4466-954d-be89bc6a62af\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

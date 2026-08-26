@@ -1,0 +1,96 @@
+{
+  "id": "f26db264-6e91-499a-8d8d-8896acecadc9",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c62617369733a666f72"
+  ],
+  "heading": "\\basis:for{V}",
+  "heading_latex": "\\textrm{basis for }V",
+  "body_text": null,
+  "page": null,
+  "source": "[\\basis:for{V}]\nDeclares: B is \\(linearly.independent)::subset:of{V}\nusing: F is \\field\nwhen: V is \\vector.space:over{F}\nDocumented:\n. called: \"basis for $V?$\"\n. description: \"A basis for $V$ is a linearly independent spanning set.\"\nId: \"f26db264-6e91-499a-8d8d-8896acecadc9\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "B is \\(linearly.independent)::subset:of{V}",
+      "inline_latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c6c696e6561726c792e696e646570656e64656e743a3a7375627365743a6f66}{\\textrm{linearly independent}}\\textrm{ }\\textrm{subset}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "B is \\(linearly.independent)::subset:of{V}",
+          "types": [
+            "asserts B is \\linearly.independent::subset:of{V}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": "F is \\field",
+      "inline_latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "F is \\field",
+          "types": [
+            "asserts F is \\field"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "V is \\vector.space:over{F}",
+      "inline_latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "V is \\vector.space:over{F}",
+          "types": [
+            "asserts V is \\vector.space:over{F}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"basis for $V?$\"",
+              "inline_latex": "\\textrm{basis for }V",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f26db264-6e91-499a-8d8d-8896acecadc9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

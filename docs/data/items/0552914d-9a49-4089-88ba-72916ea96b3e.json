@@ -1,0 +1,119 @@
+{
+  "id": "0552914d-9a49-4089-88ba-72916ea96b3e",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c64657465726d696e616e743a6f66"
+  ],
+  "heading": "\\determinant:of{A(i_, j_)}",
+  "heading_latex": "\\textrm{determinant of }A(i, j)\\quad\\htmlClass{mlg-title-written}{\\det(A(i, j))}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\determinant:of{A(i_, j_)}]\nDefines: d \"in\" F\nusing:\n. n is \\natural\n. F is \\field\nwhen: A is \\matrix:of.dim{n, n}:over{F}\nDocumented:\n. called: \"determinant of $A?$\"\n. written: \"\\det(A?)\"\n. description: \"The determinant $\\det(A)$ is the unique alternating multilinear\n                function of the columns mapping $I_n$ to $1$.\"\nId: \"0552914d-9a49-4089-88ba-72916ea96b3e\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "d \"in\" F",
+      "inline_latex": "d \\in F",
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "n is \\natural",
+          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "n is \\natural",
+              "types": [
+                "asserts n is \\natural"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "F is \\field",
+          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "F is \\field",
+              "types": [
+                "asserts F is \\field"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "when",
+      "inline_argument": "A is \\matrix:of.dim{n, n}:over{F}",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }n \\times n\\textrm{ over }F}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A is \\matrix:of.dim{n, n}:over{F}",
+          "types": [
+            "asserts A is \\matrix:of.dim{n,n}:over{F}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"determinant of $A?$\"",
+              "inline_latex": "\\textrm{determinant of }A",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\det(A?)\"",
+              "inline_latex": "\\det(A)",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0552914d-9a49-4089-88ba-72916ea96b3e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

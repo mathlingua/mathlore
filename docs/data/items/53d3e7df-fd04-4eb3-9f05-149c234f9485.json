@@ -1,0 +1,27 @@
+{
+  "id": "53d3e7df-fd04-4eb3-9f05-149c234f9485",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The Intermediate Value Theorem"
+  },
+  "source": "SectionTitle: \"The Intermediate Value Theorem\"\nId: \"53d3e7df-fd04-4eb3-9f05-149c234f9485\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The Intermediate Value Theorem\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"53d3e7df-fd04-4eb3-9f05-149c234f9485\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

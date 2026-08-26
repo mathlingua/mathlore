@@ -1,0 +1,14 @@
+{
+  "id": "3af5db3a-ae38-4af7-876b-a775e8f83089-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The limit of $f(x)$ as $x$ approaches $x_0$ equals $L$."
+  },
+  "source": "",
+  "sections": []
+}

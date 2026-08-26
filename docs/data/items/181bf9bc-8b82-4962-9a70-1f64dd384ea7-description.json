@@ -1,0 +1,14 @@
+{
+  "id": "181bf9bc-8b82-4962-9a70-1f64dd384ea7-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The greatest lower bound (infimum) $\\inf(S)$ of a set of real\nnumbers."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "960f17ab-8b88-47d4-a7cb-c74bc8b7cfc3",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A set of vectors is linearly independent when no vector can be written as\na linear combination of the others."
+  },
+  "source": "Text: \"A set of vectors is linearly independent when no vector can be written as\n       a linear combination of the others.\"\nId: \"960f17ab-8b88-47d4-a7cb-c74bc8b7cfc3\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A set of vectors is linearly independent when no vector can be written as\n       a linear combination of the others.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"960f17ab-8b88-47d4-a7cb-c74bc8b7cfc3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

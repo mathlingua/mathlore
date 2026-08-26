@@ -1,0 +1,121 @@
+{
+  "id": "dd197d03-0f2e-4003-8330-a8c3e8e09dd6",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e6d61747269782e2b2e2f"
+  ],
+  "heading": "A(i_, j_) \\.matrix.+./ B(i_, j_)",
+  "heading_latex": "A(i, j)\\textrm{ plus }B(i, j)\\quad\\htmlClass{mlg-title-written}{A(i, j) + B(i, j)}",
+  "body_text": null,
+  "page": null,
+  "source": "[A(i_, j_) \\.matrix.+./ B(i_, j_)]\nDefines: C(i_, j_) is \\matrix:of.dim{m, n}:over{F}\nusing:\n. m, n is \\natural\n. F is \\field\nwhen: A, B is \\matrix:of.dim{m, n}:over{F}\nDocumented:\n. called: \"$A?$ plus $B?$\"\n. written: \"A? + B?\"\n. description: \"Componentwise addition of matrices of identical dimension.\"\nId: \"dd197d03-0f2e-4003-8330-a8c3e8e09dd6\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "C(i_, j_) is \\matrix:of.dim{m, n}:over{F}",
+      "inline_latex": "C(i, j) \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }m \\times n\\textrm{ over }F}",
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "m, n is \\natural",
+          "latex": "m, n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "m, n is \\natural",
+              "types": [
+                "asserts m is \\natural",
+                "asserts n is \\natural"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "F is \\field",
+          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "F is \\field",
+              "types": [
+                "asserts F is \\field"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\matrix:of.dim{m, n}:over{F}",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }m \\times n\\textrm{ over }F}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A, B is \\matrix:of.dim{m, n}:over{F}",
+          "types": [
+            "asserts A is \\matrix:of.dim{m,n}:over{F}",
+            "asserts B is \\matrix:of.dim{m,n}:over{F}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$A?$ plus $B?$\"",
+              "inline_latex": "A\\textrm{ plus }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A? + B?\"",
+              "inline_latex": "A + B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dd197d03-0f2e-4003-8330-a8c3e8e09dd6\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

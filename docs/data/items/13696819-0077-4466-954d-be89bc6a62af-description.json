@@ -1,0 +1,14 @@
+{
+  "id": "13696819-0077-4466-954d-be89bc6a62af-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For any linear transformation on a finite-dimensional space,\n$\\dim(\\ker T) + \\dim(\\operatorname{im} T) = \\dim(V)$."
+  },
+  "source": "",
+  "sections": []
+}

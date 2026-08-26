@@ -1,0 +1,27 @@
+{
+  "id": "04cc8ce6-8bdd-49d3-8e76-52dd47ef4e73",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The Completeness Axiom"
+  },
+  "source": "SectionTitle: \"The Completeness Axiom\"\nId: \"04cc8ce6-8bdd-49d3-8e76-52dd47ef4e73\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The Completeness Axiom\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"04cc8ce6-8bdd-49d3-8e76-52dd47ef4e73\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "1965d580-9b4d-4d19-93ee-82ebb75d1834",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265616c2e6f6e65"
+  ],
+  "heading": "\\real.one",
+  "heading_latex": "\\textrm{real one}\\quad\\htmlClass{mlg-title-written}{1}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.one]\nDefines: o := \\reals..1 is \\real\nDocumented:\n. called: \"real one\"\n. written: \"1\"\nId: \"1965d580-9b4d-4d19-93ee-82ebb75d1834\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "o := \\reals..1 is \\real",
+      "inline_latex": "o := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..1 \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"real one\"",
+              "inline_latex": "\\textrm{real one}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"1\"",
+              "inline_latex": "1",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1965d580-9b4d-4d19-93ee-82ebb75d1834\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

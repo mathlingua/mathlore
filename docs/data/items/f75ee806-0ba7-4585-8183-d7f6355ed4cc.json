@@ -1,0 +1,69 @@
+{
+  "id": "f75ee806-0ba7-4585-8183-d7f6355ed4cc",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265616c2e616273"
+  ],
+  "heading": "\\real.abs(x_)",
+  "heading_latex": "\\textrm{absolute value of }x\\quad\\htmlClass{mlg-title-written}{\\left| x \\right|}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.abs(x_)]\nDefines: a is \\real\nDocumented:\n. called: \"absolute value of $x_?$\"\n. written: \"\\left| x_? \\right|\"\n. description: \"The absolute value $|x|$ of a real number.\"\nId: \"f75ee806-0ba7-4585-8183-d7f6355ed4cc\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "a is \\real",
+      "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"absolute value of $x_?$\"",
+              "inline_latex": "\\textrm{absolute value of }x",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\left| x_? \\right|\"",
+              "inline_latex": "\\left| x \\right|",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f75ee806-0ba7-4585-8183-d7f6355ed4cc\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

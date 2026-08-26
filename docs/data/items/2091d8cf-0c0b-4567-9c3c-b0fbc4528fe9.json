@@ -1,0 +1,27 @@
+{
+  "id": "2091d8cf-0c0b-4567-9c3c-b0fbc4528fe9",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A real sequence is a mapping from the natural numbers to the real\nnumbers. Convergence, Cauchy sequences, and infinite series form the\nbackbone of discrete approximation and limit operations in analysis."
+  },
+  "source": "Text: \"A real sequence is a mapping from the natural numbers to the real\n       numbers. Convergence, Cauchy sequences, and infinite series form the\n       backbone of discrete approximation and limit operations in analysis.\"\nId: \"2091d8cf-0c0b-4567-9c3c-b0fbc4528fe9\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A real sequence is a mapping from the natural numbers to the real\n       numbers. Convergence, Cauchy sequences, and infinite series form the\n       backbone of discrete approximation and limit operations in analysis.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2091d8cf-0c0b-4567-9c3c-b0fbc4528fe9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

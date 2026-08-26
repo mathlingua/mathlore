@@ -1,0 +1,14 @@
+{
+  "id": "19cb593a-f9c4-4ac8-82b7-2f32e590b67a-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The field of complex numbers\n$\\mathbb{C} = \\mathbb{R}[i] / (i^2 + 1)$."
+  },
+  "source": "",
+  "sections": []
+}

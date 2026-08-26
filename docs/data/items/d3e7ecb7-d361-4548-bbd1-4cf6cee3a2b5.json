@@ -1,0 +1,27 @@
+{
+  "id": "d3e7ecb7-d361-4548-bbd1-4cf6cee3a2b5",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Differentiation"
+  },
+  "source": "SectionTitle: \"Differentiation\"\nId: \"d3e7ecb7-d361-4548-bbd1-4cf6cee3a2b5\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Differentiation\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d3e7ecb7-d361-4548-bbd1-4cf6cee3a2b5\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "165a0b80-16b8-4616-9d9d-95efe4751d2d",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Linear Transformations"
+  },
+  "source": "Title: \"Linear Transformations\"\nId: \"165a0b80-16b8-4616-9d9d-95efe4751d2d\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Linear Transformations\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"165a0b80-16b8-4616-9d9d-95efe4751d2d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

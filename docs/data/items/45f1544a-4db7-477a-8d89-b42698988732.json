@@ -1,0 +1,69 @@
+{
+  "id": "45f1544a-4db7-477a-8d89-b42698988732",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c636f6d706c65782e636f6e6a7567617465"
+  ],
+  "heading": "\\complex.conjugate(z_)",
+  "heading_latex": "\\textrm{complex conjugate of }z\\quad\\htmlClass{mlg-title-written}{\\overline{z}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\complex.conjugate(z_)]\nDefines: zbar is \\complex\nDocumented:\n. called: \"complex conjugate of $z_?$\"\n. written: \"\\overline{z_?}\"\n. description: \"The complex conjugate\n                $\\overline{z} = \\operatorname{Re}(z) - i \\operatorname{Im}(z)$.\"\nId: \"45f1544a-4db7-477a-8d89-b42698988732\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "zbar is \\complex",
+      "inline_latex": "zbar \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"complex conjugate of $z_?$\"",
+              "inline_latex": "\\textrm{complex conjugate of }z",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\overline{z_?}\"",
+              "inline_latex": "\\overline{z}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"45f1544a-4db7-477a-8d89-b42698988732\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

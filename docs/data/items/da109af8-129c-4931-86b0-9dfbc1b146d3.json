@@ -1,0 +1,121 @@
+{
+  "id": "da109af8-129c-4931-86b0-9dfbc1b146d3",
+  "kind": "States",
+  "definition_keys": [
+    "5c6361756368792e7269656d616e6e2e6571756174696f6e733a666f72"
+  ],
+  "heading": "\\cauchy.riemann.equations:for{f}",
+  "heading_latex": "\\textrm{Cauchy-Riemann equations for }f",
+  "body_text": null,
+  "page": null,
+  "source": "[\\cauchy.riemann.equations:for{f}]\nStates:\nusing: U \\:subset:/ \\complex.numbers..C\nwhen: f is \\function:on{U}:to{\\complex.numbers..C}\nthat: f is? \\(holomorphic)::complex.function:on{U}\nDocumented:\n. called: \"Cauchy-Riemann equations for $f?$\"\n. description: \"The Cauchy-Riemann equations express holomorphy in terms of real\n                partial derivatives:\n                $\\partial u/\\partial x = \\partial v/\\partial y$ and\n                $\\partial u/\\partial y = -\\partial v/\\partial x$.\"\nId: \"da109af8-129c-4931-86b0-9dfbc1b146d3\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": "U \\:subset:/ \\complex.numbers..C",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..C}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "U \\:subset:/ \\complex.numbers..C",
+          "types": [
+            "asserts U \\:subset:/ \\complex.numbers..C"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\complex.numbers..C",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\complex.numbers",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "f is \\function:on{U}:to{\\complex.numbers..C}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..C}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "f is \\function:on{U}:to{\\complex.numbers..C}",
+          "types": [
+            "asserts f is \\function:on{U}:to{\\complex.numbers..C}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "that",
+      "inline_argument": "f is? \\(holomorphic)::complex.function:on{U}",
+      "inline_latex": "f \\textrm{ is } \\htmlData{mlg-ref=5c686f6c6f6d6f72706869633a3a636f6d706c65782e66756e6374696f6e3a6f6e}{\\textrm{holomorphic}}\\textrm{ }\\textrm{complex.function}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "f is? \\(holomorphic)::complex.function:on{U}",
+          "types": [
+            "asserts f is \\holomorphic::complex.function:on{U}"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "f",
+          "types": [
+            "is \\function:on{U}:to{\\complex.numbers..C}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Cauchy-Riemann equations for $f?$\"",
+              "inline_latex": "\\textrm{Cauchy-Riemann equations for }f",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"da109af8-129c-4931-86b0-9dfbc1b146d3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

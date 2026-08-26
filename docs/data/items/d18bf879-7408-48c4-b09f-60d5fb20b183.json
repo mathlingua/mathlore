@@ -1,0 +1,27 @@
+{
+  "id": "d18bf879-7408-48c4-b09f-60d5fb20b183",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "The Real Numbers"
+  },
+  "source": "Title: \"The Real Numbers\"\nId: \"d18bf879-7408-48c4-b09f-60d5fb20b183\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"The Real Numbers\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d18bf879-7408-48c4-b09f-60d5fb20b183\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

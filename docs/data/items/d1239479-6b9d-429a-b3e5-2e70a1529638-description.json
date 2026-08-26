@@ -1,0 +1,14 @@
+{
+  "id": "d1239479-6b9d-429a-b3e5-2e70a1529638-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two vector spaces are isomorphic if there exists a bijective\nlinear transformation between them."
+  },
+  "source": "",
+  "sections": []
+}

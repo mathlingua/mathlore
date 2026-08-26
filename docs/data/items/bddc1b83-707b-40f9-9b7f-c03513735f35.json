@@ -1,0 +1,205 @@
+{
+  "id": "bddc1b83-707b-40f9-9b7f-c03513735f35",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c646966666572656e746961626c653a3a7265616c2e66756e6374696f6e3a6f6e"
+  ],
+  "heading": "\\(differentiable)::real.function:on{U}",
+  "heading_latex": "\\textrm{differentiable}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(differentiable)::real.function:on{U}]\nRefines: f\nwhen: U \\:subset:/ \\reals..R\nspecifies: f is \\function:on{U}:to{\\reals..R}\nsatisfies:\n. forAll: x0 \"in\" U\n  then:\n  . exists: d is \\real\n    suchThat: d = \\derivative:of{f}:at{x0}\nDocumented:\n. adjective: \"differentiable\"\n. description: \"A function is differentiable on $U$ if its derivative exists at\n                every point of $U$.\"\nId: \"bddc1b83-707b-40f9-9b7f-c03513735f35\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "f",
+      "inline_latex": "f",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "U \\:subset:/ \\reals..R",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "U \\:subset:/ \\reals..R",
+          "types": [
+            "asserts U \\:subset:/ \\reals..R"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\reals..R",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\reals",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": "f is \\function:on{U}:to{\\reals..R}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "f is \\function:on{U}:to{\\reals..R}",
+          "types": [
+            "asserts f is \\function:on{U}:to{\\reals..R}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x0 \"in\" U",
+              "inline_latex": "x_0 \\in U",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x0 \"in\" U",
+                  "types": [
+                    "asserts x0 \"in\" U"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "U",
+                  "types": [
+                    "\\:subset:/ \\reals..R"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "d is \\real",
+                      "inline_latex": "d \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "d is \\real",
+                          "types": [
+                            "asserts d is \\real"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "d = \\derivative:of{f}:at{x0}",
+                      "inline_latex": "d = \\htmlData{mlg-ref=5c646572697661746976653a6f663a6174}{f'(x_0)}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "d = \\derivative:of{f}:at{x0}",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "d",
+                          "types": [
+                            "is \\real"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\derivative:of{f}:at{x0}",
+                          "types": [
+                            "is \\real"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "f",
+                          "types": [
+                            "is \\real.function:on{U}"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x0",
+                          "types": [
+                            "\"in\" U"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"differentiable\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"bddc1b83-707b-40f9-9b7f-c03513735f35\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

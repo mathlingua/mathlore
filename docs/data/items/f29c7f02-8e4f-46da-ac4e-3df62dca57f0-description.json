@@ -1,0 +1,14 @@
+{
+  "id": "f29c7f02-8e4f-46da-ac4e-3df62dca57f0-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A continuous function on an interval attains every intermediate\nvalue between its endpoints."
+  },
+  "source": "",
+  "sections": []
+}

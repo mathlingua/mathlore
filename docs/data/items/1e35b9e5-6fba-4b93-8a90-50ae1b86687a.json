@@ -1,0 +1,268 @@
+{
+  "id": "1e35b9e5-6fba-4b93-8a90-50ae1b86687a",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c6964656e746974792e6d61747269783a6f662e64696d3a6f766572"
+  ],
+  "heading": "\\identity.matrix:of.dim{n}:over{F}",
+  "heading_latex": "\\textrm{identity matrix of dimension }n\\textrm{ over }F\\quad\\htmlClass{mlg-title-written}{I_{n}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\identity.matrix:of.dim{n}:over{F}]\nDeclares: I ::= delta(i_, j_) is \\matrix:of.dim{n, n}:over{F}\nwhen:\n. n is \\natural\n. F is \\field\nsatisfies:\n. forAll: i, j is \\natural\n  then:\n  . piecewise:\n    if: i = j\n    then: delta(i, j) = 1\n    else: delta(i, j) = 0\nDocumented:\n. called: \"identity matrix of dimension $n?$ over $F?$\"\n. written: \"I_{n?}\"\n. description: \"The $n \\times n$ identity matrix $I_n$ with ones on the main\n                diagonal and zeros elsewhere.\"\nId: \"1e35b9e5-6fba-4b93-8a90-50ae1b86687a\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "I ::= delta(i_, j_) is \\matrix:of.dim{n, n}:over{F}",
+      "inline_latex": "I ::= delta(i, j) \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }n \\times n\\textrm{ over }F}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "I ::= delta(i_, j_) is \\matrix:of.dim{n, n}:over{F}",
+          "types": [
+            "asserts I is \\matrix:of.dim{n,n}:over{F}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "n is \\natural",
+          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "n is \\natural",
+              "types": [
+                "asserts n is \\natural"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "F is \\field",
+          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "F is \\field",
+              "types": [
+                "asserts F is \\field"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "i, j is \\natural",
+              "inline_latex": "i, j \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "i, j is \\natural",
+                  "types": [
+                    "asserts i is \\natural",
+                    "asserts j is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "piecewise",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": []
+                    },
+                    {
+                      "label": "if",
+                      "inline_argument": "i = j",
+                      "inline_latex": "i = j",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "i = j",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "i",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "j",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "delta(i, j) = 1",
+                      "inline_latex": "delta(i, j) = 1",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "delta(i, j) = 1",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "delta(i,j)",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "i",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "j",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "1",
+                          "types": []
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "else",
+                      "inline_argument": "delta(i, j) = 0",
+                      "inline_latex": "delta(i, j) = 0",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "delta(i, j) = 0",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "delta(i,j)",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "i",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "j",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "0",
+                          "types": []
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"identity matrix of dimension $n?$ over $F?$\"",
+              "inline_latex": "\\textrm{identity matrix of dimension }n\\textrm{ over }F",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"I_{n?}\"",
+              "inline_latex": "I_{n}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1e35b9e5-6fba-4b93-8a90-50ae1b86687a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

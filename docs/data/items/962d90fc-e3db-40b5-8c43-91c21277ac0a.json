@@ -1,0 +1,69 @@
+{
+  "id": "962d90fc-e3db-40b5-8c43-91c21277ac0a",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c636f6d706c65782e696d6167696e6172792e70617274"
+  ],
+  "heading": "\\complex.imaginary.part(z_)",
+  "heading_latex": "\\textrm{imaginary part of }z\\quad\\htmlClass{mlg-title-written}{\\operatorname{Im}(z)}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\complex.imaginary.part(z_)]\nDefines: y is \\real\nDocumented:\n. called: \"imaginary part of $z_?$\"\n. written: \"\\operatorname{Im}(z_?)\"\n. description: \"The imaginary component $\\operatorname{Im}(z)$ of a complex\n                number.\"\nId: \"962d90fc-e3db-40b5-8c43-91c21277ac0a\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "y is \\real",
+      "inline_latex": "y \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"imaginary part of $z_?$\"",
+              "inline_latex": "\\textrm{imaginary part of }z",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\operatorname{Im}(z_?)\"",
+              "inline_latex": "\\operatorname{Im}(z)",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"962d90fc-e3db-40b5-8c43-91c21277ac0a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

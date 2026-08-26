@@ -1,0 +1,69 @@
+{
+  "id": "b5855839-892d-4a4b-a116-7a66ef02df5d",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c636f6d706c65782e69"
+  ],
+  "heading": "\\complex.i",
+  "heading_latex": "\\textrm{imaginary unit}\\quad\\htmlClass{mlg-title-written}{i}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\complex.i]\nDefines: unit := \\complex.numbers..i is \\complex\nDocumented:\n. called: \"imaginary unit\"\n. written: \"i\"\n. description: \"The imaginary unit $i$ satisfying $i^2 = -1$.\"\nId: \"b5855839-892d-4a4b-a116-7a66ef02df5d\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "unit := \\complex.numbers..i is \\complex",
+      "inline_latex": "unit := \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..i \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"imaginary unit\"",
+              "inline_latex": "\\textrm{imaginary unit}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"i\"",
+              "inline_latex": "i",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b5855839-892d-4a4b-a116-7a66ef02df5d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

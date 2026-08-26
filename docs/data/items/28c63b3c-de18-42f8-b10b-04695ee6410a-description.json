@@ -1,0 +1,14 @@
+{
+  "id": "28c63b3c-de18-42f8-b10b-04695ee6410a-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A continuous parameterized curve\n$\\gamma : [a, b] \\to \\mathbb{C}$."
+  },
+  "source": "",
+  "sections": []
+}

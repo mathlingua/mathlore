@@ -1,0 +1,119 @@
+{
+  "id": "0dbcf796-c093-475e-943c-203eaeee9037",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c6861726d6f6e69632e66756e6374696f6e3a6f6e"
+  ],
+  "heading": "\\harmonic.function:on{U}",
+  "heading_latex": "\\textrm{harmonic function on }U",
+  "body_text": null,
+  "page": null,
+  "source": "[\\harmonic.function:on{U}]\nDeclares: u(x_, y_) is \\function:on{U}:to{\\reals..R}\nwhen: U \\:subset:/ (\\reals..R \\.set.cross./ \\reals..R)\nDocumented:\n. called: \"harmonic function on $U?$\"\n. description: \"A function satisfying Laplace's equation $\\nabla^2 u = 0$. The\n                real and imaginary components of any holomorphic function are\n                harmonic.\"\nId: \"0dbcf796-c093-475e-943c-203eaeee9037\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "u(x_, y_) is \\function:on{U}:to{\\reals..R}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{u(x, y) \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "u(x_, y_) is \\function:on{U}:to{\\reals..R}",
+          "types": [
+            "asserts u is \\function:on{U}:to{\\reals..R}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "U \\:subset:/ (\\reals..R \\.set.cross./ \\reals..R)",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\left(\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R \\times \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}\\right)}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "U \\:subset:/ (\\reals..R \\.set.cross./ \\reals..R)",
+          "types": [
+            "asserts U \\:subset:/ \\reals..R\\.set.cross./\\reals..R"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\reals..R\\.set.cross./\\reals..R",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\reals..R\\.set.cross./\\reals..R",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "\\reals..R",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 4,
+          "text": "\\reals",
+          "types": []
+        },
+        {
+          "depth": 3,
+          "text": "\\reals..R",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 4,
+          "text": "\\reals",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"harmonic function on $U?$\"",
+              "inline_latex": "\\textrm{harmonic function on }U",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0dbcf796-c093-475e-943c-203eaeee9037\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "5b60dfb1-186f-4583-9021-23830d2286df-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A function is continuous on a domain $U$ if it is continuous at\nevery point of $U$."
+  },
+  "source": "",
+  "sections": []
+}

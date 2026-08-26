@@ -1,0 +1,14 @@
+{
+  "id": "ac392c5f-3f42-42d6-8313-5e4cbd764f89-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The real component $\\operatorname{Re}(z)$ of a complex number."
+  },
+  "source": "",
+  "sections": []
+}

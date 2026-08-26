@@ -1,0 +1,27 @@
+{
+  "id": "4467454a-53b1-4a53-b40f-76086fdf6fbe",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A linear transformation is a function between vector spaces over the same\nfield that preserves vector addition and scalar multiplication. Linear\nmaps are the structure-preserving morphisms of linear algebra."
+  },
+  "source": "Text: \"A linear transformation is a function between vector spaces over the same\n       field that preserves vector addition and scalar multiplication. Linear\n       maps are the structure-preserving morphisms of linear algebra.\"\nId: \"4467454a-53b1-4a53-b40f-76086fdf6fbe\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A linear transformation is a function between vector spaces over the same\n       field that preserves vector addition and scalar multiplication. Linear\n       maps are the structure-preserving morphisms of linear algebra.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4467454a-53b1-4a53-b40f-76086fdf6fbe\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

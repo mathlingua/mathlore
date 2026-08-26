@@ -1,0 +1,104 @@
+{
+  "id": "7e3019a7-07f3-462e-bd30-6047f158b5de",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c636f6d706c65782e646572697661746976653a6f663a6174"
+  ],
+  "heading": "\\complex.derivative:of{f}:at{z0}",
+  "heading_latex": "\\textrm{complex derivative of }f\\textrm{ at }z_0\\quad\\htmlClass{mlg-title-written}{f'(z_0)}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\complex.derivative:of{f}:at{z0}]\nDefines: d is \\complex\nwhen:\n. z0 is \\\\anything\n. f is \\\\anything\nDocumented:\n. called: \"complex derivative of $f?$ at $z0?$\"\n. written: \"f?'(z0?)\"\n. description: \"The complex derivative\n                $f'(z_0) = \\lim_{h \\to 0} \\frac{f(z_0 + h) - f(z_0)}{h}$.\"\nId: \"7e3019a7-07f3-462e-bd30-6047f158b5de\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "d is \\complex",
+      "inline_latex": "d \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "z0 is \\\\anything",
+          "latex": "z_0 \\textrm{ is } \\textrm{anything}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "z0 is \\\\anything",
+              "types": [
+                "asserts z0 is \\\\anything"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "f is \\\\anything",
+          "latex": "f \\textrm{ is } \\textrm{anything}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "f is \\\\anything",
+              "types": [
+                "asserts f is \\\\anything"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"complex derivative of $f?$ at $z0?$\"",
+              "inline_latex": "\\textrm{complex derivative of }f\\textrm{ at }z_0",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"f?'(z0?)\"",
+              "inline_latex": "f'(z_0)",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7e3019a7-07f3-462e-bd30-6047f158b5de\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

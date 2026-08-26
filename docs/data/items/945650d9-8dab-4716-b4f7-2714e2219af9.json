@@ -1,0 +1,57 @@
+{
+  "id": "945650d9-8dab-4716-b4f7-2714e2219af9",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265616c2e7a65726f"
+  ],
+  "heading": "\\real.zero",
+  "heading_latex": "\\textrm{real zero}\\quad\\htmlClass{mlg-title-written}{0}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.zero]\nDefines: z := \\reals..0 is \\real\nDocumented:\n. called: \"real zero\"\n. written: \"0\"\nId: \"945650d9-8dab-4716-b4f7-2714e2219af9\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "z := \\reals..0 is \\real",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..0 \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"real zero\"",
+              "inline_latex": "\\textrm{real zero}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"0\"",
+              "inline_latex": "0",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"945650d9-8dab-4716-b4f7-2714e2219af9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "c849f3cc-4b38-40ae-8f55-aa9168f00682",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c636f6d706c65782e6e6567"
+  ],
+  "heading": "\\complex.neg(a_)",
+  "heading_latex": "\\textrm{negative of }a\\quad\\htmlClass{mlg-title-written}{-a}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\complex.neg(a_)]\nDefines: n := \\complex.numbers..neg(a_) is \\complex\nDocumented:\n. called: \"negative of $a_?$\"\n. written: \"-a_?\"\nId: \"c849f3cc-4b38-40ae-8f55-aa9168f00682\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "n := \\complex.numbers..neg(a_) is \\complex",
+      "inline_latex": "n := \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..neg(a) \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"negative of $a_?$\"",
+              "inline_latex": "\\textrm{negative of }a",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"-a_?\"",
+              "inline_latex": "-a",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c849f3cc-4b38-40ae-8f55-aa9168f00682\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "d9762902-b78e-43a8-981d-47ec829c9552-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The least upper bound (supremum) $\\sup(S)$ of a set of real\nnumbers."
+  },
+  "source": "",
+  "sections": []
+}

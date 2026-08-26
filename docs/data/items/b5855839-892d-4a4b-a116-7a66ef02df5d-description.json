@@ -1,0 +1,14 @@
+{
+  "id": "b5855839-892d-4a4b-a116-7a66ef02df5d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The imaginary unit $i$ satisfying $i^2 = -1$."
+  },
+  "source": "",
+  "sections": []
+}

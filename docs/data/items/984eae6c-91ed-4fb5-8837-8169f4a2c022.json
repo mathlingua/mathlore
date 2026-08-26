@@ -1,0 +1,27 @@
+{
+  "id": "984eae6c-91ed-4fb5-8837-8169f4a2c022",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The complex numbers $\\mathbb{C}$ extend the real numbers by adjoining the\nimaginary unit $i$ satisfying $i^2 = -1$. The resulting field is\nalgebraically closed and possesses rich planar geometry."
+  },
+  "source": "Text: \"The complex numbers $\\mathbb{C}$ extend the real numbers by adjoining the\n       imaginary unit $i$ satisfying $i^2 = -1$. The resulting field is\n       algebraically closed and possesses rich planar geometry.\"\nId: \"984eae6c-91ed-4fb5-8837-8169f4a2c022\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The complex numbers $\\mathbb{C}$ extend the real numbers by adjoining the\n       imaginary unit $i$ satisfying $i^2 = -1$. The resulting field is\n       algebraically closed and possesses rich planar geometry.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"984eae6c-91ed-4fb5-8837-8169f4a2c022\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "id": "181bf9bc-8b82-4962-9a70-1f64dd384ea7",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265616c2e696e66696d756d3a6f66"
+  ],
+  "heading": "\\real.infimum:of{S}",
+  "heading_latex": "\\textrm{infimum of }S\\quad\\htmlClass{mlg-title-written}{\\inf(S)}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.infimum:of{S}]\nDefines: m is \\real\nwhen: S \\:(nonempty)::subset:/ \\reals..R\nexpresses:\n. forAll: x is \\real\n  where: x \"in\" S\n  then: m \\:real.leq?:/ x\n. forAll: m' is \\real\n  where:\n  . forAll: x is \\real\n    where: x \"in\" S\n    then: m' \\:real.leq?:/ x\n  then: m' \\:real.leq?:/ m\nDocumented:\n. called: \"infimum of $S?$\"\n. written: \"\\inf(S?)\"\n. description: \"The greatest lower bound (infimum) $\\inf(S)$ of a set of real\n                numbers.\"\nId: \"181bf9bc-8b82-4962-9a70-1f64dd384ea7\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "m is \\real",
+      "inline_latex": "m \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "S \\:(nonempty)::subset:/ \\reals..R",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}\\textrm{ }\\left(\\htmlData{mlg-ref=5c6e6f6e656d7074793a3a736574}{\\textrm{nonempty}}\\right)",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "S \\:(nonempty)::subset:/ \\reals..R",
+          "types": [
+            "asserts S \\:nonempty::subset:/ \\reals..R"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\reals..R",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\reals",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x is \\real",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x is \\real",
+                  "types": [
+                    "asserts x is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "x \"in\" S",
+              "inline_latex": "x \\in S",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" S",
+                  "types": [
+                    "asserts x \"in\" S"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "S",
+                  "types": [
+                    "\\:nonempty::subset:/ \\reals..R"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "m \\:real.leq?:/ x",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{m \\leq x}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "m \\:real.leq?:/ x",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "m",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": [
+                    "\"in\" S",
+                    "is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "m' is \\real",
+              "inline_latex": "m' \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "m' is \\real",
+                  "types": [
+                    "asserts m' is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "x is \\real",
+                      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x is \\real",
+                          "types": [
+                            "asserts x is \\real"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": "x \"in\" S",
+                      "inline_latex": "x \\in S",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x \"in\" S",
+                          "types": [
+                            "asserts x \"in\" S"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "S",
+                          "types": [
+                            "\\:nonempty::subset:/ \\reals..R"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "m' \\:real.leq?:/ x",
+                      "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{m' \\leq x}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "m' \\:real.leq?:/ x",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "m'",
+                          "types": [
+                            "is \\real"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "\"in\" S",
+                            "is \\real"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "m' \\:real.leq?:/ m",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{m' \\leq m}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "m' \\:real.leq?:/ m",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "m'",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "m",
+                  "types": [
+                    "is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"infimum of $S?$\"",
+              "inline_latex": "\\textrm{infimum of }S",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\inf(S?)\"",
+              "inline_latex": "\\inf(S)",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"181bf9bc-8b82-4962-9a70-1f64dd384ea7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

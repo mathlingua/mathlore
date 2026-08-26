@@ -1,0 +1,14 @@
+{
+  "id": "e2633f12-6e7f-401a-a4f1-d55bec7d279c-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A sequence is bounded if all of its values lie within a finite\ninterval."
+  },
+  "source": "",
+  "sections": []
+}

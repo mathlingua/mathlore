@@ -6,7 +6,7 @@
   "heading_latex": null,
   "body_text": null,
   "page": null,
-  "source": "Writing:\n. \"phi :~> \\varphi\"\n. \"omega :~> \\omega\"\n. \"Xb :~> \\mathbb{X}\"\n. \"Nb :~> \\mathbb{N}\"\nId: \"c51b2bbc-d8f1-406c-b7c8-317e5409a2d8\"",
+  "source": "Writing:\n. \"phi :~> \\varphi\"\n. \"omega :~> \\omega\"\n. \"Xb :~> \\mathbb{X}\"\n. \"Nb :~> \\mathbb{N}\"\n. \"Zb :~> \\mathbb{Z}\"\n. \"Rb :~> \\mathbb{R}\"\n. \"Cb :~> \\mathbb{C}\"\n. \"Fb :~> \\mathbb{F}\"\n. \"Vb :~> \\mathbb{V}\"\nId: \"c51b2bbc-d8f1-406c-b7c8-317e5409a2d8\"",
   "sections": [
     {
       "label": "Writing",
@@ -32,6 +32,31 @@
           "kind": "text",
           "text": "Nb :~> \\mathbb{N}",
           "latex": "\\textrm{Nb} \\mathrel{:\\!\\rightsquigarrow} \\mathbb{N}"
+        },
+        {
+          "kind": "text",
+          "text": "Zb :~> \\mathbb{Z}",
+          "latex": "\\textrm{Zb} \\mathrel{:\\!\\rightsquigarrow} \\mathbb{Z}"
+        },
+        {
+          "kind": "text",
+          "text": "Rb :~> \\mathbb{R}",
+          "latex": "\\textrm{Rb} \\mathrel{:\\!\\rightsquigarrow} \\mathbb{R}"
+        },
+        {
+          "kind": "text",
+          "text": "Cb :~> \\mathbb{C}",
+          "latex": "\\textrm{Cb} \\mathrel{:\\!\\rightsquigarrow} \\mathbb{C}"
+        },
+        {
+          "kind": "text",
+          "text": "Fb :~> \\mathbb{F}",
+          "latex": "\\textrm{Fb} \\mathrel{:\\!\\rightsquigarrow} \\mathbb{F}"
+        },
+        {
+          "kind": "text",
+          "text": "Vb :~> \\mathbb{V}",
+          "latex": "\\textrm{Vb} \\mathrel{:\\!\\rightsquigarrow} \\mathbb{V}"
         }
       ]
     },

@@ -1,0 +1,27 @@
+{
+  "id": "0d082d38-e717-4330-b29d-e67f0717341c",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The Real Field"
+  },
+  "source": "SectionTitle: \"The Real Field\"\nId: \"0d082d38-e717-4330-b29d-e67f0717341c\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The Real Field\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0d082d38-e717-4330-b29d-e67f0717341c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

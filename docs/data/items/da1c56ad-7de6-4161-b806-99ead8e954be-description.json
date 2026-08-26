@@ -1,0 +1,14 @@
+{
+  "id": "da1c56ad-7de6-4161-b806-99ead8e954be-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "In the real numbers, every Cauchy sequence converges to a limit."
+  },
+  "source": "",
+  "sections": []
+}

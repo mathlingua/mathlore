@@ -1,0 +1,27 @@
+{
+  "id": "f8831faa-ad1b-46ed-838f-5c92d3cf41b1",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A matrix is a two-dimensional rectangular array of scalars. Matrices\nrepresent linear transformations between finite-dimensional vector spaces\nwith respect to chosen bases, transforming coordinate vectors via matrix\nmultiplication."
+  },
+  "source": "Text: \"A matrix is a two-dimensional rectangular array of scalars. Matrices\n       represent linear transformations between finite-dimensional vector spaces\n       with respect to chosen bases, transforming coordinate vectors via matrix\n       multiplication.\"\nId: \"f8831faa-ad1b-46ed-838f-5c92d3cf41b1\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A matrix is a two-dimensional rectangular array of scalars. Matrices\n       represent linear transformations between finite-dimensional vector spaces\n       with respect to chosen bases, transforming coordinate vectors via matrix\n       multiplication.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f8831faa-ad1b-46ed-838f-5c92d3cf41b1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

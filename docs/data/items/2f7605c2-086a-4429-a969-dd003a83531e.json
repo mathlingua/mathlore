@@ -1,0 +1,27 @@
+{
+  "id": "2f7605c2-086a-4429-a969-dd003a83531e",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The real number system $\\mathbb{R}$ extends the rational numbers to form\na complete continuum. It is uniquely characterized up to isomorphism as a\ncomplete ordered field, ensuring that every bounded set of reals\npossesses a least upper bound (supremum)."
+  },
+  "source": "Text: \"The real number system $\\mathbb{R}$ extends the rational numbers to form\n       a complete continuum. It is uniquely characterized up to isomorphism as a\n       complete ordered field, ensuring that every bounded set of reals\n       possesses a least upper bound (supremum).\"\nId: \"2f7605c2-086a-4429-a969-dd003a83531e\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The real number system $\\mathbb{R}$ extends the rational numbers to form\n       a complete continuum. It is uniquely characterized up to isomorphism as a\n       complete ordered field, ensuring that every bounded set of reals\n       possesses a least upper bound (supremum).\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2f7605c2-086a-4429-a969-dd003a83531e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

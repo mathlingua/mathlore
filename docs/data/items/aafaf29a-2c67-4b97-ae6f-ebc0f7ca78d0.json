@@ -1,0 +1,27 @@
+{
+  "id": "aafaf29a-2c67-4b97-ae6f-ebc0f7ca78d0",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The span of a subset $S$ is the smallest subspace containing $S$,\nconsisting of all finite linear combinations of vectors in $S$."
+  },
+  "source": "Text: \"The span of a subset $S$ is the smallest subspace containing $S$,\n       consisting of all finite linear combinations of vectors in $S$.\"\nId: \"aafaf29a-2c67-4b97-ae6f-ebc0f7ca78d0\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The span of a subset $S$ is the smallest subspace containing $S$,\n       consisting of all finite linear combinations of vectors in $S$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"aafaf29a-2c67-4b97-ae6f-ebc0f7ca78d0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

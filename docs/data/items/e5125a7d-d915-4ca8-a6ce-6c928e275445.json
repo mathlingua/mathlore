@@ -1,0 +1,27 @@
+{
+  "id": "e5125a7d-d915-4ca8-a6ce-6c928e275445",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Real Part, Imaginary Part, and Conjugation"
+  },
+  "source": "SectionTitle: \"Real Part, Imaginary Part, and Conjugation\"\nId: \"e5125a7d-d915-4ca8-a6ce-6c928e275445\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Real Part, Imaginary Part, and Conjugation\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e5125a7d-d915-4ca8-a6ce-6c928e275445\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

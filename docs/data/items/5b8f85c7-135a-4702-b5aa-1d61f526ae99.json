@@ -1,0 +1,81 @@
+{
+  "id": "5b8f85c7-135a-4702-b5aa-1d61f526ae99",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c3a7265616c2e6c6573733a2f"
+  ],
+  "heading": "a \\:real.less:/ b",
+  "heading_latex": "a\\textrm{ is less than }b\\quad\\htmlClass{mlg-title-written}{a < b}",
+  "body_text": null,
+  "page": null,
+  "source": "[a \\:real.less:/ b]\nDeclares: a is \\real\nwhen: b is \\\\anything\nDocumented:\n. called: \"$a?$ is less than $b?$\"\n. written: \"a? < b?\"\nId: \"5b8f85c7-135a-4702-b5aa-1d61f526ae99\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "a is \\real",
+      "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "a is \\real",
+          "types": [
+            "asserts a is \\real"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "b is \\\\anything",
+      "inline_latex": "b \\textrm{ is } \\textrm{anything}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "b is \\\\anything",
+          "types": [
+            "asserts b is \\\\anything"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$a?$ is less than $b?$\"",
+              "inline_latex": "a\\textrm{ is less than }b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a? < b?\"",
+              "inline_latex": "a < b",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5b8f85c7-135a-4702-b5aa-1d61f526ae99\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

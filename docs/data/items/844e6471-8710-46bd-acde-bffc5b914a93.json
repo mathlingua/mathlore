@@ -1,0 +1,27 @@
+{
+  "id": "844e6471-8710-46bd-acde-bffc5b914a93",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The image of a linear map is the subspace of all output vectors attained\nby $T$."
+  },
+  "source": "Text: \"The image of a linear map is the subspace of all output vectors attained\n       by $T$.\"\nId: \"844e6471-8710-46bd-acde-bffc5b914a93\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The image of a linear map is the subspace of all output vectors attained\n       by $T$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"844e6471-8710-46bd-acde-bffc5b914a93\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

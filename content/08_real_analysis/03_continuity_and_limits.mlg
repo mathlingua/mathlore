@@ -1,0 +1,133 @@
+Title: "Limits and Continuity"
+Id: "71b151a8-9a18-48b9-a4c4-3007044147d3"
+
+
+Text: "Limits and continuity capture the notion of approximation and unbroken
+       change in real-valued functions. The $\epsilon$-$\delta$ formalism
+       provides the precise criterion for functional proximity."
+Id: "800b7c32-41b4-4c27-a8d6-bb213da36a62"
+
+
+SectionTitle: "Function Limits"
+Id: "e33914da-aa4d-4409-a36b-9308d644ccc6"
+
+
+[\real.function.limit:at{x0}:of{f}]
+Defines: L is \real
+using: U \:subset:/ \reals..R
+when:
+. x0 is \real
+. f is \function:on{U}:to{\reals..R}
+expresses:
+. forAll: eps is \real
+  where: eps \:real.greater?:/ \real.zero
+  then:
+  . exists: delta is \real
+    suchThat:
+    . delta \:real.greater?:/ \real.zero
+    . forAll: x is \real
+      where:
+      . x "in" U
+      . x != x0
+      . \real.abs(x \.real.-./ x0) \:real.less?:/ delta
+      then: \real.abs(f(x) \.real.-./ L) \:real.less?:/ eps
+Documented:
+. called: "limit of $f?$ at $x0?$"
+. written: "\lim_{x \to x0?} f?(x)"
+. description: "The limit of $f(x)$ as $x$ approaches $x_0$ equals $L$."
+Id: "3af5db3a-ae38-4af7-876b-a775e8f83089"
+
+
+SectionTitle: "Continuity"
+Id: "550e6c6b-b2d6-4a7b-941c-de10e61ec6a1"
+
+
+[\(continuous)::real.function:at{x0}]
+Refines: f
+using: U \:subset:/ \reals..R
+when: x0 "in" U
+specifies: f is \function:on{U}:to{\reals..R}
+satisfies:
+. forAll: eps is \real
+  where: eps \:real.greater?:/ \real.zero
+  then:
+  . exists: delta is \real
+    suchThat:
+    . delta \:real.greater?:/ \real.zero
+    . forAll: x is \real
+      where:
+      . x "in" U
+      . \real.abs(x \.real.-./ x0) \:real.less?:/ delta
+      then: \real.abs(f(x) \.real.-./ f(x0)) \:real.less?:/ eps
+Documented:
+. adjective: "continuous at $x0?$"
+. description: "A function is continuous at a point $x_0$ if small changes in
+                input yield arbitrarily small changes in output."
+Id: "0596242b-c84c-4989-a566-a5e5d1a2c884"
+
+
+[\(continuous)::real.function:on{U}]
+Refines: f
+when: U \:subset:/ \reals..R
+specifies: f is \function:on{U}:to{\reals..R}
+satisfies:
+. forAll: x0 "in" U
+  then: f is? \(continuous)::real.function:at{x0}
+Documented:
+. adjective: "continuous"
+. description: "A function is continuous on a domain $U$ if it is continuous at
+                every point of $U$."
+Id: "5b60dfb1-186f-4583-9021-23830d2286df"
+
+
+[\(uniformly.continuous)::real.function:on{U}]
+Refines: f
+when: U \:subset:/ \reals..R
+specifies: f is \function:on{U}:to{\reals..R}
+satisfies:
+. forAll: eps is \real
+  where: eps \:real.greater?:/ \real.zero
+  then:
+  . exists: delta is \real
+    suchThat:
+    . delta \:real.greater?:/ \real.zero
+    . forAll: x, y is \real
+      where:
+      . x "in" U
+      . y "in" U
+      . \real.abs(x \.real.-./ y) \:real.less?:/ delta
+      then: \real.abs(f(x) \.real.-./ f(y)) \:real.less?:/ eps
+Documented:
+. adjective: "uniformly continuous"
+. description: "A function is uniformly continuous if a single $\delta$ works
+                across the entire domain."
+Id: "f69d925b-5ae6-4969-9d22-4d4eeea90a08"
+
+
+SectionTitle: "The Intermediate Value Theorem"
+Id: "53d3e7df-fd04-4eb3-9f05-149c234f9485"
+
+
+[\intermediate.value.theorem]
+Theorem:
+given:
+. a, b is \real
+. f is \function:on{\reals..R}:to{\reals..R}
+where:
+. a \:real.less?:/ b
+then:
+. forAll: y is \real
+  where:
+  . f(a) \:real.less?:/ y
+  . y \:real.less?:/ f(b)
+  then:
+  . exists: c is \real
+    suchThat:
+    . a \:real.less?:/ c
+    . c \:real.less?:/ b
+    . f(c) = y
+Documented:
+. called: "Intermediate Value Theorem"
+. description: "A continuous function on an interval attains every intermediate
+                value between its endpoints."
+Id: "f29c7f02-8e4f-46da-ac4e-3df62dca57f0"

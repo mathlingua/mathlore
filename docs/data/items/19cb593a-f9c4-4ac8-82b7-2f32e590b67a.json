@@ -1,0 +1,894 @@
+{
+  "id": "19cb593a-f9c4-4ac8-82b7-2f32e590b67a",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c636f6d706c65782e6e756d62657273"
+  ],
+  "heading": "\\complex.numbers",
+  "heading_latex": "\\textrm{the complex numbers}\\quad\\htmlClass{mlg-title-written}{\\mathbb{C}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\complex.numbers]\nDefines: Cb ::= (C, 0, 1, +, *, -, /, i, neg(z_))\nabstractly:\nspecifies:\n. C is \\set\n. 0 \"in\" C\n. 1 \"in\" C\n. i \"in\" C\n. + is \\binary.operation:on{C}\n. * is \\binary.operation:on{C}\n. - is \\binary.operation:on{C}\n. / is \\binary.operation:on{C}\n. neg is \\function:on{C}:to{C}\nexpresses:\n. 0 != 1\n. i * i = -1\n. forAll: a, b, c \"in\" C\n  then:\n  . (a + b) + c = a + (b + c)\n  . a + b = b + a\n  . a + 0 = a\n  . (a * b) * c = a * (b * c)\n  . a * b = b * a\n  . a * 1 = a\n  . a * (b + c) = (a * b) + (a * c)\nEnables:\n. capability: z_ \"in\" Cb :-> z_ is \\complex\n. view:\n  as: S := C is \\set\nDocumented:\n. called: \"the complex numbers\"\n. written: \"\\mathbb{C}\"\n. description: \"The field of complex numbers\n                $\\mathbb{C} = \\mathbb{R}[i] / (i^2 + 1)$.\"\nId: \"19cb593a-f9c4-4ac8-82b7-2f32e590b67a\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "Cb ::= (C, 0, 1, +, *, -, /, i, neg(z_))",
+      "inline_latex": "\\mathbb{C} ::= \\left(C, 0, 1, +, \\ast, -, /, i, neg(z)\\right)",
+      "arguments": []
+    },
+    {
+      "label": "abstractly",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "C is \\set",
+          "latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "C is \\set",
+              "types": [
+                "asserts C is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "0 \"in\" C",
+          "latex": "0 \\in C",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 \"in\" C",
+              "types": [
+                "asserts 0 \"in\" C"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "1 \"in\" C",
+          "latex": "1 \\in C",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "1 \"in\" C",
+              "types": [
+                "asserts 1 \"in\" C"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "i \"in\" C",
+          "latex": "i \\in C",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "i \"in\" C",
+              "types": [
+                "asserts i \"in\" C"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "+ is \\binary.operation:on{C}",
+          "latex": "+ \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }C}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "+ is \\binary.operation:on{C}",
+              "types": [
+                "asserts + is \\binary.operation:on{C}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "* is \\binary.operation:on{C}",
+          "latex": "\\ast \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }C}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "* is \\binary.operation:on{C}",
+              "types": [
+                "asserts * is \\binary.operation:on{C}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "- is \\binary.operation:on{C}",
+          "latex": "- \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }C}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "- is \\binary.operation:on{C}",
+              "types": [
+                "asserts - is \\binary.operation:on{C}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "/ is \\binary.operation:on{C}",
+          "latex": "/ \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }C}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "/ is \\binary.operation:on{C}",
+              "types": [
+                "asserts / is \\binary.operation:on{C}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "neg is \\function:on{C}:to{C}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{neg \\: : \\: C \\rightarrow C}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "neg is \\function:on{C}:to{C}",
+              "types": [
+                "asserts neg is \\function:on{C}:to{C}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "0 != 1",
+          "latex": "0 \\ne 1",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 != 1",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "0",
+              "types": [
+                "\"in\" C"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "1",
+              "types": [
+                "\"in\" C"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "i * i = -1",
+          "latex": "i \\ast i = -1",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "i * i = -1",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "i * i",
+              "types": [
+                "\"in\" C"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "i",
+              "types": [
+                "\"in\" C"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "i",
+              "types": [
+                "\"in\" C"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "-1",
+              "types": []
+            },
+            {
+              "depth": 2,
+              "text": "1",
+              "types": [
+                "\"in\" C"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a, b, c \"in\" C",
+              "inline_latex": "a, b, c \\in C",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a, b, c \"in\" C",
+                  "types": [
+                    "asserts a \"in\" C",
+                    "asserts b \"in\" C",
+                    "asserts c \"in\" C"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "C",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "(a + b) + c = a + (b + c)",
+                  "latex": "\\left(a + b\\right) + c = a + \\left(b + c\\right)",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "(a + b) + c = a + (b + c)",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a + b + c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a + b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a + b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a + b + c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b + c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "b + c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "a + b = b + a",
+                  "latex": "a + b = b + a",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a + b = b + a",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a + b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "b + a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "a + 0 = a",
+                  "latex": "a + 0 = a",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a + 0 = a",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a + 0",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "0",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "(a * b) * c = a * (b * c)",
+                  "latex": "\\left(a \\ast b\\right) \\ast c = a \\ast \\left(b \\ast c\\right)",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "(a * b) * c = a * (b * c)",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b * c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b * c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b * c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "b * c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "a * b = b * a",
+                  "latex": "a \\ast b = b \\ast a",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a * b = b * a",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "b * a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "a * 1 = a",
+                  "latex": "a \\ast 1 = a",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a * 1 = a",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * 1",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "1",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "a * (b + c) = (a * b) + (a * c)",
+                  "latex": "a \\ast \\left(b + c\\right) = \\left(a \\ast b\\right) + \\left(a \\ast c\\right)",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a * (b + c) = (a * b) + (a * c)",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b + c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b + c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "b + c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b + a * c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "b",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a * c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 3,
+                      "text": "a * c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "a",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    },
+                    {
+                      "depth": 4,
+                      "text": "c",
+                      "types": [
+                        "\"in\" C"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "z_ \"in\" Cb :-> z_ is \\complex",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "view",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "as",
+              "inline_argument": "S := C is \\set",
+              "inline_latex": "S := C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"the complex numbers\"",
+              "inline_latex": "\\textrm{the complex numbers}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\mathbb{C}\"",
+              "inline_latex": "\\mathbb{C}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"19cb593a-f9c4-4ac8-82b7-2f32e590b67a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "f9443fcc-51df-4c3e-aae1-18af70fc23f0",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A complex function is holomorphic when it is complex-differentiable. The\nexistence of the complex derivative is an exceptionally strong condition,\nforcing infinite differentiability, conformality, and the Cauchy-Riemann\nequations."
+  },
+  "source": "Text: \"A complex function is holomorphic when it is complex-differentiable. The\n       existence of the complex derivative is an exceptionally strong condition,\n       forcing infinite differentiability, conformality, and the Cauchy-Riemann\n       equations.\"\nId: \"f9443fcc-51df-4c3e-aae1-18af70fc23f0\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A complex function is holomorphic when it is complex-differentiable. The\n       existence of the complex derivative is an exceptionally strong condition,\n       forcing infinite differentiability, conformality, and the Cauchy-Riemann\n       equations.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f9443fcc-51df-4c3e-aae1-18af70fc23f0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

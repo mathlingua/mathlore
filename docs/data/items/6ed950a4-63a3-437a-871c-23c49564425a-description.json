@@ -1,0 +1,14 @@
+{
+  "id": "6ed950a4-63a3-437a-871c-23c49564425a-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A scalar $\\lambda$ such that $Av = \\lambda v$ for some nonzero\nvector $v$."
+  },
+  "source": "",
+  "sections": []
+}

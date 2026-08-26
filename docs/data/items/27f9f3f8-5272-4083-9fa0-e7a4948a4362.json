@@ -1,0 +1,57 @@
+{
+  "id": "27f9f3f8-5272-4083-9fa0-e7a4948a4362",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e636f6d706c65782e2a2e2f"
+  ],
+  "heading": "a_ \\.complex.*./ b_",
+  "heading_latex": "a\\textrm{ times }b\\quad\\htmlClass{mlg-title-written}{a \\cdot b}",
+  "body_text": null,
+  "page": null,
+  "source": "[a_ \\.complex.*./ b_]\nDefines: a_ * b_ := \\complex.numbers..`*`(a_, b_) is \\complex\nDocumented:\n. called: \"$a_?$ times $b_?$\"\n. written: \"a_? \\cdot b_?\"\nId: \"27f9f3f8-5272-4083-9fa0-e7a4948a4362\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "a_ * b_ := \\complex.numbers..`*`(a_, b_) is \\complex",
+      "inline_latex": "a \\ast b := \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..*(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$a_?$ times $b_?$\"",
+              "inline_latex": "a\\textrm{ times }b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a_? \\cdot b_?\"",
+              "inline_latex": "a \\cdot b",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"27f9f3f8-5272-4083-9fa0-e7a4948a4362\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

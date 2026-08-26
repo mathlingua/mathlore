@@ -1,0 +1,202 @@
+{
+  "id": "82ba3c4b-40a8-4dfc-8adc-69eabb25f1ec",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c6d61747269782e7472616e73706f73653a6f66"
+  ],
+  "heading": "\\matrix.transpose:of{A(i_, j_)}",
+  "heading_latex": "\\textrm{transpose of }A(i, j)\\quad\\htmlClass{mlg-title-written}{A(i, j)^{T}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\matrix.transpose:of{A(i_, j_)}]\nDefines: At(j_, i_) is \\matrix:of.dim{n, m}:over{F}\nusing:\n. m, n is \\natural\n. F is \\field\nwhen: A is \\matrix:of.dim{m, n}:over{F}\nexpresses:\n. forAll: i, j is \\natural\n  then: At(j, i) = A(i, j)\nDocumented:\n. called: \"transpose of $A?$\"\n. written: \"A?^{T}\"\n. description: \"The transpose $A^T$ obtained by reflecting $A$ across its main\n                diagonal.\"\nId: \"82ba3c4b-40a8-4dfc-8adc-69eabb25f1ec\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "At(j_, i_) is \\matrix:of.dim{n, m}:over{F}",
+      "inline_latex": "At(j, i) \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }n \\times m\\textrm{ over }F}",
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "m, n is \\natural",
+          "latex": "m, n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "m, n is \\natural",
+              "types": [
+                "asserts m is \\natural",
+                "asserts n is \\natural"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "F is \\field",
+          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "F is \\field",
+              "types": [
+                "asserts F is \\field"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "when",
+      "inline_argument": "A is \\matrix:of.dim{m, n}:over{F}",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }m \\times n\\textrm{ over }F}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A is \\matrix:of.dim{m, n}:over{F}",
+          "types": [
+            "asserts A is \\matrix:of.dim{m,n}:over{F}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "i, j is \\natural",
+              "inline_latex": "i, j \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "i, j is \\natural",
+                  "types": [
+                    "asserts i is \\natural",
+                    "asserts j is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "At(j, i) = A(i, j)",
+              "inline_latex": "At(j, i) = A(i, j)",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "At(j, i) = A(i, j)",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "At(j,i)",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "j",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "i",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "A(i,j)",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "i",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "j",
+                  "types": [
+                    "is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"transpose of $A?$\"",
+              "inline_latex": "\\textrm{transpose of }A",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"A?^{T}\"",
+              "inline_latex": "A^{T}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"82ba3c4b-40a8-4dfc-8adc-69eabb25f1ec\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

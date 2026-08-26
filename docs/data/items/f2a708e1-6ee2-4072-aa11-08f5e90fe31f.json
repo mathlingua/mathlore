@@ -1,0 +1,205 @@
+{
+  "id": "f2a708e1-6ee2-4072-aa11-08f5e90fe31f",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c686f6c6f6d6f72706869633a3a636f6d706c65782e66756e6374696f6e3a6f6e"
+  ],
+  "heading": "\\(holomorphic)::complex.function:on{U}",
+  "heading_latex": "\\textrm{holomorphic}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(holomorphic)::complex.function:on{U}]\nRefines: f\nwhen: U \\:subset:/ \\complex.numbers..C\nspecifies: f is \\function:on{U}:to{\\complex.numbers..C}\nsatisfies:\n. forAll: z0 \"in\" U\n  then:\n  . exists: d is \\complex\n    suchThat: d = \\complex.derivative:of{f}:at{z0}\nDocumented:\n. adjective: \"holomorphic\"\n. description: \"A function is holomorphic on $U$ if it is complex-differentiable\n                at every point in $U$.\"\nId: \"f2a708e1-6ee2-4072-aa11-08f5e90fe31f\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "f",
+      "inline_latex": "f",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "U \\:subset:/ \\complex.numbers..C",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..C}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "U \\:subset:/ \\complex.numbers..C",
+          "types": [
+            "asserts U \\:subset:/ \\complex.numbers..C"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\complex.numbers..C",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\complex.numbers",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": "f is \\function:on{U}:to{\\complex.numbers..C}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..C}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "f is \\function:on{U}:to{\\complex.numbers..C}",
+          "types": [
+            "asserts f is \\function:on{U}:to{\\complex.numbers..C}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "z0 \"in\" U",
+              "inline_latex": "z_0 \\in U",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "z0 \"in\" U",
+                  "types": [
+                    "asserts z0 \"in\" U"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "U",
+                  "types": [
+                    "\\:subset:/ \\complex.numbers..C"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "d is \\complex",
+                      "inline_latex": "d \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "d is \\complex",
+                          "types": [
+                            "asserts d is \\complex"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "d = \\complex.derivative:of{f}:at{z0}",
+                      "inline_latex": "d = \\htmlData{mlg-ref=5c636f6d706c65782e646572697661746976653a6f663a6174}{f'(z_0)}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "d = \\complex.derivative:of{f}:at{z0}",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "d",
+                          "types": [
+                            "is \\complex"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\complex.derivative:of{f}:at{z0}",
+                          "types": [
+                            "is \\complex"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "f",
+                          "types": [
+                            "is \\complex.function:on{U}"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "z0",
+                          "types": [
+                            "\"in\" U"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"holomorphic\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f2a708e1-6ee2-4072-aa11-08f5e90fe31f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}
