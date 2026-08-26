@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{the naturals}\\quad\\htmlClass{mlg-title-written}{\\mathbb{N}}",
   "body_text": null,
   "page": null,
-  "source": "[\\naturals]\nDefines: Nb ::= (N, 0, S(n_))\nabstractly:\nspecifies:\n. N is \\set\n. 0 \"in\" N\n. S is \\function:on{N}:to{N}\nexpresses:\n. forAll: n \"in\" N\n  then: S(n) != 0\n. forAll: m, n \"in\" N\n  then: (.S(m) = S(n).) \\.implies./ (.m = n.)\n. forAll: A \\:subset:/ N\n  then:\n  . if:\n    . 0 \"in\" A\n    . forAll: n \"in\" A\n      then: S(n) \"in\" A\n    then: A = N\nEnables:\n. capability: n_ \"in\" Nb :-> n_ is \\natural\n. view:\n  as: S := N is \\set\nDocumented:\n. called: \"the naturals\"\n. written: \"\\mathbb{N}\"\n. description: \"The natural numbers $(\\mathbb{N}, 0, S)$ axiomatized via the\n                Peano postulates: $0$ is not a successor, the successor function\n                $S$ is injective, and induction holds.\"\nId: \"502e2a50-cced-461a-bdcf-03e2221a598f\"",
+  "source": "[\\naturals]\nDefines: Nb ::= (N, 0, S(n_))\nabstractly:\nspecifies:\n. N is \\set\n. 0 \"in\" N\n. S is \\function:on{N}:to{N}\nexpresses:\n. forAll: n \"in\" N\n  then: S(n) != 0\n. forAll: m, n \"in\" N\n  then: (.S(m) = S(n).) \\.implies./ (.m = n.)\n. forAll: A \\:subset:/ N\n  then:\n  . if:\n    . 0 \"in\" A\n    . forAll: n \"in\" A\n      then: S(n) \"in\" A\n    then: A = N\nEnables:\n. capability: n_ \"in\" Nb :-> n_ is \\natural\n. view:\n  as: X := N is \\set\nDocumented:\n. called: \"the naturals\"\n. written: \"\\mathbb{N}\"\n. description: \"The natural numbers $(\\mathbb{N}, 0, S)$ axiomatized via the\n                Peano postulates: $0$ is not a successor, the successor function\n                $S$ is injective, and induction holds.\"\nId: \"502e2a50-cced-461a-bdcf-03e2221a598f\"",
   "sections": [
     {
       "label": "Defines",
@@ -443,8 +443,8 @@
             },
             {
               "label": "as",
-              "inline_argument": "S := N is \\set",
-              "inline_latex": "S := N \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_argument": "X := N is \\set",
+              "inline_latex": "X := N \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
               "arguments": []
             }
           ]

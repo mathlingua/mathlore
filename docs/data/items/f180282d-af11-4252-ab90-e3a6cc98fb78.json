@@ -4,11 +4,14 @@
   "definition_keys": [
     "5c7370616e3a6f663a696e"
   ],
-  "heading": "\\span:of{S}:in{V}",
+  "heading": "\\span:of{S}:in{V ::= (X, +, *, 0)}",
   "heading_latex": "\\textrm{linear span of }S\\textrm{ in }V\\quad\\htmlClass{mlg-title-written}{\\operatorname{span}(S)}",
+  "parameter_destructurings": [
+    "V ::= \\left(X, +, \\ast, 0\\right)"
+  ],
   "body_text": null,
   "page": null,
-  "source": "[\\span:of{S}:in{V}]\nDefines: W is \\set\nusing:\n. F is \\field\n. V ::= (X, +, *, 0) is \\vector.space:over{F}\nwhen:\n. V is \\set\n. S is \\set\nDocumented:\n. called: \"linear span of $S?$ in $V?$\"\n. written: \"\\operatorname{span}(S?)\"\n. description: \"The linear span $\\operatorname{span}(S)$ is the set of all\n                linear combinations formed from elements of $S$.\"\nId: \"f180282d-af11-4252-ab90-e3a6cc98fb78\"",
+  "source": "[\\span:of{S}:in{V ::= (X, +, *, 0)}]\nDefines: W is \\set\nusing: F is \\field\nwhen:\n. S is \\set\n. V is \\vector.space:over{F}\nDocumented:\n. called: \"linear span of $S?$ in $V?$\"\n. written: \"\\operatorname{span}(S?)\"\n. description: \"The linear span $\\operatorname{span}(S)$ is the set of all\n                linear combinations formed from elements of $S$.\"\nId: \"f180282d-af11-4252-ab90-e3a6cc98fb78\"",
   "sections": [
     {
       "label": "Defines",
@@ -18,58 +21,24 @@
     },
     {
       "label": "using",
-      "inline_argument": null,
-      "inline_latex": null,
-      "arguments": [
+      "inline_argument": "F is \\field",
+      "inline_latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+      "inline_type_info": [
         {
-          "kind": "formulation",
+          "depth": 0,
           "text": "F is \\field",
-          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "F is \\field",
-              "types": [
-                "asserts F is \\field"
-              ]
-            }
-          ]
-        },
-        {
-          "kind": "formulation",
-          "text": "V ::= (X, +, *, 0) is \\vector.space:over{F}",
-          "latex": "V ::= \\left(X, +, \\ast, 0\\right) \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "V ::= (X, +, *, 0) is \\vector.space:over{F}",
-              "types": [
-                "asserts V is \\vector.space:over{F}"
-              ]
-            }
+          "types": [
+            "asserts F is \\field"
           ]
         }
-      ]
+      ],
+      "arguments": []
     },
     {
       "label": "when",
       "inline_argument": null,
       "inline_latex": null,
       "arguments": [
-        {
-          "kind": "formulation",
-          "text": "V is \\set",
-          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "V is \\set",
-              "types": [
-                "asserts V is \\set"
-              ]
-            }
-          ]
-        },
         {
           "kind": "formulation",
           "text": "S is \\set",
@@ -80,6 +49,20 @@
               "text": "S is \\set",
               "types": [
                 "asserts S is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "V is \\vector.space:over{F}",
+          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "V is \\vector.space:over{F}",
+              "types": [
+                "asserts V is \\vector.space:over{F}"
               ]
             }
           ]

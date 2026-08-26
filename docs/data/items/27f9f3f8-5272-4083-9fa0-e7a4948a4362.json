@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "a_ * b_ := \\complex.numbers..`*`(a_, b_) is \\complex",
-      "inline_latex": "a \\ast b := \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..*(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "inline_latex": "a \\ast b := \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.*(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
       "arguments": []
     },
     {

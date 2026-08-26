@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "a_ / b_ := \\reals..`/`(a_, b_) is \\real",
-      "inline_latex": "a / b := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}../(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "inline_latex": "a / b := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}./(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
       "arguments": []
     },
     {

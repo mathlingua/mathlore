@@ -13,7 +13,7 @@
     {
       "label": "Declares",
       "inline_argument": "R is \\equivalence.relation:on{\\naturals..N \\.set.cross./ \\naturals..N}",
-      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c6571756976616c656e63652e72656c6174696f6e3a6f6e}{\\textrm{equivalence relation on }\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..N \\times \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..N}}",
+      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c6571756976616c656e63652e72656c6174696f6e3a6f6e}{\\textrm{equivalence relation on }\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.N \\times \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.N}}",
       "inline_type_info": [
         {
           "depth": 0,

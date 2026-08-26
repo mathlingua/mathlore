@@ -101,7 +101,7 @@
                     {
                       "label": "where",
                       "inline_argument": "n_ = \\naturals..S(k)",
-                      "inline_latex": "n = \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..S(k)",
+                      "inline_latex": "n = \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.S(k)",
                       "inline_type_info": [
                         {
                           "depth": 0,
@@ -138,7 +138,7 @@
                     {
                       "label": "then",
                       "inline_argument": "n_ + m_ := \\naturals..S(n_ \\.natural.+./ k)",
-                      "inline_latex": "n + m := \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..S(\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n + k})",
+                      "inline_latex": "n + m := \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.S(\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n + k})",
                       "inline_type_info": [
                         {
                           "depth": 0,

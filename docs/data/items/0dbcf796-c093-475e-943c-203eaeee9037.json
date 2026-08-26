@@ -13,7 +13,7 @@
     {
       "label": "Declares",
       "inline_argument": "u(x_, y_) is \\function:on{U}:to{\\reals..R}",
-      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{u(x, y) \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{u(x, y) \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}",
       "inline_type_info": [
         {
           "depth": 0,
@@ -28,7 +28,7 @@
     {
       "label": "when",
       "inline_argument": "U \\:subset:/ (\\reals..R \\.set.cross./ \\reals..R)",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\left(\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R \\times \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}\\right)}",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\left(\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R \\times \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}\\right)}",
       "inline_type_info": [
         {
           "depth": 0,

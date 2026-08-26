@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "z := \\integers..0 is \\integer",
-      "inline_latex": "z := \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}..0 \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}.0 \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
       "arguments": []
     },
     {

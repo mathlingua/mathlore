@@ -101,14 +101,12 @@ Text: "The span of a subset $S$ is the smallest subspace containing $S$,
 Id: "aafaf29a-2c67-4b97-ae6f-ebc0f7ca78d0"
 
 
-[\span:of{S}:in{V}]
+[\span:of{S}:in{V ::= (X, +, *, 0)}]
 Defines: W is \set
-using:
-. F is \field
-. V ::= (X, +, *, 0) is \vector.space:over{F}
+using: F is \field
 when:
-. V is \set
 . S is \set
+. V is \vector.space:over{F}
 Documented:
 . called: "linear span of $S?$ in $V?$"
 . written: "\operatorname{span}(S?)"

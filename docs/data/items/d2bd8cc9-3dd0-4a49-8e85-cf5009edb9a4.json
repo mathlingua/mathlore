@@ -19,7 +19,7 @@
     {
       "label": "expresses",
       "inline_argument": "a_ + b_ := \\integers..`+`(a_, b_)",
-      "inline_latex": "a + b := \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}..+(a, b)",
+      "inline_latex": "a + b := \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}.+(a, b)",
       "inline_type_info": [
         {
           "depth": 0,

@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "o := \\integers..1 is \\integer",
-      "inline_latex": "o := \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}..1 \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+      "inline_latex": "o := \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}.1 \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
       "arguments": []
     },
     {

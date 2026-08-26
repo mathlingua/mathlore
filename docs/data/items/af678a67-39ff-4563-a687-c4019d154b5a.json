@@ -13,7 +13,7 @@
     {
       "label": "Declares",
       "inline_argument": "z \"in\" \\complex.numbers..C",
-      "inline_latex": "z \\in \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..C",
+      "inline_latex": "z \\in \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C",
       "inline_type_info": [
         {
           "depth": 0,

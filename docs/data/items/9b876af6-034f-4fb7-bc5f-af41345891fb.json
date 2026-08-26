@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "n := \\reals..neg(a_) is \\real",
-      "inline_latex": "n := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..neg(a) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "inline_latex": "n := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.neg(a) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
       "arguments": []
     },
     {

@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{linear map from }V\\textrm{ to }W",
   "body_text": null,
   "page": null,
-  "source": "[\\linear.map:from{V}:to{W}]\nDeclares: T(v__)\nusing:\n. F is \\field\n. V is \\vector.space:over{F}\n. W is \\vector.space:over{F}\nwhen:\n. V is \\set\n. W is \\set\nspecifies: T is \\function:on{V}:to{W}\nDocumented:\n. called: \"linear map from $V?$ to $W?$\"\n. description: \"A linear transformation $T : V \\to W$ is a map preserving vector\n                addition and scalar multiplication.\"\nId: \"e18d1a96-65a7-42f8-9f22-8458b4aab35f\"",
+  "source": "[\\linear.map:from{V}:to{W}]\nDeclares: T(v__)\nusing: F is \\field\nwhen:\n. V is \\vector.space:over{F}\n. W is \\vector.space:over{F}\nspecifies: T is \\function:on{V}:to{W}\nDocumented:\n. called: \"linear map from $V?$ to $W?$\"\n. description: \"A linear transformation $T : V \\to W$ is a map preserving vector\n                addition and scalar multiplication.\"\nId: \"e18d1a96-65a7-42f8-9f22-8458b4aab35f\"",
   "sections": [
     {
       "label": "Declares",
@@ -18,23 +18,24 @@
     },
     {
       "label": "using",
+      "inline_argument": "F is \\field",
+      "inline_latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "F is \\field",
+          "types": [
+            "asserts F is \\field"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
       "inline_argument": null,
       "inline_latex": null,
       "arguments": [
-        {
-          "kind": "formulation",
-          "text": "F is \\field",
-          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "F is \\field",
-              "types": [
-                "asserts F is \\field"
-              ]
-            }
-          ]
-        },
         {
           "kind": "formulation",
           "text": "V is \\vector.space:over{F}",
@@ -59,41 +60,6 @@
               "text": "W is \\vector.space:over{F}",
               "types": [
                 "asserts W is \\vector.space:over{F}"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "label": "when",
-      "inline_argument": null,
-      "inline_latex": null,
-      "arguments": [
-        {
-          "kind": "formulation",
-          "text": "V is \\set",
-          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "V is \\set",
-              "types": [
-                "asserts V is \\set"
-              ]
-            }
-          ]
-        },
-        {
-          "kind": "formulation",
-          "text": "W is \\set",
-          "latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "W is \\set",
-              "types": [
-                "asserts W is \\set"
               ]
             }
           ]

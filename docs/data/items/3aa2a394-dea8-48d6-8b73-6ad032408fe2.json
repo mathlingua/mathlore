@@ -129,7 +129,7 @@
                     {
                       "label": "where",
                       "inline_argument": "n = \\naturals..S(k)",
-                      "inline_latex": "n = \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..S(k)",
+                      "inline_latex": "n = \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.S(k)",
                       "inline_type_info": [
                         {
                           "depth": 0,

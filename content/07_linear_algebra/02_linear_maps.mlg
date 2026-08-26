@@ -14,13 +14,10 @@ Id: "bb7bb487-0b2a-4844-bafe-31c3d02c3f4d"
 
 [\linear.map:from{V}:to{W}]
 Declares: T(v__)
-using:
-. F is \field
+using: F is \field
+when:
 . V is \vector.space:over{F}
 . W is \vector.space:over{F}
-when:
-. V is \set
-. W is \set
 specifies: T is \function:on{V}:to{W}
 Documented:
 . called: "linear map from $V?$ to $W?$"

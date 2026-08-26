@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "z := \\reals..0 is \\real",
-      "inline_latex": "z := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..0 \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.0 \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
       "arguments": []
     },
     {

@@ -33,7 +33,7 @@ expresses:
 Enables:
 . capability: n_ "in" Nb :-> n_ is \natural
 . view:
-  as: S := N is \set
+  as: X := N is \set
 Documented:
 . called: "the naturals"
 . written: "\mathbb{N}"

@@ -13,7 +13,7 @@
     {
       "label": "Declares",
       "inline_argument": "z \"in\" \\integers..Z",
-      "inline_latex": "z \\in \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}..Z",
+      "inline_latex": "z \\in \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}.Z",
       "inline_type_info": [
         {
           "depth": 0,

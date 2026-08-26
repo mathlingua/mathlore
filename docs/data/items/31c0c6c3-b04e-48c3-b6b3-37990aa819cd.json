@@ -39,7 +39,7 @@
         {
           "kind": "formulation",
           "text": "f is \\function:on{\\reals..R}:to{\\reals..R}",
-          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}..R}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}",
           "type_info": [
             {
               "depth": 0,

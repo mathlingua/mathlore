@@ -13,7 +13,7 @@
     {
       "label": "Declares",
       "inline_argument": "n \"in\" \\naturals..N",
-      "inline_latex": "n \\in \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..N",
+      "inline_latex": "n \\in \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.N",
       "inline_type_info": [
         {
           "depth": 0,

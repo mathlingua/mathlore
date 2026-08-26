@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "z := \\complex.numbers..0 is \\complex",
-      "inline_latex": "z := \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}..0 \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.0 \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
       "arguments": []
     },
     {

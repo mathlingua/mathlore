@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "z := \\naturals..0 is \\natural",
-      "inline_latex": "z := \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..0 \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.0 \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
       "arguments": []
     },
     {

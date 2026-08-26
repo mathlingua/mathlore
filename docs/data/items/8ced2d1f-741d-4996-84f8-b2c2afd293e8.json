@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "o := \\naturals..S(\\natural.zero) is \\natural",
-      "inline_latex": "o := \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}..S(\\htmlData{mlg-ref=5c6e61747572616c2e7a65726f}{0}) \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "inline_latex": "o := \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.S(\\htmlData{mlg-ref=5c6e61747572616c2e7a65726f}{0}) \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
       "arguments": []
     },
     {
