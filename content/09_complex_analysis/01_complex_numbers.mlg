@@ -50,7 +50,7 @@ Id: "19cb593a-f9c4-4ac8-82b7-2f32e590b67a"
 
 
 [\complex]
-Declares: z "in" \complex.numbers..C
+Declares: z "in" \complex.numbers
 Enables:
 . capability: a_ + b_ :=> a_ \.complex.+./ b_
 . capability: a_ - b_ :=> a_ \.complex.-./ b_

@@ -8,29 +8,22 @@
   "heading_latex": "\\textrm{integer}",
   "body_text": null,
   "page": null,
-  "source": "[\\integer]\nDeclares: z \"in\" \\integers..Z\nEnables:\n. capability: a_ + b_ :=> a_ \\.integer.+./ b_\n. capability: a_ * b_ :=> a_ \\.integer.*./ b_\n. capability: -a_ :=> \\integer.neg(a_)\nDocumented:\n. called: \"integer\"\n. description: \"An integer is an element of the underlying set of integers\n                $\\mathbb{Z}$.\"\nId: \"a97ad153-f94d-4eb6-b91e-84f49114ab6e\"",
+  "source": "[\\integer]\nDeclares: z \"in\" \\integers\nEnables:\n. capability: a_ + b_ :=> a_ \\.integer.+./ b_\n. capability: a_ * b_ :=> a_ \\.integer.*./ b_\n. capability: -a_ :=> \\integer.neg(a_)\nDocumented:\n. called: \"integer\"\n. description: \"An integer is an element of the underlying set of integers\n                $\\mathbb{Z}$.\"\nId: \"a97ad153-f94d-4eb6-b91e-84f49114ab6e\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "z \"in\" \\integers..Z",
-      "inline_latex": "z \\in \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}.Z",
+      "inline_argument": "z \"in\" \\integers",
+      "inline_latex": "z \\in \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "z \"in\" \\integers..Z",
+          "text": "z \"in\" \\integers",
           "types": [
-            "asserts z \"in\" \\integers..Z"
+            "asserts z \"in\" \\integers"
           ]
         },
         {
           "depth": 1,
-          "text": "\\integers..Z",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 2,
           "text": "\\integers",
           "types": []
         }

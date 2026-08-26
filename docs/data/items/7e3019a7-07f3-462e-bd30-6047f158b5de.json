@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{complex derivative of }f\\textrm{ at }z_0\\quad\\htmlClass{mlg-title-written}{f'(z_0)}",
   "body_text": null,
   "page": null,
-  "source": "[\\complex.derivative:of{f}:at{z0}]\nDefines: d is \\complex\nwhen:\n. z0 is \\\\anything\n. f is \\\\anything\nexpresses:\n. forAll: eps is \\real\n  where: eps \\:real.greater?:/ \\real.zero\n  then:\n  . exists: delta is \\real\n    suchThat:\n    . delta \\:real.greater?:/ \\real.zero\n    . forAll: h is \\complex\n      where:\n      . h != \\complex.zero\n      . \\complex.modulus(h) \\:real.less?:/ delta\n      then: \\complex.modulus(((f(z0 \\.complex.+./ h) \\.complex.-./ f(z0)) \\.complex.div./ h) \\.complex.-./ d) \\:real.less?:/ eps\nDocumented:\n. called: \"complex derivative of $f?$ at $z0?$\"\n. written: \"f?'(z0?)\"\n. description: \"The complex derivative\n                $f'(z_0) = \\lim_{h \\to 0} \\frac{f(z_0 + h) - f(z_0)}{h}$.\"\nId: \"7e3019a7-07f3-462e-bd30-6047f158b5de\"",
+  "source": "[\\complex.derivative:of{f}:at{z0}]\nDefines: d is \\complex\nwhen:\n. z0 is \\\\anything\n. f is \\\\anything\nexpresses:\n. forAll: epsilon is \\real\n  where: epsilon \\:real.greater?:/ \\real.zero\n  then:\n  . exists: delta is \\real\n    suchThat:\n    . delta \\:real.greater?:/ \\real.zero\n    . forAll: h is \\complex\n      where:\n      . h != \\complex.zero\n      . \\complex.modulus(h) \\:real.less?:/ delta\n      then: \\complex.modulus(((f(z0 \\.complex.+./ h) \\.complex.-./ f(z0)) \\.complex.div./ h) \\.complex.-./ d) \\:real.less?:/ epsilon\nDocumented:\n. called: \"complex derivative of $f?$ at $z0?$\"\n. written: \"f?'(z0?)\"\n. description: \"The complex derivative\n                $f'(z_0) = \\lim_{h \\to 0} \\frac{f(z_0 + h) - f(z_0)}{h}$.\"\nId: \"7e3019a7-07f3-462e-bd30-6047f158b5de\"",
   "sections": [
     {
       "label": "Defines",
@@ -62,14 +62,14 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "eps is \\real",
-              "inline_latex": "eps \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+              "inline_argument": "epsilon is \\real",
+              "inline_latex": "\\epsilon \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "eps is \\real",
+                  "text": "epsilon is \\real",
                   "types": [
-                    "asserts eps is \\real"
+                    "asserts epsilon is \\real"
                   ]
                 }
               ],
@@ -77,19 +77,19 @@
             },
             {
               "label": "where",
-              "inline_argument": "eps \\:real.greater?:/ \\real.zero",
-              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{eps > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+              "inline_argument": "epsilon \\:real.greater?:/ \\real.zero",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{\\epsilon > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "eps \\:real.greater?:/ \\real.zero",
+                  "text": "epsilon \\:real.greater?:/ \\real.zero",
                   "types": [
                     "is \\\\statement"
                   ]
                 },
                 {
                   "depth": 1,
-                  "text": "eps",
+                  "text": "epsilon",
                   "types": [
                     "is \\real"
                   ]
@@ -116,7 +116,7 @@
                     {
                       "label": "exists",
                       "inline_argument": "delta is \\real",
-                      "inline_latex": "delta \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                      "inline_latex": "\\delta \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
                       "inline_type_info": [
                         {
                           "depth": 0,
@@ -136,7 +136,7 @@
                         {
                           "kind": "formulation",
                           "text": "delta \\:real.greater?:/ \\real.zero",
-                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{delta > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{\\delta > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
                           "type_info": [
                             {
                               "depth": 0,
@@ -214,7 +214,7 @@
                                 {
                                   "kind": "formulation",
                                   "text": "\\complex.modulus(h) \\:real.less?:/ delta",
-                                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| h \\right|} < delta}",
+                                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| h \\right|} < \\delta}",
                                   "type_info": [
                                     {
                                       "depth": 0,
@@ -250,12 +250,12 @@
                             },
                             {
                               "label": "then",
-                              "inline_argument": "\\complex.modulus(((f(z0 \\.complex.+./ h) \\.complex.-./ f(z0)) \\.complex.div./ h) \\.complex.-./ d) \\:real.less?:/ eps",
-                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| \\htmlData{mlg-ref=5c2e636f6d706c65782e2d2e2f}{\\left(\\htmlData{mlg-ref=5c2e636f6d706c65782e6469762e2f}{\\frac{\\left(\\htmlData{mlg-ref=5c2e636f6d706c65782e2d2e2f}{f(\\htmlData{mlg-ref=5c2e636f6d706c65782e2b2e2f}{z_0 + h}) - f(z_0)}\\right)}{h}}\\right) - d} \\right|} < eps}",
+                              "inline_argument": "\\complex.modulus(((f(z0 \\.complex.+./ h) \\.complex.-./ f(z0)) \\.complex.div./ h) \\.complex.-./ d) \\:real.less?:/ epsilon",
+                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| \\htmlData{mlg-ref=5c2e636f6d706c65782e2d2e2f}{\\left(\\htmlData{mlg-ref=5c2e636f6d706c65782e6469762e2f}{\\frac{\\left(\\htmlData{mlg-ref=5c2e636f6d706c65782e2d2e2f}{f(\\htmlData{mlg-ref=5c2e636f6d706c65782e2b2e2f}{z_0 + h}) - f(z_0)}\\right)}{h}}\\right) - d} \\right|} < \\epsilon}",
                               "inline_type_info": [
                                 {
                                   "depth": 0,
-                                  "text": "\\complex.modulus(((f(z0 \\.complex.+./ h) \\.complex.-./ f(z0)) \\.complex.div./ h) \\.complex.-./ d) \\:real.less?:/ eps",
+                                  "text": "\\complex.modulus(((f(z0 \\.complex.+./ h) \\.complex.-./ f(z0)) \\.complex.div./ h) \\.complex.-./ d) \\:real.less?:/ epsilon",
                                   "types": [
                                     "is \\\\statement"
                                   ]
@@ -356,7 +356,7 @@
                                 },
                                 {
                                   "depth": 1,
-                                  "text": "eps",
+                                  "text": "epsilon",
                                   "types": [
                                     "is \\real"
                                   ]

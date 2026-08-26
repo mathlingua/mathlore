@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Completeness of the Real Numbers}",
   "body_text": null,
   "page": null,
-  "source": "[\\completeness.of.reals]\nTheorem:\ngiven: S \\:(nonempty)::subset:/ \\reals..R\nwhere:\n. exists: M is \\real\n  suchThat:\n  . forAll: x is \\real\n    where: x \"in\" S\n    then: x \\:real.leq?:/ M\nthen:\n. exists: sup is \\real\n  suchThat: sup = \\real.supremum:of{S}\nDocumented:\n. called: \"Completeness of the Real Numbers\"\n. description: \"Every nonempty set of real numbers bounded above has a least\n                upper bound in $\\mathbb{R}$.\"\nId: \"b4fc64c6-378b-4e44-87c5-610045a90fe3\"",
+  "source": "[\\completeness.of.reals]\nTheorem:\ngiven: S \\:(nonempty)::subset:/ \\reals\nwhere:\n. exists: M is \\real\n  suchThat:\n  . forAll: x is \\real\n    where: x \"in\" S\n    then: x \\:real.leq?:/ M\nthen:\n. exists: sup is \\real\n  suchThat: sup = \\real.supremum:of{S}\nDocumented:\n. called: \"Completeness of the Real Numbers\"\n. description: \"Every nonempty set of real numbers bounded above has a least\n                upper bound in $\\mathbb{R}$.\"\nId: \"b4fc64c6-378b-4e44-87c5-610045a90fe3\"",
   "sections": [
     {
       "label": "Theorem",
@@ -18,25 +18,18 @@
     },
     {
       "label": "given",
-      "inline_argument": "S \\:(nonempty)::subset:/ \\reals..R",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}\\textrm{ }\\left(\\htmlData{mlg-ref=5c6e6f6e656d7074793a3a736574}{\\textrm{nonempty}}\\right)",
+      "inline_argument": "S \\:(nonempty)::subset:/ \\reals",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}\\textrm{ }\\left(\\htmlData{mlg-ref=5c6e6f6e656d7074793a3a736574}{\\textrm{nonempty}}\\right)",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "S \\:(nonempty)::subset:/ \\reals..R",
+          "text": "S \\:(nonempty)::subset:/ \\reals",
           "types": [
-            "asserts S \\:nonempty::subset:/ \\reals..R"
+            "asserts S \\:nonempty::subset:/ \\reals"
           ]
         },
         {
           "depth": 1,
-          "text": "\\reals..R",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 2,
           "text": "\\reals",
           "types": []
         }
@@ -107,7 +100,7 @@
                           "depth": 1,
                           "text": "S",
                           "types": [
-                            "\\:nonempty::subset:/ \\reals..R"
+                            "\\:nonempty::subset:/ \\reals"
                           ]
                         }
                       ],
@@ -205,7 +198,7 @@
                   "depth": 2,
                   "text": "S",
                   "types": [
-                    "\\:nonempty::subset:/ \\reals..R"
+                    "\\:nonempty::subset:/ \\reals"
                   ]
                 }
               ],

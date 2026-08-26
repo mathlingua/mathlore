@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Riemann integral of }f\\textrm{ on }[a, b]\\quad\\htmlClass{mlg-title-written}{\\int_{a}^{b} f(x) \\, dx}",
   "body_text": null,
   "page": null,
-  "source": "[\\riemann.integral:of{f}:on{a, b}]\nDefines: I is \\real\nwhen:\n. a, b is \\real\n. f is \\function:on{\\reals..R}:to{\\reals..R}\nDocumented:\n. called: \"Riemann integral of $f?$ on $[a?, b?]$\"\n. written: \"\\int_{a?}^{b?} f?(x) \\, dx\"\n. description: \"The definite Riemann integral $\\int_a^b f(x) dx$.\"\nId: \"06b220c2-ee50-4d69-8de7-c1cbbd81e3bb\"",
+  "source": "[\\riemann.integral:of{f}:on{a, b}]\nDefines: I is \\real\nwhen:\n. a, b is \\real\n. f is \\function:on{\\reals}:to{\\reals}\nDocumented:\n. called: \"Riemann integral of $f?$ on $[a?, b?]$\"\n. written: \"\\int_{a?}^{b?} f?(x) \\, dx\"\n. description: \"The definite Riemann integral $\\int_a^b f(x) dx$.\"\nId: \"06b220c2-ee50-4d69-8de7-c1cbbd81e3bb\"",
   "sections": [
     {
       "label": "Defines",
@@ -38,14 +38,14 @@
         },
         {
           "kind": "formulation",
-          "text": "f is \\function:on{\\reals..R}:to{\\reals..R}",
-          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}",
+          "text": "f is \\function:on{\\reals}:to{\\reals}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}} \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "f is \\function:on{\\reals..R}:to{\\reals..R}",
+              "text": "f is \\function:on{\\reals}:to{\\reals}",
               "types": [
-                "asserts f is \\function:on{\\reals..R}:to{\\reals..R}"
+                "asserts f is \\function:on{\\reals}:to{\\reals}"
               ]
             }
           ]

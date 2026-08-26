@@ -14,13 +14,13 @@ Id: "e33914da-aa4d-4409-a36b-9308d644ccc6"
 
 [\real.function.limit:at{x0}:of{f}]
 Defines: L is \real
-using: U \:subset:/ \reals..R
+using: U \:subset:/ \reals
 when:
 . x0 is \real
-. f is \function:on{U}:to{\reals..R}
+. f is \function:on{U}:to{\reals}
 expresses:
-. forAll: eps is \real
-  where: eps \:real.greater?:/ \real.zero
+. forAll: epsilon is \real
+  where: epsilon \:real.greater?:/ \real.zero
   then:
   . exists: delta is \real
     suchThat:
@@ -30,7 +30,7 @@ expresses:
       . x "in" U
       . x != x0
       . \real.abs(x \.real.-./ x0) \:real.less?:/ delta
-      then: \real.abs(f(x) \.real.-./ L) \:real.less?:/ eps
+      then: \real.abs(f(x) \.real.-./ L) \:real.less?:/ epsilon
 Documented:
 . called: "limit of $f?$ at $x0?$"
 . written: "\lim_{x \to x0?} f?(x)"
@@ -44,12 +44,12 @@ Id: "550e6c6b-b2d6-4a7b-941c-de10e61ec6a1"
 
 [\(continuous)::real.function:at{x0}]
 Refines: f
-using: U \:subset:/ \reals..R
+using: U \:subset:/ \reals
 when: x0 "in" U
-specifies: f is \function:on{U}:to{\reals..R}
+specifies: f is \function:on{U}:to{\reals}
 satisfies:
-. forAll: eps is \real
-  where: eps \:real.greater?:/ \real.zero
+. forAll: epsilon is \real
+  where: epsilon \:real.greater?:/ \real.zero
   then:
   . exists: delta is \real
     suchThat:
@@ -58,7 +58,7 @@ satisfies:
       where:
       . x "in" U
       . \real.abs(x \.real.-./ x0) \:real.less?:/ delta
-      then: \real.abs(f(x) \.real.-./ f(x0)) \:real.less?:/ eps
+      then: \real.abs(f(x) \.real.-./ f(x0)) \:real.less?:/ epsilon
 Documented:
 . adjective: "continuous at $x0?$"
 . description: "A function is continuous at a point $x_0$ if small changes in
@@ -68,8 +68,8 @@ Id: "0596242b-c84c-4989-a566-a5e5d1a2c884"
 
 [\(continuous)::real.function:on{U}]
 Refines: f
-when: U \:subset:/ \reals..R
-specifies: f is \function:on{U}:to{\reals..R}
+when: U \:subset:/ \reals
+specifies: f is \function:on{U}:to{\reals}
 satisfies:
 . forAll: x0 "in" U
   then: f is? \(continuous)::real.function:at{x0}
@@ -82,11 +82,11 @@ Id: "5b60dfb1-186f-4583-9021-23830d2286df"
 
 [\(uniformly.continuous)::real.function:on{U}]
 Refines: f
-when: U \:subset:/ \reals..R
-specifies: f is \function:on{U}:to{\reals..R}
+when: U \:subset:/ \reals
+specifies: f is \function:on{U}:to{\reals}
 satisfies:
-. forAll: eps is \real
-  where: eps \:real.greater?:/ \real.zero
+. forAll: epsilon is \real
+  where: epsilon \:real.greater?:/ \real.zero
   then:
   . exists: delta is \real
     suchThat:
@@ -96,7 +96,7 @@ satisfies:
       . x "in" U
       . y "in" U
       . \real.abs(x \.real.-./ y) \:real.less?:/ delta
-      then: \real.abs(f(x) \.real.-./ f(y)) \:real.less?:/ eps
+      then: \real.abs(f(x) \.real.-./ f(y)) \:real.less?:/ epsilon
 Documented:
 . adjective: "uniformly continuous"
 . description: "A function is uniformly continuous if a single $\delta$ works
@@ -112,7 +112,7 @@ Id: "53d3e7df-fd04-4eb3-9f05-149c234f9485"
 Theorem:
 given:
 . a, b is \real
-. f is \function:on{\reals..R}:to{\reals..R}
+. f is \function:on{\reals}:to{\reals}
 where:
 . a \:real.less?:/ b
 then:

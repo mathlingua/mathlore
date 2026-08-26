@@ -44,7 +44,7 @@ Id: "502e2a50-cced-461a-bdcf-03e2221a598f"
 
 
 [\natural]
-Declares: n "in" \naturals..N
+Declares: n "in" \naturals
 Enables:
 . capability: n_ + m_ :=> n_ \.natural.+./ m_
 Documented:

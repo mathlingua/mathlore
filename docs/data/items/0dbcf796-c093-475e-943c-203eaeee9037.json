@@ -8,18 +8,18 @@
   "heading_latex": "\\textrm{harmonic function on }U",
   "body_text": null,
   "page": null,
-  "source": "[\\harmonic.function:on{U}]\nDeclares: u(x_, y_) is \\function:on{U}:to{\\reals..R}\nwhen: U \\:subset:/ (\\reals..R \\.set.cross./ \\reals..R)\nDocumented:\n. called: \"harmonic function on $U?$\"\n. description: \"A function satisfying Laplace's equation $\\nabla^2 u = 0$. The\n                real and imaginary components of any holomorphic function are\n                harmonic.\"\nId: \"0dbcf796-c093-475e-943c-203eaeee9037\"",
+  "source": "[\\harmonic.function:on{U}]\nDeclares: u(x_, y_) is \\function:on{U}:to{\\reals}\nwhen: U \\:subset:/ (\\reals \\.set.cross./ \\reals)\nDocumented:\n. called: \"harmonic function on $U?$\"\n. description: \"A function satisfying Laplace's equation $\\nabla^2 u = 0$. The\n                real and imaginary components of any holomorphic function are\n                harmonic.\"\nId: \"0dbcf796-c093-475e-943c-203eaeee9037\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "u(x_, y_) is \\function:on{U}:to{\\reals..R}",
-      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{u(x, y) \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}",
+      "inline_argument": "u(x_, y_) is \\function:on{U}:to{\\reals}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{u(x, y) \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "u(x_, y_) is \\function:on{U}:to{\\reals..R}",
+          "text": "u(x_, y_) is \\function:on{U}:to{\\reals}",
           "types": [
-            "asserts u is \\function:on{U}:to{\\reals..R}"
+            "asserts u is \\function:on{U}:to{\\reals}"
           ]
         }
       ],
@@ -27,51 +27,37 @@
     },
     {
       "label": "when",
-      "inline_argument": "U \\:subset:/ (\\reals..R \\.set.cross./ \\reals..R)",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\left(\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R \\times \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}\\right)}",
+      "inline_argument": "U \\:subset:/ (\\reals \\.set.cross./ \\reals)",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\left(\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}} \\times \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}\\right)}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "U \\:subset:/ (\\reals..R \\.set.cross./ \\reals..R)",
+          "text": "U \\:subset:/ (\\reals \\.set.cross./ \\reals)",
           "types": [
-            "asserts U \\:subset:/ \\reals..R\\.set.cross./\\reals..R"
+            "asserts U \\:subset:/ \\reals\\.set.cross./\\reals"
           ]
         },
         {
           "depth": 1,
-          "text": "\\reals..R\\.set.cross./\\reals..R",
+          "text": "\\reals\\.set.cross./\\reals",
           "types": [
             "is \\set"
           ]
         },
         {
           "depth": 2,
-          "text": "\\reals..R\\.set.cross./\\reals..R",
+          "text": "\\reals\\.set.cross./\\reals",
           "types": [
             "is \\set"
           ]
         },
         {
           "depth": 3,
-          "text": "\\reals..R",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 4,
           "text": "\\reals",
           "types": []
         },
         {
           "depth": 3,
-          "text": "\\reals..R",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 4,
           "text": "\\reals",
           "types": []
         }

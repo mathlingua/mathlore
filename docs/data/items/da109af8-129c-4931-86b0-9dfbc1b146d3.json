@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Cauchy-Riemann equations for }f",
   "body_text": null,
   "page": null,
-  "source": "[\\cauchy.riemann.equations:for{f}]\nStates:\nusing: U \\:subset:/ \\complex.numbers..C\nwhen: f is \\function:on{U}:to{\\complex.numbers..C}\nthat: f is? \\(holomorphic)::complex.function:on{U}\nDocumented:\n. called: \"Cauchy-Riemann equations for $f?$\"\n. description: \"The Cauchy-Riemann equations express holomorphy in terms of real\n                partial derivatives:\n                $\\partial u/\\partial x = \\partial v/\\partial y$ and\n                $\\partial u/\\partial y = -\\partial v/\\partial x$.\"\nId: \"da109af8-129c-4931-86b0-9dfbc1b146d3\"",
+  "source": "[\\cauchy.riemann.equations:for{f}]\nStates:\nusing: U \\:subset:/ \\complex.numbers\nwhen: f is \\function:on{U}:to{\\complex.numbers}\nthat: f is? \\(holomorphic)::complex.function:on{U}\nDocumented:\n. called: \"Cauchy-Riemann equations for $f?$\"\n. description: \"The Cauchy-Riemann equations express holomorphy in terms of real\n                partial derivatives:\n                $\\partial u/\\partial x = \\partial v/\\partial y$ and\n                $\\partial u/\\partial y = -\\partial v/\\partial x$.\"\nId: \"da109af8-129c-4931-86b0-9dfbc1b146d3\"",
   "sections": [
     {
       "label": "States",
@@ -18,25 +18,18 @@
     },
     {
       "label": "using",
-      "inline_argument": "U \\:subset:/ \\complex.numbers..C",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C}",
+      "inline_argument": "U \\:subset:/ \\complex.numbers",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "U \\:subset:/ \\complex.numbers..C",
+          "text": "U \\:subset:/ \\complex.numbers",
           "types": [
-            "asserts U \\:subset:/ \\complex.numbers..C"
+            "asserts U \\:subset:/ \\complex.numbers"
           ]
         },
         {
           "depth": 1,
-          "text": "\\complex.numbers..C",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 2,
           "text": "\\complex.numbers",
           "types": []
         }
@@ -45,14 +38,14 @@
     },
     {
       "label": "when",
-      "inline_argument": "f is \\function:on{U}:to{\\complex.numbers..C}",
-      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C}",
+      "inline_argument": "f is \\function:on{U}:to{\\complex.numbers}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "f is \\function:on{U}:to{\\complex.numbers..C}",
+          "text": "f is \\function:on{U}:to{\\complex.numbers}",
           "types": [
-            "asserts f is \\function:on{U}:to{\\complex.numbers..C}"
+            "asserts f is \\function:on{U}:to{\\complex.numbers}"
           ]
         }
       ],
@@ -74,7 +67,7 @@
           "depth": 1,
           "text": "f",
           "types": [
-            "is \\function:on{U}:to{\\complex.numbers..C}"
+            "is \\function:on{U}:to{\\complex.numbers}"
           ]
         }
       ],

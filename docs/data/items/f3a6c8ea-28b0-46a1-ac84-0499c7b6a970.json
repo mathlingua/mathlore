@@ -13,7 +13,7 @@
     {
       "label": "Refines",
       "inline_argument": "gamma",
-      "inline_latex": "gamma \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
+      "inline_latex": "\\gamma \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
       "arguments": []
     },
     {
@@ -35,7 +35,7 @@
     {
       "label": "specifies",
       "inline_argument": "gamma is \\complex.path:on{a, b}",
-      "inline_latex": "gamma \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
+      "inline_latex": "\\gamma \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
       "inline_type_info": [
         {
           "depth": 0,
@@ -50,7 +50,7 @@
     {
       "label": "satisfies",
       "inline_argument": "gamma(a) = gamma(b)",
-      "inline_latex": "gamma(a) = gamma(b)",
+      "inline_latex": "\\gamma(a) = \\gamma(b)",
       "inline_type_info": [
         {
           "depth": 0,
@@ -63,7 +63,7 @@
           "depth": 1,
           "text": "gamma(a)",
           "types": [
-            "\"in\" \\complex.numbers..C"
+            "\"in\" \\complex.numbers"
           ]
         },
         {
@@ -77,7 +77,7 @@
           "depth": 1,
           "text": "gamma(b)",
           "types": [
-            "\"in\" \\complex.numbers..C"
+            "\"in\" \\complex.numbers"
           ]
         },
         {

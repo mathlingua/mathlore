@@ -8,29 +8,22 @@
   "heading_latex": "\\textrm{complex}",
   "body_text": null,
   "page": null,
-  "source": "[\\complex]\nDeclares: z \"in\" \\complex.numbers..C\nEnables:\n. capability: a_ + b_ :=> a_ \\.complex.+./ b_\n. capability: a_ - b_ :=> a_ \\.complex.-./ b_\n. capability: a_ * b_ :=> a_ \\.complex.*./ b_\n. capability: a_ / b_ :=> a_ \\.complex.div./ b_\n. capability: -a_ :=> \\complex.neg(a_)\nDocumented:\n. called: \"complex\"\n. description: \"A complex number is an element of $\\mathbb{C}$.\"\nId: \"af678a67-39ff-4563-a687-c4019d154b5a\"",
+  "source": "[\\complex]\nDeclares: z \"in\" \\complex.numbers\nEnables:\n. capability: a_ + b_ :=> a_ \\.complex.+./ b_\n. capability: a_ - b_ :=> a_ \\.complex.-./ b_\n. capability: a_ * b_ :=> a_ \\.complex.*./ b_\n. capability: a_ / b_ :=> a_ \\.complex.div./ b_\n. capability: -a_ :=> \\complex.neg(a_)\nDocumented:\n. called: \"complex\"\n. description: \"A complex number is an element of $\\mathbb{C}$.\"\nId: \"af678a67-39ff-4563-a687-c4019d154b5a\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "z \"in\" \\complex.numbers..C",
-      "inline_latex": "z \\in \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C",
+      "inline_argument": "z \"in\" \\complex.numbers",
+      "inline_latex": "z \\in \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "z \"in\" \\complex.numbers..C",
+          "text": "z \"in\" \\complex.numbers",
           "types": [
-            "asserts z \"in\" \\complex.numbers..C"
+            "asserts z \"in\" \\complex.numbers"
           ]
         },
         {
           "depth": 1,
-          "text": "\\complex.numbers..C",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 2,
           "text": "\\complex.numbers",
           "types": []
         }

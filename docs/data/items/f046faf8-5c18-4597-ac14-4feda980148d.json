@@ -11,7 +11,7 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\converges.to{L}:for{S ::= a(n_)}]\nStates:\nwhen:\n. L is \\real\n. S is \\real.sequence\nthat:\n. forAll: eps is \\real\n  where: eps \\:real.greater?:/ \\real.zero\n  then:\n  . exists: N is \\natural\n    suchThat:\n    . forAll: n is \\natural\n      where: N \\:natural.leq?:/ n\n      then: \\real.abs(a(n) \\.real.-./ L) \\:real.less?:/ eps\nDocumented:\n. called: \"$S?$ converges to $L?$\"\n. written: \"a?_{n_?} \\to L?\"\n. description: \"The sequence $a_n$ converges to limit $L$ as $n \\to \\infty$.\"\nId: \"f046faf8-5c18-4597-ac14-4feda980148d\"",
+  "source": "[\\converges.to{L}:for{S ::= a(n_)}]\nStates:\nwhen:\n. L is \\real\n. S is \\real.sequence\nthat:\n. forAll: epsilon is \\real\n  where: epsilon \\:real.greater?:/ \\real.zero\n  then:\n  . exists: N is \\natural\n    suchThat:\n    . forAll: n is \\natural\n      where: N \\:natural.leq?:/ n\n      then: \\real.abs(a(n) \\.real.-./ L) \\:real.less?:/ epsilon\nDocumented:\n. called: \"$S?$ converges to $L?$\"\n. written: \"a?_{n_?} \\to L?\"\n. description: \"The sequence $a_n$ converges to limit $L$ as $n \\to \\infty$.\"\nId: \"f046faf8-5c18-4597-ac14-4feda980148d\"",
   "sections": [
     {
       "label": "States",
@@ -65,14 +65,14 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "eps is \\real",
-              "inline_latex": "eps \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+              "inline_argument": "epsilon is \\real",
+              "inline_latex": "\\epsilon \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "eps is \\real",
+                  "text": "epsilon is \\real",
                   "types": [
-                    "asserts eps is \\real"
+                    "asserts epsilon is \\real"
                   ]
                 }
               ],
@@ -80,19 +80,19 @@
             },
             {
               "label": "where",
-              "inline_argument": "eps \\:real.greater?:/ \\real.zero",
-              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{eps > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+              "inline_argument": "epsilon \\:real.greater?:/ \\real.zero",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{\\epsilon > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "eps \\:real.greater?:/ \\real.zero",
+                  "text": "epsilon \\:real.greater?:/ \\real.zero",
                   "types": [
                     "is \\\\statement"
                   ]
                 },
                 {
                   "depth": 1,
-                  "text": "eps",
+                  "text": "epsilon",
                   "types": [
                     "is \\real"
                   ]
@@ -186,12 +186,12 @@
                             },
                             {
                               "label": "then",
-                              "inline_argument": "\\real.abs(a(n) \\.real.-./ L) \\:real.less?:/ eps",
-                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{a_{n} - L} \\right|} < eps}",
+                              "inline_argument": "\\real.abs(a(n) \\.real.-./ L) \\:real.less?:/ epsilon",
+                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{a_{n} - L} \\right|} < \\epsilon}",
                               "inline_type_info": [
                                 {
                                   "depth": 0,
-                                  "text": "\\real.abs(a(n) \\.real.-./ L) \\:real.less?:/ eps",
+                                  "text": "\\real.abs(a(n) \\.real.-./ L) \\:real.less?:/ epsilon",
                                   "types": [
                                     "is \\\\statement"
                                   ]
@@ -231,7 +231,7 @@
                                 },
                                 {
                                   "depth": 1,
-                                  "text": "eps",
+                                  "text": "epsilon",
                                   "types": [
                                     "is \\real"
                                   ]

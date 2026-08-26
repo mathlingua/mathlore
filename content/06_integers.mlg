@@ -26,7 +26,7 @@ Id: "86f693bc-1d69-4bfd-bef4-c67033b73acb"
 
 
 [\integers.relation]
-Declares: R is \equivalence.relation:on{\naturals..N \.set.cross./ \naturals..N}
+Declares: R is \equivalence.relation:on{\naturals \.set.cross./ \naturals}
 satisfies:
 . forAll: n1, m1, n2, m2 is \natural
   then:
@@ -78,7 +78,7 @@ Id: "fe3288e5-96fd-4839-bd2f-1bc13160214f"
 
 
 [\integer]
-Declares: z "in" \integers..Z
+Declares: z "in" \integers
 Enables:
 . capability: a_ + b_ :=> a_ \.integer.+./ b_
 . capability: a_ * b_ :=> a_ \.integer.*./ b_

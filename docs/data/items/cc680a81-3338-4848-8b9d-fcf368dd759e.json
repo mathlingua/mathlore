@@ -13,7 +13,7 @@
     {
       "label": "Declares",
       "inline_argument": "phi(X_) is (_ is \\set) -> (_ is \\\\statement)",
-      "inline_latex": "\\varphi(X) \\textrm{ is } \\left(\\cdot \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\right) \\to \\left(\\cdot \\textrm{ is } \\textrm{statement}\\right)",
+      "inline_latex": "\\phi(X) \\textrm{ is } \\left(\\cdot \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\right) \\to \\left(\\cdot \\textrm{ is } \\textrm{statement}\\right)",
       "inline_type_info": [
         {
           "depth": 0,

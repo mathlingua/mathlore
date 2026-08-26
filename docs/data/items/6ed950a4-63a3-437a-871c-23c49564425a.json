@@ -13,7 +13,7 @@
     {
       "label": "Declares",
       "inline_argument": "lambda \"in\" F",
-      "inline_latex": "lambda \\in F",
+      "inline_latex": "\\lambda \\in F",
       "inline_type_info": [
         {
           "depth": 0,

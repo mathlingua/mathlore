@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{holomorphic}",
   "body_text": null,
   "page": null,
-  "source": "[\\(holomorphic)::complex.function:on{U}]\nRefines: f\nwhen: U \\:subset:/ \\complex.numbers..C\nspecifies: f is \\function:on{U}:to{\\complex.numbers..C}\nsatisfies:\n. forAll: z0 \"in\" U\n  then:\n  . exists: d is \\complex\n    suchThat: d = \\complex.derivative:of{f}:at{z0}\nDocumented:\n. adjective: \"holomorphic\"\n. description: \"A function is holomorphic on $U$ if it is complex-differentiable\n                at every point in $U$.\"\nId: \"f2a708e1-6ee2-4072-aa11-08f5e90fe31f\"",
+  "source": "[\\(holomorphic)::complex.function:on{U}]\nRefines: f\nwhen: U \\:subset:/ \\complex.numbers\nspecifies: f is \\function:on{U}:to{\\complex.numbers}\nsatisfies:\n. forAll: z0 \"in\" U\n  then:\n  . exists: d is \\complex\n    suchThat: d = \\complex.derivative:of{f}:at{z0}\nDocumented:\n. adjective: \"holomorphic\"\n. description: \"A function is holomorphic on $U$ if it is complex-differentiable\n                at every point in $U$.\"\nId: \"f2a708e1-6ee2-4072-aa11-08f5e90fe31f\"",
   "sections": [
     {
       "label": "Refines",
@@ -18,25 +18,18 @@
     },
     {
       "label": "when",
-      "inline_argument": "U \\:subset:/ \\complex.numbers..C",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C}",
+      "inline_argument": "U \\:subset:/ \\complex.numbers",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "U \\:subset:/ \\complex.numbers..C",
+          "text": "U \\:subset:/ \\complex.numbers",
           "types": [
-            "asserts U \\:subset:/ \\complex.numbers..C"
+            "asserts U \\:subset:/ \\complex.numbers"
           ]
         },
         {
           "depth": 1,
-          "text": "\\complex.numbers..C",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 2,
           "text": "\\complex.numbers",
           "types": []
         }
@@ -45,14 +38,14 @@
     },
     {
       "label": "specifies",
-      "inline_argument": "f is \\function:on{U}:to{\\complex.numbers..C}",
-      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C}",
+      "inline_argument": "f is \\function:on{U}:to{\\complex.numbers}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "f is \\function:on{U}:to{\\complex.numbers..C}",
+          "text": "f is \\function:on{U}:to{\\complex.numbers}",
           "types": [
-            "asserts f is \\function:on{U}:to{\\complex.numbers..C}"
+            "asserts f is \\function:on{U}:to{\\complex.numbers}"
           ]
         }
       ],
@@ -83,7 +76,7 @@
                   "depth": 1,
                   "text": "U",
                   "types": [
-                    "\\:subset:/ \\complex.numbers..C"
+                    "\\:subset:/ \\complex.numbers"
                   ]
                 }
               ],

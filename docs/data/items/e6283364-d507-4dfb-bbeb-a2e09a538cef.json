@@ -5,10 +5,10 @@
     "5c636f6e746f75722e696e74656772616c3a6f663a616c6f6e67"
   ],
   "heading": "\\contour.integral:of{f}:along{gamma}",
-  "heading_latex": "\\textrm{contour integral of }f\\textrm{ along }\\gamma\\quad\\htmlClass{mlg-title-written}{\\oint_{\\gamma} f(z) \\, dz}",
+  "heading_latex": "\\textrm{contour integral of }f\\textrm{ along }\\\\gamma\\quad\\htmlClass{mlg-title-written}{\\oint_{\\\\gamma} f(z) \\, dz}",
   "body_text": null,
   "page": null,
-  "source": "[\\contour.integral:of{f}:along{gamma}]\nDefines: I is \\complex\nusing: a, b is \\real\nwhen:\n. gamma is \\complex.path:on{a, b}\n. f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}\nDocumented:\n. called: \"contour integral of $f?$ along $\\gamma?$\"\n. written: \"\\oint_{\\gamma?} f?(z) \\, dz\"\n. description: \"The contour integral $\\oint_\\gamma f(z) dz$ along curve\n                $\\gamma$.\"\nId: \"e6283364-d507-4dfb-bbeb-a2e09a538cef\"",
+  "source": "[\\contour.integral:of{f}:along{gamma}]\nDefines: I is \\complex\nusing: a, b is \\real\nwhen:\n. gamma is \\complex.path:on{a, b}\n. f is \\function:on{\\complex.numbers}:to{\\complex.numbers}\nDocumented:\n. called: \"contour integral of $f?$ along $\\gamma?$\"\n. written: \"\\oint_{\\gamma?} f?(z) \\, dz\"\n. description: \"The contour integral $\\oint_\\gamma f(z) dz$ along curve\n                $\\gamma$.\"\nId: \"e6283364-d507-4dfb-bbeb-a2e09a538cef\"",
   "sections": [
     {
       "label": "Defines",
@@ -40,7 +40,7 @@
         {
           "kind": "formulation",
           "text": "gamma is \\complex.path:on{a, b}",
-          "latex": "gamma \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
+          "latex": "\\gamma \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
           "type_info": [
             {
               "depth": 0,
@@ -53,14 +53,14 @@
         },
         {
           "kind": "formulation",
-          "text": "f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}",
-          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C}",
+          "text": "f is \\function:on{\\complex.numbers}:to{\\complex.numbers}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}} \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}",
+              "text": "f is \\function:on{\\complex.numbers}:to{\\complex.numbers}",
               "types": [
-                "asserts f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}"
+                "asserts f is \\function:on{\\complex.numbers}:to{\\complex.numbers}"
               ]
             }
           ]

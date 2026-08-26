@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Mean Value Theorem}",
   "body_text": null,
   "page": null,
-  "source": "[\\mean.value.theorem]\nTheorem:\ngiven:\n. a, b is \\real\n. f is \\function:on{\\reals..R}:to{\\reals..R}\nwhere:\n. a \\:real.less?:/ b\nthen:\n. exists: c is \\real\n  suchThat:\n  . a \\:real.less?:/ c\n  . c \\:real.less?:/ b\n  . f(b) \\.real.-./ f(a) = (\\derivative:of{f}:at{c}) \\.real.*./ (b \\.real.-./ a)\nDocumented:\n. called: \"Mean Value Theorem\"\n. description: \"For differentiable $f$, there is a point $c \\in (a, b)$ where\n                the instantaneous rate of change equals the average rate of\n                change.\"\nId: \"31c0c6c3-b04e-48c3-b6b3-37990aa819cd\"",
+  "source": "[\\mean.value.theorem]\nTheorem:\ngiven:\n. a, b is \\real\n. f is \\function:on{\\reals}:to{\\reals}\nwhere:\n. a \\:real.less?:/ b\nthen:\n. exists: c is \\real\n  suchThat:\n  . a \\:real.less?:/ c\n  . c \\:real.less?:/ b\n  . f(b) \\.real.-./ f(a) = (\\derivative:of{f}:at{c}) \\.real.*./ (b \\.real.-./ a)\nDocumented:\n. called: \"Mean Value Theorem\"\n. description: \"For differentiable $f$, there is a point $c \\in (a, b)$ where\n                the instantaneous rate of change equals the average rate of\n                change.\"\nId: \"31c0c6c3-b04e-48c3-b6b3-37990aa819cd\"",
   "sections": [
     {
       "label": "Theorem",
@@ -38,14 +38,14 @@
         },
         {
           "kind": "formulation",
-          "text": "f is \\function:on{\\reals..R}:to{\\reals..R}",
-          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}",
+          "text": "f is \\function:on{\\reals}:to{\\reals}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}} \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "f is \\function:on{\\reals..R}:to{\\reals..R}",
+              "text": "f is \\function:on{\\reals}:to{\\reals}",
               "types": [
-                "asserts f is \\function:on{\\reals..R}:to{\\reals..R}"
+                "asserts f is \\function:on{\\reals}:to{\\reals}"
               ]
             }
           ]
@@ -195,7 +195,7 @@
                       "depth": 2,
                       "text": "f(b)",
                       "types": [
-                        "\"in\" \\reals..R"
+                        "\"in\" \\reals"
                       ]
                     },
                     {
@@ -216,7 +216,7 @@
                       "depth": 3,
                       "text": "f(a)",
                       "types": [
-                        "\"in\" \\reals..R"
+                        "\"in\" \\reals"
                       ]
                     },
                     {
@@ -244,7 +244,7 @@
                       "depth": 5,
                       "text": "f",
                       "types": [
-                        "is \\function:on{\\reals..R}:to{\\reals..R}"
+                        "is \\function:on{\\reals}:to{\\reals}"
                       ]
                     },
                     {

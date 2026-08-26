@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{continuous at }x_0",
   "body_text": null,
   "page": null,
-  "source": "[\\(continuous)::real.function:at{x0}]\nRefines: f\nusing: U \\:subset:/ \\reals..R\nwhen: x0 \"in\" U\nspecifies: f is \\function:on{U}:to{\\reals..R}\nsatisfies:\n. forAll: eps is \\real\n  where: eps \\:real.greater?:/ \\real.zero\n  then:\n  . exists: delta is \\real\n    suchThat:\n    . delta \\:real.greater?:/ \\real.zero\n    . forAll: x is \\real\n      where:\n      . x \"in\" U\n      . \\real.abs(x \\.real.-./ x0) \\:real.less?:/ delta\n      then: \\real.abs(f(x) \\.real.-./ f(x0)) \\:real.less?:/ eps\nDocumented:\n. adjective: \"continuous at $x0?$\"\n. description: \"A function is continuous at a point $x_0$ if small changes in\n                input yield arbitrarily small changes in output.\"\nId: \"0596242b-c84c-4989-a566-a5e5d1a2c884\"",
+  "source": "[\\(continuous)::real.function:at{x0}]\nRefines: f\nusing: U \\:subset:/ \\reals\nwhen: x0 \"in\" U\nspecifies: f is \\function:on{U}:to{\\reals}\nsatisfies:\n. forAll: epsilon is \\real\n  where: epsilon \\:real.greater?:/ \\real.zero\n  then:\n  . exists: delta is \\real\n    suchThat:\n    . delta \\:real.greater?:/ \\real.zero\n    . forAll: x is \\real\n      where:\n      . x \"in\" U\n      . \\real.abs(x \\.real.-./ x0) \\:real.less?:/ delta\n      then: \\real.abs(f(x) \\.real.-./ f(x0)) \\:real.less?:/ epsilon\nDocumented:\n. adjective: \"continuous at $x0?$\"\n. description: \"A function is continuous at a point $x_0$ if small changes in\n                input yield arbitrarily small changes in output.\"\nId: \"0596242b-c84c-4989-a566-a5e5d1a2c884\"",
   "sections": [
     {
       "label": "Refines",
@@ -18,25 +18,18 @@
     },
     {
       "label": "using",
-      "inline_argument": "U \\:subset:/ \\reals..R",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}",
+      "inline_argument": "U \\:subset:/ \\reals",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "U \\:subset:/ \\reals..R",
+          "text": "U \\:subset:/ \\reals",
           "types": [
-            "asserts U \\:subset:/ \\reals..R"
+            "asserts U \\:subset:/ \\reals"
           ]
         },
         {
           "depth": 1,
-          "text": "\\reals..R",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 2,
           "text": "\\reals",
           "types": []
         }
@@ -59,7 +52,7 @@
           "depth": 1,
           "text": "U",
           "types": [
-            "\\:subset:/ \\reals..R"
+            "\\:subset:/ \\reals"
           ]
         }
       ],
@@ -67,14 +60,14 @@
     },
     {
       "label": "specifies",
-      "inline_argument": "f is \\function:on{U}:to{\\reals..R}",
-      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}",
+      "inline_argument": "f is \\function:on{U}:to{\\reals}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "f is \\function:on{U}:to{\\reals..R}",
+          "text": "f is \\function:on{U}:to{\\reals}",
           "types": [
-            "asserts f is \\function:on{U}:to{\\reals..R}"
+            "asserts f is \\function:on{U}:to{\\reals}"
           ]
         }
       ],
@@ -91,14 +84,14 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "eps is \\real",
-              "inline_latex": "eps \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+              "inline_argument": "epsilon is \\real",
+              "inline_latex": "\\epsilon \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "eps is \\real",
+                  "text": "epsilon is \\real",
                   "types": [
-                    "asserts eps is \\real"
+                    "asserts epsilon is \\real"
                   ]
                 }
               ],
@@ -106,19 +99,19 @@
             },
             {
               "label": "where",
-              "inline_argument": "eps \\:real.greater?:/ \\real.zero",
-              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{eps > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+              "inline_argument": "epsilon \\:real.greater?:/ \\real.zero",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{\\epsilon > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "eps \\:real.greater?:/ \\real.zero",
+                  "text": "epsilon \\:real.greater?:/ \\real.zero",
                   "types": [
                     "is \\\\statement"
                   ]
                 },
                 {
                   "depth": 1,
-                  "text": "eps",
+                  "text": "epsilon",
                   "types": [
                     "is \\real"
                   ]
@@ -145,7 +138,7 @@
                     {
                       "label": "exists",
                       "inline_argument": "delta is \\real",
-                      "inline_latex": "delta \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                      "inline_latex": "\\delta \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
                       "inline_type_info": [
                         {
                           "depth": 0,
@@ -165,7 +158,7 @@
                         {
                           "kind": "formulation",
                           "text": "delta \\:real.greater?:/ \\real.zero",
-                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{delta > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{\\delta > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
                           "type_info": [
                             {
                               "depth": 0,
@@ -230,7 +223,7 @@
                                       "depth": 1,
                                       "text": "U",
                                       "types": [
-                                        "\\:subset:/ \\reals..R"
+                                        "\\:subset:/ \\reals"
                                       ]
                                     }
                                   ]
@@ -238,7 +231,7 @@
                                 {
                                   "kind": "formulation",
                                   "text": "\\real.abs(x \\.real.-./ x0) \\:real.less?:/ delta",
-                                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{x - x_0} \\right|} < delta}",
+                                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{x - x_0} \\right|} < \\delta}",
                                   "type_info": [
                                     {
                                       "depth": 0,
@@ -289,12 +282,12 @@
                             },
                             {
                               "label": "then",
-                              "inline_argument": "\\real.abs(f(x) \\.real.-./ f(x0)) \\:real.less?:/ eps",
-                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{f(x) - f(x_0)} \\right|} < eps}",
+                              "inline_argument": "\\real.abs(f(x) \\.real.-./ f(x0)) \\:real.less?:/ epsilon",
+                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{f(x) - f(x_0)} \\right|} < \\epsilon}",
                               "inline_type_info": [
                                 {
                                   "depth": 0,
-                                  "text": "\\real.abs(f(x) \\.real.-./ f(x0)) \\:real.less?:/ eps",
+                                  "text": "\\real.abs(f(x) \\.real.-./ f(x0)) \\:real.less?:/ epsilon",
                                   "types": [
                                     "is \\\\statement"
                                   ]
@@ -340,7 +333,7 @@
                                 },
                                 {
                                   "depth": 1,
-                                  "text": "eps",
+                                  "text": "epsilon",
                                   "types": [
                                     "is \\real"
                                   ]

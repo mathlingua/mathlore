@@ -8,29 +8,22 @@
   "heading_latex": "\\textrm{real}",
   "body_text": null,
   "page": null,
-  "source": "[\\real]\nDeclares: x \"in\" \\reals..R\nEnables:\n. capability: a_ + b_ :=> a_ \\.real.+./ b_\n. capability: a_ - b_ :=> a_ \\.real.-./ b_\n. capability: a_ * b_ :=> a_ \\.real.*./ b_\n. capability: a_ / b_ :=> a_ \\.real.div./ b_\n. capability: -a_ :=> \\real.neg(a_)\nDocumented:\n. called: \"real\"\n. description: \"A real number is a member of the underlying carrier set\n                $\\mathbb{R}$.\"\nId: \"cc52bbbc-d925-469e-9252-2fad913ba14b\"",
+  "source": "[\\real]\nDeclares: x \"in\" \\reals\nEnables:\n. capability: a_ + b_ :=> a_ \\.real.+./ b_\n. capability: a_ - b_ :=> a_ \\.real.-./ b_\n. capability: a_ * b_ :=> a_ \\.real.*./ b_\n. capability: a_ / b_ :=> a_ \\.real.div./ b_\n. capability: -a_ :=> \\real.neg(a_)\nDocumented:\n. called: \"real\"\n. description: \"A real number is a member of the underlying carrier set\n                $\\mathbb{R}$.\"\nId: \"cc52bbbc-d925-469e-9252-2fad913ba14b\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "x \"in\" \\reals..R",
-      "inline_latex": "x \\in \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R",
+      "inline_argument": "x \"in\" \\reals",
+      "inline_latex": "x \\in \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "x \"in\" \\reals..R",
+          "text": "x \"in\" \\reals",
           "types": [
-            "asserts x \"in\" \\reals..R"
+            "asserts x \"in\" \\reals"
           ]
         },
         {
           "depth": 1,
-          "text": "\\reals..R",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 2,
           "text": "\\reals",
           "types": []
         }

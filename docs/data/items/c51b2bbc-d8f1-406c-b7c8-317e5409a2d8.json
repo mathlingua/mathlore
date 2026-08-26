@@ -6,7 +6,7 @@
   "heading_latex": null,
   "body_text": null,
   "page": null,
-  "source": "Writing:\n. \"phi :~> \\varphi\"\n. \"omega :~> \\omega\"\n. \"Xb :~> \\mathbb{X}\"\n. \"Nb :~> \\mathbb{N}\"\n. \"Zb :~> \\mathbb{Z}\"\n. \"Rb :~> \\mathbb{R}\"\n. \"Cb :~> \\mathbb{C}\"\n. \"Fb :~> \\mathbb{F}\"\n. \"Vb :~> \\mathbb{V}\"\nId: \"c51b2bbc-d8f1-406c-b7c8-317e5409a2d8\"",
+  "source": "Writing:\n. \"alpha :~> \\alpha\"\n. \"beta :~> \\beta\"\n. \"gamma :~> \\gamma\"\n. \"delta :~> \\delta\"\n. \"epsilon :~> \\epsilon\"\n. \"varepsilon :~> \\varepsilon\"\n. \"zeta :~> \\zeta\"\n. \"eta :~> \\eta\"\n. \"theta :~> \\theta\"\n. \"vartheta :~> \\vartheta\"\n. \"iota :~> \\iota\"\n. \"kappa :~> \\kappa\"\n. \"varkappa :~> \\varkappa\"\n. \"lambda :~> \\lambda\"\n. \"mu :~> \\mu\"\n. \"nu :~> \\nu\"\n. \"xi :~> \\xi\"\n. \"omicron :~> \\omicron\"\n. \"pi :~> \\pi\"\n. \"varpi :~> \\varpi\"\n. \"rho :~> \\rho\"\n. \"varrho :~> \\varrho\"\n. \"sigma :~> \\sigma\"\n. \"varsigma :~> \\varsigma\"\n. \"tau :~> \\tau\"\n. \"upsilon :~> \\upsilon\"\n. \"phi :~> \\phi\"\n. \"varphi :~> \\varphi\"\n. \"chi :~> \\chi\"\n. \"psi :~> \\psi\"\n. \"omega :~> \\omega\"\n. \"Alpha :~> \\Alpha\"\n. \"Beta :~> \\Beta\"\n. \"Gamma :~> \\Gamma\"\n. \"Delta :~> \\Delta\"\n. \"Epsilon :~> \\Epsilon\"\n. \"Zeta :~> \\Zeta\"\n. \"Eta :~> \\Eta\"\n. \"Theta :~> \\Theta\"\n. \"Iota :~> \\Iota\"\n. \"Kappa :~> \\Kappa\"\n. \"Lambda :~> \\Lambda\"\n. \"Mu :~> \\Mu\"\n. \"Nu :~> \\Nu\"\n. \"Xi :~> \\Xi\"\n. \"Omicron :~> \\Omicron\"\n. \"Pi :~> \\Pi\"\n. \"Rho :~> \\Rho\"\n. \"Sigma :~> \\Sigma\"\n. \"Tau :~> \\Tau\"\n. \"Upsilon :~> \\Upsilon\"\n. \"Phi :~> \\Phi\"\n. \"Chi :~> \\Chi\"\n. \"Psi :~> \\Psi\"\n. \"Omega :~> \\Omega\"\n. \"Xb :~> \\mathbb{X}\"\n. \"Nb :~> \\mathbb{N}\"\n. \"Zb :~> \\mathbb{Z}\"\n. \"Rb :~> \\mathbb{R}\"\n. \"Cb :~> \\mathbb{C}\"\n. \"Fb :~> \\mathbb{F}\"\n. \"Vb :~> \\mathbb{V}\"\nId: \"c51b2bbc-d8f1-406c-b7c8-317e5409a2d8\"",
   "sections": [
     {
       "label": "Writing",
@@ -15,13 +15,278 @@
       "arguments": [
         {
           "kind": "text",
-          "text": "phi :~> \\varphi",
-          "latex": "\\textrm{phi} \\mathrel{:\\!\\rightsquigarrow} \\varphi"
+          "text": "alpha :~> \\alpha",
+          "latex": "\\textrm{alpha} \\mathrel{:\\!\\rightsquigarrow} \\alpha"
+        },
+        {
+          "kind": "text",
+          "text": "beta :~> \\beta",
+          "latex": "\\textrm{beta} \\mathrel{:\\!\\rightsquigarrow} \\beta"
+        },
+        {
+          "kind": "text",
+          "text": "gamma :~> \\gamma",
+          "latex": "\\textrm{gamma} \\mathrel{:\\!\\rightsquigarrow} \\gamma"
+        },
+        {
+          "kind": "text",
+          "text": "delta :~> \\delta",
+          "latex": "\\textrm{delta} \\mathrel{:\\!\\rightsquigarrow} \\delta"
+        },
+        {
+          "kind": "text",
+          "text": "epsilon :~> \\epsilon",
+          "latex": "\\textrm{epsilon} \\mathrel{:\\!\\rightsquigarrow} \\epsilon"
+        },
+        {
+          "kind": "text",
+          "text": "varepsilon :~> \\varepsilon",
+          "latex": "\\textrm{varepsilon} \\mathrel{:\\!\\rightsquigarrow} \\varepsilon"
+        },
+        {
+          "kind": "text",
+          "text": "zeta :~> \\zeta",
+          "latex": "\\textrm{zeta} \\mathrel{:\\!\\rightsquigarrow} \\zeta"
+        },
+        {
+          "kind": "text",
+          "text": "eta :~> \\eta",
+          "latex": "\\textrm{eta} \\mathrel{:\\!\\rightsquigarrow} \\eta"
+        },
+        {
+          "kind": "text",
+          "text": "theta :~> \\theta",
+          "latex": "\\textrm{theta} \\mathrel{:\\!\\rightsquigarrow} \\theta"
+        },
+        {
+          "kind": "text",
+          "text": "vartheta :~> \\vartheta",
+          "latex": "\\textrm{vartheta} \\mathrel{:\\!\\rightsquigarrow} \\vartheta"
+        },
+        {
+          "kind": "text",
+          "text": "iota :~> \\iota",
+          "latex": "\\textrm{iota} \\mathrel{:\\!\\rightsquigarrow} \\iota"
+        },
+        {
+          "kind": "text",
+          "text": "kappa :~> \\kappa",
+          "latex": "\\textrm{kappa} \\mathrel{:\\!\\rightsquigarrow} \\kappa"
+        },
+        {
+          "kind": "text",
+          "text": "varkappa :~> \\varkappa",
+          "latex": "\\textrm{varkappa} \\mathrel{:\\!\\rightsquigarrow} \\varkappa"
+        },
+        {
+          "kind": "text",
+          "text": "lambda :~> \\lambda",
+          "latex": "\\textrm{lambda} \\mathrel{:\\!\\rightsquigarrow} \\lambda"
+        },
+        {
+          "kind": "text",
+          "text": "mu :~> \\mu",
+          "latex": "\\textrm{mu} \\mathrel{:\\!\\rightsquigarrow} \\mu"
+        },
+        {
+          "kind": "text",
+          "text": "nu :~> \\nu",
+          "latex": "\\textrm{nu} \\mathrel{:\\!\\rightsquigarrow} \\nu"
+        },
+        {
+          "kind": "text",
+          "text": "xi :~> \\xi",
+          "latex": "\\textrm{xi} \\mathrel{:\\!\\rightsquigarrow} \\xi"
+        },
+        {
+          "kind": "text",
+          "text": "omicron :~> \\omicron",
+          "latex": "\\textrm{omicron} \\mathrel{:\\!\\rightsquigarrow} \\omicron"
+        },
+        {
+          "kind": "text",
+          "text": "pi :~> \\pi",
+          "latex": "\\textrm{pi} \\mathrel{:\\!\\rightsquigarrow} \\pi"
+        },
+        {
+          "kind": "text",
+          "text": "varpi :~> \\varpi",
+          "latex": "\\textrm{varpi} \\mathrel{:\\!\\rightsquigarrow} \\varpi"
+        },
+        {
+          "kind": "text",
+          "text": "rho :~> \\rho",
+          "latex": "\\textrm{rho} \\mathrel{:\\!\\rightsquigarrow} \\rho"
+        },
+        {
+          "kind": "text",
+          "text": "varrho :~> \\varrho",
+          "latex": "\\textrm{varrho} \\mathrel{:\\!\\rightsquigarrow} \\varrho"
+        },
+        {
+          "kind": "text",
+          "text": "sigma :~> \\sigma",
+          "latex": "\\textrm{sigma} \\mathrel{:\\!\\rightsquigarrow} \\sigma"
+        },
+        {
+          "kind": "text",
+          "text": "varsigma :~> \\varsigma",
+          "latex": "\\textrm{varsigma} \\mathrel{:\\!\\rightsquigarrow} \\varsigma"
+        },
+        {
+          "kind": "text",
+          "text": "tau :~> \\tau",
+          "latex": "\\textrm{tau} \\mathrel{:\\!\\rightsquigarrow} \\tau"
+        },
+        {
+          "kind": "text",
+          "text": "upsilon :~> \\upsilon",
+          "latex": "\\textrm{upsilon} \\mathrel{:\\!\\rightsquigarrow} \\upsilon"
+        },
+        {
+          "kind": "text",
+          "text": "phi :~> \\phi",
+          "latex": "\\textrm{phi} \\mathrel{:\\!\\rightsquigarrow} \\phi"
+        },
+        {
+          "kind": "text",
+          "text": "varphi :~> \\varphi",
+          "latex": "\\textrm{varphi} \\mathrel{:\\!\\rightsquigarrow} \\varphi"
+        },
+        {
+          "kind": "text",
+          "text": "chi :~> \\chi",
+          "latex": "\\textrm{chi} \\mathrel{:\\!\\rightsquigarrow} \\chi"
+        },
+        {
+          "kind": "text",
+          "text": "psi :~> \\psi",
+          "latex": "\\textrm{psi} \\mathrel{:\\!\\rightsquigarrow} \\psi"
         },
         {
           "kind": "text",
           "text": "omega :~> \\omega",
           "latex": "\\textrm{omega} \\mathrel{:\\!\\rightsquigarrow} \\omega"
+        },
+        {
+          "kind": "text",
+          "text": "Alpha :~> \\Alpha",
+          "latex": "\\textrm{Alpha} \\mathrel{:\\!\\rightsquigarrow} \\Alpha"
+        },
+        {
+          "kind": "text",
+          "text": "Beta :~> \\Beta",
+          "latex": "\\textrm{Beta} \\mathrel{:\\!\\rightsquigarrow} \\Beta"
+        },
+        {
+          "kind": "text",
+          "text": "Gamma :~> \\Gamma",
+          "latex": "\\textrm{Gamma} \\mathrel{:\\!\\rightsquigarrow} \\Gamma"
+        },
+        {
+          "kind": "text",
+          "text": "Delta :~> \\Delta",
+          "latex": "\\textrm{Delta} \\mathrel{:\\!\\rightsquigarrow} \\Delta"
+        },
+        {
+          "kind": "text",
+          "text": "Epsilon :~> \\Epsilon",
+          "latex": "\\textrm{Epsilon} \\mathrel{:\\!\\rightsquigarrow} \\Epsilon"
+        },
+        {
+          "kind": "text",
+          "text": "Zeta :~> \\Zeta",
+          "latex": "\\textrm{Zeta} \\mathrel{:\\!\\rightsquigarrow} \\Zeta"
+        },
+        {
+          "kind": "text",
+          "text": "Eta :~> \\Eta",
+          "latex": "\\textrm{Eta} \\mathrel{:\\!\\rightsquigarrow} \\Eta"
+        },
+        {
+          "kind": "text",
+          "text": "Theta :~> \\Theta",
+          "latex": "\\textrm{Theta} \\mathrel{:\\!\\rightsquigarrow} \\Theta"
+        },
+        {
+          "kind": "text",
+          "text": "Iota :~> \\Iota",
+          "latex": "\\textrm{Iota} \\mathrel{:\\!\\rightsquigarrow} \\Iota"
+        },
+        {
+          "kind": "text",
+          "text": "Kappa :~> \\Kappa",
+          "latex": "\\textrm{Kappa} \\mathrel{:\\!\\rightsquigarrow} \\Kappa"
+        },
+        {
+          "kind": "text",
+          "text": "Lambda :~> \\Lambda",
+          "latex": "\\textrm{Lambda} \\mathrel{:\\!\\rightsquigarrow} \\Lambda"
+        },
+        {
+          "kind": "text",
+          "text": "Mu :~> \\Mu",
+          "latex": "\\textrm{Mu} \\mathrel{:\\!\\rightsquigarrow} \\Mu"
+        },
+        {
+          "kind": "text",
+          "text": "Nu :~> \\Nu",
+          "latex": "\\textrm{Nu} \\mathrel{:\\!\\rightsquigarrow} \\Nu"
+        },
+        {
+          "kind": "text",
+          "text": "Xi :~> \\Xi",
+          "latex": "\\textrm{Xi} \\mathrel{:\\!\\rightsquigarrow} \\Xi"
+        },
+        {
+          "kind": "text",
+          "text": "Omicron :~> \\Omicron",
+          "latex": "\\textrm{Omicron} \\mathrel{:\\!\\rightsquigarrow} \\Omicron"
+        },
+        {
+          "kind": "text",
+          "text": "Pi :~> \\Pi",
+          "latex": "\\textrm{Pi} \\mathrel{:\\!\\rightsquigarrow} \\Pi"
+        },
+        {
+          "kind": "text",
+          "text": "Rho :~> \\Rho",
+          "latex": "\\textrm{Rho} \\mathrel{:\\!\\rightsquigarrow} \\Rho"
+        },
+        {
+          "kind": "text",
+          "text": "Sigma :~> \\Sigma",
+          "latex": "\\textrm{Sigma} \\mathrel{:\\!\\rightsquigarrow} \\Sigma"
+        },
+        {
+          "kind": "text",
+          "text": "Tau :~> \\Tau",
+          "latex": "\\textrm{Tau} \\mathrel{:\\!\\rightsquigarrow} \\Tau"
+        },
+        {
+          "kind": "text",
+          "text": "Upsilon :~> \\Upsilon",
+          "latex": "\\textrm{Upsilon} \\mathrel{:\\!\\rightsquigarrow} \\Upsilon"
+        },
+        {
+          "kind": "text",
+          "text": "Phi :~> \\Phi",
+          "latex": "\\textrm{Phi} \\mathrel{:\\!\\rightsquigarrow} \\Phi"
+        },
+        {
+          "kind": "text",
+          "text": "Chi :~> \\Chi",
+          "latex": "\\textrm{Chi} \\mathrel{:\\!\\rightsquigarrow} \\Chi"
+        },
+        {
+          "kind": "text",
+          "text": "Psi :~> \\Psi",
+          "latex": "\\textrm{Psi} \\mathrel{:\\!\\rightsquigarrow} \\Psi"
+        },
+        {
+          "kind": "text",
+          "text": "Omega :~> \\Omega",
+          "latex": "\\textrm{Omega} \\mathrel{:\\!\\rightsquigarrow} \\Omega"
         },
         {
           "kind": "text",

@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Residue Theorem}",
   "body_text": null,
   "page": null,
-  "source": "[\\residue.theorem]\nTheorem:\ngiven:\n. a, b is \\real\n. gamma is \\(closed)::complex.path:on{a, b}\n. f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}\n. z0 is \\complex\nthen:\n. exists: I is \\complex\n  suchThat: I = \\contour.integral:of{f}:along{gamma}\nDocumented:\n. called: \"Residue Theorem\"\n. description: \"The contour integral of a meromorphic function equals $2\\pi i$\n                times the sum of the residues enclosed by the contour.\"\nId: \"3069a9a0-50d1-4424-b9e6-783a50b65cb5\"",
+  "source": "[\\residue.theorem]\nTheorem:\ngiven:\n. a, b is \\real\n. gamma is \\(closed)::complex.path:on{a, b}\n. f is \\function:on{\\complex.numbers}:to{\\complex.numbers}\n. z0 is \\complex\nthen:\n. exists: I is \\complex\n  suchThat: I = \\contour.integral:of{f}:along{gamma}\nDocumented:\n. called: \"Residue Theorem\"\n. description: \"The contour integral of a meromorphic function equals $2\\pi i$\n                times the sum of the residues enclosed by the contour.\"\nId: \"3069a9a0-50d1-4424-b9e6-783a50b65cb5\"",
   "sections": [
     {
       "label": "Theorem",
@@ -39,7 +39,7 @@
         {
           "kind": "formulation",
           "text": "gamma is \\(closed)::complex.path:on{a, b}",
-          "latex": "gamma \\textrm{ is } \\htmlData{mlg-ref=5c636c6f7365643a3a636f6d706c65782e706174683a6f6e}{\\textrm{closed}}\\textrm{ }\\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
+          "latex": "\\gamma \\textrm{ is } \\htmlData{mlg-ref=5c636c6f7365643a3a636f6d706c65782e706174683a6f6e}{\\textrm{closed}}\\textrm{ }\\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
           "type_info": [
             {
               "depth": 0,
@@ -52,14 +52,14 @@
         },
         {
           "kind": "formulation",
-          "text": "f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}",
-          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C}",
+          "text": "f is \\function:on{\\complex.numbers}:to{\\complex.numbers}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}} \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}",
+              "text": "f is \\function:on{\\complex.numbers}:to{\\complex.numbers}",
               "types": [
-                "asserts f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}"
+                "asserts f is \\function:on{\\complex.numbers}:to{\\complex.numbers}"
               ]
             }
           ]
@@ -107,7 +107,7 @@
             {
               "label": "suchThat",
               "inline_argument": "I = \\contour.integral:of{f}:along{gamma}",
-              "inline_latex": "I = \\htmlData{mlg-ref=5c636f6e746f75722e696e74656772616c3a6f663a616c6f6e67}{\\oint_{\\gamma} f(z) \\, dz}",
+              "inline_latex": "I = \\htmlData{mlg-ref=5c636f6e746f75722e696e74656772616c3a6f663a616c6f6e67}{\\oint_{\\\\gamma} f(z) \\, dz}",
               "inline_type_info": [
                 {
                   "depth": 0,
@@ -134,7 +134,7 @@
                   "depth": 2,
                   "text": "f",
                   "types": [
-                    "is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}"
+                    "is \\function:on{\\complex.numbers}:to{\\complex.numbers}"
                   ]
                 },
                 {

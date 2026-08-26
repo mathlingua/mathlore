@@ -14,7 +14,7 @@ Id: "ce15af9b-016e-4053-ab26-af72a29c45a6"
 
 [\real.sequence]
 Declares: S ::= a(n_)
-specifies: a is \function:on{\naturals..N}:to{\reals..R}
+specifies: a is \function:on{\naturals}:to{\reals}
 Documented:
 . called: "real sequence"
 . writing: a(n)
@@ -35,14 +35,14 @@ when:
 . L is \real
 . S is \real.sequence
 that:
-. forAll: eps is \real
-  where: eps \:real.greater?:/ \real.zero
+. forAll: epsilon is \real
+  where: epsilon \:real.greater?:/ \real.zero
   then:
   . exists: N is \natural
     suchThat:
     . forAll: n is \natural
       where: N \:natural.leq?:/ n
-      then: \real.abs(a(n) \.real.-./ L) \:real.less?:/ eps
+      then: \real.abs(a(n) \.real.-./ L) \:real.less?:/ epsilon
 Documented:
 . called: "$S?$ converges to $L?$"
 . written: "a?_{n_?} \to L?"
@@ -54,8 +54,8 @@ Id: "f046faf8-5c18-4597-ac14-4feda980148d"
 Refines: S ::= a(n_)
 specifies: S is \real.sequence
 satisfies:
-. forAll: eps is \real
-  where: eps \:real.greater?:/ \real.zero
+. forAll: epsilon is \real
+  where: epsilon \:real.greater?:/ \real.zero
   then:
   . exists: N is \natural
     suchThat:
@@ -63,7 +63,7 @@ satisfies:
       where:
       . N \:natural.leq?:/ n
       . N \:natural.leq?:/ m
-      then: \real.abs(a(n) \.real.-./ a(m)) \:real.less?:/ eps
+      then: \real.abs(a(n) \.real.-./ a(m)) \:real.less?:/ epsilon
 Documented:
 . adjective: "Cauchy"
 . description: "A sequence is Cauchy if its terms eventually stay arbitrarily

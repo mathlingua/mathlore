@@ -17,7 +17,7 @@
     {
       "label": "Declares",
       "inline_argument": "phi(x__) is \\function:on{X1}:to{X2}",
-      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\varphi(x) \\: : \\: X_1 \\rightarrow X_2}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\phi(x) \\: : \\: X_1 \\rightarrow X_2}",
       "inline_type_info": [
         {
           "depth": 0,
@@ -80,7 +80,7 @@
             {
               "label": "then",
               "inline_argument": "phi(a *_1 b) = phi(a) *_2 phi(b)",
-              "inline_latex": "\\varphi(a \\ast_1 b) = \\varphi(a) \\ast_2 \\varphi(b)",
+              "inline_latex": "\\phi(a \\ast_1 b) = \\phi(a) \\ast_2 \\phi(b)",
               "inline_type_info": [
                 {
                   "depth": 0,

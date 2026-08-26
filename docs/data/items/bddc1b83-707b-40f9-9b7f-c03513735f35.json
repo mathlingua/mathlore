@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{differentiable}",
   "body_text": null,
   "page": null,
-  "source": "[\\(differentiable)::real.function:on{U}]\nRefines: f\nwhen: U \\:subset:/ \\reals..R\nspecifies: f is \\function:on{U}:to{\\reals..R}\nsatisfies:\n. forAll: x0 \"in\" U\n  then:\n  . exists: d is \\real\n    suchThat: d = \\derivative:of{f}:at{x0}\nDocumented:\n. adjective: \"differentiable\"\n. description: \"A function is differentiable on $U$ if its derivative exists at\n                every point of $U$.\"\nId: \"bddc1b83-707b-40f9-9b7f-c03513735f35\"",
+  "source": "[\\(differentiable)::real.function:on{U}]\nRefines: f\nwhen: U \\:subset:/ \\reals\nspecifies: f is \\function:on{U}:to{\\reals}\nsatisfies:\n. forAll: x0 \"in\" U\n  then:\n  . exists: d is \\real\n    suchThat: d = \\derivative:of{f}:at{x0}\nDocumented:\n. adjective: \"differentiable\"\n. description: \"A function is differentiable on $U$ if its derivative exists at\n                every point of $U$.\"\nId: \"bddc1b83-707b-40f9-9b7f-c03513735f35\"",
   "sections": [
     {
       "label": "Refines",
@@ -18,25 +18,18 @@
     },
     {
       "label": "when",
-      "inline_argument": "U \\:subset:/ \\reals..R",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}",
+      "inline_argument": "U \\:subset:/ \\reals",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "U \\:subset:/ \\reals..R",
+          "text": "U \\:subset:/ \\reals",
           "types": [
-            "asserts U \\:subset:/ \\reals..R"
+            "asserts U \\:subset:/ \\reals"
           ]
         },
         {
           "depth": 1,
-          "text": "\\reals..R",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 2,
           "text": "\\reals",
           "types": []
         }
@@ -45,14 +38,14 @@
     },
     {
       "label": "specifies",
-      "inline_argument": "f is \\function:on{U}:to{\\reals..R}",
-      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}",
+      "inline_argument": "f is \\function:on{U}:to{\\reals}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "f is \\function:on{U}:to{\\reals..R}",
+          "text": "f is \\function:on{U}:to{\\reals}",
           "types": [
-            "asserts f is \\function:on{U}:to{\\reals..R}"
+            "asserts f is \\function:on{U}:to{\\reals}"
           ]
         }
       ],
@@ -83,7 +76,7 @@
                   "depth": 1,
                   "text": "U",
                   "types": [
-                    "\\:subset:/ \\reals..R"
+                    "\\:subset:/ \\reals"
                   ]
                 }
               ],

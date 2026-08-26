@@ -14,7 +14,7 @@ Id: "e1f3d3b0-7dd5-4d9d-bc94-62aa17e94846"
 
 
 [\complex.path:on{a, b}]
-Declares: gamma(t_) is \function:on{\reals..R}:to{\complex.numbers..C}
+Declares: gamma(t_) is \function:on{\reals}:to{\complex.numbers}
 when: a, b is \real
 Documented:
 . called: "complex path on $[a?, b?]$"
@@ -40,7 +40,7 @@ Defines: I is \complex
 using: a, b is \real
 when:
 . gamma is \complex.path:on{a, b}
-. f is \function:on{\complex.numbers..C}:to{\complex.numbers..C}
+. f is \function:on{\complex.numbers}:to{\complex.numbers}
 Documented:
 . called: "contour integral of $f?$ along $\gamma?$"
 . written: "\oint_{\gamma?} f?(z) \, dz"
@@ -58,7 +58,7 @@ Theorem:
 given:
 . a, b is \real
 . gamma is \(closed)::complex.path:on{a, b}
-. f is \function:on{\complex.numbers..C}:to{\complex.numbers..C}
+. f is \function:on{\complex.numbers}:to{\complex.numbers}
 then: \contour.integral:of{f}:along{gamma} = \complex.zero
 Documented:
 . called: "Cauchy's Integral Theorem"
@@ -71,7 +71,7 @@ Id: "ba6ab675-4730-4cee-905c-ec081e05d378"
 Defines: Res is \complex
 when:
 . z0 is \complex
-. f is \function:on{\complex.numbers..C}:to{\complex.numbers..C}
+. f is \function:on{\complex.numbers}:to{\complex.numbers}
 Documented:
 . called: "residue of $f?$ at $z0?$"
 . written: "\operatorname{Res}(f?, z0?)"
@@ -85,7 +85,7 @@ Theorem:
 given:
 . a, b is \real
 . gamma is \(closed)::complex.path:on{a, b}
-. f is \function:on{\complex.numbers..C}:to{\complex.numbers..C}
+. f is \function:on{\complex.numbers}:to{\complex.numbers}
 . z0 is \complex
 then:
 . exists: I is \complex

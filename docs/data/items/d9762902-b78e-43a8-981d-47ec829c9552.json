@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{supremum of }S\\quad\\htmlClass{mlg-title-written}{\\sup(S)}",
   "body_text": null,
   "page": null,
-  "source": "[\\real.supremum:of{S}]\nDefines: M is \\real\nwhen: S \\:(nonempty)::subset:/ \\reals..R\nexpresses:\n. forAll: x is \\real\n  where: x \"in\" S\n  then: x \\:real.leq?:/ M\n. forAll: M' is \\real\n  where:\n  . forAll: x is \\real\n    where: x \"in\" S\n    then: x \\:real.leq?:/ M'\n  then: M \\:real.leq?:/ M'\nDocumented:\n. called: \"supremum of $S?$\"\n. written: \"\\sup(S?)\"\n. description: \"The least upper bound (supremum) $\\sup(S)$ of a set of real\n                numbers.\"\nId: \"d9762902-b78e-43a8-981d-47ec829c9552\"",
+  "source": "[\\real.supremum:of{S}]\nDefines: M is \\real\nwhen: S \\:(nonempty)::subset:/ \\reals\nexpresses:\n. forAll: x is \\real\n  where: x \"in\" S\n  then: x \\:real.leq?:/ M\n. forAll: M' is \\real\n  where:\n  . forAll: x is \\real\n    where: x \"in\" S\n    then: x \\:real.leq?:/ M'\n  then: M \\:real.leq?:/ M'\nDocumented:\n. called: \"supremum of $S?$\"\n. written: \"\\sup(S?)\"\n. description: \"The least upper bound (supremum) $\\sup(S)$ of a set of real\n                numbers.\"\nId: \"d9762902-b78e-43a8-981d-47ec829c9552\"",
   "sections": [
     {
       "label": "Defines",
@@ -18,25 +18,18 @@
     },
     {
       "label": "when",
-      "inline_argument": "S \\:(nonempty)::subset:/ \\reals..R",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}\\textrm{ }\\left(\\htmlData{mlg-ref=5c6e6f6e656d7074793a3a736574}{\\textrm{nonempty}}\\right)",
+      "inline_argument": "S \\:(nonempty)::subset:/ \\reals",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}\\textrm{ }\\left(\\htmlData{mlg-ref=5c6e6f6e656d7074793a3a736574}{\\textrm{nonempty}}\\right)",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "S \\:(nonempty)::subset:/ \\reals..R",
+          "text": "S \\:(nonempty)::subset:/ \\reals",
           "types": [
-            "asserts S \\:nonempty::subset:/ \\reals..R"
+            "asserts S \\:nonempty::subset:/ \\reals"
           ]
         },
         {
           "depth": 1,
-          "text": "\\reals..R",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 2,
           "text": "\\reals",
           "types": []
         }
@@ -83,7 +76,7 @@
                   "depth": 1,
                   "text": "S",
                   "types": [
-                    "\\:nonempty::subset:/ \\reals..R"
+                    "\\:nonempty::subset:/ \\reals"
                   ]
                 }
               ],
@@ -180,7 +173,7 @@
                           "depth": 1,
                           "text": "S",
                           "types": [
-                            "\\:nonempty::subset:/ \\reals..R"
+                            "\\:nonempty::subset:/ \\reals"
                           ]
                         }
                       ],

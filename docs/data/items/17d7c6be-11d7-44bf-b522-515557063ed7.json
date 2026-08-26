@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Fundamental Theorem of Calculus}",
   "body_text": null,
   "page": null,
-  "source": "[\\fundamental.theorem.of.calculus]\nTheorem:\ngiven:\n. a, b is \\real\n. f, F is \\function:on{\\reals..R}:to{\\reals..R}\nwhere:\n. a \\:real.less?:/ b\n. forAll: x is \\real\n  then: \\derivative:of{F}:at{x} = f(x)\nthen: \\riemann.integral:of{f}:on{a, b} = F(b) \\.real.-./ F(a)\nDocumented:\n. called: \"Fundamental Theorem of Calculus\"\n. description: \"If $F$ is an antiderivative of continuous $f$, then\n                $\\int_a^b f(x) dx = F(b) - F(a)$.\"\nId: \"17d7c6be-11d7-44bf-b522-515557063ed7\"",
+  "source": "[\\fundamental.theorem.of.calculus]\nTheorem:\ngiven:\n. a, b is \\real\n. f, F is \\function:on{\\reals}:to{\\reals}\nwhere:\n. a \\:real.less?:/ b\n. forAll: x is \\real\n  then: \\derivative:of{F}:at{x} = f(x)\nthen: \\riemann.integral:of{f}:on{a, b} = F(b) \\.real.-./ F(a)\nDocumented:\n. called: \"Fundamental Theorem of Calculus\"\n. description: \"If $F$ is an antiderivative of continuous $f$, then\n                $\\int_a^b f(x) dx = F(b) - F(a)$.\"\nId: \"17d7c6be-11d7-44bf-b522-515557063ed7\"",
   "sections": [
     {
       "label": "Theorem",
@@ -38,15 +38,15 @@
         },
         {
           "kind": "formulation",
-          "text": "f, F is \\function:on{\\reals..R}:to{\\reals..R}",
-          "latex": "f, F \\textrm{ is } \\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }\\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R\\textrm{ to }\\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.R}",
+          "text": "f, F is \\function:on{\\reals}:to{\\reals}",
+          "latex": "f, F \\textrm{ is } \\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }\\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}\\textrm{ to }\\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "f, F is \\function:on{\\reals..R}:to{\\reals..R}",
+              "text": "f, F is \\function:on{\\reals}:to{\\reals}",
               "types": [
-                "asserts f is \\function:on{\\reals..R}:to{\\reals..R}",
-                "asserts F is \\function:on{\\reals..R}:to{\\reals..R}"
+                "asserts f is \\function:on{\\reals}:to{\\reals}",
+                "asserts F is \\function:on{\\reals}:to{\\reals}"
               ]
             }
           ]
@@ -128,7 +128,7 @@
                   "depth": 2,
                   "text": "F",
                   "types": [
-                    "is \\function:on{\\reals..R}:to{\\reals..R}"
+                    "is \\function:on{\\reals}:to{\\reals}"
                   ]
                 },
                 {
@@ -142,7 +142,7 @@
                   "depth": 1,
                   "text": "f(x)",
                   "types": [
-                    "\"in\" \\reals..R"
+                    "\"in\" \\reals"
                   ]
                 },
                 {
@@ -189,7 +189,7 @@
           "depth": 3,
           "text": "f",
           "types": [
-            "is \\function:on{\\reals..R}:to{\\reals..R}"
+            "is \\function:on{\\reals}:to{\\reals}"
           ]
         },
         {
@@ -210,7 +210,7 @@
           "depth": 2,
           "text": "F(b)",
           "types": [
-            "\"in\" \\reals..R"
+            "\"in\" \\reals"
           ]
         },
         {
@@ -224,7 +224,7 @@
           "depth": 1,
           "text": "F(a)",
           "types": [
-            "\"in\" \\reals..R"
+            "\"in\" \\reals"
           ]
         },
         {

@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{residue of }f\\textrm{ at }z_0\\quad\\htmlClass{mlg-title-written}{\\operatorname{Res}(f, z_0)}",
   "body_text": null,
   "page": null,
-  "source": "[\\residue:of{f}:at{z0}]\nDefines: Res is \\complex\nwhen:\n. z0 is \\complex\n. f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}\nDocumented:\n. called: \"residue of $f?$ at $z0?$\"\n. written: \"\\operatorname{Res}(f?, z0?)\"\n. description: \"The coefficient $a_{-1}$ in the Laurent expansion of $f$ around\n                isolated singularity $z_0$.\"\nId: \"19aa67b3-3856-40b0-8d20-8fae7dd0ec19\"",
+  "source": "[\\residue:of{f}:at{z0}]\nDefines: Res is \\complex\nwhen:\n. z0 is \\complex\n. f is \\function:on{\\complex.numbers}:to{\\complex.numbers}\nDocumented:\n. called: \"residue of $f?$ at $z0?$\"\n. written: \"\\operatorname{Res}(f?, z0?)\"\n. description: \"The coefficient $a_{-1}$ in the Laurent expansion of $f$ around\n                isolated singularity $z_0$.\"\nId: \"19aa67b3-3856-40b0-8d20-8fae7dd0ec19\"",
   "sections": [
     {
       "label": "Defines",
@@ -37,14 +37,14 @@
         },
         {
           "kind": "formulation",
-          "text": "f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}",
-          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C}",
+          "text": "f is \\function:on{\\complex.numbers}:to{\\complex.numbers}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}} \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}",
+              "text": "f is \\function:on{\\complex.numbers}:to{\\complex.numbers}",
               "types": [
-                "asserts f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}"
+                "asserts f is \\function:on{\\complex.numbers}:to{\\complex.numbers}"
               ]
             }
           ]

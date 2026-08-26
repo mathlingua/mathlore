@@ -8,18 +8,18 @@
   "heading_latex": "\\textrm{integer equivalence relation}",
   "body_text": null,
   "page": null,
-  "source": "[\\integers.relation]\nDeclares: R is \\equivalence.relation:on{\\naturals..N \\.set.cross./ \\naturals..N}\nsatisfies:\n. forAll: n1, m1, n2, m2 is \\natural\n  then:\n  . have: R((n1, m1), (n2, m2))\n    iff: (n1 \\.natural.+./ m2) = (n2 \\.natural.+./ m1)\nDocumented:\n. called: \"integer equivalence relation\"\n. description: \"The equivalence relation on $\\mathbb{N} \\times \\mathbb{N}$\n                identifying pairs $(n_1, m_1)$ and $(n_2, m_2)$ when\n                $n_1 + m_2 = n_2 + m_1$.\"\nId: \"fd0234b9-545e-4dcf-bc4f-8c1c6f306e25\"",
+  "source": "[\\integers.relation]\nDeclares: R is \\equivalence.relation:on{\\naturals \\.set.cross./ \\naturals}\nsatisfies:\n. forAll: n1, m1, n2, m2 is \\natural\n  then:\n  . have: R((n1, m1), (n2, m2))\n    iff: (n1 \\.natural.+./ m2) = (n2 \\.natural.+./ m1)\nDocumented:\n. called: \"integer equivalence relation\"\n. description: \"The equivalence relation on $\\mathbb{N} \\times \\mathbb{N}$\n                identifying pairs $(n_1, m_1)$ and $(n_2, m_2)$ when\n                $n_1 + m_2 = n_2 + m_1$.\"\nId: \"fd0234b9-545e-4dcf-bc4f-8c1c6f306e25\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "R is \\equivalence.relation:on{\\naturals..N \\.set.cross./ \\naturals..N}",
-      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c6571756976616c656e63652e72656c6174696f6e3a6f6e}{\\textrm{equivalence relation on }\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.N \\times \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.N}}",
+      "inline_argument": "R is \\equivalence.relation:on{\\naturals \\.set.cross./ \\naturals}",
+      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c6571756976616c656e63652e72656c6174696f6e3a6f6e}{\\textrm{equivalence relation on }\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}} \\times \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}}}",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "R is \\equivalence.relation:on{\\naturals..N \\.set.cross./ \\naturals..N}",
+          "text": "R is \\equivalence.relation:on{\\naturals \\.set.cross./ \\naturals}",
           "types": [
-            "asserts R is \\equivalence.relation:on{\\naturals..N\\.set.cross./\\naturals..N}"
+            "asserts R is \\equivalence.relation:on{\\naturals\\.set.cross./\\naturals}"
           ]
         }
       ],

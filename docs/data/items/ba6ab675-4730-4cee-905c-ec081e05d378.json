@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Cauchy's Integral Theorem}",
   "body_text": null,
   "page": null,
-  "source": "[\\cauchy.integral.theorem]\nTheorem:\ngiven:\n. a, b is \\real\n. gamma is \\(closed)::complex.path:on{a, b}\n. f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}\nthen: \\contour.integral:of{f}:along{gamma} = \\complex.zero\nDocumented:\n. called: \"Cauchy's Integral Theorem\"\n. description: \"The integral of a holomorphic function along any closed contour\n                in a simply connected domain is zero.\"\nId: \"ba6ab675-4730-4cee-905c-ec081e05d378\"",
+  "source": "[\\cauchy.integral.theorem]\nTheorem:\ngiven:\n. a, b is \\real\n. gamma is \\(closed)::complex.path:on{a, b}\n. f is \\function:on{\\complex.numbers}:to{\\complex.numbers}\nthen: \\contour.integral:of{f}:along{gamma} = \\complex.zero\nDocumented:\n. called: \"Cauchy's Integral Theorem\"\n. description: \"The integral of a holomorphic function along any closed contour\n                in a simply connected domain is zero.\"\nId: \"ba6ab675-4730-4cee-905c-ec081e05d378\"",
   "sections": [
     {
       "label": "Theorem",
@@ -39,7 +39,7 @@
         {
           "kind": "formulation",
           "text": "gamma is \\(closed)::complex.path:on{a, b}",
-          "latex": "gamma \\textrm{ is } \\htmlData{mlg-ref=5c636c6f7365643a3a636f6d706c65782e706174683a6f6e}{\\textrm{closed}}\\textrm{ }\\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
+          "latex": "\\gamma \\textrm{ is } \\htmlData{mlg-ref=5c636c6f7365643a3a636f6d706c65782e706174683a6f6e}{\\textrm{closed}}\\textrm{ }\\htmlData{mlg-ref=5c636f6d706c65782e706174683a6f6e}{\\textrm{complex path on }[a, b]}",
           "type_info": [
             {
               "depth": 0,
@@ -52,14 +52,14 @@
         },
         {
           "kind": "formulation",
-          "text": "f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}",
-          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}.C}",
+          "text": "f is \\function:on{\\complex.numbers}:to{\\complex.numbers}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}} \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}",
+              "text": "f is \\function:on{\\complex.numbers}:to{\\complex.numbers}",
               "types": [
-                "asserts f is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}"
+                "asserts f is \\function:on{\\complex.numbers}:to{\\complex.numbers}"
               ]
             }
           ]
@@ -69,7 +69,7 @@
     {
       "label": "then",
       "inline_argument": "\\contour.integral:of{f}:along{gamma} = \\complex.zero",
-      "inline_latex": "\\htmlData{mlg-ref=5c636f6e746f75722e696e74656772616c3a6f663a616c6f6e67}{\\oint_{\\gamma} f(z) \\, dz} = \\htmlData{mlg-ref=5c636f6d706c65782e7a65726f}{0}",
+      "inline_latex": "\\htmlData{mlg-ref=5c636f6e746f75722e696e74656772616c3a6f663a616c6f6e67}{\\oint_{\\\\gamma} f(z) \\, dz} = \\htmlData{mlg-ref=5c636f6d706c65782e7a65726f}{0}",
       "inline_type_info": [
         {
           "depth": 0,
@@ -89,7 +89,7 @@
           "depth": 2,
           "text": "f",
           "types": [
-            "is \\function:on{\\complex.numbers..C}:to{\\complex.numbers..C}"
+            "is \\function:on{\\complex.numbers}:to{\\complex.numbers}"
           ]
         },
         {

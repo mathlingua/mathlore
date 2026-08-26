@@ -50,7 +50,7 @@ Id: "aeec4453-1166-47cd-a5f4-3eed295b3d15"
 
 
 [\real]
-Declares: x "in" \reals..R
+Declares: x "in" \reals
 Enables:
 . capability: a_ + b_ :=> a_ \.real.+./ b_
 . capability: a_ - b_ :=> a_ \.real.-./ b_
@@ -176,7 +176,7 @@ Id: "f75ee806-0ba7-4585-8183-d7f6355ed4cc"
 
 [\real.supremum:of{S}]
 Defines: M is \real
-when: S \:(nonempty)::subset:/ \reals..R
+when: S \:(nonempty)::subset:/ \reals
 expresses:
 . forAll: x is \real
   where: x "in" S
@@ -197,7 +197,7 @@ Id: "d9762902-b78e-43a8-981d-47ec829c9552"
 
 [\real.infimum:of{S}]
 Defines: m is \real
-when: S \:(nonempty)::subset:/ \reals..R
+when: S \:(nonempty)::subset:/ \reals
 expresses:
 . forAll: x is \real
   where: x "in" S
@@ -227,7 +227,7 @@ Id: "bc931815-1d01-4658-817f-efe57c5b2cf3"
 
 [\completeness.of.reals]
 Theorem:
-given: S \:(nonempty)::subset:/ \reals..R
+given: S \:(nonempty)::subset:/ \reals
 where:
 . exists: M is \real
   suchThat:

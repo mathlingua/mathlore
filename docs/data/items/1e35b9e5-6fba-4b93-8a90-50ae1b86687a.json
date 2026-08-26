@@ -13,7 +13,7 @@
     {
       "label": "Declares",
       "inline_argument": "I ::= delta(i_, j_) is \\matrix:of.dim{n, n}:over{F}",
-      "inline_latex": "I ::= delta(i, j) \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }n \\times n\\textrm{ over }F}",
+      "inline_latex": "I ::= \\delta(i, j) \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }n \\times n\\textrm{ over }F}",
       "inline_type_info": [
         {
           "depth": 0,
@@ -132,7 +132,7 @@
                     {
                       "label": "then",
                       "inline_argument": "delta(i, j) = 1",
-                      "inline_latex": "delta(i, j) = 1",
+                      "inline_latex": "\\delta(i, j) = 1",
                       "inline_type_info": [
                         {
                           "depth": 0,
@@ -171,7 +171,7 @@
                     {
                       "label": "else",
                       "inline_argument": "delta(i, j) = 0",
-                      "inline_latex": "delta(i, j) = 0",
+                      "inline_latex": "\\delta(i, j) = 0",
                       "inline_type_info": [
                         {
                           "depth": 0,
