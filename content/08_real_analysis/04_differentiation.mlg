@@ -18,6 +18,18 @@ Defines: d is \real
 when:
 . x0 is \\anything
 . f is \\anything
+expresses:
+. forAll: eps is \real
+  where: eps \:real.greater?:/ \real.zero
+  then:
+  . exists: delta is \real
+    suchThat:
+    . delta \:real.greater?:/ \real.zero
+    . forAll: h is \real
+      where:
+      . h != \real.zero
+      . \real.abs(h) \:real.less?:/ delta
+      then: \real.abs(((f(x0 \.real.+./ h) \.real.-./ f(x0)) \.real.div./ h) \.real.-./ d) \:real.less?:/ eps
 Documented:
 . called: "derivative of $f?$ at $x0?$"
 . written: "f?'(x0?)"
@@ -67,7 +79,7 @@ Documented:
 Id: "31c0c6c3-b04e-48c3-b6b3-37990aa819cd"
 
 
-SectionTitle: "Riemann Integration"
+SectionTitle: "Riemann Integration and the Fundamental Theorem"
 Id: "d60a18d3-c041-4705-9663-6c5e3f2c31ab"
 
 
@@ -81,3 +93,20 @@ Documented:
 . written: "\int_{a?}^{b?} f?(x) \, dx"
 . description: "The definite Riemann integral $\int_a^b f(x) dx$."
 Id: "06b220c2-ee50-4d69-8de7-c1cbbd81e3bb"
+
+
+[\fundamental.theorem.of.calculus]
+Theorem:
+given:
+. a, b is \real
+. f, F is \function:on{\reals..R}:to{\reals..R}
+where:
+. a \:real.less?:/ b
+. forAll: x is \real
+  then: \derivative:of{F}:at{x} = f(x)
+then: \riemann.integral:of{f}:on{a, b} = F(b) \.real.-./ F(a)
+Documented:
+. called: "Fundamental Theorem of Calculus"
+. description: "If $F$ is an antiderivative of continuous $f$, then
+                $\int_a^b f(x) dx = F(b) - F(a)$."
+Id: "17d7c6be-11d7-44bf-b522-515557063ed7"

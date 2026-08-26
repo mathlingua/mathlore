@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The sum of the infinite series."
+    "text": "The sum of the infinite series $\\sum_{n=1}^\\infty a_n$."
   },
   "source": "",
   "sections": []

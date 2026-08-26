@@ -8,12 +8,12 @@
   "heading_latex": "\\textrm{image of }T(v)\\quad\\htmlClass{mlg-title-written}{\\operatorname{im}(T(v))}",
   "body_text": null,
   "page": null,
-  "source": "[\\image:of{T(v__)}]\nDefines: Im is \\set\nusing:\n. V is \\set\n. W is \\set\nwhen: T is \\function:on{V}:to{W}\nDocumented:\n. called: \"image of $T?$\"\n. written: \"\\operatorname{im}(T?)\"\n. description: \"The image $\\operatorname{im}(T) = \\{T(v) \\mid v \\in V\\}$ is a\n                subspace of $W$.\"\nId: \"fa8a1bfb-bd31-4f60-8b55-02e1f4e878f7\"",
+  "source": "[\\image:of{T(v__)}]\nDefines: Im := \\set@{T(v_) : v_ \"in\" V}\nusing:\n. V is \\set\n. W is \\set\nwhen: T is \\function:on{V}:to{W}\nDocumented:\n. called: \"image of $T?$\"\n. written: \"\\operatorname{im}(T?)\"\n. description: \"The image $\\operatorname{im}(T) = \\{T(v) \\mid v \\in V\\}$ is a\n                subspace of $W$.\"\nId: \"fa8a1bfb-bd31-4f60-8b55-02e1f4e878f7\"",
   "sections": [
     {
       "label": "Defines",
-      "inline_argument": "Im is \\set",
-      "inline_latex": "Im \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_argument": "Im := \\set@{T(v_) : v_ \"in\" V}",
+      "inline_latex": "Im := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ T(v) \\: : \\: v \\in V \\right\\}",
       "arguments": []
     },
     {

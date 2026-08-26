@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The transpose $A^T$ obtained by reflecting $A$ across its main\ndiagonal."
+    "text": "The transpose $A^T$ obtained by reflecting $A$ across its main\ndiagonal: $(A^T)_{j,i} = A_{i,j}$."
   },
   "source": "",
   "sections": []

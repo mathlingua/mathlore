@@ -62,14 +62,30 @@ Declares: v "in" X
 using: F is \field
 when: V is \vector.space:over{F}
 Enables:
-. capability: u_ [+] v_ :=> u_ |V.+| v_
-  written: "u_? +? v_?"
-. capability: c_ [*] v_ :=> c_ |V.*| v_
-  written: "c_? *? v_?"
+. capability: u_ + v_ :=> u_ \.vector.+./ v_
+. capability: c_ * v_ :=> c_ \.vector.*./ v_
 Documented:
 . called: "vector in $V?$"
 . description: "An element of a vector space is called a vector."
 Id: "4bfc2779-4a8f-49ce-8a6c-514622cac0a3"
+
+
+[u_ \.vector.+./ v_]
+Defines: w is \set
+when: u_, v_ is \\anything
+Documented:
+. called: "$u_?$ plus $v_?$"
+. written: "u_? + v_?"
+Id: "6a975825-0383-4615-b864-c755aad672c2"
+
+
+[c_ \.vector.*./ v_]
+Defines: w is \set
+when: c_, v_ is \\anything
+Documented:
+. called: "$c_?$ times $v_?$"
+. written: "c_? \cdot v_?"
+Id: "bdf7a2f0-a5f1-44b2-ba54-64bca36463bb"
 
 
 SectionTitle: "Subspaces and Span"
@@ -101,12 +117,15 @@ Text: "The span of a subset $S$ is the smallest subspace containing $S$,
 Id: "aafaf29a-2c67-4b97-ae6f-ebc0f7ca78d0"
 
 
-[\span:of{S}:in{V ::= (X, +, *, 0)}]
+[\span:of{S}:in{V}]
 Defines: W is \set
 using: F is \field
 when:
-. S is \set
+. S is \\anything
 . V is \vector.space:over{F}
+expresses:
+. W \:vector.subspace.of:/ V
+. S \:subset:/ V
 Documented:
 . called: "linear span of $S?$ in $V?$"
 . written: "\operatorname{span}(S?)"
@@ -124,10 +143,20 @@ Text: "A set of vectors is linearly independent when no vector can be written as
 Id: "960f17ab-8b88-47d4-a7cb-c74bc8b7cfc3"
 
 
-[\(linearly.independent)::subset:of{V}]
+[S \:(linearly.independent)::subset:/ V]
 Refines: S
 when: V is \set
-specifies: S is \set
+specifies: S \:subset:/ V
+satisfies:
+. forAll: c1, c2 is \\anything
+  then:
+  . forAll: v1, v2 is \\anything
+    where: v1 != v2
+    then:
+    . if: ((c1 \.vector.*./ v1) \.vector.+./ (c2 \.vector.*./ v2)) = 0
+      then:
+      . c1 = 0
+      . c2 = 0
 Documented:
 . adjective: "linearly independent"
 . description: "A set of vectors is linearly independent if the zero vector
@@ -141,9 +170,10 @@ Id: "22fe8ee2-9aee-4cdf-a5e0-a16b5023fada"
 
 
 [\basis:for{V}]
-Declares: B is \(linearly.independent)::subset:of{V}
+Declares: B \:(linearly.independent)::subset:/ V
 using: F is \field
 when: V is \vector.space:over{F}
+satisfies: \span:of{B}:in{V} = V
 Documented:
 . called: "basis for $V?$"
 . description: "A basis for $V$ is a linearly independent spanning set."

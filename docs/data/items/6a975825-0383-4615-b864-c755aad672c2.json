@@ -1,0 +1,73 @@
+{
+  "id": "6a975825-0383-4615-b864-c755aad672c2",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c2e766563746f722e2b2e2f"
+  ],
+  "heading": "u_ \\.vector.+./ v_",
+  "heading_latex": "u\\textrm{ plus }v\\quad\\htmlClass{mlg-title-written}{u + v}",
+  "body_text": null,
+  "page": null,
+  "source": "[u_ \\.vector.+./ v_]\nDefines: w is \\set\nwhen: u_, v_ is \\\\anything\nDocumented:\n. called: \"$u_?$ plus $v_?$\"\n. written: \"u_? + v_?\"\nId: \"6a975825-0383-4615-b864-c755aad672c2\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "w is \\set",
+      "inline_latex": "w \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "u_, v_ is \\\\anything",
+      "inline_latex": "u, v \\textrm{ is } \\textrm{anything}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "u_, v_ is \\\\anything",
+          "types": [
+            "asserts u is \\\\anything",
+            "asserts v is \\\\anything"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$u_?$ plus $v_?$\"",
+              "inline_latex": "u\\textrm{ plus }v",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"u_? + v_?\"",
+              "inline_latex": "u + v",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6a975825-0383-4615-b864-c755aad672c2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

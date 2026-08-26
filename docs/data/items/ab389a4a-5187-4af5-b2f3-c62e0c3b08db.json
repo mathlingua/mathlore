@@ -8,7 +8,7 @@
   "heading_latex": "A(i, k)\\textrm{ times }B(k, j)\\quad\\htmlClass{mlg-title-written}{A(i, k) B(k, j)}",
   "body_text": null,
   "page": null,
-  "source": "[A(i_, k_) \\.matrix.*./ B(k_, j_)]\nDefines: C(i_, j_) is \\matrix:of.dim{m, p}:over{F}\nusing:\n. m, n, p is \\natural\n. F is \\field\nwhen:\n. A is \\matrix:of.dim{m, n}:over{F}\n. B is \\matrix:of.dim{n, p}:over{F}\nDocumented:\n. called: \"$A?$ times $B?$\"\n. written: \"A? B?\"\n. description: \"Matrix multiplication $C = AB$, where\n                $C_{i,j} = \\sum_k A_{i,k} B_{k,j}$.\"\nId: \"ab389a4a-5187-4af5-b2f3-c62e0c3b08db\"",
+  "source": "[A(i_, k_) \\.matrix.*./ B(k_, j_)]\nDefines: C(i_, j_) is \\matrix:of.dim{m, p}:over{F}\nusing:\n. m, n, p is \\\\anything\n. F is \\field\nwhen:\n. A is \\matrix:of.dim{m, n}:over{F}\n. B is \\matrix:of.dim{n, p}:over{F}\nDocumented:\n. called: \"$A?$ times $B?$\"\n. written: \"A? B?\"\n. description: \"Matrix multiplication $C = AB$, where\n                $C_{i,j} = \\sum_k A_{i,k} B_{k,j}$.\"\nId: \"ab389a4a-5187-4af5-b2f3-c62e0c3b08db\"",
   "sections": [
     {
       "label": "Defines",
@@ -23,16 +23,16 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "m, n, p is \\natural",
-          "latex": "m, n, p \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "text": "m, n, p is \\\\anything",
+          "latex": "m, n, p \\textrm{ is } \\textrm{anything}",
           "type_info": [
             {
               "depth": 0,
-              "text": "m, n, p is \\natural",
+              "text": "m, n, p is \\\\anything",
               "types": [
-                "asserts m is \\natural",
-                "asserts n is \\natural",
-                "asserts p is \\natural"
+                "asserts m is \\\\anything",
+                "asserts n is \\\\anything",
+                "asserts p is \\\\anything"
               ]
             }
           ]

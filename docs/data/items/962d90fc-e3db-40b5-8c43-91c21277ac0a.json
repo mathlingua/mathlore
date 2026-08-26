@@ -8,13 +8,103 @@
   "heading_latex": "\\textrm{imaginary part of }z\\quad\\htmlClass{mlg-title-written}{\\operatorname{Im}(z)}",
   "body_text": null,
   "page": null,
-  "source": "[\\complex.imaginary.part(z_)]\nDefines: y is \\real\nDocumented:\n. called: \"imaginary part of $z_?$\"\n. written: \"\\operatorname{Im}(z_?)\"\n. description: \"The imaginary component $\\operatorname{Im}(z)$ of a complex\n                number.\"\nId: \"962d90fc-e3db-40b5-8c43-91c21277ac0a\"",
+  "source": "[\\complex.imaginary.part(z_)]\nDefines: y is \\real\nexpresses:\n. exists: x is \\real\n  suchThat: z_ = x \\.complex.+./ (y \\.complex.*./ \\complex.i)\nDocumented:\n. called: \"imaginary part of $z_?$\"\n. written: \"\\operatorname{Im}(z_?)\"\n. description: \"The imaginary component $\\operatorname{Im}(z)$ of a complex\n                number.\"\nId: \"962d90fc-e3db-40b5-8c43-91c21277ac0a\"",
   "sections": [
     {
       "label": "Defines",
       "inline_argument": "y is \\real",
       "inline_latex": "y \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
       "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "x is \\real",
+              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x is \\real",
+                  "types": [
+                    "asserts x is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": "z_ = x \\.complex.+./ (y \\.complex.*./ \\complex.i)",
+              "inline_latex": "\\htmlData{mlg-ref=5c2e636f6d706c65782e2b2e2f}{z = x + \\left(\\htmlData{mlg-ref=5c2e636f6d706c65782e2a2e2f}{y \\cdot \\htmlData{mlg-ref=5c636f6d706c65782e69}{i}}\\right)}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "z_ = x \\.complex.+./ (y \\.complex.*./ \\complex.i)",
+                  "types": [
+                    "is \\complex"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "z = x",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "z",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "x",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "y\\.complex.*./\\complex.i",
+                  "types": [
+                    "is \\complex"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "y\\.complex.*./\\complex.i",
+                  "types": [
+                    "is \\complex"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "y",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "\\complex.i",
+                  "types": [
+                    "is \\complex"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Documented",

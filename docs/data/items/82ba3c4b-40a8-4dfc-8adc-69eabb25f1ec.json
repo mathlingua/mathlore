@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{transpose of }A(i, j)\\quad\\htmlClass{mlg-title-written}{A(i, j)^{T}}",
   "body_text": null,
   "page": null,
-  "source": "[\\matrix.transpose:of{A(i_, j_)}]\nDefines: At(j_, i_) is \\matrix:of.dim{n, m}:over{F}\nusing:\n. m, n is \\natural\n. F is \\field\nwhen: A is \\matrix:of.dim{m, n}:over{F}\nexpresses:\n. forAll: i, j is \\natural\n  then: At(j, i) = A(i, j)\nDocumented:\n. called: \"transpose of $A?$\"\n. written: \"A?^{T}\"\n. description: \"The transpose $A^T$ obtained by reflecting $A$ across its main\n                diagonal.\"\nId: \"82ba3c4b-40a8-4dfc-8adc-69eabb25f1ec\"",
+  "source": "[\\matrix.transpose:of{A(i_, j_)}]\nDefines: At(j_, i_) is \\matrix:of.dim{n, m}:over{F}\nusing:\n. m, n is \\\\anything\n. F is \\field\nwhen: A is \\matrix:of.dim{m, n}:over{F}\nexpresses:\n. forAll: i, j is \\natural\n  then: At(j, i) = A(i, j)\nDocumented:\n. called: \"transpose of $A?$\"\n. written: \"A?^{T}\"\n. description: \"The transpose $A^T$ obtained by reflecting $A$ across its main\n                diagonal: $(A^T)_{j,i} = A_{i,j}$.\"\nId: \"82ba3c4b-40a8-4dfc-8adc-69eabb25f1ec\"",
   "sections": [
     {
       "label": "Defines",
@@ -23,15 +23,15 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "m, n is \\natural",
-          "latex": "m, n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "text": "m, n is \\\\anything",
+          "latex": "m, n \\textrm{ is } \\textrm{anything}",
           "type_info": [
             {
               "depth": 0,
-              "text": "m, n is \\natural",
+              "text": "m, n is \\\\anything",
               "types": [
-                "asserts m is \\natural",
-                "asserts n is \\natural"
+                "asserts m is \\\\anything",
+                "asserts n is \\\\anything"
               ]
             }
           ]

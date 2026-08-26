@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{complex derivative of }f\\textrm{ at }z_0\\quad\\htmlClass{mlg-title-written}{f'(z_0)}",
   "body_text": null,
   "page": null,
-  "source": "[\\complex.derivative:of{f}:at{z0}]\nDefines: d is \\complex\nwhen:\n. z0 is \\\\anything\n. f is \\\\anything\nDocumented:\n. called: \"complex derivative of $f?$ at $z0?$\"\n. written: \"f?'(z0?)\"\n. description: \"The complex derivative\n                $f'(z_0) = \\lim_{h \\to 0} \\frac{f(z_0 + h) - f(z_0)}{h}$.\"\nId: \"7e3019a7-07f3-462e-bd30-6047f158b5de\"",
+  "source": "[\\complex.derivative:of{f}:at{z0}]\nDefines: d is \\complex\nwhen:\n. z0 is \\\\anything\n. f is \\\\anything\nexpresses:\n. forAll: eps is \\real\n  where: eps \\:real.greater?:/ \\real.zero\n  then:\n  . exists: delta is \\real\n    suchThat:\n    . delta \\:real.greater?:/ \\real.zero\n    . forAll: h is \\complex\n      where:\n      . h != \\complex.zero\n      . \\complex.modulus(h) \\:real.less?:/ delta\n      then: \\complex.modulus(((f(z0 \\.complex.+./ h) \\.complex.-./ f(z0)) \\.complex.div./ h) \\.complex.-./ d) \\:real.less?:/ eps\nDocumented:\n. called: \"complex derivative of $f?$ at $z0?$\"\n. written: \"f?'(z0?)\"\n. description: \"The complex derivative\n                $f'(z_0) = \\lim_{h \\to 0} \\frac{f(z_0 + h) - f(z_0)}{h}$.\"\nId: \"7e3019a7-07f3-462e-bd30-6047f158b5de\"",
   "sections": [
     {
       "label": "Defines",
@@ -45,6 +45,331 @@
               "text": "f is \\\\anything",
               "types": [
                 "asserts f is \\\\anything"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "eps is \\real",
+              "inline_latex": "eps \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "eps is \\real",
+                  "types": [
+                    "asserts eps is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "eps \\:real.greater?:/ \\real.zero",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{eps > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "eps \\:real.greater?:/ \\real.zero",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "eps",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\real.zero",
+                  "types": [
+                    "is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "delta is \\real",
+                      "inline_latex": "delta \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "delta is \\real",
+                          "types": [
+                            "asserts delta is \\real"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "delta \\:real.greater?:/ \\real.zero",
+                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{delta > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "delta \\:real.greater?:/ \\real.zero",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "delta",
+                              "types": [
+                                "is \\real"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "\\real.zero",
+                              "types": [
+                                "is \\real"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "forAll",
+                              "inline_argument": "h is \\complex",
+                              "inline_latex": "h \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "h is \\complex",
+                                  "types": [
+                                    "asserts h is \\complex"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "where",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "h != \\complex.zero",
+                                  "latex": "h \\ne \\htmlData{mlg-ref=5c636f6d706c65782e7a65726f}{0}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "h != \\complex.zero",
+                                      "types": []
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "h",
+                                      "types": [
+                                        "is \\complex"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "\\complex.zero",
+                                      "types": [
+                                        "is \\complex"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "\\complex.modulus(h) \\:real.less?:/ delta",
+                                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| h \\right|} < delta}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "\\complex.modulus(h) \\:real.less?:/ delta",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "\\complex.modulus(h)",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "h",
+                                      "types": [
+                                        "is \\complex"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "delta",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": "\\complex.modulus(((f(z0 \\.complex.+./ h) \\.complex.-./ f(z0)) \\.complex.div./ h) \\.complex.-./ d) \\:real.less?:/ eps",
+                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| \\htmlData{mlg-ref=5c2e636f6d706c65782e2d2e2f}{\\left(\\htmlData{mlg-ref=5c2e636f6d706c65782e6469762e2f}{\\frac{\\left(\\htmlData{mlg-ref=5c2e636f6d706c65782e2d2e2f}{f(\\htmlData{mlg-ref=5c2e636f6d706c65782e2b2e2f}{z_0 + h}) - f(z_0)}\\right)}{h}}\\right) - d} \\right|} < eps}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "\\complex.modulus(((f(z0 \\.complex.+./ h) \\.complex.-./ f(z0)) \\.complex.div./ h) \\.complex.-./ d) \\:real.less?:/ eps",
+                                  "types": [
+                                    "is \\\\statement"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "\\complex.modulus(f(z0\\.complex.+./h)\\.complex.-./f(z0)\\.complex.div./h\\.complex.-./d)",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 2,
+                                  "text": "f(z0\\.complex.+./h)\\.complex.-./f(z0)\\.complex.div./h\\.complex.-./d",
+                                  "types": [
+                                    "is \\complex"
+                                  ]
+                                },
+                                {
+                                  "depth": 3,
+                                  "text": "f(z0\\.complex.+./h)\\.complex.-./f(z0)\\.complex.div./h",
+                                  "types": [
+                                    "is \\complex"
+                                  ]
+                                },
+                                {
+                                  "depth": 4,
+                                  "text": "f(z0\\.complex.+./h)\\.complex.-./f(z0)\\.complex.div./h",
+                                  "types": [
+                                    "is \\complex"
+                                  ]
+                                },
+                                {
+                                  "depth": 5,
+                                  "text": "f(z0\\.complex.+./h)\\.complex.-./f(z0)",
+                                  "types": [
+                                    "is \\complex"
+                                  ]
+                                },
+                                {
+                                  "depth": 6,
+                                  "text": "f(z0\\.complex.+./h)\\.complex.-./f(z0)",
+                                  "types": [
+                                    "is \\complex"
+                                  ]
+                                },
+                                {
+                                  "depth": 7,
+                                  "text": "f(z0\\.complex.+./h)",
+                                  "types": []
+                                },
+                                {
+                                  "depth": 8,
+                                  "text": "z0\\.complex.+./h",
+                                  "types": [
+                                    "is \\complex"
+                                  ]
+                                },
+                                {
+                                  "depth": 9,
+                                  "text": "z0",
+                                  "types": [
+                                    "is \\\\anything"
+                                  ]
+                                },
+                                {
+                                  "depth": 9,
+                                  "text": "h",
+                                  "types": [
+                                    "is \\complex"
+                                  ]
+                                },
+                                {
+                                  "depth": 7,
+                                  "text": "f(z0)",
+                                  "types": []
+                                },
+                                {
+                                  "depth": 8,
+                                  "text": "z0",
+                                  "types": [
+                                    "is \\\\anything"
+                                  ]
+                                },
+                                {
+                                  "depth": 5,
+                                  "text": "h",
+                                  "types": [
+                                    "is \\complex"
+                                  ]
+                                },
+                                {
+                                  "depth": 3,
+                                  "text": "d",
+                                  "types": [
+                                    "is \\complex"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "eps",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]

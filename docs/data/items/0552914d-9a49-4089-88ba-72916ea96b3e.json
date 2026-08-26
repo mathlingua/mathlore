@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{determinant of }A(i, j)\\quad\\htmlClass{mlg-title-written}{\\det(A(i, j))}",
   "body_text": null,
   "page": null,
-  "source": "[\\determinant:of{A(i_, j_)}]\nDefines: d \"in\" F\nusing:\n. n is \\natural\n. F is \\field\nwhen: A is \\matrix:of.dim{n, n}:over{F}\nDocumented:\n. called: \"determinant of $A?$\"\n. written: \"\\det(A?)\"\n. description: \"The determinant $\\det(A)$ is the unique alternating multilinear\n                function of the columns mapping $I_n$ to $1$.\"\nId: \"0552914d-9a49-4089-88ba-72916ea96b3e\"",
+  "source": "[\\determinant:of{A(i_, j_)}]\nDefines: d \"in\" F\nusing:\n. n is \\\\anything\n. F is \\field\nwhen: A is \\matrix:of.dim{n, n}:over{F}\nDocumented:\n. called: \"determinant of $A?$\"\n. written: \"\\det(A?)\"\n. description: \"The determinant $\\det(A)$ is the unique alternating multilinear\n                function of the columns mapping $I_n$ to $1$.\"\nId: \"0552914d-9a49-4089-88ba-72916ea96b3e\"",
   "sections": [
     {
       "label": "Defines",
@@ -23,14 +23,14 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "n is \\natural",
-          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "text": "n is \\\\anything",
+          "latex": "n \\textrm{ is } \\textrm{anything}",
           "type_info": [
             {
               "depth": 0,
-              "text": "n is \\natural",
+              "text": "n is \\\\anything",
               "types": [
-                "asserts n is \\natural"
+                "asserts n is \\\\anything"
               ]
             }
           ]

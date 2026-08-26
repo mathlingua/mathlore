@@ -11,7 +11,7 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\vector:in{V ::= (X, +, *, 0)}]\nDeclares: v \"in\" X\nusing: F is \\field\nwhen: V is \\vector.space:over{F}\nEnables:\n. capability: u_ [+] v_ :=> u_ |V.+| v_\n  written: \"u_? +? v_?\"\n. capability: c_ [*] v_ :=> c_ |V.*| v_\n  written: \"c_? *? v_?\"\nDocumented:\n. called: \"vector in $V?$\"\n. description: \"An element of a vector space is called a vector.\"\nId: \"4bfc2779-4a8f-49ce-8a6c-514622cac0a3\"",
+  "source": "[\\vector:in{V ::= (X, +, *, 0)}]\nDeclares: v \"in\" X\nusing: F is \\field\nwhen: V is \\vector.space:over{F}\nEnables:\n. capability: u_ + v_ :=> u_ \\.vector.+./ v_\n. capability: c_ * v_ :=> c_ \\.vector.*./ v_\nDocumented:\n. called: \"vector in $V?$\"\n. description: \"An element of a vector space is called a vector.\"\nId: \"4bfc2779-4a8f-49ce-8a6c-514622cac0a3\"",
   "sections": [
     {
       "label": "Declares",
@@ -76,14 +76,8 @@
           "sections": [
             {
               "label": "capability",
-              "inline_argument": "u_ [+] v_ :=> u_ |V.+| v_",
+              "inline_argument": "u_ + v_ :=> u_ \\.vector.+./ v_",
               "inline_latex": null,
-              "arguments": []
-            },
-            {
-              "label": "written",
-              "inline_argument": "\"u_? +? v_?\"",
-              "inline_latex": "u +? v",
               "arguments": []
             }
           ]
@@ -94,14 +88,8 @@
           "sections": [
             {
               "label": "capability",
-              "inline_argument": "c_ [*] v_ :=> c_ |V.*| v_",
+              "inline_argument": "c_ * v_ :=> c_ \\.vector.*./ v_",
               "inline_latex": null,
-              "arguments": []
-            },
-            {
-              "label": "written",
-              "inline_argument": "\"c_? *? v_?\"",
-              "inline_latex": "c *? v",
               "arguments": []
             }
           ]

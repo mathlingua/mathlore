@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{eigenvalue of }A(i, j)\\quad\\htmlClass{mlg-title-written}{\\lambda}",
   "body_text": null,
   "page": null,
-  "source": "[\\eigenvalue:of{A(i_, j_)}]\nDeclares: lambda \"in\" F\nusing:\n. n is \\natural\n. F is \\field\nwhen: A is \\matrix:of.dim{n, n}:over{F}\nDocumented:\n. called: \"eigenvalue of $A?$\"\n. written: \"\\lambda\"\n. description: \"A scalar $\\lambda$ such that $Av = \\lambda v$ for some nonzero\n                vector $v$.\"\nId: \"6ed950a4-63a3-437a-871c-23c49564425a\"",
+  "source": "[\\eigenvalue:of{A(i_, j_)}]\nDeclares: lambda \"in\" F\nusing:\n. n is \\\\anything\n. F is \\field\nwhen: A is \\matrix:of.dim{n, n}:over{F}\nsatisfies:\n. exists: v is \\matrix:of.dim{n, 1}:over{F}\n  suchThat: v != \\identity.matrix:of.dim{n}:over{F}\nDocumented:\n. called: \"eigenvalue of $A?$\"\n. written: \"\\lambda\"\n. description: \"A scalar $\\lambda \\in F$ such that $Av = \\lambda v$ for some\n                nonzero column vector $v$.\"\nId: \"6ed950a4-63a3-437a-871c-23c49564425a\"",
   "sections": [
     {
       "label": "Declares",
@@ -39,14 +39,14 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "n is \\natural",
-          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "text": "n is \\\\anything",
+          "latex": "n \\textrm{ is } \\textrm{anything}",
           "type_info": [
             {
               "depth": 0,
-              "text": "n is \\natural",
+              "text": "n is \\\\anything",
               "types": [
-                "asserts n is \\natural"
+                "asserts n is \\\\anything"
               ]
             }
           ]
@@ -81,6 +81,73 @@
         }
       ],
       "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "v is \\matrix:of.dim{n, 1}:over{F}",
+              "inline_latex": "v \\textrm{ is } \\htmlData{mlg-ref=5c6d61747269783a6f662e64696d3a6f766572}{\\textrm{matrix of dimension }n \\times 1\\textrm{ over }F}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "v is \\matrix:of.dim{n, 1}:over{F}",
+                  "types": [
+                    "asserts v is \\matrix:of.dim{n,1}:over{F}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": "v != \\identity.matrix:of.dim{n}:over{F}",
+              "inline_latex": "v \\ne \\htmlData{mlg-ref=5c6964656e746974792e6d61747269783a6f662e64696d3a6f766572}{I_{n}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "v != \\identity.matrix:of.dim{n}:over{F}",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "v",
+                  "types": [
+                    "is \\matrix:of.dim{n,1}:over{F}"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\identity.matrix:of.dim{n}:over{F}",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "n",
+                  "types": [
+                    "is \\\\anything"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "F",
+                  "types": [
+                    "is \\field"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Documented",

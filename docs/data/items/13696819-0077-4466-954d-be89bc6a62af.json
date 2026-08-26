@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Rank-Nullity Theorem}",
   "body_text": null,
   "page": null,
-  "source": "[\\rank.nullity.theorem]\nTheorem:\ngiven:\n. V is \\set\n. W is \\set\n. T(v__) is \\function:on{V}:to{W}\nthen:\n. exists: d1, d2, d3 is \\natural\n  suchThat: d1 \\.natural.+./ d2 = d3\nDocumented:\n. called: \"Rank-Nullity Theorem\"\n. description: \"For any linear transformation on a finite-dimensional space,\n                $\\dim(\\ker T) + \\dim(\\operatorname{im} T) = \\dim(V)$.\"\nId: \"13696819-0077-4466-954d-be89bc6a62af\"",
+  "source": "[\\rank.nullity.theorem]\nTheorem:\ngiven:\n. F is \\field\n. V is \\vector.space:over{F}\n. W is \\vector.space:over{F}\n. T(v__) is \\linear.map:from{V}:to{W}\nthen:\n. exists: d1, d2, d3 is \\natural\n  suchThat:\n  . d1 = \\dimension:of{V}\n  . d1 = d2 \\.natural.+./ d3\nDocumented:\n. called: \"Rank-Nullity Theorem\"\n. description: \"For any linear transformation on a finite-dimensional space,\n                $\\dim(V) = \\dim(\\ker T) + \\dim(\\operatorname{im} T)$.\"\nId: \"13696819-0077-4466-954d-be89bc6a62af\"",
   "sections": [
     {
       "label": "Theorem",
@@ -23,42 +23,56 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "V is \\set",
-          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "text": "F is \\field",
+          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "V is \\set",
+              "text": "F is \\field",
               "types": [
-                "asserts V is \\set"
+                "asserts F is \\field"
               ]
             }
           ]
         },
         {
           "kind": "formulation",
-          "text": "W is \\set",
-          "latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "text": "V is \\vector.space:over{F}",
+          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
           "type_info": [
             {
               "depth": 0,
-              "text": "W is \\set",
+              "text": "V is \\vector.space:over{F}",
               "types": [
-                "asserts W is \\set"
+                "asserts V is \\vector.space:over{F}"
               ]
             }
           ]
         },
         {
           "kind": "formulation",
-          "text": "T(v__) is \\function:on{V}:to{W}",
-          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{T(v) \\: : \\: V \\rightarrow W}",
+          "text": "W is \\vector.space:over{F}",
+          "latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
           "type_info": [
             {
               "depth": 0,
-              "text": "T(v__) is \\function:on{V}:to{W}",
+              "text": "W is \\vector.space:over{F}",
               "types": [
-                "asserts T is \\function:on{V}:to{W}"
+                "asserts W is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "T(v__) is \\linear.map:from{V}:to{W}",
+          "latex": "T(v) \\textrm{ is } \\htmlData{mlg-ref=5c6c696e6561722e6d61703a66726f6d3a746f}{\\textrm{linear map from }V\\textrm{ to }W}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "T(v__) is \\linear.map:from{V}:to{W}",
+              "types": [
+                "asserts T is \\linear.map:from{V}:to{W}"
               ]
             }
           ]
@@ -93,46 +107,87 @@
             },
             {
               "label": "suchThat",
-              "inline_argument": "d1 \\.natural.+./ d2 = d3",
-              "inline_latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{d_1 + d_2 = d_3}",
-              "inline_type_info": [
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
                 {
-                  "depth": 0,
-                  "text": "d1 \\.natural.+./ d2 = d3",
-                  "types": [
-                    "is \\binary.operation:on{\\naturals}"
+                  "kind": "formulation",
+                  "text": "d1 = \\dimension:of{V}",
+                  "latex": "d_1 = \\htmlData{mlg-ref=5c64696d656e73696f6e3a6f66}{\\dim(V)}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "d1 = \\dimension:of{V}",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "d1",
+                      "types": [
+                        "is \\natural"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "\\dimension:of{V}",
+                      "types": [
+                        "is \\natural"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "V",
+                      "types": [
+                        "is \\vector.space:over{F}"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "depth": 1,
-                  "text": "d1",
-                  "types": [
-                    "is \\natural"
-                  ]
-                },
-                {
-                  "depth": 1,
-                  "text": "d2 = d3",
-                  "types": [
-                    "is \\\\statement"
-                  ]
-                },
-                {
-                  "depth": 2,
-                  "text": "d2",
-                  "types": [
-                    "is \\natural"
-                  ]
-                },
-                {
-                  "depth": 2,
-                  "text": "d3",
-                  "types": [
-                    "is \\natural"
+                  "kind": "formulation",
+                  "text": "d1 = d2 \\.natural.+./ d3",
+                  "latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{d_1 = d_2 + d_3}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "d1 = d2 \\.natural.+./ d3",
+                      "types": [
+                        "is \\binary.operation:on{\\naturals}"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "d1 = d2",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "d1",
+                      "types": [
+                        "is \\natural"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "d2",
+                      "types": [
+                        "is \\natural"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "d3",
+                      "types": [
+                        "is \\natural"
+                      ]
+                    }
                   ]
                 }
-              ],
-              "arguments": []
+              ]
             }
           ]
         }

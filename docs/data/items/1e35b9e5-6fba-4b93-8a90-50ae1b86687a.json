@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{identity matrix of dimension }n\\textrm{ over }F\\quad\\htmlClass{mlg-title-written}{I_{n}}",
   "body_text": null,
   "page": null,
-  "source": "[\\identity.matrix:of.dim{n}:over{F}]\nDeclares: I ::= delta(i_, j_) is \\matrix:of.dim{n, n}:over{F}\nwhen:\n. n is \\natural\n. F is \\field\nsatisfies:\n. forAll: i, j is \\natural\n  then:\n  . piecewise:\n    if: i = j\n    then: delta(i, j) = 1\n    else: delta(i, j) = 0\nDocumented:\n. called: \"identity matrix of dimension $n?$ over $F?$\"\n. written: \"I_{n?}\"\n. description: \"The $n \\times n$ identity matrix $I_n$ with ones on the main\n                diagonal and zeros elsewhere.\"\nId: \"1e35b9e5-6fba-4b93-8a90-50ae1b86687a\"",
+  "source": "[\\identity.matrix:of.dim{n}:over{F}]\nDeclares: I ::= delta(i_, j_) is \\matrix:of.dim{n, n}:over{F}\nwhen:\n. n is \\\\anything\n. F is \\field\nsatisfies:\n. forAll: i, j is \\natural\n  then:\n  . piecewise:\n    if: i = j\n    then: delta(i, j) = 1\n    else: delta(i, j) = 0\nDocumented:\n. called: \"identity matrix of dimension $n?$ over $F?$\"\n. written: \"I_{n?}\"\n. description: \"The $n \\times n$ identity matrix $I_n$ with ones on the main\n                diagonal and zeros elsewhere.\"\nId: \"1e35b9e5-6fba-4b93-8a90-50ae1b86687a\"",
   "sections": [
     {
       "label": "Declares",
@@ -32,14 +32,14 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "n is \\natural",
-          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "text": "n is \\\\anything",
+          "latex": "n \\textrm{ is } \\textrm{anything}",
           "type_info": [
             {
               "depth": 0,
-              "text": "n is \\natural",
+              "text": "n is \\\\anything",
               "types": [
-                "asserts n is \\natural"
+                "asserts n is \\\\anything"
               ]
             }
           ]

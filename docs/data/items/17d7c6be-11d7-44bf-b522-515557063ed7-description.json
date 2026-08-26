@@ -1,5 +1,5 @@
 {
-  "id": "f75ee806-0ba7-4585-8183-d7f6355ed4cc-description",
+  "id": "17d7c6be-11d7-44bf-b522-515557063ed7-description",
   "kind": "Text",
   "definition_keys": [],
   "heading": null,
@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The absolute value $|x| = x$ if $x \\ge 0$ and $-x$ if $x < 0$."
+    "text": "If $F$ is an antiderivative of continuous $f$, then\n$\\int_a^b f(x) dx = F(b) - F(a)$."
   },
   "source": "",
   "sections": []

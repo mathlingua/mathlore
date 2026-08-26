@@ -1,0 +1,151 @@
+{
+  "id": "7316aa91-53ee-4313-b8d4-0bceb5001242",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c6d6f6e6f746f6e652e696e6372656173696e673a3a7265616c2e73657175656e6365"
+  ],
+  "heading": "\\(monotone.increasing)::real.sequence",
+  "heading_latex": "\\textrm{monotone increasing}\\textrm{ }\\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(monotone.increasing)::real.sequence]\nRefines: S ::= a(n_)\nspecifies: S is \\real.sequence\nsatisfies:\n. forAll: n is \\natural\n  then: a(n) \\:real.leq?:/ a(n \\.natural.+./ 1)\nDocumented:\n. adjective: \"monotone increasing\"\n. description: \"A sequence is monotone increasing if each term is at least as\n                large as the preceding term.\"\nId: \"7316aa91-53ee-4313-b8d4-0bceb5001242\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "S ::= a(n_)",
+      "inline_latex": "S ::= \\left\\{ a_{n} \\right\\}_{n=1}^{\\infty} \\textrm{ is } \\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": "S is \\real.sequence",
+      "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "S is \\real.sequence",
+          "types": [
+            "asserts S is \\real.sequence"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n is \\natural",
+              "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n is \\natural",
+                  "types": [
+                    "asserts n is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "a(n) \\:real.leq?:/ a(n \\.natural.+./ 1)",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{a_{n} \\leq a_{\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n + 1}}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a(n) \\:real.leq?:/ a(n \\.natural.+./ 1)",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "a(n)",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "n",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "a(n\\.natural.+./1)",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "n\\.natural.+./1",
+                  "types": [
+                    "is \\binary.operation:on{\\naturals}"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "n",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "1",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"monotone increasing\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7316aa91-53ee-4313-b8d4-0bceb5001242\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "id": "f75ee806-0ba7-4585-8183-d7f6355ed4cc-description",
+  "id": "7316aa91-53ee-4313-b8d4-0bceb5001242-description",
   "kind": "Text",
   "definition_keys": [],
   "heading": null,
@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The absolute value $|x| = x$ if $x \\ge 0$ and $-x$ if $x < 0$."
+    "text": "A sequence is monotone increasing if each term is at least as\nlarge as the preceding term."
   },
   "source": "",
   "sections": []

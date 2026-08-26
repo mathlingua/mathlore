@@ -1,5 +1,5 @@
 {
-  "id": "f75ee806-0ba7-4585-8183-d7f6355ed4cc-description",
+  "id": "3d7b0ef1-4562-415e-bf44-74e324ce5f5c-description",
   "kind": "Text",
   "definition_keys": [],
   "heading": null,
@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The absolute value $|x| = x$ if $x \\ge 0$ and $-x$ if $x < 0$."
+    "text": "Every bounded monotone real sequence converges."
   },
   "source": "",
   "sections": []

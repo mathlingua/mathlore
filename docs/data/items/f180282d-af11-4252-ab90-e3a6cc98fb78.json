@@ -4,14 +4,11 @@
   "definition_keys": [
     "5c7370616e3a6f663a696e"
   ],
-  "heading": "\\span:of{S}:in{V ::= (X, +, *, 0)}",
+  "heading": "\\span:of{S}:in{V}",
   "heading_latex": "\\textrm{linear span of }S\\textrm{ in }V\\quad\\htmlClass{mlg-title-written}{\\operatorname{span}(S)}",
-  "parameter_destructurings": [
-    "V ::= \\left(X, +, \\ast, 0\\right)"
-  ],
   "body_text": null,
   "page": null,
-  "source": "[\\span:of{S}:in{V ::= (X, +, *, 0)}]\nDefines: W is \\set\nusing: F is \\field\nwhen:\n. S is \\set\n. V is \\vector.space:over{F}\nDocumented:\n. called: \"linear span of $S?$ in $V?$\"\n. written: \"\\operatorname{span}(S?)\"\n. description: \"The linear span $\\operatorname{span}(S)$ is the set of all\n                linear combinations formed from elements of $S$.\"\nId: \"f180282d-af11-4252-ab90-e3a6cc98fb78\"",
+  "source": "[\\span:of{S}:in{V}]\nDefines: W is \\set\nusing: F is \\field\nwhen:\n. S is \\\\anything\n. V is \\vector.space:over{F}\nexpresses:\n. W \\:vector.subspace.of:/ V\n. S \\:subset:/ V\nDocumented:\n. called: \"linear span of $S?$ in $V?$\"\n. written: \"\\operatorname{span}(S?)\"\n. description: \"The linear span $\\operatorname{span}(S)$ is the set of all\n                linear combinations formed from elements of $S$.\"\nId: \"f180282d-af11-4252-ab90-e3a6cc98fb78\"",
   "sections": [
     {
       "label": "Defines",
@@ -41,14 +38,14 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "S is \\set",
-          "latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "text": "S is \\\\anything",
+          "latex": "S \\textrm{ is } \\textrm{anything}",
           "type_info": [
             {
               "depth": 0,
-              "text": "S is \\set",
+              "text": "S is \\\\anything",
               "types": [
-                "asserts S is \\set"
+                "asserts S is \\\\anything"
               ]
             }
           ]
@@ -63,6 +60,55 @@
               "text": "V is \\vector.space:over{F}",
               "types": [
                 "asserts V is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "W \\:vector.subspace.of:/ V",
+          "latex": "\\htmlData{mlg-ref=5c3a766563746f722e73756273706163652e6f663a2f}{W \\le V}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "W \\:vector.subspace.of:/ V",
+              "types": [
+                "asserts W \\:vector.subspace.of:/ V"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "V",
+              "types": [
+                "is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "S \\:subset:/ V",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq V}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "S \\:subset:/ V",
+              "types": [
+                "asserts S \\:subset:/ V"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "V",
+              "types": [
+                "is \\vector.space:over{F}"
               ]
             }
           ]

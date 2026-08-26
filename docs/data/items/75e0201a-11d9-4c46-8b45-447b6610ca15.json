@@ -8,12 +8,12 @@
   "heading_latex": "\\textrm{kernel of }T(v)\\quad\\htmlClass{mlg-title-written}{\\ker(T(v))}",
   "body_text": null,
   "page": null,
-  "source": "[\\kernel:of{T(v__)}]\nDefines: K is \\set\nusing:\n. V is \\set\n. W is \\set\nwhen: T is \\function:on{V}:to{W}\nDocumented:\n. called: \"kernel of $T?$\"\n. written: \"\\ker(T?)\"\n. description: \"The kernel $\\ker(T) = \\{v \\in V \\mid T(v) = 0_W\\}$ is a subspace\n                of $V$.\"\nId: \"75e0201a-11d9-4c46-8b45-447b6610ca15\"",
+  "source": "[\\kernel:of{T(v__)}]\nDefines: K := \\set@{v_ : v_ \"in\" V | T(v_) = 0}\nusing:\n. V is \\set\n. W is \\set\nwhen: T is \\function:on{V}:to{W}\nDocumented:\n. called: \"kernel of $T?$\"\n. written: \"\\ker(T?)\"\n. description: \"The kernel $\\ker(T) = \\{v \\in V \\mid T(v) = 0_W\\}$ is a subspace\n                of $V$.\"\nId: \"75e0201a-11d9-4c46-8b45-447b6610ca15\"",
   "sections": [
     {
       "label": "Defines",
-      "inline_argument": "K is \\set",
-      "inline_latex": "K \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_argument": "K := \\set@{v_ : v_ \"in\" V | T(v_) = 0}",
+      "inline_latex": "K := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ v \\: : \\: v \\in V \\: | \\: T(v) = 0 \\right\\}",
       "arguments": []
     },
     {

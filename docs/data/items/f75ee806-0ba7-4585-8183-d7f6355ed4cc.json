@@ -8,13 +8,120 @@
   "heading_latex": "\\textrm{absolute value of }x\\quad\\htmlClass{mlg-title-written}{\\left| x \\right|}",
   "body_text": null,
   "page": null,
-  "source": "[\\real.abs(x_)]\nDefines: a is \\real\nDocumented:\n. called: \"absolute value of $x_?$\"\n. written: \"\\left| x_? \\right|\"\n. description: \"The absolute value $|x|$ of a real number.\"\nId: \"f75ee806-0ba7-4585-8183-d7f6355ed4cc\"",
+  "source": "[\\real.abs(x_)]\nDefines: a is \\real\nexpresses:\n. piecewise:\n  if: x_ \\:real.geq?:/ \\real.zero\n  then: a = x_\n  else: a = \\real.neg(x_)\nDocumented:\n. called: \"absolute value of $x_?$\"\n. written: \"\\left| x_? \\right|\"\n. description: \"The absolute value $|x| = x$ if $x \\ge 0$ and $-x$ if $x < 0$.\"\nId: \"f75ee806-0ba7-4585-8183-d7f6355ed4cc\"",
   "sections": [
     {
       "label": "Defines",
       "inline_argument": "a is \\real",
       "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
       "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "piecewise",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "if",
+              "inline_argument": "x_ \\:real.geq?:/ \\real.zero",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6765713a2f}{x \\geq \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x_ \\:real.geq?:/ \\real.zero",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "\\real.zero",
+                  "types": [
+                    "is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "a = x_",
+              "inline_latex": "a = x",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a = x_",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "a",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "else",
+              "inline_argument": "a = \\real.neg(x_)",
+              "inline_latex": "a = \\htmlData{mlg-ref=5c7265616c2e6e6567}{-x}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a = \\real.neg(x_)",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "a",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\real.neg(x)",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "x",
+                  "types": []
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Documented",

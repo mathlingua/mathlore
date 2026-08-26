@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{derivative of }f\\textrm{ at }x_0\\quad\\htmlClass{mlg-title-written}{f'(x_0)}",
   "body_text": null,
   "page": null,
-  "source": "[\\derivative:of{f}:at{x0}]\nDefines: d is \\real\nwhen:\n. x0 is \\\\anything\n. f is \\\\anything\nDocumented:\n. called: \"derivative of $f?$ at $x0?$\"\n. written: \"f?'(x0?)\"\n. description: \"The derivative\n                $f'(x_0) = \\lim_{h \\to 0} \\frac{f(x_0 + h) - f(x_0)}{h}$.\"\nId: \"a8704cca-424a-4f17-a321-d5c3725e2090\"",
+  "source": "[\\derivative:of{f}:at{x0}]\nDefines: d is \\real\nwhen:\n. x0 is \\\\anything\n. f is \\\\anything\nexpresses:\n. forAll: eps is \\real\n  where: eps \\:real.greater?:/ \\real.zero\n  then:\n  . exists: delta is \\real\n    suchThat:\n    . delta \\:real.greater?:/ \\real.zero\n    . forAll: h is \\real\n      where:\n      . h != \\real.zero\n      . \\real.abs(h) \\:real.less?:/ delta\n      then: \\real.abs(((f(x0 \\.real.+./ h) \\.real.-./ f(x0)) \\.real.div./ h) \\.real.-./ d) \\:real.less?:/ eps\nDocumented:\n. called: \"derivative of $f?$ at $x0?$\"\n. written: \"f?'(x0?)\"\n. description: \"The derivative\n                $f'(x_0) = \\lim_{h \\to 0} \\frac{f(x_0 + h) - f(x_0)}{h}$.\"\nId: \"a8704cca-424a-4f17-a321-d5c3725e2090\"",
   "sections": [
     {
       "label": "Defines",
@@ -45,6 +45,331 @@
               "text": "f is \\\\anything",
               "types": [
                 "asserts f is \\\\anything"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "eps is \\real",
+              "inline_latex": "eps \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "eps is \\real",
+                  "types": [
+                    "asserts eps is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "eps \\:real.greater?:/ \\real.zero",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{eps > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "eps \\:real.greater?:/ \\real.zero",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "eps",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\real.zero",
+                  "types": [
+                    "is \\real"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "delta is \\real",
+                      "inline_latex": "delta \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "delta is \\real",
+                          "types": [
+                            "asserts delta is \\real"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "delta \\:real.greater?:/ \\real.zero",
+                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e677265617465723a2f}{delta > \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "delta \\:real.greater?:/ \\real.zero",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "delta",
+                              "types": [
+                                "is \\real"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "\\real.zero",
+                              "types": [
+                                "is \\real"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "forAll",
+                              "inline_argument": "h is \\real",
+                              "inline_latex": "h \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "h is \\real",
+                                  "types": [
+                                    "asserts h is \\real"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "where",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "h != \\real.zero",
+                                  "latex": "h \\ne \\htmlData{mlg-ref=5c7265616c2e7a65726f}{0}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "h != \\real.zero",
+                                      "types": []
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "h",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "\\real.zero",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "\\real.abs(h) \\:real.less?:/ delta",
+                                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| h \\right|} < delta}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "\\real.abs(h) \\:real.less?:/ delta",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "\\real.abs(h)",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "h",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "delta",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": "\\real.abs(((f(x0 \\.real.+./ h) \\.real.-./ f(x0)) \\.real.div./ h) \\.real.-./ d) \\:real.less?:/ eps",
+                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c7265616c2e616273}{\\left| \\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{\\left(\\htmlData{mlg-ref=5c2e7265616c2e6469762e2f}{\\frac{\\left(\\htmlData{mlg-ref=5c2e7265616c2e2d2e2f}{f(\\htmlData{mlg-ref=5c2e7265616c2e2b2e2f}{x_0 + h}) - f(x_0)}\\right)}{h}}\\right) - d} \\right|} < eps}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "\\real.abs(((f(x0 \\.real.+./ h) \\.real.-./ f(x0)) \\.real.div./ h) \\.real.-./ d) \\:real.less?:/ eps",
+                                  "types": [
+                                    "is \\\\statement"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "\\real.abs(f(x0\\.real.+./h)\\.real.-./f(x0)\\.real.div./h\\.real.-./d)",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 2,
+                                  "text": "f(x0\\.real.+./h)\\.real.-./f(x0)\\.real.div./h\\.real.-./d",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 3,
+                                  "text": "f(x0\\.real.+./h)\\.real.-./f(x0)\\.real.div./h",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 4,
+                                  "text": "f(x0\\.real.+./h)\\.real.-./f(x0)\\.real.div./h",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 5,
+                                  "text": "f(x0\\.real.+./h)\\.real.-./f(x0)",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 6,
+                                  "text": "f(x0\\.real.+./h)\\.real.-./f(x0)",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 7,
+                                  "text": "f(x0\\.real.+./h)",
+                                  "types": []
+                                },
+                                {
+                                  "depth": 8,
+                                  "text": "x0\\.real.+./h",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 9,
+                                  "text": "x0",
+                                  "types": [
+                                    "is \\\\anything"
+                                  ]
+                                },
+                                {
+                                  "depth": 9,
+                                  "text": "h",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 7,
+                                  "text": "f(x0)",
+                                  "types": []
+                                },
+                                {
+                                  "depth": 8,
+                                  "text": "x0",
+                                  "types": [
+                                    "is \\\\anything"
+                                  ]
+                                },
+                                {
+                                  "depth": 5,
+                                  "text": "h",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 3,
+                                  "text": "d",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "eps",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]

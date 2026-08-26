@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A scalar $\\lambda$ such that $Av = \\lambda v$ for some nonzero\nvector $v$."
+    "text": "A scalar $\\lambda \\in F$ such that $Av = \\lambda v$ for some\nnonzero column vector $v$."
   },
   "source": "",
   "sections": []

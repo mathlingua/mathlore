@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{trace of }A(i, j)\\quad\\htmlClass{mlg-title-written}{\\operatorname{tr}(A(i, j))}",
   "body_text": null,
   "page": null,
-  "source": "[\\matrix.trace:of{A(i_, j_)}]\nDefines: tr \"in\" F\nusing:\n. n is \\natural\n. F is \\field\nwhen: A is \\matrix:of.dim{n, n}:over{F}\nDocumented:\n. called: \"trace of $A?$\"\n. written: \"\\operatorname{tr}(A?)\"\n. description: \"The trace $\\operatorname{tr}(A) = \\sum_{i=1}^n A_{i,i}$ is the\n                sum of the diagonal elements.\"\nId: \"88fa45dd-3b56-49ae-8617-08fbab297577\"",
+  "source": "[\\matrix.trace:of{A(i_, j_)}]\nDefines: tr \"in\" F\nusing:\n. n is \\\\anything\n. F is \\field\nwhen: A is \\matrix:of.dim{n, n}:over{F}\nDocumented:\n. called: \"trace of $A?$\"\n. written: \"\\operatorname{tr}(A?)\"\n. description: \"The trace $\\operatorname{tr}(A) = \\sum_{i=1}^n A_{i,i}$ is the\n                sum of the diagonal elements.\"\nId: \"88fa45dd-3b56-49ae-8617-08fbab297577\"",
   "sections": [
     {
       "label": "Defines",
@@ -23,14 +23,14 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "n is \\natural",
-          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "text": "n is \\\\anything",
+          "latex": "n \\textrm{ is } \\textrm{anything}",
           "type_info": [
             {
               "depth": 0,
-              "text": "n is \\natural",
+              "text": "n is \\\\anything",
               "types": [
-                "asserts n is \\natural"
+                "asserts n is \\\\anything"
               ]
             }
           ]

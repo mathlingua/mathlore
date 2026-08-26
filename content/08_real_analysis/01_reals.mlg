@@ -162,10 +162,15 @@ Id: "231d1127-646d-4845-88b1-f0ee9114a0a4"
 
 [\real.abs(x_)]
 Defines: a is \real
+expresses:
+. piecewise:
+  if: x_ \:real.geq?:/ \real.zero
+  then: a = x_
+  else: a = \real.neg(x_)
 Documented:
 . called: "absolute value of $x_?$"
 . written: "\left| x_? \right|"
-. description: "The absolute value $|x|$ of a real number."
+. description: "The absolute value $|x| = x$ if $x \ge 0$ and $-x$ if $x < 0$."
 Id: "f75ee806-0ba7-4585-8183-d7f6355ed4cc"
 
 

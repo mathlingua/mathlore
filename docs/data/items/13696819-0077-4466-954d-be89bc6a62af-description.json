@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "For any linear transformation on a finite-dimensional space,\n$\\dim(\\ker T) + \\dim(\\operatorname{im} T) = \\dim(V)$."
+    "text": "For any linear transformation on a finite-dimensional space,\n$\\dim(V) = \\dim(\\ker T) + \\dim(\\operatorname{im} T)$."
   },
   "source": "",
   "sections": []

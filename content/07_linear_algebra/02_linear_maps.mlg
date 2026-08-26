@@ -14,11 +14,15 @@ Id: "bb7bb487-0b2a-4844-bafe-31c3d02c3f4d"
 
 [\linear.map:from{V}:to{W}]
 Declares: T(v__)
-using: F is \field
 when:
-. V is \vector.space:over{F}
-. W is \vector.space:over{F}
+. V is \set
+. W is \set
 specifies: T is \function:on{V}:to{W}
+satisfies:
+. forAll: u, v is \\anything
+  then: T(u \.vector.+./ v) = T(u) \.vector.+./ T(v)
+. forAll: c, v is \\anything
+  then: T(c \.vector.*./ v) = c \.vector.*./ T(v)
 Documented:
 . called: "linear map from $V?$ to $W?$"
 . description: "A linear transformation $T : V \to W$ is a map preserving vector
@@ -36,7 +40,7 @@ Id: "ab265e43-99d4-4a94-bbcc-11ccc4490b62"
 
 
 [\kernel:of{T(v__)}]
-Defines: K is \set
+Defines: K := \set@{v_ : v_ "in" V | T(v_) = 0}
 using:
 . V is \set
 . W is \set
@@ -55,7 +59,7 @@ Id: "844e6471-8710-46bd-acde-bffc5b914a93"
 
 
 [\image:of{T(v__)}]
-Defines: Im is \set
+Defines: Im := \set@{T(v_) : v_ "in" V}
 using:
 . V is \set
 . W is \set
@@ -96,14 +100,17 @@ Id: "0fd6e4c3-760e-41e1-a76d-86b9f5f12a39"
 [\rank.nullity.theorem]
 Theorem:
 given:
-. V is \set
-. W is \set
-. T(v__) is \function:on{V}:to{W}
+. F is \field
+. V is \vector.space:over{F}
+. W is \vector.space:over{F}
+. T(v__) is \linear.map:from{V}:to{W}
 then:
 . exists: d1, d2, d3 is \natural
-  suchThat: d1 \.natural.+./ d2 = d3
+  suchThat:
+  . d1 = \dimension:of{V}
+  . d1 = d2 \.natural.+./ d3
 Documented:
 . called: "Rank-Nullity Theorem"
 . description: "For any linear transformation on a finite-dimensional space,
-                $\dim(\ker T) + \dim(\operatorname{im} T) = \dim(V)$."
+                $\dim(V) = \dim(\ker T) + \dim(\operatorname{im} T)$."
 Id: "13696819-0077-4466-954d-be89bc6a62af"

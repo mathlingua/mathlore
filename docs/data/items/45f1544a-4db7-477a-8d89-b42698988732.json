@@ -8,12 +8,86 @@
   "heading_latex": "\\textrm{complex conjugate of }z\\quad\\htmlClass{mlg-title-written}{\\overline{z}}",
   "body_text": null,
   "page": null,
-  "source": "[\\complex.conjugate(z_)]\nDefines: zbar is \\complex\nDocumented:\n. called: \"complex conjugate of $z_?$\"\n. written: \"\\overline{z_?}\"\n. description: \"The complex conjugate\n                $\\overline{z} = \\operatorname{Re}(z) - i \\operatorname{Im}(z)$.\"\nId: \"45f1544a-4db7-477a-8d89-b42698988732\"",
+  "source": "[\\complex.conjugate(z_)]\nDefines: zbar is \\complex\nexpresses: zbar = \\complex.real.part(z_) \\.complex.-./ (\\complex.imaginary.part(z_) \\.complex.*./ \\complex.i)\nDocumented:\n. called: \"complex conjugate of $z_?$\"\n. written: \"\\overline{z_?}\"\n. description: \"The complex conjugate\n                $\\overline{z} = \\operatorname{Re}(z) - i \\operatorname{Im}(z)$.\"\nId: \"45f1544a-4db7-477a-8d89-b42698988732\"",
   "sections": [
     {
       "label": "Defines",
       "inline_argument": "zbar is \\complex",
       "inline_latex": "zbar \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "zbar = \\complex.real.part(z_) \\.complex.-./ (\\complex.imaginary.part(z_) \\.complex.*./ \\complex.i)",
+      "inline_latex": "\\htmlData{mlg-ref=5c2e636f6d706c65782e2d2e2f}{zbar = \\htmlData{mlg-ref=5c636f6d706c65782e7265616c2e70617274}{\\operatorname{Re}(z)} - \\left(\\htmlData{mlg-ref=5c2e636f6d706c65782e2a2e2f}{\\htmlData{mlg-ref=5c636f6d706c65782e696d6167696e6172792e70617274}{\\operatorname{Im}(z)} \\cdot \\htmlData{mlg-ref=5c636f6d706c65782e69}{i}}\\right)}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "zbar = \\complex.real.part(z_) \\.complex.-./ (\\complex.imaginary.part(z_) \\.complex.*./ \\complex.i)",
+          "types": [
+            "is \\complex"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "zbar = \\complex.real.part(z)",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "zbar",
+          "types": [
+            "is \\complex"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\complex.real.part(z)",
+          "types": [
+            "is \\real"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "z",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "\\complex.imaginary.part(z)\\.complex.*./\\complex.i",
+          "types": [
+            "is \\complex"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\complex.imaginary.part(z)\\.complex.*./\\complex.i",
+          "types": [
+            "is \\complex"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "\\complex.imaginary.part(z)",
+          "types": [
+            "is \\real"
+          ]
+        },
+        {
+          "depth": 4,
+          "text": "z",
+          "types": []
+        },
+        {
+          "depth": 3,
+          "text": "\\complex.i",
+          "types": [
+            "is \\complex"
+          ]
+        }
+      ],
       "arguments": []
     },
     {

@@ -8,27 +8,12 @@
   "heading_latex": "\\textrm{linear map from }V\\textrm{ to }W",
   "body_text": null,
   "page": null,
-  "source": "[\\linear.map:from{V}:to{W}]\nDeclares: T(v__)\nusing: F is \\field\nwhen:\n. V is \\vector.space:over{F}\n. W is \\vector.space:over{F}\nspecifies: T is \\function:on{V}:to{W}\nDocumented:\n. called: \"linear map from $V?$ to $W?$\"\n. description: \"A linear transformation $T : V \\to W$ is a map preserving vector\n                addition and scalar multiplication.\"\nId: \"e18d1a96-65a7-42f8-9f22-8458b4aab35f\"",
+  "source": "[\\linear.map:from{V}:to{W}]\nDeclares: T(v__)\nwhen:\n. V is \\set\n. W is \\set\nspecifies: T is \\function:on{V}:to{W}\nsatisfies:\n. forAll: u, v is \\\\anything\n  then: T(u \\.vector.+./ v) = T(u) \\.vector.+./ T(v)\n. forAll: c, v is \\\\anything\n  then: T(c \\.vector.*./ v) = c \\.vector.*./ T(v)\nDocumented:\n. called: \"linear map from $V?$ to $W?$\"\n. description: \"A linear transformation $T : V \\to W$ is a map preserving vector\n                addition and scalar multiplication.\"\nId: \"e18d1a96-65a7-42f8-9f22-8458b4aab35f\"",
   "sections": [
     {
       "label": "Declares",
       "inline_argument": "T(v__)",
       "inline_latex": "T(v)",
-      "arguments": []
-    },
-    {
-      "label": "using",
-      "inline_argument": "F is \\field",
-      "inline_latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
-      "inline_type_info": [
-        {
-          "depth": 0,
-          "text": "F is \\field",
-          "types": [
-            "asserts F is \\field"
-          ]
-        }
-      ],
       "arguments": []
     },
     {
@@ -38,28 +23,28 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "V is \\vector.space:over{F}",
-          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+          "text": "V is \\set",
+          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "V is \\vector.space:over{F}",
+              "text": "V is \\set",
               "types": [
-                "asserts V is \\vector.space:over{F}"
+                "asserts V is \\set"
               ]
             }
           ]
         },
         {
           "kind": "formulation",
-          "text": "W is \\vector.space:over{F}",
-          "latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+          "text": "W is \\set",
+          "latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "W is \\vector.space:over{F}",
+              "text": "W is \\set",
               "types": [
-                "asserts W is \\vector.space:over{F}"
+                "asserts W is \\set"
               ]
             }
           ]
@@ -80,6 +65,206 @@
         }
       ],
       "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "u, v is \\\\anything",
+              "inline_latex": "u, v \\textrm{ is } \\textrm{anything}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "u, v is \\\\anything",
+                  "types": [
+                    "asserts u is \\\\anything",
+                    "asserts v is \\\\anything"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "T(u \\.vector.+./ v) = T(u) \\.vector.+./ T(v)",
+              "inline_latex": "\\htmlData{mlg-ref=5c2e766563746f722e2b2e2f}{T(\\htmlData{mlg-ref=5c2e766563746f722e2b2e2f}{u + v}) = T(u) + T(v)}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "T(u \\.vector.+./ v) = T(u) \\.vector.+./ T(v)",
+                  "types": [
+                    "is \\set"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "T(u\\.vector.+./v) = T(u)",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "T(u\\.vector.+./v)",
+                  "types": [
+                    "\"in\" W"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "u\\.vector.+./v",
+                  "types": [
+                    "is \\set"
+                  ]
+                },
+                {
+                  "depth": 4,
+                  "text": "u",
+                  "types": [
+                    "is \\\\anything"
+                  ]
+                },
+                {
+                  "depth": 4,
+                  "text": "v",
+                  "types": [
+                    "is \\\\anything"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "T(u)",
+                  "types": [
+                    "\"in\" W"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "u",
+                  "types": [
+                    "is \\\\anything"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "T(v)",
+                  "types": [
+                    "\"in\" W"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "v",
+                  "types": [
+                    "is \\\\anything"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "c, v is \\\\anything",
+              "inline_latex": "c, v \\textrm{ is } \\textrm{anything}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "c, v is \\\\anything",
+                  "types": [
+                    "asserts c is \\\\anything",
+                    "asserts v is \\\\anything"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "T(c \\.vector.*./ v) = c \\.vector.*./ T(v)",
+              "inline_latex": "\\htmlData{mlg-ref=5c2e766563746f722e2a2e2f}{T(\\htmlData{mlg-ref=5c2e766563746f722e2a2e2f}{c \\cdot v}) = c \\cdot T(v)}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "T(c \\.vector.*./ v) = c \\.vector.*./ T(v)",
+                  "types": [
+                    "is \\set"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "T(c\\.vector.*./v) = c",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "T(c\\.vector.*./v)",
+                  "types": [
+                    "\"in\" W"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "c\\.vector.*./v",
+                  "types": [
+                    "is \\set"
+                  ]
+                },
+                {
+                  "depth": 4,
+                  "text": "c",
+                  "types": [
+                    "is \\\\anything"
+                  ]
+                },
+                {
+                  "depth": 4,
+                  "text": "v",
+                  "types": [
+                    "is \\\\anything"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "c",
+                  "types": [
+                    "is \\\\anything"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "T(v)",
+                  "types": [
+                    "\"in\" W"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "v",
+                  "types": [
+                    "is \\\\anything"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Documented",

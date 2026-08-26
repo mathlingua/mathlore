@@ -1,0 +1,14 @@
+{
+  "id": "3069a9a0-50d1-4424-b9e6-783a50b65cb5-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The contour integral of a meromorphic function equals $2\\pi i$\ntimes the sum of the residues enclosed by the contour."
+  },
+  "source": "",
+  "sections": []
+}

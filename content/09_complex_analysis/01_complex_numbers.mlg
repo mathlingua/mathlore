@@ -134,6 +134,9 @@ Id: "e5125a7d-d915-4ca8-a6ce-6c928e275445"
 
 [\complex.real.part(z_)]
 Defines: x is \real
+expresses:
+. exists: y is \real
+  suchThat: z_ = x \.complex.+./ (y \.complex.*./ \complex.i)
 Documented:
 . called: "real part of $z_?$"
 . written: "\operatorname{Re}(z_?)"
@@ -143,6 +146,9 @@ Id: "ac392c5f-3f42-42d6-8313-5e4cbd764f89"
 
 [\complex.imaginary.part(z_)]
 Defines: y is \real
+expresses:
+. exists: x is \real
+  suchThat: z_ = x \.complex.+./ (y \.complex.*./ \complex.i)
 Documented:
 . called: "imaginary part of $z_?$"
 . written: "\operatorname{Im}(z_?)"
@@ -153,6 +159,7 @@ Id: "962d90fc-e3db-40b5-8c43-91c21277ac0a"
 
 [\complex.conjugate(z_)]
 Defines: zbar is \complex
+expresses: zbar = \complex.real.part(z_) \.complex.-./ (\complex.imaginary.part(z_) \.complex.*./ \complex.i)
 Documented:
 . called: "complex conjugate of $z_?$"
 . written: "\overline{z_?}"
@@ -163,6 +170,9 @@ Id: "45f1544a-4db7-477a-8d89-b42698988732"
 
 [\complex.modulus(z_)]
 Defines: r is \real
+expresses:
+. r \:real.geq?:/ \real.zero
+. (r \.real.*./ r) = (\complex.real.part(z_) \.real.*./ \complex.real.part(z_)) \.real.+./ (\complex.imaginary.part(z_) \.real.*./ \complex.imaginary.part(z_))
 Documented:
 . called: "modulus of $z_?$"
 . written: "\left| z_? \right|"

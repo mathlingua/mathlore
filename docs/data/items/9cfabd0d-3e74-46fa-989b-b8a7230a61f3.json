@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{matrix of dimension }m \\times n\\textrm{ over }F",
   "body_text": null,
   "page": null,
-  "source": "[\\matrix:of.dim{m, n}:over{F}]\nDeclares: A ::= a(i_, j_)\nwhen:\n. m, n is \\natural\n. F is \\field\nDocumented:\n. called: \"matrix of dimension $m? \\times n?$ over $F?$\"\n. writing: a(i, j)\n  as: \"a?_{i?, j?}\"\n. writing: a(i_, j_)\n  as: \"\\left[ a?_{i_?, j_?} \\right]\"\n. description: \"A matrix $A = [a_{i,j}]$ is a rectangular array of scalars\n                indexed by row and column.\"\nId: \"9cfabd0d-3e74-46fa-989b-b8a7230a61f3\"",
+  "source": "[\\matrix:of.dim{m, n}:over{F}]\nDeclares: A ::= a(i_, j_)\nwhen:\n. m, n is \\\\anything\n. F is \\field\nDocumented:\n. called: \"matrix of dimension $m? \\times n?$ over $F?$\"\n. writing: a(i, j)\n  as: \"a?_{i?, j?}\"\n. writing: a(i_, j_)\n  as: \"\\left[ a?_{i_?, j_?} \\right]\"\n. description: \"A matrix $A = [a_{i,j}]$ is a rectangular array of scalars\n                indexed by row and column.\"\nId: \"9cfabd0d-3e74-46fa-989b-b8a7230a61f3\"",
   "sections": [
     {
       "label": "Declares",
@@ -23,15 +23,15 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "m, n is \\natural",
-          "latex": "m, n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "text": "m, n is \\\\anything",
+          "latex": "m, n \\textrm{ is } \\textrm{anything}",
           "type_info": [
             {
               "depth": 0,
-              "text": "m, n is \\natural",
+              "text": "m, n is \\\\anything",
               "types": [
-                "asserts m is \\natural",
-                "asserts n is \\natural"
+                "asserts m is \\\\anything",
+                "asserts n is \\\\anything"
               ]
             }
           ]
