@@ -1,6 +1,6 @@
 ---
 name: mathlingua-clause-groups
-description: Author or review nested MathLingua clause groups for logic, quantification, binding, conditionals, proof-style assertions, and piecewise definitions. Use for not, allOf, anyOf, oneOf, exists, existsUnique, forAll, let, if, have, piecewise, given, or equivalently blocks.
+description: Author or review nested MathLingua clause groups for logic, quantification, binding, conditionals, proof-style assertions, and piecewise definitions. Use for not, allOf, anyOf, oneOf, exists, existsUnique, forAll, let, if, have, piecewise, or equivalently blocks.
 ---
 
 # MathLingua Clause Groups
@@ -18,7 +18,6 @@ Read only the reference for the clause being used:
 - [`if`](references/if.md): conditional implication.
 - [`have`](references/have.md): biconditional or proof-style assertion forms.
 - [`piecewise`](references/piecewise.md): ordered conditional branches.
-- [`given`](references/given.md): one refined-capable local assumption.
 - [`equivalently`](references/equivalently.md): a biconditional chain.
 
 Inline clauses are parsed first as declaration statements, then as expressions.

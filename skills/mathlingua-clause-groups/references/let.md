@@ -10,7 +10,9 @@ required body.
 ```
 
 Bindings may use declaration/specification forms. `where:` assumptions and the
-new values are available in `then:` only.
+new values are available in `then:` only. Use this construct for local
+assumptions as well as local values; nested `given:` clause groups are not part
+of the structural language.
 
 ## Anti-patterns
 
