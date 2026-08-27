@@ -26,8 +26,8 @@ Id: "86f693bc-1d69-4bfd-bef4-c67033b73acb"
 
 
 [\integers.relation]
-Declares: R is \equivalence.relation:on{\naturals \.set.cross./ \naturals}
-satisfies:
+Defines: R is \equivalence.relation:on{\naturals \.set.cross./ \naturals}
+expresses:
 . forAll: n1, m1, n2, m2 is \natural
   then:
   . have: R((n1, m1), (n2, m2))
@@ -45,7 +45,7 @@ Id: "b1e96b53-1a5b-49bf-a250-bb2fb3114191"
 
 
 [\integers]
-Defines: Zb ::= (Z, 0, 1, +, *, neg(z_))
+Defines: Zb ::= (Z, 0, 1, +, *, neg(z_), leq(a_, b_))
 abstractly:
 specifies:
 . Z is \set
@@ -54,7 +54,9 @@ specifies:
 . + is \binary.operation:on{Z}
 . * is \binary.operation:on{Z}
 . neg is \function:on{Z}:to{Z}
+. leq is \total.order:on{Z}
 expresses:
+. 0 != 1
 . forAll: a, b, c "in" Z
   then:
   . (a + b) + c = a + (b + c)
@@ -62,9 +64,17 @@ expresses:
   . a + 0 = a
   . a + neg(a) = 0
   . (a * b) * c = a * (b * c)
+  . a * b = b * a
   . a * 1 = a
   . 1 * a = a
   . a * (b + c) = (a * b) + (a * c)
+  . if: leq(a, b)
+    then: leq(a + c, b + c)
+. forAll: a, b "in" Z
+  where:
+  . leq(0, a)
+  . leq(0, b)
+  then: leq(0, a * b)
 Enables:
 . capability: z_ "in" Zb :-> z_ is \integer
 . view:
@@ -83,6 +93,7 @@ Enables:
 . capability: a_ + b_ :=> a_ \.integer.+./ b_
 . capability: a_ * b_ :=> a_ \.integer.*./ b_
 . capability: -a_ :=> \integer.neg(a_)
+. capability: a_ <= b_ :=> a_ \:integer.leq:/ b_
 Documented:
 . called: "integer"
 . description: "An integer is an element of the underlying set of integers
@@ -110,6 +121,7 @@ Id: "14e8b6fe-08ca-49d3-9cf9-152d052cb10d"
 
 [\integer.one]
 Defines: o := \integers..1 is \integer
+expresses: o != \integer.zero
 Documented:
 . called: "integer one"
 . written: "1"
@@ -158,3 +170,149 @@ Documented:
 . written: "-a_?"
 . description: "The additive inverse (negation) of an integer $-a$."
 Id: "c17b9934-2a9c-4ccc-8556-c76abd992020"
+
+
+[a \:integer.leq:/ b]
+Declares: a is \integer
+when: b is \integer
+satisfies: \integers..leq(a, b)
+Documented:
+. called: "$a?$ is less than or equal to $b?$"
+. written: "a? \leq b?"
+. description: "The canonical total order on the integers."
+Id: "26ed2caa-2e69-428c-8a1b-0e4c09a48dbc"
+
+
+SectionTitle: "Realization by Differences of Naturals"
+Id: "bd42839a-010c-43f1-b720-c50cd2e5eef6"
+
+
+Text: "The pair construction now supplies every component of the abstract
+       integer tuple.  Its carrier is the quotient of $\mathbb{N} \times
+       \mathbb{N}$ by the relation above.  Addition adds like coordinates,
+       multiplication expands $(a-b)(c-d)$, negation swaps the coordinates,
+       and order compares the represented differences without using integer
+       subtraction."
+Id: "f23b6e0a-72bf-47a9-8ba0-6b48734992d1"
+
+
+[\integer.pair.carrier]
+Defines: Z := (\naturals \.set.cross./ \naturals) \.mod./ \integers.relation is \set
+Documented:
+. called: "integer pair quotient"
+. written: "(\mathbb{N} \times \mathbb{N}) / {\sim}_{\mathbb{Z}}"
+. description: "The quotient carrier whose class $[(a,b)]$ represents the formal
+                difference $a-b$."
+Id: "84f19ae7-2d2d-4c34-93c7-a9c7386df968"
+
+
+[\integer.pair.class:of{a, b}]
+Defines: C := \equivalence.class:of{(a, b)}:over{\integers.relation}#using{X := \naturals \.set.cross./ \naturals} "in" \integer.pair.carrier
+when: a, b is \natural
+Documented:
+. called: "integer class of $a?$ and $b?$"
+. written: "[(a?, b?)]_{\mathbb{Z}}"
+. description: "The equivalence class of the pair $(a,b)$ in the difference
+                construction of the integers."
+Id: "5c228ea8-d53f-4460-8909-56b46f19be2a"
+
+
+[\integer.pair.zero]
+Defines: z := \integer.pair.class:of{\natural.zero, \natural.zero} "in" \integer.pair.carrier
+Documented:
+. called: "integer-pair zero"
+. written: "[(0,0)]_{\mathbb{Z}}"
+Id: "c79011b3-a5f5-4225-b491-e9a4df1889b0"
+
+
+[\integer.pair.one]
+Defines: o := \integer.pair.class:of{\natural.one, \natural.zero} "in" \integer.pair.carrier
+Documented:
+. called: "integer-pair one"
+. written: "[(1,0)]_{\mathbb{Z}}"
+Id: "46a6c27b-692f-4fb6-af09-dd9f9787d9d3"
+
+
+[\integer.pair.add]
+Defines: add(a_, b_) is \binary.operation:on{\integer.pair.carrier}
+expresses:
+. forAll: a1, b1, a2, b2 is \natural
+  then: add(\integer.pair.class:of{a1, b1}, \integer.pair.class:of{a2, b2}) = \integer.pair.class:of{a1 \.natural.+./ a2, b1 \.natural.+./ b2}
+Documented:
+. called: "integer-pair addition"
+. written: "a_? +_{\mathbb{Z}} b_?"
+. description: "Addition induced on equivalence classes by
+                $[(a,b)] + [(c,d)] = [(a+c,b+d)]$."
+Id: "720771d7-3535-4c2a-864a-868fb794656c"
+
+
+[\integer.pair.mul]
+Defines: mul(a_, b_) is \binary.operation:on{\integer.pair.carrier}
+expresses:
+. forAll: a1, b1, a2, b2 is \natural
+  then:
+  . let: ac, bd, ad, bc is \natural
+    where:
+    . ac = a1 \.natural.*./ a2
+    . bd = b1 \.natural.*./ b2
+    . ad = a1 \.natural.*./ b2
+    . bc = b1 \.natural.*./ a2
+    then: mul(\integer.pair.class:of{a1, b1}, \integer.pair.class:of{a2, b2}) = \integer.pair.class:of{ac \.natural.+./ bd, ad \.natural.+./ bc}
+Documented:
+. called: "integer-pair multiplication"
+. written: "a_? \cdot_{\mathbb{Z}} b_?"
+. description: "Multiplication induced by the identity
+                $(a-b)(c-d)=(ac+bd)-(ad+bc)$."
+Id: "851822e5-633e-477d-aaa9-175898ceb06e"
+
+
+[\integer.pair.neg(a_)]
+Defines: n(a_) is \function:on{\integer.pair.carrier}:to{\integer.pair.carrier}
+expresses:
+. forAll: p, q is \natural
+  then: n(\integer.pair.class:of{p, q}) = \integer.pair.class:of{q, p}
+Documented:
+. called: "integer-pair negation"
+. written: "-_{\mathbb{Z}} a_?"
+. description: "Negation induced by swapping the coordinates:
+                $-[(a,b)]=[(b,a)]$."
+Id: "d3661a1d-1da3-47ef-9d54-cc841b4dcdda"
+
+
+[\integer.pair.leq]
+Defines: leq(a_, b_) is \total.order:on{\integer.pair.carrier}
+expresses:
+. forAll: a1, b1, a2, b2 is \natural
+  then:
+  . let: lhs, rhs is \natural
+    where:
+    . lhs = a1 \.natural.+./ b2
+    . rhs = a2 \.natural.+./ b1
+    then:
+    . have: leq(\integer.pair.class:of{a1, b1}, \integer.pair.class:of{a2, b2})
+      iff: lhs \:natural.leq?:/ rhs
+Documented:
+. called: "integer-pair order"
+. written: "a_? \leq_{\mathbb{Z}} b_?"
+. description: "The quotient order $[(a,b)] \le [(c,d)]$ exactly when
+                $a+d \le c+b$."
+Id: "58e8d2d9-b0e3-416b-8536-3fb3a8b9063a"
+
+
+[\integer.pair.realization]
+Realizes: Zb ::= (Z, 0, 1, +, *, neg(z_), leq(a_, b_)) := \integers
+specifies:
+. Z := \integer.pair.carrier
+. 0 := \integer.pair.zero
+. 1 := \integer.pair.one
+. + := \integer.pair.add
+. * := \integer.pair.mul
+. neg(z_) := \integer.pair.neg(z_)
+. leq := \integer.pair.leq
+Enables:
+. capability: x_ "in" Zb :<->: x_ "in" Z
+Documented:
+. called: "integers as differences of naturals"
+. description: "The concrete realization of the abstract integer tuple by
+                equivalence classes of pairs of natural numbers."
+Id: "b28cb699-77da-4c6f-92a3-3ffdec43ffcc"

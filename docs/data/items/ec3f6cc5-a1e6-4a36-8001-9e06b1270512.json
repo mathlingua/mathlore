@@ -1,0 +1,75 @@
+{
+  "id": "ec3f6cc5-a1e6-4a36-8001-9e06b1270512",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265616c2e6361756368792e636c6173733a6f66"
+  ],
+  "heading": "\\real.cauchy.class:of{A ::= a(n_)}",
+  "heading_latex": "\\textrm{Cauchy-real class of }A\\quad\\htmlClass{mlg-title-written}{[a]_{\\mathbb{R}}}",
+  "parameter_destructurings": [
+    "A(n)"
+  ],
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.cauchy.class:of{A ::= a(n_)}]\nDefines: X := \\equivalence.class:of{A}:over{\\real.cauchy.relation}#using{X := \\rational.cauchy.sequences} \"in\" \\real.cauchy.carrier\nwhen: A is \\cauchy.rational.sequence\nDocumented:\n. called: \"Cauchy-real class of $A?$\"\n. written: \"[a?]_{\\mathbb{R}}\"\nId: \"ec3f6cc5-a1e6-4a36-8001-9e06b1270512\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "X := \\equivalence.class:of{A}:over{\\real.cauchy.relation}#using{X := \\rational.cauchy.sequences} \"in\" \\real.cauchy.carrier",
+      "inline_latex": "X := \\htmlData{mlg-ref=5c6571756976616c656e63652e636c6173733a6f663a6f766572}{\\left [ A \\right ]_{\\htmlData{mlg-ref=5c7265616c2e6361756368792e72656c6174696f6e}{\\textrm{Cauchy-sequence equivalence}}}} \\textrm{ using } \\htmlData{mlg-ref=5c726174696f6e616c2e6361756368792e73657175656e636573}{\\mathcal{C}(\\mathbb{Q})} \\in \\htmlData{mlg-ref=5c7265616c2e6361756368792e63617272696572}{\\mathcal{C}(\\mathbb{Q})/\\sim}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A is \\cauchy.rational.sequence",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A is \\cauchy.rational.sequence",
+          "types": [
+            "asserts A is \\cauchy.rational.sequence"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Cauchy-real class of $A?$\"",
+              "inline_latex": "\\textrm{Cauchy-real class of }A",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"[a?]_{\\mathbb{R}}\"",
+              "inline_latex": "[a]_{\\mathbb{R}}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ec3f6cc5-a1e6-4a36-8001-9e06b1270512\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

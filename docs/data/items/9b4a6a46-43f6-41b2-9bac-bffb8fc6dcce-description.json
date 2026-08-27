@@ -1,0 +1,14 @@
+{
+  "id": "9b4a6a46-43f6-41b2-9bac-bffb8fc6dcce-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For a nonzero Cauchy-real class, its representative is\neventually bounded away from zero, so termwise reciprocal gives\nanother Cauchy sequence. Finitely many zero terms are sent to\nzero by the totalized rational reciprocal."
+  },
+  "source": "",
+  "sections": []
+}

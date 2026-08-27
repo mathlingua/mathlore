@@ -1,0 +1,57 @@
+{
+  "id": "c79011b3-a5f5-4225-b491-e9a4df1889b0",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c696e74656765722e706169722e7a65726f"
+  ],
+  "heading": "\\integer.pair.zero",
+  "heading_latex": "\\textrm{integer-pair zero}\\quad\\htmlClass{mlg-title-written}{[(0,0)]_{\\mathbb{Z}}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integer.pair.zero]\nDefines: z := \\integer.pair.class:of{\\natural.zero, \\natural.zero} \"in\" \\integer.pair.carrier\nDocumented:\n. called: \"integer-pair zero\"\n. written: \"[(0,0)]_{\\mathbb{Z}}\"\nId: \"c79011b3-a5f5-4225-b491-e9a4df1889b0\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "z := \\integer.pair.class:of{\\natural.zero, \\natural.zero} \"in\" \\integer.pair.carrier",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c696e74656765722e706169722e636c6173733a6f66}{[(\\htmlData{mlg-ref=5c6e61747572616c2e7a65726f}{0}, \\htmlData{mlg-ref=5c6e61747572616c2e7a65726f}{0})]_{\\mathbb{Z}}} \\in \\htmlData{mlg-ref=5c696e74656765722e706169722e63617272696572}{(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integer-pair zero\"",
+              "inline_latex": "\\textrm{integer-pair zero}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"[(0,0)]_{\\mathbb{Z}}\"",
+              "inline_latex": "[(0,0)]_{\\mathbb{Z}}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c79011b3-a5f5-4225-b491-e9a4df1889b0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

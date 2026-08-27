@@ -1,0 +1,140 @@
+{
+  "id": "bf36574e-aa8c-48b2-b63c-2e563d34630b",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e6361756368792e73657175656e63652e6d756c"
+  ],
+  "heading": "\\rational.cauchy.sequence.mul{A ::= a(n_), B ::= b(n_)}",
+  "heading_latex": "\\textrm{termwise product of }A\\textrm{ and }B",
+  "parameter_destructurings": [
+    "A(n)",
+    "B(n)"
+  ],
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.cauchy.sequence.mul{A ::= a(n_), B ::= b(n_)}]\nDefines: C ::= c(n_) is \\cauchy.rational.sequence\nwhen:\n. A is \\cauchy.rational.sequence\n. B is \\cauchy.rational.sequence\nexpresses: c(n_) := a(n_) \\.rational.*./ b(n_)\nDocumented:\n. called: \"termwise product of $A?$ and $B?$\"\n. description: \"The Cauchy sequence whose $n$th term is $a_nb_n$.\"\nId: \"bf36574e-aa8c-48b2-b63c-2e563d34630b\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "C ::= c(n_) is \\cauchy.rational.sequence",
+      "inline_latex": "C ::= c(n) \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A is \\cauchy.rational.sequence",
+          "latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "A is \\cauchy.rational.sequence",
+              "types": [
+                "asserts A is \\cauchy.rational.sequence"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "B is \\cauchy.rational.sequence",
+          "latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "B is \\cauchy.rational.sequence",
+              "types": [
+                "asserts B is \\cauchy.rational.sequence"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "c(n_) := a(n_) \\.rational.*./ b(n_)",
+      "inline_latex": "c(n) := \\htmlData{mlg-ref=5c2e726174696f6e616c2e2a2e2f}{a(n) \\cdot b(n)}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "c(n_) := a(n_) \\.rational.*./ b(n_)",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "a(n)\\.rational.*./b(n)",
+          "types": [
+            "is \\binary.operation:on{\\rationals}"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "a(n)",
+          "types": [
+            "is \\rational"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "n",
+          "types": []
+        },
+        {
+          "depth": 2,
+          "text": "b(n)",
+          "types": [
+            "is \\rational"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "n",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"termwise product of $A?$ and $B?$\"",
+              "inline_latex": "\\textrm{termwise product of }A\\textrm{ and }B",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"bf36574e-aa8c-48b2-b63c-2e563d34630b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "c195139a-50b8-480b-944a-bd5db899eee6",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e636f6e7374616e742e6361756368792e73657175656e63653a6f66"
+  ],
+  "heading": "\\rational.constant.cauchy.sequence:of{q}",
+  "heading_latex": "\\textrm{constant rational Cauchy sequence at }q\\quad\\htmlClass{mlg-title-written}{(q)_{n\\in\\mathbb{N}}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.constant.cauchy.sequence:of{q}]\nDefines: C ::= c(n_) is \\cauchy.rational.sequence\nwhen: q is \\rational\nexpresses: c(n_) := q\nDocumented:\n. called: \"constant rational Cauchy sequence at $q?$\"\n. written: \"(q?)_{n\\in\\mathbb{N}}\"\nId: \"c195139a-50b8-480b-944a-bd5db899eee6\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "C ::= c(n_) is \\cauchy.rational.sequence",
+      "inline_latex": "C ::= c(n) \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "q is \\rational",
+      "inline_latex": "q \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "q is \\rational",
+          "types": [
+            "asserts q is \\rational"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "c(n_) := q",
+      "inline_latex": "c(n) := q",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "c(n_) := q",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "q",
+          "types": [
+            "is \\rational"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"constant rational Cauchy sequence at $q?$\"",
+              "inline_latex": "\\textrm{constant rational Cauchy sequence at }q",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"(q?)_{n\\in\\mathbb{N}}\"",
+              "inline_latex": "(q)_{n\\in\\mathbb{N}}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c195139a-50b8-480b-944a-bd5db899eee6\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

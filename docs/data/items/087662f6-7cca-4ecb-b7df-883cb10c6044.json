@@ -1,0 +1,93 @@
+{
+  "id": "087662f6-7cca-4ecb-b7df-883cb10c6044",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c6e6f6e7a65726f2e696e7465676572"
+  ],
+  "heading": "\\nonzero.integer",
+  "heading_latex": "\\textrm{nonzero integer}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\nonzero.integer]\nDeclares: z is \\integer\nsatisfies: z != \\integer.zero\nDocumented:\n. called: \"nonzero integer\"\n. description: \"An integer distinct from zero.\"\nId: \"087662f6-7cca-4ecb-b7df-883cb10c6044\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "z is \\integer",
+      "inline_latex": "z \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "z is \\integer",
+          "types": [
+            "asserts z is \\integer"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": "z != \\integer.zero",
+      "inline_latex": "z \\ne \\htmlData{mlg-ref=5c696e74656765722e7a65726f}{0}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "z != \\integer.zero",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "z",
+          "types": [
+            "is \\nonzero.integer"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\integer.zero",
+          "types": [
+            "is \\integer"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"nonzero integer\"",
+              "inline_latex": "\\textrm{nonzero integer}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"087662f6-7cca-4ecb-b7df-883cb10c6044\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

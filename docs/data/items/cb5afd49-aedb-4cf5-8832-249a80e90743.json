@@ -1,0 +1,57 @@
+{
+  "id": "cb5afd49-aedb-4cf5-8832-249a80e90743",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e706169722e63617272696572"
+  ],
+  "heading": "\\rational.pair.carrier",
+  "heading_latex": "\\textrm{rational pair quotient}\\quad\\htmlClass{mlg-title-written}{(\\mathbb{Z} \\times (\\mathbb{Z}\\setminus\\{0\\}))/\\sim}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.pair.carrier]\nDefines: Q := \\rational.pair.base \\.mod./ \\rationals.relation is \\set\nDocumented:\n. called: \"rational pair quotient\"\n. written: \"(\\mathbb{Z} \\times (\\mathbb{Z}\\setminus\\{0\\}))/\\sim\"\nId: \"cb5afd49-aedb-4cf5-8832-249a80e90743\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "Q := \\rational.pair.base \\.mod./ \\rationals.relation is \\set",
+      "inline_latex": "Q := \\htmlData{mlg-ref=5c2e6d6f642e2f}{\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e62617365}{\\mathbb{Z} \\times (\\mathbb{Z} \\setminus \\{0\\})} / \\htmlData{mlg-ref=5c726174696f6e616c732e72656c6174696f6e}{\\textrm{rational equivalence relation}}} \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"rational pair quotient\"",
+              "inline_latex": "\\textrm{rational pair quotient}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"(\\mathbb{Z} \\times (\\mathbb{Z}\\setminus\\{0\\}))/\\sim\"",
+              "inline_latex": "(\\mathbb{Z} \\times (\\mathbb{Z}\\setminus\\{0\\}))/\\sim",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"cb5afd49-aedb-4cf5-8832-249a80e90743\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

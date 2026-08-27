@@ -1,0 +1,92 @@
+{
+  "id": "a5808b94-fc5f-459d-8a3b-ab72b6650e80",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e706169722e636c6173733a6f66"
+  ],
+  "heading": "\\rational.pair.class:of{a, b}",
+  "heading_latex": "\\textrm{rational class of }a\\textrm{ over }b\\quad\\htmlClass{mlg-title-written}{[(a,b)]_{\\mathbb{Q}}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.pair.class:of{a, b}]\nDefines: C := \\equivalence.class:of{(a, b)}:over{\\rationals.relation}#using{X := \\rational.pair.base} \"in\" \\rational.pair.carrier\nwhen:\n. a is \\integer\n. b is \\nonzero.integer\nDocumented:\n. called: \"rational class of $a?$ over $b?$\"\n. written: \"[(a?,b?)]_{\\mathbb{Q}}\"\nId: \"a5808b94-fc5f-459d-8a3b-ab72b6650e80\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "C := \\equivalence.class:of{(a, b)}:over{\\rationals.relation}#using{X := \\rational.pair.base} \"in\" \\rational.pair.carrier",
+      "inline_latex": "C := \\htmlData{mlg-ref=5c6571756976616c656e63652e636c6173733a6f663a6f766572}{\\left [ \\left(a, b\\right) \\right ]_{\\htmlData{mlg-ref=5c726174696f6e616c732e72656c6174696f6e}{\\textrm{rational equivalence relation}}}} \\textrm{ using } \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e62617365}{\\mathbb{Z} \\times (\\mathbb{Z} \\setminus \\{0\\})} \\in \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e63617272696572}{(\\mathbb{Z} \\times (\\mathbb{Z}\\setminus\\{0\\}))/\\sim}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "a is \\integer",
+          "latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "a is \\integer",
+              "types": [
+                "asserts a is \\integer"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "b is \\nonzero.integer",
+          "latex": "b \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "b is \\nonzero.integer",
+              "types": [
+                "asserts b is \\nonzero.integer"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"rational class of $a?$ over $b?$\"",
+              "inline_latex": "\\textrm{rational class of }a\\textrm{ over }b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"[(a?,b?)]_{\\mathbb{Q}}\"",
+              "inline_latex": "[(a,b)]_{\\mathbb{Q}}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a5808b94-fc5f-459d-8a3b-ab72b6650e80\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

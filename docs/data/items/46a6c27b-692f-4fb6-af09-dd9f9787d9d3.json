@@ -1,0 +1,57 @@
+{
+  "id": "46a6c27b-692f-4fb6-af09-dd9f9787d9d3",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c696e74656765722e706169722e6f6e65"
+  ],
+  "heading": "\\integer.pair.one",
+  "heading_latex": "\\textrm{integer-pair one}\\quad\\htmlClass{mlg-title-written}{[(1,0)]_{\\mathbb{Z}}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integer.pair.one]\nDefines: o := \\integer.pair.class:of{\\natural.one, \\natural.zero} \"in\" \\integer.pair.carrier\nDocumented:\n. called: \"integer-pair one\"\n. written: \"[(1,0)]_{\\mathbb{Z}}\"\nId: \"46a6c27b-692f-4fb6-af09-dd9f9787d9d3\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "o := \\integer.pair.class:of{\\natural.one, \\natural.zero} \"in\" \\integer.pair.carrier",
+      "inline_latex": "o := \\htmlData{mlg-ref=5c696e74656765722e706169722e636c6173733a6f66}{[(\\htmlData{mlg-ref=5c6e61747572616c2e6f6e65}{1}, \\htmlData{mlg-ref=5c6e61747572616c2e7a65726f}{0})]_{\\mathbb{Z}}} \\in \\htmlData{mlg-ref=5c696e74656765722e706169722e63617272696572}{(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integer-pair one\"",
+              "inline_latex": "\\textrm{integer-pair one}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"[(1,0)]_{\\mathbb{Z}}\"",
+              "inline_latex": "[(1,0)]_{\\mathbb{Z}}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"46a6c27b-692f-4fb6-af09-dd9f9787d9d3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

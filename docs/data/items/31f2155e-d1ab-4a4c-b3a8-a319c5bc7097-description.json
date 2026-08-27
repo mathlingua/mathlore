@@ -1,0 +1,14 @@
+{
+  "id": "31f2155e-d1ab-4a4c-b3a8-a319c5bc7097-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "$-[(a,b)]=[(-a,b)]$."
+  },
+  "source": "",
+  "sections": []
+}

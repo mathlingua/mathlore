@@ -1,0 +1,14 @@
+{
+  "id": "b28cb699-77da-4c6f-92a3-3ffdec43ffcc-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The concrete realization of the abstract integer tuple by\nequivalence classes of pairs of natural numbers."
+  },
+  "source": "",
+  "sections": []
+}

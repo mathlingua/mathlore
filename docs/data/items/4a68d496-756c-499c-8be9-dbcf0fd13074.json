@@ -1,0 +1,27 @@
+{
+  "id": "4a68d496-756c-499c-8be9-dbcf0fd13074",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The rational numbers extend the integers by allowing division by a\nnonzero integer. Abstractly they form an ordered field. Concretely, a\npair $(a,b)$ with $b \\ne 0$ represents the fraction $a/b$, and two pairs\nrepresent the same rational exactly when their cross-products agree."
+  },
+  "source": "Text: \"The rational numbers extend the integers by allowing division by a\n       nonzero integer. Abstractly they form an ordered field. Concretely, a\n       pair $(a,b)$ with $b \\ne 0$ represents the fraction $a/b$, and two pairs\n       represent the same rational exactly when their cross-products agree.\"\nId: \"4a68d496-756c-499c-8be9-dbcf0fd13074\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The rational numbers extend the integers by allowing division by a\n       nonzero integer. Abstractly they form an ordered field. Concretely, a\n       pair $(a,b)$ with $b \\ne 0$ represents the fraction $a/b$, and two pairs\n       represent the same rational exactly when their cross-products agree.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4a68d496-756c-499c-8be9-dbcf0fd13074\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

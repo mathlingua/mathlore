@@ -1,0 +1,14 @@
+{
+  "id": "84f19ae7-2d2d-4c34-93c7-a9c7386df968-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The quotient carrier whose class $[(a,b)]$ represents the formal\ndifference $a-b$."
+  },
+  "source": "",
+  "sections": []
+}

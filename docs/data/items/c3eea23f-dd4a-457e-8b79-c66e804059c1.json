@@ -1,0 +1,57 @@
+{
+  "id": "c3eea23f-dd4a-457e-8b79-c66e804059c1",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e706169722e7a65726f"
+  ],
+  "heading": "\\rational.pair.zero",
+  "heading_latex": "\\textrm{fraction-pair zero}\\quad\\htmlClass{mlg-title-written}{[(0,1)]_{\\mathbb{Q}}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.pair.zero]\nDefines: z := \\rational.pair.class:of{\\integer.zero, \\rational.pair.denominator.one} \"in\" \\rational.pair.carrier\nDocumented:\n. called: \"fraction-pair zero\"\n. written: \"[(0,1)]_{\\mathbb{Q}}\"\nId: \"c3eea23f-dd4a-457e-8b79-c66e804059c1\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "z := \\rational.pair.class:of{\\integer.zero, \\rational.pair.denominator.one} \"in\" \\rational.pair.carrier",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(\\htmlData{mlg-ref=5c696e74656765722e7a65726f}{0},\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e64656e6f6d696e61746f722e6f6e65}{1})]_{\\mathbb{Q}}} \\in \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e63617272696572}{(\\mathbb{Z} \\times (\\mathbb{Z}\\setminus\\{0\\}))/\\sim}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"fraction-pair zero\"",
+              "inline_latex": "\\textrm{fraction-pair zero}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"[(0,1)]_{\\mathbb{Q}}\"",
+              "inline_latex": "[(0,1)]_{\\mathbb{Q}}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c3eea23f-dd4a-457e-8b79-c66e804059c1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

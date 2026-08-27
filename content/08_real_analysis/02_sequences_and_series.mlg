@@ -91,7 +91,13 @@ Refines: S ::= a(n_)
 specifies: S is \real.sequence
 satisfies:
 . forAll: n is \natural
-  then: a(n) \:real.leq?:/ a(n \.natural.+./ 1)
+  then:
+  . let: k is \natural
+    where: k = n \.natural.+./ 1
+    then:
+    . let: v is \real
+      where: v = a(k)
+      then: a(n) \:real.leq?:/ v
 Documented:
 . adjective: "monotone increasing"
 . description: "A sequence is monotone increasing if each term is at least as

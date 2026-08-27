@@ -1,0 +1,419 @@
+{
+  "id": "851822e5-633e-477d-aaa9-175898ceb06e",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c696e74656765722e706169722e6d756c"
+  ],
+  "heading": "\\integer.pair.mul",
+  "heading_latex": "\\textrm{integer-pair multiplication}\\quad\\htmlClass{mlg-title-written}{a \\cdot_{\\mathbb{Z}} b}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integer.pair.mul]\nDefines: mul(a_, b_) is \\binary.operation:on{\\integer.pair.carrier}\nexpresses:\n. forAll: a1, b1, a2, b2 is \\natural\n  then:\n  . let: ac, bd, ad, bc is \\natural\n    where:\n    . ac = a1 \\.natural.*./ a2\n    . bd = b1 \\.natural.*./ b2\n    . ad = a1 \\.natural.*./ b2\n    . bc = b1 \\.natural.*./ a2\n    then: mul(\\integer.pair.class:of{a1, b1}, \\integer.pair.class:of{a2, b2}) = \\integer.pair.class:of{ac \\.natural.+./ bd, ad \\.natural.+./ bc}\nDocumented:\n. called: \"integer-pair multiplication\"\n. written: \"a_? \\cdot_{\\mathbb{Z}} b_?\"\n. description: \"Multiplication induced by the identity\n                $(a-b)(c-d)=(ac+bd)-(ad+bc)$.\"\nId: \"851822e5-633e-477d-aaa9-175898ceb06e\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "mul(a_, b_) is \\binary.operation:on{\\integer.pair.carrier}",
+      "inline_latex": "mul(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }\\htmlData{mlg-ref=5c696e74656765722e706169722e63617272696572}{(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a1, b1, a2, b2 is \\natural",
+              "inline_latex": "a_1, b_1, a_2, b_2 \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a1, b1, a2, b2 is \\natural",
+                  "types": [
+                    "asserts a1 is \\natural",
+                    "asserts b1 is \\natural",
+                    "asserts a2 is \\natural",
+                    "asserts b2 is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "let",
+                      "inline_argument": "ac, bd, ad, bc is \\natural",
+                      "inline_latex": "ac, bd, ad, bc \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "ac, bd, ad, bc is \\natural",
+                          "types": [
+                            "asserts ac is \\natural",
+                            "asserts bd is \\natural",
+                            "asserts ad is \\natural",
+                            "asserts bc is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "ac = a1 \\.natural.*./ a2",
+                          "latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2a2e2f}{ac = a_1 \\cdot a_2}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "ac = a1 \\.natural.*./ a2",
+                              "types": [
+                                "is \\binary.operation:on{\\naturals}"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "ac = a1",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "ac",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "a1",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "a2",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "bd = b1 \\.natural.*./ b2",
+                          "latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2a2e2f}{bd = b_1 \\cdot b_2}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "bd = b1 \\.natural.*./ b2",
+                              "types": [
+                                "is \\binary.operation:on{\\naturals}"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "bd = b1",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "bd",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "b1",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "b2",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "ad = a1 \\.natural.*./ b2",
+                          "latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2a2e2f}{ad = a_1 \\cdot b_2}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "ad = a1 \\.natural.*./ b2",
+                              "types": [
+                                "is \\binary.operation:on{\\naturals}"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "ad = a1",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "ad",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "a1",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "b2",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "bc = b1 \\.natural.*./ a2",
+                          "latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2a2e2f}{bc = b_1 \\cdot a_2}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "bc = b1 \\.natural.*./ a2",
+                              "types": [
+                                "is \\binary.operation:on{\\naturals}"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "bc = b1",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "bc",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "b1",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "a2",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "mul(\\integer.pair.class:of{a1, b1}, \\integer.pair.class:of{a2, b2}) = \\integer.pair.class:of{ac \\.natural.+./ bd, ad \\.natural.+./ bc}",
+                      "inline_latex": "mul(\\htmlData{mlg-ref=5c696e74656765722e706169722e636c6173733a6f66}{[(a_1, b_1)]_{\\mathbb{Z}}}, \\htmlData{mlg-ref=5c696e74656765722e706169722e636c6173733a6f66}{[(a_2, b_2)]_{\\mathbb{Z}}}) = \\htmlData{mlg-ref=5c696e74656765722e706169722e636c6173733a6f66}{[(\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{ac + bd}, \\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{ad + bc})]_{\\mathbb{Z}}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "mul(\\integer.pair.class:of{a1, b1}, \\integer.pair.class:of{a2, b2}) = \\integer.pair.class:of{ac \\.natural.+./ bd, ad \\.natural.+./ bc}",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "mul(\\integer.pair.class:of{a1,b1},\\integer.pair.class:of{a2,b2})",
+                          "types": [
+                            "\"in\" \\integer.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\integer.pair.class:of{a1,b1}",
+                          "types": [
+                            "\"in\" \\integer.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "a1",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "b1",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\integer.pair.class:of{a2,b2}",
+                          "types": [
+                            "\"in\" \\integer.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "a2",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "b2",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\integer.pair.class:of{ac\\.natural.+./bd,ad\\.natural.+./bc}",
+                          "types": [
+                            "\"in\" \\integer.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "ac\\.natural.+./bd",
+                          "types": [
+                            "\"in\" \\naturals"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "ac",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "bd",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "ad\\.natural.+./bc",
+                          "types": [
+                            "\"in\" \\naturals"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "ad",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "bc",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integer-pair multiplication\"",
+              "inline_latex": "\\textrm{integer-pair multiplication}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a_? \\cdot_{\\mathbb{Z}} b_?\"",
+              "inline_latex": "a \\cdot_{\\mathbb{Z}} b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"851822e5-633e-477d-aaa9-175898ceb06e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

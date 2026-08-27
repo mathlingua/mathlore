@@ -1,0 +1,381 @@
+Title: "Rational Numbers"
+Id: "8043e76c-b740-4ec1-aded-14630e21d209"
+
+
+Text: "The rational numbers extend the integers by allowing division by a
+       nonzero integer. Abstractly they form an ordered field. Concretely, a
+       pair $(a,b)$ with $b \ne 0$ represents the fraction $a/b$, and two pairs
+       represent the same rational exactly when their cross-products agree."
+Id: "4a68d496-756c-499c-8be9-dbcf0fd13074"
+
+
+SectionTitle: "The Abstract Rational Field"
+Id: "b792d225-7464-47d1-98fb-4d8003f47838"
+
+
+[\rationals]
+Defines: Qb ::= (Q, 0, 1, +, *, neg(q_), inv(q_), leq(a_, b_))
+abstractly:
+specifies:
+. Q is \set
+. 0 "in" Q
+. 1 "in" Q
+. + is \binary.operation:on{Q}
+. * is \binary.operation:on{Q}
+. neg is \function:on{Q}:to{Q}
+. inv is \function:on{Q}:to{Q}
+. leq is \total.order:on{Q}
+expresses:
+. 0 != 1
+. inv(0) = 0
+. forAll: a, b, c "in" Q
+  then:
+  . (a + b) + c = a + (b + c)
+  . a + b = b + a
+  . a + 0 = a
+  . a + neg(a) = 0
+  . (a * b) * c = a * (b * c)
+  . a * b = b * a
+  . a * 1 = a
+  . a * (b + c) = (a * b) + (a * c)
+  . if: a != 0
+    then: a * inv(a) = 1
+  . if: leq(a, b)
+    then: leq(a + c, b + c)
+. forAll: a, b "in" Q
+  where:
+  . leq(0, a)
+  . leq(0, b)
+  then: leq(0, a * b)
+Enables:
+. capability: q_ "in" Qb :-> q_ is \rational
+. view:
+  as: S := Q is \set
+Documented:
+. called: "the rationals"
+. written: "\mathbb{Q}"
+. description: "The rational numbers as an abstract ordered-field tuple
+                $(Q,0,1,+,\cdot,-,(\cdot)^{-1},\leq)$."
+Id: "8454e27c-2e90-4944-a36b-27b66be5f4cf"
+
+
+[\rational]
+Declares: q "in" \rationals
+Enables:
+. capability: a_ + b_ :=> a_ \.rational.+./ b_
+. capability: a_ * b_ :=> a_ \.rational.*./ b_
+. capability: -a_ :=> \rational.neg(a_)
+. capability: a_ <= b_ :=> a_ \:rational.leq:/ b_
+Documented:
+. called: "rational"
+. description: "A rational number is a member of the underlying carrier
+                $\mathbb{Q}$."
+Id: "2250d77e-8840-464c-be09-6a1768db38bc"
+
+
+[\rational.zero]
+Defines: z := \rationals..0 is \rational
+Documented:
+. called: "rational zero"
+. written: "0"
+Id: "129d3bee-fc92-48a9-8823-3f9a290a3540"
+
+
+[\rational.one]
+Defines: o := \rationals..1 is \rational
+Documented:
+. called: "rational one"
+. written: "1"
+Id: "d561070d-99fb-41e0-966e-ede168509eb2"
+
+
+[a_ \.rational.+./ b_]
+Defines: a_ + b_ is \binary.operation:on{\rationals}
+expresses: a_ + b_ := \rationals..`+`(a_, b_)
+Documented:
+. called: "$a_?$ plus $b_?$"
+. written: "a_? + b_?"
+Id: "44f276f5-5ec9-4d24-a891-ca3c18cba5b6"
+
+
+[a_ \.rational.*./ b_]
+Defines: a_ * b_ is \binary.operation:on{\rationals}
+expresses: a_ * b_ := \rationals..`*`(a_, b_)
+Documented:
+. called: "$a_?$ times $b_?$"
+. written: "a_? \cdot b_?"
+Id: "a63fb60f-01bb-49d3-815e-a85f721c9ac0"
+
+
+[\rational.neg(a_)]
+Defines: n := \rationals..neg(a_) is \rational
+Documented:
+. called: "negative of $a_?$"
+. written: "-a_?"
+Id: "b1356b4a-3178-43e1-8013-b993ba8b2c36"
+
+
+[\rational.inv(a_)]
+Defines: i := \rationals..inv(a_) is \rational
+Documented:
+. called: "reciprocal of $a_?$"
+. written: "a_?^{-1}"
+Id: "b567f507-0351-483f-9833-95109ab73409"
+
+
+[a_ \.rational.-./ b_]
+Defines: d := a_ \.rational.+./ \rational.neg(b_) is \rational
+when: a_, b_ is \rational
+Documented:
+. called: "$a_?$ minus $b_?$"
+. written: "a_? - b_?"
+Id: "03fffc82-39e3-4aba-b4e1-6cb950895674"
+
+
+[a_ \.rational.div./ b_]
+Defines: d := a_ \.rational.*./ \rational.inv(b_) is \rational
+when: a_, b_ is \rational
+Documented:
+. called: "$a_?$ divided by $b_?$"
+. written: "\frac{a_?}{b_?}"
+Id: "02b2f688-232d-4451-aa55-d17214af0bf0"
+
+
+[a \:rational.leq:/ b]
+Declares: a is \rational
+when: b is \rational
+satisfies: \rationals..leq(a, b)
+Documented:
+. called: "$a?$ is less than or equal to $b?$"
+. written: "a? \leq b?"
+Id: "f7389fcf-20d8-4465-8bfa-ec1fbe033c51"
+
+
+[a \:rational.less:/ b]
+Declares: a is \rational
+when: b is \rational
+satisfies:
+. a \:rational.leq?:/ b
+. a != b
+Documented:
+. called: "$a?$ is less than $b?$"
+. written: "a? < b?"
+Id: "5a472809-b0d1-46c0-9a80-236ea2ab148f"
+
+
+[\rational.abs(q_)]
+Defines: abs(q_) is \function:on{\rationals}:to{\rationals}
+expresses:
+. piecewise:
+  if: \rational.zero \:rational.leq?:/ q_
+  then: abs(q_) := q_
+  else: abs(q_) := \rational.neg(q_)
+Documented:
+. called: "absolute value of $q_?$"
+. written: "\left|q_?\right|"
+Id: "61cb32b3-cb61-43ac-8319-8cf7315fe9ab"
+
+
+SectionTitle: "Realization by Fractions of Integers"
+Id: "a34389fb-655b-4573-a3ab-85221cbea87c"
+
+
+[\nonzero.integer]
+Declares: z is \integer
+satisfies: z != \integer.zero
+Documented:
+. called: "nonzero integer"
+. description: "An integer distinct from zero."
+Id: "087662f6-7cca-4ecb-b7df-883cb10c6044"
+
+
+[\nonzero.integers]
+Defines: Zstar := \set@{z_ : z_ is \nonzero.integer} is \set
+Documented:
+. called: "nonzero integers"
+. written: "\mathbb{Z} \setminus \{0\}"
+Id: "7632dfa6-b8a4-49a3-ae26-6efff1be4e24"
+
+
+[\rational.pair.base]
+Defines: P := \set@{(a_, b_) : a_ is \integer; b_ is \nonzero.integer} is \set
+Documented:
+. called: "rational fraction pairs"
+. written: "\mathbb{Z} \times (\mathbb{Z} \setminus \{0\})"
+Id: "f7174275-17fc-4a81-a133-96bf1a5b956e"
+
+
+[\rationals.relation]
+Defines: R is \equivalence.relation:on{\rational.pair.base}
+expresses:
+. forAll: a, c is \integer
+  then:
+  . forAll: b, d is \nonzero.integer
+    then:
+    . have: R((a, b), (c, d))
+      iff: a \.integer.*./ d = c \.integer.*./ b
+Documented:
+. called: "rational equivalence relation"
+. description: "The relation $(a,b) \sim (c,d)$ exactly when $ad=cb$."
+Id: "24804175-428b-44db-8573-0165be44818c"
+
+
+[\rational.pair.carrier]
+Defines: Q := \rational.pair.base \.mod./ \rationals.relation is \set
+Documented:
+. called: "rational pair quotient"
+. written: "(\mathbb{Z} \times (\mathbb{Z}\setminus\{0\}))/\sim"
+Id: "cb5afd49-aedb-4cf5-8832-249a80e90743"
+
+
+[\rational.pair.class:of{a, b}]
+Defines: C := \equivalence.class:of{(a, b)}:over{\rationals.relation}#using{X := \rational.pair.base} "in" \rational.pair.carrier
+when:
+. a is \integer
+. b is \nonzero.integer
+Documented:
+. called: "rational class of $a?$ over $b?$"
+. written: "[(a?,b?)]_{\mathbb{Q}}"
+Id: "a5808b94-fc5f-459d-8a3b-ab72b6650e80"
+
+
+[\rational.pair.denominator.one]
+Defines: d is \nonzero.integer
+expresses: d = \integer.one
+Documented:
+. called: "unit denominator"
+. written: "1"
+Id: "2b3d1b0d-1375-4a6b-8670-397c65be411d"
+
+
+[\rational.pair.zero]
+Defines: z := \rational.pair.class:of{\integer.zero, \rational.pair.denominator.one} "in" \rational.pair.carrier
+Documented:
+. called: "fraction-pair zero"
+. written: "[(0,1)]_{\mathbb{Q}}"
+Id: "c3eea23f-dd4a-457e-8b79-c66e804059c1"
+
+
+[\rational.pair.one]
+Defines: o := \rational.pair.class:of{\integer.one, \rational.pair.denominator.one} "in" \rational.pair.carrier
+Documented:
+. called: "fraction-pair one"
+. written: "[(1,1)]_{\mathbb{Q}}"
+Id: "0286b427-e7ba-4c7b-baab-2e7f83324e52"
+
+
+[\rational.pair.add]
+Defines: add(x_, y_) is \binary.operation:on{\rational.pair.carrier}
+expresses:
+. forAll: a, c is \integer
+  then:
+  . forAll: b, d is \nonzero.integer
+    then:
+    . let:
+      . n is \integer
+      . e is \nonzero.integer
+      where:
+      . n = (a \.integer.*./ d) \.integer.+./ (c \.integer.*./ b)
+      . e = b \.integer.*./ d
+      then: add(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d}) = \rational.pair.class:of{n, e}
+Documented:
+. called: "fraction-pair addition"
+. description: "$[(a,b)]+[(c,d)]=[(ad+cb,bd)]$."
+Id: "bb76baf9-98f2-4fae-9be3-7dd96eff0d8b"
+
+
+[\rational.pair.mul]
+Defines: mul(x_, y_) is \binary.operation:on{\rational.pair.carrier}
+expresses:
+. forAll: a, c is \integer
+  then:
+  . forAll: b, d is \nonzero.integer
+    then:
+    . let:
+      . n is \integer
+      . e is \nonzero.integer
+      where:
+      . n = a \.integer.*./ c
+      . e = b \.integer.*./ d
+      then: mul(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d}) = \rational.pair.class:of{n, e}
+Documented:
+. called: "fraction-pair multiplication"
+. description: "$[(a,b)]\cdot[(c,d)]=[(ac,bd)]$."
+Id: "763fb9de-5327-499f-a3c9-aed218accf56"
+
+
+[\rational.pair.neg(q_)]
+Defines: neg(q_) is \function:on{\rational.pair.carrier}:to{\rational.pair.carrier}
+expresses:
+. forAll: a is \integer
+  then:
+  . forAll: b is \nonzero.integer
+    then: neg(\rational.pair.class:of{a, b}) = \rational.pair.class:of{\integer.neg(a), b}
+Documented:
+. called: "fraction-pair negation"
+. description: "$-[(a,b)]=[(-a,b)]$."
+Id: "31f2155e-d1ab-4a4c-b3a8-a319c5bc7097"
+
+
+[\rational.pair.inv(q_)]
+Defines: inv(q_) is \function:on{\rational.pair.carrier}:to{\rational.pair.carrier}
+expresses:
+. inv(\rational.pair.zero) = \rational.pair.zero
+. forAll: a is \nonzero.integer
+  then:
+  . forAll: b is \nonzero.integer
+    then: inv(\rational.pair.class:of{a, b}) = \rational.pair.class:of{b, a}
+Documented:
+. called: "fraction-pair reciprocal"
+. description: "Reciprocal swaps numerator and denominator for nonzero classes,
+                with zero sent to zero."
+Id: "196a8359-eaf0-4536-91c7-319787d07098"
+
+
+[\rational.pair.leq]
+Defines: leq(x_, y_) is \total.order:on{\rational.pair.carrier}
+expresses:
+. forAll: a, c is \integer
+  then:
+  . forAll: b, d is \nonzero.integer
+    then:
+    . let: ad, cb, bd is \integer
+      where:
+      . ad = a \.integer.*./ d
+      . cb = c \.integer.*./ b
+      . bd = b \.integer.*./ d
+      then:
+      . have: leq(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d})
+        iff:
+        . anyOf:
+          . allOf:
+            . \integer.zero \:integer.leq?:/ bd
+            . ad \:integer.leq?:/ cb
+          . allOf:
+            . bd \:integer.leq?:/ \integer.zero
+            . cb \:integer.leq?:/ ad
+Documented:
+. called: "fraction-pair order"
+. description: "Cross-multiplication defines the order, with the comparison
+                reversed when the denominator product is negative."
+Id: "29f4443f-9ea6-4f02-a62d-b278fbc4501a"
+
+
+[\rational.pair.realization]
+Realizes: Qb ::= (Q, 0, 1, +, *, neg(q_), inv(q_), leq(a_, b_)) := \rationals
+specifies:
+. Q := \rational.pair.carrier
+. 0 := \rational.pair.zero
+. 1 := \rational.pair.one
+. + := \rational.pair.add
+. * := \rational.pair.mul
+. neg := \rational.pair.neg
+. inv := \rational.pair.inv
+. leq := \rational.pair.leq
+Enables:
+. capability: q_ "in" Qb :<->: q_ "in" Q
+Documented:
+. called: "rationals as fractions of integers"
+. description: "The concrete realization of the abstract rational tuple by
+                equivalence classes of nonzero-denominator integer pairs."
+Id: "6ef88cb1-eef6-4ced-8f2c-a4fdacaeea4e"

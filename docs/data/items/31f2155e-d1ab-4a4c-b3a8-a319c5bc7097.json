@@ -1,0 +1,184 @@
+{
+  "id": "31f2155e-d1ab-4a4c-b3a8-a319c5bc7097",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e706169722e6e6567"
+  ],
+  "heading": "\\rational.pair.neg(q_)",
+  "heading_latex": "\\textrm{fraction-pair negation}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.pair.neg(q_)]\nDefines: neg(q_) is \\function:on{\\rational.pair.carrier}:to{\\rational.pair.carrier}\nexpresses:\n. forAll: a is \\integer\n  then:\n  . forAll: b is \\nonzero.integer\n    then: neg(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{\\integer.neg(a), b}\nDocumented:\n. called: \"fraction-pair negation\"\n. description: \"$-[(a,b)]=[(-a,b)]$.\"\nId: \"31f2155e-d1ab-4a4c-b3a8-a319c5bc7097\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "neg(q_) is \\function:on{\\rational.pair.carrier}:to{\\rational.pair.carrier}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{neg(q) \\: : \\: \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e63617272696572}{(\\mathbb{Z} \\times (\\mathbb{Z}\\setminus\\{0\\}))/\\sim} \\rightarrow \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e63617272696572}{(\\mathbb{Z} \\times (\\mathbb{Z}\\setminus\\{0\\}))/\\sim}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a is \\integer",
+              "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a is \\integer",
+                  "types": [
+                    "asserts a is \\integer"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "b is \\nonzero.integer",
+                      "inline_latex": "b \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "b is \\nonzero.integer",
+                          "types": [
+                            "asserts b is \\nonzero.integer"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "neg(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{\\integer.neg(a), b}",
+                      "inline_latex": "neg(\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(a,b)]_{\\mathbb{Q}}}) = \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(\\htmlData{mlg-ref=5c696e74656765722e6e6567}{-a},b)]_{\\mathbb{Q}}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "neg(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{\\integer.neg(a), b}",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "neg(\\rational.pair.class:of{a,b})",
+                          "types": [
+                            "\"in\" \\rational.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\rational.pair.class:of{a,b}",
+                          "types": [
+                            "\"in\" \\rational.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "a",
+                          "types": [
+                            "is \\integer"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "b",
+                          "types": [
+                            "is \\nonzero.integer"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\rational.pair.class:of{\\integer.neg(a),b}",
+                          "types": [
+                            "\"in\" \\rational.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\integer.neg(a)",
+                          "types": [
+                            "is \\integer"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "a",
+                          "types": [
+                            "is \\integer"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "b",
+                          "types": [
+                            "is \\nonzero.integer"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"fraction-pair negation\"",
+              "inline_latex": "\\textrm{fraction-pair negation}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"31f2155e-d1ab-4a4c-b3a8-a319c5bc7097\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

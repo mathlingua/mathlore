@@ -1,0 +1,504 @@
+{
+  "id": "29f4443f-9ea6-4f02-a62d-b278fbc4501a",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e706169722e6c6571"
+  ],
+  "heading": "\\rational.pair.leq",
+  "heading_latex": "\\textrm{fraction-pair order}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.pair.leq]\nDefines: leq(x_, y_) is \\total.order:on{\\rational.pair.carrier}\nexpresses:\n. forAll: a, c is \\integer\n  then:\n  . forAll: b, d is \\nonzero.integer\n    then:\n    . let: ad, cb, bd is \\integer\n      where:\n      . ad = a \\.integer.*./ d\n      . cb = c \\.integer.*./ b\n      . bd = b \\.integer.*./ d\n      then:\n      . have: leq(\\rational.pair.class:of{a, b}, \\rational.pair.class:of{c, d})\n        iff:\n        . anyOf:\n          . allOf:\n            . \\integer.zero \\:integer.leq?:/ bd\n            . ad \\:integer.leq?:/ cb\n          . allOf:\n            . bd \\:integer.leq?:/ \\integer.zero\n            . cb \\:integer.leq?:/ ad\nDocumented:\n. called: \"fraction-pair order\"\n. description: \"Cross-multiplication defines the order, with the comparison\n                reversed when the denominator product is negative.\"\nId: \"29f4443f-9ea6-4f02-a62d-b278fbc4501a\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "leq(x_, y_) is \\total.order:on{\\rational.pair.carrier}",
+      "inline_latex": "leq(x, y) \\textrm{ is } \\htmlData{mlg-ref=5c746f74616c2e6f726465723a6f6e}{\\textrm{total order on }\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e63617272696572}{(\\mathbb{Z} \\times (\\mathbb{Z}\\setminus\\{0\\}))/\\sim}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a, c is \\integer",
+              "inline_latex": "a, c \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a, c is \\integer",
+                  "types": [
+                    "asserts a is \\integer",
+                    "asserts c is \\integer"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "b, d is \\nonzero.integer",
+                      "inline_latex": "b, d \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "b, d is \\nonzero.integer",
+                          "types": [
+                            "asserts b is \\nonzero.integer",
+                            "asserts d is \\nonzero.integer"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "let",
+                              "inline_argument": "ad, cb, bd is \\integer",
+                              "inline_latex": "ad, cb, bd \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "ad, cb, bd is \\integer",
+                                  "types": [
+                                    "asserts ad is \\integer",
+                                    "asserts cb is \\integer",
+                                    "asserts bd is \\integer"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "where",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "ad = a \\.integer.*./ d",
+                                  "latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{ad = a \\cdot d}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "ad = a \\.integer.*./ d",
+                                      "types": [
+                                        "is \\binary.operation:on{\\integers}"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "ad = a",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "ad",
+                                      "types": [
+                                        "is \\integer"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "a",
+                                      "types": [
+                                        "is \\integer"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "d",
+                                      "types": [
+                                        "is \\nonzero.integer"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "cb = c \\.integer.*./ b",
+                                  "latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{cb = c \\cdot b}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "cb = c \\.integer.*./ b",
+                                      "types": [
+                                        "is \\binary.operation:on{\\integers}"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "cb = c",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "cb",
+                                      "types": [
+                                        "is \\integer"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "c",
+                                      "types": [
+                                        "is \\integer"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "b",
+                                      "types": [
+                                        "is \\nonzero.integer"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "bd = b \\.integer.*./ d",
+                                  "latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{bd = b \\cdot d}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "bd = b \\.integer.*./ d",
+                                      "types": [
+                                        "is \\binary.operation:on{\\integers}"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "bd = b",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "bd",
+                                      "types": [
+                                        "is \\integer"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "b",
+                                      "types": [
+                                        "is \\nonzero.integer"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "d",
+                                      "types": [
+                                        "is \\nonzero.integer"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "group",
+                                  "heading": null,
+                                  "sections": [
+                                    {
+                                      "label": "have",
+                                      "inline_argument": "leq(\\rational.pair.class:of{a, b}, \\rational.pair.class:of{c, d})",
+                                      "inline_latex": "leq(\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(a,b)]_{\\mathbb{Q}}}, \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(c,d)]_{\\mathbb{Q}}})",
+                                      "inline_type_info": [
+                                        {
+                                          "depth": 0,
+                                          "text": "leq(\\rational.pair.class:of{a, b}, \\rational.pair.class:of{c, d})",
+                                          "types": []
+                                        },
+                                        {
+                                          "depth": 1,
+                                          "text": "\\rational.pair.class:of{a,b}",
+                                          "types": [
+                                            "\"in\" \\rational.pair.carrier"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 2,
+                                          "text": "a",
+                                          "types": [
+                                            "is \\integer"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 2,
+                                          "text": "b",
+                                          "types": [
+                                            "is \\nonzero.integer"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 1,
+                                          "text": "\\rational.pair.class:of{c,d}",
+                                          "types": [
+                                            "\"in\" \\rational.pair.carrier"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 2,
+                                          "text": "c",
+                                          "types": [
+                                            "is \\integer"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 2,
+                                          "text": "d",
+                                          "types": [
+                                            "is \\nonzero.integer"
+                                          ]
+                                        }
+                                      ],
+                                      "arguments": []
+                                    },
+                                    {
+                                      "label": "iff",
+                                      "inline_argument": null,
+                                      "inline_latex": null,
+                                      "arguments": [
+                                        {
+                                          "kind": "group",
+                                          "heading": null,
+                                          "sections": [
+                                            {
+                                              "label": "anyOf",
+                                              "inline_argument": null,
+                                              "inline_latex": null,
+                                              "arguments": [
+                                                {
+                                                  "kind": "group",
+                                                  "heading": null,
+                                                  "sections": [
+                                                    {
+                                                      "label": "allOf",
+                                                      "inline_argument": null,
+                                                      "inline_latex": null,
+                                                      "arguments": [
+                                                        {
+                                                          "kind": "formulation",
+                                                          "text": "\\integer.zero \\:integer.leq?:/ bd",
+                                                          "latex": "\\htmlData{mlg-ref=5c3a696e74656765722e6c65713a2f}{\\htmlData{mlg-ref=5c696e74656765722e7a65726f}{0} \\leq bd}",
+                                                          "type_info": [
+                                                            {
+                                                              "depth": 0,
+                                                              "text": "\\integer.zero \\:integer.leq?:/ bd",
+                                                              "types": [
+                                                                "is \\\\statement"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "depth": 1,
+                                                              "text": "\\integer.zero",
+                                                              "types": [
+                                                                "is \\integer"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "depth": 1,
+                                                              "text": "bd",
+                                                              "types": [
+                                                                "is \\integer"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "kind": "formulation",
+                                                          "text": "ad \\:integer.leq?:/ cb",
+                                                          "latex": "\\htmlData{mlg-ref=5c3a696e74656765722e6c65713a2f}{ad \\leq cb}",
+                                                          "type_info": [
+                                                            {
+                                                              "depth": 0,
+                                                              "text": "ad \\:integer.leq?:/ cb",
+                                                              "types": [
+                                                                "is \\\\statement"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "depth": 1,
+                                                              "text": "ad",
+                                                              "types": [
+                                                                "is \\integer"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "depth": 1,
+                                                              "text": "cb",
+                                                              "types": [
+                                                                "is \\integer"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "kind": "group",
+                                                  "heading": null,
+                                                  "sections": [
+                                                    {
+                                                      "label": "allOf",
+                                                      "inline_argument": null,
+                                                      "inline_latex": null,
+                                                      "arguments": [
+                                                        {
+                                                          "kind": "formulation",
+                                                          "text": "bd \\:integer.leq?:/ \\integer.zero",
+                                                          "latex": "\\htmlData{mlg-ref=5c3a696e74656765722e6c65713a2f}{bd \\leq \\htmlData{mlg-ref=5c696e74656765722e7a65726f}{0}}",
+                                                          "type_info": [
+                                                            {
+                                                              "depth": 0,
+                                                              "text": "bd \\:integer.leq?:/ \\integer.zero",
+                                                              "types": [
+                                                                "is \\\\statement"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "depth": 1,
+                                                              "text": "bd",
+                                                              "types": [
+                                                                "is \\integer"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "depth": 1,
+                                                              "text": "\\integer.zero",
+                                                              "types": [
+                                                                "is \\integer"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        },
+                                                        {
+                                                          "kind": "formulation",
+                                                          "text": "cb \\:integer.leq?:/ ad",
+                                                          "latex": "\\htmlData{mlg-ref=5c3a696e74656765722e6c65713a2f}{cb \\leq ad}",
+                                                          "type_info": [
+                                                            {
+                                                              "depth": 0,
+                                                              "text": "cb \\:integer.leq?:/ ad",
+                                                              "types": [
+                                                                "is \\\\statement"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "depth": 1,
+                                                              "text": "cb",
+                                                              "types": [
+                                                                "is \\integer"
+                                                              ]
+                                                            },
+                                                            {
+                                                              "depth": 1,
+                                                              "text": "ad",
+                                                              "types": [
+                                                                "is \\integer"
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"fraction-pair order\"",
+              "inline_latex": "\\textrm{fraction-pair order}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"29f4443f-9ea6-4f02-a62d-b278fbc4501a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

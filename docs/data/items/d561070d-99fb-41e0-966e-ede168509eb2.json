@@ -1,0 +1,57 @@
+{
+  "id": "d561070d-99fb-41e0-966e-ede168509eb2",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e6f6e65"
+  ],
+  "heading": "\\rational.one",
+  "heading_latex": "\\textrm{rational one}\\quad\\htmlClass{mlg-title-written}{1}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.one]\nDefines: o := \\rationals..1 is \\rational\nDocumented:\n. called: \"rational one\"\n. written: \"1\"\nId: \"d561070d-99fb-41e0-966e-ede168509eb2\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "o := \\rationals..1 is \\rational",
+      "inline_latex": "o := \\htmlData{mlg-ref=5c726174696f6e616c73}{\\mathbb{Q}}.1 \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"rational one\"",
+              "inline_latex": "\\textrm{rational one}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"1\"",
+              "inline_latex": "1",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d561070d-99fb-41e0-966e-ede168509eb2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

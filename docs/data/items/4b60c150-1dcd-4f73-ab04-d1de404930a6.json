@@ -1,0 +1,27 @@
+{
+  "id": "4b60c150-1dcd-4f73-ab04-d1de404930a6",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A concrete real is an equivalence class of Cauchy sequences of rational\nnumbers. Two sequences are equivalent when their difference converges to\nzero. Constants and arithmetic are induced term by term; reciprocal is\napplied to a representative of a nonzero class, with the zero class\nhandled separately."
+  },
+  "source": "Text: \"A concrete real is an equivalence class of Cauchy sequences of rational\n       numbers. Two sequences are equivalent when their difference converges to\n       zero. Constants and arithmetic are induced term by term; reciprocal is\n       applied to a representative of a nonzero class, with the zero class\n       handled separately.\"\nId: \"4b60c150-1dcd-4f73-ab04-d1de404930a6\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A concrete real is an equivalence class of Cauchy sequences of rational\n       numbers. Two sequences are equivalent when their difference converges to\n       zero. Constants and arithmetic are induced term by term; reciprocal is\n       applied to a representative of a nonzero class, with the zero class\n       handled separately.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4b60c150-1dcd-4f73-ab04-d1de404930a6\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

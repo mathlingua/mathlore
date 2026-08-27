@@ -1,0 +1,14 @@
+{
+  "id": "dc1bc46f-e4ed-4968-b4f9-42abbe838ec3-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The quotient order: $[a]\\le[b]$ when $a_n$ is eventually no more\nthan an arbitrary positive rational above $b_n$."
+  },
+  "source": "",
+  "sections": []
+}

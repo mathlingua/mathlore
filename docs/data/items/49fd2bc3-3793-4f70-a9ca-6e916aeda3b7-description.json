@@ -1,0 +1,14 @@
+{
+  "id": "49fd2bc3-3793-4f70-a9ca-6e916aeda3b7-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The Cauchy sequence whose $n$th term is $a_n+b_n$."
+  },
+  "source": "",
+  "sections": []
+}

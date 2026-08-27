@@ -1,0 +1,27 @@
+{
+  "id": "b792d225-7464-47d1-98fb-4d8003f47838",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The Abstract Rational Field"
+  },
+  "source": "SectionTitle: \"The Abstract Rational Field\"\nId: \"b792d225-7464-47d1-98fb-4d8003f47838\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The Abstract Rational Field\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b792d225-7464-47d1-98fb-4d8003f47838\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

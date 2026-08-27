@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{integer}",
   "body_text": null,
   "page": null,
-  "source": "[\\integer]\nDeclares: z \"in\" \\integers\nEnables:\n. capability: a_ + b_ :=> a_ \\.integer.+./ b_\n. capability: a_ * b_ :=> a_ \\.integer.*./ b_\n. capability: -a_ :=> \\integer.neg(a_)\nDocumented:\n. called: \"integer\"\n. description: \"An integer is an element of the underlying set of integers\n                $\\mathbb{Z}$.\"\nId: \"a97ad153-f94d-4eb6-b91e-84f49114ab6e\"",
+  "source": "[\\integer]\nDeclares: z \"in\" \\integers\nEnables:\n. capability: a_ + b_ :=> a_ \\.integer.+./ b_\n. capability: a_ * b_ :=> a_ \\.integer.*./ b_\n. capability: -a_ :=> \\integer.neg(a_)\n. capability: a_ <= b_ :=> a_ \\:integer.leq:/ b_\nDocumented:\n. called: \"integer\"\n. description: \"An integer is an element of the underlying set of integers\n                $\\mathbb{Z}$.\"\nId: \"a97ad153-f94d-4eb6-b91e-84f49114ab6e\"",
   "sections": [
     {
       "label": "Declares",
@@ -66,6 +66,18 @@
             {
               "label": "capability",
               "inline_argument": "-a_ :=> \\integer.neg(a_)",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "a_ <= b_ :=> a_ \\:integer.leq:/ b_",
               "inline_latex": null,
               "arguments": []
             }

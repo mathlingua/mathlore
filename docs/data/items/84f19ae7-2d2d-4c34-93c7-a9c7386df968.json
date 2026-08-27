@@ -1,0 +1,69 @@
+{
+  "id": "84f19ae7-2d2d-4c34-93c7-a9c7386df968",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c696e74656765722e706169722e63617272696572"
+  ],
+  "heading": "\\integer.pair.carrier",
+  "heading_latex": "\\textrm{integer pair quotient}\\quad\\htmlClass{mlg-title-written}{(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integer.pair.carrier]\nDefines: Z := (\\naturals \\.set.cross./ \\naturals) \\.mod./ \\integers.relation is \\set\nDocumented:\n. called: \"integer pair quotient\"\n. written: \"(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}\"\n. description: \"The quotient carrier whose class $[(a,b)]$ represents the formal\n                difference $a-b$.\"\nId: \"84f19ae7-2d2d-4c34-93c7-a9c7386df968\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "Z := (\\naturals \\.set.cross./ \\naturals) \\.mod./ \\integers.relation is \\set",
+      "inline_latex": "Z := \\htmlData{mlg-ref=5c2e6d6f642e2f}{\\left(\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}} \\times \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}}\\right) / \\htmlData{mlg-ref=5c696e7465676572732e72656c6174696f6e}{\\textrm{integer equivalence relation}}} \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integer pair quotient\"",
+              "inline_latex": "\\textrm{integer pair quotient}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}\"",
+              "inline_latex": "(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"84f19ae7-2d2d-4c34-93c7-a9c7386df968\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

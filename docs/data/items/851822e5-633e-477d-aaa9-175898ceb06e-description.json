@@ -1,0 +1,14 @@
+{
+  "id": "851822e5-633e-477d-aaa9-175898ceb06e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Multiplication induced by the identity\n$(a-b)(c-d)=(ac+bd)-(ad+bc)$."
+  },
+  "source": "",
+  "sections": []
+}

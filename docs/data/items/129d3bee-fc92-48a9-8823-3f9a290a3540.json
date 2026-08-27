@@ -1,0 +1,57 @@
+{
+  "id": "129d3bee-fc92-48a9-8823-3f9a290a3540",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e7a65726f"
+  ],
+  "heading": "\\rational.zero",
+  "heading_latex": "\\textrm{rational zero}\\quad\\htmlClass{mlg-title-written}{0}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.zero]\nDefines: z := \\rationals..0 is \\rational\nDocumented:\n. called: \"rational zero\"\n. written: \"0\"\nId: \"129d3bee-fc92-48a9-8823-3f9a290a3540\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "z := \\rationals..0 is \\rational",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c726174696f6e616c73}{\\mathbb{Q}}.0 \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"rational zero\"",
+              "inline_latex": "\\textrm{rational zero}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"0\"",
+              "inline_latex": "0",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"129d3bee-fc92-48a9-8823-3f9a290a3540\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

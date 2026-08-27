@@ -1,0 +1,57 @@
+{
+  "id": "87991f23-c868-4137-af54-b35e2e1d6067",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265616c2e696e76"
+  ],
+  "heading": "\\real.inv(a_)",
+  "heading_latex": "\\textrm{reciprocal of }a\\quad\\htmlClass{mlg-title-written}{a^{-1}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.inv(a_)]\nDefines: i := \\reals..inv(a_) is \\real\nDocumented:\n. called: \"reciprocal of $a_?$\"\n. written: \"a_?^{-1}\"\nId: \"87991f23-c868-4137-af54-b35e2e1d6067\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "i := \\reals..inv(a_) is \\real",
+      "inline_latex": "i := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.inv(a) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"reciprocal of $a_?$\"",
+              "inline_latex": "\\textrm{reciprocal of }a",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a_?^{-1}\"",
+              "inline_latex": "a^{-1}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"87991f23-c868-4137-af54-b35e2e1d6067\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "258c8289-202b-4fd4-a228-2a63bd2e47f0",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265616c2e6361756368792e616464"
+  ],
+  "heading": "\\real.cauchy.add",
+  "heading_latex": "\\textrm{Cauchy-real addition}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.cauchy.add]\nDefines: add(x_, y_) is \\binary.operation:on{\\real.cauchy.carrier}\nexpresses:\n. forAll: A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence\n  then:\n  . forAll: B ::= b(n_) ::= qb_ is \\cauchy.rational.sequence\n    then: add(\\real.cauchy.class:of{A}, \\real.cauchy.class:of{B}) = \\real.cauchy.class:of{\\rational.cauchy.sequence.add{A, B}}\nDocumented:\n. called: \"Cauchy-real addition\"\n. description: \"Addition induced by termwise addition of representative rational\n                Cauchy sequences.\"\nId: \"258c8289-202b-4fd4-a228-2a63bd2e47f0\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "add(x_, y_) is \\binary.operation:on{\\real.cauchy.carrier}",
+      "inline_latex": "add(x, y) \\textrm{ is } \\htmlData{mlg-ref=5c62696e6172792e6f7065726174696f6e3a6f6e}{\\textrm{binary operation on }\\htmlData{mlg-ref=5c7265616c2e6361756368792e63617272696572}{\\mathcal{C}(\\mathbb{Q})/\\sim}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence",
+              "inline_latex": "A(n) ::= qa \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence",
+                  "types": [
+                    "asserts A is \\cauchy.rational.sequence"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "B ::= b(n_) ::= qb_ is \\cauchy.rational.sequence",
+                      "inline_latex": "B(n) ::= qb \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "B ::= b(n_) ::= qb_ is \\cauchy.rational.sequence",
+                          "types": [
+                            "asserts B is \\cauchy.rational.sequence"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "add(\\real.cauchy.class:of{A}, \\real.cauchy.class:of{B}) = \\real.cauchy.class:of{\\rational.cauchy.sequence.add{A, B}}",
+                      "inline_latex": "add(\\htmlData{mlg-ref=5c7265616c2e6361756368792e636c6173733a6f66}{[a]_{\\mathbb{R}}}, \\htmlData{mlg-ref=5c7265616c2e6361756368792e636c6173733a6f66}{[a]_{\\mathbb{R}}}) = \\htmlData{mlg-ref=5c7265616c2e6361756368792e636c6173733a6f66}{[a]_{\\mathbb{R}}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "add(\\real.cauchy.class:of{A}, \\real.cauchy.class:of{B}) = \\real.cauchy.class:of{\\rational.cauchy.sequence.add{A, B}}",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "add(\\real.cauchy.class:of{A},\\real.cauchy.class:of{B})",
+                          "types": [
+                            "\"in\" \\real.cauchy.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\real.cauchy.class:of{A}",
+                          "types": [
+                            "\"in\" \\real.cauchy.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "A",
+                          "types": [
+                            "is \\cauchy.rational.sequence"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\real.cauchy.class:of{B}",
+                          "types": [
+                            "\"in\" \\real.cauchy.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "B",
+                          "types": [
+                            "is \\cauchy.rational.sequence"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\real.cauchy.class:of{\\rational.cauchy.sequence.add{A,B}}",
+                          "types": [
+                            "\"in\" \\real.cauchy.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\rational.cauchy.sequence.add{A,B}",
+                          "types": [
+                            "is \\cauchy.rational.sequence"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "A",
+                          "types": [
+                            "is \\cauchy.rational.sequence"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "B",
+                          "types": [
+                            "is \\cauchy.rational.sequence"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Cauchy-real addition\"",
+              "inline_latex": "\\textrm{Cauchy-real addition}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"258c8289-202b-4fd4-a228-2a63bd2e47f0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "72cd1d99-ebf2-4d27-91a6-377b5be4e7b5",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c646564656b696e642e6e6567"
+  ],
+  "heading": "\\dedekind.neg(D_)",
+  "heading_latex": "\\textrm{Dedekind-cut negation}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\dedekind.neg(D_)]\nDefines: neg(D_) is \\function:on{\\dedekind.cut.carrier}:to{\\dedekind.cut.carrier}\nexpresses: neg(D_) := \\dedekind.from.cauchy(\\real.cauchy.neg(\\cauchy.from.dedekind(D_)))\nDocumented:\n. called: \"Dedekind-cut negation\"\n. description: \"Negation transported from the Cauchy-sequence realization.\"\nId: \"72cd1d99-ebf2-4d27-91a6-377b5be4e7b5\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "neg(D_) is \\function:on{\\dedekind.cut.carrier}:to{\\dedekind.cut.carrier}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{neg(D) \\: : \\: \\htmlData{mlg-ref=5c646564656b696e642e6375742e63617272696572}{\\mathcal{D}(\\mathbb{Q})} \\rightarrow \\htmlData{mlg-ref=5c646564656b696e642e6375742e63617272696572}{\\mathcal{D}(\\mathbb{Q})}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "neg(D_) := \\dedekind.from.cauchy(\\real.cauchy.neg(\\cauchy.from.dedekind(D_)))",
+      "inline_latex": "neg(D) := \\htmlData{mlg-ref=5c646564656b696e642e66726f6d2e636175636879}{\\textrm{Dedekind cut of a Cauchy real}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "neg(D_) := \\dedekind.from.cauchy(\\real.cauchy.neg(\\cauchy.from.dedekind(D_)))",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "\\dedekind.from.cauchy(\\real.cauchy.neg(\\cauchy.from.dedekind(D)))",
+          "types": [
+            "is \\bijective::function:on{\\real.cauchy.carrier}:to{\\dedekind.\\dedekind.from.cauchy(\\real.cauchy.neg(\\cauchy.from.dedekind(D))).carrier}"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\real.cauchy.neg(\\cauchy.from.dedekind(D))",
+          "types": [
+            "is \\function:on{\\real.cauchy.carrier}:to{\\real.cauchy.carrier}"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "\\cauchy.from.dedekind(D)",
+          "types": [
+            "\"in\" \\real.cauchy.carrier"
+          ]
+        },
+        {
+          "depth": 4,
+          "text": "D",
+          "types": [
+            "\"in\" \\dedekind.cut.carrier"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Dedekind-cut negation\"",
+              "inline_latex": "\\textrm{Dedekind-cut negation}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"72cd1d99-ebf2-4d27-91a6-377b5be4e7b5\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

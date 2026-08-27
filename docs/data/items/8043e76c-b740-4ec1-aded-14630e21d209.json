@@ -1,0 +1,27 @@
+{
+  "id": "8043e76c-b740-4ec1-aded-14630e21d209",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Rational Numbers"
+  },
+  "source": "Title: \"Rational Numbers\"\nId: \"8043e76c-b740-4ec1-aded-14630e21d209\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Rational Numbers\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8043e76c-b740-4ec1-aded-14630e21d209\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

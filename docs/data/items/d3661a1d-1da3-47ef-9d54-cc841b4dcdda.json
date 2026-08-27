@@ -1,0 +1,162 @@
+{
+  "id": "d3661a1d-1da3-47ef-9d54-cc841b4dcdda",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c696e74656765722e706169722e6e6567"
+  ],
+  "heading": "\\integer.pair.neg(a_)",
+  "heading_latex": "\\textrm{integer-pair negation}\\quad\\htmlClass{mlg-title-written}{-_{\\mathbb{Z}} a}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integer.pair.neg(a_)]\nDefines: n(a_) is \\function:on{\\integer.pair.carrier}:to{\\integer.pair.carrier}\nexpresses:\n. forAll: p, q is \\natural\n  then: n(\\integer.pair.class:of{p, q}) = \\integer.pair.class:of{q, p}\nDocumented:\n. called: \"integer-pair negation\"\n. written: \"-_{\\mathbb{Z}} a_?\"\n. description: \"Negation induced by swapping the coordinates:\n                $-[(a,b)]=[(b,a)]$.\"\nId: \"d3661a1d-1da3-47ef-9d54-cc841b4dcdda\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "n(a_) is \\function:on{\\integer.pair.carrier}:to{\\integer.pair.carrier}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{n(a) \\: : \\: \\htmlData{mlg-ref=5c696e74656765722e706169722e63617272696572}{(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}} \\rightarrow \\htmlData{mlg-ref=5c696e74656765722e706169722e63617272696572}{(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "p, q is \\natural",
+              "inline_latex": "p, q \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "p, q is \\natural",
+                  "types": [
+                    "asserts p is \\natural",
+                    "asserts q is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "n(\\integer.pair.class:of{p, q}) = \\integer.pair.class:of{q, p}",
+              "inline_latex": "n(\\htmlData{mlg-ref=5c696e74656765722e706169722e636c6173733a6f66}{[(p, q)]_{\\mathbb{Z}}}) = \\htmlData{mlg-ref=5c696e74656765722e706169722e636c6173733a6f66}{[(q, p)]_{\\mathbb{Z}}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n(\\integer.pair.class:of{p, q}) = \\integer.pair.class:of{q, p}",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "n(\\integer.pair.class:of{p,q})",
+                  "types": [
+                    "\"in\" \\integer.pair.carrier"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "\\integer.pair.class:of{p,q}",
+                  "types": [
+                    "\"in\" \\integer.pair.carrier"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "p",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "q",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\integer.pair.class:of{q,p}",
+                  "types": [
+                    "\"in\" \\integer.pair.carrier"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "q",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "p",
+                  "types": [
+                    "is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integer-pair negation\"",
+              "inline_latex": "\\textrm{integer-pair negation}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"-_{\\mathbb{Z}} a_?\"",
+              "inline_latex": "-_{\\mathbb{Z}} a",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d3661a1d-1da3-47ef-9d54-cc841b4dcdda\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

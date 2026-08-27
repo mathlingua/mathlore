@@ -1,0 +1,14 @@
+{
+  "id": "f1d4ea17-820a-436f-99e4-a41ee4b7ae9b-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The concrete realization of the abstract real tuple by Dedekind\ncuts, with its constants, operations, and order transported from\nthe Cauchy-sequence realization."
+  },
+  "source": "",
+  "sections": []
+}

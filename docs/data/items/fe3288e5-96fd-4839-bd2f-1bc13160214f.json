@@ -8,12 +8,12 @@
   "heading_latex": "\\textrm{the integers}\\quad\\htmlClass{mlg-title-written}{\\mathbb{Z}}",
   "body_text": null,
   "page": null,
-  "source": "[\\integers]\nDefines: Zb ::= (Z, 0, 1, +, *, neg(z_))\nabstractly:\nspecifies:\n. Z is \\set\n. 0 \"in\" Z\n. 1 \"in\" Z\n. + is \\binary.operation:on{Z}\n. * is \\binary.operation:on{Z}\n. neg is \\function:on{Z}:to{Z}\nexpresses:\n. forAll: a, b, c \"in\" Z\n  then:\n  . (a + b) + c = a + (b + c)\n  . a + b = b + a\n  . a + 0 = a\n  . a + neg(a) = 0\n  . (a * b) * c = a * (b * c)\n  . a * 1 = a\n  . 1 * a = a\n  . a * (b + c) = (a * b) + (a * c)\nEnables:\n. capability: z_ \"in\" Zb :-> z_ is \\integer\n. view:\n  as: S := Z is \\set\nDocumented:\n. called: \"the integers\"\n. written: \"\\mathbb{Z}\"\n. description: \"The integers $(\\mathbb{Z}, 0, 1, +, \\cdot, -)$ as an algebraic\n                ring constructed from the differences of natural numbers.\"\nId: \"fe3288e5-96fd-4839-bd2f-1bc13160214f\"",
+  "source": "[\\integers]\nDefines: Zb ::= (Z, 0, 1, +, *, neg(z_), leq(a_, b_))\nabstractly:\nspecifies:\n. Z is \\set\n. 0 \"in\" Z\n. 1 \"in\" Z\n. + is \\binary.operation:on{Z}\n. * is \\binary.operation:on{Z}\n. neg is \\function:on{Z}:to{Z}\n. leq is \\total.order:on{Z}\nexpresses:\n. 0 != 1\n. forAll: a, b, c \"in\" Z\n  then:\n  . (a + b) + c = a + (b + c)\n  . a + b = b + a\n  . a + 0 = a\n  . a + neg(a) = 0\n  . (a * b) * c = a * (b * c)\n  . a * b = b * a\n  . a * 1 = a\n  . 1 * a = a\n  . a * (b + c) = (a * b) + (a * c)\n  . if: leq(a, b)\n    then: leq(a + c, b + c)\n. forAll: a, b \"in\" Z\n  where:\n  . leq(0, a)\n  . leq(0, b)\n  then: leq(0, a * b)\nEnables:\n. capability: z_ \"in\" Zb :-> z_ is \\integer\n. view:\n  as: S := Z is \\set\nDocumented:\n. called: \"the integers\"\n. written: \"\\mathbb{Z}\"\n. description: \"The integers $(\\mathbb{Z}, 0, 1, +, \\cdot, -)$ as an algebraic\n                ring constructed from the differences of natural numbers.\"\nId: \"fe3288e5-96fd-4839-bd2f-1bc13160214f\"",
   "sections": [
     {
       "label": "Defines",
-      "inline_argument": "Zb ::= (Z, 0, 1, +, *, neg(z_))",
-      "inline_latex": "\\mathbb{Z} ::= \\left(Z, 0, 1, +, \\ast, neg(z)\\right)",
+      "inline_argument": "Zb ::= (Z, 0, 1, +, *, neg(z_), leq(a_, b_))",
+      "inline_latex": "\\mathbb{Z} ::= \\left(Z, 0, 1, +, \\ast, neg(z), leq(a, b)\\right)",
       "arguments": []
     },
     {
@@ -124,6 +124,20 @@
               ]
             }
           ]
+        },
+        {
+          "kind": "formulation",
+          "text": "leq is \\total.order:on{Z}",
+          "latex": "leq \\textrm{ is } \\htmlData{mlg-ref=5c746f74616c2e6f726465723a6f6e}{\\textrm{total order on }Z}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "leq is \\total.order:on{Z}",
+              "types": [
+                "asserts leq is \\total.order:on{Z}"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -132,6 +146,32 @@
       "inline_argument": null,
       "inline_latex": null,
       "arguments": [
+        {
+          "kind": "formulation",
+          "text": "0 != 1",
+          "latex": "0 \\ne 1",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 != 1",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "0",
+              "types": [
+                "\"in\" Z"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "1",
+              "types": [
+                "\"in\" Z"
+              ]
+            }
+          ]
+        },
         {
           "kind": "group",
           "heading": null,
@@ -510,6 +550,62 @@
                 },
                 {
                   "kind": "formulation",
+                  "text": "a * b = b * a",
+                  "latex": "a \\ast b = b \\ast a",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a * b = b * a",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a * b",
+                      "types": [
+                        "\"in\" Z"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" Z"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b",
+                      "types": [
+                        "\"in\" Z"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "b * a",
+                      "types": [
+                        "\"in\" Z"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "b",
+                      "types": [
+                        "\"in\" Z"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "a",
+                      "types": [
+                        "\"in\" Z"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
                   "text": "a * 1 = a",
                   "latex": "a \\ast 1 = a",
                   "type_info": [
@@ -710,8 +806,225 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": "leq(a, b)",
+                      "inline_latex": "leq(a, b)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "leq(a, b)",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "a",
+                          "types": [
+                            "\"in\" Z"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "b",
+                          "types": [
+                            "\"in\" Z"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "leq(a + c, b + c)",
+                      "inline_latex": "leq(a + c, b + c)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "leq(a + c, b + c)",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "a + c",
+                          "types": [
+                            "\"in\" Z"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "a",
+                          "types": [
+                            "\"in\" Z"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "c",
+                          "types": [
+                            "\"in\" Z"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "b + c",
+                          "types": [
+                            "\"in\" Z"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "b",
+                          "types": [
+                            "\"in\" Z"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "c",
+                          "types": [
+                            "\"in\" Z"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a, b \"in\" Z",
+              "inline_latex": "a, b \\in Z",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a, b \"in\" Z",
+                  "types": [
+                    "asserts a \"in\" Z",
+                    "asserts b \"in\" Z"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "Z",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "leq(0, a)",
+                  "latex": "leq(0, a)",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "leq(0, a)",
+                      "types": []
+                    },
+                    {
+                      "depth": 1,
+                      "text": "0",
+                      "types": [
+                        "\"in\" Z"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a",
+                      "types": [
+                        "\"in\" Z"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "leq(0, b)",
+                  "latex": "leq(0, b)",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "leq(0, b)",
+                      "types": []
+                    },
+                    {
+                      "depth": 1,
+                      "text": "0",
+                      "types": [
+                        "\"in\" Z"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "b",
+                      "types": [
+                        "\"in\" Z"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "leq(0, a * b)",
+              "inline_latex": "leq(0, a \\ast b)",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "leq(0, a * b)",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "0",
+                  "types": [
+                    "\"in\" Z"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "a * b",
+                  "types": [
+                    "\"in\" Z"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "a",
+                  "types": [
+                    "\"in\" Z"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "b",
+                  "types": [
+                    "\"in\" Z"
+                  ]
+                }
+              ],
+              "arguments": []
             }
           ]
         }

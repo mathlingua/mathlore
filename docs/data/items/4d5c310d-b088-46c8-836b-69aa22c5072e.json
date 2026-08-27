@@ -1,0 +1,142 @@
+{
+  "id": "4d5c310d-b088-46c8-836b-69aa22c5072e",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265616c2e6361756368792e6e6567"
+  ],
+  "heading": "\\real.cauchy.neg(x_)",
+  "heading_latex": "\\textrm{Cauchy-real negation}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.cauchy.neg(x_)]\nDefines: neg(x_) is \\function:on{\\real.cauchy.carrier}:to{\\real.cauchy.carrier}\nexpresses:\n. forAll: A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence\n  then: neg(\\real.cauchy.class:of{A}) = \\real.cauchy.class:of{\\rational.cauchy.sequence.neg{A}}\nDocumented:\n. called: \"Cauchy-real negation\"\n. description: \"Negation induced by termwise rational negation.\"\nId: \"4d5c310d-b088-46c8-836b-69aa22c5072e\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "neg(x_) is \\function:on{\\real.cauchy.carrier}:to{\\real.cauchy.carrier}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{neg(x) \\: : \\: \\htmlData{mlg-ref=5c7265616c2e6361756368792e63617272696572}{\\mathcal{C}(\\mathbb{Q})/\\sim} \\rightarrow \\htmlData{mlg-ref=5c7265616c2e6361756368792e63617272696572}{\\mathcal{C}(\\mathbb{Q})/\\sim}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence",
+              "inline_latex": "A(n) ::= qa \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence",
+                  "types": [
+                    "asserts A is \\cauchy.rational.sequence"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "neg(\\real.cauchy.class:of{A}) = \\real.cauchy.class:of{\\rational.cauchy.sequence.neg{A}}",
+              "inline_latex": "neg(\\htmlData{mlg-ref=5c7265616c2e6361756368792e636c6173733a6f66}{[a]_{\\mathbb{R}}}) = \\htmlData{mlg-ref=5c7265616c2e6361756368792e636c6173733a6f66}{[a]_{\\mathbb{R}}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "neg(\\real.cauchy.class:of{A}) = \\real.cauchy.class:of{\\rational.cauchy.sequence.neg{A}}",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "neg(\\real.cauchy.class:of{A})",
+                  "types": [
+                    "\"in\" \\real.cauchy.carrier"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "\\real.cauchy.class:of{A}",
+                  "types": [
+                    "\"in\" \\real.cauchy.carrier"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "A",
+                  "types": [
+                    "is \\cauchy.rational.sequence"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\real.cauchy.class:of{\\rational.cauchy.sequence.neg{A}}",
+                  "types": [
+                    "\"in\" \\real.cauchy.carrier"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "\\rational.cauchy.sequence.neg{A}",
+                  "types": [
+                    "is \\cauchy.rational.sequence"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "A",
+                  "types": [
+                    "is \\cauchy.rational.sequence"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Cauchy-real negation\"",
+              "inline_latex": "\\textrm{Cauchy-real negation}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4d5c310d-b088-46c8-836b-69aa22c5072e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

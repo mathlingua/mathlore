@@ -1,0 +1,45 @@
+{
+  "id": "144c236e-d857-4dd6-b24f-d75c9fa3abfa",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c646564656b696e642e7a65726f"
+  ],
+  "heading": "\\dedekind.zero",
+  "heading_latex": "\\textrm{Dedekind-cut zero}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\dedekind.zero]\nDefines: z := \\dedekind.from.cauchy(\\real.cauchy.zero) \"in\" \\dedekind.cut.carrier\nDocumented:\n. called: \"Dedekind-cut zero\"\nId: \"144c236e-d857-4dd6-b24f-d75c9fa3abfa\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "z := \\dedekind.from.cauchy(\\real.cauchy.zero) \"in\" \\dedekind.cut.carrier",
+      "inline_latex": "z := \\htmlData{mlg-ref=5c646564656b696e642e66726f6d2e636175636879}{\\textrm{Dedekind cut of a Cauchy real}} \\in \\htmlData{mlg-ref=5c646564656b696e642e6375742e63617272696572}{\\mathcal{D}(\\mathbb{Q})}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Dedekind-cut zero\"",
+              "inline_latex": "\\textrm{Dedekind-cut zero}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"144c236e-d857-4dd6-b24f-d75c9fa3abfa\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

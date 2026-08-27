@@ -1,0 +1,125 @@
+{
+  "id": "26ed2caa-2e69-428c-8a1b-0e4c09a48dbc",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c3a696e74656765722e6c65713a2f"
+  ],
+  "heading": "a \\:integer.leq:/ b",
+  "heading_latex": "a\\textrm{ is less than or equal to }b\\quad\\htmlClass{mlg-title-written}{a \\leq b}",
+  "body_text": null,
+  "page": null,
+  "source": "[a \\:integer.leq:/ b]\nDeclares: a is \\integer\nwhen: b is \\integer\nsatisfies: \\integers..leq(a, b)\nDocumented:\n. called: \"$a?$ is less than or equal to $b?$\"\n. written: \"a? \\leq b?\"\n. description: \"The canonical total order on the integers.\"\nId: \"26ed2caa-2e69-428c-8a1b-0e4c09a48dbc\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "a is \\integer",
+      "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "a is \\integer",
+          "types": [
+            "asserts a is \\integer"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "b is \\integer",
+      "inline_latex": "b \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "b is \\integer",
+          "types": [
+            "asserts b is \\integer"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": "\\integers..leq(a, b)",
+      "inline_latex": "\\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}.leq(a, b)",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "\\integers..leq(a, b)",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "\\integers",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "a",
+          "types": [
+            "\\:integer.leq:/ b"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "b",
+          "types": [
+            "is \\integer"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$a?$ is less than or equal to $b?$\"",
+              "inline_latex": "a\\textrm{ is less than or equal to }b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a? \\leq b?\"",
+              "inline_latex": "a \\leq b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"26ed2caa-2e69-428c-8a1b-0e4c09a48dbc\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

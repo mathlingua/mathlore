@@ -1,0 +1,235 @@
+{
+  "id": "f1d4ea17-820a-436f-99e4-a41ee4b7ae9b",
+  "kind": "Realizes",
+  "definition_keys": [
+    "5c7265616c2e646564656b696e642e7265616c697a6174696f6e"
+  ],
+  "heading": "\\real.dedekind.realization",
+  "heading_latex": "\\textrm{reals as Dedekind cuts}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.dedekind.realization]\nRealizes: Rb ::= (R, 0, 1, +, *, neg(x_), inv(x_), leq(a_, b_)) := \\reals\nspecifies:\n. R := \\dedekind.cut.carrier\n. 0 := \\dedekind.zero\n. 1 := \\dedekind.one\n. + := \\dedekind.add\n. * := \\dedekind.mul\n. neg := \\dedekind.neg\n. inv := \\dedekind.inv\n. leq := \\dedekind.leq\nEnables:\n. capability: D_ \"in\" Rb :<->: D_ \"in\" R\nDocumented:\n. called: \"reals as Dedekind cuts\"\n. description: \"The concrete realization of the abstract real tuple by Dedekind\n                cuts, with its constants, operations, and order transported from\n                the Cauchy-sequence realization.\"\nId: \"f1d4ea17-820a-436f-99e4-a41ee4b7ae9b\"",
+  "sections": [
+    {
+      "label": "Realizes",
+      "inline_argument": "Rb ::= (R, 0, 1, +, *, neg(x_), inv(x_), leq(a_, b_)) := \\reals",
+      "inline_latex": "\\mathbb{R} ::= \\left(R, 0, 1, +, \\ast, neg(x), inv(x), leq(a, b)\\right) := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}",
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "R := \\dedekind.cut.carrier",
+          "latex": "R := \\htmlData{mlg-ref=5c646564656b696e642e6375742e63617272696572}{\\mathcal{D}(\\mathbb{Q})}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R := \\dedekind.cut.carrier",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\dedekind.cut.carrier",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "0 := \\dedekind.zero",
+          "latex": "0 := \\htmlData{mlg-ref=5c646564656b696e642e7a65726f}{\\textrm{Dedekind-cut zero}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 := \\dedekind.zero",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\dedekind.zero",
+              "types": [
+                "\"in\" R"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "1 := \\dedekind.one",
+          "latex": "1 := \\htmlData{mlg-ref=5c646564656b696e642e6f6e65}{\\textrm{Dedekind-cut one}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "1 := \\dedekind.one",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\dedekind.one",
+              "types": [
+                "\"in\" R"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "+ := \\dedekind.add",
+          "latex": "+ := \\htmlData{mlg-ref=5c646564656b696e642e616464}{\\textrm{Dedekind-cut addition}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "+ := \\dedekind.add",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\dedekind.add",
+              "types": [
+                "is \\binary.operation:on{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "* := \\dedekind.mul",
+          "latex": "\\ast := \\htmlData{mlg-ref=5c646564656b696e642e6d756c}{\\textrm{Dedekind-cut multiplication}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "* := \\dedekind.mul",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\dedekind.mul",
+              "types": [
+                "is \\binary.operation:on{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "neg := \\dedekind.neg",
+          "latex": "neg := \\htmlData{mlg-ref=5c646564656b696e642e6e6567}{\\textrm{Dedekind-cut negation}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "neg := \\dedekind.neg",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\dedekind.neg",
+              "types": [
+                "is \\function:on{R}:to{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "inv := \\dedekind.inv",
+          "latex": "inv := \\htmlData{mlg-ref=5c646564656b696e642e696e76}{\\textrm{Dedekind-cut reciprocal}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "inv := \\dedekind.inv",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\dedekind.inv",
+              "types": [
+                "is \\function:on{R}:to{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "leq := \\dedekind.leq",
+          "latex": "leq := \\htmlData{mlg-ref=5c646564656b696e642e6c6571}{\\textrm{Dedekind-cut order}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "leq := \\dedekind.leq",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\dedekind.leq",
+              "types": [
+                "is \\total.order:on{R}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "D_ \"in\" Rb :<->: D_ \"in\" R",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"reals as Dedekind cuts\"",
+              "inline_latex": "\\textrm{reals as Dedekind cuts}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f1d4ea17-820a-436f-99e4-a41ee4b7ae9b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

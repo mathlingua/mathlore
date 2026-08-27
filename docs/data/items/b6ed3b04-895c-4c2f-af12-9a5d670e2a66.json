@@ -1,0 +1,27 @@
+{
+  "id": "b6ed3b04-895c-4c2f-af12-9a5d670e2a66",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A Dedekind cut is a nonempty proper lower subset of the rationals with no\ngreatest element. Every Cauchy-real class determines the cut of rationals\nlying strictly below its limit. The canonical correspondence is\nbijective, so the Cauchy operations above can be transported across it to\ngive the cut carrier the same complete ordered-field structure."
+  },
+  "source": "Text: \"A Dedekind cut is a nonempty proper lower subset of the rationals with no\n       greatest element. Every Cauchy-real class determines the cut of rationals\n       lying strictly below its limit. The canonical correspondence is\n       bijective, so the Cauchy operations above can be transported across it to\n       give the cut carrier the same complete ordered-field structure.\"\nId: \"b6ed3b04-895c-4c2f-af12-9a5d670e2a66\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A Dedekind cut is a nonempty proper lower subset of the rationals with no\n       greatest element. Every Cauchy-real class determines the cut of rationals\n       lying strictly below its limit. The canonical correspondence is\n       bijective, so the Cauchy operations above can be transported across it to\n       give the cut carrier the same complete ordered-field structure.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b6ed3b04-895c-4c2f-af12-9a5d670e2a66\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

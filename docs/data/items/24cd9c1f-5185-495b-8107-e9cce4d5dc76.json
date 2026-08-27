@@ -1,0 +1,359 @@
+{
+  "id": "24cd9c1f-5185-495b-8107-e9cce4d5dc76",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265616c2e6361756368792e72656c6174696f6e"
+  ],
+  "heading": "\\real.cauchy.relation",
+  "heading_latex": "\\textrm{Cauchy-sequence equivalence}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.cauchy.relation]\nDefines: E is \\equivalence.relation:on{\\rational.cauchy.sequences}\nexpresses:\n. forAll: A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence\n  then:\n  . forAll: B ::= b(n_) ::= qb_ is \\cauchy.rational.sequence\n    then:\n    . have: E(A, B)\n      iff:\n      . forAll: epsilon is \\rational\n        where: \\rational.zero \\:rational.less?:/ epsilon\n        then:\n        . exists: N is \\natural\n          suchThat:\n          . forAll: n is \\natural\n            where: N \\:natural.leq?:/ n\n            then: \\rational.abs(a(n) \\.rational.-./ b(n)) \\:rational.less?:/ epsilon\nDocumented:\n. called: \"Cauchy-sequence equivalence\"\n. description: \"Two rational Cauchy sequences are equivalent when their termwise\n                difference converges to zero.\"\nId: \"24cd9c1f-5185-495b-8107-e9cce4d5dc76\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "E is \\equivalence.relation:on{\\rational.cauchy.sequences}",
+      "inline_latex": "E \\textrm{ is } \\htmlData{mlg-ref=5c6571756976616c656e63652e72656c6174696f6e3a6f6e}{\\textrm{equivalence relation on }\\htmlData{mlg-ref=5c726174696f6e616c2e6361756368792e73657175656e636573}{\\mathcal{C}(\\mathbb{Q})}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence",
+              "inline_latex": "A(n) ::= qa \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence",
+                  "types": [
+                    "asserts A is \\cauchy.rational.sequence"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "B ::= b(n_) ::= qb_ is \\cauchy.rational.sequence",
+                      "inline_latex": "B(n) ::= qb \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "B ::= b(n_) ::= qb_ is \\cauchy.rational.sequence",
+                          "types": [
+                            "asserts B is \\cauchy.rational.sequence"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "have",
+                              "inline_argument": "E(A, B)",
+                              "inline_latex": "E(A, B)",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "E(A, B)",
+                                  "types": []
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "A",
+                                  "types": [
+                                    "is \\cauchy.rational.sequence"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "B",
+                                  "types": [
+                                    "is \\cauchy.rational.sequence"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "iff",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "group",
+                                  "heading": null,
+                                  "sections": [
+                                    {
+                                      "label": "forAll",
+                                      "inline_argument": "epsilon is \\rational",
+                                      "inline_latex": "\\epsilon \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+                                      "inline_type_info": [
+                                        {
+                                          "depth": 0,
+                                          "text": "epsilon is \\rational",
+                                          "types": [
+                                            "asserts epsilon is \\rational"
+                                          ]
+                                        }
+                                      ],
+                                      "arguments": []
+                                    },
+                                    {
+                                      "label": "where",
+                                      "inline_argument": "\\rational.zero \\:rational.less?:/ epsilon",
+                                      "inline_latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c726174696f6e616c2e7a65726f}{0} < \\epsilon}",
+                                      "inline_type_info": [
+                                        {
+                                          "depth": 0,
+                                          "text": "\\rational.zero \\:rational.less?:/ epsilon",
+                                          "types": [
+                                            "is \\\\statement"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 1,
+                                          "text": "\\rational.zero",
+                                          "types": [
+                                            "is \\rational"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 1,
+                                          "text": "epsilon",
+                                          "types": [
+                                            "is \\rational"
+                                          ]
+                                        }
+                                      ],
+                                      "arguments": []
+                                    },
+                                    {
+                                      "label": "then",
+                                      "inline_argument": null,
+                                      "inline_latex": null,
+                                      "arguments": [
+                                        {
+                                          "kind": "group",
+                                          "heading": null,
+                                          "sections": [
+                                            {
+                                              "label": "exists",
+                                              "inline_argument": "N is \\natural",
+                                              "inline_latex": "N \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                                              "inline_type_info": [
+                                                {
+                                                  "depth": 0,
+                                                  "text": "N is \\natural",
+                                                  "types": [
+                                                    "asserts N is \\natural"
+                                                  ]
+                                                }
+                                              ],
+                                              "arguments": []
+                                            },
+                                            {
+                                              "label": "suchThat",
+                                              "inline_argument": null,
+                                              "inline_latex": null,
+                                              "arguments": [
+                                                {
+                                                  "kind": "group",
+                                                  "heading": null,
+                                                  "sections": [
+                                                    {
+                                                      "label": "forAll",
+                                                      "inline_argument": "n is \\natural",
+                                                      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                                                      "inline_type_info": [
+                                                        {
+                                                          "depth": 0,
+                                                          "text": "n is \\natural",
+                                                          "types": [
+                                                            "asserts n is \\natural"
+                                                          ]
+                                                        }
+                                                      ],
+                                                      "arguments": []
+                                                    },
+                                                    {
+                                                      "label": "where",
+                                                      "inline_argument": "N \\:natural.leq?:/ n",
+                                                      "inline_latex": "\\htmlData{mlg-ref=5c3a6e61747572616c2e6c65713a2f}{N \\leq n}",
+                                                      "inline_type_info": [
+                                                        {
+                                                          "depth": 0,
+                                                          "text": "N \\:natural.leq?:/ n",
+                                                          "types": [
+                                                            "is \\\\statement"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 1,
+                                                          "text": "N",
+                                                          "types": [
+                                                            "is \\natural"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 1,
+                                                          "text": "n",
+                                                          "types": [
+                                                            "is \\natural"
+                                                          ]
+                                                        }
+                                                      ],
+                                                      "arguments": []
+                                                    },
+                                                    {
+                                                      "label": "then",
+                                                      "inline_argument": "\\rational.abs(a(n) \\.rational.-./ b(n)) \\:rational.less?:/ epsilon",
+                                                      "inline_latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c726174696f6e616c2e616273}{\\left|\\htmlData{mlg-ref=5c2e726174696f6e616c2e2d2e2f}{a_{n} - b(n)}\\right|} < \\epsilon}",
+                                                      "inline_type_info": [
+                                                        {
+                                                          "depth": 0,
+                                                          "text": "\\rational.abs(a(n) \\.rational.-./ b(n)) \\:rational.less?:/ epsilon",
+                                                          "types": [
+                                                            "is \\\\statement"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 1,
+                                                          "text": "\\rational.abs(a(n)\\.rational.-./b(n))",
+                                                          "types": [
+                                                            "\"in\" \\rationals"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 2,
+                                                          "text": "a(n)\\.rational.-./b(n)",
+                                                          "types": [
+                                                            "is \\rational"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 3,
+                                                          "text": "a(n)",
+                                                          "types": [
+                                                            "is \\rational"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 4,
+                                                          "text": "n",
+                                                          "types": [
+                                                            "is \\natural"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 3,
+                                                          "text": "b(n)",
+                                                          "types": [
+                                                            "is \\rational"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 4,
+                                                          "text": "n",
+                                                          "types": [
+                                                            "is \\natural"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 1,
+                                                          "text": "epsilon",
+                                                          "types": [
+                                                            "is \\rational"
+                                                          ]
+                                                        }
+                                                      ],
+                                                      "arguments": []
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Cauchy-sequence equivalence\"",
+              "inline_latex": "\\textrm{Cauchy-sequence equivalence}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"24cd9c1f-5185-495b-8107-e9cce4d5dc76\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

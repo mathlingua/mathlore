@@ -1,0 +1,235 @@
+{
+  "id": "b03848a9-e6b1-4bca-8436-8dd755e5a026",
+  "kind": "Realizes",
+  "definition_keys": [
+    "5c7265616c2e6361756368792e7265616c697a6174696f6e"
+  ],
+  "heading": "\\real.cauchy.realization",
+  "heading_latex": "\\textrm{reals as Cauchy sequences}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\real.cauchy.realization]\nRealizes: Rb ::= (R, 0, 1, +, *, neg(x_), inv(x_), leq(a_, b_)) := \\reals\nspecifies:\n. R := \\real.cauchy.carrier\n. 0 := \\real.cauchy.zero\n. 1 := \\real.cauchy.one\n. + := \\real.cauchy.add\n. * := \\real.cauchy.mul\n. neg := \\real.cauchy.neg\n. inv := \\real.cauchy.inv\n. leq := \\real.cauchy.leq\nEnables:\n. capability: x_ \"in\" Rb :<->: x_ \"in\" R\nDocumented:\n. called: \"reals as Cauchy sequences\"\n. description: \"The concrete realization of the abstract real tuple as\n                equivalence classes of rational Cauchy sequences, with every\n                field operation induced from sequence operations.\"\nId: \"b03848a9-e6b1-4bca-8436-8dd755e5a026\"",
+  "sections": [
+    {
+      "label": "Realizes",
+      "inline_argument": "Rb ::= (R, 0, 1, +, *, neg(x_), inv(x_), leq(a_, b_)) := \\reals",
+      "inline_latex": "\\mathbb{R} ::= \\left(R, 0, 1, +, \\ast, neg(x), inv(x), leq(a, b)\\right) := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}",
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "R := \\real.cauchy.carrier",
+          "latex": "R := \\htmlData{mlg-ref=5c7265616c2e6361756368792e63617272696572}{\\mathcal{C}(\\mathbb{Q})/\\sim}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R := \\real.cauchy.carrier",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\real.cauchy.carrier",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "0 := \\real.cauchy.zero",
+          "latex": "0 := \\htmlData{mlg-ref=5c7265616c2e6361756368792e7a65726f}{[(0,0,\\ldots)]}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 := \\real.cauchy.zero",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\real.cauchy.zero",
+              "types": [
+                "\"in\" R"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "1 := \\real.cauchy.one",
+          "latex": "1 := \\htmlData{mlg-ref=5c7265616c2e6361756368792e6f6e65}{[(1,1,\\ldots)]}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "1 := \\real.cauchy.one",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\real.cauchy.one",
+              "types": [
+                "\"in\" R"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "+ := \\real.cauchy.add",
+          "latex": "+ := \\htmlData{mlg-ref=5c7265616c2e6361756368792e616464}{\\textrm{Cauchy-real addition}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "+ := \\real.cauchy.add",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\real.cauchy.add",
+              "types": [
+                "is \\binary.operation:on{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "* := \\real.cauchy.mul",
+          "latex": "\\ast := \\htmlData{mlg-ref=5c7265616c2e6361756368792e6d756c}{\\textrm{Cauchy-real multiplication}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "* := \\real.cauchy.mul",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\real.cauchy.mul",
+              "types": [
+                "is \\binary.operation:on{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "neg := \\real.cauchy.neg",
+          "latex": "neg := \\htmlData{mlg-ref=5c7265616c2e6361756368792e6e6567}{\\textrm{Cauchy-real negation}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "neg := \\real.cauchy.neg",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\real.cauchy.neg",
+              "types": [
+                "is \\function:on{R}:to{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "inv := \\real.cauchy.inv",
+          "latex": "inv := \\htmlData{mlg-ref=5c7265616c2e6361756368792e696e76}{\\textrm{Cauchy-real reciprocal}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "inv := \\real.cauchy.inv",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\real.cauchy.inv",
+              "types": [
+                "is \\function:on{R}:to{R}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "leq := \\real.cauchy.leq",
+          "latex": "leq := \\htmlData{mlg-ref=5c7265616c2e6361756368792e6c6571}{\\textrm{Cauchy-real order}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "leq := \\real.cauchy.leq",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\real.cauchy.leq",
+              "types": [
+                "is \\total.order:on{R}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "x_ \"in\" Rb :<->: x_ \"in\" R",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"reals as Cauchy sequences\"",
+              "inline_latex": "\\textrm{reals as Cauchy sequences}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b03848a9-e6b1-4bca-8436-8dd755e5a026\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

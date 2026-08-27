@@ -1,0 +1,14 @@
+{
+  "id": "24804175-428b-44db-8573-0165be44818c-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The relation $(a,b) \\sim (c,d)$ exactly when $ad=cb$."
+  },
+  "source": "",
+  "sections": []
+}

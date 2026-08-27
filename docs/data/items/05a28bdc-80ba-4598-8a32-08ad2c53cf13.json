@@ -1,0 +1,107 @@
+{
+  "id": "05a28bdc-80ba-4598-8a32-08ad2c53cf13",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e6361756368792e73657175656e63652e6e6567"
+  ],
+  "heading": "\\rational.cauchy.sequence.neg{A ::= a(n_)}",
+  "heading_latex": "\\textrm{termwise negative of }A",
+  "parameter_destructurings": [
+    "A(n)"
+  ],
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.cauchy.sequence.neg{A ::= a(n_)}]\nDefines: C ::= c(n_) is \\cauchy.rational.sequence\nwhen: A is \\cauchy.rational.sequence\nexpresses: c(n_) := \\rational.neg(a(n_))\nDocumented:\n. called: \"termwise negative of $A?$\"\n. description: \"The Cauchy sequence whose $n$th term is $-a_n$.\"\nId: \"05a28bdc-80ba-4598-8a32-08ad2c53cf13\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "C ::= c(n_) is \\cauchy.rational.sequence",
+      "inline_latex": "C ::= c(n) \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A is \\cauchy.rational.sequence",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A is \\cauchy.rational.sequence",
+          "types": [
+            "asserts A is \\cauchy.rational.sequence"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "c(n_) := \\rational.neg(a(n_))",
+      "inline_latex": "c(n) := \\htmlData{mlg-ref=5c726174696f6e616c2e6e6567}{-a(n)}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "c(n_) := \\rational.neg(a(n_))",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "\\rational.neg(a(n))",
+          "types": [
+            "is \\rational"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "a(n)",
+          "types": [
+            "is \\rational"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "n",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"termwise negative of $A?$\"",
+              "inline_latex": "\\textrm{termwise negative of }A",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"05a28bdc-80ba-4598-8a32-08ad2c53cf13\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

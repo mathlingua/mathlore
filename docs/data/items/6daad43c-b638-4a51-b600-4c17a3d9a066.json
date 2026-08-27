@@ -8,12 +8,12 @@
   "heading_latex": "a\\textrm{ minus }b\\quad\\htmlClass{mlg-title-written}{a - b}",
   "body_text": null,
   "page": null,
-  "source": "[a_ \\.real.-./ b_]\nDefines: a_ - b_ := \\reals..`-`(a_, b_) is \\real\nDocumented:\n. called: \"$a_?$ minus $b_?$\"\n. written: \"a_? - b_?\"\nId: \"6daad43c-b638-4a51-b600-4c17a3d9a066\"",
+  "source": "[a_ \\.real.-./ b_]\nDefines: a_ - b_ := a_ \\.real.+./ \\real.neg(b_) is \\real\nDocumented:\n. called: \"$a_?$ minus $b_?$\"\n. written: \"a_? - b_?\"\nId: \"6daad43c-b638-4a51-b600-4c17a3d9a066\"",
   "sections": [
     {
       "label": "Defines",
-      "inline_argument": "a_ - b_ := \\reals..`-`(a_, b_) is \\real",
-      "inline_latex": "a - b := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}.-(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "inline_argument": "a_ - b_ := a_ \\.real.+./ \\real.neg(b_) is \\real",
+      "inline_latex": "a - b := \\htmlData{mlg-ref=5c2e7265616c2e2b2e2f}{a + \\htmlData{mlg-ref=5c7265616c2e6e6567}{-b}} \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
       "arguments": []
     },
     {

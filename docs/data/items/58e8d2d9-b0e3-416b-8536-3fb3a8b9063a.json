@@ -1,0 +1,317 @@
+{
+  "id": "58e8d2d9-b0e3-416b-8536-3fb3a8b9063a",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c696e74656765722e706169722e6c6571"
+  ],
+  "heading": "\\integer.pair.leq",
+  "heading_latex": "\\textrm{integer-pair order}\\quad\\htmlClass{mlg-title-written}{a \\leq_{\\mathbb{Z}} b}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integer.pair.leq]\nDefines: leq(a_, b_) is \\total.order:on{\\integer.pair.carrier}\nexpresses:\n. forAll: a1, b1, a2, b2 is \\natural\n  then:\n  . let: lhs, rhs is \\natural\n    where:\n    . lhs = a1 \\.natural.+./ b2\n    . rhs = a2 \\.natural.+./ b1\n    then:\n    . have: leq(\\integer.pair.class:of{a1, b1}, \\integer.pair.class:of{a2, b2})\n      iff: lhs \\:natural.leq?:/ rhs\nDocumented:\n. called: \"integer-pair order\"\n. written: \"a_? \\leq_{\\mathbb{Z}} b_?\"\n. description: \"The quotient order $[(a,b)] \\le [(c,d)]$ exactly when\n                $a+d \\le c+b$.\"\nId: \"58e8d2d9-b0e3-416b-8536-3fb3a8b9063a\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "leq(a_, b_) is \\total.order:on{\\integer.pair.carrier}",
+      "inline_latex": "leq(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c746f74616c2e6f726465723a6f6e}{\\textrm{total order on }\\htmlData{mlg-ref=5c696e74656765722e706169722e63617272696572}{(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a1, b1, a2, b2 is \\natural",
+              "inline_latex": "a_1, b_1, a_2, b_2 \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a1, b1, a2, b2 is \\natural",
+                  "types": [
+                    "asserts a1 is \\natural",
+                    "asserts b1 is \\natural",
+                    "asserts a2 is \\natural",
+                    "asserts b2 is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "let",
+                      "inline_argument": "lhs, rhs is \\natural",
+                      "inline_latex": "lhs, rhs \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "lhs, rhs is \\natural",
+                          "types": [
+                            "asserts lhs is \\natural",
+                            "asserts rhs is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "lhs = a1 \\.natural.+./ b2",
+                          "latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{lhs = a_1 + b_2}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "lhs = a1 \\.natural.+./ b2",
+                              "types": [
+                                "is \\binary.operation:on{\\naturals}"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "lhs = a1",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "lhs",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "a1",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "b2",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "rhs = a2 \\.natural.+./ b1",
+                          "latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{rhs = a_2 + b_1}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "rhs = a2 \\.natural.+./ b1",
+                              "types": [
+                                "is \\binary.operation:on{\\naturals}"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "rhs = a2",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "rhs",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "a2",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "b1",
+                              "types": [
+                                "is \\natural"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "have",
+                              "inline_argument": "leq(\\integer.pair.class:of{a1, b1}, \\integer.pair.class:of{a2, b2})",
+                              "inline_latex": "leq(\\htmlData{mlg-ref=5c696e74656765722e706169722e636c6173733a6f66}{[(a_1, b_1)]_{\\mathbb{Z}}}, \\htmlData{mlg-ref=5c696e74656765722e706169722e636c6173733a6f66}{[(a_2, b_2)]_{\\mathbb{Z}}})",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "leq(\\integer.pair.class:of{a1, b1}, \\integer.pair.class:of{a2, b2})",
+                                  "types": []
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "\\integer.pair.class:of{a1,b1}",
+                                  "types": [
+                                    "\"in\" \\integer.pair.carrier"
+                                  ]
+                                },
+                                {
+                                  "depth": 2,
+                                  "text": "a1",
+                                  "types": [
+                                    "is \\natural"
+                                  ]
+                                },
+                                {
+                                  "depth": 2,
+                                  "text": "b1",
+                                  "types": [
+                                    "is \\natural"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "\\integer.pair.class:of{a2,b2}",
+                                  "types": [
+                                    "\"in\" \\integer.pair.carrier"
+                                  ]
+                                },
+                                {
+                                  "depth": 2,
+                                  "text": "a2",
+                                  "types": [
+                                    "is \\natural"
+                                  ]
+                                },
+                                {
+                                  "depth": 2,
+                                  "text": "b2",
+                                  "types": [
+                                    "is \\natural"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "iff",
+                              "inline_argument": "lhs \\:natural.leq?:/ rhs",
+                              "inline_latex": "\\htmlData{mlg-ref=5c3a6e61747572616c2e6c65713a2f}{lhs \\leq rhs}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "lhs \\:natural.leq?:/ rhs",
+                                  "types": [
+                                    "is \\\\statement"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "lhs",
+                                  "types": [
+                                    "is \\natural"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "rhs",
+                                  "types": [
+                                    "is \\natural"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integer-pair order\"",
+              "inline_latex": "\\textrm{integer-pair order}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a_? \\leq_{\\mathbb{Z}} b_?\"",
+              "inline_latex": "a \\leq_{\\mathbb{Z}} b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"58e8d2d9-b0e3-416b-8536-3fb3a8b9063a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

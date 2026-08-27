@@ -8,12 +8,12 @@
   "heading_latex": "a\\textrm{ divided by }b\\quad\\htmlClass{mlg-title-written}{\\frac{a}{b}}",
   "body_text": null,
   "page": null,
-  "source": "[a_ \\.real.div./ b_]\nDefines: a_ / b_ := \\reals..`/`(a_, b_) is \\real\nDocumented:\n. called: \"$a_?$ divided by $b_?$\"\n. written: \"\\frac{a_?}{b_?}\"\nId: \"33d587f9-8ec0-4f27-8c65-42daae86748a\"",
+  "source": "[a_ \\.real.div./ b_]\nDefines: a_ / b_ := a_ \\.real.*./ \\real.inv(b_) is \\real\nDocumented:\n. called: \"$a_?$ divided by $b_?$\"\n. written: \"\\frac{a_?}{b_?}\"\nId: \"33d587f9-8ec0-4f27-8c65-42daae86748a\"",
   "sections": [
     {
       "label": "Defines",
-      "inline_argument": "a_ / b_ := \\reals..`/`(a_, b_) is \\real",
-      "inline_latex": "a / b := \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}./(a, b) \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+      "inline_argument": "a_ / b_ := a_ \\.real.*./ \\real.inv(b_) is \\real",
+      "inline_latex": "a / b := \\htmlData{mlg-ref=5c2e7265616c2e2a2e2f}{a \\cdot \\htmlData{mlg-ref=5c7265616c2e696e76}{b^{-1}}} \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
       "arguments": []
     },
     {

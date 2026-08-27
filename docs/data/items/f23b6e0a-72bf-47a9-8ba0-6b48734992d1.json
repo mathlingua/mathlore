@@ -1,0 +1,27 @@
+{
+  "id": "f23b6e0a-72bf-47a9-8ba0-6b48734992d1",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The pair construction now supplies every component of the abstract\ninteger tuple.  Its carrier is the quotient of $\\mathbb{N} \\times\n\\mathbb{N}$ by the relation above.  Addition adds like coordinates,\nmultiplication expands $(a-b)(c-d)$, negation swaps the coordinates,\nand order compares the represented differences without using integer\nsubtraction."
+  },
+  "source": "Text: \"The pair construction now supplies every component of the abstract\n       integer tuple.  Its carrier is the quotient of $\\mathbb{N} \\times\n       \\mathbb{N}$ by the relation above.  Addition adds like coordinates,\n       multiplication expands $(a-b)(c-d)$, negation swaps the coordinates,\n       and order compares the represented differences without using integer\n       subtraction.\"\nId: \"f23b6e0a-72bf-47a9-8ba0-6b48734992d1\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The pair construction now supplies every component of the abstract\n       integer tuple.  Its carrier is the quotient of $\\mathbb{N} \\times\n       \\mathbb{N}$ by the relation above.  Addition adds like coordinates,\n       multiplication expands $(a-b)(c-d)$, negation swaps the coordinates,\n       and order compares the represented differences without using integer\n       subtraction.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f23b6e0a-72bf-47a9-8ba0-6b48734992d1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

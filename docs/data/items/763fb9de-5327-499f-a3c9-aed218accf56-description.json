@@ -1,0 +1,14 @@
+{
+  "id": "763fb9de-5327-499f-a3c9-aed218accf56-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "$[(a,b)]\\cdot[(c,d)]=[(ac,bd)]$."
+  },
+  "source": "",
+  "sections": []
+}

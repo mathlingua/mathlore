@@ -1,0 +1,221 @@
+{
+  "id": "b28cb699-77da-4c6f-92a3-3ffdec43ffcc",
+  "kind": "Realizes",
+  "definition_keys": [
+    "5c696e74656765722e706169722e7265616c697a6174696f6e"
+  ],
+  "heading": "\\integer.pair.realization",
+  "heading_latex": "\\textrm{integers as differences of naturals}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integer.pair.realization]\nRealizes: Zb ::= (Z, 0, 1, +, *, neg(z_), leq(a_, b_)) := \\integers\nspecifies:\n. Z := \\integer.pair.carrier\n. 0 := \\integer.pair.zero\n. 1 := \\integer.pair.one\n. + := \\integer.pair.add\n. * := \\integer.pair.mul\n. neg(z_) := \\integer.pair.neg(z_)\n. leq := \\integer.pair.leq\nEnables:\n. capability: x_ \"in\" Zb :<->: x_ \"in\" Z\nDocumented:\n. called: \"integers as differences of naturals\"\n. description: \"The concrete realization of the abstract integer tuple by\n                equivalence classes of pairs of natural numbers.\"\nId: \"b28cb699-77da-4c6f-92a3-3ffdec43ffcc\"",
+  "sections": [
+    {
+      "label": "Realizes",
+      "inline_argument": "Zb ::= (Z, 0, 1, +, *, neg(z_), leq(a_, b_)) := \\integers",
+      "inline_latex": "\\mathbb{Z} ::= \\left(Z, 0, 1, +, \\ast, neg(z), leq(a, b)\\right) := \\htmlData{mlg-ref=5c696e746567657273}{\\mathbb{Z}}",
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "Z := \\integer.pair.carrier",
+          "latex": "Z := \\htmlData{mlg-ref=5c696e74656765722e706169722e63617272696572}{(\\mathbb{N} \\times \\mathbb{N}) / {\\sim}_{\\mathbb{Z}}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "Z := \\integer.pair.carrier",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\integer.pair.carrier",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "0 := \\integer.pair.zero",
+          "latex": "0 := \\htmlData{mlg-ref=5c696e74656765722e706169722e7a65726f}{[(0,0)]_{\\mathbb{Z}}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 := \\integer.pair.zero",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\integer.pair.zero",
+              "types": [
+                "\"in\" Z"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "1 := \\integer.pair.one",
+          "latex": "1 := \\htmlData{mlg-ref=5c696e74656765722e706169722e6f6e65}{[(1,0)]_{\\mathbb{Z}}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "1 := \\integer.pair.one",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\integer.pair.one",
+              "types": [
+                "\"in\" Z"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "+ := \\integer.pair.add",
+          "latex": "+ := \\htmlData{mlg-ref=5c696e74656765722e706169722e616464}{a +_{\\mathbb{Z}} b}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "+ := \\integer.pair.add",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\integer.pair.add",
+              "types": [
+                "is \\binary.operation:on{Z}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "* := \\integer.pair.mul",
+          "latex": "\\ast := \\htmlData{mlg-ref=5c696e74656765722e706169722e6d756c}{a \\cdot_{\\mathbb{Z}} b}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "* := \\integer.pair.mul",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\integer.pair.mul",
+              "types": [
+                "is \\binary.operation:on{Z}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "neg(z_) := \\integer.pair.neg(z_)",
+          "latex": "neg(z) := \\htmlData{mlg-ref=5c696e74656765722e706169722e6e6567}{-_{\\mathbb{Z}} z}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "neg(z_) := \\integer.pair.neg(z_)",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\integer.pair.neg(z)",
+              "types": [
+                "is \\function:on{Z}:to{Z}"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "z",
+              "types": []
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "leq := \\integer.pair.leq",
+          "latex": "leq := \\htmlData{mlg-ref=5c696e74656765722e706169722e6c6571}{a \\leq_{\\mathbb{Z}} b}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "leq := \\integer.pair.leq",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\integer.pair.leq",
+              "types": [
+                "is \\total.order:on{Z}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Enables",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "capability",
+              "inline_argument": "x_ \"in\" Zb :<->: x_ \"in\" Z",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integers as differences of naturals\"",
+              "inline_latex": "\\textrm{integers as differences of naturals}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b28cb699-77da-4c6f-92a3-3ffdec43ffcc\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

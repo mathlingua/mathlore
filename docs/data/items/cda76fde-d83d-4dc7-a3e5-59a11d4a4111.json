@@ -1,0 +1,98 @@
+{
+  "id": "cda76fde-d83d-4dc7-a3e5-59a11d4a4111",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c646564656b696e642e696e76"
+  ],
+  "heading": "\\dedekind.inv(D_)",
+  "heading_latex": "\\textrm{Dedekind-cut reciprocal}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\dedekind.inv(D_)]\nDefines: inv(D_) is \\function:on{\\dedekind.cut.carrier}:to{\\dedekind.cut.carrier}\nexpresses: inv(D_) := \\dedekind.from.cauchy(\\real.cauchy.inv(\\cauchy.from.dedekind(D_)))\nDocumented:\n. called: \"Dedekind-cut reciprocal\"\n. description: \"The totalized reciprocal transported from the Cauchy-sequence\n                realization.\"\nId: \"cda76fde-d83d-4dc7-a3e5-59a11d4a4111\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "inv(D_) is \\function:on{\\dedekind.cut.carrier}:to{\\dedekind.cut.carrier}",
+      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{inv(D) \\: : \\: \\htmlData{mlg-ref=5c646564656b696e642e6375742e63617272696572}{\\mathcal{D}(\\mathbb{Q})} \\rightarrow \\htmlData{mlg-ref=5c646564656b696e642e6375742e63617272696572}{\\mathcal{D}(\\mathbb{Q})}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "inv(D_) := \\dedekind.from.cauchy(\\real.cauchy.inv(\\cauchy.from.dedekind(D_)))",
+      "inline_latex": "inv(D) := \\htmlData{mlg-ref=5c646564656b696e642e66726f6d2e636175636879}{\\textrm{Dedekind cut of a Cauchy real}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "inv(D_) := \\dedekind.from.cauchy(\\real.cauchy.inv(\\cauchy.from.dedekind(D_)))",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "\\dedekind.from.cauchy(\\real.cauchy.inv(\\cauchy.from.dedekind(D)))",
+          "types": [
+            "is \\bijective::function:on{\\real.cauchy.carrier}:to{\\dedekind.\\dedekind.from.cauchy(\\real.cauchy.inv(\\cauchy.from.dedekind(D))).carrier}"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "\\real.cauchy.inv(\\cauchy.from.dedekind(D))",
+          "types": [
+            "is \\function:on{\\real.cauchy.carrier}:to{\\real.cauchy.carrier}"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "\\cauchy.from.dedekind(D)",
+          "types": [
+            "\"in\" \\real.cauchy.carrier"
+          ]
+        },
+        {
+          "depth": 4,
+          "text": "D",
+          "types": [
+            "\"in\" \\dedekind.cut.carrier"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Dedekind-cut reciprocal\"",
+              "inline_latex": "\\textrm{Dedekind-cut reciprocal}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"cda76fde-d83d-4dc7-a3e5-59a11d4a4111\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

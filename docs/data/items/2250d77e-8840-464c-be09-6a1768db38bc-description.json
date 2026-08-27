@@ -1,0 +1,14 @@
+{
+  "id": "2250d77e-8840-464c-be09-6a1768db38bc-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A rational number is a member of the underlying carrier\n$\\mathbb{Q}$."
+  },
+  "source": "",
+  "sections": []
+}

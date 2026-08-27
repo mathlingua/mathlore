@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Intermediate Value Theorem}",
   "body_text": null,
   "page": null,
-  "source": "[\\intermediate.value.theorem]\nTheorem:\ngiven:\n. a, b is \\real\n. f is \\function:on{\\reals}:to{\\reals}\nwhere:\n. a \\:real.less?:/ b\nthen:\n. forAll: y is \\real\n  where:\n  . f(a) \\:real.less?:/ y\n  . y \\:real.less?:/ f(b)\n  then:\n  . exists: c is \\real\n    suchThat:\n    . a \\:real.less?:/ c\n    . c \\:real.less?:/ b\n    . f(c) = y\nDocumented:\n. called: \"Intermediate Value Theorem\"\n. description: \"A continuous function on an interval attains every intermediate\n                value between its endpoints.\"\nId: \"f29c7f02-8e4f-46da-ac4e-3df62dca57f0\"",
+  "source": "[\\intermediate.value.theorem]\nTheorem:\ngiven:\n. a, b is \\real\n. f is \\function:on{\\reals}:to{\\reals}\nwhere:\n. a \\:real.less?:/ b\nthen:\n. forAll: y is \\real\n  then:\n  . let: v is \\real\n    where:\n    . v = f(b)\n    . f(a) \\:real.less?:/ y\n    . y \\:real.less?:/ v\n    then:\n    . exists: c is \\real\n      suchThat:\n      . a \\:real.less?:/ c\n      . c \\:real.less?:/ b\n      . f(c) = y\nDocumented:\n. called: \"Intermediate Value Theorem\"\n. description: \"A continuous function on an interval attains every intermediate\n                value between its endpoints.\"\nId: \"f29c7f02-8e4f-46da-ac4e-3df62dca57f0\"",
   "sections": [
     {
       "label": "Theorem",
@@ -112,83 +112,6 @@
               "arguments": []
             },
             {
-              "label": "where",
-              "inline_argument": null,
-              "inline_latex": null,
-              "arguments": [
-                {
-                  "kind": "formulation",
-                  "text": "f(a) \\:real.less?:/ y",
-                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{f(a) < y}",
-                  "type_info": [
-                    {
-                      "depth": 0,
-                      "text": "f(a) \\:real.less?:/ y",
-                      "types": [
-                        "is \\\\statement"
-                      ]
-                    },
-                    {
-                      "depth": 1,
-                      "text": "f(a)",
-                      "types": [
-                        "\"in\" \\reals"
-                      ]
-                    },
-                    {
-                      "depth": 2,
-                      "text": "a",
-                      "types": [
-                        "is \\real"
-                      ]
-                    },
-                    {
-                      "depth": 1,
-                      "text": "y",
-                      "types": [
-                        "is \\real"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "kind": "formulation",
-                  "text": "y \\:real.less?:/ f(b)",
-                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{y < f(b)}",
-                  "type_info": [
-                    {
-                      "depth": 0,
-                      "text": "y \\:real.less?:/ f(b)",
-                      "types": [
-                        "is \\\\statement"
-                      ]
-                    },
-                    {
-                      "depth": 1,
-                      "text": "y",
-                      "types": [
-                        "is \\real"
-                      ]
-                    },
-                    {
-                      "depth": 1,
-                      "text": "f(b)",
-                      "types": [
-                        "\"in\" \\reals"
-                      ]
-                    },
-                    {
-                      "depth": 2,
-                      "text": "b",
-                      "types": [
-                        "is \\real"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "label": "then",
               "inline_argument": null,
               "inline_latex": null,
@@ -198,74 +121,53 @@
                   "heading": null,
                   "sections": [
                     {
-                      "label": "exists",
-                      "inline_argument": "c is \\real",
-                      "inline_latex": "c \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                      "label": "let",
+                      "inline_argument": "v is \\real",
+                      "inline_latex": "v \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
                       "inline_type_info": [
                         {
                           "depth": 0,
-                          "text": "c is \\real",
+                          "text": "v is \\real",
                           "types": [
-                            "asserts c is \\real"
+                            "asserts v is \\real"
                           ]
                         }
                       ],
                       "arguments": []
                     },
                     {
-                      "label": "suchThat",
+                      "label": "where",
                       "inline_argument": null,
                       "inline_latex": null,
                       "arguments": [
                         {
                           "kind": "formulation",
-                          "text": "a \\:real.less?:/ c",
-                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{a < c}",
+                          "text": "v = f(b)",
+                          "latex": "v = f(b)",
                           "type_info": [
                             {
                               "depth": 0,
-                              "text": "a \\:real.less?:/ c",
+                              "text": "v = f(b)",
                               "types": [
                                 "is \\\\statement"
                               ]
                             },
                             {
                               "depth": 1,
-                              "text": "a",
+                              "text": "v",
                               "types": [
                                 "is \\real"
                               ]
                             },
                             {
                               "depth": 1,
-                              "text": "c",
+                              "text": "f(b)",
                               "types": [
-                                "is \\real"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": "formulation",
-                          "text": "c \\:real.less?:/ b",
-                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{c < b}",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "c \\:real.less?:/ b",
-                              "types": [
-                                "is \\\\statement"
+                                "\"in\" \\reals"
                               ]
                             },
                             {
-                              "depth": 1,
-                              "text": "c",
-                              "types": [
-                                "is \\real"
-                              ]
-                            },
-                            {
-                              "depth": 1,
+                              "depth": 2,
                               "text": "b",
                               "types": [
                                 "is \\real"
@@ -275,26 +177,26 @@
                         },
                         {
                           "kind": "formulation",
-                          "text": "f(c) = y",
-                          "latex": "f(c) = y",
+                          "text": "f(a) \\:real.less?:/ y",
+                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{f(a) < y}",
                           "type_info": [
                             {
                               "depth": 0,
-                              "text": "f(c) = y",
+                              "text": "f(a) \\:real.less?:/ y",
                               "types": [
                                 "is \\\\statement"
                               ]
                             },
                             {
                               "depth": 1,
-                              "text": "f(c)",
+                              "text": "f(a)",
                               "types": [
                                 "\"in\" \\reals"
                               ]
                             },
                             {
                               "depth": 2,
-                              "text": "c",
+                              "text": "a",
                               "types": [
                                 "is \\real"
                               ]
@@ -304,6 +206,160 @@
                               "text": "y",
                               "types": [
                                 "is \\real"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "y \\:real.less?:/ v",
+                          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{y < v}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "y \\:real.less?:/ v",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "y",
+                              "types": [
+                                "is \\real"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "v",
+                              "types": [
+                                "is \\real"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "exists",
+                              "inline_argument": "c is \\real",
+                              "inline_latex": "c \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "c is \\real",
+                                  "types": [
+                                    "asserts c is \\real"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "suchThat",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "a \\:real.less?:/ c",
+                                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{a < c}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "a \\:real.less?:/ c",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "a",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "c",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "c \\:real.less?:/ b",
+                                  "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c6573733a2f}{c < b}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "c \\:real.less?:/ b",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "c",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "b",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "f(c) = y",
+                                  "latex": "f(c) = y",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "f(c) = y",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "f(c)",
+                                      "types": [
+                                        "\"in\" \\reals"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "c",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "y",
+                                      "types": [
+                                        "is \\real"
+                                      ]
+                                    }
+                                  ]
+                                }
                               ]
                             }
                           ]

@@ -117,15 +117,18 @@ where:
 . a \:real.less?:/ b
 then:
 . forAll: y is \real
-  where:
-  . f(a) \:real.less?:/ y
-  . y \:real.less?:/ f(b)
   then:
-  . exists: c is \real
-    suchThat:
-    . a \:real.less?:/ c
-    . c \:real.less?:/ b
-    . f(c) = y
+  . let: v is \real
+    where:
+    . v = f(b)
+    . f(a) \:real.less?:/ y
+    . y \:real.less?:/ v
+    then:
+    . exists: c is \real
+      suchThat:
+      . a \:real.less?:/ c
+      . c \:real.less?:/ b
+      . f(c) = y
 Documented:
 . called: "Intermediate Value Theorem"
 . description: "A continuous function on an interval attains every intermediate

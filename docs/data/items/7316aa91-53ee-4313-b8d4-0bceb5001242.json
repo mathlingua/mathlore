@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{monotone increasing}\\textrm{ }\\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
   "body_text": null,
   "page": null,
-  "source": "[\\(monotone.increasing)::real.sequence]\nRefines: S ::= a(n_)\nspecifies: S is \\real.sequence\nsatisfies:\n. forAll: n is \\natural\n  then: a(n) \\:real.leq?:/ a(n \\.natural.+./ 1)\nDocumented:\n. adjective: \"monotone increasing\"\n. description: \"A sequence is monotone increasing if each term is at least as\n                large as the preceding term.\"\nId: \"7316aa91-53ee-4313-b8d4-0bceb5001242\"",
+  "source": "[\\(monotone.increasing)::real.sequence]\nRefines: S ::= a(n_)\nspecifies: S is \\real.sequence\nsatisfies:\n. forAll: n is \\natural\n  then:\n  . let: k is \\natural\n    where: k = n \\.natural.+./ 1\n    then:\n    . let: v is \\real\n      where: v = a(k)\n      then: a(n) \\:real.leq?:/ v\nDocumented:\n. adjective: \"monotone increasing\"\n. description: \"A sequence is monotone increasing if each term is at least as\n                large as the preceding term.\"\nId: \"7316aa91-53ee-4313-b8d4-0bceb5001242\"",
   "sections": [
     {
       "label": "Refines",
@@ -57,54 +57,168 @@
             },
             {
               "label": "then",
-              "inline_argument": "a(n) \\:real.leq?:/ a(n \\.natural.+./ 1)",
-              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{a(n) \\leq a(\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n + 1})}",
-              "inline_type_info": [
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
                 {
-                  "depth": 0,
-                  "text": "a(n) \\:real.leq?:/ a(n \\.natural.+./ 1)",
-                  "types": [
-                    "is \\\\statement"
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "let",
+                      "inline_argument": "k is \\natural",
+                      "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "k is \\natural",
+                          "types": [
+                            "asserts k is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": "k = n \\.natural.+./ 1",
+                      "inline_latex": "\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{k = n + 1}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "k = n \\.natural.+./ 1",
+                          "types": [
+                            "is \\binary.operation:on{\\naturals}"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "k = n",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "k",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "n",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "1",
+                          "types": []
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "let",
+                              "inline_argument": "v is \\real",
+                              "inline_latex": "v \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "v is \\real",
+                                  "types": [
+                                    "asserts v is \\real"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "where",
+                              "inline_argument": "v = a(k)",
+                              "inline_latex": "v = a_{k}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "v = a(k)",
+                                  "types": [
+                                    "is \\\\statement"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "v",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "a(k)",
+                                  "types": []
+                                },
+                                {
+                                  "depth": 2,
+                                  "text": "k",
+                                  "types": [
+                                    "is \\natural"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": "a(n) \\:real.leq?:/ v",
+                              "inline_latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{a_{n} \\leq v}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "a(n) \\:real.leq?:/ v",
+                                  "types": [
+                                    "is \\\\statement"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "a(n)",
+                                  "types": []
+                                },
+                                {
+                                  "depth": 2,
+                                  "text": "n",
+                                  "types": [
+                                    "is \\natural"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "v",
+                                  "types": [
+                                    "is \\real"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
                   ]
-                },
-                {
-                  "depth": 1,
-                  "text": "a(n)",
-                  "types": []
-                },
-                {
-                  "depth": 2,
-                  "text": "n",
-                  "types": [
-                    "is \\natural"
-                  ]
-                },
-                {
-                  "depth": 1,
-                  "text": "a(n\\.natural.+./1)",
-                  "types": []
-                },
-                {
-                  "depth": 2,
-                  "text": "n\\.natural.+./1",
-                  "types": [
-                    "is \\binary.operation:on{\\naturals}"
-                  ]
-                },
-                {
-                  "depth": 3,
-                  "text": "n",
-                  "types": [
-                    "is \\natural"
-                  ]
-                },
-                {
-                  "depth": 3,
-                  "text": "1",
-                  "types": []
                 }
-              ],
-              "arguments": []
+              ]
             }
           ]
         }

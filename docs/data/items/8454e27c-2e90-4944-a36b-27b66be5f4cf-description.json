@@ -1,0 +1,14 @@
+{
+  "id": "8454e27c-2e90-4944-a36b-27b66be5f4cf-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The rational numbers as an abstract ordered-field tuple\n$(Q,0,1,+,\\cdot,-,(\\cdot)^{-1},\\leq)$."
+  },
+  "source": "",
+  "sections": []
+}

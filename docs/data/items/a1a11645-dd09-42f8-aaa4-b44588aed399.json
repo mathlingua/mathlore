@@ -1,0 +1,104 @@
+{
+  "id": "a1a11645-dd09-42f8-aaa4-b44588aed399",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c646564656b696e642e6c6571"
+  ],
+  "heading": "\\dedekind.leq",
+  "heading_latex": "\\textrm{Dedekind-cut order}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\dedekind.leq]\nDefines: leq(D_, E_) is \\total.order:on{\\dedekind.cut.carrier}\nexpresses: leq(D_, E_) := \\real.cauchy.realization..leq(\\cauchy.from.dedekind(D_), \\cauchy.from.dedekind(E_))\nDocumented:\n. called: \"Dedekind-cut order\"\n. description: \"The total order transported from the Cauchy-sequence\n                realization; equivalently, it is inclusion of lower cuts.\"\nId: \"a1a11645-dd09-42f8-aaa4-b44588aed399\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "leq(D_, E_) is \\total.order:on{\\dedekind.cut.carrier}",
+      "inline_latex": "leq(D, E) \\textrm{ is } \\htmlData{mlg-ref=5c746f74616c2e6f726465723a6f6e}{\\textrm{total order on }\\htmlData{mlg-ref=5c646564656b696e642e6375742e63617272696572}{\\mathcal{D}(\\mathbb{Q})}}",
+      "arguments": []
+    },
+    {
+      "label": "expresses",
+      "inline_argument": "leq(D_, E_) := \\real.cauchy.realization..leq(\\cauchy.from.dedekind(D_), \\cauchy.from.dedekind(E_))",
+      "inline_latex": "leq(D, E) := \\htmlData{mlg-ref=5c7265616c2e6361756368792e7265616c697a6174696f6e}{\\textrm{reals as Cauchy sequences}}.leq(\\htmlData{mlg-ref=5c6361756368792e66726f6d2e646564656b696e64}{\\textrm{Cauchy real of a Dedekind cut}}, \\htmlData{mlg-ref=5c6361756368792e66726f6d2e646564656b696e64}{\\textrm{Cauchy real of a Dedekind cut}})",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "leq(D_, E_) := \\real.cauchy.realization..leq(\\cauchy.from.dedekind(D_), \\cauchy.from.dedekind(E_))",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "\\real.cauchy.realization..leq(\\cauchy.from.dedekind(D),\\cauchy.from.dedekind(E))",
+          "types": []
+        },
+        {
+          "depth": 2,
+          "text": "\\real.cauchy.realization",
+          "types": []
+        },
+        {
+          "depth": 2,
+          "text": "\\cauchy.from.dedekind(D)",
+          "types": [
+            "is \\function:on{\\dedekind.cut.carrier}:to{\\real.cauchy.carrier}"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "D",
+          "types": []
+        },
+        {
+          "depth": 2,
+          "text": "\\cauchy.from.dedekind(E)",
+          "types": [
+            "is \\function:on{\\dedekind.cut.carrier}:to{\\real.cauchy.carrier}"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "E",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Dedekind-cut order\"",
+              "inline_latex": "\\textrm{Dedekind-cut order}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a1a11645-dd09-42f8-aaa4-b44588aed399\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

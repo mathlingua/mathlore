@@ -1,0 +1,14 @@
+{
+  "id": "720771d7-3535-4c2a-864a-868fb794656c-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Addition induced on equivalence classes by\n$[(a,b)] + [(c,d)] = [(a+c,b+d)]$."
+  },
+  "source": "",
+  "sections": []
+}

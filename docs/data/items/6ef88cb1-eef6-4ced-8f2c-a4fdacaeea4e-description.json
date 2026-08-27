@@ -1,0 +1,14 @@
+{
+  "id": "6ef88cb1-eef6-4ced-8f2c-a4fdacaeea4e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The concrete realization of the abstract rational tuple by\nequivalence classes of nonzero-denominator integer pairs."
+  },
+  "source": "",
+  "sections": []
+}

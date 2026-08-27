@@ -1,0 +1,14 @@
+{
+  "id": "5c228ea8-d53f-4460-8909-56b46f19be2a-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The equivalence class of the pair $(a,b)$ in the difference\nconstruction of the integers."
+  },
+  "source": "",
+  "sections": []
+}

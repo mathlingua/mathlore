@@ -1,0 +1,113 @@
+{
+  "id": "f7389fcf-20d8-4465-8bfa-ec1fbe033c51",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c3a726174696f6e616c2e6c65713a2f"
+  ],
+  "heading": "a \\:rational.leq:/ b",
+  "heading_latex": "a\\textrm{ is less than or equal to }b\\quad\\htmlClass{mlg-title-written}{a \\leq b}",
+  "body_text": null,
+  "page": null,
+  "source": "[a \\:rational.leq:/ b]\nDeclares: a is \\rational\nwhen: b is \\rational\nsatisfies: \\rationals..leq(a, b)\nDocumented:\n. called: \"$a?$ is less than or equal to $b?$\"\n. written: \"a? \\leq b?\"\nId: \"f7389fcf-20d8-4465-8bfa-ec1fbe033c51\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "a is \\rational",
+      "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "a is \\rational",
+          "types": [
+            "asserts a is \\rational"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "b is \\rational",
+      "inline_latex": "b \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "b is \\rational",
+          "types": [
+            "asserts b is \\rational"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": "\\rationals..leq(a, b)",
+      "inline_latex": "\\htmlData{mlg-ref=5c726174696f6e616c73}{\\mathbb{Q}}.leq(a, b)",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "\\rationals..leq(a, b)",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "\\rationals",
+          "types": []
+        },
+        {
+          "depth": 1,
+          "text": "a",
+          "types": [
+            "\\:rational.leq:/ b"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "b",
+          "types": [
+            "is \\rational"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$a?$ is less than or equal to $b?$\"",
+              "inline_latex": "a\\textrm{ is less than or equal to }b",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a? \\leq b?\"",
+              "inline_latex": "a \\leq b",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f7389fcf-20d8-4465-8bfa-ec1fbe033c51\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

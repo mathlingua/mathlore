@@ -1,0 +1,57 @@
+{
+  "id": "b567f507-0351-483f-9833-95109ab73409",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c726174696f6e616c2e696e76"
+  ],
+  "heading": "\\rational.inv(a_)",
+  "heading_latex": "\\textrm{reciprocal of }a\\quad\\htmlClass{mlg-title-written}{a^{-1}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\rational.inv(a_)]\nDefines: i := \\rationals..inv(a_) is \\rational\nDocumented:\n. called: \"reciprocal of $a_?$\"\n. written: \"a_?^{-1}\"\nId: \"b567f507-0351-483f-9833-95109ab73409\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "i := \\rationals..inv(a_) is \\rational",
+      "inline_latex": "i := \\htmlData{mlg-ref=5c726174696f6e616c73}{\\mathbb{Q}}.inv(a) \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"reciprocal of $a_?$\"",
+              "inline_latex": "\\textrm{reciprocal of }a",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"a_?^{-1}\"",
+              "inline_latex": "a^{-1}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b567f507-0351-483f-9833-95109ab73409\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}
