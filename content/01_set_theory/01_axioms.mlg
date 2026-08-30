@@ -80,7 +80,7 @@ Id: "7a54c26a-ea2e-4e38-ac69-3426f651c4d4"
 Defines: X is \set
 expresses:
 . not:
-  . exists: Y is \set
+  . exists: Y is \\anything
     suchThat: Y "in" X
 Documented:
 . called: "empty set"

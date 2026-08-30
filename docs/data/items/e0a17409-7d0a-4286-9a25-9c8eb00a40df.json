@@ -6,7 +6,7 @@
   "heading_latex": "\\textrm{Empty Set Union Identity}",
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven: A is \\set\nthen: (A \\.set.union./ \\empty.set) = A\nDocumented:\n. called: \"Empty Set Union Identity\"\n. description: \"Union of any set $A$ with the empty set yields $A$:\n                $A \\cup \\emptyset = A$.\"\nId: \"e0a17409-7d0a-4286-9a25-9c8eb00a40df\"",
+  "source": "Theorem:\ngiven: A is \\set\nthen: (.A \\.set.union./ \\empty.set.) = A\nDocumented:\n. called: \"Empty Set Union Identity\"\n. description: \"Union of any set $A$ with the empty set yields $A$:\n                $A \\cup \\emptyset = A$.\"\nId: \"e0a17409-7d0a-4286-9a25-9c8eb00a40df\"",
   "sections": [
     {
       "label": "Theorem",
@@ -31,12 +31,12 @@
     },
     {
       "label": "then",
-      "inline_argument": "(A \\.set.union./ \\empty.set) = A",
-      "inline_latex": "\\left(\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}}\\right) = A",
+      "inline_argument": "(.A \\.set.union./ \\empty.set.) = A",
+      "inline_latex": "\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}} = A",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "(A \\.set.union./ \\empty.set) = A",
+          "text": "(.A \\.set.union./ \\empty.set.) = A",
           "types": [
             "is \\\\statement"
           ]

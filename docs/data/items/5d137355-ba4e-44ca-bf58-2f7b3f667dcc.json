@@ -8,12 +8,27 @@
   "heading_latex": "\\textrm{intersection of }A\\textrm{ and }B\\quad\\htmlClass{mlg-title-written}{A \\cap B}",
   "body_text": null,
   "page": null,
-  "source": "[A \\.set.intersect./ B]\nDefines: I is \\set\nwhen: A, B is \\set\nexpresses:\n. let: x is \\set\n  then:\n  . have: x \"in\"? I\n    iff:\n    . x \"in\"? A\n    . x \"in\"? B\nDocumented:\n. called: \"intersection of $A?$ and $B?$\"\n. written: \"A? \\cap B?\"\n. description: \"The intersection $A \\cap B$ is the set of elements common to\n                both $A$ and $B$, containing only those elements that belong to\n                both.\"\nId: \"5d137355-ba4e-44ca-bf58-2f7b3f667dcc\"",
+  "source": "[A \\.set.intersect./ B]\nDefines: C := \\set@{c_ : c_ \"in\" U | (.c_ \"in\"? A.) \\.and./ (.c_ \"in\"? B.)}\nusing: U is \\set\nwhen: A, B is \\set\nDocumented:\n. called: \"intersection of $A?$ and $B?$\"\n. written: \"A? \\cap B?\"\n. description: \"The intersection $A \\cap B$ is the set of elements common to\n                both $A$ and $B$, containing only those elements that belong to\n                both.\"\nId: \"5d137355-ba4e-44ca-bf58-2f7b3f667dcc\"",
   "sections": [
     {
       "label": "Defines",
-      "inline_argument": "I is \\set",
-      "inline_latex": "I \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_argument": "C := \\set@{c_ : c_ \"in\" U | (.c_ \"in\"? A.) \\.and./ (.c_ \"in\"? B.)}",
+      "inline_latex": "C := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ c \\: : \\: c \\in U \\: | \\: \\htmlData{mlg-ref=5c2e616e642e2f}{c \\in A \\land c \\in B} \\right\\}",
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": "U is \\set",
+      "inline_latex": "U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "U is \\set",
+          "types": [
+            "asserts U is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
@@ -31,118 +46,6 @@
         }
       ],
       "arguments": []
-    },
-    {
-      "label": "expresses",
-      "inline_argument": null,
-      "inline_latex": null,
-      "arguments": [
-        {
-          "kind": "group",
-          "heading": null,
-          "sections": [
-            {
-              "label": "let",
-              "inline_argument": "x is \\set",
-              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "x is \\set",
-                  "types": [
-                    "asserts x is \\set"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "then",
-              "inline_argument": null,
-              "inline_latex": null,
-              "arguments": [
-                {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
-                    {
-                      "label": "have",
-                      "inline_argument": "x \"in\"? I",
-                      "inline_latex": "x \\in I",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "x \"in\"? I",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "x",
-                          "types": [
-                            "is \\set"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "iff",
-                      "inline_argument": null,
-                      "inline_latex": null,
-                      "arguments": [
-                        {
-                          "kind": "formulation",
-                          "text": "x \"in\"? A",
-                          "latex": "x \\in A",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "x \"in\"? A",
-                              "types": [
-                                "is \\\\statement"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "x",
-                              "types": [
-                                "is \\set"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": "formulation",
-                          "text": "x \"in\"? B",
-                          "latex": "x \\in B",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "x \"in\"? B",
-                              "types": [
-                                "is \\\\statement"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "x",
-                              "types": [
-                                "is \\set"
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "label": "Documented",

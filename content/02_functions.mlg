@@ -156,17 +156,10 @@ Id: "14fa61b4-4f94-4156-aaf3-cefefc0af688"
 
 
 [\function.image:of{f(x__)}:on{X}]
-Defines: Y is \set
+Defines: Y := \set@{f(x__) : x__ "in" X}
 when:
 . f is \function:on{A?}:to{B?}
 . X \:subset:/ A
-expresses:
-. let: y is \set
-  then:
-  . have: y "in"? Y
-    iff:
-    . exists: x "in" X
-      suchThat: f(x) = y
 Documented:
 . called: "image of $X?$ under $f?$"
 . written: "f?[X?]"
@@ -176,17 +169,10 @@ Id: "70ff3a00-b34b-4e76-9bbe-5f3325a59f55"
 
 
 [\function.preimage:of{f(x__)}:on{Y}]
-Defines: X is \set
+Defines: X := \set@{x__ : x__ "in" A | f(x__) "in"? Y}
 when:
 . f is \function:on{A?}:to{B?}
 . Y \:subset:/ B
-expresses:
-. let: x is \set
-  then:
-  . have: x "in"? X
-    iff:
-    . x "in"? A
-    . f(x) "in" Y
 Documented:
 . called: "preimage of $Y?$ under $f?$"
 . written: "f+?^{-1}[Y?]"

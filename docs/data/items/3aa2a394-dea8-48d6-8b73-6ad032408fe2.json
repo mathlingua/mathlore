@@ -19,7 +19,7 @@
     {
       "label": "when",
       "inline_argument": "n is \\natural",
-      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{n \\in \\mathbb{N}}",
       "inline_type_info": [
         {
           "depth": 0,
@@ -114,7 +114,7 @@
                     {
                       "label": "let",
                       "inline_argument": "k is \\natural",
-                      "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{k \\in \\mathbb{N}}",
                       "inline_type_info": [
                         {
                           "depth": 0,

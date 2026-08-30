@@ -49,6 +49,7 @@ Enables:
 . capability: n_ + m_ :=> n_ \.natural.+./ m_
 Documented:
 . called: "natural"
+. written: "n? \in \mathbb{N}"
 . description: "A natural number is a member of the underlying set $\mathbb{N}$."
 Id: "6c240df6-c06d-4fc4-ab16-31fa5aebb4d7"
 

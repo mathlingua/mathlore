@@ -8,12 +8,12 @@
   "heading_latex": "\\textrm{image of }X\\textrm{ under }f(x)\\quad\\htmlClass{mlg-title-written}{f(x)[X]}",
   "body_text": null,
   "page": null,
-  "source": "[\\function.image:of{f(x__)}:on{X}]\nDefines: Y is \\set\nwhen:\n. f is \\function:on{A?}:to{B?}\n. X \\:subset:/ A\nexpresses:\n. let: y is \\set\n  then:\n  . have: y \"in\"? Y\n    iff:\n    . exists: x \"in\" X\n      suchThat: f(x) = y\nDocumented:\n. called: \"image of $X?$ under $f?$\"\n. written: \"f?[X?]\"\n. description: \"The direct image $f[X]$ is the set of all outputs obtained by\n                evaluating $f$ on elements of $X$.\"\nId: \"70ff3a00-b34b-4e76-9bbe-5f3325a59f55\"",
+  "source": "[\\function.image:of{f(x__)}:on{X}]\nDefines: Y := \\set@{f(x__) : x__ \"in\" X}\nwhen:\n. f is \\function:on{A?}:to{B?}\n. X \\:subset:/ A\nDocumented:\n. called: \"image of $X?$ under $f?$\"\n. written: \"f?[X?]\"\n. description: \"The direct image $f[X]$ is the set of all outputs obtained by\n                evaluating $f$ on elements of $X$.\"\nId: \"70ff3a00-b34b-4e76-9bbe-5f3325a59f55\"",
   "sections": [
     {
       "label": "Defines",
-      "inline_argument": "Y is \\set",
-      "inline_latex": "Y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_argument": "Y := \\set@{f(x__) : x__ \"in\" X}",
+      "inline_latex": "Y := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ f(x) \\: : \\: x \\in X \\right\\}",
       "arguments": []
     },
     {
@@ -52,140 +52,6 @@
               "text": "A",
               "types": [
                 "is \\set"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "label": "expresses",
-      "inline_argument": null,
-      "inline_latex": null,
-      "arguments": [
-        {
-          "kind": "group",
-          "heading": null,
-          "sections": [
-            {
-              "label": "let",
-              "inline_argument": "y is \\set",
-              "inline_latex": "y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "y is \\set",
-                  "types": [
-                    "asserts y is \\set"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "then",
-              "inline_argument": null,
-              "inline_latex": null,
-              "arguments": [
-                {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
-                    {
-                      "label": "have",
-                      "inline_argument": "y \"in\"? Y",
-                      "inline_latex": "y \\in Y",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "y \"in\"? Y",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "y",
-                          "types": [
-                            "is \\set"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "iff",
-                      "inline_argument": null,
-                      "inline_latex": null,
-                      "arguments": [
-                        {
-                          "kind": "group",
-                          "heading": null,
-                          "sections": [
-                            {
-                              "label": "exists",
-                              "inline_argument": "x \"in\" X",
-                              "inline_latex": "x \\in X",
-                              "inline_type_info": [
-                                {
-                                  "depth": 0,
-                                  "text": "x \"in\" X",
-                                  "types": [
-                                    "asserts x \"in\" X"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "X",
-                                  "types": [
-                                    "\\:subset:/ A"
-                                  ]
-                                }
-                              ],
-                              "arguments": []
-                            },
-                            {
-                              "label": "suchThat",
-                              "inline_argument": "f(x) = y",
-                              "inline_latex": "f(x) = y",
-                              "inline_type_info": [
-                                {
-                                  "depth": 0,
-                                  "text": "f(x) = y",
-                                  "types": [
-                                    "is \\\\statement"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "f(x)",
-                                  "types": [
-                                    "\"in\" B"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "x",
-                                  "types": [
-                                    "\"in\" X"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "y",
-                                  "types": [
-                                    "is \\set"
-                                  ]
-                                }
-                              ],
-                              "arguments": []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
               ]
             }
           ]

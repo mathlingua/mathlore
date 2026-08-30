@@ -8,9 +8,10 @@ Text: "With the axioms in place, we can name several standard constructions. The
 Id: "032576ab-7fc3-4075-b24a-cd06583d18cd"
 
 
-[\set.singleton.set:of{X}]
+[\singleton.set:of{X}]
 Defines: Y is \set
-when: X is \set
+using: U is \set
+when: X "in" U
 expresses:
 . let: Z is \set
   then:
@@ -29,13 +30,14 @@ Text: "Similarly, pairing gives the unordered pair of any two sets $x$ and $y$."
 Id: "c128a6a8-b892-4177-8622-29ba3cfa473a"
 
 
-[\set.unordered.pair:of{x, y}]
-Defines: U is \set
-when: x, y is \set
+[\unordered.pair:of{x, y}]
+Defines: Z is \set
+using: U is \set
+when: x, y "in" U
 expresses:
 . let: z is \set
   then:
-  . have: z "in"? U
+  . have: z "in"? Z
     iff: (.z = x.) \.or./ (.z = y.)
 Documented:
 . called: "unordered pair of $x?$ and $y?$"
@@ -59,7 +61,7 @@ expresses:
   then:
   . have: Z "in"? Y
     iff:
-    . (.Z = X.) \.or./ (.Z = \set.singleton.set:of{X}.)
+    . (.Z = X.) \.or./ (.Z = \singleton.set:of{X}.)
 Documented:
 . called: "The set successor of $X?$"
 . written: "X? \cup \left \{ X? \right \}"
@@ -121,9 +123,9 @@ Text: "From unordered pairs one can encode *ordered* pairs, in which the two
 Id: "da7d91b3-693b-4ca2-ac2a-e94555b18c5f"
 
 
-[\set.pair:of{x, y}]
+[\pair:of{x, y}]
 Defines: p := \set:of{x, \set:of{x, y}} is \set
-when: x, y is \set
+when: x, y is \\anything
 Documented:
 . called: "pair of $x?$ and $y?$"
 . written: "\langle x?, y? \rangle"

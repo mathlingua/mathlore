@@ -5,10 +5,10 @@
     "5c6e61747572616c"
   ],
   "heading": "\\natural",
-  "heading_latex": "\\textrm{natural}",
+  "heading_latex": "\\textrm{natural}\\quad\\htmlClass{mlg-title-written}{n \\in \\mathbb{N}}",
   "body_text": null,
   "page": null,
-  "source": "[\\natural]\nDeclares: n \"in\" \\naturals\nEnables:\n. capability: n_ + m_ :=> n_ \\.natural.+./ m_\nDocumented:\n. called: \"natural\"\n. description: \"A natural number is a member of the underlying set $\\mathbb{N}$.\"\nId: \"6c240df6-c06d-4fc4-ab16-31fa5aebb4d7\"",
+  "source": "[\\natural]\nDeclares: n \"in\" \\naturals\nEnables:\n. capability: n_ + m_ :=> n_ \\.natural.+./ m_\nDocumented:\n. called: \"natural\"\n. written: \"n? \\in \\mathbb{N}\"\n. description: \"A natural number is a member of the underlying set $\\mathbb{N}$.\"\nId: \"6c240df6-c06d-4fc4-ab16-31fa5aebb4d7\"",
   "sections": [
     {
       "label": "Declares",
@@ -62,6 +62,18 @@
               "label": "called",
               "inline_argument": "\"natural\"",
               "inline_latex": "\\textrm{natural}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"n? \\in \\mathbb{N}\"",
+              "inline_latex": "n \\in \\mathbb{N}",
               "arguments": []
             }
           ]

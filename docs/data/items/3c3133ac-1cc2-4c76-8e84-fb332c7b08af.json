@@ -8,12 +8,12 @@
   "heading_latex": "\\textrm{power set of }A\\quad\\htmlClass{mlg-title-written}{\\mathcal{P}(A)}",
   "body_text": null,
   "page": null,
-  "source": "[\\power.set:of{A}]\nDefines: P is \\set\nwhen: A is \\set\nexpresses:\n. let: X is \\set\n  then:\n  . have: X \"in\"? P\n    iff: X \\:subset?:/ A\nDocumented:\n. called: \"power set of $A?$\"\n. written: \"\\mathcal{P}(A?)\"\n. description: \"The power set $\\mathcal{P}(A)$ is the set of all subsets of $A$.\"\nId: \"3c3133ac-1cc2-4c76-8e84-fb332c7b08af\"",
+  "source": "[\\power.set:of{A}]\nDefines: P := \\set@{X_ : X_ \\:subset:/ A}\nwhen: A is \\set\nDocumented:\n. called: \"power set of $A?$\"\n. written: \"\\mathcal{P}(A?)\"\n. description: \"The power set $\\mathcal{P}(A)$ is the set of all subsets of $A$.\"\nId: \"3c3133ac-1cc2-4c76-8e84-fb332c7b08af\"",
   "sections": [
     {
       "label": "Defines",
-      "inline_argument": "P is \\set",
-      "inline_latex": "P \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_argument": "P := \\set@{X_ : X_ \\:subset:/ A}",
+      "inline_latex": "P := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ X \\: : \\: \\htmlData{mlg-ref=5c3a7375627365743a2f}{X \\subseteq A} \\right\\}",
       "arguments": []
     },
     {
@@ -30,98 +30,6 @@
         }
       ],
       "arguments": []
-    },
-    {
-      "label": "expresses",
-      "inline_argument": null,
-      "inline_latex": null,
-      "arguments": [
-        {
-          "kind": "group",
-          "heading": null,
-          "sections": [
-            {
-              "label": "let",
-              "inline_argument": "X is \\set",
-              "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "X is \\set",
-                  "types": [
-                    "asserts X is \\set"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "then",
-              "inline_argument": null,
-              "inline_latex": null,
-              "arguments": [
-                {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
-                    {
-                      "label": "have",
-                      "inline_argument": "X \"in\"? P",
-                      "inline_latex": "X \\in P",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "X \"in\"? P",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "X",
-                          "types": [
-                            "is \\set"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "iff",
-                      "inline_argument": "X \\:subset?:/ A",
-                      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{X \\subseteq A}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "X \\:subset?:/ A",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "X",
-                          "types": [
-                            "is \\set"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "A",
-                          "types": [
-                            "is \\set"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "label": "Documented",

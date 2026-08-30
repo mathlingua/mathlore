@@ -13,7 +13,7 @@
     {
       "label": "Defines",
       "inline_argument": "d is \\natural",
-      "inline_latex": "d \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+      "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{d \\in \\mathbb{N}}",
       "inline_type_info": [
         {
           "depth": 0,
@@ -82,7 +82,7 @@
             {
               "label": "suchThat",
               "inline_argument": "d is \\natural",
-              "inline_latex": "d \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+              "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{d \\in \\mathbb{N}}",
               "arguments": []
             }
           ]

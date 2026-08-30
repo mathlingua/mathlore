@@ -31,7 +31,7 @@
         {
           "kind": "formulation",
           "text": "n_ is \\natural",
-          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+          "latex": "\\htmlData{mlg-ref=5c6e61747572616c}{n \\in \\mathbb{N}}",
           "type_info": [
             {
               "depth": 0,
@@ -123,7 +123,7 @@
                     {
                       "label": "exists",
                       "inline_argument": "N is \\natural",
-                      "inline_latex": "N \\textrm{ is } \\htmlData{mlg-ref=5c6e61747572616c}{\\textrm{natural}}",
+                      "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{N \\in \\mathbb{N}}",
                       "inline_type_info": [
                         {
                           "depth": 0,

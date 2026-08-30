@@ -6,7 +6,7 @@
   "heading_latex": "\\textrm{Commutativity of Set Operations}",
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven: A, B is \\set\nthen:\n. (A \\.set.union./ B) = (B \\.set.union./ A)\n. (A \\.set.intersect./ B) = (B \\.set.intersect./ A)\nDocumented:\n. called: \"Commutativity of Set Operations\"\n. description: \"Union and intersection are commutative: $A \\cup B = B \\cup A$\n                and $A \\cap B = B \\cap A$.\"\nId: \"a8b70f59-148f-4e51-bcc8-7ab889db86d4\"",
+  "source": "Theorem:\ngiven: A, B is \\set\nthen:\n. (.A \\.set.union./ B.) = (.B \\.set.union./ A.)\n. (.A \\.set.intersect./ B.) = (.B \\.set.intersect./ A.)\nDocumented:\n. called: \"Commutativity of Set Operations\"\n. description: \"Union and intersection are commutative: $A \\cup B = B \\cup A$\n                and $A \\cap B = B \\cap A$.\"\nId: \"a8b70f59-148f-4e51-bcc8-7ab889db86d4\"",
   "sections": [
     {
       "label": "Theorem",
@@ -37,12 +37,12 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "(A \\.set.union./ B) = (B \\.set.union./ A)",
-          "latex": "\\left(\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup B}\\right) = \\left(\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{B \\cup A}\\right)",
+          "text": "(.A \\.set.union./ B.) = (.B \\.set.union./ A.)",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup B} = \\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{B \\cup A}",
           "type_info": [
             {
               "depth": 0,
-              "text": "(A \\.set.union./ B) = (B \\.set.union./ A)",
+              "text": "(.A \\.set.union./ B.) = (.B \\.set.union./ A.)",
               "types": [
                 "is \\\\statement"
               ]
@@ -107,12 +107,12 @@
         },
         {
           "kind": "formulation",
-          "text": "(A \\.set.intersect./ B) = (B \\.set.intersect./ A)",
-          "latex": "\\left(\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap B}\\right) = \\left(\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{B \\cap A}\\right)",
+          "text": "(.A \\.set.intersect./ B.) = (.B \\.set.intersect./ A.)",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap B} = \\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{B \\cap A}",
           "type_info": [
             {
               "depth": 0,
-              "text": "(A \\.set.intersect./ B) = (B \\.set.intersect./ A)",
+              "text": "(.A \\.set.intersect./ B.) = (.B \\.set.intersect./ A.)",
               "types": [
                 "is \\\\statement"
               ]

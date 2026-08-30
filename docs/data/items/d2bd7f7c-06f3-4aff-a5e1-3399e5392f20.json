@@ -8,12 +8,12 @@
   "heading_latex": "\\textrm{preimage of }Y\\textrm{ under }f(x)\\quad\\htmlClass{mlg-title-written}{f(x)^{-1}[Y]}",
   "body_text": null,
   "page": null,
-  "source": "[\\function.preimage:of{f(x__)}:on{Y}]\nDefines: X is \\set\nwhen:\n. f is \\function:on{A?}:to{B?}\n. Y \\:subset:/ B\nexpresses:\n. let: x is \\set\n  then:\n  . have: x \"in\"? X\n    iff:\n    . x \"in\"? A\n    . f(x) \"in\" Y\nDocumented:\n. called: \"preimage of $Y?$ under $f?$\"\n. written: \"f+?^{-1}[Y?]\"\n. description: \"The preimage (inverse image) $f^{-1}[Y]$ is the set of domain\n                elements mapped by $f$ into $Y$.\"\nId: \"d2bd7f7c-06f3-4aff-a5e1-3399e5392f20\"",
+  "source": "[\\function.preimage:of{f(x__)}:on{Y}]\nDefines: X := \\set@{x__ : x__ \"in\" A | f(x__) \"in\"? Y}\nwhen:\n. f is \\function:on{A?}:to{B?}\n. Y \\:subset:/ B\nDocumented:\n. called: \"preimage of $Y?$ under $f?$\"\n. written: \"f+?^{-1}[Y?]\"\n. description: \"The preimage (inverse image) $f^{-1}[Y]$ is the set of domain\n                elements mapped by $f$ into $Y$.\"\nId: \"d2bd7f7c-06f3-4aff-a5e1-3399e5392f20\"",
   "sections": [
     {
       "label": "Defines",
-      "inline_argument": "X is \\set",
-      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_argument": "X := \\set@{x__ : x__ \"in\" A | f(x__) \"in\"? Y}",
+      "inline_latex": "X := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ x \\: : \\: x \\in A \\: | \\: f(x) \\in Y \\right\\}",
       "arguments": []
     },
     {
@@ -52,125 +52,6 @@
               "text": "B",
               "types": [
                 "is \\set"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "label": "expresses",
-      "inline_argument": null,
-      "inline_latex": null,
-      "arguments": [
-        {
-          "kind": "group",
-          "heading": null,
-          "sections": [
-            {
-              "label": "let",
-              "inline_argument": "x is \\set",
-              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "x is \\set",
-                  "types": [
-                    "asserts x is \\set"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "then",
-              "inline_argument": null,
-              "inline_latex": null,
-              "arguments": [
-                {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
-                    {
-                      "label": "have",
-                      "inline_argument": "x \"in\"? X",
-                      "inline_latex": "x \\in X",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "x \"in\"? X",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "x",
-                          "types": [
-                            "is \\set"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "iff",
-                      "inline_argument": null,
-                      "inline_latex": null,
-                      "arguments": [
-                        {
-                          "kind": "formulation",
-                          "text": "x \"in\"? A",
-                          "latex": "x \\in A",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "x \"in\"? A",
-                              "types": [
-                                "is \\\\statement"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "x",
-                              "types": [
-                                "is \\set"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": "formulation",
-                          "text": "f(x) \"in\" Y",
-                          "latex": "f(x) \\in Y",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "f(x) \"in\" Y",
-                              "types": [
-                                "asserts f(x) \"in\" Y"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "f(x)",
-                              "types": [
-                                "\"in\" B"
-                              ]
-                            },
-                            {
-                              "depth": 2,
-                              "text": "x",
-                              "types": [
-                                "is \\set"
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
               ]
             }
           ]

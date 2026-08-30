@@ -10,13 +10,9 @@ Id: "fa87c699-877a-4604-8cf0-ba2bb87bbfe8"
 
 
 [A \.set.union./ B]
-Defines: U is \set
+Defines: C := \set@{c_ : c_ "in" U | (.c_ "in"? A.) \.or./ (.c_ "in"? B.)}
+using: U is \set
 when: A, B is \set
-expresses:
-. let: x is \set
-  then:
-  . have: x "in"? U
-    iff: (.x "in"? A.) \.or./ (.x "in"? B.)
 Documented:
 . called: "union of $A?$ and $B?$"
 . written: "A? \cup B?"
@@ -26,15 +22,9 @@ Id: "a08ae02b-7a4e-4911-863a-7d929540f193"
 
 
 [A \.set.intersect./ B]
-Defines: I is \set
+Defines: C := \set@{c_ : c_ "in" U | (.c_ "in"? A.) \.and./ (.c_ "in"? B.)}
+using: U is \set
 when: A, B is \set
-expresses:
-. let: x is \set
-  then:
-  . have: x "in"? I
-    iff:
-    . x "in"? A
-    . x "in"? B
 Documented:
 . called: "intersection of $A?$ and $B?$"
 . written: "A? \cap B?"
@@ -45,15 +35,8 @@ Id: "5d137355-ba4e-44ca-bf58-2f7b3f667dcc"
 
 
 [A \.set.difference./ B]
-Defines: D is \set
+Defines: C := \set@{c_ : c_ "in" A | c_ \.not.in./ B}
 when: A, B is \set
-expresses:
-. let: x is \set
-  then:
-  . have: x "in"? D
-    iff:
-    . x "in"? A
-    . not: x "in"? B
 Documented:
 . called: "set difference of $A?$ and $B?$"
 . written: "A? \setminus B?"
@@ -68,13 +51,8 @@ Id: "e3164791-b17c-427a-8c8c-02ec40801629"
 
 
 [\power.set:of{A}]
-Defines: P is \set
+Defines: P := \set@{X_ : X_ \:subset:/ A}
 when: A is \set
-expresses:
-. let: X is \set
-  then:
-  . have: X "in"? P
-    iff: X \:subset?:/ A
 Documented:
 . called: "power set of $A?$"
 . written: "\mathcal{P}(A?)"
@@ -90,7 +68,7 @@ Id: "185d9e5d-1d5e-4478-863e-792c9889a309"
 [A \.disjoint.from./ B]
 States:
 when: A, B is \set
-that: (A \.set.intersect./ B) = \empty.set
+that: (.A \.set.intersect./ B.) = \empty.set
 Documented:
 . called: "$A?$ is disjoint from $B?$"
 . description: "Two sets $A$ and $B$ are disjoint if their intersection is
@@ -110,8 +88,8 @@ Id: "aebe6956-53f1-4b24-af92-63732dfe1544"
 Theorem:
 given: A, B is \set
 then:
-. (A \.set.union./ B) = (B \.set.union./ A)
-. (A \.set.intersect./ B) = (B \.set.intersect./ A)
+. (.A \.set.union./ B.) = (.B \.set.union./ A.)
+. (.A \.set.intersect./ B.) = (.B \.set.intersect./ A.)
 Documented:
 . called: "Commutativity of Set Operations"
 . description: "Union and intersection are commutative: $A \cup B = B \cup A$
@@ -125,7 +103,7 @@ Id: "20e77baa-c3d2-4104-a8dc-3fe1e02717e8"
 
 Theorem:
 given: A is \set
-then: (A \.set.union./ \empty.set) = A
+then: (.A \.set.union./ \empty.set.) = A
 Documented:
 . called: "Empty Set Union Identity"
 . description: "Union of any set $A$ with the empty set yields $A$:

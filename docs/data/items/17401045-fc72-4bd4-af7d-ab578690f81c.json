@@ -2,31 +2,53 @@
   "id": "17401045-fc72-4bd4-af7d-ab578690f81c",
   "kind": "Defines",
   "definition_keys": [
-    "5c7365742e756e6f7264657265642e706169723a6f66"
+    "5c756e6f7264657265642e706169723a6f66"
   ],
-  "heading": "\\set.unordered.pair:of{x, y}",
+  "heading": "\\unordered.pair:of{x, y}",
   "heading_latex": "\\textrm{unordered pair of }x\\textrm{ and }y\\quad\\htmlClass{mlg-title-written}{\\left \\{ x, y \\right \\}}",
   "body_text": null,
   "page": null,
-  "source": "[\\set.unordered.pair:of{x, y}]\nDefines: U is \\set\nwhen: x, y is \\set\nexpresses:\n. let: z is \\set\n  then:\n  . have: z \"in\"? U\n    iff: (.z = x.) \\.or./ (.z = y.)\nDocumented:\n. called: \"unordered pair of $x?$ and $y?$\"\n. written: \"\\left \\{ x?, y? \\right \\}\"\n. description: \"The unordered pair $\\{x, y\\}$ is the set whose members are\n                precisely $x$ and $y$.\"\nId: \"17401045-fc72-4bd4-af7d-ab578690f81c\"",
+  "source": "[\\unordered.pair:of{x, y}]\nDefines: Z is \\set\nusing: U is \\set\nwhen: x, y \"in\" U\nexpresses:\n. let: z is \\set\n  then:\n  . have: z \"in\"? Z\n    iff: (.z = x.) \\.or./ (.z = y.)\nDocumented:\n. called: \"unordered pair of $x?$ and $y?$\"\n. written: \"\\left \\{ x?, y? \\right \\}\"\n. description: \"The unordered pair $\\{x, y\\}$ is the set whose members are\n                precisely $x$ and $y$.\"\nId: \"17401045-fc72-4bd4-af7d-ab578690f81c\"",
   "sections": [
     {
       "label": "Defines",
+      "inline_argument": "Z is \\set",
+      "inline_latex": "Z \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "arguments": []
+    },
+    {
+      "label": "using",
       "inline_argument": "U is \\set",
       "inline_latex": "U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "U is \\set",
+          "types": [
+            "asserts U is \\set"
+          ]
+        }
+      ],
       "arguments": []
     },
     {
       "label": "when",
-      "inline_argument": "x, y is \\set",
-      "inline_latex": "x, y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_argument": "x, y \"in\" U",
+      "inline_latex": "x, y \\in U",
       "inline_type_info": [
         {
           "depth": 0,
-          "text": "x, y is \\set",
+          "text": "x, y \"in\" U",
           "types": [
-            "asserts x is \\set",
-            "asserts y is \\set"
+            "asserts x \"in\" U",
+            "asserts y \"in\" U"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "U",
+          "types": [
+            "is \\set"
           ]
         }
       ],
@@ -67,12 +89,12 @@
                   "sections": [
                     {
                       "label": "have",
-                      "inline_argument": "z \"in\"? U",
-                      "inline_latex": "z \\in U",
+                      "inline_argument": "z \"in\"? Z",
+                      "inline_latex": "z \\in Z",
                       "inline_type_info": [
                         {
                           "depth": 0,
-                          "text": "z \"in\"? U",
+                          "text": "z \"in\"? Z",
                           "types": [
                             "is \\\\statement"
                           ]
@@ -122,7 +144,7 @@
                           "depth": 3,
                           "text": "x",
                           "types": [
-                            "is \\set"
+                            "\"in\" U"
                           ]
                         },
                         {
@@ -150,7 +172,7 @@
                           "depth": 3,
                           "text": "y",
                           "types": [
-                            "is \\set"
+                            "\"in\" U"
                           ]
                         }
                       ],

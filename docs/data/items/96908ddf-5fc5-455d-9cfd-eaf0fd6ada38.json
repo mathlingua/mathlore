@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{empty set}\\quad\\htmlClass{mlg-title-written}{\\emptyset}",
   "body_text": null,
   "page": null,
-  "source": "[\\empty.set]\nDefines: X is \\set\nexpresses:\n. not:\n  . exists: Y is \\set\n    suchThat: Y \"in\" X\nDocumented:\n. called: \"empty set\"\n. written: \"\\emptyset\"\n. description: \"The empty set $\\emptyset$ is the unique set having no members\n                whatsoever. It is the seed from which the entire universe of\n                sets -- and eventually the natural number $0$ -- is grown.\"\nId: \"96908ddf-5fc5-455d-9cfd-eaf0fd6ada38\"",
+  "source": "[\\empty.set]\nDefines: X is \\set\nexpresses:\n. not:\n  . exists: Y is \\\\anything\n    suchThat: Y \"in\" X\nDocumented:\n. called: \"empty set\"\n. written: \"\\emptyset\"\n. description: \"The empty set $\\emptyset$ is the unique set having no members\n                whatsoever. It is the seed from which the entire universe of\n                sets -- and eventually the natural number $0$ -- is grown.\"\nId: \"96908ddf-5fc5-455d-9cfd-eaf0fd6ada38\"",
   "sections": [
     {
       "label": "Defines",
@@ -36,14 +36,14 @@
                   "sections": [
                     {
                       "label": "exists",
-                      "inline_argument": "Y is \\set",
-                      "inline_latex": "Y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "inline_argument": "Y is \\\\anything",
+                      "inline_latex": "Y \\textrm{ is } \\textrm{anything}",
                       "inline_type_info": [
                         {
                           "depth": 0,
-                          "text": "Y is \\set",
+                          "text": "Y is \\\\anything",
                           "types": [
-                            "asserts Y is \\set"
+                            "asserts Y is \\\\anything"
                           ]
                         }
                       ],
