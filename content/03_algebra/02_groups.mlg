@@ -53,8 +53,9 @@ Id: "bb323028-2831-4d67-b784-b0918774ab3a"
 
 
 [\group.element:of{G}]
-Declares: x is \monoid.element:of{G}
+Declares: x
 when: G is \group
+extends: x is \monoid.element:of{G}
 Enables:
 . capability: x.inv :=> \group.inverse:of{x}:in{G}
   written: "x+?^{-1}"

@@ -11,21 +11,12 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\semigroup.element:of{S ::= (X, *)}]\nDeclares: x is \\magma.element:of{S}\nwhen: S is \\semigroup\nDocumented:\n. called: \"element of semigroup $S?$\"\nId: \"5ce95378-5760-4728-b0d2-334848109a32\"",
+  "source": "[\\semigroup.element:of{S ::= (X, *)}]\nDeclares: x\nwhen: S is \\semigroup\nextends: x is \\magma.element:of{S}\nDocumented:\n. called: \"element of semigroup $S?$\"\nId: \"5ce95378-5760-4728-b0d2-334848109a32\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "x is \\magma.element:of{S}",
-      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d612e656c656d656e743a6f66}{\\textrm{element of magma }S}",
-      "inline_type_info": [
-        {
-          "depth": 0,
-          "text": "x is \\magma.element:of{S}",
-          "types": [
-            "asserts x is \\magma.element:of{S}"
-          ]
-        }
-      ],
+      "inline_argument": "x",
+      "inline_latex": "x",
       "arguments": []
     },
     {
@@ -38,6 +29,21 @@
           "text": "S is \\semigroup",
           "types": [
             "asserts S is \\semigroup"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "extends",
+      "inline_argument": "x is \\magma.element:of{S}",
+      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d612e656c656d656e743a6f66}{\\textrm{element of magma }S}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x is \\magma.element:of{S}",
+          "types": [
+            "asserts x is \\magma.element:of{S}"
           ]
         }
       ],

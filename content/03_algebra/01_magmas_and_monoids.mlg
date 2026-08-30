@@ -38,8 +38,9 @@ Id: "91ffd40c-72fa-4a93-83f3-80ceb1ae124a"
 
 
 [\magma.element:of{M ::= (X, *)}]
-Declares: x "in" X
+Declares: x
 when: M is \magma
+extends: x "in" X
 Enables:
 . capability: x_ [*] y_ :=> x_ |M.*| y_
   written: "x_? *? y_?"
@@ -80,8 +81,9 @@ Id: "49582242-a047-48ae-aced-77654d9a48aa"
 
 
 [\quasigroup.element:of{Q ::= (X, *)}]
-Declares: x is \magma.element:of{Q}
+Declares: x
 when: Q is \quasigroup
+extends: x is \magma.element:of{Q}
 Documented:
 . called: "element of quasigroup $Q?$"
 Id: "2f5a9f56-286c-4703-a953-316fa32e57dc"
@@ -114,8 +116,9 @@ Id: "6ec2faf5-7d2c-4918-a559-6415b94f2b1f"
 
 
 [\semigroup.element:of{S ::= (X, *)}]
-Declares: x is \magma.element:of{S}
+Declares: x
 when: S is \semigroup
+extends: x is \magma.element:of{S}
 Documented:
 . called: "element of semigroup $S?$"
 Id: "5ce95378-5760-4728-b0d2-334848109a32"
@@ -149,8 +152,9 @@ Id: "034bf6ff-ba6e-4fac-b47e-65cc85d15642"
 
 
 [\monoid.element:of{M}]
-Declares: x is \semigroup.element:of{M}
+Declares: x
 when: M is \monoid
+extends: x is \semigroup.element:of{M}
 Documented:
 . called: "element of monoid $M?$"
 Id: "fee7d2ca-5ebc-48a6-8eed-06d623b5520f"

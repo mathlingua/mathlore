@@ -72,16 +72,8 @@ Id: "625a71c4-ff3b-411f-aa1c-85d6db7642e7"
 
 
 [\center:of{G ::= (X, *, e)}]
-Defines: Z is \set
+Defines: Z := \set@{z_ : z_ "in" G | \\forall{g "in" G}:then{z * g = g * z}}
 when: G is \group
-expresses:
-. let: z is \set
-  then:
-  . have: z "in"? Z
-    iff:
-    . z "in"? G
-    . forAll: g "in" G
-      then: z * g = g * z
 Documented:
 . called: "center of group $G?$"
 . written: "Z(G?)"

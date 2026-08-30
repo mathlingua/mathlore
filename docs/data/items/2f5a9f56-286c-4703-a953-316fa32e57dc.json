@@ -11,21 +11,12 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\quasigroup.element:of{Q ::= (X, *)}]\nDeclares: x is \\magma.element:of{Q}\nwhen: Q is \\quasigroup\nDocumented:\n. called: \"element of quasigroup $Q?$\"\nId: \"2f5a9f56-286c-4703-a953-316fa32e57dc\"",
+  "source": "[\\quasigroup.element:of{Q ::= (X, *)}]\nDeclares: x\nwhen: Q is \\quasigroup\nextends: x is \\magma.element:of{Q}\nDocumented:\n. called: \"element of quasigroup $Q?$\"\nId: \"2f5a9f56-286c-4703-a953-316fa32e57dc\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "x is \\magma.element:of{Q}",
-      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d612e656c656d656e743a6f66}{\\textrm{element of magma }Q}",
-      "inline_type_info": [
-        {
-          "depth": 0,
-          "text": "x is \\magma.element:of{Q}",
-          "types": [
-            "asserts x is \\magma.element:of{Q}"
-          ]
-        }
-      ],
+      "inline_argument": "x",
+      "inline_latex": "x",
       "arguments": []
     },
     {
@@ -38,6 +29,21 @@
           "text": "Q is \\quasigroup",
           "types": [
             "asserts Q is \\quasigroup"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "extends",
+      "inline_argument": "x is \\magma.element:of{Q}",
+      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d612e656c656d656e743a6f66}{\\textrm{element of magma }Q}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "x is \\magma.element:of{Q}",
+          "types": [
+            "asserts x is \\magma.element:of{Q}"
           ]
         }
       ],

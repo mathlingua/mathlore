@@ -11,12 +11,12 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\center:of{G ::= (X, *, e)}]\nDefines: Z is \\set\nwhen: G is \\group\nexpresses:\n. let: z is \\set\n  then:\n  . have: z \"in\"? Z\n    iff:\n    . z \"in\"? G\n    . forAll: g \"in\" G\n      then: z * g = g * z\nDocumented:\n. called: \"center of group $G?$\"\n. written: \"Z(G?)\"\n. description: \"The center $Z(G)$ is the subgroup of elements that commute with\n                all elements of $G$.\"\nId: \"db5c05bc-8e04-4326-ba15-689df15c140a\"",
+  "source": "[\\center:of{G ::= (X, *, e)}]\nDefines: Z := \\set@{z_ : z_ \"in\" G | \\\\forall{g \"in\" G}:then{z * g = g * z}}\nwhen: G is \\group\nDocumented:\n. called: \"center of group $G?$\"\n. written: \"Z(G?)\"\n. description: \"The center $Z(G)$ is the subgroup of elements that commute with\n                all elements of $G$.\"\nId: \"db5c05bc-8e04-4326-ba15-689df15c140a\"",
   "sections": [
     {
       "label": "Defines",
-      "inline_argument": "Z is \\set",
-      "inline_latex": "Z \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_argument": "Z := \\set@{z_ : z_ \"in\" G | \\\\forall{g \"in\" G}:then{z * g = g * z}}",
+      "inline_latex": "Z := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ z \\: : \\: z \\in G \\: | \\: \\forall g \\in G \\textrm{ then } z \\ast g = g \\ast z \\right\\}",
       "arguments": []
     },
     {
@@ -33,182 +33,6 @@
         }
       ],
       "arguments": []
-    },
-    {
-      "label": "expresses",
-      "inline_argument": null,
-      "inline_latex": null,
-      "arguments": [
-        {
-          "kind": "group",
-          "heading": null,
-          "sections": [
-            {
-              "label": "let",
-              "inline_argument": "z is \\set",
-              "inline_latex": "z \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "z is \\set",
-                  "types": [
-                    "asserts z is \\set"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "then",
-              "inline_argument": null,
-              "inline_latex": null,
-              "arguments": [
-                {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
-                    {
-                      "label": "have",
-                      "inline_argument": "z \"in\"? Z",
-                      "inline_latex": "z \\in Z",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "z \"in\"? Z",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "z",
-                          "types": [
-                            "is \\set"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "iff",
-                      "inline_argument": null,
-                      "inline_latex": null,
-                      "arguments": [
-                        {
-                          "kind": "formulation",
-                          "text": "z \"in\"? G",
-                          "latex": "z \\in G",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "z \"in\"? G",
-                              "types": [
-                                "is \\\\statement"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "z",
-                              "types": [
-                                "is \\set"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": "group",
-                          "heading": null,
-                          "sections": [
-                            {
-                              "label": "forAll",
-                              "inline_argument": "g \"in\" G",
-                              "inline_latex": "g \\in G",
-                              "inline_type_info": [
-                                {
-                                  "depth": 0,
-                                  "text": "g \"in\" G",
-                                  "types": [
-                                    "asserts g \"in\" G"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "G",
-                                  "types": [
-                                    "is \\group"
-                                  ]
-                                }
-                              ],
-                              "arguments": []
-                            },
-                            {
-                              "label": "then",
-                              "inline_argument": "z * g = g * z",
-                              "inline_latex": "z \\ast g = g \\ast z",
-                              "inline_type_info": [
-                                {
-                                  "depth": 0,
-                                  "text": "z * g = g * z",
-                                  "types": [
-                                    "is \\\\statement"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "z * g",
-                                  "types": [
-                                    "\"in\" G"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "z",
-                                  "types": [
-                                    "is \\set"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "g",
-                                  "types": [
-                                    "\"in\" G"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "g * z",
-                                  "types": [
-                                    "\"in\" G"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "g",
-                                  "types": [
-                                    "\"in\" G"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "z",
-                                  "types": [
-                                    "is \\set"
-                                  ]
-                                }
-                              ],
-                              "arguments": []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "label": "Documented",
