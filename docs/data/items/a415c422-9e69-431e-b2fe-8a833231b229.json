@@ -1,0 +1,24 @@
+{
+  "id": "a415c422-9e69-431e-b2fe-8a833231b229",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Every propositional formula is logically equivalent to one in\ndisjunctive normal form and to one in conjunctive normal form. The\nfirst is a disjunction of conjunctions of literals; the second is\na conjunction of disjunctions of literals. The normal forms can be\nread from the truth table, although that construction may grow\nexponentially with the number of variables.",
+  "page": null,
+  "source": "TextTheorem: \"Every propositional formula is logically equivalent to one in\n              disjunctive normal form and to one in conjunctive normal form. The\n              first is a disjunction of conjunctions of literals; the second is\n              a conjunction of disjunctions of literals. The normal forms can be\n              read from the truth table, although that construction may grow\n              exponentially with the number of variables.\"\nId: \"a415c422-9e69-431e-b2fe-8a833231b229\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Every propositional formula is logically equivalent to one in\n              disjunctive normal form and to one in conjunctive normal form. The\n              first is a disjunction of conjunctions of literals; the second is\n              a conjunction of disjunctions of literals. The normal forms can be\n              read from the truth table, although that construction may grow\n              exponentially with the number of variables.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a415c422-9e69-431e-b2fe-8a833231b229\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

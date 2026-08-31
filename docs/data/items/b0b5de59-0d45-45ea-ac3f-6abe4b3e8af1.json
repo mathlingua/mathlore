@@ -1,0 +1,24 @@
+{
+  "id": "b0b5de59-0d45-45ea-ac3f-6abe4b3e8af1",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "A function has a left inverse if and only if it is injective,\nprovided a value can be selected outside its image when needed. A\nfunction has a right inverse if and only if it is surjective; the\nassertion that every surjection has a right inverse is equivalent\nto the axiom of choice. A two-sided inverse exists exactly for\nbijections and is then unique.",
+  "page": null,
+  "source": "TextTheorem: \"A function has a left inverse if and only if it is injective,\n              provided a value can be selected outside its image when needed. A\n              function has a right inverse if and only if it is surjective; the\n              assertion that every surjection has a right inverse is equivalent\n              to the axiom of choice. A two-sided inverse exists exactly for\n              bijections and is then unique.\"\nId: \"b0b5de59-0d45-45ea-ac3f-6abe4b3e8af1\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"A function has a left inverse if and only if it is injective,\n              provided a value can be selected outside its image when needed. A\n              function has a right inverse if and only if it is surjective; the\n              assertion that every surjection has a right inverse is equivalent\n              to the axiom of choice. A two-sided inverse exists exactly for\n              bijections and is then unique.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b0b5de59-0d45-45ea-ac3f-6abe4b3e8af1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

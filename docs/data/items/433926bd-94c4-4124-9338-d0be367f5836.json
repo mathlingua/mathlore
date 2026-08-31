@@ -1,0 +1,24 @@
+{
+  "id": "433926bd-94c4-4124-9338-d0be367f5836",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A group isomorphism is a bijective homomorphism. Its inverse is\nautomatically a homomorphism, so isomorphism identifies groups\nwith the same multiplication structure despite different\nelement names. An automorphism is an isomorphism from a group\nto itself; automorphisms form a group under composition.",
+  "page": null,
+  "source": "TextDefinition: \"A group isomorphism is a bijective homomorphism. Its inverse is\n                 automatically a homomorphism, so isomorphism identifies groups\n                 with the same multiplication structure despite different\n                 element names. An automorphism is an isomorphism from a group\n                 to itself; automorphisms form a group under composition.\"\nId: \"433926bd-94c4-4124-9338-d0be367f5836\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A group isomorphism is a bijective homomorphism. Its inverse is\n                 automatically a homomorphism, so isomorphism identifies groups\n                 with the same multiplication structure despite different\n                 element names. An automorphism is an isomorphism from a group\n                 to itself; automorphisms form a group under composition.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"433926bd-94c4-4124-9338-d0be367f5836\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

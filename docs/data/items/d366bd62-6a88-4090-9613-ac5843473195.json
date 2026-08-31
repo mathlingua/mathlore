@@ -1,0 +1,24 @@
+{
+  "id": "d366bd62-6a88-4090-9613-ac5843473195",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "The modulus is multiplicative and satisfies the triangle\ninequality: $|zw|=|z||w|$ and $|z+w|\\leq|z|+|w|$. Hence\n$d(z,w)=|z-w|$ is a metric inducing the usual Euclidean topology\non the complex plane.",
+  "page": null,
+  "source": "TextTheorem: \"The modulus is multiplicative and satisfies the triangle\n              inequality: $|zw|=|z||w|$ and $|z+w|\\leq|z|+|w|$. Hence\n              $d(z,w)=|z-w|$ is a metric inducing the usual Euclidean topology\n              on the complex plane.\"\nId: \"d366bd62-6a88-4090-9613-ac5843473195\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"The modulus is multiplicative and satisfies the triangle\n              inequality: $|zw|=|z||w|$ and $|z+w|\\leq|z|+|w|$. Hence\n              $d(z,w)=|z-w|$ is a metric inducing the usual Euclidean topology\n              on the complex plane.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d366bd62-6a88-4090-9613-ac5843473195\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Axiom of Infinity}",
   "body_text": null,
   "page": null,
-  "source": "[\\axiom.of.infinity]\nAxiom:\nthen:\n. exists: I is \\set\n  suchThat:\n  . oneOf:\n    . \\empty.set \"in\"? I\n    . forAll: Y is \\set\n      then: (.Y \"in\"? I.) \\.implies./ (.\\set.successor:of{Y} \"in\"? I.)\nDocumented:\n. called: \"Axiom of Infinity\"\n. description: \"There is a set $I$ that contains the empty set and is closed\n                under the successor operation. Such a set cannot be finite, so\n                this axiom is what first admits an infinite set into the theory.\"\nId: \"a0f45971-fcc1-419b-bcd5-f4c4717bb37f\"",
+  "source": "[\\axiom.of.infinity]\nAxiom:\nthen:\n. exists: I is \\set\n  suchThat:\n  . allOf:\n    . \\empty.set \"in\"? I\n    . forAll: Y is \\set\n      then: (.Y \"in\"? I.) \\.implies./ (.\\set.successor:of{Y} \"in\"? I.)\nDocumented:\n. called: \"Axiom of Infinity\"\n. description: \"There is a set $I$ that contains the empty set and is closed\n                under the successor operation. Such a set cannot be finite, so\n                this axiom is what first admits an infinite set into the theory.\"\nId: \"a0f45971-fcc1-419b-bcd5-f4c4717bb37f\"",
   "sections": [
     {
       "label": "Axiom",
@@ -50,7 +50,7 @@
                   "heading": null,
                   "sections": [
                     {
-                      "label": "oneOf",
+                      "label": "allOf",
                       "inline_argument": null,
                       "inline_latex": null,
                       "arguments": [

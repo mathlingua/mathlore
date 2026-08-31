@@ -1,0 +1,24 @@
+{
+  "id": "1454c69c-e96e-4c4e-98e4-7736db0ef0a7",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A lattice is a partially ordered set in which every pair has a\ngreatest lower bound (meet) and a least upper bound (join). The\npower set $\\mathcal{P}(X)$ is a lattice under inclusion, with\nmeet given by intersection and join by union.",
+  "page": null,
+  "source": "TextDefinition: \"A lattice is a partially ordered set in which every pair has a\n                 greatest lower bound (meet) and a least upper bound (join). The\n                 power set $\\mathcal{P}(X)$ is a lattice under inclusion, with\n                 meet given by intersection and join by union.\"\nId: \"1454c69c-e96e-4c4e-98e4-7736db0ef0a7\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A lattice is a partially ordered set in which every pair has a\n                 greatest lower bound (meet) and a least upper bound (join). The\n                 power set $\\mathcal{P}(X)$ is a lattice under inclusion, with\n                 meet given by intersection and join by union.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1454c69c-e96e-4c4e-98e4-7736db0ef0a7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

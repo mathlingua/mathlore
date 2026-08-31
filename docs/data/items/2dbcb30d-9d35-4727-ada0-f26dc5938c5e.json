@@ -1,0 +1,24 @@
+{
+  "id": "2dbcb30d-9d35-4727-ada0-f26dc5938c5e",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "Suppose $f$ is holomorphic on a punctured neighborhood of\n$z_0$. The point is a removable singularity if $f$ extends\nholomorphically across $z_0$, a pole of order $m$ if its\nLaurent principal part has terms through $(z-z_0)^{-m}$ and no\nlower power, and an essential singularity if infinitely many\nnegative-power coefficients are nonzero. These three cases are\nmutually exclusive and exhaustive.",
+  "page": null,
+  "source": "TextDefinition: \"Suppose $f$ is holomorphic on a punctured neighborhood of\n                 $z_0$. The point is a removable singularity if $f$ extends\n                 holomorphically across $z_0$, a pole of order $m$ if its\n                 Laurent principal part has terms through $(z-z_0)^{-m}$ and no\n                 lower power, and an essential singularity if infinitely many\n                 negative-power coefficients are nonzero. These three cases are\n                 mutually exclusive and exhaustive.\"\nId: \"2dbcb30d-9d35-4727-ada0-f26dc5938c5e\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"Suppose $f$ is holomorphic on a punctured neighborhood of\n                 $z_0$. The point is a removable singularity if $f$ extends\n                 holomorphically across $z_0$, a pole of order $m$ if its\n                 Laurent principal part has terms through $(z-z_0)^{-m}$ and no\n                 lower power, and an essential singularity if infinitely many\n                 negative-power coefficients are nonzero. These three cases are\n                 mutually exclusive and exhaustive.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2dbcb30d-9d35-4727-ada0-f26dc5938c5e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

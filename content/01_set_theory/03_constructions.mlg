@@ -47,9 +47,9 @@ Documented:
 Id: "17401045-fc72-4bd4-af7d-ab578690f81c"
 
 
-Text: "The successor of a set adjoins the set itself as a new element to its
-       singleton. Iterating this operation from the empty set is precisely how
-       the natural numbers will be built in a later chapter."
+Text: "The successor of a set $X$ adjoins $X$ itself to the elements already in
+       $X$. Iterating this operation from the empty set is precisely how the
+       natural numbers will be built in a later chapter."
 Id: "f49b05f5-b826-45d0-b327-b248946e28fc"
 
 
@@ -61,7 +61,7 @@ expresses:
   then:
   . have: Z "in"? Y
     iff:
-    . (.Z = X.) \.or./ (.Z = \singleton.set:of{X}.)
+    . (.Z "in"? X.) \.or./ (.Z = X.)
 Documented:
 . called: "The set successor of $X?$"
 . written: "X? \cup \left \{ X? \right \}"
@@ -124,13 +124,13 @@ Id: "da7d91b3-693b-4ca2-ac2a-e94555b18c5f"
 
 
 [\pair:of{x, y}]
-Defines: p := \set:of{x, \set:of{x, y}} is \set
+Defines: p := \set:of{\set:of{x}, \set:of{x, y}} is \set
 when: x, y is \\anything
 Documented:
 . called: "pair of $x?$ and $y?$"
 . written: "\langle x?, y? \rangle"
 . description: "The ordered pair $\langle x, y \rangle$, encoded as the set
-                $\{x, \{x, y\}\}$. This encoding lets the first and second
+                $\{\{x\}, \{x, y\}\}$. This encoding lets the first and second
                 components be recovered from the set alone, so order is
                 meaningful even though sets are unordered."
 Id: "8fd9d494-2882-4639-bb50-44a56626d1c4"
@@ -153,3 +153,21 @@ Documented:
                 are subsets of its product with itself, and functions are
                 relations of a special kind."
 Id: "3bdd9cfb-f836-4d44-880a-873bb772cdef"
+
+
+TextTheorem: "The Kuratowski encoding satisfies the defining property of an
+              ordered pair: $\langle x,y\rangle=\langle u,v\rangle$ if and only
+              if $x=u$ and $y=v$. The particular set-theoretic encoding is not
+              mathematically canonical; its purpose is to realize an abstract
+              two-slot object using sets while preserving equality of
+              coordinates."
+Id: "31691bb2-e8e1-4218-be4f-759add2b7ab7"
+
+
+TextTheorem: "Cartesian product is associative only up to canonical bijection,
+              not literal equality under the ordered-pair encoding. The maps
+              $((a,b),c)\mapsto(a,(b,c))$ and its inverse identify
+              $(A\times B)\times C$ with $A\times(B\times C)$. This distinction
+              between equality and canonical isomorphism recurs throughout
+              algebra."
+Id: "cd332b77-e7cc-4e59-92e6-40decc503be8"

@@ -1,0 +1,27 @@
+{
+  "id": "28ca0a24-996b-449c-9980-74d13fd3a73f",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The two parts express inverse relationships at different logical levels.\nThe first constructs an antiderivative from a continuous integrand. The\nsecond evaluates an already existing integral through any antiderivative.\nNeither says that every derivative is continuous or that every bounded\nfunction is Riemann integrable."
+  },
+  "source": "Text: \"The two parts express inverse relationships at different logical levels.\n       The first constructs an antiderivative from a continuous integrand. The\n       second evaluates an already existing integral through any antiderivative.\n       Neither says that every derivative is continuous or that every bounded\n       function is Riemann integrable.\"\nId: \"28ca0a24-996b-449c-9980-74d13fd3a73f\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The two parts express inverse relationships at different logical levels.\n       The first constructs an antiderivative from a continuous integrand. The\n       second evaluates an already existing integral through any antiderivative.\n       Neither says that every derivative is continuous or that every bounded\n       function is Riemann integrable.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"28ca0a24-996b-449c-9980-74d13fd3a73f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "fe9c481f-c3a7-4367-8dde-a342561a4ccc",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Induction and recursion are dual aspects of the successor structure.\nInduction proves that a property holds at every stage; recursion defines\nan object at a stage from the objects already defined at earlier stages.\nBoth principles depend on the absence of hidden natural numbers beyond\nthose generated from zero by repeated succession."
+  },
+  "source": "Text: \"Induction and recursion are dual aspects of the successor structure.\n       Induction proves that a property holds at every stage; recursion defines\n       an object at a stage from the objects already defined at earlier stages.\n       Both principles depend on the absence of hidden natural numbers beyond\n       those generated from zero by repeated succession.\"\nId: \"fe9c481f-c3a7-4367-8dde-a342561a4ccc\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Induction and recursion are dual aspects of the successor structure.\n       Induction proves that a property holds at every stage; recursion defines\n       an object at a stage from the objects already defined at earlier stages.\n       Both principles depend on the absence of hidden natural numbers beyond\n       those generated from zero by repeated succession.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fe9c481f-c3a7-4367-8dde-a342561a4ccc\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

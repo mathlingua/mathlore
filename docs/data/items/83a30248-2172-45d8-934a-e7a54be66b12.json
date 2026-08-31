@@ -1,0 +1,24 @@
+{
+  "id": "83a30248-2172-45d8-934a-e7a54be66b12",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Cantor's theorem. For every set $A$, no function\n$f:A\\to\\mathcal{P}(A)$ is surjective. Indeed, the diagonal set\n$D=\\{a\\in A:a\\notin f(a)\\}$ differs from $f(a)$ at the element $a$\nfor every $a\\in A$. Hence $|A|<|\\mathcal{P}(A)|$, and there is no\nlargest cardinality.",
+  "page": null,
+  "source": "TextTheorem: \"Cantor's theorem. For every set $A$, no function\n              $f:A\\to\\mathcal{P}(A)$ is surjective. Indeed, the diagonal set\n              $D=\\{a\\in A:a\\notin f(a)\\}$ differs from $f(a)$ at the element $a$\n              for every $a\\in A$. Hence $|A|<|\\mathcal{P}(A)|$, and there is no\n              largest cardinality.\"\nId: \"83a30248-2172-45d8-934a-e7a54be66b12\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Cantor's theorem. For every set $A$, no function\n              $f:A\\to\\mathcal{P}(A)$ is surjective. Indeed, the diagonal set\n              $D=\\{a\\in A:a\\notin f(a)\\}$ differs from $f(a)$ at the element $a$\n              for every $a\\in A$. Hence $|A|<|\\mathcal{P}(A)|$, and there is no\n              largest cardinality.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"83a30248-2172-45d8-934a-e7a54be66b12\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

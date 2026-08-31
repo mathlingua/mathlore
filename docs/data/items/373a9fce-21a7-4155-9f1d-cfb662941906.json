@@ -1,0 +1,24 @@
+{
+  "id": "373a9fce-21a7-4155-9f1d-cfb662941906",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For an action of $G$ on $X$, the orbit of $x$ is\n$G\\cdot x=\\{g\\cdot x:g\\in G\\}$, and the stabilizer is\n$G_x=\\{g\\in G:g\\cdot x=x\\}$. Orbits partition $X$; stabilizers\nare subgroups of $G$. The kernel of the action is the\nintersection of all stabilizers, and the action is faithful\nexactly when this kernel is trivial.",
+  "page": null,
+  "source": "TextDefinition: \"For an action of $G$ on $X$, the orbit of $x$ is\n                 $G\\cdot x=\\{g\\cdot x:g\\in G\\}$, and the stabilizer is\n                 $G_x=\\{g\\in G:g\\cdot x=x\\}$. Orbits partition $X$; stabilizers\n                 are subgroups of $G$. The kernel of the action is the\n                 intersection of all stabilizers, and the action is faithful\n                 exactly when this kernel is trivial.\"\nId: \"373a9fce-21a7-4155-9f1d-cfb662941906\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For an action of $G$ on $X$, the orbit of $x$ is\n                 $G\\cdot x=\\{g\\cdot x:g\\in G\\}$, and the stabilizer is\n                 $G_x=\\{g\\in G:g\\cdot x=x\\}$. Orbits partition $X$; stabilizers\n                 are subgroups of $G$. The kernel of the action is the\n                 intersection of all stabilizers, and the action is faithful\n                 exactly when this kernel is trivial.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"373a9fce-21a7-4155-9f1d-cfb662941906\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "5ba55513-d2b3-458e-afd9-2fbd7507d47f",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "Two sets $A$ and $B$ have the same cardinality if there exists\na bijection $A\\to B$. We write $|A|\\leq|B|$ when there exists\nan injection $A\\to B$. A set is finite if it is bijective with\n$\\{0,\\ldots,n-1\\}$ for some natural number $n$; it is countably\ninfinite if it is bijective with $\\mathbb{N}$, and countable if\nit is finite or countably infinite.",
+  "page": null,
+  "source": "TextDefinition: \"Two sets $A$ and $B$ have the same cardinality if there exists\n                 a bijection $A\\to B$. We write $|A|\\leq|B|$ when there exists\n                 an injection $A\\to B$. A set is finite if it is bijective with\n                 $\\{0,\\ldots,n-1\\}$ for some natural number $n$; it is countably\n                 infinite if it is bijective with $\\mathbb{N}$, and countable if\n                 it is finite or countably infinite.\"\nId: \"5ba55513-d2b3-458e-afd9-2fbd7507d47f\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"Two sets $A$ and $B$ have the same cardinality if there exists\n                 a bijection $A\\to B$. We write $|A|\\leq|B|$ when there exists\n                 an injection $A\\to B$. A set is finite if it is bijective with\n                 $\\{0,\\ldots,n-1\\}$ for some natural number $n$; it is countably\n                 infinite if it is bijective with $\\mathbb{N}$, and countable if\n                 it is finite or countably infinite.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5ba55513-d2b3-458e-afd9-2fbd7507d47f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

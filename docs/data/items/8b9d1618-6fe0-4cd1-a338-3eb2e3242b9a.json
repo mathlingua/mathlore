@@ -1,0 +1,24 @@
+{
+  "id": "8b9d1618-6fe0-4cd1-a338-3eb2e3242b9a",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Orbit--stabilizer theorem. If a finite group $G$ acts on a set\n$X$, then for every $x\\in X$ one has $|G|=|G\\cdot x|\\,|G_x|$. More\ngenerally, the map $G/G_x\\to G\\cdot x$ given by\n$gG_x\\mapsto g\\cdot x$ is a well-defined bijection.",
+  "page": null,
+  "source": "TextTheorem: \"Orbit--stabilizer theorem. If a finite group $G$ acts on a set\n              $X$, then for every $x\\in X$ one has $|G|=|G\\cdot x|\\,|G_x|$. More\n              generally, the map $G/G_x\\to G\\cdot x$ given by\n              $gG_x\\mapsto g\\cdot x$ is a well-defined bijection.\"\nId: \"8b9d1618-6fe0-4cd1-a338-3eb2e3242b9a\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Orbit--stabilizer theorem. If a finite group $G$ acts on a set\n              $X$, then for every $x\\in X$ one has $|G|=|G\\cdot x|\\,|G_x|$. More\n              generally, the map $G/G_x\\to G\\cdot x$ given by\n              $gG_x\\mapsto g\\cdot x$ is a well-defined bijection.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8b9d1618-6fe0-4cd1-a338-3eb2e3242b9a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

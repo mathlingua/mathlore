@@ -1,8 +1,22 @@
-Text: "Welcome to **Mathlore**, a structured mathematical library and encyclopedia
-constructed from first principles using the **Mathlingua** language.
+Text: "**Mathlore** is a structured mathematical library written in the
+       **Mathlingua** language. Its purpose is expository as well as formal: a
+       definition should say what data are being introduced, a theorem should
+       make its hypotheses visible, and the surrounding prose should explain
+       why the concept is useful and how it fits into the larger theory.
 
-The goal of Mathlore is to provide an accessible, rigorous, and structurally-checked
-foundation for mathematics—spanning symbolic logic, axiomatic set theory, relations,
-function theory, number systems, and abstract algebra.
-"
+       The collection follows a dependency-conscious path. Logic supplies the
+       language of assertion and proof. Set theory supplies a common universe
+       of objects. Relations and functions express comparison and dependence.
+       The natural, integer, and rational number systems are then constructed
+       as successive solutions to limitations of the preceding system.
+       Abstract and linear algebra isolate structural patterns shared by those
+       examples. Real and complex analysis finally add completeness, limiting
+       processes, and the rigidity of holomorphic functions.
+
+       A displayed definition or result is meant to be read together with its
+       context. Definitions fix conventions that may differ across books;
+       theorem cards state mathematical content but do not replace proofs; and
+       conjecture cards mark claims whose status is intentionally unresolved.
+       The checker verifies the structure and internal references of the
+       library, not the truth of the mathematics."
 Id: "7bbe5cda-edfe-4c9a-8894-a3573ca752ac"

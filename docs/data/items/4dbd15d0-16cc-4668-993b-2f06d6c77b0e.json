@@ -1,0 +1,24 @@
+{
+  "id": "4dbd15d0-16cc-4668-993b-2f06d6c77b0e",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "The series $\\sum_{n=0}^{\\infty}a_n$ converges to $S$ if the\nsequence of partial sums $s_N=\\sum_{n=0}^{N}a_n$ converges to\n$S$. Thus an infinite sum is defined through a limit of finite\nsums. Necessarily $a_n\\to0$, but this condition is not\nsufficient for convergence.",
+  "page": null,
+  "source": "TextDefinition: \"The series $\\sum_{n=0}^{\\infty}a_n$ converges to $S$ if the\n                 sequence of partial sums $s_N=\\sum_{n=0}^{N}a_n$ converges to\n                 $S$. Thus an infinite sum is defined through a limit of finite\n                 sums. Necessarily $a_n\\to0$, but this condition is not\n                 sufficient for convergence.\"\nId: \"4dbd15d0-16cc-4668-993b-2f06d6c77b0e\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"The series $\\sum_{n=0}^{\\infty}a_n$ converges to $S$ if the\n                 sequence of partial sums $s_N=\\sum_{n=0}^{N}a_n$ converges to\n                 $S$. Thus an infinite sum is defined through a limit of finite\n                 sums. Necessarily $a_n\\to0$, but this condition is not\n                 sufficient for convergence.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4dbd15d0-16cc-4668-993b-2f06d6c77b0e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

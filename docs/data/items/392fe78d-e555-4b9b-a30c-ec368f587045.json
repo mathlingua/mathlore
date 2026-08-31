@@ -1,0 +1,24 @@
+{
+  "id": "392fe78d-e555-4b9b-a30c-ec368f587045",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Identity theorem. Let $U$ be a connected open subset of\n$\\mathbb{C}$ and let $f,g:U\\to\\mathbb{C}$ be holomorphic. If the\nset $\\{z\\in U:f(z)=g(z)\\}$ has an accumulation point in $U$, then\n$f=g$ throughout $U$. In particular, a nonzero holomorphic\nfunction has isolated zeros.",
+  "page": null,
+  "source": "TextTheorem: \"Identity theorem. Let $U$ be a connected open subset of\n              $\\mathbb{C}$ and let $f,g:U\\to\\mathbb{C}$ be holomorphic. If the\n              set $\\{z\\in U:f(z)=g(z)\\}$ has an accumulation point in $U$, then\n              $f=g$ throughout $U$. In particular, a nonzero holomorphic\n              function has isolated zeros.\"\nId: \"392fe78d-e555-4b9b-a30c-ec368f587045\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Identity theorem. Let $U$ be a connected open subset of\n              $\\mathbb{C}$ and let $f,g:U\\to\\mathbb{C}$ be holomorphic. If the\n              set $\\{z\\in U:f(z)=g(z)\\}$ has an accumulation point in $U$, then\n              $f=g$ throughout $U$. In particular, a nonzero holomorphic\n              function has isolated zeros.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"392fe78d-e555-4b9b-a30c-ec368f587045\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

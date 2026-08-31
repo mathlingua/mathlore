@@ -1,0 +1,24 @@
+{
+  "id": "bdb7d794-5eb2-41f5-823f-5f4f719266a3",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Complex conjugation satisfies $\\overline{z+w}=\\bar z+\\bar w$,\n$\\overline{zw}=\\bar z\\bar w$, and $z\\bar z=|z|^2$. Consequently\n$z^{-1}=\\bar z/|z|^2$ for $z\\ne0$. Geometrically, conjugation is\nreflection across the real axis.",
+  "page": null,
+  "source": "TextTheorem: \"Complex conjugation satisfies $\\overline{z+w}=\\bar z+\\bar w$,\n              $\\overline{zw}=\\bar z\\bar w$, and $z\\bar z=|z|^2$. Consequently\n              $z^{-1}=\\bar z/|z|^2$ for $z\\ne0$. Geometrically, conjugation is\n              reflection across the real axis.\"\nId: \"bdb7d794-5eb2-41f5-823f-5f4f719266a3\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Complex conjugation satisfies $\\overline{z+w}=\\bar z+\\bar w$,\n              $\\overline{zw}=\\bar z\\bar w$, and $z\\bar z=|z|^2$. Consequently\n              $z^{-1}=\\bar z/|z|^2$ for $z\\ne0$. Geometrically, conjugation is\n              reflection across the real axis.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"bdb7d794-5eb2-41f5-823f-5f4f719266a3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

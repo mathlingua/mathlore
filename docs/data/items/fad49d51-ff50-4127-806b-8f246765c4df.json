@@ -1,0 +1,24 @@
+{
+  "id": "fad49d51-ff50-4127-806b-8f246765c4df",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "The rational numbers are dense in the real numbers: if $x<y$,\nthere exists $q\\in\\mathbb{Q}$ with $x<q<y$. The irrational numbers\nare also dense. Density says that every nonempty open interval\nmeets each subset; it does not say that the subsets have equal\ncardinality or measure.",
+  "page": null,
+  "source": "TextTheorem: \"The rational numbers are dense in the real numbers: if $x<y$,\n              there exists $q\\in\\mathbb{Q}$ with $x<q<y$. The irrational numbers\n              are also dense. Density says that every nonempty open interval\n              meets each subset; it does not say that the subsets have equal\n              cardinality or measure.\"\nId: \"fad49d51-ff50-4127-806b-8f246765c4df\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"The rational numbers are dense in the real numbers: if $x<y$,\n              there exists $q\\in\\mathbb{Q}$ with $x<q<y$. The irrational numbers\n              are also dense. Density says that every nonempty open interval\n              meets each subset; it does not say that the subsets have equal\n              cardinality or measure.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fad49d51-ff50-4127-806b-8f246765c4df\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

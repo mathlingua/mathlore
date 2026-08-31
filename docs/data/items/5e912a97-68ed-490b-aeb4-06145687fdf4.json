@@ -1,0 +1,24 @@
+{
+  "id": "5e912a97-68ed-490b-aeb4-06145687fdf4",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "If $T:V\\to V$ has matrices $A$ and $A'$ in two ordered bases and\n$P$ is the change-of-basis matrix, then $A'=P^{-1}AP$. Thus\nmatrices of the same operator are similar. Quantities invariant\nunder similarity, including determinant, trace, characteristic\npolynomial, and eigenvalues with algebraic multiplicity, are\nintrinsic to the operator.",
+  "page": null,
+  "source": "TextTheorem: \"If $T:V\\to V$ has matrices $A$ and $A'$ in two ordered bases and\n              $P$ is the change-of-basis matrix, then $A'=P^{-1}AP$. Thus\n              matrices of the same operator are similar. Quantities invariant\n              under similarity, including determinant, trace, characteristic\n              polynomial, and eigenvalues with algebraic multiplicity, are\n              intrinsic to the operator.\"\nId: \"5e912a97-68ed-490b-aeb4-06145687fdf4\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"If $T:V\\to V$ has matrices $A$ and $A'$ in two ordered bases and\n              $P$ is the change-of-basis matrix, then $A'=P^{-1}AP$. Thus\n              matrices of the same operator are similar. Quantities invariant\n              under similarity, including determinant, trace, characteristic\n              polynomial, and eigenvalues with algebraic multiplicity, are\n              intrinsic to the operator.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5e912a97-68ed-490b-aeb4-06145687fdf4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

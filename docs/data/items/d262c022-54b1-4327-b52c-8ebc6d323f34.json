@@ -1,0 +1,24 @@
+{
+  "id": "d262c022-54b1-4327-b52c-8ebc6d323f34",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Rank--nullity theorem. If $T:V\\to W$ is linear and $V$ is\nfinite-dimensional, then\n$\\dim V=\\dim\\ker T+\\dim\\operatorname{im}T$. The theorem measures\nthe domain as the sum of information destroyed by $T$ and\ninformation retained in its image. Consequently $T$ is injective\nexactly when its nullity is zero.",
+  "page": null,
+  "source": "TextTheorem: \"Rank--nullity theorem. If $T:V\\to W$ is linear and $V$ is\n              finite-dimensional, then\n              $\\dim V=\\dim\\ker T+\\dim\\operatorname{im}T$. The theorem measures\n              the domain as the sum of information destroyed by $T$ and\n              information retained in its image. Consequently $T$ is injective\n              exactly when its nullity is zero.\"\nId: \"d262c022-54b1-4327-b52c-8ebc6d323f34\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Rank--nullity theorem. If $T:V\\to W$ is linear and $V$ is\n              finite-dimensional, then\n              $\\dim V=\\dim\\ker T+\\dim\\operatorname{im}T$. The theorem measures\n              the domain as the sum of information destroyed by $T$ and\n              information retained in its image. Consequently $T$ is injective\n              exactly when its nullity is zero.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d262c022-54b1-4327-b52c-8ebc6d323f34\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

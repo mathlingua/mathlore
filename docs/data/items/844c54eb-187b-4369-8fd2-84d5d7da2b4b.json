@@ -1,0 +1,24 @@
+{
+  "id": "844c54eb-187b-4369-8fd2-84d5d7da2b4b",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Strong induction. Let $P(n)$ be a predicate on $\\mathbb{N}$. If,\nfor every $n$, the assumption that $P(k)$ holds for all $k<n$\nimplies $P(n)$, then $P(n)$ holds for all $n$. Strong induction\nand ordinary induction are equivalent: ordinary induction can be\napplied to the cumulative statement that $P(k)$ holds for every\n$k\\leq n$.",
+  "page": null,
+  "source": "TextTheorem: \"Strong induction. Let $P(n)$ be a predicate on $\\mathbb{N}$. If,\n              for every $n$, the assumption that $P(k)$ holds for all $k<n$\n              implies $P(n)$, then $P(n)$ holds for all $n$. Strong induction\n              and ordinary induction are equivalent: ordinary induction can be\n              applied to the cumulative statement that $P(k)$ holds for every\n              $k\\leq n$.\"\nId: \"844c54eb-187b-4369-8fd2-84d5d7da2b4b\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Strong induction. Let $P(n)$ be a predicate on $\\mathbb{N}$. If,\n              for every $n$, the assumption that $P(k)$ holds for all $k<n$\n              implies $P(n)$, then $P(n)$ holds for all $n$. Strong induction\n              and ordinary induction are equivalent: ordinary induction can be\n              applied to the cumulative statement that $P(k)$ holds for every\n              $k\\leq n$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"844c54eb-187b-4369-8fd2-84d5d7da2b4b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

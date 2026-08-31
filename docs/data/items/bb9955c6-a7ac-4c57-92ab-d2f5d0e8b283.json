@@ -1,0 +1,27 @@
+{
+  "id": "bb9955c6-a7ac-4c57-92ab-d2f5d0e8b283",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A proof by cases establishes a conclusion under alternatives whose\ndisjunction is exhaustive. Each branch inherits the common hypotheses\nplus its case assumption. The branches need not be mutually exclusive,\nbut they must cover every possibility. In constructive arguments, the\ncases should also explain how any object claimed to exist is produced in\neach branch."
+  },
+  "source": "Text: \"A proof by cases establishes a conclusion under alternatives whose\n       disjunction is exhaustive. Each branch inherits the common hypotheses\n       plus its case assumption. The branches need not be mutually exclusive,\n       but they must cover every possibility. In constructive arguments, the\n       cases should also explain how any object claimed to exist is produced in\n       each branch.\"\nId: \"bb9955c6-a7ac-4c57-92ab-d2f5d0e8b283\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A proof by cases establishes a conclusion under alternatives whose\n       disjunction is exhaustive. Each branch inherits the common hypotheses\n       plus its case assumption. The branches need not be mutually exclusive,\n       but they must cover every possibility. In constructive arguments, the\n       cases should also explain how any object claimed to exist is produced in\n       each branch.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"bb9955c6-a7ac-4c57-92ab-d2f5d0e8b283\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "1f6fac61-9b16-4828-942f-293b25792dcf",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Bolzano--Weierstrass theorem. Every bounded sequence of real\nnumbers has a convergent subsequence. This is a compactness\nconsequence of completeness and is weaker than convergence of the\noriginal sequence.",
+  "page": null,
+  "source": "TextTheorem: \"Bolzano--Weierstrass theorem. Every bounded sequence of real\n              numbers has a convergent subsequence. This is a compactness\n              consequence of completeness and is weaker than convergence of the\n              original sequence.\"\nId: \"1f6fac61-9b16-4828-942f-293b25792dcf\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Bolzano--Weierstrass theorem. Every bounded sequence of real\n              numbers has a convergent subsequence. This is a compactness\n              consequence of completeness and is weaker than convergence of the\n              original sequence.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1f6fac61-9b16-4828-942f-293b25792dcf\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

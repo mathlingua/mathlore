@@ -1,0 +1,282 @@
+Title: "Groups and Subgroups"
+Id: "5bc745b6-657d-446f-b5f0-cae8c199112a"
+
+
+Text: "A *group* is a monoid in which every element has an inverse: for each $x$
+       there is a $y$ with $x * y = e$ and $y * x = e$. Groups are the central
+       structure of elementary algebra, being exactly the structures whose
+       operation can always be undone. They are the abstract theory of symmetry."
+Id: "5fb80940-d8de-44bf-8117-eeee203d4755"
+
+
+[\group]
+Declares: G ::= (X, *, e) is \monoid via (X, *, e)
+satisfies:
+. forAll: x "in" G
+  then:
+  . exists: y "in" G
+    suchThat:
+    . x * y = e
+    . y * x = e
+Enables:
+. capability: x_ "in" G :<->: x_ is \group.element:of{G}
+  written: "x_? \in G?"
+Documented:
+. called: "group"
+. description: "A group is a monoid in which every element $x$ has an inverse
+                $y$, so that $x * y = e = y * x$. Equivalently it is an
+                associative structure with identity in which every element is
+                invertible; this makes it a quasigroup as well as a monoid."
+Id: "e4d7371d-29bd-431f-ab09-e114fe89e5cf"
+
+
+Text: "A group is *finite* when its underlying set has finitely many elements.
+       The size of a finite group, its order, governs a great deal of its
+       structure, and finiteness is inherited directly from the underlying
+       monoid."
+Id: "6c628805-5df1-4ad5-b2c3-23bf7dad5acc"
+
+
+[\(finite)::group]
+Refines: G
+implicitly:
+specifies: G is \(finite)::monoid
+Documented:
+. adjective: "finite"
+Id: "28d2a1c1-89a5-4163-93e3-fbc21c97ec9a"
+
+
+Text: "The elements of a group inherit the operation of the group, and each also
+       carries an inverse. Writing $x^{-1}$ for the inverse of $x$ gives the
+       familiar notation used in computations."
+Id: "bb323028-2831-4d67-b784-b0918774ab3a"
+
+
+[\group.element:of{G}]
+Declares: x
+when: G is \group
+extends: x is \monoid.element:of{G}
+Enables:
+. capability: x.inv :=> \group.inverse:of{x}:in{G}
+  written: "x+?^{-1}"
+Documented:
+. called: "element of group $G?$"
+. description: "An element of a group is a member of its underlying set. Because
+                the ambient structure is a group, each such element $x$ has a
+                well-defined inverse $x^{-1}$, accessible through its inverse
+                operation."
+Id: "858abdda-c416-4a4e-a0bf-27ecf84cf008"
+
+
+[\group.inverse:of{x}:in{G ::= (X, *, e)}]
+Defines: y "in" G
+when:
+. G is \group
+. x "in" G
+expresses:
+. x * y = e
+. y * x = e
+Documented:
+. called: "group inverse of $x?$"
+. written: "x+?^{-1}"
+. description: "The inverse $x^{-1}$ of an element $x$ of a group is the unique
+                element $y$ satisfying $x * y = e = y * x$. Its uniqueness is
+                proved below; it is what allows every equation in a group to be
+                solved."
+Id: "9b52b844-0cfa-4238-8c73-8b38265cca81"
+
+
+Text: "Two elements of a magma *commute* when the order in which they are
+       combined does not affect the result. In a general group most pairs do not
+       commute; the ones that do are of particular interest."
+Id: "a36041ed-5bdd-4e9c-84ce-719a69b7708b"
+
+
+[x \.commutes.with:?in{M ::= (X, *)}./ y]
+States:
+when:
+. M is \magma
+. x, y "in" M
+that: x * y = y * x
+Documented:
+. called: "$x?$ commutes with $y?$@[M]{ in $M?$}"
+. description: "Two elements $x$ and $y$ of a magma commute when $x * y = y *
+                x$. An operation in which every pair of elements commutes is
+                exactly a commutative one."
+Id: "3d7a204c-966d-47e7-a5b4-8f9e20fd749c"
+
+
+SectionTitle: "Subgroups"
+Id: "29c1456f-88a5-4b56-a5b8-57859c40aedc"
+
+
+Text: "Before defining subgroups we record a small set-theoretic fact that the
+       definition needs: forming the Cartesian square of a subset lands inside
+       the Cartesian square of the whole set. It lets a subgroup's operation be
+       recognized as a restriction of the parent operation."
+Id: "7541e6eb-f20a-497b-ae90-65c891609d26"
+
+
+[\cross.of.subset.is.subset.of.cross]
+Theorem:
+given:
+. X is \set
+. Y \:subset:/ X
+then:
+. (.Y \.set.cross./ Y.) \:subset?:/ (.X \.set.cross./ X.)
+Id: "db0160ae-5d28-4ad1-b2b6-d22964a88a2b"
+
+
+Text: "A *subgroup* is a subset of a group that is itself a group under the
+       inherited operation. It must contain the identity, be closed under the
+       operation, and contain the inverse of each of its elements. Subgroups are
+       the substructures through which the internal architecture of a group is
+       studied."
+Id: "91933534-107f-44fe-9ad6-4829664f8cd6"
+
+
+[H ::= (X', *', e') \:subgroup:/ G ::= (X, *, e)]
+Declares: H ::= (X', *', e')
+when: G is \group
+specifies:
+. X' \:(nonempty)::subset:/ X
+. *' is \binary.operation:on{X'}
+. e' "in" X'
+satisfies:
+. (.*' := \restriction:of{`*`}:on{X' \.set.cross./ X'}.)[:1:]
+. have:
+  . forAll: x, y "in" H
+    then:
+    . x *' y "in" H
+    . x *' y = x * y
+  . forAll: x "in" H
+    then: x.inv "in" H
+  asserting: H is \group
+Documented:
+. called: "$H?$ is a subgroup of $G?$"
+. written: "H? \leq G?"
+. description: "A subgroup $H \leq G$ is a nonempty subset of $G$ that is closed
+                under the group operation and under taking inverses, and whose
+                operation is the restriction of that of $G$. Under these
+                conditions $H$ is again a group in its own right."
+Justification:
+. [1]
+  have: *' := \restriction:of{`*`}:on{X' \.set.cross./ X'}
+  asserting: (.X' \.set.cross./ X'.) \:subset?:/ (.G \.set.cross./ G.)
+  because: X' \:subset?:/ X
+  by: \cross.of.subset.is.subset.of.cross#given{X := X; Y := X'}
+Id: "d8fe82d3-6f50-4711-ad64-76d4eb0615ff"
+
+
+Text: "That a subgroup is genuinely a group is recorded as a theorem, making
+       explicit the property the definition was arranged to secure."
+Id: "5a7d1bd6-3a8d-4584-bc3d-505eb0ba0680"
+
+
+[\subgroup.is.group]
+Theorem:
+given:
+. G is \group
+. H \:subgroup:/ G
+then: H is? \group
+Id: "946d3180-8614-4bd2-8fd6-d9bdce721e04"
+
+
+SectionTitle: "Abelian Groups and Inversion Theorems"
+Id: "4f086ee9-6118-4df5-903c-f2463f65c0f1"
+
+
+Text: "When the operation of a group *is* commutative, the group is called
+       *abelian*. Abelian groups are far more tractable than groups in general,
+       and they are the setting for much of number theory and linear algebra."
+Id: "a608ecec-59d4-4939-a43e-3296c77eff39"
+
+
+[\(abelian)::group]
+Refines: G ::= (X, *, e)
+satisfies:
+. forAll: x, y "in" G
+  then: x * y = y * x
+Documented:
+. adjective: "abelian"
+Id: "1dc777cd-31a5-489a-8b5a-05b94c647fb9"
+
+
+Text: "A first computation in the group axioms: the inverse of a product is the
+       product of the inverses taken in the reverse order. The reversal is
+       essential, since the operation need not be commutative."
+Id: "a71309b4-a9ab-464d-a885-34cbcf992013"
+
+
+Theorem:
+given:
+. G is \group
+. x, y "in" G
+then: (x * y).inv = y.inv * x.inv
+Documented:
+. called: "Inverse of a Product"
+. description: "In any group, $(x * y)^{-1} = y^{-1} * x^{-1}$."
+Id: "ef1b2ca8-1e12-4779-8e32-ed5cf8787c68"
+
+
+Text: "Inverting an element twice returns the original element."
+Id: "6619e809-8d59-4180-820d-ff40b5914fdf"
+
+
+Theorem:
+given:
+. G ::= (X, *, e) is \group
+. x "in" G
+then: (x.inv).inv = x
+Documented:
+. called: "Double Inversion Law"
+. description: "$(x^{-1})^{-1} = x$ for every element in a group."
+Id: "8c61fb44-d5ab-4be8-804a-0d6a95d83331"
+
+
+Text: "Any two elements that both act as an inverse of $x$ must be equal.
+       Uniqueness is what justifies writing $x^{-1}$ for *the* inverse."
+Id: "de8e5629-d42e-4d98-b713-62d92e61d306"
+
+
+Theorem:
+given:
+. G ::= (X, *, e) is \group
+. x, y1, y2 "in" G
+where:
+. x * y1 = e
+. y1 * x = e
+. x * y2 = e
+. y2 * x = e
+then: y1 = y2
+Documented:
+. called: "Uniqueness of Inverses"
+. description: "If $y_1$ and $y_2$ both act as inverses for $x$, then
+                $y_1 = y_2$."
+Id: "a27fd487-85b4-4f18-b0ab-4be63db69f43"
+
+
+SectionTitle: "Structural Consequences"
+Id: "191bffbb-05de-4543-95d1-5161df7a4c17"
+
+
+TextTheorem: "Cancellation laws. In a group, $ax=ay$ implies $x=y$ and $xa=ya$
+              implies $x=y$. Consequently the equations $ax=b$ and $ya=b$ have
+              the unique solutions $x=a^{-1}b$ and $y=ba^{-1}$. The order of the
+              factors matters in a nonabelian group."
+Id: "24b48a0a-ec3e-49f2-acd4-80b979fcd209"
+
+
+TextTheorem: "Lagrange's theorem. If $G$ is finite and $H\leq G$, then $|H|$
+              divides $|G|$ and $|G|=[G:H]|H|$, where $[G:H]$ is the number of
+              left cosets of $H$. In particular, the order of every element
+              divides $|G|$. The converse need not hold: a divisor of $|G|$ need
+              not be the order of a subgroup."
+Id: "08d58b28-0472-45b2-b9f0-49c441c56fd8"
+
+
+TextTheorem: "Cayley's theorem. Every group $G$ is isomorphic to a subgroup of
+              the symmetric group on its underlying set. The embedding sends $g$
+              to the bijection $x\mapsto gx$. Thus abstract groups are precisely
+              groups of permutations, up to isomorphism."
+Id: "d9f52cc6-df8a-4e42-8fa7-d06aeb3669db"

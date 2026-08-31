@@ -1,0 +1,13 @@
+Text: "Abstract algebra studies operations through the identities they satisfy,
+       deliberately ignoring the internal nature of the elements. The chapter
+       moves from a single closed operation to monoids and groups, then studies
+       structure-preserving maps, rings, and fields. It concludes with quotient
+       objects and group actions, two constructions that reveal how algebraic
+       structures decompose and how they act as symmetries of other objects.
+
+       Three questions organize the discussion: what data constitute the
+       structure, which equations are required, and which maps preserve those
+       equations? Keeping these questions separate prevents notation from
+       concealing the distinction between a carrier set, its operations, and
+       the properties imposed on them."
+Id: "b9195008-47f2-4dae-be3e-0886194e6bd0"

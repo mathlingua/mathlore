@@ -1,0 +1,24 @@
+{
+  "id": "80b18cfd-d52b-4556-987e-18b4fc36d00b",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "If $V$ is finite-dimensional and $U,W\\leq V$, then\n$\\dim(U+W)+\\dim(U\\cap W)=\\dim U+\\dim W$. For a direct sum this\nreduces to $\\dim(U\\oplus W)=\\dim U+\\dim W$.",
+  "page": null,
+  "source": "TextTheorem: \"If $V$ is finite-dimensional and $U,W\\leq V$, then\n              $\\dim(U+W)+\\dim(U\\cap W)=\\dim U+\\dim W$. For a direct sum this\n              reduces to $\\dim(U\\oplus W)=\\dim U+\\dim W$.\"\nId: \"80b18cfd-d52b-4556-987e-18b4fc36d00b\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"If $V$ is finite-dimensional and $U,W\\leq V$, then\n              $\\dim(U+W)+\\dim(U\\cap W)=\\dim U+\\dim W$. For a direct sum this\n              reduces to $\\dim(U\\oplus W)=\\dim U+\\dim W$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"80b18cfd-d52b-4556-987e-18b4fc36d00b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

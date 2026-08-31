@@ -1,0 +1,24 @@
+{
+  "id": "93332ffc-3ecf-4c11-8d40-0c8124dc7057",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "If $f$ and $g$ are Riemann integrable on $[a,b]$ and\n$\\alpha,\\beta\\in\\mathbb{R}$, then\n$\\int_a^b(\\alpha f+\\beta g)=\\alpha\\int_a^b f+\n\\beta\\int_a^b g$. If $f\\leq g$ pointwise, then\n$\\int_a^b f\\leq\\int_a^b g$. Consequently\n$|\\int_a^b f|\\leq\\int_a^b|f|$.",
+  "page": null,
+  "source": "TextTheorem: \"If $f$ and $g$ are Riemann integrable on $[a,b]$ and\n              $\\alpha,\\beta\\in\\mathbb{R}$, then\n              $\\int_a^b(\\alpha f+\\beta g)=\\alpha\\int_a^b f+\n              \\beta\\int_a^b g$. If $f\\leq g$ pointwise, then\n              $\\int_a^b f\\leq\\int_a^b g$. Consequently\n              $|\\int_a^b f|\\leq\\int_a^b|f|$.\"\nId: \"93332ffc-3ecf-4c11-8d40-0c8124dc7057\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"If $f$ and $g$ are Riemann integrable on $[a,b]$ and\n              $\\alpha,\\beta\\in\\mathbb{R}$, then\n              $\\int_a^b(\\alpha f+\\beta g)=\\alpha\\int_a^b f+\n              \\beta\\int_a^b g$. If $f\\leq g$ pointwise, then\n              $\\int_a^b f\\leq\\int_a^b g$. Consequently\n              $|\\int_a^b f|\\leq\\int_a^b|f|$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"93332ffc-3ecf-4c11-8d40-0c8124dc7057\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

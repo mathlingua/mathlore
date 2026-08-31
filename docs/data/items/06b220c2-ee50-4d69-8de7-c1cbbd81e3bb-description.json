@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The definite Riemann integral $\\int_a^b f(x) dx$."
+    "text": "The definite Riemann integral $\\int_a^b f(x)\\,dx$, defined when\n$f$ is Riemann integrable on the interval."
   },
   "source": "",
   "sections": []

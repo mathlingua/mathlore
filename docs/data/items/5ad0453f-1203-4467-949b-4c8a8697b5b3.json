@@ -1,0 +1,24 @@
+{
+  "id": "5ad0453f-1203-4467-949b-4c8a8697b5b3",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Cantor--Schroeder--Bernstein theorem. If there is an injection\n$A\\to B$ and an injection $B\\to A$, then there is a bijection\n$A\\to B$. Consequently mutual cardinal inequalities imply equal\ncardinality without requiring either injection to be surjective.",
+  "page": null,
+  "source": "TextTheorem: \"Cantor--Schroeder--Bernstein theorem. If there is an injection\n              $A\\to B$ and an injection $B\\to A$, then there is a bijection\n              $A\\to B$. Consequently mutual cardinal inequalities imply equal\n              cardinality without requiring either injection to be surjective.\"\nId: \"5ad0453f-1203-4467-949b-4c8a8697b5b3\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Cantor--Schroeder--Bernstein theorem. If there is an injection\n              $A\\to B$ and an injection $B\\to A$, then there is a bijection\n              $A\\to B$. Consequently mutual cardinal inequalities imply equal\n              cardinality without requiring either injection to be surjective.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5ad0453f-1203-4467-949b-4c8a8697b5b3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

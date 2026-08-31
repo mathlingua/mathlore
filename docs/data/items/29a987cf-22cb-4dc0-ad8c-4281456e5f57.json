@@ -1,0 +1,27 @@
+{
+  "id": "29a987cf-22cb-4dc0-ad8c-4281456e5f57",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Inductive Proofs"
+  },
+  "source": "SectionTitle: \"Inductive Proofs\"\nId: \"29a987cf-22cb-4dc0-ad8c-4281456e5f57\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Inductive Proofs\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"29a987cf-22cb-4dc0-ad8c-4281456e5f57\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

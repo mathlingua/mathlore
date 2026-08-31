@@ -1,0 +1,27 @@
+{
+  "id": "64c6c4ea-6a77-413f-9dda-b1d4bb102443",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Restricted quantifiers are abbreviations whose expansions expose their\nlogic. The formula $\\forall x\\in D\\,P(x)$ means\n$\\forall x\\,(x\\in D\\Rightarrow P(x))$, whereas $\\exists x\\in D\\,P(x)$\nmeans $\\exists x\\,(x\\in D\\land P(x))$. The different connective is\nessential: using implication in the existential form would make any\nobject outside $D$ a vacuous witness."
+  },
+  "source": "Text: \"Restricted quantifiers are abbreviations whose expansions expose their\n       logic. The formula $\\forall x\\in D\\,P(x)$ means\n       $\\forall x\\,(x\\in D\\Rightarrow P(x))$, whereas $\\exists x\\in D\\,P(x)$\n       means $\\exists x\\,(x\\in D\\land P(x))$. The different connective is\n       essential: using implication in the existential form would make any\n       object outside $D$ a vacuous witness.\"\nId: \"64c6c4ea-6a77-413f-9dda-b1d4bb102443\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Restricted quantifiers are abbreviations whose expansions expose their\n       logic. The formula $\\forall x\\in D\\,P(x)$ means\n       $\\forall x\\,(x\\in D\\Rightarrow P(x))$, whereas $\\exists x\\in D\\,P(x)$\n       means $\\exists x\\,(x\\in D\\land P(x))$. The different connective is\n       essential: using implication in the existential form would make any\n       object outside $D$ a vacuous witness.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"64c6c4ea-6a77-413f-9dda-b1d4bb102443\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

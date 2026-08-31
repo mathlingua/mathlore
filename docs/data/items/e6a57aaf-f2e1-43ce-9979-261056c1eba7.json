@@ -1,0 +1,24 @@
+{
+  "id": "e6a57aaf-f2e1-43ce-9979-261056c1eba7",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A truth assignment on propositional variables assigns each\nvariable one of the values true and false and extends\nrecursively through the connectives. A formula is a tautology\nif it is true under every assignment, a contradiction if it is\nfalse under every assignment, and contingent otherwise. These\nare semantic classifications of formulas, not additional\nconnectives.",
+  "page": null,
+  "source": "TextDefinition: \"A truth assignment on propositional variables assigns each\n                 variable one of the values true and false and extends\n                 recursively through the connectives. A formula is a tautology\n                 if it is true under every assignment, a contradiction if it is\n                 false under every assignment, and contingent otherwise. These\n                 are semantic classifications of formulas, not additional\n                 connectives.\"\nId: \"e6a57aaf-f2e1-43ce-9979-261056c1eba7\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A truth assignment on propositional variables assigns each\n                 variable one of the values true and false and extends\n                 recursively through the connectives. A formula is a tautology\n                 if it is true under every assignment, a contradiction if it is\n                 false under every assignment, and contingent otherwise. These\n                 are semantic classifications of formulas, not additional\n                 connectives.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e6a57aaf-f2e1-43ce-9979-261056c1eba7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

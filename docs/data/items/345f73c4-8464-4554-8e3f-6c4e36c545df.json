@@ -1,0 +1,24 @@
+{
+  "id": "345f73c4-8464-4554-8e3f-6c4e36c545df",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "Two formulas are logically equivalent when they have the same\ntruth value under every common interpretation and variable\nassignment. Logical equivalence licenses replacement inside\nlarger formulas. Equality of mathematical objects is a\ndifferent, object-language relation and should not be conflated\nwith equivalence of formulas.",
+  "page": null,
+  "source": "TextDefinition: \"Two formulas are logically equivalent when they have the same\n                 truth value under every common interpretation and variable\n                 assignment. Logical equivalence licenses replacement inside\n                 larger formulas. Equality of mathematical objects is a\n                 different, object-language relation and should not be conflated\n                 with equivalence of formulas.\"\nId: \"345f73c4-8464-4554-8e3f-6c4e36c545df\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"Two formulas are logically equivalent when they have the same\n                 truth value under every common interpretation and variable\n                 assignment. Logical equivalence licenses replacement inside\n                 larger formulas. Equality of mathematical objects is a\n                 different, object-language relation and should not be conflated\n                 with equivalence of formulas.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"345f73c4-8464-4554-8e3f-6c4e36c545df\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

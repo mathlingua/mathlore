@@ -1,0 +1,24 @@
+{
+  "id": "5dd9f7fc-9815-4816-bc2a-737babe16bf9",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Euclidean division. For every integer $a$ and every positive\ninteger $b$, there exist unique integers $q$ and $r$ such that\n$a=bq+r$ and $0\\leq r<b$. The uniqueness depends on the specified\nrange for the remainder; without it, infinitely many pairs $(q,r)$\nrepresent the same equation.",
+  "page": null,
+  "source": "TextTheorem: \"Euclidean division. For every integer $a$ and every positive\n              integer $b$, there exist unique integers $q$ and $r$ such that\n              $a=bq+r$ and $0\\leq r<b$. The uniqueness depends on the specified\n              range for the remainder; without it, infinitely many pairs $(q,r)$\n              represent the same equation.\"\nId: \"5dd9f7fc-9815-4816-bc2a-737babe16bf9\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Euclidean division. For every integer $a$ and every positive\n              integer $b$, there exist unique integers $q$ and $r$ such that\n              $a=bq+r$ and $0\\leq r<b$. The uniqueness depends on the specified\n              range for the remainder; without it, infinitely many pairs $(q,r)$\n              represent the same equation.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5dd9f7fc-9815-4816-bc2a-737babe16bf9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

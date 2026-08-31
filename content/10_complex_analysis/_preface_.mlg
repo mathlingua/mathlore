@@ -1,0 +1,15 @@
+Text: "Complex analysis begins with the field $\mathbb{C}$ viewed
+       simultaneously as an algebraic extension of $\mathbb{R}$ and as the
+       Euclidean plane. A complex derivative must be independent of the
+       direction of approach. That apparently small strengthening of real
+       differentiability has far-reaching consequences: holomorphic functions
+       are analytic, their values obey integral formulas, and their isolated
+       singularities admit a complete local classification.
+
+       The chapter develops this rigidity in stages: complex arithmetic and
+       geometry, differentiability and the Cauchy--Riemann equations, contour
+       integration, and finally power series, Laurent series, singularities,
+       and residues. Domain hypotheses such as openness, connectedness, and
+       simple connectedness are stated explicitly because the principal
+       theorems are false without them."
+Id: "068103dc-1280-4311-815d-fac876f55582"

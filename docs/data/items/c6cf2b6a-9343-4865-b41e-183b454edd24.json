@@ -1,0 +1,24 @@
+{
+  "id": "c6cf2b6a-9343-4865-b41e-183b454edd24",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "An equivalence relation on $X$ and a partition of $X$ determine\none another. Equivalence classes form a partition; conversely,\ndeclaring two elements equivalent when they lie in the same block\nproduces an equivalence relation. Quotienting therefore formalizes\nthe act of forgetting distinctions within blocks.",
+  "page": null,
+  "source": "TextTheorem: \"An equivalence relation on $X$ and a partition of $X$ determine\n              one another. Equivalence classes form a partition; conversely,\n              declaring two elements equivalent when they lie in the same block\n              produces an equivalence relation. Quotienting therefore formalizes\n              the act of forgetting distinctions within blocks.\"\nId: \"c6cf2b6a-9343-4865-b41e-183b454edd24\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"An equivalence relation on $X$ and a partition of $X$ determine\n              one another. Equivalence classes form a partition; conversely,\n              declaring two elements equivalent when they lie in the same block\n              produces an equivalence relation. Quotienting therefore formalizes\n              the act of forgetting distinctions within blocks.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c6cf2b6a-9343-4865-b41e-183b454edd24\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

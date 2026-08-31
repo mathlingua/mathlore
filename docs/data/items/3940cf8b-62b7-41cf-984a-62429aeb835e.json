@@ -1,0 +1,24 @@
+{
+  "id": "3940cf8b-62b7-41cf-984a-62429aeb835e",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Principle of mathematical induction. Let $P(n)$ be a predicate on\n$\\mathbb{N}$. If $P(0)$ holds and, for every $n\\in\\mathbb{N}$,\n$P(n)$ implies $P(n+1)$, then $P(n)$ holds for every natural\nnumber $n$. The proof applies the Peano induction axiom to the set\n$A=\\{n\\in\\mathbb{N}:P(n)\\}$.",
+  "page": null,
+  "source": "TextTheorem: \"Principle of mathematical induction. Let $P(n)$ be a predicate on\n              $\\mathbb{N}$. If $P(0)$ holds and, for every $n\\in\\mathbb{N}$,\n              $P(n)$ implies $P(n+1)$, then $P(n)$ holds for every natural\n              number $n$. The proof applies the Peano induction axiom to the set\n              $A=\\{n\\in\\mathbb{N}:P(n)\\}$.\"\nId: \"3940cf8b-62b7-41cf-984a-62429aeb835e\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Principle of mathematical induction. Let $P(n)$ be a predicate on\n              $\\mathbb{N}$. If $P(0)$ holds and, for every $n\\in\\mathbb{N}$,\n              $P(n)$ implies $P(n+1)$, then $P(n)$ holds for every natural\n              number $n$. The proof applies the Peano induction axiom to the set\n              $A=\\{n\\in\\mathbb{N}:P(n)\\}$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3940cf8b-62b7-41cf-984a-62429aeb835e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

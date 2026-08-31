@@ -1,0 +1,24 @@
+{
+  "id": "35848afa-3031-4efe-9d76-d1b297bae371",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "The residue of $f$ at an isolated singularity $z_0$ is the\ncoefficient $a_{-1}$ in its Laurent expansion, written\n$\\operatorname{Res}(f,z_0)$. Equivalently, for a sufficiently\nsmall positively oriented circle $\\gamma$ around $z_0$,\n$\\operatorname{Res}(f,z_0)=\\frac{1}{2\\pi i}\n\\int_\\gamma f(z)\\,dz$.",
+  "page": null,
+  "source": "TextDefinition: \"The residue of $f$ at an isolated singularity $z_0$ is the\n                 coefficient $a_{-1}$ in its Laurent expansion, written\n                 $\\operatorname{Res}(f,z_0)$. Equivalently, for a sufficiently\n                 small positively oriented circle $\\gamma$ around $z_0$,\n                 $\\operatorname{Res}(f,z_0)=\\frac{1}{2\\pi i}\n                 \\int_\\gamma f(z)\\,dz$.\"\nId: \"35848afa-3031-4efe-9d76-d1b297bae371\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"The residue of $f$ at an isolated singularity $z_0$ is the\n                 coefficient $a_{-1}$ in its Laurent expansion, written\n                 $\\operatorname{Res}(f,z_0)$. Equivalently, for a sufficiently\n                 small positively oriented circle $\\gamma$ around $z_0$,\n                 $\\operatorname{Res}(f,z_0)=\\frac{1}{2\\pi i}\n                 \\int_\\gamma f(z)\\,dz$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"35848afa-3031-4efe-9d76-d1b297bae371\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

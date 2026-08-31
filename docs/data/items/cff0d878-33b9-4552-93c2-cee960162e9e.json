@@ -1,0 +1,24 @@
+{
+  "id": "cff0d878-33b9-4552-93c2-cee960162e9e",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A nonzero element $a$ of a commutative ring is a zero divisor\nif $ab=0$ for some nonzero $b$. An integral domain is a\nnontrivial commutative ring without zero divisors. Every field\nis an integral domain, but the converse fails; the integers\nform the standard example.",
+  "page": null,
+  "source": "TextDefinition: \"A nonzero element $a$ of a commutative ring is a zero divisor\n                 if $ab=0$ for some nonzero $b$. An integral domain is a\n                 nontrivial commutative ring without zero divisors. Every field\n                 is an integral domain, but the converse fails; the integers\n                 form the standard example.\"\nId: \"cff0d878-33b9-4552-93c2-cee960162e9e\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A nonzero element $a$ of a commutative ring is a zero divisor\n                 if $ab=0$ for some nonzero $b$. An integral domain is a\n                 nontrivial commutative ring without zero divisors. Every field\n                 is an integral domain, but the converse fails; the integers\n                 form the standard example.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"cff0d878-33b9-4552-93c2-cee960162e9e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

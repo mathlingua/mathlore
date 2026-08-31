@@ -1,0 +1,27 @@
+{
+  "id": "444dcd3d-8c00-4c65-b55b-29b727f143dd",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Subsequences and Infinite Sums"
+  },
+  "source": "SectionTitle: \"Subsequences and Infinite Sums\"\nId: \"444dcd3d-8c00-4c65-b55b-29b727f143dd\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Subsequences and Infinite Sums\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"444dcd3d-8c00-4c65-b55b-29b727f143dd\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

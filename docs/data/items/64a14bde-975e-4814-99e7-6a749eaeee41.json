@@ -1,0 +1,24 @@
+{
+  "id": "64a14bde-975e-4814-99e7-6a749eaeee41",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A complex power series centered at $z_0$ is an expression\n$\\sum_{n=0}^{\\infty}a_n(z-z_0)^n$. There is a radius\n$R\\in[0,\\infty]$ such that the series converges absolutely for\n$|z-z_0|<R$ and diverges for $|z-z_0|>R$. On every closed disk\nof radius less than $R$, convergence is uniform, so the sum may\nbe differentiated and integrated term by term.",
+  "page": null,
+  "source": "TextDefinition: \"A complex power series centered at $z_0$ is an expression\n                 $\\sum_{n=0}^{\\infty}a_n(z-z_0)^n$. There is a radius\n                 $R\\in[0,\\infty]$ such that the series converges absolutely for\n                 $|z-z_0|<R$ and diverges for $|z-z_0|>R$. On every closed disk\n                 of radius less than $R$, convergence is uniform, so the sum may\n                 be differentiated and integrated term by term.\"\nId: \"64a14bde-975e-4814-99e7-6a749eaeee41\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A complex power series centered at $z_0$ is an expression\n                 $\\sum_{n=0}^{\\infty}a_n(z-z_0)^n$. There is a radius\n                 $R\\in[0,\\infty]$ such that the series converges absolutely for\n                 $|z-z_0|<R$ and diverges for $|z-z_0|>R$. On every closed disk\n                 of radius less than $R$, convergence is uniform, so the sum may\n                 be differentiated and integrated term by term.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"64a14bde-975e-4814-99e7-6a749eaeee41\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

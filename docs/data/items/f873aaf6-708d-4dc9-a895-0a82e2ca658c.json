@@ -1,0 +1,27 @@
+{
+  "id": "f873aaf6-708d-4dc9-a895-0a82e2ca658c",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An action turns structural questions into counting and geometry. A\ntransitive action has a single orbit and presents $X$ as a coset space.\nConjugation of $G$ on itself has conjugacy classes as orbits and\ncentralizers as stabilizers. These examples explain why quotient groups\nand actions are not separate topics but two views of the same symmetry\nmechanism."
+  },
+  "source": "Text: \"An action turns structural questions into counting and geometry. A\n       transitive action has a single orbit and presents $X$ as a coset space.\n       Conjugation of $G$ on itself has conjugacy classes as orbits and\n       centralizers as stabilizers. These examples explain why quotient groups\n       and actions are not separate topics but two views of the same symmetry\n       mechanism.\"\nId: \"f873aaf6-708d-4dc9-a895-0a82e2ca658c\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"An action turns structural questions into counting and geometry. A\n       transitive action has a single orbit and presents $X$ as a coset space.\n       Conjugation of $G$ on itself has conjugacy classes as orbits and\n       centralizers as stabilizers. These examples explain why quotient groups\n       and actions are not separate topics but two views of the same symmetry\n       mechanism.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f873aaf6-708d-4dc9-a895-0a82e2ca658c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "c4a53239-7a55-42f6-b469-e71554a3d2f9",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "If a holomorphic function has nonzero derivative at $z_0$, it is\nconformal there: it preserves oriented angles and scales all\ninfinitesimal directions by the same factor $|f'(z_0)|$. When\n$f'(z_0)=0$, angle preservation can fail, so holomorphy alone does\nnot imply conformality at every point.",
+  "page": null,
+  "source": "TextTheorem: \"If a holomorphic function has nonzero derivative at $z_0$, it is\n              conformal there: it preserves oriented angles and scales all\n              infinitesimal directions by the same factor $|f'(z_0)|$. When\n              $f'(z_0)=0$, angle preservation can fail, so holomorphy alone does\n              not imply conformality at every point.\"\nId: \"c4a53239-7a55-42f6-b469-e71554a3d2f9\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"If a holomorphic function has nonzero derivative at $z_0$, it is\n              conformal there: it preserves oriented angles and scales all\n              infinitesimal directions by the same factor $|f'(z_0)|$. When\n              $f'(z_0)=0$, angle preservation can fail, so holomorphy alone does\n              not imply conformality at every point.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c4a53239-7a55-42f6-b469-e71554a3d2f9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

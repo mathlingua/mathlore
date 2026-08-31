@@ -1,0 +1,24 @@
+{
+  "id": "6b44eb1b-43c8-497e-a408-348353760216",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Cauchy's integral formula. Under the corresponding disk or\nwinding-number hypotheses, if $z_0$ lies inside a positively\noriented simple closed contour $\\gamma$, then\n$f(z_0)=\\frac{1}{2\\pi i}\\int_\\gamma\n\\frac{f(z)}{z-z_0}\\,dz$. Differentiating the formula yields\n$f^{(n)}(z_0)=\\frac{n!}{2\\pi i}\\int_\\gamma\n\\frac{f(z)}{(z-z_0)^{n+1}}\\,dz$.",
+  "page": null,
+  "source": "TextTheorem: \"Cauchy's integral formula. Under the corresponding disk or\n              winding-number hypotheses, if $z_0$ lies inside a positively\n              oriented simple closed contour $\\gamma$, then\n              $f(z_0)=\\frac{1}{2\\pi i}\\int_\\gamma\n              \\frac{f(z)}{z-z_0}\\,dz$. Differentiating the formula yields\n              $f^{(n)}(z_0)=\\frac{n!}{2\\pi i}\\int_\\gamma\n              \\frac{f(z)}{(z-z_0)^{n+1}}\\,dz$.\"\nId: \"6b44eb1b-43c8-497e-a408-348353760216\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Cauchy's integral formula. Under the corresponding disk or\n              winding-number hypotheses, if $z_0$ lies inside a positively\n              oriented simple closed contour $\\gamma$, then\n              $f(z_0)=\\frac{1}{2\\pi i}\\int_\\gamma\n              \\frac{f(z)}{z-z_0}\\,dz$. Differentiating the formula yields\n              $f^{(n)}(z_0)=\\frac{n!}{2\\pi i}\\int_\\gamma\n              \\frac{f(z)}{(z-z_0)^{n+1}}\\,dz$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6b44eb1b-43c8-497e-a408-348353760216\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

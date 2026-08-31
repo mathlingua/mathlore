@@ -1,0 +1,24 @@
+{
+  "id": "690ee3e8-39a6-4853-8df9-7d0b9e1cec5a",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "In a partially ordered set, a maximal element need not be a\ngreatest element. A greatest element is above every element and\nis necessarily unique; a maximal element merely has no strictly\nlarger comparable element, and several maximal elements may\ncoexist. The analogous distinction holds between minimal and\nleast elements.",
+  "page": null,
+  "source": "TextDefinition: \"In a partially ordered set, a maximal element need not be a\n                 greatest element. A greatest element is above every element and\n                 is necessarily unique; a maximal element merely has no strictly\n                 larger comparable element, and several maximal elements may\n                 coexist. The analogous distinction holds between minimal and\n                 least elements.\"\nId: \"690ee3e8-39a6-4853-8df9-7d0b9e1cec5a\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"In a partially ordered set, a maximal element need not be a\n                 greatest element. A greatest element is above every element and\n                 is necessarily unique; a maximal element merely has no strictly\n                 larger comparable element, and several maximal elements may\n                 coexist. The analogous distinction holds between minimal and\n                 least elements.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"690ee3e8-39a6-4853-8df9-7d0b9e1cec5a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

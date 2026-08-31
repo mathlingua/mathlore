@@ -1,0 +1,24 @@
+{
+  "id": "b1263e32-5964-4429-bd0c-7ed965ffa9a1",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Archimedean property. For every real number $x$ there exists a\nnatural number $n$ with $n>x$. Equivalently, for every\n$\\epsilon>0$ there exists $n\\in\\mathbb{N}$ with $0<1/n<\\epsilon$.\nAlthough this property is often treated as obvious, it follows\nfrom completeness and excludes infinitely large or positive\ninfinitesimal real numbers.",
+  "page": null,
+  "source": "TextTheorem: \"Archimedean property. For every real number $x$ there exists a\n              natural number $n$ with $n>x$. Equivalently, for every\n              $\\epsilon>0$ there exists $n\\in\\mathbb{N}$ with $0<1/n<\\epsilon$.\n              Although this property is often treated as obvious, it follows\n              from completeness and excludes infinitely large or positive\n              infinitesimal real numbers.\"\nId: \"b1263e32-5964-4429-bd0c-7ed965ffa9a1\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Archimedean property. For every real number $x$ there exists a\n              natural number $n$ with $n>x$. Equivalently, for every\n              $\\epsilon>0$ there exists $n\\in\\mathbb{N}$ with $0<1/n<\\epsilon$.\n              Although this property is often treated as obvious, it follows\n              from completeness and excludes infinitely large or positive\n              infinitesimal real numbers.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b1263e32-5964-4429-bd0c-7ed965ffa9a1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

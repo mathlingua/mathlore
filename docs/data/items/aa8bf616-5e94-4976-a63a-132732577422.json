@@ -1,0 +1,24 @@
+{
+  "id": "aa8bf616-5e94-4976-a63a-132732577422",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "For subsets of a fixed universe $U$, union and intersection are\nassociative, commutative, and idempotent; each distributes over\nthe other. With complement $A^c=U\\setminus A$, they satisfy De\nMorgan's laws $(A\\cup B)^c=A^c\\cap B^c$ and\n$(A\\cap B)^c=A^c\\cup B^c$. The reference to $U$ is part of the\ndefinition of complement.",
+  "page": null,
+  "source": "TextTheorem: \"For subsets of a fixed universe $U$, union and intersection are\n              associative, commutative, and idempotent; each distributes over\n              the other. With complement $A^c=U\\setminus A$, they satisfy De\n              Morgan's laws $(A\\cup B)^c=A^c\\cap B^c$ and\n              $(A\\cap B)^c=A^c\\cup B^c$. The reference to $U$ is part of the\n              definition of complement.\"\nId: \"aa8bf616-5e94-4976-a63a-132732577422\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"For subsets of a fixed universe $U$, union and intersection are\n              associative, commutative, and idempotent; each distributes over\n              the other. With complement $A^c=U\\setminus A$, they satisfy De\n              Morgan's laws $(A\\cup B)^c=A^c\\cap B^c$ and\n              $(A\\cap B)^c=A^c\\cup B^c$. The reference to $U$ is part of the\n              definition of complement.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"aa8bf616-5e94-4976-a63a-132732577422\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "24b48a0a-ec3e-49f2-acd4-80b979fcd209",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Cancellation laws. In a group, $ax=ay$ implies $x=y$ and $xa=ya$\nimplies $x=y$. Consequently the equations $ax=b$ and $ya=b$ have\nthe unique solutions $x=a^{-1}b$ and $y=ba^{-1}$. The order of the\nfactors matters in a nonabelian group.",
+  "page": null,
+  "source": "TextTheorem: \"Cancellation laws. In a group, $ax=ay$ implies $x=y$ and $xa=ya$\n              implies $x=y$. Consequently the equations $ax=b$ and $ya=b$ have\n              the unique solutions $x=a^{-1}b$ and $y=ba^{-1}$. The order of the\n              factors matters in a nonabelian group.\"\nId: \"24b48a0a-ec3e-49f2-acd4-80b979fcd209\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Cancellation laws. In a group, $ax=ay$ implies $x=y$ and $xa=ya$\n              implies $x=y$. Consequently the equations $ax=b$ and $ya=b$ have\n              the unique solutions $x=a^{-1}b$ and $y=ba^{-1}$. The order of the\n              factors matters in a nonabelian group.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"24b48a0a-ec3e-49f2-acd4-80b979fcd209\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

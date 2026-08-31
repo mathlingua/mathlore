@@ -1,0 +1,24 @@
+{
+  "id": "1c5bfe13-52ac-46ae-b75c-af1d8db93224",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "If $N\\trianglelefteq G$, the set $G/N$ of cosets becomes a group\nunder $(gN)(hN)=(gh)N$. The identity is $N$ and\n$(gN)^{-1}=g^{-1}N$. If $N$ is not normal, the same formula can\ndepend on the representatives $g$ and $h$ and therefore does not\ndefine a binary operation on the coset set.",
+  "page": null,
+  "source": "TextTheorem: \"If $N\\trianglelefteq G$, the set $G/N$ of cosets becomes a group\n              under $(gN)(hN)=(gh)N$. The identity is $N$ and\n              $(gN)^{-1}=g^{-1}N$. If $N$ is not normal, the same formula can\n              depend on the representatives $g$ and $h$ and therefore does not\n              define a binary operation on the coset set.\"\nId: \"1c5bfe13-52ac-46ae-b75c-af1d8db93224\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"If $N\\trianglelefteq G$, the set $G/N$ of cosets becomes a group\n              under $(gN)(hN)=(gh)N$. The identity is $N$ and\n              $(gN)^{-1}=g^{-1}N$. If $N$ is not normal, the same formula can\n              depend on the representatives $g$ and $h$ and therefore does not\n              define a binary operation on the coset set.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1c5bfe13-52ac-46ae-b75c-af1d8db93224\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

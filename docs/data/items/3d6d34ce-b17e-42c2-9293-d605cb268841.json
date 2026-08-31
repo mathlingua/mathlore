@@ -1,0 +1,27 @@
+{
+  "id": "3d6d34ce-b17e-42c2-9293-d605cb268841",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "These conjectures differ in language but share a methodological lesson.\nDefinitions and known theorems constrain where a counterexample could\noccur; computation and partial results supply evidence; only a proof can\npromote the conjecture to a theorem. A future resolution should change\nthe card's status rather than silently changing the meaning of the\nstatement."
+  },
+  "source": "Text: \"These conjectures differ in language but share a methodological lesson.\n       Definitions and known theorems constrain where a counterexample could\n       occur; computation and partial results supply evidence; only a proof can\n       promote the conjecture to a theorem. A future resolution should change\n       the card's status rather than silently changing the meaning of the\n       statement.\"\nId: \"3d6d34ce-b17e-42c2-9293-d605cb268841\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"These conjectures differ in language but share a methodological lesson.\n       Definitions and known theorems constrain where a counterexample could\n       occur; computation and partial results supply evidence; only a proof can\n       promote the conjecture to a theorem. A future resolution should change\n       the card's status rather than silently changing the meaning of the\n       statement.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3d6d34ce-b17e-42c2-9293-d605cb268841\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

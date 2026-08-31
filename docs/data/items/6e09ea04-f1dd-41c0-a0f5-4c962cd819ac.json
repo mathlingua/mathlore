@@ -1,0 +1,24 @@
+{
+  "id": "6e09ea04-f1dd-41c0-a0f5-4c962cd819ac",
+  "kind": "TextAxiom",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Axiom}",
+  "body_text": "Axiom schema of replacement. Suppose a formula $\\varphi(x,y)$ is\nfunctional on a set $A$: for each $x\\in A$ there is exactly one $y$\nsuch that $\\varphi(x,y)$. Then the range\n$\\{y:\\exists x\\in A\\,\\varphi(x,y)\\}$ is a set. Replacement permits a\nset-sized family of objects to be collected even when no common\nambient set for those objects was known in advance.",
+  "page": null,
+  "source": "TextAxiom: \"Axiom schema of replacement. Suppose a formula $\\varphi(x,y)$ is\n            functional on a set $A$: for each $x\\in A$ there is exactly one $y$\n            such that $\\varphi(x,y)$. Then the range\n            $\\{y:\\exists x\\in A\\,\\varphi(x,y)\\}$ is a set. Replacement permits a\n            set-sized family of objects to be collected even when no common\n            ambient set for those objects was known in advance.\"\nId: \"6e09ea04-f1dd-41c0-a0f5-4c962cd819ac\"",
+  "sections": [
+    {
+      "label": "TextAxiom",
+      "inline_argument": "\"Axiom schema of replacement. Suppose a formula $\\varphi(x,y)$ is\n            functional on a set $A$: for each $x\\in A$ there is exactly one $y$\n            such that $\\varphi(x,y)$. Then the range\n            $\\{y:\\exists x\\in A\\,\\varphi(x,y)\\}$ is a set. Replacement permits a\n            set-sized family of objects to be collected even when no common\n            ambient set for those objects was known in advance.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6e09ea04-f1dd-41c0-a0f5-4c962cd819ac\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

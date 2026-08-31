@@ -1,0 +1,107 @@
+Title: "Axiom Systems and Size"
+Id: "4183ca80-b7a4-47be-9619-0f46dafc8553"
+
+
+Text: "The elementary constructors do not by themselves constitute the usual
+       Zermelo--Fraenkel theory. Modern set theory also controls how formulas
+       select members of an existing set, how functional assignments produce new
+       sets, and how membership chains behave. These principles are stated as
+       schemes because one axiom is supplied for every suitable formula in the
+       language."
+Id: "ddb95a61-dddb-4c5a-bb15-430be7091d5a"
+
+
+SectionTitle: "Separation and Replacement"
+Id: "b04301f4-2e38-4797-b6cd-626d4be8bcb7"
+
+
+TextAxiom: "Axiom schema of separation. For every set $A$ and every formula
+            $\varphi(x)$, with any fixed parameters, there exists a set
+            $B=\{x\in A: \varphi(x)\}$. Thus a property may carve a subset from
+            a previously given set. The ambient set $A$ is indispensable:
+            separation does not assert the existence of an unrestricted set
+            $\{x:\varphi(x)\}$."
+Id: "5077fbc7-a5c8-4d60-b1a7-a9d65097f003"
+
+
+TextAxiom: "Axiom schema of replacement. Suppose a formula $\varphi(x,y)$ is
+            functional on a set $A$: for each $x\in A$ there is exactly one $y$
+            such that $\varphi(x,y)$. Then the range
+            $\{y:\exists x\in A\,\varphi(x,y)\}$ is a set. Replacement permits a
+            set-sized family of objects to be collected even when no common
+            ambient set for those objects was known in advance."
+Id: "6e09ea04-f1dd-41c0-a0f5-4c962cd819ac"
+
+
+Text: "Separation selects members already lying in one set; replacement sends
+       members of a set to uniquely determined outputs. The distinction becomes
+       important in transfinite constructions. Replacement ensures that the
+       values obtained at all earlier stages still form a set to which union or
+       another constructor can be applied."
+Id: "1cbdad45-8bc2-4388-8a12-19b187499517"
+
+
+SectionTitle: "Foundation and Choice"
+Id: "960e9966-e880-421a-afa0-c8c753476a7c"
+
+
+TextAxiom: "Axiom of foundation. Every nonempty set $A$ has an element $a$
+            disjoint from $A$. Equivalently in the presence of the other ZF
+            axioms, there is no infinite descending membership chain
+            $x_0\ni x_1\ni x_2\ni\cdots$. Foundation supports proofs and
+            definitions by membership recursion and excludes self-membership
+            phenomena such as $x\in x$."
+Id: "cc3fc1c3-8ea9-45a6-874c-9215525952f4"
+
+
+TextAxiom: "Axiom of choice. For every set $I$ and every family $(A_i)_{i\in I}$
+            of nonempty sets, there exists a function $f$ on $I$ such that
+            $f(i)\in A_i$ for every $i\in I$. The assertion is substantive when
+            the family is infinite and no canonical rule for choosing the
+            elements is available. ZF together with this axiom is denoted ZFC."
+Id: "3f1ec40e-207c-431e-918e-7a8f4f23fa46"
+
+
+TextTheorem: "Over ZF, the axiom of choice is equivalent to each of the
+              following principles: every set can be well ordered; every
+              partially ordered set in which each chain has an upper bound has a
+              maximal element (Zorn's lemma); and every surjective function
+              admits a right inverse. The equivalences allow choice to enter a
+              proof in the form best adapted to its subject."
+Id: "694788bb-a939-406b-8a3f-62730d8d0399"
+
+
+SectionTitle: "Cardinality and Cantor's Theorem"
+Id: "ce8978c6-895a-4528-bc27-a1796c5fc751"
+
+
+TextDefinition: "Two sets $A$ and $B$ have the same cardinality if there exists
+                 a bijection $A\to B$. We write $|A|\leq|B|$ when there exists
+                 an injection $A\to B$. A set is finite if it is bijective with
+                 $\{0,\ldots,n-1\}$ for some natural number $n$; it is countably
+                 infinite if it is bijective with $\mathbb{N}$, and countable if
+                 it is finite or countably infinite."
+Id: "5ba55513-d2b3-458e-afd9-2fbd7507d47f"
+
+
+TextTheorem: "Cantor--Schroeder--Bernstein theorem. If there is an injection
+              $A\to B$ and an injection $B\to A$, then there is a bijection
+              $A\to B$. Consequently mutual cardinal inequalities imply equal
+              cardinality without requiring either injection to be surjective."
+Id: "5ad0453f-1203-4467-949b-4c8a8697b5b3"
+
+
+TextTheorem: "Cantor's theorem. For every set $A$, no function
+              $f:A\to\mathcal{P}(A)$ is surjective. Indeed, the diagonal set
+              $D=\{a\in A:a\notin f(a)\}$ differs from $f(a)$ at the element $a$
+              for every $a\in A$. Hence $|A|<|\mathcal{P}(A)|$, and there is no
+              largest cardinality."
+Id: "83a30248-2172-45d8-934a-e7a54be66b12"
+
+
+Text: "Cantor's diagonal argument illustrates the foundational discipline of the
+       chapter. The set $D$ exists by separation from $A$, not by unrestricted
+       comprehension. Its definition then converts the assumption that $f$ lists
+       every subset of $A$ into the contradiction $d\in D\iff d\notin D$ at a
+       purported index $d$ for $D$."
+Id: "8d163eb8-a148-43d1-80b3-38c54e51e278"

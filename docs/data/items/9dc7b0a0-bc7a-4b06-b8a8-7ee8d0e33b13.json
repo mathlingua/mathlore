@@ -1,0 +1,24 @@
+{
+  "id": "9dc7b0a0-bc7a-4b06-b8a8-7ee8d0e33b13",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Absolute convergence implies convergence: if $\\sum|a_n|<\\infty$,\nthen $\\sum a_n$ converges. For absolutely convergent series, every\nrearrangement has the same sum. A conditionally convergent real\nseries behaves differently: its terms can be rearranged to\nconverge to any prescribed real value or to diverge.",
+  "page": null,
+  "source": "TextTheorem: \"Absolute convergence implies convergence: if $\\sum|a_n|<\\infty$,\n              then $\\sum a_n$ converges. For absolutely convergent series, every\n              rearrangement has the same sum. A conditionally convergent real\n              series behaves differently: its terms can be rearranged to\n              converge to any prescribed real value or to diverge.\"\nId: \"9dc7b0a0-bc7a-4b06-b8a8-7ee8d0e33b13\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Absolute convergence implies convergence: if $\\sum|a_n|<\\infty$,\n              then $\\sum a_n$ converges. For absolutely convergent series, every\n              rearrangement has the same sum. A conditionally convergent real\n              series behaves differently: its terms can be rearranged to\n              converge to any prescribed real value or to diverge.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"9dc7b0a0-bc7a-4b06-b8a8-7ee8d0e33b13\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

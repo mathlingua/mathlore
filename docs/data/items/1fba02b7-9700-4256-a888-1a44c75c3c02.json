@@ -1,0 +1,27 @@
+{
+  "id": "1fba02b7-9700-4256-a888-1a44c75c3c02",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Truth Assignments and Expressive Power"
+  },
+  "source": "SectionTitle: \"Truth Assignments and Expressive Power\"\nId: \"1fba02b7-9700-4256-a888-1a44c75c3c02\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Truth Assignments and Expressive Power\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1fba02b7-9700-4256-a888-1a44c75c3c02\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

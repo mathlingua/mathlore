@@ -1,0 +1,153 @@
+Title: "Rings and Fields"
+Id: "832946c5-ae2c-47d4-b445-3ded9c71199c"
+
+
+Text: "Equipping a set with both addition and multiplication gives rise to rings
+       and fields. In a ring, addition forms an abelian group, multiplication
+       forms a monoid, and multiplication distributes over addition."
+Id: "7c74e436-b04f-4233-8161-ed9e8ffc13a7"
+
+
+SectionTitle: "Rings"
+Id: "0297b76e-dfa0-495e-a363-8f9f27d2ded3"
+
+
+[\ring]
+Declares: R ::= (X, +, *, 0, 1) is \set via X
+specifies:
+. + is \(associative, commutative)::binary.operation:on{X}
+. * is \(associative)::binary.operation:on{X}
+. 0 "in" X
+. 1 "in" X
+satisfies:
+. [additive.identity]
+  forAll: x "in" X
+  then: x + 0 = x
+. [additive.inverse]
+  forAll: x "in" X
+  then:
+  . exists: y "in" X
+    suchThat: x + y = 0
+. [multiplicative.identity]
+  forAll: x "in" X
+  then:
+  . x * 1 = x
+  . 1 * x = x
+. [distributive]
+  forAll: a, b, c "in" X
+  then:
+  . a * (b + c) = (a * b) + (a * c)
+  . (a + b) * c = (a * c) + (b * c)
+Enables:
+. capability: x_ "in" R :<->: x_ is \ring.element:of{R}
+  written: "x_? \in R?"
+Documented:
+. called: "ring"
+. description: "A ring $(R, +, *, 0, 1)$ consists of an abelian addition group,
+                an associative multiplication with identity $1$, and two-sided
+                distributivity."
+Id: "5ca5fdca-692d-4f04-8420-aa01c909955d"
+
+
+[\ring.element:of{R ::= (X, +, *, 0, 1)}]
+Declares: x "in" X
+when: R is \ring
+Enables:
+. capability: x_ [+] y_ :=> x_ |R.+| y_
+  written: "x_? +? y_?"
+. capability: x_ [*] y_ :=> x_ |R.*| y_
+  written: "x_? *? y_?"
+Documented:
+. called: "element of ring $R?$"
+. description: "An element of a ring $R$ is a member of its carrier set $X$."
+Id: "7e51f2cf-8568-4819-af9d-80949b74d813"
+
+
+Text: "A commutative ring is a ring whose multiplication operation is
+       commutative."
+Id: "64b4ac6a-9629-4aa7-89e2-9f0ea27e9a48"
+
+
+[\(commutative)::ring]
+Refines: R ::= (X, +, *, 0, 1)
+satisfies:
+. forAll: x, y "in" R
+  then: x * y = y * x
+Documented:
+. adjective: "commutative"
+. description: "A commutative ring is a ring in which $x * y = y * x$ for all
+                elements."
+Id: "2ddbe95a-149f-4596-8496-b214741d64a4"
+
+
+SectionTitle: "Fields"
+Id: "0c54d423-2239-4bcc-9398-cff3fa696e7c"
+
+
+Text: "A field is a non-trivial commutative ring where every non-zero element
+       possesses a multiplicative inverse."
+Id: "93eece57-714d-474a-8c52-840bbb3f6621"
+
+
+[\field]
+Declares: F ::= (X, +, *, 0, 1) is \(commutative)::ring via (X, +, *, 0, 1)
+satisfies:
+. 0 != 1
+. forAll: x "in" F
+  where: x != 0
+  then:
+  . exists: y "in" F
+    suchThat: x * y = 1
+Enables:
+. capability: x_ "in" F :<->: x_ is \field.element:of{F}
+  written: "x_? \in F?"
+Documented:
+. called: "field"
+. description: "A field is a commutative ring $(F, +, *, 0, 1)$ with $0 \neq 1$
+                in which every non-zero element has a multiplicative inverse."
+Id: "53a76a9b-97d9-4c4d-b6c6-cc00983cfcb2"
+
+
+[\field.element:of{F ::= (X, +, *, 0, 1)}]
+Declares: x is \ring.element:of{F}
+when: F is \field
+Documented:
+. called: "element of field $F?$"
+. description: "An element of a field $F$ is an element of its underlying ring."
+Id: "1961828f-5a83-4c78-b8c9-a91c2e512d50"
+
+
+SectionTitle: "Ideals, Quotients, and Characteristic"
+Id: "ca7d140b-b005-46b1-b844-511a2293e65d"
+
+
+TextDefinition: "An ideal $I$ of a commutative ring $R$ is an additive subgroup
+                 such that $ri\in I$ for every $r\in R$ and $i\in I$. Ideals,
+                 rather than arbitrary subrings, are precisely the subsets for
+                 which coset multiplication is well defined. The quotient $R/I$
+                 is a ring under $(r+I)+(s+I)=(r+s)+I$ and $(r+I)(s+I)=rs+I$."
+Id: "999d97fa-3609-4900-a19d-ab1f3345ca54"
+
+
+TextDefinition: "A nonzero element $a$ of a commutative ring is a zero divisor
+                 if $ab=0$ for some nonzero $b$. An integral domain is a
+                 nontrivial commutative ring without zero divisors. Every field
+                 is an integral domain, but the converse fails; the integers
+                 form the standard example."
+Id: "cff0d878-33b9-4552-93c2-cee960162e9e"
+
+
+TextDefinition: "The characteristic of a ring with identity is the least
+                 positive integer $n$ such that $n\cdot1=0$, if such an integer
+                 exists, and is $0$ otherwise. The characteristic of an integral
+                 domain is either $0$ or prime. Consequently every field
+                 contains a canonical copy of either $\mathbb{Q}$ or a finite
+                 prime field $\mathbb{F}_p$."
+Id: "e5fe50b7-6f61-4ad4-85e8-0fec0260b2cf"
+
+
+TextTheorem: "For a commutative ring $R$, the quotient $R/I$ is an integral
+              domain exactly when $I$ is prime, and it is a field exactly when
+              $I$ is maximal. These correspondences turn questions about ideals
+              into structural questions about quotient rings."
+Id: "81f097c0-c0ee-4819-8304-7f13856e2551"

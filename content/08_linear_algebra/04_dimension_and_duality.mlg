@@ -1,0 +1,107 @@
+Title: "Dimension and Duality"
+Id: "b20dd8da-14fc-43f0-b75e-31c74de540cd"
+
+
+Text: "A basis converts a vector space into a coordinate space, but the number
+       of basis vectors is independent of the chosen basis. This invariant is
+       dimension. The dual space then records every linear way to measure a
+       vector, and the interaction between a map and its dual clarifies rank,
+       annihilators, and changes of coordinates."
+Id: "dea851d9-f757-4783-a464-72424c40781f"
+
+
+SectionTitle: "Bases and Dimension"
+Id: "ac3e313d-5cfb-4d82-ab0a-d2249dc10e7d"
+
+
+TextDefinition: "A basis of a vector space $V$ over a field $F$ is a linearly
+                 independent subset $B\subseteq V$ that spans $V$. Equivalently,
+                 every vector of $V$ has a unique expression as a finite linear
+                 combination of elements of $B$. The finiteness condition
+                 applies to each combination even when the basis itself is
+                 infinite."
+Id: "a7868925-5a9a-4635-9b82-e9953ac0dd20"
+
+
+TextTheorem: "Basis extension theorem. Every linearly independent subset of a
+              vector space is contained in a basis, and every spanning subset
+              contains a basis. In full generality this theorem uses a form of
+              the axiom of choice. For finitely generated spaces, the usual
+              exchange argument suffices."
+Id: "c1009158-a56f-4c29-8006-7e3a6bcc662d"
+
+
+TextTheorem: "Invariance of dimension. Any two bases of a vector space have the
+              same cardinality. This cardinal is the dimension $\dim_F V$. In
+              particular, if $V$ is spanned by $n$ vectors, every linearly
+              independent subset has at most $n$ elements and every basis has
+              exactly $\dim_F V\leq n$ elements."
+Id: "79b4b540-b701-47fc-a9b7-aa0f1e1f3a46"
+
+
+TextTheorem: "Rank--nullity theorem. If $T:V\to W$ is linear and $V$ is
+              finite-dimensional, then
+              $\dim V=\dim\ker T+\dim\operatorname{im}T$. The theorem measures
+              the domain as the sum of information destroyed by $T$ and
+              information retained in its image. Consequently $T$ is injective
+              exactly when its nullity is zero."
+Id: "d262c022-54b1-4327-b52c-8ebc6d323f34"
+
+
+SectionTitle: "Coordinate Representations"
+Id: "3756ca2b-b124-4d4d-8488-06685b6d23d8"
+
+
+TextDefinition: "For an ordered basis $B=(b_1,\ldots,b_n)$ of $V$, the
+                 coordinate map $[\,\cdot\,]_B:V\to F^n$ sends
+                 $v=\sum_i a_i b_i$ to the column $(a_1,\ldots,a_n)^T$. It is a
+                 linear isomorphism. Coordinates depend on $B$; the vector being
+                 represented does not."
+Id: "eb390519-730b-45ef-a8c5-75ed6e82ba01"
+
+
+TextTheorem: "If $T:V\to V$ has matrices $A$ and $A'$ in two ordered bases and
+              $P$ is the change-of-basis matrix, then $A'=P^{-1}AP$. Thus
+              matrices of the same operator are similar. Quantities invariant
+              under similarity, including determinant, trace, characteristic
+              polynomial, and eigenvalues with algebraic multiplicity, are
+              intrinsic to the operator."
+Id: "5e912a97-68ed-490b-aeb4-06145687fdf4"
+
+
+SectionTitle: "Dual Spaces and Annihilators"
+Id: "9c48c173-2660-4181-9104-36cae5648a4d"
+
+
+TextDefinition: "The dual space $V^*=\operatorname{Hom}_F(V,F)$ is the vector
+                 space of linear functionals on $V$. If $B=(b_1,\ldots,b_n)$ is
+                 a basis, its dual basis $(b^1,\ldots,b^n)$ is characterized by
+                 $b^i(b_j)=\delta^i_j$. The functional $b^i$ extracts the $i$th
+                 coordinate relative to $B$."
+Id: "3370ae35-7b9f-4983-bba5-cc28277c31e8"
+
+
+TextDefinition: "For a subspace $U\leq V$, its annihilator is
+                 $U^\circ=\{\lambda\in V^*: \lambda(u)=0\text{ for every }
+                 u\in U\}$. When $V$ is finite-dimensional,
+                 $\dim U+\dim U^\circ=\dim V$. Annihilators translate
+                 containment into reverse containment: if $U\subseteq W$, then
+                 $W^\circ\subseteq U^\circ$."
+Id: "ab2bb4d2-ff04-4f40-a5d3-63a58c7ae9cb"
+
+
+TextDefinition: "The dual map of a linear map $T:V\to W$ is $T^*:W^*\to V^*$,
+                 defined by $T^*(\lambda)=\lambda\circ T$. It reverses the
+                 direction of arrows because a measurement on the codomain can
+                 be pulled back to a measurement on the domain. In finite
+                 dimensions, the matrix of $T^*$ in dual bases is the transpose
+                 of the matrix of $T$."
+Id: "ebcf6beb-7c81-4a34-9fb1-ba69774d93f0"
+
+
+TextTheorem: "For finite-dimensional spaces,
+              $\ker T^*=(\operatorname{im}T)^\circ$ and
+              $\operatorname{im}T^*=(\ker T)^\circ$. These identities are the
+              dual form of rank--nullity and show precisely which linear
+              measurements vanish after passage through $T$."
+Id: "b00d626c-66d6-4368-aab5-aec10ee2a364"

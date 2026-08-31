@@ -1,0 +1,24 @@
+{
+  "id": "dd21ebd6-0821-429e-af26-123c01ca0432",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Well-ordering principle for the natural numbers. Every nonempty\nsubset of $\\mathbb{N}$ has a least element. This principle is\nequivalent to induction. For if an inductive claim failed, the set\nof counterexamples would have a least element; the base case and\ninduction step exclude both possibilities for that least\ncounterexample.",
+  "page": null,
+  "source": "TextTheorem: \"Well-ordering principle for the natural numbers. Every nonempty\n              subset of $\\mathbb{N}$ has a least element. This principle is\n              equivalent to induction. For if an inductive claim failed, the set\n              of counterexamples would have a least element; the base case and\n              induction step exclude both possibilities for that least\n              counterexample.\"\nId: \"dd21ebd6-0821-429e-af26-123c01ca0432\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Well-ordering principle for the natural numbers. Every nonempty\n              subset of $\\mathbb{N}$ has a least element. This principle is\n              equivalent to induction. For if an inductive claim failed, the set\n              of counterexamples would have a least element; the base case and\n              induction step exclude both possibilities for that least\n              counterexample.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dd21ebd6-0821-429e-af26-123c01ca0432\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

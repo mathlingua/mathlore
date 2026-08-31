@@ -1,0 +1,24 @@
+{
+  "id": "133119f5-9771-4e7e-b84e-de640884b36e",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A positive integer $p>1$ is prime if its only positive divisors\nare $1$ and $p$. Every integer greater than $1$ factors as a\nproduct of primes, uniquely up to the order of the factors.\nThis multiplicative classification does not make additive\nquestions about primes easy.",
+  "page": null,
+  "source": "TextDefinition: \"A positive integer $p>1$ is prime if its only positive divisors\n                 are $1$ and $p$. Every integer greater than $1$ factors as a\n                 product of primes, uniquely up to the order of the factors.\n                 This multiplicative classification does not make additive\n                 questions about primes easy.\"\nId: \"133119f5-9771-4e7e-b84e-de640884b36e\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A positive integer $p>1$ is prime if its only positive divisors\n                 are $1$ and $p$. Every integer greater than $1$ factors as a\n                 product of primes, uniquely up to the order of the factors.\n                 This multiplicative classification does not make additive\n                 questions about primes easy.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"133119f5-9771-4e7e-b84e-de640884b36e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

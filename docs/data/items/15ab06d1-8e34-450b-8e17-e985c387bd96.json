@@ -1,0 +1,24 @@
+{
+  "id": "15ab06d1-8e34-450b-8e17-e985c387bd96",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Recursion theorem on $\\mathbb{N}$. Let $X$ be a set, choose\n$x_0\\in X$, and let $F:\\mathbb{N}\\times X\\to X$. There exists a\nunique function $a:\\mathbb{N}\\to X$ satisfying $a(0)=x_0$ and\n$a(n+1)=F(n,a(n))$ for every $n$. The theorem provides both\nexistence and uniqueness; recursive equations alone should not be\ntreated as a definition until this result is available.",
+  "page": null,
+  "source": "TextTheorem: \"Recursion theorem on $\\mathbb{N}$. Let $X$ be a set, choose\n              $x_0\\in X$, and let $F:\\mathbb{N}\\times X\\to X$. There exists a\n              unique function $a:\\mathbb{N}\\to X$ satisfying $a(0)=x_0$ and\n              $a(n+1)=F(n,a(n))$ for every $n$. The theorem provides both\n              existence and uniqueness; recursive equations alone should not be\n              treated as a definition until this result is available.\"\nId: \"15ab06d1-8e34-450b-8e17-e985c387bd96\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Recursion theorem on $\\mathbb{N}$. Let $X$ be a set, choose\n              $x_0\\in X$, and let $F:\\mathbb{N}\\times X\\to X$. There exists a\n              unique function $a:\\mathbb{N}\\to X$ satisfying $a(0)=x_0$ and\n              $a(n+1)=F(n,a(n))$ for every $n$. The theorem provides both\n              existence and uniqueness; recursive equations alone should not be\n              treated as a definition until this result is available.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"15ab06d1-8e34-450b-8e17-e985c387bd96\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

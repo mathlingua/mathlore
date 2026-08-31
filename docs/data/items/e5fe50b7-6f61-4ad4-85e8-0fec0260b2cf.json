@@ -1,0 +1,24 @@
+{
+  "id": "e5fe50b7-6f61-4ad4-85e8-0fec0260b2cf",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "The characteristic of a ring with identity is the least\npositive integer $n$ such that $n\\cdot1=0$, if such an integer\nexists, and is $0$ otherwise. The characteristic of an integral\ndomain is either $0$ or prime. Consequently every field\ncontains a canonical copy of either $\\mathbb{Q}$ or a finite\nprime field $\\mathbb{F}_p$.",
+  "page": null,
+  "source": "TextDefinition: \"The characteristic of a ring with identity is the least\n                 positive integer $n$ such that $n\\cdot1=0$, if such an integer\n                 exists, and is $0$ otherwise. The characteristic of an integral\n                 domain is either $0$ or prime. Consequently every field\n                 contains a canonical copy of either $\\mathbb{Q}$ or a finite\n                 prime field $\\mathbb{F}_p$.\"\nId: \"e5fe50b7-6f61-4ad4-85e8-0fec0260b2cf\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"The characteristic of a ring with identity is the least\n                 positive integer $n$ such that $n\\cdot1=0$, if such an integer\n                 exists, and is $0$ otherwise. The characteristic of an integral\n                 domain is either $0$ or prime. Consequently every field\n                 contains a canonical copy of either $\\mathbb{Q}$ or a finite\n                 prime field $\\mathbb{F}_p$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e5fe50b7-6f61-4ad4-85e8-0fec0260b2cf\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

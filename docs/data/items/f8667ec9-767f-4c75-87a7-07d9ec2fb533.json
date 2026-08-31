@@ -1,0 +1,27 @@
+{
+  "id": "f8667ec9-767f-4c75-87a7-07d9ec2fb533",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Fibers and Factorization"
+  },
+  "source": "SectionTitle: \"Fibers and Factorization\"\nId: \"f8667ec9-767f-4c75-87a7-07d9ec2fb533\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Fibers and Factorization\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f8667ec9-767f-4c75-87a7-07d9ec2fb533\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

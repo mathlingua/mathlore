@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A complex function is holomorphic when it is complex-differentiable. The\nexistence of the complex derivative is an exceptionally strong condition,\nforcing infinite differentiability, conformality, and the Cauchy-Riemann\nequations."
+    "text": "A complex function is holomorphic when it is complex-differentiable. The\nexistence of the complex derivative is an exceptionally strong condition,\nforcing analyticity and the Cauchy--Riemann equations; at points where\nthe derivative is nonzero, it also forces conformality."
   },
-  "source": "Text: \"A complex function is holomorphic when it is complex-differentiable. The\n       existence of the complex derivative is an exceptionally strong condition,\n       forcing infinite differentiability, conformality, and the Cauchy-Riemann\n       equations.\"\nId: \"f9443fcc-51df-4c3e-aae1-18af70fc23f0\"",
+  "source": "Text: \"A complex function is holomorphic when it is complex-differentiable. The\n       existence of the complex derivative is an exceptionally strong condition,\n       forcing analyticity and the Cauchy--Riemann equations; at points where\n       the derivative is nonzero, it also forces conformality.\"\nId: \"f9443fcc-51df-4c3e-aae1-18af70fc23f0\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A complex function is holomorphic when it is complex-differentiable. The\n       existence of the complex derivative is an exceptionally strong condition,\n       forcing infinite differentiability, conformality, and the Cauchy-Riemann\n       equations.\"",
+      "inline_argument": "\"A complex function is holomorphic when it is complex-differentiable. The\n       existence of the complex derivative is an exceptionally strong condition,\n       forcing analyticity and the Cauchy--Riemann equations; at points where\n       the derivative is nonzero, it also forces conformality.\"",
       "inline_latex": null,
       "arguments": []
     },

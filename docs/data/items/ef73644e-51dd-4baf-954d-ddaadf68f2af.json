@@ -1,0 +1,27 @@
+{
+  "id": "ef73644e-51dd-4baf-954d-ddaadf68f2af",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An argument is not merely a sequence of true sentences. It is a claim\nthat a conclusion is forced by stated premises. Logic formalizes this\nclaim in two complementary ways: semantically, by truth in every model;\nsyntactically, by derivation according to explicit inference rules. A\nmature proof moves fluently between these viewpoints while never hiding\nwhich assumptions are active."
+  },
+  "source": "Text: \"An argument is not merely a sequence of true sentences. It is a claim\n       that a conclusion is forced by stated premises. Logic formalizes this\n       claim in two complementary ways: semantically, by truth in every model;\n       syntactically, by derivation according to explicit inference rules. A\n       mature proof moves fluently between these viewpoints while never hiding\n       which assumptions are active.\"\nId: \"ef73644e-51dd-4baf-954d-ddaadf68f2af\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"An argument is not merely a sequence of true sentences. It is a claim\n       that a conclusion is forced by stated premises. Logic formalizes this\n       claim in two complementary ways: semantically, by truth in every model;\n       syntactically, by derivation according to explicit inference rules. A\n       mature proof moves fluently between these viewpoints while never hiding\n       which assumptions are active.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ef73644e-51dd-4baf-954d-ddaadf68f2af\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

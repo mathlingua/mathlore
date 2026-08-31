@@ -1,0 +1,24 @@
+{
+  "id": "0e5638e1-1109-4980-a652-2e795bed2e44",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A subgroup $N\\leq G$ is normal, written $N\\trianglelefteq G$,\nif $gN=Ng$ for every $g\\in G$. Equivalently, $gNg^{-1}=N$ for\nevery $g\\in G$. Normality is precisely the compatibility\ncondition needed for multiplication of cosets to be independent\nof the chosen representatives.",
+  "page": null,
+  "source": "TextDefinition: \"A subgroup $N\\leq G$ is normal, written $N\\trianglelefteq G$,\n                 if $gN=Ng$ for every $g\\in G$. Equivalently, $gNg^{-1}=N$ for\n                 every $g\\in G$. Normality is precisely the compatibility\n                 condition needed for multiplication of cosets to be independent\n                 of the chosen representatives.\"\nId: \"0e5638e1-1109-4980-a652-2e795bed2e44\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A subgroup $N\\leq G$ is normal, written $N\\trianglelefteq G$,\n                 if $gN=Ng$ for every $g\\in G$. Equivalently, $gNg^{-1}=N$ for\n                 every $g\\in G$. Normality is precisely the compatibility\n                 condition needed for multiplication of cosets to be independent\n                 of the chosen representatives.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0e5638e1-1109-4980-a652-2e795bed2e44\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

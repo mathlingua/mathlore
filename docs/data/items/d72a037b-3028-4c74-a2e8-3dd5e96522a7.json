@@ -1,0 +1,24 @@
+{
+  "id": "d72a037b-3028-4c74-a2e8-3dd5e96522a7",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "Let $U\\subseteq\\mathbb{C}$ be open and let $f:U\\to\\mathbb{C}$.\nThe function is complex differentiable at $z_0\\in U$ if the\nlimit $\\lim_{h\\to0}(f(z_0+h)-f(z_0))/h$ exists and has the same\nvalue for all complex directions of approach. It is holomorphic\non $U$ if it is complex differentiable at every point of $U$.",
+  "page": null,
+  "source": "TextDefinition: \"Let $U\\subseteq\\mathbb{C}$ be open and let $f:U\\to\\mathbb{C}$.\n                 The function is complex differentiable at $z_0\\in U$ if the\n                 limit $\\lim_{h\\to0}(f(z_0+h)-f(z_0))/h$ exists and has the same\n                 value for all complex directions of approach. It is holomorphic\n                 on $U$ if it is complex differentiable at every point of $U$.\"\nId: \"d72a037b-3028-4c74-a2e8-3dd5e96522a7\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"Let $U\\subseteq\\mathbb{C}$ be open and let $f:U\\to\\mathbb{C}$.\n                 The function is complex differentiable at $z_0\\in U$ if the\n                 limit $\\lim_{h\\to0}(f(z_0+h)-f(z_0))/h$ exists and has the same\n                 value for all complex directions of approach. It is holomorphic\n                 on $U$ if it is complex differentiable at every point of $U$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d72a037b-3028-4c74-a2e8-3dd5e96522a7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

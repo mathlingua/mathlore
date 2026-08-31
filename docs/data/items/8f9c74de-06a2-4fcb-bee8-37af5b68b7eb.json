@@ -1,0 +1,24 @@
+{
+  "id": "8f9c74de-06a2-4fcb-bee8-37af5b68b7eb",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "If $f'=0$ throughout an interval, then $f$ is constant there. If\n$f'\\geq0$ throughout an interval, then $f$ is nondecreasing. Both\nconclusions follow by applying the mean value theorem to an\narbitrary pair of points; the interval hypothesis ensures that the\nentire segment between them lies in the domain.",
+  "page": null,
+  "source": "TextTheorem: \"If $f'=0$ throughout an interval, then $f$ is constant there. If\n              $f'\\geq0$ throughout an interval, then $f$ is nondecreasing. Both\n              conclusions follow by applying the mean value theorem to an\n              arbitrary pair of points; the interval hypothesis ensures that the\n              entire segment between them lies in the domain.\"\nId: \"8f9c74de-06a2-4fcb-bee8-37af5b68b7eb\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"If $f'=0$ throughout an interval, then $f$ is constant there. If\n              $f'\\geq0$ throughout an interval, then $f$ is nondecreasing. Both\n              conclusions follow by applying the mean value theorem to an\n              arbitrary pair of points; the interval hypothesis ensures that the\n              entire segment between them lies in the domain.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8f9c74de-06a2-4fcb-bee8-37af5b68b7eb\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

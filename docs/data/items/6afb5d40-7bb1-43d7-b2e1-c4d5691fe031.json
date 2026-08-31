@@ -1,0 +1,24 @@
+{
+  "id": "6afb5d40-7bb1-43d7-b2e1-c4d5691fe031",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For complex $s$ with $\\operatorname{Re}(s)>1$, the Riemann zeta\nfunction is $\\zeta(s)=\\sum_{n=1}^{\\infty}n^{-s}$. It admits a\nmeromorphic continuation to $\\mathbb{C}$ with a single simple\npole at $s=1$. Its zeros at the negative even integers are\ncalled trivial; all other zeros lie in the critical strip\n$0<\\operatorname{Re}(s)<1$.",
+  "page": null,
+  "source": "TextDefinition: \"For complex $s$ with $\\operatorname{Re}(s)>1$, the Riemann zeta\n                 function is $\\zeta(s)=\\sum_{n=1}^{\\infty}n^{-s}$. It admits a\n                 meromorphic continuation to $\\mathbb{C}$ with a single simple\n                 pole at $s=1$. Its zeros at the negative even integers are\n                 called trivial; all other zeros lie in the critical strip\n                 $0<\\operatorname{Re}(s)<1$.\"\nId: \"6afb5d40-7bb1-43d7-b2e1-c4d5691fe031\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For complex $s$ with $\\operatorname{Re}(s)>1$, the Riemann zeta\n                 function is $\\zeta(s)=\\sum_{n=1}^{\\infty}n^{-s}$. It admits a\n                 meromorphic continuation to $\\mathbb{C}$ with a single simple\n                 pole at $s=1$. Its zeros at the negative even integers are\n                 called trivial; all other zeros lie in the critical strip\n                 $0<\\operatorname{Re}(s)<1$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6afb5d40-7bb1-43d7-b2e1-c4d5691fe031\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

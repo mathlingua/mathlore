@@ -1,0 +1,24 @@
+{
+  "id": "df5630a9-0ac4-4920-995a-7002bdccbf15",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A family of subsets of $U$ is itself a subset\n$\\mathcal{A}\\subseteq\\mathcal{P}(U)$. This distinction keeps\ntwo membership levels separate: $x\\in A$ concerns an element of\none subset, whereas $A\\in\\mathcal{A}$ concerns one set in the\nfamily. Many indexing errors are failures to distinguish these\nlevels.",
+  "page": null,
+  "source": "TextDefinition: \"A family of subsets of $U$ is itself a subset\n                 $\\mathcal{A}\\subseteq\\mathcal{P}(U)$. This distinction keeps\n                 two membership levels separate: $x\\in A$ concerns an element of\n                 one subset, whereas $A\\in\\mathcal{A}$ concerns one set in the\n                 family. Many indexing errors are failures to distinguish these\n                 levels.\"\nId: \"df5630a9-0ac4-4920-995a-7002bdccbf15\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A family of subsets of $U$ is itself a subset\n                 $\\mathcal{A}\\subseteq\\mathcal{P}(U)$. This distinction keeps\n                 two membership levels separate: $x\\in A$ concerns an element of\n                 one subset, whereas $A\\in\\mathcal{A}$ concerns one set in the\n                 family. Many indexing errors are failures to distinguish these\n                 levels.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"df5630a9-0ac4-4920-995a-7002bdccbf15\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

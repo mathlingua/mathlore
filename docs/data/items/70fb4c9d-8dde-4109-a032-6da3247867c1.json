@@ -1,0 +1,27 @@
+{
+  "id": "70fb4c9d-8dde-4109-a032-6da3247867c1",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Predicates and Quantifiers"
+  },
+  "source": "Title: \"Predicates and Quantifiers\"\nId: \"70fb4c9d-8dde-4109-a032-6da3247867c1\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Predicates and Quantifiers\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"70fb4c9d-8dde-4109-a032-6da3247867c1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

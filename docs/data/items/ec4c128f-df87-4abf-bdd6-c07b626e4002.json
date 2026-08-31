@@ -1,0 +1,24 @@
+{
+  "id": "ec4c128f-df87-4abf-bdd6-c07b626e4002",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "The intersection of any family of subspaces of $V$ is a subspace.\nThe span of a subset $S$ is therefore the intersection of all\nsubspaces containing $S$, equivalently the set of all finite\nlinear combinations of elements of $S$. The word finite remains\nessential even when $S$ is infinite.",
+  "page": null,
+  "source": "TextTheorem: \"The intersection of any family of subspaces of $V$ is a subspace.\n              The span of a subset $S$ is therefore the intersection of all\n              subspaces containing $S$, equivalently the set of all finite\n              linear combinations of elements of $S$. The word finite remains\n              essential even when $S$ is infinite.\"\nId: \"ec4c128f-df87-4abf-bdd6-c07b626e4002\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"The intersection of any family of subspaces of $V$ is a subspace.\n              The span of a subset $S$ is therefore the intersection of all\n              subspaces containing $S$, equivalently the set of all finite\n              linear combinations of elements of $S$. The word finite remains\n              essential even when $S$ is infinite.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ec4c128f-df87-4abf-bdd6-c07b626e4002\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

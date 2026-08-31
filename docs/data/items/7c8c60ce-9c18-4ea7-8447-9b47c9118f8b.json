@@ -1,0 +1,27 @@
+{
+  "id": "7c8c60ce-9c18-4ea7-8447-9b47c9118f8b",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Cosets and Normal Subgroups"
+  },
+  "source": "SectionTitle: \"Cosets and Normal Subgroups\"\nId: \"7c8c60ce-9c18-4ea7-8447-9b47c9118f8b\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Cosets and Normal Subgroups\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7c8c60ce-9c18-4ea7-8447-9b47c9118f8b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

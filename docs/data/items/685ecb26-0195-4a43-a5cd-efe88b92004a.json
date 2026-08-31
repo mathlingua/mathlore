@@ -1,0 +1,24 @@
+{
+  "id": "685ecb26-0195-4a43-a5cd-efe88b92004a",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A conjecture is a precisely formulated statement believed or\nproposed to be true but not established in the theory under\ndiscussion. Evidence, computation, and agreement with known\nspecial cases may motivate a conjecture, but they do not change\nits logical status. A counterexample disproves a universal\nconjecture immediately.",
+  "page": null,
+  "source": "TextDefinition: \"A conjecture is a precisely formulated statement believed or\n                 proposed to be true but not established in the theory under\n                 discussion. Evidence, computation, and agreement with known\n                 special cases may motivate a conjecture, but they do not change\n                 its logical status. A counterexample disproves a universal\n                 conjecture immediately.\"\nId: \"685ecb26-0195-4a43-a5cd-efe88b92004a\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A conjecture is a precisely formulated statement believed or\n                 proposed to be true but not established in the theory under\n                 discussion. Evidence, computation, and agreement with known\n                 special cases may motivate a conjecture, but they do not change\n                 its logical status. A counterexample disproves a universal\n                 conjecture immediately.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"685ecb26-0195-4a43-a5cd-efe88b92004a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

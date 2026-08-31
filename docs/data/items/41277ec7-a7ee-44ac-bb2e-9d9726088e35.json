@@ -1,0 +1,24 @@
+{
+  "id": "41277ec7-a7ee-44ac-bb2e-9d9726088e35",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A sentence is *valid* if it is true in every interpretation,\nand *satisfiable* if it is true in at least one interpretation.\nA theory is satisfiable when its sentences have a common model.\nSatisfiability is therefore a global compatibility condition,\nnot the claim that each axiom can be satisfied separately.",
+  "page": null,
+  "source": "TextDefinition: \"A sentence is *valid* if it is true in every interpretation,\n                 and *satisfiable* if it is true in at least one interpretation.\n                 A theory is satisfiable when its sentences have a common model.\n                 Satisfiability is therefore a global compatibility condition,\n                 not the claim that each axiom can be satisfied separately.\"\nId: \"41277ec7-a7ee-44ac-bb2e-9d9726088e35\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A sentence is *valid* if it is true in every interpretation,\n                 and *satisfiable* if it is true in at least one interpretation.\n                 A theory is satisfiable when its sentences have a common model.\n                 Satisfiability is therefore a global compatibility condition,\n                 not the claim that each axiom can be satisfied separately.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"41277ec7-a7ee-44ac-bb2e-9d9726088e35\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

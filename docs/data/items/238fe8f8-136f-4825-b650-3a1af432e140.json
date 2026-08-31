@@ -1,0 +1,24 @@
+{
+  "id": "238fe8f8-136f-4825-b650-3a1af432e140",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Every group homomorphism sends the identity to the identity, sends\ninverses to inverses, and sends powers to corresponding powers.\nThese facts follow from preservation of multiplication; they need\nnot be added as independent clauses in the definition of\nhomomorphism.",
+  "page": null,
+  "source": "TextTheorem: \"Every group homomorphism sends the identity to the identity, sends\n              inverses to inverses, and sends powers to corresponding powers.\n              These facts follow from preservation of multiplication; they need\n              not be added as independent clauses in the definition of\n              homomorphism.\"\nId: \"238fe8f8-136f-4825-b650-3a1af432e140\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Every group homomorphism sends the identity to the identity, sends\n              inverses to inverses, and sends powers to corresponding powers.\n              These facts follow from preservation of multiplication; they need\n              not be added as independent clauses in the definition of\n              homomorphism.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"238fe8f8-136f-4825-b650-3a1af432e140\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

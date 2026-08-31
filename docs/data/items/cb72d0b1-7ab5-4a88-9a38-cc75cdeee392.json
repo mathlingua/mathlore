@@ -1,0 +1,24 @@
+{
+  "id": "cb72d0b1-7ab5-4a88-9a38-cc75cdeee392",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Every complex number has a unique Cartesian form $z=x+iy$ with\n$x,y\\in\\mathbb{R}$. For $z\\ne0$ it also has polar forms\n$z=re^{i\\theta}$, where $r=|z|>0$ and the argument $\\theta$ is\ndetermined modulo $2\\pi$. Thus the modulus is unique but a\nsingle-valued argument requires a branch convention.",
+  "page": null,
+  "source": "TextTheorem: \"Every complex number has a unique Cartesian form $z=x+iy$ with\n              $x,y\\in\\mathbb{R}$. For $z\\ne0$ it also has polar forms\n              $z=re^{i\\theta}$, where $r=|z|>0$ and the argument $\\theta$ is\n              determined modulo $2\\pi$. Thus the modulus is unique but a\n              single-valued argument requires a branch convention.\"\nId: \"cb72d0b1-7ab5-4a88-9a38-cc75cdeee392\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Every complex number has a unique Cartesian form $z=x+iy$ with\n              $x,y\\in\\mathbb{R}$. For $z\\ne0$ it also has polar forms\n              $z=re^{i\\theta}$, where $r=|z|>0$ and the argument $\\theta$ is\n              determined modulo $2\\pi$. Thus the modulus is unique but a\n              single-valued argument requires a branch convention.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"cb72d0b1-7ab5-4a88-9a38-cc75cdeee392\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

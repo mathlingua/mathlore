@@ -1,108 +1,18 @@
 {
   "id": "da109af8-129c-4931-86b0-9dfbc1b146d3",
-  "kind": "States",
-  "definition_keys": [
-    "5c6361756368792e7269656d616e6e2e6571756174696f6e733a666f72"
-  ],
-  "heading": "\\cauchy.riemann.equations:for{f}",
-  "heading_latex": "\\textrm{Cauchy-Riemann equations for }f",
-  "body_text": null,
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Cauchy--Riemann equations. Write $f(x+iy)=u(x,y)+iv(x,y)$. If $f$\nis complex differentiable at $z_0=x_0+iy_0$ and the relevant real\npartial derivatives exist, then at $(x_0,y_0)$ one has $u_x=v_y$\nand $u_y=-v_x$. Conversely, if $u$ and $v$ have continuous first\npartial derivatives on a neighborhood of $(x_0,y_0)$ and satisfy\nthese equations there, then $f$ is complex differentiable at\n$z_0$.",
   "page": null,
-  "source": "[\\cauchy.riemann.equations:for{f}]\nStates:\nusing: U \\:subset:/ \\complex.numbers\nwhen: f is \\function:on{U}:to{\\complex.numbers}\nthat: f is? \\(holomorphic)::complex.function:on{U}\nDocumented:\n. called: \"Cauchy-Riemann equations for $f?$\"\n. description: \"The Cauchy-Riemann equations express holomorphy in terms of real\n                partial derivatives:\n                $\\partial u/\\partial x = \\partial v/\\partial y$ and\n                $\\partial u/\\partial y = -\\partial v/\\partial x$.\"\nId: \"da109af8-129c-4931-86b0-9dfbc1b146d3\"",
+  "source": "TextTheorem: \"Cauchy--Riemann equations. Write $f(x+iy)=u(x,y)+iv(x,y)$. If $f$\n              is complex differentiable at $z_0=x_0+iy_0$ and the relevant real\n              partial derivatives exist, then at $(x_0,y_0)$ one has $u_x=v_y$\n              and $u_y=-v_x$. Conversely, if $u$ and $v$ have continuous first\n              partial derivatives on a neighborhood of $(x_0,y_0)$ and satisfy\n              these equations there, then $f$ is complex differentiable at\n              $z_0$.\"\nId: \"da109af8-129c-4931-86b0-9dfbc1b146d3\"",
   "sections": [
     {
-      "label": "States",
-      "inline_argument": null,
+      "label": "TextTheorem",
+      "inline_argument": "\"Cauchy--Riemann equations. Write $f(x+iy)=u(x,y)+iv(x,y)$. If $f$\n              is complex differentiable at $z_0=x_0+iy_0$ and the relevant real\n              partial derivatives exist, then at $(x_0,y_0)$ one has $u_x=v_y$\n              and $u_y=-v_x$. Conversely, if $u$ and $v$ have continuous first\n              partial derivatives on a neighborhood of $(x_0,y_0)$ and satisfy\n              these equations there, then $f$ is complex differentiable at\n              $z_0$.\"",
       "inline_latex": null,
       "arguments": []
-    },
-    {
-      "label": "using",
-      "inline_argument": "U \\:subset:/ \\complex.numbers",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}}",
-      "inline_type_info": [
-        {
-          "depth": 0,
-          "text": "U \\:subset:/ \\complex.numbers",
-          "types": [
-            "asserts U \\:subset:/ \\complex.numbers"
-          ]
-        },
-        {
-          "depth": 1,
-          "text": "\\complex.numbers",
-          "types": []
-        }
-      ],
-      "arguments": []
-    },
-    {
-      "label": "when",
-      "inline_argument": "f is \\function:on{U}:to{\\complex.numbers}",
-      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c636f6d706c65782e6e756d62657273}{\\mathbb{C}}}",
-      "inline_type_info": [
-        {
-          "depth": 0,
-          "text": "f is \\function:on{U}:to{\\complex.numbers}",
-          "types": [
-            "asserts f is \\function:on{U}:to{\\complex.numbers}"
-          ]
-        }
-      ],
-      "arguments": []
-    },
-    {
-      "label": "that",
-      "inline_argument": "f is? \\(holomorphic)::complex.function:on{U}",
-      "inline_latex": "f \\textrm{ is } \\htmlData{mlg-ref=5c686f6c6f6d6f72706869633a3a636f6d706c65782e66756e6374696f6e3a6f6e}{\\textrm{holomorphic}}\\textrm{ }\\textrm{complex.function}",
-      "inline_type_info": [
-        {
-          "depth": 0,
-          "text": "f is? \\(holomorphic)::complex.function:on{U}",
-          "types": [
-            "asserts f is \\holomorphic::complex.function:on{U}"
-          ]
-        },
-        {
-          "depth": 1,
-          "text": "f",
-          "types": [
-            "is \\function:on{U}:to{\\complex.numbers}"
-          ]
-        }
-      ],
-      "arguments": []
-    },
-    {
-      "label": "Documented",
-      "inline_argument": null,
-      "inline_latex": null,
-      "arguments": [
-        {
-          "kind": "group",
-          "heading": null,
-          "sections": [
-            {
-              "label": "called",
-              "inline_argument": "\"Cauchy-Riemann equations for $f?$\"",
-              "inline_latex": "\\textrm{Cauchy-Riemann equations for }f",
-              "arguments": []
-            }
-          ]
-        },
-        {
-          "kind": "group",
-          "heading": null,
-          "sections": [
-            {
-              "label": "description",
-              "inline_argument": "see above",
-              "inline_latex": "\\langle\\textrm{see above}\\rangle",
-              "arguments": []
-            }
-          ]
-        }
-      ]
     },
     {
       "label": "Id",

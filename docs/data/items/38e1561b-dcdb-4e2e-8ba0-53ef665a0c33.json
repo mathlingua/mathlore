@@ -1,0 +1,24 @@
+{
+  "id": "38e1561b-dcdb-4e2e-8ba0-53ef665a0c33",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "Given a relation $R$ on $X$, its reflexive, symmetric, or\ntransitive closure is the smallest relation on $X$ containing\n$R$ with the named property. The reflexive--transitive closure\nrelates $x$ to $y$ exactly when there is a finite $R$-path from\n$x$ to $y$, allowing a path of length zero.",
+  "page": null,
+  "source": "TextDefinition: \"Given a relation $R$ on $X$, its reflexive, symmetric, or\n                 transitive closure is the smallest relation on $X$ containing\n                 $R$ with the named property. The reflexive--transitive closure\n                 relates $x$ to $y$ exactly when there is a finite $R$-path from\n                 $x$ to $y$, allowing a path of length zero.\"\nId: \"38e1561b-dcdb-4e2e-8ba0-53ef665a0c33\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"Given a relation $R$ on $X$, its reflexive, symmetric, or\n                 transitive closure is the smallest relation on $X$ containing\n                 $R$ with the named property. The reflexive--transitive closure\n                 relates $x$ to $y$ exactly when there is a finite $R$-path from\n                 $x$ to $y$, allowing a path of length zero.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"38e1561b-dcdb-4e2e-8ba0-53ef665a0c33\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,12 +1,13 @@
-00_logic.mlg -> Logic
+00_logic -> Logic and Proof
 01_set_theory -> Set Theory
-02_functions.mlg -> Functions
-05_relations.mlg -> Relations
+02_relations.mlg -> Relations and Order
+03_functions.mlg -> Functions
 04_naturals -> Naturals
-06_integers.mlg -> Integers
+05_integers.mlg -> Integers
 06_rationals.mlg -> Rationals
-03_algebra -> Algebra
-07_linear_algebra -> Linear Algebra
-08_real_analysis -> Real Analysis
-09_complex_analysis -> Complex Analysis
+07_algebra -> Abstract Algebra
+08_linear_algebra -> Linear Algebra
+09_real_analysis -> Real Analysis
+10_complex_analysis -> Complex Analysis
+98_open_problems.mlg -> Selected Open Problems
 99_appendix.mlg -> Appendix

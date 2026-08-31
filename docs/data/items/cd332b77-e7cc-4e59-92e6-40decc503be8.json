@@ -1,0 +1,24 @@
+{
+  "id": "cd332b77-e7cc-4e59-92e6-40decc503be8",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Cartesian product is associative only up to canonical bijection,\nnot literal equality under the ordered-pair encoding. The maps\n$((a,b),c)\\mapsto(a,(b,c))$ and its inverse identify\n$(A\\times B)\\times C$ with $A\\times(B\\times C)$. This distinction\nbetween equality and canonical isomorphism recurs throughout\nalgebra.",
+  "page": null,
+  "source": "TextTheorem: \"Cartesian product is associative only up to canonical bijection,\n              not literal equality under the ordered-pair encoding. The maps\n              $((a,b),c)\\mapsto(a,(b,c))$ and its inverse identify\n              $(A\\times B)\\times C$ with $A\\times(B\\times C)$. This distinction\n              between equality and canonical isomorphism recurs throughout\n              algebra.\"\nId: \"cd332b77-e7cc-4e59-92e6-40decc503be8\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Cartesian product is associative only up to canonical bijection,\n              not literal equality under the ordered-pair encoding. The maps\n              $((a,b),c)\\mapsto(a,(b,c))$ and its inverse identify\n              $(A\\times B)\\times C$ with $A\\times(B\\times C)$. This distinction\n              between equality and canonical isomorphism recurs throughout\n              algebra.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"cd332b77-e7cc-4e59-92e6-40decc503be8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

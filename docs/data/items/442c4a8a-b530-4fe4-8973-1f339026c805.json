@@ -1,0 +1,27 @@
+{
+  "id": "442c4a8a-b530-4fe4-8973-1f339026c805",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Quotients and Actions"
+  },
+  "source": "Title: \"Quotients and Actions\"\nId: \"442c4a8a-b530-4fe4-8973-1f339026c805\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Quotients and Actions\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"442c4a8a-b530-4fe4-8973-1f339026c805\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

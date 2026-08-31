@@ -1,0 +1,24 @@
+{
+  "id": "694788bb-a939-406b-8a3f-62730d8d0399",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Over ZF, the axiom of choice is equivalent to each of the\nfollowing principles: every set can be well ordered; every\npartially ordered set in which each chain has an upper bound has a\nmaximal element (Zorn's lemma); and every surjective function\nadmits a right inverse. The equivalences allow choice to enter a\nproof in the form best adapted to its subject.",
+  "page": null,
+  "source": "TextTheorem: \"Over ZF, the axiom of choice is equivalent to each of the\n              following principles: every set can be well ordered; every\n              partially ordered set in which each chain has an upper bound has a\n              maximal element (Zorn's lemma); and every surjective function\n              admits a right inverse. The equivalences allow choice to enter a\n              proof in the form best adapted to its subject.\"\nId: \"694788bb-a939-406b-8a3f-62730d8d0399\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Over ZF, the axiom of choice is equivalent to each of the\n              following principles: every set can be well ordered; every\n              partially ordered set in which each chain has an upper bound has a\n              maximal element (Zorn's lemma); and every surjective function\n              admits a right inverse. The equivalences allow choice to enter a\n              proof in the form best adapted to its subject.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"694788bb-a939-406b-8a3f-62730d8d0399\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

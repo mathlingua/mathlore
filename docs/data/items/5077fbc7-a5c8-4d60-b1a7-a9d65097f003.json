@@ -1,0 +1,24 @@
+{
+  "id": "5077fbc7-a5c8-4d60-b1a7-a9d65097f003",
+  "kind": "TextAxiom",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Axiom}",
+  "body_text": "Axiom schema of separation. For every set $A$ and every formula\n$\\varphi(x)$, with any fixed parameters, there exists a set\n$B=\\{x\\in A: \\varphi(x)\\}$. Thus a property may carve a subset from\na previously given set. The ambient set $A$ is indispensable:\nseparation does not assert the existence of an unrestricted set\n$\\{x:\\varphi(x)\\}$.",
+  "page": null,
+  "source": "TextAxiom: \"Axiom schema of separation. For every set $A$ and every formula\n            $\\varphi(x)$, with any fixed parameters, there exists a set\n            $B=\\{x\\in A: \\varphi(x)\\}$. Thus a property may carve a subset from\n            a previously given set. The ambient set $A$ is indispensable:\n            separation does not assert the existence of an unrestricted set\n            $\\{x:\\varphi(x)\\}$.\"\nId: \"5077fbc7-a5c8-4d60-b1a7-a9d65097f003\"",
+  "sections": [
+    {
+      "label": "TextAxiom",
+      "inline_argument": "\"Axiom schema of separation. For every set $A$ and every formula\n            $\\varphi(x)$, with any fixed parameters, there exists a set\n            $B=\\{x\\in A: \\varphi(x)\\}$. Thus a property may carve a subset from\n            a previously given set. The ambient set $A$ is indispensable:\n            separation does not assert the existence of an unrestricted set\n            $\\{x:\\varphi(x)\\}$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5077fbc7-a5c8-4d60-b1a7-a9d65097f003\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "31691bb2-e8e1-4218-be4f-759add2b7ab7",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "The Kuratowski encoding satisfies the defining property of an\nordered pair: $\\langle x,y\\rangle=\\langle u,v\\rangle$ if and only\nif $x=u$ and $y=v$. The particular set-theoretic encoding is not\nmathematically canonical; its purpose is to realize an abstract\ntwo-slot object using sets while preserving equality of\ncoordinates.",
+  "page": null,
+  "source": "TextTheorem: \"The Kuratowski encoding satisfies the defining property of an\n              ordered pair: $\\langle x,y\\rangle=\\langle u,v\\rangle$ if and only\n              if $x=u$ and $y=v$. The particular set-theoretic encoding is not\n              mathematically canonical; its purpose is to realize an abstract\n              two-slot object using sets while preserving equality of\n              coordinates.\"\nId: \"31691bb2-e8e1-4218-be4f-759add2b7ab7\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"The Kuratowski encoding satisfies the defining property of an\n              ordered pair: $\\langle x,y\\rangle=\\langle u,v\\rangle$ if and only\n              if $x=u$ and $y=v$. The particular set-theoretic encoding is not\n              mathematically canonical; its purpose is to realize an abstract\n              two-slot object using sets while preserving equality of\n              coordinates.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"31691bb2-e8e1-4218-be4f-759add2b7ab7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "95dcd4db-216b-45d0-897f-a6a998c8da45",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Chain rule. If $f$ is differentiable at $x$ and $g$ is\ndifferentiable at $f(x)$, then $g\\circ f$ is differentiable at $x$\nand $(g\\circ f)'(x)=g'(f(x))f'(x)$. The statement expresses\ncomposition of the two best linear approximations; the error terms\nremain of smaller order than the original increment.",
+  "page": null,
+  "source": "TextTheorem: \"Chain rule. If $f$ is differentiable at $x$ and $g$ is\n              differentiable at $f(x)$, then $g\\circ f$ is differentiable at $x$\n              and $(g\\circ f)'(x)=g'(f(x))f'(x)$. The statement expresses\n              composition of the two best linear approximations; the error terms\n              remain of smaller order than the original increment.\"\nId: \"95dcd4db-216b-45d0-897f-a6a998c8da45\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Chain rule. If $f$ is differentiable at $x$ and $g$ is\n              differentiable at $f(x)$, then $g\\circ f$ is differentiable at $x$\n              and $(g\\circ f)'(x)=g'(f(x))f'(x)$. The statement expresses\n              composition of the two best linear approximations; the error terms\n              remain of smaller order than the original increment.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"95dcd4db-216b-45d0-897f-a6a998c8da45\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

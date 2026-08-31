@@ -1,0 +1,27 @@
+{
+  "id": "6275edcb-d9f4-469b-93ef-68d25b92ec52",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Professional mathematical prose keeps the dependency boundary visible.\nBefore invoking a result, verify its hypotheses in the current setting;\nbefore naming an object, verify its existence; before writing 'the',\nverify uniqueness or explain the convention selecting one representative.\nThese habits are not cosmetic. They prevent the most common ways in which\nan intuitively plausible argument fails to be a proof."
+  },
+  "source": "Text: \"Professional mathematical prose keeps the dependency boundary visible.\n       Before invoking a result, verify its hypotheses in the current setting;\n       before naming an object, verify its existence; before writing 'the',\n       verify uniqueness or explain the convention selecting one representative.\n       These habits are not cosmetic. They prevent the most common ways in which\n       an intuitively plausible argument fails to be a proof.\"\nId: \"6275edcb-d9f4-469b-93ef-68d25b92ec52\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Professional mathematical prose keeps the dependency boundary visible.\n       Before invoking a result, verify its hypotheses in the current setting;\n       before naming an object, verify its existence; before writing 'the',\n       verify uniqueness or explain the convention selecting one representative.\n       These habits are not cosmetic. They prevent the most common ways in which\n       an intuitively plausible argument fails to be a proof.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6275edcb-d9f4-469b-93ef-68d25b92ec52\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

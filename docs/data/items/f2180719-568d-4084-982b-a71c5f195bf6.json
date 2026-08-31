@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Axiom of Empty Set}",
   "body_text": null,
   "page": null,
-  "source": "[\\axiom.of.empty.set]\nAxiom:\nthen:\n. exists: X is \\set\n  suchThat:\n  . forAll: Z is \\set\n    then:\n    . not: Z \"in\"? X\nDocumented:\n. called: \"Axiom of Empty Set\"\n. description: \"There is a set having no members: for every set $Z$, $Z \\notin\n                X$. This is the one axiom that outright asserts a set into\n                existence; every other set is built, directly or indirectly,\n                starting from it.\"\nId: \"f2180719-568d-4084-982b-a71c5f195bf6\"",
+  "source": "[\\axiom.of.empty.set]\nAxiom:\nthen:\n. exists: X is \\set\n  suchThat:\n  . forAll: Z is \\set\n    then:\n    . not: Z \"in\"? X\nDocumented:\n. called: \"Axiom of Empty Set\"\n. description: \"There is a set having no members: for every set $Z$, $Z \\notin\n                X$. Extensionality makes this set unique, so any construction\n                with no members denotes the same empty set.\"\nId: \"f2180719-568d-4084-982b-a71c5f195bf6\"",
   "sections": [
     {
       "label": "Axiom",

@@ -1,0 +1,24 @@
+{
+  "id": "ea09b276-1d50-471e-a821-738fe3172a3f",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "An explicit definition introduces notation by stipulating a\nmeaning in terms of previously understood concepts. A good\ndefinition is conservative: it creates an abbreviation or a new\ninterface, not an additional theorem about existing objects. An\nimplicit definition instead characterizes an object by\nproperties; it is legitimate only after existence and\nsufficient uniqueness have been established or adopted as\naxioms.",
+  "page": null,
+  "source": "TextDefinition: \"An explicit definition introduces notation by stipulating a\n                 meaning in terms of previously understood concepts. A good\n                 definition is conservative: it creates an abbreviation or a new\n                 interface, not an additional theorem about existing objects. An\n                 implicit definition instead characterizes an object by\n                 properties; it is legitimate only after existence and\n                 sufficient uniqueness have been established or adopted as\n                 axioms.\"\nId: \"ea09b276-1d50-471e-a821-738fe3172a3f\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"An explicit definition introduces notation by stipulating a\n                 meaning in terms of previously understood concepts. A good\n                 definition is conservative: it creates an abbreviation or a new\n                 interface, not an additional theorem about existing objects. An\n                 implicit definition instead characterizes an object by\n                 properties; it is legitimate only after existence and\n                 sufficient uniqueness have been established or adopted as\n                 axioms.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ea09b276-1d50-471e-a821-738fe3172a3f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

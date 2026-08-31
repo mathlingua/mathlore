@@ -1,0 +1,24 @@
+{
+  "id": "324cfa4b-56db-4bab-804d-721de64b087e",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "If $f$ has a pole of order $m$ at $z_0$, then\n$\\operatorname{Res}(f,z_0)=\\frac{1}{(m-1)!}\n\\lim_{z\\to z_0}\\frac{d^{m-1}}{dz^{m-1}}\n((z-z_0)^m f(z))$. For a simple pole represented as $f=g/h$ with\n$h(z_0)=0$ and $h'(z_0)\\ne0$, this reduces to\n$\\operatorname{Res}(f,z_0)=g(z_0)/h'(z_0)$.",
+  "page": null,
+  "source": "TextTheorem: \"If $f$ has a pole of order $m$ at $z_0$, then\n              $\\operatorname{Res}(f,z_0)=\\frac{1}{(m-1)!}\n              \\lim_{z\\to z_0}\\frac{d^{m-1}}{dz^{m-1}}\n              ((z-z_0)^m f(z))$. For a simple pole represented as $f=g/h$ with\n              $h(z_0)=0$ and $h'(z_0)\\ne0$, this reduces to\n              $\\operatorname{Res}(f,z_0)=g(z_0)/h'(z_0)$.\"\nId: \"324cfa4b-56db-4bab-804d-721de64b087e\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"If $f$ has a pole of order $m$ at $z_0$, then\n              $\\operatorname{Res}(f,z_0)=\\frac{1}{(m-1)!}\n              \\lim_{z\\to z_0}\\frac{d^{m-1}}{dz^{m-1}}\n              ((z-z_0)^m f(z))$. For a simple pole represented as $f=g/h$ with\n              $h(z_0)=0$ and $h'(z_0)\\ne0$, this reduces to\n              $\\operatorname{Res}(f,z_0)=g(z_0)/h'(z_0)$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"324cfa4b-56db-4bab-804d-721de64b087e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

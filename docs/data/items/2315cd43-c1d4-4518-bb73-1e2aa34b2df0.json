@@ -1,0 +1,24 @@
+{
+  "id": "2315cd43-c1d4-4518-bb73-1e2aa34b2df0",
+  "kind": "TextConjecture",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Conjecture}",
+  "body_text": "Riemann hypothesis. Every nontrivial zero $\\rho$ of the Riemann\nzeta function satisfies $\\operatorname{Re}(\\rho)=1/2$. The\nhypothesis gives sharp control over the error in the average\ndistribution of prime numbers and is substantially stronger\nthan the prime number theorem itself.",
+  "page": null,
+  "source": "TextConjecture: \"Riemann hypothesis. Every nontrivial zero $\\rho$ of the Riemann\n                 zeta function satisfies $\\operatorname{Re}(\\rho)=1/2$. The\n                 hypothesis gives sharp control over the error in the average\n                 distribution of prime numbers and is substantially stronger\n                 than the prime number theorem itself.\"\nId: \"2315cd43-c1d4-4518-bb73-1e2aa34b2df0\"",
+  "sections": [
+    {
+      "label": "TextConjecture",
+      "inline_argument": "\"Riemann hypothesis. Every nontrivial zero $\\rho$ of the Riemann\n                 zeta function satisfies $\\operatorname{Re}(\\rho)=1/2$. The\n                 hypothesis gives sharp control over the error in the average\n                 distribution of prime numbers and is substantially stronger\n                 than the prime number theorem itself.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2315cd43-c1d4-4518-bb73-1e2aa34b2df0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

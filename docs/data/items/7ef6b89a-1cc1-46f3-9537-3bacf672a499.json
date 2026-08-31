@@ -1,0 +1,24 @@
+{
+  "id": "7ef6b89a-1cc1-46f3-9537-3bacf672a499",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "For any indexed family $(A_i)_{i\\in I}$, $x\\in\\bigcup_{i\\in I}A_i$\nexactly when $x\\in A_i$ for at least one $i\\in I$, while\n$x\\in\\bigcap_{i\\in I}A_i$ exactly when $x\\in A_i$ for every\n$i\\in I$. If $I$ is empty, the union is $\\emptyset$; the empty\nintersection is meaningful only relative to a specified ambient\nuniverse, where it equals that universe.",
+  "page": null,
+  "source": "TextTheorem: \"For any indexed family $(A_i)_{i\\in I}$, $x\\in\\bigcup_{i\\in I}A_i$\n              exactly when $x\\in A_i$ for at least one $i\\in I$, while\n              $x\\in\\bigcap_{i\\in I}A_i$ exactly when $x\\in A_i$ for every\n              $i\\in I$. If $I$ is empty, the union is $\\emptyset$; the empty\n              intersection is meaningful only relative to a specified ambient\n              universe, where it equals that universe.\"\nId: \"7ef6b89a-1cc1-46f3-9537-3bacf672a499\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"For any indexed family $(A_i)_{i\\in I}$, $x\\in\\bigcup_{i\\in I}A_i$\n              exactly when $x\\in A_i$ for at least one $i\\in I$, while\n              $x\\in\\bigcap_{i\\in I}A_i$ exactly when $x\\in A_i$ for every\n              $i\\in I$. If $I$ is empty, the union is $\\emptyset$; the empty\n              intersection is meaningful only relative to a specified ambient\n              universe, where it equals that universe.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7ef6b89a-1cc1-46f3-9537-3bacf672a499\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

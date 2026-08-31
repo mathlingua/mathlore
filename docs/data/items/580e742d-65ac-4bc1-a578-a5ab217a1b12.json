@@ -1,0 +1,27 @@
+{
+  "id": "580e742d-65ac-4bc1-a578-a5ab217a1b12",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Continuity and the interval domain are both indispensable. A jump\ndiscontinuity can omit all values between its one-sided levels, while a\ncontinuous function on a disconnected domain can take one range of values\non one component and another range on the other. Conceptually, the\ntheorem says that the continuous image of a connected interval is\nconnected, hence itself an interval."
+  },
+  "source": "Text: \"Continuity and the interval domain are both indispensable. A jump\n       discontinuity can omit all values between its one-sided levels, while a\n       continuous function on a disconnected domain can take one range of values\n       on one component and another range on the other. Conceptually, the\n       theorem says that the continuous image of a connected interval is\n       connected, hence itself an interval.\"\nId: \"580e742d-65ac-4bc1-a578-a5ab217a1b12\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Continuity and the interval domain are both indispensable. A jump\n       discontinuity can omit all values between its one-sided levels, while a\n       continuous function on a disconnected domain can take one range of values\n       on one component and another range on the other. Conceptually, the\n       theorem says that the continuous image of a connected interval is\n       connected, hence itself an interval.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"580e742d-65ac-4bc1-a578-a5ab217a1b12\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

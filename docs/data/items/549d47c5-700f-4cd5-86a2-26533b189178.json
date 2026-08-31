@@ -1,0 +1,24 @@
+{
+  "id": "549d47c5-700f-4cd5-86a2-26533b189178",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For a predicate $P(x)$ on a domain $D$, the universal statement\n$\\forall x\\in D\\,P(x)$ is true exactly when $P(a)$ is true for\nevery $a\\in D$. To prove it one fixes an arbitrary $a\\in D$ and\nproves $P(a)$ without using any special property of $a$. To\nrefute it, one exhibits a counterexample $a\\in D$ for which\n$P(a)$ is false.",
+  "page": null,
+  "source": "TextDefinition: \"For a predicate $P(x)$ on a domain $D$, the universal statement\n                 $\\forall x\\in D\\,P(x)$ is true exactly when $P(a)$ is true for\n                 every $a\\in D$. To prove it one fixes an arbitrary $a\\in D$ and\n                 proves $P(a)$ without using any special property of $a$. To\n                 refute it, one exhibits a counterexample $a\\in D$ for which\n                 $P(a)$ is false.\"\nId: \"549d47c5-700f-4cd5-86a2-26533b189178\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For a predicate $P(x)$ on a domain $D$, the universal statement\n                 $\\forall x\\in D\\,P(x)$ is true exactly when $P(a)$ is true for\n                 every $a\\in D$. To prove it one fixes an arbitrary $a\\in D$ and\n                 proves $P(a)$ without using any special property of $a$. To\n                 refute it, one exhibits a counterexample $a\\in D$ for which\n                 $P(a)$ is false.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"549d47c5-700f-4cd5-86a2-26533b189178\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

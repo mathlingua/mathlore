@@ -1,0 +1,24 @@
+{
+  "id": "3f1ec40e-207c-431e-918e-7a8f4f23fa46",
+  "kind": "TextAxiom",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Axiom}",
+  "body_text": "Axiom of choice. For every set $I$ and every family $(A_i)_{i\\in I}$\nof nonempty sets, there exists a function $f$ on $I$ such that\n$f(i)\\in A_i$ for every $i\\in I$. The assertion is substantive when\nthe family is infinite and no canonical rule for choosing the\nelements is available. ZF together with this axiom is denoted ZFC.",
+  "page": null,
+  "source": "TextAxiom: \"Axiom of choice. For every set $I$ and every family $(A_i)_{i\\in I}$\n            of nonempty sets, there exists a function $f$ on $I$ such that\n            $f(i)\\in A_i$ for every $i\\in I$. The assertion is substantive when\n            the family is infinite and no canonical rule for choosing the\n            elements is available. ZF together with this axiom is denoted ZFC.\"\nId: \"3f1ec40e-207c-431e-918e-7a8f4f23fa46\"",
+  "sections": [
+    {
+      "label": "TextAxiom",
+      "inline_argument": "\"Axiom of choice. For every set $I$ and every family $(A_i)_{i\\in I}$\n            of nonempty sets, there exists a function $f$ on $I$ such that\n            $f(i)\\in A_i$ for every $i\\in I$. The assertion is substantive when\n            the family is infinite and no canonical rule for choosing the\n            elements is available. ZF together with this axiom is denoted ZFC.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3f1ec40e-207c-431e-918e-7a8f4f23fa46\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

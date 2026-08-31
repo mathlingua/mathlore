@@ -1,0 +1,24 @@
+{
+  "id": "005a116a-0754-4c0f-a020-97660010eb3f",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "In a monoid, powers of an element are defined recursively by\n$a^0=e$ and $a^{n+1}=a^n a$. Associativity implies\n$a^{m+n}=a^m a^n$ and $(a^m)^n=a^{mn}$. These formulas require no\ncommutativity because all factors are powers of the same element.",
+  "page": null,
+  "source": "TextTheorem: \"In a monoid, powers of an element are defined recursively by\n              $a^0=e$ and $a^{n+1}=a^n a$. Associativity implies\n              $a^{m+n}=a^m a^n$ and $(a^m)^n=a^{mn}$. These formulas require no\n              commutativity because all factors are powers of the same element.\"\nId: \"005a116a-0754-4c0f-a020-97660010eb3f\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"In a monoid, powers of an element are defined recursively by\n              $a^0=e$ and $a^{n+1}=a^n a$. Associativity implies\n              $a^{m+n}=a^m a^n$ and $(a^m)^n=a^{mn}$. These formulas require no\n              commutativity because all factors are powers of the same element.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"005a116a-0754-4c0f-a020-97660010eb3f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

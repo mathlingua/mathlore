@@ -1,0 +1,24 @@
+{
+  "id": "c1009158-a56f-4c29-8006-7e3a6bcc662d",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Basis extension theorem. Every linearly independent subset of a\nvector space is contained in a basis, and every spanning subset\ncontains a basis. In full generality this theorem uses a form of\nthe axiom of choice. For finitely generated spaces, the usual\nexchange argument suffices.",
+  "page": null,
+  "source": "TextTheorem: \"Basis extension theorem. Every linearly independent subset of a\n              vector space is contained in a basis, and every spanning subset\n              contains a basis. In full generality this theorem uses a form of\n              the axiom of choice. For finitely generated spaces, the usual\n              exchange argument suffices.\"\nId: \"c1009158-a56f-4c29-8006-7e3a6bcc662d\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Basis extension theorem. Every linearly independent subset of a\n              vector space is contained in a basis, and every spanning subset\n              contains a basis. In full generality this theorem uses a form of\n              the axiom of choice. For finitely generated spaces, the usual\n              exchange argument suffices.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c1009158-a56f-4c29-8006-7e3a6bcc662d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

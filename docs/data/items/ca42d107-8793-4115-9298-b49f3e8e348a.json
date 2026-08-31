@@ -1,0 +1,24 @@
+{
+  "id": "ca42d107-8793-4115-9298-b49f3e8e348a",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Every rational number has a finite or eventually periodic decimal\nexpansion, and every eventually periodic decimal represents a\nrational number. This characterization depends on the base; in\nbase $b$, eventual periodicity is again equivalent to rationality.",
+  "page": null,
+  "source": "TextTheorem: \"Every rational number has a finite or eventually periodic decimal\n              expansion, and every eventually periodic decimal represents a\n              rational number. This characterization depends on the base; in\n              base $b$, eventual periodicity is again equivalent to rationality.\"\nId: \"ca42d107-8793-4115-9298-b49f3e8e348a\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Every rational number has a finite or eventually periodic decimal\n              expansion, and every eventually periodic decimal represents a\n              rational number. This characterization depends on the base; in\n              base $b$, eventual periodicity is again equivalent to rationality.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ca42d107-8793-4115-9298-b49f3e8e348a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

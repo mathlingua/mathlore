@@ -1,0 +1,127 @@
+Title: "Proof and Consequence"
+Id: "bb27977c-e17b-4082-b455-cb97dbdf1b6f"
+
+
+Text: "An argument is not merely a sequence of true sentences. It is a claim
+       that a conclusion is forced by stated premises. Logic formalizes this
+       claim in two complementary ways: semantically, by truth in every model;
+       syntactically, by derivation according to explicit inference rules. A
+       mature proof moves fluently between these viewpoints while never hiding
+       which assumptions are active."
+Id: "ef73644e-51dd-4baf-954d-ddaadf68f2af"
+
+
+SectionTitle: "Consequence, Validity, and Equivalence"
+Id: "065af088-3182-4cff-b43c-6b707fb9efc1"
+
+
+TextDefinition: "Let $\Gamma$ be a collection of sentences and let $\varphi$ be
+                 a sentence in the same language. We say that $\varphi$ is a
+                 *semantic consequence* of $\Gamma$, written
+                 $\Gamma\models\varphi$, if every interpretation in which all
+                 sentences of $\Gamma$ are true also makes $\varphi$ true. No
+                 assertion is made that such an interpretation exists; if
+                 $\Gamma$ is inconsistent, every sentence is a semantic
+                 consequence of $\Gamma$."
+Id: "d6351c2e-8774-461d-8365-533a09dd2951"
+
+
+TextDefinition: "A sentence is *valid* if it is true in every interpretation,
+                 and *satisfiable* if it is true in at least one interpretation.
+                 A theory is satisfiable when its sentences have a common model.
+                 Satisfiability is therefore a global compatibility condition,
+                 not the claim that each axiom can be satisfied separately."
+Id: "41277ec7-a7ee-44ac-bb2e-9d9726088e35"
+
+
+TextDefinition: "Two formulas are logically equivalent when they have the same
+                 truth value under every common interpretation and variable
+                 assignment. Logical equivalence licenses replacement inside
+                 larger formulas. Equality of mathematical objects is a
+                 different, object-language relation and should not be conflated
+                 with equivalence of formulas."
+Id: "345f73c4-8464-4554-8e3f-6c4e36c545df"
+
+
+SectionTitle: "Derivations and Proof Methods"
+Id: "c2a58271-331c-4b14-b657-13f3e9d4d66f"
+
+
+TextDefinition: "Fix a deductive system. A *derivation* of $\varphi$ from
+                 premises $\Gamma$ is a finite sequence or tree of formulas in
+                 which every leaf is an axiom or a member of $\Gamma$, and every
+                 other formula follows from earlier formulas by an allowed
+                 inference rule. We write $\Gamma\vdash\varphi$ when such a
+                 derivation exists. The symbol $\vdash$ concerns formal
+                 derivability; $\models$ concerns truth in models."
+Id: "5f0b2406-0146-4015-91b9-8875e70395fb"
+
+
+TextTheorem: "A deductive system is *sound* when $\Gamma\vdash\varphi$ implies
+              $\Gamma\models\varphi$, and *complete* when the converse holds.
+              Soundness says that the rules prove no semantically invalid
+              consequence. Completeness says that every semantic consequence
+              expressible in the language is, in principle, formally derivable."
+Id: "d694227c-82c0-433b-acc2-8223d8b7954c"
+
+
+TextDefinition: "A direct proof of $P\Rightarrow Q$ assumes $P$ and derives $Q$.
+                 A proof by contraposition derives $\neg P$ from $\neg Q$, using
+                 the classical equivalence
+                 $(P\Rightarrow Q)\iff(\neg Q\Rightarrow\neg P)$. A proof by
+                 contradiction assumes the negation of the desired conclusion
+                 and derives an impossibility. These are transformations of the
+                 logical target, not licenses to omit intermediate
+                 justification."
+Id: "35da6ee6-020c-4586-968e-c8ca0c29d984"
+
+
+Text: "A proof by cases establishes a conclusion under alternatives whose
+       disjunction is exhaustive. Each branch inherits the common hypotheses
+       plus its case assumption. The branches need not be mutually exclusive,
+       but they must cover every possibility. In constructive arguments, the
+       cases should also explain how any object claimed to exist is produced in
+       each branch."
+Id: "bb9955c6-a7ac-4c57-92ab-d2f5d0e8b283"
+
+
+SectionTitle: "Definitions and Mathematical Practice"
+Id: "fe8bed61-7f39-45dc-92aa-50272e52c082"
+
+
+TextDefinition: "An explicit definition introduces notation by stipulating a
+                 meaning in terms of previously understood concepts. A good
+                 definition is conservative: it creates an abbreviation or a new
+                 interface, not an additional theorem about existing objects. An
+                 implicit definition instead characterizes an object by
+                 properties; it is legitimate only after existence and
+                 sufficient uniqueness have been established or adopted as
+                 axioms."
+Id: "ea09b276-1d50-471e-a821-738fe3172a3f"
+
+
+TextDefinition: "A theorem is a statement asserted on the basis of a proof from
+                 accepted axioms and earlier results. A lemma is a theorem
+                 designated chiefly for use in proving another result; a
+                 corollary follows with comparatively little additional
+                 argument. These labels describe expository role rather than
+                 logical strength."
+Id: "bfe0b849-abd6-45f4-9979-5c67f50ae5d2"
+
+
+TextDefinition: "A conjecture is a precisely formulated statement believed or
+                 proposed to be true but not established in the theory under
+                 discussion. Evidence, computation, and agreement with known
+                 special cases may motivate a conjecture, but they do not change
+                 its logical status. A counterexample disproves a universal
+                 conjecture immediately."
+Id: "685ecb26-0195-4a43-a5cd-efe88b92004a"
+
+
+Text: "Professional mathematical prose keeps the dependency boundary visible.
+       Before invoking a result, verify its hypotheses in the current setting;
+       before naming an object, verify its existence; before writing 'the',
+       verify uniqueness or explain the convention selecting one representative.
+       These habits are not cosmetic. They prevent the most common ways in which
+       an intuitively plausible argument fails to be a proof."
+Id: "6275edcb-d9f4-469b-93ef-68d25b92ec52"

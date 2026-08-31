@@ -1,0 +1,24 @@
+{
+  "id": "d9f52cc6-df8a-4e42-8fa7-d06aeb3669db",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Cayley's theorem. Every group $G$ is isomorphic to a subgroup of\nthe symmetric group on its underlying set. The embedding sends $g$\nto the bijection $x\\mapsto gx$. Thus abstract groups are precisely\ngroups of permutations, up to isomorphism.",
+  "page": null,
+  "source": "TextTheorem: \"Cayley's theorem. Every group $G$ is isomorphic to a subgroup of\n              the symmetric group on its underlying set. The embedding sends $g$\n              to the bijection $x\\mapsto gx$. Thus abstract groups are precisely\n              groups of permutations, up to isomorphism.\"\nId: \"d9f52cc6-df8a-4e42-8fa7-d06aeb3669db\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Cayley's theorem. Every group $G$ is isomorphic to a subgroup of\n              the symmetric group on its underlying set. The embedding sends $g$\n              to the bijection $x\\mapsto gx$. Thus abstract groups are precisely\n              groups of permutations, up to isomorphism.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d9f52cc6-df8a-4e42-8fa7-d06aeb3669db\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "f983ba30-e2c8-45f9-afd9-8e19e841e502",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Quantifier order records dependence. The statement\n$\\forall x\\,\\exists y\\,R(x,y)$ permits the witness $y$ to depend on $x$;\nthe statement $\\exists y\\,\\forall x\\,R(x,y)$ requires a single witness\nthat works uniformly for all $x$. The second statement implies the first\nwhen the domains are nonempty, but the converse generally fails. This\ndistinction later reappears in uniform continuity, where one $\\delta$\nmust work simultaneously at every point of a domain."
+  },
+  "source": "Text: \"Quantifier order records dependence. The statement\n       $\\forall x\\,\\exists y\\,R(x,y)$ permits the witness $y$ to depend on $x$;\n       the statement $\\exists y\\,\\forall x\\,R(x,y)$ requires a single witness\n       that works uniformly for all $x$. The second statement implies the first\n       when the domains are nonempty, but the converse generally fails. This\n       distinction later reappears in uniform continuity, where one $\\delta$\n       must work simultaneously at every point of a domain.\"\nId: \"f983ba30-e2c8-45f9-afd9-8e19e841e502\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Quantifier order records dependence. The statement\n       $\\forall x\\,\\exists y\\,R(x,y)$ permits the witness $y$ to depend on $x$;\n       the statement $\\exists y\\,\\forall x\\,R(x,y)$ requires a single witness\n       that works uniformly for all $x$. The second statement implies the first\n       when the domains are nonempty, but the converse generally fails. This\n       distinction later reappears in uniform continuity, where one $\\delta$\n       must work simultaneously at every point of a domain.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f983ba30-e2c8-45f9-afd9-8e19e841e502\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

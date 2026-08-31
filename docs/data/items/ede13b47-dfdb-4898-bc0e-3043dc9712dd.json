@@ -1,0 +1,27 @@
+{
+  "id": "ede13b47-dfdb-4898-bc0e-3043dc9712dd",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Minimality and Universal Character"
+  },
+  "source": "SectionTitle: \"Minimality and Universal Character\"\nId: \"ede13b47-dfdb-4898-bc0e-3043dc9712dd\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Minimality and Universal Character\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ede13b47-dfdb-4898-bc0e-3043dc9712dd\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

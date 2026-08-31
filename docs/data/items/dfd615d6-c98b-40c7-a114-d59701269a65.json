@@ -1,0 +1,27 @@
+{
+  "id": "dfd615d6-c98b-40c7-a114-d59701269a65",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Integration aggregates local values over an interval. Riemann's\nconstruction compares a bounded function with upper and lower step\nfunctions determined by finite partitions. Integrability means that the\nuncertainty between these approximations can be made arbitrarily small;\nit is not built into the notation $\\int_a^b f$."
+  },
+  "source": "Text: \"Integration aggregates local values over an interval. Riemann's\n       construction compares a bounded function with upper and lower step\n       functions determined by finite partitions. Integrability means that the\n       uncertainty between these approximations can be made arbitrarily small;\n       it is not built into the notation $\\int_a^b f$.\"\nId: \"dfd615d6-c98b-40c7-a114-d59701269a65\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Integration aggregates local values over an interval. Riemann's\n       construction compares a bounded function with upper and lower step\n       functions determined by finite partitions. Integrability means that the\n       uncertainty between these approximations can be made arbitrarily small;\n       it is not built into the notation $\\int_a^b f$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dfd615d6-c98b-40c7-a114-d59701269a65\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

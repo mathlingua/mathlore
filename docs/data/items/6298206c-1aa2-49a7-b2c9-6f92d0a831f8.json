@@ -1,0 +1,24 @@
+{
+  "id": "6298206c-1aa2-49a7-b2c9-6f92d0a831f8",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A path in an open set $U\\subseteq\\mathbb{C}$ is a continuous\nmap $\\gamma:[a,b]\\to U$. It is piecewise continuously\ndifferentiable if $[a,b]$ can be divided into finitely many\nsubintervals on which $\\gamma$ has a continuous derivative. The\npath is closed when $\\gamma(a)=\\gamma(b)$. Its parameterization\nincludes orientation and multiplicity.",
+  "page": null,
+  "source": "TextDefinition: \"A path in an open set $U\\subseteq\\mathbb{C}$ is a continuous\n                 map $\\gamma:[a,b]\\to U$. It is piecewise continuously\n                 differentiable if $[a,b]$ can be divided into finitely many\n                 subintervals on which $\\gamma$ has a continuous derivative. The\n                 path is closed when $\\gamma(a)=\\gamma(b)$. Its parameterization\n                 includes orientation and multiplicity.\"\nId: \"6298206c-1aa2-49a7-b2c9-6f92d0a831f8\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A path in an open set $U\\subseteq\\mathbb{C}$ is a continuous\n                 map $\\gamma:[a,b]\\to U$. It is piecewise continuously\n                 differentiable if $[a,b]$ can be divided into finitely many\n                 subintervals on which $\\gamma$ has a continuous derivative. The\n                 path is closed when $\\gamma(a)=\\gamma(b)$. Its parameterization\n                 includes orientation and multiplicity.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6298206c-1aa2-49a7-b2c9-6f92d0a831f8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "10dadf20-bc3b-4985-8b87-dd52fd8ba827",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Every holomorphic function is analytic. If $f$ is holomorphic on\nan open set containing the closed disk $\\overline{D(z_0,r)}$, then\nfor $|z-z_0|<r$,\n$f(z)=\\sum_{n=0}^{\\infty}f^{(n)}(z_0)(z-z_0)^n/n!$. This theorem\nhas no direct real-variable analogue: real differentiability of\nevery order does not imply real analyticity.",
+  "page": null,
+  "source": "TextTheorem: \"Every holomorphic function is analytic. If $f$ is holomorphic on\n              an open set containing the closed disk $\\overline{D(z_0,r)}$, then\n              for $|z-z_0|<r$,\n              $f(z)=\\sum_{n=0}^{\\infty}f^{(n)}(z_0)(z-z_0)^n/n!$. This theorem\n              has no direct real-variable analogue: real differentiability of\n              every order does not imply real analyticity.\"\nId: \"10dadf20-bc3b-4985-8b87-dd52fd8ba827\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Every holomorphic function is analytic. If $f$ is holomorphic on\n              an open set containing the closed disk $\\overline{D(z_0,r)}$, then\n              for $|z-z_0|<r$,\n              $f(z)=\\sum_{n=0}^{\\infty}f^{(n)}(z_0)(z-z_0)^n/n!$. This theorem\n              has no direct real-variable analogue: real differentiability of\n              every order does not imply real analyticity.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"10dadf20-bc3b-4985-8b87-dd52fd8ba827\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

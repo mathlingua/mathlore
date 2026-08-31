@@ -1,0 +1,24 @@
+{
+  "id": "b4590aa0-4e04-48c9-978a-5f42127058c4",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For subspaces $U,W\\leq V$, their sum is\n$U+W=\\{u+w:u\\in U,\\ w\\in W\\}$. The sum is direct, written\n$U\\oplus W$, when $U\\cap W=\\{0\\}$. In that case every vector in\n$U+W$ has a unique decomposition $u+w$.",
+  "page": null,
+  "source": "TextDefinition: \"For subspaces $U,W\\leq V$, their sum is\n                 $U+W=\\{u+w:u\\in U,\\ w\\in W\\}$. The sum is direct, written\n                 $U\\oplus W$, when $U\\cap W=\\{0\\}$. In that case every vector in\n                 $U+W$ has a unique decomposition $u+w$.\"\nId: \"b4590aa0-4e04-48c9-978a-5f42127058c4\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For subspaces $U,W\\leq V$, their sum is\n                 $U+W=\\{u+w:u\\in U,\\ w\\in W\\}$. The sum is direct, written\n                 $U\\oplus W$, when $U\\cap W=\\{0\\}$. In that case every vector in\n                 $U+W$ has a unique decomposition $u+w$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b4590aa0-4e04-48c9-978a-5f42127058c4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

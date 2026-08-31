@@ -1,0 +1,27 @@
+{
+  "id": "ff363d3f-e5fd-4ddf-86e4-8d4182a49b2c",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Universal Property and Arithmetic"
+  },
+  "source": "SectionTitle: \"Universal Property and Arithmetic\"\nId: \"ff363d3f-e5fd-4ddf-86e4-8d4182a49b2c\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Universal Property and Arithmetic\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ff363d3f-e5fd-4ddf-86e4-8d4182a49b2c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

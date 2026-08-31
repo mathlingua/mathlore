@@ -1,0 +1,24 @@
+{
+  "id": "2fd95aa6-aab1-4a5f-bc72-31073514ac0d",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For an endomorphism $T$ of a finite-dimensional vector space,\nthe characteristic polynomial is $\\chi_T(t)=\\det(tI-T)$. A\nscalar $\\lambda$ is an eigenvalue exactly when\n$\\chi_T(\\lambda)=0$, equivalently when $T-\\lambda I$ has\nnontrivial kernel. Eigenvectors are required to be nonzero.",
+  "page": null,
+  "source": "TextDefinition: \"For an endomorphism $T$ of a finite-dimensional vector space,\n                 the characteristic polynomial is $\\chi_T(t)=\\det(tI-T)$. A\n                 scalar $\\lambda$ is an eigenvalue exactly when\n                 $\\chi_T(\\lambda)=0$, equivalently when $T-\\lambda I$ has\n                 nontrivial kernel. Eigenvectors are required to be nonzero.\"\nId: \"2fd95aa6-aab1-4a5f-bc72-31073514ac0d\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For an endomorphism $T$ of a finite-dimensional vector space,\n                 the characteristic polynomial is $\\chi_T(t)=\\det(tI-T)$. A\n                 scalar $\\lambda$ is an eigenvalue exactly when\n                 $\\chi_T(\\lambda)=0$, equivalently when $T-\\lambda I$ has\n                 nontrivial kernel. Eigenvectors are required to be nonzero.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2fd95aa6-aab1-4a5f-bc72-31073514ac0d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

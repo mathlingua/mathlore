@@ -1,0 +1,24 @@
+{
+  "id": "5425d771-9398-4949-aeac-86991b073f13",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "Let $D_1,\\ldots,D_n$ be domains. An $n$-ary predicate $P$ on\nthese domains is an expression for which $P(a_1,\\ldots,a_n)$ is\na statement whenever $a_i\\in D_i$ for every $i$. Equivalently,\nafter a semantics has been fixed, $P$ determines a truth-valued\nfunction on $D_1\\times\\cdots\\times D_n$. The domains are part\nof the specification: the same formula may define different\npredicates when its variables range over different objects.",
+  "page": null,
+  "source": "TextDefinition: \"Let $D_1,\\ldots,D_n$ be domains. An $n$-ary predicate $P$ on\n                 these domains is an expression for which $P(a_1,\\ldots,a_n)$ is\n                 a statement whenever $a_i\\in D_i$ for every $i$. Equivalently,\n                 after a semantics has been fixed, $P$ determines a truth-valued\n                 function on $D_1\\times\\cdots\\times D_n$. The domains are part\n                 of the specification: the same formula may define different\n                 predicates when its variables range over different objects.\"\nId: \"5425d771-9398-4949-aeac-86991b073f13\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"Let $D_1,\\ldots,D_n$ be domains. An $n$-ary predicate $P$ on\n                 these domains is an expression for which $P(a_1,\\ldots,a_n)$ is\n                 a statement whenever $a_i\\in D_i$ for every $i$. Equivalently,\n                 after a semantics has been fixed, $P$ determines a truth-valued\n                 function on $D_1\\times\\cdots\\times D_n$. The domains are part\n                 of the specification: the same formula may define different\n                 predicates when its variables range over different objects.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5425d771-9398-4949-aeac-86991b073f13\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

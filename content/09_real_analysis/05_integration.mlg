@@ -1,0 +1,107 @@
+Title: "Riemann Integration"
+Id: "3c8247c0-1b86-4c6f-bb9a-e6ee7677882e"
+
+
+Text: "Integration aggregates local values over an interval. Riemann's
+       construction compares a bounded function with upper and lower step
+       functions determined by finite partitions. Integrability means that the
+       uncertainty between these approximations can be made arbitrarily small;
+       it is not built into the notation $\int_a^b f$."
+Id: "dfd615d6-c98b-40c7-a114-d59701269a65"
+
+
+SectionTitle: "Partitions and Integrability"
+Id: "01b4f24b-5d4d-49aa-8730-389b4a3bdd87"
+
+
+TextDefinition: "A partition of a compact interval $[a,b]$ is a finite ordered
+                 set $P=\{x_0,\ldots,x_n\}$ with $a=x_0<x_1<\cdots<x_n=b$. Its
+                 mesh is $\|P\|=\max_i(x_i-x_{i-1})$. A tagged partition
+                 additionally chooses $t_i\in[x_{i-1},x_i]$ for each
+                 subinterval."
+Id: "59f53606-2a8d-46f6-b022-a85883133965"
+
+
+TextDefinition: "For a bounded function $f:[a,b]\to\mathbb{R}$ and a partition
+                 $P$, let $m_i$ and $M_i$ be the infimum and supremum of $f$ on
+                 $[x_{i-1},x_i]$. The lower and upper Darboux sums are
+                 $L(f,P)=\sum_i m_i(x_i-x_{i-1})$ and
+                 $U(f,P)=\sum_i M_i(x_i-x_{i-1})$. Refining a partition can only
+                 increase lower sums and decrease upper sums."
+Id: "8ff282a0-258f-447e-84bf-6b8cb98b389a"
+
+
+TextDefinition: "A bounded function $f:[a,b]\to\mathbb{R}$ is Riemann integrable
+                 if for every $\epsilon>0$ there is a partition $P$ such that
+                 $U(f,P)-L(f,P)<\epsilon$. The common value of the supremum of
+                 all lower sums and the infimum of all upper sums is denoted
+                 $\int_a^b f(x)\,dx$."
+Id: "3dac3956-17e2-451a-9234-d87e7086562c"
+
+
+[\riemann.integral:of{f}:on{a, b}]
+Defines: I is \real
+when:
+. a, b is \real
+. f is \function:on{\reals}:to{\reals}
+Documented:
+. called: "Riemann integral of $f?$ on $[a?, b?]$"
+. written: "\int_{a?}^{b?} f?(x) \, dx"
+. description: "The definite Riemann integral $\int_a^b f(x)\,dx$, defined when
+                $f$ is Riemann integrable on the interval."
+Id: "06b220c2-ee50-4d69-8de7-c1cbbd81e3bb"
+
+
+TextTheorem: "Riemann's criterion. A bounded function on $[a,b]$ is Riemann
+              integrable if and only if its set of discontinuities has Lebesgue
+              measure zero. In particular, every continuous function and every
+              monotone function on a compact interval is Riemann integrable."
+Id: "4b481477-f1a9-4e70-ab51-a31b04d2df87"
+
+
+SectionTitle: "Algebraic and Order Properties"
+Id: "505d74c8-e9c5-43fb-af75-cab3e77959a3"
+
+
+TextTheorem: "If $f$ and $g$ are Riemann integrable on $[a,b]$ and
+              $\alpha,\beta\in\mathbb{R}$, then
+              $\int_a^b(\alpha f+\beta g)=\alpha\int_a^b f+
+              \beta\int_a^b g$. If $f\leq g$ pointwise, then
+              $\int_a^b f\leq\int_a^b g$. Consequently
+              $|\int_a^b f|\leq\int_a^b|f|$."
+Id: "93332ffc-3ecf-4c11-8d40-0c8124dc7057"
+
+
+TextTheorem: "Additivity over intervals. If $f$ is Riemann integrable on $[a,b]$
+              and $c\in[a,b]$, then $\int_a^b f=\int_a^c f+\int_c^b f$. With the
+              conventions $\int_b^a f=-\int_a^b f$ and $\int_a^a f=0$, this
+              identity is independent of the order of the endpoints."
+Id: "a6f26a35-fb02-4842-85f9-9a9d698bfc9f"
+
+
+SectionTitle: "The Fundamental Theorem of Calculus"
+Id: "e71191cd-4b73-45f8-84bd-9395e3c64aba"
+
+
+TextTheorem: "Fundamental theorem of calculus, first part. If
+              $f:[a,b]\to\mathbb{R}$ is continuous and $F(x)=\int_a^x f(t)\,dt$,
+              then $F$ is continuous on $[a,b]$, differentiable on $(a,b)$, and
+              $F'(x)=f(x)$ for every $x\in(a,b)$. Thus integration produces an
+              antiderivative of a continuous function."
+Id: "c9ca6fed-5fe9-4792-b21f-19de5d50e740"
+
+
+TextTheorem: "Fundamental theorem of calculus, evaluation form. If
+              $f:[a,b]\to\mathbb{R}$ is continuous and $G:[a,b]\to\mathbb{R}$ is
+              continuous on $[a,b]$ and differentiable on $(a,b)$ with $G'=f$,
+              then $\int_a^b f(x)\,dx=G(b)-G(a)$. Any two antiderivatives differ
+              by a constant on the interval."
+Id: "17d7c6be-11d7-44bf-b522-515557063ed7"
+
+
+Text: "The two parts express inverse relationships at different logical levels.
+       The first constructs an antiderivative from a continuous integrand. The
+       second evaluates an already existing integral through any antiderivative.
+       Neither says that every derivative is continuous or that every bounded
+       function is Riemann integrable."
+Id: "28ca0a24-996b-449c-9980-74d13fd3a73f"

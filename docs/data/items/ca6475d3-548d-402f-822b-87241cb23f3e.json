@@ -1,0 +1,24 @@
+{
+  "id": "ca6475d3-548d-402f-822b-87241cb23f3e",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "The rational order is dense: whenever $p<q$ in $\\mathbb{Q}$, the\nmidpoint $(p+q)/2$ is rational and satisfies $p<(p+q)/2<q$. The\nrationals are also dense in the reals, but they are not complete;\nfor example, the rational numbers whose square is less than $2$\nhave no least upper bound in $\\mathbb{Q}$.",
+  "page": null,
+  "source": "TextTheorem: \"The rational order is dense: whenever $p<q$ in $\\mathbb{Q}$, the\n              midpoint $(p+q)/2$ is rational and satisfies $p<(p+q)/2<q$. The\n              rationals are also dense in the reals, but they are not complete;\n              for example, the rational numbers whose square is less than $2$\n              have no least upper bound in $\\mathbb{Q}$.\"\nId: \"ca6475d3-548d-402f-822b-87241cb23f3e\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"The rational order is dense: whenever $p<q$ in $\\mathbb{Q}$, the\n              midpoint $(p+q)/2$ is rational and satisfies $p<(p+q)/2<q$. The\n              rationals are also dense in the reals, but they are not complete;\n              for example, the rational numbers whose square is less than $2$\n              have no least upper bound in $\\mathbb{Q}$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ca6475d3-548d-402f-822b-87241cb23f3e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

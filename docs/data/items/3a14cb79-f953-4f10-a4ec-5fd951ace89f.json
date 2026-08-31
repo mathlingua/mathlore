@@ -1,0 +1,24 @@
+{
+  "id": "3a14cb79-f953-4f10-a4ec-5fd951ace89f",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Open mapping theorem. A nonconstant holomorphic function on a\ndomain maps open sets to open sets. As a consequence, if $|f|$\nattains a local maximum at an interior point, then $f$ is constant\non that connected component (maximum modulus principle).",
+  "page": null,
+  "source": "TextTheorem: \"Open mapping theorem. A nonconstant holomorphic function on a\n              domain maps open sets to open sets. As a consequence, if $|f|$\n              attains a local maximum at an interior point, then $f$ is constant\n              on that connected component (maximum modulus principle).\"\nId: \"3a14cb79-f953-4f10-a4ec-5fd951ace89f\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Open mapping theorem. A nonconstant holomorphic function on a\n              domain maps open sets to open sets. As a consequence, if $|f|$\n              attains a local maximum at an interior point, then $f$ is constant\n              on that connected component (maximum modulus principle).\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3a14cb79-f953-4f10-a4ec-5fd951ace89f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+Title: "Predicates and Quantifiers"
+Id: "70fb4c9d-8dde-4109-a032-6da3247867c1"
+
+
+Text: "Propositional logic treats complete statements as indivisible units.
+       Mathematics also needs *open* expressions such as $x^2 < 2$, whose truth
+       depends on a value assigned to $x$. Predicate logic supplies the missing
+       structure: variables range over a specified domain, predicates become
+       statements after their arguments are supplied, and quantifiers assert
+       that a predicate holds universally or has a witness."
+Id: "3ea75cf2-0c9a-4882-ad3f-ed0c34a3a53c"
+
+
+SectionTitle: "Predicates, Domains, and Variables"
+Id: "76392982-4763-4264-aea1-c7bac3d909fa"
+
+
+TextDefinition: "Let $D_1,\ldots,D_n$ be domains. An $n$-ary predicate $P$ on
+                 these domains is an expression for which $P(a_1,\ldots,a_n)$ is
+                 a statement whenever $a_i\in D_i$ for every $i$. Equivalently,
+                 after a semantics has been fixed, $P$ determines a truth-valued
+                 function on $D_1\times\cdots\times D_n$. The domains are part
+                 of the specification: the same formula may define different
+                 predicates when its variables range over different objects."
+Id: "5425d771-9398-4949-aeac-86991b073f13"
+
+
+TextDefinition: "An occurrence of a variable is *bound* if it lies within the
+                 scope of a quantifier that binds that variable; otherwise it is
+                 *free*. A formula with no free variables is a sentence and
+                 therefore has a truth value in a fixed interpretation. A
+                 formula with free variables denotes a condition on possible
+                 assignments to those variables. Renaming a bound variable does
+                 not change meaning, provided the new name does not capture a
+                 formerly free occurrence."
+Id: "4d77ab37-a8da-4d6b-b9c7-d5dc9036755d"
+
+
+Text: "The distinction between free and bound variables is a matter of scope,
+       not typography. In $P(x)\land\exists x\,Q(x)$, the first occurrence of
+       $x$ is free and the occurrences governed by $\exists x$ are bound.
+       Careless substitution can therefore change meaning by variable capture; a
+       rigorous substitution operation always renames bound variables when
+       necessary."
+Id: "4289625b-21c1-495f-889f-ea1d4d707fd6"
+
+
+SectionTitle: "Universal and Existential Quantification"
+Id: "dc40bcba-5c18-4126-86c9-56e178a65d78"
+
+
+TextDefinition: "For a predicate $P(x)$ on a domain $D$, the universal statement
+                 $\forall x\in D\,P(x)$ is true exactly when $P(a)$ is true for
+                 every $a\in D$. To prove it one fixes an arbitrary $a\in D$ and
+                 proves $P(a)$ without using any special property of $a$. To
+                 refute it, one exhibits a counterexample $a\in D$ for which
+                 $P(a)$ is false."
+Id: "549d47c5-700f-4cd5-86a2-26533b189178"
+
+
+TextDefinition: "For a predicate $P(x)$ on a domain $D$, the existential
+                 statement $\exists x\in D\,P(x)$ is true exactly when at least
+                 one $a\in D$ satisfies $P(a)$. Such an $a$ is called a witness.
+                 An existence proof must establish both that the proposed
+                 witness belongs to the domain and that it satisfies the
+                 predicate; uniqueness is a separate assertion."
+Id: "60a3796d-d17b-4e3f-b2a1-1878e1468e61"
+
+
+TextTheorem: "Quantifier negation obeys the dualities
+              $\neg\forall x\in D\,P(x)\iff\exists x\in D\,\neg P(x)$ and
+              $\neg\exists x\in D\,P(x)\iff\forall x\in D\,\neg P(x)$. Thus the
+              negation of a universal claim asks for a counterexample, while the
+              negation of an existential claim excludes every possible witness."
+Id: "bf4df541-b2ff-4fff-9f32-e0565e88a24a"
+
+
+Text: "Quantifier order records dependence. The statement
+       $\forall x\,\exists y\,R(x,y)$ permits the witness $y$ to depend on $x$;
+       the statement $\exists y\,\forall x\,R(x,y)$ requires a single witness
+       that works uniformly for all $x$. The second statement implies the first
+       when the domains are nonempty, but the converse generally fails. This
+       distinction later reappears in uniform continuity, where one $\delta$
+       must work simultaneously at every point of a domain."
+Id: "f983ba30-e2c8-45f9-afd9-8e19e841e502"
+
+
+SectionTitle: "Existence and Uniqueness"
+Id: "cdaab479-a146-47b9-b147-de10ed82aa04"
+
+
+TextDefinition: "The notation $\exists!x\in D\,P(x)$ asserts existence and
+                 uniqueness: there is an $a\in D$ satisfying $P(a)$, and any
+                 $b\in D$ satisfying $P(b)$ equals $a$. A proof therefore has
+                 two logically independent parts. It is often useful to prove
+                 uniqueness conditionally before constructing an object, because
+                 the uniqueness argument identifies which properties a
+                 successful construction must have."
+Id: "730615eb-feb0-45d1-8ca7-82c3138f5eb7"
+
+
+TextTheorem: "If $\exists!x\in D\,P(x)$, then a definition of the form 'let $a$
+              be the unique element of $D$ satisfying $P$' is unambiguous.
+              Without prior existence and uniqueness, the same phrase does not
+              define an object: it merely presupposes one."
+Id: "09f10995-86d7-409a-8411-247d4acef1f4"
+
+
+Text: "Restricted quantifiers are abbreviations whose expansions expose their
+       logic. The formula $\forall x\in D\,P(x)$ means
+       $\forall x\,(x\in D\Rightarrow P(x))$, whereas $\exists x\in D\,P(x)$
+       means $\exists x\,(x\in D\land P(x))$. The different connective is
+       essential: using implication in the existential form would make any
+       object outside $D$ a vacuous witness."
+Id: "64c6c4ea-6a77-413f-9dda-b1d4bb102443"

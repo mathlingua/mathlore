@@ -1,0 +1,13 @@
+Text: "Linear algebra studies addition and scalar multiplication when both are
+       compatible with a field of scalars. Vector spaces provide the objects,
+       linear maps provide the morphisms, and bases translate the abstract
+       theory into coordinates and matrices. Dimension records the finite
+       amount of independent information in a space; duality turns vectors
+       into linear measurements; and eigenvalue theory identifies directions
+       on which an operator acts by pure scaling.
+
+       Coordinates are a tool, not part of the underlying space. Statements
+       formulated invariantly survive a change of basis, while matrix entries
+       generally do not. The chapter repeatedly moves between these two levels
+       so that computation remains attached to its structural meaning."
+Id: "54ab5aff-12fb-4a7a-9a1a-e21bf73d9d83"

@@ -1,0 +1,27 @@
+{
+  "id": "4289625b-21c1-495f-889f-ea1d4d707fd6",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The distinction between free and bound variables is a matter of scope,\nnot typography. In $P(x)\\land\\exists x\\,Q(x)$, the first occurrence of\n$x$ is free and the occurrences governed by $\\exists x$ are bound.\nCareless substitution can therefore change meaning by variable capture; a\nrigorous substitution operation always renames bound variables when\nnecessary."
+  },
+  "source": "Text: \"The distinction between free and bound variables is a matter of scope,\n       not typography. In $P(x)\\land\\exists x\\,Q(x)$, the first occurrence of\n       $x$ is free and the occurrences governed by $\\exists x$ are bound.\n       Careless substitution can therefore change meaning by variable capture; a\n       rigorous substitution operation always renames bound variables when\n       necessary.\"\nId: \"4289625b-21c1-495f-889f-ea1d4d707fd6\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The distinction between free and bound variables is a matter of scope,\n       not typography. In $P(x)\\land\\exists x\\,Q(x)$, the first occurrence of\n       $x$ is free and the occurrences governed by $\\exists x$ are bound.\n       Careless substitution can therefore change meaning by variable capture; a\n       rigorous substitution operation always renames bound variables when\n       necessary.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4289625b-21c1-495f-889f-ea1d4d707fd6\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+Title: "Limits and Continuity"
+Id: "71b151a8-9a18-48b9-a4c4-3007044147d3"
+
+
+Text: "Limits and continuity capture the notion of approximation and unbroken
+       change in real-valued functions. The $\epsilon$-$\delta$ formalism
+       provides the precise criterion for functional proximity."
+Id: "800b7c32-41b4-4c27-a8d6-bb213da36a62"
+
+
+SectionTitle: "Function Limits"
+Id: "e33914da-aa4d-4409-a36b-9308d644ccc6"
+
+
+[\real.function.limit:at{x0}:of{f}]
+Defines: L is \real
+using: U \:subset:/ \reals
+when:
+. x0 is \real
+. f is \function:on{U}:to{\reals}
+expresses:
+. forAll: epsilon is \real
+  where: epsilon \:real.greater?:/ \real.zero
+  then:
+  . exists: delta is \real
+    suchThat:
+    . delta \:real.greater?:/ \real.zero
+    . forAll: x is \real
+      where:
+      . x "in" U
+      . x != x0
+      . \real.abs(x \.real.-./ x0) \:real.less?:/ delta
+      then: \real.abs(f(x) \.real.-./ L) \:real.less?:/ epsilon
+Documented:
+. called: "limit of $f?$ at $x0?$"
+. written: "\lim_{x \to x0?} f?(x)"
+. description: "The limit of $f(x)$ as $x$ approaches $x_0$ equals $L$."
+Id: "3af5db3a-ae38-4af7-876b-a775e8f83089"
+
+
+SectionTitle: "Continuity"
+Id: "550e6c6b-b2d6-4a7b-941c-de10e61ec6a1"
+
+
+[\(continuous)::real.function:at{x0}]
+Refines: f
+using: U \:subset:/ \reals
+when: x0 "in" U
+specifies: f is \function:on{U}:to{\reals}
+satisfies:
+. forAll: epsilon is \real
+  where: epsilon \:real.greater?:/ \real.zero
+  then:
+  . exists: delta is \real
+    suchThat:
+    . delta \:real.greater?:/ \real.zero
+    . forAll: x is \real
+      where:
+      . x "in" U
+      . \real.abs(x \.real.-./ x0) \:real.less?:/ delta
+      then: \real.abs(f(x) \.real.-./ f(x0)) \:real.less?:/ epsilon
+Documented:
+. adjective: "continuous at $x0?$"
+. description: "A function is continuous at a point $x_0$ if small changes in
+                input yield arbitrarily small changes in output."
+Id: "0596242b-c84c-4989-a566-a5e5d1a2c884"
+
+
+[\(continuous)::real.function:on{U}]
+Refines: f
+when: U \:subset:/ \reals
+specifies: f is \function:on{U}:to{\reals}
+satisfies:
+. forAll: x0 "in" U
+  then: f is? \(continuous)::real.function:at{x0}
+Documented:
+. adjective: "continuous"
+. description: "A function is continuous on a domain $U$ if it is continuous at
+                every point of $U$."
+Id: "5b60dfb1-186f-4583-9021-23830d2286df"
+
+
+[\(uniformly.continuous)::real.function:on{U}]
+Refines: f
+when: U \:subset:/ \reals
+specifies: f is \function:on{U}:to{\reals}
+satisfies:
+. forAll: epsilon is \real
+  where: epsilon \:real.greater?:/ \real.zero
+  then:
+  . exists: delta is \real
+    suchThat:
+    . delta \:real.greater?:/ \real.zero
+    . forAll: x, y is \real
+      where:
+      . x "in" U
+      . y "in" U
+      . \real.abs(x \.real.-./ y) \:real.less?:/ delta
+      then: \real.abs(f(x) \.real.-./ f(y)) \:real.less?:/ epsilon
+Documented:
+. adjective: "uniformly continuous"
+. description: "A function is uniformly continuous if a single $\delta$ works
+                across the entire domain."
+Id: "f69d925b-5ae6-4969-9d22-4d4eeea90a08"
+
+
+SectionTitle: "The Intermediate Value Theorem"
+Id: "53d3e7df-fd04-4eb3-9f05-149c234f9485"
+
+
+TextTheorem: "Intermediate value theorem. Let $a<b$ and let
+              $f:[a,b]\to\mathbb{R}$ be continuous. If $y$ lies between $f(a)$
+              and $f(b)$, meaning
+              $\min\{f(a),f(b)\}\leq y\leq\max\{f(a),f(b)\}$, then there is
+              $c\in[a,b]$ such that $f(c)=y$. If $y$ lies strictly between the
+              endpoint values, $c$ may be chosen in $(a,b)$."
+Id: "f29c7f02-8e4f-46da-ac4e-3df62dca57f0"
+
+
+Text: "Continuity and the interval domain are both indispensable. A jump
+       discontinuity can omit all values between its one-sided levels, while a
+       continuous function on a disconnected domain can take one range of values
+       on one component and another range on the other. Conceptually, the
+       theorem says that the continuous image of a connected interval is
+       connected, hence itself an interval."
+Id: "580e742d-65ac-4bc1-a578-a5ab217a1b12"
+
+
+SectionTitle: "Compactness and Uniform Control"
+Id: "1c1dc16f-d9f4-431c-84ab-2a013263c6a4"
+
+
+TextTheorem: "Extreme value theorem. If $f:[a,b]\to\mathbb{R}$ is continuous,
+              then $f$ is bounded and attains both a maximum and a minimum on
+              $[a,b]$. Boundedness of the domain alone is insufficient; the
+              interval must also be closed, and the function must be continuous."
+Id: "1de7e719-9ad4-4acd-a197-fe41c36077ea"
+
+
+TextTheorem: "Heine--Cantor theorem. Every continuous function from a compact
+              metric space to a metric space is uniformly continuous. In
+              particular, a function continuous on $[a,b]$ admits one $\delta$
+              for each $\epsilon$ that works at all points simultaneously."
+Id: "bbd033d2-9fa7-47d7-9354-35da690e0f8e"
+
+
+TextTheorem: "Sequential criterion. A function $f$ has limit $L$ at an
+              accumulation point $x_0$ of its domain if and only if
+              $f(x_n)\to L$ for every sequence $(x_n)$ in the domain with
+              $x_n\ne x_0$ and $x_n\to x_0$. This criterion is specific to
+              first-countable settings such as metric spaces."
+Id: "66ebdb25-bc98-4ea5-be68-0e57e72aa22e"

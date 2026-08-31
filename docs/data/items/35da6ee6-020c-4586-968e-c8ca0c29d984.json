@@ -1,0 +1,24 @@
+{
+  "id": "35da6ee6-020c-4586-968e-c8ca0c29d984",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A direct proof of $P\\Rightarrow Q$ assumes $P$ and derives $Q$.\nA proof by contraposition derives $\\neg P$ from $\\neg Q$, using\nthe classical equivalence\n$(P\\Rightarrow Q)\\iff(\\neg Q\\Rightarrow\\neg P)$. A proof by\ncontradiction assumes the negation of the desired conclusion\nand derives an impossibility. These are transformations of the\nlogical target, not licenses to omit intermediate\njustification.",
+  "page": null,
+  "source": "TextDefinition: \"A direct proof of $P\\Rightarrow Q$ assumes $P$ and derives $Q$.\n                 A proof by contraposition derives $\\neg P$ from $\\neg Q$, using\n                 the classical equivalence\n                 $(P\\Rightarrow Q)\\iff(\\neg Q\\Rightarrow\\neg P)$. A proof by\n                 contradiction assumes the negation of the desired conclusion\n                 and derives an impossibility. These are transformations of the\n                 logical target, not licenses to omit intermediate\n                 justification.\"\nId: \"35da6ee6-020c-4586-968e-c8ca0c29d984\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A direct proof of $P\\Rightarrow Q$ assumes $P$ and derives $Q$.\n                 A proof by contraposition derives $\\neg P$ from $\\neg Q$, using\n                 the classical equivalence\n                 $(P\\Rightarrow Q)\\iff(\\neg Q\\Rightarrow\\neg P)$. A proof by\n                 contradiction assumes the negation of the desired conclusion\n                 and derives an impossibility. These are transformations of the\n                 logical target, not licenses to omit intermediate\n                 justification.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"35da6ee6-020c-4586-968e-c8ca0c29d984\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

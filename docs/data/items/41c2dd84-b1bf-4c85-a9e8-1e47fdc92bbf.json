@@ -1,0 +1,24 @@
+{
+  "id": "41c2dd84-b1bf-4c85-a9e8-1e47fdc92bbf",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Comparison principle. If $0\\leq a_n\\leq b_n$ eventually and\n$\\sum b_n$ converges, then $\\sum a_n$ converges. If\n$0\\leq b_n\\leq a_n$ eventually and $\\sum b_n$ diverges, then\n$\\sum a_n$ diverges. The word eventually permits finitely many\nexceptional initial terms, which never affect convergence.",
+  "page": null,
+  "source": "TextTheorem: \"Comparison principle. If $0\\leq a_n\\leq b_n$ eventually and\n              $\\sum b_n$ converges, then $\\sum a_n$ converges. If\n              $0\\leq b_n\\leq a_n$ eventually and $\\sum b_n$ diverges, then\n              $\\sum a_n$ diverges. The word eventually permits finitely many\n              exceptional initial terms, which never affect convergence.\"\nId: \"41c2dd84-b1bf-4c85-a9e8-1e47fdc92bbf\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Comparison principle. If $0\\leq a_n\\leq b_n$ eventually and\n              $\\sum b_n$ converges, then $\\sum a_n$ converges. If\n              $0\\leq b_n\\leq a_n$ eventually and $\\sum b_n$ diverges, then\n              $\\sum a_n$ diverges. The word eventually permits finitely many\n              exceptional initial terms, which never affect convergence.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"41c2dd84-b1bf-4c85-a9e8-1e47fdc92bbf\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

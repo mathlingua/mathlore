@@ -1,0 +1,27 @@
+{
+  "id": "8d163eb8-a148-43d1-80b3-38c54e51e278",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Cantor's diagonal argument illustrates the foundational discipline of the\nchapter. The set $D$ exists by separation from $A$, not by unrestricted\ncomprehension. Its definition then converts the assumption that $f$ lists\nevery subset of $A$ into the contradiction $d\\in D\\iff d\\notin D$ at a\npurported index $d$ for $D$."
+  },
+  "source": "Text: \"Cantor's diagonal argument illustrates the foundational discipline of the\n       chapter. The set $D$ exists by separation from $A$, not by unrestricted\n       comprehension. Its definition then converts the assumption that $f$ lists\n       every subset of $A$ into the contradiction $d\\in D\\iff d\\notin D$ at a\n       purported index $d$ for $D$.\"\nId: \"8d163eb8-a148-43d1-80b3-38c54e51e278\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Cantor's diagonal argument illustrates the foundational discipline of the\n       chapter. The set $D$ exists by separation from $A$, not by unrestricted\n       comprehension. Its definition then converts the assumption that $f$ lists\n       every subset of $A$ into the contradiction $d\\in D\\iff d\\notin D$ at a\n       purported index $d$ for $D$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8d163eb8-a148-43d1-80b3-38c54e51e278\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

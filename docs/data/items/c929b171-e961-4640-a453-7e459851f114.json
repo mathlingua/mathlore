@@ -1,0 +1,27 @@
+{
+  "id": "c929b171-e961-4640-a453-7e459851f114",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A conjecture belongs in a mathematical library only when its statement is\nprecise and its unproved status is unmistakable. The examples below are\nnot included as curiosities. Each arises naturally from structures\ndeveloped earlier, and each illustrates the gap that can remain between\noverwhelming evidence and proof. Verification of finitely many cases,\nhowever extensive, cannot establish a universal assertion about all\nintegers or all complex zeros."
+  },
+  "source": "Text: \"A conjecture belongs in a mathematical library only when its statement is\n       precise and its unproved status is unmistakable. The examples below are\n       not included as curiosities. Each arises naturally from structures\n       developed earlier, and each illustrates the gap that can remain between\n       overwhelming evidence and proof. Verification of finitely many cases,\n       however extensive, cannot establish a universal assertion about all\n       integers or all complex zeros.\"\nId: \"c929b171-e961-4640-a453-7e459851f114\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"A conjecture belongs in a mathematical library only when its statement is\n       precise and its unproved status is unmistakable. The examples below are\n       not included as curiosities. Each arises naturally from structures\n       developed earlier, and each illustrates the gap that can remain between\n       overwhelming evidence and proof. Verification of finitely many cases,\n       however extensive, cannot establish a universal assertion about all\n       integers or all complex zeros.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c929b171-e961-4640-a453-7e459851f114\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

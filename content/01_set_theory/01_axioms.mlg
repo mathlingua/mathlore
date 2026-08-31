@@ -126,9 +126,8 @@ then:
 Documented:
 . called: "Axiom of Empty Set"
 . description: "There is a set having no members: for every set $Z$, $Z \notin
-                X$. This is the one axiom that outright asserts a set into
-                existence; every other set is built, directly or indirectly,
-                starting from it."
+                X$. Extensionality makes this set unique, so any construction
+                with no members denotes the same empty set."
 Id: "f2180719-568d-4084-982b-a71c5f195bf6"
 
 
@@ -239,7 +238,7 @@ Axiom:
 then:
 . exists: I is \set
   suchThat:
-  . oneOf:
+  . allOf:
     . \empty.set "in"? I
     . forAll: Y is \set
       then: (.Y "in"? I.) \.implies./ (.\set.successor:of{Y} "in"? I.)

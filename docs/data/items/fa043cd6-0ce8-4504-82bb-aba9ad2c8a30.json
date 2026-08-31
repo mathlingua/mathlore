@@ -1,0 +1,24 @@
+{
+  "id": "fa043cd6-0ce8-4504-82bb-aba9ad2c8a30",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A left action of a group $G$ on a set $X$ is a map\n$G\\times X\\to X$, written $(g,x)\\mapsto g\\cdot x$, satisfying\n$e\\cdot x=x$ and $(gh)\\cdot x=g\\cdot(h\\cdot x)$. Equivalently,\nan action is a homomorphism $G\\to\\operatorname{Sym}(X)$ into\nthe group of bijections of $X$.",
+  "page": null,
+  "source": "TextDefinition: \"A left action of a group $G$ on a set $X$ is a map\n                 $G\\times X\\to X$, written $(g,x)\\mapsto g\\cdot x$, satisfying\n                 $e\\cdot x=x$ and $(gh)\\cdot x=g\\cdot(h\\cdot x)$. Equivalently,\n                 an action is a homomorphism $G\\to\\operatorname{Sym}(X)$ into\n                 the group of bijections of $X$.\"\nId: \"fa043cd6-0ce8-4504-82bb-aba9ad2c8a30\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A left action of a group $G$ on a set $X$ is a map\n                 $G\\times X\\to X$, written $(g,x)\\mapsto g\\cdot x$, satisfying\n                 $e\\cdot x=x$ and $(gh)\\cdot x=g\\cdot(h\\cdot x)$. Equivalently,\n                 an action is a homomorphism $G\\to\\operatorname{Sym}(X)$ into\n                 the group of bijections of $X$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"fa043cd6-0ce8-4504-82bb-aba9ad2c8a30\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

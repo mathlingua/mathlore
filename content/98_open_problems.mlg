@@ -1,0 +1,71 @@
+Title: "Selected Open Problems"
+Id: "8ac6237e-b34e-4667-8a7a-1fd9950c7476"
+
+
+Text: "A conjecture belongs in a mathematical library only when its statement is
+       precise and its unproved status is unmistakable. The examples below are
+       not included as curiosities. Each arises naturally from structures
+       developed earlier, and each illustrates the gap that can remain between
+       overwhelming evidence and proof. Verification of finitely many cases,
+       however extensive, cannot establish a universal assertion about all
+       integers or all complex zeros."
+Id: "c929b171-e961-4640-a453-7e459851f114"
+
+
+SectionTitle: "Additive and Multiplicative Structure of Primes"
+Id: "67c5e464-3e6e-40d6-9da8-2be12e536dc9"
+
+
+TextDefinition: "A positive integer $p>1$ is prime if its only positive divisors
+                 are $1$ and $p$. Every integer greater than $1$ factors as a
+                 product of primes, uniquely up to the order of the factors.
+                 This multiplicative classification does not make additive
+                 questions about primes easy."
+Id: "133119f5-9771-4e7e-b84e-de640884b36e"
+
+
+TextConjecture: "Strong Goldbach conjecture. Every even integer greater than $2$
+                 is the sum of two prime numbers. The order of the two primes is
+                 irrelevant, and equality is allowed; for example, $10=3+7=5+5$.
+                 The conjecture is a universal existence claim, so computation
+                 can verify initial ranges but cannot by itself settle all even
+                 integers."
+Id: "1945a57b-f397-4f58-b515-fd8878910f2e"
+
+
+TextConjecture: "Twin prime conjecture. There exist infinitely many primes $p$
+                 for which $p+2$ is also prime. Such pairs are called twin
+                 primes. Results proving infinitely many prime pairs within a
+                 fixed bounded distance do not by themselves prove that the
+                 distance $2$ occurs infinitely often."
+Id: "565f765c-47cd-427f-a5b5-44c87d1a9794"
+
+
+SectionTitle: "Zeros of the Zeta Function"
+Id: "1ce51384-d4ed-4ff8-ae1f-1a249702737c"
+
+
+TextDefinition: "For complex $s$ with $\operatorname{Re}(s)>1$, the Riemann zeta
+                 function is $\zeta(s)=\sum_{n=1}^{\infty}n^{-s}$. It admits a
+                 meromorphic continuation to $\mathbb{C}$ with a single simple
+                 pole at $s=1$. Its zeros at the negative even integers are
+                 called trivial; all other zeros lie in the critical strip
+                 $0<\operatorname{Re}(s)<1$."
+Id: "6afb5d40-7bb1-43d7-b2e1-c4d5691fe031"
+
+
+TextConjecture: "Riemann hypothesis. Every nontrivial zero $\rho$ of the Riemann
+                 zeta function satisfies $\operatorname{Re}(\rho)=1/2$. The
+                 hypothesis gives sharp control over the error in the average
+                 distribution of prime numbers and is substantially stronger
+                 than the prime number theorem itself."
+Id: "2315cd43-c1d4-4518-bb73-1e2aa34b2df0"
+
+
+Text: "These conjectures differ in language but share a methodological lesson.
+       Definitions and known theorems constrain where a counterexample could
+       occur; computation and partial results supply evidence; only a proof can
+       promote the conjecture to a theorem. A future resolution should change
+       the card's status rather than silently changing the meaning of the
+       statement."
+Id: "3d6d34ce-b17e-42c2-9293-d605cb268841"

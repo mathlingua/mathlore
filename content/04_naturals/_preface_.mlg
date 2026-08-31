@@ -1,5 +1,9 @@
-Text: "The natural numbers represent the arithmetic foundation of counting. This section
-       develops the natural numbers abstractly through the Peano postulates—introducing
-       recursive arithmetic and order—and provides their canonical set-theoretic
-       realization as the Von Neumann finite ordinals $\omega$."
+Text: "The natural numbers formalize discrete iteration. They may be described
+       abstractly by zero, successor, and induction, or realized concretely as
+       the finite von Neumann ordinals. The first two pages develop those
+       viewpoints; the final page isolates induction and recursion as the
+       characteristic reasoning and construction principles of $\mathbb{N}$.
+       The separation between abstract structure and concrete realization is
+       deliberate: arithmetic theorems depend on the Peano structure, not on
+       the accidental details of its set-theoretic encoding."
 Id: "a338a613-ef12-4fab-9b9f-f0a9f6760515"

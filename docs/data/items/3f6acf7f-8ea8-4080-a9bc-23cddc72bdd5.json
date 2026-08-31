@@ -1,0 +1,24 @@
+{
+  "id": "3f6acf7f-8ea8-4080-a9bc-23cddc72bdd5",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For integers $a$ and $b$, not both zero, their greatest common\ndivisor is the unique positive integer $d$ generating the ideal\nof all integer linear combinations $ax+by$. Bezout's identity\ntherefore asserts the existence of $x,y\\in\\mathbb{Z}$ with\n$d=ax+by$.",
+  "page": null,
+  "source": "TextDefinition: \"For integers $a$ and $b$, not both zero, their greatest common\n                 divisor is the unique positive integer $d$ generating the ideal\n                 of all integer linear combinations $ax+by$. Bezout's identity\n                 therefore asserts the existence of $x,y\\in\\mathbb{Z}$ with\n                 $d=ax+by$.\"\nId: \"3f6acf7f-8ea8-4080-a9bc-23cddc72bdd5\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For integers $a$ and $b$, not both zero, their greatest common\n                 divisor is the unique positive integer $d$ generating the ideal\n                 of all integer linear combinations $ax+by$. Bezout's identity\n                 therefore asserts the existence of $x,y\\in\\mathbb{Z}$ with\n                 $d=ax+by$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3f6acf7f-8ea8-4080-a9bc-23cddc72bdd5\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

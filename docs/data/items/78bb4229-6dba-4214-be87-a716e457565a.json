@@ -1,0 +1,24 @@
+{
+  "id": "78bb4229-6dba-4214-be87-a716e457565a",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Fundamental theorem of algebra. Every nonconstant polynomial with\ncomplex coefficients has a complex root. Equivalently, every\ndegree-$n$ polynomial splits over $\\mathbb{C}$ into $n$ linear\nfactors counted with multiplicity. This is what it means for\n$\\mathbb{C}$ to be algebraically closed.",
+  "page": null,
+  "source": "TextTheorem: \"Fundamental theorem of algebra. Every nonconstant polynomial with\n              complex coefficients has a complex root. Equivalently, every\n              degree-$n$ polynomial splits over $\\mathbb{C}$ into $n$ linear\n              factors counted with multiplicity. This is what it means for\n              $\\mathbb{C}$ to be algebraically closed.\"\nId: \"78bb4229-6dba-4214-be87-a716e457565a\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Fundamental theorem of algebra. Every nonconstant polynomial with\n              complex coefficients has a complex root. Equivalently, every\n              degree-$n$ polynomial splits over $\\mathbb{C}$ into $n$ linear\n              factors counted with multiplicity. This is what it means for\n              $\\mathbb{C}$ to be algebraically closed.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"78bb4229-6dba-4214-be87-a716e457565a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

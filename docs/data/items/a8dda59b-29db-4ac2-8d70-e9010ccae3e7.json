@@ -8,7 +8,7 @@
   "heading_latex": "n\\textrm{ plus }m\\quad\\htmlClass{mlg-title-written}{n + m}",
   "body_text": null,
   "page": null,
-  "source": "[n_ \\.natural.+./ m_]\nDefines: n_ + m_ is \\binary.operation:on{\\naturals}\nexpresses:\n. piecewise:\n  if: n_ = 0\n  then: n_ + m_ := m_\n  else:\n  . let: k is \\natural\n    where: n_ = \\naturals..S(k)\n    then: n_ + m_ := \\naturals..S(n_ \\.natural.+./ k)\nDocumented:\n. called: \"$n_?$ plus $m_?$\"\n. written: \"n_? + m_?\"\n. description: \"Addition of natural numbers defined by recursion on the first\n                argument: $0 + m = m$ and $S(k) + m = S(k + m)$.\"\nId: \"a8dda59b-29db-4ac2-8d70-e9010ccae3e7\"",
+  "source": "[n_ \\.natural.+./ m_]\nDefines: n_ + m_ is \\binary.operation:on{\\naturals}\nexpresses:\n. piecewise:\n  if: n_ = 0\n  then: n_ + m_ := m_\n  else:\n  . let: k is \\natural\n    where: n_ = \\naturals..S(k)\n    then: n_ + m_ := \\naturals..S(k \\.natural.+./ m_)\nDocumented:\n. called: \"$n_?$ plus $m_?$\"\n. written: \"n_? + m_?\"\n. description: \"Addition of natural numbers defined by recursion on the first\n                argument: $0 + m = m$ and $S(k) + m = S(k + m)$.\"\nId: \"a8dda59b-29db-4ac2-8d70-e9010ccae3e7\"",
   "sections": [
     {
       "label": "Defines",
@@ -137,17 +137,17 @@
                     },
                     {
                       "label": "then",
-                      "inline_argument": "n_ + m_ := \\naturals..S(n_ \\.natural.+./ k)",
-                      "inline_latex": "n + m := \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.S(\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{n + k})",
+                      "inline_argument": "n_ + m_ := \\naturals..S(k \\.natural.+./ m_)",
+                      "inline_latex": "n + m := \\htmlData{mlg-ref=5c6e61747572616c73}{\\mathbb{N}}.S(\\htmlData{mlg-ref=5c2e6e61747572616c2e2b2e2f}{k + m})",
                       "inline_type_info": [
                         {
                           "depth": 0,
-                          "text": "n_ + m_ := \\naturals..S(n_ \\.natural.+./ k)",
+                          "text": "n_ + m_ := \\naturals..S(k \\.natural.+./ m_)",
                           "types": []
                         },
                         {
                           "depth": 1,
-                          "text": "\\naturals..S(n\\.natural.+./k)",
+                          "text": "\\naturals..S(k\\.natural.+./m)",
                           "types": []
                         },
                         {
@@ -157,15 +157,10 @@
                         },
                         {
                           "depth": 2,
-                          "text": "n\\.natural.+./k",
+                          "text": "k\\.natural.+./m",
                           "types": [
                             "is \\binary.operation:on{\\naturals}"
                           ]
-                        },
-                        {
-                          "depth": 3,
-                          "text": "n",
-                          "types": []
                         },
                         {
                           "depth": 3,
@@ -173,6 +168,11 @@
                           "types": [
                             "is \\natural"
                           ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "m",
+                          "types": []
                         }
                       ],
                       "arguments": []

@@ -1,0 +1,24 @@
+{
+  "id": "636bc6b8-be24-41fe-9833-6bc18420ed97",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "The center $Z(G)$ is an abelian normal subgroup of $G$. It is the\nkernel of the conjugation action $G\\to\\operatorname{Aut}(G)$.\nHence $G/Z(G)$ measures the part of the group visible through\ninner automorphisms.",
+  "page": null,
+  "source": "TextTheorem: \"The center $Z(G)$ is an abelian normal subgroup of $G$. It is the\n              kernel of the conjugation action $G\\to\\operatorname{Aut}(G)$.\n              Hence $G/Z(G)$ measures the part of the group visible through\n              inner automorphisms.\"\nId: \"636bc6b8-be24-41fe-9833-6bc18420ed97\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"The center $Z(G)$ is an abelian normal subgroup of $G$. It is the\n              kernel of the conjugation action $G\\to\\operatorname{Aut}(G)$.\n              Hence $G/Z(G)$ measures the part of the group visible through\n              inner automorphisms.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"636bc6b8-be24-41fe-9833-6bc18420ed97\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

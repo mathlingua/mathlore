@@ -1,0 +1,24 @@
+{
+  "id": "e10a2ceb-8649-480a-9ab4-651ca4345f74",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For a function $f:A\\to B$ and $y\\in B$, the fiber over $y$ is\n$f^{-1}[\\{y\\}]=\\{x\\in A:f(x)=y\\}$. The function is injective\nexactly when every fiber has at most one element and surjective\nexactly when every fiber is nonempty. Thus fibers measure both\ncollision and coverage.",
+  "page": null,
+  "source": "TextDefinition: \"For a function $f:A\\to B$ and $y\\in B$, the fiber over $y$ is\n                 $f^{-1}[\\{y\\}]=\\{x\\in A:f(x)=y\\}$. The function is injective\n                 exactly when every fiber has at most one element and surjective\n                 exactly when every fiber is nonempty. Thus fibers measure both\n                 collision and coverage.\"\nId: \"e10a2ceb-8649-480a-9ab4-651ca4345f74\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For a function $f:A\\to B$ and $y\\in B$, the fiber over $y$ is\n                 $f^{-1}[\\{y\\}]=\\{x\\in A:f(x)=y\\}$. The function is injective\n                 exactly when every fiber has at most one element and surjective\n                 exactly when every fiber is nonempty. Thus fibers measure both\n                 collision and coverage.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e10a2ceb-8649-480a-9ab4-651ca4345f74\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

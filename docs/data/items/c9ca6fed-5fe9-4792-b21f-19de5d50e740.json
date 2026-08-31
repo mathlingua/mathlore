@@ -1,0 +1,24 @@
+{
+  "id": "c9ca6fed-5fe9-4792-b21f-19de5d50e740",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Fundamental theorem of calculus, first part. If\n$f:[a,b]\\to\\mathbb{R}$ is continuous and $F(x)=\\int_a^x f(t)\\,dt$,\nthen $F$ is continuous on $[a,b]$, differentiable on $(a,b)$, and\n$F'(x)=f(x)$ for every $x\\in(a,b)$. Thus integration produces an\nantiderivative of a continuous function.",
+  "page": null,
+  "source": "TextTheorem: \"Fundamental theorem of calculus, first part. If\n              $f:[a,b]\\to\\mathbb{R}$ is continuous and $F(x)=\\int_a^x f(t)\\,dt$,\n              then $F$ is continuous on $[a,b]$, differentiable on $(a,b)$, and\n              $F'(x)=f(x)$ for every $x\\in(a,b)$. Thus integration produces an\n              antiderivative of a continuous function.\"\nId: \"c9ca6fed-5fe9-4792-b21f-19de5d50e740\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Fundamental theorem of calculus, first part. If\n              $f:[a,b]\\to\\mathbb{R}$ is continuous and $F(x)=\\int_a^x f(t)\\,dt$,\n              then $F$ is continuous on $[a,b]$, differentiable on $(a,b)$, and\n              $F'(x)=f(x)$ for every $x\\in(a,b)$. Thus integration produces an\n              antiderivative of a continuous function.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c9ca6fed-5fe9-4792-b21f-19de5d50e740\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

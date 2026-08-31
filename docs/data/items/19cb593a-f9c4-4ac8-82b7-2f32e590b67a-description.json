@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The field of complex numbers\n$\\mathbb{C} = \\mathbb{R}[i] / (i^2 + 1)$."
+    "text": "The field of complex numbers, realizable as\n$\\mathbb{R}[t]/(t^2+1)$ with $i$ the residue class of $t$."
   },
   "source": "",
   "sections": []

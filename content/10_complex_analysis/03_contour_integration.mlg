@@ -1,0 +1,122 @@
+Title: "Complex Integration and Cauchy's Theorem"
+Id: "260b80fb-86c6-40ac-a46a-486164aea02b"
+
+
+Text: "Integration in the complex plane takes place along directed curves
+       (contours). Cauchy's integral theorem and formula demonstrate that values
+       and derivatives of holomorphic functions inside a region are entirely
+       determined by their boundary values."
+Id: "a53b5226-2345-4a75-b62f-fb6784fa06fc"
+
+
+SectionTitle: "Paths and Contour Integrals"
+Id: "e1f3d3b0-7dd5-4d9d-bc94-62aa17e94846"
+
+
+TextDefinition: "A path in an open set $U\subseteq\mathbb{C}$ is a continuous
+                 map $\gamma:[a,b]\to U$. It is piecewise continuously
+                 differentiable if $[a,b]$ can be divided into finitely many
+                 subintervals on which $\gamma$ has a continuous derivative. The
+                 path is closed when $\gamma(a)=\gamma(b)$. Its parameterization
+                 includes orientation and multiplicity."
+Id: "6298206c-1aa2-49a7-b2c9-6f92d0a831f8"
+
+
+[\complex.path:on{a, b}]
+Declares: gamma(t_) is \function:on{\reals}:to{\complex.numbers}
+when: a, b is \real
+Documented:
+. called: "complex path on $[a?, b?]$"
+. description: "A continuous parameterized curve
+                $\gamma : [a, b] \to \mathbb{C}$."
+Id: "28c63b3c-de18-42f8-b10b-04695ee6410a"
+
+
+[\(closed)::complex.path:on{a, b}]
+Refines: gamma
+when: a, b is \real
+specifies: gamma is \complex.path:on{a, b}
+satisfies: gamma(a) = gamma(b)
+Documented:
+. adjective: "closed"
+. description: "A complex path is closed if its endpoints coincide:
+                $\gamma(a) = \gamma(b)$."
+Id: "f3a6c8ea-28b0-46a1-ac84-0499c7b6a970"
+
+
+[\contour.integral:of{f}:along{gamma}]
+Defines: I is \complex
+using: a, b is \real
+when:
+. gamma is \complex.path:on{a, b}
+. f is \function:on{\complex.numbers}:to{\complex.numbers}
+Documented:
+. called: "contour integral of $f?$ along $\gamma?$"
+. written: "\oint_{\gamma?} f?(z) \, dz"
+. description: "The contour integral $\oint_\gamma f(z) dz$ along curve
+                $\gamma$."
+Id: "e6283364-d507-4dfb-bbeb-a2e09a538cef"
+
+
+TextDefinition: "If $\gamma:[a,b]\to U$ is piecewise continuously differentiable
+                 and $f:U\to\mathbb{C}$ is continuous, the contour integral is
+                 $\int_\gamma f(z)\,dz=\int_a^b f(\gamma(t))\gamma'(t)\,dt$,
+                 with the ordinary real integral applied to real and imaginary
+                 parts. Orientation reversal changes the sign; an
+                 orientation-preserving reparameterization does not change the
+                 value."
+Id: "ed8000df-3011-44fe-912c-fc7e8c6ad086"
+
+
+SectionTitle: "Cauchy's Theorem and Residues"
+Id: "03283fcd-c542-49a4-92a2-19ded30ed498"
+
+
+TextTheorem: "Cauchy's integral theorem. Let $U\subseteq\mathbb{C}$ be open and
+              simply connected, let $f:U\to\mathbb{C}$ be holomorphic, and let
+              $\gamma$ be a closed piecewise continuously differentiable path in
+              $U$. Then $\int_\gamma f(z)\,dz=0$. More generally, simple
+              connectedness may be replaced by the requirement that $\gamma$ be
+              null-homologous in $U$."
+Id: "ba6ab675-4730-4cee-905c-ec081e05d378"
+
+
+TextTheorem: "Cauchy's integral formula. Under the corresponding disk or
+              winding-number hypotheses, if $z_0$ lies inside a positively
+              oriented simple closed contour $\gamma$, then
+              $f(z_0)=\frac{1}{2\pi i}\int_\gamma
+              \frac{f(z)}{z-z_0}\,dz$. Differentiating the formula yields
+              $f^{(n)}(z_0)=\frac{n!}{2\pi i}\int_\gamma
+              \frac{f(z)}{(z-z_0)^{n+1}}\,dz$."
+Id: "6b44eb1b-43c8-497e-a408-348353760216"
+
+
+[\residue:of{f}:at{z0}]
+Defines: Res is \complex
+when:
+. z0 is \complex
+. f is \function:on{\complex.numbers}:to{\complex.numbers}
+Documented:
+. called: "residue of $f?$ at $z0?$"
+. written: "\operatorname{Res}(f?, z0?)"
+. description: "The coefficient $a_{-1}$ in the Laurent expansion of $f$ around
+                isolated singularity $z_0$."
+Id: "19aa67b3-3856-40b0-8d20-8fae7dd0ec19"
+
+
+TextTheorem: "Residue theorem. Let $U\subseteq\mathbb{C}$ be open, let
+              $f$ be meromorphic on $U$, and let $\gamma$ be a closed
+              piecewise smooth cycle in $U$ that passes through no pole and is
+              null-homologous in $U$. If $a_1,\ldots,a_m$ are the poles around
+              which $\gamma$ has nonzero winding number, then
+              $\int_\gamma f(z)\,dz=2\pi i\sum_{k=1}^m
+              \operatorname{Ind}(\gamma,a_k)\operatorname{Res}(f,a_k)$."
+Id: "3069a9a0-50d1-4424-b9e6-783a50b65cb5"
+
+
+Text: "The hypotheses prevent two distinct failures. Holomorphy away from
+       isolated poles makes residues local and finite in number inside the
+       relevant region. The homological condition prevents the contour from
+       enclosing holes of the domain on which no primitive need exist. Omitting
+       either condition changes the theorem, not merely its proof."
+Id: "a97c24e5-9129-4b48-9d73-4caf54ce5cd1"

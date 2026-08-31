@@ -1,0 +1,24 @@
+{
+  "id": "79b4b540-b701-47fc-a9b7-aa0f1e1f3a46",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Invariance of dimension. Any two bases of a vector space have the\nsame cardinality. This cardinal is the dimension $\\dim_F V$. In\nparticular, if $V$ is spanned by $n$ vectors, every linearly\nindependent subset has at most $n$ elements and every basis has\nexactly $\\dim_F V\\leq n$ elements.",
+  "page": null,
+  "source": "TextTheorem: \"Invariance of dimension. Any two bases of a vector space have the\n              same cardinality. This cardinal is the dimension $\\dim_F V$. In\n              particular, if $V$ is spanned by $n$ vectors, every linearly\n              independent subset has at most $n$ elements and every basis has\n              exactly $\\dim_F V\\leq n$ elements.\"\nId: \"79b4b540-b701-47fc-a9b7-aa0f1e1f3a46\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Invariance of dimension. Any two bases of a vector space have the\n              same cardinality. This cardinal is the dimension $\\dim_F V$. In\n              particular, if $V$ is spanned by $n$ vectors, every linearly\n              independent subset has at most $n$ elements and every basis has\n              exactly $\\dim_F V\\leq n$ elements.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"79b4b540-b701-47fc-a9b7-aa0f1e1f3a46\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

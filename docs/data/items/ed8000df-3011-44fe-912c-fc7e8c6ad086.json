@@ -1,0 +1,24 @@
+{
+  "id": "ed8000df-3011-44fe-912c-fc7e8c6ad086",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "If $\\gamma:[a,b]\\to U$ is piecewise continuously differentiable\nand $f:U\\to\\mathbb{C}$ is continuous, the contour integral is\n$\\int_\\gamma f(z)\\,dz=\\int_a^b f(\\gamma(t))\\gamma'(t)\\,dt$,\nwith the ordinary real integral applied to real and imaginary\nparts. Orientation reversal changes the sign; an\norientation-preserving reparameterization does not change the\nvalue.",
+  "page": null,
+  "source": "TextDefinition: \"If $\\gamma:[a,b]\\to U$ is piecewise continuously differentiable\n                 and $f:U\\to\\mathbb{C}$ is continuous, the contour integral is\n                 $\\int_\\gamma f(z)\\,dz=\\int_a^b f(\\gamma(t))\\gamma'(t)\\,dt$,\n                 with the ordinary real integral applied to real and imaginary\n                 parts. Orientation reversal changes the sign; an\n                 orientation-preserving reparameterization does not change the\n                 value.\"\nId: \"ed8000df-3011-44fe-912c-fc7e8c6ad086\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"If $\\gamma:[a,b]\\to U$ is piecewise continuously differentiable\n                 and $f:U\\to\\mathbb{C}$ is continuous, the contour integral is\n                 $\\int_\\gamma f(z)\\,dz=\\int_a^b f(\\gamma(t))\\gamma'(t)\\,dt$,\n                 with the ordinary real integral applied to real and imaginary\n                 parts. Orientation reversal changes the sign; an\n                 orientation-preserving reparameterization does not change the\n                 value.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ed8000df-3011-44fe-912c-fc7e8c6ad086\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

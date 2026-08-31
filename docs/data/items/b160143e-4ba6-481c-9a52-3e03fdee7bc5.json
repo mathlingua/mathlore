@@ -1,0 +1,24 @@
+{
+  "id": "b160143e-4ba6-481c-9a52-3e03fdee7bc5",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Nested interval theorem. If\n$[a_1,b_1]\\supseteq[a_2,b_2]\\supseteq\\cdots$ is a decreasing\nsequence of nonempty closed bounded intervals, then their\nintersection is nonempty. If $b_n-a_n\\to0$, the intersection\ncontains exactly one point. This is another operational form of\ncompleteness.",
+  "page": null,
+  "source": "TextTheorem: \"Nested interval theorem. If\n              $[a_1,b_1]\\supseteq[a_2,b_2]\\supseteq\\cdots$ is a decreasing\n              sequence of nonempty closed bounded intervals, then their\n              intersection is nonempty. If $b_n-a_n\\to0$, the intersection\n              contains exactly one point. This is another operational form of\n              completeness.\"\nId: \"b160143e-4ba6-481c-9a52-3e03fdee7bc5\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Nested interval theorem. If\n              $[a_1,b_1]\\supseteq[a_2,b_2]\\supseteq\\cdots$ is a decreasing\n              sequence of nonempty closed bounded intervals, then their\n              intersection is nonempty. If $b_n-a_n\\to0$, the intersection\n              contains exactly one point. This is another operational form of\n              completeness.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b160143e-4ba6-481c-9a52-3e03fdee7bc5\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

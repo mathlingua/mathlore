@@ -1,0 +1,24 @@
+{
+  "id": "dbdd8045-535e-4d8b-b4d1-2f10e2d2648f",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For a homomorphism $\\varphi:G\\to H$, the kernel is\n$\\ker\\varphi=\\{g\\in G:\\varphi(g)=e_H\\}$ and the image is\n$\\operatorname{im}\\varphi=\\{\\varphi(g):g\\in G\\}$. The kernel is\na normal subgroup of $G$, the image is a subgroup of $H$, and\n$\\varphi$ is injective exactly when its kernel is trivial.",
+  "page": null,
+  "source": "TextDefinition: \"For a homomorphism $\\varphi:G\\to H$, the kernel is\n                 $\\ker\\varphi=\\{g\\in G:\\varphi(g)=e_H\\}$ and the image is\n                 $\\operatorname{im}\\varphi=\\{\\varphi(g):g\\in G\\}$. The kernel is\n                 a normal subgroup of $G$, the image is a subgroup of $H$, and\n                 $\\varphi$ is injective exactly when its kernel is trivial.\"\nId: \"dbdd8045-535e-4d8b-b4d1-2f10e2d2648f\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For a homomorphism $\\varphi:G\\to H$, the kernel is\n                 $\\ker\\varphi=\\{g\\in G:\\varphi(g)=e_H\\}$ and the image is\n                 $\\operatorname{im}\\varphi=\\{\\varphi(g):g\\in G\\}$. The kernel is\n                 a normal subgroup of $G$, the image is a subgroup of $H$, and\n                 $\\varphi$ is injective exactly when its kernel is trivial.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dbdd8045-535e-4d8b-b4d1-2f10e2d2648f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

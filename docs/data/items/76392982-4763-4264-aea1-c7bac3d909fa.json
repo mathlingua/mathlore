@@ -1,0 +1,27 @@
+{
+  "id": "76392982-4763-4264-aea1-c7bac3d909fa",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Predicates, Domains, and Variables"
+  },
+  "source": "SectionTitle: \"Predicates, Domains, and Variables\"\nId: \"76392982-4763-4264-aea1-c7bac3d909fa\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Predicates, Domains, and Variables\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"76392982-4763-4264-aea1-c7bac3d909fa\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

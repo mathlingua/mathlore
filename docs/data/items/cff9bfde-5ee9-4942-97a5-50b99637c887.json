@@ -1,0 +1,24 @@
+{
+  "id": "cff9bfde-5ee9-4942-97a5-50b99637c887",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Every function $f:A\\to B$ has a canonical factorization\n$A\\twoheadrightarrow A/{\\sim}\\hookrightarrow B$, where $x\\sim x'$\nexactly when $f(x)=f(x')$. The first map sends an element to its\nfiber class, and the second sends that class to its common value.\nThis separates the identifications made by $f$ from the inclusion\nof its image in the codomain.",
+  "page": null,
+  "source": "TextTheorem: \"Every function $f:A\\to B$ has a canonical factorization\n              $A\\twoheadrightarrow A/{\\sim}\\hookrightarrow B$, where $x\\sim x'$\n              exactly when $f(x)=f(x')$. The first map sends an element to its\n              fiber class, and the second sends that class to its common value.\n              This separates the identifications made by $f$ from the inclusion\n              of its image in the codomain.\"\nId: \"cff9bfde-5ee9-4942-97a5-50b99637c887\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Every function $f:A\\to B$ has a canonical factorization\n              $A\\twoheadrightarrow A/{\\sim}\\hookrightarrow B$, where $x\\sim x'$\n              exactly when $f(x)=f(x')$. The first map sends an element to its\n              fiber class, and the second sends that class to its common value.\n              This separates the identifications made by $f$ from the inclusion\n              of its image in the codomain.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"cff9bfde-5ee9-4942-97a5-50b99637c887\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

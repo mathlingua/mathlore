@@ -1,0 +1,24 @@
+{
+  "id": "8ff282a0-258f-447e-84bf-6b8cb98b389a",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For a bounded function $f:[a,b]\\to\\mathbb{R}$ and a partition\n$P$, let $m_i$ and $M_i$ be the infimum and supremum of $f$ on\n$[x_{i-1},x_i]$. The lower and upper Darboux sums are\n$L(f,P)=\\sum_i m_i(x_i-x_{i-1})$ and\n$U(f,P)=\\sum_i M_i(x_i-x_{i-1})$. Refining a partition can only\nincrease lower sums and decrease upper sums.",
+  "page": null,
+  "source": "TextDefinition: \"For a bounded function $f:[a,b]\\to\\mathbb{R}$ and a partition\n                 $P$, let $m_i$ and $M_i$ be the infimum and supremum of $f$ on\n                 $[x_{i-1},x_i]$. The lower and upper Darboux sums are\n                 $L(f,P)=\\sum_i m_i(x_i-x_{i-1})$ and\n                 $U(f,P)=\\sum_i M_i(x_i-x_{i-1})$. Refining a partition can only\n                 increase lower sums and decrease upper sums.\"\nId: \"8ff282a0-258f-447e-84bf-6b8cb98b389a\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For a bounded function $f:[a,b]\\to\\mathbb{R}$ and a partition\n                 $P$, let $m_i$ and $M_i$ be the infimum and supremum of $f$ on\n                 $[x_{i-1},x_i]$. The lower and upper Darboux sums are\n                 $L(f,P)=\\sum_i m_i(x_i-x_{i-1})$ and\n                 $U(f,P)=\\sum_i M_i(x_i-x_{i-1})$. Refining a partition can only\n                 increase lower sums and decrease upper sums.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8ff282a0-258f-447e-84bf-6b8cb98b389a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

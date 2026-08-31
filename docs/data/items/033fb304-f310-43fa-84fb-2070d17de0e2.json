@@ -1,0 +1,24 @@
+{
+  "id": "033fb304-f310-43fa-84fb-2070d17de0e2",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "First isomorphism theorem for groups. For every homomorphism\n$\\varphi:G\\to H$, the map $g\\ker\\varphi\\mapsto\\varphi(g)$ is a\nwell-defined group isomorphism\n$G/\\ker\\varphi\\cong\\operatorname{im}\\varphi$. The theorem says\nthat every homomorphic image is obtained by identifying exactly\nthose elements whose quotient lies in the kernel.",
+  "page": null,
+  "source": "TextTheorem: \"First isomorphism theorem for groups. For every homomorphism\n              $\\varphi:G\\to H$, the map $g\\ker\\varphi\\mapsto\\varphi(g)$ is a\n              well-defined group isomorphism\n              $G/\\ker\\varphi\\cong\\operatorname{im}\\varphi$. The theorem says\n              that every homomorphic image is obtained by identifying exactly\n              those elements whose quotient lies in the kernel.\"\nId: \"033fb304-f310-43fa-84fb-2070d17de0e2\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"First isomorphism theorem for groups. For every homomorphism\n              $\\varphi:G\\to H$, the map $g\\ker\\varphi\\mapsto\\varphi(g)$ is a\n              well-defined group isomorphism\n              $G/\\ker\\varphi\\cong\\operatorname{im}\\varphi$. The theorem says\n              that every homomorphic image is obtained by identifying exactly\n              those elements whose quotient lies in the kernel.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"033fb304-f310-43fa-84fb-2070d17de0e2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Title",
-    "text": "Differentiation and Integration"
+    "text": "Differentiation"
   },
-  "source": "Title: \"Differentiation and Integration\"\nId: \"5c64e9bc-323f-470e-b56b-3812afd2a703\"",
+  "source": "Title: \"Differentiation\"\nId: \"5c64e9bc-323f-470e-b56b-3812afd2a703\"",
   "sections": [
     {
       "label": "Title",
-      "inline_argument": "\"Differentiation and Integration\"",
+      "inline_argument": "\"Differentiation\"",
       "inline_latex": null,
       "arguments": []
     },

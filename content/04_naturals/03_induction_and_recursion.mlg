@@ -1,0 +1,100 @@
+Title: "Induction and Recursion"
+Id: "0084ea96-4893-4c13-82b6-9c0c9c0ae648"
+
+
+Text: "Induction and recursion are dual aspects of the successor structure.
+       Induction proves that a property holds at every stage; recursion defines
+       an object at a stage from the objects already defined at earlier stages.
+       Both principles depend on the absence of hidden natural numbers beyond
+       those generated from zero by repeated succession."
+Id: "fe9c481f-c3a7-4367-8dde-a342561a4ccc"
+
+
+SectionTitle: "Inductive Proofs"
+Id: "29a987cf-22cb-4dc0-ad8c-4281456e5f57"
+
+
+TextTheorem: "Principle of mathematical induction. Let $P(n)$ be a predicate on
+              $\mathbb{N}$. If $P(0)$ holds and, for every $n\in\mathbb{N}$,
+              $P(n)$ implies $P(n+1)$, then $P(n)$ holds for every natural
+              number $n$. The proof applies the Peano induction axiom to the set
+              $A=\{n\in\mathbb{N}:P(n)\}$."
+Id: "3940cf8b-62b7-41cf-984a-62429aeb835e"
+
+
+TextTheorem: "Strong induction. Let $P(n)$ be a predicate on $\mathbb{N}$. If,
+              for every $n$, the assumption that $P(k)$ holds for all $k<n$
+              implies $P(n)$, then $P(n)$ holds for all $n$. Strong induction
+              and ordinary induction are equivalent: ordinary induction can be
+              applied to the cumulative statement that $P(k)$ holds for every
+              $k\leq n$."
+Id: "844c54eb-187b-4369-8fd2-84d5d7da2b4b"
+
+
+Text: "The induction hypothesis is available only at the stage for which it has
+       been assumed. In ordinary induction one may use $P(n)$ to prove $P(n+1)$;
+       one may not assume the desired conclusion at $n+1$. In strong induction
+       all earlier cases may be used, but the current case must still be derived
+       from them."
+Id: "a73f0f65-b93a-4380-8623-255523e3a354"
+
+
+TextTheorem: "Well-ordering principle for the natural numbers. Every nonempty
+              subset of $\mathbb{N}$ has a least element. This principle is
+              equivalent to induction. For if an inductive claim failed, the set
+              of counterexamples would have a least element; the base case and
+              induction step exclude both possibilities for that least
+              counterexample."
+Id: "dd21ebd6-0821-429e-af26-123c01ca0432"
+
+
+SectionTitle: "Recursive Definitions"
+Id: "fc540913-8908-49b4-b6bf-253901c18952"
+
+
+TextTheorem: "Recursion theorem on $\mathbb{N}$. Let $X$ be a set, choose
+              $x_0\in X$, and let $F:\mathbb{N}\times X\to X$. There exists a
+              unique function $a:\mathbb{N}\to X$ satisfying $a(0)=x_0$ and
+              $a(n+1)=F(n,a(n))$ for every $n$. The theorem provides both
+              existence and uniqueness; recursive equations alone should not be
+              treated as a definition until this result is available."
+Id: "15ab06d1-8e34-450b-8e17-e985c387bd96"
+
+
+TextDefinition: "A sequence in a set $X$ is a function $a:\mathbb{N}\to X$. The
+                 index $n$ records position, not value: equal terms may occur at
+                 different indices. A finite sequence of length $m$ is instead a
+                 function on $\{0,\ldots,m-1\}$, so its length is part of its
+                 data."
+Id: "d9daf505-ce5f-45be-baae-06c06602fa79"
+
+
+Text: "Addition and multiplication are canonical applications of recursion.
+       Fixing $m$, addition is the unique function satisfying $0+m=m$ and
+       $(n+1)+m=(n+m)+1$; multiplication is the unique function satisfying
+       $0\cdot m=0$ and $(n+1)\cdot m=n\cdot m+m$. Algebraic laws such as
+       associativity and distributivity are theorems proved by induction, not
+       clauses silently included in these recursive definitions."
+Id: "63deb9e9-5cbd-4507-b7b3-f0047aa4b712"
+
+
+SectionTitle: "Minimality and Universal Character"
+Id: "ede13b47-dfdb-4898-bc0e-3043dc9712dd"
+
+
+TextTheorem: "Any two Peano systems are uniquely isomorphic by a map preserving
+              zero and successor. More precisely, if $(N,0,S)$ and $(N',0',S')$
+              satisfy the Peano axioms, there is a unique bijection $f:N\to N'$
+              such that $f(0)=0'$ and $f(S(n))=S'(f(n))$. Thus the natural
+              numbers are determined up to unique structure-preserving
+              isomorphism."
+Id: "3d9d5fae-a692-4d51-8b38-1f39fde29d68"
+
+
+Text: "This categoricity is the reason one may move between abstract natural
+       numbers and von Neumann ordinals without changing arithmetic. The
+       underlying sets are different descriptions; the successor structures are
+       isomorphic. Properties expressible solely in terms of zero, successor,
+       and definitions derived from them are transported along the unique
+       isomorphism."
+Id: "2866d2b7-05e9-483a-8339-08e9feb3fb8c"

@@ -1,0 +1,24 @@
+{
+  "id": "999d97fa-3609-4900-a19d-ab1f3345ca54",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "An ideal $I$ of a commutative ring $R$ is an additive subgroup\nsuch that $ri\\in I$ for every $r\\in R$ and $i\\in I$. Ideals,\nrather than arbitrary subrings, are precisely the subsets for\nwhich coset multiplication is well defined. The quotient $R/I$\nis a ring under $(r+I)+(s+I)=(r+s)+I$ and $(r+I)(s+I)=rs+I$.",
+  "page": null,
+  "source": "TextDefinition: \"An ideal $I$ of a commutative ring $R$ is an additive subgroup\n                 such that $ri\\in I$ for every $r\\in R$ and $i\\in I$. Ideals,\n                 rather than arbitrary subrings, are precisely the subsets for\n                 which coset multiplication is well defined. The quotient $R/I$\n                 is a ring under $(r+I)+(s+I)=(r+s)+I$ and $(r+I)(s+I)=rs+I$.\"\nId: \"999d97fa-3609-4900-a19d-ab1f3345ca54\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"An ideal $I$ of a commutative ring $R$ is an additive subgroup\n                 such that $ri\\in I$ for every $r\\in R$ and $i\\in I$. Ideals,\n                 rather than arbitrary subrings, are precisely the subsets for\n                 which coset multiplication is well defined. The quotient $R/I$\n                 is a ring under $(r+I)+(s+I)=(r+s)+I$ and $(r+I)(s+I)=rs+I$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"999d97fa-3609-4900-a19d-ab1f3345ca54\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

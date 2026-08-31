@@ -1,0 +1,27 @@
+{
+  "id": "3ea75cf2-0c9a-4882-ad3f-ed0c34a3a53c",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Propositional logic treats complete statements as indivisible units.\nMathematics also needs *open* expressions such as $x^2 < 2$, whose truth\ndepends on a value assigned to $x$. Predicate logic supplies the missing\nstructure: variables range over a specified domain, predicates become\nstatements after their arguments are supplied, and quantifiers assert\nthat a predicate holds universally or has a witness."
+  },
+  "source": "Text: \"Propositional logic treats complete statements as indivisible units.\n       Mathematics also needs *open* expressions such as $x^2 < 2$, whose truth\n       depends on a value assigned to $x$. Predicate logic supplies the missing\n       structure: variables range over a specified domain, predicates become\n       statements after their arguments are supplied, and quantifiers assert\n       that a predicate holds universally or has a witness.\"\nId: \"3ea75cf2-0c9a-4882-ad3f-ed0c34a3a53c\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Propositional logic treats complete statements as indivisible units.\n       Mathematics also needs *open* expressions such as $x^2 < 2$, whose truth\n       depends on a value assigned to $x$. Predicate logic supplies the missing\n       structure: variables range over a specified domain, predicates become\n       statements after their arguments are supplied, and quantifiers assert\n       that a predicate holds universally or has a witness.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3ea75cf2-0c9a-4882-ad3f-ed0c34a3a53c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

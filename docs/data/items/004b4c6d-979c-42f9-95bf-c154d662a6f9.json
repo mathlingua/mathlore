@@ -1,0 +1,24 @@
+{
+  "id": "004b4c6d-979c-42f9-95bf-c154d662a6f9",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "The determinant is the unique alternating multilinear function\nof the columns of a square matrix that takes value $1$ on the\nidentity matrix. It satisfies $\\det(AB)=\\det(A)\\det(B)$, and a\nmatrix is invertible exactly when its determinant is nonzero.\nThis characterization is basis-independent for the associated\nendomorphism.",
+  "page": null,
+  "source": "TextDefinition: \"The determinant is the unique alternating multilinear function\n                 of the columns of a square matrix that takes value $1$ on the\n                 identity matrix. It satisfies $\\det(AB)=\\det(A)\\det(B)$, and a\n                 matrix is invertible exactly when its determinant is nonzero.\n                 This characterization is basis-independent for the associated\n                 endomorphism.\"\nId: \"004b4c6d-979c-42f9-95bf-c154d662a6f9\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"The determinant is the unique alternating multilinear function\n                 of the columns of a square matrix that takes value $1$ on the\n                 identity matrix. It satisfies $\\det(AB)=\\det(A)\\det(B)$, and a\n                 matrix is invertible exactly when its determinant is nonzero.\n                 This characterization is basis-independent for the associated\n                 endomorphism.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"004b4c6d-979c-42f9-95bf-c154d662a6f9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "66ebdb25-bc98-4ea5-be68-0e57e72aa22e",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Sequential criterion. A function $f$ has limit $L$ at an\naccumulation point $x_0$ of its domain if and only if\n$f(x_n)\\to L$ for every sequence $(x_n)$ in the domain with\n$x_n\\ne x_0$ and $x_n\\to x_0$. This criterion is specific to\nfirst-countable settings such as metric spaces.",
+  "page": null,
+  "source": "TextTheorem: \"Sequential criterion. A function $f$ has limit $L$ at an\n              accumulation point $x_0$ of its domain if and only if\n              $f(x_n)\\to L$ for every sequence $(x_n)$ in the domain with\n              $x_n\\ne x_0$ and $x_n\\to x_0$. This criterion is specific to\n              first-countable settings such as metric spaces.\"\nId: \"66ebdb25-bc98-4ea5-be68-0e57e72aa22e\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Sequential criterion. A function $f$ has limit $L$ at an\n              accumulation point $x_0$ of its domain if and only if\n              $f(x_n)\\to L$ for every sequence $(x_n)$ in the domain with\n              $x_n\\ne x_0$ and $x_n\\to x_0$. This criterion is specific to\n              first-countable settings such as metric spaces.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"66ebdb25-bc98-4ea5-be68-0e57e72aa22e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

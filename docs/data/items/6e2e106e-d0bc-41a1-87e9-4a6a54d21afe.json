@@ -1,0 +1,27 @@
+{
+  "id": "6e2e106e-d0bc-41a1-87e9-4a6a54d21afe",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The continuity assumption in the converse is sufficient, not merely\ndecorative. Cauchy--Riemann equalities at one point do not by themselves\nimply complex differentiability there. What matters is control of the\nfull two-dimensional error term, not only agreement of directional\nderivatives along the coordinate axes."
+  },
+  "source": "Text: \"The continuity assumption in the converse is sufficient, not merely\n       decorative. Cauchy--Riemann equalities at one point do not by themselves\n       imply complex differentiability there. What matters is control of the\n       full two-dimensional error term, not only agreement of directional\n       derivatives along the coordinate axes.\"\nId: \"6e2e106e-d0bc-41a1-87e9-4a6a54d21afe\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The continuity assumption in the converse is sufficient, not merely\n       decorative. Cauchy--Riemann equalities at one point do not by themselves\n       imply complex differentiability there. What matters is control of the\n       full two-dimensional error term, not only agreement of directional\n       derivatives along the coordinate axes.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"6e2e106e-d0bc-41a1-87e9-4a6a54d21afe\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

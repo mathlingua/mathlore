@@ -1,0 +1,24 @@
+{
+  "id": "5f0b2406-0146-4015-91b9-8875e70395fb",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "Fix a deductive system. A *derivation* of $\\varphi$ from\npremises $\\Gamma$ is a finite sequence or tree of formulas in\nwhich every leaf is an axiom or a member of $\\Gamma$, and every\nother formula follows from earlier formulas by an allowed\ninference rule. We write $\\Gamma\\vdash\\varphi$ when such a\nderivation exists. The symbol $\\vdash$ concerns formal\nderivability; $\\models$ concerns truth in models.",
+  "page": null,
+  "source": "TextDefinition: \"Fix a deductive system. A *derivation* of $\\varphi$ from\n                 premises $\\Gamma$ is a finite sequence or tree of formulas in\n                 which every leaf is an axiom or a member of $\\Gamma$, and every\n                 other formula follows from earlier formulas by an allowed\n                 inference rule. We write $\\Gamma\\vdash\\varphi$ when such a\n                 derivation exists. The symbol $\\vdash$ concerns formal\n                 derivability; $\\models$ concerns truth in models.\"\nId: \"5f0b2406-0146-4015-91b9-8875e70395fb\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"Fix a deductive system. A *derivation* of $\\varphi$ from\n                 premises $\\Gamma$ is a finite sequence or tree of formulas in\n                 which every leaf is an axiom or a member of $\\Gamma$, and every\n                 other formula follows from earlier formulas by an allowed\n                 inference rule. We write $\\Gamma\\vdash\\varphi$ when such a\n                 derivation exists. The symbol $\\vdash$ concerns formal\n                 derivability; $\\models$ concerns truth in models.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5f0b2406-0146-4015-91b9-8875e70395fb\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

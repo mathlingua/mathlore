@@ -1,0 +1,24 @@
+{
+  "id": "e5bdaf8f-ebd3-4925-ac4c-5e7cad6e9f64",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "The singleton connective sets consisting only of NAND or only of\nNOR are functionally complete: every Boolean truth function can be\nexpressed using repeated applications of that one connective.\nFunctional completeness concerns expressibility, not brevity or\nsuitability for proof.",
+  "page": null,
+  "source": "TextTheorem: \"The singleton connective sets consisting only of NAND or only of\n              NOR are functionally complete: every Boolean truth function can be\n              expressed using repeated applications of that one connective.\n              Functional completeness concerns expressibility, not brevity or\n              suitability for proof.\"\nId: \"e5bdaf8f-ebd3-4925-ac4c-5e7cad6e9f64\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"The singleton connective sets consisting only of NAND or only of\n              NOR are functionally complete: every Boolean truth function can be\n              expressed using repeated applications of that one connective.\n              Functional completeness concerns expressibility, not brevity or\n              suitability for proof.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"e5bdaf8f-ebd3-4925-ac4c-5e7cad6e9f64\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

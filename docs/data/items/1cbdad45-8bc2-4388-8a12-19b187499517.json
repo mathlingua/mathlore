@@ -1,0 +1,27 @@
+{
+  "id": "1cbdad45-8bc2-4388-8a12-19b187499517",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Separation selects members already lying in one set; replacement sends\nmembers of a set to uniquely determined outputs. The distinction becomes\nimportant in transfinite constructions. Replacement ensures that the\nvalues obtained at all earlier stages still form a set to which union or\nanother constructor can be applied."
+  },
+  "source": "Text: \"Separation selects members already lying in one set; replacement sends\n       members of a set to uniquely determined outputs. The distinction becomes\n       important in transfinite constructions. Replacement ensures that the\n       values obtained at all earlier stages still form a set to which union or\n       another constructor can be applied.\"\nId: \"1cbdad45-8bc2-4388-8a12-19b187499517\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Separation selects members already lying in one set; replacement sends\n       members of a set to uniquely determined outputs. The distinction becomes\n       important in transfinite constructions. Replacement ensures that the\n       values obtained at all earlier stages still form a set to which union or\n       another constructor can be applied.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1cbdad45-8bc2-4388-8a12-19b187499517\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

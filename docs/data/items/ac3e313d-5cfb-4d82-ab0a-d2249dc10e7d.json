@@ -1,0 +1,27 @@
+{
+  "id": "ac3e313d-5cfb-4d82-ab0a-d2249dc10e7d",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Bases and Dimension"
+  },
+  "source": "SectionTitle: \"Bases and Dimension\"\nId: \"ac3e313d-5cfb-4d82-ab0a-d2249dc10e7d\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Bases and Dimension\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ac3e313d-5cfb-4d82-ab0a-d2249dc10e7d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "d6351c2e-8774-461d-8365-533a09dd2951",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "Let $\\Gamma$ be a collection of sentences and let $\\varphi$ be\na sentence in the same language. We say that $\\varphi$ is a\n*semantic consequence* of $\\Gamma$, written\n$\\Gamma\\models\\varphi$, if every interpretation in which all\nsentences of $\\Gamma$ are true also makes $\\varphi$ true. No\nassertion is made that such an interpretation exists; if\n$\\Gamma$ is inconsistent, every sentence is a semantic\nconsequence of $\\Gamma$.",
+  "page": null,
+  "source": "TextDefinition: \"Let $\\Gamma$ be a collection of sentences and let $\\varphi$ be\n                 a sentence in the same language. We say that $\\varphi$ is a\n                 *semantic consequence* of $\\Gamma$, written\n                 $\\Gamma\\models\\varphi$, if every interpretation in which all\n                 sentences of $\\Gamma$ are true also makes $\\varphi$ true. No\n                 assertion is made that such an interpretation exists; if\n                 $\\Gamma$ is inconsistent, every sentence is a semantic\n                 consequence of $\\Gamma$.\"\nId: \"d6351c2e-8774-461d-8365-533a09dd2951\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"Let $\\Gamma$ be a collection of sentences and let $\\varphi$ be\n                 a sentence in the same language. We say that $\\varphi$ is a\n                 *semantic consequence* of $\\Gamma$, written\n                 $\\Gamma\\models\\varphi$, if every interpretation in which all\n                 sentences of $\\Gamma$ are true also makes $\\varphi$ true. No\n                 assertion is made that such an interpretation exists; if\n                 $\\Gamma$ is inconsistent, every sentence is a semantic\n                 consequence of $\\Gamma$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d6351c2e-8774-461d-8365-533a09dd2951\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

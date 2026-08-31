@@ -1,0 +1,24 @@
+{
+  "id": "3ef04eda-e9d8-4859-8379-094b08b6b51a",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "An element $a$ of a magma has left cancellation if $ax=ay$\nimplies $x=y$, and right cancellation if $xa=ya$ implies $x=y$.\nA cancellation law is not a consequence of associativity or the\nexistence of an identity. Every group has both laws because one\nmay multiply by $a^{-1}$, but a general monoid need not.",
+  "page": null,
+  "source": "TextDefinition: \"An element $a$ of a magma has left cancellation if $ax=ay$\n                 implies $x=y$, and right cancellation if $xa=ya$ implies $x=y$.\n                 A cancellation law is not a consequence of associativity or the\n                 existence of an identity. Every group has both laws because one\n                 may multiply by $a^{-1}$, but a general monoid need not.\"\nId: \"3ef04eda-e9d8-4859-8379-094b08b6b51a\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"An element $a$ of a magma has left cancellation if $ax=ay$\n                 implies $x=y$, and right cancellation if $xa=ya$ implies $x=y$.\n                 A cancellation law is not a consequence of associativity or the\n                 existence of an identity. Every group has both laws because one\n                 may multiply by $a^{-1}$, but a general monoid need not.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3ef04eda-e9d8-4859-8379-094b08b6b51a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

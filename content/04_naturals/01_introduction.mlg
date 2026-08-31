@@ -94,7 +94,7 @@ expresses:
   else:
   . let: k is \natural
     where: n_ = \naturals..S(k)
-    then: n_ + m_ := \naturals..S(n_ \.natural.+./ k)
+    then: n_ + m_ := \naturals..S(k \.natural.+./ m_)
 Documented:
 . called: "$n_?$ plus $m_?$"
 . written: "n_? + m_?"

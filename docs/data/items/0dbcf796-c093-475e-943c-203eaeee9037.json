@@ -1,99 +1,18 @@
 {
   "id": "0dbcf796-c093-475e-943c-203eaeee9037",
-  "kind": "Declares",
-  "definition_keys": [
-    "5c6861726d6f6e69632e66756e6374696f6e3a6f6e"
-  ],
-  "heading": "\\harmonic.function:on{U}",
-  "heading_latex": "\\textrm{harmonic function on }U",
-  "body_text": null,
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "Let $U\\subseteq\\mathbb{R}^2$ be open. A twice continuously\ndifferentiable function $u:U\\to\\mathbb{R}$ is harmonic if it\nsatisfies Laplace's equation $u_{xx}+u_{yy}=0$ throughout $U$.\nIf $f=u+iv$ is holomorphic, then both $u$ and $v$ are harmonic.\nLocally on a simply connected domain, each harmonic function is\nthe real part of a holomorphic function, unique up to an\nimaginary constant.",
   "page": null,
-  "source": "[\\harmonic.function:on{U}]\nDeclares: u(x_, y_) is \\function:on{U}:to{\\reals}\nwhen: U \\:subset:/ (\\reals \\.set.cross./ \\reals)\nDocumented:\n. called: \"harmonic function on $U?$\"\n. description: \"A function satisfying Laplace's equation $\\nabla^2 u = 0$. The\n                real and imaginary components of any holomorphic function are\n                harmonic.\"\nId: \"0dbcf796-c093-475e-943c-203eaeee9037\"",
+  "source": "TextDefinition: \"Let $U\\subseteq\\mathbb{R}^2$ be open. A twice continuously\n                 differentiable function $u:U\\to\\mathbb{R}$ is harmonic if it\n                 satisfies Laplace's equation $u_{xx}+u_{yy}=0$ throughout $U$.\n                 If $f=u+iv$ is holomorphic, then both $u$ and $v$ are harmonic.\n                 Locally on a simply connected domain, each harmonic function is\n                 the real part of a holomorphic function, unique up to an\n                 imaginary constant.\"\nId: \"0dbcf796-c093-475e-943c-203eaeee9037\"",
   "sections": [
     {
-      "label": "Declares",
-      "inline_argument": "u(x_, y_) is \\function:on{U}:to{\\reals}",
-      "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{u(x, y) \\: : \\: U \\rightarrow \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}",
-      "inline_type_info": [
-        {
-          "depth": 0,
-          "text": "u(x_, y_) is \\function:on{U}:to{\\reals}",
-          "types": [
-            "asserts u is \\function:on{U}:to{\\reals}"
-          ]
-        }
-      ],
-      "arguments": []
-    },
-    {
-      "label": "when",
-      "inline_argument": "U \\:subset:/ (\\reals \\.set.cross./ \\reals)",
-      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{U \\subseteq \\left(\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}} \\times \\htmlData{mlg-ref=5c7265616c73}{\\mathbb{R}}}\\right)}",
-      "inline_type_info": [
-        {
-          "depth": 0,
-          "text": "U \\:subset:/ (\\reals \\.set.cross./ \\reals)",
-          "types": [
-            "asserts U \\:subset:/ \\reals\\.set.cross./\\reals"
-          ]
-        },
-        {
-          "depth": 1,
-          "text": "\\reals\\.set.cross./\\reals",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 2,
-          "text": "\\reals\\.set.cross./\\reals",
-          "types": [
-            "is \\set"
-          ]
-        },
-        {
-          "depth": 3,
-          "text": "\\reals",
-          "types": []
-        },
-        {
-          "depth": 3,
-          "text": "\\reals",
-          "types": []
-        }
-      ],
-      "arguments": []
-    },
-    {
-      "label": "Documented",
-      "inline_argument": null,
+      "label": "TextDefinition",
+      "inline_argument": "\"Let $U\\subseteq\\mathbb{R}^2$ be open. A twice continuously\n                 differentiable function $u:U\\to\\mathbb{R}$ is harmonic if it\n                 satisfies Laplace's equation $u_{xx}+u_{yy}=0$ throughout $U$.\n                 If $f=u+iv$ is holomorphic, then both $u$ and $v$ are harmonic.\n                 Locally on a simply connected domain, each harmonic function is\n                 the real part of a holomorphic function, unique up to an\n                 imaginary constant.\"",
       "inline_latex": null,
-      "arguments": [
-        {
-          "kind": "group",
-          "heading": null,
-          "sections": [
-            {
-              "label": "called",
-              "inline_argument": "\"harmonic function on $U?$\"",
-              "inline_latex": "\\textrm{harmonic function on }U",
-              "arguments": []
-            }
-          ]
-        },
-        {
-          "kind": "group",
-          "heading": null,
-          "sections": [
-            {
-              "label": "description",
-              "inline_argument": "see above",
-              "inline_latex": "\\langle\\textrm{see above}\\rangle",
-              "arguments": []
-            }
-          ]
-        }
-      ]
+      "arguments": []
     },
     {
       "label": "Id",

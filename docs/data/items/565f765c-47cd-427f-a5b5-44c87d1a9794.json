@@ -1,0 +1,24 @@
+{
+  "id": "565f765c-47cd-427f-a5b5-44c87d1a9794",
+  "kind": "TextConjecture",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Conjecture}",
+  "body_text": "Twin prime conjecture. There exist infinitely many primes $p$\nfor which $p+2$ is also prime. Such pairs are called twin\nprimes. Results proving infinitely many prime pairs within a\nfixed bounded distance do not by themselves prove that the\ndistance $2$ occurs infinitely often.",
+  "page": null,
+  "source": "TextConjecture: \"Twin prime conjecture. There exist infinitely many primes $p$\n                 for which $p+2$ is also prime. Such pairs are called twin\n                 primes. Results proving infinitely many prime pairs within a\n                 fixed bounded distance do not by themselves prove that the\n                 distance $2$ occurs infinitely often.\"\nId: \"565f765c-47cd-427f-a5b5-44c87d1a9794\"",
+  "sections": [
+    {
+      "label": "TextConjecture",
+      "inline_argument": "\"Twin prime conjecture. There exist infinitely many primes $p$\n                 for which $p+2$ is also prime. Such pairs are called twin\n                 primes. Results proving infinitely many prime pairs within a\n                 fixed bounded distance do not by themselves prove that the\n                 distance $2$ occurs infinitely often.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"565f765c-47cd-427f-a5b5-44c87d1a9794\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

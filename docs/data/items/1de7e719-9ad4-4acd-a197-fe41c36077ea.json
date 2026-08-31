@@ -1,0 +1,24 @@
+{
+  "id": "1de7e719-9ad4-4acd-a197-fe41c36077ea",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Extreme value theorem. If $f:[a,b]\\to\\mathbb{R}$ is continuous,\nthen $f$ is bounded and attains both a maximum and a minimum on\n$[a,b]$. Boundedness of the domain alone is insufficient; the\ninterval must also be closed, and the function must be continuous.",
+  "page": null,
+  "source": "TextTheorem: \"Extreme value theorem. If $f:[a,b]\\to\\mathbb{R}$ is continuous,\n              then $f$ is bounded and attains both a maximum and a minimum on\n              $[a,b]$. Boundedness of the domain alone is insufficient; the\n              interval must also be closed, and the function must be continuous.\"\nId: \"1de7e719-9ad4-4acd-a197-fe41c36077ea\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Extreme value theorem. If $f:[a,b]\\to\\mathbb{R}$ is continuous,\n              then $f$ is bounded and attains both a maximum and a minimum on\n              $[a,b]$. Boundedness of the domain alone is insufficient; the\n              interval must also be closed, and the function must be continuous.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1de7e719-9ad4-4acd-a197-fe41c36077ea\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

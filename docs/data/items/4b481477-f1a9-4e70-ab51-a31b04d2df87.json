@@ -1,0 +1,24 @@
+{
+  "id": "4b481477-f1a9-4e70-ab51-a31b04d2df87",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Riemann's criterion. A bounded function on $[a,b]$ is Riemann\nintegrable if and only if its set of discontinuities has Lebesgue\nmeasure zero. In particular, every continuous function and every\nmonotone function on a compact interval is Riemann integrable.",
+  "page": null,
+  "source": "TextTheorem: \"Riemann's criterion. A bounded function on $[a,b]$ is Riemann\n              integrable if and only if its set of discontinuities has Lebesgue\n              measure zero. In particular, every continuous function and every\n              monotone function on a compact interval is Riemann integrable.\"\nId: \"4b481477-f1a9-4e70-ab51-a31b04d2df87\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Riemann's criterion. A bounded function on $[a,b]$ is Riemann\n              integrable if and only if its set of discontinuities has Lebesgue\n              measure zero. In particular, every continuous function and every\n              monotone function on a compact interval is Riemann integrable.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4b481477-f1a9-4e70-ab51-a31b04d2df87\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

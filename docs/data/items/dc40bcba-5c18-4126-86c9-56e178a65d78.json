@@ -1,0 +1,27 @@
+{
+  "id": "dc40bcba-5c18-4126-86c9-56e178a65d78",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Universal and Existential Quantification"
+  },
+  "source": "SectionTitle: \"Universal and Existential Quantification\"\nId: \"dc40bcba-5c18-4126-86c9-56e178a65d78\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Universal and Existential Quantification\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dc40bcba-5c18-4126-86c9-56e178a65d78\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

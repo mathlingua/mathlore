@@ -1,0 +1,24 @@
+{
+  "id": "9519b138-f788-4156-8fd1-7d01b955decf",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "If $V$ and $W$ have the same finite dimension, then for a linear\nmap $T:V\\to W$ the following are equivalent: $T$ is injective, $T$\nis surjective, and $T$ is an isomorphism. Equality of dimensions\nis essential; without it, injectivity and surjectivity are\nindependent.",
+  "page": null,
+  "source": "TextTheorem: \"If $V$ and $W$ have the same finite dimension, then for a linear\n              map $T:V\\to W$ the following are equivalent: $T$ is injective, $T$\n              is surjective, and $T$ is an isomorphism. Equality of dimensions\n              is essential; without it, injectivity and surjectivity are\n              independent.\"\nId: \"9519b138-f788-4156-8fd1-7d01b955decf\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"If $V$ and $W$ have the same finite dimension, then for a linear\n              map $T:V\\to W$ the following are equivalent: $T$ is injective, $T$\n              is surjective, and $T$ is an isomorphism. Equality of dimensions\n              is essential; without it, injectivity and surjectivity are\n              independent.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"9519b138-f788-4156-8fd1-7d01b955decf\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

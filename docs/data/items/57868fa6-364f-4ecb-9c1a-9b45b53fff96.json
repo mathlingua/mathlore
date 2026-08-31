@@ -1,0 +1,24 @@
+{
+  "id": "57868fa6-364f-4ecb-9c1a-9b45b53fff96",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A subsequence of $(a_n)$ is a sequence $(a_{n_k})$ whose index\nmap $k\\mapsto n_k$ is strictly increasing. If $a_n\\to L$, then\nevery subsequence also converges to $L$. The converse fails\nunless additional information controls all indices.",
+  "page": null,
+  "source": "TextDefinition: \"A subsequence of $(a_n)$ is a sequence $(a_{n_k})$ whose index\n                 map $k\\mapsto n_k$ is strictly increasing. If $a_n\\to L$, then\n                 every subsequence also converges to $L$. The converse fails\n                 unless additional information controls all indices.\"\nId: \"57868fa6-364f-4ecb-9c1a-9b45b53fff96\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A subsequence of $(a_n)$ is a sequence $(a_{n_k})$ whose index\n                 map $k\\mapsto n_k$ is strictly increasing. If $a_n\\to L$, then\n                 every subsequence also converges to $L$. The converse fails\n                 unless additional information controls all indices.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"57868fa6-364f-4ecb-9c1a-9b45b53fff96\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

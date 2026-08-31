@@ -1,0 +1,27 @@
+{
+  "id": "8ac6237e-b34e-4667-8a7a-1fd9950c7476",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Selected Open Problems"
+  },
+  "source": "Title: \"Selected Open Problems\"\nId: \"8ac6237e-b34e-4667-8a7a-1fd9950c7476\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Selected Open Problems\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8ac6237e-b34e-4667-8a7a-1fd9950c7476\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

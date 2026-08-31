@@ -1,0 +1,27 @@
+{
+  "id": "3033f57e-9ff5-4da7-bf72-b3c09c27f533",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Group Actions"
+  },
+  "source": "SectionTitle: \"Group Actions\"\nId: \"3033f57e-9ff5-4da7-bf72-b3c09c27f533\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Group Actions\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3033f57e-9ff5-4da7-bf72-b3c09c27f533\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "b20dd8da-14fc-43f0-b75e-31c74de540cd",
+  "kind": "Title",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Title",
+    "text": "Dimension and Duality"
+  },
+  "source": "Title: \"Dimension and Duality\"\nId: \"b20dd8da-14fc-43f0-b75e-31c74de540cd\"",
+  "sections": [
+    {
+      "label": "Title",
+      "inline_argument": "\"Dimension and Duality\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b20dd8da-14fc-43f0-b75e-31c74de540cd\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

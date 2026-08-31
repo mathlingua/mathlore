@@ -1,0 +1,24 @@
+{
+  "id": "15856db1-4ad8-4d94-821c-d5f3d9027940",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A function is analytic at $z_0$ if it agrees with a convergent\npower series on some neighborhood of $z_0$. Analyticity is a\nlocal property: both the coefficients and the radius may depend\non the center. The coefficients are uniquely determined by\n$a_n=f^{(n)}(z_0)/n!$.",
+  "page": null,
+  "source": "TextDefinition: \"A function is analytic at $z_0$ if it agrees with a convergent\n                 power series on some neighborhood of $z_0$. Analyticity is a\n                 local property: both the coefficients and the radius may depend\n                 on the center. The coefficients are uniquely determined by\n                 $a_n=f^{(n)}(z_0)/n!$.\"\nId: \"15856db1-4ad8-4d94-821c-d5f3d9027940\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A function is analytic at $z_0$ if it agrees with a convergent\n                 power series on some neighborhood of $z_0$. Analyticity is a\n                 local property: both the coefficients and the radius may depend\n                 on the center. The coefficients are uniquely determined by\n                 $a_n=f^{(n)}(z_0)/n!$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"15856db1-4ad8-4d94-821c-d5f3d9027940\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

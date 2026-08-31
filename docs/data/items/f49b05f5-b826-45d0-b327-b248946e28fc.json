@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The successor of a set adjoins the set itself as a new element to its\nsingleton. Iterating this operation from the empty set is precisely how\nthe natural numbers will be built in a later chapter."
+    "text": "The successor of a set $X$ adjoins $X$ itself to the elements already in\n$X$. Iterating this operation from the empty set is precisely how the\nnatural numbers will be built in a later chapter."
   },
-  "source": "Text: \"The successor of a set adjoins the set itself as a new element to its\n       singleton. Iterating this operation from the empty set is precisely how\n       the natural numbers will be built in a later chapter.\"\nId: \"f49b05f5-b826-45d0-b327-b248946e28fc\"",
+  "source": "Text: \"The successor of a set $X$ adjoins $X$ itself to the elements already in\n       $X$. Iterating this operation from the empty set is precisely how the\n       natural numbers will be built in a later chapter.\"\nId: \"f49b05f5-b826-45d0-b327-b248946e28fc\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The successor of a set adjoins the set itself as a new element to its\n       singleton. Iterating this operation from the empty set is precisely how\n       the natural numbers will be built in a later chapter.\"",
+      "inline_argument": "\"The successor of a set $X$ adjoins $X$ itself to the elements already in\n       $X$. Iterating this operation from the empty set is precisely how the\n       natural numbers will be built in a later chapter.\"",
       "inline_latex": null,
       "arguments": []
     },

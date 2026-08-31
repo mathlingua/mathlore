@@ -1,0 +1,24 @@
+{
+  "id": "1945a57b-f397-4f58-b515-fd8878910f2e",
+  "kind": "TextConjecture",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Conjecture}",
+  "body_text": "Strong Goldbach conjecture. Every even integer greater than $2$\nis the sum of two prime numbers. The order of the two primes is\nirrelevant, and equality is allowed; for example, $10=3+7=5+5$.\nThe conjecture is a universal existence claim, so computation\ncan verify initial ranges but cannot by itself settle all even\nintegers.",
+  "page": null,
+  "source": "TextConjecture: \"Strong Goldbach conjecture. Every even integer greater than $2$\n                 is the sum of two prime numbers. The order of the two primes is\n                 irrelevant, and equality is allowed; for example, $10=3+7=5+5$.\n                 The conjecture is a universal existence claim, so computation\n                 can verify initial ranges but cannot by itself settle all even\n                 integers.\"\nId: \"1945a57b-f397-4f58-b515-fd8878910f2e\"",
+  "sections": [
+    {
+      "label": "TextConjecture",
+      "inline_argument": "\"Strong Goldbach conjecture. Every even integer greater than $2$\n                 is the sum of two prime numbers. The order of the two primes is\n                 irrelevant, and equality is allowed; for example, $10=3+7=5+5$.\n                 The conjecture is a universal existence claim, so computation\n                 can verify initial ranges but cannot by itself settle all even\n                 integers.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"1945a57b-f397-4f58-b515-fd8878910f2e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

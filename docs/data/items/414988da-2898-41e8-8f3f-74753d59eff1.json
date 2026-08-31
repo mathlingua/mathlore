@@ -1,0 +1,27 @@
+{
+  "id": "414988da-2898-41e8-8f3f-74753d59eff1",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Subgroups describe pieces of a group; quotient groups compress pieces\nthat are indistinguishable at a chosen scale. Group actions take the\ncomplementary viewpoint: they represent abstract group elements as\nsymmetries of a set. Kernels, normal subgroups, orbits, and stabilizers\nconnect these constructions."
+  },
+  "source": "Text: \"Subgroups describe pieces of a group; quotient groups compress pieces\n       that are indistinguishable at a chosen scale. Group actions take the\n       complementary viewpoint: they represent abstract group elements as\n       symmetries of a set. Kernels, normal subgroups, orbits, and stabilizers\n       connect these constructions.\"\nId: \"414988da-2898-41e8-8f3f-74753d59eff1\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Subgroups describe pieces of a group; quotient groups compress pieces\n       that are indistinguishable at a chosen scale. Group actions take the\n       complementary viewpoint: they represent abstract group elements as\n       symmetries of a set. Kernels, normal subgroups, orbits, and stabilizers\n       connect these constructions.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"414988da-2898-41e8-8f3f-74753d59eff1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

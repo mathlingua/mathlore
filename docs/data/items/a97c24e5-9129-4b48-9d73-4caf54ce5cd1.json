@@ -1,0 +1,27 @@
+{
+  "id": "a97c24e5-9129-4b48-9d73-4caf54ce5cd1",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The hypotheses prevent two distinct failures. Holomorphy away from\nisolated poles makes residues local and finite in number inside the\nrelevant region. The homological condition prevents the contour from\nenclosing holes of the domain on which no primitive need exist. Omitting\neither condition changes the theorem, not merely its proof."
+  },
+  "source": "Text: \"The hypotheses prevent two distinct failures. Holomorphy away from\n       isolated poles makes residues local and finite in number inside the\n       relevant region. The homological condition prevents the contour from\n       enclosing holes of the domain on which no primitive need exist. Omitting\n       either condition changes the theorem, not merely its proof.\"\nId: \"a97c24e5-9129-4b48-9d73-4caf54ce5cd1\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The hypotheses prevent two distinct failures. Holomorphy away from\n       isolated poles makes residues local and finite in number inside the\n       relevant region. The homological condition prevents the contour from\n       enclosing holes of the domain on which no primitive need exist. Omitting\n       either condition changes the theorem, not merely its proof.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a97c24e5-9129-4b48-9d73-4caf54ce5cd1\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

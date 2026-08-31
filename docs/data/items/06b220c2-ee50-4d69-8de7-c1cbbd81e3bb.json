@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Riemann integral of }f\\textrm{ on }[a, b]\\quad\\htmlClass{mlg-title-written}{\\int_{a}^{b} f(x) \\, dx}",
   "body_text": null,
   "page": null,
-  "source": "[\\riemann.integral:of{f}:on{a, b}]\nDefines: I is \\real\nwhen:\n. a, b is \\real\n. f is \\function:on{\\reals}:to{\\reals}\nDocumented:\n. called: \"Riemann integral of $f?$ on $[a?, b?]$\"\n. written: \"\\int_{a?}^{b?} f?(x) \\, dx\"\n. description: \"The definite Riemann integral $\\int_a^b f(x) dx$.\"\nId: \"06b220c2-ee50-4d69-8de7-c1cbbd81e3bb\"",
+  "source": "[\\riemann.integral:of{f}:on{a, b}]\nDefines: I is \\real\nwhen:\n. a, b is \\real\n. f is \\function:on{\\reals}:to{\\reals}\nDocumented:\n. called: \"Riemann integral of $f?$ on $[a?, b?]$\"\n. written: \"\\int_{a?}^{b?} f?(x) \\, dx\"\n. description: \"The definite Riemann integral $\\int_a^b f(x)\\,dx$, defined when\n                $f$ is Riemann integrable on the interval.\"\nId: \"06b220c2-ee50-4d69-8de7-c1cbbd81e3bb\"",
   "sections": [
     {
       "label": "Defines",

@@ -1,0 +1,24 @@
+{
+  "id": "3370ae35-7b9f-4983-bba5-cc28277c31e8",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "The dual space $V^*=\\operatorname{Hom}_F(V,F)$ is the vector\nspace of linear functionals on $V$. If $B=(b_1,\\ldots,b_n)$ is\na basis, its dual basis $(b^1,\\ldots,b^n)$ is characterized by\n$b^i(b_j)=\\delta^i_j$. The functional $b^i$ extracts the $i$th\ncoordinate relative to $B$.",
+  "page": null,
+  "source": "TextDefinition: \"The dual space $V^*=\\operatorname{Hom}_F(V,F)$ is the vector\n                 space of linear functionals on $V$. If $B=(b_1,\\ldots,b_n)$ is\n                 a basis, its dual basis $(b^1,\\ldots,b^n)$ is characterized by\n                 $b^i(b_j)=\\delta^i_j$. The functional $b^i$ extracts the $i$th\n                 coordinate relative to $B$.\"\nId: \"3370ae35-7b9f-4983-bba5-cc28277c31e8\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"The dual space $V^*=\\operatorname{Hom}_F(V,F)$ is the vector\n                 space of linear functionals on $V$. If $B=(b_1,\\ldots,b_n)$ is\n                 a basis, its dual basis $(b^1,\\ldots,b^n)$ is characterized by\n                 $b^i(b_j)=\\delta^i_j$. The functional $b^i$ extracts the $i$th\n                 coordinate relative to $B$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3370ae35-7b9f-4983-bba5-cc28277c31e8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

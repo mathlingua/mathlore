@@ -1,0 +1,24 @@
+{
+  "id": "b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "Let $H$ be a subgroup of a group $G$. For $g\\in G$, the left\ncoset $gH$ is $\\{gh:h\\in H\\}$ and the right coset $Hg$ is\n$\\{hg:h\\in H\\}$. Left cosets form a partition of $G$: two left\ncosets are either equal or disjoint, and every element lies in\nthe coset it determines. The analogous statement holds for\nright cosets.",
+  "page": null,
+  "source": "TextDefinition: \"Let $H$ be a subgroup of a group $G$. For $g\\in G$, the left\n                 coset $gH$ is $\\{gh:h\\in H\\}$ and the right coset $Hg$ is\n                 $\\{hg:h\\in H\\}$. Left cosets form a partition of $G$: two left\n                 cosets are either equal or disjoint, and every element lies in\n                 the coset it determines. The analogous statement holds for\n                 right cosets.\"\nId: \"b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"Let $H$ be a subgroup of a group $G$. For $g\\in G$, the left\n                 coset $gH$ is $\\{gh:h\\in H\\}$ and the right coset $Hg$ is\n                 $\\{hg:h\\in H\\}$. Left cosets form a partition of $G$: two left\n                 cosets are either equal or disjoint, and every element lies in\n                 the coset it determines. The analogous statement holds for\n                 right cosets.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

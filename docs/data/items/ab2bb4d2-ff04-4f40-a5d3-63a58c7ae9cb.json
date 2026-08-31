@@ -1,0 +1,24 @@
+{
+  "id": "ab2bb4d2-ff04-4f40-a5d3-63a58c7ae9cb",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For a subspace $U\\leq V$, its annihilator is\n$U^\\circ=\\{\\lambda\\in V^*: \\lambda(u)=0\\text{ for every }\nu\\in U\\}$. When $V$ is finite-dimensional,\n$\\dim U+\\dim U^\\circ=\\dim V$. Annihilators translate\ncontainment into reverse containment: if $U\\subseteq W$, then\n$W^\\circ\\subseteq U^\\circ$.",
+  "page": null,
+  "source": "TextDefinition: \"For a subspace $U\\leq V$, its annihilator is\n                 $U^\\circ=\\{\\lambda\\in V^*: \\lambda(u)=0\\text{ for every }\n                 u\\in U\\}$. When $V$ is finite-dimensional,\n                 $\\dim U+\\dim U^\\circ=\\dim V$. Annihilators translate\n                 containment into reverse containment: if $U\\subseteq W$, then\n                 $W^\\circ\\subseteq U^\\circ$.\"\nId: \"ab2bb4d2-ff04-4f40-a5d3-63a58c7ae9cb\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For a subspace $U\\leq V$, its annihilator is\n                 $U^\\circ=\\{\\lambda\\in V^*: \\lambda(u)=0\\text{ for every }\n                 u\\in U\\}$. When $V$ is finite-dimensional,\n                 $\\dim U+\\dim U^\\circ=\\dim V$. Annihilators translate\n                 containment into reverse containment: if $U\\subseteq W$, then\n                 $W^\\circ\\subseteq U^\\circ$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ab2bb4d2-ff04-4f40-a5d3-63a58c7ae9cb\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

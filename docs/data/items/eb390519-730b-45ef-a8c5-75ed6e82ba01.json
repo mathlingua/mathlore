@@ -1,0 +1,24 @@
+{
+  "id": "eb390519-730b-45ef-a8c5-75ed6e82ba01",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "For an ordered basis $B=(b_1,\\ldots,b_n)$ of $V$, the\ncoordinate map $[\\,\\cdot\\,]_B:V\\to F^n$ sends\n$v=\\sum_i a_i b_i$ to the column $(a_1,\\ldots,a_n)^T$. It is a\nlinear isomorphism. Coordinates depend on $B$; the vector being\nrepresented does not.",
+  "page": null,
+  "source": "TextDefinition: \"For an ordered basis $B=(b_1,\\ldots,b_n)$ of $V$, the\n                 coordinate map $[\\,\\cdot\\,]_B:V\\to F^n$ sends\n                 $v=\\sum_i a_i b_i$ to the column $(a_1,\\ldots,a_n)^T$. It is a\n                 linear isomorphism. Coordinates depend on $B$; the vector being\n                 represented does not.\"\nId: \"eb390519-730b-45ef-a8c5-75ed6e82ba01\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"For an ordered basis $B=(b_1,\\ldots,b_n)$ of $V$, the\n                 coordinate map $[\\,\\cdot\\,]_B:V\\to F^n$ sends\n                 $v=\\sum_i a_i b_i$ to the column $(a_1,\\ldots,a_n)^T$. It is a\n                 linear isomorphism. Coordinates depend on $B$; the vector being\n                 represented does not.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"eb390519-730b-45ef-a8c5-75ed6e82ba01\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

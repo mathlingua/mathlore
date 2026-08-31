@@ -1,0 +1,27 @@
+{
+  "id": "2c6cb7fb-49cd-41a9-8ce3-c143e7cc045c",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "The Inclusion Order"
+  },
+  "source": "SectionTitle: \"The Inclusion Order\"\nId: \"2c6cb7fb-49cd-41a9-8ce3-c143e7cc045c\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"The Inclusion Order\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"2c6cb7fb-49cd-41a9-8ce3-c143e7cc045c\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

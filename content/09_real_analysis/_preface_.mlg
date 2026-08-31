@@ -1,0 +1,12 @@
+Text: "Real analysis studies approximation on the ordered field
+       $\mathbb{R}$. Its decisive axiom is completeness: bounded nonempty sets
+       possess least upper bounds, equivalently Cauchy sequences converge.
+       Completeness turns local estimates into existence theorems and explains
+       why analogous assertions can fail over $\mathbb{Q}$.
+
+       The chapter proceeds from the real number system to sequences and
+       series, then to limits and continuity, differentiation, and Riemann
+       integration. Quantifiers are part of the substance. In every limit
+       definition, the order and dependence of $\epsilon$, $\delta$, indices,
+       and points determine the concept being defined."
+Id: "6014cc04-2098-48f7-b489-7d997516d9f0"

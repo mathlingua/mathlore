@@ -1,0 +1,27 @@
+{
+  "id": "771a6189-5597-4bbf-8e3a-be234acd8f58",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Laurent Series and Isolated Singularities"
+  },
+  "source": "SectionTitle: \"Laurent Series and Isolated Singularities\"\nId: \"771a6189-5597-4bbf-8e3a-be234acd8f58\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Laurent Series and Isolated Singularities\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"771a6189-5597-4bbf-8e3a-be234acd8f58\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

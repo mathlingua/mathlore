@@ -1,0 +1,24 @@
+{
+  "id": "bbd033d2-9fa7-47d7-9354-35da690e0f8e",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Heine--Cantor theorem. Every continuous function from a compact\nmetric space to a metric space is uniformly continuous. In\nparticular, a function continuous on $[a,b]$ admits one $\\delta$\nfor each $\\epsilon$ that works at all points simultaneously.",
+  "page": null,
+  "source": "TextTheorem: \"Heine--Cantor theorem. Every continuous function from a compact\n              metric space to a metric space is uniformly continuous. In\n              particular, a function continuous on $[a,b]$ admits one $\\delta$\n              for each $\\epsilon$ that works at all points simultaneously.\"\nId: \"bbd033d2-9fa7-47d7-9354-35da690e0f8e\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Heine--Cantor theorem. Every continuous function from a compact\n              metric space to a metric space is uniformly continuous. In\n              particular, a function continuous on $[a,b]$ admits one $\\delta$\n              for each $\\epsilon$ that works at all points simultaneously.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"bbd033d2-9fa7-47d7-9354-35da690e0f8e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

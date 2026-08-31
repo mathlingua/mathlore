@@ -1,0 +1,93 @@
+Title: "Quotients and Actions"
+Id: "442c4a8a-b530-4fe4-8973-1f339026c805"
+
+
+Text: "Subgroups describe pieces of a group; quotient groups compress pieces
+       that are indistinguishable at a chosen scale. Group actions take the
+       complementary viewpoint: they represent abstract group elements as
+       symmetries of a set. Kernels, normal subgroups, orbits, and stabilizers
+       connect these constructions."
+Id: "414988da-2898-41e8-8f3f-74753d59eff1"
+
+
+SectionTitle: "Cosets and Normal Subgroups"
+Id: "7c8c60ce-9c18-4ea7-8447-9b47c9118f8b"
+
+
+TextDefinition: "Let $H$ be a subgroup of a group $G$. For $g\in G$, the left
+                 coset $gH$ is $\{gh:h\in H\}$ and the right coset $Hg$ is
+                 $\{hg:h\in H\}$. Left cosets form a partition of $G$: two left
+                 cosets are either equal or disjoint, and every element lies in
+                 the coset it determines. The analogous statement holds for
+                 right cosets."
+Id: "b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0"
+
+
+TextDefinition: "A subgroup $N\leq G$ is normal, written $N\trianglelefteq G$,
+                 if $gN=Ng$ for every $g\in G$. Equivalently, $gNg^{-1}=N$ for
+                 every $g\in G$. Normality is precisely the compatibility
+                 condition needed for multiplication of cosets to be independent
+                 of the chosen representatives."
+Id: "0e5638e1-1109-4980-a652-2e795bed2e44"
+
+
+TextTheorem: "If $N\trianglelefteq G$, the set $G/N$ of cosets becomes a group
+              under $(gN)(hN)=(gh)N$. The identity is $N$ and
+              $(gN)^{-1}=g^{-1}N$. If $N$ is not normal, the same formula can
+              depend on the representatives $g$ and $h$ and therefore does not
+              define a binary operation on the coset set."
+Id: "1c5bfe13-52ac-46ae-b75c-af1d8db93224"
+
+
+TextDefinition: "For a homomorphism $\varphi:G\to H$, the kernel is
+                 $\ker\varphi=\{g\in G:\varphi(g)=e_H\}$ and the image is
+                 $\operatorname{im}\varphi=\{\varphi(g):g\in G\}$. The kernel is
+                 a normal subgroup of $G$, the image is a subgroup of $H$, and
+                 $\varphi$ is injective exactly when its kernel is trivial."
+Id: "dbdd8045-535e-4d8b-b4d1-2f10e2d2648f"
+
+
+TextTheorem: "First isomorphism theorem for groups. For every homomorphism
+              $\varphi:G\to H$, the map $g\ker\varphi\mapsto\varphi(g)$ is a
+              well-defined group isomorphism
+              $G/\ker\varphi\cong\operatorname{im}\varphi$. The theorem says
+              that every homomorphic image is obtained by identifying exactly
+              those elements whose quotient lies in the kernel."
+Id: "033fb304-f310-43fa-84fb-2070d17de0e2"
+
+
+SectionTitle: "Group Actions"
+Id: "3033f57e-9ff5-4da7-bf72-b3c09c27f533"
+
+
+TextDefinition: "A left action of a group $G$ on a set $X$ is a map
+                 $G\times X\to X$, written $(g,x)\mapsto g\cdot x$, satisfying
+                 $e\cdot x=x$ and $(gh)\cdot x=g\cdot(h\cdot x)$. Equivalently,
+                 an action is a homomorphism $G\to\operatorname{Sym}(X)$ into
+                 the group of bijections of $X$."
+Id: "fa043cd6-0ce8-4504-82bb-aba9ad2c8a30"
+
+
+TextDefinition: "For an action of $G$ on $X$, the orbit of $x$ is
+                 $G\cdot x=\{g\cdot x:g\in G\}$, and the stabilizer is
+                 $G_x=\{g\in G:g\cdot x=x\}$. Orbits partition $X$; stabilizers
+                 are subgroups of $G$. The kernel of the action is the
+                 intersection of all stabilizers, and the action is faithful
+                 exactly when this kernel is trivial."
+Id: "373a9fce-21a7-4155-9f1d-cfb662941906"
+
+
+TextTheorem: "Orbit--stabilizer theorem. If a finite group $G$ acts on a set
+              $X$, then for every $x\in X$ one has $|G|=|G\cdot x|\,|G_x|$. More
+              generally, the map $G/G_x\to G\cdot x$ given by
+              $gG_x\mapsto g\cdot x$ is a well-defined bijection."
+Id: "8b9d1618-6fe0-4cd1-a338-3eb2e3242b9a"
+
+
+Text: "An action turns structural questions into counting and geometry. A
+       transitive action has a single orbit and presents $X$ as a coset space.
+       Conjugation of $G$ on itself has conjugacy classes as orbits and
+       centralizers as stabilizers. These examples explain why quotient groups
+       and actions are not separate topics but two views of the same symmetry
+       mechanism."
+Id: "f873aaf6-708d-4dc9-a895-0a82e2ca658c"

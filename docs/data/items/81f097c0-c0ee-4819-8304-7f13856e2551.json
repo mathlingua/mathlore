@@ -1,0 +1,24 @@
+{
+  "id": "81f097c0-c0ee-4819-8304-7f13856e2551",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "For a commutative ring $R$, the quotient $R/I$ is an integral\ndomain exactly when $I$ is prime, and it is a field exactly when\n$I$ is maximal. These correspondences turn questions about ideals\ninto structural questions about quotient rings.",
+  "page": null,
+  "source": "TextTheorem: \"For a commutative ring $R$, the quotient $R/I$ is an integral\n              domain exactly when $I$ is prime, and it is a field exactly when\n              $I$ is maximal. These correspondences turn questions about ideals\n              into structural questions about quotient rings.\"\nId: \"81f097c0-c0ee-4819-8304-7f13856e2551\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"For a commutative ring $R$, the quotient $R/I$ is an integral\n              domain exactly when $I$ is prime, and it is a field exactly when\n              $I$ is maximal. These correspondences turn questions about ideals\n              into structural questions about quotient rings.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"81f097c0-c0ee-4819-8304-7f13856e2551\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "3e6f72a7-a824-480c-896c-9f2e498639c0",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Casorati--Weierstrass theorem. Near an essential singularity, the\nimage of every punctured neighborhood is dense in $\\mathbb{C}$.\nPicard's great theorem strengthens this: with at most one\nexceptional value, every complex value is assumed infinitely often\nin every punctured neighborhood.",
+  "page": null,
+  "source": "TextTheorem: \"Casorati--Weierstrass theorem. Near an essential singularity, the\n              image of every punctured neighborhood is dense in $\\mathbb{C}$.\n              Picard's great theorem strengthens this: with at most one\n              exceptional value, every complex value is assumed infinitely often\n              in every punctured neighborhood.\"\nId: \"3e6f72a7-a824-480c-896c-9f2e498639c0\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Casorati--Weierstrass theorem. Near an essential singularity, the\n              image of every punctured neighborhood is dense in $\\mathbb{C}$.\n              Picard's great theorem strengthens this: with at most one\n              exceptional value, every complex value is assumed infinitely often\n              in every punctured neighborhood.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3e6f72a7-a824-480c-896c-9f2e498639c0\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

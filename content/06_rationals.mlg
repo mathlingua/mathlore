@@ -379,3 +379,40 @@ Documented:
 . description: "The concrete realization of the abstract rational tuple by
                 equivalence classes of nonzero-denominator integer pairs."
 Id: "6ef88cb1-eef6-4ced-8f2c-a4fdacaeea4e"
+
+
+SectionTitle: "Field of Fractions and Density"
+Id: "4c03c412-c158-493b-835f-5ffdaa1769a3"
+
+
+TextDefinition: "A rational number is an equivalence class of pairs $(a,b)$ with
+                 $a\in\mathbb{Z}$ and nonzero $b\in\mathbb{Z}$, where
+                 $(a,b)\sim(c,d)$ exactly when $ad=bc$. The notation $a/b$ names
+                 the class, not a privileged representation; multiplying
+                 numerator and denominator by the same nonzero integer leaves
+                 the rational number unchanged."
+Id: "694343ad-950a-425c-9b62-705e6bb66956"
+
+
+TextTheorem: "The inclusion $\mathbb{Z}\hookrightarrow\mathbb{Q}$ identifies $a$
+              with $a/1$. If $F$ is any field and $\varphi:\mathbb{Z}\to F$ is
+              an injective ring homomorphism, there is a unique field
+              homomorphism $\widetilde\varphi:\mathbb{Q}\to F$ satisfying
+              $\widetilde\varphi(a/b)=\varphi(a)\varphi(b)^{-1}$. This is the
+              universal property of the fraction field."
+Id: "90b5985b-53fa-4b79-b315-eaae93791621"
+
+
+TextTheorem: "The rational order is dense: whenever $p<q$ in $\mathbb{Q}$, the
+              midpoint $(p+q)/2$ is rational and satisfies $p<(p+q)/2<q$. The
+              rationals are also dense in the reals, but they are not complete;
+              for example, the rational numbers whose square is less than $2$
+              have no least upper bound in $\mathbb{Q}$."
+Id: "ca6475d3-548d-402f-822b-87241cb23f3e"
+
+
+TextTheorem: "Every rational number has a finite or eventually periodic decimal
+              expansion, and every eventually periodic decimal represents a
+              rational number. This characterization depends on the base; in
+              base $b$, eventual periodicity is again equivalent to rationality."
+Id: "ca42d107-8793-4115-9298-b49f3e8e348a"

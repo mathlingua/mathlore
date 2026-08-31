@@ -1,0 +1,24 @@
+{
+  "id": "c5d30a1a-6c29-4f04-b1f0-e16fe60d6449",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Fix ordered bases of finite-dimensional vector spaces. Sending a\nlinear map to its matrix is a vector-space isomorphism, and\ncomposition of maps corresponds to matrix multiplication. The\napparently asymmetric row-by-column rule is forced by this\nrequirement.",
+  "page": null,
+  "source": "TextTheorem: \"Fix ordered bases of finite-dimensional vector spaces. Sending a\n              linear map to its matrix is a vector-space isomorphism, and\n              composition of maps corresponds to matrix multiplication. The\n              apparently asymmetric row-by-column rule is forced by this\n              requirement.\"\nId: \"c5d30a1a-6c29-4f04-b1f0-e16fe60d6449\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Fix ordered bases of finite-dimensional vector spaces. Sending a\n              linear map to its matrix is a vector-space isomorphism, and\n              composition of maps corresponds to matrix multiplication. The\n              apparently asymmetric row-by-column rule is forced by this\n              requirement.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"c5d30a1a-6c29-4f04-b1f0-e16fe60d6449\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

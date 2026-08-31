@@ -1,0 +1,24 @@
+{
+  "id": "59879fc7-468d-4926-8c40-43fe85a7713b",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "There is, up to a unique order-preserving field isomorphism, one\ncomplete ordered field. Thus constructions by Dedekind cuts and by\nCauchy sequences yield isomorphic ordered fields. The realization\nchanges; the real-number structure does not.",
+  "page": null,
+  "source": "TextTheorem: \"There is, up to a unique order-preserving field isomorphism, one\n              complete ordered field. Thus constructions by Dedekind cuts and by\n              Cauchy sequences yield isomorphic ordered fields. The realization\n              changes; the real-number structure does not.\"\nId: \"59879fc7-468d-4926-8c40-43fe85a7713b\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"There is, up to a unique order-preserving field isomorphism, one\n              complete ordered field. Thus constructions by Dedekind cuts and by\n              Cauchy sequences yield isomorphic ordered fields. The realization\n              changes; the real-number structure does not.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"59879fc7-468d-4926-8c40-43fe85a7713b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

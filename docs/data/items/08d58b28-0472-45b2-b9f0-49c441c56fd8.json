@@ -1,0 +1,24 @@
+{
+  "id": "08d58b28-0472-45b2-b9f0-49c441c56fd8",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Lagrange's theorem. If $G$ is finite and $H\\leq G$, then $|H|$\ndivides $|G|$ and $|G|=[G:H]|H|$, where $[G:H]$ is the number of\nleft cosets of $H$. In particular, the order of every element\ndivides $|G|$. The converse need not hold: a divisor of $|G|$ need\nnot be the order of a subgroup.",
+  "page": null,
+  "source": "TextTheorem: \"Lagrange's theorem. If $G$ is finite and $H\\leq G$, then $|H|$\n              divides $|G|$ and $|G|=[G:H]|H|$, where $[G:H]$ is the number of\n              left cosets of $H$. In particular, the order of every element\n              divides $|G|$. The converse need not hold: a divisor of $|G|$ need\n              not be the order of a subgroup.\"\nId: \"08d58b28-0472-45b2-b9f0-49c441c56fd8\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Lagrange's theorem. If $G$ is finite and $H\\leq G$, then $|H|$\n              divides $|G|$ and $|G|=[G:H]|H|$, where $[G:H]$ is the number of\n              left cosets of $H$. In particular, the order of every element\n              divides $|G|$. The converse need not hold: a divisor of $|G|$ need\n              not be the order of a subgroup.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"08d58b28-0472-45b2-b9f0-49c441c56fd8\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

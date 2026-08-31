@@ -1,0 +1,27 @@
+{
+  "id": "d9f17a2f-2d5a-44e6-857e-9ca53b40f744",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Residues compress local singular behavior into the single coefficient\ndetected by contour integration. The residue theorem is therefore a\nlocal-to-global statement: a boundary integral is the sum of finitely\nmany local contributions from the singularities enclosed by the contour."
+  },
+  "source": "Text: \"Residues compress local singular behavior into the single coefficient\n       detected by contour integration. The residue theorem is therefore a\n       local-to-global statement: a boundary integral is the sum of finitely\n       many local contributions from the singularities enclosed by the contour.\"\nId: \"d9f17a2f-2d5a-44e6-857e-9ca53b40f744\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Residues compress local singular behavior into the single coefficient\n       detected by contour integration. The residue theorem is therefore a\n       local-to-global statement: a boundary integral is the sum of finitely\n       many local contributions from the singularities enclosed by the contour.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"d9f17a2f-2d5a-44e6-857e-9ca53b40f744\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

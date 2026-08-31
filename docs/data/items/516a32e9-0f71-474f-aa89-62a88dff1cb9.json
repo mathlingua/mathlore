@@ -1,0 +1,24 @@
+{
+  "id": "516a32e9-0f71-474f-aa89-62a88dff1cb9",
+  "kind": "TextTheorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Theorem}",
+  "body_text": "Cayley--Hamilton theorem. Every square matrix satisfies its own\ncharacteristic polynomial: $\\chi_A(A)=0$. This converts high\npowers of $A$ into linear combinations of lower powers and is a\nbasic bridge between polynomial algebra and linear operators.",
+  "page": null,
+  "source": "TextTheorem: \"Cayley--Hamilton theorem. Every square matrix satisfies its own\n              characteristic polynomial: $\\chi_A(A)=0$. This converts high\n              powers of $A$ into linear combinations of lower powers and is a\n              basic bridge between polynomial algebra and linear operators.\"\nId: \"516a32e9-0f71-474f-aa89-62a88dff1cb9\"",
+  "sections": [
+    {
+      "label": "TextTheorem",
+      "inline_argument": "\"Cayley--Hamilton theorem. Every square matrix satisfies its own\n              characteristic polynomial: $\\chi_A(A)=0$. This converts high\n              powers of $A$ into linear combinations of lower powers and is a\n              basic bridge between polynomial algebra and linear operators.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"516a32e9-0f71-474f-aa89-62a88dff1cb9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

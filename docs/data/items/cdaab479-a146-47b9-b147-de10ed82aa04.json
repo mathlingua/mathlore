@@ -1,0 +1,27 @@
+{
+  "id": "cdaab479-a146-47b9-b147-de10ed82aa04",
+  "kind": "SectionTitle",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "SectionTitle",
+    "text": "Existence and Uniqueness"
+  },
+  "source": "SectionTitle: \"Existence and Uniqueness\"\nId: \"cdaab479-a146-47b9-b147-de10ed82aa04\"",
+  "sections": [
+    {
+      "label": "SectionTitle",
+      "inline_argument": "\"Existence and Uniqueness\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"cdaab479-a146-47b9-b147-de10ed82aa04\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

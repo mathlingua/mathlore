@@ -1,0 +1,24 @@
+{
+  "id": "cc3fc1c3-8ea9-45a6-874c-9215525952f4",
+  "kind": "TextAxiom",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Axiom}",
+  "body_text": "Axiom of foundation. Every nonempty set $A$ has an element $a$\ndisjoint from $A$. Equivalently in the presence of the other ZF\naxioms, there is no infinite descending membership chain\n$x_0\\ni x_1\\ni x_2\\ni\\cdots$. Foundation supports proofs and\ndefinitions by membership recursion and excludes self-membership\nphenomena such as $x\\in x$.",
+  "page": null,
+  "source": "TextAxiom: \"Axiom of foundation. Every nonempty set $A$ has an element $a$\n            disjoint from $A$. Equivalently in the presence of the other ZF\n            axioms, there is no infinite descending membership chain\n            $x_0\\ni x_1\\ni x_2\\ni\\cdots$. Foundation supports proofs and\n            definitions by membership recursion and excludes self-membership\n            phenomena such as $x\\in x$.\"\nId: \"cc3fc1c3-8ea9-45a6-874c-9215525952f4\"",
+  "sections": [
+    {
+      "label": "TextAxiom",
+      "inline_argument": "\"Axiom of foundation. Every nonempty set $A$ has an element $a$\n            disjoint from $A$. Equivalently in the presence of the other ZF\n            axioms, there is no infinite descending membership chain\n            $x_0\\ni x_1\\ni x_2\\ni\\cdots$. Foundation supports proofs and\n            definitions by membership recursion and excludes self-membership\n            phenomena such as $x\\in x$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"cc3fc1c3-8ea9-45a6-874c-9215525952f4\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

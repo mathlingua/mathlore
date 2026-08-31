@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Differential calculus quantifies the instantaneous rate of change of a\nfunction, while integral calculus formalizes the accumulation of\nquantities and area. The Fundamental Theorem of Calculus establishes that\ndifferentiation and integration are inverse processes."
+    "text": "Differentiation studies the first-order linear behavior of a function.\nThe derivative at a point is not merely a symbolic quotient: it is the\ncoefficient of the best linear approximation, with an error that is\nnegligible relative to the increment. This viewpoint explains the chain\nrule, the mean value theorem, and the role of derivatives in local\napproximation."
   },
-  "source": "Text: \"Differential calculus quantifies the instantaneous rate of change of a\n       function, while integral calculus formalizes the accumulation of\n       quantities and area. The Fundamental Theorem of Calculus establishes that\n       differentiation and integration are inverse processes.\"\nId: \"e33f5272-051b-41b6-af7f-e193d1108154\"",
+  "source": "Text: \"Differentiation studies the first-order linear behavior of a function.\n       The derivative at a point is not merely a symbolic quotient: it is the\n       coefficient of the best linear approximation, with an error that is\n       negligible relative to the increment. This viewpoint explains the chain\n       rule, the mean value theorem, and the role of derivatives in local\n       approximation.\"\nId: \"e33f5272-051b-41b6-af7f-e193d1108154\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Differential calculus quantifies the instantaneous rate of change of a\n       function, while integral calculus formalizes the accumulation of\n       quantities and area. The Fundamental Theorem of Calculus establishes that\n       differentiation and integration are inverse processes.\"",
+      "inline_argument": "\"Differentiation studies the first-order linear behavior of a function.\n       The derivative at a point is not merely a symbolic quotient: it is the\n       coefficient of the best linear approximation, with an error that is\n       negligible relative to the increment. This viewpoint explains the chain\n       rule, the mean value theorem, and the role of derivatives in local\n       approximation.\"",
       "inline_latex": null,
       "arguments": []
     },

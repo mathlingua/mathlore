@@ -1,0 +1,24 @@
+{
+  "id": "bfe0b849-abd6-45f4-9979-5c67f50ae5d2",
+  "kind": "TextDefinition",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Definition}",
+  "body_text": "A theorem is a statement asserted on the basis of a proof from\naccepted axioms and earlier results. A lemma is a theorem\ndesignated chiefly for use in proving another result; a\ncorollary follows with comparatively little additional\nargument. These labels describe expository role rather than\nlogical strength.",
+  "page": null,
+  "source": "TextDefinition: \"A theorem is a statement asserted on the basis of a proof from\n                 accepted axioms and earlier results. A lemma is a theorem\n                 designated chiefly for use in proving another result; a\n                 corollary follows with comparatively little additional\n                 argument. These labels describe expository role rather than\n                 logical strength.\"\nId: \"bfe0b849-abd6-45f4-9979-5c67f50ae5d2\"",
+  "sections": [
+    {
+      "label": "TextDefinition",
+      "inline_argument": "\"A theorem is a statement asserted on the basis of a proof from\n                 accepted axioms and earlier results. A lemma is a theorem\n                 designated chiefly for use in proving another result; a\n                 corollary follows with comparatively little additional\n                 argument. These labels describe expository role rather than\n                 logical strength.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"bfe0b849-abd6-45f4-9979-5c67f50ae5d2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

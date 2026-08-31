@@ -79,3 +79,23 @@ Documented:
 . description: "Two sets $A$ and $B$ are equal if and only if $A \subseteq B$
                 and $B \subseteq A$."
 Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"
+
+
+SectionTitle: "The Inclusion Order"
+Id: "2c6cb7fb-49cd-41a9-8ce3-c143e7cc045c"
+
+
+TextTheorem: "For every set $U$, the subset relation makes $\mathcal{P}(U)$ a
+              partially ordered set. It is reflexive, antisymmetric by
+              extensionality, and transitive. The empty set is the least element
+              and $U$ is the greatest element."
+Id: "ff6d7e2f-1927-4d30-b771-34ea8726711c"
+
+
+TextDefinition: "A family of subsets of $U$ is itself a subset
+                 $\mathcal{A}\subseteq\mathcal{P}(U)$. This distinction keeps
+                 two membership levels separate: $x\in A$ concerns an element of
+                 one subset, whereas $A\in\mathcal{A}$ concerns one set in the
+                 family. Many indexing errors are failures to distinguish these
+                 levels."
+Id: "df5630a9-0ac4-4920-995a-7002bdccbf15"

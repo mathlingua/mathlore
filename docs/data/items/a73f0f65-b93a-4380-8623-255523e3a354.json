@@ -1,0 +1,27 @@
+{
+  "id": "a73f0f65-b93a-4380-8623-255523e3a354",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The induction hypothesis is available only at the stage for which it has\nbeen assumed. In ordinary induction one may use $P(n)$ to prove $P(n+1)$;\none may not assume the desired conclusion at $n+1$. In strong induction\nall earlier cases may be used, but the current case must still be derived\nfrom them."
+  },
+  "source": "Text: \"The induction hypothesis is available only at the stage for which it has\n       been assumed. In ordinary induction one may use $P(n)$ to prove $P(n+1)$;\n       one may not assume the desired conclusion at $n+1$. In strong induction\n       all earlier cases may be used, but the current case must still be derived\n       from them.\"\nId: \"a73f0f65-b93a-4380-8623-255523e3a354\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The induction hypothesis is available only at the stage for which it has\n       been assumed. In ordinary induction one may use $P(n)$ to prove $P(n+1)$;\n       one may not assume the desired conclusion at $n+1$. In strong induction\n       all earlier cases may be used, but the current case must still be derived\n       from them.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"a73f0f65-b93a-4380-8623-255523e3a354\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "0471c14a-2c21-41bd-a5f9-5118df79f2af",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The ladder from magma to semigroup to monoid adds laws but does not\nreplace the underlying data. The same carrier and operation may be viewed\nat several levels. A theorem proved for semigroups therefore applies\nautomatically to monoids and groups after forgetting their extra\nstructure."
+  },
+  "source": "Text: \"The ladder from magma to semigroup to monoid adds laws but does not\n       replace the underlying data. The same carrier and operation may be viewed\n       at several levels. A theorem proved for semigroups therefore applies\n       automatically to monoids and groups after forgetting their extra\n       structure.\"\nId: \"0471c14a-2c21-41bd-a5f9-5118df79f2af\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The ladder from magma to semigroup to monoid adds laws but does not\n       replace the underlying data. The same carrier and operation may be viewed\n       at several levels. A theorem proved for semigroups therefore applies\n       automatically to monoids and groups after forgetting their extra\n       structure.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"0471c14a-2c21-41bd-a5f9-5118df79f2af\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

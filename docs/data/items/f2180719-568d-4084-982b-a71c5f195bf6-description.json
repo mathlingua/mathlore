@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "There is a set having no members: for every set $Z$, $Z \\notin\nX$. This is the one axiom that outright asserts a set into\nexistence; every other set is built, directly or indirectly,\nstarting from it."
+    "text": "There is a set having no members: for every set $Z$, $Z \\notin\nX$. Extensionality makes this set unique, so any construction\nwith no members denotes the same empty set."
   },
   "source": "",
   "sections": []

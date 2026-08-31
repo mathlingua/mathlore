@@ -1,0 +1,27 @@
+{
+  "id": "f047339a-9031-4ad2-a385-53e1b9f6fe04",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Power series provide the local language of holomorphic functions. Laurent\nseries enlarge that language by allowing negative powers, which record\nthe exact obstruction to holomorphic extension across an isolated point.\nThe coefficient of $(z-z_0)^{-1}$ is the residue and controls the\nintegral around the singularity."
+  },
+  "source": "Text: \"Power series provide the local language of holomorphic functions. Laurent\n       series enlarge that language by allowing negative powers, which record\n       the exact obstruction to holomorphic extension across an isolated point.\n       The coefficient of $(z-z_0)^{-1}$ is the residue and controls the\n       integral around the singularity.\"\nId: \"f047339a-9031-4ad2-a385-53e1b9f6fe04\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Power series provide the local language of holomorphic functions. Laurent\n       series enlarge that language by allowing negative powers, which record\n       the exact obstruction to holomorphic extension across an isolated point.\n       The coefficient of $(z-z_0)^{-1}$ is the residue and controls the\n       integral around the singularity.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f047339a-9031-4ad2-a385-53e1b9f6fe04\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}
