@@ -523,12 +523,16 @@
                         {
                           "depth": 2,
                           "text": "a + b",
-                          "types": []
+                          "types": [
+                            "\"in\" F"
+                          ]
                         },
                         {
                           "depth": 3,
                           "text": "a + b",
-                          "types": []
+                          "types": [
+                            "\"in\" F"
+                          ]
                         },
                         {
                           "depth": 4,

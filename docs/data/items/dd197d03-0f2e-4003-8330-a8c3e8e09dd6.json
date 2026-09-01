@@ -127,7 +127,9 @@
                 {
                   "depth": 1,
                   "text": "A(i,j) + B(i,j)",
-                  "types": []
+                  "types": [
+                    "\"in\" F"
+                  ]
                 },
                 {
                   "depth": 2,

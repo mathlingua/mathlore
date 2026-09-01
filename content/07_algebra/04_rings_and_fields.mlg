@@ -13,26 +13,11 @@ Id: "0297b76e-dfa0-495e-a363-8f9f27d2ded3"
 
 
 [\ring]
-Declares: R ::= (X, +, *, 0, 1) is \set via X
+Declares: R ::= (X, +, *, 0, 1)
 specifies:
-. + is \(associative, commutative)::binary.operation:on{X}
-. * is \(associative)::binary.operation:on{X}
-. 0 "in" X
-. 1 "in" X
+. R is \(abelian)::group via (X, +, 0)
+. R is \monoid via (X, *, 1)
 satisfies:
-. [additive.identity]
-  forAll: x "in" X
-  then: x + 0 = x
-. [additive.inverse]
-  forAll: x "in" X
-  then:
-  . exists: y "in" X
-    suchThat: x + y = 0
-. [multiplicative.identity]
-  forAll: x "in" X
-  then:
-  . x * 1 = x
-  . 1 * x = x
 . [distributive]
   forAll: a, b, c "in" X
   then:

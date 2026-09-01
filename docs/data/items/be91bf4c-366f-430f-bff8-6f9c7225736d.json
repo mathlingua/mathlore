@@ -13,7 +13,7 @@
     {
       "label": "Declares",
       "inline_argument": "D ::= (X, +, *, 0, 1) is \\(commutative)::ring via (X, +, *, 0, 1)",
-      "inline_latex": null,
+      "inline_latex": "D ::= \\left(X, +, \\ast, 0, 1\\right) \\textrm{ is } \\htmlData{mlg-ref=5c636f6d6d757461746976653a3a72696e67}{\\textrm{commutative}}\\textrm{ }\\htmlData{mlg-ref=5c72696e67}{\\textrm{ring}} \\textrm{ via } \\left(X, +, \\ast, 0, 1\\right)",
       "arguments": []
     },
     {
@@ -34,12 +34,16 @@
             {
               "depth": 1,
               "text": "0",
-              "types": []
+              "types": [
+                "\"in\" X"
+              ]
             },
             {
               "depth": 1,
               "text": "1",
-              "types": []
+              "types": [
+                "\"in\" X"
+              ]
             }
           ]
         },
@@ -94,7 +98,9 @@
                         {
                           "depth": 1,
                           "text": "a * b",
-                          "types": []
+                          "types": [
+                            "\"in\" D"
+                          ]
                         },
                         {
                           "depth": 2,
@@ -113,7 +119,9 @@
                         {
                           "depth": 1,
                           "text": "0",
-                          "types": []
+                          "types": [
+                            "\"in\" X"
+                          ]
                         }
                       ],
                       "arguments": []
@@ -154,7 +162,9 @@
                                     {
                                       "depth": 1,
                                       "text": "0",
-                                      "types": []
+                                      "types": [
+                                        "\"in\" X"
+                                      ]
                                     }
                                   ]
                                 },
@@ -180,7 +190,9 @@
                                     {
                                       "depth": 1,
                                       "text": "0",
-                                      "types": []
+                                      "types": [
+                                        "\"in\" X"
+                                      ]
                                     }
                                   ]
                                 }

@@ -142,7 +142,9 @@
                     {
                       "depth": 1,
                       "text": "a * b",
-                      "types": []
+                      "types": [
+                        "\"in\" R"
+                      ]
                     },
                     {
                       "depth": 2,

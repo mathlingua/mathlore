@@ -118,7 +118,9 @@
                 {
                   "depth": 1,
                   "text": "x + y",
-                  "types": []
+                  "types": [
+                    "\"in\" R"
+                  ]
                 },
                 {
                   "depth": 2,
@@ -211,7 +213,9 @@
                         {
                           "depth": 1,
                           "text": "x + y",
-                          "types": []
+                          "types": [
+                            "\"in\" R"
+                          ]
                         },
                         {
                           "depth": 2,
@@ -320,7 +324,9 @@
                             {
                               "depth": 1,
                               "text": "r * i",
-                              "types": []
+                              "types": [
+                                "\"in\" R"
+                              ]
                             },
                             {
                               "depth": 2,
@@ -353,7 +359,9 @@
                             {
                               "depth": 1,
                               "text": "i * r",
-                              "types": []
+                              "types": [
+                                "\"in\" R"
+                              ]
                             },
                             {
                               "depth": 2,

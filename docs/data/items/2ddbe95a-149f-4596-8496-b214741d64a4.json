@@ -63,7 +63,9 @@
                 {
                   "depth": 1,
                   "text": "x * y",
-                  "types": []
+                  "types": [
+                    "\"in\" R"
+                  ]
                 },
                 {
                   "depth": 2,
@@ -82,7 +84,9 @@
                 {
                   "depth": 1,
                   "text": "y * x",
-                  "types": []
+                  "types": [
+                    "\"in\" R"
+                  ]
                 },
                 {
                   "depth": 2,
