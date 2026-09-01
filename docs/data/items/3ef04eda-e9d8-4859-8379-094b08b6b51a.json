@@ -1,18 +1,219 @@
 {
   "id": "3ef04eda-e9d8-4859-8379-094b08b6b51a",
-  "kind": "TextDefinition",
-  "definition_keys": [],
-  "heading": null,
-  "heading_latex": "\\textrm{Definition}",
-  "body_text": "An element $a$ of a magma has left cancellation if $ax=ay$\nimplies $x=y$, and right cancellation if $xa=ya$ implies $x=y$.\nA cancellation law is not a consequence of associativity or the\nexistence of an identity. Every group has both laws because one\nmay multiply by $a^{-1}$, but a general monoid need not.",
+  "kind": "States",
+  "definition_keys": [
+    "5c6c6566742e63616e63656c6c61626c653a696e"
+  ],
+  "heading": "\\left.cancellable{a}:in{M ::= (X, *)}",
+  "heading_latex": "a\\textrm{ is left cancellable in }M",
+  "parameter_destructurings": [
+    "M ::= \\left(X, \\ast\\right)"
+  ],
+  "body_text": null,
   "page": null,
-  "source": "TextDefinition: \"An element $a$ of a magma has left cancellation if $ax=ay$\n                 implies $x=y$, and right cancellation if $xa=ya$ implies $x=y$.\n                 A cancellation law is not a consequence of associativity or the\n                 existence of an identity. Every group has both laws because one\n                 may multiply by $a^{-1}$, but a general monoid need not.\"\nId: \"3ef04eda-e9d8-4859-8379-094b08b6b51a\"",
+  "source": "[\\left.cancellable{a}:in{M ::= (X, *)}]\nStates:\nwhen:\n. M is \\magma\n. a \"in\" M\nthat:\n. forAll: x, y \"in\" M\n  then:\n  . if: a * x = a * y\n    then: x = y\nDocumented:\n. called: \"$a?$ is left cancellable in $M?$\"\nId: \"3ef04eda-e9d8-4859-8379-094b08b6b51a\"",
   "sections": [
     {
-      "label": "TextDefinition",
-      "inline_argument": "\"An element $a$ of a magma has left cancellation if $ax=ay$\n                 implies $x=y$, and right cancellation if $xa=ya$ implies $x=y$.\n                 A cancellation law is not a consequence of associativity or the\n                 existence of an identity. Every group has both laws because one\n                 may multiply by $a^{-1}$, but a general monoid need not.\"",
+      "label": "States",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "M is \\magma",
+          "latex": "M \\textrm{ is } \\htmlData{mlg-ref=5c6d61676d61}{\\textrm{magma}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "M is \\magma",
+              "types": [
+                "asserts M is \\magma"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "a \"in\" M",
+          "latex": "a \\in M",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "a \"in\" M",
+              "types": [
+                "asserts a \"in\" M"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "M",
+              "types": [
+                "is \\magma"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x, y \"in\" M",
+              "inline_latex": "x, y \\in M",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x, y \"in\" M",
+                  "types": [
+                    "asserts x \"in\" M",
+                    "asserts y \"in\" M"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "M",
+                  "types": [
+                    "is \\magma"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": "a * x = a * y",
+                      "inline_latex": "a \\ast x = a \\ast y",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "a * x = a * y",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "a * x",
+                          "types": [
+                            "\"in\" M"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "a",
+                          "types": [
+                            "\"in\" M"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x",
+                          "types": [
+                            "\"in\" M"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "a * y",
+                          "types": [
+                            "\"in\" M"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "a",
+                          "types": [
+                            "\"in\" M"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "y",
+                          "types": [
+                            "\"in\" M"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "x = y",
+                      "inline_latex": "x = y",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x = y",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "\"in\" M"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "y",
+                          "types": [
+                            "\"in\" M"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$a?$ is left cancellable in $M?$\"",
+              "inline_latex": "a\\textrm{ is left cancellable in }M",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

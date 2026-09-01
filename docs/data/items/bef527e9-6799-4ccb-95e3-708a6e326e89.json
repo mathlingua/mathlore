@@ -1,0 +1,27 @@
+{
+  "id": "bef527e9-6799-4ccb-95e3-708a6e326e89",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Consequently $d(z,w)=|z-w|$ is a metric, and its metric topology is the\nusual Euclidean topology on the complex plane."
+  },
+  "source": "Text: \"Consequently $d(z,w)=|z-w|$ is a metric, and its metric topology is the\n       usual Euclidean topology on the complex plane.\"\nId: \"bef527e9-6799-4ccb-95e3-708a6e326e89\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Consequently $d(z,w)=|z-w|$ is a metric, and its metric topology is the\n       usual Euclidean topology on the complex plane.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"bef527e9-6799-4ccb-95e3-708a6e326e89\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

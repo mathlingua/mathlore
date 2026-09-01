@@ -1,0 +1,57 @@
+{
+  "id": "4574a4f5-93f4-4a1b-ab6c-31750b94003a",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c696e74656765722e74776f"
+  ],
+  "heading": "\\integer.two",
+  "heading_latex": "\\textrm{integer two}\\quad\\htmlClass{mlg-title-written}{2}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integer.two]\nDefines: t := \\integer.one \\.integer.+./ \\integer.one is \\integer\nDocumented:\n. called: \"integer two\"\n. written: \"2\"\nId: \"4574a4f5-93f4-4a1b-ab6c-31750b94003a\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "t := \\integer.one \\.integer.+./ \\integer.one is \\integer",
+      "inline_latex": "t := \\htmlData{mlg-ref=5c2e696e74656765722e2b2e2f}{\\htmlData{mlg-ref=5c696e74656765722e6f6e65}{1} + \\htmlData{mlg-ref=5c696e74656765722e6f6e65}{1}} \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integer two\"",
+              "inline_latex": "\\textrm{integer two}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"2\"",
+              "inline_latex": "2",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4574a4f5-93f4-4a1b-ab6c-31750b94003a\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

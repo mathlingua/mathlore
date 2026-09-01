@@ -185,26 +185,60 @@ SectionTitle: "Geometry and Polar Form"
 Id: "dfffea1e-10b7-4e61-a9af-08dec4a3de2e"
 
 
-TextTheorem: "Every complex number has a unique Cartesian form $z=x+iy$ with
-              $x,y\in\mathbb{R}$. For $z\ne0$ it also has polar forms
-              $z=re^{i\theta}$, where $r=|z|>0$ and the argument $\theta$ is
-              determined modulo $2\pi$. Thus the modulus is unique but a
-              single-valued argument requires a branch convention."
+Theorem:
+given: z is \complex
+then:
+. existsUnique: x is \real
+  suchThat:
+  . existsUnique: y is \real
+    suchThat: z = x \.complex.+./ (y \.complex.*./ \complex.i)
+Documented:
+. called: "Uniqueness of Cartesian Form"
+. description: "Every complex number has a unique representation $x+iy$ with
+                real coordinates $x$ and $y$."
 Id: "cb72d0b1-7ab5-4a88-9a38-cc75cdeee392"
 
 
-TextTheorem: "Complex conjugation satisfies $\overline{z+w}=\bar z+\bar w$,
-              $\overline{zw}=\bar z\bar w$, and $z\bar z=|z|^2$. Consequently
-              $z^{-1}=\bar z/|z|^2$ for $z\ne0$. Geometrically, conjugation is
-              reflection across the real axis."
+Text: "If $z\ne0$, it also has polar representations $z=re^{i\theta}$ with
+       $r=|z|>0$. The modulus is unique, whereas the argument is determined only
+       modulo $2\pi$; a single-valued argument therefore requires a branch
+       convention."
+Id: "7fd16fbf-1c34-4001-8ec4-c2b603e766b7"
+
+
+Theorem:
+given: z, w is \complex
+then:
+. \complex.conjugate(z \.complex.+./ w) = \complex.conjugate(z) \.complex.+./ \complex.conjugate(w)
+. \complex.conjugate(z \.complex.*./ w) = \complex.conjugate(z) \.complex.*./ \complex.conjugate(w)
+. z \.complex.*./ \complex.conjugate(z) = \complex.modulus(z) \.real.*./ \complex.modulus(z)
+. if: z != \complex.zero
+  then: \complex.one \.complex.div./ z = \complex.conjugate(z) \.complex.div./ (\complex.modulus(z) \.real.*./ \complex.modulus(z))
+Documented:
+. called: "Algebraic Laws of Complex Conjugation"
+. description: "Conjugation preserves addition and multiplication, and its
+                product with the original number is the squared modulus."
 Id: "bdb7d794-5eb2-41f5-823f-5f4f719266a3"
 
 
-TextTheorem: "The modulus is multiplicative and satisfies the triangle
-              inequality: $|zw|=|z||w|$ and $|z+w|\leq|z|+|w|$. Hence
-              $d(z,w)=|z-w|$ is a metric inducing the usual Euclidean topology
-              on the complex plane."
+Text: "Geometrically, conjugation is reflection across the real axis."
+Id: "b6cf05ac-3997-42c1-8a87-d6cc236431f1"
+
+
+Theorem:
+given: z, w is \complex
+then:
+. \complex.modulus(z \.complex.*./ w) = \complex.modulus(z) \.real.*./ \complex.modulus(w)
+. \complex.modulus(z \.complex.+./ w) \:real.leq?:/ \complex.modulus(z) \.real.+./ \complex.modulus(w)
+Documented:
+. called: "Multiplicativity and Triangle Inequality for the Complex Modulus"
+. description: "The complex modulus is multiplicative and subadditive."
 Id: "d366bd62-6a88-4090-9613-ac5843473195"
+
+
+Text: "Consequently $d(z,w)=|z-w|$ is a metric, and its metric topology is the
+       usual Euclidean topology on the complex plane."
+Id: "bef527e9-6799-4ccb-95e3-708a6e326e89"
 
 
 TextTheorem: "Fundamental theorem of algebra. Every nonconstant polynomial with

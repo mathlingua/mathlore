@@ -1,0 +1,206 @@
+{
+  "id": "374659d6-cfcc-4262-b98e-b50207d16c18",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c7265666c65786976652e7472616e7369746976652e636c6f737572653a6f663a6f6e"
+  ],
+  "heading": "\\reflexive.transitive.closure:of{R}:on{X}",
+  "heading_latex": "\\textrm{reflexive--transitive closure of }R\\textrm{ on }X",
+  "body_text": null,
+  "page": null,
+  "source": "[\\reflexive.transitive.closure:of{R}:on{X}]\nDefines: S is \\(reflexive, transitive)::relation:?on{X}\nwhen:\n. X is \\set\n. R is \\relation:on{X}\nexpresses:\n. R \\:subset?:/ S\n. forAll: T is \\(reflexive, transitive)::relation:?on{X}\n  where: R \\:subset?:/ T\n  then: S \\:subset?:/ T\nDocumented:\n. called: \"reflexive--transitive closure of $R?$ on $X?$\"\n. description: \"The least reflexive and transitive relation on $X$ containing\n                $R$.\"\nId: \"374659d6-cfcc-4262-b98e-b50207d16c18\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "S is \\(reflexive, transitive)::relation:?on{X}",
+      "inline_latex": "S \\textrm{ is } \\left(\\htmlData{mlg-ref=5c7265666c65786976653a3a72656c6174696f6e3a6f6e}{\\textrm{reflexive}}\\textrm{ and }\\htmlData{mlg-ref=5c7472616e7369746976653a3a72656c6174696f6e3a6f6e}{\\textrm{transitive}}\\right)\\textrm{ }\\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X is \\set",
+              "types": [
+                "asserts X is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "R is \\relation:on{X}",
+          "latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R is \\relation:on{X}",
+              "types": [
+                "asserts R is \\relation:on{X}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "R \\:subset?:/ S",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{R \\subseteq S}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R \\:subset?:/ S",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "R",
+              "types": [
+                "is \\relation:on{X}"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "S",
+              "types": [
+                "is \\reflexive::transitive::relation:on{X}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "T is \\(reflexive, transitive)::relation:?on{X}",
+              "inline_latex": "T \\textrm{ is } \\left(\\htmlData{mlg-ref=5c7265666c65786976653a3a72656c6174696f6e3a6f6e}{\\textrm{reflexive}}\\textrm{ and }\\htmlData{mlg-ref=5c7472616e7369746976653a3a72656c6174696f6e3a6f6e}{\\textrm{transitive}}\\right)\\textrm{ }\\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "T is \\(reflexive, transitive)::relation:?on{X}",
+                  "types": [
+                    "asserts T is \\reflexive::transitive::relation:on{X}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "R \\:subset?:/ T",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{R \\subseteq T}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "R \\:subset?:/ T",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "R",
+                  "types": [
+                    "is \\relation:on{X}"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "T",
+                  "types": [
+                    "is \\reflexive::transitive::relation:on{X}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "S \\:subset?:/ T",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq T}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "S \\:subset?:/ T",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "S",
+                  "types": [
+                    "is \\reflexive::transitive::relation:on{X}"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "T",
+                  "types": [
+                    "is \\reflexive::transitive::relation:on{X}"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"reflexive--transitive closure of $R?$ on $X?$\"",
+              "inline_latex": "\\textrm{reflexive--transitive closure of }R\\textrm{ on }X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"374659d6-cfcc-4262-b98e-b50207d16c18\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

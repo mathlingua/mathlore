@@ -1,0 +1,301 @@
+{
+  "id": "b256bfcd-6772-4a1f-9609-210bae9d3b11",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c696e64657865642e756e696f6e3a6f663a6f7665723a696e"
+  ],
+  "heading": "\\indexed.union:of{A}:over{I}:in{U}",
+  "heading_latex": "\\textrm{union of the family }A\\textrm{ over }I\\quad\\htmlClass{mlg-title-written}{\\bigcup_{i\\in I} A_{i}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\indexed.union:of{A}:over{I}:in{U}]\nDefines: B \\:subset:/ U\nwhen:\n. I, U is \\set\n. A is \\function:on{I}:to{\\power.set:of{U}}\nexpresses:\n. forAll: x \"in\" U\n  then:\n  . have: x \"in\"? B\n    iff:\n    . exists: i \"in\" I\n      suchThat:\n      . exists: S is \\set\n        suchThat:\n        . S = A(i)\n        . x \"in\"? S\nDocumented:\n. called: \"union of the family $A?$ over $I?$\"\n. written: \"\\bigcup_{i?\\in I?} A?_{i?}\"\n. description: \"An element belongs to the indexed union exactly when it belongs\n                to at least one member of the family.\"\nId: \"b256bfcd-6772-4a1f-9609-210bae9d3b11\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "B \\:subset:/ U",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{B \\subseteq U}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "I, U is \\set",
+          "latex": "I, U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "I, U is \\set",
+              "types": [
+                "asserts I is \\set",
+                "asserts U is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "A is \\function:on{I}:to{\\power.set:of{U}}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{A \\: : \\: I \\rightarrow \\htmlData{mlg-ref=5c706f7765722e7365743a6f66}{\\mathcal{P}(U)}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "A is \\function:on{I}:to{\\power.set:of{U}}",
+              "types": [
+                "asserts A is \\function:on{I}:to{\\power.set:of{U}}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" U",
+              "inline_latex": "x \\in U",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" U",
+                  "types": [
+                    "asserts x \"in\" U"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "U",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "have",
+                      "inline_argument": "x \"in\"? B",
+                      "inline_latex": "x \\in B",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x \"in\"? B",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "\"in\" U"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "iff",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "exists",
+                              "inline_argument": "i \"in\" I",
+                              "inline_latex": "i \\in I",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "i \"in\" I",
+                                  "types": [
+                                    "asserts i \"in\" I"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "I",
+                                  "types": [
+                                    "is \\set"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "suchThat",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "group",
+                                  "heading": null,
+                                  "sections": [
+                                    {
+                                      "label": "exists",
+                                      "inline_argument": "S is \\set",
+                                      "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                                      "inline_type_info": [
+                                        {
+                                          "depth": 0,
+                                          "text": "S is \\set",
+                                          "types": [
+                                            "asserts S is \\set"
+                                          ]
+                                        }
+                                      ],
+                                      "arguments": []
+                                    },
+                                    {
+                                      "label": "suchThat",
+                                      "inline_argument": null,
+                                      "inline_latex": null,
+                                      "arguments": [
+                                        {
+                                          "kind": "formulation",
+                                          "text": "S = A(i)",
+                                          "latex": "S = A(i)",
+                                          "type_info": [
+                                            {
+                                              "depth": 0,
+                                              "text": "S = A(i)",
+                                              "types": [
+                                                "is \\\\statement"
+                                              ]
+                                            },
+                                            {
+                                              "depth": 1,
+                                              "text": "S",
+                                              "types": [
+                                                "is \\set"
+                                              ]
+                                            },
+                                            {
+                                              "depth": 1,
+                                              "text": "A(i)",
+                                              "types": [
+                                                "\"in\" \\power.set:of{U}"
+                                              ]
+                                            },
+                                            {
+                                              "depth": 2,
+                                              "text": "i",
+                                              "types": [
+                                                "\"in\" I"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "kind": "formulation",
+                                          "text": "x \"in\"? S",
+                                          "latex": "x \\in S",
+                                          "type_info": [
+                                            {
+                                              "depth": 0,
+                                              "text": "x \"in\"? S",
+                                              "types": [
+                                                "is \\\\statement"
+                                              ]
+                                            },
+                                            {
+                                              "depth": 1,
+                                              "text": "x",
+                                              "types": [
+                                                "\"in\" U"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"union of the family $A?$ over $I?$\"",
+              "inline_latex": "\\textrm{union of the family }A\\textrm{ over }I",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"\\bigcup_{i?\\in I?} A?_{i?}\"",
+              "inline_latex": "\\bigcup_{i\\in I} A_{i}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"b256bfcd-6772-4a1f-9609-210bae9d3b11\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

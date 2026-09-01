@@ -1,0 +1,125 @@
+{
+  "id": "90de84c3-1ed2-47f9-913e-1892c1976b5e",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c6576656e3a3a696e7465676572"
+  ],
+  "heading": "\\(even)::integer",
+  "heading_latex": "\\textrm{even}\\textrm{ }\\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(even)::integer]\nRefines: n\nsatisfies:\n. exists: k is \\integer\n  suchThat: n = \\integer.two \\.integer.*./ k\nDocumented:\n. adjective: \"even\"\nId: \"90de84c3-1ed2-47f9-913e-1892c1976b5e\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "n",
+      "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "n",
+          "types": [
+            "is \\integer"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "k is \\integer",
+              "inline_latex": "k \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "k is \\integer",
+                  "types": [
+                    "asserts k is \\integer"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": "n = \\integer.two \\.integer.*./ k",
+              "inline_latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{n = \\htmlData{mlg-ref=5c696e74656765722e74776f}{2} \\cdot k}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n = \\integer.two \\.integer.*./ k",
+                  "types": [
+                    "is \\binary.operation:on{\\integers}"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "n = \\integer.two",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "n",
+                  "types": [
+                    "is \\integer"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "\\integer.two",
+                  "types": [
+                    "is \\integer"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "k",
+                  "types": [
+                    "is \\integer"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"even\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"90de84c3-1ed2-47f9-913e-1892c1976b5e\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

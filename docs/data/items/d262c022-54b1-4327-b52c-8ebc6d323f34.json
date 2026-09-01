@@ -1,16 +1,19 @@
 {
   "id": "d262c022-54b1-4327-b52c-8ebc6d323f34",
-  "kind": "TextTheorem",
+  "kind": "Text",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Rank--nullity theorem. If $T:V\\to W$ is linear and $V$ is\nfinite-dimensional, then\n$\\dim V=\\dim\\ker T+\\dim\\operatorname{im}T$. The theorem measures\nthe domain as the sum of information destroyed by $T$ and\ninformation retained in its image. Consequently $T$ is injective\nexactly when its nullity is zero.",
-  "page": null,
-  "source": "TextTheorem: \"Rank--nullity theorem. If $T:V\\to W$ is linear and $V$ is\n              finite-dimensional, then\n              $\\dim V=\\dim\\ker T+\\dim\\operatorname{im}T$. The theorem measures\n              the domain as the sum of information destroyed by $T$ and\n              information retained in its image. Consequently $T$ is injective\n              exactly when its nullity is zero.\"\nId: \"d262c022-54b1-4327-b52c-8ebc6d323f34\"",
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The structured rank--nullity theorem on the preceding page states that\nthe dimension of the domain is the sum of the dimensions of the kernel\nand image. It measures the information destroyed by a linear map against\nthe information retained."
+  },
+  "source": "Text: \"The structured rank--nullity theorem on the preceding page states that\n       the dimension of the domain is the sum of the dimensions of the kernel\n       and image. It measures the information destroyed by a linear map against\n       the information retained.\"\nId: \"d262c022-54b1-4327-b52c-8ebc6d323f34\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"Rank--nullity theorem. If $T:V\\to W$ is linear and $V$ is\n              finite-dimensional, then\n              $\\dim V=\\dim\\ker T+\\dim\\operatorname{im}T$. The theorem measures\n              the domain as the sum of information destroyed by $T$ and\n              information retained in its image. Consequently $T$ is injective\n              exactly when its nullity is zero.\"",
+      "label": "Text",
+      "inline_argument": "\"The structured rank--nullity theorem on the preceding page states that\n       the dimension of the domain is the sum of the dimensions of the kernel\n       and image. It measures the information destroyed by a linear map against\n       the information retained.\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -124,16 +124,30 @@ TextTheorem: "First isomorphism theorem for vector spaces. For a linear map
 Id: "a615de22-89bb-4bf1-aa10-3b1b919191a4"
 
 
-TextTheorem: "If $V$ and $W$ have the same finite dimension, then for a linear
-              map $T:V\to W$ the following are equivalent: $T$ is injective, $T$
-              is surjective, and $T$ is an isomorphism. Equality of dimensions
-              is essential; without it, injectivity and surjectivity are
-              independent."
+Theorem:
+given:
+. F is \field
+. V is \vector.space:over{F}
+. W is \vector.space:over{F}
+. T(v__) is \linear.map:from{V}:to{W}
+where: \dimension:of{V} = \dimension:of{W}
+then: T is? \(injective)::function:?on{V}:?to{W}
+iff: T is? \(surjective)::function:?on{V}:?to{W}
+Documented:
+. called: "Injective--Surjective Equivalence in Equal Dimension"
+. description: "For a linear map between finite-dimensional spaces of equal
+                dimension, injectivity and surjectivity are equivalent."
 Id: "9519b138-f788-4156-8fd1-7d01b955decf"
 
 
-TextDefinition: "A projection is a linear operator $P:V\to V$ satisfying
-                 $P^2=P$. One has the canonical direct-sum decomposition
-                 $V=\operatorname{im}P\oplus\ker P$, and $P$ acts as the
-                 identity on its image and as zero on its kernel."
+[\projection:on{V}]
+Declares: P(v__) is \linear.map:from{V}:to{V}
+using: F is \field
+when: V is \vector.space:over{F}
+satisfies:
+. forAll: v "in" V
+  then: P(P(v)) = P(v)
+Documented:
+. called: "projection on $V?$"
+. description: "A projection is an idempotent linear endomorphism."
 Id: "a9208468-06d8-4617-baef-6970565693b4"

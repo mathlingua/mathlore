@@ -1,0 +1,14 @@
+{
+  "id": "d3cc912e-a944-4a5f-8cc8-cca18c511746-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "$|A|\\leq|B|$ means that an injection from $A$ to $B$ exists."
+  },
+  "source": "",
+  "sections": []
+}

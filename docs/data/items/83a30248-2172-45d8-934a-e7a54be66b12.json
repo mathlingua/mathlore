@@ -1,18 +1,111 @@
 {
   "id": "83a30248-2172-45d8-934a-e7a54be66b12",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Cantor's theorem. For every set $A$, no function\n$f:A\\to\\mathcal{P}(A)$ is surjective. Indeed, the diagonal set\n$D=\\{a\\in A:a\\notin f(a)\\}$ differs from $f(a)$ at the element $a$\nfor every $a\\in A$. Hence $|A|<|\\mathcal{P}(A)|$, and there is no\nlargest cardinality.",
+  "heading_latex": "\\textrm{Cantor's Theorem}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"Cantor's theorem. For every set $A$, no function\n              $f:A\\to\\mathcal{P}(A)$ is surjective. Indeed, the diagonal set\n              $D=\\{a\\in A:a\\notin f(a)\\}$ differs from $f(a)$ at the element $a$\n              for every $a\\in A$. Hence $|A|<|\\mathcal{P}(A)|$, and there is no\n              largest cardinality.\"\nId: \"83a30248-2172-45d8-934a-e7a54be66b12\"",
+  "source": "Theorem:\ngiven: A is \\set\nthen:\n. not: A \\.equinumerous.with./ \\power.set:of{A}\nDocumented:\n. called: \"Cantor's Theorem\"\n. description: \"No set is equinumerous with its power set.\"\nId: \"83a30248-2172-45d8-934a-e7a54be66b12\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"Cantor's theorem. For every set $A$, no function\n              $f:A\\to\\mathcal{P}(A)$ is surjective. Indeed, the diagonal set\n              $D=\\{a\\in A:a\\notin f(a)\\}$ differs from $f(a)$ at the element $a$\n              for every $a\\in A$. Hence $|A|<|\\mathcal{P}(A)|$, and there is no\n              largest cardinality.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "A is \\set",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A is \\set",
+          "types": [
+            "asserts A is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "not",
+              "inline_argument": "A \\.equinumerous.with./ \\power.set:of{A}",
+              "inline_latex": "\\htmlData{mlg-ref=5c2e657175696e756d65726f75732e776974682e2f}{|A| = |\\htmlData{mlg-ref=5c706f7765722e7365743a6f66}{\\mathcal{P}(A)}|}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "A \\.equinumerous.with./ \\power.set:of{A}",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "A",
+                  "types": [
+                    "is \\set"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\power.set:of{A}",
+                  "types": [
+                    "is \\set"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "A",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Cantor's Theorem\"",
+              "inline_latex": "\\textrm{Cantor's Theorem}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

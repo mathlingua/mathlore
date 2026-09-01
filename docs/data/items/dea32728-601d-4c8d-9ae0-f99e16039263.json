@@ -1,0 +1,79 @@
+{
+  "id": "dea32728-601d-4c8d-9ae0-f99e16039263",
+  "kind": "Refines",
+  "definition_keys": [
+    "5c66696e6974653a3a6d6f6e6f6964"
+  ],
+  "heading": "\\(finite)::monoid",
+  "heading_latex": "\\textrm{finite}\\textrm{ }\\htmlData{mlg-ref=5c6d6f6e6f6964}{\\textrm{monoid}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\(finite)::monoid]\nRefines: M ::= (X, *, e)\nsatisfies: X is? \\(finite)::set\nDocumented:\n. adjective: \"finite\"\n. description: \"A monoid is finite when its underlying carrier set is finite.\"\nId: \"dea32728-601d-4c8d-9ae0-f99e16039263\"",
+  "sections": [
+    {
+      "label": "Refines",
+      "inline_argument": "M ::= (X, *, e)",
+      "inline_latex": "M ::= \\left(X, \\ast, e\\right) \\textrm{ is } \\htmlData{mlg-ref=5c6d6f6e6f6964}{\\textrm{monoid}}",
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": "X is? \\(finite)::set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c66696e6974653a3a736574}{\\textrm{finite}}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is? \\(finite)::set",
+          "types": [
+            "asserts X is \\finite::set"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "X",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "adjective",
+              "inline_argument": "\"finite\"",
+              "inline_latex": null,
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"dea32728-601d-4c8d-9ae0-f99e16039263\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

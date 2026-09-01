@@ -151,17 +151,60 @@ SectionTitle: "Subsequences and Infinite Sums"
 Id: "444dcd3d-8c00-4c65-b55b-29b727f143dd"
 
 
-TextDefinition: "A subsequence of $(a_n)$ is a sequence $(a_{n_k})$ whose index
-                 map $k\mapsto n_k$ is strictly increasing. If $a_n\to L$, then
-                 every subsequence also converges to $L$. The converse fails
-                 unless additional information controls all indices."
+[\subsequence:of{S ::= a(n_)}]
+Declares: T ::= b(k_) is \real.sequence
+when: S is \real.sequence
+satisfies:
+. exists: N ::= n(k_) is \function:on{\naturals}:to{\naturals}
+  suchThat:
+  . forAll: k is \natural
+    then:
+    . exists: j is \natural
+      suchThat:
+      . j = n(k)
+      . b(k) = a(j)
+  . forAll: k, l is \natural
+    where:
+    . k \:natural.leq?:/ l
+    . k != l
+    then:
+    . exists: j, m is \natural
+      suchThat:
+      . j = n(k)
+      . m = n(l)
+      . j \:natural.leq?:/ m
+      . j != m
+Documented:
+. called: "subsequence of $S?$"
+. description: "A subsequence is obtained by composing the original sequence
+                with a strictly increasing map of natural-number indices."
 Id: "57868fa6-364f-4ecb-9c1a-9b45b53fff96"
 
 
-TextTheorem: "Bolzano--Weierstrass theorem. Every bounded sequence of real
-              numbers has a convergent subsequence. This is a compactness
-              consequence of completeness and is weaker than convergence of the
-              original sequence."
+Theorem:
+given:
+. S ::= a(n_) is \real.sequence
+. T ::= b(k_) is \subsequence:of{S}
+. L is \real
+where: \converges.to{L}:for{S}
+then: \converges.to{L}:for{T}
+Documented:
+. called: "Convergence is Inherited by Subsequences"
+. description: "Every subsequence of a convergent sequence converges to the same
+                limit. The converse fails without control of all indices."
+Id: "cef832b6-22d8-4377-8e47-577ab1f7bb1d"
+
+
+Theorem:
+given: S ::= a(n_) is \(bounded)::real.sequence
+then:
+. exists: T ::= b(k_) is \subsequence:of{S}
+  suchThat:
+  . exists: L is \real
+    suchThat: \converges.to{L}:for{T}
+Documented:
+. called: "Bolzano--Weierstrass Theorem"
+. description: "Every bounded real sequence has a convergent subsequence."
 Id: "1f6fac61-9b16-4828-942f-293b25792dcf"
 
 

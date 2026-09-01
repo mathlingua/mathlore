@@ -111,19 +111,91 @@ Documented:
 Id: "e0a17409-7d0a-4286-9a25-9c8eb00a40df"
 
 
-TextTheorem: "For subsets of a fixed universe $U$, union and intersection are
-              associative, commutative, and idempotent; each distributes over
-              the other. With complement $A^c=U\setminus A$, they satisfy De
-              Morgan's laws $(A\cup B)^c=A^c\cap B^c$ and
-              $(A\cap B)^c=A^c\cup B^c$. The reference to $U$ is part of the
-              definition of complement."
+Theorem:
+given:
+. U, A, B, C is \set
+where:
+. A \:subset?:/ U
+. B \:subset?:/ U
+. C \:subset?:/ U
+then:
+. (.(.A \.set.union./ B.) \.set.union./ C.) = (.A \.set.union./ (.B \.set.union./ C.).)
+. (.(.A \.set.intersect./ B.) \.set.intersect./ C.) = (.A \.set.intersect./ (.B \.set.intersect./ C.).)
+. (.A \.set.union./ B.) = (.B \.set.union./ A.)
+. (.A \.set.intersect./ B.) = (.B \.set.intersect./ A.)
+. (.A \.set.union./ A.) = A
+. (.A \.set.intersect./ A.) = A
+. (.A \.set.intersect./ (.B \.set.union./ C.).) = (.(.A \.set.intersect./ B.) \.set.union./ (.A \.set.intersect./ C.).)
+. (.A \.set.union./ (.B \.set.intersect./ C.).) = (.(.A \.set.union./ B.) \.set.intersect./ (.A \.set.union./ C.).)
+. (.U \.set.difference./ (.A \.set.union./ B.).) = (.(.U \.set.difference./ A.) \.set.intersect./ (.U \.set.difference./ B.).)
+. (.U \.set.difference./ (.A \.set.intersect./ B.).) = (.(.U \.set.difference./ A.) \.set.union./ (.U \.set.difference./ B.).)
+Documented:
+. called: "Boolean Laws for Subsets"
+. description: "Relative to a fixed universe, union and intersection are
+                associative, commutative, idempotent, mutually distributive, and
+                satisfy De Morgan's laws for relative complements."
 Id: "aa8bf616-5e94-4976-a63a-132732577422"
 
 
-TextTheorem: "For any indexed family $(A_i)_{i\in I}$, $x\in\bigcup_{i\in I}A_i$
-              exactly when $x\in A_i$ for at least one $i\in I$, while
-              $x\in\bigcap_{i\in I}A_i$ exactly when $x\in A_i$ for every
-              $i\in I$. If $I$ is empty, the union is $\emptyset$; the empty
-              intersection is meaningful only relative to a specified ambient
-              universe, where it equals that universe."
+[\indexed.union:of{A}:over{I}:in{U}]
+Defines: B \:subset:/ U
+when:
+. I, U is \set
+. A is \function:on{I}:to{\power.set:of{U}}
+expresses:
+. forAll: x "in" U
+  then:
+  . have: x "in"? B
+    iff:
+    . exists: i "in" I
+      suchThat:
+      . exists: S is \set
+        suchThat:
+        . S = A(i)
+        . x "in"? S
+Documented:
+. called: "union of the family $A?$ over $I?$"
+. written: "\bigcup_{i?\in I?} A?_{i?}"
+. description: "An element belongs to the indexed union exactly when it belongs
+                to at least one member of the family."
+Id: "b256bfcd-6772-4a1f-9609-210bae9d3b11"
+
+
+[\indexed.intersection:of{A}:over{I}:in{U}]
+Defines: B \:subset:/ U
+when:
+. I, U is \set
+. A is \function:on{I}:to{\power.set:of{U}}
+expresses:
+. forAll: x "in" U
+  then:
+  . have: x "in"? B
+    iff:
+    . forAll: i "in" I
+      then:
+      . exists: S is \set
+        suchThat:
+        . S = A(i)
+        . x "in"? S
+Documented:
+. called: "intersection of the family $A?$ over $I?$ in $U?$"
+. written: "\bigcap_{i?\in I?} A?_{i?}"
+. description: "An element of the ambient universe belongs to the indexed
+                intersection exactly when it belongs to every member of the
+                family. Naming $U$ makes the empty intersection unambiguous."
+Id: "3afa1a1b-3d36-437f-baca-56a07eae43c0"
+
+
+Theorem:
+given:
+. I, U is \set
+. A(i__) is \function:on{I}:to{\power.set:of{U}}
+where: I = \empty.set
+then:
+. \indexed.union:of{A}:over{I}:in{U} = \empty.set
+. \indexed.intersection:of{A}:over{I}:in{U} = U
+Documented:
+. called: "Empty Indexed Union and Intersection"
+. description: "The union of an empty family is empty, while its intersection is
+                the explicitly supplied ambient universe."
 Id: "7ef6b89a-1cc1-46f3-9537-3bacf672a499"

@@ -203,11 +203,32 @@ TextTheorem: "The intersection of any family of subspaces of $V$ is a subspace.
 Id: "ec4c128f-df87-4abf-bdd6-c07b626e4002"
 
 
-TextDefinition: "For subspaces $U,W\leq V$, their sum is
-                 $U+W=\{u+w:u\in U,\ w\in W\}$. The sum is direct, written
-                 $U\oplus W$, when $U\cap W=\{0\}$. In that case every vector in
-                 $U+W$ has a unique decomposition $u+w$."
+[\vector.subspace.sum:of{U}:and{W}:in{V ::= (X, +, *, 0)}]
+Defines: S := \set@{u_ + v_ : u_ "in" U; v_ "in" W}
+using: F is \field
+when:
+. V is \vector.space:over{F}
+. U \:vector.subspace.of:/ V
+. W \:vector.subspace.of:/ V
+expresses: S \:vector.subspace.of:/ V
+Documented:
+. called: "sum of $U?$ and $W?$ in $V?$"
+. written: "U? + W?"
 Id: "b4590aa0-4e04-48c9-978a-5f42127058c4"
+
+
+[\direct.sum:of{U}:and{W}:in{V ::= (X, +, *, 0)}]
+States:
+using: F is \field
+when:
+. V is \vector.space:over{F}
+. U \:vector.subspace.of:/ V
+. W \:vector.subspace.of:/ V
+that: (.U \.set.intersect./ W.) = \singleton.set:of{0}
+Documented:
+. called: "sum of $U?$ and $W?$ is direct in $V?$"
+. written: "U? \oplus W?"
+Id: "334cb00b-efec-489d-959f-6d349983f365"
 
 
 TextTheorem: "If $V$ is finite-dimensional and $U,W\leq V$, then

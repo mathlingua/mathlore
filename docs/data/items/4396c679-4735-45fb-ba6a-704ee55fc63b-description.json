@@ -1,0 +1,14 @@
+{
+  "id": "4396c679-4735-45fb-ba6a-704ee55fc63b-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An existential assertion fails exactly when every element of its\ndomain fails the predicate."
+  },
+  "source": "",
+  "sections": []
+}

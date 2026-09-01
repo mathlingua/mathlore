@@ -1,18 +1,288 @@
 {
   "id": "844c54eb-187b-4369-8fd2-84d5d7da2b4b",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Strong induction. Let $P(n)$ be a predicate on $\\mathbb{N}$. If,\nfor every $n$, the assumption that $P(k)$ holds for all $k<n$\nimplies $P(n)$, then $P(n)$ holds for all $n$. Strong induction\nand ordinary induction are equivalent: ordinary induction can be\napplied to the cumulative statement that $P(k)$ holds for every\n$k\\leq n$.",
+  "heading_latex": "\\textrm{Principle of Strong Induction}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"Strong induction. Let $P(n)$ be a predicate on $\\mathbb{N}$. If,\n              for every $n$, the assumption that $P(k)$ holds for all $k<n$\n              implies $P(n)$, then $P(n)$ holds for all $n$. Strong induction\n              and ordinary induction are equivalent: ordinary induction can be\n              applied to the cumulative statement that $P(k)$ holds for every\n              $k\\leq n$.\"\nId: \"844c54eb-187b-4369-8fd2-84d5d7da2b4b\"",
+  "source": "Theorem:\ngiven: P(n_) is (_ is \\natural) -> (_ is \\\\statement)\nwhere:\n. forAll: n is \\natural\n  then:\n  . if:\n    . forAll: k is \\natural\n      where:\n      . k \\:natural.leq?:/ n\n      . k != n\n      then: P(k)\n    then: P(n)\nthen:\n. forAll: n is \\natural\n  then: P(n)\nDocumented:\n. called: \"Principle of Strong Induction\"\n. description: \"If $P(n)$ follows from the validity of $P(k)$ at every preceding\n                natural number $k<n$, then $P$ holds for every natural number.\"\nId: \"844c54eb-187b-4369-8fd2-84d5d7da2b4b\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"Strong induction. Let $P(n)$ be a predicate on $\\mathbb{N}$. If,\n              for every $n$, the assumption that $P(k)$ holds for all $k<n$\n              implies $P(n)$, then $P(n)$ holds for all $n$. Strong induction\n              and ordinary induction are equivalent: ordinary induction can be\n              applied to the cumulative statement that $P(k)$ holds for every\n              $k\\leq n$.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "P(n_) is (_ is \\natural) -> (_ is \\\\statement)",
+      "inline_latex": "P(n) \\textrm{ is } \\left(\\htmlData{mlg-ref=5c6e61747572616c}{\\cdot \\in \\mathbb{N}}\\right) \\to \\left(\\cdot \\textrm{ is } \\textrm{statement}\\right)",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "P(n_) is (_ is \\natural) -> (_ is \\\\statement)",
+          "types": [
+            "asserts P is (_ is \\natural) => (_ is \\\\statement)"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n is \\natural",
+              "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{n \\in \\mathbb{N}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n is \\natural",
+                  "types": [
+                    "asserts n is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "forAll",
+                              "inline_argument": "k is \\natural",
+                              "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{k \\in \\mathbb{N}}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "k is \\natural",
+                                  "types": [
+                                    "asserts k is \\natural"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "where",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "k \\:natural.leq?:/ n",
+                                  "latex": "\\htmlData{mlg-ref=5c3a6e61747572616c2e6c65713a2f}{k \\leq n}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "k \\:natural.leq?:/ n",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "k",
+                                      "types": [
+                                        "is \\natural"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "n",
+                                      "types": [
+                                        "is \\natural"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "k != n",
+                                  "latex": "k \\ne n",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "k != n",
+                                      "types": []
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "k",
+                                      "types": [
+                                        "is \\natural"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "n",
+                                      "types": [
+                                        "is \\natural"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": "P(k)",
+                              "inline_latex": "P(k)",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "P(k)",
+                                  "types": [
+                                    "is \\\\statement"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "k",
+                                  "types": [
+                                    "is \\natural"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "P(n)",
+                      "inline_latex": "P(n)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "P(n)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "n",
+                          "types": [
+                            "is \\natural"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n is \\natural",
+              "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{n \\in \\mathbb{N}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n is \\natural",
+                  "types": [
+                    "asserts n is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "P(n)",
+              "inline_latex": "P(n)",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "P(n)",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "n",
+                  "types": [
+                    "is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Principle of Strong Induction\"",
+              "inline_latex": "\\textrm{Principle of Strong Induction}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

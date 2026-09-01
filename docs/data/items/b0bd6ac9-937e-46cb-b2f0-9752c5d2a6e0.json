@@ -1,18 +1,131 @@
 {
   "id": "b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0",
-  "kind": "TextDefinition",
-  "definition_keys": [],
-  "heading": null,
-  "heading_latex": "\\textrm{Definition}",
-  "body_text": "Let $H$ be a subgroup of a group $G$. For $g\\in G$, the left\ncoset $gH$ is $\\{gh:h\\in H\\}$ and the right coset $Hg$ is\n$\\{hg:h\\in H\\}$. Left cosets form a partition of $G$: two left\ncosets are either equal or disjoint, and every element lies in\nthe coset it determines. The analogous statement holds for\nright cosets.",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c6c6566742e636f7365743a6f663a62793a696e"
+  ],
+  "heading": "\\left.coset:of{H}:by{g}:in{G ::= (X, *, e)}",
+  "heading_latex": "\\textrm{left coset of }H\\textrm{ by }g\\quad\\htmlClass{mlg-title-written}{gH}",
+  "parameter_destructurings": [
+    "G ::= \\left(X, \\ast, e\\right)"
+  ],
+  "body_text": null,
   "page": null,
-  "source": "TextDefinition: \"Let $H$ be a subgroup of a group $G$. For $g\\in G$, the left\n                 coset $gH$ is $\\{gh:h\\in H\\}$ and the right coset $Hg$ is\n                 $\\{hg:h\\in H\\}$. Left cosets form a partition of $G$: two left\n                 cosets are either equal or disjoint, and every element lies in\n                 the coset it determines. The analogous statement holds for\n                 right cosets.\"\nId: \"b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0\"",
+  "source": "[\\left.coset:of{H}:by{g}:in{G ::= (X, *, e)}]\nDefines: C := \\set@{g * h_ : h_ \"in\" H}\nwhen:\n. G is \\group\n. H is \\group\n. H \\:subgroup:/ G\n. g \"in\" G\nDocumented:\n. called: \"left coset of $H?$ by $g?$\"\n. written: \"g?H?\"\nId: \"b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0\"",
   "sections": [
     {
-      "label": "TextDefinition",
-      "inline_argument": "\"Let $H$ be a subgroup of a group $G$. For $g\\in G$, the left\n                 coset $gH$ is $\\{gh:h\\in H\\}$ and the right coset $Hg$ is\n                 $\\{hg:h\\in H\\}$. Left cosets form a partition of $G$: two left\n                 cosets are either equal or disjoint, and every element lies in\n                 the coset it determines. The analogous statement holds for\n                 right cosets.\"",
-      "inline_latex": null,
+      "label": "Defines",
+      "inline_argument": "C := \\set@{g * h_ : h_ \"in\" H}",
+      "inline_latex": "C := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ g \\ast h \\: : \\: h \\in H \\right\\}",
       "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "G is \\group",
+          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "G is \\group",
+              "types": [
+                "asserts G is \\group"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "H is \\group",
+          "latex": "H \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "H is \\group",
+              "types": [
+                "asserts H is \\group"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "H \\:subgroup:/ G",
+          "latex": "\\htmlData{mlg-ref=5c3a73756267726f75703a2f}{H \\leq G}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "H \\:subgroup:/ G",
+              "types": [
+                "asserts H \\:subgroup:/ G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "G",
+              "types": [
+                "is \\group"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "g \"in\" G",
+          "latex": "g \\in G",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "g \"in\" G",
+              "types": [
+                "asserts g \"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "G",
+              "types": [
+                "is \\group"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"left coset of $H?$ by $g?$\"",
+              "inline_latex": "\\textrm{left coset of }H\\textrm{ by }g",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"g?H?\"",
+              "inline_latex": "gH",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

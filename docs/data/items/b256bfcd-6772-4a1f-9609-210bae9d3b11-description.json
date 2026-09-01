@@ -1,0 +1,14 @@
+{
+  "id": "b256bfcd-6772-4a1f-9609-210bae9d3b11-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An element belongs to the indexed union exactly when it belongs\nto at least one member of the family."
+  },
+  "source": "",
+  "sections": []
+}

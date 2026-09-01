@@ -1,0 +1,14 @@
+{
+  "id": "be91bf4c-366f-430f-bff8-6f9c7225736d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A nontrivial commutative ring without zero divisors."
+  },
+  "source": "",
+  "sections": []
+}

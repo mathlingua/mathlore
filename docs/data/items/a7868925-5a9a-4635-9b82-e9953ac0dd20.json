@@ -1,16 +1,19 @@
 {
   "id": "a7868925-5a9a-4635-9b82-e9953ac0dd20",
-  "kind": "TextDefinition",
+  "kind": "Text",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Definition}",
-  "body_text": "A basis of a vector space $V$ over a field $F$ is a linearly\nindependent subset $B\\subseteq V$ that spans $V$. Equivalently,\nevery vector of $V$ has a unique expression as a finite linear\ncombination of elements of $B$. The finiteness condition\napplies to each combination even when the basis itself is\ninfinite.",
-  "page": null,
-  "source": "TextDefinition: \"A basis of a vector space $V$ over a field $F$ is a linearly\n                 independent subset $B\\subseteq V$ that spans $V$. Equivalently,\n                 every vector of $V$ has a unique expression as a finite linear\n                 combination of elements of $B$. The finiteness condition\n                 applies to each combination even when the basis itself is\n                 infinite.\"\nId: \"a7868925-5a9a-4635-9b82-e9953ac0dd20\"",
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The command $\\basis:for{V}$ defined on the preceding page records a\nlinearly independent spanning set. Equivalently, each vector has a unique\nexpression as a finite linear combination of basis elements; the\nfiniteness condition applies to each combination even when the basis is\ninfinite."
+  },
+  "source": "Text: \"The command $\\basis:for{V}$ defined on the preceding page records a\n       linearly independent spanning set. Equivalently, each vector has a unique\n       expression as a finite linear combination of basis elements; the\n       finiteness condition applies to each combination even when the basis is\n       infinite.\"\nId: \"a7868925-5a9a-4635-9b82-e9953ac0dd20\"",
   "sections": [
     {
-      "label": "TextDefinition",
-      "inline_argument": "\"A basis of a vector space $V$ over a field $F$ is a linearly\n                 independent subset $B\\subseteq V$ that spans $V$. Equivalently,\n                 every vector of $V$ has a unique expression as a finite linear\n                 combination of elements of $B$. The finiteness condition\n                 applies to each combination even when the basis itself is\n                 infinite.\"",
+      "label": "Text",
+      "inline_argument": "\"The command $\\basis:for{V}$ defined on the preceding page records a\n       linearly independent spanning set. Equivalently, each vector has a unique\n       expression as a finite linear combination of basis elements; the\n       finiteness condition applies to each combination even when the basis is\n       infinite.\"",
       "inline_latex": null,
       "arguments": []
     },

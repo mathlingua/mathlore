@@ -1,0 +1,163 @@
+{
+  "id": "8c3b1160-03ac-4f70-856f-8dbdff0cba12",
+  "kind": "States",
+  "definition_keys": [
+    "5c69732e67726561746573743a696e3a756e646572"
+  ],
+  "heading": "\\is.greatest{g}:in{X}:under{R}",
+  "heading_latex": "g\\textrm{ is the greatest element of }X\\textrm{ under }R",
+  "body_text": null,
+  "page": null,
+  "source": "[\\is.greatest{g}:in{X}:under{R}]\nStates:\nwhen:\n. X is \\set\n. R is \\partial.order:on{X}\n. g \"in\" X\nthat:\n. forAll: x \"in\" X\n  then: R(x, g)\nDocumented:\n. called: \"$g?$ is the greatest element of $X?$ under $R?$\"\nId: \"8c3b1160-03ac-4f70-856f-8dbdff0cba12\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X is \\set",
+              "types": [
+                "asserts X is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "R is \\partial.order:on{X}",
+          "latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c7061727469616c2e6f726465723a6f6e}{\\textrm{partial order on }X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R is \\partial.order:on{X}",
+              "types": [
+                "asserts R is \\partial.order:on{X}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "g \"in\" X",
+          "latex": "g \\in X",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "g \"in\" X",
+              "types": [
+                "asserts g \"in\" X"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" X",
+              "inline_latex": "x \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" X",
+                  "types": [
+                    "asserts x \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "R(x, g)",
+              "inline_latex": "x \\: R \\: g",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "R(x, g)",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "g",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$g?$ is the greatest element of $X?$ under $R?$\"",
+              "inline_latex": "g\\textrm{ is the greatest element of }X\\textrm{ under }R",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"8c3b1160-03ac-4f70-856f-8dbdff0cba12\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

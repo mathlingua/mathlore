@@ -214,6 +214,24 @@ Documented:
 Id: "cea0d898-a18d-44dc-b04c-ffb2f0cde26e"
 
 
+[\partition:of{X}]
+Declares: P \:subset:/ \power.set:of{X}
+when: X is \set
+satisfies:
+. \empty.set \.not.in./ P
+. forAll: x "in" X
+  then:
+  . existsUnique: A is \set
+    suchThat:
+    . A "in"? P
+    . x "in"? A
+Documented:
+. called: "partition of $X?$"
+. description: "A partition is a family of nonempty subsets in which every
+                element of $X$ lies in exactly one block."
+Id: "4c2d728b-0359-432c-afc5-371028a71eba"
+
+
 SectionTitle: "Order Relations"
 Id: "88c4093d-566b-48bb-baea-9926345a182f"
 
@@ -269,33 +287,200 @@ SectionTitle: "Closures and Order Structure"
 Id: "fde224c5-920b-4246-8da5-19dc66c144a2"
 
 
-TextDefinition: "Given a relation $R$ on $X$, its reflexive, symmetric, or
-                 transitive closure is the smallest relation on $X$ containing
-                 $R$ with the named property. The reflexive--transitive closure
-                 relates $x$ to $y$ exactly when there is a finite $R$-path from
-                 $x$ to $y$, allowing a path of length zero."
+[\reflexive.closure:of{R}:on{X}]
+Defines: S is \(reflexive)::relation:?on{X}
+when:
+. X is \set
+. R is \relation:on{X}
+expresses:
+. R \:subset?:/ S
+. forAll: T is \(reflexive)::relation:?on{X}
+  where: R \:subset?:/ T
+  then: S \:subset?:/ T
+Documented:
+. called: "reflexive closure of $R?$ on $X?$"
+. description: "The least reflexive relation on $X$ containing $R$."
 Id: "38e1561b-dcdb-4e2e-8ba0-53ef665a0c33"
 
 
-TextTheorem: "An equivalence relation on $X$ and a partition of $X$ determine
-              one another. Equivalence classes form a partition; conversely,
-              declaring two elements equivalent when they lie in the same block
-              produces an equivalence relation. Quotienting therefore formalizes
-              the act of forgetting distinctions within blocks."
+[\symmetric.closure:of{R}:on{X}]
+Defines: S is \(symmetric)::relation:?on{X}
+when:
+. X is \set
+. R is \relation:on{X}
+expresses:
+. R \:subset?:/ S
+. forAll: T is \(symmetric)::relation:?on{X}
+  where: R \:subset?:/ T
+  then: S \:subset?:/ T
+Documented:
+. called: "symmetric closure of $R?$ on $X?$"
+. description: "The least symmetric relation on $X$ containing $R$."
+Id: "ce0a9702-4034-4063-a435-5eafa76158cf"
+
+
+[\transitive.closure:of{R}:on{X}]
+Defines: S is \(transitive)::relation:?on{X}
+when:
+. X is \set
+. R is \relation:on{X}
+expresses:
+. R \:subset?:/ S
+. forAll: T is \(transitive)::relation:?on{X}
+  where: R \:subset?:/ T
+  then: S \:subset?:/ T
+Documented:
+. called: "transitive closure of $R?$ on $X?$"
+. description: "The least transitive relation on $X$ containing $R$."
+Id: "bd748bdf-4d7a-442b-bf35-4724dd70775c"
+
+
+[\reflexive.transitive.closure:of{R}:on{X}]
+Defines: S is \(reflexive, transitive)::relation:?on{X}
+when:
+. X is \set
+. R is \relation:on{X}
+expresses:
+. R \:subset?:/ S
+. forAll: T is \(reflexive, transitive)::relation:?on{X}
+  where: R \:subset?:/ T
+  then: S \:subset?:/ T
+Documented:
+. called: "reflexive--transitive closure of $R?$ on $X?$"
+. description: "The least reflexive and transitive relation on $X$ containing
+                $R$."
+Id: "374659d6-cfcc-4262-b98e-b50207d16c18"
+
+
+Text: "Equivalently, the reflexive--transitive closure relates $x$ to $y$ when
+       there is a finite $R$-path from $x$ to $y$; allowing a path of length
+       zero supplies reflexivity."
+Id: "5fd1260e-1250-4b35-a679-218b2f4c0459"
+
+
+Theorem:
+given:
+. X is \set
+. R is \equivalence.relation:on{X}
+then: X \.mod./ R is? \partition:of{X}
+Documented:
+. called: "Equivalence Classes Form a Partition"
+. description: "The quotient by an equivalence relation is the partition of the
+                domain into its equivalence classes."
 Id: "c6cf2b6a-9343-4865-b41e-183b454edd24"
 
 
-TextDefinition: "In a partially ordered set, a maximal element need not be a
-                 greatest element. A greatest element is above every element and
-                 is necessarily unique; a maximal element merely has no strictly
-                 larger comparable element, and several maximal elements may
-                 coexist. The analogous distinction holds between minimal and
-                 least elements."
+Theorem:
+given:
+. X is \set
+. P is \partition:of{X}
+then:
+. exists: R is \equivalence.relation:on{X}
+  suchThat:
+  . forAll: x, y "in" X
+    then:
+    . have: R(x, y)
+      iff:
+      . exists: A is \set
+        suchThat:
+        . A "in"? P
+        . x "in"? A
+        . y "in"? A
+Documented:
+. called: "A Partition Determines an Equivalence Relation"
+. description: "Two elements are equivalent precisely when they belong to the
+                same block of the partition."
+Id: "97d1309a-6739-4ff9-a354-f0c6859df60f"
+
+
+[\is.maximal{m}:in{X}:under{R}]
+States:
+when:
+. X is \set
+. R is \partial.order:on{X}
+. m "in" X
+that:
+. not:
+  . exists: x "in" X
+    suchThat:
+    . m != x
+    . R(m, x)
+Documented:
+. called: "$m?$ is maximal in $X?$ under $R?$"
+. description: "A maximal element has no distinct element strictly above it."
 Id: "690ee3e8-39a6-4853-8df9-7d0b9e1cec5a"
 
 
-TextDefinition: "A lattice is a partially ordered set in which every pair has a
-                 greatest lower bound (meet) and a least upper bound (join). The
-                 power set $\mathcal{P}(X)$ is a lattice under inclusion, with
-                 meet given by intersection and join by union."
+[\is.greatest{g}:in{X}:under{R}]
+States:
+when:
+. X is \set
+. R is \partial.order:on{X}
+. g "in" X
+that:
+. forAll: x "in" X
+  then: R(x, g)
+Documented:
+. called: "$g?$ is the greatest element of $X?$ under $R?$"
+Id: "8c3b1160-03ac-4f70-856f-8dbdff0cba12"
+
+
+[\is.minimal{m}:in{X}:under{R}]
+States:
+when:
+. X is \set
+. R is \partial.order:on{X}
+. m "in" X
+that:
+. not:
+  . exists: x "in" X
+    suchThat:
+    . m != x
+    . R(x, m)
+Documented:
+. called: "$m?$ is minimal in $X?$ under $R?$"
+Id: "3c3478fa-e156-4364-9c53-3577a60d7dd9"
+
+
+[\is.least{l}:in{X}:under{R}]
+States:
+when:
+. X is \set
+. R is \partial.order:on{X}
+. l "in" X
+that:
+. forAll: x "in" X
+  then: R(l, x)
+Documented:
+. called: "$l?$ is the least element of $X?$ under $R?$"
+Id: "33141ee6-c2fe-4116-8eff-3b6064d5d4e3"
+
+
+[\lattice]
+Declares: L ::= (X, R, meet(a_, b_), join(a_, b_)) is \set via X
+specifies:
+. R is \partial.order:on{X}
+. meet(a_, b_) is \function:on{X \.set.cross./ X}:to{X}
+. join(a_, b_) is \function:on{X \.set.cross./ X}:to{X}
+satisfies:
+. forAll: a, b "in" X
+  then:
+  . R(meet(a, b), a)
+  . R(meet(a, b), b)
+  . R(a, join(a, b))
+  . R(b, join(a, b))
+  . forAll: x "in" X
+    where:
+    . R(x, a)
+    . R(x, b)
+    then: R(x, meet(a, b))
+  . forAll: x "in" X
+    where:
+    . R(a, x)
+    . R(b, x)
+    then: R(join(a, b), x)
+Documented:
+. called: "lattice"
+. description: "A lattice is a partially ordered set in which each pair has a
+                greatest lower bound and a least upper bound."
 Id: "1454c69c-e96e-4c4e-98e4-7736db0ef0a7"

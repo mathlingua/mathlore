@@ -1,0 +1,14 @@
+{
+  "id": "c6cf2b6a-9343-4865-b41e-183b454edd24-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The quotient by an equivalence relation is the partition of the\ndomain into its equivalence classes."
+  },
+  "source": "",
+  "sections": []
+}

@@ -15,21 +15,48 @@ SectionTitle: "Separation and Replacement"
 Id: "b04301f4-2e38-4797-b6cd-626d4be8bcb7"
 
 
-TextAxiom: "Axiom schema of separation. For every set $A$ and every formula
-            $\varphi(x)$, with any fixed parameters, there exists a set
-            $B=\{x\in A: \varphi(x)\}$. Thus a property may carve a subset from
-            a previously given set. The ambient set $A$ is indispensable:
-            separation does not assert the existence of an unrestricted set
-            $\{x:\varphi(x)\}$."
+Axiom:
+given:
+. A is \set
+. phi(x_) is (_ is \set) -> (_ is \\statement)
+then:
+. exists: B is \set
+  suchThat:
+  . forAll: x is \set
+    then:
+    . have: x "in" B
+      iff:
+      . x "in"? A
+      . phi(x)
+Documented:
+. called: "Axiom Schema of Separation"
+. description: "For every property $\varphi$, the elements of an existing set
+                $A$ satisfying $\varphi$ form a set."
 Id: "5077fbc7-a5c8-4d60-b1a7-a9d65097f003"
 
 
-TextAxiom: "Axiom schema of replacement. Suppose a formula $\varphi(x,y)$ is
-            functional on a set $A$: for each $x\in A$ there is exactly one $y$
-            such that $\varphi(x,y)$. Then the range
-            $\{y:\exists x\in A\,\varphi(x,y)\}$ is a set. Replacement permits a
-            set-sized family of objects to be collected even when no common
-            ambient set for those objects was known in advance."
+Axiom:
+given:
+. A is \set
+. phi(x_, y_) is (_ is \set, _ is \set) -> (_ is \\statement)
+where:
+. forAll: x "in" A
+  then:
+  . existsUnique: y is \set
+    suchThat: phi(x, y)
+then:
+. exists: B is \set
+  suchThat:
+  . forAll: y is \set
+    then:
+    . have: y "in" B
+      iff:
+      . exists: x "in" A
+        suchThat: phi(x, y)
+Documented:
+. called: "Axiom Schema of Replacement"
+. description: "The image of a set under a formula that assigns each input a
+                unique output is again a set."
 Id: "6e09ea04-f1dd-41c0-a0f5-4c962cd819ac"
 
 
@@ -45,20 +72,49 @@ SectionTitle: "Foundation and Choice"
 Id: "960e9966-e880-421a-afa0-c8c753476a7c"
 
 
-TextAxiom: "Axiom of foundation. Every nonempty set $A$ has an element $a$
-            disjoint from $A$. Equivalently in the presence of the other ZF
-            axioms, there is no infinite descending membership chain
-            $x_0\ni x_1\ni x_2\ni\cdots$. Foundation supports proofs and
-            definitions by membership recursion and excludes self-membership
-            phenomena such as $x\in x$."
+Axiom:
+given: A is \(nonempty)::set
+then:
+. exists: a is \set
+  suchThat:
+  . a "in"? A
+  . not:
+    . exists: x is \set
+      suchThat:
+      . x "in"? A
+      . x "in"? a
+Documented:
+. called: "Axiom of Foundation"
+. description: "Every nonempty set $A$ has a member disjoint from $A$."
 Id: "cc3fc1c3-8ea9-45a6-874c-9215525952f4"
 
 
-TextAxiom: "Axiom of choice. For every set $I$ and every family $(A_i)_{i\in I}$
-            of nonempty sets, there exists a function $f$ on $I$ such that
-            $f(i)\in A_i$ for every $i\in I$. The assertion is substantive when
-            the family is infinite and no canonical rule for choosing the
-            elements is available. ZF together with this axiom is denoted ZFC."
+Axiom:
+given:
+. I, U is \set
+. A(i__) is \function:on{I}:to{\power.set:of{U}}
+where:
+. forAll: i "in" I
+  then:
+  . exists: S is \set
+    suchThat:
+    . S = A(i)
+    . S != \empty.set
+then:
+. exists: f(i__) is \function:on{I}:to{U}
+  suchThat:
+  . forAll: i "in" I
+    then:
+    . exists: S is \set
+      suchThat:
+      . S = A(i)
+      . f(i) "in"? S
+Documented:
+. called: "Axiom of Choice"
+. description: "Every set-indexed family of nonempty subsets of an ambient set
+                admits a choice function selecting one element from each member
+                of the family. This ambient-set formulation is equivalent over
+                ZF to the usual formulation for arbitrary set-indexed families."
 Id: "3f1ec40e-207c-431e-918e-7a8f4f23fa46"
 
 
@@ -75,27 +131,87 @@ SectionTitle: "Cardinality and Cantor's Theorem"
 Id: "ce8978c6-895a-4528-bc27-a1796c5fc751"
 
 
-TextDefinition: "Two sets $A$ and $B$ have the same cardinality if there exists
-                 a bijection $A\to B$. We write $|A|\leq|B|$ when there exists
-                 an injection $A\to B$. A set is finite if it is bijective with
-                 $\{0,\ldots,n-1\}$ for some natural number $n$; it is countably
-                 infinite if it is bijective with $\mathbb{N}$, and countable if
-                 it is finite or countably infinite."
+[A \.equinumerous.with./ B]
+States:
+when: A, B is \set
+that:
+. exists: f(x__) is \function:on{A}:to{B}
+  suchThat: f is? \(bijective)::function:?on{A}:?to{B}
+Documented:
+. called: "$A?$ and $B?$ have the same cardinality"
+. written: "|A?| = |B?|"
+. description: "Two sets have the same cardinality when a bijection exists
+                between them."
 Id: "5ba55513-d2b3-458e-afd9-2fbd7507d47f"
 
 
-TextTheorem: "Cantor--Schroeder--Bernstein theorem. If there is an injection
-              $A\to B$ and an injection $B\to A$, then there is a bijection
-              $A\to B$. Consequently mutual cardinal inequalities imply equal
-              cardinality without requiring either injection to be surjective."
+[A \.cardinality.leq./ B]
+States:
+when: A, B is \set
+that:
+. exists: f(x__) is \function:on{A}:to{B}
+  suchThat: f is? \(injective)::function:?on{A}:?to{B}
+Documented:
+. called: "cardinality of $A?$ is at most cardinality of $B?$"
+. written: "|A?| \leq |B?|"
+. description: "$|A|\leq|B|$ means that an injection from $A$ to $B$ exists."
+Id: "d3cc912e-a944-4a5f-8cc8-cca18c511746"
+
+
+[\(finite)::set]
+Refines: X
+satisfies:
+. exists: n is \natural
+  suchThat: X \.equinumerous.with./ \natural.initial.segment:before{n}
+Documented:
+. adjective: "finite"
+. description: "A set is finite when it is bijective with the natural numbers
+                strictly below some natural number $n$."
+Id: "88d1e87d-f649-4246-b417-7d3ca4c7f24c"
+
+
+[\(countably.infinite)::set]
+Refines: X
+satisfies: X \.equinumerous.with./ \naturals
+Documented:
+. adjective: "countably infinite"
+. description: "A countably infinite set is one admitting a bijection with the
+                natural numbers."
+Id: "7337910a-2ecc-46f7-95a7-9cc5812af19e"
+
+
+[\(countable)::set]
+Refines: X
+satisfies:
+. anyOf:
+  . X is? \(finite)::set
+  . X is? \(countably.infinite)::set
+Documented:
+. adjective: "countable"
+. description: "A set is countable when it is finite or countably infinite."
+Id: "9725d8a1-0c65-491e-901b-ee23b8e87888"
+
+
+Theorem:
+given: A, B is \set
+where:
+. A \.cardinality.leq./ B
+. B \.cardinality.leq./ A
+then: A \.equinumerous.with./ B
+Documented:
+. called: "Cantor--Schroeder--Bernstein Theorem"
+. description: "Mutual injections between two sets imply the existence of a
+                bijection."
 Id: "5ad0453f-1203-4467-949b-4c8a8697b5b3"
 
 
-TextTheorem: "Cantor's theorem. For every set $A$, no function
-              $f:A\to\mathcal{P}(A)$ is surjective. Indeed, the diagonal set
-              $D=\{a\in A:a\notin f(a)\}$ differs from $f(a)$ at the element $a$
-              for every $a\in A$. Hence $|A|<|\mathcal{P}(A)|$, and there is no
-              largest cardinality."
+Theorem:
+given: A is \set
+then:
+. not: A \.equinumerous.with./ \power.set:of{A}
+Documented:
+. called: "Cantor's Theorem"
+. description: "No set is equinumerous with its power set."
 Id: "83a30248-2172-45d8-934a-e7a54be66b12"
 
 

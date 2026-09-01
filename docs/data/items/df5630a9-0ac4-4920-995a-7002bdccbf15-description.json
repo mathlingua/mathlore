@@ -1,0 +1,14 @@
+{
+  "id": "df5630a9-0ac4-4920-995a-7002bdccbf15-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A family of subsets of $U$ is a subset\n$\\mathcal{A}\\subseteq\\mathcal{P}(U)$. Thus $x\\in A$ concerns an\nelement of one subset, while $A\\in\\mathcal{A}$ concerns one set\nin the family."
+  },
+  "source": "",
+  "sections": []
+}

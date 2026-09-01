@@ -1,18 +1,154 @@
 {
   "id": "24b48a0a-ec3e-49f2-acd4-80b979fcd209",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Cancellation laws. In a group, $ax=ay$ implies $x=y$ and $xa=ya$\nimplies $x=y$. Consequently the equations $ax=b$ and $ya=b$ have\nthe unique solutions $x=a^{-1}b$ and $y=ba^{-1}$. The order of the\nfactors matters in a nonabelian group.",
+  "heading_latex": "\\textrm{Group Cancellation Laws}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"Cancellation laws. In a group, $ax=ay$ implies $x=y$ and $xa=ya$\n              implies $x=y$. Consequently the equations $ax=b$ and $ya=b$ have\n              the unique solutions $x=a^{-1}b$ and $y=ba^{-1}$. The order of the\n              factors matters in a nonabelian group.\"\nId: \"24b48a0a-ec3e-49f2-acd4-80b979fcd209\"",
+  "source": "Theorem:\ngiven:\n. G is \\group\n. a \"in\" G\nthen:\n. \\left.cancellable{a}:in{G}\n. \\right.cancellable{a}:in{G}\nDocumented:\n. called: \"Group Cancellation Laws\"\n. description: \"Every group element is both left and right cancellable.\"\nId: \"24b48a0a-ec3e-49f2-acd4-80b979fcd209\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"Cancellation laws. In a group, $ax=ay$ implies $x=y$ and $xa=ya$\n              implies $x=y$. Consequently the equations $ax=b$ and $ya=b$ have\n              the unique solutions $x=a^{-1}b$ and $y=ba^{-1}$. The order of the\n              factors matters in a nonabelian group.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "G is \\group",
+          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "G is \\group",
+              "types": [
+                "asserts G is \\group"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "a \"in\" G",
+          "latex": "a \\in G",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "a \"in\" G",
+              "types": [
+                "asserts a \"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "G",
+              "types": [
+                "is \\group"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\left.cancellable{a}:in{G}",
+          "latex": "\\htmlData{mlg-ref=5c6c6566742e63616e63656c6c61626c653a696e}{a\\textrm{ is left cancellable in }G}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "\\left.cancellable{a}:in{G}",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "a",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "G",
+              "types": [
+                "is \\group"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "\\right.cancellable{a}:in{G}",
+          "latex": "\\htmlData{mlg-ref=5c72696768742e63616e63656c6c61626c653a696e}{a\\textrm{ is right cancellable in }G}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "\\right.cancellable{a}:in{G}",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "a",
+              "types": [
+                "\"in\" G"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "G",
+              "types": [
+                "is \\group"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Group Cancellation Laws\"",
+              "inline_latex": "\\textrm{Group Cancellation Laws}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

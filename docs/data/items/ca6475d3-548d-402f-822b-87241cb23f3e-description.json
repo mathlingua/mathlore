@@ -1,0 +1,14 @@
+{
+  "id": "ca6475d3-548d-402f-822b-87241cb23f3e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Between any two distinct rational numbers lies another rational\nnumber."
+  },
+  "source": "",
+  "sections": []
+}

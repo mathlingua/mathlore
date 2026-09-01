@@ -1,0 +1,14 @@
+{
+  "id": "133119f5-9771-4e7e-b84e-de640884b36e-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A prime is an integer greater than one whose only positive\ndivisors are one and itself."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,18 +1,226 @@
 {
   "id": "d366bd62-6a88-4090-9613-ac5843473195",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "The modulus is multiplicative and satisfies the triangle\ninequality: $|zw|=|z||w|$ and $|z+w|\\leq|z|+|w|$. Hence\n$d(z,w)=|z-w|$ is a metric inducing the usual Euclidean topology\non the complex plane.",
+  "heading_latex": "\\textrm{Multiplicativity and Triangle Inequality for the Complex Modulus}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"The modulus is multiplicative and satisfies the triangle\n              inequality: $|zw|=|z||w|$ and $|z+w|\\leq|z|+|w|$. Hence\n              $d(z,w)=|z-w|$ is a metric inducing the usual Euclidean topology\n              on the complex plane.\"\nId: \"d366bd62-6a88-4090-9613-ac5843473195\"",
+  "source": "Theorem:\ngiven: z, w is \\complex\nthen:\n. \\complex.modulus(z \\.complex.*./ w) = \\complex.modulus(z) \\.real.*./ \\complex.modulus(w)\n. \\complex.modulus(z \\.complex.+./ w) \\:real.leq?:/ \\complex.modulus(z) \\.real.+./ \\complex.modulus(w)\nDocumented:\n. called: \"Multiplicativity and Triangle Inequality for the Complex Modulus\"\n. description: \"The complex modulus is multiplicative and subadditive.\"\nId: \"d366bd62-6a88-4090-9613-ac5843473195\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"The modulus is multiplicative and satisfies the triangle\n              inequality: $|zw|=|z||w|$ and $|z+w|\\leq|z|+|w|$. Hence\n              $d(z,w)=|z-w|$ is a metric inducing the usual Euclidean topology\n              on the complex plane.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "z, w is \\complex",
+      "inline_latex": "z, w \\textrm{ is } \\htmlData{mlg-ref=5c636f6d706c6578}{\\textrm{complex}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "z, w is \\complex",
+          "types": [
+            "asserts z is \\complex",
+            "asserts w is \\complex"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\complex.modulus(z \\.complex.*./ w) = \\complex.modulus(z) \\.real.*./ \\complex.modulus(w)",
+          "latex": "\\htmlData{mlg-ref=5c2e7265616c2e2a2e2f}{\\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| \\htmlData{mlg-ref=5c2e636f6d706c65782e2a2e2f}{z \\cdot w} \\right|} = \\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| z \\right|} \\cdot \\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| w \\right|}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "\\complex.modulus(z \\.complex.*./ w) = \\complex.modulus(z) \\.real.*./ \\complex.modulus(w)",
+              "types": [
+                "is \\real"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "\\complex.modulus(z\\.complex.*./w) = \\complex.modulus(z)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "\\complex.modulus(z\\.complex.*./w)",
+              "types": [
+                "is \\real"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "z\\.complex.*./w",
+              "types": [
+                "is \\complex"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "z",
+              "types": [
+                "is \\complex"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "w",
+              "types": [
+                "is \\complex"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "\\complex.modulus(z)",
+              "types": [
+                "is \\real"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "z",
+              "types": [
+                "is \\complex"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "\\complex.modulus(w)",
+              "types": [
+                "is \\real"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "w",
+              "types": [
+                "is \\complex"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "\\complex.modulus(z \\.complex.+./ w) \\:real.leq?:/ \\complex.modulus(z) \\.real.+./ \\complex.modulus(w)",
+          "latex": "\\htmlData{mlg-ref=5c3a7265616c2e6c65713a2f}{\\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| \\htmlData{mlg-ref=5c2e636f6d706c65782e2b2e2f}{z + w} \\right|} \\leq \\htmlData{mlg-ref=5c2e7265616c2e2b2e2f}{\\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| z \\right|} + \\htmlData{mlg-ref=5c636f6d706c65782e6d6f64756c7573}{\\left| w \\right|}}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "\\complex.modulus(z \\.complex.+./ w) \\:real.leq?:/ \\complex.modulus(z) \\.real.+./ \\complex.modulus(w)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "\\complex.modulus(z\\.complex.+./w)",
+              "types": [
+                "is \\real"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "z\\.complex.+./w",
+              "types": [
+                "is \\complex"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "z",
+              "types": [
+                "is \\complex"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "w",
+              "types": [
+                "is \\complex"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "\\complex.modulus(z)\\.real.+./\\complex.modulus(w)",
+              "types": [
+                "is \\real"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "\\complex.modulus(z)",
+              "types": [
+                "is \\real"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "z",
+              "types": [
+                "is \\complex"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "\\complex.modulus(w)",
+              "types": [
+                "is \\real"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "w",
+              "types": [
+                "is \\complex"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Multiplicativity and Triangle Inequality for the Complex Modulus\"",
+              "inline_latex": "\\textrm{Multiplicativity and Triangle Inequality for the Complex Modulus}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

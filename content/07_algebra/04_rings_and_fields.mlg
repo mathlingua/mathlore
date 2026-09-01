@@ -121,20 +121,59 @@ SectionTitle: "Ideals, Quotients, and Characteristic"
 Id: "ca7d140b-b005-46b1-b844-511a2293e65d"
 
 
-TextDefinition: "An ideal $I$ of a commutative ring $R$ is an additive subgroup
-                 such that $ri\in I$ for every $r\in R$ and $i\in I$. Ideals,
-                 rather than arbitrary subrings, are precisely the subsets for
-                 which coset multiplication is well defined. The quotient $R/I$
-                 is a ring under $(r+I)+(s+I)=(r+s)+I$ and $(r+I)(s+I)=rs+I$."
+[\ideal:of{R ::= (X, +, *, 0, 1)}]
+Declares: I \:subset:/ X
+when: R is \ring
+satisfies:
+. 0 "in" I
+. forAll: x, y "in" I
+  then: x + y "in" I
+. forAll: x "in" I
+  then:
+  . exists: y "in" I
+    suchThat: x + y = 0
+. forAll: r "in" R
+  then:
+  . forAll: i "in" I
+    then:
+    . r * i "in" I
+    . i * r "in" I
+Documented:
+. called: "ideal of $R?$"
+. description: "An ideal is an additive subgroup closed under multiplication by
+                arbitrary ring elements."
 Id: "999d97fa-3609-4900-a19d-ab1f3345ca54"
 
 
-TextDefinition: "A nonzero element $a$ of a commutative ring is a zero divisor
-                 if $ab=0$ for some nonzero $b$. An integral domain is a
-                 nontrivial commutative ring without zero divisors. Every field
-                 is an integral domain, but the converse fails; the integers
-                 form the standard example."
+[\(zero.divisor)::ring.element:of{R ::= (X, +, *, 0, 1)}]
+Refines: a
+when: R is \(commutative)::ring
+satisfies:
+. a != 0
+. exists: b "in" R
+  suchThat:
+  . b != 0
+  . a * b = 0
+Documented:
+. adjective: "zero divisor"
 Id: "cff0d878-33b9-4552-93c2-cee960162e9e"
+
+
+[\integral.domain]
+Declares: D ::= (X, +, *, 0, 1) is \(commutative)::ring via (X, +, *, 0, 1)
+satisfies:
+. 0 != 1
+. forAll: a, b "in" D
+  then:
+  . if: a * b = 0
+    then:
+    . anyOf:
+      . a = 0
+      . b = 0
+Documented:
+. called: "integral domain"
+. description: "A nontrivial commutative ring without zero divisors."
+Id: "be91bf4c-366f-430f-bff8-6f9c7225736d"
 
 
 TextDefinition: "The characteristic of a ring with identity is the least

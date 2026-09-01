@@ -1,18 +1,276 @@
 {
   "id": "5dd9f7fc-9815-4816-bc2a-737babe16bf9",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Euclidean division. For every integer $a$ and every positive\ninteger $b$, there exist unique integers $q$ and $r$ such that\n$a=bq+r$ and $0\\leq r<b$. The uniqueness depends on the specified\nrange for the remainder; without it, infinitely many pairs $(q,r)$\nrepresent the same equation.",
+  "heading_latex": "\\textrm{Euclidean Division}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"Euclidean division. For every integer $a$ and every positive\n              integer $b$, there exist unique integers $q$ and $r$ such that\n              $a=bq+r$ and $0\\leq r<b$. The uniqueness depends on the specified\n              range for the remainder; without it, infinitely many pairs $(q,r)$\n              represent the same equation.\"\nId: \"5dd9f7fc-9815-4816-bc2a-737babe16bf9\"",
+  "source": "Theorem:\ngiven: a, b is \\integer\nwhere: \\integer.zero \\:integer.less?:/ b\nthen:\n. existsUnique: q is \\integer\n  suchThat:\n  . existsUnique: r is \\integer\n    suchThat:\n    . a = (b \\.integer.*./ q) \\.integer.+./ r\n    . \\integer.zero \\:integer.leq?:/ r\n    . r \\:integer.less?:/ b\nDocumented:\n. called: \"Euclidean Division\"\n. description: \"For $b>0$, there are unique integers $q$ and $r$ such that\n                $a=bq+r$ and $0\\leq r<b$.\"\nId: \"5dd9f7fc-9815-4816-bc2a-737babe16bf9\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"Euclidean division. For every integer $a$ and every positive\n              integer $b$, there exist unique integers $q$ and $r$ such that\n              $a=bq+r$ and $0\\leq r<b$. The uniqueness depends on the specified\n              range for the remainder; without it, infinitely many pairs $(q,r)$\n              represent the same equation.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "a, b is \\integer",
+      "inline_latex": "a, b \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "a, b is \\integer",
+          "types": [
+            "asserts a is \\integer",
+            "asserts b is \\integer"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "where",
+      "inline_argument": "\\integer.zero \\:integer.less?:/ b",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a696e74656765722e6c6573733a2f}{\\htmlData{mlg-ref=5c696e74656765722e7a65726f}{0} < b}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "\\integer.zero \\:integer.less?:/ b",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\integer.zero",
+          "types": [
+            "is \\integer"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "b",
+          "types": [
+            "is \\integer"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "existsUnique",
+              "inline_argument": "q is \\integer",
+              "inline_latex": "q \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "q is \\integer",
+                  "types": [
+                    "asserts q is \\integer"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "existsUnique",
+                      "inline_argument": "r is \\integer",
+                      "inline_latex": "r \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "r is \\integer",
+                          "types": [
+                            "asserts r is \\integer"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "a = (b \\.integer.*./ q) \\.integer.+./ r",
+                          "latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2b2e2f}{a = \\left(\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{b \\cdot q}\\right) + r}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "a = (b \\.integer.*./ q) \\.integer.+./ r",
+                              "types": [
+                                "is \\binary.operation:on{\\integers}"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "a = b\\.integer.*./q",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "a",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "b\\.integer.*./q",
+                              "types": [
+                                "\"in\" \\integers"
+                              ]
+                            },
+                            {
+                              "depth": 3,
+                              "text": "b\\.integer.*./q",
+                              "types": [
+                                "\"in\" \\integers"
+                              ]
+                            },
+                            {
+                              "depth": 4,
+                              "text": "b",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            },
+                            {
+                              "depth": 4,
+                              "text": "q",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "r",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "\\integer.zero \\:integer.leq?:/ r",
+                          "latex": "\\htmlData{mlg-ref=5c3a696e74656765722e6c65713a2f}{\\htmlData{mlg-ref=5c696e74656765722e7a65726f}{0} \\leq r}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "\\integer.zero \\:integer.leq?:/ r",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "\\integer.zero",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "r",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "r \\:integer.less?:/ b",
+                          "latex": "\\htmlData{mlg-ref=5c3a696e74656765722e6c6573733a2f}{r < b}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "r \\:integer.less?:/ b",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "r",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "b",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Euclidean Division\"",
+              "inline_latex": "\\textrm{Euclidean Division}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

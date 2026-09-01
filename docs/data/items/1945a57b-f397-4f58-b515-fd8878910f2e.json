@@ -1,18 +1,256 @@
 {
   "id": "1945a57b-f397-4f58-b515-fd8878910f2e",
-  "kind": "TextConjecture",
+  "kind": "Conjecture",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Conjecture}",
-  "body_text": "Strong Goldbach conjecture. Every even integer greater than $2$\nis the sum of two prime numbers. The order of the two primes is\nirrelevant, and equality is allowed; for example, $10=3+7=5+5$.\nThe conjecture is a universal existence claim, so computation\ncan verify initial ranges but cannot by itself settle all even\nintegers.",
+  "heading_latex": "\\textrm{Strong Goldbach Conjecture}",
+  "body_text": null,
   "page": null,
-  "source": "TextConjecture: \"Strong Goldbach conjecture. Every even integer greater than $2$\n                 is the sum of two prime numbers. The order of the two primes is\n                 irrelevant, and equality is allowed; for example, $10=3+7=5+5$.\n                 The conjecture is a universal existence claim, so computation\n                 can verify initial ranges but cannot by itself settle all even\n                 integers.\"\nId: \"1945a57b-f397-4f58-b515-fd8878910f2e\"",
+  "source": "Conjecture:\nthen:\n. forAll: n is \\integer\n  where:\n  . \\integer.two \\:integer.less?:/ n\n  . n is? \\(even)::integer\n  then:\n  . exists: p, q is \\integer\n    suchThat:\n    . p is? \\(prime)::integer\n    . q is? \\(prime)::integer\n    . n = p \\.integer.+./ q\nDocumented:\n. called: \"Strong Goldbach Conjecture\"\n. description: \"Every even integer greater than two is the sum of two primes;\n                the two primes are not required to be distinct.\"\nId: \"1945a57b-f397-4f58-b515-fd8878910f2e\"",
   "sections": [
     {
-      "label": "TextConjecture",
-      "inline_argument": "\"Strong Goldbach conjecture. Every even integer greater than $2$\n                 is the sum of two prime numbers. The order of the two primes is\n                 irrelevant, and equality is allowed; for example, $10=3+7=5+5$.\n                 The conjecture is a universal existence claim, so computation\n                 can verify initial ranges but cannot by itself settle all even\n                 integers.\"",
+      "label": "Conjecture",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n is \\integer",
+              "inline_latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n is \\integer",
+                  "types": [
+                    "asserts n is \\integer"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "\\integer.two \\:integer.less?:/ n",
+                  "latex": "\\htmlData{mlg-ref=5c3a696e74656765722e6c6573733a2f}{\\htmlData{mlg-ref=5c696e74656765722e74776f}{2} < n}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "\\integer.two \\:integer.less?:/ n",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "\\integer.two",
+                      "types": [
+                        "is \\integer"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "n",
+                      "types": [
+                        "is \\integer"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "n is? \\(even)::integer",
+                  "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c6576656e3a3a696e7465676572}{\\textrm{even}}\\textrm{ }\\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "n is? \\(even)::integer",
+                      "types": [
+                        "asserts n is \\even::integer"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "n",
+                      "types": [
+                        "is \\integer"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "p, q is \\integer",
+                      "inline_latex": "p, q \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "p, q is \\integer",
+                          "types": [
+                            "asserts p is \\integer",
+                            "asserts q is \\integer"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "p is? \\(prime)::integer",
+                          "latex": "p \\textrm{ is } \\htmlData{mlg-ref=5c7072696d653a3a696e7465676572}{\\textrm{prime}}\\textrm{ }\\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "p is? \\(prime)::integer",
+                              "types": [
+                                "asserts p is \\prime::integer"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "p",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "q is? \\(prime)::integer",
+                          "latex": "q \\textrm{ is } \\htmlData{mlg-ref=5c7072696d653a3a696e7465676572}{\\textrm{prime}}\\textrm{ }\\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "q is? \\(prime)::integer",
+                              "types": [
+                                "asserts q is \\prime::integer"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "q",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "n = p \\.integer.+./ q",
+                          "latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2b2e2f}{n = p + q}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "n = p \\.integer.+./ q",
+                              "types": [
+                                "is \\binary.operation:on{\\integers}"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "n = p",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "n",
+                              "types": [
+                                "is \\even::integer",
+                                "is \\integer"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "p",
+                              "types": [
+                                "is \\integer",
+                                "is \\prime::integer"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "q",
+                              "types": [
+                                "is \\integer",
+                                "is \\prime::integer"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Strong Goldbach Conjecture\"",
+              "inline_latex": "\\textrm{Strong Goldbach Conjecture}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

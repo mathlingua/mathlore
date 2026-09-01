@@ -1,0 +1,14 @@
+{
+  "id": "bdb7d794-5eb2-41f5-823f-5f4f719266a3-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Conjugation preserves addition and multiplication, and its\nproduct with the original number is the squared modulus."
+  },
+  "source": "",
+  "sections": []
+}

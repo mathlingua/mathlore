@@ -273,11 +273,16 @@ SectionTitle: "Fibers and Factorization"
 Id: "f8667ec9-767f-4c75-87a7-07d9ec2fb533"
 
 
-TextDefinition: "For a function $f:A\to B$ and $y\in B$, the fiber over $y$ is
-                 $f^{-1}[\{y\}]=\{x\in A:f(x)=y\}$. The function is injective
-                 exactly when every fiber has at most one element and surjective
-                 exactly when every fiber is nonempty. Thus fibers measure both
-                 collision and coverage."
+[\fiber:of{f(x__)}:over{y}]
+Defines: X := \set@{x_ : x_ "in" A | f(x_) = y}
+when:
+. f is \function:on{A?}:to{B?}
+. y "in" B
+Documented:
+. called: "fiber of $f?$ over $y?$"
+. written: "f+?^{-1}[\{y?\}]"
+. description: "The fiber over $y$ is the set of all domain elements mapped to
+                $y$."
 Id: "e10a2ceb-8649-480a-9ab4-651ca4345f74"
 
 

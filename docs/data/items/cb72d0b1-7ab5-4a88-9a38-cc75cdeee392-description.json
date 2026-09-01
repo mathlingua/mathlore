@@ -1,0 +1,14 @@
+{
+  "id": "cb72d0b1-7ab5-4a88-9a38-cc75cdeee392-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Every complex number has a unique representation $x+iy$ with\nreal coordinates $x$ and $y$."
+  },
+  "source": "",
+  "sections": []
+}

@@ -16,29 +16,87 @@ SectionTitle: "Additive and Multiplicative Structure of Primes"
 Id: "67c5e464-3e6e-40d6-9da8-2be12e536dc9"
 
 
-TextDefinition: "A positive integer $p>1$ is prime if its only positive divisors
-                 are $1$ and $p$. Every integer greater than $1$ factors as a
-                 product of primes, uniquely up to the order of the factors.
-                 This multiplicative classification does not make additive
-                 questions about primes easy."
+[\(prime)::integer]
+Refines: p
+satisfies:
+. \integer.one \:integer.less?:/ p
+. forAll: d is \integer
+  where:
+  . \integer.zero \:integer.less?:/ d
+  . d \.integer.divides./ p
+  then:
+  . anyOf:
+    . d = \integer.one
+    . d = p
+Documented:
+. adjective: "prime"
+. description: "A prime is an integer greater than one whose only positive
+                divisors are one and itself."
 Id: "133119f5-9771-4e7e-b84e-de640884b36e"
 
 
-TextConjecture: "Strong Goldbach conjecture. Every even integer greater than $2$
-                 is the sum of two prime numbers. The order of the two primes is
-                 irrelevant, and equality is allowed; for example, $10=3+7=5+5$.
-                 The conjecture is a universal existence claim, so computation
-                 can verify initial ranges but cannot by itself settle all even
-                 integers."
+[\integer.two]
+Defines: t := \integer.one \.integer.+./ \integer.one is \integer
+Documented:
+. called: "integer two"
+. written: "2"
+Id: "4574a4f5-93f4-4a1b-ab6c-31750b94003a"
+
+
+[\(even)::integer]
+Refines: n
+satisfies:
+. exists: k is \integer
+  suchThat: n = \integer.two \.integer.*./ k
+Documented:
+. adjective: "even"
+Id: "90de84c3-1ed2-47f9-913e-1892c1976b5e"
+
+
+Conjecture:
+then:
+. forAll: n is \integer
+  where:
+  . \integer.two \:integer.less?:/ n
+  . n is? \(even)::integer
+  then:
+  . exists: p, q is \integer
+    suchThat:
+    . p is? \(prime)::integer
+    . q is? \(prime)::integer
+    . n = p \.integer.+./ q
+Documented:
+. called: "Strong Goldbach Conjecture"
+. description: "Every even integer greater than two is the sum of two primes;
+                the two primes are not required to be distinct."
 Id: "1945a57b-f397-4f58-b515-fd8878910f2e"
 
 
-TextConjecture: "Twin prime conjecture. There exist infinitely many primes $p$
-                 for which $p+2$ is also prime. Such pairs are called twin
-                 primes. Results proving infinitely many prime pairs within a
-                 fixed bounded distance do not by themselves prove that the
-                 distance $2$ occurs infinitely often."
+Conjecture:
+then:
+. forAll: N is \integer
+  then:
+  . exists: p, q is \integer
+    suchThat:
+    . N \:integer.less?:/ p
+    . p is? \(prime)::integer
+    . q = p \.integer.+./ \integer.two
+    . q is? \(prime)::integer
+Documented:
+. called: "Twin Prime Conjecture"
+. description: "Above every integer bound there is a prime $p$ for which $p+2$
+                is also prime. This unboundedness formulation is equivalent to
+                the existence of infinitely many twin-prime pairs."
 Id: "565f765c-47cd-427f-a5b5-44c87d1a9794"
+
+
+Text: "The fundamental theorem of arithmetic states that every integer greater
+       than one is a product of primes, uniquely up to the order of the factors.
+       This multiplicative classification does not make additive questions about
+       primes easy. Results proving infinitely many prime pairs within a fixed
+       bounded distance likewise do not imply that the distance two occurs
+       infinitely often."
+Id: "68b44b77-3844-4b61-9feb-7d441e727db2"
 
 
 SectionTitle: "Zeros of the Zeta Function"

@@ -1,0 +1,14 @@
+{
+  "id": "38e1561b-dcdb-4e2e-8ba0-53ef665a0c33-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The least reflexive relation on $X$ containing $R$."
+  },
+  "source": "",
+  "sections": []
+}

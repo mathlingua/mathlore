@@ -1,18 +1,416 @@
 {
   "id": "999d97fa-3609-4900-a19d-ab1f3345ca54",
-  "kind": "TextDefinition",
-  "definition_keys": [],
-  "heading": null,
-  "heading_latex": "\\textrm{Definition}",
-  "body_text": "An ideal $I$ of a commutative ring $R$ is an additive subgroup\nsuch that $ri\\in I$ for every $r\\in R$ and $i\\in I$. Ideals,\nrather than arbitrary subrings, are precisely the subsets for\nwhich coset multiplication is well defined. The quotient $R/I$\nis a ring under $(r+I)+(s+I)=(r+s)+I$ and $(r+I)(s+I)=rs+I$.",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c696465616c3a6f66"
+  ],
+  "heading": "\\ideal:of{R ::= (X, +, *, 0, 1)}",
+  "heading_latex": "\\textrm{ideal of }R",
+  "parameter_destructurings": [
+    "R ::= \\left(X, +, \\ast, 0, 1\\right)"
+  ],
+  "body_text": null,
   "page": null,
-  "source": "TextDefinition: \"An ideal $I$ of a commutative ring $R$ is an additive subgroup\n                 such that $ri\\in I$ for every $r\\in R$ and $i\\in I$. Ideals,\n                 rather than arbitrary subrings, are precisely the subsets for\n                 which coset multiplication is well defined. The quotient $R/I$\n                 is a ring under $(r+I)+(s+I)=(r+s)+I$ and $(r+I)(s+I)=rs+I$.\"\nId: \"999d97fa-3609-4900-a19d-ab1f3345ca54\"",
+  "source": "[\\ideal:of{R ::= (X, +, *, 0, 1)}]\nDeclares: I \\:subset:/ X\nwhen: R is \\ring\nsatisfies:\n. 0 \"in\" I\n. forAll: x, y \"in\" I\n  then: x + y \"in\" I\n. forAll: x \"in\" I\n  then:\n  . exists: y \"in\" I\n    suchThat: x + y = 0\n. forAll: r \"in\" R\n  then:\n  . forAll: i \"in\" I\n    then:\n    . r * i \"in\" I\n    . i * r \"in\" I\nDocumented:\n. called: \"ideal of $R?$\"\n. description: \"An ideal is an additive subgroup closed under multiplication by\n                arbitrary ring elements.\"\nId: \"999d97fa-3609-4900-a19d-ab1f3345ca54\"",
   "sections": [
     {
-      "label": "TextDefinition",
-      "inline_argument": "\"An ideal $I$ of a commutative ring $R$ is an additive subgroup\n                 such that $ri\\in I$ for every $r\\in R$ and $i\\in I$. Ideals,\n                 rather than arbitrary subrings, are precisely the subsets for\n                 which coset multiplication is well defined. The quotient $R/I$\n                 is a ring under $(r+I)+(s+I)=(r+s)+I$ and $(r+I)(s+I)=rs+I$.\"",
-      "inline_latex": null,
+      "label": "Declares",
+      "inline_argument": "I \\:subset:/ X",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{I \\subseteq X}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "I \\:subset:/ X",
+          "types": [
+            "asserts I \\:subset:/ X"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "X",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
       "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "R is \\ring",
+      "inline_latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c72696e67}{\\textrm{ring}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "R is \\ring",
+          "types": [
+            "asserts R is \\ring"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "0 \"in\" I",
+          "latex": "0 \\in I",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 \"in\" I",
+              "types": [
+                "asserts 0 \"in\" I"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "I",
+              "types": [
+                "is \\ideal:of{R:=(X,+,*,0,1)}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x, y \"in\" I",
+              "inline_latex": "x, y \\in I",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x, y \"in\" I",
+                  "types": [
+                    "asserts x \"in\" I",
+                    "asserts y \"in\" I"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "I",
+                  "types": [
+                    "is \\ideal:of{R:=(X,+,*,0,1)}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "x + y \"in\" I",
+              "inline_latex": "x + y \\in I",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x + y \"in\" I",
+                  "types": [
+                    "asserts x + y \"in\" I"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x + y",
+                  "types": []
+                },
+                {
+                  "depth": 2,
+                  "text": "x",
+                  "types": [
+                    "\"in\" I"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "y",
+                  "types": [
+                    "\"in\" I"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" I",
+              "inline_latex": "x \\in I",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" I",
+                  "types": [
+                    "asserts x \"in\" I"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "I",
+                  "types": [
+                    "is \\ideal:of{R:=(X,+,*,0,1)}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "y \"in\" I",
+                      "inline_latex": "y \\in I",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "y \"in\" I",
+                          "types": [
+                            "asserts y \"in\" I"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "I",
+                          "types": [
+                            "is \\ideal:of{R:=(X,+,*,0,1)}"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "x + y = 0",
+                      "inline_latex": "x + y = 0",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x + y = 0",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x + y",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "x",
+                          "types": [
+                            "\"in\" I"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "y",
+                          "types": [
+                            "\"in\" I"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "0",
+                          "types": [
+                            "\"in\" X"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "r \"in\" R",
+              "inline_latex": "r \\in R",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "r \"in\" R",
+                  "types": [
+                    "asserts r \"in\" R"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "R",
+                  "types": [
+                    "is \\ring"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "i \"in\" I",
+                      "inline_latex": "i \\in I",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "i \"in\" I",
+                          "types": [
+                            "asserts i \"in\" I"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "I",
+                          "types": [
+                            "is \\ideal:of{R:=(X,+,*,0,1)}"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "r * i \"in\" I",
+                          "latex": "r \\ast i \\in I",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "r * i \"in\" I",
+                              "types": [
+                                "asserts r * i \"in\" I"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "r * i",
+                              "types": []
+                            },
+                            {
+                              "depth": 2,
+                              "text": "r",
+                              "types": [
+                                "\"in\" R"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "i",
+                              "types": [
+                                "\"in\" I"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "i * r \"in\" I",
+                          "latex": "i \\ast r \\in I",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "i * r \"in\" I",
+                              "types": [
+                                "asserts i * r \"in\" I"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "i * r",
+                              "types": []
+                            },
+                            {
+                              "depth": 2,
+                              "text": "i",
+                              "types": [
+                                "\"in\" I"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "r",
+                              "types": [
+                                "\"in\" R"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"ideal of $R?$\"",
+              "inline_latex": "\\textrm{ideal of }R",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

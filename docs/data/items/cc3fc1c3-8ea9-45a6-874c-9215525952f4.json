@@ -1,18 +1,203 @@
 {
   "id": "cc3fc1c3-8ea9-45a6-874c-9215525952f4",
-  "kind": "TextAxiom",
+  "kind": "Axiom",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Axiom}",
-  "body_text": "Axiom of foundation. Every nonempty set $A$ has an element $a$\ndisjoint from $A$. Equivalently in the presence of the other ZF\naxioms, there is no infinite descending membership chain\n$x_0\\ni x_1\\ni x_2\\ni\\cdots$. Foundation supports proofs and\ndefinitions by membership recursion and excludes self-membership\nphenomena such as $x\\in x$.",
+  "heading_latex": "\\textrm{Axiom of Foundation}",
+  "body_text": null,
   "page": null,
-  "source": "TextAxiom: \"Axiom of foundation. Every nonempty set $A$ has an element $a$\n            disjoint from $A$. Equivalently in the presence of the other ZF\n            axioms, there is no infinite descending membership chain\n            $x_0\\ni x_1\\ni x_2\\ni\\cdots$. Foundation supports proofs and\n            definitions by membership recursion and excludes self-membership\n            phenomena such as $x\\in x$.\"\nId: \"cc3fc1c3-8ea9-45a6-874c-9215525952f4\"",
+  "source": "Axiom:\ngiven: A is \\(nonempty)::set\nthen:\n. exists: a is \\set\n  suchThat:\n  . a \"in\"? A\n  . not:\n    . exists: x is \\set\n      suchThat:\n      . x \"in\"? A\n      . x \"in\"? a\nDocumented:\n. called: \"Axiom of Foundation\"\n. description: \"Every nonempty set $A$ has a member disjoint from $A$.\"\nId: \"cc3fc1c3-8ea9-45a6-874c-9215525952f4\"",
   "sections": [
     {
-      "label": "TextAxiom",
-      "inline_argument": "\"Axiom of foundation. Every nonempty set $A$ has an element $a$\n            disjoint from $A$. Equivalently in the presence of the other ZF\n            axioms, there is no infinite descending membership chain\n            $x_0\\ni x_1\\ni x_2\\ni\\cdots$. Foundation supports proofs and\n            definitions by membership recursion and excludes self-membership\n            phenomena such as $x\\in x$.\"",
+      "label": "Axiom",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "A is \\(nonempty)::set",
+      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e656d7074793a3a736574}{\\textrm{nonempty}}\\textrm{ }\\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A is \\(nonempty)::set",
+          "types": [
+            "asserts A is \\nonempty::set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "a is \\set",
+              "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a is \\set",
+                  "types": [
+                    "asserts a is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "a \"in\"? A",
+                  "latex": "a \\in A",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a \"in\"? A",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a",
+                      "types": [
+                        "is \\set"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "not",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "exists",
+                              "inline_argument": "x is \\set",
+                              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "x is \\set",
+                                  "types": [
+                                    "asserts x is \\set"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "suchThat",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "x \"in\"? A",
+                                  "latex": "x \\in A",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "x \"in\"? A",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "x",
+                                      "types": [
+                                        "is \\set"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "x \"in\"? a",
+                                  "latex": "x \\in a",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "x \"in\"? a",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "x",
+                                      "types": [
+                                        "is \\set"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Axiom of Foundation\"",
+              "inline_latex": "\\textrm{Axiom of Foundation}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

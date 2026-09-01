@@ -1,0 +1,14 @@
+{
+  "id": "3f6acf7f-8ea8-4080-a9bc-23cddc72bdd5-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For a pair not both zero, the greatest common divisor is the\nunique positive common divisor divisible by every common\ndivisor. Bezout's identity is included in the characterization;\nthe definition is totalized by the convention $\\gcd(0,0)=0$."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,163 @@
+{
+  "id": "33141ee6-c2fe-4116-8eff-3b6064d5d4e3",
+  "kind": "States",
+  "definition_keys": [
+    "5c69732e6c656173743a696e3a756e646572"
+  ],
+  "heading": "\\is.least{l}:in{X}:under{R}",
+  "heading_latex": "l\\textrm{ is the least element of }X\\textrm{ under }R",
+  "body_text": null,
+  "page": null,
+  "source": "[\\is.least{l}:in{X}:under{R}]\nStates:\nwhen:\n. X is \\set\n. R is \\partial.order:on{X}\n. l \"in\" X\nthat:\n. forAll: x \"in\" X\n  then: R(l, x)\nDocumented:\n. called: \"$l?$ is the least element of $X?$ under $R?$\"\nId: \"33141ee6-c2fe-4116-8eff-3b6064d5d4e3\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X is \\set",
+              "types": [
+                "asserts X is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "R is \\partial.order:on{X}",
+          "latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c7061727469616c2e6f726465723a6f6e}{\\textrm{partial order on }X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R is \\partial.order:on{X}",
+              "types": [
+                "asserts R is \\partial.order:on{X}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "l \"in\" X",
+          "latex": "l \\in X",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "l \"in\" X",
+              "types": [
+                "asserts l \"in\" X"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" X",
+              "inline_latex": "x \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" X",
+                  "types": [
+                    "asserts x \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "R(l, x)",
+              "inline_latex": "l \\: R \\: x",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "R(l, x)",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "l",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$l?$ is the least element of $X?$ under $R?$\"",
+              "inline_latex": "l\\textrm{ is the least element of }X\\textrm{ under }R",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"33141ee6-c2fe-4116-8eff-3b6064d5d4e3\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

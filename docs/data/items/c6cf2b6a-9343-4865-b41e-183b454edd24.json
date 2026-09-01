@@ -1,18 +1,127 @@
 {
   "id": "c6cf2b6a-9343-4865-b41e-183b454edd24",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "An equivalence relation on $X$ and a partition of $X$ determine\none another. Equivalence classes form a partition; conversely,\ndeclaring two elements equivalent when they lie in the same block\nproduces an equivalence relation. Quotienting therefore formalizes\nthe act of forgetting distinctions within blocks.",
+  "heading_latex": "\\textrm{Equivalence Classes Form a Partition}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"An equivalence relation on $X$ and a partition of $X$ determine\n              one another. Equivalence classes form a partition; conversely,\n              declaring two elements equivalent when they lie in the same block\n              produces an equivalence relation. Quotienting therefore formalizes\n              the act of forgetting distinctions within blocks.\"\nId: \"c6cf2b6a-9343-4865-b41e-183b454edd24\"",
+  "source": "Theorem:\ngiven:\n. X is \\set\n. R is \\equivalence.relation:on{X}\nthen: X \\.mod./ R is? \\partition:of{X}\nDocumented:\n. called: \"Equivalence Classes Form a Partition\"\n. description: \"The quotient by an equivalence relation is the partition of the\n                domain into its equivalence classes.\"\nId: \"c6cf2b6a-9343-4865-b41e-183b454edd24\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"An equivalence relation on $X$ and a partition of $X$ determine\n              one another. Equivalence classes form a partition; conversely,\n              declaring two elements equivalent when they lie in the same block\n              produces an equivalence relation. Quotienting therefore formalizes\n              the act of forgetting distinctions within blocks.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X is \\set",
+              "types": [
+                "asserts X is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "R is \\equivalence.relation:on{X}",
+          "latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c6571756976616c656e63652e72656c6174696f6e3a6f6e}{\\textrm{equivalence relation on }X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R is \\equivalence.relation:on{X}",
+              "types": [
+                "asserts R is \\equivalence.relation:on{X}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": "X \\.mod./ R is? \\partition:of{X}",
+      "inline_latex": "\\htmlData{mlg-ref=5c2e6d6f642e2f}{X / R} \\textrm{ is } \\htmlData{mlg-ref=5c706172746974696f6e3a6f66}{\\textrm{partition of }X}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X \\.mod./ R is? \\partition:of{X}",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "X\\.mod./R",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "X",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "R",
+          "types": [
+            "is \\equivalence.relation:on{X}"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "X",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Equivalence Classes Form a Partition\"",
+              "inline_latex": "\\textrm{Equivalence Classes Form a Partition}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

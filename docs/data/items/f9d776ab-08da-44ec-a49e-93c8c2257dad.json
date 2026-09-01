@@ -1,0 +1,27 @@
+{
+  "id": "f9d776ab-08da-44ec-a49e-93c8c2257dad",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The rationals are also dense in the reals, but they are not complete. For\nexample, the rational numbers whose square is less than $2$ have no least\nupper bound in $\\mathbb{Q}$."
+  },
+  "source": "Text: \"The rationals are also dense in the reals, but they are not complete. For\n       example, the rational numbers whose square is less than $2$ have no least\n       upper bound in $\\mathbb{Q}$.\"\nId: \"f9d776ab-08da-44ec-a49e-93c8c2257dad\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The rationals are also dense in the reals, but they are not complete. For\n       example, the rational numbers whose square is less than $2$ have no least\n       upper bound in $\\mathbb{Q}$.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"f9d776ab-08da-44ec-a49e-93c8c2257dad\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,18 +1,185 @@
 {
   "id": "ca6475d3-548d-402f-822b-87241cb23f3e",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "The rational order is dense: whenever $p<q$ in $\\mathbb{Q}$, the\nmidpoint $(p+q)/2$ is rational and satisfies $p<(p+q)/2<q$. The\nrationals are also dense in the reals, but they are not complete;\nfor example, the rational numbers whose square is less than $2$\nhave no least upper bound in $\\mathbb{Q}$.",
+  "heading_latex": "\\textrm{Density of the Rational Order}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"The rational order is dense: whenever $p<q$ in $\\mathbb{Q}$, the\n              midpoint $(p+q)/2$ is rational and satisfies $p<(p+q)/2<q$. The\n              rationals are also dense in the reals, but they are not complete;\n              for example, the rational numbers whose square is less than $2$\n              have no least upper bound in $\\mathbb{Q}$.\"\nId: \"ca6475d3-548d-402f-822b-87241cb23f3e\"",
+  "source": "Theorem:\ngiven: p, q is \\rational\nwhere: p \\:rational.less?:/ q\nthen:\n. exists: r is \\rational\n  suchThat:\n  . p \\:rational.less?:/ r\n  . r \\:rational.less?:/ q\nDocumented:\n. called: \"Density of the Rational Order\"\n. description: \"Between any two distinct rational numbers lies another rational\n                number.\"\nId: \"ca6475d3-548d-402f-822b-87241cb23f3e\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"The rational order is dense: whenever $p<q$ in $\\mathbb{Q}$, the\n              midpoint $(p+q)/2$ is rational and satisfies $p<(p+q)/2<q$. The\n              rationals are also dense in the reals, but they are not complete;\n              for example, the rational numbers whose square is less than $2$\n              have no least upper bound in $\\mathbb{Q}$.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "p, q is \\rational",
+      "inline_latex": "p, q \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "p, q is \\rational",
+          "types": [
+            "asserts p is \\rational",
+            "asserts q is \\rational"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "where",
+      "inline_argument": "p \\:rational.less?:/ q",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{p < q}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "p \\:rational.less?:/ q",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "p",
+          "types": [
+            "is \\rational"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "q",
+          "types": [
+            "is \\rational"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "r is \\rational",
+              "inline_latex": "r \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "r is \\rational",
+                  "types": [
+                    "asserts r is \\rational"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "p \\:rational.less?:/ r",
+                  "latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{p < r}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "p \\:rational.less?:/ r",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "p",
+                      "types": [
+                        "is \\rational"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "r",
+                      "types": [
+                        "is \\rational"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "r \\:rational.less?:/ q",
+                  "latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{r < q}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "r \\:rational.less?:/ q",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "r",
+                      "types": [
+                        "is \\rational"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "q",
+                      "types": [
+                        "is \\rational"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Density of the Rational Order\"",
+              "inline_latex": "\\textrm{Density of the Rational Order}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

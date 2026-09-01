@@ -1,0 +1,14 @@
+{
+  "id": "9519b138-f788-4156-8fd1-7d01b955decf-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For a linear map between finite-dimensional spaces of equal\ndimension, injectivity and surjectivity are equivalent."
+  },
+  "source": "",
+  "sections": []
+}

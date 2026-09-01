@@ -1,0 +1,14 @@
+{
+  "id": "1f6fac61-9b16-4828-942f-293b25792dcf-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Every bounded real sequence has a convergent subsequence."
+  },
+  "source": "",
+  "sections": []
+}

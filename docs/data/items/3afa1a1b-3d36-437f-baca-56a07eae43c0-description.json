@@ -1,0 +1,14 @@
+{
+  "id": "3afa1a1b-3d36-437f-baca-56a07eae43c0-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "An element of the ambient universe belongs to the indexed\nintersection exactly when it belongs to every member of the\nfamily. Naming $U$ makes the empty intersection unambiguous."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "68b44b77-3844-4b61-9feb-7d441e727db2",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The fundamental theorem of arithmetic states that every integer greater\nthan one is a product of primes, uniquely up to the order of the factors.\nThis multiplicative classification does not make additive questions about\nprimes easy. Results proving infinitely many prime pairs within a fixed\nbounded distance likewise do not imply that the distance two occurs\ninfinitely often."
+  },
+  "source": "Text: \"The fundamental theorem of arithmetic states that every integer greater\n       than one is a product of primes, uniquely up to the order of the factors.\n       This multiplicative classification does not make additive questions about\n       primes easy. Results proving infinitely many prime pairs within a fixed\n       bounded distance likewise do not imply that the distance two occurs\n       infinitely often.\"\nId: \"68b44b77-3844-4b61-9feb-7d441e727db2\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The fundamental theorem of arithmetic states that every integer greater\n       than one is a product of primes, uniquely up to the order of the factors.\n       This multiplicative classification does not make additive questions about\n       primes easy. Results proving infinitely many prime pairs within a fixed\n       bounded distance likewise do not imply that the distance two occurs\n       infinitely often.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"68b44b77-3844-4b61-9feb-7d441e727db2\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "844c54eb-187b-4369-8fd2-84d5d7da2b4b-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "If $P(n)$ follows from the validity of $P(k)$ at every preceding\nnatural number $k<n$, then $P$ holds for every natural number."
+  },
+  "source": "",
+  "sections": []
+}

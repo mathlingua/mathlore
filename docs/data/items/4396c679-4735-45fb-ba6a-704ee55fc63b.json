@@ -1,0 +1,232 @@
+{
+  "id": "4396c679-4735-45fb-ba6a-704ee55fc63b",
+  "kind": "Theorem",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": "\\textrm{Negation of an Existential Quantifier}",
+  "body_text": null,
+  "page": null,
+  "source": "Theorem:\ngiven:\n. D is \\set\n. P(x_) is (_ is \\\\anything) -> (_ is \\\\statement)\nthen:\n. not:\n  . exists: x \"in\" D\n    suchThat: P(x)\niff:\n. forAll: x \"in\" D\n  then:\n  . not: P(x)\nDocumented:\n. called: \"Negation of an Existential Quantifier\"\n. description: \"An existential assertion fails exactly when every element of its\n                domain fails the predicate.\"\nId: \"4396c679-4735-45fb-ba6a-704ee55fc63b\"",
+  "sections": [
+    {
+      "label": "Theorem",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "D is \\set",
+          "latex": "D \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "D is \\set",
+              "types": [
+                "asserts D is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "P(x_) is (_ is \\\\anything) -> (_ is \\\\statement)",
+          "latex": "P(x) \\textrm{ is } \\left(\\cdot \\textrm{ is } \\textrm{anything}\\right) \\to \\left(\\cdot \\textrm{ is } \\textrm{statement}\\right)",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "P(x_) is (_ is \\\\anything) -> (_ is \\\\statement)",
+              "types": [
+                "asserts P is (_ is \\\\anything) => (_ is \\\\statement)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "not",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "x \"in\" D",
+                      "inline_latex": "x \\in D",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x \"in\" D",
+                          "types": [
+                            "asserts x \"in\" D"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "D",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "P(x)",
+                      "inline_latex": "P(x)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "P(x)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "\"in\" D",
+                            "is \\\\anything"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "iff",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" D",
+              "inline_latex": "x \\in D",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" D",
+                  "types": [
+                    "asserts x \"in\" D"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "D",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "not",
+                      "inline_argument": "P(x)",
+                      "inline_latex": "P(x)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "P(x)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "\"in\" D",
+                            "is \\\\anything"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Negation of an Existential Quantifier\"",
+              "inline_latex": "\\textrm{Negation of an Existential Quantifier}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4396c679-4735-45fb-ba6a-704ee55fc63b\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

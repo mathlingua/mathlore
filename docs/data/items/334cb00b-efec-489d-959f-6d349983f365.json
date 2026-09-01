@@ -1,0 +1,193 @@
+{
+  "id": "334cb00b-efec-489d-959f-6d349983f365",
+  "kind": "States",
+  "definition_keys": [
+    "5c6469726563742e73756d3a6f663a616e643a696e"
+  ],
+  "heading": "\\direct.sum:of{U}:and{W}:in{V ::= (X, +, *, 0)}",
+  "heading_latex": "\\textrm{sum of }U\\textrm{ and }W\\textrm{ is direct in }V\\quad\\htmlClass{mlg-title-written}{U \\oplus W}",
+  "parameter_destructurings": [
+    "V ::= \\left(X, +, \\ast, 0\\right)"
+  ],
+  "body_text": null,
+  "page": null,
+  "source": "[\\direct.sum:of{U}:and{W}:in{V ::= (X, +, *, 0)}]\nStates:\nusing: F is \\field\nwhen:\n. V is \\vector.space:over{F}\n. U \\:vector.subspace.of:/ V\n. W \\:vector.subspace.of:/ V\nthat: (.U \\.set.intersect./ W.) = \\singleton.set:of{0}\nDocumented:\n. called: \"sum of $U?$ and $W?$ is direct in $V?$\"\n. written: \"U? \\oplus W?\"\nId: \"334cb00b-efec-489d-959f-6d349983f365\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "using",
+      "inline_argument": "F is \\field",
+      "inline_latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "F is \\field",
+          "types": [
+            "asserts F is \\field"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "V is \\vector.space:over{F}",
+          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "V is \\vector.space:over{F}",
+              "types": [
+                "asserts V is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "U \\:vector.subspace.of:/ V",
+          "latex": "\\htmlData{mlg-ref=5c3a766563746f722e73756273706163652e6f663a2f}{U \\le V}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "U \\:vector.subspace.of:/ V",
+              "types": [
+                "asserts U \\:vector.subspace.of:/ V"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "V",
+              "types": [
+                "is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "W \\:vector.subspace.of:/ V",
+          "latex": "\\htmlData{mlg-ref=5c3a766563746f722e73756273706163652e6f663a2f}{W \\le V}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "W \\:vector.subspace.of:/ V",
+              "types": [
+                "asserts W \\:vector.subspace.of:/ V"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "V",
+              "types": [
+                "is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": "(.U \\.set.intersect./ W.) = \\singleton.set:of{0}",
+      "inline_latex": "\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{U \\cap W} = \\htmlData{mlg-ref=5c73696e676c65746f6e2e7365743a6f66}{\\left \\{ 0 \\right \\}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "(.U \\.set.intersect./ W.) = \\singleton.set:of{0}",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "U\\.set.intersect./W",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "U\\.set.intersect./W",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "U",
+          "types": [
+            "\\:vector.subspace.of:/ V"
+          ]
+        },
+        {
+          "depth": 3,
+          "text": "W",
+          "types": [
+            "\\:vector.subspace.of:/ V"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\singleton.set:of{0}",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "0",
+          "types": []
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"sum of $U?$ and $W?$ is direct in $V?$\"",
+              "inline_latex": "\\textrm{sum of }U\\textrm{ and }W\\textrm{ is direct in }V",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"U? \\oplus W?\"",
+              "inline_latex": "U \\oplus W",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"334cb00b-efec-489d-959f-6d349983f365\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

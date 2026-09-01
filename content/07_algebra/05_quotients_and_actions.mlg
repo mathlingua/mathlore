@@ -14,20 +14,65 @@ SectionTitle: "Cosets and Normal Subgroups"
 Id: "7c8c60ce-9c18-4ea7-8447-9b47c9118f8b"
 
 
-TextDefinition: "Let $H$ be a subgroup of a group $G$. For $g\in G$, the left
-                 coset $gH$ is $\{gh:h\in H\}$ and the right coset $Hg$ is
-                 $\{hg:h\in H\}$. Left cosets form a partition of $G$: two left
-                 cosets are either equal or disjoint, and every element lies in
-                 the coset it determines. The analogous statement holds for
-                 right cosets."
+[\left.coset:of{H}:by{g}:in{G ::= (X, *, e)}]
+Defines: C := \set@{g * h_ : h_ "in" H}
+when:
+. G is \group
+. H is \group
+. H \:subgroup:/ G
+. g "in" G
+Documented:
+. called: "left coset of $H?$ by $g?$"
+. written: "g?H?"
 Id: "b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0"
 
 
-TextDefinition: "A subgroup $N\leq G$ is normal, written $N\trianglelefteq G$,
-                 if $gN=Ng$ for every $g\in G$. Equivalently, $gNg^{-1}=N$ for
-                 every $g\in G$. Normality is precisely the compatibility
-                 condition needed for multiplication of cosets to be independent
-                 of the chosen representatives."
+[\right.coset:of{H}:by{g}:in{G ::= (X, *, e)}]
+Defines: C := \set@{h_ * g : h_ "in" H}
+when:
+. G is \group
+. H is \group
+. H \:subgroup:/ G
+. g "in" G
+Documented:
+. called: "right coset of $H?$ by $g?$"
+. written: "H?g?"
+Id: "152ef2a9-044c-4687-8325-bc80ce2bfa12"
+
+
+Theorem:
+given:
+. G is \group
+. H is \group
+. H \:subgroup:/ G
+. g1, g2 "in" G
+then:
+. oneOf:
+  . \left.coset:of{H}:by{g1}:in{G} = \left.coset:of{H}:by{g2}:in{G}
+  . \left.coset:of{H}:by{g1}:in{G} \.disjoint.from./ \left.coset:of{H}:by{g2}:in{G}
+Documented:
+. called: "Left Cosets are Equal or Disjoint"
+Id: "4cafbd92-cf4d-4989-ac8f-e53ed45cb238"
+
+
+[\normal.subgroup:of{G ::= (X, *, e)}]
+Declares: N is \group
+when: G is \group
+satisfies:
+. N \:subgroup?:/ G
+. forAll: g "in" G
+  then:
+  . forAll: n "in" G
+    where: n "in"? N
+    then:
+    . exists: m "in" G
+      suchThat:
+      . m "in"? N
+      . g * n = m * g
+Documented:
+. called: "normal subgroup of $G?$"
+. description: "A subgroup is normal when its left and right cosets agree for
+                every group element."
 Id: "0e5638e1-1109-4980-a652-2e795bed2e44"
 
 
@@ -39,12 +84,26 @@ TextTheorem: "If $N\trianglelefteq G$, the set $G/N$ of cosets becomes a group
 Id: "1c5bfe13-52ac-46ae-b75c-af1d8db93224"
 
 
-TextDefinition: "For a homomorphism $\varphi:G\to H$, the kernel is
-                 $\ker\varphi=\{g\in G:\varphi(g)=e_H\}$ and the image is
-                 $\operatorname{im}\varphi=\{\varphi(g):g\in G\}$. The kernel is
-                 a normal subgroup of $G$, the image is a subgroup of $H$, and
-                 $\varphi$ is injective exactly when its kernel is trivial."
+[\group.kernel:of{phi(x__)}:from{G1 ::= (X1, *_1, e1)}:to{G2 ::= (X2, *_2, e2)}]
+Defines: K := \set@{g_ : g_ "in" G1 | phi(g_) = e2}
+when:
+. G1, G2 is \group
+. phi is \group.homomorphism:from{G1}:to{G2}
+Documented:
+. called: "kernel of $phi?$"
+. written: "\ker(phi?)"
 Id: "dbdd8045-535e-4d8b-b4d1-2f10e2d2648f"
+
+
+[\group.image:of{phi(x__)}:from{G1 ::= (X1, *_1, e1)}:to{G2 ::= (X2, *_2, e2)}]
+Defines: I := \set@{phi(g_) : g_ "in" G1}
+when:
+. G1, G2 is \group
+. phi is \group.homomorphism:from{G1}:to{G2}
+Documented:
+. called: "image of $phi?$"
+. written: "\operatorname{im}(phi?)"
+Id: "f13b0e2b-be95-4735-b963-fbc91db6b175"
 
 
 TextTheorem: "First isomorphism theorem for groups. For every homomorphism
@@ -60,21 +119,51 @@ SectionTitle: "Group Actions"
 Id: "3033f57e-9ff5-4da7-bf72-b3c09c27f533"
 
 
-TextDefinition: "A left action of a group $G$ on a set $X$ is a map
-                 $G\times X\to X$, written $(g,x)\mapsto g\cdot x$, satisfying
-                 $e\cdot x=x$ and $(gh)\cdot x=g\cdot(h\cdot x)$. Equivalently,
-                 an action is a homomorphism $G\to\operatorname{Sym}(X)$ into
-                 the group of bijections of $X$."
+[\group.action:of{G ::= (Y, *, e)}:on{X}]
+Declares: alpha(g_, x_) is \function:on{Y \.set.cross./ X}:to{X}
+when:
+. G is \group
+. X is \set
+satisfies:
+. forAll: x "in" X
+  then: alpha(e, x) = x
+. forAll: g, h "in" G
+  then:
+  . forAll: x "in" X
+    then: alpha(g * h, x) = alpha(g, alpha(h, x))
+Documented:
+. called: "group action of $G?$ on $X?$"
+. writing: alpha(g_, x_)
+  as: "g_? \cdot x_?"
+. description: "A left action represents each group element as a symmetry of the
+                set and respects identity and multiplication."
 Id: "fa043cd6-0ce8-4504-82bb-aba9ad2c8a30"
 
 
-TextDefinition: "For an action of $G$ on $X$, the orbit of $x$ is
-                 $G\cdot x=\{g\cdot x:g\in G\}$, and the stabilizer is
-                 $G_x=\{g\in G:g\cdot x=x\}$. Orbits partition $X$; stabilizers
-                 are subgroups of $G$. The kernel of the action is the
-                 intersection of all stabilizers, and the action is faithful
-                 exactly when this kernel is trivial."
+[\orbit:of{x}:under{alpha}:of{G}:on{X}]
+Defines: O := \set@{alpha(g_, x) : g_ "in" G}
+when:
+. G is \group
+. X is \set
+. alpha is \group.action:of{G}:on{X}
+. x "in" X
+Documented:
+. called: "orbit of $x?$ under $alpha?$"
+. written: "G? \cdot x?"
 Id: "373a9fce-21a7-4155-9f1d-cfb662941906"
+
+
+[\stabilizer:of{x}:under{alpha}:of{G}:on{X}]
+Defines: S := \set@{g_ : g_ "in" G | alpha(g_, x) = x}
+when:
+. G is \group
+. X is \set
+. alpha is \group.action:of{G}:on{X}
+. x "in" X
+Documented:
+. called: "stabilizer of $x?$ under $alpha?$"
+. written: "G?_{x?}"
+Id: "02a3fe2e-dbbf-49a6-8cf2-cc5cc85568f7"
 
 
 TextTheorem: "Orbit--stabilizer theorem. If a finite group $G$ acts on a set

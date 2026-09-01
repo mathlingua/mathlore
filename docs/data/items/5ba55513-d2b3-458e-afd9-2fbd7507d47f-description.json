@@ -1,0 +1,14 @@
+{
+  "id": "5ba55513-d2b3-458e-afd9-2fbd7507d47f-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two sets have the same cardinality when a bijection exists\nbetween them."
+  },
+  "source": "",
+  "sections": []
+}

@@ -82,24 +82,84 @@ Documented:
 Id: "db5c05bc-8e04-4326-ba15-689df15c140a"
 
 
-TextDefinition: "A group isomorphism is a bijective homomorphism. Its inverse is
-                 automatically a homomorphism, so isomorphism identifies groups
-                 with the same multiplication structure despite different
-                 element names. An automorphism is an isomorphism from a group
-                 to itself; automorphisms form a group under composition."
+[\group.isomorphism:from{G1 ::= (X1, *_1, e1)}:to{G2 ::= (X2, *_2, e2)}]
+Declares: phi(x__) is \group.homomorphism:from{G1}:to{G2}
+when: G1, G2 is \group
+satisfies: phi is? \(bijective)::function:?on{X1}:?to{X2}
+Documented:
+. called: "group isomorphism from $G1?$ to $G2?$"
+. description: "A group isomorphism is a bijective group homomorphism."
 Id: "433926bd-94c4-4124-9338-d0be367f5836"
 
 
-TextTheorem: "Every group homomorphism sends the identity to the identity, sends
-              inverses to inverses, and sends powers to corresponding powers.
-              These facts follow from preservation of multiplication; they need
-              not be added as independent clauses in the definition of
-              homomorphism."
+[\group.automorphism:of{G}]
+Declares: phi(x__) is \group.isomorphism:from{G}:to{G}
+when: G is \group
+Documented:
+. called: "automorphism of $G?$"
+Id: "5a92734c-fbb5-481b-83a1-a945d6f59433"
+
+
+Theorem:
+given:
+. G1 ::= (X1, *_1, e1) is \group
+. G2 ::= (X2, *_2, e2) is \group
+. phi(x__) is \group.homomorphism:from{G1}:to{G2}
+then:
+. phi(e1) = e2
+. forAll: x "in" G1
+  then:
+  . exists: y "in" G2
+    suchThat:
+    . y = phi(x)
+    . phi(x.inv) = y.inv
+Documented:
+. called: "Homomorphisms Preserve Identities and Inverses"
+. description: "A group homomorphism maps the identity to the identity and the
+                inverse of each element to the inverse of its image."
 Id: "238fe8f8-136f-4825-b650-3a1af432e140"
 
 
-TextTheorem: "The center $Z(G)$ is an abelian normal subgroup of $G$. It is the
-              kernel of the conjugation action $G\to\operatorname{Aut}(G)$.
-              Hence $G/Z(G)$ measures the part of the group visible through
-              inner automorphisms."
+Text: "By induction, a group homomorphism also sends every integral power $x^n$
+       to the corresponding power of the image. These preservation laws follow
+       from multiplicativity and therefore need not be independent clauses in
+       the definition of a homomorphism."
+Id: "777bb96c-835f-449d-9abf-7a482f766597"
+
+
+Theorem:
+given:
+. G ::= (X, *, e) is \group
+. Z is \set
+where: Z = \center:of{G}
+then:
+. e "in"? Z
+. forAll: x, y "in" G
+  where:
+  . x "in"? Z
+  . y "in"? Z
+  then:
+  . x * y "in"? Z
+  . x * y = y * x
+. forAll: x "in" G
+  where: x "in"? Z
+  then: x.inv "in"? Z
+. forAll: g, z "in" G
+  where: z "in"? Z
+  then:
+  . exists: m "in" G
+    suchThat:
+    . m "in"? Z
+    . g * z = m * g
+Documented:
+. called: "The Center is an Abelian Normal Subgroup"
+. description: "The center contains the identity, is closed under products and
+                inverses, is internally commutative, and is invariant under
+                conjugation."
 Id: "636bc6b8-be24-41fe-9833-6bc18420ed97"
+
+
+Text: "Equivalently, the center is the kernel of the conjugation action
+       $G\to\operatorname{Aut}(G)$. The quotient $G/Z(G)$ therefore measures the
+       part of the group visible through inner automorphisms."
+Id: "794fcc8a-b1fc-439d-b083-050c1420448f"

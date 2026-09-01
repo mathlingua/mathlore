@@ -1,16 +1,19 @@
 {
   "id": "694343ad-950a-425c-9b62-705e6bb66956",
-  "kind": "TextDefinition",
+  "kind": "Text",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Definition}",
-  "body_text": "A rational number is an equivalence class of pairs $(a,b)$ with\n$a\\in\\mathbb{Z}$ and nonzero $b\\in\\mathbb{Z}$, where\n$(a,b)\\sim(c,d)$ exactly when $ad=bc$. The notation $a/b$ names\nthe class, not a privileged representation; multiplying\nnumerator and denominator by the same nonzero integer leaves\nthe rational number unchanged.",
-  "page": null,
-  "source": "TextDefinition: \"A rational number is an equivalence class of pairs $(a,b)$ with\n                 $a\\in\\mathbb{Z}$ and nonzero $b\\in\\mathbb{Z}$, where\n                 $(a,b)\\sim(c,d)$ exactly when $ad=bc$. The notation $a/b$ names\n                 the class, not a privileged representation; multiplying\n                 numerator and denominator by the same nonzero integer leaves\n                 the rational number unchanged.\"\nId: \"694343ad-950a-425c-9b62-705e6bb66956\"",
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The structured realization above constructs a rational number as an\nequivalence class of integer pairs with nonzero denominator. The notation\n$a/b$ names the class rather than a privileged representative, and the\ninduced field operations are required to be independent of the chosen\nnumerator and denominator."
+  },
+  "source": "Text: \"The structured realization above constructs a rational number as an\n       equivalence class of integer pairs with nonzero denominator. The notation\n       $a/b$ names the class rather than a privileged representative, and the\n       induced field operations are required to be independent of the chosen\n       numerator and denominator.\"\nId: \"694343ad-950a-425c-9b62-705e6bb66956\"",
   "sections": [
     {
-      "label": "TextDefinition",
-      "inline_argument": "\"A rational number is an equivalence class of pairs $(a,b)$ with\n                 $a\\in\\mathbb{Z}$ and nonzero $b\\in\\mathbb{Z}$, where\n                 $(a,b)\\sim(c,d)$ exactly when $ad=bc$. The notation $a/b$ names\n                 the class, not a privileged representation; multiplying\n                 numerator and denominator by the same nonzero integer leaves\n                 the rational number unchanged.\"",
+      "label": "Text",
+      "inline_argument": "\"The structured realization above constructs a rational number as an\n       equivalence class of integer pairs with nonzero denominator. The notation\n       $a/b$ names the class rather than a privileged representative, and the\n       induced field operations are required to be independent of the chosen\n       numerator and denominator.\"",
       "inline_latex": null,
       "arguments": []
     },

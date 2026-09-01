@@ -1,0 +1,14 @@
+{
+  "id": "0e5638e1-1109-4980-a652-2e795bed2e44-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A subgroup is normal when its left and right cosets agree for\nevery group element."
+  },
+  "source": "",
+  "sections": []
+}

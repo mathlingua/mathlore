@@ -260,10 +260,16 @@ SectionTitle: "Structural Consequences"
 Id: "191bffbb-05de-4543-95d1-5161df7a4c17"
 
 
-TextTheorem: "Cancellation laws. In a group, $ax=ay$ implies $x=y$ and $xa=ya$
-              implies $x=y$. Consequently the equations $ax=b$ and $ya=b$ have
-              the unique solutions $x=a^{-1}b$ and $y=ba^{-1}$. The order of the
-              factors matters in a nonabelian group."
+Theorem:
+given:
+. G is \group
+. a "in" G
+then:
+. \left.cancellable{a}:in{G}
+. \right.cancellable{a}:in{G}
+Documented:
+. called: "Group Cancellation Laws"
+. description: "Every group element is both left and right cancellable."
 Id: "24b48a0a-ec3e-49f2-acd4-80b979fcd209"
 
 

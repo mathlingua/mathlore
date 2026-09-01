@@ -1,18 +1,121 @@
 {
   "id": "373a9fce-21a7-4155-9f1d-cfb662941906",
-  "kind": "TextDefinition",
-  "definition_keys": [],
-  "heading": null,
-  "heading_latex": "\\textrm{Definition}",
-  "body_text": "For an action of $G$ on $X$, the orbit of $x$ is\n$G\\cdot x=\\{g\\cdot x:g\\in G\\}$, and the stabilizer is\n$G_x=\\{g\\in G:g\\cdot x=x\\}$. Orbits partition $X$; stabilizers\nare subgroups of $G$. The kernel of the action is the\nintersection of all stabilizers, and the action is faithful\nexactly when this kernel is trivial.",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c6f726269743a6f663a756e6465723a6f663a6f6e"
+  ],
+  "heading": "\\orbit:of{x}:under{alpha}:of{G}:on{X}",
+  "heading_latex": "\\textrm{orbit of }x\\textrm{ under }\\alpha\\quad\\htmlClass{mlg-title-written}{G \\cdot x}",
+  "body_text": null,
   "page": null,
-  "source": "TextDefinition: \"For an action of $G$ on $X$, the orbit of $x$ is\n                 $G\\cdot x=\\{g\\cdot x:g\\in G\\}$, and the stabilizer is\n                 $G_x=\\{g\\in G:g\\cdot x=x\\}$. Orbits partition $X$; stabilizers\n                 are subgroups of $G$. The kernel of the action is the\n                 intersection of all stabilizers, and the action is faithful\n                 exactly when this kernel is trivial.\"\nId: \"373a9fce-21a7-4155-9f1d-cfb662941906\"",
+  "source": "[\\orbit:of{x}:under{alpha}:of{G}:on{X}]\nDefines: O := \\set@{alpha(g_, x) : g_ \"in\" G}\nwhen:\n. G is \\group\n. X is \\set\n. alpha is \\group.action:of{G}:on{X}\n. x \"in\" X\nDocumented:\n. called: \"orbit of $x?$ under $alpha?$\"\n. written: \"G? \\cdot x?\"\nId: \"373a9fce-21a7-4155-9f1d-cfb662941906\"",
   "sections": [
     {
-      "label": "TextDefinition",
-      "inline_argument": "\"For an action of $G$ on $X$, the orbit of $x$ is\n                 $G\\cdot x=\\{g\\cdot x:g\\in G\\}$, and the stabilizer is\n                 $G_x=\\{g\\in G:g\\cdot x=x\\}$. Orbits partition $X$; stabilizers\n                 are subgroups of $G$. The kernel of the action is the\n                 intersection of all stabilizers, and the action is faithful\n                 exactly when this kernel is trivial.\"",
-      "inline_latex": null,
+      "label": "Defines",
+      "inline_argument": "O := \\set@{alpha(g_, x) : g_ \"in\" G}",
+      "inline_latex": "O := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ \\alpha(g, x) \\: : \\: g \\in G \\right\\}",
       "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "G is \\group",
+          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "G is \\group",
+              "types": [
+                "asserts G is \\group"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X is \\set",
+              "types": [
+                "asserts X is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "alpha is \\group.action:of{G}:on{X}",
+          "latex": "\\alpha \\textrm{ is } \\htmlData{mlg-ref=5c67726f75702e616374696f6e3a6f663a6f6e}{\\textrm{group action of }G\\textrm{ on }X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "alpha is \\group.action:of{G}:on{X}",
+              "types": [
+                "asserts alpha is \\group.action:of{G}:on{X}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "x \"in\" X",
+          "latex": "x \\in X",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x \"in\" X",
+              "types": [
+                "asserts x \"in\" X"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"orbit of $x?$ under $alpha?$\"",
+              "inline_latex": "\\textrm{orbit of }x\\textrm{ under }alpha",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"G? \\cdot x?\"",
+              "inline_latex": "G \\cdot x",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

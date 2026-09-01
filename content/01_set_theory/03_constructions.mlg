@@ -155,19 +155,35 @@ Documented:
 Id: "3bdd9cfb-f836-4d44-880a-873bb772cdef"
 
 
-TextTheorem: "The Kuratowski encoding satisfies the defining property of an
-              ordered pair: $\langle x,y\rangle=\langle u,v\rangle$ if and only
-              if $x=u$ and $y=v$. The particular set-theoretic encoding is not
-              mathematically canonical; its purpose is to realize an abstract
-              two-slot object using sets while preserving equality of
-              coordinates."
+Theorem:
+given: x, y, u, v is \set
+then: \pair:of{x, y} = \pair:of{u, v}
+iff:
+. x = u
+. y = v
+Documented:
+. called: "coordinate equality for ordered pairs"
+. description: "Kuratowski ordered pairs are equal exactly when their
+                corresponding coordinates are equal."
 Id: "31691bb2-e8e1-4218-be4f-759add2b7ab7"
 
 
-TextTheorem: "Cartesian product is associative only up to canonical bijection,
-              not literal equality under the ordered-pair encoding. The maps
-              $((a,b),c)\mapsto(a,(b,c))$ and its inverse identify
-              $(A\times B)\times C$ with $A\times(B\times C)$. This distinction
-              between equality and canonical isomorphism recurs throughout
-              algebra."
+Theorem:
+given: A, B, C is \set
+then:
+. exists: phi(x__) is \function:on{(.(.A \.set.cross./ B.) \.set.cross./ C.)}:to{(.A \.set.cross./ (.B \.set.cross./ C.).)}
+  suchThat:
+  . phi is? \(bijective)::function:?on{(.(.A \.set.cross./ B.) \.set.cross./ C.)}:?to{(.A \.set.cross./ (.B \.set.cross./ C.).)}
+  . forAll: a "in" A
+    then:
+    . forAll: b "in" B
+      then:
+      . forAll: c "in" C
+        then: phi(((a, b), c)) = (a, (b, c))
+Documented:
+. called: "Canonical Associativity Bijection for Cartesian Products"
+. description: "The map $((a,b),c)\mapsto(a,(b,c))$ is a canonical bijection
+                from $(A\times B)\times C$ to $A\times(B\times C)$. The two
+                products are therefore naturally identifiable but are not
+                literally equal under the ordered-pair encoding."
 Id: "cd332b77-e7cc-4e59-92e6-40decc503be8"

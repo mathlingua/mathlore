@@ -1,0 +1,14 @@
+{
+  "id": "dd21ebd6-0821-429e-af26-123c01ca0432-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Every nonempty subset of $\\mathbb{N}$ has a least element."
+  },
+  "source": "",
+  "sections": []
+}

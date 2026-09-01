@@ -1,0 +1,14 @@
+{
+  "id": "c1009158-a56f-4c29-8006-7e3a6bcc662d-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Every linearly independent subset extends to a basis, and every\nspanning subset contains a basis."
+  },
+  "source": "",
+  "sections": []
+}

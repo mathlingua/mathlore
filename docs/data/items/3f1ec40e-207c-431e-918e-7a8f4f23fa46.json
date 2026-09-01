@@ -1,18 +1,377 @@
 {
   "id": "3f1ec40e-207c-431e-918e-7a8f4f23fa46",
-  "kind": "TextAxiom",
+  "kind": "Axiom",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Axiom}",
-  "body_text": "Axiom of choice. For every set $I$ and every family $(A_i)_{i\\in I}$\nof nonempty sets, there exists a function $f$ on $I$ such that\n$f(i)\\in A_i$ for every $i\\in I$. The assertion is substantive when\nthe family is infinite and no canonical rule for choosing the\nelements is available. ZF together with this axiom is denoted ZFC.",
+  "heading_latex": "\\textrm{Axiom of Choice}",
+  "body_text": null,
   "page": null,
-  "source": "TextAxiom: \"Axiom of choice. For every set $I$ and every family $(A_i)_{i\\in I}$\n            of nonempty sets, there exists a function $f$ on $I$ such that\n            $f(i)\\in A_i$ for every $i\\in I$. The assertion is substantive when\n            the family is infinite and no canonical rule for choosing the\n            elements is available. ZF together with this axiom is denoted ZFC.\"\nId: \"3f1ec40e-207c-431e-918e-7a8f4f23fa46\"",
+  "source": "Axiom:\ngiven:\n. I, U is \\set\n. A(i__) is \\function:on{I}:to{\\power.set:of{U}}\nwhere:\n. forAll: i \"in\" I\n  then:\n  . exists: S is \\set\n    suchThat:\n    . S = A(i)\n    . S != \\empty.set\nthen:\n. exists: f(i__) is \\function:on{I}:to{U}\n  suchThat:\n  . forAll: i \"in\" I\n    then:\n    . exists: S is \\set\n      suchThat:\n      . S = A(i)\n      . f(i) \"in\"? S\nDocumented:\n. called: \"Axiom of Choice\"\n. description: \"Every set-indexed family of nonempty subsets of an ambient set\n                admits a choice function selecting one element from each member\n                of the family. This ambient-set formulation is equivalent over\n                ZF to the usual formulation for arbitrary set-indexed families.\"\nId: \"3f1ec40e-207c-431e-918e-7a8f4f23fa46\"",
   "sections": [
     {
-      "label": "TextAxiom",
-      "inline_argument": "\"Axiom of choice. For every set $I$ and every family $(A_i)_{i\\in I}$\n            of nonempty sets, there exists a function $f$ on $I$ such that\n            $f(i)\\in A_i$ for every $i\\in I$. The assertion is substantive when\n            the family is infinite and no canonical rule for choosing the\n            elements is available. ZF together with this axiom is denoted ZFC.\"",
+      "label": "Axiom",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "I, U is \\set",
+          "latex": "I, U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "I, U is \\set",
+              "types": [
+                "asserts I is \\set",
+                "asserts U is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "A(i__) is \\function:on{I}:to{\\power.set:of{U}}",
+          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{A(i) \\: : \\: I \\rightarrow \\htmlData{mlg-ref=5c706f7765722e7365743a6f66}{\\mathcal{P}(U)}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "A(i__) is \\function:on{I}:to{\\power.set:of{U}}",
+              "types": [
+                "asserts A is \\function:on{I}:to{\\power.set:of{U}}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "i \"in\" I",
+              "inline_latex": "i \\in I",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "i \"in\" I",
+                  "types": [
+                    "asserts i \"in\" I"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "I",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "S is \\set",
+                      "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "S is \\set",
+                          "types": [
+                            "asserts S is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "S = A(i)",
+                          "latex": "S = A(i)",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "S = A(i)",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "S",
+                              "types": [
+                                "is \\set"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "A(i)",
+                              "types": [
+                                "\"in\" \\power.set:of{U}"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "i",
+                              "types": [
+                                "\"in\" I"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "S != \\empty.set",
+                          "latex": "S \\ne \\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "S != \\empty.set",
+                              "types": []
+                            },
+                            {
+                              "depth": 1,
+                              "text": "S",
+                              "types": [
+                                "is \\set"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "\\empty.set",
+                              "types": [
+                                "is \\set"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "f(i__) is \\function:on{I}:to{U}",
+              "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f(i) \\: : \\: I \\rightarrow U}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "f(i__) is \\function:on{I}:to{U}",
+                  "types": [
+                    "asserts f is \\function:on{I}:to{U}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "i \"in\" I",
+                      "inline_latex": "i \\in I",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "i \"in\" I",
+                          "types": [
+                            "asserts i \"in\" I"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "I",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "exists",
+                              "inline_argument": "S is \\set",
+                              "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "S is \\set",
+                                  "types": [
+                                    "asserts S is \\set"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "suchThat",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "S = A(i)",
+                                  "latex": "S = A(i)",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "S = A(i)",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "S",
+                                      "types": [
+                                        "is \\set"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "A(i)",
+                                      "types": [
+                                        "\"in\" \\power.set:of{U}"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "i",
+                                      "types": [
+                                        "\"in\" I"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "f(i) \"in\"? S",
+                                  "latex": "f(i) \\in S",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "f(i) \"in\"? S",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "f(i)",
+                                      "types": [
+                                        "\"in\" U"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "i",
+                                      "types": [
+                                        "\"in\" I"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Axiom of Choice\"",
+              "inline_latex": "\\textrm{Axiom of Choice}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

@@ -1,18 +1,89 @@
 {
   "id": "df5630a9-0ac4-4920-995a-7002bdccbf15",
-  "kind": "TextDefinition",
-  "definition_keys": [],
-  "heading": null,
-  "heading_latex": "\\textrm{Definition}",
-  "body_text": "A family of subsets of $U$ is itself a subset\n$\\mathcal{A}\\subseteq\\mathcal{P}(U)$. This distinction keeps\ntwo membership levels separate: $x\\in A$ concerns an element of\none subset, whereas $A\\in\\mathcal{A}$ concerns one set in the\nfamily. Many indexing errors are failures to distinguish these\nlevels.",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c66616d696c792e6f662e737562736574733a6f66"
+  ],
+  "heading": "\\family.of.subsets:of{U}",
+  "heading_latex": "\\textrm{family of subsets of }U",
+  "body_text": null,
   "page": null,
-  "source": "TextDefinition: \"A family of subsets of $U$ is itself a subset\n                 $\\mathcal{A}\\subseteq\\mathcal{P}(U)$. This distinction keeps\n                 two membership levels separate: $x\\in A$ concerns an element of\n                 one subset, whereas $A\\in\\mathcal{A}$ concerns one set in the\n                 family. Many indexing errors are failures to distinguish these\n                 levels.\"\nId: \"df5630a9-0ac4-4920-995a-7002bdccbf15\"",
+  "source": "[\\family.of.subsets:of{U}]\nDeclares: A \\:subset:/ \\power.set:of{U}\nwhen: U is \\set\nDocumented:\n. called: \"family of subsets of $U?$\"\n. description: \"A family of subsets of $U$ is a subset\n                $\\mathcal{A}\\subseteq\\mathcal{P}(U)$. Thus $x\\in A$ concerns an\n                element of one subset, while $A\\in\\mathcal{A}$ concerns one set\n                in the family.\"\nId: \"df5630a9-0ac4-4920-995a-7002bdccbf15\"",
   "sections": [
     {
-      "label": "TextDefinition",
-      "inline_argument": "\"A family of subsets of $U$ is itself a subset\n                 $\\mathcal{A}\\subseteq\\mathcal{P}(U)$. This distinction keeps\n                 two membership levels separate: $x\\in A$ concerns an element of\n                 one subset, whereas $A\\in\\mathcal{A}$ concerns one set in the\n                 family. Many indexing errors are failures to distinguish these\n                 levels.\"",
-      "inline_latex": null,
+      "label": "Declares",
+      "inline_argument": "A \\:subset:/ \\power.set:of{U}",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq \\htmlData{mlg-ref=5c706f7765722e7365743a6f66}{\\mathcal{P}(U)}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A \\:subset:/ \\power.set:of{U}",
+          "types": [
+            "asserts A \\:subset:/ \\power.set:of{U}"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\power.set:of{U}",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "U",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
       "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "U is \\set",
+      "inline_latex": "U \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "U is \\set",
+          "types": [
+            "asserts U is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"family of subsets of $U?$\"",
+              "inline_latex": "\\textrm{family of subsets of }U",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

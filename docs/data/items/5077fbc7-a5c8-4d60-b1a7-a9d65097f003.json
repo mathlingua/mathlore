@@ -1,18 +1,224 @@
 {
   "id": "5077fbc7-a5c8-4d60-b1a7-a9d65097f003",
-  "kind": "TextAxiom",
+  "kind": "Axiom",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Axiom}",
-  "body_text": "Axiom schema of separation. For every set $A$ and every formula\n$\\varphi(x)$, with any fixed parameters, there exists a set\n$B=\\{x\\in A: \\varphi(x)\\}$. Thus a property may carve a subset from\na previously given set. The ambient set $A$ is indispensable:\nseparation does not assert the existence of an unrestricted set\n$\\{x:\\varphi(x)\\}$.",
+  "heading_latex": "\\textrm{Axiom Schema of Separation}",
+  "body_text": null,
   "page": null,
-  "source": "TextAxiom: \"Axiom schema of separation. For every set $A$ and every formula\n            $\\varphi(x)$, with any fixed parameters, there exists a set\n            $B=\\{x\\in A: \\varphi(x)\\}$. Thus a property may carve a subset from\n            a previously given set. The ambient set $A$ is indispensable:\n            separation does not assert the existence of an unrestricted set\n            $\\{x:\\varphi(x)\\}$.\"\nId: \"5077fbc7-a5c8-4d60-b1a7-a9d65097f003\"",
+  "source": "Axiom:\ngiven:\n. A is \\set\n. phi(x_) is (_ is \\set) -> (_ is \\\\statement)\nthen:\n. exists: B is \\set\n  suchThat:\n  . forAll: x is \\set\n    then:\n    . have: x \"in\" B\n      iff:\n      . x \"in\"? A\n      . phi(x)\nDocumented:\n. called: \"Axiom Schema of Separation\"\n. description: \"For every property $\\varphi$, the elements of an existing set\n                $A$ satisfying $\\varphi$ form a set.\"\nId: \"5077fbc7-a5c8-4d60-b1a7-a9d65097f003\"",
   "sections": [
     {
-      "label": "TextAxiom",
-      "inline_argument": "\"Axiom schema of separation. For every set $A$ and every formula\n            $\\varphi(x)$, with any fixed parameters, there exists a set\n            $B=\\{x\\in A: \\varphi(x)\\}$. Thus a property may carve a subset from\n            a previously given set. The ambient set $A$ is indispensable:\n            separation does not assert the existence of an unrestricted set\n            $\\{x:\\varphi(x)\\}$.\"",
+      "label": "Axiom",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A is \\set",
+          "latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "A is \\set",
+              "types": [
+                "asserts A is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "phi(x_) is (_ is \\set) -> (_ is \\\\statement)",
+          "latex": "\\phi(x) \\textrm{ is } \\left(\\cdot \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\right) \\to \\left(\\cdot \\textrm{ is } \\textrm{statement}\\right)",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "phi(x_) is (_ is \\set) -> (_ is \\\\statement)",
+              "types": [
+                "asserts phi is (_ is \\set) => (_ is \\\\statement)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "B is \\set",
+              "inline_latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "B is \\set",
+                  "types": [
+                    "asserts B is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "x is \\set",
+                      "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x is \\set",
+                          "types": [
+                            "asserts x is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "have",
+                              "inline_argument": "x \"in\" B",
+                              "inline_latex": "x \\in B",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "x \"in\" B",
+                                  "types": [
+                                    "asserts x \"in\" B"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "B",
+                                  "types": [
+                                    "is \\set"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "iff",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "x \"in\"? A",
+                                  "latex": "x \\in A",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "x \"in\"? A",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "x",
+                                      "types": [
+                                        "is \\set"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "phi(x)",
+                                  "latex": "\\phi(x)",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "phi(x)",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "x",
+                                      "types": [
+                                        "is \\set"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Axiom Schema of Separation\"",
+              "inline_latex": "\\textrm{Axiom Schema of Separation}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

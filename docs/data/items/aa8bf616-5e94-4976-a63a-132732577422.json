@@ -1,18 +1,1165 @@
 {
   "id": "aa8bf616-5e94-4976-a63a-132732577422",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "For subsets of a fixed universe $U$, union and intersection are\nassociative, commutative, and idempotent; each distributes over\nthe other. With complement $A^c=U\\setminus A$, they satisfy De\nMorgan's laws $(A\\cup B)^c=A^c\\cap B^c$ and\n$(A\\cap B)^c=A^c\\cup B^c$. The reference to $U$ is part of the\ndefinition of complement.",
+  "heading_latex": "\\textrm{Boolean Laws for Subsets}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"For subsets of a fixed universe $U$, union and intersection are\n              associative, commutative, and idempotent; each distributes over\n              the other. With complement $A^c=U\\setminus A$, they satisfy De\n              Morgan's laws $(A\\cup B)^c=A^c\\cap B^c$ and\n              $(A\\cap B)^c=A^c\\cup B^c$. The reference to $U$ is part of the\n              definition of complement.\"\nId: \"aa8bf616-5e94-4976-a63a-132732577422\"",
+  "source": "Theorem:\ngiven:\n. U, A, B, C is \\set\nwhere:\n. A \\:subset?:/ U\n. B \\:subset?:/ U\n. C \\:subset?:/ U\nthen:\n. (.(.A \\.set.union./ B.) \\.set.union./ C.) = (.A \\.set.union./ (.B \\.set.union./ C.).)\n. (.(.A \\.set.intersect./ B.) \\.set.intersect./ C.) = (.A \\.set.intersect./ (.B \\.set.intersect./ C.).)\n. (.A \\.set.union./ B.) = (.B \\.set.union./ A.)\n. (.A \\.set.intersect./ B.) = (.B \\.set.intersect./ A.)\n. (.A \\.set.union./ A.) = A\n. (.A \\.set.intersect./ A.) = A\n. (.A \\.set.intersect./ (.B \\.set.union./ C.).) = (.(.A \\.set.intersect./ B.) \\.set.union./ (.A \\.set.intersect./ C.).)\n. (.A \\.set.union./ (.B \\.set.intersect./ C.).) = (.(.A \\.set.union./ B.) \\.set.intersect./ (.A \\.set.union./ C.).)\n. (.U \\.set.difference./ (.A \\.set.union./ B.).) = (.(.U \\.set.difference./ A.) \\.set.intersect./ (.U \\.set.difference./ B.).)\n. (.U \\.set.difference./ (.A \\.set.intersect./ B.).) = (.(.U \\.set.difference./ A.) \\.set.union./ (.U \\.set.difference./ B.).)\nDocumented:\n. called: \"Boolean Laws for Subsets\"\n. description: \"Relative to a fixed universe, union and intersection are\n                associative, commutative, idempotent, mutually distributive, and\n                satisfy De Morgan's laws for relative complements.\"\nId: \"aa8bf616-5e94-4976-a63a-132732577422\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"For subsets of a fixed universe $U$, union and intersection are\n              associative, commutative, and idempotent; each distributes over\n              the other. With complement $A^c=U\\setminus A$, they satisfy De\n              Morgan's laws $(A\\cup B)^c=A^c\\cap B^c$ and\n              $(A\\cap B)^c=A^c\\cup B^c$. The reference to $U$ is part of the\n              definition of complement.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "U, A, B, C is \\set",
+          "latex": "U, A, B, C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "U, A, B, C is \\set",
+              "types": [
+                "asserts U is \\set",
+                "asserts A is \\set",
+                "asserts B is \\set",
+                "asserts C is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A \\:subset?:/ U",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq U}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "A \\:subset?:/ U",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "U",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "B \\:subset?:/ U",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{B \\subseteq U}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "B \\:subset?:/ U",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "U",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "C \\:subset?:/ U",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{C \\subseteq U}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "C \\:subset?:/ U",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "U",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "(.(.A \\.set.union./ B.) \\.set.union./ C.) = (.A \\.set.union./ (.B \\.set.union./ C.).)",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup B} \\cup C} = \\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup \\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{B \\cup C}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.(.A \\.set.union./ B.) \\.set.union./ C.) = (.A \\.set.union./ (.B \\.set.union./ C.).)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.union./B\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.union./B\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A\\.set.union./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "A\\.set.union./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.union./B\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.union./B\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "B\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "B\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "(.(.A \\.set.intersect./ B.) \\.set.intersect./ C.) = (.A \\.set.intersect./ (.B \\.set.intersect./ C.).)",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap B} \\cap C} = \\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap \\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{B \\cap C}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.(.A \\.set.intersect./ B.) \\.set.intersect./ C.) = (.A \\.set.intersect./ (.B \\.set.intersect./ C.).)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.intersect./B\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.intersect./B\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A\\.set.intersect./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "A\\.set.intersect./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.intersect./B\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.intersect./B\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "B\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "B\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "(.A \\.set.union./ B.) = (.B \\.set.union./ A.)",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup B} = \\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{B \\cup A}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.A \\.set.union./ B.) = (.B \\.set.union./ A.)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.union./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.union./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "B\\.set.union./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "B\\.set.union./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "(.A \\.set.intersect./ B.) = (.B \\.set.intersect./ A.)",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap B} = \\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{B \\cap A}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.A \\.set.intersect./ B.) = (.B \\.set.intersect./ A.)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.intersect./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.intersect./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "B\\.set.intersect./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "B\\.set.intersect./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "(.A \\.set.union./ A.) = A",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup A} = A",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.A \\.set.union./ A.) = A",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.union./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.union./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "(.A \\.set.intersect./ A.) = A",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap A} = A",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.A \\.set.intersect./ A.) = A",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.intersect./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.intersect./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "(.A \\.set.intersect./ (.B \\.set.union./ C.).) = (.(.A \\.set.intersect./ B.) \\.set.union./ (.A \\.set.intersect./ C.).)",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap \\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{B \\cup C}} = \\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{\\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap B} \\cup \\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap C}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.A \\.set.intersect./ (.B \\.set.union./ C.).) = (.(.A \\.set.intersect./ B.) \\.set.union./ (.A \\.set.intersect./ C.).)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.intersect./B\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.intersect./B\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "B\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "B\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.intersect./B\\.set.union./A\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.intersect./B\\.set.union./A\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A\\.set.intersect./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "A\\.set.intersect./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "A\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "(.A \\.set.union./ (.B \\.set.intersect./ C.).) = (.(.A \\.set.union./ B.) \\.set.intersect./ (.A \\.set.union./ C.).)",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup \\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{B \\cap C}} = \\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{\\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup B} \\cap \\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup C}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.A \\.set.union./ (.B \\.set.intersect./ C.).) = (.(.A \\.set.union./ B.) \\.set.intersect./ (.A \\.set.union./ C.).)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.union./B\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.union./B\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "B\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "B\\.set.intersect./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "A\\.set.union./B\\.set.intersect./A\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "A\\.set.union./B\\.set.intersect./A\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A\\.set.union./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "A\\.set.union./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "A\\.set.union./C",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "C",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "(.U \\.set.difference./ (.A \\.set.union./ B.).) = (.(.U \\.set.difference./ A.) \\.set.intersect./ (.U \\.set.difference./ B.).)",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e646966666572656e63652e2f}{U \\setminus \\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{A \\cup B}} = \\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{\\htmlData{mlg-ref=5c2e7365742e646966666572656e63652e2f}{U \\setminus A} \\cap \\htmlData{mlg-ref=5c2e7365742e646966666572656e63652e2f}{U \\setminus B}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.U \\.set.difference./ (.A \\.set.union./ B.).) = (.(.U \\.set.difference./ A.) \\.set.intersect./ (.U \\.set.difference./ B.).)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "U\\.set.difference./A\\.set.union./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "U\\.set.difference./A\\.set.union./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "U",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A\\.set.union./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "A\\.set.union./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "U\\.set.difference./A\\.set.intersect./U\\.set.difference./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "U\\.set.difference./A\\.set.intersect./U\\.set.difference./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "U\\.set.difference./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "U\\.set.difference./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "U",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "U\\.set.difference./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "U\\.set.difference./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "U",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "(.U \\.set.difference./ (.A \\.set.intersect./ B.).) = (.(.U \\.set.difference./ A.) \\.set.union./ (.U \\.set.difference./ B.).)",
+          "latex": "\\htmlData{mlg-ref=5c2e7365742e646966666572656e63652e2f}{U \\setminus \\htmlData{mlg-ref=5c2e7365742e696e746572736563742e2f}{A \\cap B}} = \\htmlData{mlg-ref=5c2e7365742e756e696f6e2e2f}{\\htmlData{mlg-ref=5c2e7365742e646966666572656e63652e2f}{U \\setminus A} \\cup \\htmlData{mlg-ref=5c2e7365742e646966666572656e63652e2f}{U \\setminus B}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "(.U \\.set.difference./ (.A \\.set.intersect./ B.).) = (.(.U \\.set.difference./ A.) \\.set.union./ (.U \\.set.difference./ B.).)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "U\\.set.difference./A\\.set.intersect./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "U\\.set.difference./A\\.set.intersect./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "U",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "A\\.set.intersect./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "A\\.set.intersect./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "U\\.set.difference./A\\.set.union./U\\.set.difference./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "U\\.set.difference./A\\.set.union./U\\.set.difference./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "U\\.set.difference./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "U\\.set.difference./A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "U",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "A",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "U\\.set.difference./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "U\\.set.difference./B",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "U",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 5,
+              "text": "B",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Boolean Laws for Subsets\"",
+              "inline_latex": "\\textrm{Boolean Laws for Subsets}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

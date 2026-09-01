@@ -1,18 +1,202 @@
 {
   "id": "3940cf8b-62b7-41cf-984a-62429aeb835e",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Principle of mathematical induction. Let $P(n)$ be a predicate on\n$\\mathbb{N}$. If $P(0)$ holds and, for every $n\\in\\mathbb{N}$,\n$P(n)$ implies $P(n+1)$, then $P(n)$ holds for every natural\nnumber $n$. The proof applies the Peano induction axiom to the set\n$A=\\{n\\in\\mathbb{N}:P(n)\\}$.",
+  "heading_latex": "\\textrm{Principle of Mathematical Induction}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"Principle of mathematical induction. Let $P(n)$ be a predicate on\n              $\\mathbb{N}$. If $P(0)$ holds and, for every $n\\in\\mathbb{N}$,\n              $P(n)$ implies $P(n+1)$, then $P(n)$ holds for every natural\n              number $n$. The proof applies the Peano induction axiom to the set\n              $A=\\{n\\in\\mathbb{N}:P(n)\\}$.\"\nId: \"3940cf8b-62b7-41cf-984a-62429aeb835e\"",
+  "source": "Theorem:\ngiven: P(n_) is (_ is \\natural) -> (_ is \\\\statement)\nwhere:\n. P(\\natural.zero)\n. forAll: n is \\natural\n  where: P(n)\n  then: P(\\natural.successor:of{n})\nthen:\n. forAll: n is \\natural\n  then: P(n)\nDocumented:\n. called: \"Principle of Mathematical Induction\"\nId: \"3940cf8b-62b7-41cf-984a-62429aeb835e\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"Principle of mathematical induction. Let $P(n)$ be a predicate on\n              $\\mathbb{N}$. If $P(0)$ holds and, for every $n\\in\\mathbb{N}$,\n              $P(n)$ implies $P(n+1)$, then $P(n)$ holds for every natural\n              number $n$. The proof applies the Peano induction axiom to the set\n              $A=\\{n\\in\\mathbb{N}:P(n)\\}$.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "P(n_) is (_ is \\natural) -> (_ is \\\\statement)",
+      "inline_latex": "P(n) \\textrm{ is } \\left(\\htmlData{mlg-ref=5c6e61747572616c}{\\cdot \\in \\mathbb{N}}\\right) \\to \\left(\\cdot \\textrm{ is } \\textrm{statement}\\right)",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "P(n_) is (_ is \\natural) -> (_ is \\\\statement)",
+          "types": [
+            "asserts P is (_ is \\natural) => (_ is \\\\statement)"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "P(\\natural.zero)",
+          "latex": "P(\\htmlData{mlg-ref=5c6e61747572616c2e7a65726f}{0})",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "P(\\natural.zero)",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "\\natural.zero",
+              "types": [
+                "is \\natural"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n is \\natural",
+              "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{n \\in \\mathbb{N}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n is \\natural",
+                  "types": [
+                    "asserts n is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "P(n)",
+              "inline_latex": "P(n)",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "P(n)",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "n",
+                  "types": [
+                    "is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "P(\\natural.successor:of{n})",
+              "inline_latex": "P(\\htmlData{mlg-ref=5c6e61747572616c2e737563636573736f723a6f66}{S(n)})",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "P(\\natural.successor:of{n})",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\natural.successor:of{n}",
+                  "types": [
+                    "is \\natural"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "n",
+                  "types": [
+                    "is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "n is \\natural",
+              "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{n \\in \\mathbb{N}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "n is \\natural",
+                  "types": [
+                    "asserts n is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "P(n)",
+              "inline_latex": "P(n)",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "P(n)",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "n",
+                  "types": [
+                    "is \\natural"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Principle of Mathematical Induction\"",
+              "inline_latex": "\\textrm{Principle of Mathematical Induction}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

@@ -1,18 +1,129 @@
 {
   "id": "5ba55513-d2b3-458e-afd9-2fbd7507d47f",
-  "kind": "TextDefinition",
-  "definition_keys": [],
-  "heading": null,
-  "heading_latex": "\\textrm{Definition}",
-  "body_text": "Two sets $A$ and $B$ have the same cardinality if there exists\na bijection $A\\to B$. We write $|A|\\leq|B|$ when there exists\nan injection $A\\to B$. A set is finite if it is bijective with\n$\\{0,\\ldots,n-1\\}$ for some natural number $n$; it is countably\ninfinite if it is bijective with $\\mathbb{N}$, and countable if\nit is finite or countably infinite.",
+  "kind": "States",
+  "definition_keys": [
+    "5c2e657175696e756d65726f75732e776974682e2f"
+  ],
+  "heading": "A \\.equinumerous.with./ B",
+  "heading_latex": "A\\textrm{ and }B\\textrm{ have the same cardinality}\\quad\\htmlClass{mlg-title-written}{|A| = |B|}",
+  "body_text": null,
   "page": null,
-  "source": "TextDefinition: \"Two sets $A$ and $B$ have the same cardinality if there exists\n                 a bijection $A\\to B$. We write $|A|\\leq|B|$ when there exists\n                 an injection $A\\to B$. A set is finite if it is bijective with\n                 $\\{0,\\ldots,n-1\\}$ for some natural number $n$; it is countably\n                 infinite if it is bijective with $\\mathbb{N}$, and countable if\n                 it is finite or countably infinite.\"\nId: \"5ba55513-d2b3-458e-afd9-2fbd7507d47f\"",
+  "source": "[A \\.equinumerous.with./ B]\nStates:\nwhen: A, B is \\set\nthat:\n. exists: f(x__) is \\function:on{A}:to{B}\n  suchThat: f is? \\(bijective)::function:?on{A}:?to{B}\nDocumented:\n. called: \"$A?$ and $B?$ have the same cardinality\"\n. written: \"|A?| = |B?|\"\n. description: \"Two sets have the same cardinality when a bijection exists\n                between them.\"\nId: \"5ba55513-d2b3-458e-afd9-2fbd7507d47f\"",
   "sections": [
     {
-      "label": "TextDefinition",
-      "inline_argument": "\"Two sets $A$ and $B$ have the same cardinality if there exists\n                 a bijection $A\\to B$. We write $|A|\\leq|B|$ when there exists\n                 an injection $A\\to B$. A set is finite if it is bijective with\n                 $\\{0,\\ldots,n-1\\}$ for some natural number $n$; it is countably\n                 infinite if it is bijective with $\\mathbb{N}$, and countable if\n                 it is finite or countably infinite.\"",
+      "label": "States",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A, B is \\set",
+          "types": [
+            "asserts A is \\set",
+            "asserts B is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "f(x__) is \\function:on{A}:to{B}",
+              "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f(x) \\: : \\: A \\rightarrow B}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "f(x__) is \\function:on{A}:to{B}",
+                  "types": [
+                    "asserts f is \\function:on{A}:to{B}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": "f is? \\(bijective)::function:?on{A}:?to{B}",
+              "inline_latex": "f \\textrm{ is } \\htmlData{mlg-ref=5c62696a6563746976653a3a66756e6374696f6e3a6f6e3a746f}{\\textrm{bijective}}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }A\\textrm{ to }B}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "f is? \\(bijective)::function:?on{A}:?to{B}",
+                  "types": [
+                    "asserts f is \\bijective::function:on{A}:to{B}"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "f",
+                  "types": [
+                    "is \\function:on{A}:to{B}"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$A?$ and $B?$ have the same cardinality\"",
+              "inline_latex": "A\\textrm{ and }B\\textrm{ have the same cardinality}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"|A?| = |B?|\"",
+              "inline_latex": "|A| = |B|",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

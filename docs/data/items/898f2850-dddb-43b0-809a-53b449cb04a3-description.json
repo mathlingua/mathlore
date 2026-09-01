@@ -1,0 +1,14 @@
+{
+  "id": "898f2850-dddb-43b0-809a-53b449cb04a3-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The set of natural numbers strictly smaller than $n$."
+  },
+  "source": "",
+  "sections": []
+}

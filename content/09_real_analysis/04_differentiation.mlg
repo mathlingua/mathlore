@@ -56,6 +56,19 @@ Documented:
 Id: "bddc1b83-707b-40f9-9b7f-c03513735f35"
 
 
+[\(differentiable)::real.function:at{x0}]
+Refines: f
+using: U \:subset:/ \reals
+when: x0 "in" U
+specifies: f is \function:on{U}:to{\reals}
+satisfies:
+. exists: d is \real
+  suchThat: d = \derivative:of{f}:at{x0}
+Documented:
+. adjective: "differentiable at $x0?$"
+Id: "d70418c0-8878-4799-b853-34eb30004a18"
+
+
 SectionTitle: "The Mean Value Theorem"
 Id: "20b85fa7-bbfb-4518-b953-1ee73f9b3eb3"
 

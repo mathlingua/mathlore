@@ -1,0 +1,27 @@
+{
+  "id": "777bb96c-835f-449d-9abf-7a482f766597",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "By induction, a group homomorphism also sends every integral power $x^n$\nto the corresponding power of the image. These preservation laws follow\nfrom multiplicativity and therefore need not be independent clauses in\nthe definition of a homomorphism."
+  },
+  "source": "Text: \"By induction, a group homomorphism also sends every integral power $x^n$\n       to the corresponding power of the image. These preservation laws follow\n       from multiplicativity and therefore need not be independent clauses in\n       the definition of a homomorphism.\"\nId: \"777bb96c-835f-449d-9abf-7a482f766597\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"By induction, a group homomorphism also sends every integral power $x^n$\n       to the corresponding power of the image. These preservation laws follow\n       from multiplicativity and therefore need not be independent clauses in\n       the definition of a homomorphism.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"777bb96c-835f-449d-9abf-7a482f766597\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

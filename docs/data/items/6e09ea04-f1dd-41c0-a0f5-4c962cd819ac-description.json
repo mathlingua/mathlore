@@ -1,0 +1,14 @@
+{
+  "id": "6e09ea04-f1dd-41c0-a0f5-4c962cd819ac-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The image of a set under a formula that assigns each input a\nunique output is again a set."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "57868fa6-364f-4ecb-9c1a-9b45b53fff96-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A subsequence is obtained by composing the original sequence\nwith a strictly increasing map of natural-number indices."
+  },
+  "source": "",
+  "sections": []
+}

@@ -14,20 +14,40 @@ SectionTitle: "Inductive Proofs"
 Id: "29a987cf-22cb-4dc0-ad8c-4281456e5f57"
 
 
-TextTheorem: "Principle of mathematical induction. Let $P(n)$ be a predicate on
-              $\mathbb{N}$. If $P(0)$ holds and, for every $n\in\mathbb{N}$,
-              $P(n)$ implies $P(n+1)$, then $P(n)$ holds for every natural
-              number $n$. The proof applies the Peano induction axiom to the set
-              $A=\{n\in\mathbb{N}:P(n)\}$."
+Theorem:
+given: P(n_) is (_ is \natural) -> (_ is \\statement)
+where:
+. P(\natural.zero)
+. forAll: n is \natural
+  where: P(n)
+  then: P(\natural.successor:of{n})
+then:
+. forAll: n is \natural
+  then: P(n)
+Documented:
+. called: "Principle of Mathematical Induction"
 Id: "3940cf8b-62b7-41cf-984a-62429aeb835e"
 
 
-TextTheorem: "Strong induction. Let $P(n)$ be a predicate on $\mathbb{N}$. If,
-              for every $n$, the assumption that $P(k)$ holds for all $k<n$
-              implies $P(n)$, then $P(n)$ holds for all $n$. Strong induction
-              and ordinary induction are equivalent: ordinary induction can be
-              applied to the cumulative statement that $P(k)$ holds for every
-              $k\leq n$."
+Theorem:
+given: P(n_) is (_ is \natural) -> (_ is \\statement)
+where:
+. forAll: n is \natural
+  then:
+  . if:
+    . forAll: k is \natural
+      where:
+      . k \:natural.leq?:/ n
+      . k != n
+      then: P(k)
+    then: P(n)
+then:
+. forAll: n is \natural
+  then: P(n)
+Documented:
+. called: "Principle of Strong Induction"
+. description: "If $P(n)$ follows from the validity of $P(k)$ at every preceding
+                natural number $k<n$, then $P$ holds for every natural number."
 Id: "844c54eb-187b-4369-8fd2-84d5d7da2b4b"
 
 
@@ -39,12 +59,18 @@ Text: "The induction hypothesis is available only at the stage for which it has
 Id: "a73f0f65-b93a-4380-8623-255523e3a354"
 
 
-TextTheorem: "Well-ordering principle for the natural numbers. Every nonempty
-              subset of $\mathbb{N}$ has a least element. This principle is
-              equivalent to induction. For if an inductive claim failed, the set
-              of counterexamples would have a least element; the base case and
-              induction step exclude both possibilities for that least
-              counterexample."
+Theorem:
+given: A \:(nonempty)::subset:/ \naturals
+then:
+. exists: m is \natural
+  suchThat:
+  . m "in"? A
+  . forAll: n is \natural
+    where: n "in"? A
+    then: m \:natural.leq?:/ n
+Documented:
+. called: "Well-Ordering Principle for the Natural Numbers"
+. description: "Every nonempty subset of $\mathbb{N}$ has a least element."
 Id: "dd21ebd6-0821-429e-af26-123c01ca0432"
 
 
@@ -61,11 +87,15 @@ TextTheorem: "Recursion theorem on $\mathbb{N}$. Let $X$ be a set, choose
 Id: "15ab06d1-8e34-450b-8e17-e985c387bd96"
 
 
-TextDefinition: "A sequence in a set $X$ is a function $a:\mathbb{N}\to X$. The
-                 index $n$ records position, not value: equal terms may occur at
-                 different indices. A finite sequence of length $m$ is instead a
-                 function on $\{0,\ldots,m-1\}$, so its length is part of its
-                 data."
+[\sequence:in{X}]
+Declares: a(n__) is \function:on{\naturals}:to{X}
+when: X is \set
+Documented:
+. called: "sequence in $X?$"
+. written: "(a?_{n})_{n\in\mathbb{N}}"
+. description: "A sequence in $X$ is a function from $\mathbb{N}$ to $X$; its
+                indices record positions, so equal values may occur at different
+                indices."
 Id: "d9daf505-ce5f-45be-baae-06c06602fa79"
 
 

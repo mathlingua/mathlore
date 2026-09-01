@@ -1,0 +1,14 @@
+{
+  "id": "24b48a0a-ec3e-49f2-acd4-80b979fcd209-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Every group element is both left and right cancellable."
+  },
+  "source": "",
+  "sections": []
+}

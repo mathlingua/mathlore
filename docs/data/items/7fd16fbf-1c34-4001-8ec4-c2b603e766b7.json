@@ -1,0 +1,27 @@
+{
+  "id": "7fd16fbf-1c34-4001-8ec4-c2b603e766b7",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "If $z\\ne0$, it also has polar representations $z=re^{i\\theta}$ with\n$r=|z|>0$. The modulus is unique, whereas the argument is determined only\nmodulo $2\\pi$; a single-valued argument therefore requires a branch\nconvention."
+  },
+  "source": "Text: \"If $z\\ne0$, it also has polar representations $z=re^{i\\theta}$ with\n       $r=|z|>0$. The modulus is unique, whereas the argument is determined only\n       modulo $2\\pi$; a single-valued argument therefore requires a branch\n       convention.\"\nId: \"7fd16fbf-1c34-4001-8ec4-c2b603e766b7\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"If $z\\ne0$, it also has polar representations $z=re^{i\\theta}$ with\n       $r=|z|>0$. The modulus is unique, whereas the argument is determined only\n       modulo $2\\pi$; a single-valued argument therefore requires a branch\n       convention.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"7fd16fbf-1c34-4001-8ec4-c2b603e766b7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

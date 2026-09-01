@@ -1,0 +1,14 @@
+{
+  "id": "97d1309a-6739-4ff9-a354-f0c6859df60f-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Two elements are equivalent precisely when they belong to the\nsame block of the partition."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "5dd9f7fc-9815-4816-bc2a-737babe16bf9-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "For $b>0$, there are unique integers $q$ and $r$ such that\n$a=bq+r$ and $0\\leq r<b$."
+  },
+  "source": "",
+  "sections": []
+}

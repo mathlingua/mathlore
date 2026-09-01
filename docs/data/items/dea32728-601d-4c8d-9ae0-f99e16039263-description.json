@@ -1,0 +1,14 @@
+{
+  "id": "dea32728-601d-4c8d-9ae0-f99e16039263-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A monoid is finite when its underlying carrier set is finite."
+  },
+  "source": "",
+  "sections": []
+}

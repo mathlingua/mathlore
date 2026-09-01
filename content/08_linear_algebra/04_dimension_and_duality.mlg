@@ -14,20 +14,34 @@ SectionTitle: "Bases and Dimension"
 Id: "ac3e313d-5cfb-4d82-ab0a-d2249dc10e7d"
 
 
-TextDefinition: "A basis of a vector space $V$ over a field $F$ is a linearly
-                 independent subset $B\subseteq V$ that spans $V$. Equivalently,
-                 every vector of $V$ has a unique expression as a finite linear
-                 combination of elements of $B$. The finiteness condition
-                 applies to each combination even when the basis itself is
-                 infinite."
+Text: "The command $\basis:for{V}$ defined on the preceding page records a
+       linearly independent spanning set. Equivalently, each vector has a unique
+       expression as a finite linear combination of basis elements; the
+       finiteness condition applies to each combination even when the basis is
+       infinite."
 Id: "a7868925-5a9a-4635-9b82-e9953ac0dd20"
 
 
-TextTheorem: "Basis extension theorem. Every linearly independent subset of a
-              vector space is contained in a basis, and every spanning subset
-              contains a basis. In full generality this theorem uses a form of
-              the axiom of choice. For finitely generated spaces, the usual
-              exchange argument suffices."
+Theorem:
+given:
+. F is \field
+. V is \vector.space:over{F}
+. S \:(linearly.independent)::subset:/ V
+. T \:subset:/ V
+where: \span:of{T}:in{V} = V
+then:
+. exists: B is \set
+  suchThat:
+  . B is? \basis:for{V}
+  . S \:subset?:/ B
+. exists: C is \set
+  suchThat:
+  . C is? \basis:for{V}
+  . C \:subset?:/ T
+Documented:
+. called: "Basis Extension Theorem"
+. description: "Every linearly independent subset extends to a basis, and every
+                spanning subset contains a basis."
 Id: "c1009158-a56f-4c29-8006-7e3a6bcc662d"
 
 
@@ -39,12 +53,10 @@ TextTheorem: "Invariance of dimension. Any two bases of a vector space have the
 Id: "79b4b540-b701-47fc-a9b7-aa0f1e1f3a46"
 
 
-TextTheorem: "Rank--nullity theorem. If $T:V\to W$ is linear and $V$ is
-              finite-dimensional, then
-              $\dim V=\dim\ker T+\dim\operatorname{im}T$. The theorem measures
-              the domain as the sum of information destroyed by $T$ and
-              information retained in its image. Consequently $T$ is injective
-              exactly when its nullity is zero."
+Text: "The structured rank--nullity theorem on the preceding page states that
+       the dimension of the domain is the sum of the dimensions of the kernel
+       and image. It measures the information destroyed by a linear map against
+       the information retained."
 Id: "d262c022-54b1-4327-b52c-8ebc6d323f34"
 
 

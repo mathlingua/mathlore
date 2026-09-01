@@ -151,6 +151,15 @@ Documented:
 Id: "034bf6ff-ba6e-4fac-b47e-65cc85d15642"
 
 
+[\(finite)::monoid]
+Refines: M ::= (X, *, e)
+satisfies: X is? \(finite)::set
+Documented:
+. adjective: "finite"
+. description: "A monoid is finite when its underlying carrier set is finite."
+Id: "dea32728-601d-4c8d-9ae0-f99e16039263"
+
+
 [\monoid.element:of{M}]
 Declares: x
 when: M is \monoid
@@ -164,12 +173,34 @@ SectionTitle: "Cancellation and Powers"
 Id: "7800d4d9-71b2-4f3e-8672-f62600eb234d"
 
 
-TextDefinition: "An element $a$ of a magma has left cancellation if $ax=ay$
-                 implies $x=y$, and right cancellation if $xa=ya$ implies $x=y$.
-                 A cancellation law is not a consequence of associativity or the
-                 existence of an identity. Every group has both laws because one
-                 may multiply by $a^{-1}$, but a general monoid need not."
+[\left.cancellable{a}:in{M ::= (X, *)}]
+States:
+when:
+. M is \magma
+. a "in" M
+that:
+. forAll: x, y "in" M
+  then:
+  . if: a * x = a * y
+    then: x = y
+Documented:
+. called: "$a?$ is left cancellable in $M?$"
 Id: "3ef04eda-e9d8-4859-8379-094b08b6b51a"
+
+
+[\right.cancellable{a}:in{M ::= (X, *)}]
+States:
+when:
+. M is \magma
+. a "in" M
+that:
+. forAll: x, y "in" M
+  then:
+  . if: x * a = y * a
+    then: x = y
+Documented:
+. called: "$a?$ is right cancellable in $M?$"
+Id: "a2faa25a-1cbb-412a-9d97-67ba33c6a4e0"
 
 
 TextTheorem: "In a monoid, powers of an element are defined recursively by

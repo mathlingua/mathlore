@@ -1,0 +1,27 @@
+{
+  "id": "794fcc8a-b1fc-439d-b083-050c1420448f",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Equivalently, the center is the kernel of the conjugation action\n$G\\to\\operatorname{Aut}(G)$. The quotient $G/Z(G)$ therefore measures the\npart of the group visible through inner automorphisms."
+  },
+  "source": "Text: \"Equivalently, the center is the kernel of the conjugation action\n       $G\\to\\operatorname{Aut}(G)$. The quotient $G/Z(G)$ therefore measures the\n       part of the group visible through inner automorphisms.\"\nId: \"794fcc8a-b1fc-439d-b083-050c1420448f\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Equivalently, the center is the kernel of the conjugation action\n       $G\\to\\operatorname{Aut}(G)$. The quotient $G/Z(G)$ therefore measures the\n       part of the group visible through inner automorphisms.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"794fcc8a-b1fc-439d-b083-050c1420448f\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

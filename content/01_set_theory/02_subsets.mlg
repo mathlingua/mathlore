@@ -85,17 +85,39 @@ SectionTitle: "The Inclusion Order"
 Id: "2c6cb7fb-49cd-41a9-8ce3-c143e7cc045c"
 
 
-TextTheorem: "For every set $U$, the subset relation makes $\mathcal{P}(U)$ a
-              partially ordered set. It is reflexive, antisymmetric by
-              extensionality, and transitive. The empty set is the least element
-              and $U$ is the greatest element."
+[\inclusion.order:on{U}]
+Defines: R is \partial.order:on{\power.set:of{U}}
+when: U is \set
+expresses:
+. forAll: A, B "in" \power.set:of{U}
+  then:
+  . have: R(A, B)
+    iff: A \:subset?:/ B
+. exists: E "in" \power.set:of{U}
+  suchThat:
+  . E = \empty.set
+  . forAll: A "in" \power.set:of{U}
+    then: R(E, A)
+. exists: T "in" \power.set:of{U}
+  suchThat:
+  . T = U
+  . forAll: A "in" \power.set:of{U}
+    then: R(A, T)
+Documented:
+. called: "inclusion order on the power set of $U?$"
+. description: "Subset inclusion is a partial order on $\mathcal{P}(U)$, with
+                the empty set as its least element and $U$ as its greatest
+                element."
 Id: "ff6d7e2f-1927-4d30-b771-34ea8726711c"
 
 
-TextDefinition: "A family of subsets of $U$ is itself a subset
-                 $\mathcal{A}\subseteq\mathcal{P}(U)$. This distinction keeps
-                 two membership levels separate: $x\in A$ concerns an element of
-                 one subset, whereas $A\in\mathcal{A}$ concerns one set in the
-                 family. Many indexing errors are failures to distinguish these
-                 levels."
+[\family.of.subsets:of{U}]
+Declares: A \:subset:/ \power.set:of{U}
+when: U is \set
+Documented:
+. called: "family of subsets of $U?$"
+. description: "A family of subsets of $U$ is a subset
+                $\mathcal{A}\subseteq\mathcal{P}(U)$. Thus $x\in A$ concerns an
+                element of one subset, while $A\in\mathcal{A}$ concerns one set
+                in the family."
 Id: "df5630a9-0ac4-4920-995a-7002bdccbf15"

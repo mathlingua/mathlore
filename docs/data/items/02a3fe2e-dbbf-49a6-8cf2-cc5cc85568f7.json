@@ -1,0 +1,127 @@
+{
+  "id": "02a3fe2e-dbbf-49a6-8cf2-cc5cc85568f7",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c73746162696c697a65723a6f663a756e6465723a6f663a6f6e"
+  ],
+  "heading": "\\stabilizer:of{x}:under{alpha}:of{G}:on{X}",
+  "heading_latex": "\\textrm{stabilizer of }x\\textrm{ under }\\alpha\\quad\\htmlClass{mlg-title-written}{G_{x}}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\stabilizer:of{x}:under{alpha}:of{G}:on{X}]\nDefines: S := \\set@{g_ : g_ \"in\" G | alpha(g_, x) = x}\nwhen:\n. G is \\group\n. X is \\set\n. alpha is \\group.action:of{G}:on{X}\n. x \"in\" X\nDocumented:\n. called: \"stabilizer of $x?$ under $alpha?$\"\n. written: \"G?_{x?}\"\nId: \"02a3fe2e-dbbf-49a6-8cf2-cc5cc85568f7\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "S := \\set@{g_ : g_ \"in\" G | alpha(g_, x) = x}",
+      "inline_latex": "S := \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\,\\left\\{ g \\: : \\: g \\in G \\: | \\: \\alpha(g, x) = x \\right\\}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "G is \\group",
+          "latex": "G \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "G is \\group",
+              "types": [
+                "asserts G is \\group"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X is \\set",
+              "types": [
+                "asserts X is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "alpha is \\group.action:of{G}:on{X}",
+          "latex": "\\alpha \\textrm{ is } \\htmlData{mlg-ref=5c67726f75702e616374696f6e3a6f663a6f6e}{\\textrm{group action of }G\\textrm{ on }X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "alpha is \\group.action:of{G}:on{X}",
+              "types": [
+                "asserts alpha is \\group.action:of{G}:on{X}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "x \"in\" X",
+          "latex": "x \\in X",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "x \"in\" X",
+              "types": [
+                "asserts x \"in\" X"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"stabilizer of $x?$ under $alpha?$\"",
+              "inline_latex": "\\textrm{stabilizer of }x\\textrm{ under }alpha",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"G?_{x?}\"",
+              "inline_latex": "G_{x}",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"02a3fe2e-dbbf-49a6-8cf2-cc5cc85568f7\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

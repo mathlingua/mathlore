@@ -1,0 +1,206 @@
+{
+  "id": "ce0a9702-4034-4063-a435-5eafa76158cf",
+  "kind": "Defines",
+  "definition_keys": [
+    "5c73796d6d65747269632e636c6f737572653a6f663a6f6e"
+  ],
+  "heading": "\\symmetric.closure:of{R}:on{X}",
+  "heading_latex": "\\textrm{symmetric closure of }R\\textrm{ on }X",
+  "body_text": null,
+  "page": null,
+  "source": "[\\symmetric.closure:of{R}:on{X}]\nDefines: S is \\(symmetric)::relation:?on{X}\nwhen:\n. X is \\set\n. R is \\relation:on{X}\nexpresses:\n. R \\:subset?:/ S\n. forAll: T is \\(symmetric)::relation:?on{X}\n  where: R \\:subset?:/ T\n  then: S \\:subset?:/ T\nDocumented:\n. called: \"symmetric closure of $R?$ on $X?$\"\n. description: \"The least symmetric relation on $X$ containing $R$.\"\nId: \"ce0a9702-4034-4063-a435-5eafa76158cf\"",
+  "sections": [
+    {
+      "label": "Defines",
+      "inline_argument": "S is \\(symmetric)::relation:?on{X}",
+      "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c73796d6d65747269633a3a72656c6174696f6e3a6f6e}{\\textrm{symmetric}}\\textrm{ }\\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X is \\set",
+              "types": [
+                "asserts X is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "R is \\relation:on{X}",
+          "latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R is \\relation:on{X}",
+              "types": [
+                "asserts R is \\relation:on{X}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "expresses",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "R \\:subset?:/ S",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{R \\subseteq S}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R \\:subset?:/ S",
+              "types": [
+                "is \\\\statement"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "R",
+              "types": [
+                "is \\relation:on{X}"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "S",
+              "types": [
+                "is \\symmetric::relation:on{X}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "T is \\(symmetric)::relation:?on{X}",
+              "inline_latex": "T \\textrm{ is } \\htmlData{mlg-ref=5c73796d6d65747269633a3a72656c6174696f6e3a6f6e}{\\textrm{symmetric}}\\textrm{ }\\htmlData{mlg-ref=5c72656c6174696f6e3a6f6e}{\\textrm{relation on }X}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "T is \\(symmetric)::relation:?on{X}",
+                  "types": [
+                    "asserts T is \\symmetric::relation:on{X}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "where",
+              "inline_argument": "R \\:subset?:/ T",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{R \\subseteq T}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "R \\:subset?:/ T",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "R",
+                  "types": [
+                    "is \\relation:on{X}"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "T",
+                  "types": [
+                    "is \\symmetric::relation:on{X}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": "S \\:subset?:/ T",
+              "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq T}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "S \\:subset?:/ T",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "S",
+                  "types": [
+                    "is \\symmetric::relation:on{X}"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "T",
+                  "types": [
+                    "is \\symmetric::relation:on{X}"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"symmetric closure of $R?$ on $X?$\"",
+              "inline_latex": "\\textrm{symmetric closure of }R\\textrm{ on }X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"ce0a9702-4034-4063-a435-5eafa76158cf\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

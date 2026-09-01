@@ -385,12 +385,11 @@ SectionTitle: "Field of Fractions and Density"
 Id: "4c03c412-c158-493b-835f-5ffdaa1769a3"
 
 
-TextDefinition: "A rational number is an equivalence class of pairs $(a,b)$ with
-                 $a\in\mathbb{Z}$ and nonzero $b\in\mathbb{Z}$, where
-                 $(a,b)\sim(c,d)$ exactly when $ad=bc$. The notation $a/b$ names
-                 the class, not a privileged representation; multiplying
-                 numerator and denominator by the same nonzero integer leaves
-                 the rational number unchanged."
+Text: "The structured realization above constructs a rational number as an
+       equivalence class of integer pairs with nonzero denominator. The notation
+       $a/b$ names the class rather than a privileged representative, and the
+       induced field operations are required to be independent of the chosen
+       numerator and denominator."
 Id: "694343ad-950a-425c-9b62-705e6bb66956"
 
 
@@ -403,12 +402,25 @@ TextTheorem: "The inclusion $\mathbb{Z}\hookrightarrow\mathbb{Q}$ identifies $a$
 Id: "90b5985b-53fa-4b79-b315-eaae93791621"
 
 
-TextTheorem: "The rational order is dense: whenever $p<q$ in $\mathbb{Q}$, the
-              midpoint $(p+q)/2$ is rational and satisfies $p<(p+q)/2<q$. The
-              rationals are also dense in the reals, but they are not complete;
-              for example, the rational numbers whose square is less than $2$
-              have no least upper bound in $\mathbb{Q}$."
+Theorem:
+given: p, q is \rational
+where: p \:rational.less?:/ q
+then:
+. exists: r is \rational
+  suchThat:
+  . p \:rational.less?:/ r
+  . r \:rational.less?:/ q
+Documented:
+. called: "Density of the Rational Order"
+. description: "Between any two distinct rational numbers lies another rational
+                number."
 Id: "ca6475d3-548d-402f-822b-87241cb23f3e"
+
+
+Text: "The rationals are also dense in the reals, but they are not complete. For
+       example, the rational numbers whose square is less than $2$ have no least
+       upper bound in $\mathbb{Q}$."
+Id: "f9d776ab-08da-44ec-a49e-93c8c2257dad"
 
 
 TextTheorem: "Every rational number has a finite or eventually periodic decimal

@@ -1,0 +1,14 @@
+{
+  "id": "31691bb2-e8e1-4218-be4f-759add2b7ab7-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Kuratowski ordered pairs are equal exactly when their\ncorresponding coordinates are equal."
+  },
+  "source": "",
+  "sections": []
+}

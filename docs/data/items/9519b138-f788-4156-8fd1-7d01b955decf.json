@@ -1,18 +1,199 @@
 {
   "id": "9519b138-f788-4156-8fd1-7d01b955decf",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "If $V$ and $W$ have the same finite dimension, then for a linear\nmap $T:V\\to W$ the following are equivalent: $T$ is injective, $T$\nis surjective, and $T$ is an isomorphism. Equality of dimensions\nis essential; without it, injectivity and surjectivity are\nindependent.",
+  "heading_latex": "\\textrm{Injective--Surjective Equivalence in Equal Dimension}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"If $V$ and $W$ have the same finite dimension, then for a linear\n              map $T:V\\to W$ the following are equivalent: $T$ is injective, $T$\n              is surjective, and $T$ is an isomorphism. Equality of dimensions\n              is essential; without it, injectivity and surjectivity are\n              independent.\"\nId: \"9519b138-f788-4156-8fd1-7d01b955decf\"",
+  "source": "Theorem:\ngiven:\n. F is \\field\n. V is \\vector.space:over{F}\n. W is \\vector.space:over{F}\n. T(v__) is \\linear.map:from{V}:to{W}\nwhere: \\dimension:of{V} = \\dimension:of{W}\nthen: T is? \\(injective)::function:?on{V}:?to{W}\niff: T is? \\(surjective)::function:?on{V}:?to{W}\nDocumented:\n. called: \"Injective--Surjective Equivalence in Equal Dimension\"\n. description: \"For a linear map between finite-dimensional spaces of equal\n                dimension, injectivity and surjectivity are equivalent.\"\nId: \"9519b138-f788-4156-8fd1-7d01b955decf\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"If $V$ and $W$ have the same finite dimension, then for a linear\n              map $T:V\\to W$ the following are equivalent: $T$ is injective, $T$\n              is surjective, and $T$ is an isomorphism. Equality of dimensions\n              is essential; without it, injectivity and surjectivity are\n              independent.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "F is \\field",
+          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "F is \\field",
+              "types": [
+                "asserts F is \\field"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "V is \\vector.space:over{F}",
+          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "V is \\vector.space:over{F}",
+              "types": [
+                "asserts V is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "W is \\vector.space:over{F}",
+          "latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "W is \\vector.space:over{F}",
+              "types": [
+                "asserts W is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "T(v__) is \\linear.map:from{V}:to{W}",
+          "latex": "T(v) \\textrm{ is } \\htmlData{mlg-ref=5c6c696e6561722e6d61703a66726f6d3a746f}{\\textrm{linear map from }V\\textrm{ to }W}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "T(v__) is \\linear.map:from{V}:to{W}",
+              "types": [
+                "asserts T is \\linear.map:from{V}:to{W}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": "\\dimension:of{V} = \\dimension:of{W}",
+      "inline_latex": "\\htmlData{mlg-ref=5c64696d656e73696f6e3a6f66}{\\dim(V)} = \\htmlData{mlg-ref=5c64696d656e73696f6e3a6f66}{\\dim(W)}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "\\dimension:of{V} = \\dimension:of{W}",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\dimension:of{V}",
+          "types": [
+            "is \\natural"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "V",
+          "types": [
+            "is \\vector.space:over{F}"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\dimension:of{W}",
+          "types": [
+            "is \\natural"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "W",
+          "types": [
+            "is \\vector.space:over{F}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": "T is? \\(injective)::function:?on{V}:?to{W}",
+      "inline_latex": "T \\textrm{ is } \\htmlData{mlg-ref=5c696e6a6563746976653a3a66756e6374696f6e3a6f6e3a746f}{\\textrm{injective}}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }V\\textrm{ to }W}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "T is? \\(injective)::function:?on{V}:?to{W}",
+          "types": [
+            "asserts T is \\injective::function:on{V}:to{W}"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "T",
+          "types": [
+            "is \\linear.map:from{V}:to{W}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "iff",
+      "inline_argument": "T is? \\(surjective)::function:?on{V}:?to{W}",
+      "inline_latex": "T \\textrm{ is } \\htmlData{mlg-ref=5c7375726a6563746976653a3a66756e6374696f6e3a6f6e3a746f}{\\textrm{surjective}}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }V\\textrm{ to }W}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "T is? \\(surjective)::function:?on{V}:?to{W}",
+          "types": [
+            "asserts T is \\surjective::function:on{V}:to{W}"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "T",
+          "types": [
+            "is \\linear.map:from{V}:to{W}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Injective--Surjective Equivalence in Equal Dimension\"",
+              "inline_latex": "\\textrm{Injective--Surjective Equivalence in Equal Dimension}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

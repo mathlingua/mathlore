@@ -1,18 +1,344 @@
 {
   "id": "c1009158-a56f-4c29-8006-7e3a6bcc662d",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Basis extension theorem. Every linearly independent subset of a\nvector space is contained in a basis, and every spanning subset\ncontains a basis. In full generality this theorem uses a form of\nthe axiom of choice. For finitely generated spaces, the usual\nexchange argument suffices.",
+  "heading_latex": "\\textrm{Basis Extension Theorem}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"Basis extension theorem. Every linearly independent subset of a\n              vector space is contained in a basis, and every spanning subset\n              contains a basis. In full generality this theorem uses a form of\n              the axiom of choice. For finitely generated spaces, the usual\n              exchange argument suffices.\"\nId: \"c1009158-a56f-4c29-8006-7e3a6bcc662d\"",
+  "source": "Theorem:\ngiven:\n. F is \\field\n. V is \\vector.space:over{F}\n. S \\:(linearly.independent)::subset:/ V\n. T \\:subset:/ V\nwhere: \\span:of{T}:in{V} = V\nthen:\n. exists: B is \\set\n  suchThat:\n  . B is? \\basis:for{V}\n  . S \\:subset?:/ B\n. exists: C is \\set\n  suchThat:\n  . C is? \\basis:for{V}\n  . C \\:subset?:/ T\nDocumented:\n. called: \"Basis Extension Theorem\"\n. description: \"Every linearly independent subset extends to a basis, and every\n                spanning subset contains a basis.\"\nId: \"c1009158-a56f-4c29-8006-7e3a6bcc662d\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"Basis extension theorem. Every linearly independent subset of a\n              vector space is contained in a basis, and every spanning subset\n              contains a basis. In full generality this theorem uses a form of\n              the axiom of choice. For finitely generated spaces, the usual\n              exchange argument suffices.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "F is \\field",
+          "latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c6669656c64}{\\textrm{field}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "F is \\field",
+              "types": [
+                "asserts F is \\field"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "V is \\vector.space:over{F}",
+          "latex": "V \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "V is \\vector.space:over{F}",
+              "types": [
+                "asserts V is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "S \\:(linearly.independent)::subset:/ V",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq V}\\textrm{ }\\left(\\htmlData{mlg-ref=5c3a6c696e6561726c792e696e646570656e64656e743a3a7375627365743a2f}{\\textrm{linearly independent}}\\right)",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "S \\:(linearly.independent)::subset:/ V",
+              "types": [
+                "asserts S \\:linearly.independent::subset:/ V"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "V",
+              "types": [
+                "is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "T \\:subset:/ V",
+          "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{T \\subseteq V}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "T \\:subset:/ V",
+              "types": [
+                "asserts T \\:subset:/ V"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "V",
+              "types": [
+                "is \\vector.space:over{F}"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": "\\span:of{T}:in{V} = V",
+      "inline_latex": "\\htmlData{mlg-ref=5c7370616e3a6f663a696e}{\\operatorname{span}(T)} = V",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "\\span:of{T}:in{V} = V",
+          "types": [
+            "is \\\\statement"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\span:of{T}:in{V}",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "T",
+          "types": [
+            "\\:subset:/ V"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "V",
+          "types": [
+            "is \\vector.space:over{F}"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "V",
+          "types": [
+            "is \\vector.space:over{F}"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "B is \\set",
+              "inline_latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "B is \\set",
+                  "types": [
+                    "asserts B is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "B is? \\basis:for{V}",
+                  "latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c62617369733a666f72}{\\textrm{basis for }V}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "B is? \\basis:for{V}",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "B",
+                      "types": [
+                        "is \\set"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "V",
+                      "types": [
+                        "is \\vector.space:over{F}"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "S \\:subset?:/ B",
+                  "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{S \\subseteq B}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "S \\:subset?:/ B",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "S",
+                      "types": [
+                        "\\:linearly.independent::subset:/ V"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "B",
+                      "types": [
+                        "is \\set"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "C is \\set",
+              "inline_latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "C is \\set",
+                  "types": [
+                    "asserts C is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "C is? \\basis:for{V}",
+                  "latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c62617369733a666f72}{\\textrm{basis for }V}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "C is? \\basis:for{V}",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "C",
+                      "types": [
+                        "is \\set"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "V",
+                      "types": [
+                        "is \\vector.space:over{F}"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "C \\:subset?:/ T",
+                  "latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{C \\subseteq T}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "C \\:subset?:/ T",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "C",
+                      "types": [
+                        "is \\set"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "T",
+                      "types": [
+                        "\\:subset:/ V"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Basis Extension Theorem\"",
+              "inline_latex": "\\textrm{Basis Extension Theorem}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

@@ -1,0 +1,27 @@
+{
+  "id": "5fd1260e-1250-4b35-a679-218b2f4c0459",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Equivalently, the reflexive--transitive closure relates $x$ to $y$ when\nthere is a finite $R$-path from $x$ to $y$; allowing a path of length\nzero supplies reflexivity."
+  },
+  "source": "Text: \"Equivalently, the reflexive--transitive closure relates $x$ to $y$ when\n       there is a finite $R$-path from $x$ to $y$; allowing a path of length\n       zero supplies reflexivity.\"\nId: \"5fd1260e-1250-4b35-a679-218b2f4c0459\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Equivalently, the reflexive--transitive closure relates $x$ to $y$ when\n       there is a finite $R$-path from $x$ to $y$; allowing a path of length\n       zero supplies reflexivity.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5fd1260e-1250-4b35-a679-218b2f4c0459\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

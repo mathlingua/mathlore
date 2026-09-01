@@ -80,6 +80,16 @@ Documented:
 Id: "8ced2d1f-741d-4996-84f8-b2c2afd293e8"
 
 
+[\natural.successor:of{n}]
+Defines: m := \naturals..S(n) is \natural
+when: n is \natural
+Documented:
+. called: "successor of $n?$"
+. written: "S(n?)"
+. description: "The successor of the natural number $n$."
+Id: "9e6169e7-03a2-4b46-8e49-9d7da97d0092"
+
+
 Text: "Addition of natural numbers is defined recursively: adding zero leaves a
        number unchanged, and adding a successor steps forward by successor."
 Id: "f4dd2fa3-9c90-4e21-ac5e-ef4f4052e599"
@@ -146,3 +156,13 @@ Documented:
 . description: "The canonical order on natural numbers: $n \leq m$ if and only
                 if there exists $k \in \mathbb{N}$ such that $n + k = m$."
 Id: "8c997826-bcef-4032-816b-c6dd2aa635e7"
+
+
+[\natural.initial.segment:before{n}]
+Defines: I := \set@{k_ : k_ "in" \naturals | (.k_ \:natural.leq?:/ n.) \.and./ (.k_ != n.)}
+when: n is \natural
+Documented:
+. called: "natural initial segment before $n?$"
+. written: "\{0,\ldots,n?-1\}"
+. description: "The set of natural numbers strictly smaller than $n$."
+Id: "898f2850-dddb-43b0-809a-53b449cb04a3"

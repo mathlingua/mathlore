@@ -1,0 +1,14 @@
+{
+  "id": "4c2d728b-0359-432c-afc5-371028a71eba-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A partition is a family of nonempty subsets in which every\nelement of $X$ lies in exactly one block."
+  },
+  "source": "",
+  "sections": []
+}

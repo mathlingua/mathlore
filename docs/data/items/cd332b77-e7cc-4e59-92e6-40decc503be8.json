@@ -1,18 +1,304 @@
 {
   "id": "cd332b77-e7cc-4e59-92e6-40decc503be8",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Cartesian product is associative only up to canonical bijection,\nnot literal equality under the ordered-pair encoding. The maps\n$((a,b),c)\\mapsto(a,(b,c))$ and its inverse identify\n$(A\\times B)\\times C$ with $A\\times(B\\times C)$. This distinction\nbetween equality and canonical isomorphism recurs throughout\nalgebra.",
+  "heading_latex": "\\textrm{Canonical Associativity Bijection for Cartesian Products}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"Cartesian product is associative only up to canonical bijection,\n              not literal equality under the ordered-pair encoding. The maps\n              $((a,b),c)\\mapsto(a,(b,c))$ and its inverse identify\n              $(A\\times B)\\times C$ with $A\\times(B\\times C)$. This distinction\n              between equality and canonical isomorphism recurs throughout\n              algebra.\"\nId: \"cd332b77-e7cc-4e59-92e6-40decc503be8\"",
+  "source": "Theorem:\ngiven: A, B, C is \\set\nthen:\n. exists: phi(x__) is \\function:on{(.(.A \\.set.cross./ B.) \\.set.cross./ C.)}:to{(.A \\.set.cross./ (.B \\.set.cross./ C.).)}\n  suchThat:\n  . phi is? \\(bijective)::function:?on{(.(.A \\.set.cross./ B.) \\.set.cross./ C.)}:?to{(.A \\.set.cross./ (.B \\.set.cross./ C.).)}\n  . forAll: a \"in\" A\n    then:\n    . forAll: b \"in\" B\n      then:\n      . forAll: c \"in\" C\n        then: phi(((a, b), c)) = (a, (b, c))\nDocumented:\n. called: \"Canonical Associativity Bijection for Cartesian Products\"\n. description: \"The map $((a,b),c)\\mapsto(a,(b,c))$ is a canonical bijection\n                from $(A\\times B)\\times C$ to $A\\times(B\\times C)$. The two\n                products are therefore naturally identifiable but are not\n                literally equal under the ordered-pair encoding.\"\nId: \"cd332b77-e7cc-4e59-92e6-40decc503be8\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"Cartesian product is associative only up to canonical bijection,\n              not literal equality under the ordered-pair encoding. The maps\n              $((a,b),c)\\mapsto(a,(b,c))$ and its inverse identify\n              $(A\\times B)\\times C$ with $A\\times(B\\times C)$. This distinction\n              between equality and canonical isomorphism recurs throughout\n              algebra.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "A, B, C is \\set",
+      "inline_latex": "A, B, C \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "A, B, C is \\set",
+          "types": [
+            "asserts A is \\set",
+            "asserts B is \\set",
+            "asserts C is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "phi(x__) is \\function:on{(.(.A \\.set.cross./ B.) \\.set.cross./ C.)}:to{(.A \\.set.cross./ (.B \\.set.cross./ C.).)}",
+              "inline_latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\phi(x) \\: : \\: \\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{A \\times B} \\times C} \\rightarrow \\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{A \\times \\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{B \\times C}}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "phi(x__) is \\function:on{(.(.A \\.set.cross./ B.) \\.set.cross./ C.)}:to{(.A \\.set.cross./ (.B \\.set.cross./ C.).)}",
+                  "types": [
+                    "asserts phi is \\function:on{A\\.set.cross./B\\.set.cross./C}:to{A\\.set.cross./B\\.set.cross./C}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "phi is? \\(bijective)::function:?on{(.(.A \\.set.cross./ B.) \\.set.cross./ C.)}:?to{(.A \\.set.cross./ (.B \\.set.cross./ C.).)}",
+                  "latex": "\\phi \\textrm{ is } \\htmlData{mlg-ref=5c62696a6563746976653a3a66756e6374696f6e3a6f6e3a746f}{\\textrm{bijective}}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{A \\times B} \\times C}\\textrm{ to }\\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{A \\times \\htmlData{mlg-ref=5c2e7365742e63726f73732e2f}{B \\times C}}}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "phi is? \\(bijective)::function:?on{(.(.A \\.set.cross./ B.) \\.set.cross./ C.)}:?to{(.A \\.set.cross./ (.B \\.set.cross./ C.).)}",
+                      "types": [
+                        "asserts phi is \\bijective::function:on{A\\.set.cross./B\\.set.cross./C}:to{A\\.set.cross./B\\.set.cross./C}"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "phi",
+                      "types": [
+                        "is \\function:on{A\\.set.cross./B\\.set.cross./C}:to{A\\.set.cross./B\\.set.cross./C}"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "a \"in\" A",
+                      "inline_latex": "a \\in A",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "a \"in\" A",
+                          "types": [
+                            "asserts a \"in\" A"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "A",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "forAll",
+                              "inline_argument": "b \"in\" B",
+                              "inline_latex": "b \\in B",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "b \"in\" B",
+                                  "types": [
+                                    "asserts b \"in\" B"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "B",
+                                  "types": [
+                                    "is \\set"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "then",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "group",
+                                  "heading": null,
+                                  "sections": [
+                                    {
+                                      "label": "forAll",
+                                      "inline_argument": "c \"in\" C",
+                                      "inline_latex": "c \\in C",
+                                      "inline_type_info": [
+                                        {
+                                          "depth": 0,
+                                          "text": "c \"in\" C",
+                                          "types": [
+                                            "asserts c \"in\" C"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 1,
+                                          "text": "C",
+                                          "types": [
+                                            "is \\set"
+                                          ]
+                                        }
+                                      ],
+                                      "arguments": []
+                                    },
+                                    {
+                                      "label": "then",
+                                      "inline_argument": "phi(((a, b), c)) = (a, (b, c))",
+                                      "inline_latex": "\\phi(\\left(\\left(a, b\\right), c\\right)) = \\left(a, \\left(b, c\\right)\\right)",
+                                      "inline_type_info": [
+                                        {
+                                          "depth": 0,
+                                          "text": "phi(((a, b), c)) = (a, (b, c))",
+                                          "types": [
+                                            "is \\\\statement"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 1,
+                                          "text": "phi(((a,b),c))",
+                                          "types": [
+                                            "\"in\" A\\.set.cross./B\\.set.cross./C"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 2,
+                                          "text": "((a,b),c)",
+                                          "types": []
+                                        },
+                                        {
+                                          "depth": 3,
+                                          "text": "(a,b)",
+                                          "types": []
+                                        },
+                                        {
+                                          "depth": 4,
+                                          "text": "a",
+                                          "types": [
+                                            "\"in\" A"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 4,
+                                          "text": "b",
+                                          "types": [
+                                            "\"in\" B"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 3,
+                                          "text": "c",
+                                          "types": [
+                                            "\"in\" C"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 1,
+                                          "text": "(a,(b,c))",
+                                          "types": []
+                                        },
+                                        {
+                                          "depth": 2,
+                                          "text": "a",
+                                          "types": [
+                                            "\"in\" A"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 2,
+                                          "text": "(b,c)",
+                                          "types": []
+                                        },
+                                        {
+                                          "depth": 3,
+                                          "text": "b",
+                                          "types": [
+                                            "\"in\" B"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 3,
+                                          "text": "c",
+                                          "types": [
+                                            "\"in\" C"
+                                          ]
+                                        }
+                                      ],
+                                      "arguments": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Canonical Associativity Bijection for Cartesian Products\"",
+              "inline_latex": "\\textrm{Canonical Associativity Bijection for Cartesian Products}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

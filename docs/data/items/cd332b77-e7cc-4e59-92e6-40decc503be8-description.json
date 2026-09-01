@@ -1,0 +1,14 @@
+{
+  "id": "cd332b77-e7cc-4e59-92e6-40decc503be8-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The map $((a,b),c)\\mapsto(a,(b,c))$ is a canonical bijection\nfrom $(A\\times B)\\times C$ to $A\\times(B\\times C)$. The two\nproducts are therefore naturally identifiable but are not\nliterally equal under the ordered-pair encoding."
+  },
+  "source": "",
+  "sections": []
+}

@@ -1,0 +1,208 @@
+{
+  "id": "3c3478fa-e156-4364-9c53-3577a60d7dd9",
+  "kind": "States",
+  "definition_keys": [
+    "5c69732e6d696e696d616c3a696e3a756e646572"
+  ],
+  "heading": "\\is.minimal{m}:in{X}:under{R}",
+  "heading_latex": "m\\textrm{ is minimal in }X\\textrm{ under }R",
+  "body_text": null,
+  "page": null,
+  "source": "[\\is.minimal{m}:in{X}:under{R}]\nStates:\nwhen:\n. X is \\set\n. R is \\partial.order:on{X}\n. m \"in\" X\nthat:\n. not:\n  . exists: x \"in\" X\n    suchThat:\n    . m != x\n    . R(x, m)\nDocumented:\n. called: \"$m?$ is minimal in $X?$ under $R?$\"\nId: \"3c3478fa-e156-4364-9c53-3577a60d7dd9\"",
+  "sections": [
+    {
+      "label": "States",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "X is \\set",
+          "latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "X is \\set",
+              "types": [
+                "asserts X is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "R is \\partial.order:on{X}",
+          "latex": "R \\textrm{ is } \\htmlData{mlg-ref=5c7061727469616c2e6f726465723a6f6e}{\\textrm{partial order on }X}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "R is \\partial.order:on{X}",
+              "types": [
+                "asserts R is \\partial.order:on{X}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "m \"in\" X",
+          "latex": "m \\in X",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "m \"in\" X",
+              "types": [
+                "asserts m \"in\" X"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "that",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "not",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "x \"in\" X",
+                      "inline_latex": "x \\in X",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "x \"in\" X",
+                          "types": [
+                            "asserts x \"in\" X"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "X",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "m != x",
+                          "latex": "m \\ne x",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "m != x",
+                              "types": []
+                            },
+                            {
+                              "depth": 1,
+                              "text": "m",
+                              "types": [
+                                "\"in\" X"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "x",
+                              "types": [
+                                "\"in\" X"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "R(x, m)",
+                          "latex": "x \\: R \\: m",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "R(x, m)",
+                              "types": []
+                            },
+                            {
+                              "depth": 1,
+                              "text": "x",
+                              "types": [
+                                "\"in\" X"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "m",
+                              "types": [
+                                "\"in\" X"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"$m?$ is minimal in $X?$ under $R?$\"",
+              "inline_latex": "m\\textrm{ is minimal in }X\\textrm{ under }R",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3c3478fa-e156-4364-9c53-3577a60d7dd9\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -1,18 +1,149 @@
 {
   "id": "1f6fac61-9b16-4828-942f-293b25792dcf",
-  "kind": "TextTheorem",
+  "kind": "Theorem",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Bolzano--Weierstrass theorem. Every bounded sequence of real\nnumbers has a convergent subsequence. This is a compactness\nconsequence of completeness and is weaker than convergence of the\noriginal sequence.",
+  "heading_latex": "\\textrm{Bolzano--Weierstrass Theorem}",
+  "body_text": null,
   "page": null,
-  "source": "TextTheorem: \"Bolzano--Weierstrass theorem. Every bounded sequence of real\n              numbers has a convergent subsequence. This is a compactness\n              consequence of completeness and is weaker than convergence of the\n              original sequence.\"\nId: \"1f6fac61-9b16-4828-942f-293b25792dcf\"",
+  "source": "Theorem:\ngiven: S ::= a(n_) is \\(bounded)::real.sequence\nthen:\n. exists: T ::= b(k_) is \\subsequence:of{S}\n  suchThat:\n  . exists: L is \\real\n    suchThat: \\converges.to{L}:for{T}\nDocumented:\n. called: \"Bolzano--Weierstrass Theorem\"\n. description: \"Every bounded real sequence has a convergent subsequence.\"\nId: \"1f6fac61-9b16-4828-942f-293b25792dcf\"",
   "sections": [
     {
-      "label": "TextTheorem",
-      "inline_argument": "\"Bolzano--Weierstrass theorem. Every bounded sequence of real\n              numbers has a convergent subsequence. This is a compactness\n              consequence of completeness and is weaker than convergence of the\n              original sequence.\"",
+      "label": "Theorem",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": "S ::= a(n_) is \\(bounded)::real.sequence",
+      "inline_latex": "S ::= a(n) \\textrm{ is } \\htmlData{mlg-ref=5c626f756e6465643a3a7265616c2e73657175656e6365}{\\textrm{bounded}}\\textrm{ }\\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "S ::= a(n_) is \\(bounded)::real.sequence",
+          "types": [
+            "asserts S is \\bounded::real.sequence"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "T ::= b(k_) is \\subsequence:of{S}",
+              "inline_latex": "T ::= b(k) \\textrm{ is } \\htmlData{mlg-ref=5c73756273657175656e63653a6f66}{\\textrm{subsequence of }S}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "T ::= b(k_) is \\subsequence:of{S}",
+                  "types": [
+                    "asserts T is \\subsequence:of{S}"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "exists",
+                      "inline_argument": "L is \\real",
+                      "inline_latex": "L \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "L is \\real",
+                          "types": [
+                            "asserts L is \\real"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "\\converges.to{L}:for{T}",
+                      "inline_latex": "\\htmlData{mlg-ref=5c636f6e7665726765732e746f3a666f72}{a_{n} \\to L}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "\\converges.to{L}:for{T}",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "L",
+                          "types": [
+                            "is \\real"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "T",
+                          "types": [
+                            "is \\subsequence:of{S}"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Bolzano--Weierstrass Theorem\"",
+              "inline_latex": "\\textrm{Bolzano--Weierstrass Theorem}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",

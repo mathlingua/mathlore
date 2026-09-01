@@ -1,0 +1,239 @@
+{
+  "id": "be91bf4c-366f-430f-bff8-6f9c7225736d",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c696e74656772616c2e646f6d61696e"
+  ],
+  "heading": "\\integral.domain",
+  "heading_latex": "\\textrm{integral domain}",
+  "body_text": null,
+  "page": null,
+  "source": "[\\integral.domain]\nDeclares: D ::= (X, +, *, 0, 1) is \\(commutative)::ring via (X, +, *, 0, 1)\nsatisfies:\n. 0 != 1\n. forAll: a, b \"in\" D\n  then:\n  . if: a * b = 0\n    then:\n    . anyOf:\n      . a = 0\n      . b = 0\nDocumented:\n. called: \"integral domain\"\n. description: \"A nontrivial commutative ring without zero divisors.\"\nId: \"be91bf4c-366f-430f-bff8-6f9c7225736d\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "D ::= (X, +, *, 0, 1) is \\(commutative)::ring via (X, +, *, 0, 1)",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "0 != 1",
+          "latex": "0 \\ne 1",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "0 != 1",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "0",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "1",
+              "types": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "a, b \"in\" D",
+              "inline_latex": "a, b \\in D",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "a, b \"in\" D",
+                  "types": [
+                    "asserts a \"in\" D",
+                    "asserts b \"in\" D"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "D",
+                  "types": [
+                    "is \\integral.domain"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "if",
+                      "inline_argument": "a * b = 0",
+                      "inline_latex": "a \\ast b = 0",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "a * b = 0",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "a * b",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "a",
+                          "types": [
+                            "\"in\" D"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "b",
+                          "types": [
+                            "\"in\" D"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "0",
+                          "types": []
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "anyOf",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "formulation",
+                                  "text": "a = 0",
+                                  "latex": "a = 0",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "a = 0",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "a",
+                                      "types": [
+                                        "\"in\" D"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "0",
+                                      "types": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "b = 0",
+                                  "latex": "b = 0",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "b = 0",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "b",
+                                      "types": [
+                                        "\"in\" D"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "0",
+                                      "types": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"integral domain\"",
+              "inline_latex": "\\textrm{integral domain}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"be91bf4c-366f-430f-bff8-6f9c7225736d\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

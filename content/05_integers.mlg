@@ -322,12 +322,11 @@ SectionTitle: "Universal Property and Arithmetic"
 Id: "ff363d3f-e5fd-4ddf-86e4-8d4182a49b2c"
 
 
-TextDefinition: "The integer represented by a pair $(a,b)$ of natural numbers is
-                 the formal difference $a-b$. The equivalence relation
-                 $(a,b)\sim(c,d)$ is defined by $a+d=b+c$, avoiding subtraction
-                 in $\mathbb{N}$. Addition and multiplication on equivalence
-                 classes are legitimate only after proving that their values do
-                 not depend on the chosen representatives."
+Text: "The integer represented by a pair $(a,b)$ of natural numbers is the
+       formal difference $a-b$. The structured realization above defines the
+       equivalence relation, quotient carrier, and induced operations. Its
+       well-definedness obligations ensure that changing representatives does
+       not change a sum or product."
 Id: "b495575c-dc6b-4665-bc56-e1c8c315eb8e"
 
 
@@ -340,17 +339,76 @@ TextTheorem: "The additive monoid $\mathbb{N}$ embeds into the additive group
 Id: "507603fd-5d69-4a75-8c86-692c2bc5ae35"
 
 
-TextTheorem: "Euclidean division. For every integer $a$ and every positive
-              integer $b$, there exist unique integers $q$ and $r$ such that
-              $a=bq+r$ and $0\leq r<b$. The uniqueness depends on the specified
-              range for the remainder; without it, infinitely many pairs $(q,r)$
-              represent the same equation."
+[a \:integer.less:/ b]
+Declares: a is \integer
+when: b is \integer
+satisfies:
+. a \:integer.leq:/ b
+. a != b
+Documented:
+. called: "$a?$ is less than $b?$"
+. written: "a? < b?"
+Id: "ad8694fc-bab4-469f-a127-2a6856e58faa"
+
+
+Theorem:
+given: a, b is \integer
+where: \integer.zero \:integer.less?:/ b
+then:
+. existsUnique: q is \integer
+  suchThat:
+  . existsUnique: r is \integer
+    suchThat:
+    . a = (b \.integer.*./ q) \.integer.+./ r
+    . \integer.zero \:integer.leq?:/ r
+    . r \:integer.less?:/ b
+Documented:
+. called: "Euclidean Division"
+. description: "For $b>0$, there are unique integers $q$ and $r$ such that
+                $a=bq+r$ and $0\leq r<b$."
 Id: "5dd9f7fc-9815-4816-bc2a-737babe16bf9"
 
 
-TextDefinition: "For integers $a$ and $b$, not both zero, their greatest common
-                 divisor is the unique positive integer $d$ generating the ideal
-                 of all integer linear combinations $ax+by$. Bezout's identity
-                 therefore asserts the existence of $x,y\in\mathbb{Z}$ with
-                 $d=ax+by$."
+[a \.integer.divides./ b]
+States:
+when: a, b is \integer
+that:
+. exists: k is \integer
+  suchThat: b = a \.integer.*./ k
+Documented:
+. called: "$a?$ divides $b?$"
+. written: "a? \mid b?"
+Id: "95d6d9fd-e095-4ebf-a659-6ab4ecc44fd0"
+
+
+[\greatest.common.divisor:of{a, b}]
+Defines: d is \integer
+when: a, b is \integer
+expresses:
+. if:
+  . anyOf:
+    . a != \integer.zero
+    . b != \integer.zero
+  then:
+  . \integer.zero \:integer.less?:/ d
+  . d \.integer.divides./ a
+  . d \.integer.divides./ b
+  . forAll: c is \integer
+    where:
+    . c \.integer.divides./ a
+    . c \.integer.divides./ b
+    then: c \.integer.divides./ d
+. if:
+  . a = \integer.zero
+  . b = \integer.zero
+  then: d = \integer.zero
+. exists: x, y is \integer
+  suchThat: d = (a \.integer.*./ x) \.integer.+./ (b \.integer.*./ y)
+Documented:
+. called: "greatest common divisor of $a?$ and $b?$"
+. written: "\gcd(a?, b?)"
+. description: "For a pair not both zero, the greatest common divisor is the
+                unique positive common divisor divisible by every common
+                divisor. Bezout's identity is included in the characterization;
+                the definition is totalized by the convention $\gcd(0,0)=0$."
 Id: "3f6acf7f-8ea8-4080-a9bc-23cddc72bdd5"

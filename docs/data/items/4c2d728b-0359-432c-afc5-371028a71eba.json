@@ -1,0 +1,233 @@
+{
+  "id": "4c2d728b-0359-432c-afc5-371028a71eba",
+  "kind": "Declares",
+  "definition_keys": [
+    "5c706172746974696f6e3a6f66"
+  ],
+  "heading": "\\partition:of{X}",
+  "heading_latex": "\\textrm{partition of }X",
+  "body_text": null,
+  "page": null,
+  "source": "[\\partition:of{X}]\nDeclares: P \\:subset:/ \\power.set:of{X}\nwhen: X is \\set\nsatisfies:\n. \\empty.set \\.not.in./ P\n. forAll: x \"in\" X\n  then:\n  . existsUnique: A is \\set\n    suchThat:\n    . A \"in\"? P\n    . x \"in\"? A\nDocumented:\n. called: \"partition of $X?$\"\n. description: \"A partition is a family of nonempty subsets in which every\n                element of $X$ lies in exactly one block.\"\nId: \"4c2d728b-0359-432c-afc5-371028a71eba\"",
+  "sections": [
+    {
+      "label": "Declares",
+      "inline_argument": "P \\:subset:/ \\power.set:of{X}",
+      "inline_latex": "\\htmlData{mlg-ref=5c3a7375627365743a2f}{P \\subseteq \\htmlData{mlg-ref=5c706f7765722e7365743a6f66}{\\mathcal{P}(X)}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "P \\:subset:/ \\power.set:of{X}",
+          "types": [
+            "asserts P \\:subset:/ \\power.set:of{X}"
+          ]
+        },
+        {
+          "depth": 1,
+          "text": "\\power.set:of{X}",
+          "types": [
+            "is \\set"
+          ]
+        },
+        {
+          "depth": 2,
+          "text": "X",
+          "types": [
+            "is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "X is \\set",
+      "inline_latex": "X \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "X is \\set",
+          "types": [
+            "asserts X is \\set"
+          ]
+        }
+      ],
+      "arguments": []
+    },
+    {
+      "label": "satisfies",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "\\empty.set \\.not.in./ P",
+          "latex": "\\htmlData{mlg-ref=5c2e6e6f742e696e2e2f}{\\htmlData{mlg-ref=5c656d7074792e736574}{\\emptyset} \\notin P}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "\\empty.set \\.not.in./ P",
+              "types": []
+            },
+            {
+              "depth": 1,
+              "text": "\\empty.set",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 1,
+              "text": "P",
+              "types": [
+                "is \\partition:of{X}"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" X",
+              "inline_latex": "x \\in X",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" X",
+                  "types": [
+                    "asserts x \"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "X",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "existsUnique",
+                      "inline_argument": "A is \\set",
+                      "inline_latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "A is \\set",
+                          "types": [
+                            "asserts A is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "A \"in\"? P",
+                          "latex": "A \\in P",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "A \"in\"? P",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "A",
+                              "types": [
+                                "is \\set"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "x \"in\"? A",
+                          "latex": "x \\in A",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "x \"in\"? A",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "x",
+                              "types": [
+                                "\"in\" X"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"partition of $X?$\"",
+              "inline_latex": "\\textrm{partition of }X",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4c2d728b-0359-432c-afc5-371028a71eba\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

@@ -67,12 +67,42 @@ TextDefinition: "For a predicate $P(x)$ on a domain $D$, the existential
 Id: "60a3796d-d17b-4e3f-b2a1-1878e1468e61"
 
 
-TextTheorem: "Quantifier negation obeys the dualities
-              $\neg\forall x\in D\,P(x)\iff\exists x\in D\,\neg P(x)$ and
-              $\neg\exists x\in D\,P(x)\iff\forall x\in D\,\neg P(x)$. Thus the
-              negation of a universal claim asks for a counterexample, while the
-              negation of an existential claim excludes every possible witness."
+Theorem:
+given:
+. D is \set
+. P(x_) is (_ is \\anything) -> (_ is \\statement)
+then:
+. not:
+  . forAll: x "in" D
+    then: P(x)
+iff:
+. exists: x "in" D
+  suchThat:
+  . not: P(x)
+Documented:
+. called: "Negation of a Universal Quantifier"
+. description: "A universal assertion fails exactly when there is a
+                counterexample in its domain."
 Id: "bf4df541-b2ff-4fff-9f32-e0565e88a24a"
+
+
+Theorem:
+given:
+. D is \set
+. P(x_) is (_ is \\anything) -> (_ is \\statement)
+then:
+. not:
+  . exists: x "in" D
+    suchThat: P(x)
+iff:
+. forAll: x "in" D
+  then:
+  . not: P(x)
+Documented:
+. called: "Negation of an Existential Quantifier"
+. description: "An existential assertion fails exactly when every element of its
+                domain fails the predicate."
+Id: "4396c679-4735-45fb-ba6a-704ee55fc63b"
 
 
 Text: "Quantifier order records dependence. The statement

@@ -1,0 +1,14 @@
+{
+  "id": "aa8bf616-5e94-4976-a63a-132732577422-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Relative to a fixed universe, union and intersection are\nassociative, commutative, idempotent, mutually distributive, and\nsatisfy De Morgan's laws for relative complements."
+  },
+  "source": "",
+  "sections": []
+}

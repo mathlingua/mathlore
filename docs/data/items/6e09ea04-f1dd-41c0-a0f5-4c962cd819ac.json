@@ -1,18 +1,333 @@
 {
   "id": "6e09ea04-f1dd-41c0-a0f5-4c962cd819ac",
-  "kind": "TextAxiom",
+  "kind": "Axiom",
   "definition_keys": [],
   "heading": null,
-  "heading_latex": "\\textrm{Axiom}",
-  "body_text": "Axiom schema of replacement. Suppose a formula $\\varphi(x,y)$ is\nfunctional on a set $A$: for each $x\\in A$ there is exactly one $y$\nsuch that $\\varphi(x,y)$. Then the range\n$\\{y:\\exists x\\in A\\,\\varphi(x,y)\\}$ is a set. Replacement permits a\nset-sized family of objects to be collected even when no common\nambient set for those objects was known in advance.",
+  "heading_latex": "\\textrm{Axiom Schema of Replacement}",
+  "body_text": null,
   "page": null,
-  "source": "TextAxiom: \"Axiom schema of replacement. Suppose a formula $\\varphi(x,y)$ is\n            functional on a set $A$: for each $x\\in A$ there is exactly one $y$\n            such that $\\varphi(x,y)$. Then the range\n            $\\{y:\\exists x\\in A\\,\\varphi(x,y)\\}$ is a set. Replacement permits a\n            set-sized family of objects to be collected even when no common\n            ambient set for those objects was known in advance.\"\nId: \"6e09ea04-f1dd-41c0-a0f5-4c962cd819ac\"",
+  "source": "Axiom:\ngiven:\n. A is \\set\n. phi(x_, y_) is (_ is \\set, _ is \\set) -> (_ is \\\\statement)\nwhere:\n. forAll: x \"in\" A\n  then:\n  . existsUnique: y is \\set\n    suchThat: phi(x, y)\nthen:\n. exists: B is \\set\n  suchThat:\n  . forAll: y is \\set\n    then:\n    . have: y \"in\" B\n      iff:\n      . exists: x \"in\" A\n        suchThat: phi(x, y)\nDocumented:\n. called: \"Axiom Schema of Replacement\"\n. description: \"The image of a set under a formula that assigns each input a\n                unique output is again a set.\"\nId: \"6e09ea04-f1dd-41c0-a0f5-4c962cd819ac\"",
   "sections": [
     {
-      "label": "TextAxiom",
-      "inline_argument": "\"Axiom schema of replacement. Suppose a formula $\\varphi(x,y)$ is\n            functional on a set $A$: for each $x\\in A$ there is exactly one $y$\n            such that $\\varphi(x,y)$. Then the range\n            $\\{y:\\exists x\\in A\\,\\varphi(x,y)\\}$ is a set. Replacement permits a\n            set-sized family of objects to be collected even when no common\n            ambient set for those objects was known in advance.\"",
+      "label": "Axiom",
+      "inline_argument": null,
       "inline_latex": null,
       "arguments": []
+    },
+    {
+      "label": "given",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "formulation",
+          "text": "A is \\set",
+          "latex": "A \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "A is \\set",
+              "types": [
+                "asserts A is \\set"
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "formulation",
+          "text": "phi(x_, y_) is (_ is \\set, _ is \\set) -> (_ is \\\\statement)",
+          "latex": "\\phi(x, y) \\textrm{ is } \\left(\\cdot \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}, \\cdot \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}\\right) \\to \\left(\\cdot \\textrm{ is } \\textrm{statement}\\right)",
+          "type_info": [
+            {
+              "depth": 0,
+              "text": "phi(x_, y_) is (_ is \\set, _ is \\set) -> (_ is \\\\statement)",
+              "types": [
+                "asserts phi is (_ is \\set, _ is \\set) => (_ is \\\\statement)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "where",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": "x \"in\" A",
+              "inline_latex": "x \\in A",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "x \"in\" A",
+                  "types": [
+                    "asserts x \"in\" A"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "A",
+                  "types": [
+                    "is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "then",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "existsUnique",
+                      "inline_argument": "y is \\set",
+                      "inline_latex": "y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "y is \\set",
+                          "types": [
+                            "asserts y is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "suchThat",
+                      "inline_argument": "phi(x, y)",
+                      "inline_latex": "\\phi(x, y)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "phi(x, y)",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "x",
+                          "types": [
+                            "\"in\" A",
+                            "is \\set"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "y",
+                          "types": [
+                            "is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "then",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "exists",
+              "inline_argument": "B is \\set",
+              "inline_latex": "B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "B is \\set",
+                  "types": [
+                    "asserts B is \\set"
+                  ]
+                }
+              ],
+              "arguments": []
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "group",
+                  "heading": null,
+                  "sections": [
+                    {
+                      "label": "forAll",
+                      "inline_argument": "y is \\set",
+                      "inline_latex": "y \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "y is \\set",
+                          "types": [
+                            "asserts y is \\set"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "group",
+                          "heading": null,
+                          "sections": [
+                            {
+                              "label": "have",
+                              "inline_argument": "y \"in\" B",
+                              "inline_latex": "y \\in B",
+                              "inline_type_info": [
+                                {
+                                  "depth": 0,
+                                  "text": "y \"in\" B",
+                                  "types": [
+                                    "asserts y \"in\" B"
+                                  ]
+                                },
+                                {
+                                  "depth": 1,
+                                  "text": "B",
+                                  "types": [
+                                    "is \\set"
+                                  ]
+                                }
+                              ],
+                              "arguments": []
+                            },
+                            {
+                              "label": "iff",
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
+                                {
+                                  "kind": "group",
+                                  "heading": null,
+                                  "sections": [
+                                    {
+                                      "label": "exists",
+                                      "inline_argument": "x \"in\" A",
+                                      "inline_latex": "x \\in A",
+                                      "inline_type_info": [
+                                        {
+                                          "depth": 0,
+                                          "text": "x \"in\" A",
+                                          "types": [
+                                            "asserts x \"in\" A"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 1,
+                                          "text": "A",
+                                          "types": [
+                                            "is \\set"
+                                          ]
+                                        }
+                                      ],
+                                      "arguments": []
+                                    },
+                                    {
+                                      "label": "suchThat",
+                                      "inline_argument": "phi(x, y)",
+                                      "inline_latex": "\\phi(x, y)",
+                                      "inline_type_info": [
+                                        {
+                                          "depth": 0,
+                                          "text": "phi(x, y)",
+                                          "types": [
+                                            "is \\\\statement"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 1,
+                                          "text": "x",
+                                          "types": [
+                                            "\"in\" A",
+                                            "is \\set"
+                                          ]
+                                        },
+                                        {
+                                          "depth": 1,
+                                          "text": "y",
+                                          "types": [
+                                            "is \\set"
+                                          ]
+                                        }
+                                      ],
+                                      "arguments": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Documented",
+      "inline_argument": null,
+      "inline_latex": null,
+      "arguments": [
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "called",
+              "inline_argument": "\"Axiom Schema of Replacement\"",
+              "inline_latex": "\\textrm{Axiom Schema of Replacement}",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
+              "arguments": []
+            }
+          ]
+        }
+      ]
     },
     {
       "label": "Id",
