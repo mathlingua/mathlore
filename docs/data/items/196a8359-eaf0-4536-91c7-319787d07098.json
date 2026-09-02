@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{fraction-pair reciprocal}",
   "body_text": null,
   "page": null,
-  "source": "[\\rational.pair.inv(q_)]\nDefines: inv(q_) is \\function:on{\\rational.pair.carrier}:to{\\rational.pair.carrier}\nexpresses:\n. inv(\\rational.pair.zero) = \\rational.pair.zero\n. forAll: a is \\nonzero.integer\n  then:\n  . forAll: b is \\nonzero.integer\n    then: inv(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{b, a}\nDocumented:\n. called: \"fraction-pair reciprocal\"\n. description: \"Reciprocal swaps numerator and denominator for nonzero classes,\n                with zero sent to zero.\"\nId: \"196a8359-eaf0-4536-91c7-319787d07098\"",
+  "source": "[\\rational.pair.inv(q_)]\nDefines: inv(q_) is \\function:on{\\rational.pair.carrier}:to{\\rational.pair.carrier}\nexpresses:\n. inv(\\rational.pair.zero) = \\rational.pair.zero\n. forAll:\n  . a is \\nonzero.integer\n  . b is \\nonzero.integer\n  then: inv(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{b, a}\nDocumented:\n. called: \"fraction-pair reciprocal\"\n. description: \"Reciprocal swaps numerator and denominator for nonzero classes,\n                with zero sent to zero.\"\nId: \"196a8359-eaf0-4536-91c7-319787d07098\"",
   "sections": [
     {
       "label": "Defines",
@@ -62,110 +62,102 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "a is \\nonzero.integer",
-              "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "a is \\nonzero.integer",
-                  "types": [
-                    "asserts a is \\nonzero.integer"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "then",
               "inline_argument": null,
               "inline_latex": null,
               "arguments": [
                 {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
+                  "kind": "formulation",
+                  "text": "a is \\nonzero.integer",
+                  "latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
+                  "type_info": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "b is \\nonzero.integer",
-                      "inline_latex": "b \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "b is \\nonzero.integer",
-                          "types": [
-                            "asserts b is \\nonzero.integer"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
+                      "depth": 0,
+                      "text": "a is \\nonzero.integer",
+                      "types": [
+                        "asserts a is \\nonzero.integer"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "b is \\nonzero.integer",
+                  "latex": "b \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
+                  "type_info": [
                     {
-                      "label": "then",
-                      "inline_argument": "inv(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{b, a}",
-                      "inline_latex": "inv(\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(a,b)]_{\\mathbb{Q}}}) = \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(b,a)]_{\\mathbb{Q}}}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "inv(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{b, a}",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "inv(\\rational.pair.class:of{a,b})",
-                          "types": [
-                            "\"in\" \\rational.pair.carrier"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "\\rational.pair.class:of{a,b}",
-                          "types": [
-                            "\"in\" \\rational.pair.carrier"
-                          ]
-                        },
-                        {
-                          "depth": 3,
-                          "text": "a",
-                          "types": [
-                            "is \\nonzero.integer"
-                          ]
-                        },
-                        {
-                          "depth": 3,
-                          "text": "b",
-                          "types": [
-                            "is \\nonzero.integer"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "\\rational.pair.class:of{b,a}",
-                          "types": [
-                            "\"in\" \\rational.pair.carrier"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "b",
-                          "types": [
-                            "is \\nonzero.integer"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "a",
-                          "types": [
-                            "is \\nonzero.integer"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 0,
+                      "text": "b is \\nonzero.integer",
+                      "types": [
+                        "asserts b is \\nonzero.integer"
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "inv(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{b, a}",
+              "inline_latex": "inv(\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(a,b)]_{\\mathbb{Q}}}) = \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(b,a)]_{\\mathbb{Q}}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "inv(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{b, a}",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "inv(\\rational.pair.class:of{a,b})",
+                  "types": [
+                    "\"in\" \\rational.pair.carrier"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "\\rational.pair.class:of{a,b}",
+                  "types": [
+                    "\"in\" \\rational.pair.carrier"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "a",
+                  "types": [
+                    "is \\nonzero.integer"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "b",
+                  "types": [
+                    "is \\nonzero.integer"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\rational.pair.class:of{b,a}",
+                  "types": [
+                    "\"in\" \\rational.pair.carrier"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "b",
+                  "types": [
+                    "is \\nonzero.integer"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "a",
+                  "types": [
+                    "is \\nonzero.integer"
+                  ]
+                }
+              ],
+              "arguments": []
             }
           ]
         }

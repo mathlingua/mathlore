@@ -147,12 +147,12 @@ expresses:
   then:
   . have: x "in"? B
     iff:
-    . exists: i "in" I
+    . exists:
+      . i "in" I
+      . S is \set
       suchThat:
-      . exists: S is \set
-        suchThat:
-        . S = A(i)
-        . x "in"? S
+      . S = A(i)
+      . x "in"? S
 Documented:
 . called: "union of the family $A?$ over $I?$"
 . written: "\bigcup_{i?\in I?} A?_{i?}"

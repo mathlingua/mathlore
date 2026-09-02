@@ -11,7 +11,7 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\group.action:of{G ::= (Y, *, e)}:on{X}]\nDeclares: alpha(g_, x_) is \\function:on{Y \\.set.cross./ X}:to{X}\nwhen:\n. G is \\group\n. X is \\set\nsatisfies:\n. forAll: x \"in\" X\n  then: alpha(e, x) = x\n. forAll: g, h \"in\" G\n  then:\n  . forAll: x \"in\" X\n    then: alpha(g * h, x) = alpha(g, alpha(h, x))\nDocumented:\n. called: \"group action of $G?$ on $X?$\"\n. writing: alpha(g_, x_)\n  as: \"g_? \\cdot x_?\"\n. description: \"A left action represents each group element as a symmetry of the\n                set and respects identity and multiplication.\"\nId: \"fa043cd6-0ce8-4504-82bb-aba9ad2c8a30\"",
+  "source": "[\\group.action:of{G ::= (Y, *, e)}:on{X}]\nDeclares: alpha(g_, x_) is \\function:on{Y \\.set.cross./ X}:to{X}\nwhen:\n. G is \\group\n. X is \\set\nsatisfies:\n. forAll: x \"in\" X\n  then: alpha(e, x) = x\n. forAll:\n  . g, h \"in\" G\n  . x \"in\" X\n  then: alpha(g * h, x) = alpha(g, alpha(h, x))\nDocumented:\n. called: \"group action of $G?$ on $X?$\"\n. writing: alpha(g_, x_)\n  as: \"g_? \\cdot x_?\"\n. description: \"A left action represents each group element as a symmetry of the\n                set and respects identity and multiplication.\"\nId: \"fa043cd6-0ce8-4504-82bb-aba9ad2c8a30\"",
   "sections": [
     {
       "label": "Declares",
@@ -145,146 +145,138 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "g, h \"in\" G",
-              "inline_latex": "g, h \\in G",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "g, h \"in\" G",
-                  "types": [
-                    "asserts g \"in\" G",
-                    "asserts h \"in\" G"
-                  ]
-                },
-                {
-                  "depth": 1,
-                  "text": "G",
-                  "types": [
-                    "is \\group"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "then",
               "inline_argument": null,
               "inline_latex": null,
               "arguments": [
                 {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
+                  "kind": "formulation",
+                  "text": "g, h \"in\" G",
+                  "latex": "g, h \\in G",
+                  "type_info": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "x \"in\" X",
-                      "inline_latex": "x \\in X",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "x \"in\" X",
-                          "types": [
-                            "asserts x \"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "X",
-                          "types": [
-                            "is \\set"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 0,
+                      "text": "g, h \"in\" G",
+                      "types": [
+                        "asserts g \"in\" G",
+                        "asserts h \"in\" G"
+                      ]
                     },
                     {
-                      "label": "then",
-                      "inline_argument": "alpha(g * h, x) = alpha(g, alpha(h, x))",
-                      "inline_latex": "\\alpha(g \\ast h, x) = \\alpha(g, \\alpha(h, x))",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "alpha(g * h, x) = alpha(g, alpha(h, x))",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "alpha(g * h,x)",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "g * h",
-                          "types": [
-                            "\"in\" G"
-                          ]
-                        },
-                        {
-                          "depth": 3,
-                          "text": "g",
-                          "types": [
-                            "\"in\" G"
-                          ]
-                        },
-                        {
-                          "depth": 3,
-                          "text": "h",
-                          "types": [
-                            "\"in\" G"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "x",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "alpha(g,alpha(h,x))",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "g",
-                          "types": [
-                            "\"in\" G"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "alpha(h,x)",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 3,
-                          "text": "h",
-                          "types": [
-                            "\"in\" G"
-                          ]
-                        },
-                        {
-                          "depth": 3,
-                          "text": "x",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 1,
+                      "text": "G",
+                      "types": [
+                        "is \\group"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "x \"in\" X",
+                  "latex": "x \\in X",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "x \"in\" X",
+                      "types": [
+                        "asserts x \"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "X",
+                      "types": [
+                        "is \\set"
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "alpha(g * h, x) = alpha(g, alpha(h, x))",
+              "inline_latex": "\\alpha(g \\ast h, x) = \\alpha(g, \\alpha(h, x))",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "alpha(g * h, x) = alpha(g, alpha(h, x))",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "alpha(g * h,x)",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "g * h",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "g",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "h",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "x",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "alpha(g,alpha(h,x))",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "g",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "alpha(h,x)",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "h",
+                  "types": [
+                    "\"in\" G"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "x",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                }
+              ],
+              "arguments": []
             }
           ]
         }

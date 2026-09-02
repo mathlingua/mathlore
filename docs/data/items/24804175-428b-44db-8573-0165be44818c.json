@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{rational equivalence relation}",
   "body_text": null,
   "page": null,
-  "source": "[\\rationals.relation]\nDefines: R is \\equivalence.relation:on{\\rational.pair.base}\nexpresses:\n. forAll: a, c is \\integer\n  then:\n  . forAll: b, d is \\nonzero.integer\n    then:\n    . have: R((a, b), (c, d))\n      iff: a \\.integer.*./ d = c \\.integer.*./ b\nDocumented:\n. called: \"rational equivalence relation\"\n. description: \"The relation $(a,b) \\sim (c,d)$ exactly when $ad=cb$.\"\nId: \"24804175-428b-44db-8573-0165be44818c\"",
+  "source": "[\\rationals.relation]\nDefines: R is \\equivalence.relation:on{\\rational.pair.base}\nexpresses:\n. forAll:\n  . a, c is \\integer\n  . b, d is \\nonzero.integer\n  then:\n  . have: R((a, b), (c, d))\n    iff: a \\.integer.*./ d = c \\.integer.*./ b\nDocumented:\n. called: \"rational equivalence relation\"\n. description: \"The relation $(a,b) \\sim (c,d)$ exactly when $ad=cb$.\"\nId: \"24804175-428b-44db-8573-0165be44818c\"",
   "sections": [
     {
       "label": "Defines",
@@ -27,19 +27,40 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "a, c is \\integer",
-              "inline_latex": "a, c \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
-              "inline_type_info": [
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
                 {
-                  "depth": 0,
+                  "kind": "formulation",
                   "text": "a, c is \\integer",
-                  "types": [
-                    "asserts a is \\integer",
-                    "asserts c is \\integer"
+                  "latex": "a, c \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a, c is \\integer",
+                      "types": [
+                        "asserts a is \\integer",
+                        "asserts c is \\integer"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "b, d is \\nonzero.integer",
+                  "latex": "b, d \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "b, d is \\nonzero.integer",
+                      "types": [
+                        "asserts b is \\nonzero.integer",
+                        "asserts d is \\nonzero.integer"
+                      ]
+                    }
                   ]
                 }
-              ],
-              "arguments": []
+              ]
             },
             {
               "label": "then",
@@ -51,141 +72,112 @@
                   "heading": null,
                   "sections": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "b, d is \\nonzero.integer",
-                      "inline_latex": "b, d \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
+                      "label": "have",
+                      "inline_argument": "R((a, b), (c, d))",
+                      "inline_latex": "\\left(a, b\\right) \\: R \\: \\left(c, d\\right)",
                       "inline_type_info": [
                         {
                           "depth": 0,
-                          "text": "b, d is \\nonzero.integer",
+                          "text": "R((a, b), (c, d))",
+                          "types": []
+                        },
+                        {
+                          "depth": 1,
+                          "text": "(a,b)",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "a",
                           "types": [
-                            "asserts b is \\nonzero.integer",
-                            "asserts d is \\nonzero.integer"
+                            "is \\integer"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "b",
+                          "types": [
+                            "is \\nonzero.integer"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "(c,d)",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "c",
+                          "types": [
+                            "is \\integer"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "d",
+                          "types": [
+                            "is \\nonzero.integer"
                           ]
                         }
                       ],
                       "arguments": []
                     },
                     {
-                      "label": "then",
-                      "inline_argument": null,
-                      "inline_latex": null,
-                      "arguments": [
+                      "label": "iff",
+                      "inline_argument": "a \\.integer.*./ d = c \\.integer.*./ b",
+                      "inline_latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{a \\cdot d = c} \\cdot b}",
+                      "inline_type_info": [
                         {
-                          "kind": "group",
-                          "heading": null,
-                          "sections": [
-                            {
-                              "label": "have",
-                              "inline_argument": "R((a, b), (c, d))",
-                              "inline_latex": "\\left(a, b\\right) \\: R \\: \\left(c, d\\right)",
-                              "inline_type_info": [
-                                {
-                                  "depth": 0,
-                                  "text": "R((a, b), (c, d))",
-                                  "types": []
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "(a,b)",
-                                  "types": []
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "a",
-                                  "types": [
-                                    "is \\integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "b",
-                                  "types": [
-                                    "is \\nonzero.integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "(c,d)",
-                                  "types": []
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "c",
-                                  "types": [
-                                    "is \\integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "d",
-                                  "types": [
-                                    "is \\nonzero.integer"
-                                  ]
-                                }
-                              ],
-                              "arguments": []
-                            },
-                            {
-                              "label": "iff",
-                              "inline_argument": "a \\.integer.*./ d = c \\.integer.*./ b",
-                              "inline_latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{a \\cdot d = c} \\cdot b}",
-                              "inline_type_info": [
-                                {
-                                  "depth": 0,
-                                  "text": "a \\.integer.*./ d = c \\.integer.*./ b",
-                                  "types": [
-                                    "is \\binary.operation:on{\\integers}"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "a\\.integer.*./d = c",
-                                  "types": [
-                                    "is \\binary.operation:on{\\integers}"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "a",
-                                  "types": [
-                                    "is \\integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "d = c",
-                                  "types": [
-                                    "is \\\\statement"
-                                  ]
-                                },
-                                {
-                                  "depth": 3,
-                                  "text": "d",
-                                  "types": [
-                                    "is \\nonzero.integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 3,
-                                  "text": "c",
-                                  "types": [
-                                    "is \\integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "b",
-                                  "types": [
-                                    "is \\nonzero.integer"
-                                  ]
-                                }
-                              ],
-                              "arguments": []
-                            }
+                          "depth": 0,
+                          "text": "a \\.integer.*./ d = c \\.integer.*./ b",
+                          "types": [
+                            "is \\binary.operation:on{\\integers}"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "a\\.integer.*./d = c",
+                          "types": [
+                            "is \\binary.operation:on{\\integers}"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "a",
+                          "types": [
+                            "is \\integer"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "d = c",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "d",
+                          "types": [
+                            "is \\nonzero.integer"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "c",
+                          "types": [
+                            "is \\integer"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "b",
+                          "types": [
+                            "is \\nonzero.integer"
                           ]
                         }
-                      ]
+                      ],
+                      "arguments": []
                     }
                   ]
                 }

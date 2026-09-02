@@ -6,7 +6,7 @@
   "heading_latex": "\\textrm{Bolzano--Weierstrass Theorem}",
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven: S ::= a(n_) is \\(bounded)::real.sequence\nthen:\n. exists: T ::= b(k_) is \\subsequence:of{S}\n  suchThat:\n  . exists: L is \\real\n    suchThat: \\converges.to{L}:for{T}\nDocumented:\n. called: \"Bolzano--Weierstrass Theorem\"\n. description: \"Every bounded real sequence has a convergent subsequence.\"\nId: \"1f6fac61-9b16-4828-942f-293b25792dcf\"",
+  "source": "Theorem:\ngiven: S ::= a(n_) is \\(bounded)::real.sequence\nthen:\n. exists:\n  . T ::= b(k_) is \\subsequence:of{S}\n  . L is \\real\n  suchThat: \\converges.to{L}:for{T}\nDocumented:\n. called: \"Bolzano--Weierstrass Theorem\"\n. description: \"Every bounded real sequence has a convergent subsequence.\"\nId: \"1f6fac61-9b16-4828-942f-293b25792dcf\"",
   "sections": [
     {
       "label": "Theorem",
@@ -40,75 +40,67 @@
           "sections": [
             {
               "label": "exists",
-              "inline_argument": "T ::= b(k_) is \\subsequence:of{S}",
-              "inline_latex": "T ::= b(k) \\textrm{ is } \\htmlData{mlg-ref=5c73756273657175656e63653a6f66}{\\textrm{subsequence of }S}",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "T ::= b(k_) is \\subsequence:of{S}",
-                  "types": [
-                    "asserts T is \\subsequence:of{S}"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "suchThat",
               "inline_argument": null,
               "inline_latex": null,
               "arguments": [
                 {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
+                  "kind": "formulation",
+                  "text": "T ::= b(k_) is \\subsequence:of{S}",
+                  "latex": "T ::= b(k) \\textrm{ is } \\htmlData{mlg-ref=5c73756273657175656e63653a6f66}{\\textrm{subsequence of }S}",
+                  "type_info": [
                     {
-                      "label": "exists",
-                      "inline_argument": "L is \\real",
-                      "inline_latex": "L \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "L is \\real",
-                          "types": [
-                            "asserts L is \\real"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
+                      "depth": 0,
+                      "text": "T ::= b(k_) is \\subsequence:of{S}",
+                      "types": [
+                        "asserts T is \\subsequence:of{S}"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "L is \\real",
+                  "latex": "L \\textrm{ is } \\htmlData{mlg-ref=5c7265616c}{\\textrm{real}}",
+                  "type_info": [
                     {
-                      "label": "suchThat",
-                      "inline_argument": "\\converges.to{L}:for{T}",
-                      "inline_latex": "\\htmlData{mlg-ref=5c636f6e7665726765732e746f3a666f72}{a_{n} \\to L}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "\\converges.to{L}:for{T}",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "L",
-                          "types": [
-                            "is \\real"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "T",
-                          "types": [
-                            "is \\subsequence:of{S}"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 0,
+                      "text": "L is \\real",
+                      "types": [
+                        "asserts L is \\real"
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": "\\converges.to{L}:for{T}",
+              "inline_latex": "\\htmlData{mlg-ref=5c636f6e7665726765732e746f3a666f72}{a_{n} \\to L}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "\\converges.to{L}:for{T}",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "L",
+                  "types": [
+                    "is \\real"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "T",
+                  "types": [
+                    "is \\subsequence:of{S}"
+                  ]
+                }
+              ],
+              "arguments": []
             }
           ]
         }

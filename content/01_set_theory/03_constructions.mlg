@@ -174,12 +174,11 @@ then:
 . exists: phi(x__) is \function:on{(.(.A \.set.cross./ B.) \.set.cross./ C.)}:to{(.A \.set.cross./ (.B \.set.cross./ C.).)}
   suchThat:
   . phi is? \(bijective)::function:?on{(.(.A \.set.cross./ B.) \.set.cross./ C.)}:?to{(.A \.set.cross./ (.B \.set.cross./ C.).)}
-  . forAll: a "in" A
-    then:
-    . forAll: b "in" B
-      then:
-      . forAll: c "in" C
-        then: phi(((a, b), c)) = (a, (b, c))
+  . forAll:
+    . a "in" A
+    . b "in" B
+    . c "in" C
+    then: phi(((a, b), c)) = (a, (b, c))
 Documented:
 . called: "Canonical Associativity Bijection for Cartesian Products"
 . description: "The map $((a,b),c)\mapsto(a,(b,c))$ is a canonical bijection

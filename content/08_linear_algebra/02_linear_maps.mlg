@@ -81,10 +81,10 @@ Refines: V
 when: F is \field
 specifies: V is \vector.space:over{F}
 satisfies:
-. exists: W is \vector.space:over{F}
-  suchThat:
-  . exists: T(v__) is \linear.map:from{V}:to{W}
-    suchThat: T is? \(bijective)::function:?on{V}:?to{W}
+. exists:
+  . W is \vector.space:over{F}
+  . T(v__) is \linear.map:from{V}:to{W}
+  suchThat: T is? \(bijective)::function:?on{V}:?to{W}
 Documented:
 . adjective: "isomorphic"
 . description: "Two vector spaces are isomorphic if there exists a bijective

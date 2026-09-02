@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{fraction-pair addition}",
   "body_text": null,
   "page": null,
-  "source": "[\\rational.pair.add]\nDefines: add(x_, y_) is \\binary.operation:on{\\rational.pair.carrier}\nexpresses:\n. forAll: a, c is \\integer\n  then:\n  . forAll: b, d is \\nonzero.integer\n    then:\n    . let:\n      . n is \\integer\n      . e is \\nonzero.integer\n      where:\n      . n = (a \\.integer.*./ d) \\.integer.+./ (c \\.integer.*./ b)\n      . e = b \\.integer.*./ d\n      then: add(\\rational.pair.class:of{a, b}, \\rational.pair.class:of{c, d}) = \\rational.pair.class:of{n, e}\nDocumented:\n. called: \"fraction-pair addition\"\n. description: \"$[(a,b)]+[(c,d)]=[(ad+cb,bd)]$.\"\nId: \"bb76baf9-98f2-4fae-9be3-7dd96eff0d8b\"",
+  "source": "[\\rational.pair.add]\nDefines: add(x_, y_) is \\binary.operation:on{\\rational.pair.carrier}\nexpresses:\n. forAll:\n  . a, c is \\integer\n  . b, d is \\nonzero.integer\n  then:\n  . let:\n    . n is \\integer\n    . e is \\nonzero.integer\n    where:\n    . n = (a \\.integer.*./ d) \\.integer.+./ (c \\.integer.*./ b)\n    . e = b \\.integer.*./ d\n    then: add(\\rational.pair.class:of{a, b}, \\rational.pair.class:of{c, d}) = \\rational.pair.class:of{n, e}\nDocumented:\n. called: \"fraction-pair addition\"\n. description: \"$[(a,b)]+[(c,d)]=[(ad+cb,bd)]$.\"\nId: \"bb76baf9-98f2-4fae-9be3-7dd96eff0d8b\"",
   "sections": [
     {
       "label": "Defines",
@@ -27,19 +27,40 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "a, c is \\integer",
-              "inline_latex": "a, c \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
-              "inline_type_info": [
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
                 {
-                  "depth": 0,
+                  "kind": "formulation",
                   "text": "a, c is \\integer",
-                  "types": [
-                    "asserts a is \\integer",
-                    "asserts c is \\integer"
+                  "latex": "a, c \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a, c is \\integer",
+                      "types": [
+                        "asserts a is \\integer",
+                        "asserts c is \\integer"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "b, d is \\nonzero.integer",
+                  "latex": "b, d \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "b, d is \\nonzero.integer",
+                      "types": [
+                        "asserts b is \\nonzero.integer",
+                        "asserts d is \\nonzero.integer"
+                      ]
+                    }
                   ]
                 }
-              ],
-              "arguments": []
+              ]
             },
             {
               "label": "then",
@@ -51,286 +72,257 @@
                   "heading": null,
                   "sections": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "b, d is \\nonzero.integer",
-                      "inline_latex": "b, d \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "b, d is \\nonzero.integer",
-                          "types": [
-                            "asserts b is \\nonzero.integer",
-                            "asserts d is \\nonzero.integer"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "then",
+                      "label": "let",
                       "inline_argument": null,
                       "inline_latex": null,
                       "arguments": [
                         {
-                          "kind": "group",
-                          "heading": null,
-                          "sections": [
+                          "kind": "formulation",
+                          "text": "n is \\integer",
+                          "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+                          "type_info": [
                             {
-                              "label": "let",
-                              "inline_argument": null,
-                              "inline_latex": null,
-                              "arguments": [
-                                {
-                                  "kind": "formulation",
-                                  "text": "n is \\integer",
-                                  "latex": "n \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
-                                  "type_info": [
-                                    {
-                                      "depth": 0,
-                                      "text": "n is \\integer",
-                                      "types": [
-                                        "asserts n is \\integer"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "kind": "formulation",
-                                  "text": "e is \\nonzero.integer",
-                                  "latex": "e \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
-                                  "type_info": [
-                                    {
-                                      "depth": 0,
-                                      "text": "e is \\nonzero.integer",
-                                      "types": [
-                                        "asserts e is \\nonzero.integer"
-                                      ]
-                                    }
-                                  ]
-                                }
+                              "depth": 0,
+                              "text": "n is \\integer",
+                              "types": [
+                                "asserts n is \\integer"
                               ]
-                            },
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "e is \\nonzero.integer",
+                          "latex": "e \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
+                          "type_info": [
                             {
-                              "label": "where",
-                              "inline_argument": null,
-                              "inline_latex": null,
-                              "arguments": [
-                                {
-                                  "kind": "formulation",
-                                  "text": "n = (a \\.integer.*./ d) \\.integer.+./ (c \\.integer.*./ b)",
-                                  "latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2b2e2f}{n = \\left(\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{a \\cdot d}\\right) + \\left(\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{c \\cdot b}\\right)}",
-                                  "type_info": [
-                                    {
-                                      "depth": 0,
-                                      "text": "n = (a \\.integer.*./ d) \\.integer.+./ (c \\.integer.*./ b)",
-                                      "types": [
-                                        "is \\binary.operation:on{\\integers}"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 1,
-                                      "text": "n = a\\.integer.*./d",
-                                      "types": [
-                                        "is \\\\statement"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 2,
-                                      "text": "n",
-                                      "types": [
-                                        "is \\integer"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 2,
-                                      "text": "a\\.integer.*./d",
-                                      "types": [
-                                        "\"in\" \\integers"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 3,
-                                      "text": "a\\.integer.*./d",
-                                      "types": [
-                                        "\"in\" \\integers"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 4,
-                                      "text": "a",
-                                      "types": [
-                                        "is \\integer"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 4,
-                                      "text": "d",
-                                      "types": [
-                                        "is \\nonzero.integer"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 1,
-                                      "text": "c\\.integer.*./b",
-                                      "types": [
-                                        "\"in\" \\integers"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 2,
-                                      "text": "c\\.integer.*./b",
-                                      "types": [
-                                        "\"in\" \\integers"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 3,
-                                      "text": "c",
-                                      "types": [
-                                        "is \\integer"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 3,
-                                      "text": "b",
-                                      "types": [
-                                        "is \\nonzero.integer"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "kind": "formulation",
-                                  "text": "e = b \\.integer.*./ d",
-                                  "latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{e = b \\cdot d}",
-                                  "type_info": [
-                                    {
-                                      "depth": 0,
-                                      "text": "e = b \\.integer.*./ d",
-                                      "types": [
-                                        "is \\binary.operation:on{\\integers}"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 1,
-                                      "text": "e = b",
-                                      "types": [
-                                        "is \\\\statement"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 2,
-                                      "text": "e",
-                                      "types": [
-                                        "is \\nonzero.integer"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 2,
-                                      "text": "b",
-                                      "types": [
-                                        "is \\nonzero.integer"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 1,
-                                      "text": "d",
-                                      "types": [
-                                        "is \\nonzero.integer"
-                                      ]
-                                    }
-                                  ]
-                                }
+                              "depth": 0,
+                              "text": "e is \\nonzero.integer",
+                              "types": [
+                                "asserts e is \\nonzero.integer"
                               ]
-                            },
-                            {
-                              "label": "then",
-                              "inline_argument": "add(\\rational.pair.class:of{a, b}, \\rational.pair.class:of{c, d}) = \\rational.pair.class:of{n, e}",
-                              "inline_latex": "add(\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(a,b)]_{\\mathbb{Q}}}, \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(c,d)]_{\\mathbb{Q}}}) = \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(n,e)]_{\\mathbb{Q}}}",
-                              "inline_type_info": [
-                                {
-                                  "depth": 0,
-                                  "text": "add(\\rational.pair.class:of{a, b}, \\rational.pair.class:of{c, d}) = \\rational.pair.class:of{n, e}",
-                                  "types": [
-                                    "is \\\\statement"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "add(\\rational.pair.class:of{a,b},\\rational.pair.class:of{c,d})",
-                                  "types": [
-                                    "\"in\" \\rational.pair.carrier"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "\\rational.pair.class:of{a,b}",
-                                  "types": [
-                                    "\"in\" \\rational.pair.carrier"
-                                  ]
-                                },
-                                {
-                                  "depth": 3,
-                                  "text": "a",
-                                  "types": [
-                                    "is \\integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 3,
-                                  "text": "b",
-                                  "types": [
-                                    "is \\nonzero.integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "\\rational.pair.class:of{c,d}",
-                                  "types": [
-                                    "\"in\" \\rational.pair.carrier"
-                                  ]
-                                },
-                                {
-                                  "depth": 3,
-                                  "text": "c",
-                                  "types": [
-                                    "is \\integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 3,
-                                  "text": "d",
-                                  "types": [
-                                    "is \\nonzero.integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "\\rational.pair.class:of{n,e}",
-                                  "types": [
-                                    "\"in\" \\rational.pair.carrier"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "n",
-                                  "types": [
-                                    "is \\integer"
-                                  ]
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "e",
-                                  "types": [
-                                    "is \\nonzero.integer"
-                                  ]
-                                }
-                              ],
-                              "arguments": []
                             }
                           ]
                         }
                       ]
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": null,
+                      "inline_latex": null,
+                      "arguments": [
+                        {
+                          "kind": "formulation",
+                          "text": "n = (a \\.integer.*./ d) \\.integer.+./ (c \\.integer.*./ b)",
+                          "latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2b2e2f}{n = \\left(\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{a \\cdot d}\\right) + \\left(\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{c \\cdot b}\\right)}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "n = (a \\.integer.*./ d) \\.integer.+./ (c \\.integer.*./ b)",
+                              "types": [
+                                "is \\binary.operation:on{\\integers}"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "n = a\\.integer.*./d",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "n",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "a\\.integer.*./d",
+                              "types": [
+                                "\"in\" \\integers"
+                              ]
+                            },
+                            {
+                              "depth": 3,
+                              "text": "a\\.integer.*./d",
+                              "types": [
+                                "\"in\" \\integers"
+                              ]
+                            },
+                            {
+                              "depth": 4,
+                              "text": "a",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            },
+                            {
+                              "depth": 4,
+                              "text": "d",
+                              "types": [
+                                "is \\nonzero.integer"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "c\\.integer.*./b",
+                              "types": [
+                                "\"in\" \\integers"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "c\\.integer.*./b",
+                              "types": [
+                                "\"in\" \\integers"
+                              ]
+                            },
+                            {
+                              "depth": 3,
+                              "text": "c",
+                              "types": [
+                                "is \\integer"
+                              ]
+                            },
+                            {
+                              "depth": 3,
+                              "text": "b",
+                              "types": [
+                                "is \\nonzero.integer"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "e = b \\.integer.*./ d",
+                          "latex": "\\htmlData{mlg-ref=5c2e696e74656765722e2a2e2f}{e = b \\cdot d}",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "e = b \\.integer.*./ d",
+                              "types": [
+                                "is \\binary.operation:on{\\integers}"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "e = b",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "e",
+                              "types": [
+                                "is \\nonzero.integer"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "b",
+                              "types": [
+                                "is \\nonzero.integer"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "d",
+                              "types": [
+                                "is \\nonzero.integer"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "add(\\rational.pair.class:of{a, b}, \\rational.pair.class:of{c, d}) = \\rational.pair.class:of{n, e}",
+                      "inline_latex": "add(\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(a,b)]_{\\mathbb{Q}}}, \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(c,d)]_{\\mathbb{Q}}}) = \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(n,e)]_{\\mathbb{Q}}}",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "add(\\rational.pair.class:of{a, b}, \\rational.pair.class:of{c, d}) = \\rational.pair.class:of{n, e}",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "add(\\rational.pair.class:of{a,b},\\rational.pair.class:of{c,d})",
+                          "types": [
+                            "\"in\" \\rational.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\rational.pair.class:of{a,b}",
+                          "types": [
+                            "\"in\" \\rational.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "a",
+                          "types": [
+                            "is \\integer"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "b",
+                          "types": [
+                            "is \\nonzero.integer"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\rational.pair.class:of{c,d}",
+                          "types": [
+                            "\"in\" \\rational.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "c",
+                          "types": [
+                            "is \\integer"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "d",
+                          "types": [
+                            "is \\nonzero.integer"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "\\rational.pair.class:of{n,e}",
+                          "types": [
+                            "\"in\" \\rational.pair.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "n",
+                          "types": [
+                            "is \\integer"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "e",
+                          "types": [
+                            "is \\nonzero.integer"
+                          ]
+                        }
+                      ],
+                      "arguments": []
                     }
                   ]
                 }

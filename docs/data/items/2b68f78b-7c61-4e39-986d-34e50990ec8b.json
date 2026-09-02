@@ -11,7 +11,7 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[W \\:vector.subspace.of:/ V ::= (X, +, *, 0)]\nDeclares: W \\:(nonempty)::subset:/ X\nusing: F is \\field\nwhen: V is \\vector.space:over{F}\nsatisfies:\n. 0 \"in\" W\n. forAll: u, v \"in\" W\n  then: u + v \"in\" W\n. forAll: c \"in\" F\n  then:\n  . forAll: v \"in\" W\n    then: c * v \"in\" W\nDocumented:\n. called: \"$W?$ is a vector subspace of $V?$\"\n. written: \"W? \\le V?\"\n. description: \"A subspace of a vector space is a subset closed under linear\n                combinations.\"\nId: \"2b68f78b-7c61-4e39-986d-34e50990ec8b\"",
+  "source": "[W \\:vector.subspace.of:/ V ::= (X, +, *, 0)]\nDeclares: W \\:(nonempty)::subset:/ X\nusing: F is \\field\nwhen: V is \\vector.space:over{F}\nsatisfies:\n. 0 \"in\" W\n. forAll: u, v \"in\" W\n  then: u + v \"in\" W\n. forAll:\n  . c \"in\" F\n  . v \"in\" W\n  then: c * v \"in\" W\nDocumented:\n. called: \"$W?$ is a vector subspace of $V?$\"\n. written: \"W? \\le V?\"\n. description: \"A subspace of a vector space is a subset closed under linear\n                combinations.\"\nId: \"2b68f78b-7c61-4e39-986d-34e50990ec8b\"",
   "sections": [
     {
       "label": "Declares",
@@ -160,96 +160,88 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "c \"in\" F",
-              "inline_latex": "c \\in F",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "c \"in\" F",
-                  "types": [
-                    "asserts c \"in\" F"
-                  ]
-                },
-                {
-                  "depth": 1,
-                  "text": "F",
-                  "types": [
-                    "is \\field"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "then",
               "inline_argument": null,
               "inline_latex": null,
               "arguments": [
                 {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
+                  "kind": "formulation",
+                  "text": "c \"in\" F",
+                  "latex": "c \\in F",
+                  "type_info": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "v \"in\" W",
-                      "inline_latex": "v \\in W",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "v \"in\" W",
-                          "types": [
-                            "asserts v \"in\" W"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "W",
-                          "types": [
-                            "\\:vector.subspace.of:/ V:=(X,+,*,0)"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 0,
+                      "text": "c \"in\" F",
+                      "types": [
+                        "asserts c \"in\" F"
+                      ]
                     },
                     {
-                      "label": "then",
-                      "inline_argument": "c * v \"in\" W",
-                      "inline_latex": "c \\ast v \\in W",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "c * v \"in\" W",
-                          "types": [
-                            "asserts c * v \"in\" W"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "c * v",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "c",
-                          "types": [
-                            "\"in\" F"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "v",
-                          "types": [
-                            "\"in\" W"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 1,
+                      "text": "F",
+                      "types": [
+                        "is \\field"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "v \"in\" W",
+                  "latex": "v \\in W",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "v \"in\" W",
+                      "types": [
+                        "asserts v \"in\" W"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "W",
+                      "types": [
+                        "\\:vector.subspace.of:/ V:=(X,+,*,0)"
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "c * v \"in\" W",
+              "inline_latex": "c \\ast v \\in W",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "c * v \"in\" W",
+                  "types": [
+                    "asserts c * v \"in\" W"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "c * v",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "c",
+                  "types": [
+                    "\"in\" F"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "v",
+                  "types": [
+                    "\"in\" W"
+                  ]
+                }
+              ],
+              "arguments": []
             }
           ]
         }

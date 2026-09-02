@@ -197,10 +197,10 @@ Id: "cef832b6-22d8-4377-8e47-577ab1f7bb1d"
 Theorem:
 given: S ::= a(n_) is \(bounded)::real.sequence
 then:
-. exists: T ::= b(k_) is \subsequence:of{S}
-  suchThat:
-  . exists: L is \real
-    suchThat: \converges.to{L}:for{T}
+. exists:
+  . T ::= b(k_) is \subsequence:of{S}
+  . L is \real
+  suchThat: \converges.to{L}:for{T}
 Documented:
 . called: "Bolzano--Weierstrass Theorem"
 . description: "Every bounded real sequence has a convergent subsequence."

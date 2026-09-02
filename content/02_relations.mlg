@@ -469,16 +469,20 @@ satisfies:
   . R(meet(a, b), b)
   . R(a, join(a, b))
   . R(b, join(a, b))
-  . forAll: x "in" X
-    where:
-    . R(x, a)
-    . R(x, b)
-    then: R(x, meet(a, b))
-  . forAll: x "in" X
-    where:
-    . R(a, x)
-    . R(b, x)
-    then: R(join(a, b), x)
+. forAll:
+  . a, b "in" X
+  . x "in" X
+  where:
+  . R(x, a)
+  . R(x, b)
+  then: R(x, meet(a, b))
+. forAll:
+  . a, b "in" X
+  . x "in" X
+  where:
+  . R(a, x)
+  . R(b, x)
+  then: R(join(a, b), x)
 Documented:
 . called: "lattice"
 . description: "A lattice is a partially ordered set in which each pair has a

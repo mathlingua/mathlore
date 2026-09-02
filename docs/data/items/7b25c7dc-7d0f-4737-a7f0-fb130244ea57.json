@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Dedekind cut}",
   "body_text": null,
   "page": null,
-  "source": "[\\dedekind.cut]\nDeclares: D \\:subset:/ \\rationals\nsatisfies:\n. exists: q is \\rational\n  suchThat: q \"in\" D\n. exists: r is \\rational\n  suchThat:\n  . not: r \"in\"? D\n. forAll: x is \\rational\n  where: x \"in\" D\n  then:\n  . forAll: y is \\rational\n    where: y \\:rational.less?:/ x\n    then: y \"in\" D\n. forAll: x is \\rational\n  where: x \"in\" D\n  then:\n  . exists: y is \\rational\n    suchThat:\n    . y \"in\" D\n    . x \\:rational.less?:/ y\nDocumented:\n. called: \"Dedekind cut\"\n. description: \"A nonempty proper downward-closed subset of $\\mathbb{Q}$ with no\n                greatest member.\"\nId: \"7b25c7dc-7d0f-4737-a7f0-fb130244ea57\"",
+  "source": "[\\dedekind.cut]\nDeclares: D \\:subset:/ \\rationals\nsatisfies:\n. exists: q is \\rational\n  suchThat: q \"in\" D\n. exists: r is \\rational\n  suchThat:\n  . not: r \"in\"? D\n. forAll:\n  . x is \\rational\n  . y is \\rational\n  where:\n  . x \"in\" D\n  . y \\:rational.less?:/ x\n  then: y \"in\" D\n. forAll: x is \\rational\n  where: x \"in\" D\n  then:\n  . exists: y is \\rational\n    suchThat:\n    . y \"in\" D\n    . x \\:rational.less?:/ y\nDocumented:\n. called: \"Dedekind cut\"\n. description: \"A nonempty proper downward-closed subset of $\\mathbb{Q}$ with no\n                greatest member.\"\nId: \"7b25c7dc-7d0f-4737-a7f0-fb130244ea57\"",
   "sections": [
     {
       "label": "Declares",
@@ -140,29 +140,106 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "x is \\rational",
-              "inline_latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
-              "inline_type_info": [
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
                 {
-                  "depth": 0,
+                  "kind": "formulation",
                   "text": "x is \\rational",
-                  "types": [
-                    "asserts x is \\rational"
+                  "latex": "x \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "x is \\rational",
+                      "types": [
+                        "asserts x is \\rational"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "y is \\rational",
+                  "latex": "y \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "y is \\rational",
+                      "types": [
+                        "asserts y is \\rational"
+                      ]
+                    }
                   ]
                 }
-              ],
-              "arguments": []
+              ]
             },
             {
               "label": "where",
-              "inline_argument": "x \"in\" D",
-              "inline_latex": "x \\in D",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "x \"in\" D",
+                  "latex": "x \\in D",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "x \"in\" D",
+                      "types": [
+                        "asserts x \"in\" D"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "D",
+                      "types": [
+                        "is \\dedekind.cut"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "y \\:rational.less?:/ x",
+                  "latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{y < x}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "y \\:rational.less?:/ x",
+                      "types": [
+                        "is \\\\statement"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "y",
+                      "types": [
+                        "is \\rational"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "x",
+                      "types": [
+                        "\"in\" D",
+                        "is \\rational"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "y \"in\" D",
+              "inline_latex": "y \\in D",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "x \"in\" D",
+                  "text": "y \"in\" D",
                   "types": [
-                    "asserts x \"in\" D"
+                    "asserts y \"in\" D"
                   ]
                 },
                 {
@@ -174,86 +251,6 @@
                 }
               ],
               "arguments": []
-            },
-            {
-              "label": "then",
-              "inline_argument": null,
-              "inline_latex": null,
-              "arguments": [
-                {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
-                    {
-                      "label": "forAll",
-                      "inline_argument": "y is \\rational",
-                      "inline_latex": "y \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "y is \\rational",
-                          "types": [
-                            "asserts y is \\rational"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "where",
-                      "inline_argument": "y \\:rational.less?:/ x",
-                      "inline_latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{y < x}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "y \\:rational.less?:/ x",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "y",
-                          "types": [
-                            "is \\rational"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "x",
-                          "types": [
-                            "\"in\" D",
-                            "is \\rational"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "then",
-                      "inline_argument": "y \"in\" D",
-                      "inline_latex": "y \\in D",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "y \"in\" D",
-                          "types": [
-                            "asserts y \"in\" D"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "D",
-                          "types": [
-                            "is \\dedekind.cut"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    }
-                  ]
-                }
-              ]
             }
           ]
         },

@@ -6,7 +6,7 @@
   "heading_latex": "\\textrm{Canonical Associativity Bijection for Cartesian Products}",
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven: A, B, C is \\set\nthen:\n. exists: phi(x__) is \\function:on{(.(.A \\.set.cross./ B.) \\.set.cross./ C.)}:to{(.A \\.set.cross./ (.B \\.set.cross./ C.).)}\n  suchThat:\n  . phi is? \\(bijective)::function:?on{(.(.A \\.set.cross./ B.) \\.set.cross./ C.)}:?to{(.A \\.set.cross./ (.B \\.set.cross./ C.).)}\n  . forAll: a \"in\" A\n    then:\n    . forAll: b \"in\" B\n      then:\n      . forAll: c \"in\" C\n        then: phi(((a, b), c)) = (a, (b, c))\nDocumented:\n. called: \"Canonical Associativity Bijection for Cartesian Products\"\n. description: \"The map $((a,b),c)\\mapsto(a,(b,c))$ is a canonical bijection\n                from $(A\\times B)\\times C$ to $A\\times(B\\times C)$. The two\n                products are therefore naturally identifiable but are not\n                literally equal under the ordered-pair encoding.\"\nId: \"cd332b77-e7cc-4e59-92e6-40decc503be8\"",
+  "source": "Theorem:\ngiven: A, B, C is \\set\nthen:\n. exists: phi(x__) is \\function:on{(.(.A \\.set.cross./ B.) \\.set.cross./ C.)}:to{(.A \\.set.cross./ (.B \\.set.cross./ C.).)}\n  suchThat:\n  . phi is? \\(bijective)::function:?on{(.(.A \\.set.cross./ B.) \\.set.cross./ C.)}:?to{(.A \\.set.cross./ (.B \\.set.cross./ C.).)}\n  . forAll:\n    . a \"in\" A\n    . b \"in\" B\n    . c \"in\" C\n    then: phi(((a, b), c)) = (a, (b, c))\nDocumented:\n. called: \"Canonical Associativity Bijection for Cartesian Products\"\n. description: \"The map $((a,b),c)\\mapsto(a,(b,c))$ is a canonical bijection\n                from $(A\\times B)\\times C$ to $A\\times(B\\times C)$. The two\n                products are therefore naturally identifiable but are not\n                literally equal under the ordered-pair encoding.\"\nId: \"cd332b77-e7cc-4e59-92e6-40decc503be8\"",
   "sections": [
     {
       "label": "Theorem",
@@ -87,179 +87,157 @@
                   "sections": [
                     {
                       "label": "forAll",
-                      "inline_argument": "a \"in\" A",
-                      "inline_latex": "a \\in A",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "a \"in\" A",
-                          "types": [
-                            "asserts a \"in\" A"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "A",
-                          "types": [
-                            "is \\set"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "then",
                       "inline_argument": null,
                       "inline_latex": null,
                       "arguments": [
                         {
-                          "kind": "group",
-                          "heading": null,
-                          "sections": [
+                          "kind": "formulation",
+                          "text": "a \"in\" A",
+                          "latex": "a \\in A",
+                          "type_info": [
                             {
-                              "label": "forAll",
-                              "inline_argument": "b \"in\" B",
-                              "inline_latex": "b \\in B",
-                              "inline_type_info": [
-                                {
-                                  "depth": 0,
-                                  "text": "b \"in\" B",
-                                  "types": [
-                                    "asserts b \"in\" B"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "B",
-                                  "types": [
-                                    "is \\set"
-                                  ]
-                                }
-                              ],
-                              "arguments": []
+                              "depth": 0,
+                              "text": "a \"in\" A",
+                              "types": [
+                                "asserts a \"in\" A"
+                              ]
                             },
                             {
-                              "label": "then",
-                              "inline_argument": null,
-                              "inline_latex": null,
-                              "arguments": [
-                                {
-                                  "kind": "group",
-                                  "heading": null,
-                                  "sections": [
-                                    {
-                                      "label": "forAll",
-                                      "inline_argument": "c \"in\" C",
-                                      "inline_latex": "c \\in C",
-                                      "inline_type_info": [
-                                        {
-                                          "depth": 0,
-                                          "text": "c \"in\" C",
-                                          "types": [
-                                            "asserts c \"in\" C"
-                                          ]
-                                        },
-                                        {
-                                          "depth": 1,
-                                          "text": "C",
-                                          "types": [
-                                            "is \\set"
-                                          ]
-                                        }
-                                      ],
-                                      "arguments": []
-                                    },
-                                    {
-                                      "label": "then",
-                                      "inline_argument": "phi(((a, b), c)) = (a, (b, c))",
-                                      "inline_latex": "\\phi(\\left(\\left(a, b\\right), c\\right)) = \\left(a, \\left(b, c\\right)\\right)",
-                                      "inline_type_info": [
-                                        {
-                                          "depth": 0,
-                                          "text": "phi(((a, b), c)) = (a, (b, c))",
-                                          "types": [
-                                            "is \\\\statement"
-                                          ]
-                                        },
-                                        {
-                                          "depth": 1,
-                                          "text": "phi(((a,b),c))",
-                                          "types": [
-                                            "\"in\" A\\.set.cross./B\\.set.cross./C"
-                                          ]
-                                        },
-                                        {
-                                          "depth": 2,
-                                          "text": "((a,b),c)",
-                                          "types": []
-                                        },
-                                        {
-                                          "depth": 3,
-                                          "text": "(a,b)",
-                                          "types": []
-                                        },
-                                        {
-                                          "depth": 4,
-                                          "text": "a",
-                                          "types": [
-                                            "\"in\" A"
-                                          ]
-                                        },
-                                        {
-                                          "depth": 4,
-                                          "text": "b",
-                                          "types": [
-                                            "\"in\" B"
-                                          ]
-                                        },
-                                        {
-                                          "depth": 3,
-                                          "text": "c",
-                                          "types": [
-                                            "\"in\" C"
-                                          ]
-                                        },
-                                        {
-                                          "depth": 1,
-                                          "text": "(a,(b,c))",
-                                          "types": []
-                                        },
-                                        {
-                                          "depth": 2,
-                                          "text": "a",
-                                          "types": [
-                                            "\"in\" A"
-                                          ]
-                                        },
-                                        {
-                                          "depth": 2,
-                                          "text": "(b,c)",
-                                          "types": []
-                                        },
-                                        {
-                                          "depth": 3,
-                                          "text": "b",
-                                          "types": [
-                                            "\"in\" B"
-                                          ]
-                                        },
-                                        {
-                                          "depth": 3,
-                                          "text": "c",
-                                          "types": [
-                                            "\"in\" C"
-                                          ]
-                                        }
-                                      ],
-                                      "arguments": []
-                                    }
-                                  ]
-                                }
+                              "depth": 1,
+                              "text": "A",
+                              "types": [
+                                "is \\set"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "b \"in\" B",
+                          "latex": "b \\in B",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "b \"in\" B",
+                              "types": [
+                                "asserts b \"in\" B"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "B",
+                              "types": [
+                                "is \\set"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "c \"in\" C",
+                          "latex": "c \\in C",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "c \"in\" C",
+                              "types": [
+                                "asserts c \"in\" C"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "C",
+                              "types": [
+                                "is \\set"
                               ]
                             }
                           ]
                         }
                       ]
+                    },
+                    {
+                      "label": "then",
+                      "inline_argument": "phi(((a, b), c)) = (a, (b, c))",
+                      "inline_latex": "\\phi(\\left(\\left(a, b\\right), c\\right)) = \\left(a, \\left(b, c\\right)\\right)",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "phi(((a, b), c)) = (a, (b, c))",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "phi(((a,b),c))",
+                          "types": [
+                            "\"in\" A\\.set.cross./B\\.set.cross./C"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "((a,b),c)",
+                          "types": []
+                        },
+                        {
+                          "depth": 3,
+                          "text": "(a,b)",
+                          "types": []
+                        },
+                        {
+                          "depth": 4,
+                          "text": "a",
+                          "types": [
+                            "\"in\" A"
+                          ]
+                        },
+                        {
+                          "depth": 4,
+                          "text": "b",
+                          "types": [
+                            "\"in\" B"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "c",
+                          "types": [
+                            "\"in\" C"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "(a,(b,c))",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "a",
+                          "types": [
+                            "\"in\" A"
+                          ]
+                        },
+                        {
+                          "depth": 2,
+                          "text": "(b,c)",
+                          "types": []
+                        },
+                        {
+                          "depth": 3,
+                          "text": "b",
+                          "types": [
+                            "\"in\" B"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "c",
+                          "types": [
+                            "\"in\" C"
+                          ]
+                        }
+                      ],
+                      "arguments": []
                     }
                   ]
                 }

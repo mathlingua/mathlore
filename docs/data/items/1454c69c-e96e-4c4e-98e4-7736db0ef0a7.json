@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{lattice}",
   "body_text": null,
   "page": null,
-  "source": "[\\lattice]\nDeclares: L ::= (X, R, meet(a_, b_), join(a_, b_)) is \\set via X\nspecifies:\n. R is \\partial.order:on{X}\n. meet(a_, b_) is \\function:on{X \\.set.cross./ X}:to{X}\n. join(a_, b_) is \\function:on{X \\.set.cross./ X}:to{X}\nsatisfies:\n. forAll: a, b \"in\" X\n  then:\n  . R(meet(a, b), a)\n  . R(meet(a, b), b)\n  . R(a, join(a, b))\n  . R(b, join(a, b))\n  . forAll: x \"in\" X\n    where:\n    . R(x, a)\n    . R(x, b)\n    then: R(x, meet(a, b))\n  . forAll: x \"in\" X\n    where:\n    . R(a, x)\n    . R(b, x)\n    then: R(join(a, b), x)\nDocumented:\n. called: \"lattice\"\n. description: \"A lattice is a partially ordered set in which each pair has a\n                greatest lower bound and a least upper bound.\"\nId: \"1454c69c-e96e-4c4e-98e4-7736db0ef0a7\"",
+  "source": "[\\lattice]\nDeclares: L ::= (X, R, meet(a_, b_), join(a_, b_)) is \\set via X\nspecifies:\n. R is \\partial.order:on{X}\n. meet(a_, b_) is \\function:on{X \\.set.cross./ X}:to{X}\n. join(a_, b_) is \\function:on{X \\.set.cross./ X}:to{X}\nsatisfies:\n. forAll: a, b \"in\" X\n  then:\n  . R(meet(a, b), a)\n  . R(meet(a, b), b)\n  . R(a, join(a, b))\n  . R(b, join(a, b))\n. forAll:\n  . a, b \"in\" X\n  . x \"in\" X\n  where:\n  . R(x, a)\n  . R(x, b)\n  then: R(x, meet(a, b))\n. forAll:\n  . a, b \"in\" X\n  . x \"in\" X\n  where:\n  . R(a, x)\n  . R(b, x)\n  then: R(join(a, b), x)\nDocumented:\n. called: \"lattice\"\n. description: \"A lattice is a partially ordered set in which each pair has a\n                greatest lower bound and a least upper bound.\"\nId: \"1454c69c-e96e-4c4e-98e4-7736db0ef0a7\"",
   "sections": [
     {
       "label": "Declares",
@@ -273,272 +273,328 @@
                       ]
                     }
                   ]
-                },
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
                 {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
+                  "kind": "formulation",
+                  "text": "a, b \"in\" X",
+                  "latex": "a, b \\in X",
+                  "type_info": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "x \"in\" X",
-                      "inline_latex": "x \\in X",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "x \"in\" X",
-                          "types": [
-                            "asserts x \"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "X",
-                          "types": [
-                            "is \\set"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "where",
-                      "inline_argument": null,
-                      "inline_latex": null,
-                      "arguments": [
-                        {
-                          "kind": "formulation",
-                          "text": "R(x, a)",
-                          "latex": "x \\: R \\: a",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "R(x, a)",
-                              "types": []
-                            },
-                            {
-                              "depth": 1,
-                              "text": "x",
-                              "types": [
-                                "\"in\" X"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "a",
-                              "types": [
-                                "\"in\" X",
-                                "\"in\" X\\.set.cross./X"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": "formulation",
-                          "text": "R(x, b)",
-                          "latex": "x \\: R \\: b",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "R(x, b)",
-                              "types": []
-                            },
-                            {
-                              "depth": 1,
-                              "text": "x",
-                              "types": [
-                                "\"in\" X"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "b",
-                              "types": [
-                                "\"in\" X",
-                                "\"in\" X\\.set.cross./X"
-                              ]
-                            }
-                          ]
-                        }
+                      "depth": 0,
+                      "text": "a, b \"in\" X",
+                      "types": [
+                        "asserts a \"in\" X",
+                        "asserts b \"in\" X"
                       ]
                     },
                     {
-                      "label": "then",
-                      "inline_argument": "R(x, meet(a, b))",
-                      "inline_latex": "x \\: R \\: meet(a, b)",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "R(x, meet(a, b))",
-                          "types": []
-                        },
-                        {
-                          "depth": 1,
-                          "text": "x",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "meet(a,b)",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "a",
-                          "types": [
-                            "\"in\" X",
-                            "\"in\" X\\.set.cross./X"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "b",
-                          "types": [
-                            "\"in\" X",
-                            "\"in\" X\\.set.cross./X"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 1,
+                      "text": "X",
+                      "types": [
+                        "is \\set"
+                      ]
                     }
                   ]
                 },
                 {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
+                  "kind": "formulation",
+                  "text": "x \"in\" X",
+                  "latex": "x \\in X",
+                  "type_info": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "x \"in\" X",
-                      "inline_latex": "x \\in X",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "x \"in\" X",
-                          "types": [
-                            "asserts x \"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "X",
-                          "types": [
-                            "is \\set"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "where",
-                      "inline_argument": null,
-                      "inline_latex": null,
-                      "arguments": [
-                        {
-                          "kind": "formulation",
-                          "text": "R(a, x)",
-                          "latex": "a \\: R \\: x",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "R(a, x)",
-                              "types": []
-                            },
-                            {
-                              "depth": 1,
-                              "text": "a",
-                              "types": [
-                                "\"in\" X",
-                                "\"in\" X\\.set.cross./X"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "x",
-                              "types": [
-                                "\"in\" X"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": "formulation",
-                          "text": "R(b, x)",
-                          "latex": "b \\: R \\: x",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "R(b, x)",
-                              "types": []
-                            },
-                            {
-                              "depth": 1,
-                              "text": "b",
-                              "types": [
-                                "\"in\" X",
-                                "\"in\" X\\.set.cross./X"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "x",
-                              "types": [
-                                "\"in\" X"
-                              ]
-                            }
-                          ]
-                        }
+                      "depth": 0,
+                      "text": "x \"in\" X",
+                      "types": [
+                        "asserts x \"in\" X"
                       ]
                     },
                     {
-                      "label": "then",
-                      "inline_argument": "R(join(a, b), x)",
-                      "inline_latex": "join(a, b) \\: R \\: x",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "R(join(a, b), x)",
-                          "types": []
-                        },
-                        {
-                          "depth": 1,
-                          "text": "join(a,b)",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "a",
-                          "types": [
-                            "\"in\" X",
-                            "\"in\" X\\.set.cross./X"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "b",
-                          "types": [
-                            "\"in\" X",
-                            "\"in\" X\\.set.cross./X"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "x",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 1,
+                      "text": "X",
+                      "types": [
+                        "is \\set"
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "R(x, a)",
+                  "latex": "x \\: R \\: a",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "R(x, a)",
+                      "types": []
+                    },
+                    {
+                      "depth": 1,
+                      "text": "x",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a",
+                      "types": [
+                        "\"in\" X",
+                        "\"in\" X\\.set.cross./X"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "R(x, b)",
+                  "latex": "x \\: R \\: b",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "R(x, b)",
+                      "types": []
+                    },
+                    {
+                      "depth": 1,
+                      "text": "x",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "b",
+                      "types": [
+                        "\"in\" X",
+                        "\"in\" X\\.set.cross./X"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "R(x, meet(a, b))",
+              "inline_latex": "x \\: R \\: meet(a, b)",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "R(x, meet(a, b))",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "meet(a,b)",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "a",
+                  "types": [
+                    "\"in\" X",
+                    "\"in\" X\\.set.cross./X"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "b",
+                  "types": [
+                    "\"in\" X",
+                    "\"in\" X\\.set.cross./X"
+                  ]
+                }
+              ],
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "forAll",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "a, b \"in\" X",
+                  "latex": "a, b \\in X",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "a, b \"in\" X",
+                      "types": [
+                        "asserts a \"in\" X",
+                        "asserts b \"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "X",
+                      "types": [
+                        "is \\set"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "x \"in\" X",
+                  "latex": "x \\in X",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "x \"in\" X",
+                      "types": [
+                        "asserts x \"in\" X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "X",
+                      "types": [
+                        "is \\set"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "where",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "R(a, x)",
+                  "latex": "a \\: R \\: x",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "R(a, x)",
+                      "types": []
+                    },
+                    {
+                      "depth": 1,
+                      "text": "a",
+                      "types": [
+                        "\"in\" X",
+                        "\"in\" X\\.set.cross./X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "x",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "R(b, x)",
+                  "latex": "b \\: R \\: x",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "R(b, x)",
+                      "types": []
+                    },
+                    {
+                      "depth": 1,
+                      "text": "b",
+                      "types": [
+                        "\"in\" X",
+                        "\"in\" X\\.set.cross./X"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "x",
+                      "types": [
+                        "\"in\" X"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "R(join(a, b), x)",
+              "inline_latex": "join(a, b) \\: R \\: x",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "R(join(a, b), x)",
+                  "types": []
+                },
+                {
+                  "depth": 1,
+                  "text": "join(a,b)",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "a",
+                  "types": [
+                    "\"in\" X",
+                    "\"in\" X\\.set.cross./X"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "b",
+                  "types": [
+                    "\"in\" X",
+                    "\"in\" X\\.set.cross./X"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "x",
+                  "types": [
+                    "\"in\" X"
+                  ]
+                }
+              ],
+              "arguments": []
             }
           ]
         }

@@ -355,20 +355,20 @@ Id: "b77feec6-c586-452f-804e-6ec2b591ac1f"
 [\real.cauchy.relation]
 Defines: E is \equivalence.relation:on{\rational.cauchy.sequences}
 expresses:
-. forAll: A ::= a(n_) ::= qa_ is \cauchy.rational.sequence
+. forAll:
+  . A ::= a(n_) ::= qa_ is \cauchy.rational.sequence
+  . B ::= b(n_) ::= qb_ is \cauchy.rational.sequence
   then:
-  . forAll: B ::= b(n_) ::= qb_ is \cauchy.rational.sequence
-    then:
-    . have: E(A, B)
-      iff:
-      . forAll: epsilon is \rational
-        where: \rational.zero \:rational.less?:/ epsilon
-        then:
-        . exists: N is \natural
-          suchThat:
-          . forAll: n is \natural
-            where: N \:natural.leq?:/ n
-            then: \rational.abs(a(n) \.rational.-./ b(n)) \:rational.less?:/ epsilon
+  . have: E(A, B)
+    iff:
+    . forAll: epsilon is \rational
+      where: \rational.zero \:rational.less?:/ epsilon
+      then:
+      . exists: N is \natural
+        suchThat:
+        . forAll: n is \natural
+          where: N \:natural.leq?:/ n
+          then: \rational.abs(a(n) \.rational.-./ b(n)) \:rational.less?:/ epsilon
 Documented:
 . called: "Cauchy-sequence equivalence"
 . description: "Two rational Cauchy sequences are equivalent when their termwise
@@ -479,10 +479,10 @@ Id: "a631942f-fad8-4589-8b48-2564aca96f97"
 [\real.cauchy.add]
 Defines: add(x_, y_) is \binary.operation:on{\real.cauchy.carrier}
 expresses:
-. forAll: A ::= a(n_) ::= qa_ is \cauchy.rational.sequence
-  then:
-  . forAll: B ::= b(n_) ::= qb_ is \cauchy.rational.sequence
-    then: add(\real.cauchy.class:of{A}, \real.cauchy.class:of{B}) = \real.cauchy.class:of{\rational.cauchy.sequence.add{A, B}}
+. forAll:
+  . A ::= a(n_) ::= qa_ is \cauchy.rational.sequence
+  . B ::= b(n_) ::= qb_ is \cauchy.rational.sequence
+  then: add(\real.cauchy.class:of{A}, \real.cauchy.class:of{B}) = \real.cauchy.class:of{\rational.cauchy.sequence.add{A, B}}
 Documented:
 . called: "Cauchy-real addition"
 . description: "Addition induced by termwise addition of representative rational
@@ -493,10 +493,10 @@ Id: "258c8289-202b-4fd4-a228-2a63bd2e47f0"
 [\real.cauchy.mul]
 Defines: mul(x_, y_) is \binary.operation:on{\real.cauchy.carrier}
 expresses:
-. forAll: A ::= a(n_) ::= qa_ is \cauchy.rational.sequence
-  then:
-  . forAll: B ::= b(n_) ::= qb_ is \cauchy.rational.sequence
-    then: mul(\real.cauchy.class:of{A}, \real.cauchy.class:of{B}) = \real.cauchy.class:of{\rational.cauchy.sequence.mul{A, B}}
+. forAll:
+  . A ::= a(n_) ::= qa_ is \cauchy.rational.sequence
+  . B ::= b(n_) ::= qb_ is \cauchy.rational.sequence
+  then: mul(\real.cauchy.class:of{A}, \real.cauchy.class:of{B}) = \real.cauchy.class:of{\rational.cauchy.sequence.mul{A, B}}
 Documented:
 . called: "Cauchy-real multiplication"
 . description: "Multiplication induced by termwise multiplication of
@@ -531,23 +531,23 @@ Id: "b7a4d100-4eeb-4e9c-a332-6b3ec447991a"
 [\real.cauchy.leq]
 Defines: leq(x_, y_) is \total.order:on{\real.cauchy.carrier}
 expresses:
-. forAll: A ::= a(n_) ::= qa_ is \cauchy.rational.sequence
+. forAll:
+  . A ::= a(n_) ::= qa_ is \cauchy.rational.sequence
+  . B ::= b(n_) ::= qb_ is \cauchy.rational.sequence
   then:
-  . forAll: B ::= b(n_) ::= qb_ is \cauchy.rational.sequence
-    then:
-    . have: leq(\real.cauchy.class:of{A}, \real.cauchy.class:of{B})
-      iff:
-      . forAll: epsilon is \rational
-        where: \rational.zero \:rational.less?:/ epsilon
-        then:
-        . exists: N is \natural
-          suchThat:
-          . forAll: n is \natural
-            where: N \:natural.leq?:/ n
-            then:
-            . let: r is \rational
-              where: r = b(n) \.rational.+./ epsilon
-              then: a(n) \:rational.leq?:/ r
+  . have: leq(\real.cauchy.class:of{A}, \real.cauchy.class:of{B})
+    iff:
+    . forAll: epsilon is \rational
+      where: \rational.zero \:rational.less?:/ epsilon
+      then:
+      . exists: N is \natural
+        suchThat:
+        . forAll: n is \natural
+          where: N \:natural.leq?:/ n
+          then:
+          . let: r is \rational
+            where: r = b(n) \.rational.+./ epsilon
+            then: a(n) \:rational.leq?:/ r
 Documented:
 . called: "Cauchy-real order"
 . description: "The quotient order: $[a]\le[b]$ when $a_n$ is eventually no more
@@ -596,12 +596,13 @@ satisfies:
 . exists: r is \rational
   suchThat:
   . not: r "in"? D
-. forAll: x is \rational
-  where: x "in" D
-  then:
-  . forAll: y is \rational
-    where: y \:rational.less?:/ x
-    then: y "in" D
+. forAll:
+  . x is \rational
+  . y is \rational
+  where:
+  . x "in" D
+  . y \:rational.less?:/ x
+  then: y "in" D
 . forAll: x is \rational
   where: x "in" D
   then:
@@ -627,29 +628,29 @@ Id: "760a04d0-6a51-432c-8e32-830b8614c5cc"
 [\dedekind.from.cauchy(x_)]
 Defines: cut(x_) is \(bijective)::function:on{\real.cauchy.carrier}:to{\dedekind.cut.carrier}
 expresses:
-. forAll: A ::= a(n_) ::= qa_ is \cauchy.rational.sequence
+. forAll:
+  . A ::= a(n_) ::= qa_ is \cauchy.rational.sequence
+  . q is \rational
   then:
-  . forAll: q is \rational
+  . let: C is \dedekind.cut
+    where: C = cut(\real.cauchy.class:of{A})
     then:
-    . let: C is \dedekind.cut
-      where: C = cut(\real.cauchy.class:of{A})
-      then:
-      . have: q "in"? C
-        iff:
-        . exists: epsilon is \rational
-          suchThat:
-          . \rational.zero \:rational.less?:/ epsilon
-          . exists: N is \natural
-            suchThat:
-            . forAll: n is \natural
-              where: N \:natural.leq?:/ n
-              then:
-              . let: r is \rational
-                where: r = q \.rational.+./ epsilon
-                then:
-                . let: s is \rational
-                  where: s = a(n)
-                  then: r \:rational.less?:/ s
+    . have: q "in"? C
+      iff:
+      . exists:
+        . epsilon is \rational
+        . N is \natural
+        suchThat:
+        . \rational.zero \:rational.less?:/ epsilon
+        . forAll: n is \natural
+          where: N \:natural.leq?:/ n
+          then:
+          . let: r is \rational
+            where: r = q \.rational.+./ epsilon
+            then:
+            . let: s is \rational
+              where: s = a(n)
+              then: r \:rational.less?:/ s
 Documented:
 . called: "Dedekind cut of a Cauchy real"
 . description: "The canonical bijection sending a Cauchy-real class to the lower

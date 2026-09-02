@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{isomorphic}\\textrm{ }\\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
   "body_text": null,
   "page": null,
-  "source": "[\\(isomorphic)::vector.space:over{F}]\nRefines: V\nwhen: F is \\field\nspecifies: V is \\vector.space:over{F}\nsatisfies:\n. exists: W is \\vector.space:over{F}\n  suchThat:\n  . exists: T(v__) is \\linear.map:from{V}:to{W}\n    suchThat: T is? \\(bijective)::function:?on{V}:?to{W}\nDocumented:\n. adjective: \"isomorphic\"\n. description: \"Two vector spaces are isomorphic if there exists a bijective\n                linear transformation between them.\"\nId: \"d1239479-6b9d-429a-b3e5-2e70a1529638\"",
+  "source": "[\\(isomorphic)::vector.space:over{F}]\nRefines: V\nwhen: F is \\field\nspecifies: V is \\vector.space:over{F}\nsatisfies:\n. exists:\n  . W is \\vector.space:over{F}\n  . T(v__) is \\linear.map:from{V}:to{W}\n  suchThat: T is? \\(bijective)::function:?on{V}:?to{W}\nDocumented:\n. adjective: \"isomorphic\"\n. description: \"Two vector spaces are isomorphic if there exists a bijective\n                linear transformation between them.\"\nId: \"d1239479-6b9d-429a-b3e5-2e70a1529638\"",
   "sections": [
     {
       "label": "Refines",
@@ -66,68 +66,60 @@
           "sections": [
             {
               "label": "exists",
-              "inline_argument": "W is \\vector.space:over{F}",
-              "inline_latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "W is \\vector.space:over{F}",
-                  "types": [
-                    "asserts W is \\vector.space:over{F}"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "suchThat",
               "inline_argument": null,
               "inline_latex": null,
               "arguments": [
                 {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
+                  "kind": "formulation",
+                  "text": "W is \\vector.space:over{F}",
+                  "latex": "W \\textrm{ is } \\htmlData{mlg-ref=5c766563746f722e73706163653a6f766572}{\\textrm{vector space over }F}",
+                  "type_info": [
                     {
-                      "label": "exists",
-                      "inline_argument": "T(v__) is \\linear.map:from{V}:to{W}",
-                      "inline_latex": "T(v) \\textrm{ is } \\htmlData{mlg-ref=5c6c696e6561722e6d61703a66726f6d3a746f}{\\textrm{linear map from }V\\textrm{ to }W}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "T(v__) is \\linear.map:from{V}:to{W}",
-                          "types": [
-                            "asserts T is \\linear.map:from{V}:to{W}"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
+                      "depth": 0,
+                      "text": "W is \\vector.space:over{F}",
+                      "types": [
+                        "asserts W is \\vector.space:over{F}"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "T(v__) is \\linear.map:from{V}:to{W}",
+                  "latex": "T(v) \\textrm{ is } \\htmlData{mlg-ref=5c6c696e6561722e6d61703a66726f6d3a746f}{\\textrm{linear map from }V\\textrm{ to }W}",
+                  "type_info": [
                     {
-                      "label": "suchThat",
-                      "inline_argument": "T is? \\(bijective)::function:?on{V}:?to{W}",
-                      "inline_latex": "T \\textrm{ is } \\htmlData{mlg-ref=5c62696a6563746976653a3a66756e6374696f6e3a6f6e3a746f}{\\textrm{bijective}}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }V\\textrm{ to }W}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "T is? \\(bijective)::function:?on{V}:?to{W}",
-                          "types": [
-                            "asserts T is \\bijective::function:on{V}:to{W}"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "T",
-                          "types": [
-                            "is \\linear.map:from{V}:to{W}"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 0,
+                      "text": "T(v__) is \\linear.map:from{V}:to{W}",
+                      "types": [
+                        "asserts T is \\linear.map:from{V}:to{W}"
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "label": "suchThat",
+              "inline_argument": "T is? \\(bijective)::function:?on{V}:?to{W}",
+              "inline_latex": "T \\textrm{ is } \\htmlData{mlg-ref=5c62696a6563746976653a3a66756e6374696f6e3a6f6e3a746f}{\\textrm{bijective}}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }V\\textrm{ to }W}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "T is? \\(bijective)::function:?on{V}:?to{W}",
+                  "types": [
+                    "asserts T is \\bijective::function:on{V}:to{W}"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "T",
+                  "types": [
+                    "is \\linear.map:from{V}:to{W}"
+                  ]
+                }
+              ],
+              "arguments": []
             }
           ]
         }

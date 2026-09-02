@@ -100,10 +100,10 @@ satisfies:
 . 0 "in" W
 . forAll: u, v "in" W
   then: u + v "in" W
-. forAll: c "in" F
-  then:
-  . forAll: v "in" W
-    then: c * v "in" W
+. forAll:
+  . c "in" F
+  . v "in" W
+  then: c * v "in" W
 Documented:
 . called: "$W?$ is a vector subspace of $V?$"
 . written: "W? \le V?"
@@ -148,15 +148,15 @@ Refines: S
 when: V is \set
 specifies: S \:subset:/ V
 satisfies:
-. forAll: c1, c2 is \\anything
+. forAll:
+  . c1, c2 is \\anything
+  . v1, v2 is \\anything
+  where: v1 != v2
   then:
-  . forAll: v1, v2 is \\anything
-    where: v1 != v2
+  . if: ((c1 \.vector.*./ v1) \.vector.+./ (c2 \.vector.*./ v2)) = 0
     then:
-    . if: ((c1 \.vector.*./ v1) \.vector.+./ (c2 \.vector.*./ v2)) = 0
-      then:
-      . c1 = 0
-      . c2 = 0
+    . c1 = 0
+    . c2 = 0
 Documented:
 . adjective: "linearly independent"
 . description: "A set of vectors is linearly independent if the zero vector

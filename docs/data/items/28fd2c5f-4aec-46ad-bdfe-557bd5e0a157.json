@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Dedekind cut of a Cauchy real}",
   "body_text": null,
   "page": null,
-  "source": "[\\dedekind.from.cauchy(x_)]\nDefines: cut(x_) is \\(bijective)::function:on{\\real.cauchy.carrier}:to{\\dedekind.cut.carrier}\nexpresses:\n. forAll: A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence\n  then:\n  . forAll: q is \\rational\n    then:\n    . let: C is \\dedekind.cut\n      where: C = cut(\\real.cauchy.class:of{A})\n      then:\n      . have: q \"in\"? C\n        iff:\n        . exists: epsilon is \\rational\n          suchThat:\n          . \\rational.zero \\:rational.less?:/ epsilon\n          . exists: N is \\natural\n            suchThat:\n            . forAll: n is \\natural\n              where: N \\:natural.leq?:/ n\n              then:\n              . let: r is \\rational\n                where: r = q \\.rational.+./ epsilon\n                then:\n                . let: s is \\rational\n                  where: s = a(n)\n                  then: r \\:rational.less?:/ s\nDocumented:\n. called: \"Dedekind cut of a Cauchy real\"\n. description: \"The canonical bijection sending a Cauchy-real class to the lower\n                set of rationals that remain a positive rational distance below\n                a representative sequence.\"\nId: \"28fd2c5f-4aec-46ad-bdfe-557bd5e0a157\"",
+  "source": "[\\dedekind.from.cauchy(x_)]\nDefines: cut(x_) is \\(bijective)::function:on{\\real.cauchy.carrier}:to{\\dedekind.cut.carrier}\nexpresses:\n. forAll:\n  . A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence\n  . q is \\rational\n  then:\n  . let: C is \\dedekind.cut\n    where: C = cut(\\real.cauchy.class:of{A})\n    then:\n    . have: q \"in\"? C\n      iff:\n      . exists:\n        . epsilon is \\rational\n        . N is \\natural\n        suchThat:\n        . \\rational.zero \\:rational.less?:/ epsilon\n        . forAll: n is \\natural\n          where: N \\:natural.leq?:/ n\n          then:\n          . let: r is \\rational\n            where: r = q \\.rational.+./ epsilon\n            then:\n            . let: s is \\rational\n              where: s = a(n)\n              then: r \\:rational.less?:/ s\nDocumented:\n. called: \"Dedekind cut of a Cauchy real\"\n. description: \"The canonical bijection sending a Cauchy-real class to the lower\n                set of rationals that remain a positive rational distance below\n                a representative sequence.\"\nId: \"28fd2c5f-4aec-46ad-bdfe-557bd5e0a157\"",
   "sections": [
     {
       "label": "Defines",
@@ -27,18 +27,38 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence",
-              "inline_latex": "A(n) ::= qa \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
-              "inline_type_info": [
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
                 {
-                  "depth": 0,
+                  "kind": "formulation",
                   "text": "A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence",
-                  "types": [
-                    "asserts A is \\cauchy.rational.sequence"
+                  "latex": "A(n) ::= qa \\textrm{ is } \\htmlData{mlg-ref=5c6361756368792e726174696f6e616c2e73657175656e6365}{\\textrm{Cauchy rational sequence}}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "A ::= a(n_) ::= qa_ is \\cauchy.rational.sequence",
+                      "types": [
+                        "asserts A is \\cauchy.rational.sequence"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "q is \\rational",
+                  "latex": "q \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "q is \\rational",
+                      "types": [
+                        "asserts q is \\rational"
+                      ]
+                    }
                   ]
                 }
-              ],
-              "arguments": []
+              ]
             },
             {
               "label": "then",
@@ -50,15 +70,56 @@
                   "heading": null,
                   "sections": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "q is \\rational",
-                      "inline_latex": "q \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+                      "label": "let",
+                      "inline_argument": "C is \\dedekind.cut",
+                      "inline_latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c646564656b696e642e637574}{\\textrm{Dedekind cut}}",
                       "inline_type_info": [
                         {
                           "depth": 0,
-                          "text": "q is \\rational",
+                          "text": "C is \\dedekind.cut",
                           "types": [
-                            "asserts q is \\rational"
+                            "asserts C is \\dedekind.cut"
+                          ]
+                        }
+                      ],
+                      "arguments": []
+                    },
+                    {
+                      "label": "where",
+                      "inline_argument": "C = cut(\\real.cauchy.class:of{A})",
+                      "inline_latex": "C = cut(\\htmlData{mlg-ref=5c7265616c2e6361756368792e636c6173733a6f66}{[a]_{\\mathbb{R}}})",
+                      "inline_type_info": [
+                        {
+                          "depth": 0,
+                          "text": "C = cut(\\real.cauchy.class:of{A})",
+                          "types": [
+                            "is \\\\statement"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "C",
+                          "types": [
+                            "is \\dedekind.cut"
+                          ]
+                        },
+                        {
+                          "depth": 1,
+                          "text": "cut(\\real.cauchy.class:of{A})",
+                          "types": []
+                        },
+                        {
+                          "depth": 2,
+                          "text": "\\real.cauchy.class:of{A}",
+                          "types": [
+                            "\"in\" \\real.cauchy.carrier"
+                          ]
+                        },
+                        {
+                          "depth": 3,
+                          "text": "A",
+                          "types": [
+                            "is \\cauchy.rational.sequence"
                           ]
                         }
                       ],
@@ -74,63 +135,29 @@
                           "heading": null,
                           "sections": [
                             {
-                              "label": "let",
-                              "inline_argument": "C is \\dedekind.cut",
-                              "inline_latex": "C \\textrm{ is } \\htmlData{mlg-ref=5c646564656b696e642e637574}{\\textrm{Dedekind cut}}",
+                              "label": "have",
+                              "inline_argument": "q \"in\"? C",
+                              "inline_latex": "q \\in C",
                               "inline_type_info": [
                                 {
                                   "depth": 0,
-                                  "text": "C is \\dedekind.cut",
-                                  "types": [
-                                    "asserts C is \\dedekind.cut"
-                                  ]
-                                }
-                              ],
-                              "arguments": []
-                            },
-                            {
-                              "label": "where",
-                              "inline_argument": "C = cut(\\real.cauchy.class:of{A})",
-                              "inline_latex": "C = cut(\\htmlData{mlg-ref=5c7265616c2e6361756368792e636c6173733a6f66}{[a]_{\\mathbb{R}}})",
-                              "inline_type_info": [
-                                {
-                                  "depth": 0,
-                                  "text": "C = cut(\\real.cauchy.class:of{A})",
+                                  "text": "q \"in\"? C",
                                   "types": [
                                     "is \\\\statement"
                                   ]
                                 },
                                 {
                                   "depth": 1,
-                                  "text": "C",
+                                  "text": "q",
                                   "types": [
-                                    "is \\dedekind.cut"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "cut(\\real.cauchy.class:of{A})",
-                                  "types": []
-                                },
-                                {
-                                  "depth": 2,
-                                  "text": "\\real.cauchy.class:of{A}",
-                                  "types": [
-                                    "\"in\" \\real.cauchy.carrier"
-                                  ]
-                                },
-                                {
-                                  "depth": 3,
-                                  "text": "A",
-                                  "types": [
-                                    "is \\cauchy.rational.sequence"
+                                    "is \\rational"
                                   ]
                                 }
                               ],
                               "arguments": []
                             },
                             {
-                              "label": "then",
+                              "label": "iff",
                               "inline_argument": null,
                               "inline_latex": null,
                               "arguments": [
@@ -139,105 +166,190 @@
                                   "heading": null,
                                   "sections": [
                                     {
-                                      "label": "have",
-                                      "inline_argument": "q \"in\"? C",
-                                      "inline_latex": "q \\in C",
-                                      "inline_type_info": [
-                                        {
-                                          "depth": 0,
-                                          "text": "q \"in\"? C",
-                                          "types": [
-                                            "is \\\\statement"
-                                          ]
-                                        },
-                                        {
-                                          "depth": 1,
-                                          "text": "q",
-                                          "types": [
-                                            "is \\rational"
-                                          ]
-                                        }
-                                      ],
-                                      "arguments": []
-                                    },
-                                    {
-                                      "label": "iff",
+                                      "label": "exists",
                                       "inline_argument": null,
                                       "inline_latex": null,
                                       "arguments": [
+                                        {
+                                          "kind": "formulation",
+                                          "text": "epsilon is \\rational",
+                                          "latex": "\\epsilon \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+                                          "type_info": [
+                                            {
+                                              "depth": 0,
+                                              "text": "epsilon is \\rational",
+                                              "types": [
+                                                "asserts epsilon is \\rational"
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "kind": "formulation",
+                                          "text": "N is \\natural",
+                                          "latex": "\\htmlData{mlg-ref=5c6e61747572616c}{N \\in \\mathbb{N}}",
+                                          "type_info": [
+                                            {
+                                              "depth": 0,
+                                              "text": "N is \\natural",
+                                              "types": [
+                                                "asserts N is \\natural"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "label": "suchThat",
+                                      "inline_argument": null,
+                                      "inline_latex": null,
+                                      "arguments": [
+                                        {
+                                          "kind": "formulation",
+                                          "text": "\\rational.zero \\:rational.less?:/ epsilon",
+                                          "latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c726174696f6e616c2e7a65726f}{0} < \\epsilon}",
+                                          "type_info": [
+                                            {
+                                              "depth": 0,
+                                              "text": "\\rational.zero \\:rational.less?:/ epsilon",
+                                              "types": [
+                                                "is \\\\statement"
+                                              ]
+                                            },
+                                            {
+                                              "depth": 1,
+                                              "text": "\\rational.zero",
+                                              "types": [
+                                                "is \\rational"
+                                              ]
+                                            },
+                                            {
+                                              "depth": 1,
+                                              "text": "epsilon",
+                                              "types": [
+                                                "is \\rational"
+                                              ]
+                                            }
+                                          ]
+                                        },
                                         {
                                           "kind": "group",
                                           "heading": null,
                                           "sections": [
                                             {
-                                              "label": "exists",
-                                              "inline_argument": "epsilon is \\rational",
-                                              "inline_latex": "\\epsilon \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
+                                              "label": "forAll",
+                                              "inline_argument": "n is \\natural",
+                                              "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{n \\in \\mathbb{N}}",
                                               "inline_type_info": [
                                                 {
                                                   "depth": 0,
-                                                  "text": "epsilon is \\rational",
+                                                  "text": "n is \\natural",
                                                   "types": [
-                                                    "asserts epsilon is \\rational"
+                                                    "asserts n is \\natural"
                                                   ]
                                                 }
                                               ],
                                               "arguments": []
                                             },
                                             {
-                                              "label": "suchThat",
+                                              "label": "where",
+                                              "inline_argument": "N \\:natural.leq?:/ n",
+                                              "inline_latex": "\\htmlData{mlg-ref=5c3a6e61747572616c2e6c65713a2f}{N \\leq n}",
+                                              "inline_type_info": [
+                                                {
+                                                  "depth": 0,
+                                                  "text": "N \\:natural.leq?:/ n",
+                                                  "types": [
+                                                    "is \\\\statement"
+                                                  ]
+                                                },
+                                                {
+                                                  "depth": 1,
+                                                  "text": "N",
+                                                  "types": [
+                                                    "is \\natural"
+                                                  ]
+                                                },
+                                                {
+                                                  "depth": 1,
+                                                  "text": "n",
+                                                  "types": [
+                                                    "is \\natural"
+                                                  ]
+                                                }
+                                              ],
+                                              "arguments": []
+                                            },
+                                            {
+                                              "label": "then",
                                               "inline_argument": null,
                                               "inline_latex": null,
                                               "arguments": [
-                                                {
-                                                  "kind": "formulation",
-                                                  "text": "\\rational.zero \\:rational.less?:/ epsilon",
-                                                  "latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{\\htmlData{mlg-ref=5c726174696f6e616c2e7a65726f}{0} < \\epsilon}",
-                                                  "type_info": [
-                                                    {
-                                                      "depth": 0,
-                                                      "text": "\\rational.zero \\:rational.less?:/ epsilon",
-                                                      "types": [
-                                                        "is \\\\statement"
-                                                      ]
-                                                    },
-                                                    {
-                                                      "depth": 1,
-                                                      "text": "\\rational.zero",
-                                                      "types": [
-                                                        "is \\rational"
-                                                      ]
-                                                    },
-                                                    {
-                                                      "depth": 1,
-                                                      "text": "epsilon",
-                                                      "types": [
-                                                        "is \\rational"
-                                                      ]
-                                                    }
-                                                  ]
-                                                },
                                                 {
                                                   "kind": "group",
                                                   "heading": null,
                                                   "sections": [
                                                     {
-                                                      "label": "exists",
-                                                      "inline_argument": "N is \\natural",
-                                                      "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{N \\in \\mathbb{N}}",
+                                                      "label": "let",
+                                                      "inline_argument": "r is \\rational",
+                                                      "inline_latex": "r \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
                                                       "inline_type_info": [
                                                         {
                                                           "depth": 0,
-                                                          "text": "N is \\natural",
+                                                          "text": "r is \\rational",
                                                           "types": [
-                                                            "asserts N is \\natural"
+                                                            "asserts r is \\rational"
                                                           ]
                                                         }
                                                       ],
                                                       "arguments": []
                                                     },
                                                     {
-                                                      "label": "suchThat",
+                                                      "label": "where",
+                                                      "inline_argument": "r = q \\.rational.+./ epsilon",
+                                                      "inline_latex": "\\htmlData{mlg-ref=5c2e726174696f6e616c2e2b2e2f}{r = q + \\epsilon}",
+                                                      "inline_type_info": [
+                                                        {
+                                                          "depth": 0,
+                                                          "text": "r = q \\.rational.+./ epsilon",
+                                                          "types": [
+                                                            "\"in\" \\rationals"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 1,
+                                                          "text": "r = q",
+                                                          "types": [
+                                                            "is \\\\statement"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 2,
+                                                          "text": "r",
+                                                          "types": [
+                                                            "is \\rational"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 2,
+                                                          "text": "q",
+                                                          "types": [
+                                                            "is \\rational"
+                                                          ]
+                                                        },
+                                                        {
+                                                          "depth": 1,
+                                                          "text": "epsilon",
+                                                          "types": [
+                                                            "is \\rational"
+                                                          ]
+                                                        }
+                                                      ],
+                                                      "arguments": []
+                                                    },
+                                                    {
+                                                      "label": "then",
                                                       "inline_argument": null,
                                                       "inline_latex": null,
                                                       "arguments": [
@@ -246,15 +358,15 @@
                                                           "heading": null,
                                                           "sections": [
                                                             {
-                                                              "label": "forAll",
-                                                              "inline_argument": "n is \\natural",
-                                                              "inline_latex": "\\htmlData{mlg-ref=5c6e61747572616c}{n \\in \\mathbb{N}}",
+                                                              "label": "let",
+                                                              "inline_argument": "s is \\rational",
+                                                              "inline_latex": "s \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
                                                               "inline_type_info": [
                                                                 {
                                                                   "depth": 0,
-                                                                  "text": "n is \\natural",
+                                                                  "text": "s is \\rational",
                                                                   "types": [
-                                                                    "asserts n is \\natural"
+                                                                    "asserts s is \\rational"
                                                                   ]
                                                                 }
                                                               ],
@@ -262,25 +374,32 @@
                                                             },
                                                             {
                                                               "label": "where",
-                                                              "inline_argument": "N \\:natural.leq?:/ n",
-                                                              "inline_latex": "\\htmlData{mlg-ref=5c3a6e61747572616c2e6c65713a2f}{N \\leq n}",
+                                                              "inline_argument": "s = a(n)",
+                                                              "inline_latex": "s = a_{n}",
                                                               "inline_type_info": [
                                                                 {
                                                                   "depth": 0,
-                                                                  "text": "N \\:natural.leq?:/ n",
+                                                                  "text": "s = a(n)",
                                                                   "types": [
                                                                     "is \\\\statement"
                                                                   ]
                                                                 },
                                                                 {
                                                                   "depth": 1,
-                                                                  "text": "N",
+                                                                  "text": "s",
                                                                   "types": [
-                                                                    "is \\natural"
+                                                                    "is \\rational"
                                                                   ]
                                                                 },
                                                                 {
                                                                   "depth": 1,
+                                                                  "text": "a(n)",
+                                                                  "types": [
+                                                                    "is \\rational"
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "depth": 2,
                                                                   "text": "n",
                                                                   "types": [
                                                                     "is \\natural"
@@ -291,167 +410,32 @@
                                                             },
                                                             {
                                                               "label": "then",
-                                                              "inline_argument": null,
-                                                              "inline_latex": null,
-                                                              "arguments": [
+                                                              "inline_argument": "r \\:rational.less?:/ s",
+                                                              "inline_latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{r < s}",
+                                                              "inline_type_info": [
                                                                 {
-                                                                  "kind": "group",
-                                                                  "heading": null,
-                                                                  "sections": [
-                                                                    {
-                                                                      "label": "let",
-                                                                      "inline_argument": "r is \\rational",
-                                                                      "inline_latex": "r \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
-                                                                      "inline_type_info": [
-                                                                        {
-                                                                          "depth": 0,
-                                                                          "text": "r is \\rational",
-                                                                          "types": [
-                                                                            "asserts r is \\rational"
-                                                                          ]
-                                                                        }
-                                                                      ],
-                                                                      "arguments": []
-                                                                    },
-                                                                    {
-                                                                      "label": "where",
-                                                                      "inline_argument": "r = q \\.rational.+./ epsilon",
-                                                                      "inline_latex": "\\htmlData{mlg-ref=5c2e726174696f6e616c2e2b2e2f}{r = q + \\epsilon}",
-                                                                      "inline_type_info": [
-                                                                        {
-                                                                          "depth": 0,
-                                                                          "text": "r = q \\.rational.+./ epsilon",
-                                                                          "types": [
-                                                                            "\"in\" \\rationals"
-                                                                          ]
-                                                                        },
-                                                                        {
-                                                                          "depth": 1,
-                                                                          "text": "r = q",
-                                                                          "types": [
-                                                                            "is \\\\statement"
-                                                                          ]
-                                                                        },
-                                                                        {
-                                                                          "depth": 2,
-                                                                          "text": "r",
-                                                                          "types": [
-                                                                            "is \\rational"
-                                                                          ]
-                                                                        },
-                                                                        {
-                                                                          "depth": 2,
-                                                                          "text": "q",
-                                                                          "types": [
-                                                                            "is \\rational"
-                                                                          ]
-                                                                        },
-                                                                        {
-                                                                          "depth": 1,
-                                                                          "text": "epsilon",
-                                                                          "types": [
-                                                                            "is \\rational"
-                                                                          ]
-                                                                        }
-                                                                      ],
-                                                                      "arguments": []
-                                                                    },
-                                                                    {
-                                                                      "label": "then",
-                                                                      "inline_argument": null,
-                                                                      "inline_latex": null,
-                                                                      "arguments": [
-                                                                        {
-                                                                          "kind": "group",
-                                                                          "heading": null,
-                                                                          "sections": [
-                                                                            {
-                                                                              "label": "let",
-                                                                              "inline_argument": "s is \\rational",
-                                                                              "inline_latex": "s \\textrm{ is } \\htmlData{mlg-ref=5c726174696f6e616c}{\\textrm{rational}}",
-                                                                              "inline_type_info": [
-                                                                                {
-                                                                                  "depth": 0,
-                                                                                  "text": "s is \\rational",
-                                                                                  "types": [
-                                                                                    "asserts s is \\rational"
-                                                                                  ]
-                                                                                }
-                                                                              ],
-                                                                              "arguments": []
-                                                                            },
-                                                                            {
-                                                                              "label": "where",
-                                                                              "inline_argument": "s = a(n)",
-                                                                              "inline_latex": "s = a_{n}",
-                                                                              "inline_type_info": [
-                                                                                {
-                                                                                  "depth": 0,
-                                                                                  "text": "s = a(n)",
-                                                                                  "types": [
-                                                                                    "is \\\\statement"
-                                                                                  ]
-                                                                                },
-                                                                                {
-                                                                                  "depth": 1,
-                                                                                  "text": "s",
-                                                                                  "types": [
-                                                                                    "is \\rational"
-                                                                                  ]
-                                                                                },
-                                                                                {
-                                                                                  "depth": 1,
-                                                                                  "text": "a(n)",
-                                                                                  "types": [
-                                                                                    "is \\rational"
-                                                                                  ]
-                                                                                },
-                                                                                {
-                                                                                  "depth": 2,
-                                                                                  "text": "n",
-                                                                                  "types": [
-                                                                                    "is \\natural"
-                                                                                  ]
-                                                                                }
-                                                                              ],
-                                                                              "arguments": []
-                                                                            },
-                                                                            {
-                                                                              "label": "then",
-                                                                              "inline_argument": "r \\:rational.less?:/ s",
-                                                                              "inline_latex": "\\htmlData{mlg-ref=5c3a726174696f6e616c2e6c6573733a2f}{r < s}",
-                                                                              "inline_type_info": [
-                                                                                {
-                                                                                  "depth": 0,
-                                                                                  "text": "r \\:rational.less?:/ s",
-                                                                                  "types": [
-                                                                                    "is \\\\statement"
-                                                                                  ]
-                                                                                },
-                                                                                {
-                                                                                  "depth": 1,
-                                                                                  "text": "r",
-                                                                                  "types": [
-                                                                                    "is \\rational"
-                                                                                  ]
-                                                                                },
-                                                                                {
-                                                                                  "depth": 1,
-                                                                                  "text": "s",
-                                                                                  "types": [
-                                                                                    "is \\rational"
-                                                                                  ]
-                                                                                }
-                                                                              ],
-                                                                              "arguments": []
-                                                                            }
-                                                                          ]
-                                                                        }
-                                                                      ]
-                                                                    }
+                                                                  "depth": 0,
+                                                                  "text": "r \\:rational.less?:/ s",
+                                                                  "types": [
+                                                                    "is \\\\statement"
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "depth": 1,
+                                                                  "text": "r",
+                                                                  "types": [
+                                                                    "is \\rational"
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "depth": 1,
+                                                                  "text": "s",
+                                                                  "types": [
+                                                                    "is \\rational"
                                                                   ]
                                                                 }
-                                                              ]
+                                                              ],
+                                                              "arguments": []
                                                             }
                                                           ]
                                                         }

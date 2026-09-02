@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{fraction-pair negation}",
   "body_text": null,
   "page": null,
-  "source": "[\\rational.pair.neg(q_)]\nDefines: neg(q_) is \\function:on{\\rational.pair.carrier}:to{\\rational.pair.carrier}\nexpresses:\n. forAll: a is \\integer\n  then:\n  . forAll: b is \\nonzero.integer\n    then: neg(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{\\integer.neg(a), b}\nDocumented:\n. called: \"fraction-pair negation\"\n. description: \"$-[(a,b)]=[(-a,b)]$.\"\nId: \"31f2155e-d1ab-4a4c-b3a8-a319c5bc7097\"",
+  "source": "[\\rational.pair.neg(q_)]\nDefines: neg(q_) is \\function:on{\\rational.pair.carrier}:to{\\rational.pair.carrier}\nexpresses:\n. forAll:\n  . a is \\integer\n  . b is \\nonzero.integer\n  then: neg(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{\\integer.neg(a), b}\nDocumented:\n. called: \"fraction-pair negation\"\n. description: \"$-[(a,b)]=[(-a,b)]$.\"\nId: \"31f2155e-d1ab-4a4c-b3a8-a319c5bc7097\"",
   "sections": [
     {
       "label": "Defines",
@@ -27,117 +27,109 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "a is \\integer",
-              "inline_latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "a is \\integer",
-                  "types": [
-                    "asserts a is \\integer"
-                  ]
-                }
-              ],
-              "arguments": []
-            },
-            {
-              "label": "then",
               "inline_argument": null,
               "inline_latex": null,
               "arguments": [
                 {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
+                  "kind": "formulation",
+                  "text": "a is \\integer",
+                  "latex": "a \\textrm{ is } \\htmlData{mlg-ref=5c696e7465676572}{\\textrm{integer}}",
+                  "type_info": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "b is \\nonzero.integer",
-                      "inline_latex": "b \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "b is \\nonzero.integer",
-                          "types": [
-                            "asserts b is \\nonzero.integer"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
+                      "depth": 0,
+                      "text": "a is \\integer",
+                      "types": [
+                        "asserts a is \\integer"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "b is \\nonzero.integer",
+                  "latex": "b \\textrm{ is } \\htmlData{mlg-ref=5c6e6f6e7a65726f2e696e7465676572}{\\textrm{nonzero integer}}",
+                  "type_info": [
                     {
-                      "label": "then",
-                      "inline_argument": "neg(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{\\integer.neg(a), b}",
-                      "inline_latex": "neg(\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(a,b)]_{\\mathbb{Q}}}) = \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(\\htmlData{mlg-ref=5c696e74656765722e6e6567}{-a},b)]_{\\mathbb{Q}}}",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "neg(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{\\integer.neg(a), b}",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "neg(\\rational.pair.class:of{a,b})",
-                          "types": [
-                            "\"in\" \\rational.pair.carrier"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "\\rational.pair.class:of{a,b}",
-                          "types": [
-                            "\"in\" \\rational.pair.carrier"
-                          ]
-                        },
-                        {
-                          "depth": 3,
-                          "text": "a",
-                          "types": [
-                            "is \\integer"
-                          ]
-                        },
-                        {
-                          "depth": 3,
-                          "text": "b",
-                          "types": [
-                            "is \\nonzero.integer"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "\\rational.pair.class:of{\\integer.neg(a),b}",
-                          "types": [
-                            "\"in\" \\rational.pair.carrier"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "\\integer.neg(a)",
-                          "types": [
-                            "is \\integer"
-                          ]
-                        },
-                        {
-                          "depth": 3,
-                          "text": "a",
-                          "types": [
-                            "is \\integer"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "b",
-                          "types": [
-                            "is \\nonzero.integer"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 0,
+                      "text": "b is \\nonzero.integer",
+                      "types": [
+                        "asserts b is \\nonzero.integer"
+                      ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "label": "then",
+              "inline_argument": "neg(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{\\integer.neg(a), b}",
+              "inline_latex": "neg(\\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(a,b)]_{\\mathbb{Q}}}) = \\htmlData{mlg-ref=5c726174696f6e616c2e706169722e636c6173733a6f66}{[(\\htmlData{mlg-ref=5c696e74656765722e6e6567}{-a},b)]_{\\mathbb{Q}}}",
+              "inline_type_info": [
+                {
+                  "depth": 0,
+                  "text": "neg(\\rational.pair.class:of{a, b}) = \\rational.pair.class:of{\\integer.neg(a), b}",
+                  "types": [
+                    "is \\\\statement"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "neg(\\rational.pair.class:of{a,b})",
+                  "types": [
+                    "\"in\" \\rational.pair.carrier"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "\\rational.pair.class:of{a,b}",
+                  "types": [
+                    "\"in\" \\rational.pair.carrier"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "a",
+                  "types": [
+                    "is \\integer"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "b",
+                  "types": [
+                    "is \\nonzero.integer"
+                  ]
+                },
+                {
+                  "depth": 1,
+                  "text": "\\rational.pair.class:of{\\integer.neg(a),b}",
+                  "types": [
+                    "\"in\" \\rational.pair.carrier"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "\\integer.neg(a)",
+                  "types": [
+                    "is \\integer"
+                  ]
+                },
+                {
+                  "depth": 3,
+                  "text": "a",
+                  "types": [
+                    "is \\integer"
+                  ]
+                },
+                {
+                  "depth": 2,
+                  "text": "b",
+                  "types": [
+                    "is \\nonzero.integer"
+                  ]
+                }
+              ],
+              "arguments": []
             }
           ]
         }

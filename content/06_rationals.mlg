@@ -208,12 +208,12 @@ Id: "f7174275-17fc-4a81-a133-96bf1a5b956e"
 [\rationals.relation]
 Defines: R is \equivalence.relation:on{\rational.pair.base}
 expresses:
-. forAll: a, c is \integer
+. forAll:
+  . a, c is \integer
+  . b, d is \nonzero.integer
   then:
-  . forAll: b, d is \nonzero.integer
-    then:
-    . have: R((a, b), (c, d))
-      iff: a \.integer.*./ d = c \.integer.*./ b
+  . have: R((a, b), (c, d))
+    iff: a \.integer.*./ d = c \.integer.*./ b
 Documented:
 . called: "rational equivalence relation"
 . description: "The relation $(a,b) \sim (c,d)$ exactly when $ad=cb$."
@@ -267,17 +267,17 @@ Id: "0286b427-e7ba-4c7b-baab-2e7f83324e52"
 [\rational.pair.add]
 Defines: add(x_, y_) is \binary.operation:on{\rational.pair.carrier}
 expresses:
-. forAll: a, c is \integer
+. forAll:
+  . a, c is \integer
+  . b, d is \nonzero.integer
   then:
-  . forAll: b, d is \nonzero.integer
-    then:
-    . let:
-      . n is \integer
-      . e is \nonzero.integer
-      where:
-      . n = (a \.integer.*./ d) \.integer.+./ (c \.integer.*./ b)
-      . e = b \.integer.*./ d
-      then: add(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d}) = \rational.pair.class:of{n, e}
+  . let:
+    . n is \integer
+    . e is \nonzero.integer
+    where:
+    . n = (a \.integer.*./ d) \.integer.+./ (c \.integer.*./ b)
+    . e = b \.integer.*./ d
+    then: add(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d}) = \rational.pair.class:of{n, e}
 Documented:
 . called: "fraction-pair addition"
 . description: "$[(a,b)]+[(c,d)]=[(ad+cb,bd)]$."
@@ -287,17 +287,17 @@ Id: "bb76baf9-98f2-4fae-9be3-7dd96eff0d8b"
 [\rational.pair.mul]
 Defines: mul(x_, y_) is \binary.operation:on{\rational.pair.carrier}
 expresses:
-. forAll: a, c is \integer
+. forAll:
+  . a, c is \integer
+  . b, d is \nonzero.integer
   then:
-  . forAll: b, d is \nonzero.integer
-    then:
-    . let:
-      . n is \integer
-      . e is \nonzero.integer
-      where:
-      . n = a \.integer.*./ c
-      . e = b \.integer.*./ d
-      then: mul(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d}) = \rational.pair.class:of{n, e}
+  . let:
+    . n is \integer
+    . e is \nonzero.integer
+    where:
+    . n = a \.integer.*./ c
+    . e = b \.integer.*./ d
+    then: mul(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d}) = \rational.pair.class:of{n, e}
 Documented:
 . called: "fraction-pair multiplication"
 . description: "$[(a,b)]\cdot[(c,d)]=[(ac,bd)]$."
@@ -307,10 +307,10 @@ Id: "763fb9de-5327-499f-a3c9-aed218accf56"
 [\rational.pair.neg(q_)]
 Defines: neg(q_) is \function:on{\rational.pair.carrier}:to{\rational.pair.carrier}
 expresses:
-. forAll: a is \integer
-  then:
-  . forAll: b is \nonzero.integer
-    then: neg(\rational.pair.class:of{a, b}) = \rational.pair.class:of{\integer.neg(a), b}
+. forAll:
+  . a is \integer
+  . b is \nonzero.integer
+  then: neg(\rational.pair.class:of{a, b}) = \rational.pair.class:of{\integer.neg(a), b}
 Documented:
 . called: "fraction-pair negation"
 . description: "$-[(a,b)]=[(-a,b)]$."
@@ -321,10 +321,10 @@ Id: "31f2155e-d1ab-4a4c-b3a8-a319c5bc7097"
 Defines: inv(q_) is \function:on{\rational.pair.carrier}:to{\rational.pair.carrier}
 expresses:
 . inv(\rational.pair.zero) = \rational.pair.zero
-. forAll: a is \nonzero.integer
-  then:
-  . forAll: b is \nonzero.integer
-    then: inv(\rational.pair.class:of{a, b}) = \rational.pair.class:of{b, a}
+. forAll:
+  . a is \nonzero.integer
+  . b is \nonzero.integer
+  then: inv(\rational.pair.class:of{a, b}) = \rational.pair.class:of{b, a}
 Documented:
 . called: "fraction-pair reciprocal"
 . description: "Reciprocal swaps numerator and denominator for nonzero classes,
@@ -335,25 +335,25 @@ Id: "196a8359-eaf0-4536-91c7-319787d07098"
 [\rational.pair.leq]
 Defines: leq(x_, y_) is \total.order:on{\rational.pair.carrier}
 expresses:
-. forAll: a, c is \integer
+. forAll:
+  . a, c is \integer
+  . b, d is \nonzero.integer
   then:
-  . forAll: b, d is \nonzero.integer
+  . let: ad, cb, bd is \integer
+    where:
+    . ad = a \.integer.*./ d
+    . cb = c \.integer.*./ b
+    . bd = b \.integer.*./ d
     then:
-    . let: ad, cb, bd is \integer
-      where:
-      . ad = a \.integer.*./ d
-      . cb = c \.integer.*./ b
-      . bd = b \.integer.*./ d
-      then:
-      . have: leq(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d})
-        iff:
-        . anyOf:
-          . allOf:
-            . \integer.zero \:integer.leq?:/ bd
-            . ad \:integer.leq?:/ cb
-          . allOf:
-            . bd \:integer.leq?:/ \integer.zero
-            . cb \:integer.leq?:/ ad
+    . have: leq(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d})
+      iff:
+      . anyOf:
+        . allOf:
+          . \integer.zero \:integer.leq?:/ bd
+          . ad \:integer.leq?:/ cb
+        . allOf:
+          . bd \:integer.leq?:/ \integer.zero
+          . cb \:integer.leq?:/ ad
 Documented:
 . called: "fraction-pair order"
 . description: "Cross-multiplication defines the order, with the comparison

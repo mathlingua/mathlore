@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{union of the family }A\\textrm{ over }I\\quad\\htmlClass{mlg-title-written}{\\bigcup_{i\\in I} A_{i}}",
   "body_text": null,
   "page": null,
-  "source": "[\\indexed.union:of{A}:over{I}:in{U}]\nDefines: B \\:subset:/ U\nwhen:\n. I, U is \\set\n. A is \\function:on{I}:to{\\power.set:of{U}}\nexpresses:\n. forAll: x \"in\" U\n  then:\n  . have: x \"in\"? B\n    iff:\n    . exists: i \"in\" I\n      suchThat:\n      . exists: S is \\set\n        suchThat:\n        . S = A(i)\n        . x \"in\"? S\nDocumented:\n. called: \"union of the family $A?$ over $I?$\"\n. written: \"\\bigcup_{i?\\in I?} A?_{i?}\"\n. description: \"An element belongs to the indexed union exactly when it belongs\n                to at least one member of the family.\"\nId: \"b256bfcd-6772-4a1f-9609-210bae9d3b11\"",
+  "source": "[\\indexed.union:of{A}:over{I}:in{U}]\nDefines: B \\:subset:/ U\nwhen:\n. I, U is \\set\n. A is \\function:on{I}:to{\\power.set:of{U}}\nexpresses:\n. forAll: x \"in\" U\n  then:\n  . have: x \"in\"? B\n    iff:\n    . exists:\n      . i \"in\" I\n      . S is \\set\n      suchThat:\n      . S = A(i)\n      . x \"in\"? S\nDocumented:\n. called: \"union of the family $A?$ over $I?$\"\n. written: \"\\bigcup_{i?\\in I?} A?_{i?}\"\n. description: \"An element belongs to the indexed union exactly when it belongs\n                to at least one member of the family.\"\nId: \"b256bfcd-6772-4a1f-9609-210bae9d3b11\"",
   "sections": [
     {
       "label": "Defines",
@@ -125,25 +125,45 @@
                           "sections": [
                             {
                               "label": "exists",
-                              "inline_argument": "i \"in\" I",
-                              "inline_latex": "i \\in I",
-                              "inline_type_info": [
+                              "inline_argument": null,
+                              "inline_latex": null,
+                              "arguments": [
                                 {
-                                  "depth": 0,
+                                  "kind": "formulation",
                                   "text": "i \"in\" I",
-                                  "types": [
-                                    "asserts i \"in\" I"
+                                  "latex": "i \\in I",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "i \"in\" I",
+                                      "types": [
+                                        "asserts i \"in\" I"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "I",
+                                      "types": [
+                                        "is \\set"
+                                      ]
+                                    }
                                   ]
                                 },
                                 {
-                                  "depth": 1,
-                                  "text": "I",
-                                  "types": [
-                                    "is \\set"
+                                  "kind": "formulation",
+                                  "text": "S is \\set",
+                                  "latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "S is \\set",
+                                      "types": [
+                                        "asserts S is \\set"
+                                      ]
+                                    }
                                   ]
                                 }
-                              ],
-                              "arguments": []
+                              ]
                             },
                             {
                               "label": "suchThat",
@@ -151,85 +171,57 @@
                               "inline_latex": null,
                               "arguments": [
                                 {
-                                  "kind": "group",
-                                  "heading": null,
-                                  "sections": [
+                                  "kind": "formulation",
+                                  "text": "S = A(i)",
+                                  "latex": "S = A(i)",
+                                  "type_info": [
                                     {
-                                      "label": "exists",
-                                      "inline_argument": "S is \\set",
-                                      "inline_latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
-                                      "inline_type_info": [
-                                        {
-                                          "depth": 0,
-                                          "text": "S is \\set",
-                                          "types": [
-                                            "asserts S is \\set"
-                                          ]
-                                        }
-                                      ],
-                                      "arguments": []
+                                      "depth": 0,
+                                      "text": "S = A(i)",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
                                     },
                                     {
-                                      "label": "suchThat",
-                                      "inline_argument": null,
-                                      "inline_latex": null,
-                                      "arguments": [
-                                        {
-                                          "kind": "formulation",
-                                          "text": "S = A(i)",
-                                          "latex": "S = A(i)",
-                                          "type_info": [
-                                            {
-                                              "depth": 0,
-                                              "text": "S = A(i)",
-                                              "types": [
-                                                "is \\\\statement"
-                                              ]
-                                            },
-                                            {
-                                              "depth": 1,
-                                              "text": "S",
-                                              "types": [
-                                                "is \\set"
-                                              ]
-                                            },
-                                            {
-                                              "depth": 1,
-                                              "text": "A(i)",
-                                              "types": [
-                                                "\"in\" \\power.set:of{U}"
-                                              ]
-                                            },
-                                            {
-                                              "depth": 2,
-                                              "text": "i",
-                                              "types": [
-                                                "\"in\" I"
-                                              ]
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "kind": "formulation",
-                                          "text": "x \"in\"? S",
-                                          "latex": "x \\in S",
-                                          "type_info": [
-                                            {
-                                              "depth": 0,
-                                              "text": "x \"in\"? S",
-                                              "types": [
-                                                "is \\\\statement"
-                                              ]
-                                            },
-                                            {
-                                              "depth": 1,
-                                              "text": "x",
-                                              "types": [
-                                                "\"in\" U"
-                                              ]
-                                            }
-                                          ]
-                                        }
+                                      "depth": 1,
+                                      "text": "S",
+                                      "types": [
+                                        "is \\set"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "A(i)",
+                                      "types": [
+                                        "\"in\" \\power.set:of{U}"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 2,
+                                      "text": "i",
+                                      "types": [
+                                        "\"in\" I"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "kind": "formulation",
+                                  "text": "x \"in\"? S",
+                                  "latex": "x \\in S",
+                                  "type_info": [
+                                    {
+                                      "depth": 0,
+                                      "text": "x \"in\"? S",
+                                      "types": [
+                                        "is \\\\statement"
+                                      ]
+                                    },
+                                    {
+                                      "depth": 1,
+                                      "text": "x",
+                                      "types": [
+                                        "\"in\" U"
                                       ]
                                     }
                                   ]

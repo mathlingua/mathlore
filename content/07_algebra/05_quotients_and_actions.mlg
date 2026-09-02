@@ -57,15 +57,15 @@ Declares: N is \group
 when: G is \group
 satisfies:
 . N \:subgroup?:/ G
-. forAll: g "in" G
+. forAll:
+  . g "in" G
+  . n "in" G
+  where: n "in"? N
   then:
-  . forAll: n "in" G
-    where: n "in"? N
-    then:
-    . exists: m "in" G
-      suchThat:
-      . m "in"? N
-      . g * n = m * g
+  . exists: m "in" G
+    suchThat:
+    . m "in"? N
+    . g * n = m * g
 Documented:
 . called: "normal subgroup of $G?$"
 . written: "H? \vartriangleleft G?"
@@ -125,10 +125,10 @@ when:
 satisfies:
 . forAll: x "in" X
   then: alpha(e, x) = x
-. forAll: g, h "in" G
-  then:
-  . forAll: x "in" X
-    then: alpha(g * h, x) = alpha(g, alpha(h, x))
+. forAll:
+  . g, h "in" G
+  . x "in" X
+  then: alpha(g * h, x) = alpha(g, alpha(h, x))
 Documented:
 . called: "group action of $G?$ on $X?$"
 . writing: alpha(g_, x_)

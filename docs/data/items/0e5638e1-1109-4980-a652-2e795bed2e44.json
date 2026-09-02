@@ -11,7 +11,7 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\normal.subgroup:of{G ::= (X, *, e)}]\nDeclares: N is \\group\nwhen: G is \\group\nsatisfies:\n. N \\:subgroup?:/ G\n. forAll: g \"in\" G\n  then:\n  . forAll: n \"in\" G\n    where: n \"in\"? N\n    then:\n    . exists: m \"in\" G\n      suchThat:\n      . m \"in\"? N\n      . g * n = m * g\nDocumented:\n. called: \"normal subgroup of $G?$\"\n. written: \"H? \\vartriangleleft G?\"\n. description: \"A subgroup is normal when its left and right cosets agree for\n                every group element.\"\nId: \"0e5638e1-1109-4980-a652-2e795bed2e44\"",
+  "source": "[\\normal.subgroup:of{G ::= (X, *, e)}]\nDeclares: N is \\group\nwhen: G is \\group\nsatisfies:\n. N \\:subgroup?:/ G\n. forAll:\n  . g \"in\" G\n  . n \"in\" G\n  where: n \"in\"? N\n  then:\n  . exists: m \"in\" G\n    suchThat:\n    . m \"in\"? N\n    . g * n = m * g\nDocumented:\n. called: \"normal subgroup of $G?$\"\n. written: \"H? \\vartriangleleft G?\"\n. description: \"A subgroup is normal when its left and right cosets agree for\n                every group element.\"\nId: \"0e5638e1-1109-4980-a652-2e795bed2e44\"",
   "sections": [
     {
       "label": "Declares",
@@ -82,21 +82,70 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "g \"in\" G",
-              "inline_latex": "g \\in G",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
+                {
+                  "kind": "formulation",
+                  "text": "g \"in\" G",
+                  "latex": "g \\in G",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "g \"in\" G",
+                      "types": [
+                        "asserts g \"in\" G"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "G",
+                      "types": [
+                        "is \\group"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "n \"in\" G",
+                  "latex": "n \\in G",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "n \"in\" G",
+                      "types": [
+                        "asserts n \"in\" G"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "G",
+                      "types": [
+                        "is \\group"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "label": "where",
+              "inline_argument": "n \"in\"? N",
+              "inline_latex": "n \\in N",
               "inline_type_info": [
                 {
                   "depth": 0,
-                  "text": "g \"in\" G",
+                  "text": "n \"in\"? N",
                   "types": [
-                    "asserts g \"in\" G"
+                    "is \\\\statement"
                   ]
                 },
                 {
                   "depth": 1,
-                  "text": "G",
+                  "text": "n",
                   "types": [
-                    "is \\group"
+                    "\"in\" G"
                   ]
                 }
               ],
@@ -112,15 +161,15 @@
                   "heading": null,
                   "sections": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "n \"in\" G",
-                      "inline_latex": "n \\in G",
+                      "label": "exists",
+                      "inline_argument": "m \"in\" G",
+                      "inline_latex": "m \\in G",
                       "inline_type_info": [
                         {
                           "depth": 0,
-                          "text": "n \"in\" G",
+                          "text": "m \"in\" G",
                           "types": [
-                            "asserts n \"in\" G"
+                            "asserts m \"in\" G"
                           ]
                         },
                         {
@@ -134,140 +183,83 @@
                       "arguments": []
                     },
                     {
-                      "label": "where",
-                      "inline_argument": "n \"in\"? N",
-                      "inline_latex": "n \\in N",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "n \"in\"? N",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "n",
-                          "types": [
-                            "\"in\" G"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "then",
+                      "label": "suchThat",
                       "inline_argument": null,
                       "inline_latex": null,
                       "arguments": [
                         {
-                          "kind": "group",
-                          "heading": null,
-                          "sections": [
+                          "kind": "formulation",
+                          "text": "m \"in\"? N",
+                          "latex": "m \\in N",
+                          "type_info": [
                             {
-                              "label": "exists",
-                              "inline_argument": "m \"in\" G",
-                              "inline_latex": "m \\in G",
-                              "inline_type_info": [
-                                {
-                                  "depth": 0,
-                                  "text": "m \"in\" G",
-                                  "types": [
-                                    "asserts m \"in\" G"
-                                  ]
-                                },
-                                {
-                                  "depth": 1,
-                                  "text": "G",
-                                  "types": [
-                                    "is \\group"
-                                  ]
-                                }
-                              ],
-                              "arguments": []
+                              "depth": 0,
+                              "text": "m \"in\"? N",
+                              "types": [
+                                "is \\\\statement"
+                              ]
                             },
                             {
-                              "label": "suchThat",
-                              "inline_argument": null,
-                              "inline_latex": null,
-                              "arguments": [
-                                {
-                                  "kind": "formulation",
-                                  "text": "m \"in\"? N",
-                                  "latex": "m \\in N",
-                                  "type_info": [
-                                    {
-                                      "depth": 0,
-                                      "text": "m \"in\"? N",
-                                      "types": [
-                                        "is \\\\statement"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 1,
-                                      "text": "m",
-                                      "types": [
-                                        "\"in\" G"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "kind": "formulation",
-                                  "text": "g * n = m * g",
-                                  "latex": "g \\ast n = m \\ast g",
-                                  "type_info": [
-                                    {
-                                      "depth": 0,
-                                      "text": "g * n = m * g",
-                                      "types": [
-                                        "is \\\\statement"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 1,
-                                      "text": "g * n",
-                                      "types": [
-                                        "\"in\" G"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 2,
-                                      "text": "g",
-                                      "types": [
-                                        "\"in\" G"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 2,
-                                      "text": "n",
-                                      "types": [
-                                        "\"in\" G"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 1,
-                                      "text": "m * g",
-                                      "types": [
-                                        "\"in\" G"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 2,
-                                      "text": "m",
-                                      "types": [
-                                        "\"in\" G"
-                                      ]
-                                    },
-                                    {
-                                      "depth": 2,
-                                      "text": "g",
-                                      "types": [
-                                        "\"in\" G"
-                                      ]
-                                    }
-                                  ]
-                                }
+                              "depth": 1,
+                              "text": "m",
+                              "types": [
+                                "\"in\" G"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "kind": "formulation",
+                          "text": "g * n = m * g",
+                          "latex": "g \\ast n = m \\ast g",
+                          "type_info": [
+                            {
+                              "depth": 0,
+                              "text": "g * n = m * g",
+                              "types": [
+                                "is \\\\statement"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "g * n",
+                              "types": [
+                                "\"in\" G"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "g",
+                              "types": [
+                                "\"in\" G"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "n",
+                              "types": [
+                                "\"in\" G"
+                              ]
+                            },
+                            {
+                              "depth": 1,
+                              "text": "m * g",
+                              "types": [
+                                "\"in\" G"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "m",
+                              "types": [
+                                "\"in\" G"
+                              ]
+                            },
+                            {
+                              "depth": 2,
+                              "text": "g",
+                              "types": [
+                                "\"in\" G"
                               ]
                             }
                           ]
