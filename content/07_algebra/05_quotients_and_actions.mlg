@@ -30,7 +30,6 @@ Id: "b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0"
 Defines: C := \set@{h_ * g : h_ "in" H}
 when:
 . G is \group
-. H is \group
 . H \:subgroup:/ G
 . g "in" G
 Documented:
@@ -42,7 +41,6 @@ Id: "152ef2a9-044c-4687-8325-bc80ce2bfa12"
 Theorem:
 given:
 . G is \group
-. H is \group
 . H \:subgroup:/ G
 . g1, g2 "in" G
 then:
