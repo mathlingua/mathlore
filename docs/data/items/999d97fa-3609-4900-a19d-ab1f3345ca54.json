@@ -11,7 +11,7 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\ideal:of{R ::= (X, +, *, 0, 1)}]\nDeclares: I \\:subset:/ X\nwhen: R is \\ring\nsatisfies:\n. 0 \"in\" I\n. forAll: x, y \"in\" I\n  then: x + y \"in\" I\n. forAll: x \"in\" I\n  then:\n  . exists: y \"in\" I\n    suchThat: x + y = 0\n. forAll: r \"in\" R\n  then:\n  . forAll: i \"in\" I\n    then:\n    . r * i \"in\" I\n    . i * r \"in\" I\nDocumented:\n. called: \"ideal of $R?$\"\n. description: \"An ideal is an additive subgroup closed under multiplication by\n                arbitrary ring elements.\"\nId: \"999d97fa-3609-4900-a19d-ab1f3345ca54\"",
+  "source": "[\\ideal:of{R ::= (X, +, *, 0, 1)}]\nDeclares: I \\:subset:/ X\nwhen: R is \\ring\nsatisfies:\n. 0 \"in\" I\n. forAll: x, y \"in\" I\n  then: x + y \"in\" I\n. forAll: x \"in\" I\n  then:\n  . exists: y \"in\" I\n    suchThat: x + y = 0\n. forAll:\n  . r \"in\" R\n  . i \"in\" I\n  then:\n  . r * i \"in\" I\n  . i * r \"in\" I\nDocumented:\n. called: \"ideal of $R?$\"\n. description: \"An ideal is an additive subgroup closed under multiplication by\n                arbitrary ring elements.\"\nId: \"999d97fa-3609-4900-a19d-ab1f3345ca54\"",
   "sections": [
     {
       "label": "Declares",
@@ -253,25 +253,52 @@
           "sections": [
             {
               "label": "forAll",
-              "inline_argument": "r \"in\" R",
-              "inline_latex": "r \\in R",
-              "inline_type_info": [
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": [
                 {
-                  "depth": 0,
+                  "kind": "formulation",
                   "text": "r \"in\" R",
-                  "types": [
-                    "asserts r \"in\" R"
+                  "latex": "r \\in R",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "r \"in\" R",
+                      "types": [
+                        "asserts r \"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "R",
+                      "types": [
+                        "is \\ring"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "depth": 1,
-                  "text": "R",
-                  "types": [
-                    "is \\ring"
+                  "kind": "formulation",
+                  "text": "i \"in\" I",
+                  "latex": "i \\in I",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "i \"in\" I",
+                      "types": [
+                        "asserts i \"in\" I"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "I",
+                      "types": [
+                        "is \\ideal:of{R:=(X,+,*,0,1)}"
+                      ]
+                    }
                   ]
                 }
-              ],
-              "arguments": []
+              ]
             },
             {
               "label": "then",
@@ -279,106 +306,71 @@
               "inline_latex": null,
               "arguments": [
                 {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
+                  "kind": "formulation",
+                  "text": "r * i \"in\" I",
+                  "latex": "r \\ast i \\in I",
+                  "type_info": [
                     {
-                      "label": "forAll",
-                      "inline_argument": "i \"in\" I",
-                      "inline_latex": "i \\in I",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "i \"in\" I",
-                          "types": [
-                            "asserts i \"in\" I"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "I",
-                          "types": [
-                            "is \\ideal:of{R:=(X,+,*,0,1)}"
-                          ]
-                        }
-                      ],
-                      "arguments": []
+                      "depth": 0,
+                      "text": "r * i \"in\" I",
+                      "types": [
+                        "asserts r * i \"in\" I"
+                      ]
                     },
                     {
-                      "label": "then",
-                      "inline_argument": null,
-                      "inline_latex": null,
-                      "arguments": [
-                        {
-                          "kind": "formulation",
-                          "text": "r * i \"in\" I",
-                          "latex": "r \\ast i \\in I",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "r * i \"in\" I",
-                              "types": [
-                                "asserts r * i \"in\" I"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "r * i",
-                              "types": [
-                                "\"in\" R"
-                              ]
-                            },
-                            {
-                              "depth": 2,
-                              "text": "r",
-                              "types": [
-                                "\"in\" R"
-                              ]
-                            },
-                            {
-                              "depth": 2,
-                              "text": "i",
-                              "types": [
-                                "\"in\" I"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "kind": "formulation",
-                          "text": "i * r \"in\" I",
-                          "latex": "i \\ast r \\in I",
-                          "type_info": [
-                            {
-                              "depth": 0,
-                              "text": "i * r \"in\" I",
-                              "types": [
-                                "asserts i * r \"in\" I"
-                              ]
-                            },
-                            {
-                              "depth": 1,
-                              "text": "i * r",
-                              "types": [
-                                "\"in\" R"
-                              ]
-                            },
-                            {
-                              "depth": 2,
-                              "text": "i",
-                              "types": [
-                                "\"in\" I"
-                              ]
-                            },
-                            {
-                              "depth": 2,
-                              "text": "r",
-                              "types": [
-                                "\"in\" R"
-                              ]
-                            }
-                          ]
-                        }
+                      "depth": 1,
+                      "text": "r * i",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "r",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "i",
+                      "types": [
+                        "\"in\" I"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "kind": "formulation",
+                  "text": "i * r \"in\" I",
+                  "latex": "i \\ast r \\in I",
+                  "type_info": [
+                    {
+                      "depth": 0,
+                      "text": "i * r \"in\" I",
+                      "types": [
+                        "asserts i * r \"in\" I"
+                      ]
+                    },
+                    {
+                      "depth": 1,
+                      "text": "i * r",
+                      "types": [
+                        "\"in\" R"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "i",
+                      "types": [
+                        "\"in\" I"
+                      ]
+                    },
+                    {
+                      "depth": 2,
+                      "text": "r",
+                      "types": [
+                        "\"in\" R"
                       ]
                     }
                   ]

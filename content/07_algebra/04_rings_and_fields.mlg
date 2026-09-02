@@ -55,9 +55,7 @@ Id: "64b4ac6a-9629-4aa7-89e2-9f0ea27e9a48"
 
 [\(commutative)::ring]
 Refines: R ::= (X, +, *, 0, 1)
-satisfies:
-. forAll: x, y "in" R
-  then: x * y = y * x
+specifies: * is \(commutative)::binary.operation:on{X}
 Documented:
 . adjective: "commutative"
 . description: "A commutative ring is a ring in which $x * y = y * x$ for all
@@ -75,17 +73,16 @@ Id: "93eece57-714d-474a-8c52-840bbb3f6621"
 
 
 [\field]
-Declares: F ::= (X, +, *, 0, 1) is \(commutative)::ring via (X, +, *, 0, 1)
+Declares: F ::= (X, +, *, 0, 1)
+specifies: F is \(commutative)::ring via (X, +, *, 0, 1)
 satisfies:
 . 0 != 1
-. forAll: x "in" F
-  where: x != 0
-  then:
-  . exists: y "in" F
-    suchThat: x * y = 1
+. (X \.set.difference./ \singleton.set:of{0}, *, 1) is? \(abielan)::group
 Enables:
 . capability: x_ "in" F :<->: x_ is \field.element:of{F}
   written: "x_? \in F?"
+. view:
+  as: G := (X \.set.difference./ \singleton.set:of{0}, *, 1) is \(abelian)::group
 Documented:
 . called: "field"
 . description: "A field is a commutative ring $(F, +, *, 0, 1)$ with $0 \neq 1$
@@ -117,12 +114,12 @@ satisfies:
   then:
   . exists: y "in" I
     suchThat: x + y = 0
-. forAll: r "in" R
+. forAll:
+  . r "in" R
+  . i "in" I
   then:
-  . forAll: i "in" I
-    then:
-    . r * i "in" I
-    . i * r "in" I
+  . r * i "in" I
+  . i * r "in" I
 Documented:
 . called: "ideal of $R?$"
 . description: "An ideal is an additive subgroup closed under multiplication by
@@ -145,16 +142,12 @@ Id: "cff0d878-33b9-4552-93c2-cee960162e9e"
 
 
 [\integral.domain]
-Declares: D ::= (X, +, *, 0, 1) is \(commutative)::ring via (X, +, *, 0, 1)
+Declares: D ::= (X, +, *, 0, 1)
+specifies: D is \(commutative)::ring via (X, +, *, 0, 1)
 satisfies:
 . 0 != 1
 . forAll: a, b "in" D
-  then:
-  . if: a * b = 0
-    then:
-    . anyOf:
-      . a = 0
-      . b = 0
+  then: (. a * b = 0 .) \.implies./ (. a = 0 \.or./ b = 0 .)
 Documented:
 . called: "integral domain"
 . description: "A nontrivial commutative ring without zero divisors."

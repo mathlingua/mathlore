@@ -8,12 +8,18 @@
   "heading_latex": "\\textrm{field}",
   "body_text": null,
   "page": null,
-  "source": "[\\field]\nDeclares: F ::= (X, +, *, 0, 1) is \\(commutative)::ring via (X, +, *, 0, 1)\nsatisfies:\n. 0 != 1\n. forAll: x \"in\" F\n  where: x != 0\n  then:\n  . exists: y \"in\" F\n    suchThat: x * y = 1\nEnables:\n. capability: x_ \"in\" F :<->: x_ is \\field.element:of{F}\n  written: \"x_? \\in F?\"\nDocumented:\n. called: \"field\"\n. description: \"A field is a commutative ring $(F, +, *, 0, 1)$ with $0 \\neq 1$\n                in which every non-zero element has a multiplicative inverse.\"\nId: \"53a76a9b-97d9-4c4d-b6c6-cc00983cfcb2\"",
+  "source": "[\\field]\nDeclares: F ::= (X, +, *, 0, 1)\nspecifies: F is \\(commutative)::ring via (X, +, *, 0, 1)\nsatisfies:\n. 0 != 1\n. (X \\.set.difference./ \\singleton.set:of{0}, *, 1) is? \\(abielan)::group\nEnables:\n. capability: x_ \"in\" F :<->: x_ is \\field.element:of{F}\n  written: \"x_? \\in F?\"\n. view:\n  as: G := (X \\.set.difference./ \\singleton.set:of{0}, *, 1) is \\(abelian)::group\nDocumented:\n. called: \"field\"\n. description: \"A field is a commutative ring $(F, +, *, 0, 1)$ with $0 \\neq 1$\n                in which every non-zero element has a multiplicative inverse.\"\nId: \"53a76a9b-97d9-4c4d-b6c6-cc00983cfcb2\"",
   "sections": [
     {
       "label": "Declares",
-      "inline_argument": "F ::= (X, +, *, 0, 1) is \\(commutative)::ring via (X, +, *, 0, 1)",
-      "inline_latex": "F ::= \\left(X, +, \\ast, 0, 1\\right) \\textrm{ is } \\htmlData{mlg-ref=5c636f6d6d757461746976653a3a72696e67}{\\textrm{commutative}}\\textrm{ }\\htmlData{mlg-ref=5c72696e67}{\\textrm{ring}} \\textrm{ via } \\left(X, +, \\ast, 0, 1\\right)",
+      "inline_argument": "F ::= (X, +, *, 0, 1)",
+      "inline_latex": "F ::= \\left(X, +, \\ast, 0, 1\\right)",
+      "arguments": []
+    },
+    {
+      "label": "specifies",
+      "inline_argument": "F is \\(commutative)::ring via (X, +, *, 0, 1)",
+      "inline_latex": "F \\textrm{ is } \\htmlData{mlg-ref=5c636f6d6d757461746976653a3a72696e67}{\\textrm{commutative}}\\textrm{ }\\htmlData{mlg-ref=5c72696e67}{\\textrm{ring}} \\textrm{ via } \\left(X, +, \\ast, 0, 1\\right)",
       "arguments": []
     },
     {
@@ -48,134 +54,55 @@
           ]
         },
         {
-          "kind": "group",
-          "heading": null,
-          "sections": [
+          "kind": "formulation",
+          "text": "(X \\.set.difference./ \\singleton.set:of{0}, *, 1) is? \\(abielan)::group",
+          "latex": "\\left(\\htmlData{mlg-ref=5c2e7365742e646966666572656e63652e2f}{X \\setminus \\htmlData{mlg-ref=5c73696e676c65746f6e2e7365743a6f66}{\\left \\{ 0 \\right \\}}}, \\ast, 1\\right) \\textrm{ is } \\textrm{abielan}\\textrm{ }\\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
+          "type_info": [
             {
-              "label": "forAll",
-              "inline_argument": "x \"in\" F",
-              "inline_latex": "x \\in F",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "x \"in\" F",
-                  "types": [
-                    "asserts x \"in\" F"
-                  ]
-                },
-                {
-                  "depth": 1,
-                  "text": "F",
-                  "types": [
-                    "is \\field"
-                  ]
-                }
-              ],
-              "arguments": []
+              "depth": 0,
+              "text": "(X \\.set.difference./ \\singleton.set:of{0}, *, 1) is? \\(abielan)::group",
+              "types": [
+                "asserts (X\\.set.difference./\\singleton.set:of{0},*,1) is \\abielan::group"
+              ]
             },
             {
-              "label": "where",
-              "inline_argument": "x != 0",
-              "inline_latex": "x \\ne 0",
-              "inline_type_info": [
-                {
-                  "depth": 0,
-                  "text": "x != 0",
-                  "types": []
-                },
-                {
-                  "depth": 1,
-                  "text": "x",
-                  "types": [
-                    "\"in\" F"
-                  ]
-                },
-                {
-                  "depth": 1,
-                  "text": "0",
-                  "types": [
-                    "\"in\" X"
-                  ]
-                }
-              ],
-              "arguments": []
+              "depth": 1,
+              "text": "(X\\.set.difference./\\singleton.set:of{0},*,1)",
+              "types": []
             },
             {
-              "label": "then",
-              "inline_argument": null,
-              "inline_latex": null,
-              "arguments": [
-                {
-                  "kind": "group",
-                  "heading": null,
-                  "sections": [
-                    {
-                      "label": "exists",
-                      "inline_argument": "y \"in\" F",
-                      "inline_latex": "y \\in F",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "y \"in\" F",
-                          "types": [
-                            "asserts y \"in\" F"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "F",
-                          "types": [
-                            "is \\field"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    },
-                    {
-                      "label": "suchThat",
-                      "inline_argument": "x * y = 1",
-                      "inline_latex": "x \\ast y = 1",
-                      "inline_type_info": [
-                        {
-                          "depth": 0,
-                          "text": "x * y = 1",
-                          "types": [
-                            "is \\\\statement"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "x * y",
-                          "types": [
-                            "\"in\" F"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "x",
-                          "types": [
-                            "\"in\" F"
-                          ]
-                        },
-                        {
-                          "depth": 2,
-                          "text": "y",
-                          "types": [
-                            "\"in\" F"
-                          ]
-                        },
-                        {
-                          "depth": 1,
-                          "text": "1",
-                          "types": [
-                            "\"in\" X"
-                          ]
-                        }
-                      ],
-                      "arguments": []
-                    }
-                  ]
-                }
+              "depth": 2,
+              "text": "X\\.set.difference./\\singleton.set:of{0}",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "X",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 3,
+              "text": "\\singleton.set:of{0}",
+              "types": [
+                "is \\set"
+              ]
+            },
+            {
+              "depth": 4,
+              "text": "0",
+              "types": [
+                "\"in\" X"
+              ]
+            },
+            {
+              "depth": 2,
+              "text": "1",
+              "types": [
+                "\"in\" X"
               ]
             }
           ]
@@ -201,6 +128,24 @@
               "label": "written",
               "inline_argument": "\"x_? \\in F?\"",
               "inline_latex": "x \\in F",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "view",
+              "inline_argument": null,
+              "inline_latex": null,
+              "arguments": []
+            },
+            {
+              "label": "as",
+              "inline_argument": "G := (X \\.set.difference./ \\singleton.set:of{0}, *, 1) is \\(abelian)::group",
+              "inline_latex": "G := \\left(\\htmlData{mlg-ref=5c2e7365742e646966666572656e63652e2f}{X \\setminus \\htmlData{mlg-ref=5c73696e676c65746f6e2e7365743a6f66}{\\left \\{ 0 \\right \\}}}, \\ast, 1\\right) \\textrm{ is } \\htmlData{mlg-ref=5c6162656c69616e3a3a67726f7570}{\\textrm{abelian}}\\textrm{ }\\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
               "arguments": []
             }
           ]

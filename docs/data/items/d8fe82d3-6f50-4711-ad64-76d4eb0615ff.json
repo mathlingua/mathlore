@@ -124,6 +124,7 @@
               "depth": 2,
               "text": "*",
               "types": [
+                "is \\associative::binary.operation:on{X}",
                 "is \\binary.operation:on{G}"
               ]
             },
@@ -438,6 +439,7 @@
                   "depth": 2,
                   "text": "*",
                   "types": [
+                    "is \\associative::binary.operation:on{X}",
                     "is \\binary.operation:on{G}"
                   ]
                 },
