@@ -136,8 +136,7 @@ Id: "da1c56ad-7de6-4161-b806-99ead8e954be"
 Theorem:
 given: S ::= a(n_) is \real.sequence
 where:
-. S is \(monotone.increasing)::real.sequence
-. S is \(bounded)::real.sequence
+. S is \(bounded, monotone.increasing)::real.sequence
 then:
 . exists: L is \real
   suchThat: \converges.to{L}:for{S}

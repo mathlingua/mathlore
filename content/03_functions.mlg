@@ -132,9 +132,7 @@ Id: "5f0e98c0-5fb7-4b69-9811-55266a75deea"
 
 [\inverse.function:of{f(x__)}]
 Defines: g(y__) is \function:on{B}:to{A}
-when:
-. f is \function:on{A?}:to{B?}
-. f is \(bijective)::function
+when: f is \(bijective)::function:on{A?}:to{B?}
 expresses:
 . forAll: x "in" A
   then: g(f(x)) = x

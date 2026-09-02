@@ -152,6 +152,9 @@ satisfies:
   . forAll: x "in" H
     then: x.inv "in" H
   asserting: H is \group
+Enables:
+. view:
+  as: H' := H is \group
 Documented:
 . called: "$H?$ is a subgroup of $G?$"
 . written: "H? \leq G?"
