@@ -5,8 +5,10 @@
   "heading": null,
   "heading_latex": "\\textrm{Transitivity of Subset Relation}",
   "body_text": null,
+  "proof_text": "Suppose $\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq B}$ and $\\htmlData{mlg-ref=5c3a7375627365743a2f}{B \\subseteq C}$ and let $x \\in A$. Then $\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq B}$ implies $x \\in B$ and $\\htmlData{mlg-ref=5c3a7375627365743a2f}{B \\subseteq C}$ implies $x \\in C$.\n\nSince $x$ was arbitrary, we have shown for all $x \\in A$ then\n$x \\in C$. Thus $\\htmlData{mlg-ref=5c3a7375627365743a2f}{A \\subseteq C}$.",
+  "proof_source": "Proof: \"Suppose {.A \\:subset?:/ B.} and {.B \\:subset?:/ C.} and let {.x \\\"in\\\"\n        A.}. Then {.A \\:subset?:/ B.} implies {.x \\\"in\\\"? B.} and {.B\n        \\:subset?:/ C.} implies {.x \\\"in\\\"? C.}.\n\n        Since {.x.} was arbitrary, we have shown for all {.x \\\"in\\\"? A.} then\n        {.x \\\"in\\\"? C.}. Thus {.A \\:subset?:/ C.}.\"",
   "page": null,
-  "source": "Theorem:\ngiven:\n. C is \\set\n. B \\:subset:/ C\n. A \\:subset:/ B\nthen:\n. A \\:subset?:/ C\nDocumented:\n. called: \"Transitivity of Subset Relation\"\n. description: \"If $A \\subseteq B$ and $B \\subseteq C$, then $A \\subseteq C$.\"\nId: \"6a4bcb50-97bc-4d1b-a9b2-750c963bb720\"",
+  "source": "Theorem:\ngiven:\n. C is \\set\n. B \\:subset:/ C\n. A \\:subset:/ B\nthen:\n. A \\:subset?:/ C\nDocumented:\n. called: \"Transitivity of Subset Relation\"\n. description: \"If $A \\subseteq B$ and $B \\subseteq C$, then $A \\subseteq C$.\"\nProof: \"Suppose {.A \\:subset?:/ B.} and {.B \\:subset?:/ C.} and let {.x \\\"in\\\"\n        A.}. Then {.A \\:subset?:/ B.} implies {.x \\\"in\\\"? B.} and {.B\n        \\:subset?:/ C.} implies {.x \\\"in\\\"? C.}.\n\n        Since {.x.} was arbitrary, we have shown for all {.x \\\"in\\\"? A.} then\n        {.x \\\"in\\\"? C.}. Thus {.A \\:subset?:/ C.}.\"\nId: \"6a4bcb50-97bc-4d1b-a9b2-750c963bb720\"",
   "sections": [
     {
       "label": "Theorem",
