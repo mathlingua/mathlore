@@ -11,7 +11,7 @@
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\right.coset:of{H}:by{g}:in{G ::= (X, *, e)}]\nDefines: C := \\set@{h_ * g : h_ \"in\" H}\nwhen:\n. G is \\group\n. H is \\group\n. H \\:subgroup:/ G\n. g \"in\" G\nDocumented:\n. called: \"right coset of $H?$ by $g?$\"\n. written: \"H?g?\"\nId: \"152ef2a9-044c-4687-8325-bc80ce2bfa12\"",
+  "source": "[\\right.coset:of{H}:by{g}:in{G ::= (X, *, e)}]\nDefines: C := \\set@{h_ * g : h_ \"in\" H}\nwhen:\n. G is \\group\n. H \\:subgroup:/ G\n. g \"in\" G\nDocumented:\n. called: \"right coset of $H?$ by $g?$\"\n. written: \"H?g?\"\nId: \"152ef2a9-044c-4687-8325-bc80ce2bfa12\"",
   "sections": [
     {
       "label": "Defines",
@@ -34,20 +34,6 @@
               "text": "G is \\group",
               "types": [
                 "asserts G is \\group"
-              ]
-            }
-          ]
-        },
-        {
-          "kind": "formulation",
-          "text": "H is \\group",
-          "latex": "H \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "H is \\group",
-              "types": [
-                "asserts H is \\group"
               ]
             }
           ]

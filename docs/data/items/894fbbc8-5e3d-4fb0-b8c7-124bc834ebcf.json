@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{inverse function of }f(x)\\quad\\htmlClass{mlg-title-written}{f(x)^{-1}}",
   "body_text": null,
   "page": null,
-  "source": "[\\inverse.function:of{f(x__)}]\nDefines: g(y__) is \\function:on{B}:to{A}\nwhen:\n. f is \\function:on{A?}:to{B?}\n. f is \\(bijective)::function\nexpresses:\n. forAll: x \"in\" A\n  then: g(f(x)) = x\n. forAll: y \"in\" B\n  then: f(g(y)) = y\nDocumented:\n. called: \"inverse function of $f?$\"\n. written: \"f+?^{-1}\"\n. description: \"The inverse function $f^{-1} : B \\rightarrow A$ of a bijection\n                $f$ reverses the mapping, sending each output back to its unique\n                source input.\"\nId: \"894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf\"",
+  "source": "[\\inverse.function:of{f(x__)}]\nDefines: g(y__) is \\function:on{B}:to{A}\nusing: A, B is \\set\nwhen: f is \\(bijective)::function:on{A}:to{B}\nexpresses:\n. forAll: x \"in\" A\n  then: g(f(x)) = x\n. forAll: y \"in\" B\n  then: f(g(y)) = y\nDocumented:\n. called: \"inverse function of $f?$\"\n. written: \"f+?^{-1}\"\n. description: \"The inverse function $f^{-1} : B \\rightarrow A$ of a bijection\n                $f$ reverses the mapping, sending each output back to its unique\n                source input.\"\nId: \"894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf\"",
   "sections": [
     {
       "label": "Defines",
@@ -17,39 +17,35 @@
       "arguments": []
     },
     {
-      "label": "when",
-      "inline_argument": null,
-      "inline_latex": null,
-      "arguments": [
+      "label": "using",
+      "inline_argument": "A, B is \\set",
+      "inline_latex": "A, B \\textrm{ is } \\htmlData{mlg-ref=5c736574}{\\textrm{set}}",
+      "inline_type_info": [
         {
-          "kind": "formulation",
-          "text": "f is \\function:on{A?}:to{B?}",
-          "latex": "\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{f \\: : \\: A \\rightarrow B}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "f is \\function:on{A?}:to{B?}",
-              "types": [
-                "asserts f is \\function:on{A}:to{B}"
-              ]
-            }
-          ]
-        },
-        {
-          "kind": "formulation",
-          "text": "f is \\(bijective)::function",
-          "latex": "f \\textrm{ is } \\htmlData{mlg-ref=5c62696a6563746976653a3a66756e6374696f6e}{\\textrm{bijective}}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e}{\\textrm{function}}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "f is \\(bijective)::function",
-              "types": [
-                "asserts f is \\bijective::function"
-              ]
-            }
+          "depth": 0,
+          "text": "A, B is \\set",
+          "types": [
+            "asserts A is \\set",
+            "asserts B is \\set"
           ]
         }
-      ]
+      ],
+      "arguments": []
+    },
+    {
+      "label": "when",
+      "inline_argument": "f is \\(bijective)::function:on{A}:to{B}",
+      "inline_latex": "f \\textrm{ is } \\htmlData{mlg-ref=5c62696a6563746976653a3a66756e6374696f6e3a6f6e3a746f}{\\textrm{bijective}}\\textrm{ }\\htmlData{mlg-ref=5c66756e6374696f6e3a6f6e3a746f}{\\textrm{function}\\textrm{ on }A\\textrm{ to }B}",
+      "inline_type_info": [
+        {
+          "depth": 0,
+          "text": "f is \\(bijective)::function:on{A}:to{B}",
+          "types": [
+            "asserts f is \\bijective::function:on{A}:to{B}"
+          ]
+        }
+      ],
+      "arguments": []
     },
     {
       "label": "expresses",
@@ -104,9 +100,7 @@
                 {
                   "depth": 2,
                   "text": "f(x)",
-                  "types": [
-                    "\"in\" B"
-                  ]
+                  "types": []
                 },
                 {
                   "depth": 3,
@@ -168,9 +162,7 @@
                 {
                   "depth": 1,
                   "text": "f(g(y))",
-                  "types": [
-                    "\"in\" B"
-                  ]
+                  "types": []
                 },
                 {
                   "depth": 2,

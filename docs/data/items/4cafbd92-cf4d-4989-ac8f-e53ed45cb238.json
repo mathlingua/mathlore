@@ -6,7 +6,7 @@
   "heading_latex": "\\textrm{Left Cosets are Equal or Disjoint}",
   "body_text": null,
   "page": null,
-  "source": "Theorem:\ngiven:\n. G is \\group\n. H is \\group\n. H \\:subgroup:/ G\n. g1, g2 \"in\" G\nthen:\n. oneOf:\n  . \\left.coset:of{H}:by{g1}:in{G} = \\left.coset:of{H}:by{g2}:in{G}\n  . \\left.coset:of{H}:by{g1}:in{G} \\.disjoint.from./ \\left.coset:of{H}:by{g2}:in{G}\nDocumented:\n. called: \"Left Cosets are Equal or Disjoint\"\nId: \"4cafbd92-cf4d-4989-ac8f-e53ed45cb238\"",
+  "source": "Theorem:\ngiven:\n. G is \\group\n. H \\:subgroup:/ G\n. g1, g2 \"in\" G\nthen:\n. oneOf:\n  . \\left.coset:of{H}:by{g1}:in{G} = \\left.coset:of{H}:by{g2}:in{G}\n  . \\left.coset:of{H}:by{g1}:in{G} \\.disjoint.from./ \\left.coset:of{H}:by{g2}:in{G}\nDocumented:\n. called: \"Left Cosets are Equal or Disjoint\"\nId: \"4cafbd92-cf4d-4989-ac8f-e53ed45cb238\"",
   "sections": [
     {
       "label": "Theorem",
@@ -29,20 +29,6 @@
               "text": "G is \\group",
               "types": [
                 "asserts G is \\group"
-              ]
-            }
-          ]
-        },
-        {
-          "kind": "formulation",
-          "text": "H is \\group",
-          "latex": "H \\textrm{ is } \\htmlData{mlg-ref=5c67726f7570}{\\textrm{group}}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "H is \\group",
-              "types": [
-                "asserts H is \\group"
               ]
             }
           ]
@@ -129,8 +115,7 @@
                       "depth": 2,
                       "text": "H",
                       "types": [
-                        "\\:subgroup:/ G",
-                        "is \\group"
+                        "\\:subgroup:/ G"
                       ]
                     },
                     {
@@ -158,8 +143,7 @@
                       "depth": 2,
                       "text": "H",
                       "types": [
-                        "\\:subgroup:/ G",
-                        "is \\group"
+                        "\\:subgroup:/ G"
                       ]
                     },
                     {
@@ -199,8 +183,7 @@
                       "depth": 2,
                       "text": "H",
                       "types": [
-                        "\\:subgroup:/ G",
-                        "is \\group"
+                        "\\:subgroup:/ G"
                       ]
                     },
                     {
@@ -228,8 +211,7 @@
                       "depth": 2,
                       "text": "H",
                       "types": [
-                        "\\:subgroup:/ G",
-                        "is \\group"
+                        "\\:subgroup:/ G"
                       ]
                     },
                     {

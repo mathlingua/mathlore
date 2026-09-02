@@ -8,7 +8,7 @@
   "heading_latex": "\\textrm{Monotone Convergence Theorem}",
   "body_text": null,
   "page": null,
-  "source": "[\\monotone.convergence.theorem]\nTheorem:\ngiven: S ::= a(n_) is \\real.sequence\nwhere:\n. S is \\(monotone.increasing)::real.sequence\n. S is \\(bounded)::real.sequence\nthen:\n. exists: L is \\real\n  suchThat: \\converges.to{L}:for{S}\nDocumented:\n. called: \"Monotone Convergence Theorem\"\n. description: \"Every bounded monotone real sequence converges.\"\nId: \"3d7b0ef1-4562-415e-bf44-74e324ce5f5c\"",
+  "source": "[\\monotone.convergence.theorem]\nTheorem:\ngiven: S ::= a(n_) is \\real.sequence\nwhere:\n. S is \\(bounded, monotone.increasing)::real.sequence\nthen:\n. exists: L is \\real\n  suchThat: \\converges.to{L}:for{S}\nDocumented:\n. called: \"Monotone Convergence Theorem\"\n. description: \"Every bounded monotone real sequence converges.\"\nId: \"3d7b0ef1-4562-415e-bf44-74e324ce5f5c\"",
   "sections": [
     {
       "label": "Theorem",
@@ -38,28 +38,14 @@
       "arguments": [
         {
           "kind": "formulation",
-          "text": "S is \\(monotone.increasing)::real.sequence",
-          "latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c6d6f6e6f746f6e652e696e6372656173696e673a3a7265616c2e73657175656e6365}{\\textrm{monotone increasing}}\\textrm{ }\\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
+          "text": "S is \\(bounded, monotone.increasing)::real.sequence",
+          "latex": "S \\textrm{ is } \\left(\\htmlData{mlg-ref=5c626f756e6465643a3a7265616c2e73657175656e6365}{\\textrm{bounded}}\\textrm{ and }\\htmlData{mlg-ref=5c6d6f6e6f746f6e652e696e6372656173696e673a3a7265616c2e73657175656e6365}{\\textrm{monotone increasing}}\\right)\\textrm{ }\\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
           "type_info": [
             {
               "depth": 0,
-              "text": "S is \\(monotone.increasing)::real.sequence",
+              "text": "S is \\(bounded, monotone.increasing)::real.sequence",
               "types": [
-                "asserts S is \\monotone.increasing::real.sequence"
-              ]
-            }
-          ]
-        },
-        {
-          "kind": "formulation",
-          "text": "S is \\(bounded)::real.sequence",
-          "latex": "S \\textrm{ is } \\htmlData{mlg-ref=5c626f756e6465643a3a7265616c2e73657175656e6365}{\\textrm{bounded}}\\textrm{ }\\htmlData{mlg-ref=5c7265616c2e73657175656e6365}{\\textrm{real sequence}}",
-          "type_info": [
-            {
-              "depth": 0,
-              "text": "S is \\(bounded)::real.sequence",
-              "types": [
-                "asserts S is \\bounded::real.sequence"
+                "asserts S is \\bounded::monotone.increasing::real.sequence"
               ]
             }
           ]
@@ -113,8 +99,7 @@
                   "depth": 1,
                   "text": "S",
                   "types": [
-                    "is \\bounded::real.sequence",
-                    "is \\monotone.increasing::real.sequence",
+                    "is \\bounded::monotone.increasing::real.sequence",
                     "is \\real.sequence"
                   ]
                 }

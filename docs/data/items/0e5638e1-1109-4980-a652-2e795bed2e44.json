@@ -5,13 +5,13 @@
     "5c6e6f726d616c2e73756267726f75703a6f66"
   ],
   "heading": "\\normal.subgroup:of{G ::= (X, *, e)}",
-  "heading_latex": "\\textrm{normal subgroup of }G",
+  "heading_latex": "\\textrm{normal subgroup of }G\\quad\\htmlClass{mlg-title-written}{H \\vartriangleleft G}",
   "parameter_destructurings": [
     "G ::= \\left(X, \\ast, e\\right)"
   ],
   "body_text": null,
   "page": null,
-  "source": "[\\normal.subgroup:of{G ::= (X, *, e)}]\nDeclares: N is \\group\nwhen: G is \\group\nsatisfies:\n. N \\:subgroup?:/ G\n. forAll: g \"in\" G\n  then:\n  . forAll: n \"in\" G\n    where: n \"in\"? N\n    then:\n    . exists: m \"in\" G\n      suchThat:\n      . m \"in\"? N\n      . g * n = m * g\nDocumented:\n. called: \"normal subgroup of $G?$\"\n. description: \"A subgroup is normal when its left and right cosets agree for\n                every group element.\"\nId: \"0e5638e1-1109-4980-a652-2e795bed2e44\"",
+  "source": "[\\normal.subgroup:of{G ::= (X, *, e)}]\nDeclares: N is \\group\nwhen: G is \\group\nsatisfies:\n. N \\:subgroup?:/ G\n. forAll: g \"in\" G\n  then:\n  . forAll: n \"in\" G\n    where: n \"in\"? N\n    then:\n    . exists: m \"in\" G\n      suchThat:\n      . m \"in\"? N\n      . g * n = m * g\nDocumented:\n. called: \"normal subgroup of $G?$\"\n. written: \"H? \\vartriangleleft G?\"\n. description: \"A subgroup is normal when its left and right cosets agree for\n                every group element.\"\nId: \"0e5638e1-1109-4980-a652-2e795bed2e44\"",
   "sections": [
     {
       "label": "Declares",
@@ -295,6 +295,18 @@
               "label": "called",
               "inline_argument": "\"normal subgroup of $G?$\"",
               "inline_latex": "\\textrm{normal subgroup of }G",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "written",
+              "inline_argument": "\"H? \\vartriangleleft G?\"",
+              "inline_latex": "H \\vartriangleleft G",
               "arguments": []
             }
           ]

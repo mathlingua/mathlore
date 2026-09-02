@@ -68,6 +68,7 @@ satisfies:
       . g * n = m * g
 Documented:
 . called: "normal subgroup of $G?$"
+. written: "H? \vartriangleleft G?"
 . description: "A subgroup is normal when its left and right cosets agree for
                 every group element."
 Id: "0e5638e1-1109-4980-a652-2e795bed2e44"
