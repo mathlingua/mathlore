@@ -59,12 +59,12 @@ then:
 Documented:
 . called: "Transitivity of Subset Relation"
 . description: "If $A \subseteq B$ and $B \subseteq C$, then $A \subseteq C$."
-Proof: "Suppose {.A \:subset?:/ B.} and {.B \:subset?:/ C.} and let {.x \"in\"
-        A.}. Then {.A \:subset?:/ B.} implies {.x \"in\"? B.} and {.B
-        \:subset?:/ C.} implies {.x \"in\"? C.}.
+Proof: """Suppose {.A \:subset?:/ B.} and {.B \:subset?:/ C.} and let
+          {.x "in" A.}. Then {.A \:subset?:/ B.} implies {.x "in"? B.} and
+          {.B \:subset?:/ C.} implies {.x "in"? C.}.
 
-        Since {.x.} was arbitrary, we have shown for all {.x \"in\"? A.} then
-        {.x \"in\"? C.}. Thus {.A \:subset?:/ C.}."
+          Since {.x.} was arbitrary, we have shown for all {.x "in"? A.} then
+          {.x "in"? C.}. Thus {.A \:subset?:/ C.}."""
 Id: "6a4bcb50-97bc-4d1b-a9b2-750c963bb720"
 
 
