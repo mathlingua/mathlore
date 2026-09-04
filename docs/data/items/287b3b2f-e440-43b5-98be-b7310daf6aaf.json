@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The following axioms are the rules a set must obey. The axiom of the\nempty set asserts that a set with no members exists, providing the\nstarting point just discussed."
+    "text": "We now present the core axiomatic postulates of Zermelo--Fraenkel set\ntheory. The first postulate asserts the baseline existence of a\nmemberless set, preventing the theory from describing an empty universe."
   },
-  "source": "Text: \"The following axioms are the rules a set must obey. The axiom of the\n       empty set asserts that a set with no members exists, providing the\n       starting point just discussed.\"\nId: \"287b3b2f-e440-43b5-98be-b7310daf6aaf\"",
+  "source": "Text: \"We now present the core axiomatic postulates of Zermelo--Fraenkel set\n       theory. The first postulate asserts the baseline existence of a\n       memberless set, preventing the theory from describing an empty universe.\"\nId: \"287b3b2f-e440-43b5-98be-b7310daf6aaf\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The following axioms are the rules a set must obey. The axiom of the\n       empty set asserts that a set with no members exists, providing the\n       starting point just discussed.\"",
+      "inline_argument": "\"We now present the core axiomatic postulates of Zermelo--Fraenkel set\n       theory. The first postulate asserts the baseline existence of a\n       memberless set, preventing the theory from describing an empty universe.\"",
       "inline_latex": null,
       "arguments": []
     },

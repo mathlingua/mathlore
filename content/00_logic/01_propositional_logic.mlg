@@ -2,12 +2,30 @@ Title: "Logic"
 Id: "2675f869-5535-45d3-9009-0a76ffa07961"
 
 
-Text: "Before any mathematics can be stated precisely, we need a small
-       vocabulary for combining and relating statements. This opening chapter
-       records that vocabulary: the logical connectives that turn one or two
-       statements into a new one. Everything here operates on statements alone,
-       independently of what those statements happen to be about, so the
-       connectives defined below are used unchanged in every later chapter."
+Text: "Mathematics begins with assertion. A mathematical statement—often called
+       a *proposition*—is a declarative sentence that is definitively either
+       true or false, but never both, never neither, and never indeterminate.
+       This classical ideal, known as the *principle of bivalence*, provides the
+       bedrock upon which mathematical reasoning stands. We do not require that
+       we immediately *know* whether a given proposition is true or
+       false—Goldbach's conjecture and the Riemann hypothesis are propositions
+       whose truth values remain actively pursued—only that a definite truth
+       value exists independently of our knowledge.
+
+       To build complex mathematical theories from elementary observations, we
+       require a systematic grammar for combining and transforming propositions.
+       This branch of foundational mathematics is *propositional logic*. In this
+       setting, atomic statements are treated as indivisible units, abstracted
+       as variables $P, Q, R, \ldots$. By applying a small collection of
+       truth-functional connectives, we can assemble compound statements whose
+       truth or falsity is completely determined by the truth values of their
+       constituent parts.
+
+       The logical connectives formulated in this chapter are entirely
+       topic-neutral: they operate according to universal rules that apply
+       equally whether the underlying assertions concern prime numbers,
+       topological spaces, continuous functions, or abstract algebraic groups.
+       They are the universal syntax of mathematical discourse."
 Id: "b03f7ce2-7aed-4c81-a6e7-d998ccf65747"
 
 
@@ -15,10 +33,29 @@ SectionTitle: "Conditionals and Equivalence"
 Id: "706c5ccb-8690-478e-b0fd-90e906f0276e"
 
 
-Text: "We begin with the conditional, the connective that expresses logical
-       consequence. It is the backbone of every definition and proof that
-       follows, since to prove a theorem is almost always to show that some
-       conclusion follows from a collection of hypotheses."
+Text: "The primary connective of mathematical deduction is the *conditional* or
+       *material implication*, denoted $P \Rightarrow Q$ and read *if $P$, then
+       $Q$*. Virtually every mathematical theorem is cast in this mold: given a
+       collection of hypotheses $P$, we establish that a conclusion $Q$
+       necessarily follows.
+
+       In colloquial speech, saying 'if it rains, I will bring an umbrella'
+       suggests a causal or temporal link. In mathematical logic, however, the
+       conditional is purely *truth-functional*: its truth value depends solely
+       on the truth values of $P$ and $Q$, free of any requirement of
+       psychological or causal connection. The conditional $P \Rightarrow Q$
+       makes a very precise claim: it is violated if and only if the hypothesis
+       $P$ is true while the conclusion $Q$ is false.
+
+       Consequently, whenever the antecedent $P$ is false, the conditional
+       $P \Rightarrow Q$ is automatically regarded as true. This convention is
+       known as *vacuous truth*. If a mathematician promises, 'Every element of
+       the empty set is an even integer,' the assertion is true because there
+       are no counterexamples—the premise that an element belongs to the empty
+       set is unconditionally false. Vacuous truth is not an arbitrary quirk of
+       formalization; it is essential for mathematical consistency, guaranteeing
+       that general laws apply uniformly to boundary cases without requiring
+       countless ad hoc exceptions."
 Id: "7529a4ce-e5cc-46c7-85b9-fdcd19351351"
 
 
@@ -38,9 +75,22 @@ Documented:
 Id: "dc7e213d-76c2-43d7-acf1-c5978daaab33"
 
 
-Text: "When each of two statements implies the other, they stand or fall
-       together. This mutual implication is the biconditional, and it is the
-       form in which most definitions and characterizations are cast."
+Text: "A one-way implication $P \Rightarrow Q$ tells us that $P$ is a
+       *sufficient condition* for $Q$, and that $Q$ is a *necessary condition*
+       for $P$. Frequently in mathematics, however, two conditions are so
+       intimately linked that each implies the other. When both
+       $P \Rightarrow Q$ and $Q \Rightarrow P$ hold, the statements $P$ and $Q$
+       stand or fall together.
+
+       This two-way implication is the *biconditional*, written
+       $P \Leftrightarrow Q$ and read *$P$ if and only if $Q$* (often
+       abbreviated as *$P$ iff $Q$*). The biconditional asserts that $P$ and $Q$
+       have identical truth values: both are true, or both are false. It is the
+       logical expression of *equivalence*. Most mathematical definitions are
+       implicit biconditionals: to say that a triangle is equilateral if and
+       only if all three of its sides have equal length is to establish a
+       complete mutual equivalence between the concept named and the condition
+       characterizing it."
 Id: "b60eca2f-6be8-4e23-a2f2-b56e2378684b"
 
 
@@ -66,9 +116,19 @@ SectionTitle: "Boolean Connectives"
 Id: "faacb189-b227-404c-8a8a-b6e976fc828a"
 
 
-Text: "The primary Boolean connectives build compound statements from simpler
-       ones. Conjunction asserts that two statements both hold, disjunction that
-       at least one of them does, and negation that a statement fails."
+Text: "In 1854, George Boole demonstrated that the laws of thought could be
+       expressed as an algebra: propositions could be added, multiplied, and
+       negated according to precise mathematical rules. The three primary
+       *Boolean connectives*—conjunction ($\land$), disjunction ($\lor$), and
+       negation ($\neg$)—form the computational engine of propositional logic.
+       Together, they allow us to assemble arbitrarily complex truth-functional
+       statements from atomic parts.
+
+       Conjunction represents the logical 'and': a compound statement
+       $P \land Q$ is true if and only if both $P$ and $Q$ are simultaneously
+       true. In algebraic analogies, conjunction behaves like multiplication in
+       the two-element field $\{0, 1\}$: the product is $1$ only when both
+       factors are $1$."
 Id: "1d61c6bd-bf4c-4c3e-a6dd-769d5c662a6f"
 
 
@@ -88,6 +148,24 @@ Documented:
 Id: "e024d041-fcf1-476e-b29e-b75d88b04fa8"
 
 
+Text: "Disjunction represents the logical 'or', written $P \lor Q$. In natural
+       language, the word 'or' is notoriously ambiguous: a menu offering 'soup
+       or salad' implies an exclusive choice, whereas a job requirement stating
+       'applicants must speak French or German' clearly welcomes applicants who
+       speak both.
+
+       Mathematics resolves this ambiguity decisively: unless explicitly
+       qualified, the mathematical connective $\lor$ is always *inclusive*. The
+       statement $P \lor Q$ is true when $P$ is true, when $Q$ is true, or when
+       both are true; it fails only when both $P$ and $Q$ are false. This
+       inclusive convention is indispensable in mathematical reasoning. For
+       example, the theorem stating that for every real number $x$, either
+       $x \ge 0$ or $x \le 0$, is valid without awkward qualifications for
+       $x = 0$ precisely because the connective permits both alternatives to
+       hold at once."
+Id: "fd7a79c3-4380-4621-a699-eb6902667669"
+
+
 [P \.or./ Q]
 States:
 when: P, Q is \\statement
@@ -101,7 +179,17 @@ Documented:
 . description: "The disjunction of $P$ and $Q$. The statement $P \text{ or } Q$
                 holds when at least one of $P$ and $Q$ holds. As is standard in
                 mathematics, the *or* is inclusive: it also holds when both do."
-Id: "fd7a79c3-4380-4621-a699-eb6902667669"
+Id: "f401f869-7009-411a-bc01-9a76ffa07901"
+
+
+Text: "The final primary connective is *negation*, written $\neg P$ and read
+       *not $P$*. Unlike conjunction and disjunction, which are binary
+       operations combining two arguments, negation is a unary operation acting
+       on a single statement. It acts as an involution on truth values: if $P$
+       is true, $\neg P$ is false; if $P$ is false, $\neg P$ is true. Under
+       classical bivalence, asserting $\neg P$ is entirely equivalent to
+       asserting that $P$ fails to hold."
+Id: "856ad9cc-c17e-4cff-ad32-10ee78ab20c4"
 
 
 [\not{P}]
@@ -115,12 +203,18 @@ Documented:
 . description: "The negation of $P$, written $\neg P$. It holds exactly when $P$
                 does not, and so reverses the truth value of the statement it is
                 applied to."
-Id: "856ad9cc-c17e-4cff-ad32-10ee78ab20c4"
+Id: "c28b5247-41fe-455b-80df-261056c1eb02"
 
 
-Text: "The connectives above suffice to define any others by combination. As one
-       example we record the exclusive *or*, which holds when the two statements
-       differ in truth value -- that is, when one of them holds but not both."
+Text: "Although the trio $\{\neg, \land, \lor\}$ is more than adequate to
+       express every truth function, it is often conceptually clarifying to
+       introduce specialized connectives for common patterns of thought.
+
+       When we wish to capture the everyday 'either-or but not both', we use the
+       *exclusive disjunction*, written $P \oplus Q$ or $P \text{ xor } Q$. An
+       exclusive disjunction holds when the two statements have opposite truth
+       values. Algebraically, it represents the symmetric difference in set
+       theory and addition modulo $2$ in the field $\mathbb{F}_2$."
 Id: "009e13c8-8dba-4b31-9958-f8531eb5ec04"
 
 
@@ -138,10 +232,19 @@ Documented:
 Id: "1c7bc638-0db8-416f-a0d0-f5c0d7d92842"
 
 
-Text: "Two other notable derived connectives are the Sheffer stroke (NAND) and
-       the Peirce arrow (NOR). Each of these connectives is functionally
-       complete on its own, meaning that every truth-functional operator can be
-       expressed purely in terms of NAND alone or NOR alone."
+Text: "From the standpoint of expressive economy, we may ask: what is the minimal
+       collection of connectives needed to generate all possible Boolean functions?
+       While neither conjunction alone nor disjunction alone suffices, Charles
+       Sanders Peirce (around 1880) and Henry Sheffer (1913) independently
+       discovered that a single binary connective can generate the entire system of
+       logic.
+
+       The two canonical operators with this property are *alternative denial*
+       (the Sheffer stroke or $\text{NAND}$, written $\barwedge$) and *joint denial*
+       (the Peirce arrow or $\text{NOR}$, written $\downarrow$). Because
+       $P \barwedge P \Leftrightarrow \neg P$ and $(P \barwedge Q) \barwedge
+       (P \barwedge Q) \Leftrightarrow P \land Q$, a logician or circuit designer
+       can build all of classical propositional calculus using NAND gates alone."
 Id: "2d5efb63-58bb-436f-9aa6-648a2c05e6b6"
 
 
@@ -175,9 +278,19 @@ SectionTitle: "Fundamental Laws of Propositional Logic"
 Id: "1b3ef4fc-1add-407c-84c2-ac7234d8e0f9"
 
 
-Text: "Classical propositional logic satisfies several fundamental algebraic
-       laws. The first is the law of double negation, which states that denying
-       a negated proposition returns the original proposition."
+Text: "Under the relation of logical equivalence ($\Leftrightarrow$),
+       propositions satisfy a rich system of algebraic identities. In fact, when
+       propositions are identified modulo equivalence, the resulting
+       mathematical structure is a *Boolean algebra*—an algebraic system sharing
+       deep structural parallels with the algebra of sets under intersection,
+       union, and complementation.
+
+       The first foundational law is the *law of double negation*: denying a
+       denial restores the original assertion. In classical logic, where every
+       statement is either true or false, there is no third epistemic status;
+       hence, to demonstrate that it is false that $P$ is false is to establish
+       that $P$ is true. This equivalence underpins the method of proof by
+       contradiction."
 Id: "ddf66eda-3e4a-4b16-a628-eaa5d5dbc270"
 
 
@@ -188,13 +301,33 @@ Documented:
 . called: "Law of Double Negation"
 . description: "A proposition $P$ is logically equivalent to the negation of its
                 negation $\neg(\neg P)$."
+Proof: """Under classical bivalence, the statement {.P.} has two possible truth
+          values. If {.P.} is true, its negation {.\not{P}.} is false, and the
+          negation of that result {.\not{\not{P}}.} is true. Conversely, if
+          {.P.} is false, {.\not{P}.} is true, and {.\not{\not{P}}.} is false.
+          In both cases, {.\not{\not{P}}.} has the identical truth value as
+          {.P.}. Therefore, {.\not{\not{P}} \.iff./ P.}."""
 Id: "eb21571a-d245-427d-a014-d29407d09f9a"
 
 
-Text: "De Morgan's laws describe the duality between conjunction and disjunction
-       under negation: the negation of a conjunction is the disjunction of the
-       negations, and the negation of a disjunction is the conjunction of the
-       negations."
+Text: "Next in importance are *De Morgan's laws*, named after the British
+       mathematician Augustus De Morgan (1806–1871). These laws reveal a
+       profound duality between conjunction and disjunction mediated by
+       negation.
+
+       De Morgan's laws state that negating a conjunction turns it into a
+       disjunction of negations, while negating a disjunction turns it into a
+       conjunction of negations: $$\neg(P \land Q) \iff (\neg P \lor \neg Q)$$
+       $$\neg(P \lor Q) \iff (\neg P \land \neg Q)$$
+
+       The intuitive meaning is direct: to say that 'it is not the case that
+       both $P$ and $Q$ hold' means that at least one of them must fail;
+       similarly, to say that 'neither $P$ nor $Q$ holds' means that $P$ fails
+       and $Q$ fails. These laws appear in every domain of mathematics: in set
+       theory, as the laws governing complements of unions and intersections
+       ($(A \cup B)^c = A^c \cap B^c$), and in predicate calculus, as the
+       duality between universal and existential quantifiers
+       ($\neg \forall x P(x) \iff \exists x \neg P(x)$)."
 Id: "2f552add-aa29-4824-b7d0-40345e29c312"
 
 
@@ -207,6 +340,23 @@ Documented:
 . called: "De Morgan's Laws for Logic"
 . description: "Negation interchanges conjunction and disjunction: $\neg(P \land Q)
                 \iff (\neg P \lor \neg Q)$ and $\neg(P \lor Q) \iff (\neg P \land \neg Q)$."
+Proof: """We evaluate the statements under all four assignments of truth values
+          to {.P.} and {.Q.}:
+
+          1. If both {.P.} and {.Q.} are true, then {.P \.and./ Q.} is true, so
+             {.\not{P \.and./ Q}.} is false. Meanwhile, {.\not{P}.} and
+             {.\not{Q}.} are both false, so {.\not{P} \.or./ \not{Q}.} is false.
+             Both sides agree.
+
+          2. If at least one of {.P.} or {.Q.} is false, then {.P \.and./ Q.} is
+             false, so {.\not{P \.and./ Q}.} is true. At the same time, at least
+             one of {.\not{P}.} or {.\not{Q}.} is true, so
+             {.\not{P} \.or./ \not{Q}.} is true. Again, both sides agree.
+
+          The dual identity
+          {.\not{P \.or./ Q} \.iff./ (\not{P} \.and./ \not{Q}).} follows by
+          applying the first identity to {.\not{P}.} and {.\not{Q}.} together
+          with the law of double negation."""
 Id: "e4c6ef38-dd37-448b-a1f5-377df32138ce"
 
 
@@ -214,28 +364,69 @@ SectionTitle: "Truth Assignments and Expressive Power"
 Id: "1fba02b7-9700-4256-a888-1a44c75c3c02"
 
 
-TextDefinition: "A truth assignment on propositional variables assigns each
-                 variable one of the values true and false and extends
-                 recursively through the connectives. A formula is a tautology
-                 if it is true under every assignment, a contradiction if it is
-                 false under every assignment, and contingent otherwise. These
-                 are semantic classifications of formulas, not additional
-                 connectives."
+Text: "Having defined individual connectives and their algebraic laws, we now
+       turn to the overarching semantic framework of propositional logic. We
+       wish to understand how the truth value of an arbitrary, arbitrarily
+       nested formula is determined by the values of its atomic variables, and
+       what totality of functions can be expressed within this syntax."
+Id: "3e84617a-51ea-42ce-9065-27a36e676101"
+
+
+TextDefinition: "A *truth assignment* (or valuation) on a set of propositional
+                 variables is a function mapping each variable to one of the
+                 values $\{\text{true}, \text{false}\}$. Any truth assignment
+                 extends uniquely and recursively to all compound formulas
+                 according to the truth tables of their connectives.
+
+                 A formula is called a *tautology* (or logically valid) if it
+                 evaluates to true under every possible truth assignment; it is
+                 a *contradiction* (or unsatisfiable) if it evaluates to false
+                 under every assignment; and it is *contingent* if it is true
+                 under some assignments and false under others. Tautologies
+                 represent universal logical truths, independent of any factual
+                 state of affairs."
 Id: "e6a57aaf-f2e1-43ce-9979-261056c1eba7"
 
 
+Text: "A central question of mathematical syntax is *canonical representation*:
+       can an arbitrary propositional formula be rewritten in a standard, easily
+       analyzable form? The answer is provided by the normal form theorems."
+Id: "81e3a647-38ae-4f70-b184-a134d193d501"
+
+
 TextTheorem: "Every propositional formula is logically equivalent to one in
-              disjunctive normal form and to one in conjunctive normal form. The
-              first is a disjunction of conjunctions of literals; the second is
-              a conjunction of disjunctions of literals. The normal forms can be
-              read from the truth table, although that construction may grow
-              exponentially with the number of variables."
+              *Disjunctive Normal Form* (DNF) and to one in *Conjunctive Normal
+              Form* (CNF).
+
+              A formula in DNF is a disjunction of conjunctions of literals
+              (variables or their negations), analogous to a sum-of-products in
+              elementary algebra. It can be constructed directly from the
+              formula's truth table by taking a conjunction for each row where
+              the formula evaluates to true, and forming the disjunction of
+              these conjunctions.
+
+              Dually, a formula in CNF is a conjunction of disjunctions of
+              literals (a product-of-sums). Although the transformation into
+              either normal form can produce an exponential increase in formula
+              length, the normal forms guarantee that every Boolean truth
+              function admits a completely explicit, canonical representation."
 Id: "a415c422-9e69-431e-b2fe-8a833231b229"
 
 
-TextTheorem: "The singleton connective sets consisting only of NAND or only of
-              NOR are functionally complete: every Boolean truth function can be
-              expressed using repeated applications of that one connective.
-              Functional completeness concerns expressibility, not brevity or
-              suitability for proof."
+Text: "Finally, we record the foundational theorem regarding the expressive
+       power of minimal connective sets."
+Id: "5b736e47-8a4d-451e-9a18-971c26a57891"
+
+
+TextTheorem: "The singleton connective sets consisting only of NAND
+              ($\{\barwedge\}$) or only of NOR ($\{\downarrow\}$) are
+              *functionally complete*: every Boolean truth function of any
+              number of variables can be expressed using formulas containing
+              that single connective alone.
+
+              Functional completeness guarantees that our logical universe lacks
+              nothing in expressive reach. In subsequent chapters, when we speak
+              of mathematical definitions, properties, and constraints, we do so
+              with the certainty that any finite truth condition can be
+              formulated rigorously within the language of propositional logic."
 Id: "e5bdaf8f-ebd3-4925-ac4c-5e7cad6e9f64"

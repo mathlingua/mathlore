@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The theory needs at least one set to exist before it can build any\nothers. The simplest such set is the one with no elements at all. Its\nexistence is granted by the axiom of the empty set, and, as with every\nset, its uniqueness is a consequence of extensionality."
+    "text": "To construct a universe of sets, the deductive machinery must possess an\ninitial seed—an object upon which subsequent operations can act. The\nsimplest imaginable set is the one having no members whatsoever: the\n*empty set*, denoted $\\emptyset$. The Axiom of the Empty Set guarantees\nthat such a set exists, while the Axiom of Extensionality ensures that it\nis unique. In the cumulative hierarchy of sets, the empty set serves as\nthe absolute base layer $V_0 = \\emptyset$ from which all higher sets are\niteratively generated."
   },
-  "source": "Text: \"The theory needs at least one set to exist before it can build any\n       others. The simplest such set is the one with no elements at all. Its\n       existence is granted by the axiom of the empty set, and, as with every\n       set, its uniqueness is a consequence of extensionality.\"\nId: \"7a54c26a-ea2e-4e38-ac69-3426f651c4d4\"",
+  "source": "Text: \"To construct a universe of sets, the deductive machinery must possess an\n       initial seed—an object upon which subsequent operations can act. The\n       simplest imaginable set is the one having no members whatsoever: the\n       *empty set*, denoted $\\emptyset$. The Axiom of the Empty Set guarantees\n       that such a set exists, while the Axiom of Extensionality ensures that it\n       is unique. In the cumulative hierarchy of sets, the empty set serves as\n       the absolute base layer $V_0 = \\emptyset$ from which all higher sets are\n       iteratively generated.\"\nId: \"7a54c26a-ea2e-4e38-ac69-3426f651c4d4\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The theory needs at least one set to exist before it can build any\n       others. The simplest such set is the one with no elements at all. Its\n       existence is granted by the axiom of the empty set, and, as with every\n       set, its uniqueness is a consequence of extensionality.\"",
+      "inline_argument": "\"To construct a universe of sets, the deductive machinery must possess an\n       initial seed—an object upon which subsequent operations can act. The\n       simplest imaginable set is the one having no members whatsoever: the\n       *empty set*, denoted $\\emptyset$. The Axiom of the Empty Set guarantees\n       that such a set exists, while the Axiom of Extensionality ensures that it\n       is unique. In the cumulative hierarchy of sets, the empty set serves as\n       the absolute base layer $V_0 = \\emptyset$ from which all higher sets are\n       iteratively generated.\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -8,7 +8,7 @@
   "heading_latex": "m\\textrm{ is maximal in }X\\textrm{ under }R",
   "body_text": null,
   "page": null,
-  "source": "[\\is.maximal{m}:in{X}:under{R}]\nStates:\nwhen:\n. X is \\set\n. R is \\partial.order:on{X}\n. m \"in\" X\nthat:\n. not:\n  . exists: x \"in\" X\n    suchThat:\n    . m != x\n    . R(m, x)\nDocumented:\n. called: \"$m?$ is maximal in $X?$ under $R?$\"\n. description: \"A maximal element has no distinct element strictly above it.\"\nId: \"690ee3e8-39a6-4853-8df9-7d0b9e1cec5a\"",
+  "source": "[\\is.maximal{m}:in{X}:under{R}]\nStates:\nwhen:\n. X is \\set\n. R is \\partial.order:on{X}\n. m \"in\" X\nthat:\n. not:\n  . exists: x \"in\" X\n    suchThat:\n    . m != x\n    . R(m, x)\nDocumented:\n. called: \"$m?$ is maximal in $X?$ under $R?$\"\n. description: \"A maximal element has no distinct element strictly above it. In\n                a non-total poset, a set may possess multiple distinct maximal\n                elements.\"\nId: \"690ee3e8-39a6-4853-8df9-7d0b9e1cec5a\"",
   "sections": [
     {
       "label": "States",

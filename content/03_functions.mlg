@@ -2,12 +2,20 @@ Title: "Functions"
 Id: "40c5a61d-19e7-4856-8fb0-57d09ac6a6ed"
 
 
-Text: "A function is the mathematical embodiment of a rule that assigns to each
-       input exactly one output. Having built sets and their Cartesian products,
-       we can now say precisely what a function is: a way of associating with
-       every element of one set a unique element of another. Functions, and the
-       binary operations that are a special case of them, are the tools with
-       which the algebraic structures of the next chapter are described."
+Text: "A function is the mathematical embodiment of a deterministic
+       transformation, assigning to each input exactly one output. Historically
+       conceived by Euler and Lagrange as symbolic algebraic formulas, the
+       modern conception was revolutionized by Peter Gustav Lejeune Dirichlet
+       and Richard Dedekind: a function $f : A \to B$ is an arbitrary rule of
+       association, requiring neither analytic formula nor geometric continuity.
+
+       In axiomatic set theory, a function is formally defined as a special kind
+       of binary relation: a subset of the Cartesian product $A \times B$
+       satisfying the dual requirements of existence (every domain element
+       $x \in A$ has an image) and uniqueness (no domain element is assigned
+       more than one image). Functions, and the binary operations that
+       specialize them, constitute the dynamic machinery through which algebraic
+       structures, topological spaces, and analytical dynamics are investigated."
 Id: "37f9c062-435f-4310-b511-2d2d59281683"
 
 
@@ -37,9 +45,17 @@ Documented:
 Id: "1e0cb28d-bc8f-42db-bcfa-86a215e88c7a"
 
 
-Text: "Functions can be classified by how they map inputs to outputs. An
-       injective function maps distinct inputs to distinct outputs, a surjective
-       function covers every element of its codomain, and a bijection does both."
+Text: "Functions are classified by how their mapping action behaves across the
+       domain and codomain:
+       - An *injective* (one-to-one) function preserves distinctness: no two
+         distinct inputs share a common output. An injection embeds the domain
+         into the codomain without loss of information.
+       - A *surjective* (onto) function covers the codomain entirely: every
+         element in $B$ is realized as the output of at least one input in $A$.
+       - A *bijective* function is simultaneously injective and surjective. A
+         bijection establishes an exact one-to-one correspondence between the
+         sets $A$ and $B$, demonstrating that they possess identical cardinal
+         size and abstract set-theoretic structure."
 Id: "252ce10f-e09f-4133-9110-e59fe497ce9c"
 
 
@@ -89,8 +105,10 @@ SectionTitle: "Identity, Composition, and Inverses"
 Id: "63269ec1-05b2-4389-8448-8596fd9f1c08"
 
 
-Text: "The simplest function on any set is the identity function, which leaves
-       every element fixed."
+Text: "On every set $A$, there exists a canonical trivial mapping: the *identity
+       function* $\text{id}_A : A \to A$, defined by $\text{id}_A(x) = x$. The
+       identity function acts as the two-sided neutral element for the algebra
+       of function composition."
 Id: "a698fee3-f3a3-4fc8-bb89-3d83f72b6bc9"
 
 
@@ -106,8 +124,15 @@ Documented:
 Id: "be488ff3-1570-44a8-8be0-2bc9cbcdd791"
 
 
-Text: "When the codomain of one function matches the domain of another, they can
-       be composed into a single pipeline."
+Text: "When the codomain of a function $f : A \to B$ matches the domain of a
+       function $g : B \to C$, they can be chained into a single compound
+       mapping: the *composition* $g \circ f : A \to C$, defined by
+       $(g \circ f)(x) = g(f(x))$.
+
+       Function composition is universally associative:
+       $(h \circ g) \circ f = h \circ (g \circ f)$. This associativity is the
+       bedrock of category theory, where functions serve as the prototypical
+       morphisms."
 Id: "d6e88a37-b891-428d-bb2d-080654f19c81"
 
 
@@ -125,8 +150,10 @@ Documented:
 Id: "a5c4b516-227b-4893-aa18-5f04c1f005a4"
 
 
-Text: "Every bijection admits a unique two-sided inverse function that unwinds
-       its action."
+Text: "Every bijective function $f : A \to B$ admits a unique two-sided *inverse
+       function* $f^{-1} : B \to A$ that completely reverses its action,
+       satisfying $f^{-1} \circ f = \text{id}_A$ and
+       $f \circ f^{-1} = \text{id}_B$."
 Id: "5f0e98c0-5fb7-4b69-9811-55266a75deea"
 
 
@@ -148,9 +175,14 @@ Documented:
 Id: "894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf"
 
 
-Text: "A function can also be applied to subsets of its domain to yield the
-       forward image, or pulled back from subsets of its codomain to yield the
-       preimage."
+Text: "Beyond mapping individual points, a function induces actions on the power
+       sets of its domain and codomain:
+       - The *direct image* $f[X]$ pushes a subset $X \subseteq A$ forward into
+         $B$, collecting all evaluations $f(x)$ for $x \in X$.
+       - The *preimage* (or inverse image) $f^{-1}[Y]$ pulls a subset
+         $Y \subseteq B$ back into $A$, collecting all inputs that map into $Y$.
+         Crucially, the preimage $f^{-1}[Y]$ is well-defined for *any* function,
+         requiring no invertibility of $f$."
 Id: "14fa61b4-4f94-4156-aaf3-cefefc0af688"
 
 
@@ -184,8 +216,9 @@ SectionTitle: "Operations and Restrictions"
 Id: "e2677e08-e77f-4228-8afc-5280b38b5241"
 
 
-Text: "A unary operation is a function from a set to itself, transforming
-       individual elements."
+Text: "A *unary operation* (or endofunction) on $X$ is a function whose domain
+       and codomain coincide: $u : X \to X$. Iterating unary operations
+       generates discrete dynamical systems and discrete orbits."
 Id: "4e45bf5d-1f34-4700-8d12-3a34c1eee921"
 
 
@@ -198,10 +231,11 @@ Documented:
 Id: "3e224a1e-0519-4e11-b080-e748b38de02a"
 
 
-Text: "A binary operation is a function of two arguments that returns a value in
-       the same set. Addition and multiplication are the familiar examples, and
-       operations of this kind are exactly what an algebraic structure equips a
-       set with."
+Text: "A *binary operation* on $X$ is a function taking an ordered pair of
+       elements from $X$ and returning a value in $X$: $* : X \times X \to X$.
+       We write $x * y$ using infix notation. Binary operations are the
+       foundational building blocks of abstract algebra, equipping sets with
+       arithmetic structures such as groups, rings, and vector spaces."
 Id: "dd492fce-0357-4b6a-810f-40764b5245f9"
 
 
@@ -216,10 +250,13 @@ Documented:
 Id: "82c8948a-c30d-464b-8ab0-1c7bdb2ed770"
 
 
-Text: "Two properties of a binary operation recur constantly. An operation is
-       *associative* when the way its arguments are grouped does not matter, and
-       *commutative* when their order does not matter. We record both as
-       refinements of a binary operation."
+Text: "Two algebraic properties of binary operations recur constantly across
+       higher mathematics:
+       - *Associativity*: $(a * b) * c = a * (b * c)$, which ensures that
+         bracket grouping is irrelevant, permitting unambiguous expressions such
+         as $a * b * c$.
+       - *Commutativity*: $x * y = y * x$, which ensures that input ordering is
+         symmetric."
 Id: "ded59881-7811-4fef-a95c-77f9801814e2"
 
 
@@ -245,10 +282,11 @@ Documented:
 Id: "fc0223f8-7053-44ae-a251-94b6c35bc31d"
 
 
-Text: "A function may be cut down to a smaller domain simply by ignoring the
-       inputs outside it. This *restriction* agrees with the original function
-       wherever both are defined, and is used later to view an operation on a
-       set as an operation on a subset."
+Text: "Given a function $g : A \to B$ and a subset $X \subseteq A$, the
+       *restriction* of $g$ to $X$, denoted $g|_X : X \to B$, is obtained by
+       retaining the operational mapping rule while restricting its domain to
+       $X$. Conversely, $g$ is said to be an *extension* of $g|_X$ to the larger
+       domain $A$."
 Id: "fc9215b0-5d36-4ee6-b3d6-e0007b8e39f5"
 
 
@@ -285,27 +323,40 @@ Documented:
 Id: "e10a2ceb-8649-480a-9ab4-651ca4345f74"
 
 
-TextTheorem: "Every function $f:A\to B$ has a canonical factorization
-              $A\twoheadrightarrow A/{\sim}\hookrightarrow B$, where $x\sim x'$
-              exactly when $f(x)=f(x')$. The first map sends an element to its
-              fiber class, and the second sends that class to its common value.
-              This separates the identifications made by $f$ from the inclusion
-              of its image in the codomain."
+TextTheorem: "Every function $f : A \to B$ admits a canonical *first isomorphism
+              factorization*:
+              $$A \twoheadrightarrow A / {\sim} \xrightarrow{\sim} f[A] \hookrightarrow B$$
+              where $x \sim x'$ if and only if $f(x) = f(x')$.
+              The three components decouple the structural actions of $f$:
+              1. The canonical projection $\pi : A \twoheadrightarrow A / {\sim}$
+              is a surjection identifying elements with identical values.
+              2. The induced map $\bar{f} : A / {\sim} \xrightarrow{\sim} f[A]$,
+              given by $\bar{f}([x]) = f(x)$, is a bijection.
+              3. The canonical inclusion $\iota : f[A] \hookrightarrow B$ is an
+              injection embedding the image into the ambient codomain."
 Id: "cff9bfde-5ee9-4942-97a5-50b99637c887"
 
 
-TextTheorem: "A function has a left inverse if and only if it is injective,
-              provided a value can be selected outside its image when needed. A
-              function has a right inverse if and only if it is surjective; the
-              assertion that every surjection has a right inverse is equivalent
-              to the axiom of choice. A two-sided inverse exists exactly for
-              bijections and is then unique."
+TextTheorem: "A function $f : A \to B$ with nonempty domain $A$ has a *left
+              inverse* (retraction) $g : B \to A$ satisfying
+              $g \circ f = \text{id}_A$ if and only if $f$ is injective. Dually,
+              $f$ has a *right inverse* (section) $h : B \to A$ satisfying
+              $f \circ h = \text{id}_B$ if and only if $f$ is surjective; the
+              assertion that every surjection admits a right inverse is
+              logically equivalent to the Axiom of Choice. A function possesses
+              a two-sided inverse if and only if it is bijective, in which case
+              the inverse is unique."
 Id: "b0b5de59-0d45-45ea-ac3f-6abe4b3e8af1"
 
 
-TextTheorem: "Direct images preserve arbitrary unions, while inverse images
-              preserve arbitrary unions, arbitrary intersections, and
-              complements relative to the domain and codomain. Direct images
-              preserve intersections only as an inclusion in general; equality
-              holds when the function is injective."
+TextTheorem: "Direct images and preimages interact with Boolean operations
+              according to fundamental preservation laws:
+              - *Preimages preserve all Boolean structure*: for any family of
+              subsets $B_i \subseteq B$,
+              $$f^{-1}\left[\bigcup_{i \in I} B_i\right] = \bigcup_{i \in I} f^{-1}[B_i], \quad f^{-1}\left[\bigcap_{i \in I} B_i\right] = \bigcap_{i \in I} f^{-1}[B_i]$$
+              and $f^{-1}[B \setminus Y] = A \setminus f^{-1}[Y]$.
+              - *Direct images preserve unions*: $f\left[\bigcup_{i \in I} A_i\right] = \bigcup_{i \in I} f[A_i]$.
+              - *Direct images preserve intersections only as inclusions in general*:
+              $f\left[\bigcap_{i \in I} A_i\right] \subseteq \bigcap_{i \in I} f[A_i]$.
+              Equality holds for all families if and only if $f$ is injective."
 Id: "f143d5e8-5f5b-4208-a0b0-f8720288e434"

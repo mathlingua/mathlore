@@ -4,13 +4,13 @@
   "definition_keys": [],
   "heading": null,
   "heading_latex": "\\textrm{Theorem}",
-  "body_text": "First isomorphism theorem for vector spaces. For a linear map\n$T:V\\to W$, the induced map $V/\\ker T\\to\\operatorname{im}T$ given\nby $v+\\ker T\\mapsto T(v)$ is a well-defined linear isomorphism.\nThe quotient removes exactly the directions on which $T$ loses\ninformation.",
+  "body_text": "The First Isomorphism Theorem for Vector Spaces. For any linear\nmap $T : V \\to W$, the induced mapping\n$\\widetilde{T} : V / \\ker(T) \\to \\operatorname{im}(T)$ defined by\n$\\widetilde{T}(v + \\ker T) = T(v)$ is a well-defined vector space\nisomorphism: $$ V / \\ker(T) \\cong \\operatorname{im}(T). $$ The\nquotient removes precisely the directions collapsed by $T$,\nleaving a faithful copy of the image. Equating dimensions on both\nsides immediately recovers the Rank-Nullity Theorem:\n$\\dim(V) - \\dim(\\ker T) = \\dim(\\operatorname{im} T)$.",
   "page": null,
-  "source": "TextTheorem: \"First isomorphism theorem for vector spaces. For a linear map\n              $T:V\\to W$, the induced map $V/\\ker T\\to\\operatorname{im}T$ given\n              by $v+\\ker T\\mapsto T(v)$ is a well-defined linear isomorphism.\n              The quotient removes exactly the directions on which $T$ loses\n              information.\"\nId: \"a615de22-89bb-4bf1-aa10-3b1b919191a4\"",
+  "source": "TextTheorem: \"The First Isomorphism Theorem for Vector Spaces. For any linear\n              map $T : V \\to W$, the induced mapping\n              $\\widetilde{T} : V / \\ker(T) \\to \\operatorname{im}(T)$ defined by\n              $\\widetilde{T}(v + \\ker T) = T(v)$ is a well-defined vector space\n              isomorphism: $$ V / \\ker(T) \\cong \\operatorname{im}(T). $$ The\n              quotient removes precisely the directions collapsed by $T$,\n              leaving a faithful copy of the image. Equating dimensions on both\n              sides immediately recovers the Rank-Nullity Theorem:\n              $\\dim(V) - \\dim(\\ker T) = \\dim(\\operatorname{im} T)$.\"\nId: \"a615de22-89bb-4bf1-aa10-3b1b919191a4\"",
   "sections": [
     {
       "label": "TextTheorem",
-      "inline_argument": "\"First isomorphism theorem for vector spaces. For a linear map\n              $T:V\\to W$, the induced map $V/\\ker T\\to\\operatorname{im}T$ given\n              by $v+\\ker T\\mapsto T(v)$ is a well-defined linear isomorphism.\n              The quotient removes exactly the directions on which $T$ loses\n              information.\"",
+      "inline_argument": "\"The First Isomorphism Theorem for Vector Spaces. For any linear\n              map $T : V \\to W$, the induced mapping\n              $\\widetilde{T} : V / \\ker(T) \\to \\operatorname{im}(T)$ defined by\n              $\\widetilde{T}(v + \\ker T) = T(v)$ is a well-defined vector space\n              isomorphism: $$ V / \\ker(T) \\cong \\operatorname{im}(T). $$ The\n              quotient removes precisely the directions collapsed by $T$,\n              leaving a faithful copy of the image. Equating dimensions on both\n              sides immediately recovers the Rank-Nullity Theorem:\n              $\\dim(V) - \\dim(\\ker T) = \\dim(\\operatorname{im} T)$.\"",
       "inline_latex": null,
       "arguments": []
     },

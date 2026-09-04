@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Every integer $a$ has a unique additive inverse $-a$ satisfying\n$a + (-a) = 0$."
+    "text": "Every integer $a$ possesses a unique additive inverse $-a$ satisfying\n$a + (-a) = 0$. Subtraction is then defined globally by\n$a - b := a + (-b)$."
   },
-  "source": "Text: \"Every integer $a$ has a unique additive inverse $-a$ satisfying\n       $a + (-a) = 0$.\"\nId: \"667c2087-7c50-4b19-b052-b9fa56d77656\"",
+  "source": "Text: \"Every integer $a$ possesses a unique additive inverse $-a$ satisfying\n       $a + (-a) = 0$. Subtraction is then defined globally by\n       $a - b := a + (-b)$.\"\nId: \"667c2087-7c50-4b19-b052-b9fa56d77656\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Every integer $a$ has a unique additive inverse $-a$ satisfying\n       $a + (-a) = 0$.\"",
+      "inline_argument": "\"Every integer $a$ possesses a unique additive inverse $-a$ satisfying\n       $a + (-a) = 0$. Subtraction is then defined globally by\n       $a - b := a + (-b)$.\"",
       "inline_latex": null,
       "arguments": []
     },

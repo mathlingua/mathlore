@@ -2,10 +2,18 @@ Title: "Groups and Subgroups"
 Id: "5bc745b6-657d-446f-b5f0-cae8c199112a"
 
 
-Text: "A *group* is a monoid in which every element has an inverse: for each $x$
-       there is a $y$ with $x * y = e$ and $y * x = e$. Groups are the central
-       structure of elementary algebra, being exactly the structures whose
-       operation can always be undone. They are the abstract theory of symmetry."
+Text: "A *group* is a monoid in which every element possesses a two-sided
+       inverse: for each $x \in G$, there exists an element $y \in G$ satisfying
+       $x * y = e$ and $y * x = e$.
+
+       Groups constitute the foundational paradigm of modern algebra. While
+       monoids can represent irreversible processes (such as non-injective
+       functions or lossy data compression), groups formalize the geometry of
+       *reversible transformations* and *symmetries*. Historically conceived by
+       Évariste Galois in 1832 to characterize the solvability of polynomial
+       equations by radicals, groups now permeate every branch of modern
+       mathematics and theoretical physics, from crystallography and quantum
+       mechanics to gauge theory and algebraic topology."
 Id: "5fb80940-d8de-44bf-8117-eeee203d4755"
 
 
@@ -30,10 +38,12 @@ Documented:
 Id: "e4d7371d-29bd-431f-ab09-e114fe89e5cf"
 
 
-Text: "A group is *finite* when its underlying set has finitely many elements.
-       The size of a finite group, its order, governs a great deal of its
-       structure, and finiteness is inherited directly from the underlying
-       monoid."
+Text: "A group is *finite* when its underlying carrier set $X$ has finite
+       cardinality. The cardinality $|G| = |X|$ is called the *order* of the
+       group. The order of a finite group exerts immense control over its
+       internal substructure: by Lagrange's theorem and the Sylow theorems, the
+       arithmetic prime factorization of $|G|$ dictates the existence and sizes
+       of its subgroups."
 Id: "6c628805-5df1-4ad5-b2c3-23bf7dad5acc"
 
 
@@ -46,9 +56,11 @@ Documented:
 Id: "28d2a1c1-89a5-4163-93e3-fbc21c97ec9a"
 
 
-Text: "The elements of a group inherit the operation of the group, and each also
-       carries an inverse. Writing $x^{-1}$ for the inverse of $x$ gives the
-       familiar notation used in computations."
+Text: "The elements of a group inherit the associative binary operation of the
+       ambient structure, and each element $x$ is equipped with its two-sided
+       inverse. We denote this inverse by $x^{-1}$, enabling familiar algebraic
+       manipulations such as left and right division:
+       $x * y = z \iff y = x^{-1} * z$."
 Id: "bb323028-2831-4d67-b784-b0918774ab3a"
 
 
@@ -86,9 +98,13 @@ Documented:
 Id: "9b52b844-0cfa-4238-8c73-8b38265cca81"
 
 
-Text: "Two elements of a magma *commute* when the order in which they are
-       combined does not affect the result. In a general group most pairs do not
-       commute; the ones that do are of particular interest."
+Text: "Two elements $x, y$ in a group *commute* when their product is
+       independent of order: $x * y = y * x$. In general groups—such as
+       permutation groups $S_n$ or matrix groups
+       $\operatorname{GL}_n$—multiplication is profoundly non-commutative. The
+       degree to which commutativity fails is measured by the *commutator*
+       $[x, y] = x * y * x^{-1} * y^{-1}$, which equals the identity $e$ if and
+       only if $x$ and $y$ commute."
 Id: "a36041ed-5bdd-4e9c-84ce-719a69b7708b"
 
 
@@ -110,10 +126,11 @@ SectionTitle: "Subgroups"
 Id: "29c1456f-88a5-4b56-a5b8-57859c40aedc"
 
 
-Text: "Before defining subgroups we record a small set-theoretic fact that the
-       definition needs: forming the Cartesian square of a subset lands inside
-       the Cartesian square of the whole set. It lets a subgroup's operation be
-       recognized as a restriction of the parent operation."
+Text: "Before formalizing subgroups, we establish an elementary set-theoretic
+       lemma: the Cartesian product of a subset with itself is a subset of the
+       Cartesian square of the ambient set. This lemma guarantees that
+       restricting a binary operation $* : X \times X \to X$ to $X' \times X'$
+       yields a well-typed mapping into $X$."
 Id: "7541e6eb-f20a-497b-ae90-65c891609d26"
 
 
@@ -127,11 +144,17 @@ then:
 Id: "db0160ae-5d28-4ad1-b2b6-d22964a88a2b"
 
 
-Text: "A *subgroup* is a subset of a group that is itself a group under the
-       inherited operation. It must contain the identity, be closed under the
-       operation, and contain the inverse of each of its elements. Subgroups are
-       the substructures through which the internal architecture of a group is
-       studied."
+Text: "A *subgroup* $H \leq G$ is a subset of a group that is itself a group
+       under the inherited operation. To qualify as a subgroup, $H$ must be
+       nonempty, closed under the group operation ($x * y \in H$), and closed
+       under inverses ($x^{-1} \in H$).
+
+       By the *One-Step Subgroup Test*, a nonempty subset $H \subseteq G$ is a
+       subgroup if and only if for all $x, y \in H$, the product
+       $x * y^{-1} \in H$. Subgroups form the atomic building blocks of group
+       theory: every group contains the trivial subgroup $\{e\}$ and the
+       improper subgroup $G$, while the intersection of any family of subgroups
+       is again a subgroup."
 Id: "91933534-107f-44fe-9ad6-4829664f8cd6"
 
 
@@ -189,9 +212,16 @@ SectionTitle: "Abelian Groups and Inversion Theorems"
 Id: "4f086ee9-6118-4df5-903c-f2463f65c0f1"
 
 
-Text: "When the operation of a group *is* commutative, the group is called
-       *abelian*. Abelian groups are far more tractable than groups in general,
-       and they are the setting for much of number theory and linear algebra."
+Text: "When the operation of a group is commutative—meaning $x * y = y * x$ for
+       all pairs of elements—the group is called *abelian* (in honor of Niels
+       Henrik Abel). In abelian groups, the binary operation is often denoted
+       additively by $+$, with identity $0$ and inverse $-x$.
+
+       Abelian groups are far more algebraically tractable than non-commutative
+       groups: every subgroup of an abelian group is normal, the set of
+       homomorphisms between two abelian groups forms an abelian group, and the
+       Fundamental Theorem of Finitely Generated Abelian Groups provides a
+       complete, canonical classification into direct sums of cyclic groups."
 Id: "a608ecec-59d4-4939-a43e-3296c77eff39"
 
 
@@ -205,9 +235,10 @@ Documented:
 Id: "1dc777cd-31a5-489a-8b5a-05b94c647fb9"
 
 
-Text: "A first computation in the group axioms: the inverse of a product is the
-       product of the inverses taken in the reverse order. The reversal is
-       essential, since the operation need not be commutative."
+Text: "A primary consequence of the group axioms is the rule for inverting a
+       compound product: the inverse of a product is the product of the inverses
+       in *reverse order*. The reversal is essential in non-abelian groups to
+       ensure that adjacent elements cancel."
 Id: "a71309b4-a9ab-464d-a885-34cbcf992013"
 
 
@@ -219,10 +250,25 @@ then: (x * y).inv = y.inv * x.inv
 Documented:
 . called: "Inverse of a Product"
 . description: "In any group, $(x * y)^{-1} = y^{-1} * x^{-1}$."
+Proof: """
+To prove that $(x * y)^{-1} = y^{-1} * x^{-1}$, by the uniqueness of inverses it suffices
+to show that $y^{-1} * x^{-1}$ satisfies both defining inverse equations for $x * y$:
+$$ (x * y) * (y^{-1} * x^{-1}) = e \quad \text{and} \quad (y^{-1} * x^{-1}) * (x * y) = e. $$
+
+Applying associativity repeatedly:
+$$ (x * y) * (y^{-1} * x^{-1}) = x * (y * y^{-1}) * x^{-1} = x * e * x^{-1} = x * x^{-1} = e. $$
+Similarly, multiplying on the left:
+$$ (y^{-1} * x^{-1}) * (x * y) = y^{-1} * (x^{-1} * x) * y = y^{-1} * e * y = y^{-1} * y = e. $$
+
+Therefore, $(x * y)^{-1} = y^{-1} * x^{-1}$. The order of factors is reversed:
+putting on socks and then shoes is undone by removing shoes first, then socks.
+"""
 Id: "ef1b2ca8-1e12-4779-8e32-ed5cf8787c68"
 
 
-Text: "Inverting an element twice returns the original element."
+Text: "Inverting an element twice returns the original element. In other words,
+       the inversion map $\iota : G \to G$ given by $\iota(x) = x^{-1}$ is an
+       involution."
 Id: "6619e809-8d59-4180-820d-ff40b5914fdf"
 
 
@@ -234,11 +280,19 @@ then: (x.inv).inv = x
 Documented:
 . called: "Double Inversion Law"
 . description: "$(x^{-1})^{-1} = x$ for every element in a group."
+Proof: """By definition, $(x^{-1})^{-1}$ is the unique element $z \in G$
+          satisfying:
+          $$ x^{-1} * z = e \quad \text{and} \quad z * x^{-1} = e. $$ However,
+          the element $x$ itself satisfies:
+          $$ x^{-1} * x = e \quad \text{and} \quad x * x^{-1} = e. $$ By the
+          uniqueness of inverses, it follows that $(x^{-1})^{-1} = x$. Thus
+          inversion is an involutive bijection on $G$."""
 Id: "8c61fb44-d5ab-4be8-804a-0d6a95d83331"
 
 
-Text: "Any two elements that both act as an inverse of $x$ must be equal.
-       Uniqueness is what justifies writing $x^{-1}$ for *the* inverse."
+Text: "Any two elements that both act as an inverse of $x$ must be identical.
+       This uniqueness justifies writing $x^{-1}$ for *the* well-defined
+       inverse."
 Id: "de8e5629-d42e-4d98-b713-62d92e61d306"
 
 
@@ -256,6 +310,13 @@ Documented:
 . called: "Uniqueness of Inverses"
 . description: "If $y_1$ and $y_2$ both act as inverses for $x$, then
                 $y_1 = y_2$."
+Proof: """
+Suppose $y_1$ and $y_2$ both satisfy the equations for an inverse of $x$:
+$x * y_1 = e = y_1 * x$ and $x * y_2 = e = y_2 * x$.
+Using the identity property and associativity:
+$$ y_1 = y_1 * e = y_1 * (x * y_2) = (y_1 * x) * y_2 = e * y_2 = y_2. $$
+Thus any two elements satisfying the inverse equations must coincide.
+"""
 Id: "a27fd487-85b4-4f18-b0ab-4be63db69f43"
 
 
@@ -273,19 +334,70 @@ then:
 Documented:
 . called: "Group Cancellation Laws"
 . description: "Every group element is both left and right cancellable."
+Proof: """
+Let $a \in G$. To demonstrate left cancellability, suppose $a * x = a * y$ for $x, y \in G$.
+Multiplying both sides on the left by $a^{-1}$ gives:
+$$ a^{-1} * (a * x) = a^{-1} * (a * y). $$
+By associativity and the definition of inverses:
+$$ (a^{-1} * a) * x = (a^{-1} * a) * y \implies e * x = e * y \implies x = y. $$
+
+Similarly, to demonstrate right cancellability, suppose $x * a = y * a$. Multiplying
+both sides on the right by $a^{-1}$ gives:
+$$ (x * a) * a^{-1} = (y * a) * a^{-1} \implies x * (a * a^{-1}) = y * (a * a^{-1}) \implies x * e = y * e \implies x = y. $$
+Thus every element in a group is both left and right cancellable.
+"""
 Id: "24b48a0a-ec3e-49f2-acd4-80b979fcd209"
 
 
-TextTheorem: "Lagrange's theorem. If $G$ is finite and $H\leq G$, then $|H|$
-              divides $|G|$ and $|G|=[G:H]|H|$, where $[G:H]$ is the number of
-              left cosets of $H$. In particular, the order of every element
-              divides $|G|$. The converse need not hold: a divisor of $|G|$ need
-              not be the order of a subgroup."
+TextTheorem: "Lagrange's Theorem. If $G$ is a finite group and $H \leq G$ is a
+              subgroup, then the order $|H|$ divides the order $|G|$, and
+              $|G| = [G : H] \cdot |H|$, where the index $[G : H]$ is the number
+              of distinct left cosets of $H$ in $G$.
+
+              *Proof Sketch*: Define a relation on $G$ by
+              $a \sim b \iff a^{-1} * b \in H$. This is an equivalence relation
+              whose equivalence classes are the left cosets
+              $aH = \{a * h : h \in H\}$. Left cancellation implies that the map
+              $h \mapsto a * h$ is a bijection from $H$ onto $aH$, so each coset
+              contains precisely $|H|$ elements. Since the equivalence classes
+              partition $G$ into $[G : H]$ disjoint subsets each of size $|H|$,
+              we conclude $|G| = [G : H] \cdot |H|$.
+
+              *Corollaries*:
+              1. The order of every element $g \in G$ divides $|G|$, since the
+                 cyclic subgroup $\langle g \rangle$ has order equal to the
+                 order of $g$. Consequently, $g^{|G|} = e$ for every $g \in G$.
+              2. (Euler-Fermat): In number theory, applying this to the unit
+                 group $(\mathbb{Z}/n\mathbb{Z})^\times$ of order $\varphi(n)$
+                 yields $a^{\varphi(n)} \equiv 1 \pmod n$ for all
+                 $\gcd(a, n) = 1$.
+              3. Any group of prime order $p$ is cyclic and simple, with no
+                 non-trivial subgroups.
+
+              *Remark*: The converse of Lagrange's theorem is false: if $d$
+              divides $|G|$, $G$ need not have a subgroup of order $d$. The
+              alternating group $A_4$ has order $12$, but possesses no subgroup
+              of order $6$."
 Id: "08d58b28-0472-45b2-b9f0-49c441c56fd8"
 
 
-TextTheorem: "Cayley's theorem. Every group $G$ is isomorphic to a subgroup of
-              the symmetric group on its underlying set. The embedding sends $g$
-              to the bijection $x\mapsto gx$. Thus abstract groups are precisely
-              groups of permutations, up to isomorphism."
+TextTheorem: "Cayley's Theorem. Every group $G$ is isomorphic to a subgroup of the
+              symmetric group $\operatorname{Sym}(G)$ of permutations on its underlying carrier set.
+              
+              *Proof*: For each $g \in G$, define the left translation map
+              $\lambda_g : G \to G$ by $\lambda_g(x) = g * x$.
+              By the cancellation laws, $\lambda_g$ is injective, and for any $y \in G$,
+              $\lambda_g(g^{-1} * y) = y$, so $\lambda_g$ is surjective; hence
+              $\lambda_g \in \operatorname{Sym}(G)$.
+              Now define the left regular representation $\Lambda : G \to \operatorname{Sym}(G)$
+              by $\Lambda(g) = \lambda_g$.
+              Associativity ensures that $\Lambda$ is a group homomorphism:
+              $\lambda_{g * h}(x) = (g * h) * x = g * (h * x) = (\lambda_g \circ \lambda_h)(x)$,
+              so $\Lambda(g * h) = \Lambda(g) \circ \Lambda(h)$.
+              Furthermore, $\Lambda$ is injective: if $\lambda_g = \operatorname{id}_G$,
+              then $g = g * e = \lambda_g(e) = \operatorname{id}_G(e) = e$, meaning
+              $\ker(\Lambda) = \{e\}$.
+              
+              By the First Isomorphism Theorem, $G \cong \operatorname{im}(\Lambda) \leq \operatorname{Sym}(G)$.
+              Thus, abstract axiomatic groups are precisely concrete groups of permutations."
 Id: "d9f52cc6-df8a-4e42-8fa7-d06aeb3669db"

@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A commutative ring is a ring whose multiplication operation is\ncommutative."
+    "text": "A ring is *commutative* when its multiplication satisfies $a * b = b * a$\nfor all elements. Commutative rings serve as the algebraic foundation of\nalgebraic geometry, where geometric shapes (varieties and schemes) are\nstudied through their commutative rings of polynomial or regular\nfunctions.\n\nIn contrast, non-commutative rings—such as matrix rings $M_n(R)$,\nendomorphism rings $\\operatorname{End}(V)$, and differential\noperators—arise naturally as transformation algebras across linear\nalgebra and quantum physics."
   },
-  "source": "Text: \"A commutative ring is a ring whose multiplication operation is\n       commutative.\"\nId: \"64b4ac6a-9629-4aa7-89e2-9f0ea27e9a48\"",
+  "source": "Text: \"A ring is *commutative* when its multiplication satisfies $a * b = b * a$\n       for all elements. Commutative rings serve as the algebraic foundation of\n       algebraic geometry, where geometric shapes (varieties and schemes) are\n       studied through their commutative rings of polynomial or regular\n       functions.\n\n       In contrast, non-commutative rings—such as matrix rings $M_n(R)$,\n       endomorphism rings $\\operatorname{End}(V)$, and differential\n       operators—arise naturally as transformation algebras across linear\n       algebra and quantum physics.\"\nId: \"64b4ac6a-9629-4aa7-89e2-9f0ea27e9a48\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A commutative ring is a ring whose multiplication operation is\n       commutative.\"",
+      "inline_argument": "\"A ring is *commutative* when its multiplication satisfies $a * b = b * a$\n       for all elements. Commutative rings serve as the algebraic foundation of\n       algebraic geometry, where geometric shapes (varieties and schemes) are\n       studied through their commutative rings of polynomial or regular\n       functions.\n\n       In contrast, non-commutative rings—such as matrix rings $M_n(R)$,\n       endomorphism rings $\\operatorname{End}(V)$, and differential\n       operators—arise naturally as transformation algebras across linear\n       algebra and quantum physics.\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -1,13 +1,29 @@
-Text: "Linear algebra studies addition and scalar multiplication when both are
-       compatible with a field of scalars. Vector spaces provide the objects,
-       linear maps provide the morphisms, and bases translate the abstract
-       theory into coordinates and matrices. Dimension records the finite
-       amount of independent information in a space; duality turns vectors
-       into linear measurements; and eigenvalue theory identifies directions
-       on which an operator acts by pure scaling.
-
-       Coordinates are a tool, not part of the underlying space. Statements
-       formulated invariantly survive a change of basis, while matrix entries
-       generally do not. The chapter repeatedly moves between these two levels
-       so that computation remains attached to its structural meaning."
+Text: "Linear algebra is the study of linear structures: spaces whose geometry and
+       algebra are governed by the two fundamental operations of vector addition and
+       scalar scaling over a ground field. Conceived through Hermann Grassmann's
+       *Ausdehnungslehre* (Theory of Extension) in 1844 and codified axiomatically by
+       Giuseppe Peano in 1888, linear algebra serves as the universal computational and
+       geometric language of modern mathematics.
+       
+       The architectural pillars of the subject are organized along three primary axes:
+       
+       1. **Spaces and Subspaces**: An abstract vector space $V$ over a field $F$ is an
+          abelian group under addition, equipped with an action of $F$ satisfying the
+          unital, associative, and distributive axioms of scalar multiplication. Subspaces,
+          linear spans, and direct sums describe the internal decomposition of spaces.
+       2. **Dimension and Basis**: A basis mediates between coordinate-free geometry and
+          concrete numerical calculation. By the Steinitz Exchange Lemma, any two bases
+          of a finite-dimensional space have identical cardinality, establishing the
+          *dimension* $\dim(V)$ as the intrinsic, invariant degree of freedom of the space.
+       3. **Morphisms and Duality**: Linear transformations $T : V \to W$ preserve linear
+          combinations. The fundamental Rank-Nullity Theorem captures the conservation
+          of dimension: $\dim(V) = \dim(\ker T) + \dim(\operatorname{im} T)$.
+          Furthermore, the dual space $V^* = \operatorname{Hom}(V, F)$ interprets linear
+          functionals as generalized measurements, with the canonical bidual isomorphism
+          $V \cong V^{**}$ establishing reflexivity in finite dimensions.
+       
+       A guiding philosophical principle of this chapter is the distinction between
+       *intrinsic geometric truth* and *coordinate representation*. Coordinates and
+       matrices are computational tools tied to a choice of basis; structural theorems
+       are coordinate-free, invariant under arbitrary changes of frame."
 Id: "54ab5aff-12fb-4a7a-9a1a-e21bf73d9d83"

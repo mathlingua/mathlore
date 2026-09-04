@@ -2,10 +2,19 @@ Title: "Matrices and Matrix Algebra"
 Id: "9b0cf886-b3ca-47a3-a190-d69788b15044"
 
 
-Text: "A matrix is a two-dimensional rectangular array of scalars. Matrices
-       represent linear transformations between finite-dimensional vector spaces
-       with respect to chosen bases, transforming coordinate vectors via matrix
-       multiplication."
+Text: "A *matrix* is a two-dimensional rectangular grid of scalars arranged into
+       rows and columns. Conceived in the nineteenth century by Arthur Cayley
+       and James Joseph Sylvester, matrices provide the computational machinery
+       that translates abstract, coordinate-free linear algebra into concrete
+       numerical algorithms.
+
+       When finite-dimensional vector spaces are equipped with ordered bases,
+       every linear transformation is faithfully encoded by a matrix whose
+       columns are the coordinate vectors of the basis images. In this
+       representation, function composition transforms into matrix
+       multiplication, vector evaluation corresponds to matrix-vector products,
+       and geometric transformations such as rotations, reflections, and
+       projections become structured array computations."
 Id: "f8831faa-ad1b-46ed-838f-5c92d3cf41b1"
 
 
@@ -152,33 +161,73 @@ Documented:
 Id: "6ed950a4-63a3-437a-871c-23c49564425a"
 
 
-TextTheorem: "Fix ordered bases of finite-dimensional vector spaces. Sending a
-              linear map to its matrix is a vector-space isomorphism, and
-              composition of maps corresponds to matrix multiplication. The
-              apparently asymmetric row-by-column rule is forced by this
-              requirement."
+TextTheorem: "Let $V$ and $W$ be finite-dimensional vector spaces with ordered bases
+              $\mathcal{B} = \{v_1, \dots, v_n\}$ and $\mathcal{C} = \{w_1, \dots, w_m\}$.
+              The coordinate representation mapping:
+              $$ \mathcal{M}_{\mathcal{B}}^{\mathcal{C}} : \mathcal{L}(V, W) \longrightarrow M_{m \times n}(F), \quad T \longmapsto [T]_{\mathcal{B}}^{\mathcal{C}} $$
+              is an isomorphism of vector spaces.
+              
+              Furthermore, if $U$ is a third space with basis $\mathcal{D}$ and $S \in \mathcal{L}(W, U)$,
+              then the matrix of the composite transformation satisfies:
+              $$ [S \circ T]_{\mathcal{B}}^{\mathcal{D}} = [S]_{\mathcal{C}}^{\mathcal{D}} \cdot [T]_{\mathcal{B}}^{\mathcal{C}}. $$
+              The classical row-by-column matrix multiplication rule $(AB)_{i,j} = \sum_k A_{i,k} B_{k,j}$
+              is not an arbitrary convention; it is the unique algebraic formula forced
+              by the composition of linear maps."
 Id: "c5d30a1a-6c29-4f04-b1f0-e16fe60d6449"
 
 
-TextDefinition: "The determinant is the unique alternating multilinear function
-                 of the columns of a square matrix that takes value $1$ on the
-                 identity matrix. It satisfies $\det(AB)=\det(A)\det(B)$, and a
-                 matrix is invertible exactly when its determinant is nonzero.
-                 This characterization is basis-independent for the associated
-                 endomorphism."
+TextDefinition: "The *determinant* $\det : M_{n \times n}(F) \to F$ is the unique
+                 multilinear, alternating function of the column vectors that assigns
+                 the value $1$ to the identity matrix $I_n$.
+                 
+                 It is given explicitly by the Leibniz formula:
+                 $$ \det(A) = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{i=1}^n A_{\sigma(i), i}. $$
+                 
+                 The determinant possesses fundamental algebraic properties:
+                 1. Multiplicativity: $\det(AB) = \det(A) \det(B)$.
+                 2. Invertibility: A square matrix $A$ is invertible in $M_{n \times n}(F)$
+                    if and only if $\det(A) \neq 0$.
+                 3. Geometric volume: Over $\mathbb{R}$, $|\det(A)|$ measures the volume
+                    scaling factor of the parallelotope spanned by the column vectors.
+                 4. Similarity invariance: $\det(P^{-1}AP) = \det(A)$, proving that the
+                    determinant is an intrinsic invariant of a linear operator $T$,
+                    independent of the choice of basis."
 Id: "004b4c6d-979c-42f9-95bf-c154d662a6f9"
 
 
-TextDefinition: "For an endomorphism $T$ of a finite-dimensional vector space,
-                 the characteristic polynomial is $\chi_T(t)=\det(tI-T)$. A
-                 scalar $\lambda$ is an eigenvalue exactly when
-                 $\chi_T(\lambda)=0$, equivalently when $T-\lambda I$ has
-                 nontrivial kernel. Eigenvectors are required to be nonzero."
+TextDefinition: "For a linear endomorphism $T \in \mathcal{L}(V)$ on an
+                 $n$-dimensional vector space, the *characteristic polynomial*
+                 is: $$ \chi_T(t) = \det(tI - T). $$ A scalar $\lambda \in F$ is
+                 an *eigenvalue* of $T$ if and only if $\chi_T(\lambda) = 0$,
+                 which occurs if and only if the operator $T - \lambda I$ has a
+                 nontrivial kernel.
+
+                 The corresponding non-zero vectors $v \in \ker(T - \lambda I)$
+                 are *eigenvectors*, satisfying $T(v) = \lambda v$. The subspace
+                 $E_\lambda = \ker(T - \lambda I)$ is the *eigenspace* of
+                 $\lambda$. The operator $T$ is diagonalizable if and only if
+                 $V$ possesses a basis consisting entirely of eigenvectors."
 Id: "2fd95aa6-aab1-4a5f-bc72-31073514ac0d"
 
 
-TextTheorem: "Cayley--Hamilton theorem. Every square matrix satisfies its own
-              characteristic polynomial: $\chi_A(A)=0$. This converts high
-              powers of $A$ into linear combinations of lower powers and is a
-              basic bridge between polynomial algebra and linear operators."
+TextTheorem: "The Cayley-Hamilton Theorem. Every square matrix $A \in M_{n \times n}(F)$
+              satisfies its own characteristic polynomial: $\chi_A(A) = 0$.
+              
+              *Proof Sketch*: Consider the adjugate matrix $B(t) = \operatorname{adj}(tI - A)$.
+              By the fundamental property of the classical adjugate:
+              $$ (tI - A) B(t) = \det(tI - A) I_n = \chi_A(t) I_n. $$
+              The entries of $B(t)$ are polynomials in $t$ of degree at most $n-1$,
+              so $B(t)$ can be expanded as a matrix polynomial:
+              $$ B(t) = B_{n-1} t^{n-1} + B_{n-2} t^{n-2} + \cdots + B_1 t + B_0 $$
+              with coefficient matrices $B_k \in M_{n \times n}(F)$.
+              If $\chi_A(t) = t^n + c_{n-1} t^{n-1} + \cdots + c_1 t + c_0$, equating
+              matrix coefficients of powers of $t$ in $(tI - A) B(t) = \chi_A(t) I_n$ gives:
+              $$ B_{n-1} = I, \quad B_{k-1} - A B_k = c_k I \quad (1 \leq k \leq n-1), \quad -A B_0 = c_0 I. $$
+              Multiplying each equation on the left by $A^k$ and summing telescopically yields:
+              $$ \chi_A(A) = A^n + c_{n-1} A^{n-1} + \cdots + c_1 A + c_0 I = 0. $$
+              
+              The Cayley-Hamilton theorem establishes that $A^n$ can always be expressed
+              as a linear combination of lower powers $\{I, A, A^2, \dots, A^{n-1}\}$,
+              providing an invaluable computational tool for matrix powers, matrix exponentials,
+              and inverse computation."
 Id: "516a32e9-0f71-474f-aa89-62a88dff1cb9"

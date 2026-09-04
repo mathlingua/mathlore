@@ -4,13 +4,13 @@
   "definition_keys": [],
   "heading": null,
   "heading_latex": "\\textrm{Definition}",
-  "body_text": "A bounded function $f:[a,b]\\to\\mathbb{R}$ is Riemann integrable\nif for every $\\epsilon>0$ there is a partition $P$ such that\n$U(f,P)-L(f,P)<\\epsilon$. The common value of the supremum of\nall lower sums and the infimum of all upper sums is denoted\n$\\int_a^b f(x)\\,dx$.",
+  "body_text": "A bounded function $f : [a, b] \\to \\mathbb{R}$ is *Riemann\nintegrable* if for every $\\epsilon > 0$, there exists a\npartition $P$ of $[a, b]$ such that:\n$$ U(f, P) - L(f, P) < \\epsilon. $$ The common real value\n$\\sup_P L(f, P) = \\inf_P U(f, P)$ is the *definite Riemann\nintegral* of $f$ on $[a, b]$, denoted $\\int_a^b f(x) \\, dx$.",
   "page": null,
-  "source": "TextDefinition: \"A bounded function $f:[a,b]\\to\\mathbb{R}$ is Riemann integrable\n                 if for every $\\epsilon>0$ there is a partition $P$ such that\n                 $U(f,P)-L(f,P)<\\epsilon$. The common value of the supremum of\n                 all lower sums and the infimum of all upper sums is denoted\n                 $\\int_a^b f(x)\\,dx$.\"\nId: \"3dac3956-17e2-451a-9234-d87e7086562c\"",
+  "source": "TextDefinition: \"A bounded function $f : [a, b] \\to \\mathbb{R}$ is *Riemann\n                 integrable* if for every $\\epsilon > 0$, there exists a\n                 partition $P$ of $[a, b]$ such that:\n                 $$ U(f, P) - L(f, P) < \\epsilon. $$ The common real value\n                 $\\sup_P L(f, P) = \\inf_P U(f, P)$ is the *definite Riemann\n                 integral* of $f$ on $[a, b]$, denoted $\\int_a^b f(x) \\, dx$.\"\nId: \"3dac3956-17e2-451a-9234-d87e7086562c\"",
   "sections": [
     {
       "label": "TextDefinition",
-      "inline_argument": "\"A bounded function $f:[a,b]\\to\\mathbb{R}$ is Riemann integrable\n                 if for every $\\epsilon>0$ there is a partition $P$ such that\n                 $U(f,P)-L(f,P)<\\epsilon$. The common value of the supremum of\n                 all lower sums and the infimum of all upper sums is denoted\n                 $\\int_a^b f(x)\\,dx$.\"",
+      "inline_argument": "\"A bounded function $f : [a, b] \\to \\mathbb{R}$ is *Riemann\n                 integrable* if for every $\\epsilon > 0$, there exists a\n                 partition $P$ of $[a, b]$ such that:\n                 $$ U(f, P) - L(f, P) < \\epsilon. $$ The common real value\n                 $\\sup_P L(f, P) = \\inf_P U(f, P)$ is the *definite Riemann\n                 integral* of $f$ on $[a, b]$, denoted $\\int_a^b f(x) \\, dx$.\"",
       "inline_latex": null,
       "arguments": []
     },

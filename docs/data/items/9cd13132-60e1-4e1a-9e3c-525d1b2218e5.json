@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The set $\\omega$ of all Von Neumann numerals is the intersection of all\ninductive sets, existing by virtue of the Axiom of Infinity."
+    "text": "The Axiom of Infinity guarantees the existence of at least one inductive\nset $A$. However, such a set may contain extraneous, non-standard\nelements. To isolate the natural numbers, we define $\\omega$ as the\nintersection of all inductive sets:\n$$\\omega := \\bigcap \\{I \\subseteq A : I \\text{ is inductive}\\}$$ By the\nAxiom Schema of Separation, $\\omega$ exists as a legitimate set\nindependent of the initial choice of $A$. It is the unique *minimal\ninductive set*, representing the first transfinite limit ordinal."
   },
-  "source": "Text: \"The set $\\omega$ of all Von Neumann numerals is the intersection of all\n       inductive sets, existing by virtue of the Axiom of Infinity.\"\nId: \"9cd13132-60e1-4e1a-9e3c-525d1b2218e5\"",
+  "source": "Text: \"The Axiom of Infinity guarantees the existence of at least one inductive\n       set $A$. However, such a set may contain extraneous, non-standard\n       elements. To isolate the natural numbers, we define $\\omega$ as the\n       intersection of all inductive sets:\n       $$\\omega := \\bigcap \\{I \\subseteq A : I \\text{ is inductive}\\}$$ By the\n       Axiom Schema of Separation, $\\omega$ exists as a legitimate set\n       independent of the initial choice of $A$. It is the unique *minimal\n       inductive set*, representing the first transfinite limit ordinal.\"\nId: \"9cd13132-60e1-4e1a-9e3c-525d1b2218e5\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The set $\\omega$ of all Von Neumann numerals is the intersection of all\n       inductive sets, existing by virtue of the Axiom of Infinity.\"",
+      "inline_argument": "\"The Axiom of Infinity guarantees the existence of at least one inductive\n       set $A$. However, such a set may contain extraneous, non-standard\n       elements. To isolate the natural numbers, we define $\\omega$ as the\n       intersection of all inductive sets:\n       $$\\omega := \\bigcap \\{I \\subseteq A : I \\text{ is inductive}\\}$$ By the\n       Axiom Schema of Separation, $\\omega$ exists as a legitimate set\n       independent of the initial choice of $A$. It is the unique *minimal\n       inductive set*, representing the first transfinite limit ordinal.\"",
       "inline_latex": null,
       "arguments": []
     },

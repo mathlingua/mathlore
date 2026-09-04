@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "When the operation of a group *is* commutative, the group is called\n*abelian*. Abelian groups are far more tractable than groups in general,\nand they are the setting for much of number theory and linear algebra."
+    "text": "When the operation of a group is commutative—meaning $x * y = y * x$ for\nall pairs of elements—the group is called *abelian* (in honor of Niels\nHenrik Abel). In abelian groups, the binary operation is often denoted\nadditively by $+$, with identity $0$ and inverse $-x$.\n\nAbelian groups are far more algebraically tractable than non-commutative\ngroups: every subgroup of an abelian group is normal, the set of\nhomomorphisms between two abelian groups forms an abelian group, and the\nFundamental Theorem of Finitely Generated Abelian Groups provides a\ncomplete, canonical classification into direct sums of cyclic groups."
   },
-  "source": "Text: \"When the operation of a group *is* commutative, the group is called\n       *abelian*. Abelian groups are far more tractable than groups in general,\n       and they are the setting for much of number theory and linear algebra.\"\nId: \"a608ecec-59d4-4939-a43e-3296c77eff39\"",
+  "source": "Text: \"When the operation of a group is commutative—meaning $x * y = y * x$ for\n       all pairs of elements—the group is called *abelian* (in honor of Niels\n       Henrik Abel). In abelian groups, the binary operation is often denoted\n       additively by $+$, with identity $0$ and inverse $-x$.\n\n       Abelian groups are far more algebraically tractable than non-commutative\n       groups: every subgroup of an abelian group is normal, the set of\n       homomorphisms between two abelian groups forms an abelian group, and the\n       Fundamental Theorem of Finitely Generated Abelian Groups provides a\n       complete, canonical classification into direct sums of cyclic groups.\"\nId: \"a608ecec-59d4-4939-a43e-3296c77eff39\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"When the operation of a group *is* commutative, the group is called\n       *abelian*. Abelian groups are far more tractable than groups in general,\n       and they are the setting for much of number theory and linear algebra.\"",
+      "inline_argument": "\"When the operation of a group is commutative—meaning $x * y = y * x$ for\n       all pairs of elements—the group is called *abelian* (in honor of Niels\n       Henrik Abel). In abelian groups, the binary operation is often denoted\n       additively by $+$, with identity $0$ and inverse $-x$.\n\n       Abelian groups are far more algebraically tractable than non-commutative\n       groups: every subgroup of an abelian group is normal, the set of\n       homomorphisms between two abelian groups forms an abelian group, and the\n       Fundamental Theorem of Finitely Generated Abelian Groups provides a\n       complete, canonical classification into direct sums of cyclic groups.\"",
       "inline_latex": null,
       "arguments": []
     },

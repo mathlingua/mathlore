@@ -2,12 +2,19 @@ Title: "Axiom Systems and Size"
 Id: "4183ca80-b7a4-47be-9619-0f46dafc8553"
 
 
-Text: "The elementary constructors do not by themselves constitute the usual
-       Zermelo--Fraenkel theory. Modern set theory also controls how formulas
-       select members of an existing set, how functional assignments produce new
-       sets, and how membership chains behave. These principles are stated as
-       schemes because one axiom is supplied for every suitable formula in the
-       language."
+Text: "The elementary constructors established in previous sections—pairing,
+       union, and power set—form only the scaffolding of modern set theory. To
+       develop higher mathematics, analysis, and transfinite ordinal arithmetic,
+       Zermelo--Fraenkel set theory incorporates powerful principles governing
+       how predicates select elements from existing sets, how functional
+       assignments generate new collections, and how ill-founded pathologies are
+       excluded.
+
+       Because first-order logic cannot quantify over arbitrary properties or
+       predicates, principles such as Separation and Replacement cannot be
+       expressed as single axioms. Instead, they are formulated as *axiom
+       schemas*—infinite families of axioms, supplying one formal postulate for
+       every well-formed formula $\varphi$ in the language $\mathcal{L}_{\in}$."
 Id: "ddb95a61-dddb-4c5a-bb15-430be7091d5a"
 
 
@@ -60,11 +67,20 @@ Documented:
 Id: "6e09ea04-f1dd-41c0-a0f5-4c962cd819ac"
 
 
-Text: "Separation selects members already lying in one set; replacement sends
-       members of a set to uniquely determined outputs. The distinction becomes
-       important in transfinite constructions. Replacement ensures that the
-       values obtained at all earlier stages still form a set to which union or
-       another constructor can be applied."
+Text: "The distinction between Separation and Replacement is of paramount
+       foundational importance. The Axiom Schema of Separation (Zermelo's
+       *Aussonderungsaxiom*) is conservative: it can only carve out subsets of an
+       already existing set $A$. It can never leave the rank of $A$ or construct
+       sets of larger size.
+
+       The Axiom Schema of Replacement, introduced by Abraham Fraenkel and
+       Thoralf Skolem in 1922, is an expansive generative principle: if a
+       definable class operation associates each element of a set $A$ with a
+       uniquely determined set $y$, then the entire collection of outputs
+       $\{F(x) : x \in A\}$ forms a valid set. Replacement is indispensable for
+       transfinite recursion and ordinal arithmetic, guaranteeing that sequences
+       indexed by ordinals (such as $\aleph_\omega = \bigcup_{n < \omega}
+       \aleph_n$) cohere into genuine sets."
 Id: "1cbdad45-8bc2-4388-8a12-19b187499517"
 
 
@@ -118,12 +134,23 @@ Documented:
 Id: "3f1ec40e-207c-431e-918e-7a8f4f23fa46"
 
 
-TextTheorem: "Over ZF, the axiom of choice is equivalent to each of the
-              following principles: every set can be well ordered; every
-              partially ordered set in which each chain has an upper bound has a
-              maximal element (Zorn's lemma); and every surjective function
-              admits a right inverse. The equivalences allow choice to enter a
-              proof in the form best adapted to its subject."
+TextTheorem: "Over the base theory ZF, the Axiom of Choice (AC) is equivalent to
+              a vast constellation of fundamental mathematical principles across
+              algebra, topology, and analysis. Among the most prominent are:
+              1. *Zermelo's Well-Ordering Theorem*: Every set can be endowed
+                 with a well-ordering.
+              2. *Zorn's Lemma*: Every non-empty partially ordered set in which
+                 every chain possesses an upper bound contains at least one
+                 maximal element.
+              3. *Right Inverses*: Every surjective function admits a right
+                 inverse (a section).
+              4. *Linear Algebra*: Every vector space possesses a Hamel basis.
+              5. *Topology*: Tychonoff's Theorem, asserting that any product of
+                 compact topological spaces is compact.
+
+              The equivalence of these formulations permits mathematicians to
+              invoke Choice in whichever structural guise is best suited to the
+              problem at hand."
 Id: "694788bb-a939-406b-8a3f-62730d8d0399"
 
 
@@ -212,12 +239,32 @@ then:
 Documented:
 . called: "Cantor's Theorem"
 . description: "No set is equinumerous with its power set."
+Proof: """Suppose for contradiction that there exists a bijection
+          $f : A \to \mathcal{P}(A)$. In particular, $f$ must be surjective.
+          Define the diagonal subset $D \subseteq A$ by Separation:
+          $$D := \{x \in A : x \notin f(x)\}$$ Because $D \subseteq A$, $D$ is
+          an element of the power set $\mathcal{P}(A)$. Since $f$ is surjective
+          onto $\mathcal{P}(A)$, there must exist an element $d \in A$ such that
+          $f(d) = D$. Now ask whether $d \in D$:
+          - If $d \in D$, then by definition of $D$, $d \notin f(d) = D$, which
+            is an immediate contradiction.
+          - If $d \notin D$, then $d \notin f(d)$, which by definition of $D$
+            implies $d \in D$, again a contradiction. Thus
+            $d \in D \iff d \notin D$, which is a logical impossibility.
+            Therefore no surjective function from $A$ to $\mathcal{P}(A)$ can
+            exist, proving that $A$ is not equinumerous with $\mathcal{P}(A)$."""
 Id: "83a30248-2172-45d8-934a-e7a54be66b12"
 
 
-Text: "Cantor's diagonal argument illustrates the foundational discipline of the
-       chapter. The set $D$ exists by separation from $A$, not by unrestricted
-       comprehension. Its definition then converts the assumption that $f$ lists
-       every subset of $A$ into the contradiction $d\in D\iff d\notin D$ at a
-       purported index $d$ for $D$."
+Text: "Cantor's diagonal argument is one of the grand turning points in
+       intellectual history. It demonstrates that infinity is not a single
+       monolith: there exists an unending, strictly increasing hierarchy of
+       infinite cardinalities:
+       $$|A| < |\mathcal{P}(A)| < |\mathcal{P}(\mathcal{P}(A))| < \dots$$
+       Moreover, the diagonal technique introduced here is the conceptual
+       ancestor of the most profound limitative results of modern thought:
+       Bertrand Russell's refutation of naive comprehension, Kurt Gödel's First
+       Incompleteness Theorem, and Alan Turing's proof of the undecidability of
+       the Halting Problem all derive their power from this same
+       self-referential diagonal architecture."
 Id: "8d163eb8-a148-43d1-80b3-38c54e51e278"

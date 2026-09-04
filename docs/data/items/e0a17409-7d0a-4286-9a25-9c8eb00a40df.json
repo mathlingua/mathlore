@@ -5,8 +5,10 @@
   "heading": null,
   "heading_latex": "\\textrm{Empty Set Union Identity}",
   "body_text": null,
+  "proof_text": "An element $x$ belongs to $A \\cup \\emptyset$ if and only if\n$x \\in A \\lor x \\in \\emptyset$. Since $\\emptyset$ has no members, the\npredicate $x \\in \\emptyset$ is identically false for all $x$. Thus\n$x \\in A \\lor \\text{false} \\iff x \\in A$. By Extensionality,\n$A \\cup \\emptyset = A$.",
+  "proof_source": "Proof: \"\"\"An element $x$ belongs to $A \\cup \\emptyset$ if and only if\n          $x \\in A \\lor x \\in \\emptyset$. Since $\\emptyset$ has no members, the\n          predicate $x \\in \\emptyset$ is identically false for all $x$. Thus\n          $x \\in A \\lor \\text{false} \\iff x \\in A$. By Extensionality,\n          $A \\cup \\emptyset = A$.\"\"\"",
   "page": null,
-  "source": "Theorem:\ngiven: A is \\set\nthen: (.A \\.set.union./ \\empty.set.) = A\nDocumented:\n. called: \"Empty Set Union Identity\"\n. description: \"Union of any set $A$ with the empty set yields $A$:\n                $A \\cup \\emptyset = A$.\"\nId: \"e0a17409-7d0a-4286-9a25-9c8eb00a40df\"",
+  "source": "Theorem:\ngiven: A is \\set\nthen: (.A \\.set.union./ \\empty.set.) = A\nDocumented:\n. called: \"Empty Set Union Identity\"\n. description: \"Union of any set $A$ with the empty set yields $A$:\n                $A \\cup \\emptyset = A$.\"\nProof: \"\"\"An element $x$ belongs to $A \\cup \\emptyset$ if and only if\n          $x \\in A \\lor x \\in \\emptyset$. Since $\\emptyset$ has no members, the\n          predicate $x \\in \\emptyset$ is identically false for all $x$. Thus\n          $x \\in A \\lor \\text{false} \\iff x \\in A$. By Extensionality,\n          $A \\cup \\emptyset = A$.\"\"\"\nId: \"e0a17409-7d0a-4286-9a25-9c8eb00a40df\"",
   "sections": [
     {
       "label": "Theorem",

@@ -1,0 +1,27 @@
+{
+  "id": "5b736e47-8a4d-451e-9a18-971c26a57891",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Finally, we record the foundational theorem regarding the expressive\npower of minimal connective sets."
+  },
+  "source": "Text: \"Finally, we record the foundational theorem regarding the expressive\n       power of minimal connective sets.\"\nId: \"5b736e47-8a4d-451e-9a18-971c26a57891\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Finally, we record the foundational theorem regarding the expressive\n       power of minimal connective sets.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5b736e47-8a4d-451e-9a18-971c26a57891\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

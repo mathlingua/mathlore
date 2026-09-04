@@ -4,13 +4,13 @@
   "definition_keys": [],
   "heading": null,
   "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Sequential criterion. A function $f$ has limit $L$ at an\naccumulation point $x_0$ of its domain if and only if\n$f(x_n)\\to L$ for every sequence $(x_n)$ in the domain with\n$x_n\\ne x_0$ and $x_n\\to x_0$. This criterion is specific to\nfirst-countable settings such as metric spaces.",
+  "body_text": "The Sequential Criterion for Limits and Continuity. Let\n$f : U \\to \\mathbb{R}$ and let $x_0$ be an accumulation point of\n$U$. Then $\\lim_{x \\to x_0} f(x) = L$ if and only if for every\nsequence $(x_n)$ in $U \\setminus \\{x_0\\}$ converging to $x_0$, the\nsequence of outputs satisfies $f(x_n) \\to L$.\n\nConsequently, $f$ is continuous at $x_0$ if and only if\n$f(\\lim x_n) = \\lim f(x_n)$ for every sequence converging to\n$x_0$. This criterion provides the operational bridge converting\ncontinuous analytical assertions into discrete sequence problems.",
   "page": null,
-  "source": "TextTheorem: \"Sequential criterion. A function $f$ has limit $L$ at an\n              accumulation point $x_0$ of its domain if and only if\n              $f(x_n)\\to L$ for every sequence $(x_n)$ in the domain with\n              $x_n\\ne x_0$ and $x_n\\to x_0$. This criterion is specific to\n              first-countable settings such as metric spaces.\"\nId: \"66ebdb25-bc98-4ea5-be68-0e57e72aa22e\"",
+  "source": "TextTheorem: \"The Sequential Criterion for Limits and Continuity. Let\n              $f : U \\to \\mathbb{R}$ and let $x_0$ be an accumulation point of\n              $U$. Then $\\lim_{x \\to x_0} f(x) = L$ if and only if for every\n              sequence $(x_n)$ in $U \\setminus \\{x_0\\}$ converging to $x_0$, the\n              sequence of outputs satisfies $f(x_n) \\to L$.\n\n              Consequently, $f$ is continuous at $x_0$ if and only if\n              $f(\\lim x_n) = \\lim f(x_n)$ for every sequence converging to\n              $x_0$. This criterion provides the operational bridge converting\n              continuous analytical assertions into discrete sequence problems.\"\nId: \"66ebdb25-bc98-4ea5-be68-0e57e72aa22e\"",
   "sections": [
     {
       "label": "TextTheorem",
-      "inline_argument": "\"Sequential criterion. A function $f$ has limit $L$ at an\n              accumulation point $x_0$ of its domain if and only if\n              $f(x_n)\\to L$ for every sequence $(x_n)$ in the domain with\n              $x_n\\ne x_0$ and $x_n\\to x_0$. This criterion is specific to\n              first-countable settings such as metric spaces.\"",
+      "inline_argument": "\"The Sequential Criterion for Limits and Continuity. Let\n              $f : U \\to \\mathbb{R}$ and let $x_0$ be an accumulation point of\n              $U$. Then $\\lim_{x \\to x_0} f(x) = L$ if and only if for every\n              sequence $(x_n)$ in $U \\setminus \\{x_0\\}$ converging to $x_0$, the\n              sequence of outputs satisfies $f(x_n) \\to L$.\n\n              Consequently, $f$ is continuous at $x_0$ if and only if\n              $f(\\lim x_n) = \\lim f(x_n)$ for every sequence converging to\n              $x_0$. This criterion provides the operational bridge converting\n              continuous analytical assertions into discrete sequence problems.\"",
       "inline_latex": null,
       "arguments": []
     },

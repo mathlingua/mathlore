@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Inverting an element twice returns the original element."
+    "text": "Inverting an element twice returns the original element. In other words,\nthe inversion map $\\iota : G \\to G$ given by $\\iota(x) = x^{-1}$ is an\ninvolution."
   },
-  "source": "Text: \"Inverting an element twice returns the original element.\"\nId: \"6619e809-8d59-4180-820d-ff40b5914fdf\"",
+  "source": "Text: \"Inverting an element twice returns the original element. In other words,\n       the inversion map $\\iota : G \\to G$ given by $\\iota(x) = x^{-1}$ is an\n       involution.\"\nId: \"6619e809-8d59-4180-820d-ff40b5914fdf\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Inverting an element twice returns the original element.\"",
+      "inline_argument": "\"Inverting an element twice returns the original element. In other words,\n       the inversion map $\\iota : G \\to G$ given by $\\iota(x) = x^{-1}$ is an\n       involution.\"",
       "inline_latex": null,
       "arguments": []
     },

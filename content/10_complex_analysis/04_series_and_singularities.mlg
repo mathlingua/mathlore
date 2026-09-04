@@ -2,11 +2,26 @@ Title: "Series and Singularities"
 Id: "1b15071a-15ba-4c8d-9548-2c33c5faece3"
 
 
-Text: "Power series provide the local language of holomorphic functions. Laurent
-       series enlarge that language by allowing negative powers, which record
-       the exact obstruction to holomorphic extension across an isolated point.
-       The coefficient of $(z-z_0)^{-1}$ is the residue and controls the
-       integral around the singularity."
+Text: "The theory of series provides the microscopic analytical lens of complex
+       analysis. While the geometric viewpoint of Augustin-Louis Cauchy and
+       Bernhard Riemann emphasizes paths, potentials, and conformal
+       transformations, Karl Weierstrass built complex analysis entirely upon
+       the foundation of convergent power series and analytic continuation.
+
+       These two seemingly disparate perspectives merge in complete harmony.
+       Within any disk contained in its domain of definition, every holomorphic
+       function is analytic: it expands into an absolutely and uniformly
+       convergent Taylor series whose coefficients are dictated by its complex
+       derivatives or Cauchy contour integrals.
+
+       When an analytic function encounters an isolated point where it fails to
+       be defined—an *isolated singularity*—the Taylor series is superseded by
+       the *Laurent series*, which incorporates both positive and negative
+       powers of $(z - z_0)$. The negative powers form the *principal part*,
+       which measures the exact algebraic obstruction to extending the function
+       across the singularity. The coefficient of $(z - z_0)^{-1}$ is the
+       *residue*, which compresses the global topological loop integral into a
+       single local number."
 Id: "f047339a-9031-4ad2-a385-53e1b9f6fe04"
 
 
@@ -14,37 +29,84 @@ SectionTitle: "Power Series and Analyticity"
 Id: "bbd4a392-3dce-42b4-a876-726a3f1654ca"
 
 
-TextDefinition: "A complex power series centered at $z_0$ is an expression
-                 $\sum_{n=0}^{\infty}a_n(z-z_0)^n$. There is a radius
-                 $R\in[0,\infty]$ such that the series converges absolutely for
-                 $|z-z_0|<R$ and diverges for $|z-z_0|>R$. On every closed disk
-                 of radius less than $R$, convergence is uniform, so the sum may
-                 be differentiated and integrated term by term."
+TextDefinition: "A *complex power series* centered at $z_0 \in \mathbb{C}$ is a formal infinite series:
+                 $$ \sum_{n=0}^{\infty} a_n (z - z_0)^n, \quad a_n \in \mathbb{C}. $$
+                 By the *Cauchy--Hadamard Theorem*, there exists a uniquely determined *radius of convergence*
+                 $R \in [0, \infty]$, defined by:
+                 $$ \frac{1}{R} = \limsup_{n \to \infty} |a_n|^{1/n}, $$
+                 with the conventions $1/0 = \infty$ and $1/\infty = 0$, such that:
+                 1. If $|z - z_0| < R$, the series converges absolutely.
+                 2. If $|z - z_0| > R$, the series diverges.
+                 3. On every compact sub-disk $\overline{D(z_0, r)}$ with $r < R$, the series converges uniformly.
+                 
+                 Consequently, the sum function $f(z) = \sum_{n=0}^\infty a_n (z - z_0)^n$ is holomorphic on the
+                 open disk $D(z_0, R)$, and may be differentiated and integrated term-by-term infinitely many times
+                 without altering the radius of convergence."
 Id: "64a14bde-975e-4814-99e7-6a749eaeee41"
 
 
-TextDefinition: "A function is analytic at $z_0$ if it agrees with a convergent
-                 power series on some neighborhood of $z_0$. Analyticity is a
-                 local property: both the coefficients and the radius may depend
-                 on the center. The coefficients are uniquely determined by
-                 $a_n=f^{(n)}(z_0)/n!$."
+TextDefinition: "Let $U \subseteq \mathbb{C}$ be an open set. A function $f: U \to \mathbb{C}$ is *analytic*
+                 at a point $z_0 \in U$ if there exists an open disk $D(z_0, r) \subseteq U$ and a sequence of
+                 coefficients $(a_n)_{n=0}^\infty$ such that:
+                 $$ f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n \quad \text{for all } z \in D(z_0, r). $$
+                 A function is analytic on $U$ if it is analytic at every point of $U$.
+                 
+                 By term-by-term differentiation, the coefficients are uniquely determined by the higher derivatives
+                 of $f$ evaluated at the center:
+                 $$ a_n = \frac{f^{(n)}(z_0)}{n!}. $$"
 Id: "15856db1-4ad8-4d94-821c-d5f3d9027940"
 
 
-TextTheorem: "Every holomorphic function is analytic. If $f$ is holomorphic on
-              an open set containing the closed disk $\overline{D(z_0,r)}$, then
-              for $|z-z_0|<r$,
-              $f(z)=\sum_{n=0}^{\infty}f^{(n)}(z_0)(z-z_0)^n/n!$. This theorem
-              has no direct real-variable analogue: real differentiability of
-              every order does not imply real analyticity."
+TextTheorem: "Equivalence of Holomorphy and Analyticity.
+              
+              Let $U \subseteq \mathbb{C}$ be an open set. A function $f: U \to \mathbb{C}$ is holomorphic on $U$
+              if and only if it is analytic on $U$.
+              
+              Specifically, if $f$ is holomorphic on an open set containing the closed disk $\overline{D(z_0, r)}$,
+              then for all $z \in D(z_0, r)$, $f(z)$ is represented by its Taylor series:
+              $$ f(z) = \sum_{n=0}^{\infty} \frac{f^{(n)}(z_0)}{n!} (z - z_0)^n. $$
+              
+              *Proof via Cauchy's Integral Formula and Geometric Series*:
+              Let $\gamma$ be the circular boundary $\partial D(z_0, r)$ oriented counterclockwise. For any
+              $z \in D(z_0, r)$ and $\zeta \in \gamma$, we have $|\frac{z - z_0}{\zeta - z_0}| = \frac{|z - z_0|}{r} = q < 1$.
+              Expanding the Cauchy kernel as a convergent geometric series:
+              $$ \frac{1}{\zeta - z} = \frac{1}{(\zeta - z_0) - (z - z_0)} = \frac{1}{\zeta - z_0} \cdot \frac{1}{1 - \frac{z - z_0}{\zeta - z_0}} = \sum_{n=0}^\infty \frac{(z - z_0)^n}{(\zeta - z_0)^{n+1}}. $$
+              Since $q < 1$, this series converges uniformly for $\zeta \in \gamma$. Substituting this expansion into
+              Cauchy's Integral Formula and interchanging summation and integration:
+              $$ f(z) = \frac{1}{2\pi i} \oint_\gamma \frac{f(\zeta)}{\zeta - z}\,d\zeta = \sum_{n=0}^\infty \left( \frac{1}{2\pi i} \oint_\gamma \frac{f(\zeta)}{(\zeta - z_0)^{n+1}}\,d\zeta \right) (z - z_0)^n. $$
+              Recognizing the integral inside the parentheses as $f^{(n)}(z_0)/n!$ by Cauchy's formula for higher derivatives
+              completes the proof.
+              
+              *Contrast with Real Variables*: In real analysis, $C^\infty$ smoothness does not imply analyticity.
+              The standard counterexample is Cauchy's flat function $f(x) = e^{-1/x^2}$ for $x \ne 0$ and $f(0) = 0$:
+              all real derivatives vanish at the origin ($f^{(n)}(0) = 0$ for all $n$), so its Taylor series is
+              identically zero, failing to represent $f(x)$ anywhere outside $x = 0$. In the complex plane, $e^{-1/z^2}$
+              has an essential singularity at $z = 0$, oscillating and blowing up exponentially along the imaginary axis."
 Id: "10dadf20-bc3b-4985-8b87-dd52fd8ba827"
 
 
-TextTheorem: "Identity theorem. Let $U$ be a connected open subset of
-              $\mathbb{C}$ and let $f,g:U\to\mathbb{C}$ be holomorphic. If the
-              set $\{z\in U:f(z)=g(z)\}$ has an accumulation point in $U$, then
-              $f=g$ throughout $U$. In particular, a nonzero holomorphic
-              function has isolated zeros."
+TextTheorem: "The Identity Theorem and Isolated Zeros.
+              
+              Let $U \subseteq \mathbb{C}$ be a connected open domain and let $f, g: U \to \mathbb{C}$ be holomorphic.
+              If the coincidence set $S = \{z \in U : f(z) = g(z)\}$ has an accumulation point in $U$, then:
+              $$ f(z) = g(z) \quad \text{for all } z \in U. $$
+              
+              *Consequence (Isolated Zeros)*: If $f$ is a non-zero holomorphic function on a connected domain $U$,
+              then its zero set $Z(f) = \{z \in U : f(z) = 0\}$ has no accumulation points in $U$; that is, every zero
+              is isolated. Near any zero $z_0 \in Z(f)$, there exists an integer $m \ge 1$ (the *order* or *multiplicity*)
+              and a holomorphic function $h$ with $h(z_0) \ne 0$ such that $f(z) = (z - z_0)^m h(z)$.
+              
+              *Proof of the Identity Theorem*: Consider the difference function $h = f - g$. Let $z_0 \in U$ be an
+              accumulation point of zeros of $h$. By continuity, $h(z_0) = 0$. Expand $h$ into its Taylor series
+              $h(z) = \sum_{n=0}^\infty a_n (z - z_0)^n$ on a disk $D(z_0, r) \subseteq U$.
+              If not all $a_n$ were zero, let $a_m$ be the first non-zero coefficient ($m \ge 1$):
+              $$ h(z) = (z - z_0)^m [a_m + a_{m+1}(z - z_0) + \cdots] = (z - z_0)^m \psi(z), $$
+              where $\psi(z_0) = a_m \ne 0$. By continuity, $\psi(z) \ne 0$ in some punctured disk $D^*(z_0, \delta)$.
+              Thus $h(z) \ne 0$ for all $0 < |z - z_0| < \delta$, contradicting the assumption that $z_0$ is an
+              accumulation point of zeros. Hence all $a_n = 0$, so $h$ vanishes identically on $D(z_0, r)$.
+              Defining $A \subseteq U$ to be the set of points where all derivatives $h^{(n)}$ vanish, $A$ is both
+              open (by Taylor expansion) and closed in $U$ (by continuity of derivatives). Since $U$ is connected and
+              $A$ is nonempty, $A = U$, so $h \equiv 0$ on all of $U$."
 Id: "392fe78d-e555-4b9b-a30c-ec368f587045"
 
 
@@ -52,36 +114,84 @@ SectionTitle: "Laurent Series and Isolated Singularities"
 Id: "771a6189-5597-4bbf-8e3a-be234acd8f58"
 
 
-TextDefinition: "A Laurent series about $z_0$ is
-                 $\sum_{n=-\infty}^{\infty}a_n(z-z_0)^n$. If $f$ is holomorphic
-                 on an annulus $r<|z-z_0|<R$, it has a unique Laurent expansion
-                 converging on that annulus. The negative powers constitute the
-                 principal part."
+TextDefinition: "A *Laurent series* centered at $z_0 \in \mathbb{C}$ is a bi-infinite series:
+                 $$ \sum_{n=-\infty}^{\infty} a_n (z - z_0)^n = \sum_{n=1}^\infty \frac{a_{-n}}{(z - z_0)^n} + \sum_{n=0}^\infty a_n (z - z_0)^n. $$
+                 If $f$ is holomorphic on an open annulus $A(z_0, r, R) = \{z \in \mathbb{C} : r < |z - z_0| < R\}$
+                 (where $0 \le r < R \le \infty$), it admits a unique Laurent expansion converging absolutely on the
+                 annulus and uniformly on every closed concentric sub-annulus.
+                 
+                 The coefficients $a_n$ are given for all $n \in \mathbb{Z}$ by the contour integral:
+                 $$ a_n = \frac{1}{2\pi i} \oint_\gamma \frac{f(z)}{(z - z_0)^{n+1}}\,dz, $$
+                 where $\gamma$ is any positively oriented circle $|z - z_0| = \rho$ with $r < \rho < R$.
+                 The series of negative powers $\sum_{n=1}^\infty a_{-n} (z - z_0)^{-n}$ is the *principal part*,
+                 while the non-negative powers form the *analytic part*."
 Id: "d1d92ff7-130c-4c29-8b07-11fdc199c29f"
 
 
-TextDefinition: "Suppose $f$ is holomorphic on a punctured neighborhood of
-                 $z_0$. The point is a removable singularity if $f$ extends
-                 holomorphically across $z_0$, a pole of order $m$ if its
-                 Laurent principal part has terms through $(z-z_0)^{-m}$ and no
-                 lower power, and an essential singularity if infinitely many
-                 negative-power coefficients are nonzero. These three cases are
-                 mutually exclusive and exhaustive."
+TextDefinition: "Classification of Isolated Singularities.
+                 
+                 Let $f$ be holomorphic on a punctured disk $D^*(z_0, r) = \{z \in \mathbb{C} : 0 < |z - z_0| < r\}$.
+                 The isolated singularity $z_0$ falls into exactly one of three mutually exclusive classes, determined
+                 by the principal part of its Laurent series $\sum_{n=1}^\infty a_{-n} (z - z_0)^{-n}$:
+                 
+                 1. **Removable Singularity**: All negative coefficients vanish ($a_{-n} = 0$ for all $n \ge 1$).
+                    The principal part is identically zero, and $f$ extends to a holomorphic function on the full disk
+                    by defining $f(z_0) = a_0$.
+                    
+                 2. **Pole of Order $m$ ($m \ge 1$)**: The principal part terminates at $n = -m$, so $a_{-m} \ne 0$
+                    and $a_{-n} = 0$ for all $n > m$:
+                    $$ f(z) = \frac{a_{-m}}{(z - z_0)^m} + \cdots + \frac{a_{-1}}{z - z_0} + \sum_{n=0}^\infty a_n (z - z_0)^n. $$
+                    Near a pole, $\lim_{z \to z_0} |f(z)| = \infty$. When $m = 1$, the pole is called *simple*.
+                    
+                 3. **Essential Singularity**: Infinitely many negative coefficients $a_{-n}$ are nonzero.
+                    Near an essential singularity, the values of $f$ fluctuate wildly."
 Id: "2dbcb30d-9d35-4727-ada0-f26dc5938c5e"
 
 
-TextTheorem: "Riemann's removable singularity theorem. If $f$ is holomorphic on
-              a punctured neighborhood of $z_0$ and bounded near $z_0$, then $f$
-              has a unique holomorphic extension to $z_0$. Equivalently, the
-              principal part of its Laurent expansion vanishes."
+TextTheorem: "Riemann's Removable Singularity Theorem.
+              
+              Let $f$ be holomorphic on a punctured disk $D^*(z_0, r)$. The singularity at $z_0$ is removable
+              if and only if $f$ is bounded in a punctured neighborhood of $z_0$:
+              $$ \sup_{0 < |z - z_0| < \delta} |f(z)| < \infty \quad \text{for some } \delta > 0. $$
+              
+              *Proof*: If $z_0$ is removable, $f$ extends continuously to $z_0$, hence is bounded near $z_0$.
+              Conversely, assume $|f(z)| \le M$ on $D^*(z_0, \delta)$. For any $n \ge 1$, the Laurent coefficient $a_{-n}$
+              is given on a circle of radius $\rho < \delta$ by:
+              $$ a_{-n} = \frac{1}{2\pi i} \oint_{|z - z_0| = \rho} f(z)(z - z_0)^{n-1}\,dz. $$
+              Applying the $ML$-inequality:
+              $$ |a_{-n}| \le \frac{1}{2\pi} \cdot M \rho^{n-1} \cdot (2\pi\rho) = M \rho^n. $$
+              Taking $\rho \to 0$ forces $a_{-n} = 0$ for all $n \ge 1$. Thus the principal part vanishes identically,
+              and $f$ extends holomorphically across $z_0$."
 Id: "16d31e40-1f3b-4748-8049-9764bf5da80b"
 
 
-TextTheorem: "Casorati--Weierstrass theorem. Near an essential singularity, the
-              image of every punctured neighborhood is dense in $\mathbb{C}$.
-              Picard's great theorem strengthens this: with at most one
-              exceptional value, every complex value is assumed infinitely often
-              in every punctured neighborhood."
+TextTheorem: "The Casorati--Weierstrass and Picard Theorems.
+
+              1. **Casorati--Weierstrass Theorem**: Let $z_0$ be an essential
+                 singularity of $f$. Then for every punctured neighborhood
+                 $D^*(z_0, \delta)$ and every complex number $w \in \mathbb{C}$,
+                 there exists a sequence $z_k \to z_0$ such that:
+                 $$ \lim_{k \to \infty} f(z_k) = w. $$ That is, the image
+                 $f(D^*(z_0, \delta))$ is dense in $\mathbb{C}$.
+
+              2. **Great Picard Theorem**: In every punctured neighborhood of an
+                 essential singularity $z_0$, the function $f$ assumes every
+                 complex value infinitely many times, with at most *one* single
+                 possible exceptional value.
+
+              *Proof of Casorati--Weierstrass*: Suppose for contradiction that
+              the image $f(D^*(z_0, \delta))$ is not dense in $\mathbb{C}$. Then
+              there exists $w \in \mathbb{C}$ and $\varepsilon > 0$ such that
+              $|f(z) - w| \ge \varepsilon$ for all $z \in D^*(z_0, \delta)$.
+              Define the auxiliary function $g(z) = \frac{1}{f(z) - w}$. Then
+              $g$ is holomorphic on $D^*(z_0, \delta)$ and bounded:
+              $$ |g(z)| \le \frac{1}{\varepsilon}. $$ By Riemann's Removable
+              Singularity Theorem, $g$ extends holomorphically to $z_0$. If
+              $g(z_0) \ne 0$, then $f(z) = w + 1/g(z)$ extends holomorphically
+              to $z_0$, so $z_0$ was removable. If $g(z_0) = 0$ with zero of
+              order $m \ge 1$, then $f(z) = w + 1/g(z)$ has a pole of order $m$
+              at $z_0$. In both cases, $z_0$ cannot be an essential singularity,
+              which is a contradiction."
 Id: "3e6f72a7-a824-480c-896c-9f2e498639c0"
 
 
@@ -89,26 +199,44 @@ SectionTitle: "Residues"
 Id: "2525c045-e366-48e5-ab70-95fde1c155a5"
 
 
-TextDefinition: "The residue of $f$ at an isolated singularity $z_0$ is the
-                 coefficient $a_{-1}$ in its Laurent expansion, written
-                 $\operatorname{Res}(f,z_0)$. Equivalently, for a sufficiently
-                 small positively oriented circle $\gamma$ around $z_0$,
-                 $\operatorname{Res}(f,z_0)=\frac{1}{2\pi i}
-                 \int_\gamma f(z)\,dz$."
+TextDefinition: "Let $f$ have an isolated singularity at $z_0$ with Laurent expansion
+                 $f(z) = \sum_{n=-\infty}^\infty a_n (z - z_0)^n$. The *residue* of $f$ at $z_0$, denoted
+                 $\operatorname{Res}(f, z_0)$, is the coefficient of the power $(z - z_0)^{-1}$:
+                 $$ \operatorname{Res}(f, z_0) = a_{-1} = \frac{1}{2\pi i} \oint_{C_\rho(z_0)} f(z)\,dz, $$
+                 where $C_\rho(z_0)$ is any sufficiently small circle centered at $z_0$ oriented counterclockwise.
+                 The residue is the unique coefficient in the Laurent series whose integral around $z_0$ does not vanish."
 Id: "35848afa-3031-4efe-9d76-d1b297bae371"
 
 
-TextTheorem: "If $f$ has a pole of order $m$ at $z_0$, then
-              $\operatorname{Res}(f,z_0)=\frac{1}{(m-1)!}
-              \lim_{z\to z_0}\frac{d^{m-1}}{dz^{m-1}}
-              ((z-z_0)^m f(z))$. For a simple pole represented as $f=g/h$ with
-              $h(z_0)=0$ and $h'(z_0)\ne0$, this reduces to
-              $\operatorname{Res}(f,z_0)=g(z_0)/h'(z_0)$."
+TextTheorem: "Computational Formulas for Residues at Poles.
+              
+              1. **Poles of Order $m$**: If $f$ has a pole of order $m \ge 1$ at $z_0$, then:
+                 $$ \operatorname{Res}(f, z_0) = \frac{1}{(m-1)!} \lim_{z \to z_0} \frac{d^{m-1}}{dz^{m-1}} \left( (z - z_0)^m f(z) \right). $$
+                 
+              2. **Simple Poles ($m = 1$)**: For a simple pole, the formula simplifies to:
+                 $$ \operatorname{Res}(f, z_0) = \lim_{z \to z_0} (z - z_0) f(z). $$
+                 In particular, if $f(z) = \frac{g(z)}{h(z)}$ where $g$ and $h$ are holomorphic near $z_0$ with
+                 $g(z_0) \ne 0$, $h(z_0) = 0$, and $h'(z_0) \ne 0$, then:
+                 $$ \operatorname{Res}(f, z_0) = \frac{g(z_0)}{h'(z_0)}. $$
+                 
+              *Proof*: Multiplying $f(z) = \frac{a_{-m}}{(z - z_0)^m} + \cdots + \frac{a_{-1}}{z - z_0} + \sum_{n=0}^\infty a_n (z - z_0)^n$
+              by $(z - z_0)^m$ yields an analytic function $\phi(z) = (z - z_0)^m f(z) = a_{-m} + a_{-m+1}(z - z_0) + \cdots + a_{-1}(z - z_0)^{m-1} + O((z - z_0)^m)$.
+              Differentiating $m-1$ times eliminates all terms before $a_{-1}$, leaving $(m-1)! a_{-1} + O(z - z_0)$.
+              Evaluating the limit as $z \to z_0$ and dividing by $(m-1)!$ isolates $a_{-1}$.
+              For the quotient formula, $(z - z_0) \frac{g(z)}{h(z)} = \frac{g(z)}{(h(z) - h(z_0))/(z - z_0)} \to \frac{g(z_0)}{h'(z_0)}$."
 Id: "324cfa4b-56db-4bab-804d-721de64b087e"
 
 
-Text: "Residues compress local singular behavior into the single coefficient
-       detected by contour integration. The residue theorem is therefore a
-       local-to-global statement: a boundary integral is the sum of finitely
-       many local contributions from the singularities enclosed by the contour."
+Text: "Residues represent the ultimate distillation of local singularity
+       structure into a single complex number detected by closed contour
+       integration. Because all powers $(z - z_0)^n$ with $n \ne -1$ possess
+       single-valued primitives $(z - z_0)^{n+1}/(n+1)$ along loops, they
+       contribute identically zero to any closed path integral.
+
+       Only the power $(z - z_0)^{-1}$ generates a non-trivial topological
+       winding period $2\pi i$ due to the branching of the complex logarithm
+       $\log(z - z_0)$. The Residue Theorem is therefore the triumphant
+       local-to-global bridge of complex analysis: it reduces the global
+       evaluation of contour integrals along arbitrary closed paths to a finite
+       algebraic sum of local residues."
 Id: "d9f17a2f-2d5a-44e6-857e-9ca53b40f744"

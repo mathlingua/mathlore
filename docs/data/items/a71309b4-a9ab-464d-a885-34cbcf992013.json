@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A first computation in the group axioms: the inverse of a product is the\nproduct of the inverses taken in the reverse order. The reversal is\nessential, since the operation need not be commutative."
+    "text": "A primary consequence of the group axioms is the rule for inverting a\ncompound product: the inverse of a product is the product of the inverses\nin *reverse order*. The reversal is essential in non-abelian groups to\nensure that adjacent elements cancel."
   },
-  "source": "Text: \"A first computation in the group axioms: the inverse of a product is the\n       product of the inverses taken in the reverse order. The reversal is\n       essential, since the operation need not be commutative.\"\nId: \"a71309b4-a9ab-464d-a885-34cbcf992013\"",
+  "source": "Text: \"A primary consequence of the group axioms is the rule for inverting a\n       compound product: the inverse of a product is the product of the inverses\n       in *reverse order*. The reversal is essential in non-abelian groups to\n       ensure that adjacent elements cancel.\"\nId: \"a71309b4-a9ab-464d-a885-34cbcf992013\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A first computation in the group axioms: the inverse of a product is the\n       product of the inverses taken in the reverse order. The reversal is\n       essential, since the operation need not be commutative.\"",
+      "inline_argument": "\"A primary consequence of the group axioms is the rule for inverting a\n       compound product: the inverse of a product is the product of the inverses\n       in *reverse order*. The reversal is essential in non-abelian groups to\n       ensure that adjacent elements cancel.\"",
       "inline_latex": null,
       "arguments": []
     },

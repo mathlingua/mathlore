@@ -2,8 +2,13 @@ Title: "Natural Numbers"
 Id: "acc9e650-ac98-4a0b-821a-5bc440a9388e"
 
 
-Text: "The natural numbers are the numbers of counting: zero, one, two, and so
-       on without end. This chapter builds them from the ground already laid."
+Text: "The natural numbers $\mathbb{N} = \{0, 1, 2, \dots\}$ are the
+       foundational numbers of discrete counting and order. Arising intuitively
+       from the rhythm of succession, they form the archetype of inductive
+       systems. Rather than treating counting numbers as unexamined primitives,
+       modern foundational mathematics axiomatizes their essential dynamics: a
+       single starting point and a repeatable forward progression that never
+       cycles and never merges."
 Id: "3079172c-5778-44bd-9391-60ce0f0b12e7"
 
 
@@ -58,7 +63,11 @@ SectionTitle: "Constants and Arithmetic"
 Id: "d11de551-8fdb-461b-bb19-787caa038d69"
 
 
-Text: "The initial natural number is zero, and its successor is one."
+Text: "The initial natural number is zero ($0$), representing the base of the
+       inductive hierarchy. The number one ($1$) is defined as its immediate
+       successor, $1 := S(0)$. The successor function $S$ acts as the atomic
+       step of discrete arithmetic, generating each numeral from its
+       predecessor."
 Id: "428700ea-91a3-4f0a-9418-1e0bd3a8c0d7"
 
 
@@ -90,8 +99,16 @@ Documented:
 Id: "9e6169e7-03a2-4b46-8e49-9d7da97d0092"
 
 
-Text: "Addition of natural numbers is defined recursively: adding zero leaves a
-       number unchanged, and adding a successor steps forward by successor."
+Text: "Addition $+ : \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ is defined
+       recursively on the first argument:
+       $$\begin{aligned}
+       0 + m &:= m \\
+       S(k) + m &:= S(k + m)
+       \end{aligned}$$
+       The base clause establishes $0$ as the left identity; the recursive
+       clause formalizes addition as iterated succession. Thus, computing
+       $n + m$ amounts to stepping the successor function $n$ times starting
+       from $m$."
 Id: "f4dd2fa3-9c90-4e21-ac5e-ef4f4052e599"
 
 
@@ -113,7 +130,14 @@ Documented:
 Id: "a8dda59b-29db-4ac2-8d70-e9010ccae3e7"
 
 
-Text: "Multiplication is defined by repeated addition via primitive recursion."
+Text: "Multiplication $\cdot : \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ is
+       defined by primitive recursion as repeated addition:
+       $$\begin{aligned}
+       0 \cdot m &:= 0 \\
+       S(k) \cdot m &:= (k \cdot m) + m
+       \end{aligned}$$
+       Multiplying $n$ by $m$ computes the sum of $n$ copies of $m$, with $0$
+       acting as the annihilating zero element."
 Id: "2334b955-ab67-4bb6-baf5-b7f8e72cae55"
 
 
@@ -139,8 +163,13 @@ SectionTitle: "Order on the Natural Numbers"
 Id: "c2be9441-a886-483d-ac05-cbf63c49eb49"
 
 
-Text: "A natural number $n$ is less than or equal to $m$ if $m$ can be reached
-       from $n$ by adding some natural number $k$."
+Text: "The algebraic operation of addition induces the canonical linear order on
+       $\mathbb{N}$. We define $n \le m$ if and only if $m$ can be reached from
+       $n$ by adding some non-negative increment:
+       $$n \le m \iff \exists k \in \mathbb{N}, \, n + k = m$$ This relation
+       $\le$ is reflexive, antisymmetric, and transitive, endowing $\mathbb{N}$
+       with the structure of a totally ordered cancellative commutative
+       semiring."
 Id: "95c0a40d-4f64-4ab4-a7c4-fbc86a103719"
 
 

@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A function can also be applied to subsets of its domain to yield the\nforward image, or pulled back from subsets of its codomain to yield the\npreimage."
+    "text": "Beyond mapping individual points, a function induces actions on the power\nsets of its domain and codomain:\n- The *direct image* $f[X]$ pushes a subset $X \\subseteq A$ forward into\n  $B$, collecting all evaluations $f(x)$ for $x \\in X$.\n- The *preimage* (or inverse image) $f^{-1}[Y]$ pulls a subset\n  $Y \\subseteq B$ back into $A$, collecting all inputs that map into $Y$.\n  Crucially, the preimage $f^{-1}[Y]$ is well-defined for *any* function,\n  requiring no invertibility of $f$."
   },
-  "source": "Text: \"A function can also be applied to subsets of its domain to yield the\n       forward image, or pulled back from subsets of its codomain to yield the\n       preimage.\"\nId: \"14fa61b4-4f94-4156-aaf3-cefefc0af688\"",
+  "source": "Text: \"Beyond mapping individual points, a function induces actions on the power\n       sets of its domain and codomain:\n       - The *direct image* $f[X]$ pushes a subset $X \\subseteq A$ forward into\n         $B$, collecting all evaluations $f(x)$ for $x \\in X$.\n       - The *preimage* (or inverse image) $f^{-1}[Y]$ pulls a subset\n         $Y \\subseteq B$ back into $A$, collecting all inputs that map into $Y$.\n         Crucially, the preimage $f^{-1}[Y]$ is well-defined for *any* function,\n         requiring no invertibility of $f$.\"\nId: \"14fa61b4-4f94-4156-aaf3-cefefc0af688\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A function can also be applied to subsets of its domain to yield the\n       forward image, or pulled back from subsets of its codomain to yield the\n       preimage.\"",
+      "inline_argument": "\"Beyond mapping individual points, a function induces actions on the power\n       sets of its domain and codomain:\n       - The *direct image* $f[X]$ pushes a subset $X \\subseteq A$ forward into\n         $B$, collecting all evaluations $f(x)$ for $x \\in X$.\n       - The *preimage* (or inverse image) $f^{-1}[Y]$ pulls a subset\n         $Y \\subseteq B$ back into $A$, collecting all inputs that map into $Y$.\n         Crucially, the preimage $f^{-1}[Y]$ is well-defined for *any* function,\n         requiring no invertibility of $f$.\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A *subgroup* is a subset of a group that is itself a group under the\ninherited operation. It must contain the identity, be closed under the\noperation, and contain the inverse of each of its elements. Subgroups are\nthe substructures through which the internal architecture of a group is\nstudied."
+    "text": "A *subgroup* $H \\leq G$ is a subset of a group that is itself a group\nunder the inherited operation. To qualify as a subgroup, $H$ must be\nnonempty, closed under the group operation ($x * y \\in H$), and closed\nunder inverses ($x^{-1} \\in H$).\n\nBy the *One-Step Subgroup Test*, a nonempty subset $H \\subseteq G$ is a\nsubgroup if and only if for all $x, y \\in H$, the product\n$x * y^{-1} \\in H$. Subgroups form the atomic building blocks of group\ntheory: every group contains the trivial subgroup $\\{e\\}$ and the\nimproper subgroup $G$, while the intersection of any family of subgroups\nis again a subgroup."
   },
-  "source": "Text: \"A *subgroup* is a subset of a group that is itself a group under the\n       inherited operation. It must contain the identity, be closed under the\n       operation, and contain the inverse of each of its elements. Subgroups are\n       the substructures through which the internal architecture of a group is\n       studied.\"\nId: \"91933534-107f-44fe-9ad6-4829664f8cd6\"",
+  "source": "Text: \"A *subgroup* $H \\leq G$ is a subset of a group that is itself a group\n       under the inherited operation. To qualify as a subgroup, $H$ must be\n       nonempty, closed under the group operation ($x * y \\in H$), and closed\n       under inverses ($x^{-1} \\in H$).\n\n       By the *One-Step Subgroup Test*, a nonempty subset $H \\subseteq G$ is a\n       subgroup if and only if for all $x, y \\in H$, the product\n       $x * y^{-1} \\in H$. Subgroups form the atomic building blocks of group\n       theory: every group contains the trivial subgroup $\\{e\\}$ and the\n       improper subgroup $G$, while the intersection of any family of subgroups\n       is again a subgroup.\"\nId: \"91933534-107f-44fe-9ad6-4829664f8cd6\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A *subgroup* is a subset of a group that is itself a group under the\n       inherited operation. It must contain the identity, be closed under the\n       operation, and contain the inverse of each of its elements. Subgroups are\n       the substructures through which the internal architecture of a group is\n       studied.\"",
+      "inline_argument": "\"A *subgroup* $H \\leq G$ is a subset of a group that is itself a group\n       under the inherited operation. To qualify as a subgroup, $H$ must be\n       nonempty, closed under the group operation ($x * y \\in H$), and closed\n       under inverses ($x^{-1} \\in H$).\n\n       By the *One-Step Subgroup Test*, a nonempty subset $H \\subseteq G$ is a\n       subgroup if and only if for all $x, y \\in H$, the product\n       $x * y^{-1} \\in H$. Subgroups form the atomic building blocks of group\n       theory: every group contains the trivial subgroup $\\{e\\}$ and the\n       improper subgroup $G$, while the intersection of any family of subgroups\n       is again a subgroup.\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A set that is not the empty set has at least one element. It is worth\nnaming this condition, since many constructions require a set to be\nnonempty."
+    "text": "A set is termed *nonempty* if it contains at least one element. In\nmathematical analysis and abstract algebra, nonemptiness is often an\nindispensable hypothesis: choice functions cannot select from empty sets,\nmaximal elements require nonempty partially ordered sets, and sub-\nstructures must contain identity elements."
   },
-  "source": "Text: \"A set that is not the empty set has at least one element. It is worth\n       naming this condition, since many constructions require a set to be\n       nonempty.\"\nId: \"6a19c255-0426-440b-a2e3-c97b1fe06bc4\"",
+  "source": "Text: \"A set is termed *nonempty* if it contains at least one element. In\n       mathematical analysis and abstract algebra, nonemptiness is often an\n       indispensable hypothesis: choice functions cannot select from empty sets,\n       maximal elements require nonempty partially ordered sets, and sub-\n       structures must contain identity elements.\"\nId: \"6a19c255-0426-440b-a2e3-c97b1fe06bc4\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A set that is not the empty set has at least one element. It is worth\n       naming this condition, since many constructions require a set to be\n       nonempty.\"",
+      "inline_argument": "\"A set is termed *nonempty* if it contains at least one element. In\n       mathematical analysis and abstract algebra, nonemptiness is often an\n       indispensable hypothesis: choice functions cannot select from empty sets,\n       maximal elements require nonempty partially ordered sets, and sub-\n       structures must contain identity elements.\"",
       "inline_latex": null,
       "arguments": []
     },

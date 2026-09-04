@@ -2,10 +2,21 @@ Title: "Vector Spaces and Subspaces"
 Id: "f9582b79-58ac-4407-ad09-7fe2a06bef6f"
 
 
-Text: "A vector space is an algebraic system consisting of a set of vectors that
-       can be added together and scaled by elements of an underlying field
-       (scalars). The axioms guarantee that vector addition forms an abelian
-       group and that scalar multiplication distributes over addition."
+Text: "A *vector space* (or linear space) over a field $F$ is an algebraic
+       universe governed by the principle of *superposition*: elements (vectors)
+       can be added together and scaled by scalars from $F$.
+
+       Axiomatically, vector addition $(V, +, 0)$ constitutes an abelian group,
+       providing translation, subtraction, and a zero vector. Scalar
+       multiplication $\cdot : F \times V \to V$ acts as a field action
+       compatible with addition: it distributes across both vector addition and
+       field addition, associates with field multiplication, and acts unitally
+       with $1 \in F$.
+
+       From geometric displacement arrows in $\mathbb{R}^3$ and coordinate
+       spaces $F^n$, to function spaces $C^k(\mathbb{R})$, polynomial rings
+       $F[x]$, and quantum Hilbert spaces, vector spaces provide the uniform
+       structural medium for all linear phenomena."
 Id: "b105e87b-4646-496a-aec3-681da4d76fbe"
 
 
@@ -112,8 +123,18 @@ Documented:
 Id: "2b68f78b-7c61-4e39-986d-34e50990ec8b"
 
 
-Text: "The span of a subset $S$ is the smallest subspace containing $S$,
-       consisting of all finite linear combinations of vectors in $S$."
+Text: "A subset $W \subseteq V$ is a *subspace* if it is closed under vector
+       addition and scalar multiplication.
+
+       By the *Subspace Criterion*, a non-empty subset $W \subseteq V$ is a
+       subspace if and only if for all scalars $\alpha, \beta \in F$ and vectors
+       $u, v \in W$, the linear combination $\alpha u + \beta v \in W$.
+
+       The *linear span* $\operatorname{span}(S)$ of an arbitrary subset
+       $S \subseteq V$ is the set of all finite linear combinations
+       $c_1 v_1 + \dots + c_k v_k$ of vectors in $S$. Span acts as a topological
+       closure operator: $\operatorname{span}(S)$ is the smallest subspace of
+       $V$ containing $S$."
 Id: "aafaf29a-2c67-4b97-ae6f-ebc0f7ca78d0"
 
 
@@ -138,8 +159,12 @@ SectionTitle: "Linear Independence and Bases"
 Id: "74c0d1cf-767d-4f02-92bd-b493f21d5171"
 
 
-Text: "A set of vectors is linearly independent when no vector can be written as
-       a linear combination of the others."
+Text: "A collection of vectors is *linearly independent* if no vector in the set can
+       be expressed as a linear combination of the remaining vectors. In equational terms,
+       the only linear combination that yields the zero vector is the trivial one:
+       $$ c_1 v_1 + c_2 v_2 + \cdots + c_k v_k = 0 \implies c_1 = c_2 = \cdots = c_k = 0. $$
+       Linear independence ensures that each vector contributes an independent geometric
+       dimension without redundant information."
 Id: "960f17ab-8b88-47d4-a7cb-c74bc8b7cfc3"
 
 
@@ -164,8 +189,14 @@ Documented:
 Id: "949d5854-493f-4c4c-a571-e5022cc3d864"
 
 
-Text: "A basis is a linearly independent subset that spans the entire vector
-       space."
+Text: "A *basis* for a vector space $V$ is a subset $B \subseteq V$ that is
+       simultaneously linearly independent and spans $V$. A basis represents a
+       minimal spanning set and a maximal linearly independent set.
+
+       Critically, a basis provides a coordinate system: every vector $v \in V$
+       can be written uniquely as a finite linear combination
+       $v = \sum_{i=1}^n c_i b_i$ with coefficients $c_i \in F$, establishing a
+       canonical isomorphism $V \cong F^n$."
 Id: "22fe8ee2-9aee-4cdf-a5e0-a16b5023fada"
 
 
@@ -195,11 +226,20 @@ Documented:
 Id: "bb259afa-cc97-4ed6-9e83-5ea9a2d2a224"
 
 
-TextTheorem: "The intersection of any family of subspaces of $V$ is a subspace.
-              The span of a subset $S$ is therefore the intersection of all
-              subspaces containing $S$, equivalently the set of all finite
-              linear combinations of elements of $S$. The word finite remains
-              essential even when $S$ is infinite."
+TextTheorem: "The intersection $\bigcap_{i \in I} W_i$ of any family of
+              subspaces of $V$ is itself a subspace of $V$.
+
+              *Proof*: Since each $W_i$ is a subspace, $0 \in W_i$ for all
+              $i \in I$, so $0 \in \bigcap_{i \in I} W_i$. If
+              $u, v \in \bigcap_{i \in I} W_i$ and $\alpha, \beta \in F$, then
+              for each $i \in I$, $u, v \in W_i$. Since each $W_i$ is a
+              subspace, $\alpha u + \beta v \in W_i$ for every $i \in I$.
+              Therefore, $\alpha u + \beta v \in \bigcap_{i \in I} W_i$.
+
+              Consequently, the span $\operatorname{span}(S)$ of any subset
+              $S \subseteq V$ coincides with the intersection of all subspaces
+              of $V$ that contain $S$, which is precisely the set of all finite
+              linear combinations of vectors in $S$."
 Id: "ec4c128f-df87-4abf-bdd6-c07b626e4002"
 
 
@@ -231,7 +271,28 @@ Documented:
 Id: "334cb00b-efec-489d-959f-6d349983f365"
 
 
-TextTheorem: "If $V$ is finite-dimensional and $U,W\leq V$, then
-              $\dim(U+W)+\dim(U\cap W)=\dim U+\dim W$. For a direct sum this
-              reduces to $\dim(U\oplus W)=\dim U+\dim W$."
+TextTheorem: "Grassmann's Dimension Formula. If $U$ and $W$ are finite-dimensional
+              subspaces of a vector space $V$, then:
+              $$ \dim(U + W) + \dim(U \cap W) = \dim(U) + \dim(W). $$
+              
+              *Proof*: Let $\{v_1, \dots, v_k\}$ be a basis for the intersection $U \cap W$,
+              so $\dim(U \cap W) = k$. By the Basis Extension Theorem, extend this basis to
+              a basis $\{v_1, \dots, v_k, u_1, \dots, u_r\}$ for $U$ (so $\dim(U) = k + r$),
+              and to a basis $\{v_1, \dots, v_k, w_1, \dots, w_s\}$ for $W$ (so $\dim(W) = k + s$).
+              
+              We claim that $B = \{v_1, \dots, v_k, u_1, \dots, u_r, w_1, \dots, w_s\}$ is a
+              basis for $U + W$:
+              1. **Spanning**: Any $x \in U + W$ is $x = u + w$ with $u \in U, w \in W$.
+                 Expanding $u$ in the basis of $U$ and $w$ in the basis of $W$ shows $x \in \operatorname{span}(B)$.
+              2. **Linear Independence**: Suppose $\sum \alpha_i v_i + \sum \beta_j u_j + \sum \gamma_l w_l = 0$.
+                 Then $\sum \gamma_l w_l = -(\sum \alpha_i v_i + \sum \beta_j u_j) \in U$.
+                 Since also $\sum \gamma_l w_l \in W$, this vector lies in $U \cap W$.
+                 Expressing it in the basis $\{v_i\}$ and using linear independence forces
+                 all $\gamma_l = 0$, which then forces all $\beta_j = 0$ and $\alpha_i = 0$.
+              
+              Thus $B$ is a basis of $U + W$, giving:
+              $$ \dim(U + W) = k + r + s = (k + r) + (k + s) - k = \dim(U) + \dim(W) - \dim(U \cap W). $$
+              
+              For an internal direct sum $U \oplus W$, the intersection is $\{0\}$ with dimension $0$,
+              yielding $\dim(U \oplus W) = \dim(U) + \dim(W)$."
 Id: "80b18cfd-d52b-4556-987e-18b4fc36d00b"

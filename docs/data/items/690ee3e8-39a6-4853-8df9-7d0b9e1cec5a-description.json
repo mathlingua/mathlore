@@ -7,7 +7,7 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A maximal element has no distinct element strictly above it."
+    "text": "A maximal element has no distinct element strictly above it. In\na non-total poset, a set may possess multiple distinct maximal\nelements."
   },
   "source": "",
   "sections": []

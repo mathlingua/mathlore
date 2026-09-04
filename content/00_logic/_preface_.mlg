@@ -1,8 +1,33 @@
-Text: "Logic distinguishes the form of an argument from the subject matter of
-       its sentences. The chapter begins with truth-functional connectives,
-       passes to predicates and quantifiers, and ends with the notions of
-       semantic consequence, derivation, proof, and mathematical definition.
-       This order matters: connectives combine assertions, quantifiers bind
-       variables inside assertions, and proofs certify that conclusions follow
-       from stated assumptions."
+Text: "Mathematics is distinguished from all other human endeavors by its reliance
+       on deductive proof. While empirical sciences test hypotheses against
+       observation and experiment, mathematics establishes conclusions by showing
+       that they are inexorable consequences of initial axioms. Logic is the
+       science of this deduction: it investigates what makes an inference valid,
+       isolating the abstract form of an argument from the particular subject
+       matter of its assertions.
+
+       This opening chapter constructs the linguistic and deductive scaffolding
+       upon which all subsequent mathematical theories in Mathlore depend. Our
+       development follows an intentional progression:
+
+       First, we examine *propositional logic*, the algebra of atomic assertions
+       and truth-functional connectives ($\Rightarrow$, $\Leftrightarrow$,
+       $\land$, $\lor$, $\neg$). Here, statements are treated as indivisible
+       wholes evaluated under classical bivalence: every proposition is either
+       true or false, and never both.
+
+       Next, we advance to *first-order predicate logic*, introducing predicates
+       and the universal ($\forall$) and existential ($\exists$) quantifiers.
+       Predicates allow us to speak of properties of objects and relations
+       between them, while quantifiers provide the precise mechanism for
+       binding variables. It is this expressive leap that makes it possible to
+       state definitions such as set membership, functional dependencies, and
+       topological limits.
+
+       Finally, we investigate the nature of *proof, consequence, and definition*.
+       We delineate the distinction between semantic consequence (what must be
+       true in every interpretation) and syntactic derivation (what can be
+       established by rule-governed proof steps), and we examine the classical
+       proof strategies—direct argument, contraposition, and proof by
+       contradiction—that serve as the mathematician's daily instruments."
 Id: "7fef7b05-b210-4e85-87e3-1bcdf99aa3f8"

@@ -4,13 +4,13 @@
   "definition_keys": [],
   "heading": null,
   "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Heine--Cantor theorem. Every continuous function from a compact\nmetric space to a metric space is uniformly continuous. In\nparticular, a function continuous on $[a,b]$ admits one $\\delta$\nfor each $\\epsilon$ that works at all points simultaneously.",
+  "body_text": "The Heine-Cantor Theorem. Every continuous function\n$f : [a, b] \\to \\mathbb{R}$ on a closed bounded interval is\n*uniformly continuous*.\n\n*Significance*: Pointwise continuity allows $\\delta$ to shrink\ntoward zero as $x$ approaches steep regions of the graph. On a\ncompact interval $[a, b]$, no such unbounded steepening can occur:\nfor any given $\\epsilon > 0$, a single global $\\delta > 0$\nsuffices for all points simultaneously. This uniform control is\nthe key technical requirement for proving the integrability of\ncontinuous functions.",
   "page": null,
-  "source": "TextTheorem: \"Heine--Cantor theorem. Every continuous function from a compact\n              metric space to a metric space is uniformly continuous. In\n              particular, a function continuous on $[a,b]$ admits one $\\delta$\n              for each $\\epsilon$ that works at all points simultaneously.\"\nId: \"bbd033d2-9fa7-47d7-9354-35da690e0f8e\"",
+  "source": "TextTheorem: \"The Heine-Cantor Theorem. Every continuous function\n              $f : [a, b] \\to \\mathbb{R}$ on a closed bounded interval is\n              *uniformly continuous*.\n\n              *Significance*: Pointwise continuity allows $\\delta$ to shrink\n              toward zero as $x$ approaches steep regions of the graph. On a\n              compact interval $[a, b]$, no such unbounded steepening can occur:\n              for any given $\\epsilon > 0$, a single global $\\delta > 0$\n              suffices for all points simultaneously. This uniform control is\n              the key technical requirement for proving the integrability of\n              continuous functions.\"\nId: \"bbd033d2-9fa7-47d7-9354-35da690e0f8e\"",
   "sections": [
     {
       "label": "TextTheorem",
-      "inline_argument": "\"Heine--Cantor theorem. Every continuous function from a compact\n              metric space to a metric space is uniformly continuous. In\n              particular, a function continuous on $[a,b]$ admits one $\\delta$\n              for each $\\epsilon$ that works at all points simultaneously.\"",
+      "inline_argument": "\"The Heine-Cantor Theorem. Every continuous function\n              $f : [a, b] \\to \\mathbb{R}$ on a closed bounded interval is\n              *uniformly continuous*.\n\n              *Significance*: Pointwise continuity allows $\\delta$ to shrink\n              toward zero as $x$ approaches steep regions of the graph. On a\n              compact interval $[a, b]$, no such unbounded steepening can occur:\n              for any given $\\epsilon > 0$, a single global $\\delta > 0$\n              suffices for all points simultaneously. This uniform control is\n              the key technical requirement for proving the integrability of\n              continuous functions.\"",
       "inline_latex": null,
       "arguments": []
     },

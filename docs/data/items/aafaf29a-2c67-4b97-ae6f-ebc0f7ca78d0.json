@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The span of a subset $S$ is the smallest subspace containing $S$,\nconsisting of all finite linear combinations of vectors in $S$."
+    "text": "A subset $W \\subseteq V$ is a *subspace* if it is closed under vector\naddition and scalar multiplication.\n\nBy the *Subspace Criterion*, a non-empty subset $W \\subseteq V$ is a\nsubspace if and only if for all scalars $\\alpha, \\beta \\in F$ and vectors\n$u, v \\in W$, the linear combination $\\alpha u + \\beta v \\in W$.\n\nThe *linear span* $\\operatorname{span}(S)$ of an arbitrary subset\n$S \\subseteq V$ is the set of all finite linear combinations\n$c_1 v_1 + \\dots + c_k v_k$ of vectors in $S$. Span acts as a topological\nclosure operator: $\\operatorname{span}(S)$ is the smallest subspace of\n$V$ containing $S$."
   },
-  "source": "Text: \"The span of a subset $S$ is the smallest subspace containing $S$,\n       consisting of all finite linear combinations of vectors in $S$.\"\nId: \"aafaf29a-2c67-4b97-ae6f-ebc0f7ca78d0\"",
+  "source": "Text: \"A subset $W \\subseteq V$ is a *subspace* if it is closed under vector\n       addition and scalar multiplication.\n\n       By the *Subspace Criterion*, a non-empty subset $W \\subseteq V$ is a\n       subspace if and only if for all scalars $\\alpha, \\beta \\in F$ and vectors\n       $u, v \\in W$, the linear combination $\\alpha u + \\beta v \\in W$.\n\n       The *linear span* $\\operatorname{span}(S)$ of an arbitrary subset\n       $S \\subseteq V$ is the set of all finite linear combinations\n       $c_1 v_1 + \\dots + c_k v_k$ of vectors in $S$. Span acts as a topological\n       closure operator: $\\operatorname{span}(S)$ is the smallest subspace of\n       $V$ containing $S$.\"\nId: \"aafaf29a-2c67-4b97-ae6f-ebc0f7ca78d0\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The span of a subset $S$ is the smallest subspace containing $S$,\n       consisting of all finite linear combinations of vectors in $S$.\"",
+      "inline_argument": "\"A subset $W \\subseteq V$ is a *subspace* if it is closed under vector\n       addition and scalar multiplication.\n\n       By the *Subspace Criterion*, a non-empty subset $W \\subseteq V$ is a\n       subspace if and only if for all scalars $\\alpha, \\beta \\in F$ and vectors\n       $u, v \\in W$, the linear combination $\\alpha u + \\beta v \\in W$.\n\n       The *linear span* $\\operatorname{span}(S)$ of an arbitrary subset\n       $S \\subseteq V$ is the set of all finite linear combinations\n       $c_1 v_1 + \\dots + c_k v_k$ of vectors in $S$. Span acts as a topological\n       closure operator: $\\operatorname{span}(S)$ is the smallest subspace of\n       $V$ containing $S$.\"",
       "inline_latex": null,
       "arguments": []
     },

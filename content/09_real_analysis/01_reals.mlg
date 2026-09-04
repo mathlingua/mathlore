@@ -2,10 +2,18 @@ Title: "The Real Numbers"
 Id: "d18bf879-7408-48c4-b09f-60d5fb20b183"
 
 
-Text: "The real number system $\mathbb{R}$ extends the rational numbers to form
-       a complete continuum. It is uniquely characterized up to isomorphism as a
-       complete ordered field, ensuring that every bounded set of reals
-       possesses a least upper bound (supremum)."
+Text: "The real number system $\mathbb{R}$ completes the discrete rational
+       numbers $\mathbb{Q}$ into an unbroken geometric continuum. While
+       $\mathbb{Q}$ contains innumerable incommensurable 'holes'—such as
+       $\sqrt{2}$, $\pi$, and $e$—the real numbers fill every void, forming the
+       foundational stage for all of classical analysis.
+
+       Axiomatically, $\mathbb{R}$ is uniquely characterized up to
+       order-isomorphism as a *complete Archimedean ordered field*. The decisive
+       axiom distinguishing $\mathbb{R}$ from $\mathbb{Q}$ is the *Least Upper
+       Bound Property* (Dedekind completeness): every nonempty subset of
+       $\mathbb{R}$ that is bounded above possesses a supremum (least upper
+       bound) in $\mathbb{R}$."
 Id: "2f7605c2-086a-4429-a969-dd003a83531e"
 
 
@@ -286,6 +294,27 @@ Documented:
 . called: "Completeness of the Real Numbers"
 . description: "Every nonempty set of real numbers bounded above has a least
                 upper bound in $\mathbb{R}$."
+Proof: """In the axiomatic characterization of $\mathbb{R}$ as an abstract
+          ordered field tuple $(R, 0, 1, +, \cdot, \leq)$, the Least Upper Bound
+          property is directly stipulated: for every nonempty subset
+          $A \subseteq R$ bounded above by $M \in R$, there exists a unique
+          minimal upper bound $s = \sup(A) \in R$.
+
+          Concretely, in the Dedekind cut realization, a real number is a cut
+          $D \subsetneq \mathbb{Q}$. If $\mathcal{S}$ is a nonempty set of
+          Dedekind cuts bounded above by a cut $M$, their union
+          $D_{\sup} = \bigcup_{D \in \mathcal{S}} D$ is itself a Dedekind cut:
+          1. $D_{\sup} \neq \emptyset$ because some $D \in \mathcal{S}$ is
+             nonempty; and $D_{\sup} \subseteq M \subsetneq \mathbb{Q}$, so
+             $D_{\sup} \neq \mathbb{Q}$.
+          2. If $p \in D_{\sup}$ and $q \in \mathbb{Q}$ with $q < p$, then
+             $p \in D$ for some $D \in \mathcal{S}$. Since $D$ is a cut,
+             $q \in D \subseteq D_{\sup}$ (downward closure).
+          3. If $p \in D_{\sup}$, then $p \in D$ for some $D \in \mathcal{S}$,
+             so there is $r \in D \subseteq D_{\sup}$ with $r > p$ (no maximal
+             element). Thus $D_{\sup}$ is a valid Dedekind cut that contains
+             every $D \in \mathcal{S}$ and is contained in any other upper
+             bound, establishing that $D_{\sup} = \sup(\mathcal{S})$."""
 Id: "b4fc64c6-378b-4e44-87c5-610045a90fe3"
 
 
@@ -759,34 +788,85 @@ SectionTitle: "Consequences of Completeness"
 Id: "c7e3ce84-b112-44c7-aecd-7903f25f6f48"
 
 
-TextTheorem: "Archimedean property. For every real number $x$ there exists a
-              natural number $n$ with $n>x$. Equivalently, for every
-              $\epsilon>0$ there exists $n\in\mathbb{N}$ with $0<1/n<\epsilon$.
-              Although this property is often treated as obvious, it follows
-              from completeness and excludes infinitely large or positive
-              infinitesimal real numbers."
+TextTheorem: "The Archimedean Property. For every real number
+              $x \in \mathbb{R}$, there exists a natural number
+              $n \in \mathbb{N}$ such that $n > x$. Equivalently, for every
+              $\epsilon > 0$, there exists $n \in \mathbb{N}$ such that
+              $0 < 1/n < \epsilon$.
+
+              *Proof*: Suppose for contradiction that $\mathbb{N}$ is bounded
+              above in $\mathbb{R}$. Since $\mathbb{N} \neq \emptyset$, the
+              Completeness Axiom guarantees that $\alpha = \sup(\mathbb{N})$
+              exists in $\mathbb{R}$. Since $\alpha - 1 < \alpha$, $\alpha - 1$
+              is not an upper bound for $\mathbb{N}$. Thus there exists some
+              $m \in \mathbb{N}$ such that $m > \alpha - 1$. Adding $1$ to both
+              sides gives $m + 1 > \alpha$. Since $m + 1 \in \mathbb{N}$, this
+              contradicts that $\alpha$ is an upper bound for $\mathbb{N}$.
+
+              Hence $\mathbb{N}$ is unbounded above in $\mathbb{R}$. The
+              Archimedean property rules out actual infinitesimals and actual
+              infinities in the standard real field."
 Id: "b1263e32-5964-4429-bd0c-7ed965ffa9a1"
 
 
-TextTheorem: "The rational numbers are dense in the real numbers: if $x<y$,
-              there exists $q\in\mathbb{Q}$ with $x<q<y$. The irrational numbers
-              are also dense. Density says that every nonempty open interval
-              meets each subset; it does not say that the subsets have equal
-              cardinality or measure."
+TextTheorem: "The Density of Rationals and Irrationals. Between any two distinct
+              real numbers $x < y$, there exists both a rational number
+              $q \in \mathbb{Q}$ and an irrational number
+              $r \in \mathbb{R} \setminus \mathbb{Q}$ satisfying:
+              $$ x < q < y \quad \text{and} \quad x < r < y. $$
+
+              *Proof Sketch*:
+              1. **Rationals**: Since $y - x > 0$, by the Archimedean property
+                 there exists $n \in \mathbb{N}$ such that $n(y - x) > 1$, so
+                 $ny - nx > 1$. Let $m = \lfloor nx \rfloor + 1 \in \mathbb{Z}$.
+                 Then $nx < m \leq nx + 1 < ny$. Dividing by $n > 0$ yields
+                 $x < m/n < y$. Setting $q = m/n \in \mathbb{Q}$ proves density
+                 of $\mathbb{Q}$.
+              2. **Irrationals**: Since $x < y$, consider
+                 $x/\sqrt{2} < y/\sqrt{2}$. By density of rationals, choose a
+                 nonzero rational $q' \in \mathbb{Q}$ with
+                 $x/\sqrt{2} < q' < y/\sqrt{2}$. Then $r = q'\sqrt{2}$ is
+                 irrational and satisfies $x < r < y$.
+
+              Thus every open interval $(x, y) \subseteq \mathbb{R}$ contains
+              infinitely many rational and infinitely many irrational numbers."
 Id: "fad49d51-ff50-4127-806b-8f246765c4df"
 
 
-TextTheorem: "Nested interval theorem. If
-              $[a_1,b_1]\supseteq[a_2,b_2]\supseteq\cdots$ is a decreasing
-              sequence of nonempty closed bounded intervals, then their
-              intersection is nonempty. If $b_n-a_n\to0$, the intersection
-              contains exactly one point. This is another operational form of
-              completeness."
+TextTheorem: "The Nested Interval Theorem (Cantor's Intersection Theorem). Let
+              $I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots$ be a decreasing
+              sequence of non-empty closed bounded intervals
+              $I_n = [a_n, b_n] \subset \mathbb{R}$. Then their intersection is
+              non-empty: $$ \bigcap_{n=1}^\infty I_n \neq \emptyset. $$ If
+              furthermore the lengths satisfy
+              $\lim_{n \to \infty} (b_n - a_n) = 0$, then the intersection
+              contains precisely one point $\xi \in \mathbb{R}$.
+
+              *Proof*: Since $I_{n+1} \subseteq I_n$, the sequence of left
+              endpoints $(a_n)$ is non-decreasing, and the sequence of right
+              endpoints $(b_n)$ is non-increasing, with $a_n \leq b_m$ for all
+              $n, m$. The set $A = \{a_n : n \in \mathbb{N}\}$ is nonempty and
+              bounded above by each $b_m$. By completeness, $\xi = \sup(A)$
+              exists. For every $n \in \mathbb{N}$, $a_n \leq \xi$. Moreover,
+              since each $b_n$ is an upper bound for $A$, $\xi \leq b_n$. Thus
+              $a_n \leq \xi \leq b_n$ for all $n$, meaning
+              $\xi \in [a_n, b_n] = I_n$ for all $n$. Hence
+              $\xi \in \bigcap_{n=1}^\infty I_n$. If $\lim (b_n - a_n) = 0$, any
+              two points $\xi_1, \xi_2 \in \bigcap I_n$ satisfy
+              $|\xi_1 - \xi_2| \leq b_n - a_n \to 0$, forcing $\xi_1 = \xi_2$."
 Id: "b160143e-4ba6-481c-9a52-3e03fdee7bc5"
 
 
-TextTheorem: "There is, up to a unique order-preserving field isomorphism, one
-              complete ordered field. Thus constructions by Dedekind cuts and by
-              Cauchy sequences yield isomorphic ordered fields. The realization
-              changes; the real-number structure does not."
+TextTheorem: "Categoricity of the Real Continuum. Up to a unique
+              order-preserving field isomorphism, there exists exactly one
+              complete ordered field.
+
+              Consequently, the concrete models of the real numbers—whether
+              realized via Dedekind cuts in $\mathbb{Q}$, Cantor equivalence
+              classes of rational Cauchy sequences, or positional decimal
+              expansions—are all mutually isomorphic as ordered fields. The
+              specific set-theoretic construction serves solely as an existence
+              proof of the structure; the deductive theorems of analysis depend
+              exclusively on the universal axiomatic properties of the complete
+              ordered field $\mathbb{R}$."
 Id: "59879fc7-468d-4926-8c40-43fe85a7713b"

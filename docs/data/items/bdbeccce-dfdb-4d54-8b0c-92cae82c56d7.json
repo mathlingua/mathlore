@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A relation is antisymmetric if two elements can only be mutually related\nwhen they are identical."
+    "text": "A relation $R$ on $X$ is *antisymmetric* when cycles of length two can\nonly occur trivially:\n$x \\mathrel{R} y \\land y \\mathrel{R} x \\implies x = y$. Antisymmetry\nprohibits mutual preference between distinct elements, serving as the\ndefining non-symmetric property of orders."
   },
-  "source": "Text: \"A relation is antisymmetric if two elements can only be mutually related\n       when they are identical.\"\nId: \"bdbeccce-dfdb-4d54-8b0c-92cae82c56d7\"",
+  "source": "Text: \"A relation $R$ on $X$ is *antisymmetric* when cycles of length two can\n       only occur trivially:\n       $x \\mathrel{R} y \\land y \\mathrel{R} x \\implies x = y$. Antisymmetry\n       prohibits mutual preference between distinct elements, serving as the\n       defining non-symmetric property of orders.\"\nId: \"bdbeccce-dfdb-4d54-8b0c-92cae82c56d7\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A relation is antisymmetric if two elements can only be mutually related\n       when they are identical.\"",
+      "inline_argument": "\"A relation $R$ on $X$ is *antisymmetric* when cycles of length two can\n       only occur trivially:\n       $x \\mathrel{R} y \\land y \\mathrel{R} x \\implies x = y$. Antisymmetry\n       prohibits mutual preference between distinct elements, serving as the\n       defining non-symmetric property of orders.\"",
       "inline_latex": null,
       "arguments": []
     },

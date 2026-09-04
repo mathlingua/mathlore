@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Set union and intersection obey commutative laws analogous to addition\nand multiplication of numbers."
+    "text": "Set union and intersection satisfy algebraic symmetries that mirror the\nalgebra of real numbers, including commutativity, associativity, and\ndistributivity. However, Boolean algebras exhibit unique dualities—such\nas the mutual distributivity of union over intersection and intersection\nover union—that have no analogue in numerical arithmetic."
   },
-  "source": "Text: \"Set union and intersection obey commutative laws analogous to addition\n       and multiplication of numbers.\"\nId: \"aebe6956-53f1-4b24-af92-63732dfe1544\"",
+  "source": "Text: \"Set union and intersection satisfy algebraic symmetries that mirror the\n       algebra of real numbers, including commutativity, associativity, and\n       distributivity. However, Boolean algebras exhibit unique dualities—such\n       as the mutual distributivity of union over intersection and intersection\n       over union—that have no analogue in numerical arithmetic.\"\nId: \"aebe6956-53f1-4b24-af92-63732dfe1544\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Set union and intersection obey commutative laws analogous to addition\n       and multiplication of numbers.\"",
+      "inline_argument": "\"Set union and intersection satisfy algebraic symmetries that mirror the\n       algebra of real numbers, including commutativity, associativity, and\n       distributivity. However, Boolean algebras exhibit unique dualities—such\n       as the mutual distributivity of union over intersection and intersection\n       over union—that have no analogue in numerical arithmetic.\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The zero integer is the additive identity, and one is the multiplicative\nidentity."
+    "text": "The integer zero ($0$) is the unique neutral identity element for\naddition, and one ($1$) is the non-zero neutral identity element for\nmultiplication."
   },
-  "source": "Text: \"The zero integer is the additive identity, and one is the multiplicative\n       identity.\"\nId: \"c29a27c7-6869-4b83-8183-70312240df75\"",
+  "source": "Text: \"The integer zero ($0$) is the unique neutral identity element for\n       addition, and one ($1$) is the non-zero neutral identity element for\n       multiplication.\"\nId: \"c29a27c7-6869-4b83-8183-70312240df75\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The zero integer is the additive identity, and one is the multiplicative\n       identity.\"",
+      "inline_argument": "\"The integer zero ($0$) is the unique neutral identity element for\n       addition, and one ($1$) is the non-zero neutral identity element for\n       multiplication.\"",
       "inline_latex": null,
       "arguments": []
     },

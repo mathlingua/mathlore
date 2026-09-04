@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A relation is transitive if relationships chain through intermediate\nelements."
+    "text": "A relation $R$ on $X$ is *transitive* when connections bridge across\nintermediate nodes:\n$x \\mathrel{R} y \\land y \\mathrel{R} z \\implies x \\mathrel{R} z$.\nTransitivity is the algebraic guarantee that local relationships cohere\ninto global reachability."
   },
-  "source": "Text: \"A relation is transitive if relationships chain through intermediate\n       elements.\"\nId: \"5965ba24-25b8-4a16-92fc-035988cfb21c\"",
+  "source": "Text: \"A relation $R$ on $X$ is *transitive* when connections bridge across\n       intermediate nodes:\n       $x \\mathrel{R} y \\land y \\mathrel{R} z \\implies x \\mathrel{R} z$.\n       Transitivity is the algebraic guarantee that local relationships cohere\n       into global reachability.\"\nId: \"5965ba24-25b8-4a16-92fc-035988cfb21c\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A relation is transitive if relationships chain through intermediate\n       elements.\"",
+      "inline_argument": "\"A relation $R$ on $X$ is *transitive* when connections bridge across\n       intermediate nodes:\n       $x \\mathrel{R} y \\land y \\mathrel{R} z \\implies x \\mathrel{R} z$.\n       Transitivity is the algebraic guarantee that local relationships cohere\n       into global reachability.\"",
       "inline_latex": null,
       "arguments": []
     },

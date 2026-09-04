@@ -1,15 +1,69 @@
-Text: "Complex analysis begins with the field $\mathbb{C}$ viewed
-       simultaneously as an algebraic extension of $\mathbb{R}$ and as the
-       Euclidean plane. A complex derivative must be independent of the
-       direction of approach. That apparently small strengthening of real
-       differentiability has far-reaching consequences: holomorphic functions
-       are analytic, their values obey integral formulas, and their isolated
-       singularities admit a complete local classification.
+Text: "Complex analysis—traditionally known as the theory of functions of a complex
+       variable—stands as one of the most aesthetically harmonious and powerful
+       edifices in all of mathematics. Its origin lies in a celebrated historical
+       paradox: in the sixteenth century, Gerolamo Cardano and Rafael Bombelli
+       found that finding the real roots of real cubic polynomials necessitated
+       manipulating intermediate 'impossible' quantities involving square roots
+       of negative numbers. What began as an uneasy algebraic heuristic was
+       elevated over three centuries by Leonhard Euler, Jean-Robert Argand, and
+       Carl Friedrich Gauss into a fully rigorous geometric and analytic discipline.
+       As Gauss remarked, imaginary numbers gained 'an intuitive meaning and
+       complete civic rights' once identified with the points and vectors of the
+       two-dimensional Euclidean plane.
 
-       The chapter develops this rigidity in stages: complex arithmetic and
-       geometry, differentiability and the Cauchy--Riemann equations, contour
-       integration, and finally power series, Laurent series, singularities,
-       and residues. Domain hypotheses such as openness, connectedness, and
-       simple connectedness are stated explicitly because the principal
-       theorems are false without them."
+       The field of complex numbers $\mathbb{C} \cong \mathbb{R}[t]/(t^2 + 1)$
+       embodies a profound dual nature. Algebraically, it provides the definitive
+       setting for polynomial equations: the Fundamental Theorem of Algebra
+       guarantees that every nonconstant polynomial factors completely into
+       linear factors over $\mathbb{C}$. Geometrically, multiplication by a
+       complex number $z = r e^{i\theta}$ represents an infinitesimal
+       similarity transformation—a simultaneous dilation by $r = |z|$ and
+       counterclockwise rotation through the angle $\theta = \arg(z)$.
+
+       The central miracle of the subject is the extraordinary *rigidity* of
+       complex differentiability. In real analysis, differentiability is a flexible,
+       local phenomenon: a real function may possess a continuous first derivative
+       without being twice differentiable; infinitely differentiable ($C^\infty$)
+       functions may fail to be analytic (as demonstrated by Cauchy's flat bump
+       function); and partition-of-unity constructions allow local modifications
+       with zero global repercussions. In contrast, demanding that the complex
+       difference quotient
+       \[
+       f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}
+       \]
+       converges to the same complex number from *every* direction in the plane
+       imposes the Cauchy--Riemann equations on the real and imaginary parts of
+       $f$. Geometrically, this requires the two-dimensional real differential
+       $Df(z_0) : \mathbb{R}^2 \to \mathbb{R}^2$ to act as an orientation-preserving
+       similarity, preserving angles and shapes of infinitesimal figures
+       (conformality).
+
+       This single requirement unleashes an astonishing cascade of global
+       regularity:
+       1. **Automatic Analyticity**: Every function that is once complex-differentiable
+          on an open domain is automatically infinitely differentiable and represented
+          locally by absolutely convergent Taylor series.
+       2. **Boundary Determination**: The values of a holomorphic function inside
+          a region are entirely dictated by its values on the boundary through
+          Cauchy's Integral Formula.
+       3. **Global Rigidity and Identity**: A holomorphic function on a connected
+          domain is completely determined by its values on any set with an accumulation
+          point, however microscopic. Knowing $f$ on a tiny curve segment determines
+          $f$ everywhere it can be analytically continued.
+       4. **Topological and Singular Taxonomy**: Isolated singularities admit a
+          sharp, exhaustive classification into removable points, poles, and
+          essential singularities, while contour integration around them is
+          compressed into the algebraic sum of local residues.
+
+       This chapter develops complex analysis along a unified, foundational arc:
+       first, the algebraic construction, conjugation, and planar geometry of
+       $\mathbb{C}$; second, the complex derivative, the Cauchy--Riemann equations,
+       conformality, and harmonic conjugates; third, line integrals along directed
+       contours, Cauchy's Integral Theorem, and Cauchy's Integral Formula; and
+       fourth, Taylor and Laurent series, singularity classification, and Cauchy's
+       Residue Theorem. Throughout, topological conditions such as openness,
+       connectedness, and simple connectedness (or null-homology) are treated with
+       utmost care, for the global power of complex analysis reflects the topological
+       canvas upon which it unfolds."
 Id: "068103dc-1280-4311-815d-fac876f55582"
+

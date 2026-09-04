@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A relation is reflexive if every element is related to itself."
+    "text": "A relation $R$ on $X$ is *reflexive* when every element is related to\nitself: $\\forall x \\in X, x \\mathrel{R} x$. In geometric terms, this\nmeans $R$ contains the diagonal $\\Delta_X = \\{(x, x) : x \\in X\\}$."
   },
-  "source": "Text: \"A relation is reflexive if every element is related to itself.\"\nId: \"35a87f95-8d23-44a0-ae4f-70d4384a3db6\"",
+  "source": "Text: \"A relation $R$ on $X$ is *reflexive* when every element is related to\n       itself: $\\forall x \\in X, x \\mathrel{R} x$. In geometric terms, this\n       means $R$ contains the diagonal $\\Delta_X = \\{(x, x) : x \\in X\\}$.\"\nId: \"35a87f95-8d23-44a0-ae4f-70d4384a3db6\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A relation is reflexive if every element is related to itself.\"",
+      "inline_argument": "\"A relation $R$ on $X$ is *reflexive* when every element is related to\n       itself: $\\forall x \\in X, x \\mathrel{R} x$. In geometric terms, this\n       means $R$ contains the diagonal $\\Delta_X = \\{(x, x) : x \\in X\\}$.\"",
       "inline_latex": null,
       "arguments": []
     },

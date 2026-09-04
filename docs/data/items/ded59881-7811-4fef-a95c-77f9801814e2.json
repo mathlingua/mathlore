@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Two properties of a binary operation recur constantly. An operation is\n*associative* when the way its arguments are grouped does not matter, and\n*commutative* when their order does not matter. We record both as\nrefinements of a binary operation."
+    "text": "Two algebraic properties of binary operations recur constantly across\nhigher mathematics:\n- *Associativity*: $(a * b) * c = a * (b * c)$, which ensures that\n  bracket grouping is irrelevant, permitting unambiguous expressions such\n  as $a * b * c$.\n- *Commutativity*: $x * y = y * x$, which ensures that input ordering is\n  symmetric."
   },
-  "source": "Text: \"Two properties of a binary operation recur constantly. An operation is\n       *associative* when the way its arguments are grouped does not matter, and\n       *commutative* when their order does not matter. We record both as\n       refinements of a binary operation.\"\nId: \"ded59881-7811-4fef-a95c-77f9801814e2\"",
+  "source": "Text: \"Two algebraic properties of binary operations recur constantly across\n       higher mathematics:\n       - *Associativity*: $(a * b) * c = a * (b * c)$, which ensures that\n         bracket grouping is irrelevant, permitting unambiguous expressions such\n         as $a * b * c$.\n       - *Commutativity*: $x * y = y * x$, which ensures that input ordering is\n         symmetric.\"\nId: \"ded59881-7811-4fef-a95c-77f9801814e2\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Two properties of a binary operation recur constantly. An operation is\n       *associative* when the way its arguments are grouped does not matter, and\n       *commutative* when their order does not matter. We record both as\n       refinements of a binary operation.\"",
+      "inline_argument": "\"Two algebraic properties of binary operations recur constantly across\n       higher mathematics:\n       - *Associativity*: $(a * b) * c = a * (b * c)$, which ensures that\n         bracket grouping is irrelevant, permitting unambiguous expressions such\n         as $a * b * c$.\n       - *Commutativity*: $x * y = y * x$, which ensures that input ordering is\n         symmetric.\"",
       "inline_latex": null,
       "arguments": []
     },

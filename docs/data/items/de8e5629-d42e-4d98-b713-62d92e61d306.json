@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Any two elements that both act as an inverse of $x$ must be equal.\nUniqueness is what justifies writing $x^{-1}$ for *the* inverse."
+    "text": "Any two elements that both act as an inverse of $x$ must be identical.\nThis uniqueness justifies writing $x^{-1}$ for *the* well-defined\ninverse."
   },
-  "source": "Text: \"Any two elements that both act as an inverse of $x$ must be equal.\n       Uniqueness is what justifies writing $x^{-1}$ for *the* inverse.\"\nId: \"de8e5629-d42e-4d98-b713-62d92e61d306\"",
+  "source": "Text: \"Any two elements that both act as an inverse of $x$ must be identical.\n       This uniqueness justifies writing $x^{-1}$ for *the* well-defined\n       inverse.\"\nId: \"de8e5629-d42e-4d98-b713-62d92e61d306\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Any two elements that both act as an inverse of $x$ must be equal.\n       Uniqueness is what justifies writing $x^{-1}$ for *the* inverse.\"",
+      "inline_argument": "\"Any two elements that both act as an inverse of $x$ must be identical.\n       This uniqueness justifies writing $x^{-1}$ for *the* well-defined\n       inverse.\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -2,9 +2,14 @@ Title: "Linear Transformations"
 Id: "165a0b80-16b8-4616-9d9d-95efe4751d2d"
 
 
-Text: "A linear transformation is a function between vector spaces over the same
-       field that preserves vector addition and scalar multiplication. Linear
-       maps are the structure-preserving morphisms of linear algebra."
+Text: "A *linear transformation* (or linear map) $T : V \to W$ between vector spaces
+       over the same field $F$ is a function that preserves vector addition and scalar
+       multiplication:
+       $$ T(u + v) = T(u) + T(v) \quad \text{and} \quad T(c \cdot v) = c \cdot T(v). $$
+       Equivalently, $T$ preserves all linear combinations: $T(\sum c_i v_i) = \sum c_i T(v_i)$.
+       Linear maps are the structure-preserving morphisms of linear algebra, forming
+       the vector space $\mathcal{L}(V, W) = \operatorname{Hom}_F(V, W)$ under pointwise
+       addition and scalar scaling."
 Id: "4467454a-53b1-4a53-b40f-76086fdf6fbe"
 
 
@@ -34,8 +39,12 @@ SectionTitle: "Kernel and Image"
 Id: "a86d1afc-c089-469e-ac6c-dcbd2e42e696"
 
 
-Text: "The kernel of a linear map consists of all vectors that are mapped to the
-       zero vector."
+Text: "The *kernel* (or null space) $\ker(T) = \{v \in V : T(v) = 0\}$ consists
+       of all vectors annihilated by $T$. The kernel is a subspace of $V$, and
+       measures the failure of $T$ to be injective:
+       $T(u) = T(v) \iff u - v \in \ker(T)$. Consequently, $T$ is injective if
+       and only if $\ker(T) = \{0\}$. For any $w \in \operatorname{im}(T)$, the
+       fiber $T^{-1}(w)$ is an affine subspace of the form $v_0 + \ker(T)$."
 Id: "ab265e43-99d4-4a94-bbcc-11ccc4490b62"
 
 
@@ -53,8 +62,11 @@ Documented:
 Id: "75e0201a-11d9-4c46-8b45-447b6610ca15"
 
 
-Text: "The image of a linear map is the subspace of all output vectors attained
-       by $T$."
+Text: "The *image* (or range) $\operatorname{im}(T) = \{T(v) : v \in V\}$ is the
+       subspace of $W$ consisting of all output vectors attained by $T$. The
+       dimension of the image is called the *rank* of $T$,
+       $\operatorname{rank}(T) = \dim(\operatorname{im} T)$, while the dimension
+       of the kernel is the *nullity*, $\operatorname{null}(T) = \dim(\ker T)$."
 Id: "844e6471-8710-46bd-acde-bffc5b914a93"
 
 
@@ -92,8 +104,11 @@ Documented:
 Id: "d1239479-6b9d-429a-b3e5-2e70a1529638"
 
 
-Text: "The Fundamental Theorem of Linear Maps relates the dimensions of the
-       kernel, image, and domain."
+Text: "The Fundamental Theorem of Linear Maps—the Rank-Nullity
+       Theorem—establishes the conservation of dimension under linear mappings:
+       the dimension of the domain is apportioned precisely between the
+       directions compressed to zero (the nullity) and the directions preserved
+       in the target space (the rank)."
 Id: "0fd6e4c3-760e-41e1-a76d-86b9f5f12a39"
 
 
@@ -113,14 +128,43 @@ Documented:
 . called: "Rank-Nullity Theorem"
 . description: "For any linear transformation on a finite-dimensional space,
                 $\dim(V) = \dim(\ker T) + \dim(\operatorname{im} T)$."
+Proof: """
+Let $V$ be finite-dimensional with $n = \dim(V)$, and let $T : V \to W$ be a linear transformation.
+The kernel $\ker(T)$ is a subspace of $V$. Let $\{u_1, \dots, u_k\}$ be a basis for $\ker(T)$,
+so the nullity is $\dim(\ker T) = k$.
+By the Basis Extension Theorem, extend this to a basis $\{u_1, \dots, u_k, v_1, \dots, v_m\}$ of $V$,
+so $n = k + m$.
+
+We claim that $S = \{T(v_1), \dots, T(v_m)\}$ is a basis for the image $\operatorname{im}(T)$:
+1. **Spanning**: Let $w \in \operatorname{im}(T)$, so $w = T(v)$ for some $v \in V$.
+   Expanding $v$ in the basis of $V$:
+   $$ v = \sum_{i=1}^k a_i u_i + \sum_{j=1}^m b_j v_j. $$
+   Applying linearity and using $T(u_i) = 0$:
+   $$ w = T(v) = \sum_{i=1}^k a_i T(u_i) + \sum_{j=1}^m b_j T(v_j) = 0 + \sum_{j=1}^m b_j T(v_j). $$
+   Thus $S$ spans $\operatorname{im}(T)$.
+2. **Linear Independence**: Suppose $\sum_{j=1}^m c_j T(v_j) = 0$.
+   By linearity, $T(\sum_{j=1}^m c_j v_j) = 0$, so the vector $v^* = \sum_{j=1}^m c_j v_j \in \ker(T)$.
+   Expanding $v^*$ in the basis $\{u_i\}$ of $\ker(T)$ gives $v^* = \sum_{i=1}^k d_i u_i$, so:
+   $$ \sum_{i=1}^k (-d_i) u_i + \sum_{j=1}^m c_j v_j = 0. $$
+   Since $\{u_1, \dots, u_k, v_1, \dots, v_m\}$ is linearly independent in $V$, all coefficients
+   must vanish: in particular, $c_1 = \dots = c_m = 0$.
+
+Hence $S$ is a basis for $\operatorname{im}(T)$, establishing $\operatorname{rank}(T) = \dim(\operatorname{im} T) = m$.
+Therefore:
+$$ \dim(V) = k + m = \dim(\ker T) + \dim(\operatorname{im} T). $$
+"""
 Id: "13696819-0077-4466-954d-be89bc6a62af"
 
 
-TextTheorem: "First isomorphism theorem for vector spaces. For a linear map
-              $T:V\to W$, the induced map $V/\ker T\to\operatorname{im}T$ given
-              by $v+\ker T\mapsto T(v)$ is a well-defined linear isomorphism.
-              The quotient removes exactly the directions on which $T$ loses
-              information."
+TextTheorem: "The First Isomorphism Theorem for Vector Spaces. For any linear
+              map $T : V \to W$, the induced mapping
+              $\widetilde{T} : V / \ker(T) \to \operatorname{im}(T)$ defined by
+              $\widetilde{T}(v + \ker T) = T(v)$ is a well-defined vector space
+              isomorphism: $$ V / \ker(T) \cong \operatorname{im}(T). $$ The
+              quotient removes precisely the directions collapsed by $T$,
+              leaving a faithful copy of the image. Equating dimensions on both
+              sides immediately recovers the Rank-Nullity Theorem:
+              $\dim(V) - \dim(\ker T) = \dim(\operatorname{im} T)$."
 Id: "a615de22-89bb-4bf1-aa10-3b1b919191a4"
 
 
@@ -137,6 +181,24 @@ Documented:
 . called: "Injective--Surjective Equivalence in Equal Dimension"
 . description: "For a linear map between finite-dimensional spaces of equal
                 dimension, injectivity and surjectivity are equivalent."
+Proof: """
+Let $\dim(V) = \dim(W) = n < \infty$.
+By the Rank-Nullity Theorem:
+$$ \dim(V) = \dim(\ker T) + \dim(\operatorname{im} T) \implies n = \dim(\ker T) + \dim(\operatorname{im} T). $$
+
+- $(\implies)$: Suppose $T$ is injective. Then $\ker(T) = \{0\}$, so $\dim(\ker T) = 0$.
+  The formula yields $\dim(\operatorname{im} T) = n - 0 = n = \dim(W)$.
+  Since $\operatorname{im}(T)$ is a subspace of $W$ possessing the same dimension as $W$,
+  it must equal the entire codomain: $\operatorname{im}(T) = W$. Thus $T$ is surjective.
+
+- $(\impliedby)$: Suppose $T$ is surjective. Then $\operatorname{im}(T) = W$, so $\dim(\operatorname{im} T) = \dim(W) = n$.
+  The formula yields $\dim(\ker T) = n - n = 0$.
+  The only subspace of dimension $0$ is the trivial subspace $\{0\}$, so $\ker(T) = \{0\}$.
+  Thus $T$ is injective.
+
+Hence for linear operators on equal finite-dimensional spaces, injectivity, surjectivity,
+and invertibility (bijectivity) are all equivalent.
+"""
 Id: "9519b138-f788-4156-8fd1-7d01b955decf"
 
 

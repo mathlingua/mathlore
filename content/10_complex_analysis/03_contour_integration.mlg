@@ -2,10 +2,25 @@ Title: "Complex Integration and Cauchy's Theorem"
 Id: "260b80fb-86c6-40ac-a46a-486164aea02b"
 
 
-Text: "Integration in the complex plane takes place along directed curves
-       (contours). Cauchy's integral theorem and formula demonstrate that values
-       and derivatives of holomorphic functions inside a region are entirely
-       determined by their boundary values."
+Text: "Integration in the complex plane constitutes the geometric and topological heart of
+       complex analysis. In single-variable real analysis, integration $\int_a^b f(x)\,dx$
+       takes place along a fixed line segment whose path is unique up to orientation.
+       In $\mathbb{C}$, by contrast, integration occurs along directed continuous curves
+       (contours), offering uncountably many paths between any two endpoints.
+       
+       The fundamental link between complex integration and the Cauchy--Riemann equations
+       is revealed by decomposing the differential $f(z)\,dz$ into its real and imaginary parts:
+       $$ \int_\gamma f(z)\,dz = \int_\gamma (u + iv)(dx + i\,dy) = \int_\gamma (u\,dx - v\,dy) + i \int_\gamma (v\,dx + u\,dy). $$
+       If $\gamma$ is a closed curve bounding a simply connected region $D$, Green's theorem in
+       the plane transforms these line integrals into double integrals:
+       $$ \oint_\gamma (u\,dx - v\,dy) = \iint_D \left(-\frac{\partial v}{\partial x} - \frac{\partial u}{\partial y}\right) dx\,dy, \quad \oint_\gamma (v\,dx + u\,dy) = \iint_D \left(\frac{\partial u}{\partial x} - \frac{\partial v}{\partial y}\right) dx\,dy. $$
+       Both double integrals vanish identically by virtue of the Cauchy--Riemann equations
+       $u_x = v_y$ and $u_y = -v_x$.
+       
+       Thus, Cauchy's Integral Theorem expresses the conservative nature of holomorphic differential
+       forms: contour integrals along closed loops vanish, path integrals depend only on the homotopy
+       class of the curve, and values in the interior of a domain are completely governed by boundary
+       data through Cauchy's Integral Formula."
 Id: "a53b5226-2345-4a75-b62f-fb6784fa06fc"
 
 
@@ -13,12 +28,23 @@ SectionTitle: "Paths and Contour Integrals"
 Id: "e1f3d3b0-7dd5-4d9d-bc94-62aa17e94846"
 
 
-TextDefinition: "A path in an open set $U\subseteq\mathbb{C}$ is a continuous
-                 map $\gamma:[a,b]\to U$. It is piecewise continuously
-                 differentiable if $[a,b]$ can be divided into finitely many
-                 subintervals on which $\gamma$ has a continuous derivative. The
-                 path is closed when $\gamma(a)=\gamma(b)$. Its parameterization
-                 includes orientation and multiplicity."
+TextDefinition: "A *path* (or parameterized curve) in an open set
+                 $U \subseteq \mathbb{C}$ is a continuous mapping
+                 $\gamma: [a, b] \to U$. The path is *piecewise continuously
+                 differentiable* (or *piecewise smooth*) if the parameter
+                 interval $[a, b]$ can be partitioned into finitely many
+                 subintervals $a = t_0 < t_1 < \cdots < t_n = b$ such that
+                 $\gamma$ has a continuous derivative $\gamma'(t)$ on each open
+                 subinterval $(t_{k-1}, t_k)$ which extends to one-sided limits
+                 at the endpoints.
+
+                 The path is *closed* (a *loop*) if its initial and terminal
+                 points coincide: $\gamma(a) = \gamma(b)$. It is *simple* if
+                 $\gamma$ is injective on $[a, b)$ (no self-intersections). By
+                 the Jordan Curve Theorem, every simple closed curve $\gamma$
+                 divides the plane $\mathbb{C}$ into two connected components: a
+                 bounded *interior* $\operatorname{Int}(\gamma)$ and an
+                 unbounded *exterior* $\operatorname{Ext}(\gamma)$."
 Id: "6298206c-1aa2-49a7-b2c9-6f92d0a831f8"
 
 
@@ -58,13 +84,21 @@ Documented:
 Id: "e6283364-d507-4dfb-bbeb-a2e09a538cef"
 
 
-TextDefinition: "If $\gamma:[a,b]\to U$ is piecewise continuously differentiable
-                 and $f:U\to\mathbb{C}$ is continuous, the contour integral is
-                 $\int_\gamma f(z)\,dz=\int_a^b f(\gamma(t))\gamma'(t)\,dt$,
-                 with the ordinary real integral applied to real and imaginary
-                 parts. Orientation reversal changes the sign; an
-                 orientation-preserving reparameterization does not change the
-                 value."
+TextDefinition: "Contour Integration and the Estimation Lemma.
+                 
+                 Let $\gamma: [a, b] \to U$ be a piecewise smooth path and let $f: U \to \mathbb{C}$ be continuous.
+                 The *contour integral* of $f$ along $\gamma$ is defined by:
+                 $$ \int_\gamma f(z)\,dz = \int_a^b f(\gamma(t)) \gamma'(t)\,dt, $$
+                 where the integral on the right-hand side is evaluated as the sum of ordinary Riemann integrals
+                 of its real and imaginary parts. The integral is invariant under orientation-preserving
+                 reparameterizations, while reversing orientation replaces $\gamma$ by $-\gamma$ and flips the sign:
+                 $\int_{-\gamma} f(z)\,dz = -\int_\gamma f(z)\,dz$.
+                 
+                 **The $ML$-Inequality (Estimation Lemma)**: If $|f(z)| \le M$ for all $z$ on the trace of $\gamma$,
+                 and $L(\gamma) = \int_a^b |\gamma'(t)|\,dt$ denotes the arc length of $\gamma$, then:
+                 $$ \left| \int_\gamma f(z)\,dz \right| \le \int_a^b |f(\gamma(t))| |\gamma'(t)|\,dt \le M \cdot L(\gamma). $$
+                 This elementary bound is the foundational tool for establishing convergence of contour integrals
+                 along expanding circular arcs and vanishing contours."
 Id: "ed8000df-3011-44fe-912c-fc7e8c6ad086"
 
 
@@ -72,22 +106,67 @@ SectionTitle: "Cauchy's Theorem and Residues"
 Id: "03283fcd-c542-49a4-92a2-19ded30ed498"
 
 
-TextTheorem: "Cauchy's integral theorem. Let $U\subseteq\mathbb{C}$ be open and
-              simply connected, let $f:U\to\mathbb{C}$ be holomorphic, and let
-              $\gamma$ be a closed piecewise continuously differentiable path in
-              $U$. Then $\int_\gamma f(z)\,dz=0$. More generally, simple
-              connectedness may be replaced by the requirement that $\gamma$ be
-              null-homologous in $U$."
+TextTheorem: "Cauchy's Integral Theorem (Cauchy--Goursat Theorem).
+              
+              Let $U \subseteq \mathbb{C}$ be a simply connected open domain, let $f: U \to \mathbb{C}$ be
+              holomorphic on $U$, and let $\gamma$ be any closed piecewise smooth path in $U$. Then:
+              $$ \oint_\gamma f(z)\,dz = 0. $$
+              
+              *Goursat's Breakthrough*: Augustin-Louis Cauchy originally proved this theorem in 1825 under the
+              additional hypothesis that the derivative $f'$ is continuous, allowing Green's theorem to be applied.
+              In 1900, Édouard Goursat eliminated the continuity assumption entirely, proving that complex
+              differentiability *alone* suffices.
+              
+              *The Goursat Lemma (Bisection Method)*: For any triangular contour $T \subset U$, Goursat bisects $T$
+              into four congruent sub-triangles $T^{(1)}, \ldots, T^{(4)}$. By the triangle inequality, at least
+              one sub-triangle $T_1$ satisfies $|\oint_{T_1} f\,dz| \ge \frac{1}{4} |\oint_T f\,dz|$. Inductively,
+              this generates a nested sequence of closed triangular regions $T \supset T_1 \supset T_2 \supset \cdots$
+              whose perimeters shrink to zero. By Cantor's intersection theorem, their intersection is a unique
+              point $z_0 \in U$. Because $f$ is complex differentiable at $z_0$, we write:
+              $$ f(z) = f(z_0) + f'(z_0)(z - z_0) + \eta(z)(z - z_0), \quad \text{where } \lim_{z \to z_0} \eta(z) = 0. $$
+              Since the constant $f(z_0)$ and linear term $f'(z_0)(z - z_0)$ admit explicit primitives, their
+              integrals around any closed loop vanish identically. The error term satisfies
+              $|\oint_{T_n} f\,dz| \le \varepsilon_n \cdot \operatorname{diam}(T_n) \cdot \operatorname{Perim}(T_n) = \frac{\varepsilon_n}{4^n} \operatorname{diam}(T) \operatorname{Perim}(T)$.
+              Multiplying by $4^n$ forces $|\oint_T f\,dz| \le \varepsilon_n \operatorname{diam}(T) \operatorname{Perim}(T) \to 0$,
+              so $\oint_T f\,dz = 0$ for all triangles.
+              
+              *Consequences*: On a simply connected domain $U$, the vanishing of integrals around triangles implies
+              that $f(z)$ admits a holomorphic *primitive* $F: U \to \mathbb{C}$ satisfying $F'(z) = f(z)$,
+              defined by $F(z) = \int_{z_0}^z f(\zeta)\,d\zeta$. Consequently, path integrals depend solely on
+              endpoints, and integrals around all closed loops vanish."
 Id: "ba6ab675-4730-4cee-905c-ec081e05d378"
 
 
-TextTheorem: "Cauchy's integral formula. Under the corresponding disk or
-              winding-number hypotheses, if $z_0$ lies inside a positively
-              oriented simple closed contour $\gamma$, then
-              $f(z_0)=\frac{1}{2\pi i}\int_\gamma
-              \frac{f(z)}{z-z_0}\,dz$. Differentiating the formula yields
-              $f^{(n)}(z_0)=\frac{n!}{2\pi i}\int_\gamma
-              \frac{f(z)}{(z-z_0)^{n+1}}\,dz$."
+TextTheorem: "Cauchy's Integral Formula and Higher Derivatives.
+              
+              Let $U \subseteq \mathbb{C}$ be an open domain, let $f: U \to \mathbb{C}$ be holomorphic, and let
+              $\gamma$ be a positively oriented simple closed contour in $U$ whose interior $\operatorname{Int}(\gamma)$
+              is contained in $U$. Then for every point $z_0 \in \operatorname{Int}(\gamma)$:
+              $$ f(z_0) = \frac{1}{2\pi i} \oint_\gamma \frac{f(z)}{z - z_0}\,dz. $$
+              
+              *Derivation*: By the deformation of contours (Cauchy's theorem on multiply connected domains), the
+              contour $\gamma$ may be shrunk to an arbitrarily small circle $C_\varepsilon = \{z \in \mathbb{C} : |z - z_0| = \varepsilon\}$
+              centered at $z_0$. Writing $z = z_0 + \varepsilon e^{i\theta}$ with $dz = i\varepsilon e^{i\theta} d\theta$:
+              $$ \oint_{C_\varepsilon} \frac{dz}{z - z_0} = \int_0^{2\pi} \frac{i\varepsilon e^{i\theta}}{\varepsilon e^{i\theta}}\,d\theta = 2\pi i. $$
+              Now decomposing $f(z) = f(z_0) + (f(z) - f(z_0))$:
+              $$ \oint_\gamma \frac{f(z)}{z - z_0}\,dz = \oint_{C_\varepsilon} \frac{f(z_0)}{z - z_0}\,dz + \oint_{C_\varepsilon} \frac{f(z) - f(z_0)}{z - z_0}\,dz = 2\pi i f(z_0) + \oint_{C_\varepsilon} \frac{f(z) - f(z_0)}{z - z_0}\,dz. $$
+              By the continuity of $f$ at $z_0$, for any $\delta > 0$ we can choose $\varepsilon$ so small that
+              $|f(z) - f(z_0)| < \delta$. Applying the $ML$-inequality:
+              $$ \left| \oint_{C_\varepsilon} \frac{f(z) - f(z_0)}{z - z_0}\,dz \right| \le \frac{\delta}{\varepsilon} (2\pi\varepsilon) = 2\pi\delta \to 0. $$
+              Taking $\delta \to 0$ proves the formula.
+              
+              *Higher Derivatives and Cauchy Estimates*: Differentiating under the integral sign $n$ times yields:
+              $$ f^{(n)}(z_0) = \frac{n!}{2\pi i} \oint_\gamma \frac{f(z)}{(z - z_0)^{n+1}}\,dz. $$
+              This demonstrates that every holomorphic function is automatically infinitely differentiable ($C^\infty$).
+              Furthermore, bounding the integral on a circle of radius $R$ yields *Cauchy's Estimate*:
+              $$ |f^{(n)}(z_0)| \le \frac{n! M_R}{R^n}, \quad \text{where } M_R = \max_{|z - z_0| = R} |f(z)|. $$
+              
+              *Liouville's Theorem*: If $f: \mathbb{C} \to \mathbb{C}$ is an *entire* function (holomorphic on all of $\mathbb{C}$)
+              and bounded ($|f(z)| \le M$ for all $z \in \mathbb{C}$), then for $n = 1$:
+              $$ |f'(z_0)| \le \frac{M}{R} \quad \text{for every } R > 0. $$
+              Sending $R \to \infty$ forces $f'(z_0) = 0$ for all $z_0 \in \mathbb{C}$, proving that $f$ is constant.
+              This immediately proves the Fundamental Theorem of Algebra: if a nonconstant polynomial $P(z)$ had no roots,
+              then $1/P(z)$ would be a bounded entire function, hence constant, contradiction!"
 Id: "6b44eb1b-43c8-497e-a408-348353760216"
 
 
@@ -104,19 +183,48 @@ Documented:
 Id: "19aa67b3-3856-40b0-8d20-8fae7dd0ec19"
 
 
-TextTheorem: "Residue theorem. Let $U\subseteq\mathbb{C}$ be open, let
-              $f$ be meromorphic on $U$, and let $\gamma$ be a closed
-              piecewise smooth cycle in $U$ that passes through no pole and is
-              null-homologous in $U$. If $a_1,\ldots,a_m$ are the poles around
-              which $\gamma$ has nonzero winding number, then
-              $\int_\gamma f(z)\,dz=2\pi i\sum_{k=1}^m
-              \operatorname{Ind}(\gamma,a_k)\operatorname{Res}(f,a_k)$."
+TextTheorem: "Cauchy's Residue Theorem.
+              
+              Let $U \subseteq \mathbb{C}$ be an open domain, and let $f$ be holomorphic on $U \setminus \{a_1, \ldots, a_m\}$,
+              having isolated singularities at the points $a_1, \ldots, a_m \in U$. Let $\gamma$ be a closed
+              piecewise smooth cycle in $U$ that does not pass through any singularity $a_k$ and is null-homologous
+              in $U$ (that is, its winding number $\operatorname{Ind}(\gamma, w) = 0$ for all $w \notin U$).
+              
+              Then the contour integral of $f$ along $\gamma$ is given by:
+              $$ \oint_\gamma f(z)\,dz = 2\pi i \sum_{k=1}^m \operatorname{Ind}(\gamma, a_k) \operatorname{Res}(f, a_k), $$
+              where $\operatorname{Ind}(\gamma, a_k) = \frac{1}{2\pi i} \oint_\gamma \frac{dz}{z - a_k}$ is the
+              *winding number* (index) of $\gamma$ around $a_k$.
+              
+              *Proof*: For each isolated singularity $a_k$, choose a small positively oriented circle $C_k$
+              centered at $a_k$ with radius $\varepsilon_k > 0$ so that all disks $D(a_k, \varepsilon_k)$ are disjoint
+              and contained in $U$. By the definition of the residue, the Laurent expansion of $f$ around $a_k$
+              integrates term-by-term: all integer powers $(z - a_k)^n$ with $n \ne -1$ have single-valued primitives
+              $(z - a_k)^{n+1}/(n+1)$ whose loop integrals vanish, leaving solely:
+              $$ \oint_{C_k} f(z)\,dz = \oint_{C_k} \frac{a_{-1}}{z - a_k}\,dz = 2\pi i \operatorname{Res}(f, a_k). $$
+              The modified cycle $\Gamma = \gamma - \sum_{k=1}^m \operatorname{Ind}(\gamma, a_k) C_k$ has zero winding
+              number with respect to every point outside $U \setminus \{a_1, \ldots, a_m\}$, so Cauchy's Integral Theorem
+              for null-homologous cycles applies: $\oint_\Gamma f(z)\,dz = 0$, yielding the formula."
 Id: "3069a9a0-50d1-4424-b9e6-783a50b65cb5"
 
 
-Text: "The hypotheses prevent two distinct failures. Holomorphy away from
-       isolated poles makes residues local and finite in number inside the
-       relevant region. The homological condition prevents the contour from
-       enclosing holes of the domain on which no primitive need exist. Omitting
-       either condition changes the theorem, not merely its proof."
+Text: "The hypotheses of the Residue Theorem establish a profound duality
+       between analysis and topology:
+
+       1. **Analytic Locality**: The assumption that $f$ has only isolated
+          singularities ensures that inside any compact set, the singularities
+          $a_k$ are finite in number. Around each singularity, the local
+          behavior of $f$ is completely captured by the single coefficient
+          $a_{-1} = \operatorname{Res}(f, a_k)$.
+
+       2. **Topological Homology**: The requirement that $\gamma$ be
+          null-homologous in $U$ ensures that the contour does not wind around
+          'holes' in the ambient domain $U$ itself. If $U$ contains topological
+          punctures where $f$ is not defined, non-vanishing periods can arise
+          from the topology of the domain rather than singularities of the
+          function.
+
+       Together, these conditions compress global contour integrals into finite
+       algebraic sums, turning Cauchy's Residue Theorem into the premier
+       computational engine for evaluating difficult real definite integrals,
+       Fourier transforms, and infinite series."
 Id: "a97c24e5-9129-4b48-9d73-4caf54ce5cd1"

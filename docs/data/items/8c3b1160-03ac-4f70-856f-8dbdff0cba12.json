@@ -8,7 +8,7 @@
   "heading_latex": "g\\textrm{ is the greatest element of }X\\textrm{ under }R",
   "body_text": null,
   "page": null,
-  "source": "[\\is.greatest{g}:in{X}:under{R}]\nStates:\nwhen:\n. X is \\set\n. R is \\partial.order:on{X}\n. g \"in\" X\nthat:\n. forAll: x \"in\" X\n  then: R(x, g)\nDocumented:\n. called: \"$g?$ is the greatest element of $X?$ under $R?$\"\nId: \"8c3b1160-03ac-4f70-856f-8dbdff0cba12\"",
+  "source": "[\\is.greatest{g}:in{X}:under{R}]\nStates:\nwhen:\n. X is \\set\n. R is \\partial.order:on{X}\n. g \"in\" X\nthat:\n. forAll: x \"in\" X\n  then: R(x, g)\nDocumented:\n. called: \"$g?$ is the greatest element of $X?$ under $R?$\"\n. description: \"The greatest element (maximum) exceeds or equals every element\n                of $X$. If a greatest element exists, it is unique and is the\n                unique maximal element.\"\nId: \"8c3b1160-03ac-4f70-856f-8dbdff0cba12\"",
   "sections": [
     {
       "label": "States",
@@ -147,6 +147,18 @@
               "label": "called",
               "inline_argument": "\"$g?$ is the greatest element of $X?$ under $R?$\"",
               "inline_latex": "g\\textrm{ is the greatest element of }X\\textrm{ under }R",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
               "arguments": []
             }
           ]

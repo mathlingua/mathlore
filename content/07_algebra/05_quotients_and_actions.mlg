@@ -2,11 +2,18 @@ Title: "Quotients and Actions"
 Id: "442c4a8a-b530-4fe4-8973-1f339026c805"
 
 
-Text: "Subgroups describe pieces of a group; quotient groups compress pieces
-       that are indistinguishable at a chosen scale. Group actions take the
-       complementary viewpoint: they represent abstract group elements as
-       symmetries of a set. Kernels, normal subgroups, orbits, and stabilizers
-       connect these constructions."
+Text: "While subgroups isolate the internal substructures of a group, *quotient
+       groups* perform the dual geometric task: collapsing indistinguishable
+       elements to reveal large-scale structure.
+
+       However, forming a quotient group requires more than an arbitrary
+       subgroup: coset multiplication $(gH)(hH) = (gh)H$ is well-defined if and
+       only if the subgroup is *normal* ($gHg^{-1} = H$ for all $g$). Group
+       actions provide the external, dynamical counterpart to this internal
+       architecture: an abstract group is realized as a group of transformations
+       acting on a geometric set. The concepts of kernel, normal subgroup,
+       orbit, and stabilizer interweave these perspectives into a unified theory
+       of mathematical symmetry."
 Id: "414988da-2898-41e8-8f3f-74753d59eff1"
 
 
@@ -49,6 +56,25 @@ then:
   . \left.coset:of{H}:by{g1}:in{G} \.disjoint.from./ \left.coset:of{H}:by{g2}:in{G}
 Documented:
 . called: "Left Cosets are Equal or Disjoint"
+Proof: """Let $g_1, g_2 \in G$. Suppose that the left cosets $g_1H$ and $g_2H$
+          are not disjoint. Then there exists at least one element
+          $x \in g_1H \cap g_2H$. By definition of left cosets, there exist
+          elements $h_1, h_2 \in H$ such that: $$ x = g_1 * h_1 = g_2 * h_2. $$
+
+          Multiplying both sides on the right by $h_1^{-1}$ gives:
+          $$ g_1 = g_2 * (h_2 * h_1^{-1}). $$ Since $H$ is a subgroup and
+          $h_1, h_2 \in H$, the element $h_3 = h_2 * h_1^{-1}$ belongs to $H$.
+
+          Now let $y \in g_1H$ be an arbitrary element of $g_1H$. Then
+          $y = g_1 * h$ for some $h \in H$. Substituting our expression for
+          $g_1$: $$ y = (g_2 * h_3) * h = g_2 * (h_3 * h). $$ Since $H$ is
+          closed under multiplication, $h_3 * h \in H$, which proves that
+          $y \in g_2H$. Therefore, $g_1H \subseteq g_2H$.
+
+          By an entirely symmetric argument exchanging the indices $1$ and $2$,
+          we obtain $g_2H \subseteq g_1H$. Consequently, $g_1H = g_2H$. Thus,
+          any two left cosets are either identical or disjoint, partitioning the
+          group $G$."""
 Id: "4cafbd92-cf4d-4989-ac8f-e53ed45cb238"
 
 
@@ -66,6 +92,8 @@ satisfies:
     suchThat:
     . m "in"? N
     . g * n = m * g
+Enables:
+. capability: N_ <| G_ :=> N_ is \normal.subgroup:of{G_}
 Documented:
 . called: "normal subgroup of $G?$"
 . written: "H? \vartriangleleft G?"
@@ -74,11 +102,23 @@ Documented:
 Id: "0e5638e1-1109-4980-a652-2e795bed2e44"
 
 
-TextTheorem: "If $N\trianglelefteq G$, the set $G/N$ of cosets becomes a group
-              under $(gN)(hN)=(gh)N$. The identity is $N$ and
-              $(gN)^{-1}=g^{-1}N$. If $N$ is not normal, the same formula can
-              depend on the representatives $g$ and $h$ and therefore does not
-              define a binary operation on the coset set."
+TextTheorem: "Let $N \trianglelefteq G$ be a normal subgroup. The set of left
+              cosets $G/N = \{gN : g \in G\}$ forms a group under the operation
+              $(gN)(hN) = (gh)N$, called the *quotient group* (or factor group)
+              of $G$ by $N$.
+
+              *Proof of Well-Definedness*: Suppose $g_1N = g_2N$ and
+              $h_1N = h_2N$. Then $g_2 = g_1 n_1$ and $h_2 = h_1 n_2$ for some
+              $n_1, n_2 \in N$. Then:
+              $$ g_2 h_2 = (g_1 n_1)(h_1 n_2) = g_1 (n_1 h_1) n_2. $$ Since $N$
+              is normal, $n_1 h_1 = h_1 n_3$ for some $n_3 \in N$. Substituting
+              gives $g_2 h_2 = g_1 (h_1 n_3) n_2 = (g_1 h_1)(n_3 n_2)$. Since
+              $n_3 n_2 \in N$, we have $(g_2 h_2)N = (g_1 h_1)N$. Thus
+              multiplication is independent of the chosen representatives.
+
+              The identity of $G/N$ is $eN = N$, and the inverse of $gN$ is
+              $g^{-1}N$. If $N$ is not normal, coset multiplication depends on
+              representative choices and fails to define an operation on $G/N$."
 Id: "1c5bfe13-52ac-46ae-b75c-af1d8db93224"
 
 
@@ -104,12 +144,26 @@ Documented:
 Id: "f13b0e2b-be95-4735-b963-fbc91db6b175"
 
 
-TextTheorem: "First isomorphism theorem for groups. For every homomorphism
-              $\varphi:G\to H$, the map $g\ker\varphi\mapsto\varphi(g)$ is a
-              well-defined group isomorphism
-              $G/\ker\varphi\cong\operatorname{im}\varphi$. The theorem says
-              that every homomorphic image is obtained by identifying exactly
-              those elements whose quotient lies in the kernel."
+TextTheorem: "The First Isomorphism Theorem for Groups. Let $\varphi : G \to H$ be a
+              group homomorphism. Then:
+              1. The kernel $\ker(\varphi)$ is a normal subgroup of $G$: $\ker(\varphi) \trianglelefteq G$.
+              2. The image $\operatorname{im}(\varphi)$ is a subgroup of $H$.
+              3. The map $\widetilde{\varphi} : G / \ker(\varphi) \to \operatorname{im}(\varphi)$
+                 defined by $\widetilde{\varphi}(g\ker(\varphi)) = \varphi(g)$ is a well-defined
+                 group isomorphism:
+                 $$ G / \ker(\varphi) \cong \operatorname{im}(\varphi). $$
+                 
+              *Proof*:
+              - Normality: If $k \in \ker(\varphi)$ and $g \in G$, then
+                $\varphi(g * k * g^{-1}) = \varphi(g) * \varphi(k) * \varphi(g)^{-1} = \varphi(g) * e_H * \varphi(g)^{-1} = e_H$,
+                so $g * k * g^{-1} \in \ker(\varphi)$.
+              - Well-Defined and Injective: $g_1 \ker(\varphi) = g_2 \ker(\varphi) \iff g_1^{-1} g_2 \in \ker(\varphi) \iff \varphi(g_1^{-1} g_2) = e_H \iff \varphi(g_1) = \varphi(g_2)$.
+                Reading left-to-right gives well-definedness; right-to-left gives injectivity.
+              - Homomorphism and Surjectivity: Multiplicativity of $\varphi$ implies
+                $\widetilde{\varphi}((g_1 N)(g_2 N)) = \varphi(g_1 g_2) = \varphi(g_1)\varphi(g_2) = \widetilde{\varphi}(g_1 N)\widetilde{\varphi}(g_2 N)$,
+                and surjectivity onto $\operatorname{im}(\varphi)$ is immediate.
+                
+              Thus every homomorphic image is canonically identifiable with a quotient group."
 Id: "033fb304-f310-43fa-84fb-2070d17de0e2"
 
 
@@ -164,17 +218,38 @@ Documented:
 Id: "02a3fe2e-dbbf-49a6-8cf2-cc5cc85568f7"
 
 
-TextTheorem: "Orbit--stabilizer theorem. If a finite group $G$ acts on a set
-              $X$, then for every $x\in X$ one has $|G|=|G\cdot x|\,|G_x|$. More
-              generally, the map $G/G_x\to G\cdot x$ given by
-              $gG_x\mapsto g\cdot x$ is a well-defined bijection."
+TextTheorem: "The Orbit-Stabilizer Theorem. Let a group $G$ act on a set $X$ via $\alpha$.
+              For any element $x \in X$, there is a natural bijection between the left coset
+              space $G / G_x$ and the orbit $G \cdot x$, given by:
+              $$ \Phi : G / G_x \longrightarrow G \cdot x, \quad \Phi(g G_x) = g \cdot x. $$
+              Consequently, if $G$ is finite:
+              $$ |G| = |G \cdot x| \cdot |G_x| = [G : G_x] \cdot |G_x|. $$
+              
+              *Proof*:
+              - Well-Definedness and Injectivity: For $g, h \in G$:
+                $$ g \cdot x = h \cdot x \iff h^{-1} \cdot (g \cdot x) = x \iff (h^{-1} * g) \cdot x = x \iff h^{-1} * g \in G_x \iff g G_x = h G_x. $$
+                Reading left-to-right proves injectivity; reading right-to-left proves well-definedness.
+              - Surjectivity: By definition of the orbit, every $y \in G \cdot x$ is of the form
+                $y = g \cdot x = \Phi(g G_x)$ for some $g \in G$.
+              Thus $\Phi$ is a well-defined bijection."
 Id: "8b9d1618-6fe0-4cd1-a338-3eb2e3242b9a"
 
 
-Text: "An action turns structural questions into counting and geometry. A
-       transitive action has a single orbit and presents $X$ as a coset space.
-       Conjugation of $G$ on itself has conjugacy classes as orbits and
-       centralizers as stabilizers. These examples explain why quotient groups
-       and actions are not separate topics but two views of the same symmetry
-       mechanism."
+Text: "Group actions translate abstract algebraic structure into concrete
+       combinatorics and geometry.
+
+       A classic instance is the *conjugation action* of a group $G$ on itself:
+       $g \cdot x = g * x * g^{-1}$. In this setting:
+       - The orbit of $x$ is the *conjugacy class* $\operatorname{Cl}(x)$.
+       - The stabilizer of $x$ is the *centralizer*
+         $C_G(x) = \{g \in G : g * x = x * g\}$.
+       - The fixed points of the action form the center $Z(G)$.
+
+       Applying the Orbit-Stabilizer theorem to this action yields the
+       celebrated *Class Equation* for a finite group:
+       $$ |G| = |Z(G)| + \sum_{i=1}^k [G : C_G(x_i)], $$ where $x_1, \dots, x_k$
+       are representatives of the non-central conjugacy classes. The Class
+       Equation is a cornerstone of finite group theory, proving for instance
+       that every non-trivial finite $p$-group has a non-trivial center, and
+       opening the gateway to the Sylow theorems."
 Id: "f873aaf6-708d-4dc9-a895-0a82e2ca658c"

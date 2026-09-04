@@ -2,10 +2,25 @@ Title: "Rational Numbers"
 Id: "8043e76c-b740-4ec1-aded-14630e21d209"
 
 
-Text: "The rational numbers extend the integers by allowing division by a
-       nonzero integer. Abstractly they form an ordered field. Concretely, a
-       pair $(a,b)$ with $b \ne 0$ represents the fraction $a/b$, and two pairs
-       represent the same rational exactly when their cross-products agree."
+Text: "While the integers $\mathbb{Z}$ resolve the asymmetry of subtraction in
+       the natural numbers, they remain closed under division only in
+       exceptional circumstances: equations of the form $b \cdot x = a$ with
+       $b \neq 0$ admit solutions in $\mathbb{Z}$ if and only if $b$ divides
+       $a$. To endow our arithmetic universe with complete division by nonzero
+       quantities, we must construct the field of fractions $\mathbb{Q}$.
+
+       Geometrically and physically, rational numbers correspond to ratios of
+       commensurable magnitudes—fractions of an indivisible unit measure.
+       Algebraically, they represent the smallest field containing the integral
+       domain $\mathbb{Z}$. Abstractly, $\mathbb{Q}$ forms an ordered field in
+       which addition and multiplication interact via distributivity, every
+       nonzero element possesses a unique multiplicative inverse, and the order
+       $\leq$ respects translation and scaling by positive elements. Concretely,
+       a rational number is represented by a pair
+       $(a, b) \in \mathbb{Z} \times (\mathbb{Z} \setminus \{0\})$, interpreted
+       as $a/b$, where two formal quotients $a/b$ and $c/d$ designate the same
+       rational quantity precisely when their cross-products coincide:
+       $ad = bc$."
 Id: "4a68d496-756c-499c-8be9-dbcf0fd13074"
 
 
@@ -385,20 +400,32 @@ SectionTitle: "Field of Fractions and Density"
 Id: "4c03c412-c158-493b-835f-5ffdaa1769a3"
 
 
-Text: "The structured realization above constructs a rational number as an
-       equivalence class of integer pairs with nonzero denominator. The notation
-       $a/b$ names the class rather than a privileged representative, and the
-       induced field operations are required to be independent of the chosen
-       numerator and denominator."
+Text: "The formal fraction-pair construction realizes a rational number as an
+       equivalence class $[(a, b)]_{\mathbb{Q}}$ of integer pairs $(a, b) \in \mathbb{Z} \times (\mathbb{Z} \setminus \{0\})$.
+       The familiar fraction notation $a/b$ designates this entire equivalence class
+       rather than a specific pair of integers.
+       
+       A critical obligation of this quotient construction is verifying
+       *well-definedness*: if $(a, b) \sim (a', b')$ and $(c, d) \sim (c', d')$,
+       then the defined addition and multiplication must produce equivalent outputs:
+       $$ (ad + cb, bd) \sim (a'd' + c'b', b'd') \quad \text{and} \quad (ac, bd) \sim (a'c', b'd'). $$
+       Similarly, the ordering condition must be independent of chosen representatives.
+       The map $\iota : \mathbb{Z} \hookrightarrow \mathbb{Q}$ defined by $\iota(n) = [(n, 1)]_{\mathbb{Q}}$
+       is an injective ring homomorphism, allowing us to identify $\mathbb{Z}$ canonically
+       as an ordered subring of $\mathbb{Q}$."
 Id: "694343ad-950a-425c-9b62-705e6bb66956"
 
 
-TextTheorem: "The inclusion $\mathbb{Z}\hookrightarrow\mathbb{Q}$ identifies $a$
-              with $a/1$. If $F$ is any field and $\varphi:\mathbb{Z}\to F$ is
-              an injective ring homomorphism, there is a unique field
-              homomorphism $\widetilde\varphi:\mathbb{Q}\to F$ satisfying
-              $\widetilde\varphi(a/b)=\varphi(a)\varphi(b)^{-1}$. This is the
-              universal property of the fraction field."
+TextTheorem: "The embedding $\iota : \mathbb{Z} \hookrightarrow \mathbb{Q}$
+              identifies each integer $a$ with $a/1$. The field of fractions
+              $\mathbb{Q}$ satisfies a universal property: if $F$ is any field
+              and $\varphi : \mathbb{Z} \to F$ is a non-trivial ring
+              homomorphism, there exists a unique field homomorphism
+              $\widetilde{\varphi} : \mathbb{Q} \to F$ such that
+              $\widetilde{\varphi} \circ \iota = \varphi$. Specifically,
+              $\widetilde{\varphi}(a/b) = \varphi(a) \cdot \varphi(b)^{-1}$.
+              Thus $\mathbb{Q}$ is the initial object in the category of fields
+              of characteristic zero."
 Id: "90b5985b-53fa-4b79-b315-eaae93791621"
 
 
@@ -414,17 +441,62 @@ Documented:
 . called: "Density of the Rational Order"
 . description: "Between any two distinct rational numbers lies another rational
                 number."
+Proof: """Let $p, q \in \mathbb{Q}$ with $p < q$. We define their midpoint
+          (arithmetic mean) as: $$ r = (p + q) \cdot 2^{-1} = \frac{p + q}{2} $$
+          where $2 = 1 + 1 \in \mathbb{Q}$. Since $1 > 0$, we have $2 > 0$, and
+          in any ordered field, the multiplicative inverse of a strictly
+          positive element is strictly positive, so $2^{-1} > 0$.
+
+          First, since $p < q$, adding $p$ to both sides gives:
+          $$ p + p < p + q \implies 2 \cdot p < p + q $$ Multiplying both sides
+          by $2^{-1} > 0$ preserves the strict inequality:
+          $$ p = (2 \cdot p) \cdot 2^{-1} < (p + q) \cdot 2^{-1} = r $$
+
+          Second, adding $q$ to both sides of $p < q$ gives:
+          $$ p + q < q + q \implies p + q < 2 \cdot q $$ Multiplying both sides
+          by $2^{-1} > 0$ yields:
+          $$ r = (p + q) \cdot 2^{-1} < (2 \cdot q) \cdot 2^{-1} = q $$
+
+          Combining these results, we obtain $p < r < q$. Since the rationals
+          are closed under addition and multiplication by reciprocals,
+          $r \in \mathbb{Q}$. Thus the rational order is dense: between any two
+          distinct rational numbers lies an intermediate rational."""
 Id: "ca6475d3-548d-402f-822b-87241cb23f3e"
 
 
-Text: "The rationals are also dense in the reals, but they are not complete. For
-       example, the rational numbers whose square is less than $2$ have no least
-       upper bound in $\mathbb{Q}$."
+Text: "Although the rational order is dense—meaning there are no 'gaps' in the
+       sense of immediate predecessors or successors—$\mathbb{Q}$ nonetheless
+       exhibits profound structural incompleteness.
+
+       A classic demonstration discovered by the Pythagoreans is the
+       incommensurability of the diagonal of a unit square: no rational number
+       satisfies $x^2 = 2$. For if $x = a/b$ with $\gcd(a, b) = 1$, then
+       $a^2 = 2b^2$ forces $a$ to be even, say $a = 2k$. Substituting gives
+       $4k^2 = 2b^2$, so $b^2 = 2k^2$, forcing $b$ to be even as well,
+       contradicting coprimality.
+
+       In order-theoretic terms, the subset
+       $S = \{q \in \mathbb{Q} : q \leq 0 \text{ or } q^2 < 2\}$ is bounded
+       above (for example, by $2$), but has no least upper bound in
+       $\mathbb{Q}$. Similarly, Cauchy sequences of rationals like the
+       truncations of $\sqrt{2}$ fail to converge to a limit in $\mathbb{Q}$.
+       This defect necessitates the construction of the real continuum
+       $\mathbb{R}$ via Dedekind cuts or metric completions."
 Id: "f9d776ab-08da-44ec-a49e-93c8c2257dad"
 
 
-TextTheorem: "Every rational number has a finite or eventually periodic decimal
-              expansion, and every eventually periodic decimal represents a
-              rational number. This characterization depends on the base; in
-              base $b$, eventual periodicity is again equivalent to rationality."
+TextTheorem: "Every rational number has a decimal expansion that either
+              terminates (has only finitely many nonzero fractional digits) or
+              is eventually periodic. Conversely, every eventually periodic
+              decimal expansion represents a rational number.
+
+              This dichotomy follows from the division algorithm: when dividing
+              integer $a$ by nonzero integer $b$, each step produces a remainder
+              in $\{0, 1, \dots, |b|-1\}$. By the Pigeonhole Principle, after at
+              most $|b|$ division steps, either a remainder of $0$ is reached
+              (yielding a terminating expansion) or a previously seen remainder
+              recurs, forcing all subsequent quotient digits to repeat in a
+              cycle of length at most $|b|-1$. Conversely, an eventually
+              periodic expansion can be summed via a geometric series into a
+              closed-form ratio of integers."
 Id: "ca42d107-8793-4115-9298-b49f3e8e348a"

@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A set is taken as undefined; the only thing one may ask of it is which\nsets belong to it. For sets $x$ and $X$, either $x \\in X$ or\n$x \\notin X$, and this membership relation carries all the information a\nset has to offer. The axioms below are collected as the defining\nconditions of what it means to be a set."
+    "text": "In formal axiomatic set theory, a set is taken as an undefined primitive.\nWe do not define what a set 'is' in terms of simpler components; instead,\nits nature is entirely characterized by the membership relation: for any\nobjects $x$ and $X$, either $x \\in X$ or $x \\notin X$. Under the\nprinciple of *pure* set theory adopted here, there are no 'atoms' or\n'urelements' (entities with no members that are not themselves sets);\nevery element of a set is itself a set. The declaration below formalizes\nthe core structural commitments that define a set."
   },
-  "source": "Text: \"A set is taken as undefined; the only thing one may ask of it is which\n       sets belong to it. For sets $x$ and $X$, either $x \\in X$ or\n       $x \\notin X$, and this membership relation carries all the information a\n       set has to offer. The axioms below are collected as the defining\n       conditions of what it means to be a set.\"\nId: \"cbc6feb5-4f5e-41ef-bf59-342c981aa217\"",
+  "source": "Text: \"In formal axiomatic set theory, a set is taken as an undefined primitive.\n       We do not define what a set 'is' in terms of simpler components; instead,\n       its nature is entirely characterized by the membership relation: for any\n       objects $x$ and $X$, either $x \\in X$ or $x \\notin X$. Under the\n       principle of *pure* set theory adopted here, there are no 'atoms' or\n       'urelements' (entities with no members that are not themselves sets);\n       every element of a set is itself a set. The declaration below formalizes\n       the core structural commitments that define a set.\"\nId: \"cbc6feb5-4f5e-41ef-bf59-342c981aa217\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A set is taken as undefined; the only thing one may ask of it is which\n       sets belong to it. For sets $x$ and $X$, either $x \\in X$ or\n       $x \\notin X$, and this membership relation carries all the information a\n       set has to offer. The axioms below are collected as the defining\n       conditions of what it means to be a set.\"",
+      "inline_argument": "\"In formal axiomatic set theory, a set is taken as an undefined primitive.\n       We do not define what a set 'is' in terms of simpler components; instead,\n       its nature is entirely characterized by the membership relation: for any\n       objects $x$ and $X$, either $x \\in X$ or $x \\notin X$. Under the\n       principle of *pure* set theory adopted here, there are no 'atoms' or\n       'urelements' (entities with no members that are not themselves sets);\n       every element of a set is itself a set. The declaration below formalizes\n       the core structural commitments that define a set.\"",
       "inline_latex": null,
       "arguments": []
     },

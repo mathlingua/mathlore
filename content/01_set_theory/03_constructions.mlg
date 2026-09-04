@@ -2,9 +2,17 @@ Title: "Set Constructions"
 Id: "b49297d0-a6d3-4843-85a0-2241c30b5a05"
 
 
-Text: "With the axioms in place, we can name several standard constructions. The
-       singleton of a set is the set whose only member is that set, obtained
-       from pairing."
+Text: "Equipped with the core axioms of Zermelo--Fraenkel theory, we can now
+       define the canonical elementary constructors of mathematics.
+
+       The simplest non-trivial set formed from an existing entity $X$ is its
+       *singleton set*, denoted $\{X\}$, whose solitary member is $X$. The
+       existence of $\{X\}$ follows immediately from the Axiom of Pairing by
+       setting $Y = X$, so that $\{X\} = \{X, X\}$. It is conceptually vital to
+       maintain the ontological distinction between an element $X$ and its
+       singleton collection $\{X\}$: while $X \in \{X\}$, they are never
+       identical (indeed, the Axiom of Foundation forbids $X = \{X\}$ since that
+       would imply $X \in X$)."
 Id: "032576ab-7fc3-4075-b24a-cd06583d18cd"
 
 
@@ -26,7 +34,11 @@ Documented:
 Id: "08f35257-d0a7-42af-9866-7d138c56fc4c"
 
 
-Text: "Similarly, pairing gives the unordered pair of any two sets $x$ and $y$."
+Text: "Applying the Axiom of Pairing to two distinct sets $x$ and $y$ produces
+       the *unordered pair* $\{x, y\}$. By the Axiom of Extensionality, the
+       identity of $\{x, y\}$ depends solely on its elements, which implies
+       $\{x, y\} = \{y, x\}$: the order of listing carries no mathematical
+       significance."
 Id: "c128a6a8-b892-4177-8622-29ba3cfa473a"
 
 
@@ -47,9 +59,20 @@ Documented:
 Id: "17401045-fc72-4bd4-af7d-ab578690f81c"
 
 
-Text: "The successor of a set $X$ adjoins $X$ itself to the elements already in
-       $X$. Iterating this operation from the empty set is precisely how the
-       natural numbers will be built in a later chapter."
+Text: "The *successor* of a set $X$, denoted $S(X) = X \cup \{X\}$, adjoins $X$
+       itself as a new member to the elements already in $X$.
+
+       This elegant construction, introduced by John von Neumann in 1923, forms
+       the engine for encoding the natural numbers within pure set theory:
+       $$\begin{aligned}
+       0 &:= \emptyset \\
+       1 &:= S(0) = \emptyset \cup \{\emptyset\} = \{\emptyset\} = \{0\} \\
+       2 &:= S(1) = \{0\} \cup \{1\} = \{0, 1\} \\
+       3 &:= S(2) = \{0, 1\} \cup \{2\} = \{0, 1, 2\}
+       \end{aligned}$$
+       In this von Neumann ordinal representation, each natural number $n$ is
+       literally the set of all preceding natural numbers, so that
+       $n = \{0, 1, \dots, n-1\}$ and the cardinality $|n|$ is precisely $n$."
 Id: "f49b05f5-b826-45d0-b327-b248946e28fc"
 
 
@@ -76,10 +99,14 @@ SectionTitle: "Set-Builder Notation"
 Id: "55851b31-9fa9-4b8e-b61b-315b7559c66d"
 
 
-Text: "Sets are most often described by a property their elements satisfy. The
-       remaining definitions of this chapter set up that notation -- properties
-       of sets, sets listed by their elements, ordered pairs, and the Cartesian
-       product -- which is used throughout the rest of the collection."
+Text: "In mathematical practice, sets are rarely specified by exhaustive
+       enumeration. Instead, they are defined through *comprehension* (or
+       set-builder) notation, which specifies a predicate characterizing
+       membership: $$\{x \in A : \varphi(x)\}$$ Here $\varphi$ is a predicate on
+       sets, and the Axiom Schema of Separation guarantees that the collection
+       of all elements in the preexisting set $A$ satisfying $\varphi$ forms a
+       legitimate set. For finite sets, we retain the familiar roster notation
+       $\{x_1, x_2, \dots, x_n\}$."
 Id: "b218d7dd-c01a-476d-9975-b05de57b8b8f"
 
 
@@ -116,10 +143,18 @@ SectionTitle: "Ordered Pairs and Products"
 Id: "b61f3f41-454a-4ea1-a69c-35fe7fb2ceb3"
 
 
-Text: "From unordered pairs one can encode *ordered* pairs, in which the two
-       components can be told apart. Kuratowski's device below records the first
-       component as a singleton and the pair together, so that the order is
-       recoverable."
+Text: "While sets are inherently unordered collections, mathematics
+       fundamentally requires ordered structures where the first coordinate can
+       be distinguished from the second—such as geometric coordinates $(x, y)$,
+       directed graphs, relations, and input-output pairings of functions.
+
+       In 1921, Kazimierz Kuratowski solved the problem of encoding ordered
+       pairs within pure set theory by defining:
+       $$(x, y) := \{\{x\}, \{x, y\}\}$$ This ingenious device encodes the first
+       coordinate $x$ by placing it in a singleton, while the pair $\{x, y\}$
+       bundles both coordinates together. The first coordinate can be uniquely
+       recovered as the sole element in the intersection of all elements of the
+       pair: $\bigcap (x, y) = \{x\}$."
 Id: "da7d91b3-693b-4ca2-ac2a-e94555b18c5f"
 
 
@@ -136,9 +171,13 @@ Documented:
 Id: "8fd9d494-2882-4639-bb50-44a56626d1c4"
 
 
-Text: "The Cartesian product forms the set of all ordered pairs drawn from two
-       sets. It is the setting in which relations and functions are defined, and
-       so is one of the most heavily used constructions in what follows."
+Text: "With ordered pairs established, we can define the *Cartesian product*
+       $A \times B$, named in honor of René Descartes. The Cartesian product
+       gathers all ordered pairs $(a, b)$ such that $a \in A$ and $b \in B$:
+       $$A \times B := \{(a, b) : a \in A \land b \in B\}$$ The Cartesian
+       product is the foundational arena of modern mathematics: binary relations
+       on $A$ are defined as subsets of $A \times A$, and functions from $A$ to
+       $B$ are defined as special subsets of $A \times B$."
 Id: "331daec2-edc7-4316-8fb6-0c801c3692ed"
 
 
@@ -165,6 +204,19 @@ Documented:
 . called: "coordinate equality for ordered pairs"
 . description: "Kuratowski ordered pairs are equal exactly when their
                 corresponding coordinates are equal."
+Proof: """If $x = u$ and $y = v$, then
+          $\{\{x\}, \{x, y\}\} = \{\{u\}, \{u, v\}\}$ trivially. Conversely,
+          suppose $\{\{x\}, \{x, y\}\} = \{\{u\}, \{u, v\}\}$. The intersection
+          of all members of the left set is $\{x\}$, and of the right set is
+          $\{u\}$, which forces $\{x\} = \{u\}$ and hence $x = u$. Now consider
+          two cases:
+          1. If $x = y$, then the left set is $\{\{x\}, \{x\}\} = \{\{x\}\}$,
+             meaning the right set must also be a singleton. Thus
+             $\{u\} = \{u, v\}$, which forces $u = v$, yielding $x = y = u = v$.
+          2. If $x \neq y$, then the left set contains a unique two-element
+             member $\{x, y\}$, which must equal the unique two-element member
+             $\{u, v\}$ on the right. Since $x = u$ and $x \neq y$, it follows
+             that $y = v$."""
 Id: "31691bb2-e8e1-4218-be4f-759add2b7ab7"
 
 
@@ -185,4 +237,14 @@ Documented:
                 from $(A\times B)\times C$ to $A\times(B\times C)$. The two
                 products are therefore naturally identifiable but are not
                 literally equal under the ordered-pair encoding."
+Proof: """Define $\varphi : (A \times B) \times C \to A \times (B \times C)$ by
+          $\varphi(((a, b), c)) = (a, (b, c))$. To show $\varphi$ is injective:
+          if $\varphi(((a_1, b_1), c_1)) = \varphi(((a_2, b_2), c_2))$, then
+          $(a_1, (b_1, c_1)) = (a_2, (b_2, c_2))$. By coordinate equality of
+          ordered pairs, $a_1 = a_2$ and $(b_1, c_1) = (b_2, c_2)$, which
+          further implies $b_1 = b_2$ and $c_1 = c_2$. Thus
+          $((a_1, b_1), c_1) = ((a_2, b_2), c_2)$. To show $\varphi$ is
+          surjective: for any $(a, (b, c)) \in A \times (B \times C)$, the
+          element $((a, b), c) \in (A \times B) \times C$ maps directly to
+          $(a, (b, c))$ under $\varphi$. Hence $\varphi$ is a bijection."""
 Id: "cd332b77-e7cc-4e59-92e6-40decc503be8"

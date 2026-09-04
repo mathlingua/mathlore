@@ -4,13 +4,13 @@
   "definition_keys": [],
   "heading": null,
   "heading_latex": "\\textrm{Definition}",
-  "body_text": "The series $\\sum_{n=0}^{\\infty}a_n$ converges to $S$ if the\nsequence of partial sums $s_N=\\sum_{n=0}^{N}a_n$ converges to\n$S$. Thus an infinite sum is defined through a limit of finite\nsums. Necessarily $a_n\\to0$, but this condition is not\nsufficient for convergence.",
+  "body_text": "An infinite series $\\sum_{n=1}^{\\infty} a_n$ converges to sum\n$S \\in \\mathbb{R}$ if the sequence of partial sums\n$s_N = \\sum_{n=1}^N a_n$ converges to $S$ as $N \\to \\infty$.\n\nAn infinite sum is thus fundamentally defined as the limit of\nfinite algebraic sums. A necessary condition for convergence is\nthat the terms vanish: $\\lim_{n \\to \\infty} a_n = 0$. However,\nthis condition is famously insufficient: the Harmonic Series\n$\\sum_{n=1}^\\infty \\frac{1}{n}$ diverges to infinity despite\nits terms tending to zero.",
   "page": null,
-  "source": "TextDefinition: \"The series $\\sum_{n=0}^{\\infty}a_n$ converges to $S$ if the\n                 sequence of partial sums $s_N=\\sum_{n=0}^{N}a_n$ converges to\n                 $S$. Thus an infinite sum is defined through a limit of finite\n                 sums. Necessarily $a_n\\to0$, but this condition is not\n                 sufficient for convergence.\"\nId: \"4dbd15d0-16cc-4668-993b-2f06d6c77b0e\"",
+  "source": "TextDefinition: \"An infinite series $\\sum_{n=1}^{\\infty} a_n$ converges to sum\n                 $S \\in \\mathbb{R}$ if the sequence of partial sums\n                 $s_N = \\sum_{n=1}^N a_n$ converges to $S$ as $N \\to \\infty$.\n\n                 An infinite sum is thus fundamentally defined as the limit of\n                 finite algebraic sums. A necessary condition for convergence is\n                 that the terms vanish: $\\lim_{n \\to \\infty} a_n = 0$. However,\n                 this condition is famously insufficient: the Harmonic Series\n                 $\\sum_{n=1}^\\infty \\frac{1}{n}$ diverges to infinity despite\n                 its terms tending to zero.\"\nId: \"4dbd15d0-16cc-4668-993b-2f06d6c77b0e\"",
   "sections": [
     {
       "label": "TextDefinition",
-      "inline_argument": "\"The series $\\sum_{n=0}^{\\infty}a_n$ converges to $S$ if the\n                 sequence of partial sums $s_N=\\sum_{n=0}^{N}a_n$ converges to\n                 $S$. Thus an infinite sum is defined through a limit of finite\n                 sums. Necessarily $a_n\\to0$, but this condition is not\n                 sufficient for convergence.\"",
+      "inline_argument": "\"An infinite series $\\sum_{n=1}^{\\infty} a_n$ converges to sum\n                 $S \\in \\mathbb{R}$ if the sequence of partial sums\n                 $s_N = \\sum_{n=1}^N a_n$ converges to $S$ as $N \\to \\infty$.\n\n                 An infinite sum is thus fundamentally defined as the limit of\n                 finite algebraic sums. A necessary condition for convergence is\n                 that the terms vanish: $\\lim_{n \\to \\infty} a_n = 0$. However,\n                 this condition is famously insufficient: the Harmonic Series\n                 $\\sum_{n=1}^\\infty \\frac{1}{n}$ diverges to infinity despite\n                 its terms tending to zero.\"",
       "inline_latex": null,
       "arguments": []
     },

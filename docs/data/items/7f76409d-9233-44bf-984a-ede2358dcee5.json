@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The axiom of extensionality fixes what it means for two sets to be equal:\na set is completely determined by its members. Not the way it was\ndescribed, not the order of its elements, and not any repetition -- only\nmembership counts. This is what lets us speak of *the* empty set or *the*\nunion of two sets."
+    "text": "The Axiom of Extensionality articulates the fundamental identity\ncriterion of set theory: a set is completely and exhaustively determined\nby its members. Extensionality contrasts sharply with *intensional*\ndescriptions: two descriptions that appear entirely distinct (such as\n'the set of even prime numbers' and 'the positive square root of $4$ in\nsingleton form') represent the identical set $\\{2\\}$. Sets possess no\ninternal ordering, no spatial arrangement, and no multiplicity of\nmembership."
   },
-  "source": "Text: \"The axiom of extensionality fixes what it means for two sets to be equal:\n       a set is completely determined by its members. Not the way it was\n       described, not the order of its elements, and not any repetition -- only\n       membership counts. This is what lets us speak of *the* empty set or *the*\n       union of two sets.\"\nId: \"7f76409d-9233-44bf-984a-ede2358dcee5\"",
+  "source": "Text: \"The Axiom of Extensionality articulates the fundamental identity\n       criterion of set theory: a set is completely and exhaustively determined\n       by its members. Extensionality contrasts sharply with *intensional*\n       descriptions: two descriptions that appear entirely distinct (such as\n       'the set of even prime numbers' and 'the positive square root of $4$ in\n       singleton form') represent the identical set $\\{2\\}$. Sets possess no\n       internal ordering, no spatial arrangement, and no multiplicity of\n       membership.\"\nId: \"7f76409d-9233-44bf-984a-ede2358dcee5\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The axiom of extensionality fixes what it means for two sets to be equal:\n       a set is completely determined by its members. Not the way it was\n       described, not the order of its elements, and not any repetition -- only\n       membership counts. This is what lets us speak of *the* empty set or *the*\n       union of two sets.\"",
+      "inline_argument": "\"The Axiom of Extensionality articulates the fundamental identity\n       criterion of set theory: a set is completely and exhaustively determined\n       by its members. Extensionality contrasts sharply with *intensional*\n       descriptions: two descriptions that appear entirely distinct (such as\n       'the set of even prime numbers' and 'the positive square root of $4$ in\n       singleton form') represent the identical set $\\{2\\}$. Sets possess no\n       internal ordering, no spatial arrangement, and no multiplicity of\n       membership.\"",
       "inline_latex": null,
       "arguments": []
     },

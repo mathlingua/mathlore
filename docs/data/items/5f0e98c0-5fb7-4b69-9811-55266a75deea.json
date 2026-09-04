@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Every bijection admits a unique two-sided inverse function that unwinds\nits action."
+    "text": "Every bijective function $f : A \\to B$ admits a unique two-sided *inverse\nfunction* $f^{-1} : B \\to A$ that completely reverses its action,\nsatisfying $f^{-1} \\circ f = \\text{id}_A$ and\n$f \\circ f^{-1} = \\text{id}_B$."
   },
-  "source": "Text: \"Every bijection admits a unique two-sided inverse function that unwinds\n       its action.\"\nId: \"5f0e98c0-5fb7-4b69-9811-55266a75deea\"",
+  "source": "Text: \"Every bijective function $f : A \\to B$ admits a unique two-sided *inverse\n       function* $f^{-1} : B \\to A$ that completely reverses its action,\n       satisfying $f^{-1} \\circ f = \\text{id}_A$ and\n       $f \\circ f^{-1} = \\text{id}_B$.\"\nId: \"5f0e98c0-5fb7-4b69-9811-55266a75deea\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Every bijection admits a unique two-sided inverse function that unwinds\n       its action.\"",
+      "inline_argument": "\"Every bijective function $f : A \\to B$ admits a unique two-sided *inverse\n       function* $f^{-1} : B \\to A$ that completely reverses its action,\n       satisfying $f^{-1} \\circ f = \\text{id}_A$ and\n       $f \\circ f^{-1} = \\text{id}_B$.\"",
       "inline_latex": null,
       "arguments": []
     },

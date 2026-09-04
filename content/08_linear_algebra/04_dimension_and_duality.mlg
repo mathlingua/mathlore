@@ -2,11 +2,18 @@ Title: "Dimension and Duality"
 Id: "b20dd8da-14fc-43f0-b75e-31c74de540cd"
 
 
-Text: "A basis converts a vector space into a coordinate space, but the number
-       of basis vectors is independent of the chosen basis. This invariant is
-       dimension. The dual space then records every linear way to measure a
-       vector, and the interaction between a map and its dual clarifies rank,
-       annihilators, and changes of coordinates."
+Text: "A basis translates an abstract vector space into a concrete coordinate
+       space, yet the number of vectors in any basis is an intrinsic invariant
+       of the space itself: its *dimension*. Dimension characterizes vector
+       spaces up to isomorphism, quantifying their topological and algebraic
+       degrees of freedom.
+
+       Complementary to the vectors themselves is the *dual space*, which
+       collects all linear measurements (functionals) on the space. Duality
+       reverses arrows: a linear map $T : V \to W$ induces a transpose map
+       $T^* : W^* \to V^*$ acting on measurements. Through annihilators, dual
+       bases, and the bidual isomorphism, duality reveals the geometric symmetry
+       underpinning linear systems and orthogonality."
 Id: "dea851d9-f757-4783-a464-72424c40781f"
 
 
@@ -14,11 +21,13 @@ SectionTitle: "Bases and Dimension"
 Id: "ac3e313d-5cfb-4d82-ab0a-d2249dc10e7d"
 
 
-Text: "The command $\basis:for{V}$ defined on the preceding page records a
-       linearly independent spanning set. Equivalently, each vector has a unique
-       expression as a finite linear combination of basis elements; the
-       finiteness condition applies to each combination even when the basis is
-       infinite."
+Text: "A basis is a subset $B \subseteq V$ that is simultaneously linearly
+       independent and spans $V$. Equivalently, every vector $v \in V$ admits a
+       *unique* expression as a finite linear combination of basis vectors:
+       $$ v = \sum_{b \in B} c_b b, $$ where all but finitely many scalars
+       $c_b \in F$ are zero. The requirement of finiteness ensures that
+       algebraic sums remain strictly well-defined even when the basis $B$ is
+       uncountably infinite."
 Id: "a7868925-5a9a-4635-9b82-e9953ac0dd20"
 
 
@@ -42,21 +51,57 @@ Documented:
 . called: "Basis Extension Theorem"
 . description: "Every linearly independent subset extends to a basis, and every
                 spanning subset contains a basis."
+Proof: """
+Let $V$ be a vector space over a field $F$.
+
+1. **Every spanning set contains a basis**:
+   Let $T \subseteq V$ be a spanning set: $\operatorname{span}(T) = V$.
+   If $T = \emptyset$, then $V = \{0\}$ and $\emptyset \subseteq T$ is the basis.
+   Otherwise, partially order the collection $\mathcal{F} = \{X \subseteq T : X \text{ is linearly independent}\}$
+   by set inclusion. Every chain in $\mathcal{F}$ has an upper bound (the union of the chain,
+   which is linearly independent because linear dependence involves only finitely many vectors).
+   By Zorn's Lemma, $\mathcal{F}$ contains a maximal element $C$.
+   If $\operatorname{span}(C) \neq V$, since $\operatorname{span}(T) = V$, there exists some $t \in T$
+   not belonging to $\operatorname{span}(C)$. But then $C \cup \{t\} \subseteq T$ is linearly independent,
+   contradicting the maximality of $C$.
+   Thus $\operatorname{span}(C) = V$, proving that $C$ is a basis for $V$ contained in $T$.
+
+2. **Every linearly independent set extends to a basis**:
+   Let $S \subseteq V$ be linearly independent.
+   Partially order the collection $\mathcal{G} = \{Y \subseteq V : S \subseteq Y \text{ and } Y \text{ is linearly independent}\}$
+   by set inclusion. By Zorn's Lemma, $\mathcal{G}$ possesses a maximal element $B$.
+   If $\operatorname{span}(B) \neq V$, there exists $v \in V \setminus \operatorname{span}(B)$.
+   Then $B \cup \{v\}$ is linearly independent and contains $S$, contradicting the maximality of $B$.
+   Thus $\operatorname{span}(B) = V$, proving that $B$ is a basis for $V$ extending $S$.
+"""
 Id: "c1009158-a56f-4c29-8006-7e3a6bcc662d"
 
 
-TextTheorem: "Invariance of dimension. Any two bases of a vector space have the
-              same cardinality. This cardinal is the dimension $\dim_F V$. In
-              particular, if $V$ is spanned by $n$ vectors, every linearly
-              independent subset has at most $n$ elements and every basis has
-              exactly $\dim_F V\leq n$ elements."
+TextTheorem: "The Invariance of Dimension. Any two bases of a vector space $V$
+              over a field $F$ have the same cardinality. This unique cardinal
+              number is the *dimension* $\dim_F(V)$.
+
+              *Proof Sketch (Finite Dimensions)*: The result rests on the
+              *Steinitz Exchange Lemma*: if $\{u_1, \dots, u_m\}$ is linearly
+              independent in $V$ and $\{w_1, \dots, w_n\}$ spans $V$, then
+              $m \leq n$, and one can successively exchange $m$ vectors from
+              $\{w_j\}$ with $\{u_i\}$ such that the resulting set still spans
+              $V$. If $B_1$ and $B_2$ are two bases of sizes $n_1$ and $n_2$,
+              then $B_1$ is independent and $B_2$ spans, so $n_1 \leq n_2$.
+              Symmetrically, $B_2$ is independent and $B_1$ spans, so
+              $n_2 \leq n_1$. Hence $n_1 = n_2$.
+
+              Consequently, every linearly independent set in an $n$-dimensional
+              space has cardinality at most $n$, and every spanning set has
+              cardinality at least $n$."
 Id: "79b4b540-b701-47fc-a9b7-aa0f1e1f3a46"
 
 
-Text: "The structured rank--nullity theorem on the preceding page states that
-       the dimension of the domain is the sum of the dimensions of the kernel
-       and image. It measures the information destroyed by a linear map against
-       the information retained."
+Text: "The Rank-Nullity Theorem establishes that any linear map $T : V \to W$
+       satisfies $\dim(V) = \dim(\ker T) + \dim(\operatorname{im} T)$.
+       Geometrically, the dimension of the domain is partitioned into the
+       degrees of freedom destroyed (collapsed into the kernel) and the degrees
+       of freedom preserved (mapped into the image)."
 Id: "d262c022-54b1-4327-b52c-8ebc6d323f34"
 
 
@@ -64,20 +109,30 @@ SectionTitle: "Coordinate Representations"
 Id: "3756ca2b-b124-4d4d-8488-06685b6d23d8"
 
 
-TextDefinition: "For an ordered basis $B=(b_1,\ldots,b_n)$ of $V$, the
-                 coordinate map $[\,\cdot\,]_B:V\to F^n$ sends
-                 $v=\sum_i a_i b_i$ to the column $(a_1,\ldots,a_n)^T$. It is a
-                 linear isomorphism. Coordinates depend on $B$; the vector being
-                 represented does not."
+TextDefinition: "For an ordered basis $\mathcal{B} = (b_1, \dots, b_n)$ of a vector space $V$,
+                 the *coordinate isomorphism* $[\,\cdot\,]_{\mathcal{B}} : V \to F^n$ maps
+                 each vector $v = \sum_{i=1}^n c_i b_i$ to its unique column vector of coordinates:
+                 $$ [v]_{\mathcal{B}} = \begin{pmatrix} c_1 \\ \vdots \\ c_n \end{pmatrix} \in F^n. $$
+                 The coordinate vector $[v]_{\mathcal{B}}$ depends heavily on the chosen basis,
+                 while the vector $v$ remains an invariant geometric entity."
 Id: "eb390519-730b-45ef-a8c5-75ed6e82ba01"
 
 
-TextTheorem: "If $T:V\to V$ has matrices $A$ and $A'$ in two ordered bases and
-              $P$ is the change-of-basis matrix, then $A'=P^{-1}AP$. Thus
-              matrices of the same operator are similar. Quantities invariant
-              under similarity, including determinant, trace, characteristic
-              polynomial, and eigenvalues with algebraic multiplicity, are
-              intrinsic to the operator."
+TextTheorem: "Let $T : V \to V$ be a linear operator on a finite-dimensional
+              space $V$. If $A = [T]_{\mathcal{B}}$ and
+              $A' = [T]_{\mathcal{B}'}$ represent $T$ with respect to two
+              ordered bases $\mathcal{B}$ and $\mathcal{B}'$, then:
+              $$ A' = P^{-1} A P, $$ where
+              $P = [I]_{\mathcal{B}'}^{\mathcal{B}}$ is the invertible
+              change-of-basis matrix.
+
+              Two matrices $A, A'$ related by $A' = P^{-1}AP$ are called
+              *similar*. All similarity invariants—including the determinant
+              $\det(T)$, trace $\operatorname{tr}(T)$, characteristic polynomial
+              $\chi_T(t)$, minimal polynomial $m_T(t)$, and eigenvalues with
+              algebraic and geometric multiplicities—are intrinsic properties of
+              the linear transformation $T$, completely independent of
+              coordinate choices."
 Id: "5e912a97-68ed-490b-aeb4-06145687fdf4"
 
 
@@ -85,35 +140,61 @@ SectionTitle: "Dual Spaces and Annihilators"
 Id: "9c48c173-2660-4181-9104-36cae5648a4d"
 
 
-TextDefinition: "The dual space $V^*=\operatorname{Hom}_F(V,F)$ is the vector
-                 space of linear functionals on $V$. If $B=(b_1,\ldots,b_n)$ is
-                 a basis, its dual basis $(b^1,\ldots,b^n)$ is characterized by
-                 $b^i(b_j)=\delta^i_j$. The functional $b^i$ extracts the $i$th
-                 coordinate relative to $B$."
+TextDefinition: "The *dual space* $V^* = \operatorname{Hom}_F(V, F) = \mathcal{L}(V, F)$ is
+                 the vector space of all linear functionals $\varphi : V \to F$.
+                 
+                 If $\mathcal{B} = (b_1, \dots, b_n)$ is a basis of $V$, its *dual basis*
+                 $\mathcal{B}^* = (b^1, \dots, b^n)$ of $V^*$ is uniquely determined by:
+                 $$ b^i(b_j) = \delta_{ij} = \begin{cases} 1 & \text{if } i = j, \\ 0 & \text{if } i \neq j. \end{cases} $$
+                 The functional $b^i$ extracts the $i$-th coordinate of a vector relative to $\mathcal{B}$.
+                 
+                 For finite-dimensional spaces, $\dim(V^*) = \dim(V)$, so $V \cong V^*$.
+                 Furthermore, the evaluation map $\operatorname{ev} : V \to V^{**}$ into the
+                 double dual (bidual), defined by $\operatorname{ev}(v)(\varphi) = \varphi(v)$,
+                 is a *canonical* (basis-independent) isomorphism when $\dim(V) < \infty$,
+                 rendering finite-dimensional vector spaces reflexive."
 Id: "3370ae35-7b9f-4983-bba5-cc28277c31e8"
 
 
-TextDefinition: "For a subspace $U\leq V$, its annihilator is
-                 $U^\circ=\{\lambda\in V^*: \lambda(u)=0\text{ for every }
-                 u\in U\}$. When $V$ is finite-dimensional,
-                 $\dim U+\dim U^\circ=\dim V$. Annihilators translate
-                 containment into reverse containment: if $U\subseteq W$, then
-                 $W^\circ\subseteq U^\circ$."
+TextDefinition: "For any subspace $U \leq V$, its *annihilator* is the subspace of $V^*$
+                 consisting of all linear functionals that vanish identically on $U$:
+                 $$ U^\circ = \{\varphi \in V^* : \varphi(u) = 0 \text{ for all } u \in U\}. $$
+                 
+                 Annihilators reverse inclusions: if $U_1 \subseteq U_2$, then $U_2^\circ \subseteq U_1^\circ$.
+                 When $V$ is finite-dimensional, the dimension formula holds:
+                 $$ \dim(U) + \dim(U^\circ) = \dim(V). $$
+                 Through the canonical isomorphism $V \cong V^{**}$, the double annihilator
+                 satisfies $(U^\circ)^\circ = U$."
 Id: "ab2bb4d2-ff04-4f40-a5d3-63a58c7ae9cb"
 
 
-TextDefinition: "The dual map of a linear map $T:V\to W$ is $T^*:W^*\to V^*$,
-                 defined by $T^*(\lambda)=\lambda\circ T$. It reverses the
-                 direction of arrows because a measurement on the codomain can
-                 be pulled back to a measurement on the domain. In finite
-                 dimensions, the matrix of $T^*$ in dual bases is the transpose
-                 of the matrix of $T$."
+TextDefinition: "For any linear transformation $T : V \to W$, the *dual map* (or transpose)
+                 $T^* : W^* \to V^*$ is defined by precomposition:
+                 $$ T^*(\psi) = \psi \circ T \quad \text{for all } \psi \in W^*. $$
+                 Duality reverses the direction of arrows: a measurement functional on the
+                 target space $W$ pulls back to a measurement on the domain $V$.
+                 In finite dimensions, the matrix of $T^*$ relative to dual bases is precisely
+                 the transpose of the matrix of $T$: $[T^*]_{\mathcal{C}^*}^{\mathcal{B}^*} = ([T]_{\mathcal{B}}^{\mathcal{C}})^T$."
 Id: "ebcf6beb-7c81-4a34-9fb1-ba69774d93f0"
 
 
-TextTheorem: "For finite-dimensional spaces,
-              $\ker T^*=(\operatorname{im}T)^\circ$ and
-              $\operatorname{im}T^*=(\ker T)^\circ$. These identities are the
-              dual form of rank--nullity and show precisely which linear
-              measurements vanish after passage through $T$."
+TextTheorem: "The Fundamental Subspace Duality Theorem. For any linear map $T : V \to W$
+              between finite-dimensional vector spaces:
+              $$ \ker(T^*) = (\operatorname{im} T)^\circ \quad \text{and} \quad \operatorname{im}(T^*) = (\ker T)^\circ. $$
+              
+              *Proof*:
+              1. A functional $\psi \in W^*$ satisfies $\psi \in \ker(T^*)$ if and only if
+                 $T^*(\psi) = \psi \circ T = 0$. This means $\psi(T(v)) = 0$ for all $v \in V$,
+                 which by definition states that $\psi$ annihilates $\operatorname{im}(T)$.
+                 Thus $\ker(T^*) = (\operatorname{im} T)^\circ$.
+              2. Applying dimensions: $\dim(\operatorname{im} T^*) = \dim(W^*) - \dim(\ker T^*) = \dim(W) - \dim((\operatorname{im} T)^\circ) = \dim(\operatorname{im} T)$.
+                 Hence $\operatorname{rank}(T^*) = \operatorname{rank}(T)$ (row rank equals column rank).
+                 Since $T^*(\psi)(\ker T) = \psi(T(\ker T)) = \psi(0) = 0$, we have
+                 $\operatorname{im}(T^*) \subseteq (\ker T)^\circ$.
+                 Since both subspaces have dimension $\dim(V) - \dim(\ker T) = \operatorname{rank}(T)$,
+                 they are equal: $\operatorname{im}(T^*) = (\ker T)^\circ$.
+                 
+              This theorem forms the structural core of the Fredholm Alternative for linear
+              systems: $Ax = b$ has a solution if and only if $b$ is annihilated by every
+              solution $y$ to the homogeneous dual system $y^T A = 0$."
 Id: "b00d626c-66d6-4368-aab5-aec10ee2a364"

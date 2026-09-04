@@ -5,8 +5,10 @@
   "heading": null,
   "heading_latex": "\\textrm{Negation of a Universal Quantifier}",
   "body_text": null,
+  "proof_text": "By definition, the statement $\\forall x \\in D, P(x)$ is true if and\nonly if $P(x)$ holds for every element $x \\in D$. Its negation asserts\nthat it is false that every element satisfies $P(x)$. This occurs\nprecisely when there is at least one element $x \\in D$ for which\n$P(x)$ fails to hold, which is the definition of\n$\\exists x \\in D, \\neg P(x)$.",
+  "proof_source": "Proof: \"\"\"By definition, the statement $\\forall x \\in D, P(x)$ is true if and\n          only if $P(x)$ holds for every element $x \\in D$. Its negation asserts\n          that it is false that every element satisfies $P(x)$. This occurs\n          precisely when there is at least one element $x \\in D$ for which\n          $P(x)$ fails to hold, which is the definition of\n          $\\exists x \\in D, \\neg P(x)$.\"\"\"",
   "page": null,
-  "source": "Theorem:\ngiven:\n. D is \\set\n. P(x_) is (_ is \\\\anything) -> (_ is \\\\statement)\nthen:\n. not:\n  . forAll: x \"in\" D\n    then: P(x)\niff:\n. exists: x \"in\" D\n  suchThat:\n  . not: P(x)\nDocumented:\n. called: \"Negation of a Universal Quantifier\"\n. description: \"A universal assertion fails exactly when there is a\n                counterexample in its domain.\"\nId: \"bf4df541-b2ff-4fff-9f32-e0565e88a24a\"",
+  "source": "Theorem:\ngiven:\n. D is \\set\n. P(x_) is (_ is \\\\anything) -> (_ is \\\\statement)\nthen:\n. not:\n  . forAll: x \"in\" D\n    then: P(x)\niff:\n. exists: x \"in\" D\n  suchThat:\n  . not: P(x)\nDocumented:\n. called: \"Negation of a Universal Quantifier\"\n. description: \"A universal assertion fails exactly when there is a\n                counterexample in its domain.\"\nProof: \"\"\"By definition, the statement $\\forall x \\in D, P(x)$ is true if and\n          only if $P(x)$ holds for every element $x \\in D$. Its negation asserts\n          that it is false that every element satisfies $P(x)$. This occurs\n          precisely when there is at least one element $x \\in D$ for which\n          $P(x)$ fails to hold, which is the definition of\n          $\\exists x \\in D, \\neg P(x)$.\"\"\"\nId: \"bf4df541-b2ff-4fff-9f32-e0565e88a24a\"",
   "sections": [
     {
       "label": "Theorem",

@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The power set constructor gathers all subsets of a given set into a\nsingle ambient set."
+    "text": "The power set constructor $\\mathcal{P}(A)$ collects all subsets of $A$\ninto a single universe of discourse. It constitutes the carrier set for\nthe Boolean algebra associated with $A$."
   },
-  "source": "Text: \"The power set constructor gathers all subsets of a given set into a\n       single ambient set.\"\nId: \"e3164791-b17c-427a-8c8c-02ec40801629\"",
+  "source": "Text: \"The power set constructor $\\mathcal{P}(A)$ collects all subsets of $A$\n       into a single universe of discourse. It constitutes the carrier set for\n       the Boolean algebra associated with $A$.\"\nId: \"e3164791-b17c-427a-8c8c-02ec40801629\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The power set constructor gathers all subsets of a given set into a\n       single ambient set.\"",
+      "inline_argument": "\"The power set constructor $\\mathcal{P}(A)$ collects all subsets of $A$\n       into a single universe of discourse. It constitutes the carrier set for\n       the Boolean algebra associated with $A$.\"",
       "inline_latex": null,
       "arguments": []
     },

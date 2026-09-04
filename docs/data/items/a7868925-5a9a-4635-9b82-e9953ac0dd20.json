@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The command $\\basis:for{V}$ defined on the preceding page records a\nlinearly independent spanning set. Equivalently, each vector has a unique\nexpression as a finite linear combination of basis elements; the\nfiniteness condition applies to each combination even when the basis is\ninfinite."
+    "text": "A basis is a subset $B \\subseteq V$ that is simultaneously linearly\nindependent and spans $V$. Equivalently, every vector $v \\in V$ admits a\n*unique* expression as a finite linear combination of basis vectors:\n$$ v = \\sum_{b \\in B} c_b b, $$ where all but finitely many scalars\n$c_b \\in F$ are zero. The requirement of finiteness ensures that\nalgebraic sums remain strictly well-defined even when the basis $B$ is\nuncountably infinite."
   },
-  "source": "Text: \"The command $\\basis:for{V}$ defined on the preceding page records a\n       linearly independent spanning set. Equivalently, each vector has a unique\n       expression as a finite linear combination of basis elements; the\n       finiteness condition applies to each combination even when the basis is\n       infinite.\"\nId: \"a7868925-5a9a-4635-9b82-e9953ac0dd20\"",
+  "source": "Text: \"A basis is a subset $B \\subseteq V$ that is simultaneously linearly\n       independent and spans $V$. Equivalently, every vector $v \\in V$ admits a\n       *unique* expression as a finite linear combination of basis vectors:\n       $$ v = \\sum_{b \\in B} c_b b, $$ where all but finitely many scalars\n       $c_b \\in F$ are zero. The requirement of finiteness ensures that\n       algebraic sums remain strictly well-defined even when the basis $B$ is\n       uncountably infinite.\"\nId: \"a7868925-5a9a-4635-9b82-e9953ac0dd20\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The command $\\basis:for{V}$ defined on the preceding page records a\n       linearly independent spanning set. Equivalently, each vector has a unique\n       expression as a finite linear combination of basis elements; the\n       finiteness condition applies to each combination even when the basis is\n       infinite.\"",
+      "inline_argument": "\"A basis is a subset $B \\subseteq V$ that is simultaneously linearly\n       independent and spans $V$. Equivalently, every vector $v \\in V$ admits a\n       *unique* expression as a finite linear combination of basis vectors:\n       $$ v = \\sum_{b \\in B} c_b b, $$ where all but finitely many scalars\n       $c_b \\in F$ are zero. The requirement of finiteness ensures that\n       algebraic sums remain strictly well-defined even when the basis $B$ is\n       uncountably infinite.\"",
       "inline_latex": null,
       "arguments": []
     },

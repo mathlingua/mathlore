@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The inverse relation swaps the roles of the two arguments in every pair."
+    "text": "The *inverse relation* (or converse) $R^{-1}$ reverses the direction of\nall ordered pairs: $(y, x) \\in R^{-1} \\iff (x, y) \\in R$."
   },
-  "source": "Text: \"The inverse relation swaps the roles of the two arguments in every pair.\"\nId: \"ece9bae3-c088-459e-9cd1-7a650d9b3681\"",
+  "source": "Text: \"The *inverse relation* (or converse) $R^{-1}$ reverses the direction of\n       all ordered pairs: $(y, x) \\in R^{-1} \\iff (x, y) \\in R$.\"\nId: \"ece9bae3-c088-459e-9cd1-7a650d9b3681\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The inverse relation swaps the roles of the two arguments in every pair.\"",
+      "inline_argument": "\"The *inverse relation* (or converse) $R^{-1}$ reverses the direction of\n       all ordered pairs: $(y, x) \\in R^{-1} \\iff (x, y) \\in R$.\"",
       "inline_latex": null,
       "arguments": []
     },

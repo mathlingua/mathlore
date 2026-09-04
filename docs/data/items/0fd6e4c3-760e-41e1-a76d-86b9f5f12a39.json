@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The Fundamental Theorem of Linear Maps relates the dimensions of the\nkernel, image, and domain."
+    "text": "The Fundamental Theorem of Linear Maps—the Rank-Nullity\nTheorem—establishes the conservation of dimension under linear mappings:\nthe dimension of the domain is apportioned precisely between the\ndirections compressed to zero (the nullity) and the directions preserved\nin the target space (the rank)."
   },
-  "source": "Text: \"The Fundamental Theorem of Linear Maps relates the dimensions of the\n       kernel, image, and domain.\"\nId: \"0fd6e4c3-760e-41e1-a76d-86b9f5f12a39\"",
+  "source": "Text: \"The Fundamental Theorem of Linear Maps—the Rank-Nullity\n       Theorem—establishes the conservation of dimension under linear mappings:\n       the dimension of the domain is apportioned precisely between the\n       directions compressed to zero (the nullity) and the directions preserved\n       in the target space (the rank).\"\nId: \"0fd6e4c3-760e-41e1-a76d-86b9f5f12a39\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The Fundamental Theorem of Linear Maps relates the dimensions of the\n       kernel, image, and domain.\"",
+      "inline_argument": "\"The Fundamental Theorem of Linear Maps—the Rank-Nullity\n       Theorem—establishes the conservation of dimension under linear mappings:\n       the dimension of the domain is apportioned precisely between the\n       directions compressed to zero (the nullity) and the directions preserved\n       in the target space (the rank).\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -2,13 +2,30 @@ Title: "Selected Open Problems"
 Id: "8ac6237e-b34e-4667-8a7a-1fd9950c7476"
 
 
-Text: "A conjecture belongs in a mathematical library only when its statement is
-       precise and its unproved status is unmistakable. The examples below are
-       not included as curiosities. Each arises naturally from structures
-       developed earlier, and each illustrates the gap that can remain between
-       overwhelming evidence and proof. Verification of finitely many cases,
-       however extensive, cannot establish a universal assertion about all
-       integers or all complex zeros."
+Text: "A mathematical theory is defined as much by the questions it cannot yet
+       answer as by the theorems it has successfully established. A conjecture
+       belongs in a foundational library only when its statement is
+       mathematically precise and its unproved status is unmistakable. The open
+       problems presented here are not isolated curiosities or recreational
+       puzzles; each arises organically from the foundational structures
+       developed throughout this volume, and each sits at the epicenter of
+       modern mathematical research.
+
+       These problems dramatically illustrate the insurmountable chasm
+       separating empirical verification from deductive proof. An assertion
+       about all integers or all complex zeros cannot be demonstrated by testing
+       billions or trillions of cases. The history of number theory is filled
+       with plausible conjectures supported by vast numerical evidence that
+       ultimately proved false—such as the Mertens conjecture, which was
+       verified for billions of values before being disproved by Andrew Odlyzko
+       and Herman te Riele in 1985, or the oscillation of
+       $\pi(x) - \operatorname{li}(x)$, which first changes sign only beyond
+       Skewes' astronomical numbers.
+
+       In an axiomatic library like **Mathlore**, conjecture cards serve a vital
+       architectural role: they state exact mathematical claims without
+       compromising deductive integrity, demarcating the precise frontier
+       between established truth and open exploration."
 Id: "c929b171-e961-4640-a453-7e459851f114"
 
 
@@ -90,12 +107,37 @@ Documented:
 Id: "565f765c-47cd-427f-a5b5-44c87d1a9794"
 
 
-Text: "The fundamental theorem of arithmetic states that every integer greater
-       than one is a product of primes, uniquely up to the order of the factors.
-       This multiplicative classification does not make additive questions about
-       primes easy. Results proving infinitely many prime pairs within a fixed
-       bounded distance likewise do not imply that the distance two occurs
-       infinitely often."
+Text: "The Fundamental Theorem of Arithmetic guarantees that the ring of
+       integers $\mathbb{Z}$ is a unique factorization domain: every integer
+       greater than one factors uniquely into a product of prime numbers. While
+       this completely classifies the *multiplicative* structure of the
+       integers, the interplay between multiplication and addition remains
+       notoriously intractable. Primes are defined multiplicatively, yet both
+       Goldbach's conjecture and the Twin Prime conjecture pose questions about
+       additive patterns among primes.
+
+       **Historical Milestones on Goldbach's Problem**: First formulated in a
+       1742 letter from Christian Goldbach to Leonhard Euler, the conjecture has
+       resisted all attempts at complete resolution. In 1937, Ivan Vinogradov
+       employed the Hardy--Littlewood circle method to prove the *weak Goldbach
+       conjecture* for all sufficiently large odd numbers (every large odd
+       integer is the sum of three primes). In 2013, Harald Helfgott finally
+       closed all remaining finite bounds, unconditionally proving the weak
+       conjecture for *all* odd integers $n \ge 7$. The strong (binary)
+       conjecture, however, remains open.
+
+       **Progress on Bounded Gaps Between Primes**: For centuries, Euclid's
+       proof of the infinitude of primes offered no control over the gap
+       $p_{n+1} - p_n$. In 2013, Yitang Zhang achieved a historic breakthrough
+       by proving the existence of an integer $H < 7 \times 10^7$ such that
+       infinitely many pairs of consecutive primes satisfy
+       $p_{n+1} - p_n \le H$. Through subsequent refinements by James Maynard,
+       Terence Tao, and the collaborative Polymath8 project, the bound was
+       reduced to $H = 246$ (and $H \le 6$ assuming the Generalized
+       Elliott--Halberstam Conjecture). Yet the final step from $H = 246$ to the
+       Twin Prime conjecture ($H = 2$) is obstructed by the famous 'parity
+       barrier' of sieve theory, which cannot distinguish numbers with an odd
+       number of prime factors from those with an even number."
 Id: "68b44b77-3844-4b61-9feb-7d441e727db2"
 
 
@@ -103,27 +145,66 @@ SectionTitle: "Zeros of the Zeta Function"
 Id: "1ce51384-d4ed-4ff8-ae1f-1a249702737c"
 
 
-TextDefinition: "For complex $s$ with $\operatorname{Re}(s)>1$, the Riemann zeta
-                 function is $\zeta(s)=\sum_{n=1}^{\infty}n^{-s}$. It admits a
-                 meromorphic continuation to $\mathbb{C}$ with a single simple
-                 pole at $s=1$. Its zeros at the negative even integers are
-                 called trivial; all other zeros lie in the critical strip
-                 $0<\operatorname{Re}(s)<1$."
+TextDefinition: "The Riemann Zeta Function and Euler's Golden Key.
+                 
+                 For complex numbers $s$ with $\operatorname{Re}(s) > 1$, the *Riemann zeta function* is defined
+                 by the Dirichlet series:
+                 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}. $$
+                 In 1737, Leonhard Euler discovered the fundamental identity connecting the zeta function to the
+                 prime numbers—the *Euler product formula*:
+                 $$ \zeta(s) = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}}. $$
+                 In his landmark 1859 memoir, Bernhard Riemann demonstrated that $\zeta(s)$ extends meromorphically
+                 to the entire complex plane $\mathbb{C}$, possessing a single simple pole at $s = 1$ with residue $1$.
+                 Riemann proved that $\zeta(s)$ satisfies the majestic functional equation:
+                 $$ \xi(s) := \frac{1}{2} s(s-1) \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \xi(1 - s), $$
+                 where $\Gamma(s)$ is Euler's gamma function.
+                 
+                 The zeros of $\zeta(s)$ fall into two distinct families:
+                 1. **Trivial Zeros**: The points $s = -2, -4, -6, \ldots$ at the negative even integers, arising
+                    from the poles of the gamma function $\Gamma(s/2)$.
+                 2. **Nontrivial Zeros**: Infinitely many zeros lying within the *critical strip* $0 < \operatorname{Re}(s) < 1$,
+                    distributed symmetrically about the real axis and the *critical line* $\operatorname{Re}(s) = 1/2$."
 Id: "6afb5d40-7bb1-43d7-b2e1-c4d5691fe031"
 
 
-TextConjecture: "Riemann hypothesis. Every nontrivial zero $\rho$ of the Riemann
-                 zeta function satisfies $\operatorname{Re}(\rho)=1/2$. The
-                 hypothesis gives sharp control over the error in the average
-                 distribution of prime numbers and is substantially stronger
-                 than the prime number theorem itself."
+TextConjecture: "The Riemann Hypothesis.
+                 
+                 Every nontrivial zero $\rho$ of the Riemann zeta function satisfies:
+                 $$ \operatorname{Re}(\rho) = \frac{1}{2}. $$
+                 
+                 That is, all non-trivial zeros lie precisely on the critical vertical line $\operatorname{Re}(s) = 1/2$.
+                 
+                 *Significance for Prime Number Distribution*:
+                 The Prime Number Theorem—proved independently by Jacques Hadamard and Charles Jean de la Vallée Poussin
+                 in 1896—is equivalent to the non-vanishing of $\zeta(s)$ on the boundary line $\operatorname{Re}(s) = 1$:
+                 $$ \pi(x) \sim \operatorname{li}(x) = \int_2^x \frac{dt}{\ln t}. $$
+                 In 1901, Helge von Koch proved that the Riemann Hypothesis is mathematically equivalent to the
+                 sharpest possible square-root error bound in the Prime Number Theorem:
+                 $$ \pi(x) = \operatorname{li}(x) + O(\sqrt{x} \ln x). $$
+                 In this sense, the Riemann Hypothesis asserts that the primes are distributed as uniformly and
+                 randomly as quantum noise around their smooth logarithmic integral trend.
+                 
+                 *Deep Connections across Mathematics*:
+                 The spacing of the zeros on the critical line exhibits statistical correlations identical to
+                 the eigenvalues of random Hermitian matrices in the Gaussian Unitary Ensemble (Montgomery's Pair
+                 Correlation Conjecture and Freeman Dyson, 1972). This striking connection suggests the *Hilbert--Pólya
+                 conjecture*: that the imaginary parts of the nontrivial zeros correspond to the eigenvalues of a
+                 self-adjoint Hamiltonian operator in quantum mechanics."
 Id: "2315cd43-c1d4-4518-bb73-1e2aa34b2df0"
 
 
-Text: "These conjectures differ in language but share a methodological lesson.
-       Definitions and known theorems constrain where a counterexample could
-       occur; computation and partial results supply evidence; only a proof can
-       promote the conjecture to a theorem. A future resolution should change
-       the card's status rather than silently changing the meaning of the
-       statement."
+Text: "These conjectures share a profound methodological and epistemological
+       lesson. In every era of mathematical development, definitions and proven
+       theorems establish the boundary of what is known with absolute certainty.
+       Computation and numerical experiments uncover patterns and test
+       hypotheses at scale; heuristic models from physics and probability
+       suggest why a proposition ought to be true; but only rigorous deductive
+       proof can promote a conjecture to an enduring theorem.
+
+       Should any of these celebrated problems be resolved in the future, the
+       formal representation in an axiomatic library like **Mathlore** does not
+       change its mathematical statement; rather, its epistemological status
+       transitions from `Conjecture:` to `Theorem:`, accompanied by a newly
+       verified proof that traces every logical deduction back to the
+       foundational axioms of logic and set theory."
 Id: "3d6d34ce-b17e-42c2-9293-d605cb268841"

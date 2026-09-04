@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A subset that is not the whole set is called a *proper* subset: it is\ncontained in the larger set but differs from it."
+    "text": "When $A$ is contained in $B$ but the two sets are not identical, we say\nthat $A$ is a *proper subset* of $B$, denoted $A \\subsetneq B$. This\nrequires two independent conditions: every element of $A$ must belong to\n$B$, and $B$ must contain at least one element $b$ such that $b \\notin\nA$. Proper inclusion constitutes a strict partial order on collections\nof sets."
   },
-  "source": "Text: \"A subset that is not the whole set is called a *proper* subset: it is\n       contained in the larger set but differs from it.\"\nId: \"c27fbf42-311e-4efd-b4c8-2da3ad6370a7\"",
+  "source": "Text: \"When $A$ is contained in $B$ but the two sets are not identical, we say\n       that $A$ is a *proper subset* of $B$, denoted $A \\subsetneq B$. This\n       requires two independent conditions: every element of $A$ must belong to\n       $B$, and $B$ must contain at least one element $b$ such that $b \\notin\n       A$. Proper inclusion constitutes a strict partial order on collections\n       of sets.\"\nId: \"c27fbf42-311e-4efd-b4c8-2da3ad6370a7\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A subset that is not the whole set is called a *proper* subset: it is\n       contained in the larger set but differs from it.\"",
+      "inline_argument": "\"When $A$ is contained in $B$ but the two sets are not identical, we say\n       that $A$ is a *proper subset* of $B$, denoted $A \\subsetneq B$. This\n       requires two independent conditions: every element of $A$ must belong to\n       $B$, and $B$ must contain at least one element $b$ such that $b \\notin\n       A$. Proper inclusion constitutes a strict partial order on collections\n       of sets.\"",
       "inline_latex": null,
       "arguments": []
     },

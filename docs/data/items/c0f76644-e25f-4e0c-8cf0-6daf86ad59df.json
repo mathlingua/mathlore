@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The axiom of union collapses a set of sets into a single set containing\nevery element of every member. It is what makes it possible to pool the\ncontents of a whole family of sets at once."
+    "text": "While pairing constructs sets of size two, the Axiom of Union enables the\nconsolidation of arbitrarily many sets. Given a set $X$ whose elements\nare themselves sets, the union $\\bigcup X$ collects every element\nbelonging to at least one member of $X$. In effect, the union axiom\nflattens nested set structures by one level of containment."
   },
-  "source": "Text: \"The axiom of union collapses a set of sets into a single set containing\n       every element of every member. It is what makes it possible to pool the\n       contents of a whole family of sets at once.\"\nId: \"c0f76644-e25f-4e0c-8cf0-6daf86ad59df\"",
+  "source": "Text: \"While pairing constructs sets of size two, the Axiom of Union enables the\n       consolidation of arbitrarily many sets. Given a set $X$ whose elements\n       are themselves sets, the union $\\bigcup X$ collects every element\n       belonging to at least one member of $X$. In effect, the union axiom\n       flattens nested set structures by one level of containment.\"\nId: \"c0f76644-e25f-4e0c-8cf0-6daf86ad59df\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The axiom of union collapses a set of sets into a single set containing\n       every element of every member. It is what makes it possible to pool the\n       contents of a whole family of sets at once.\"",
+      "inline_argument": "\"While pairing constructs sets of size two, the Axiom of Union enables the\n       consolidation of arbitrarily many sets. Given a set $X$ whose elements\n       are themselves sets, the union $\\bigcup X$ collects every element\n       belonging to at least one member of $X$. In effect, the union axiom\n       flattens nested set structures by one level of containment.\"",
       "inline_latex": null,
       "arguments": []
     },

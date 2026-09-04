@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Subsethood is transitive: a subset of a subset is a subset of the whole.\nThis is the first small theorem of the collection, and it follows\ndirectly from the definition of subset."
+    "text": "Subset inclusion satisfies the transitivity property: if one collection\nis nested inside a second, and that second is nested inside a third, then\nthe first is contained within the third. This elementary result is the\nfirst formal theorem of the collection."
   },
-  "source": "Text: \"Subsethood is transitive: a subset of a subset is a subset of the whole.\n       This is the first small theorem of the collection, and it follows\n       directly from the definition of subset.\"\nId: \"370b0f76-ab0f-4f7f-80fa-120bb7ffe9e2\"",
+  "source": "Text: \"Subset inclusion satisfies the transitivity property: if one collection\n       is nested inside a second, and that second is nested inside a third, then\n       the first is contained within the third. This elementary result is the\n       first formal theorem of the collection.\"\nId: \"370b0f76-ab0f-4f7f-80fa-120bb7ffe9e2\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Subsethood is transitive: a subset of a subset is a subset of the whole.\n       This is the first small theorem of the collection, and it follows\n       directly from the definition of subset.\"",
+      "inline_argument": "\"Subset inclusion satisfies the transitivity property: if one collection\n       is nested inside a second, and that second is nested inside a third, then\n       the first is contained within the third. This elementary result is the\n       first formal theorem of the collection.\"",
       "inline_latex": null,
       "arguments": []
     },

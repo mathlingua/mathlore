@@ -4,13 +4,13 @@
   "definition_keys": [],
   "heading": null,
   "heading_latex": "\\textrm{Theorem}",
-  "body_text": "Additivity over intervals. If $f$ is Riemann integrable on $[a,b]$\nand $c\\in[a,b]$, then $\\int_a^b f=\\int_a^c f+\\int_c^b f$. With the\nconventions $\\int_b^a f=-\\int_a^b f$ and $\\int_a^a f=0$, this\nidentity is independent of the order of the endpoints.",
+  "body_text": "Additivity Over Intervals. If $f$ is Riemann integrable on $[a, b]$ and\n$c \\in (a, b)$, then $f$ is integrable on $[a, c]$ and $[c, b]$, and:\n$$ \\int_a^b f(x) \\, dx = \\int_a^c f(x) \\, dx + \\int_c^b f(x) \\, dx. $$\nAdopting the conventions $\\int_b^a f = -\\int_a^b f$ and $\\int_a^a f = 0$,\nthis additivity holds universally for arbitrary ordering of endpoints.",
   "page": null,
-  "source": "TextTheorem: \"Additivity over intervals. If $f$ is Riemann integrable on $[a,b]$\n              and $c\\in[a,b]$, then $\\int_a^b f=\\int_a^c f+\\int_c^b f$. With the\n              conventions $\\int_b^a f=-\\int_a^b f$ and $\\int_a^a f=0$, this\n              identity is independent of the order of the endpoints.\"\nId: \"a6f26a35-fb02-4842-85f9-9a9d698bfc9f\"",
+  "source": "TextTheorem: \"Additivity Over Intervals. If $f$ is Riemann integrable on $[a, b]$ and\n              $c \\in (a, b)$, then $f$ is integrable on $[a, c]$ and $[c, b]$, and:\n              $$ \\int_a^b f(x) \\, dx = \\int_a^c f(x) \\, dx + \\int_c^b f(x) \\, dx. $$\n              Adopting the conventions $\\int_b^a f = -\\int_a^b f$ and $\\int_a^a f = 0$,\n              this additivity holds universally for arbitrary ordering of endpoints.\"\nId: \"a6f26a35-fb02-4842-85f9-9a9d698bfc9f\"",
   "sections": [
     {
       "label": "TextTheorem",
-      "inline_argument": "\"Additivity over intervals. If $f$ is Riemann integrable on $[a,b]$\n              and $c\\in[a,b]$, then $\\int_a^b f=\\int_a^c f+\\int_c^b f$. With the\n              conventions $\\int_b^a f=-\\int_a^b f$ and $\\int_a^a f=0$, this\n              identity is independent of the order of the endpoints.\"",
+      "inline_argument": "\"Additivity Over Intervals. If $f$ is Riemann integrable on $[a, b]$ and\n              $c \\in (a, b)$, then $f$ is integrable on $[a, c]$ and $[c, b]$, and:\n              $$ \\int_a^b f(x) \\, dx = \\int_a^c f(x) \\, dx + \\int_c^b f(x) \\, dx. $$\n              Adopting the conventions $\\int_b^a f = -\\int_a^b f$ and $\\int_a^a f = 0$,\n              this additivity holds universally for arbitrary ordering of endpoints.\"",
       "inline_latex": null,
       "arguments": []
     },

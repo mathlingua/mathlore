@@ -2,15 +2,20 @@ Title: "Integers"
 Id: "3919403c-8205-49f9-aebb-fc23b59961ae"
 
 
-Text: "The natural numbers can be added but not freely subtracted: there is no
-       natural number equal to $3 - 5$. The integers repair this by adjoining
-       negative numbers. The classical construction, carried out here,
-       represents each integer as a difference of two naturals -- the pair
-       $(n, m)$ standing for $n - m$ -- and then identifies pairs that ought to
-       name the same difference. This is exactly a quotient by an equivalence
-       relation, so it draws on every earlier chapter at once: the naturals,
-       their addition, the Cartesian product, and the quotient of a set by a
-       relation."
+Text: "While the natural numbers support unrestricted addition and multiplication,
+       they suffer from an algebraic defect: the lack of additive inverses. An
+       equation as elementary as $x + 5 = 3$ possesses no solution in
+       $\mathbb{N}$; subtraction is only a partial, conditional operation.
+
+       The integers $\mathbb{Z}$ resolve this asymmetry by adjoining negative
+       numbers, completing the commutative monoid $(\mathbb{N}, +)$ into an
+       abelian group $(\mathbb{Z}, +)$. The classical construction—an instance
+       of the Grothendieck group completion—represents each integer as a formal
+       difference of two natural numbers, where the pair $(n, m) \in \mathbb{N}
+       \times \mathbb{N}$ intuitively denotes $n - m$. Identifying pairs that
+       represent the same difference yields an equivalence relation on $\mathbb{N}
+       \times \mathbb{N}$, whose quotient set constructs $\mathbb{Z}$ from the
+       ground up."
 Id: "6ab727ff-4d3c-467a-a090-23baa9056340"
 
 
@@ -18,10 +23,12 @@ SectionTitle: "The Integer Equivalence Relation"
 Id: "c4c04ee9-fb37-4bb1-9bfc-fbb273c455f7"
 
 
-Text: "Two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same integer when
-       $n_1 - m_1 = n_2 - m_2$. Since subtraction is not yet available, this is
-       phrased using addition alone, as $n_1 + m_2 = n_2 + m_1$. The relation so
-       defined is an equivalence relation on pairs of naturals."
+Text: "Intuitively, two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same
+       integer difference when $n_1 - m_1 = n_2 - m_2$. Because subtraction is
+       not yet defined, we rearrange this equation using addition alone into the
+       equivalent *cross-sum condition*: $$n_1 + m_2 = n_2 + m_1$$ This relation
+       is reflexive, symmetric, and transitive, forming a valid equivalence
+       relation on $\mathbb{N} \times \mathbb{N}$."
 Id: "86f693bc-1d69-4bfd-bef4-c67033b73acb"
 
 
@@ -105,8 +112,9 @@ SectionTitle: "Integer Constants and Operations"
 Id: "c0a1f8a4-c48a-4a84-8f81-0b741cd08c77"
 
 
-Text: "The zero integer is the additive identity, and one is the multiplicative
-       identity."
+Text: "The integer zero ($0$) is the unique neutral identity element for
+       addition, and one ($1$) is the non-zero neutral identity element for
+       multiplication."
 Id: "c29a27c7-6869-4b83-8183-70312240df75"
 
 
@@ -129,8 +137,9 @@ Documented:
 Id: "5cda05b0-3930-47cc-b00c-386456f52ab0"
 
 
-Text: "Addition of integers is commutative and associative, with zero as
-       identity."
+Text: "Addition $+ : \mathbb{Z} \times \mathbb{Z} \to \mathbb{Z}$ is commutative
+       and associative, equipping $\mathbb{Z}$ with the structure of an abelian
+       group."
 Id: "66a4fe57-0841-4c98-afd8-1ab256038d71"
 
 
@@ -144,7 +153,9 @@ Documented:
 Id: "d2bd8cc9-3dd0-4a49-8e85-cf5009edb9a4"
 
 
-Text: "Multiplication of integers is associative and distributes over addition."
+Text: "Multiplication $\cdot : \mathbb{Z} \times \mathbb{Z} \to \mathbb{Z}$ is
+       associative, commutative, and distributes over addition, endowing
+       $\mathbb{Z}$ with the structure of a commutative ring."
 Id: "52cc558f-f07b-4b85-a932-7f4448a88b65"
 
 
@@ -158,8 +169,9 @@ Documented:
 Id: "155efde4-346b-4674-8578-dfbffcdc188d"
 
 
-Text: "Every integer $a$ has a unique additive inverse $-a$ satisfying
-       $a + (-a) = 0$."
+Text: "Every integer $a$ possesses a unique additive inverse $-a$ satisfying
+       $a + (-a) = 0$. Subtraction is then defined globally by
+       $a - b := a + (-b)$."
 Id: "667c2087-7c50-4b19-b052-b9fa56d77656"
 
 
@@ -187,12 +199,19 @@ SectionTitle: "Realization by Differences of Naturals"
 Id: "bd42839a-010c-43f1-b720-c50cd2e5eef6"
 
 
-Text: "The pair construction now supplies every component of the abstract
-       integer tuple.  Its carrier is the quotient of $\mathbb{N} \times
-       \mathbb{N}$ by the relation above.  Addition adds like coordinates,
-       multiplication expands $(a-b)(c-d)$, negation swaps the coordinates,
-       and order compares the represented differences without using integer
-       subtraction."
+Text: "The formal difference construction supplies every component of the
+       abstract integer tuple. The carrier set is the quotient
+       $(\mathbb{N} \times \mathbb{N}) / {\sim}$. The arithmetic operations are
+       induced on equivalence classes by:
+       $$\begin{aligned}
+       [(a, b)] + [(c, d)] &:= [(a + c, b + d)] \\
+       [(a, b)] \cdot [(c, d)] &:= [(ac + bd, ad + bc)] \\
+       -[(a, b)] &:= [(b, a)] \\
+       [(a, b)] \le [(c, d)] &\iff a + d \le c + b
+       \end{aligned}$$
+       Because these definitions operate on representative pairs, their
+       well-definedness is a theorem: replacing $(a, b)$ with an equivalent pair
+       $(a', b')$ produces identical output classes."
 Id: "f23b6e0a-72bf-47a9-8ba0-6b48734992d1"
 
 
@@ -366,6 +385,20 @@ Documented:
 . called: "Euclidean Division"
 . description: "For $b>0$, there are unique integers $q$ and $r$ such that
                 $a=bq+r$ and $0\leq r<b$."
+Proof: """Let $b > 0$. Consider the set of non-negative integers of the form
+          $a - bk$: $$S := \{a - bk : k \in \mathbb{Z} \land a - bk \ge 0\}$$ To
+          see that $S$ is nonempty: if $a \ge 0$, taking $k = 0$ gives
+          $a \in S$. If $a < 0$, taking $k = a$ gives $a - ba = a(1 - b) \ge 0$
+          (since $b \ge 1$), so $a(1 - b) \in S$. Since $S$ is a nonempty subset
+          of non-negative integers, by the Well-Ordering Principle it contains a
+          least element $r = a - bq \ge 0$. We claim $r < b$: if $r \ge b$, then
+          $r - b = a - b(q + 1) \ge 0$ would belong to $S$, contradicting the
+          minimality of $r$. Thus $0 \le r < b$. To establish uniqueness:
+          suppose $a = bq_1 + r_1 = bq_2 + r_2$ with $0 \le r_1, r_2 < b$.
+          Subtracting yields $b(q_1 - q_2) = r_2 - r_1$, so $b$ divides
+          $r_2 - r_1$. Because $-b < r_2 - r_1 < b$, the only multiple of $b$
+          strictly between $-b$ and $b$ is $0$. Therefore $r_2 - r_1 = 0$, so
+          $r_1 = r_2$, which in turn forces $q_1 = q_2$."""
 Id: "5dd9f7fc-9815-4816-bc2a-737babe16bf9"
 
 

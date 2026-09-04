@@ -5,8 +5,10 @@
   "heading": null,
   "heading_latex": "\\textrm{Commutativity of Set Operations}",
   "body_text": null,
+  "proof_text": "By definition, $x \\in A \\cup B \\iff x \\in A \\lor x \\in B$.\nBecause logical disjunction is commutative,\n$x \\in A \\lor x \\in B \\iff x \\in B \\lor x \\in A \\iff x \\in B \\cup A$.\nBy Extensionality, $A \\cup B = B \\cup A$.\nSimilarly, $x \\in A \\cap B \\iff x \\in A \\land x \\in B \\iff x \\in B \\land x \\in A \\iff x \\in B \\cap A$,\nso $A \\cap B = B \\cap A$.",
+  "proof_source": "Proof: \"\"\"By definition, $x \\in A \\cup B \\iff x \\in A \\lor x \\in B$.\n          Because logical disjunction is commutative,\n          $x \\in A \\lor x \\in B \\iff x \\in B \\lor x \\in A \\iff x \\in B \\cup A$.\n          By Extensionality, $A \\cup B = B \\cup A$.\n          Similarly, $x \\in A \\cap B \\iff x \\in A \\land x \\in B \\iff x \\in B \\land x \\in A \\iff x \\in B \\cap A$,\n          so $A \\cap B = B \\cap A$.\"\"\"",
   "page": null,
-  "source": "Theorem:\ngiven: A, B is \\set\nthen:\n. (.A \\.set.union./ B.) = (.B \\.set.union./ A.)\n. (.A \\.set.intersect./ B.) = (.B \\.set.intersect./ A.)\nDocumented:\n. called: \"Commutativity of Set Operations\"\n. description: \"Union and intersection are commutative: $A \\cup B = B \\cup A$\n                and $A \\cap B = B \\cap A$.\"\nId: \"a8b70f59-148f-4e51-bcc8-7ab889db86d4\"",
+  "source": "Theorem:\ngiven: A, B is \\set\nthen:\n. (.A \\.set.union./ B.) = (.B \\.set.union./ A.)\n. (.A \\.set.intersect./ B.) = (.B \\.set.intersect./ A.)\nDocumented:\n. called: \"Commutativity of Set Operations\"\n. description: \"Union and intersection are commutative: $A \\cup B = B \\cup A$\n                and $A \\cap B = B \\cap A$.\"\nProof: \"\"\"By definition, $x \\in A \\cup B \\iff x \\in A \\lor x \\in B$.\n          Because logical disjunction is commutative,\n          $x \\in A \\lor x \\in B \\iff x \\in B \\lor x \\in A \\iff x \\in B \\cup A$.\n          By Extensionality, $A \\cup B = B \\cup A$.\n          Similarly, $x \\in A \\cap B \\iff x \\in A \\land x \\in B \\iff x \\in B \\land x \\in A \\iff x \\in B \\cap A$,\n          so $A \\cap B = B \\cap A$.\"\"\"\nId: \"a8b70f59-148f-4e51-bcc8-7ab889db86d4\"",
   "sections": [
     {
       "label": "Theorem",

@@ -1,9 +1,34 @@
-Text: "The natural numbers formalize discrete iteration. They may be described
-       abstractly by zero, successor, and induction, or realized concretely as
-       the finite von Neumann ordinals. The first two pages develop those
-       viewpoints; the final page isolates induction and recursion as the
-       characteristic reasoning and construction principles of $\mathbb{N}$.
-       The separation between abstract structure and concrete realization is
-       deliberate: arithmetic theorems depend on the Peano structure, not on
-       the accidental details of its set-theoretic encoding."
+Text: "The natural numbers $\mathbb{N} = \{0, 1, 2, \dots\}$ constitute the primary
+       datum of mathematical thought, formalizing the twin concepts of counting
+       and discrete succession. While Leopold Kronecker famously proclaimed that
+       'God made the natural numbers, all else is the work of man', modern
+       foundations demonstrate that even the natural numbers can be rigorously
+       constructed from first principles.
+
+       The architecture of the natural numbers is governed by two complementary
+       perspectives:
+       1. *The Axiomatic Perspective*: Formulated by Richard Dedekind in 1888
+       and refined by Giuseppe Peano in 1889, the natural numbers are defined
+       abstractly by a distinguished base element ($0$), an injective successor
+       function ($S$), and the Principle of Mathematical Induction, which
+       guarantees that $\mathbb{N}$ contains no spurious elements beyond those
+       generated from zero.
+       2. *The Set-Theoretic Realization*: Conceived by John von Neumann in
+       1923, the natural numbers are realized within pure Zermelo--Fraenkel set
+       theory as the minimal inductive set $\omega$. In this construction, each
+       natural number is literally the set of all preceding natural numbers
+       ($n = \{0, 1, \dots, n-1\}$), rendering the membership relation $\in$
+       identical to the strict order $<$.
+
+       Dedekind's celebrated Categoricity Theorem establishes that any two
+       systems satisfying the Peano axioms are uniquely isomorphic. This
+       guarantees that arithmetic truth is invariant: theorems depend solely on
+       the abstract Peano structure, not on the incidental set-theoretic
+       encoding chosen to implement it.
+
+       This chapter develops both viewpoints. We introduce the abstract Peano
+       postulates and their arithmetic operations, construct the von Neumann
+       numerals from the Axiom of Infinity, and establish the twin engines of
+       discrete mathematics: *mathematical induction* for proof and
+       *primitive recursion* for definition."
 Id: "a338a613-ef12-4fab-9b9f-f0a9f6760515"

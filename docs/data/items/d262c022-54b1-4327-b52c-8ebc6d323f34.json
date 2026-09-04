@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The structured rank--nullity theorem on the preceding page states that\nthe dimension of the domain is the sum of the dimensions of the kernel\nand image. It measures the information destroyed by a linear map against\nthe information retained."
+    "text": "The Rank-Nullity Theorem establishes that any linear map $T : V \\to W$\nsatisfies $\\dim(V) = \\dim(\\ker T) + \\dim(\\operatorname{im} T)$.\nGeometrically, the dimension of the domain is partitioned into the\ndegrees of freedom destroyed (collapsed into the kernel) and the degrees\nof freedom preserved (mapped into the image)."
   },
-  "source": "Text: \"The structured rank--nullity theorem on the preceding page states that\n       the dimension of the domain is the sum of the dimensions of the kernel\n       and image. It measures the information destroyed by a linear map against\n       the information retained.\"\nId: \"d262c022-54b1-4327-b52c-8ebc6d323f34\"",
+  "source": "Text: \"The Rank-Nullity Theorem establishes that any linear map $T : V \\to W$\n       satisfies $\\dim(V) = \\dim(\\ker T) + \\dim(\\operatorname{im} T)$.\n       Geometrically, the dimension of the domain is partitioned into the\n       degrees of freedom destroyed (collapsed into the kernel) and the degrees\n       of freedom preserved (mapped into the image).\"\nId: \"d262c022-54b1-4327-b52c-8ebc6d323f34\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The structured rank--nullity theorem on the preceding page states that\n       the dimension of the domain is the sum of the dimensions of the kernel\n       and image. It measures the information destroyed by a linear map against\n       the information retained.\"",
+      "inline_argument": "\"The Rank-Nullity Theorem establishes that any linear map $T : V \\to W$\n       satisfies $\\dim(V) = \\dim(\\ker T) + \\dim(\\operatorname{im} T)$.\n       Geometrically, the dimension of the domain is partitioned into the\n       degrees of freedom destroyed (collapsed into the kernel) and the degrees\n       of freedom preserved (mapped into the image).\"",
       "inline_latex": null,
       "arguments": []
     },

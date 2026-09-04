@@ -8,7 +8,7 @@
   "heading_latex": "m\\textrm{ is minimal in }X\\textrm{ under }R",
   "body_text": null,
   "page": null,
-  "source": "[\\is.minimal{m}:in{X}:under{R}]\nStates:\nwhen:\n. X is \\set\n. R is \\partial.order:on{X}\n. m \"in\" X\nthat:\n. not:\n  . exists: x \"in\" X\n    suchThat:\n    . m != x\n    . R(x, m)\nDocumented:\n. called: \"$m?$ is minimal in $X?$ under $R?$\"\nId: \"3c3478fa-e156-4364-9c53-3577a60d7dd9\"",
+  "source": "[\\is.minimal{m}:in{X}:under{R}]\nStates:\nwhen:\n. X is \\set\n. R is \\partial.order:on{X}\n. m \"in\" X\nthat:\n. not:\n  . exists: x \"in\" X\n    suchThat:\n    . m != x\n    . R(x, m)\nDocumented:\n. called: \"$m?$ is minimal in $X?$ under $R?$\"\n. description: \"A minimal element has no distinct element strictly below it.\"\nId: \"3c3478fa-e156-4364-9c53-3577a60d7dd9\"",
   "sections": [
     {
       "label": "States",
@@ -192,6 +192,18 @@
               "label": "called",
               "inline_argument": "\"$m?$ is minimal in $X?$ under $R?$\"",
               "inline_latex": "m\\textrm{ is minimal in }X\\textrm{ under }R",
+              "arguments": []
+            }
+          ]
+        },
+        {
+          "kind": "group",
+          "heading": null,
+          "sections": [
+            {
+              "label": "description",
+              "inline_argument": "see above",
+              "inline_latex": "\\langle\\textrm{see above}\\rangle",
               "arguments": []
             }
           ]

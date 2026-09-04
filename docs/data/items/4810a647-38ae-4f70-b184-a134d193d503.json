@@ -1,0 +1,27 @@
+{
+  "id": "4810a647-38ae-4f70-b184-a134d193d503",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Mathematics frequently encounters situations where an object satisfying a\ngiven condition is not merely present, but unique. We denote this by the\nquantifier $\\exists!$, read *there exists a unique*."
+  },
+  "source": "Text: \"Mathematics frequently encounters situations where an object satisfying a\n       given condition is not merely present, but unique. We denote this by the\n       quantifier $\\exists!$, read *there exists a unique*.\"\nId: \"4810a647-38ae-4f70-b184-a134d193d503\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Mathematics frequently encounters situations where an object satisfying a\n       given condition is not merely present, but unique. We denote this by the\n       quantifier $\\exists!$, read *there exists a unique*.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"4810a647-38ae-4f70-b184-a134d193d503\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

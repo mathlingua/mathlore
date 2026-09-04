@@ -2,9 +2,22 @@ Title: "Limits and Continuity"
 Id: "71b151a8-9a18-48b9-a4c4-3007044147d3"
 
 
-Text: "Limits and continuity capture the notion of approximation and unbroken
-       change in real-valued functions. The $\epsilon$-$\delta$ formalism
-       provides the precise criterion for functional proximity."
+Text: "Limits and continuity capture the rigorous mathematical essence of
+       continuous change, geometric proximity, and local approximation.
+
+       Formulated in the mid-nineteenth century by Karl Weierstrass, the
+       $\epsilon$-$\delta$ definition dispenses with nebulous infinitesimals in
+       favor of precise universal and existential quantifiers: a function $f$
+       approaches $L$ at $x_0$ if for every tolerance $\epsilon > 0$ demanded in
+       the output, there exists a response radius $\delta > 0$ in the input
+       ensuring $|f(x) - L| < \epsilon$.
+
+       Continuity at a point means that $f(x) \to f(x_0)$ as $x \to x_0$.
+       Globally, continuous functions preserve the fundamental topological
+       invariants of subsets: the continuous image of a connected set is
+       connected (yielding the Intermediate Value Theorem), and the continuous
+       image of a compact set is compact (yielding the Extreme Value Theorem and
+       uniform continuity)."
 Id: "800b7c32-41b4-4c27-a8d6-bb213da36a62"
 
 
@@ -108,21 +121,45 @@ SectionTitle: "The Intermediate Value Theorem"
 Id: "53d3e7df-fd04-4eb3-9f05-149c234f9485"
 
 
-TextTheorem: "Intermediate value theorem. Let $a<b$ and let
-              $f:[a,b]\to\mathbb{R}$ be continuous. If $y$ lies between $f(a)$
-              and $f(b)$, meaning
-              $\min\{f(a),f(b)\}\leq y\leq\max\{f(a),f(b)\}$, then there is
-              $c\in[a,b]$ such that $f(c)=y$. If $y$ lies strictly between the
-              endpoint values, $c$ may be chosen in $(a,b)$."
+TextTheorem: "The Intermediate Value Theorem (Bolzano). Let
+              $f : [a, b] \to \mathbb{R}$ be a continuous function on a closed
+              interval with $a < b$. If $y$ lies between $f(a)$ and $f(b)$ (that
+              is, $\min\{f(a), f(b)\} \leq y \leq \max\{f(a), f(b)\}$), then
+              there exists at least one point $c \in [a, b]$ such that:
+              $$ f(c) = y. $$
+
+              *Proof*: Assume without loss of generality that $f(a) < y < f(b)$.
+              Define the auxiliary continuous function $g(x) = f(x) - y$, so
+              that $g(a) < 0 < g(b)$. We seek $c \in (a, b)$ with $g(c) = 0$.
+
+              We construct a sequence of nested intervals $I_k = [a_k, b_k]$ via
+              bisection, starting with $I_0 = [a, b]$. Having constructed $I_k$
+              with $g(a_k) \leq 0 \leq g(b_k)$:
+              1. Compute the midpoint $m = (a_k + b_k)/2$.
+              2. If $g(m) = 0$, we are done: set $c = m$.
+              3. If $g(m) < 0$, set $I_{k+1} = [m, b_k]$ (so
+                 $a_{k+1} = m, b_{k+1} = b_k$).
+              4. If $g(m) > 0$, set $I_{k+1} = [a_k, m]$ (so
+                 $a_{k+1} = a_k, b_{k+1} = m$).
+
+              By the Nested Interval Theorem,
+              $\bigcap_{k=0}^\infty [a_k, b_k] = \{c\}$ for a unique point
+              $c \in [a, b]$, with $\lim a_k = c = \lim b_k$. By continuity of
+              $g$, $g(c) = \lim g(a_k) \leq 0$ and $g(c) = \lim g(b_k) \geq 0$.
+              Consequently, $g(c) = 0$, which yields $f(c) = y$."
 Id: "f29c7f02-8e4f-46da-ac4e-3df62dca57f0"
 
 
-Text: "Continuity and the interval domain are both indispensable. A jump
-       discontinuity can omit all values between its one-sided levels, while a
-       continuous function on a disconnected domain can take one range of values
-       on one component and another range on the other. Conceptually, the
-       theorem says that the continuous image of a connected interval is
-       connected, hence itself an interval."
+Text: "Both the continuity of $f$ and the connectedness of the interval $[a, b]$
+       are indispensable to the Intermediate Value Theorem.
+
+       A function with a jump discontinuity can skip directly from negative to
+       positive values without attaining zero. Similarly, if the domain is
+       disconnected (such as $[0, 1] \cup [2, 3]$), a continuous function may
+       take negative values on the first component and positive values on the
+       second without ever crossing zero. Topologically, the theorem states that
+       the continuous image of a connected space is connected, and the connected
+       subsets of $\mathbb{R}$ are precisely intervals."
 Id: "580e742d-65ac-4bc1-a578-a5ab217a1b12"
 
 
@@ -130,23 +167,44 @@ SectionTitle: "Compactness and Uniform Control"
 Id: "1c1dc16f-d9f4-431c-84ab-2a013263c6a4"
 
 
-TextTheorem: "Extreme value theorem. If $f:[a,b]\to\mathbb{R}$ is continuous,
-              then $f$ is bounded and attains both a maximum and a minimum on
-              $[a,b]$. Boundedness of the domain alone is insufficient; the
-              interval must also be closed, and the function must be continuous."
+TextTheorem: "The Extreme Value Theorem (Weierstrass). If $f : [a, b] \to \mathbb{R}$
+              is continuous on a closed bounded interval, then $f$ is bounded and attains
+              both an absolute maximum and an absolute minimum on $[a, b]$:
+              $$ \exists \, x_{\min}, x_{\max} \in [a, b] \quad \text{such that} \quad f(x_{\min}) \leq f(x) \leq f(x_{\max}) \quad \forall x \in [a, b]. $$
+              
+              *Proof Sketch*: Let $M = \sup\{f(x) : x \in [a, b]\} \in \mathbb{R} \cup \{+\infty\}$.
+              Choose a sequence $(x_n)$ in $[a, b]$ such that $f(x_n) \to M$.
+              Since $[a, b]$ is bounded, by the Bolzano-Weierstrass theorem $(x_n)$ has a
+              convergent subsequence $x_{n_k} \to x_{\max}$.
+              Since $[a, b]$ is closed, $x_{\max} \in [a, b]$.
+              By continuity of $f$, $f(x_{\max}) = \lim_{k \to \infty} f(x_{n_k}) = M$.
+              Since $f(x_{\max}) \in \mathbb{R}$, $M$ is finite and attained.
+              The minimum is attained symmetrically by considering $-f$."
 Id: "1de7e719-9ad4-4acd-a197-fe41c36077ea"
 
 
-TextTheorem: "Heine--Cantor theorem. Every continuous function from a compact
-              metric space to a metric space is uniformly continuous. In
-              particular, a function continuous on $[a,b]$ admits one $\delta$
-              for each $\epsilon$ that works at all points simultaneously."
+TextTheorem: "The Heine-Cantor Theorem. Every continuous function
+              $f : [a, b] \to \mathbb{R}$ on a closed bounded interval is
+              *uniformly continuous*.
+
+              *Significance*: Pointwise continuity allows $\delta$ to shrink
+              toward zero as $x$ approaches steep regions of the graph. On a
+              compact interval $[a, b]$, no such unbounded steepening can occur:
+              for any given $\epsilon > 0$, a single global $\delta > 0$
+              suffices for all points simultaneously. This uniform control is
+              the key technical requirement for proving the integrability of
+              continuous functions."
 Id: "bbd033d2-9fa7-47d7-9354-35da690e0f8e"
 
 
-TextTheorem: "Sequential criterion. A function $f$ has limit $L$ at an
-              accumulation point $x_0$ of its domain if and only if
-              $f(x_n)\to L$ for every sequence $(x_n)$ in the domain with
-              $x_n\ne x_0$ and $x_n\to x_0$. This criterion is specific to
-              first-countable settings such as metric spaces."
+TextTheorem: "The Sequential Criterion for Limits and Continuity. Let
+              $f : U \to \mathbb{R}$ and let $x_0$ be an accumulation point of
+              $U$. Then $\lim_{x \to x_0} f(x) = L$ if and only if for every
+              sequence $(x_n)$ in $U \setminus \{x_0\}$ converging to $x_0$, the
+              sequence of outputs satisfies $f(x_n) \to L$.
+
+              Consequently, $f$ is continuous at $x_0$ if and only if
+              $f(\lim x_n) = \lim f(x_n)$ for every sequence converging to
+              $x_0$. This criterion provides the operational bridge converting
+              continuous analytical assertions into discrete sequence problems."
 Id: "66ebdb25-bc98-4ea5-be68-0e57e72aa22e"

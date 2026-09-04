@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A group is *finite* when its underlying set has finitely many elements.\nThe size of a finite group, its order, governs a great deal of its\nstructure, and finiteness is inherited directly from the underlying\nmonoid."
+    "text": "A group is *finite* when its underlying carrier set $X$ has finite\ncardinality. The cardinality $|G| = |X|$ is called the *order* of the\ngroup. The order of a finite group exerts immense control over its\ninternal substructure: by Lagrange's theorem and the Sylow theorems, the\narithmetic prime factorization of $|G|$ dictates the existence and sizes\nof its subgroups."
   },
-  "source": "Text: \"A group is *finite* when its underlying set has finitely many elements.\n       The size of a finite group, its order, governs a great deal of its\n       structure, and finiteness is inherited directly from the underlying\n       monoid.\"\nId: \"6c628805-5df1-4ad5-b2c3-23bf7dad5acc\"",
+  "source": "Text: \"A group is *finite* when its underlying carrier set $X$ has finite\n       cardinality. The cardinality $|G| = |X|$ is called the *order* of the\n       group. The order of a finite group exerts immense control over its\n       internal substructure: by Lagrange's theorem and the Sylow theorems, the\n       arithmetic prime factorization of $|G|$ dictates the existence and sizes\n       of its subgroups.\"\nId: \"6c628805-5df1-4ad5-b2c3-23bf7dad5acc\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A group is *finite* when its underlying set has finitely many elements.\n       The size of a finite group, its order, governs a great deal of its\n       structure, and finiteness is inherited directly from the underlying\n       monoid.\"",
+      "inline_argument": "\"A group is *finite* when its underlying carrier set $X$ has finite\n       cardinality. The cardinality $|G| = |X|$ is called the *order* of the\n       group. The order of a finite group exerts immense control over its\n       internal substructure: by Lagrange's theorem and the Sylow theorems, the\n       arithmetic prime factorization of $|G|$ dictates the existence and sizes\n       of its subgroups.\"",
       "inline_latex": null,
       "arguments": []
     },

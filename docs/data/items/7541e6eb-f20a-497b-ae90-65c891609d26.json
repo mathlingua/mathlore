@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Before defining subgroups we record a small set-theoretic fact that the\ndefinition needs: forming the Cartesian square of a subset lands inside\nthe Cartesian square of the whole set. It lets a subgroup's operation be\nrecognized as a restriction of the parent operation."
+    "text": "Before formalizing subgroups, we establish an elementary set-theoretic\nlemma: the Cartesian product of a subset with itself is a subset of the\nCartesian square of the ambient set. This lemma guarantees that\nrestricting a binary operation $* : X \\times X \\to X$ to $X' \\times X'$\nyields a well-typed mapping into $X$."
   },
-  "source": "Text: \"Before defining subgroups we record a small set-theoretic fact that the\n       definition needs: forming the Cartesian square of a subset lands inside\n       the Cartesian square of the whole set. It lets a subgroup's operation be\n       recognized as a restriction of the parent operation.\"\nId: \"7541e6eb-f20a-497b-ae90-65c891609d26\"",
+  "source": "Text: \"Before formalizing subgroups, we establish an elementary set-theoretic\n       lemma: the Cartesian product of a subset with itself is a subset of the\n       Cartesian square of the ambient set. This lemma guarantees that\n       restricting a binary operation $* : X \\times X \\to X$ to $X' \\times X'$\n       yields a well-typed mapping into $X$.\"\nId: \"7541e6eb-f20a-497b-ae90-65c891609d26\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Before defining subgroups we record a small set-theoretic fact that the\n       definition needs: forming the Cartesian square of a subset lands inside\n       the Cartesian square of the whole set. It lets a subgroup's operation be\n       recognized as a restriction of the parent operation.\"",
+      "inline_argument": "\"Before formalizing subgroups, we establish an elementary set-theoretic\n       lemma: the Cartesian product of a subset with itself is a subset of the\n       Cartesian square of the ambient set. This lemma guarantees that\n       restricting a binary operation $* : X \\times X \\to X$ to $X' \\times X'$\n       yields a well-typed mapping into $X$.\"",
       "inline_latex": null,
       "arguments": []
     },

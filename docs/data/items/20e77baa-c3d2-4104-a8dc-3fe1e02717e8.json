@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The empty set acts as the identity element for set union."
+    "text": "In the monoid of subsets under union, the empty set $\\emptyset$ serves as\nthe unique neutral identity element: adjoining nothing leaves any set\nunchanged."
   },
-  "source": "Text: \"The empty set acts as the identity element for set union.\"\nId: \"20e77baa-c3d2-4104-a8dc-3fe1e02717e8\"",
+  "source": "Text: \"In the monoid of subsets under union, the empty set $\\emptyset$ serves as\n       the unique neutral identity element: adjoining nothing leaves any set\n       unchanged.\"\nId: \"20e77baa-c3d2-4104-a8dc-3fe1e02717e8\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The empty set acts as the identity element for set union.\"",
+      "inline_argument": "\"In the monoid of subsets under union, the empty set $\\emptyset$ serves as\n       the unique neutral identity element: adjoining nothing leaves any set\n       unchanged.\"",
       "inline_latex": null,
       "arguments": []
     },

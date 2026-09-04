@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Similarly, pairing gives the unordered pair of any two sets $x$ and $y$."
+    "text": "Applying the Axiom of Pairing to two distinct sets $x$ and $y$ produces\nthe *unordered pair* $\\{x, y\\}$. By the Axiom of Extensionality, the\nidentity of $\\{x, y\\}$ depends solely on its elements, which implies\n$\\{x, y\\} = \\{y, x\\}$: the order of listing carries no mathematical\nsignificance."
   },
-  "source": "Text: \"Similarly, pairing gives the unordered pair of any two sets $x$ and $y$.\"\nId: \"c128a6a8-b892-4177-8622-29ba3cfa473a\"",
+  "source": "Text: \"Applying the Axiom of Pairing to two distinct sets $x$ and $y$ produces\n       the *unordered pair* $\\{x, y\\}$. By the Axiom of Extensionality, the\n       identity of $\\{x, y\\}$ depends solely on its elements, which implies\n       $\\{x, y\\} = \\{y, x\\}$: the order of listing carries no mathematical\n       significance.\"\nId: \"c128a6a8-b892-4177-8622-29ba3cfa473a\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Similarly, pairing gives the unordered pair of any two sets $x$ and $y$.\"",
+      "inline_argument": "\"Applying the Axiom of Pairing to two distinct sets $x$ and $y$ produces\n       the *unordered pair* $\\{x, y\\}$. By the Axiom of Extensionality, the\n       identity of $\\{x, y\\}$ depends solely on its elements, which implies\n       $\\{x, y\\} = \\{y, x\\}$: the order of listing carries no mathematical\n       significance.\"",
       "inline_latex": null,
       "arguments": []
     },

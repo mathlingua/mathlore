@@ -1,0 +1,27 @@
+{
+  "id": "5912a647-38ae-4f70-b184-a134d193d504",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The quantifier $\\exists!$ is the logical license for introducing\n*definite descriptions* and functional notations. In his landmark 1905\ntheory of descriptions, Bertrand Russell emphasized that an expression\nsuch as 'the identity element of $G$' or 'the limit of $f(x)$ as\n$x \\to a$' is meaningless unless both existence and uniqueness have been\nestablished."
+  },
+  "source": "Text: \"The quantifier $\\exists!$ is the logical license for introducing\n       *definite descriptions* and functional notations. In his landmark 1905\n       theory of descriptions, Bertrand Russell emphasized that an expression\n       such as 'the identity element of $G$' or 'the limit of $f(x)$ as\n       $x \\to a$' is meaningless unless both existence and uniqueness have been\n       established.\"\nId: \"5912a647-38ae-4f70-b184-a134d193d504\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"The quantifier $\\exists!$ is the logical license for introducing\n       *definite descriptions* and functional notations. In his landmark 1905\n       theory of descriptions, Bertrand Russell emphasized that an expression\n       such as 'the identity element of $G$' or 'the limit of $f(x)$ as\n       $x \\to a$' is meaningless unless both existence and uniqueness have been\n       established.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"5912a647-38ae-4f70-b184-a134d193d504\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

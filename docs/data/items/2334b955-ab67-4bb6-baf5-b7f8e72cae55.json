@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Multiplication is defined by repeated addition via primitive recursion."
+    "text": "Multiplication $\\cdot : \\mathbb{N} \\times \\mathbb{N} \\to \\mathbb{N}$ is\ndefined by primitive recursion as repeated addition:\n$$\\begin{aligned}\n0 \\cdot m &:= 0 \\\\\nS(k) \\cdot m &:= (k \\cdot m) + m\n\\end{aligned}$$\nMultiplying $n$ by $m$ computes the sum of $n$ copies of $m$, with $0$\nacting as the annihilating zero element."
   },
-  "source": "Text: \"Multiplication is defined by repeated addition via primitive recursion.\"\nId: \"2334b955-ab67-4bb6-baf5-b7f8e72cae55\"",
+  "source": "Text: \"Multiplication $\\cdot : \\mathbb{N} \\times \\mathbb{N} \\to \\mathbb{N}$ is\n       defined by primitive recursion as repeated addition:\n       $$\\begin{aligned}\n       0 \\cdot m &:= 0 \\\\\n       S(k) \\cdot m &:= (k \\cdot m) + m\n       \\end{aligned}$$\n       Multiplying $n$ by $m$ computes the sum of $n$ copies of $m$, with $0$\n       acting as the annihilating zero element.\"\nId: \"2334b955-ab67-4bb6-baf5-b7f8e72cae55\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Multiplication is defined by repeated addition via primitive recursion.\"",
+      "inline_argument": "\"Multiplication $\\cdot : \\mathbb{N} \\times \\mathbb{N} \\to \\mathbb{N}$ is\n       defined by primitive recursion as repeated addition:\n       $$\\begin{aligned}\n       0 \\cdot m &:= 0 \\\\\n       S(k) \\cdot m &:= (k \\cdot m) + m\n       \\end{aligned}$$\n       Multiplying $n$ by $m$ computes the sum of $n$ copies of $m$, with $0$\n       acting as the annihilating zero element.\"",
       "inline_latex": null,
       "arguments": []
     },

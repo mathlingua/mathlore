@@ -4,13 +4,13 @@
   "definition_keys": [],
   "heading": null,
   "heading_latex": "\\textrm{Definition}",
-  "body_text": "For an ordered basis $B=(b_1,\\ldots,b_n)$ of $V$, the\ncoordinate map $[\\,\\cdot\\,]_B:V\\to F^n$ sends\n$v=\\sum_i a_i b_i$ to the column $(a_1,\\ldots,a_n)^T$. It is a\nlinear isomorphism. Coordinates depend on $B$; the vector being\nrepresented does not.",
+  "body_text": "For an ordered basis $\\mathcal{B} = (b_1, \\dots, b_n)$ of a vector space $V$,\nthe *coordinate isomorphism* $[\\,\\cdot\\,]_{\\mathcal{B}} : V \\to F^n$ maps\neach vector $v = \\sum_{i=1}^n c_i b_i$ to its unique column vector of coordinates:\n$$ [v]_{\\mathcal{B}} = \\begin{pmatrix} c_1 \\\\ \\vdots \\\\ c_n \\end{pmatrix} \\in F^n. $$\nThe coordinate vector $[v]_{\\mathcal{B}}$ depends heavily on the chosen basis,\nwhile the vector $v$ remains an invariant geometric entity.",
   "page": null,
-  "source": "TextDefinition: \"For an ordered basis $B=(b_1,\\ldots,b_n)$ of $V$, the\n                 coordinate map $[\\,\\cdot\\,]_B:V\\to F^n$ sends\n                 $v=\\sum_i a_i b_i$ to the column $(a_1,\\ldots,a_n)^T$. It is a\n                 linear isomorphism. Coordinates depend on $B$; the vector being\n                 represented does not.\"\nId: \"eb390519-730b-45ef-a8c5-75ed6e82ba01\"",
+  "source": "TextDefinition: \"For an ordered basis $\\mathcal{B} = (b_1, \\dots, b_n)$ of a vector space $V$,\n                 the *coordinate isomorphism* $[\\,\\cdot\\,]_{\\mathcal{B}} : V \\to F^n$ maps\n                 each vector $v = \\sum_{i=1}^n c_i b_i$ to its unique column vector of coordinates:\n                 $$ [v]_{\\mathcal{B}} = \\begin{pmatrix} c_1 \\\\ \\vdots \\\\ c_n \\end{pmatrix} \\in F^n. $$\n                 The coordinate vector $[v]_{\\mathcal{B}}$ depends heavily on the chosen basis,\n                 while the vector $v$ remains an invariant geometric entity.\"\nId: \"eb390519-730b-45ef-a8c5-75ed6e82ba01\"",
   "sections": [
     {
       "label": "TextDefinition",
-      "inline_argument": "\"For an ordered basis $B=(b_1,\\ldots,b_n)$ of $V$, the\n                 coordinate map $[\\,\\cdot\\,]_B:V\\to F^n$ sends\n                 $v=\\sum_i a_i b_i$ to the column $(a_1,\\ldots,a_n)^T$. It is a\n                 linear isomorphism. Coordinates depend on $B$; the vector being\n                 represented does not.\"",
+      "inline_argument": "\"For an ordered basis $\\mathcal{B} = (b_1, \\dots, b_n)$ of a vector space $V$,\n                 the *coordinate isomorphism* $[\\,\\cdot\\,]_{\\mathcal{B}} : V \\to F^n$ maps\n                 each vector $v = \\sum_{i=1}^n c_i b_i$ to its unique column vector of coordinates:\n                 $$ [v]_{\\mathcal{B}} = \\begin{pmatrix} c_1 \\\\ \\vdots \\\\ c_n \\end{pmatrix} \\in F^n. $$\n                 The coordinate vector $[v]_{\\mathcal{B}}$ depends heavily on the chosen basis,\n                 while the vector $v$ remains an invariant geometric entity.\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The connectives above suffice to define any others by combination. As one\nexample we record the exclusive *or*, which holds when the two statements\ndiffer in truth value -- that is, when one of them holds but not both."
+    "text": "Although the trio $\\{\\neg, \\land, \\lor\\}$ is more than adequate to\nexpress every truth function, it is often conceptually clarifying to\nintroduce specialized connectives for common patterns of thought.\n\nWhen we wish to capture the everyday 'either-or but not both', we use the\n*exclusive disjunction*, written $P \\oplus Q$ or $P \\text{ xor } Q$. An\nexclusive disjunction holds when the two statements have opposite truth\nvalues. Algebraically, it represents the symmetric difference in set\ntheory and addition modulo $2$ in the field $\\mathbb{F}_2$."
   },
-  "source": "Text: \"The connectives above suffice to define any others by combination. As one\n       example we record the exclusive *or*, which holds when the two statements\n       differ in truth value -- that is, when one of them holds but not both.\"\nId: \"009e13c8-8dba-4b31-9958-f8531eb5ec04\"",
+  "source": "Text: \"Although the trio $\\{\\neg, \\land, \\lor\\}$ is more than adequate to\n       express every truth function, it is often conceptually clarifying to\n       introduce specialized connectives for common patterns of thought.\n\n       When we wish to capture the everyday 'either-or but not both', we use the\n       *exclusive disjunction*, written $P \\oplus Q$ or $P \\text{ xor } Q$. An\n       exclusive disjunction holds when the two statements have opposite truth\n       values. Algebraically, it represents the symmetric difference in set\n       theory and addition modulo $2$ in the field $\\mathbb{F}_2$.\"\nId: \"009e13c8-8dba-4b31-9958-f8531eb5ec04\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The connectives above suffice to define any others by combination. As one\n       example we record the exclusive *or*, which holds when the two statements\n       differ in truth value -- that is, when one of them holds but not both.\"",
+      "inline_argument": "\"Although the trio $\\{\\neg, \\land, \\lor\\}$ is more than adequate to\n       express every truth function, it is often conceptually clarifying to\n       introduce specialized connectives for common patterns of thought.\n\n       When we wish to capture the everyday 'either-or but not both', we use the\n       *exclusive disjunction*, written $P \\oplus Q$ or $P \\text{ xor } Q$. An\n       exclusive disjunction holds when the two statements have opposite truth\n       values. Algebraically, it represents the symmetric difference in set\n       theory and addition modulo $2$ in the field $\\mathbb{F}_2$.\"",
       "inline_latex": null,
       "arguments": []
     },

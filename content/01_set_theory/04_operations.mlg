@@ -2,10 +2,18 @@ Title: "Boolean Set Operations"
 Id: "2fe83532-6bca-406e-9a19-94ab03cf93f7"
 
 
-Text: "The standard Boolean algebra of sets provides the operations of union,
-       intersection, and set difference. Union combines elements from either
-       set, intersection takes elements common to both, and difference removes
-       elements of the second set from the first."
+Text: "The algebra of sets, initiated by George Boole in the mid-nineteenth
+       century, exhibits a profound structural isomorphism with propositional
+       logic. Every logical connective possesses an exact set-theoretic
+       counterpart: disjunction ($\lor$) corresponds to union ($\cup$),
+       conjunction ($\land$) corresponds to intersection ($\cap$), and negation
+       ($\neg$) corresponds to relative complement or set difference
+       ($\setminus$).
+
+       Through these operations, the power set $\mathcal{P}(U)$ of any ambient
+       set is endowed with the structure of a complete Boolean algebra,
+       providing the computational engine for combinatorics, measure theory,
+       topology, and probability."
 Id: "fa87c699-877a-4604-8cf0-ba2bb87bbfe8"
 
 
@@ -45,8 +53,9 @@ Documented:
 Id: "186de027-9bf6-422d-a2ed-823c94a80b1b"
 
 
-Text: "The power set constructor gathers all subsets of a given set into a
-       single ambient set."
+Text: "The power set constructor $\mathcal{P}(A)$ collects all subsets of $A$
+       into a single universe of discourse. It constitutes the carrier set for
+       the Boolean algebra associated with $A$."
 Id: "e3164791-b17c-427a-8c8c-02ec40801629"
 
 
@@ -60,8 +69,10 @@ Documented:
 Id: "3c3133ac-1cc2-4c76-8e84-fb332c7b08af"
 
 
-Text: "Two sets are disjoint when they have no elements in common, meaning their
-       intersection is the empty set."
+Text: "Two sets $A$ and $B$ are said to be *disjoint* (or mutually exclusive)
+       when they share no members in common, so that their intersection is
+       empty: $A \cap B = \emptyset$. Disjointness is the set-theoretic
+       formulation of incompatibility."
 Id: "185d9e5d-1d5e-4478-863e-792c9889a309"
 
 
@@ -80,8 +91,11 @@ SectionTitle: "Algebraic Properties of Set Operations"
 Id: "e8c4cfac-dbb8-4e62-a5c1-20dfcd50799e"
 
 
-Text: "Set union and intersection obey commutative laws analogous to addition
-       and multiplication of numbers."
+Text: "Set union and intersection satisfy algebraic symmetries that mirror the
+       algebra of real numbers, including commutativity, associativity, and
+       distributivity. However, Boolean algebras exhibit unique dualities—such
+       as the mutual distributivity of union over intersection and intersection
+       over union—that have no analogue in numerical arithmetic."
 Id: "aebe6956-53f1-4b24-af92-63732dfe1544"
 
 
@@ -94,10 +108,18 @@ Documented:
 . called: "Commutativity of Set Operations"
 . description: "Union and intersection are commutative: $A \cup B = B \cup A$
                 and $A \cap B = B \cap A$."
+Proof: """By definition, $x \in A \cup B \iff x \in A \lor x \in B$.
+          Because logical disjunction is commutative,
+          $x \in A \lor x \in B \iff x \in B \lor x \in A \iff x \in B \cup A$.
+          By Extensionality, $A \cup B = B \cup A$.
+          Similarly, $x \in A \cap B \iff x \in A \land x \in B \iff x \in B \land x \in A \iff x \in B \cap A$,
+          so $A \cap B = B \cap A$."""
 Id: "a8b70f59-148f-4e51-bcc8-7ab889db86d4"
 
 
-Text: "The empty set acts as the identity element for set union."
+Text: "In the monoid of subsets under union, the empty set $\emptyset$ serves as
+       the unique neutral identity element: adjoining nothing leaves any set
+       unchanged."
 Id: "20e77baa-c3d2-4104-a8dc-3fe1e02717e8"
 
 
@@ -108,6 +130,11 @@ Documented:
 . called: "Empty Set Union Identity"
 . description: "Union of any set $A$ with the empty set yields $A$:
                 $A \cup \emptyset = A$."
+Proof: """An element $x$ belongs to $A \cup \emptyset$ if and only if
+          $x \in A \lor x \in \emptyset$. Since $\emptyset$ has no members, the
+          predicate $x \in \emptyset$ is identically false for all $x$. Thus
+          $x \in A \lor \text{false} \iff x \in A$. By Extensionality,
+          $A \cup \emptyset = A$."""
 Id: "e0a17409-7d0a-4286-9a25-9c8eb00a40df"
 
 
@@ -134,6 +161,14 @@ Documented:
 . description: "Relative to a fixed universe, union and intersection are
                 associative, commutative, idempotent, mutually distributive, and
                 satisfy De Morgan's laws for relative complements."
+Proof: """Each equality follows by converting the set membership condition
+          into the corresponding propositional equivalence and invoking the
+          Axiom of Extensionality. For De Morgan's first law,
+          $x \in U \setminus (A \cup B) \iff x \in U \land \neg(x \in A \lor x \in B)$.
+          Applying propositional De Morgan yields
+          $x \in U \land (\neg(x \in A) \land \neg(x \in B)) \iff (x \in U \land x \notin A) \land (x \in U \land x \notin B)$,
+          which is precisely the definition of $x \in (U \setminus A) \cap (U \setminus B)$.
+          The dual laws follow symmetrically."""
 Id: "aa8bf616-5e94-4976-a63a-132732577422"
 
 
@@ -198,4 +233,14 @@ Documented:
 . called: "Empty Indexed Union and Intersection"
 . description: "The union of an empty family is empty, while its intersection is
                 the explicitly supplied ambient universe."
+Proof: """For the indexed union, $x \in \bigcup_{i \in \emptyset} A_i$ requires
+          the existence of an index $i \in \emptyset$ such that $x \in A_i$.
+          Because $\emptyset$ contains no indices, this existential condition is
+          unconditionally false for every $x \in U$, yielding the empty set
+          $\emptyset$. For the indexed intersection,
+          $x \in \bigcap_{i \in \emptyset} A_i$ requires that for all
+          $i \in \emptyset$, $x \in A_i$. Because the antecedent
+          $i \in \emptyset$ is false, the conditional implication is vacuously
+          true for every element $x \in U$. Consequently, every element of the
+          ambient universe $U$ satisfies the definition, yielding $U$."""
 Id: "7ef6b89a-1cc1-46f3-9537-3bacf672a499"

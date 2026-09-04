@@ -1,22 +1,58 @@
-Text: "**Mathlore** is a structured mathematical library written in the
-       **Mathlingua** language. Its purpose is expository as well as formal: a
-       definition should say what data are being introduced, a theorem should
-       make its hypotheses visible, and the surrounding prose should explain
-       why the concept is useful and how it fits into the larger theory.
-
-       The collection follows a dependency-conscious path. Logic supplies the
-       language of assertion and proof. Set theory supplies a common universe
-       of objects. Relations and functions express comparison and dependence.
-       The natural, integer, and rational number systems are then constructed
-       as successive solutions to limitations of the preceding system.
-       Abstract and linear algebra isolate structural patterns shared by those
-       examples. Real and complex analysis finally add completeness, limiting
-       processes, and the rigidity of holomorphic functions.
-
-       A displayed definition or result is meant to be read together with its
-       context. Definitions fix conventions that may differ across books;
-       theorem cards state mathematical content but do not replace proofs; and
-       conjecture cards mark claims whose status is intentionally unresolved.
-       The checker verifies the structure and internal references of the
-       library, not the truth of the mathematics."
+Text: "**Mathlore** is a comprehensive, structured mathematical treatise and digital library
+       written in the **Mathlingua** language. Its overarching vision is to unite two foundational
+       traditions that have often existed in tension: the expository clarity, geometric intuition,
+       and narrative flow of an authoritative textbook, and the uncompromising structural precision
+       and modular transparency of a modern mathematical knowledge base.
+       
+       Mathematical ideas do not exist as isolated symbols or unmotivated formulas; neither do they
+       exist as vague, hand-waving prose. A definition should make visible precisely what mathematical
+       data and properties are being introduced; a theorem should explicitly state its indispensable
+       hypotheses while illuminating its underlying conceptual mechanics; a proof should trace the
+       necessary logical deductions with rigor; and the connective exposition should situate every
+       result within the historical and thematic development of the subject.
+       
+       The curriculum of **Mathlore** follows an unbroken, dependency-conscious path that mirrors
+       the organic development of modern mathematics:
+       
+       1. **Foundations: Logic and Set Theory**: The treatise begins with symbolic logic—propositional
+          calculus, first-order predicates, quantifiers, and inference rules—which provides the universal
+          grammar of deduction. Upon this linguistic foundation, Zermelo--Fraenkel set theory (ZFC)
+          constructs a common ontological universe of sets, relations, equivalence classes, and functions.
+          
+       2. **The Hierarchy of Number Systems**: Rather than taking numbers as undefined primitives, the
+          treatise constructs the classical number systems successively, with each stage resolving a
+          fundamental algebraic or topological limitation of its predecessor:
+          - The **Natural Numbers** $\mathbb{N}$ arise as finite von Neumann ordinals satisfying the
+            Dedekind--Peano axioms, establishing the bedrock for mathematical induction and recursion.
+          - The **Integers** $\mathbb{Z}$ are constructed as equivalence classes of pairs of natural numbers
+            (the Grothendieck group completion), resolving additive incompleteness and admitting negative magnitudes.
+          - The **Rational Numbers** $\mathbb{Q}$ are constructed as the field of fractions of $\mathbb{Z}$,
+            resolving multiplicative incompleteness and introducing dense linear order.
+            
+       3. **Algebra and Linear Structures**: Abstracting operational patterns leads to the algebraic hierarchy:
+          - **Abstract Algebra**: Magmas, monoids, groups, rings, and fields. The core theorems—Lagrange's
+            theorem, normal subgroups, the First Isomorphism Theorem, and group actions—reveal the structural
+            invariants of symmetry.
+          - **Linear Algebra**: Vector spaces over general fields, linear independence, bases, dimension,
+            linear maps, matrices, determinants, and duality. The Rank--Nullity Theorem and the Steinitz Exchange
+            Lemma establish coordinate-free geometry.
+            
+       4. **Analysis: The Continuum and Complex Rigidity**:
+          - **Real Analysis**: The real continuum $\mathbb{R}$ is constructed via Dedekind cuts, characterized
+            as the unique complete Archimedean ordered field. Sequences, series, $\varepsilon$-$\delta$ continuity,
+            uniform convergence, differentiation, and the Riemann integral culminate in the Fundamental Theorem
+            of Calculus.
+          - **Complex Analysis**: Adjoining the imaginary unit $i = \sqrt{-1}$ yields the algebraically closed
+            field $\mathbb{C}$. The requirement of complex differentiability imposes the Cauchy--Riemann equations,
+            unlocking the astonishing rigidity of holomorphic functions: automatic analyticity, Cauchy's Integral
+            Formula, Laurent expansions, and Cauchy's Residue Theorem.
+            
+       5. **The Open Frontiers**: The treatise concludes with selected open problems—such as the Goldbach
+          Conjecture, the Twin Prime Conjecture, and the Riemann Hypothesis—delineating the precise boundary
+          between established deductive certainty and the frontiers of active discovery.
+          
+       Every entry in this library is designed to be read both as an independent, self-contained reference
+       card and as a seamless chapter in an ongoing intellectual narrative. The Mathlingua compiler verifies
+       the syntactic integrity and internal reference graph of the entire work, ensuring a coherent,
+       rigorous, and enduring mathematical compendium."
 Id: "7bbe5cda-edfe-4c9a-8894-a3573ca752ac"

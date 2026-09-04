@@ -2,11 +2,18 @@ Title: "Riemann Integration"
 Id: "3c8247c0-1b86-4c6f-bb9a-e6ee7677882e"
 
 
-Text: "Integration aggregates local values over an interval. Riemann's
-       construction compares a bounded function with upper and lower step
-       functions determined by finite partitions. Integrability means that the
-       uncertainty between these approximations can be made arbitrarily small;
-       it is not built into the notation $\int_a^b f$."
+Text: "While differentiation examines instantaneous rates of change at a point,
+       *integration* performs the global synthesis: accumulating infinitesimal contributions
+       over a continuum to determine areas, volumes, total mass, and work.
+       
+       Conceived in antiquity by Archimedes as the method of exhaustion and rigorized
+       in the nineteenth century by Bernhard Riemann and Gaston Darboux, integration
+       sandwiches a bounded function between upper and lower step functions determined
+       by finite partitions. A function is *Riemann integrable* when the supremum of its
+       lower Darboux sums coincides with the infimum of its upper Darboux sums:
+       $$ \underline{\int_a^b} f(x) \, dx = \overline{\int_a^b} f(x) \, dx = \int_a^b f(x) \, dx. $$
+       Integrability is thus a profound convergence theorem rather than a triviality
+       of notation."
 Id: "dfd615d6-c98b-40c7-a114-d59701269a65"
 
 
@@ -14,28 +21,35 @@ SectionTitle: "Partitions and Integrability"
 Id: "01b4f24b-5d4d-49aa-8730-389b4a3bdd87"
 
 
-TextDefinition: "A partition of a compact interval $[a,b]$ is a finite ordered
-                 set $P=\{x_0,\ldots,x_n\}$ with $a=x_0<x_1<\cdots<x_n=b$. Its
-                 mesh is $\|P\|=\max_i(x_i-x_{i-1})$. A tagged partition
-                 additionally chooses $t_i\in[x_{i-1},x_i]$ for each
-                 subinterval."
+TextDefinition: "A *partition* $P$ of a closed bounded interval $[a, b]$ is a
+                 finite ordered sequence of points
+                 $a = x_0 < x_1 < x_2 < \dots < x_n = b$. The *mesh* (or norm)
+                 of $P$ is the length of its longest subinterval:
+                 $\|P\| = \max_{1 \leq i \leq n} (x_i - x_{i-1})$. A *tagged
+                 partition* additionally associates a sample point
+                 $t_i \in [x_{i-1}, x_i]$ with each subinterval."
 Id: "59f53606-2a8d-46f6-b022-a85883133965"
 
 
-TextDefinition: "For a bounded function $f:[a,b]\to\mathbb{R}$ and a partition
-                 $P$, let $m_i$ and $M_i$ be the infimum and supremum of $f$ on
-                 $[x_{i-1},x_i]$. The lower and upper Darboux sums are
-                 $L(f,P)=\sum_i m_i(x_i-x_{i-1})$ and
-                 $U(f,P)=\sum_i M_i(x_i-x_{i-1})$. Refining a partition can only
-                 increase lower sums and decrease upper sums."
+TextDefinition: "Let $f : [a, b] \to \mathbb{R}$ be bounded. For each subinterval
+                 $[x_{i-1}, x_i]$ of partition $P$, let $m_i = \inf_{[x_{i-1}, x_i]} f$
+                 and $M_i = \sup_{[x_{i-1}, x_i]} f$.
+                 The *lower Darboux sum* and *upper Darboux sum* are:
+                 $$ L(f, P) = \sum_{i=1}^n m_i (x_i - x_{i-1}) \quad \text{and} \quad U(f, P) = \sum_{i=1}^n M_i (x_i - x_{i-1}). $$
+                 
+                 By the Refinement Lemma, if $P' \supseteq P$ is a refinement, then:
+                 $$ L(f, P) \leq L(f, P') \leq U(f, P') \leq U(f, P). $$
+                 Consequently, every lower sum is less than or equal to every upper sum,
+                 regardless of the partitions chosen."
 Id: "8ff282a0-258f-447e-84bf-6b8cb98b389a"
 
 
-TextDefinition: "A bounded function $f:[a,b]\to\mathbb{R}$ is Riemann integrable
-                 if for every $\epsilon>0$ there is a partition $P$ such that
-                 $U(f,P)-L(f,P)<\epsilon$. The common value of the supremum of
-                 all lower sums and the infimum of all upper sums is denoted
-                 $\int_a^b f(x)\,dx$."
+TextDefinition: "A bounded function $f : [a, b] \to \mathbb{R}$ is *Riemann
+                 integrable* if for every $\epsilon > 0$, there exists a
+                 partition $P$ of $[a, b]$ such that:
+                 $$ U(f, P) - L(f, P) < \epsilon. $$ The common real value
+                 $\sup_P L(f, P) = \inf_P U(f, P)$ is the *definite Riemann
+                 integral* of $f$ on $[a, b]$, denoted $\int_a^b f(x) \, dx$."
 Id: "3dac3956-17e2-451a-9234-d87e7086562c"
 
 
@@ -52,10 +66,20 @@ Documented:
 Id: "06b220c2-ee50-4d69-8de7-c1cbbd81e3bb"
 
 
-TextTheorem: "Riemann's criterion. A bounded function on $[a,b]$ is Riemann
-              integrable if and only if its set of discontinuities has Lebesgue
-              measure zero. In particular, every continuous function and every
-              monotone function on a compact interval is Riemann integrable."
+TextTheorem: "The Lebesgue-Vitali Criterion for Riemann Integrability. A bounded
+              function $f : [a, b] \to \mathbb{R}$ is Riemann integrable if and
+              only if its set of discontinuities has Lebesgue measure zero.
+
+              *Corollaries*:
+              1. Every continuous function on $[a, b]$ is Riemann integrable
+                 (since by the Heine-Cantor theorem, it is uniformly continuous,
+                 enabling $M_i - m_i < \epsilon/(b-a)$).
+              2. Every monotone function on $[a, b]$ is Riemann integrable
+                 (since its discontinuities are at most countable, and its
+                 Darboux difference telescopes:
+                 $U(f, P) - L(f, P) \leq \|P\| \cdot |f(b) - f(a)|$).
+              3. Piecewise continuous functions with finitely many jump
+                 discontinuities are always Riemann integrable."
 Id: "4b481477-f1a9-4e70-ab51-a31b04d2df87"
 
 
@@ -63,19 +87,22 @@ SectionTitle: "Algebraic and Order Properties"
 Id: "505d74c8-e9c5-43fb-af75-cab3e77959a3"
 
 
-TextTheorem: "If $f$ and $g$ are Riemann integrable on $[a,b]$ and
-              $\alpha,\beta\in\mathbb{R}$, then
-              $\int_a^b(\alpha f+\beta g)=\alpha\int_a^b f+
-              \beta\int_a^b g$. If $f\leq g$ pointwise, then
-              $\int_a^b f\leq\int_a^b g$. Consequently
-              $|\int_a^b f|\leq\int_a^b|f|$."
+TextTheorem: "Algebraic and Order Properties of the Integral.
+              Let $f, g$ be Riemann integrable on $[a, b]$ and let $\alpha, \beta \in \mathbb{R}$.
+              1. **Linearity**: The space of Riemann integrable functions forms a vector space,
+                 and $\int_a^b (\alpha f + \beta g) \, dx = \alpha \int_a^b f \, dx + \beta \int_a^b g \, dx$.
+              2. **Monotonicity**: If $f(x) \leq g(x)$ for all $x \in [a, b]$, then
+                 $\int_a^b f(x) \, dx \leq \int_a^b g(x) \, dx$.
+              3. **Integral Triangle Inequality**: $|f|$ is integrable, and:
+                 $$ \left| \int_a^b f(x) \, dx \right| \leq \int_a^b |f(x)| \, dx. $$"
 Id: "93332ffc-3ecf-4c11-8d40-0c8124dc7057"
 
 
-TextTheorem: "Additivity over intervals. If $f$ is Riemann integrable on $[a,b]$
-              and $c\in[a,b]$, then $\int_a^b f=\int_a^c f+\int_c^b f$. With the
-              conventions $\int_b^a f=-\int_a^b f$ and $\int_a^a f=0$, this
-              identity is independent of the order of the endpoints."
+TextTheorem: "Additivity Over Intervals. If $f$ is Riemann integrable on $[a, b]$ and
+              $c \in (a, b)$, then $f$ is integrable on $[a, c]$ and $[c, b]$, and:
+              $$ \int_a^b f(x) \, dx = \int_a^c f(x) \, dx + \int_c^b f(x) \, dx. $$
+              Adopting the conventions $\int_b^a f = -\int_a^b f$ and $\int_a^a f = 0$,
+              this additivity holds universally for arbitrary ordering of endpoints."
 Id: "a6f26a35-fb02-4842-85f9-9a9d698bfc9f"
 
 
@@ -83,25 +110,48 @@ SectionTitle: "The Fundamental Theorem of Calculus"
 Id: "e71191cd-4b73-45f8-84bd-9395e3c64aba"
 
 
-TextTheorem: "Fundamental theorem of calculus, first part. If
-              $f:[a,b]\to\mathbb{R}$ is continuous and $F(x)=\int_a^x f(t)\,dt$,
-              then $F$ is continuous on $[a,b]$, differentiable on $(a,b)$, and
-              $F'(x)=f(x)$ for every $x\in(a,b)$. Thus integration produces an
-              antiderivative of a continuous function."
+TextTheorem: "The Fundamental Theorem of Calculus, Part I (Differentiation of Integrals).
+              Let $f : [a, b] \to \mathbb{R}$ be continuous, and define the area accumulator
+              function $F : [a, b] \to \mathbb{R}$ by:
+              $$ F(x) = \int_a^x f(t) \, dt. $$
+              Then $F$ is continuous on $[a, b]$, differentiable on $(a, b)$, and its
+              derivative satisfies:
+              $$ F'(x) = f(x) \quad \text{for all } x \in (a, b). $$
+              
+              *Proof*: For $x \in (a, b)$ and non-zero displacement $h$ such that $x + h \in [a, b]$:
+              $$ \frac{F(x + h) - F(x)}{h} - f(x) = \frac{1}{h} \int_x^{x+h} f(t) \, dt - \frac{1}{h} \int_x^{x+h} f(x) \, dt = \frac{1}{h} \int_x^{x+h} (f(t) - f(x)) \, dt. $$
+              Let $\epsilon > 0$. By continuity of $f$ at $x$, there exists $\delta > 0$ such that
+              $|t - x| < \delta \implies |f(t) - f(x)| < \epsilon$.
+              Then for any $0 < |h| < \delta$:
+              $$ \left| \frac{F(x + h) - F(x)}{h} - f(x) \right| \leq \frac{1}{|h|} \left| \int_x^{x+h} |f(t) - f(x)| \, dt \right| \leq \frac{1}{|h|} \cdot |h| \epsilon = \epsilon. $$
+              Taking the limit as $h \to 0$ proves $F'(x) = f(x)$."
 Id: "c9ca6fed-5fe9-4792-b21f-19de5d50e740"
 
 
-TextTheorem: "Fundamental theorem of calculus, evaluation form. If
-              $f:[a,b]\to\mathbb{R}$ is continuous and $G:[a,b]\to\mathbb{R}$ is
-              continuous on $[a,b]$ and differentiable on $(a,b)$ with $G'=f$,
-              then $\int_a^b f(x)\,dx=G(b)-G(a)$. Any two antiderivatives differ
-              by a constant on the interval."
+TextTheorem: "The Fundamental Theorem of Calculus, Part II (Evaluation of Integrals).
+              Let $f : [a, b] \to \mathbb{R}$ be Riemann integrable. If $G : [a, b] \to \mathbb{R}$
+              is continuous on $[a, b]$ and differentiable on $(a, b)$ with $G'(x) = f(x)$
+              (that is, $G$ is an antiderivative of $f$), then:
+              $$ \int_a^b f(x) \, dx = G(b) - G(a). $$
+              
+              *Proof*: Let $P = \{a = x_0 < x_1 < \dots < x_n = b\}$ be any partition of $[a, b]$.
+              By the Mean Value Theorem applied to $G$ on each subinterval $[x_{i-1}, x_i]$,
+              there exists $t_i \in (x_{i-1}, x_i)$ such that:
+              $$ G(x_i) - G(x_{i-1}) = G'(t_i)(x_i - x_{i-1}) = f(t_i) \Delta x_i. $$
+              Summing these differences telescopically:
+              $$ G(b) - G(a) = \sum_{i=1}^n (G(x_i) - G(x_{i-1})) = \sum_{i=1}^n f(t_i) \Delta x_i. $$
+              Since $m_i \leq f(t_i) \leq M_i$, this Riemann sum is bounded by $L(f, P) \leq G(b) - G(a) \leq U(f, P)$.
+              Since $f$ is Riemann integrable, taking the limit as mesh $\|P\| \to 0$ forces
+              $G(b) - G(a) = \int_a^b f(x) \, dx$."
 Id: "17d7c6be-11d7-44bf-b522-515557063ed7"
 
 
-Text: "The two parts express inverse relationships at different logical levels.
-       The first constructs an antiderivative from a continuous integrand. The
-       second evaluates an already existing integral through any antiderivative.
-       Neither says that every derivative is continuous or that every bounded
-       function is Riemann integrable."
+Text: "The two parts of the Fundamental Theorem of Calculus forge the crowning synthesis
+       of real analysis, demonstrating that differentiation and integration are mutually
+       inverse operations:
+       $$ \frac{d}{dx} \left( \int_a^x f(t) \, dt \right) = f(x) \quad \text{and} \quad \int_a^b f'(x) \, dx = f(b) - f(a). $$
+       Part I shows that every continuous function admits an antiderivative defined
+       geometrically as an area accumulator. Part II shows that any antiderivative
+       permits the exact analytical evaluation of a definite integral without computing
+       infinite limits of Riemann sums."
 Id: "28ca0a24-996b-449c-9980-74d13fd3a73f"

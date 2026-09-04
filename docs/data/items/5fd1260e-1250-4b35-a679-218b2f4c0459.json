@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Equivalently, the reflexive--transitive closure relates $x$ to $y$ when\nthere is a finite $R$-path from $x$ to $y$; allowing a path of length\nzero supplies reflexivity."
+    "text": "In graph-theoretic terms, the reflexive--transitive closure $R^*$\ncorresponds to reachability in a directed graph: $x \\mathrel{R^*} y$ if\nand only if there exists a finite path\n$x = v_0 \\mathrel{R} v_1 \\mathrel{R} \\dots \\mathrel{R} v_k = y$ of length\n$k \\ge 0$. Setting $k = 0$ provides reflexivity ($x = y$)."
   },
-  "source": "Text: \"Equivalently, the reflexive--transitive closure relates $x$ to $y$ when\n       there is a finite $R$-path from $x$ to $y$; allowing a path of length\n       zero supplies reflexivity.\"\nId: \"5fd1260e-1250-4b35-a679-218b2f4c0459\"",
+  "source": "Text: \"In graph-theoretic terms, the reflexive--transitive closure $R^*$\n       corresponds to reachability in a directed graph: $x \\mathrel{R^*} y$ if\n       and only if there exists a finite path\n       $x = v_0 \\mathrel{R} v_1 \\mathrel{R} \\dots \\mathrel{R} v_k = y$ of length\n       $k \\ge 0$. Setting $k = 0$ provides reflexivity ($x = y$).\"\nId: \"5fd1260e-1250-4b35-a679-218b2f4c0459\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Equivalently, the reflexive--transitive closure relates $x$ to $y$ when\n       there is a finite $R$-path from $x$ to $y$; allowing a path of length\n       zero supplies reflexivity.\"",
+      "inline_argument": "\"In graph-theoretic terms, the reflexive--transitive closure $R^*$\n       corresponds to reachability in a directed graph: $x \\mathrel{R^*} y$ if\n       and only if there exists a finite path\n       $x = v_0 \\mathrel{R} v_1 \\mathrel{R} \\dots \\mathrel{R} v_k = y$ of length\n       $k \\ge 0$. Setting $k = 0$ provides reflexivity ($x = y$).\"",
       "inline_latex": null,
       "arguments": []
     },

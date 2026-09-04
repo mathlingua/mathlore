@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Functions can be classified by how they map inputs to outputs. An\ninjective function maps distinct inputs to distinct outputs, a surjective\nfunction covers every element of its codomain, and a bijection does both."
+    "text": "Functions are classified by how their mapping action behaves across the\ndomain and codomain:\n- An *injective* (one-to-one) function preserves distinctness: no two\n  distinct inputs share a common output. An injection embeds the domain\n  into the codomain without loss of information.\n- A *surjective* (onto) function covers the codomain entirely: every\n  element in $B$ is realized as the output of at least one input in $A$.\n- A *bijective* function is simultaneously injective and surjective. A\n  bijection establishes an exact one-to-one correspondence between the\n  sets $A$ and $B$, demonstrating that they possess identical cardinal\n  size and abstract set-theoretic structure."
   },
-  "source": "Text: \"Functions can be classified by how they map inputs to outputs. An\n       injective function maps distinct inputs to distinct outputs, a surjective\n       function covers every element of its codomain, and a bijection does both.\"\nId: \"252ce10f-e09f-4133-9110-e59fe497ce9c\"",
+  "source": "Text: \"Functions are classified by how their mapping action behaves across the\n       domain and codomain:\n       - An *injective* (one-to-one) function preserves distinctness: no two\n         distinct inputs share a common output. An injection embeds the domain\n         into the codomain without loss of information.\n       - A *surjective* (onto) function covers the codomain entirely: every\n         element in $B$ is realized as the output of at least one input in $A$.\n       - A *bijective* function is simultaneously injective and surjective. A\n         bijection establishes an exact one-to-one correspondence between the\n         sets $A$ and $B$, demonstrating that they possess identical cardinal\n         size and abstract set-theoretic structure.\"\nId: \"252ce10f-e09f-4133-9110-e59fe497ce9c\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Functions can be classified by how they map inputs to outputs. An\n       injective function maps distinct inputs to distinct outputs, a surjective\n       function covers every element of its codomain, and a bijection does both.\"",
+      "inline_argument": "\"Functions are classified by how their mapping action behaves across the\n       domain and codomain:\n       - An *injective* (one-to-one) function preserves distinctness: no two\n         distinct inputs share a common output. An injection embeds the domain\n         into the codomain without loss of information.\n       - A *surjective* (onto) function covers the codomain entirely: every\n         element in $B$ is realized as the output of at least one input in $A$.\n       - A *bijective* function is simultaneously injective and surjective. A\n         bijection establishes an exact one-to-one correspondence between the\n         sets $A$ and $B$, demonstrating that they possess identical cardinal\n         size and abstract set-theoretic structure.\"",
       "inline_latex": null,
       "arguments": []
     },

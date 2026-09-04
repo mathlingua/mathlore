@@ -5,8 +5,10 @@
   "heading": null,
   "heading_latex": "\\textrm{Negation of an Existential Quantifier}",
   "body_text": null,
+  "proof_text": "By definition, the statement $\\exists x \\in D, P(x)$ is true if and\nonly if there exists at least one witness $x \\in D$ satisfying $P(x)$.\nThe negation asserts that no such witness exists. In other words,\nevery candidate $x \\in D$ fails to satisfy $P(x)$, which is precisely\nthe assertion $\\forall x \\in D, \\neg P(x)$.",
+  "proof_source": "Proof: \"\"\"By definition, the statement $\\exists x \\in D, P(x)$ is true if and\n          only if there exists at least one witness $x \\in D$ satisfying $P(x)$.\n          The negation asserts that no such witness exists. In other words,\n          every candidate $x \\in D$ fails to satisfy $P(x)$, which is precisely\n          the assertion $\\forall x \\in D, \\neg P(x)$.\"\"\"",
   "page": null,
-  "source": "Theorem:\ngiven:\n. D is \\set\n. P(x_) is (_ is \\\\anything) -> (_ is \\\\statement)\nthen:\n. not:\n  . exists: x \"in\" D\n    suchThat: P(x)\niff:\n. forAll: x \"in\" D\n  then:\n  . not: P(x)\nDocumented:\n. called: \"Negation of an Existential Quantifier\"\n. description: \"An existential assertion fails exactly when every element of its\n                domain fails the predicate.\"\nId: \"4396c679-4735-45fb-ba6a-704ee55fc63b\"",
+  "source": "Theorem:\ngiven:\n. D is \\set\n. P(x_) is (_ is \\\\anything) -> (_ is \\\\statement)\nthen:\n. not:\n  . exists: x \"in\" D\n    suchThat: P(x)\niff:\n. forAll: x \"in\" D\n  then:\n  . not: P(x)\nDocumented:\n. called: \"Negation of an Existential Quantifier\"\n. description: \"An existential assertion fails exactly when every element of its\n                domain fails the predicate.\"\nProof: \"\"\"By definition, the statement $\\exists x \\in D, P(x)$ is true if and\n          only if there exists at least one witness $x \\in D$ satisfying $P(x)$.\n          The negation asserts that no such witness exists. In other words,\n          every candidate $x \\in D$ fails to satisfy $P(x)$, which is precisely\n          the assertion $\\forall x \\in D, \\neg P(x)$.\"\"\"\nId: \"4396c679-4735-45fb-ba6a-704ee55fc63b\"",
   "sections": [
     {
       "label": "Theorem",

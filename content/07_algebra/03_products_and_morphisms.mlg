@@ -2,10 +2,18 @@ Title: "Group Products and Morphisms"
 Id: "786f4620-5e2a-4871-856e-ae9220f82f4b"
 
 
-Text: "New groups can be assembled from old ones. The *direct product* of two
-       groups operates on ordered pairs, applying each group's operation in its
-       own coordinate. It is the simplest way of combining groups, and it builds
-       larger groups out of smaller building blocks."
+Text: "A foundational technique in abstract algebra is the synthesis of complex
+       systems from elementary components. The *direct product* $G_1 \times G_2$
+       of two groups constructs a new group whose carrier set is the Cartesian
+       product of the underlying sets, with the group operation evaluated
+       independently in each coordinate.
+
+       Categorically, the direct product constitutes the categorical product in
+       the category $\mathbf{Grp}$: it is equipped with canonical projection
+       homomorphisms $\pi_1 : G_1 \times G_2 \to G_1$ and
+       $\pi_2 : G_1 \times G_2 \to G_2$ such that for any group $H$ and pair of
+       homomorphisms $f_1 : H \to G_1, f_2 : H \to G_2$, there exists a unique
+       homomorphism $f : H \to G_1 \times G_2$ satisfying $\pi_i \circ f = f_i$."
 Id: "aa01e2aa-23e6-428f-8555-cabb841d1543"
 
 
@@ -30,8 +38,9 @@ Documented:
 Id: "3a354c63-fc8c-4873-9751-62ecc651a5a9"
 
 
-Text: "As with subgroups, the fact that the direct product is a group is stated
-       as a theorem in its own right."
+Text: "That the componentwise operation on Cartesian pairs satisfies all three
+       group axioms—associativity, identity, and invertibility—is established
+       directly from the respective laws holding in each factor."
 Id: "16235348-2acd-494b-ae40-6814eab32507"
 
 
@@ -40,6 +49,22 @@ given: G1, G2 is \group
 then: G1 \.group.direct.product./ G2 is? \group
 Documented:
 . called: "Direct Product of Groups is a Group"
+Proof: """
+Let $G_1 = (X_1, *_1, e_1)$ and $G_2 = (X_2, *_2, e_2)$ be groups.
+We verify the group axioms for the direct product $G_1 \times G_2$:
+1. **Associativity**: Let $(a_1, a_2), (b_1, b_2), (c_1, c_2) \in G_1 \times G_2$.
+   By definition of the coordinatewise operation $*_3$:
+   $$ ((a_1, a_2) *_3 (b_1, b_2)) *_3 (c_1, c_2) = (a_1 *_1 b_1, a_2 *_2 b_2) *_3 (c_1, c_2) = ((a_1 *_1 b_1) *_1 c_1, (a_2 *_2 b_2) *_2 c_2). $$
+   By the associativity of $*_1$ in $G_1$ and $*_2$ in $G_2$, this equals:
+   $$ (a_1 *_1 (b_1 *_1 c_1), a_2 *_2 (b_2 *_2 c_2)) = (a_1, a_2) *_3 (b_1 *_1 c_1, b_2 *_2 c_2) = (a_1, a_2) *_3 ((b_1, b_2) *_3 (c_1, c_2)). $$
+2. **Identity**: The element $e_3 = (e_1, e_2)$ satisfies:
+   $$ (a_1, a_2) *_3 (e_1, e_2) = (a_1 *_1 e_1, a_2 *_2 e_2) = (a_1, a_2), $$
+   and symmetrically $(e_1, e_2) *_3 (a_1, a_2) = (a_1, a_2)$.
+3. **Inverses**: For any $(a_1, a_2) \in G_1 \times G_2$, the element $(a_1^{-1}, a_2^{-1})$ satisfies:
+   $$ (a_1, a_2) *_3 (a_1^{-1}, a_2^{-1}) = (a_1 *_1 a_1^{-1}, a_2 *_2 a_2^{-1}) = (e_1, e_2) = e_3, $$
+   and $(a_1^{-1}, a_2^{-1}) *_3 (a_1, a_2) = (e_1, e_2) = e_3$.
+Thus $(G_1 \times G_2, *_3, e_3)$ is a group.
+"""
 Id: "d65025cf-8bf1-454f-9507-55890ab9f88c"
 
 
@@ -47,8 +72,16 @@ SectionTitle: "Group Homomorphisms and Center"
 Id: "d6bcea01-5a5a-42ca-bdb8-a9bed72b97b6"
 
 
-Text: "A group homomorphism is a function between groups that preserves the
-       algebraic multiplication operation."
+Text: "A *group homomorphism* is a mapping between groups that preserves
+       algebraic structure: $\varphi(a *_1 b) = \varphi(a) *_2 \varphi(b)$.
+       Homomorphisms are the structure-preserving conduits through which groups
+       are compared, classified, and represented.
+
+       A homomorphism is an *isomorphism* if it is bijective, in which case the
+       two groups possess identical abstract algebraic structures. An
+       isomorphism from a group to itself is an *automorphism*; the set of all
+       automorphisms of $G$ forms a group $\operatorname{Aut}(G)$ under function
+       composition."
 Id: "0f52cdf6-2164-4f6c-ba77-b2a163364e82"
 
 
@@ -66,8 +99,11 @@ Documented:
 Id: "b3809339-6511-4a87-84eb-8e3278f3524b"
 
 
-Text: "The center of a group consists of all elements that commute with every
-       element in the group."
+Text: "The *center* $Z(G)$ of a group comprises all elements that commute with
+       every element of the group:
+       $Z(G) = \{z \in G : z * g = g * z \text{ for all } g \in G\}$. The center
+       measures the degree of commutativity of $G$: $Z(G) = G$ if and only if
+       $G$ is abelian, while for non-abelian simple groups $Z(G)$ is trivial."
 Id: "625a71c4-ff3b-411f-aa1c-85d6db7642e7"
 
 
@@ -117,13 +153,31 @@ Documented:
 . called: "Homomorphisms Preserve Identities and Inverses"
 . description: "A group homomorphism maps the identity to the identity and the
                 inverse of each element to the inverse of its image."
+Proof: """
+Let $\varphi : G_1 \to G_2$ be a group homomorphism.
+
+First, by the identity axiom in $G_1$, $e_1 *_1 e_1 = e_1$.
+Applying $\varphi$ to both sides and using multiplicativity gives:
+$$ \varphi(e_1) = \varphi(e_1 *_1 e_1) = \varphi(e_1) *_2 \varphi(e_1). $$
+Multiplying both sides on the left by the group inverse $\varphi(e_1)^{-1} \in G_2$:
+$$ e_2 = \varphi(e_1)^{-1} *_2 \varphi(e_1) = \varphi(e_1)^{-1} *_2 (\varphi(e_1) *_2 \varphi(e_1)) = (\varphi(e_1)^{-1} *_2 \varphi(e_1)) *_2 \varphi(e_1) = e_2 *_2 \varphi(e_1) = \varphi(e_1). $$
+Thus $\varphi(e_1) = e_2$.
+
+Second, let $x \in G_1$ with $y = \varphi(x) \in G_2$. Since $x *_1 x^{-1} = e_1$,
+evaluating $\varphi$ yields:
+$$ \varphi(x) *_2 \varphi(x^{-1}) = \varphi(x *_1 x^{-1}) = \varphi(e_1) = e_2. $$
+Similarly, $\varphi(x^{-1}) *_2 \varphi(x) = \varphi(x^{-1} *_1 x) = \varphi(e_1) = e_2$.
+By the uniqueness of inverses in $G_2$, it follows that $\varphi(x^{-1}) = \varphi(x)^{-1} = y^{-1}$.
+"""
 Id: "238fe8f8-136f-4825-b650-3a1af432e140"
 
 
-Text: "By induction, a group homomorphism also sends every integral power $x^n$
-       to the corresponding power of the image. These preservation laws follow
-       from multiplicativity and therefore need not be independent clauses in
-       the definition of a homomorphism."
+Text: "By induction, a group homomorphism preserves all integer powers:
+       $\varphi(x^n) = \varphi(x)^n$ for all $n \in \mathbb{Z}$. Because the
+       preservation of the identity, inverses, and powers is an inescapable
+       deductive consequence of multiplicativity, it is unnecessary to stipulate
+       these preservation properties as axioms in the definition of a
+       homomorphism."
 Id: "777bb96c-835f-449d-9abf-7a482f766597"
 
 
@@ -156,10 +210,30 @@ Documented:
 . description: "The center contains the identity, is closed under products and
                 inverses, is internally commutative, and is invariant under
                 conjugation."
+Proof: """
+Let $G = (X, *, e)$ be a group and $Z = Z(G) = \{z \in G : \forall g \in G, z * g = g * z\}$.
+
+1. **Identity**: For any $g \in G$, $e * g = g = g * e$, so $e \in Z$.
+2. **Closure and Internal Commutativity**: Let $x, y \in Z$. For any $g \in G$,
+   applying associativity and the centrality of $x$ and $y$:
+   $$ (x * y) * g = x * (y * g) = x * (g * y) = (x * g) * y = (g * x) * y = g * (x * y). $$
+   Thus $x * y \in Z$. Moreover, since $y \in G$, $x * y = y * x$, so $Z$ is abelian.
+3. **Inverses**: Let $x \in Z$. For any $g \in G$, $x * g^{-1} = g^{-1} * x$.
+   Taking inverses of both sides yields $(x * g^{-1})^{-1} = (g^{-1} * x)^{-1}$,
+   which by the inverse of a product theorem gives $(g^{-1})^{-1} * x^{-1} = x^{-1} * (g^{-1})^{-1}$,
+   or $g * x^{-1} = x^{-1} * g$. Thus $x^{-1} \in Z$.
+4. **Normality / Conjugation Invariance**: For any $g \in G$ and $z \in Z$,
+   $g * z = z * g$. Setting $m = z \in Z$ satisfies $g * z = m * g$, or equivalently
+   $g * z * g^{-1} = z \in Z$.
+Therefore, $Z(G)$ is an abelian normal subgroup of $G$.
+"""
 Id: "636bc6b8-be24-41fe-9833-6bc18420ed97"
 
 
-Text: "Equivalently, the center is the kernel of the conjugation action
-       $G\to\operatorname{Aut}(G)$. The quotient $G/Z(G)$ therefore measures the
-       part of the group visible through inner automorphisms."
+Text: "The center $Z(G)$ is precisely the kernel of the conjugation homomorphism
+       $\operatorname{Inn} : G \to \operatorname{Aut}(G)$ defined by
+       $g \mapsto (x \mapsto g * x * g^{-1})$. By the First Isomorphism Theorem,
+       the group of inner automorphisms satisfies
+       $\operatorname{Inn}(G) \cong G / Z(G)$. Thus the quotient $G/Z(G)$
+       measures the non-abelian core of $G$ accessible via internal symmetries."
 Id: "794fcc8a-b1fc-439d-b083-050c1420448f"

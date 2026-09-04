@@ -1,0 +1,14 @@
+{
+  "id": "3c3478fa-e156-4364-9c53-3577a60d7dd9-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "A minimal element has no distinct element strictly below it."
+  },
+  "source": "",
+  "sections": []
+}

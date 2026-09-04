@@ -1,14 +1,41 @@
-Text: "Set theory provides a uniform language in which mathematical objects can
-       be represented and compared. The primitive relation is membership,
-       $x \in A$; equality is governed by extensionality; and new sets are
-       obtained only through stated existence principles. The pages progress
-       from the core constructors to subsets, products, Boolean operations,
-       and the axiom schemes needed to justify separation, replacement,
-       recursion, and comparison of cardinal size.
+Text: "Set theory constitutes the universal ontological architecture of modern
+       mathematics. Virtually every mathematical structure—from the natural
+       numbers and real continuum to function spaces, topological manifolds,
+       and algebraic varieties—is formally realized as a set equipped with
+       relations and operations that are themselves sets of ordered pairs.
 
-       The distinction between a class description and an existing set is
-       essential throughout. A formula may describe all objects satisfying a
-       condition without those objects forming a set. This restraint is not a
-       technical nuisance: it is the mechanism that blocks the classical
-       paradoxes of unrestricted comprehension."
+       In its initial formulation by Georg Cantor in the late nineteenth
+       century, set theory rested on the intuitive, naive principle of
+       *unrestricted comprehension*: that any meaningful predicate $\varphi(x)$
+       could define a set $\{x : \varphi(x)\}$. However, the turn of the
+       twentieth century brought a foundational crisis when Bertrand Russell
+       demonstrated that the predicate $x \notin x$ yields an immediate and
+       fatal contradiction: if $R = \{x : x \notin x\}$, then $R \in R \iff R
+       \notin R$.
+
+       To rescue mathematics from incoherence, Ernst Zermelo and Abraham
+       Fraenkel reconstructed set theory on an explicit axiomatic footing (ZFC).
+       In this modern framework, sets are not formed by arbitrary abstraction;
+       rather, mathematical objects exist only if their existence is guaranteed
+       by an axiom or constructed from existing sets through authorized
+       operations. The universe of sets unfolds in a *cumulative hierarchy*
+       beginning with the empty set $\emptyset$ and proceeding through
+       transfinite stages.
+
+       A cornerstone of this discipline is the fundamental distinction between
+       *sets* and *proper classes*. While any predicate describes a class of
+       objects, only those collections that are not 'too large' form genuine
+       sets capable of serving as elements of further collections. Unrestricted
+       collections, such as the collection of all sets or the collection of all
+       cardinals, are proper classes whose reification as sets is strictly
+       forbidden.
+
+       This chapter develops the axiomatic foundations of mathematics in
+       meticulous detail. We begin with the core constructors and identity
+       criteria of Zermelo--Fraenkel theory, establish the inclusion order and
+       the power set construction, examine Kuratowski's encoding of ordered
+       pairs and Cartesian products, investigate the Boolean algebra of sets,
+       and culminate in the transfinite axiom schemes of separation,
+       replacement, foundation, choice, and Cantor's revolutionary theory of
+       transfinite cardinality."
 Id: "229c342e-e482-48b1-91ee-1f80364f88e0"

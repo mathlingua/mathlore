@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A basis is a linearly independent subset that spans the entire vector\nspace."
+    "text": "A *basis* for a vector space $V$ is a subset $B \\subseteq V$ that is\nsimultaneously linearly independent and spans $V$. A basis represents a\nminimal spanning set and a maximal linearly independent set.\n\nCritically, a basis provides a coordinate system: every vector $v \\in V$\ncan be written uniquely as a finite linear combination\n$v = \\sum_{i=1}^n c_i b_i$ with coefficients $c_i \\in F$, establishing a\ncanonical isomorphism $V \\cong F^n$."
   },
-  "source": "Text: \"A basis is a linearly independent subset that spans the entire vector\n       space.\"\nId: \"22fe8ee2-9aee-4cdf-a5e0-a16b5023fada\"",
+  "source": "Text: \"A *basis* for a vector space $V$ is a subset $B \\subseteq V$ that is\n       simultaneously linearly independent and spans $V$. A basis represents a\n       minimal spanning set and a maximal linearly independent set.\n\n       Critically, a basis provides a coordinate system: every vector $v \\in V$\n       can be written uniquely as a finite linear combination\n       $v = \\sum_{i=1}^n c_i b_i$ with coefficients $c_i \\in F$, establishing a\n       canonical isomorphism $V \\cong F^n$.\"\nId: \"22fe8ee2-9aee-4cdf-a5e0-a16b5023fada\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A basis is a linearly independent subset that spans the entire vector\n       space.\"",
+      "inline_argument": "\"A *basis* for a vector space $V$ is a subset $B \\subseteq V$ that is\n       simultaneously linearly independent and spans $V$. A basis represents a\n       minimal spanning set and a maximal linearly independent set.\n\n       Critically, a basis provides a coordinate system: every vector $v \\in V$\n       can be written uniquely as a finite linear combination\n       $v = \\sum_{i=1}^n c_i b_i$ with coefficients $c_i \\in F$, establishing a\n       canonical isomorphism $V \\cong F^n$.\"",
       "inline_latex": null,
       "arguments": []
     },

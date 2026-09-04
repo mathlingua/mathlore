@@ -2,17 +2,42 @@ Title: "Predicates and Quantifiers"
 Id: "70fb4c9d-8dde-4109-a032-6da3247867c1"
 
 
-Text: "Propositional logic treats complete statements as indivisible units.
-       Mathematics also needs *open* expressions such as $x^2 < 2$, whose truth
-       depends on a value assigned to $x$. Predicate logic supplies the missing
-       structure: variables range over a specified domain, predicates become
-       statements after their arguments are supplied, and quantifiers assert
-       that a predicate holds universally or has a witness."
+Text: "While propositional logic provides the rules for combining complete,
+       self-contained assertions, it is blind to the internal anatomy of
+       statements. In propositional logic, the statements 'Every continuous
+       function on a closed interval is bounded' and '$7$ is a prime number' are
+       merely opaque atomic variables $P$ and $Q$. Propositional logic cannot
+       express the fact that $7$ possesses a property shared by other numbers,
+       nor can it account for the word 'every'.
+
+       To capture the full depth of mathematical reasoning, we must peer inside
+       assertions. In 1879, Gottlob Frege revolutionized logic by replacing the
+       traditional subject-predicate grammar of classical philosophy with the
+       mathematical concept of a *function*. An assertion is understood as a
+       property or relation—a *predicate*—applied to one or more mathematical
+       objects. By introducing *quantifiers* that govern variables ranging over
+       specified domains, we obtain *first-order predicate logic*, the
+       expressive medium in which modern mathematics is written."
 Id: "3ea75cf2-0c9a-4882-ad3f-ed0c34a3a53c"
 
 
 SectionTitle: "Predicates, Domains, and Variables"
 Id: "76392982-4763-4264-aea1-c7bac3d909fa"
+
+
+Text: "A *predicate* is an incomplete statement containing one or more open
+       variables. On its own, an open expression such as '$x^2 < 2$' or '$x$
+       divides $y$' is neither true nor false; it becomes a definite proposition
+       only when specific objects are substituted for its variables, or when
+       those variables are bound by quantifiers.
+
+       Crucially, every variable in mathematics belongs to an explicit or
+       implicit *universe of discourse* or *domain*. The statement '$x^2 = 2$'
+       has solutions if the domain of $x$ is the real numbers $\mathbb{R}$, but
+       has no solutions if the domain is restricted to the rational numbers
+       $\mathbb{Q}$. Specifying the domain is not an incidental detail; it is an
+       organic part of the predicate's definition."
+Id: "2498f869-7009-411a-bc01-9a76ffa07912"
 
 
 TextDefinition: "Let $D_1,\ldots,D_n$ be domains. An $n$-ary predicate $P$ on
@@ -23,6 +48,16 @@ TextDefinition: "Let $D_1,\ldots,D_n$ be domains. An $n$-ary predicate $P$ on
                  of the specification: the same formula may define different
                  predicates when its variables range over different objects."
 Id: "5425d771-9398-4949-aeac-86991b073f13"
+
+
+Text: "In any formula involving variables, we must scrupulously distinguish
+       between *free* variables and *bound* variables. A free variable acts as
+       an open slot or parameter: it can be assigned different values from its
+       domain, and the truth of the formula varies with the assignment. A bound
+       variable, by contrast, is governed by a quantifier ($\forall$ or
+       $\exists$); it is an internal dummy variable whose scope is restricted to
+       the quantified expression."
+Id: "7820a647-38ae-4f70-b184-a134d193d502"
 
 
 TextDefinition: "An occurrence of a variable is *bound* if it lies within the
@@ -36,12 +71,18 @@ TextDefinition: "An occurrence of a variable is *bound* if it lies within the
 Id: "4d77ab37-a8da-4d6b-b9c7-d5dc9036755d"
 
 
-Text: "The distinction between free and bound variables is a matter of scope,
-       not typography. In $P(x)\land\exists x\,Q(x)$, the first occurrence of
-       $x$ is free and the occurrences governed by $\exists x$ are bound.
-       Careless substitution can therefore change meaning by variable capture; a
-       rigorous substitution operation always renames bound variables when
-       necessary."
+Text: "This distinction between free and bound variables is entirely analogous
+       to familiar constructs in calculus and linear algebra: the index $i$ in a
+       sum $\sum_{i=1}^n a_i$ or the variable $t$ in a definite integral
+       $\int_a^b f(t)\,dt$ is bound, while $n$, $a$, and $b$ are free. Renaming
+       $t$ to $u$ in $\int_a^b f(u)\,du$ leaves the integral unchanged (a
+       property known in logic as *$\alpha$-equivalence*).
+
+       Care is required when substituting expressions into formulas: if a
+       substituted term contains a variable that happens to match a quantifier
+       inside the formula, accidental *variable capture* can occur, radically
+       corrupting the meaning. A rigorous deductive system systematically
+       renames bound variables whenever substitution threatens to capture them."
 Id: "4289625b-21c1-495f-889f-ea1d4d707fd6"
 
 
@@ -49,22 +90,56 @@ SectionTitle: "Universal and Existential Quantification"
 Id: "dc40bcba-5c18-4126-86c9-56e178a65d78"
 
 
+Text: "Quantifiers turn open predicates into closed propositions by asserting
+       how widely a condition holds across its domain. Predicate logic
+       introduces two fundamental quantifiers: the universal quantifier
+       ($\forall$) and the existential quantifier ($\exists$)."
+Id: "64738a4d-451e-9a18-971c-26a578912301"
+
+
 TextDefinition: "For a predicate $P(x)$ on a domain $D$, the universal statement
-                 $\forall x\in D\,P(x)$ is true exactly when $P(a)$ is true for
-                 every $a\in D$. To prove it one fixes an arbitrary $a\in D$ and
-                 proves $P(a)$ without using any special property of $a$. To
-                 refute it, one exhibits a counterexample $a\in D$ for which
-                 $P(a)$ is false."
+                 $\forall x\in D\,P(x)$ (read *for all $x$ in $D$, $P(x)$*) is
+                 true exactly when $P(a)$ is true for every single element
+                 $a\in D$.
+
+                 To prove a universal assertion, one must consider an
+                 *arbitrary* element $x \in D$ and prove that $P(x)$ holds using
+                 only the defining properties of $D$, without assuming any
+                 special traits of the chosen element. Conversely, to refute a
+                 universal assertion, one need only exhibit a single
+                 *counterexample*—an element $c \in D$ for which $P(c)$ fails."
 Id: "549d47c5-700f-4cd5-86a2-26533b189178"
 
 
 TextDefinition: "For a predicate $P(x)$ on a domain $D$, the existential
-                 statement $\exists x\in D\,P(x)$ is true exactly when at least
-                 one $a\in D$ satisfies $P(a)$. Such an $a$ is called a witness.
-                 An existence proof must establish both that the proposed
-                 witness belongs to the domain and that it satisfies the
-                 predicate; uniqueness is a separate assertion."
+                 statement $\exists x\in D\,P(x)$ (read *there exists $x$ in $D$
+                 such that $P(x)$*) is true exactly when at least one element
+                 $a\in D$ satisfies $P(a)$. Such an element is called a
+                 *witness*.
+
+                 An existential claim can be proved *constructively* by
+                 explicitly producing a witness and verifying that it satisfies
+                 $P$, or *non-constructively* by demonstrating that the
+                 assumption that no witness exists leads to an insurmountable
+                 contradiction. Note that an existential assertion guarantees
+                 only that *at least one* witness exists; it makes no claim
+                 regarding whether the witness is unique."
 Id: "60a3796d-d17b-4e3f-b2a1-1878e1468e61"
+
+
+Text: "Just as De Morgan's laws govern the interaction between negation,
+       conjunction, and disjunction in propositional logic, an identical duality
+       governs the negation of quantifiers. Negating a universal claim produces
+       an existential claim, and negating an existential claim produces a
+       universal claim:
+       $$\neg \forall x \in D \, P(x) \iff \exists x \in D \, \neg P(x)$$
+       $$\neg \exists x \in D \, P(x) \iff \forall x \in D \, \neg P(x)$$
+
+       To deny that every swan is white is not to claim that every swan is
+       black; it is to assert the existence of at least one non-white swan.
+       Dually, to deny that a system of equations has a solution is to assert
+       that every proposed candidate fails to solve it."
+Id: "3748291a-bc01-411a-7009-9a76ffa07999"
 
 
 Theorem:
@@ -83,6 +158,12 @@ Documented:
 . called: "Negation of a Universal Quantifier"
 . description: "A universal assertion fails exactly when there is a
                 counterexample in its domain."
+Proof: """By definition, the statement $\forall x \in D, P(x)$ is true if and
+          only if $P(x)$ holds for every element $x \in D$. Its negation asserts
+          that it is false that every element satisfies $P(x)$. This occurs
+          precisely when there is at least one element $x \in D$ for which
+          $P(x)$ fails to hold, which is the definition of
+          $\exists x \in D, \neg P(x)$."""
 Id: "bf4df541-b2ff-4fff-9f32-e0565e88a24a"
 
 
@@ -102,21 +183,49 @@ Documented:
 . called: "Negation of an Existential Quantifier"
 . description: "An existential assertion fails exactly when every element of its
                 domain fails the predicate."
+Proof: """By definition, the statement $\exists x \in D, P(x)$ is true if and
+          only if there exists at least one witness $x \in D$ satisfying $P(x)$.
+          The negation asserts that no such witness exists. In other words,
+          every candidate $x \in D$ fails to satisfy $P(x)$, which is precisely
+          the assertion $\forall x \in D, \neg P(x)$."""
 Id: "4396c679-4735-45fb-ba6a-704ee55fc63b"
 
 
-Text: "Quantifier order records dependence. The statement
-       $\forall x\,\exists y\,R(x,y)$ permits the witness $y$ to depend on $x$;
-       the statement $\exists y\,\forall x\,R(x,y)$ requires a single witness
-       that works uniformly for all $x$. The second statement implies the first
-       when the domains are nonempty, but the converse generally fails. This
-       distinction later reappears in uniform continuity, where one $\delta$
-       must work simultaneously at every point of a domain."
+Text: "When multiple quantifiers appear in a single formula, their ordering is
+       of paramount mathematical consequence. In predicate calculus, *quantifier
+       order records dependency*.
+
+       Consider a binary relation $R(x, y)$ over a domain $D$. The statement:
+       $$\forall x \, \exists y \, R(x, y)$$ asserts that for each individual
+       $x$, there exists a corresponding $y$. Crucially, the choice of $y$ is
+       permitted to depend directly upon $x$. By contrast, the statement:
+       $$\exists y \, \forall x \, R(x, y)$$ demands that a single, universal
+       witness $y$ must be chosen *in advance*, functioning simultaneously for
+       all possible values of $x$.
+
+       In colloquial terms, 'Everyone has a mother'
+       ($\forall x \, \exists y \, M(y, x)$) is an ordinary biological truth;
+       but 'There is someone who is the mother of everyone'
+       ($\exists y \, \forall x \, M(y, x)$) is an absurdity.
+
+       In higher mathematics, this distinction between $\forall x \exists y$ and
+       $\exists y \forall x$ separates elementary properties from deep
+       structural ones. In real analysis, it is precisely the distinction
+       between *pointwise continuity* (where for every point $x$ and tolerance
+       $\varepsilon$ there exists a radius $\delta(x, \varepsilon)$) and
+       *uniform continuity* (where a single radius $\delta(\varepsilon)$ must
+       work uniformly across the entire domain)."
 Id: "f983ba30-e2c8-45f9-afd9-8e19e841e502"
 
 
 SectionTitle: "Existence and Uniqueness"
 Id: "cdaab479-a146-47b9-b147-de10ed82aa04"
+
+
+Text: "Mathematics frequently encounters situations where an object satisfying a
+       given condition is not merely present, but unique. We denote this by the
+       quantifier $\exists!$, read *there exists a unique*."
+Id: "4810a647-38ae-4f70-b184-a134d193d503"
 
 
 TextDefinition: "The notation $\exists!x\in D\,P(x)$ asserts existence and
@@ -129,6 +238,15 @@ TextDefinition: "The notation $\exists!x\in D\,P(x)$ asserts existence and
 Id: "730615eb-feb0-45d1-8ca7-82c3138f5eb7"
 
 
+Text: "The quantifier $\exists!$ is the logical license for introducing
+       *definite descriptions* and functional notations. In his landmark 1905
+       theory of descriptions, Bertrand Russell emphasized that an expression
+       such as 'the identity element of $G$' or 'the limit of $f(x)$ as
+       $x \to a$' is meaningless unless both existence and uniqueness have been
+       established."
+Id: "5912a647-38ae-4f70-b184-a134d193d504"
+
+
 TextTheorem: "If $\exists!x\in D\,P(x)$, then a definition of the form 'let $a$
               be the unique element of $D$ satisfying $P$' is unambiguous.
               Without prior existence and uniqueness, the same phrase does not
@@ -136,10 +254,20 @@ TextTheorem: "If $\exists!x\in D\,P(x)$, then a definition of the form 'let $a$
 Id: "09f10995-86d7-409a-8411-247d4acef1f4"
 
 
-Text: "Restricted quantifiers are abbreviations whose expansions expose their
-       logic. The formula $\forall x\in D\,P(x)$ means
-       $\forall x\,(x\in D\Rightarrow P(x))$, whereas $\exists x\in D\,P(x)$
-       means $\exists x\,(x\in D\land P(x))$. The different connective is
-       essential: using implication in the existential form would make any
-       object outside $D$ a vacuous witness."
+Text: "Finally, we examine the formal structure of *restricted quantifiers*. When
+       we write $\forall x \in D \, P(x)$ or $\exists x \in D \, P(x)$, the domain
+       restriction is syntactic sugar whose underlying expansion uses the standard
+       Boolean connectives:
+       $$\forall x \in D \, P(x) \quad \equiv \quad \forall x \, (x \in D \Rightarrow P(x))$$
+       $$\exists x \in D \, P(x) \quad \equiv \quad \exists x \, (x \in D \land P(x))$$
+
+       The change from conditional ($\Rightarrow$) in the universal quantifier to
+       conjunction ($\land$) in the existential quantifier is of the utmost logical
+       importance. If one mistakenly wrote $\exists x \, (x \in D \Rightarrow P(x))$,
+       the assertion would become trivially true in any universe containing at least
+       one object outside $D$! For any element $c \notin D$, the antecedent $c \in D$
+       is false, making the conditional $c \in D \Rightarrow P(c)$ vacuously true,
+       thereby providing a false witness for the existential claim. Conjunction
+       ensures that an existential witness must legitimately reside within the
+       intended domain $D$."
 Id: "64c6c4ea-6a77-413f-9dda-b1d4bb102443"

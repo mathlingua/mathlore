@@ -2,12 +2,21 @@ Title: "Magmas and Monoids"
 Id: "b66194ab-1d9d-4b6f-bf99-d68a98b4cc00"
 
 
-Text: "Abstract algebra studies sets equipped with operations, asking what can
-       be proved from the properties of the operations alone, regardless of what
-       the elements are. This chapter climbs a ladder of such structures. Each
-       rung adds one requirement to the one below it: a bare set with an
-       operation becomes, in turn, a magma, a semigroup, a monoid, and finally a
-       group, the central object of elementary algebra."
+Text: "Abstract algebra investigates mathematical structures defined not by the
+       particular nature of their objects, but by the axiomatic identities
+       governing their internal operations. Rather than computing with numbers
+       of fixed ontological status, algebra abstracts the operations themselves,
+       isolating the minimal conditions required for deduction and calculation.
+
+       This chapter mounts an ascending staircase of algebraic structures
+       equipped with a single binary operation. Each step imposes precisely one
+       additional equational demand: beginning with an unconstrained closed
+       operation (a *magma*), we introduce associativity to obtain a
+       *semigroup*, adjoining a two-sided neutral element produces a *monoid*,
+       and guaranteeing two-sided inverses culminates in a *group*. This
+       incremental construction clarifies exactly which algebraic theorems
+       depend on associativity, which require an identity, and which necessitate
+       full invertibility."
 Id: "02a8aafc-c012-4d2a-92ed-b36b902d05a0"
 
 
@@ -15,10 +24,21 @@ SectionTitle: "Magmas"
 Id: "399425a0-d94d-4548-953d-5dc82ac91e36"
 
 
-Text: "The most basic structure is a set together with a single binary
-       operation, with no further conditions imposed. This is a *magma*.
-       Everything that follows is a magma with extra properties, so a magma
-       marks the ground floor of the entire chapter."
+Text: "At the absolute bedrock of algebraic architecture lies the *magma* (also
+       known historically as a *groupoid* in Bourbaki's terminology, though
+       modern category theory reserves the word groupoid for a category whose
+       morphisms are all invertible). A magma consists of a carrier set $X$
+       equipped with a single binary operation $* : X \times X \to X$, subject
+       to no axiomatic constraints whatever beyond closure: combining any two
+       elements of $X$ produces an element of $X$.
+
+       Because magmas do not require associativity, the order of operations
+       matters critically: $(a * b) * c$ and $a * (b * c)$ may designate
+       completely disparate elements. Familiar examples of non-associative
+       magmas include the integers under subtraction, where
+       $(a - b) - c \neq a - (b - c)$ in general; the positive reals under
+       division; the octonions under multiplication; and parse trees in formal
+       languages under tree concatenation."
 Id: "b6b6f241-917e-4090-8269-5060f249b80c"
 
 
@@ -52,10 +72,18 @@ Documented:
 Id: "d9405849-68a5-4721-9090-42eb0b9775d2"
 
 
-Text: "A quasigroup is a magma in which the operation can always be undone on
-       either side: each of the equations $a * x = b$ and $y * a = b$ has a
-       unique solution. This is the abstract form of the demand that division be
-       possible, and it is where the study of invertibility begins."
+Text: "A *quasigroup* is a magma in which the operation can always be uniquely
+       undone on either side: for any elements $a, b$, each of the linear
+       equations $a * x = b$ and $y * a = b$ possesses a unique solution $x, y$.
+       This property abstracts the concept of division without requiring either
+       associativity or an identity element.
+
+       In combinatorial terms, when the carrier set is finite of cardinality
+       $n$, the multiplication table (Cayley table) of a quasigroup forms a
+       *Latin square*: every element of the set appears exactly once in each row
+       and exactly once in each column. A quasigroup possessing an identity
+       element is called a *loop*; loops preserve the local invertibility of
+       division while remaining free from the rigid constraint of associativity."
 Id: "55b0749b-4e2f-4112-a5be-c20a9879d6a3"
 
 
@@ -93,10 +121,19 @@ SectionTitle: "Semigroups and Monoids"
 Id: "57daae70-4d40-44bf-9640-46c26d8a4898"
 
 
-Text: "Imposing associativity on a magma yields a *semigroup*. Associativity is
-       what lets a product of several elements be written without parentheses,
-       and it is assumed by nearly every structure in mathematics that is called
-       an algebra."
+Text: "Imposing the equational law of associativity on a magma yields a
+       *semigroup*. Associativity, $(a * b) * c = a * (b * c)$, guarantees that
+       grouping by parentheses does not affect the evaluation of a product.
+
+       By the *Generalized Associativity Theorem*, any string of $n$ elements
+       $a_1 * a_2 * \cdots * a_n$ evaluates to the exact same element regardless
+       of how parenthesizations are introduced. (The number of distinct
+       bracketings of $n$ factors is given by the Catalan number
+       $C_{n-1} = \frac{1}{n}\binom{2n-2}{n-1}$, all of which collapse to a
+       single value in a semigroup.) This allows us to dispense with parentheses
+       entirely. Prominent semigroups include the positive integers under
+       addition $(\mathbb{Z}_{>0}, +)$, strings under concatenation over an
+       alphabet $\Sigma^+$, and binary relations under relational composition."
 Id: "e077a5db-c372-4759-a880-d74270032560"
 
 
@@ -124,10 +161,18 @@ Documented:
 Id: "5ce95378-5760-4728-b0d2-334848109a32"
 
 
-Text: "A *monoid* is a semigroup with an identity element -- a distinguished
-       element that leaves every element unchanged when combined with it. The
-       identity is the algebraic counterpart of the number $1$ under
-       multiplication, or $0$ under addition."
+Text: "A *monoid* is a semigroup equipped with a neutral identity element $e$
+       that leaves every element unchanged under left and right multiplication:
+       $x * e = x = e * x$.
+
+       The identity element is necessarily unique: if $e$ and $e'$ are both
+       identities for $*$, then evaluating their product from both perspectives
+       yields $e = e * e' = e'$. The existence of an identity provides the base
+       case for algebraic evaluation, permitting empty products (defined to
+       equal $e$). Fundamental archetypes include the free monoid $\Sigma^*$ of
+       words under concatenation with the empty word $\varepsilon$ as identity,
+       and the monoid of transformations $\operatorname{End}(X) = X^X$ under
+       function composition with the identity mapping $\operatorname{id}_X$."
 Id: "c647adb5-0f98-4f7d-ae6a-8ff2229e3437"
 
 
@@ -203,16 +248,26 @@ Documented:
 Id: "a2faa25a-1cbb-412a-9d97-67ba33c6a4e0"
 
 
-TextTheorem: "In a monoid, powers of an element are defined recursively by
-              $a^0=e$ and $a^{n+1}=a^n a$. Associativity implies
-              $a^{m+n}=a^m a^n$ and $(a^m)^n=a^{mn}$. These formulas require no
-              commutativity because all factors are powers of the same element."
+TextTheorem: "In any monoid $(M, *, e)$, non-negative integer powers of an
+              element $a \in M$ are defined recursively by $a^0 = e$ and
+              $a^{n+1} = a^n * a$ for $n \in \mathbb{N}$.
+
+              By associativity, the classical index laws hold:
+              $$ a^{m+n} = a^m * a^n \quad \text{and} \quad (a^m)^n = a^{mn} $$
+              for all $m, n \in \mathbb{N}$. Although the ambient monoid $M$ may
+              be non-commutative, any two powers of the same element commute:
+              $a^m * a^n = a^{m+n} = a^{n+m} = a^n * a^m$. Thus the cyclic
+              submonoid $\langle a \rangle = \{a^n : n \in \mathbb{N}\}$
+              generated by $a$ is always commutative."
 Id: "005a116a-0754-4c0f-a020-97660010eb3f"
 
 
-Text: "The ladder from magma to semigroup to monoid adds laws but does not
-       replace the underlying data. The same carrier and operation may be viewed
-       at several levels. A theorem proved for semigroups therefore applies
-       automatically to monoids and groups after forgetting their extra
-       structure."
+Text: "The ladder from magma to semigroup to monoid represents a sequence of algebraic
+       refinements that enrich the equational theory while preserving the underlying carrier
+       and operation. Categorically, this hierarchy is governed by faithful forgetful functors:
+       $$ \mathbf{Mon} \longrightarrow \mathbf{SemiGrp} \longrightarrow \mathbf{Magma} \longrightarrow \mathbf{Set}. $$
+       Any equational theorem established for a less restrictive structure (such as
+       generalized associativity in semigroups) holds universally across all subsequent
+       specializations (including monoids, groups, rings, and fields) without separate
+       proof."
 Id: "0471c14a-2c21-41bd-a5f9-5118df79f2af"

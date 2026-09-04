@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A set of vectors is linearly independent when no vector can be written as\na linear combination of the others."
+    "text": "A collection of vectors is *linearly independent* if no vector in the set can\nbe expressed as a linear combination of the remaining vectors. In equational terms,\nthe only linear combination that yields the zero vector is the trivial one:\n$$ c_1 v_1 + c_2 v_2 + \\cdots + c_k v_k = 0 \\implies c_1 = c_2 = \\cdots = c_k = 0. $$\nLinear independence ensures that each vector contributes an independent geometric\ndimension without redundant information."
   },
-  "source": "Text: \"A set of vectors is linearly independent when no vector can be written as\n       a linear combination of the others.\"\nId: \"960f17ab-8b88-47d4-a7cb-c74bc8b7cfc3\"",
+  "source": "Text: \"A collection of vectors is *linearly independent* if no vector in the set can\n       be expressed as a linear combination of the remaining vectors. In equational terms,\n       the only linear combination that yields the zero vector is the trivial one:\n       $$ c_1 v_1 + c_2 v_2 + \\cdots + c_k v_k = 0 \\implies c_1 = c_2 = \\cdots = c_k = 0. $$\n       Linear independence ensures that each vector contributes an independent geometric\n       dimension without redundant information.\"\nId: \"960f17ab-8b88-47d4-a7cb-c74bc8b7cfc3\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A set of vectors is linearly independent when no vector can be written as\n       a linear combination of the others.\"",
+      "inline_argument": "\"A collection of vectors is *linearly independent* if no vector in the set can\n       be expressed as a linear combination of the remaining vectors. In equational terms,\n       the only linear combination that yields the zero vector is the trivial one:\n       $$ c_1 v_1 + c_2 v_2 + \\cdots + c_k v_k = 0 \\implies c_1 = c_2 = \\cdots = c_k = 0. $$\n       Linear independence ensures that each vector contributes an independent geometric\n       dimension without redundant information.\"",
       "inline_latex": null,
       "arguments": []
     },

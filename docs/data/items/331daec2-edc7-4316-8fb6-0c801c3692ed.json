@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The Cartesian product forms the set of all ordered pairs drawn from two\nsets. It is the setting in which relations and functions are defined, and\nso is one of the most heavily used constructions in what follows."
+    "text": "With ordered pairs established, we can define the *Cartesian product*\n$A \\times B$, named in honor of René Descartes. The Cartesian product\ngathers all ordered pairs $(a, b)$ such that $a \\in A$ and $b \\in B$:\n$$A \\times B := \\{(a, b) : a \\in A \\land b \\in B\\}$$ The Cartesian\nproduct is the foundational arena of modern mathematics: binary relations\non $A$ are defined as subsets of $A \\times A$, and functions from $A$ to\n$B$ are defined as special subsets of $A \\times B$."
   },
-  "source": "Text: \"The Cartesian product forms the set of all ordered pairs drawn from two\n       sets. It is the setting in which relations and functions are defined, and\n       so is one of the most heavily used constructions in what follows.\"\nId: \"331daec2-edc7-4316-8fb6-0c801c3692ed\"",
+  "source": "Text: \"With ordered pairs established, we can define the *Cartesian product*\n       $A \\times B$, named in honor of René Descartes. The Cartesian product\n       gathers all ordered pairs $(a, b)$ such that $a \\in A$ and $b \\in B$:\n       $$A \\times B := \\{(a, b) : a \\in A \\land b \\in B\\}$$ The Cartesian\n       product is the foundational arena of modern mathematics: binary relations\n       on $A$ are defined as subsets of $A \\times A$, and functions from $A$ to\n       $B$ are defined as special subsets of $A \\times B$.\"\nId: \"331daec2-edc7-4316-8fb6-0c801c3692ed\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The Cartesian product forms the set of all ordered pairs drawn from two\n       sets. It is the setting in which relations and functions are defined, and\n       so is one of the most heavily used constructions in what follows.\"",
+      "inline_argument": "\"With ordered pairs established, we can define the *Cartesian product*\n       $A \\times B$, named in honor of René Descartes. The Cartesian product\n       gathers all ordered pairs $(a, b)$ such that $a \\in A$ and $b \\in B$:\n       $$A \\times B := \\{(a, b) : a \\in A \\land b \\in B\\}$$ The Cartesian\n       product is the foundational arena of modern mathematics: binary relations\n       on $A$ are defined as subsets of $A \\times A$, and functions from $A$ to\n       $B$ are defined as special subsets of $A \\times B$.\"",
       "inline_latex": null,
       "arguments": []
     },

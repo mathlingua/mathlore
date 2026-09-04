@@ -2,9 +2,19 @@ Title: "Rings and Fields"
 Id: "832946c5-ae2c-47d4-b445-3ded9c71199c"
 
 
-Text: "Equipping a set with both addition and multiplication gives rise to rings
-       and fields. In a ring, addition forms an abelian group, multiplication
-       forms a monoid, and multiplication distributes over addition."
+Text: "While groups formalize symmetries through a single invertible operation, the
+       richness of classical arithmetic and geometry requires the simultaneous presence
+       of two interacting operations: addition and multiplication.
+       
+       A *ring* unites these operations: addition forms an abelian group (permitting
+       arbitrary translations and subtractions), multiplication forms a monoid
+       (providing composition and an identity), and the two operations are bound
+       together by the *distributive laws*:
+       $$ a \cdot (b + c) = a \cdot b + a \cdot c \quad \text{and} \quad (a + b) \cdot c = a \cdot c + b \cdot c. $$
+       The distributive property ensures that multiplication behaves as an endomorphism
+       of the additive group. Conceived through the pioneering work of Richard Dedekind,
+       David Hilbert, and Emmy Noether, rings provide the overarching framework for
+       integers, polynomials, matrices, and algebraic functions."
 Id: "7c74e436-b04f-4233-8161-ed9e8ffc13a7"
 
 
@@ -48,8 +58,16 @@ Documented:
 Id: "7e51f2cf-8568-4819-af9d-80949b74d813"
 
 
-Text: "A commutative ring is a ring whose multiplication operation is
-       commutative."
+Text: "A ring is *commutative* when its multiplication satisfies $a * b = b * a$
+       for all elements. Commutative rings serve as the algebraic foundation of
+       algebraic geometry, where geometric shapes (varieties and schemes) are
+       studied through their commutative rings of polynomial or regular
+       functions.
+
+       In contrast, non-commutative rings—such as matrix rings $M_n(R)$,
+       endomorphism rings $\operatorname{End}(V)$, and differential
+       operators—arise naturally as transformation algebras across linear
+       algebra and quantum physics."
 Id: "64b4ac6a-9629-4aa7-89e2-9f0ea27e9a48"
 
 
@@ -67,8 +85,16 @@ SectionTitle: "Fields"
 Id: "0c54d423-2239-4bcc-9398-cff3fa696e7c"
 
 
-Text: "A field is a non-trivial commutative ring where every non-zero element
-       possesses a multiplicative inverse."
+Text: "A *field* is a non-trivial commutative ring in which every nonzero
+       element has a multiplicative inverse: the set of nonzero elements
+       $F^\times = F \setminus \{0\}$ forms an abelian group under
+       multiplication.
+
+       Fields represent the optimal arithmetic environment: addition,
+       subtraction, multiplication, and division (by nonzero elements) are
+       universally permitted and obey all classical algebraic symmetries. Fields
+       provide the scalar domain for linear algebra and vector spaces, and their
+       algebraic extensions are the focus of Galois theory."
 Id: "93eece57-714d-474a-8c52-840bbb3f6621"
 
 
@@ -154,17 +180,46 @@ Documented:
 Id: "be91bf4c-366f-430f-bff8-6f9c7225736d"
 
 
-TextDefinition: "The characteristic of a ring with identity is the least
-                 positive integer $n$ such that $n\cdot1=0$, if such an integer
-                 exists, and is $0$ otherwise. The characteristic of an integral
-                 domain is either $0$ or prime. Consequently every field
-                 contains a canonical copy of either $\mathbb{Q}$ or a finite
-                 prime field $\mathbb{F}_p$."
+TextDefinition: "The *characteristic* $\operatorname{char}(R)$ of a ring with
+                 identity is the least positive integer $n$ such that
+                 $n \cdot 1 = 0$, if such an integer exists, and is $0$
+                 otherwise.
+
+                 Equivalently, the characteristic is the unique non-negative
+                 generator of the kernel of the canonical ring homomorphism
+                 $\chi : \mathbb{Z} \to R$ defined by $\chi(m) = m \cdot 1$.
+
+                 In an integral domain $D$, if $n \cdot 1 = 0$ with
+                 $n = a \cdot b$, then $(a \cdot 1) \cdot (b \cdot 1) = 0$
+                 forces $a \cdot 1 = 0$ or $b \cdot 1 = 0$. Hence the
+                 characteristic of an integral domain (and therefore of any
+                 field) is either $0$ or a prime number $p$. Consequently, every
+                 field contains a unique minimal prime subfield: either the
+                 rational field $\mathbb{Q}$ (if $\operatorname{char}(F) = 0$)
+                 or the finite Galois field
+                 $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ (if
+                 $\operatorname{char}(F) = p$)."
 Id: "e5fe50b7-6f61-4ad4-85e8-0fec0260b2cf"
 
 
-TextTheorem: "For a commutative ring $R$, the quotient $R/I$ is an integral
-              domain exactly when $I$ is prime, and it is a field exactly when
-              $I$ is maximal. These correspondences turn questions about ideals
-              into structural questions about quotient rings."
+TextTheorem: "Let $R$ be a commutative ring and $I \subsetneq R$ a proper ideal.
+              The quotient ring $R/I$ reflects the algebraic tightness of $I$:
+              1. $R/I$ is an integral domain if and only if $I$ is a *prime
+                 ideal* (meaning
+                 $a \cdot b \in I \implies a \in I \text{ or } b \in I$).
+              2. $R/I$ is a field if and only if $I$ is a *maximal ideal*
+                 (meaning there is no ideal $J$ strictly between $I$ and $R$).
+
+              *Proof Sketch of (2)*: If $I$ is maximal and $a + I \neq 0 + I$ in
+              $R/I$, then $a \notin I$. The ideal generated by $I$ and $a$,
+              $I + Ra$, strictly contains $I$, so by maximality $I + Ra = R$.
+              Since $1 \in R$, there exist $i \in I$ and $r \in R$ such that
+              $i + ra = 1$. In the quotient ring, $(r + I)(a + I) = 1 + I$,
+              proving that $a + I$ has a multiplicative inverse. Conversely, if
+              $R/I$ is a field, its only ideals are $(0)$ and $R/I$, so by the
+              Lattice Isomorphism Theorem, no intermediate ideals exist between
+              $I$ and $R$.
+
+              Since every field is an integral domain, every maximal ideal is
+              prime."
 Id: "81f097c0-c0ee-4819-8304-7f13856e2551"

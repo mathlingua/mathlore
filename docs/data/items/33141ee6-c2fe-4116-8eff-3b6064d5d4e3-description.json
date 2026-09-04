@@ -1,0 +1,14 @@
+{
+  "id": "33141ee6-c2fe-4116-8eff-3b6064d5d4e3-description",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "The least element (minimum) is smaller than or equal to every\nelement of $X$. If a least element exists, it is unique and is\nthe unique minimal element."
+  },
+  "source": "",
+  "sections": []
+}

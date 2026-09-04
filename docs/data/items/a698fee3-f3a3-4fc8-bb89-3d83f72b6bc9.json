@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The simplest function on any set is the identity function, which leaves\nevery element fixed."
+    "text": "On every set $A$, there exists a canonical trivial mapping: the *identity\nfunction* $\\text{id}_A : A \\to A$, defined by $\\text{id}_A(x) = x$. The\nidentity function acts as the two-sided neutral element for the algebra\nof function composition."
   },
-  "source": "Text: \"The simplest function on any set is the identity function, which leaves\n       every element fixed.\"\nId: \"a698fee3-f3a3-4fc8-bb89-3d83f72b6bc9\"",
+  "source": "Text: \"On every set $A$, there exists a canonical trivial mapping: the *identity\n       function* $\\text{id}_A : A \\to A$, defined by $\\text{id}_A(x) = x$. The\n       identity function acts as the two-sided neutral element for the algebra\n       of function composition.\"\nId: \"a698fee3-f3a3-4fc8-bb89-3d83f72b6bc9\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The simplest function on any set is the identity function, which leaves\n       every element fixed.\"",
+      "inline_argument": "\"On every set $A$, there exists a canonical trivial mapping: the *identity\n       function* $\\text{id}_A : A \\to A$, defined by $\\text{id}_A(x) = x$. The\n       identity function acts as the two-sided neutral element for the algebra\n       of function composition.\"",
       "inline_latex": null,
       "arguments": []
     },

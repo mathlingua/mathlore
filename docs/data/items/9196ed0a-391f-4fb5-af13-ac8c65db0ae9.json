@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The axiom of infinity guarantees that an infinite set exists, being\nclosed under successor and containing the empty set."
+    "text": "The axioms introduced thus far cannot prove the existence of any infinite\nset. The Axiom of Infinity bridges the chasm between the finite and the\ntransfinite by postulating a set $I$ containing the empty set $\\emptyset$\nand closed under the von Neumann successor operation\n$S(Y) = Y \\cup \\{Y\\}$. This inductive structure provides the foundational\nrepresentation of the natural numbers $\\mathbb{N}$."
   },
-  "source": "Text: \"The axiom of infinity guarantees that an infinite set exists, being\n       closed under successor and containing the empty set.\"\nId: \"9196ed0a-391f-4fb5-af13-ac8c65db0ae9\"",
+  "source": "Text: \"The axioms introduced thus far cannot prove the existence of any infinite\n       set. The Axiom of Infinity bridges the chasm between the finite and the\n       transfinite by postulating a set $I$ containing the empty set $\\emptyset$\n       and closed under the von Neumann successor operation\n       $S(Y) = Y \\cup \\{Y\\}$. This inductive structure provides the foundational\n       representation of the natural numbers $\\mathbb{N}$.\"\nId: \"9196ed0a-391f-4fb5-af13-ac8c65db0ae9\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The axiom of infinity guarantees that an infinite set exists, being\n       closed under successor and containing the empty set.\"",
+      "inline_argument": "\"The axioms introduced thus far cannot prove the existence of any infinite\n       set. The Axiom of Infinity bridges the chasm between the finite and the\n       transfinite by postulating a set $I$ containing the empty set $\\emptyset$\n       and closed under the von Neumann successor operation\n       $S(Y) = Y \\cup \\{Y\\}$. This inductive structure provides the foundational\n       representation of the natural numbers $\\mathbb{N}$.\"",
       "inline_latex": null,
       "arguments": []
     },

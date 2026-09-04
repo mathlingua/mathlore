@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The axiom of the power set asserts that all the subsets of a given set\ncan themselves be gathered into a set. This is the first axiom that\nproduces a set strictly larger than the ones it starts from."
+    "text": "The operations of pairing and union allow us to assemble finite\ncollections from existing elements, but they cannot escape the finite\nrealm if all starting sets are finite. The Axiom of the Power Set\nprovides an explosive leap in set-theoretic size: it asserts that all\npossible subcollections of a set $A$ can be gathered into a new set\n$\\mathcal{P}(A)$. As Cantor's theorem will demonstrate, the power set of\nany set is strictly greater in cardinality than the set itself."
   },
-  "source": "Text: \"The axiom of the power set asserts that all the subsets of a given set\n       can themselves be gathered into a set. This is the first axiom that\n       produces a set strictly larger than the ones it starts from.\"\nId: \"139b6eca-d1e5-4fae-97a4-1b05d96726f1\"",
+  "source": "Text: \"The operations of pairing and union allow us to assemble finite\n       collections from existing elements, but they cannot escape the finite\n       realm if all starting sets are finite. The Axiom of the Power Set\n       provides an explosive leap in set-theoretic size: it asserts that all\n       possible subcollections of a set $A$ can be gathered into a new set\n       $\\mathcal{P}(A)$. As Cantor's theorem will demonstrate, the power set of\n       any set is strictly greater in cardinality than the set itself.\"\nId: \"139b6eca-d1e5-4fae-97a4-1b05d96726f1\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The axiom of the power set asserts that all the subsets of a given set\n       can themselves be gathered into a set. This is the first axiom that\n       produces a set strictly larger than the ones it starts from.\"",
+      "inline_argument": "\"The operations of pairing and union allow us to assemble finite\n       collections from existing elements, but they cannot escape the finite\n       realm if all starting sets are finite. The Axiom of the Power Set\n       provides an explosive leap in set-theoretic size: it asserts that all\n       possible subcollections of a set $A$ can be gathered into a new set\n       $\\mathcal{P}(A)$. As Cantor's theorem will demonstrate, the power set of\n       any set is strictly greater in cardinality than the set itself.\"",
       "inline_latex": null,
       "arguments": []
     },

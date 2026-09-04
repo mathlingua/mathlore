@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Geometrically, conjugation is reflection across the real axis."
+    "text": "Geometrically, complex conjugation $z \\mapsto \\overline{z}$ is the\nreflection of the Argand plane across the real horizontal axis,\npreserving distances and magnitudes while reversing planar orientation\nand the sign of angles.\n\nAlgebraically, conjugation is a non-trivial field automorphism of\n$\\mathbb{C}$ that fixes every real number pointwise: $\\sigma(x) = x$ for\nall $x \\in \\mathbb{R}$, and $\\sigma(i) = -i$. Because\n$\\sigma^2 = \\operatorname{id}_{\\mathbb{C}}$, conjugation is an\ninvolution, generating the two-element Galois group\n$\\operatorname{Gal}(\\mathbb{C}/\\mathbb{R}) \\cong \\mathbb{Z}/2\\mathbb{Z}$.\nIn particular, if a polynomial $P(z) \\in \\mathbb{R}[z]$ has real\ncoefficients, then $P(\\overline{z}) = \\overline{P(z)}$, which guarantees\nthat all non-real roots of real polynomials must occur in complex\nconjugate pairs."
   },
-  "source": "Text: \"Geometrically, conjugation is reflection across the real axis.\"\nId: \"b6cf05ac-3997-42c1-8a87-d6cc236431f1\"",
+  "source": "Text: \"Geometrically, complex conjugation $z \\mapsto \\overline{z}$ is the\n       reflection of the Argand plane across the real horizontal axis,\n       preserving distances and magnitudes while reversing planar orientation\n       and the sign of angles.\n\n       Algebraically, conjugation is a non-trivial field automorphism of\n       $\\mathbb{C}$ that fixes every real number pointwise: $\\sigma(x) = x$ for\n       all $x \\in \\mathbb{R}$, and $\\sigma(i) = -i$. Because\n       $\\sigma^2 = \\operatorname{id}_{\\mathbb{C}}$, conjugation is an\n       involution, generating the two-element Galois group\n       $\\operatorname{Gal}(\\mathbb{C}/\\mathbb{R}) \\cong \\mathbb{Z}/2\\mathbb{Z}$.\n       In particular, if a polynomial $P(z) \\in \\mathbb{R}[z]$ has real\n       coefficients, then $P(\\overline{z}) = \\overline{P(z)}$, which guarantees\n       that all non-real roots of real polynomials must occur in complex\n       conjugate pairs.\"\nId: \"b6cf05ac-3997-42c1-8a87-d6cc236431f1\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Geometrically, conjugation is reflection across the real axis.\"",
+      "inline_argument": "\"Geometrically, complex conjugation $z \\mapsto \\overline{z}$ is the\n       reflection of the Argand plane across the real horizontal axis,\n       preserving distances and magnitudes while reversing planar orientation\n       and the sign of angles.\n\n       Algebraically, conjugation is a non-trivial field automorphism of\n       $\\mathbb{C}$ that fixes every real number pointwise: $\\sigma(x) = x$ for\n       all $x \\in \\mathbb{R}$, and $\\sigma(i) = -i$. Because\n       $\\sigma^2 = \\operatorname{id}_{\\mathbb{C}}$, conjugation is an\n       involution, generating the two-element Galois group\n       $\\operatorname{Gal}(\\mathbb{C}/\\mathbb{R}) \\cong \\mathbb{Z}/2\\mathbb{Z}$.\n       In particular, if a polynomial $P(z) \\in \\mathbb{R}[z]$ has real\n       coefficients, then $P(\\overline{z}) = \\overline{P(z)}$, which guarantees\n       that all non-real roots of real polynomials must occur in complex\n       conjugate pairs.\"",
       "inline_latex": null,
       "arguments": []
     },

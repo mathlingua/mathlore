@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same integer when\n$n_1 - m_1 = n_2 - m_2$. Since subtraction is not yet available, this is\nphrased using addition alone, as $n_1 + m_2 = n_2 + m_1$. The relation so\ndefined is an equivalence relation on pairs of naturals."
+    "text": "Intuitively, two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same\ninteger difference when $n_1 - m_1 = n_2 - m_2$. Because subtraction is\nnot yet defined, we rearrange this equation using addition alone into the\nequivalent *cross-sum condition*: $$n_1 + m_2 = n_2 + m_1$$ This relation\nis reflexive, symmetric, and transitive, forming a valid equivalence\nrelation on $\\mathbb{N} \\times \\mathbb{N}$."
   },
-  "source": "Text: \"Two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same integer when\n       $n_1 - m_1 = n_2 - m_2$. Since subtraction is not yet available, this is\n       phrased using addition alone, as $n_1 + m_2 = n_2 + m_1$. The relation so\n       defined is an equivalence relation on pairs of naturals.\"\nId: \"86f693bc-1d69-4bfd-bef4-c67033b73acb\"",
+  "source": "Text: \"Intuitively, two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same\n       integer difference when $n_1 - m_1 = n_2 - m_2$. Because subtraction is\n       not yet defined, we rearrange this equation using addition alone into the\n       equivalent *cross-sum condition*: $$n_1 + m_2 = n_2 + m_1$$ This relation\n       is reflexive, symmetric, and transitive, forming a valid equivalence\n       relation on $\\mathbb{N} \\times \\mathbb{N}$.\"\nId: \"86f693bc-1d69-4bfd-bef4-c67033b73acb\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same integer when\n       $n_1 - m_1 = n_2 - m_2$. Since subtraction is not yet available, this is\n       phrased using addition alone, as $n_1 + m_2 = n_2 + m_1$. The relation so\n       defined is an equivalence relation on pairs of naturals.\"",
+      "inline_argument": "\"Intuitively, two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same\n       integer difference when $n_1 - m_1 = n_2 - m_2$. Because subtraction is\n       not yet defined, we rearrange this equation using addition alone into the\n       equivalent *cross-sum condition*: $$n_1 + m_2 = n_2 + m_1$$ This relation\n       is reflexive, symmetric, and transitive, forming a valid equivalence\n       relation on $\\mathbb{N} \\times \\mathbb{N}$.\"",
       "inline_latex": null,
       "arguments": []
     },

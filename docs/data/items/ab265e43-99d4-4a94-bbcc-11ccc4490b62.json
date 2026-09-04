@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The kernel of a linear map consists of all vectors that are mapped to the\nzero vector."
+    "text": "The *kernel* (or null space) $\\ker(T) = \\{v \\in V : T(v) = 0\\}$ consists\nof all vectors annihilated by $T$. The kernel is a subspace of $V$, and\nmeasures the failure of $T$ to be injective:\n$T(u) = T(v) \\iff u - v \\in \\ker(T)$. Consequently, $T$ is injective if\nand only if $\\ker(T) = \\{0\\}$. For any $w \\in \\operatorname{im}(T)$, the\nfiber $T^{-1}(w)$ is an affine subspace of the form $v_0 + \\ker(T)$."
   },
-  "source": "Text: \"The kernel of a linear map consists of all vectors that are mapped to the\n       zero vector.\"\nId: \"ab265e43-99d4-4a94-bbcc-11ccc4490b62\"",
+  "source": "Text: \"The *kernel* (or null space) $\\ker(T) = \\{v \\in V : T(v) = 0\\}$ consists\n       of all vectors annihilated by $T$. The kernel is a subspace of $V$, and\n       measures the failure of $T$ to be injective:\n       $T(u) = T(v) \\iff u - v \\in \\ker(T)$. Consequently, $T$ is injective if\n       and only if $\\ker(T) = \\{0\\}$. For any $w \\in \\operatorname{im}(T)$, the\n       fiber $T^{-1}(w)$ is an affine subspace of the form $v_0 + \\ker(T)$.\"\nId: \"ab265e43-99d4-4a94-bbcc-11ccc4490b62\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The kernel of a linear map consists of all vectors that are mapped to the\n       zero vector.\"",
+      "inline_argument": "\"The *kernel* (or null space) $\\ker(T) = \\{v \\in V : T(v) = 0\\}$ consists\n       of all vectors annihilated by $T$. The kernel is a subspace of $V$, and\n       measures the failure of $T$ to be injective:\n       $T(u) = T(v) \\iff u - v \\in \\ker(T)$. Consequently, $T$ is injective if\n       and only if $\\ker(T) = \\{0\\}$. For any $w \\in \\operatorname{im}(T)$, the\n       fiber $T^{-1}(w)$ is an affine subspace of the form $v_0 + \\ker(T)$.\"",
       "inline_latex": null,
       "arguments": []
     },

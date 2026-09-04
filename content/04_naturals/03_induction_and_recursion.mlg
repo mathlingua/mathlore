@@ -2,11 +2,19 @@ Title: "Induction and Recursion"
 Id: "0084ea96-4893-4c13-82b6-9c0c9c0ae648"
 
 
-Text: "Induction and recursion are dual aspects of the successor structure.
-       Induction proves that a property holds at every stage; recursion defines
-       an object at a stage from the objects already defined at earlier stages.
-       Both principles depend on the absence of hidden natural numbers beyond
-       those generated from zero by repeated succession."
+Text: "Induction and recursion represent the dual foundational aspects of the
+       successor structure on $\mathbb{N}$.
+       - *Mathematical induction* is the supreme method of proof: to verify that
+         a proposition $P(n)$ holds for all natural numbers, it suffices to
+         verify its truth at $0$ and show that truth is inherited from $n$ to
+         $S(n)$.
+       - *Primitive recursion* is the supreme method of construction: to define
+         a sequence or function on $\mathbb{N}$, it suffices to specify an
+         initial value and a deterministic rule for stepping forward.
+
+       Both principles are logical manifestations of the same core fact:
+       $\mathbb{N}$ contains no spurious elements beyond those generated from
+       zero by repeated iteration of the successor function."
 Id: "fe9c481f-c3a7-4367-8dde-a342561a4ccc"
 
 
@@ -26,6 +34,12 @@ then:
   then: P(n)
 Documented:
 . called: "Principle of Mathematical Induction"
+Proof: """Let $A = \{n \in \mathbb{N} : P(n)\}$. By hypothesis, $P(0)$ holds, so
+          $0 \in A$. Furthermore, for any $n \in A$, $P(n)$ holds, which implies
+          $P(S(n))$, so $S(n) \in A$. Thus $A$ contains $0$ and is closed under
+          successor. By the induction postulate of the Peano axioms,
+          $A = \mathbb{N}$, which proves that $P(n)$ holds for all
+          $n \in \mathbb{N}$."""
 Id: "3940cf8b-62b7-41cf-984a-62429aeb835e"
 
 
@@ -48,14 +62,30 @@ Documented:
 . called: "Principle of Strong Induction"
 . description: "If $P(n)$ follows from the validity of $P(k)$ at every preceding
                 natural number $k<n$, then $P$ holds for every natural number."
+Proof: """Define the auxiliary predicate $Q(n)$ by
+          $$Q(n) \iff \forall k < n, \, P(k)$$ We prove
+          $\forall n \in \mathbb{N}, Q(n)$ by ordinary mathematical induction on
+          $n$:
+          1. *Base Case ($n = 0$)*: The statement $Q(0)$ asserts that $P(k)$
+             holds for all $k < 0$. Because no natural number is strictly less
+             than $0$, this condition is vacuously true.
+          2. *Inductive Step*: Assume $Q(n)$ holds, meaning $P(k)$ is true for
+             all $k < n$. By the strong induction hypothesis, this implies
+             $P(n)$. Combining $Q(n)$ (truth for all $k < n$) with $P(n)$ (truth
+             at $n$) proves that $P(k)$ holds for all $k < n + 1$, which is
+             precisely $Q(n + 1)$. By ordinary induction, $Q(n)$ holds for all
+             $n \in \mathbb{N}$. Since $Q(n + 1)$ implies $P(n)$, it follows
+             that $P(n)$ holds for every natural number $n$."""
 Id: "844c54eb-187b-4369-8fd2-84d5d7da2b4b"
 
 
-Text: "The induction hypothesis is available only at the stage for which it has
-       been assumed. In ordinary induction one may use $P(n)$ to prove $P(n+1)$;
-       one may not assume the desired conclusion at $n+1$. In strong induction
-       all earlier cases may be used, but the current case must still be derived
-       from them."
+Text: "A rigorous inductive proof demands careful epistemic hygiene: the
+       *induction hypothesis* $P(n)$ is assumed strictly for a fixed, arbitrary
+       index $n$, and must be used solely to derive the subsequent assertion
+       $P(n + 1)$. In strong induction (complete induction), all preceding
+       instances $P(0), P(1), \dots, P(n-1)$ are available as simultaneous
+       hypotheses, which is particularly powerful when dealing with recurrences
+       like the Fibonacci sequence or the prime factorization of integers."
 Id: "a73f0f65-b93a-4380-8623-255523e3a354"
 
 
@@ -71,6 +101,17 @@ then:
 Documented:
 . called: "Well-Ordering Principle for the Natural Numbers"
 . description: "Every nonempty subset of $\mathbb{N}$ has a least element."
+Proof: """Suppose for contradiction that $A \subseteq \mathbb{N}$ is nonempty
+          yet possesses no least element. Let $P(n)$ be the assertion that
+          $n \notin A$. We prove that $P(n)$ holds for all $n \in \mathbb{N}$ by
+          strong induction. Let $n \in \mathbb{N}$, and assume that $P(k)$ holds
+          for all $k < n$, meaning no natural number strictly smaller than $n$
+          belongs to $A$. If $n$ were in $A$, then because no strictly smaller
+          natural number belongs to $A$, $n$ would be the least element of $A$,
+          contradicting our hypothesis that $A$ has no least element. Therefore
+          $n \notin A$, which establishes $P(n)$. By strong induction,
+          $n \notin A$ for every $n \in \mathbb{N}$, which forces
+          $A = \emptyset$. This contradicts the assumption that $A$ is nonempty."""
 Id: "dd21ebd6-0821-429e-af26-123c01ca0432"
 
 

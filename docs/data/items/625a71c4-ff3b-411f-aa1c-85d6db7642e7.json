@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The center of a group consists of all elements that commute with every\nelement in the group."
+    "text": "The *center* $Z(G)$ of a group comprises all elements that commute with\nevery element of the group:\n$Z(G) = \\{z \\in G : z * g = g * z \\text{ for all } g \\in G\\}$. The center\nmeasures the degree of commutativity of $G$: $Z(G) = G$ if and only if\n$G$ is abelian, while for non-abelian simple groups $Z(G)$ is trivial."
   },
-  "source": "Text: \"The center of a group consists of all elements that commute with every\n       element in the group.\"\nId: \"625a71c4-ff3b-411f-aa1c-85d6db7642e7\"",
+  "source": "Text: \"The *center* $Z(G)$ of a group comprises all elements that commute with\n       every element of the group:\n       $Z(G) = \\{z \\in G : z * g = g * z \\text{ for all } g \\in G\\}$. The center\n       measures the degree of commutativity of $G$: $Z(G) = G$ if and only if\n       $G$ is abelian, while for non-abelian simple groups $Z(G)$ is trivial.\"\nId: \"625a71c4-ff3b-411f-aa1c-85d6db7642e7\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The center of a group consists of all elements that commute with every\n       element in the group.\"",
+      "inline_argument": "\"The *center* $Z(G)$ of a group comprises all elements that commute with\n       every element of the group:\n       $Z(G) = \\{z \\in G : z * g = g * z \\text{ for all } g \\in G\\}$. The center\n       measures the degree of commutativity of $G$: $Z(G) = G$ if and only if\n       $G$ is abelian, while for non-abelian simple groups $Z(G)$ is trivial.\"",
       "inline_latex": null,
       "arguments": []
     },

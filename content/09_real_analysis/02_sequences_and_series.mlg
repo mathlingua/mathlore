@@ -2,9 +2,18 @@ Title: "Sequences and Series"
 Id: "e8e0e3ba-04a9-4d6e-a0c1-64ceba251588"
 
 
-Text: "A real sequence is a mapping from the natural numbers to the real
-       numbers. Convergence, Cauchy sequences, and infinite series form the
-       backbone of discrete approximation and limit operations in analysis."
+Text: "A *real sequence* is a function $a : \mathbb{N} \to \mathbb{R}$, denoted
+       $(a_n)_{n=1}^\infty$. Sequences provide the foundational discrete
+       stepping stones through which the continuous topology of $\mathbb{R}$ is
+       probed.
+
+       Convergence, Cauchy criteria, and infinite series translate the geometric
+       concept of proximity into rigorous $\epsilon$-analysis. While in an
+       incomplete space like $\mathbb{Q}$ a sequence of approximations can
+       wander into a non-existent gap (such as the rational approximations to
+       $\sqrt{2}$), completeness guarantees that every sequence whose terms
+       cluster together (a Cauchy sequence) converges to a definitive real
+       limit."
 Id: "2091d8cf-0c0b-4567-9c3c-b0fbc4528fe9"
 
 
@@ -129,6 +138,29 @@ iff:
 Documented:
 . called: "Cauchy Completeness of the Real Numbers"
 . description: "In the real numbers, every Cauchy sequence converges to a limit."
+Proof: """
+Let $(a_n)$ be a real sequence.
+
+$(\impliedby)$: Suppose $a_n \to L$. Let $\epsilon > 0$.
+By definition of convergence, there exists $N \in \mathbb{N}$ such that for all $n \geq N$,
+$|a_n - L| < \epsilon/2$.
+Then for any $n, m \geq N$, applying the triangle inequality yields:
+$$ |a_n - a_m| = |(a_n - L) + (L - a_m)| \leq |a_n - L| + |a_m - L| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon. $$
+Thus $(a_n)$ is a Cauchy sequence.
+
+$(\implies)$: Suppose $(a_n)$ is Cauchy.
+1. **Boundedness**: Taking $\epsilon = 1$, there exists $N_1$ such that $|a_n - a_m| < 1$ for all $n, m \geq N_1$.
+   In particular, $|a_n| \leq |a_{N_1}| + 1$ for all $n \geq N_1$. Setting
+   $M = \max\{|a_1|, |a_2|, \dots, |a_{N_1 - 1}|, |a_{N_1}| + 1\}$ shows that $|a_n| \leq M$ for all $n$.
+2. **Subsequence Limit**: By the Bolzano-Weierstrass theorem, the bounded sequence $(a_n)$
+   has a convergent subsequence $a_{n_k} \to L$ as $k \to \infty$.
+3. **Full Sequence Convergence**: Let $\epsilon > 0$. Since $(a_n)$ is Cauchy, there is $N_2$
+   such that $|a_n - a_m| < \epsilon/2$ for all $n, m \geq N_2$.
+   Since $a_{n_k} \to L$, choose $k$ large enough so that $n_k \geq N_2$ and $|a_{n_k} - L| < \epsilon/2$.
+   Then for any $n \geq N_2$:
+   $$ |a_n - L| \leq |a_n - a_{n_k}| + |a_{n_k} - L| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon. $$
+Thus $a_n \to L$, establishing Cauchy completeness.
+"""
 Id: "da1c56ad-7de6-4161-b806-99ead8e954be"
 
 
@@ -143,6 +175,22 @@ then:
 Documented:
 . called: "Monotone Convergence Theorem"
 . description: "Every bounded monotone real sequence converges."
+Proof: """
+Let $(a_n)$ be a bounded, monotone increasing real sequence.
+The set of its values $A = \{a_n : n \in \mathbb{N}\} \subset \mathbb{R}$ is non-empty and bounded above.
+By the Completeness Axiom (Least Upper Bound Property), the supremum $L = \sup(A)$ exists in $\mathbb{R}$.
+
+We prove that $a_n \to L$:
+Let $\epsilon > 0$. Since $L = \sup(A)$, the quantity $L - \epsilon < L$ cannot be an upper bound for $A$.
+Therefore, there exists some index $N \in \mathbb{N}$ such that:
+$$ a_N > L - \epsilon. $$
+Since $(a_n)$ is monotone increasing, for all $n \geq N$ we have $a_n \geq a_N$.
+Furthermore, since $L$ is an upper bound for $A$, $a_n \leq L < L + \epsilon$ for all $n$.
+Combining these inequalities gives:
+$$ L - \epsilon < a_N \leq a_n \leq L < L + \epsilon \implies |a_n - L| < \epsilon $$
+for all $n \geq N$.
+Thus $(a_n)$ converges to $L = \sup\{a_n : n \in \mathbb{N}\}$.
+"""
 Id: "3d7b0ef1-4562-415e-bf44-74e324ce5f5c"
 
 
@@ -191,6 +239,16 @@ Documented:
 . called: "Convergence is Inherited by Subsequences"
 . description: "Every subsequence of a convergent sequence converges to the same
                 limit. The converse fails without control of all indices."
+Proof: """Let $(a_n)$ converge to $L$, and let $b_k = a_{n_k}$ be a subsequence,
+          where $n : \mathbb{N} \to \mathbb{N}$ is strictly increasing:
+          $n_1 < n_2 < n_3 < \cdots$. By induction on $k$, $n_k \geq k$ for all
+          $k \in \mathbb{N}$.
+
+          Let $\epsilon > 0$. Since $a_n \to L$, there exists $N \in \mathbb{N}$
+          such that for all $n \geq N$: $$ |a_n - L| < \epsilon. $$ Then for any
+          $k \geq N$, the index satisfies $n_k \geq k \geq N$, which guarantees:
+          $$ |b_k - L| = |a_{n_k} - L| < \epsilon. $$ Therefore, the subsequence
+          $(b_k)$ converges to the identical limit $L$."""
 Id: "cef832b6-22d8-4377-8e47-577ab1f7bb1d"
 
 
@@ -204,28 +262,82 @@ then:
 Documented:
 . called: "Bolzano--Weierstrass Theorem"
 . description: "Every bounded real sequence has a convergent subsequence."
+Proof: """Let $(a_n)$ be a bounded real sequence. Thus there exists a closed
+          bounded interval $I_0 = [a, b]$ containing every term: $a_n \in I_0$
+          for all $n \in \mathbb{N}$.
+
+          We construct a nested sequence of closed intervals
+          $I_0 \supset I_1 \supset I_2 \supset \cdots$ via the bisection method:
+          1. Bisect $I_0 = [a, b]$ at its midpoint $m = (a + b)/2$ into two
+             subintervals $[a, m]$ and $[m, b]$. At least one subinterval
+             contains $a_n$ for infinitely many indices $n$. Choose such a
+             subinterval and denote it $I_1 = [a_1, b_1]$. Its length is
+             $(b - a)/2$.
+          2. Continuing inductively, having constructed $I_k$ containing
+             infinitely many terms of the sequence, bisect $I_k$ and select a
+             half $I_{k+1}$ containing infinitely many terms. The length of
+             $I_k$ is $|I_k| = (b - a)/2^k$.
+
+          Now choose a subsequence $(a_{n_k})$: choose $n_1$ such that
+          $a_{n_1} \in I_1$. Having chosen $n_1 < n_2 < \dots < n_k$ with
+          $a_{n_k} \in I_k$, since $I_{k+1}$ contains infinitely many terms of
+          the sequence, we can choose $n_{k+1} > n_k$ such that
+          $a_{n_{k+1}} \in I_{k+1}$.
+
+          By the Nested Interval Theorem, $\bigcap_{k=1}^\infty I_k = \{L\}$ for
+          a unique real number $L$. Since both $a_{n_k}$ and $L$ belong to
+          $I_k$, we have: $$ |a_{n_k} - L| \leq |I_k| = \frac{b - a}{2^k}. $$
+          Since $\lim_{k \to \infty} (b - a)/2^k = 0$, it follows that
+          $a_{n_k} \to L$ as $k \to \infty$. Thus every bounded real sequence
+          possesses a convergent subsequence."""
 Id: "1f6fac61-9b16-4828-942f-293b25792dcf"
 
 
-TextDefinition: "The series $\sum_{n=0}^{\infty}a_n$ converges to $S$ if the
-                 sequence of partial sums $s_N=\sum_{n=0}^{N}a_n$ converges to
-                 $S$. Thus an infinite sum is defined through a limit of finite
-                 sums. Necessarily $a_n\to0$, but this condition is not
-                 sufficient for convergence."
+TextDefinition: "An infinite series $\sum_{n=1}^{\infty} a_n$ converges to sum
+                 $S \in \mathbb{R}$ if the sequence of partial sums
+                 $s_N = \sum_{n=1}^N a_n$ converges to $S$ as $N \to \infty$.
+
+                 An infinite sum is thus fundamentally defined as the limit of
+                 finite algebraic sums. A necessary condition for convergence is
+                 that the terms vanish: $\lim_{n \to \infty} a_n = 0$. However,
+                 this condition is famously insufficient: the Harmonic Series
+                 $\sum_{n=1}^\infty \frac{1}{n}$ diverges to infinity despite
+                 its terms tending to zero."
 Id: "4dbd15d0-16cc-4668-993b-2f06d6c77b0e"
 
 
-TextTheorem: "Absolute convergence implies convergence: if $\sum|a_n|<\infty$,
-              then $\sum a_n$ converges. For absolutely convergent series, every
-              rearrangement has the same sum. A conditionally convergent real
-              series behaves differently: its terms can be rearranged to
-              converge to any prescribed real value or to diverge."
+TextTheorem: "Absolute Convergence and the Riemann Rearrangement Theorem. A
+              series $\sum a_n$ converges *absolutely* if $\sum |a_n| < \infty$.
+
+              1. **Absolute Convergence Implies Convergence**: By the Cauchy
+                 criterion,
+                 $|\sum_{k=m}^n a_k| \leq \sum_{k=m}^n |a_k| < \epsilon$, so
+                 absolute convergence guarantees convergence in $\mathbb{R}$.
+              2. **Unconditional Convergence**: For any absolutely convergent
+                 series, every permutation $\sigma : \mathbb{N} \to \mathbb{N}$
+                 produces a rearranged series $\sum a_{\sigma(n)}$ that
+                 converges to the exact same sum.
+              3. **Riemann Rearrangement Theorem**: If a series converges
+                 conditionally (meaning $\sum a_n$ converges, but
+                 $\sum |a_n| = \infty$, as in the alternating harmonic series
+                 $\sum (-1)^{n+1}/n = \ln 2$), then for *any* extended real
+                 number $M \in \mathbb{R} \cup \{-\infty, +\infty\}$, there
+                 exists a permutation $\sigma$ such that the rearranged series
+                 $\sum a_{\sigma(n)}$ converges to $M$."
 Id: "9dc7b0a0-bc7a-4b06-b8a8-7ee8d0e33b13"
 
 
-TextTheorem: "Comparison principle. If $0\leq a_n\leq b_n$ eventually and
-              $\sum b_n$ converges, then $\sum a_n$ converges. If
-              $0\leq b_n\leq a_n$ eventually and $\sum b_n$ diverges, then
-              $\sum a_n$ diverges. The word eventually permits finitely many
-              exceptional initial terms, which never affect convergence."
+TextTheorem: "The Comparison Tests. Let $(a_n)$ and $(b_n)$ be non-negative real
+              sequences.
+              1. **Direct Comparison**: If $0 \leq a_n \leq b_n$ for all
+                 $n \geq N_0$:
+                 - If $\sum b_n$ converges, then $\sum a_n$ converges.
+                 - If $\sum a_n$ diverges, then $\sum b_n$ diverges.
+              2. **Limit Comparison**: If
+                 $\lim_{n \to \infty} \frac{a_n}{b_n} = c \in (0, \infty)$, then
+                 either both series $\sum a_n$ and $\sum b_n$ converge, or both
+                 diverge.
+
+              The presence of finitely many exceptional initial terms never
+              affects the convergence or divergence of an infinite series."
 Id: "41c2dd84-b1bf-4c85-a9e8-1e47fdc92bbf"

@@ -2,13 +2,21 @@ Title: "Relations"
 Id: "61ac6940-a021-4d54-bc78-910c75ce3a04"
 
 
-Text: "A relation records how the elements of a set stand to one another.
-       Formally it is nothing more than a set of ordered pairs -- a subset of
-       the Cartesian square -- but this simple idea is remarkably powerful. This
-       chapter treats relations in general and then singles out the *equivalence
-       relations*, whose classes partition a set and let one pass to a quotient.
-       The construction of the integers in the next chapter rests entirely on
-       this machinery."
+Text: "A bare mathematical set is an unstructured collection of points,
+       possessing neither geometry, hierarchy, nor internal dynamics. To breathe
+       mathematical life into a set, one must specify how its elements interact.
+       This is the fundamental role of a *relation*.
+
+       Formally, a binary relation on a set $X$ is realized simply as a subset
+       of the Cartesian product $X \times X$. Yet despite this austere
+       set-theoretic definition, relations embody the primary structural motifs
+       of all modern mathematics:
+       - *Equivalence relations* model symmetry, grouping elements into clusters
+         of indistinguishability that collapse to form quotient structures.
+       - *Order relations* model hierarchy and precedence, organizing elements
+         into partially or totally ordered posets and lattices.
+       - *Functions*—the subject of the following chapter—are single-valued
+         relations that govern dynamics and transformations."
 Id: "c29d6027-fe93-4e6d-94df-f72a802fedcb"
 
 
@@ -31,7 +39,9 @@ Documented:
 Id: "5ace60a2-cc66-4cea-818a-538f877b5f97"
 
 
-Text: "A relation is reflexive if every element is related to itself."
+Text: "A relation $R$ on $X$ is *reflexive* when every element is related to
+       itself: $\forall x \in X, x \mathrel{R} x$. In geometric terms, this
+       means $R$ contains the diagonal $\Delta_X = \{(x, x) : x \in X\}$."
 Id: "35a87f95-8d23-44a0-ae4f-70d4384a3db6"
 
 
@@ -48,8 +58,9 @@ Documented:
 Id: "8db6967b-79de-4fd6-8769-fcd651c7c6ee"
 
 
-Text: "A relation is symmetric if the order of elements in a related pair can be
-       reversed."
+Text: "A relation $R$ on $X$ is *symmetric* when the direction of relatedness is
+       bidirectional: $x \mathrel{R} y \implies y \mathrel{R} x$. In relational
+       algebra, symmetry is equivalent to the identity $R = R^{-1}$."
 Id: "b2c8da90-8a30-4542-a3a3-f81bf989953a"
 
 
@@ -67,8 +78,11 @@ Documented:
 Id: "273288f5-a313-4140-a28c-16ac7e8ba72b"
 
 
-Text: "A relation is transitive if relationships chain through intermediate
-       elements."
+Text: "A relation $R$ on $X$ is *transitive* when connections bridge across
+       intermediate nodes:
+       $x \mathrel{R} y \land y \mathrel{R} z \implies x \mathrel{R} z$.
+       Transitivity is the algebraic guarantee that local relationships cohere
+       into global reachability."
 Id: "5965ba24-25b8-4a16-92fc-035988cfb21c"
 
 
@@ -88,8 +102,11 @@ Documented:
 Id: "8baba6bf-25f4-48b4-84f9-4b2db59ccf47"
 
 
-Text: "A relation is antisymmetric if two elements can only be mutually related
-       when they are identical."
+Text: "A relation $R$ on $X$ is *antisymmetric* when cycles of length two can
+       only occur trivially:
+       $x \mathrel{R} y \land y \mathrel{R} x \implies x = y$. Antisymmetry
+       prohibits mutual preference between distinct elements, serving as the
+       defining non-symmetric property of orders."
 Id: "bdbeccce-dfdb-4d54-8b0c-92cae82c56d7"
 
 
@@ -109,7 +126,8 @@ Documented:
 Id: "8ed4e2b2-f1b7-4131-8ae2-2834e71805fa"
 
 
-Text: "The inverse relation swaps the roles of the two arguments in every pair."
+Text: "The *inverse relation* (or converse) $R^{-1}$ reverses the direction of
+       all ordered pairs: $(y, x) \in R^{-1} \iff (x, y) \in R$."
 Id: "ece9bae3-c088-459e-9cd1-7a650d9b3681"
 
 
@@ -134,12 +152,11 @@ SectionTitle: "Equivalence Relations and Quotients"
 Id: "66f53348-5a61-4763-9645-64390784903b"
 
 
-Text: "The most important relations are those that behave like a generalized
-       equality. An *equivalence relation* is reflexive, symmetric, and
-       transitive: every element is related to itself, the relation is symmetric
-       between pairs, and it chains through intermediate elements. These three
-       laws are exactly what is needed to regard related elements as
-       interchangeable."
+Text: "Among all binary relations, the most ubiquitous are *equivalence
+       relations*. An equivalence relation is simultaneously reflexive,
+       symmetric, and transitive. These three axioms distill the essential
+       properties of equality itself, allowing mathematicians to treat distinct
+       objects as 'the same' with respect to a specified invariant."
 Id: "b906ce0b-34d4-4b24-b168-d6a8d05efc92"
 
 
@@ -170,9 +187,11 @@ Documented:
 Id: "2394a97b-5960-4919-98db-b95ec3870343"
 
 
-Text: "Each element gives rise to its *equivalence class*, the set of all
-       elements related to it. Two classes are either identical or disjoint, so
-       the classes carve $X$ into non-overlapping pieces."
+Text: "Given an equivalence relation $R$ on $X$, each element $x \in X$
+       generates its *equivalence class*:
+       $$[x]_R := \{y \in X : x \mathrel{R} y\}$$ Every element belongs to its
+       own equivalence class (by reflexivity), and two classes $[x]_R$ and
+       $[y]_R$ are either strictly identical or completely disjoint."
 Id: "308e4d46-7205-4977-9583-486771d4ca48"
 
 
@@ -192,10 +211,12 @@ Documented:
 Id: "2fae575c-13c9-498b-b14a-e471f0e3cfdc"
 
 
-Text: "Gathering the equivalence classes into a single set forms the *quotient*
-       of $X$ by $R$. Passing to the quotient is the standard way of turning a
-       relation of sameness into genuine equality, and it is the tool used next
-       to build the integers from the naturals."
+Text: "Gathering all equivalence classes into a new set yields the *quotient
+       set*: $$X / R := \{[x]_R : x \in X\}$$ Passing to the quotient is
+       mathematics' universal engine of abstraction: it forgets irrelevant
+       distinguishing details, collapsing entire equivalence classes into single
+       points. The canonical quotient projection $\pi : X \to X / R$, defined by
+       $\pi(x) = [x]_R$, is the prototypical surjective homomorphism."
 Id: "7435ef90-380d-4429-a369-37d652479b85"
 
 
@@ -236,8 +257,15 @@ SectionTitle: "Order Relations"
 Id: "88c4093d-566b-48bb-baea-9926345a182f"
 
 
-Text: "While equivalence relations model symmetry and indistinguishability,
-       *order relations* model hierarchy, comparison, and precedence."
+Text: "While equivalence relations formalize symmetry and clustering, *order
+       relations* formalize comparison, ranking, and hierarchy.
+
+       A *partial order* is reflexive, antisymmetric, and transitive. It allows
+       incomparable elements: two elements $x, y$ may satisfy neither $x \le y$
+       nor $y \le x$ (as in subset inclusion $\mathcal{P}(U)$ or divisibility in
+       $\mathbb{N}$). A *total order* (or linear order) is a partial order in
+       which every pair of elements is comparable ($x \le y \lor y \le x$),
+       eliminating all ambiguity of precedence."
 Id: "b69a5d44-be1d-4f87-bab6-f5c4eccf221c"
 
 
@@ -352,9 +380,11 @@ Documented:
 Id: "374659d6-cfcc-4262-b98e-b50207d16c18"
 
 
-Text: "Equivalently, the reflexive--transitive closure relates $x$ to $y$ when
-       there is a finite $R$-path from $x$ to $y$; allowing a path of length
-       zero supplies reflexivity."
+Text: "In graph-theoretic terms, the reflexive--transitive closure $R^*$
+       corresponds to reachability in a directed graph: $x \mathrel{R^*} y$ if
+       and only if there exists a finite path
+       $x = v_0 \mathrel{R} v_1 \mathrel{R} \dots \mathrel{R} v_k = y$ of length
+       $k \ge 0$. Setting $k = 0$ provides reflexivity ($x = y$)."
 Id: "5fd1260e-1250-4b35-a679-218b2f4c0459"
 
 
@@ -367,6 +397,24 @@ Documented:
 . called: "Equivalence Classes Form a Partition"
 . description: "The quotient by an equivalence relation is the partition of the
                 domain into its equivalence classes."
+Proof: """Let $R$ be an equivalence relation on $X$. We verify the defining
+          properties of a partition for the quotient $X / R$:
+          1. *Nonemptiness of blocks*: For each $x \in X$, reflexivity gives
+             $x \mathrel{R} x$, so $x \in [x]_R$. Thus no equivalence class is
+             empty: $\emptyset \notin X / R$.
+          2. *Exhaustive coverage*: Since $x \in [x]_R$ for every $x \in X$, the
+             union of all equivalence classes covers $X$.
+          3. *Pairwise disjointness*: Suppose $[x]_R \cap [y]_R \neq \emptyset$.
+             Then there exists $z \in [x]_R \cap [y]_R$, meaning
+             $x \mathrel{R} z$ and $y \mathrel{R} z$. By symmetry,
+             $z \mathrel{R} y$. By transitivity,
+             $x \mathrel{R} z \land z \mathrel{R} y \implies x \mathrel{R} y$.
+             For any $w \in [y]_R$, $y \mathrel{R} w$; by transitivity again,
+             $x \mathrel{R} y \land y \mathrel{R} w \implies x \mathrel{R} w$,
+             so $w \in [x]_R$. Thus $[y]_R \subseteq [x]_R$. Symmetrically,
+             $[x]_R \subseteq [y]_R$, proving $[x]_R = [y]_R$. Hence distinct
+             equivalence classes are strictly disjoint, and every element
+             belongs to a unique block."""
 Id: "c6cf2b6a-9343-4865-b41e-183b454edd24"
 
 
@@ -390,6 +438,21 @@ Documented:
 . called: "A Partition Determines an Equivalence Relation"
 . description: "Two elements are equivalent precisely when they belong to the
                 same block of the partition."
+Proof: """Let $P$ be a partition of $X$. Define a relation $R$ by
+          $x \mathrel{R} y$ if and only if there exists a block $A \in P$ such
+          that $x \in A$ and $y \in A$. We verify that $R$ is an equivalence
+          relation:
+          1. *Reflexivity*: Because $P$ partitions $X$, every $x \in X$ belongs
+             to some block $A \in P$. Since $x \in A$ and $x \in A$, we have
+             $x \mathrel{R} x$.
+          2. *Symmetry*: If $x \mathrel{R} y$, there is some $A \in P$ with
+             $x, y \in A$. Since $y, x \in A$, we have $y \mathrel{R} x$.
+          3. *Transitivity*: If $x \mathrel{R} y$ and $y \mathrel{R} z$, there
+             exist blocks $A, B \in P$ such that $x, y \in A$ and $y, z \in B$.
+             Then $y \in A \cap B$, so $A \cap B \neq \emptyset$. Because
+             distinct blocks of a partition are mutually disjoint, $A = B$. Thus
+             $x, z \in A$, which proves $x \mathrel{R} z$. Hence $R$ is an
+             equivalence relation on $X$."""
 Id: "97d1309a-6739-4ff9-a354-f0c6859df60f"
 
 
@@ -407,7 +470,9 @@ that:
     . R(m, x)
 Documented:
 . called: "$m?$ is maximal in $X?$ under $R?$"
-. description: "A maximal element has no distinct element strictly above it."
+. description: "A maximal element has no distinct element strictly above it. In
+                a non-total poset, a set may possess multiple distinct maximal
+                elements."
 Id: "690ee3e8-39a6-4853-8df9-7d0b9e1cec5a"
 
 
@@ -422,6 +487,9 @@ that:
   then: R(x, g)
 Documented:
 . called: "$g?$ is the greatest element of $X?$ under $R?$"
+. description: "The greatest element (maximum) exceeds or equals every element
+                of $X$. If a greatest element exists, it is unique and is the
+                unique maximal element."
 Id: "8c3b1160-03ac-4f70-856f-8dbdff0cba12"
 
 
@@ -439,6 +507,7 @@ that:
     . R(x, m)
 Documented:
 . called: "$m?$ is minimal in $X?$ under $R?$"
+. description: "A minimal element has no distinct element strictly below it."
 Id: "3c3478fa-e156-4364-9c53-3577a60d7dd9"
 
 
@@ -453,6 +522,9 @@ that:
   then: R(l, x)
 Documented:
 . called: "$l?$ is the least element of $X?$ under $R?$"
+. description: "The least element (minimum) is smaller than or equal to every
+                element of $X$. If a least element exists, it is unique and is
+                the unique minimal element."
 Id: "33141ee6-c2fe-4116-8eff-3b6064d5d4e3"
 
 

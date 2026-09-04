@@ -5,8 +5,10 @@
   "heading": null,
   "heading_latex": "\\textrm{Principle of Mathematical Induction}",
   "body_text": null,
+  "proof_text": "Let $A = \\{n \\in \\mathbb{N} : P(n)\\}$. By hypothesis, $P(0)$ holds, so\n$0 \\in A$. Furthermore, for any $n \\in A$, $P(n)$ holds, which implies\n$P(S(n))$, so $S(n) \\in A$. Thus $A$ contains $0$ and is closed under\nsuccessor. By the induction postulate of the Peano axioms,\n$A = \\mathbb{N}$, which proves that $P(n)$ holds for all\n$n \\in \\mathbb{N}$.",
+  "proof_source": "Proof: \"\"\"Let $A = \\{n \\in \\mathbb{N} : P(n)\\}$. By hypothesis, $P(0)$ holds, so\n          $0 \\in A$. Furthermore, for any $n \\in A$, $P(n)$ holds, which implies\n          $P(S(n))$, so $S(n) \\in A$. Thus $A$ contains $0$ and is closed under\n          successor. By the induction postulate of the Peano axioms,\n          $A = \\mathbb{N}$, which proves that $P(n)$ holds for all\n          $n \\in \\mathbb{N}$.\"\"\"",
   "page": null,
-  "source": "Theorem:\ngiven: P(n_) is (_ is \\natural) -> (_ is \\\\statement)\nwhere:\n. P(\\natural.zero)\n. forAll: n is \\natural\n  where: P(n)\n  then: P(\\natural.successor:of{n})\nthen:\n. forAll: n is \\natural\n  then: P(n)\nDocumented:\n. called: \"Principle of Mathematical Induction\"\nId: \"3940cf8b-62b7-41cf-984a-62429aeb835e\"",
+  "source": "Theorem:\ngiven: P(n_) is (_ is \\natural) -> (_ is \\\\statement)\nwhere:\n. P(\\natural.zero)\n. forAll: n is \\natural\n  where: P(n)\n  then: P(\\natural.successor:of{n})\nthen:\n. forAll: n is \\natural\n  then: P(n)\nDocumented:\n. called: \"Principle of Mathematical Induction\"\nProof: \"\"\"Let $A = \\{n \\in \\mathbb{N} : P(n)\\}$. By hypothesis, $P(0)$ holds, so\n          $0 \\in A$. Furthermore, for any $n \\in A$, $P(n)$ holds, which implies\n          $P(S(n))$, so $S(n) \\in A$. Thus $A$ contains $0$ and is closed under\n          successor. By the induction postulate of the Peano axioms,\n          $A = \\mathbb{N}$, which proves that $P(n)$ holds for all\n          $n \\in \\mathbb{N}$.\"\"\"\nId: \"3940cf8b-62b7-41cf-984a-62429aeb835e\"",
   "sections": [
     {
       "label": "Theorem",

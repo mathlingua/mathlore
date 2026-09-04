@@ -2,9 +2,18 @@ Title: "Subsets"
 Id: "d1d71d30-1ce6-427e-bbc4-dd3ccf53fe53"
 
 
-Text: "One set is a subset of another when every element of the first is also an
-       element of the second. Subsethood is the basic way of comparing sets by
-       inclusion, and the power set axiom depends on it."
+Text: "A fundamental way to compare two mathematical sets is through the relation
+       of *inclusion* or *subsethood*. We say that a set $A$ is a subset of $B$,
+       denoted $A \subseteq B$, when every element belonging to $A$ also belongs
+       to $B$.
+
+       It is essential to distinguish between the primitive relation of
+       membership ($x \in A$) and the derivative relation of inclusion ($A
+       \subseteq B$). Membership relates an individual entity to an enclosing
+       collection and is non-transitive: $x \in y$ and $y \in z$ do not imply $x
+       \in z$. Inclusion, by contrast, is a relationship between sets defined
+       universally: it is reflexive ($A \subseteq A$) and transitive ($A
+       \subseteq B$ and $B \subseteq C$ imply $A \subseteq C$)."
 Id: "7bfbdad3-bf51-4e2d-ae06-8dd2fa3a220d"
 
 
@@ -25,8 +34,12 @@ Documented:
 Id: "2b2b89a1-d106-4377-ae48-14c704063e5e"
 
 
-Text: "A subset that is not the whole set is called a *proper* subset: it is
-       contained in the larger set but differs from it."
+Text: "When $A$ is contained in $B$ but the two sets are not identical, we say
+       that $A$ is a *proper subset* of $B$, denoted $A \subsetneq B$. This
+       requires two independent conditions: every element of $A$ must belong to
+       $B$, and $B$ must contain at least one element $b$ such that $b \notin
+       A$. Proper inclusion constitutes a strict partial order on collections
+       of sets."
 Id: "c27fbf42-311e-4efd-b4c8-2da3ad6370a7"
 
 
@@ -43,9 +56,10 @@ Documented:
 Id: "7d070f37-61a5-4c62-b8da-4831c222e4b2"
 
 
-Text: "Subsethood is transitive: a subset of a subset is a subset of the whole.
-       This is the first small theorem of the collection, and it follows
-       directly from the definition of subset."
+Text: "Subset inclusion satisfies the transitivity property: if one collection
+       is nested inside a second, and that second is nested inside a third, then
+       the first is contained within the third. This elementary result is the
+       first formal theorem of the collection."
 Id: "370b0f76-ab0f-4f7f-80fa-120bb7ffe9e2"
 
 
@@ -59,18 +73,21 @@ then:
 Documented:
 . called: "Transitivity of Subset Relation"
 . description: "If $A \subseteq B$ and $B \subseteq C$, then $A \subseteq C$."
-Proof: """Suppose {.A \:subset?:/ B.} and {.B \:subset?:/ C.} and let
-          {.x "in" A.}. Then {.A \:subset?:/ B.} implies {.x "in"? B.} and
-          {.B \:subset?:/ C.} implies {.x "in"? C.}.
-
-          Since {.x.} was arbitrary, we have shown for all {.x "in"? A.} then
-          {.x "in"? C.}. Thus {.A \:subset?:/ C.}."""
+Proof: """Assume $A \subseteq B$ and $B \subseteq C$. Let $x \in A$ be an
+          arbitrary element. By definition of $A \subseteq B$, the condition
+          $x \in A$ implies $x \in B$. Since $x \in B$, the condition
+          $B \subseteq C$ similarly implies $x \in C$. Because $x \in A$ was
+          arbitrary, every element of $A$ belongs to $C$, which establishes
+          $A \subseteq C$."""
 Id: "6a4bcb50-97bc-4d1b-a9b2-750c963bb720"
 
 
-Text: "The characterization of equality by mutual inclusion, promised when
-       extensionality was stated, is recorded here as a theorem: two sets are
-       equal exactly when each is a subset of the other."
+Text: "The characterization of set equality by mutual inclusion—often called the
+       *double containment* principle—is one of the most powerful and heavily
+       employed proof strategies in all of mathematics. To demonstrate that two
+       independently defined sets $A$ and $B$ are identical, one routinely
+       proves the two directions $A \subseteq B$ and $B \subseteq A$ as separate
+       lemmas."
 Id: "a0b6d62f-1f1d-4be5-997b-40aa03cc4ac7"
 
 
@@ -84,11 +101,28 @@ Documented:
 . called: "Set Equality via Mutual Inclusion"
 . description: "Two sets $A$ and $B$ are equal if and only if $A \subseteq B$
                 and $B \subseteq A$."
+Proof: """By the Axiom of Extensionality, $A = B$ if and only if for all $x$,
+          $x \in A \iff x \in B$. Decomposing this universal biconditional into
+          its two conditional directions yields
+          $(\forall x, x \in A \implies x \in B) \land (\forall x, x \in B \implies x \in A)$.
+          The first conjunct is precisely the definition of $A \subseteq B$, and
+          the second conjunct is the definition of $B \subseteq A$."""
 Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"
 
 
 SectionTitle: "The Inclusion Order"
 Id: "2c6cb7fb-49cd-41a9-8ce3-c143e7cc045c"
+
+
+Text: "When we restrict our attention to the collection of all subsets of a
+       fixed ambient set $U$—the power set $\mathcal{P}(U)$—the subset relation
+       imposes a rich structural architecture. Inclusion is reflexive,
+       antisymmetric, and transitive, endowing $\mathcal{P}(U)$ with the
+       structure of a partially ordered set (poset). In this order, the empty
+       set $\emptyset$ serves as the unique global minimum (since $\emptyset
+       \subseteq A$ for every $A$), and the ambient set $U$ serves as the unique
+       global maximum (since $A \subseteq U$ for every $A$)."
+Id: "d74deced-879a-4cb2-8af3-d10013469765"
 
 
 [\inclusion.order:on{U}]

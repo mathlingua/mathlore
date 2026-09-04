@@ -1,0 +1,27 @@
+{
+  "id": "3748291a-bc01-411a-7009-9a76ffa07999",
+  "kind": "Text",
+  "definition_keys": [],
+  "heading": null,
+  "heading_latex": null,
+  "body_text": null,
+  "page": {
+    "kind": "Text",
+    "text": "Just as De Morgan's laws govern the interaction between negation,\nconjunction, and disjunction in propositional logic, an identical duality\ngoverns the negation of quantifiers. Negating a universal claim produces\nan existential claim, and negating an existential claim produces a\nuniversal claim:\n$$\\neg \\forall x \\in D \\, P(x) \\iff \\exists x \\in D \\, \\neg P(x)$$\n$$\\neg \\exists x \\in D \\, P(x) \\iff \\forall x \\in D \\, \\neg P(x)$$\n\nTo deny that every swan is white is not to claim that every swan is\nblack; it is to assert the existence of at least one non-white swan.\nDually, to deny that a system of equations has a solution is to assert\nthat every proposed candidate fails to solve it."
+  },
+  "source": "Text: \"Just as De Morgan's laws govern the interaction between negation,\n       conjunction, and disjunction in propositional logic, an identical duality\n       governs the negation of quantifiers. Negating a universal claim produces\n       an existential claim, and negating an existential claim produces a\n       universal claim:\n       $$\\neg \\forall x \\in D \\, P(x) \\iff \\exists x \\in D \\, \\neg P(x)$$\n       $$\\neg \\exists x \\in D \\, P(x) \\iff \\forall x \\in D \\, \\neg P(x)$$\n\n       To deny that every swan is white is not to claim that every swan is\n       black; it is to assert the existence of at least one non-white swan.\n       Dually, to deny that a system of equations has a solution is to assert\n       that every proposed candidate fails to solve it.\"\nId: \"3748291a-bc01-411a-7009-9a76ffa07999\"",
+  "sections": [
+    {
+      "label": "Text",
+      "inline_argument": "\"Just as De Morgan's laws govern the interaction between negation,\n       conjunction, and disjunction in propositional logic, an identical duality\n       governs the negation of quantifiers. Negating a universal claim produces\n       an existential claim, and negating an existential claim produces a\n       universal claim:\n       $$\\neg \\forall x \\in D \\, P(x) \\iff \\exists x \\in D \\, \\neg P(x)$$\n       $$\\neg \\exists x \\in D \\, P(x) \\iff \\forall x \\in D \\, \\neg P(x)$$\n\n       To deny that every swan is white is not to claim that every swan is\n       black; it is to assert the existence of at least one non-white swan.\n       Dually, to deny that a system of equations has a solution is to assert\n       that every proposed candidate fails to solve it.\"",
+      "inline_latex": null,
+      "arguments": []
+    },
+    {
+      "label": "Id",
+      "inline_argument": "\"3748291a-bc01-411a-7009-9a76ffa07999\"",
+      "inline_latex": null,
+      "arguments": []
+    }
+  ]
+}

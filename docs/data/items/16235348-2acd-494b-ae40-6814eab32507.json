@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "As with subgroups, the fact that the direct product is a group is stated\nas a theorem in its own right."
+    "text": "That the componentwise operation on Cartesian pairs satisfies all three\ngroup axioms—associativity, identity, and invertibility—is established\ndirectly from the respective laws holding in each factor."
   },
-  "source": "Text: \"As with subgroups, the fact that the direct product is a group is stated\n       as a theorem in its own right.\"\nId: \"16235348-2acd-494b-ae40-6814eab32507\"",
+  "source": "Text: \"That the componentwise operation on Cartesian pairs satisfies all three\n       group axioms—associativity, identity, and invertibility—is established\n       directly from the respective laws holding in each factor.\"\nId: \"16235348-2acd-494b-ae40-6814eab32507\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"As with subgroups, the fact that the direct product is a group is stated\n       as a theorem in its own right.\"",
+      "inline_argument": "\"That the componentwise operation on Cartesian pairs satisfies all three\n       group axioms—associativity, identity, and invertibility—is established\n       directly from the respective laws holding in each factor.\"",
       "inline_latex": null,
       "arguments": []
     },

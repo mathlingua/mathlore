@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The most important relations are those that behave like a generalized\nequality. An *equivalence relation* is reflexive, symmetric, and\ntransitive: every element is related to itself, the relation is symmetric\nbetween pairs, and it chains through intermediate elements. These three\nlaws are exactly what is needed to regard related elements as\ninterchangeable."
+    "text": "Among all binary relations, the most ubiquitous are *equivalence\nrelations*. An equivalence relation is simultaneously reflexive,\nsymmetric, and transitive. These three axioms distill the essential\nproperties of equality itself, allowing mathematicians to treat distinct\nobjects as 'the same' with respect to a specified invariant."
   },
-  "source": "Text: \"The most important relations are those that behave like a generalized\n       equality. An *equivalence relation* is reflexive, symmetric, and\n       transitive: every element is related to itself, the relation is symmetric\n       between pairs, and it chains through intermediate elements. These three\n       laws are exactly what is needed to regard related elements as\n       interchangeable.\"\nId: \"b906ce0b-34d4-4b24-b168-d6a8d05efc92\"",
+  "source": "Text: \"Among all binary relations, the most ubiquitous are *equivalence\n       relations*. An equivalence relation is simultaneously reflexive,\n       symmetric, and transitive. These three axioms distill the essential\n       properties of equality itself, allowing mathematicians to treat distinct\n       objects as 'the same' with respect to a specified invariant.\"\nId: \"b906ce0b-34d4-4b24-b168-d6a8d05efc92\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The most important relations are those that behave like a generalized\n       equality. An *equivalence relation* is reflexive, symmetric, and\n       transitive: every element is related to itself, the relation is symmetric\n       between pairs, and it chains through intermediate elements. These three\n       laws are exactly what is needed to regard related elements as\n       interchangeable.\"",
+      "inline_argument": "\"Among all binary relations, the most ubiquitous are *equivalence\n       relations*. An equivalence relation is simultaneously reflexive,\n       symmetric, and transitive. These three axioms distill the essential\n       properties of equality itself, allowing mathematicians to treat distinct\n       objects as 'the same' with respect to a specified invariant.\"",
       "inline_latex": null,
       "arguments": []
     },

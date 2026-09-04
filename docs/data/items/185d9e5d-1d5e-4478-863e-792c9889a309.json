@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Two sets are disjoint when they have no elements in common, meaning their\nintersection is the empty set."
+    "text": "Two sets $A$ and $B$ are said to be *disjoint* (or mutually exclusive)\nwhen they share no members in common, so that their intersection is\nempty: $A \\cap B = \\emptyset$. Disjointness is the set-theoretic\nformulation of incompatibility."
   },
-  "source": "Text: \"Two sets are disjoint when they have no elements in common, meaning their\n       intersection is the empty set.\"\nId: \"185d9e5d-1d5e-4478-863e-792c9889a309\"",
+  "source": "Text: \"Two sets $A$ and $B$ are said to be *disjoint* (or mutually exclusive)\n       when they share no members in common, so that their intersection is\n       empty: $A \\cap B = \\emptyset$. Disjointness is the set-theoretic\n       formulation of incompatibility.\"\nId: \"185d9e5d-1d5e-4478-863e-792c9889a309\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Two sets are disjoint when they have no elements in common, meaning their\n       intersection is the empty set.\"",
+      "inline_argument": "\"Two sets $A$ and $B$ are said to be *disjoint* (or mutually exclusive)\n       when they share no members in common, so that their intersection is\n       empty: $A \\cap B = \\emptyset$. Disjointness is the set-theoretic\n       formulation of incompatibility.\"",
       "inline_latex": null,
       "arguments": []
     },

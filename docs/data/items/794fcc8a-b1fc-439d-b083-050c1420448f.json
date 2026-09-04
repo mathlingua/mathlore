@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Equivalently, the center is the kernel of the conjugation action\n$G\\to\\operatorname{Aut}(G)$. The quotient $G/Z(G)$ therefore measures the\npart of the group visible through inner automorphisms."
+    "text": "The center $Z(G)$ is precisely the kernel of the conjugation homomorphism\n$\\operatorname{Inn} : G \\to \\operatorname{Aut}(G)$ defined by\n$g \\mapsto (x \\mapsto g * x * g^{-1})$. By the First Isomorphism Theorem,\nthe group of inner automorphisms satisfies\n$\\operatorname{Inn}(G) \\cong G / Z(G)$. Thus the quotient $G/Z(G)$\nmeasures the non-abelian core of $G$ accessible via internal symmetries."
   },
-  "source": "Text: \"Equivalently, the center is the kernel of the conjugation action\n       $G\\to\\operatorname{Aut}(G)$. The quotient $G/Z(G)$ therefore measures the\n       part of the group visible through inner automorphisms.\"\nId: \"794fcc8a-b1fc-439d-b083-050c1420448f\"",
+  "source": "Text: \"The center $Z(G)$ is precisely the kernel of the conjugation homomorphism\n       $\\operatorname{Inn} : G \\to \\operatorname{Aut}(G)$ defined by\n       $g \\mapsto (x \\mapsto g * x * g^{-1})$. By the First Isomorphism Theorem,\n       the group of inner automorphisms satisfies\n       $\\operatorname{Inn}(G) \\cong G / Z(G)$. Thus the quotient $G/Z(G)$\n       measures the non-abelian core of $G$ accessible via internal symmetries.\"\nId: \"794fcc8a-b1fc-439d-b083-050c1420448f\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Equivalently, the center is the kernel of the conjugation action\n       $G\\to\\operatorname{Aut}(G)$. The quotient $G/Z(G)$ therefore measures the\n       part of the group visible through inner automorphisms.\"",
+      "inline_argument": "\"The center $Z(G)$ is precisely the kernel of the conjugation homomorphism\n       $\\operatorname{Inn} : G \\to \\operatorname{Aut}(G)$ defined by\n       $g \\mapsto (x \\mapsto g * x * g^{-1})$. By the First Isomorphism Theorem,\n       the group of inner automorphisms satisfies\n       $\\operatorname{Inn}(G) \\cong G / Z(G)$. Thus the quotient $G/Z(G)$\n       measures the non-abelian core of $G$ accessible via internal symmetries.\"",
       "inline_latex": null,
       "arguments": []
     },

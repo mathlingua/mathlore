@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "The ladder from magma to semigroup to monoid adds laws but does not\nreplace the underlying data. The same carrier and operation may be viewed\nat several levels. A theorem proved for semigroups therefore applies\nautomatically to monoids and groups after forgetting their extra\nstructure."
+    "text": "The ladder from magma to semigroup to monoid represents a sequence of algebraic\nrefinements that enrich the equational theory while preserving the underlying carrier\nand operation. Categorically, this hierarchy is governed by faithful forgetful functors:\n$$ \\mathbf{Mon} \\longrightarrow \\mathbf{SemiGrp} \\longrightarrow \\mathbf{Magma} \\longrightarrow \\mathbf{Set}. $$\nAny equational theorem established for a less restrictive structure (such as\ngeneralized associativity in semigroups) holds universally across all subsequent\nspecializations (including monoids, groups, rings, and fields) without separate\nproof."
   },
-  "source": "Text: \"The ladder from magma to semigroup to monoid adds laws but does not\n       replace the underlying data. The same carrier and operation may be viewed\n       at several levels. A theorem proved for semigroups therefore applies\n       automatically to monoids and groups after forgetting their extra\n       structure.\"\nId: \"0471c14a-2c21-41bd-a5f9-5118df79f2af\"",
+  "source": "Text: \"The ladder from magma to semigroup to monoid represents a sequence of algebraic\n       refinements that enrich the equational theory while preserving the underlying carrier\n       and operation. Categorically, this hierarchy is governed by faithful forgetful functors:\n       $$ \\mathbf{Mon} \\longrightarrow \\mathbf{SemiGrp} \\longrightarrow \\mathbf{Magma} \\longrightarrow \\mathbf{Set}. $$\n       Any equational theorem established for a less restrictive structure (such as\n       generalized associativity in semigroups) holds universally across all subsequent\n       specializations (including monoids, groups, rings, and fields) without separate\n       proof.\"\nId: \"0471c14a-2c21-41bd-a5f9-5118df79f2af\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"The ladder from magma to semigroup to monoid adds laws but does not\n       replace the underlying data. The same carrier and operation may be viewed\n       at several levels. A theorem proved for semigroups therefore applies\n       automatically to monoids and groups after forgetting their extra\n       structure.\"",
+      "inline_argument": "\"The ladder from magma to semigroup to monoid represents a sequence of algebraic\n       refinements that enrich the equational theory while preserving the underlying carrier\n       and operation. Categorically, this hierarchy is governed by faithful forgetful functors:\n       $$ \\mathbf{Mon} \\longrightarrow \\mathbf{SemiGrp} \\longrightarrow \\mathbf{Magma} \\longrightarrow \\mathbf{Set}. $$\n       Any equational theorem established for a less restrictive structure (such as\n       generalized associativity in semigroups) holds universally across all subsequent\n       specializations (including monoids, groups, rings, and fields) without separate\n       proof.\"",
       "inline_latex": null,
       "arguments": []
     },

@@ -2,12 +2,17 @@ Title: "Differentiation"
 Id: "5c64e9bc-323f-470e-b56b-3812afd2a703"
 
 
-Text: "Differentiation studies the first-order linear behavior of a function.
-       The derivative at a point is not merely a symbolic quotient: it is the
-       coefficient of the best linear approximation, with an error that is
-       negligible relative to the increment. This viewpoint explains the chain
-       rule, the mean value theorem, and the role of derivatives in local
-       approximation."
+Text: "Differentiation investigates the first-order local linear approximation of
+       real functions.
+       
+       Geometrically and conceptually, the derivative $f'(x_0)$ is far more than a
+       limit of secant slopes: it is the unique scalar such that:
+       $$ f(x_0 + h) = f(x_0) + f'(x_0) \cdot h + r(h), \quad \text{where} \quad \lim_{h \to 0} \frac{r(h)}{h} = 0. $$
+       The linear map $h \mapsto f'(x_0) \cdot h$ represents the tangent linear approximation
+       to $f$ at $x_0$, with an error $r(h) = o(h)$ that decays strictly faster than
+       the displacement $h$ itself. This formulation generalizes seamlessly to multivariable
+       Fréchet derivatives and forms the basis for the Chain Rule, Taylor expansions,
+       and the Mean Value Theorem."
 Id: "e33f5272-051b-41b6-af7f-e193d1108154"
 
 
@@ -73,25 +78,63 @@ SectionTitle: "The Mean Value Theorem"
 Id: "20b85fa7-bbfb-4518-b953-1ee73f9b3eb3"
 
 
-TextTheorem: "Mean value theorem. Let $a<b$. If $f:[a,b]\to\mathbb{R}$ is
-              continuous on the closed interval and differentiable on the open
-              interval $(a,b)$, then there exists $c\in(a,b)$ such that
-              $f'(c)=(f(b)-f(a))/(b-a)$. Continuity at the endpoints and
-              differentiability in the interior are separate hypotheses."
+TextTheorem: "The Mean Value Theorem (Lagrange). Let $f : [a, b] \to \mathbb{R}$
+              be continuous on the closed bounded interval $[a, b]$ and
+              differentiable on the open interior $(a, b)$ with $a < b$. Then
+              there exists at least one point $c \in (a, b)$ such that:
+              $$ f'(c) = \frac{f(b) - f(a)}{b - a}. $$
+
+              *Proof*: Consider the secant difference function:
+              $$ g(x) = f(x) - f(a) - \frac{f(b) - f(a)}{b - a}(x - a). $$ The
+              function $g$ is continuous on $[a, b]$, differentiable on
+              $(a, b)$, and satisfies $g(a) = 0 = g(b)$. By the Extreme Value
+              Theorem, $g$ attains both an absolute maximum and an absolute
+              minimum on $[a, b]$.
+              - If $g$ is identically zero, then $g'(c) = 0$ for all
+                $c \in (a, b)$.
+              - Otherwise, $g$ must attain a non-zero local extremum at some
+                interior point $c \in (a, b)$. By Fermat's theorem on stationary
+                points, the vanishing of the two-sided derivative at an interior
+                extremum forces $g'(c) = 0$.
+
+              Computing $g'(c) = f'(c) - \frac{f(b) - f(a)}{b - a} = 0$ yields
+              the desired result."
 Id: "31c0c6c3-b04e-48c3-b6b3-37990aa819cd"
 
 
-TextTheorem: "If $f'=0$ throughout an interval, then $f$ is constant there. If
-              $f'\geq0$ throughout an interval, then $f$ is nondecreasing. Both
-              conclusions follow by applying the mean value theorem to an
-              arbitrary pair of points; the interval hypothesis ensures that the
-              entire segment between them lies in the domain."
+TextTheorem: "Global Consequences of the Mean Value Theorem. The Mean Value
+              Theorem is the fundamental conduit translating infinitesimal local
+              differential information into global functional conclusions:
+              1. **Constant Function Theorem**: If $f'(x) = 0$ for all
+                 $x \in (a, b)$, then $f$ is constant on $(a, b)$. For any
+                 $x_1 < x_2$, there is $c \in (x_1, x_2)$ with
+                 $f(x_2) - f(x_1) = f'(c)(x_2 - x_1) = 0$.
+              2. **Monotonicity**: If $f'(x) \geq 0$ for all $x \in (a, b)$,
+                 then $f$ is monotonically non-decreasing; if $f'(x) > 0$, $f$
+                 is strictly increasing.
+              3. **Lipschitz Continuity**: If $|f'(x)| \leq M$ for all
+                 $x \in (a, b)$, then $|f(x_2) - f(x_1)| \leq M |x_2 - x_1|$ for
+                 all $x_1, x_2 \in (a, b)$.
+
+              The connectedness of the domain interval is strictly required: on
+              disconnected domains, a function with vanishing derivative can
+              take distinct constant values on separate components."
 Id: "8f9c74de-06a2-4fcb-bee8-37af5b68b7eb"
 
 
-TextTheorem: "Chain rule. If $f$ is differentiable at $x$ and $g$ is
-              differentiable at $f(x)$, then $g\circ f$ is differentiable at $x$
-              and $(g\circ f)'(x)=g'(f(x))f'(x)$. The statement expresses
-              composition of the two best linear approximations; the error terms
-              remain of smaller order than the original increment."
+TextTheorem: "The Chain Rule. Let $U, V \subseteq \mathbb{R}$ be open intervals.
+              If $f : U \to V$ is differentiable at $x_0 \in U$ and $g : V \to \mathbb{R}$
+              is differentiable at $f(x_0) \in V$, then the composite function $g \circ f$
+              is differentiable at $x_0$, with derivative given by:
+              $$ (g \circ f)'(x_0) = g'(f(x_0)) \cdot f'(x_0). $$
+              
+              *Proof (Carathéodory's Formulation)*: Differentiability of $g$ at $y_0 = f(x_0)$
+              is equivalent to the existence of a function $\psi : V \to \mathbb{R}$ continuous
+              at $y_0$ such that $g(y) - g(y_0) = \psi(y)(y - y_0)$, with $\psi(y_0) = g'(y_0)$.
+              Similarly, $f(x) - f(x_0) = \phi(x)(x - x_0)$ with $\phi$ continuous at $x_0$ and $\phi(x_0) = f'(x_0)$.
+              Substituting $y = f(x)$ gives:
+              $$ (g \circ f)(x) - (g \circ f)(x_0) = \psi(f(x))(f(x) - f(x_0)) = [\psi(f(x)) \cdot \phi(x)](x - x_0). $$
+              Since $f$ is continuous at $x_0$ and $\psi$ is continuous at $f(x_0)$, the product
+              $\psi(f(x)) \cdot \phi(x)$ is continuous at $x_0$.
+              Taking the limit as $x \to x_0$ yields $(g \circ f)'(x_0) = \psi(f(x_0)) \cdot \phi(x_0) = g'(f(x_0)) f'(x_0)$."
 Id: "95dcd4db-216b-45d0-897f-a6a998c8da45"

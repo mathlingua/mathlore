@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "Sets are most often described by a property their elements satisfy. The\nremaining definitions of this chapter set up that notation -- properties\nof sets, sets listed by their elements, ordered pairs, and the Cartesian\nproduct -- which is used throughout the rest of the collection."
+    "text": "In mathematical practice, sets are rarely specified by exhaustive\nenumeration. Instead, they are defined through *comprehension* (or\nset-builder) notation, which specifies a predicate characterizing\nmembership: $$\\{x \\in A : \\varphi(x)\\}$$ Here $\\varphi$ is a predicate on\nsets, and the Axiom Schema of Separation guarantees that the collection\nof all elements in the preexisting set $A$ satisfying $\\varphi$ forms a\nlegitimate set. For finite sets, we retain the familiar roster notation\n$\\{x_1, x_2, \\dots, x_n\\}$."
   },
-  "source": "Text: \"Sets are most often described by a property their elements satisfy. The\n       remaining definitions of this chapter set up that notation -- properties\n       of sets, sets listed by their elements, ordered pairs, and the Cartesian\n       product -- which is used throughout the rest of the collection.\"\nId: \"b218d7dd-c01a-476d-9975-b05de57b8b8f\"",
+  "source": "Text: \"In mathematical practice, sets are rarely specified by exhaustive\n       enumeration. Instead, they are defined through *comprehension* (or\n       set-builder) notation, which specifies a predicate characterizing\n       membership: $$\\{x \\in A : \\varphi(x)\\}$$ Here $\\varphi$ is a predicate on\n       sets, and the Axiom Schema of Separation guarantees that the collection\n       of all elements in the preexisting set $A$ satisfying $\\varphi$ forms a\n       legitimate set. For finite sets, we retain the familiar roster notation\n       $\\{x_1, x_2, \\dots, x_n\\}$.\"\nId: \"b218d7dd-c01a-476d-9975-b05de57b8b8f\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"Sets are most often described by a property their elements satisfy. The\n       remaining definitions of this chapter set up that notation -- properties\n       of sets, sets listed by their elements, ordered pairs, and the Cartesian\n       product -- which is used throughout the rest of the collection.\"",
+      "inline_argument": "\"In mathematical practice, sets are rarely specified by exhaustive\n       enumeration. Instead, they are defined through *comprehension* (or\n       set-builder) notation, which specifies a predicate characterizing\n       membership: $$\\{x \\in A : \\varphi(x)\\}$$ Here $\\varphi$ is a predicate on\n       sets, and the Axiom Schema of Separation guarantees that the collection\n       of all elements in the preexisting set $A$ satisfying $\\varphi$ forms a\n       legitimate set. For finite sets, we retain the familiar roster notation\n       $\\{x_1, x_2, \\dots, x_n\\}$.\"",
       "inline_latex": null,
       "arguments": []
     },

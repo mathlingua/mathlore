@@ -7,13 +7,13 @@
   "body_text": null,
   "page": {
     "kind": "Text",
-    "text": "A relation is symmetric if the order of elements in a related pair can be\nreversed."
+    "text": "A relation $R$ on $X$ is *symmetric* when the direction of relatedness is\nbidirectional: $x \\mathrel{R} y \\implies y \\mathrel{R} x$. In relational\nalgebra, symmetry is equivalent to the identity $R = R^{-1}$."
   },
-  "source": "Text: \"A relation is symmetric if the order of elements in a related pair can be\n       reversed.\"\nId: \"b2c8da90-8a30-4542-a3a3-f81bf989953a\"",
+  "source": "Text: \"A relation $R$ on $X$ is *symmetric* when the direction of relatedness is\n       bidirectional: $x \\mathrel{R} y \\implies y \\mathrel{R} x$. In relational\n       algebra, symmetry is equivalent to the identity $R = R^{-1}$.\"\nId: \"b2c8da90-8a30-4542-a3a3-f81bf989953a\"",
   "sections": [
     {
       "label": "Text",
-      "inline_argument": "\"A relation is symmetric if the order of elements in a related pair can be\n       reversed.\"",
+      "inline_argument": "\"A relation $R$ on $X$ is *symmetric* when the direction of relatedness is\n       bidirectional: $x \\mathrel{R} y \\implies y \\mathrel{R} x$. In relational\n       algebra, symmetry is equivalent to the identity $R = R^{-1}$.\"",
       "inline_latex": null,
       "arguments": []
     },
