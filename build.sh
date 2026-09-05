@@ -1,7 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
 
-cd ../mathlingua
-cargo build --release
-cp target/release/mlg ../mathlore
-cd ../mathlore
-./mlg export --force --cname www.mathlore.org
-rm mlg
+mathlore_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+
+cd "$mathlore_dir/../mathlingua"
+cargo build --release --locked
+
+cd "$mathlore_dir"
+../mathlingua/target/release/mlg export --force --cname www.mathlore.org
