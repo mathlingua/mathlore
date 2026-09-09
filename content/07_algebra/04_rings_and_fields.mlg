@@ -223,3 +223,161 @@ TextTheorem: "Let $R$ be a commutative ring and $I \subsetneq R$ a proper ideal.
               Since every field is an integral domain, every maximal ideal is
               prime."
 Id: "81f097c0-c0ee-4819-8304-7f13856e2551"
+
+
+[\ring.homomorphism:from{R ::= (R_set, +_R, *_R, 0_R, 1_R)}:to{S ::= (S_set, +_S, *_S, 0_S, 1_S)}]
+Declares: phi(x__) is \function:on{R_set}:to{S_set}
+when: R, S is \ring
+satisfies:
+. forAll: a, b "in" R_set
+  then: phi(a +_R b) = phi(a) +_S phi(b)
+. forAll: a, b "in" R_set
+  then: phi(a *_R b) = phi(a) *_S phi(b)
+. phi(1_R) = 1_S
+Documented:
+. called: "ring homomorphism from $R?$ to $S?$"
+. description: "A ring homomorphism $\phi : R \to S$ is a structure-preserving
+                mapping between rings that respects the additive group
+                structure, the multiplicative monoid structure, and identity
+                elements: $\phi(a +_R b) = \phi(a) +_S \phi(b)$,
+                $\phi(a *_R b) = \phi(a) *_S \phi(b)$, and $\phi(1_R) = 1_S$.
+                Citations: David S. Dummit and Richard M. Foote, Abstract
+                Algebra (3rd ed., John Wiley & Sons, 2004, Chapter 7, Section
+                7.3, p. 239); Serge Lang, Algebra (3rd ed., Springer, 2002,
+                Chapter II, Section 1, p. 83); Nicolas Bourbaki, Elements of
+                Mathematics: Algebra I, Chapters 1-3 (Springer-Verlag, 1989,
+                Chapter 1, Section 8, p. 96)."
+Id: "052b0946-5f7e-4e0d-a686-530e39c328d1"
+
+
+[\subring:of{R ::= (R_set, +_R, *_R, 0_R, 1_R)}]
+Declares: S ::= (S_set, +_S, *_S, 0_S, 1_S)
+when: R is \ring
+specifies:
+. S_set \:subset:/ R_set
+. +_S is \binary.operation:on{S_set}
+. *_S is \binary.operation:on{S_set}
+. 0_S "in" S_set
+. 1_S "in" S_set
+satisfies:
+. 0_R "in" S_set
+. 1_R "in" S_set
+. 0_S = 0_R
+. 1_S = 1_R
+. forAll: x, y "in" S_set
+  then:
+  . x +_S y = x +_R y
+  . x *_S y = x *_R y
+. have:
+  . forAll: x, y "in" S_set
+    then:
+    . x +_R y "in" S_set
+    . x *_R y "in" S_set
+  . forAll: x "in" S_set
+    then:
+    . exists: y "in" S_set
+      suchThat: x +_R y = 0_R
+  asserting: S is \ring
+Enables:
+. view:
+  as: S' := S is \ring
+Documented:
+. called: "subring of $R?$"
+. written: "S? \leq R?"
+. description: "A subring $S \subseteq R$ is a subset of a ring $R$ containing
+                the ambient multiplicative identity $1_R$ that forms a ring in
+                its own right under the restricted operations of $R$.
+                Equivalently, $S$ contains $0_R$ and $1_R$ and is closed under
+                addition, additive inverses (subtraction), and multiplication,
+                with $0_S = 0_R$ and $1_S = 1_R$. Citations: David S. Dummit and
+                Richard M. Foote, Abstract Algebra (3rd ed., John Wiley & Sons,
+                2004, Chapter 7, Section 7.1, p. 228, ISBN: 978-0471433347);
+                Serge Lang, Algebra (3rd ed., Graduate Texts in Mathematics 211,
+                Springer, 2002, Chapter II, Section 1, p. 84, ISBN:
+                978-0387953854); Nicolas Bourbaki, Elements of Mathematics:
+                Algebra I, Chapters 1-3 (Springer-Verlag, 1989, Chapter 1,
+                Section 8, Definition 3, p. 97, ISBN: 978-3540642435)."
+Id: "4021d04a-d013-43b6-89b9-c0c14dc688aa"
+
+
+[\ring.kernel:of{phi(x__)}:from{R ::= (R_set, +_R, *_R, 0_R, 1_R)}:to{S ::= (S_set, +_S, *_S, 0_S, 1_S)}]
+Defines: K := \set@{x_ : x_ "in" R_set | phi(x_) = 0_S}
+when:
+. R, S is \ring
+. phi is \ring.homomorphism:from{R}:to{S}
+Documented:
+. called: "kernel of $phi?$"
+. written: "\ker(phi?)"
+. description: "The kernel of a ring homomorphism $\phi : R \to S$ is the
+                preimage of the additive zero of the codomain,
+                $\ker(\phi) = \{x \in R \mid \phi(x) = 0_S\}$. Citations: David
+                S. Dummit and Richard M. Foote, Abstract Algebra (3rd ed., John
+                Wiley & Sons, 2004, Chapter 7, Section 7.3, Definition p. 240,
+                ISBN: 978-0471433347); Serge Lang, Algebra (3rd ed., Graduate
+                Texts in Mathematics 211, Springer, 2002, Chapter II, Section 1,
+                p. 85, ISBN: 978-0387953854); Nicolas Bourbaki, Elements of
+                Mathematics: Algebra I, Chapters 1-3 (Springer-Verlag, 1989,
+                Chapter 1, Section 8, Section 8.1, p. 99, ISBN: 978-3540642435)."
+Id: "bf16b567-97fa-44d4-8866-975d7643966a"
+
+
+Theorem:
+given:
+. R ::= (R_set, +_R, *_R, 0_R, 1_R) is \ring
+. S ::= (S_set, +_S, *_S, 0_S, 1_S) is \ring
+. phi is \ring.homomorphism:from{R}:to{S}
+where:
+. K := \ring.kernel:of{phi}:from{R}:to{S}
+then:
+. K is? \ideal:of{R}
+Documented:
+. called: "Kernel of a Ring Homomorphism is an Ideal"
+. description: "The kernel of any ring homomorphism $\phi : R \to S$ forms a
+                two-sided ideal of the domain ring $R$. Citations: David S.
+                Dummit and Richard M. Foote, Abstract Algebra (3rd ed., John
+                Wiley & Sons, 2004, Chapter 7, Section 7.3, Proposition 6, p.
+                240, ISBN: 978-0471433347); Serge Lang, Algebra (3rd ed.,
+                Graduate Texts in Mathematics 211, Springer, 2002, Chapter II,
+                Section 1, Theorem 1.1, p. 85, ISBN: 978-0387953854); Nicolas
+                Bourbaki, Elements of Mathematics: Algebra I, Chapters 1-3
+                (Springer-Verlag, 1989, Chapter 1, Section 8, Proposition 1, p.
+                99, ISBN: 978-3540642435)."
+Proof: """
+Let $R = (R_{\text{set}}, +_R, *_R, 0_R, 1_R)$ and $S = (S_{\text{set}}, +_S, *_S, 0_S, 1_S)$ be rings,
+and let $\phi : R \to S$ be a ring homomorphism.
+By definition, the kernel is
+$$ K = \ker(\phi) = \{x \in R_{\text{set}} \mid \phi(x) = 0_S\}. $$
+To establish that $K$ is an ideal of $R$ ($K \text{ is } \operatorname{ideal}(R)$),
+we verify the defining conditions:
+
+1. **Non-emptiness and Zero Element**:
+   Since $\phi$ is a ring homomorphism, it preserves the additive group structure:
+   $$ \phi(0_R) = \phi(0_R +_R 0_R) = \phi(0_R) +_S \phi(0_R). $$
+   Subtracting $\phi(0_R)$ from both sides in the abelian additive group of $S$ gives:
+   $$ \phi(0_R) = 0_S. $$
+   Therefore, $0_R \in K$, so $K$ is non-empty.
+
+2. **Additive Subgroup**:
+   Let $x, y \in K$, which implies $\phi(x) = 0_S$ and $\phi(y) = 0_S$.
+   Because $\phi$ is a homomorphism between the underlying additive abelian groups of $R$ and $S$,
+   it respects additive inverses: $\phi(-_R y) = -_S \phi(y) = -_S 0_S = 0_S$.
+   Thus:
+   $$ \phi(x -_R y) = \phi(x +_R (-_R y)) = \phi(x) +_S \phi(-_R y) = \phi(x) -_S \phi(y) = 0_S -_S 0_S = 0_S. $$
+   Consequently, $x -_R y \in K$.
+   By the one-step subgroup test, $K$ is an additive subgroup of $(R_{\text{set}}, +_R, 0_R)$.
+   In particular, $K$ is closed under addition ($x +_R y \in K$ for all $x, y \in K$)
+   and additive inverses (for each $x \in K$, there exists $y \in K$ such that $x +_R y = 0_R$).
+
+3. **Absorption / Two-Sided Ideal Property**:
+   Let $r \in R_{\text{set}}$ and $x \in K$. Since $x \in K$, $\phi(x) = 0_S$.
+   Using the multiplicativity of the ring homomorphism $\phi$:
+   - For left multiplication:
+     $$ \phi(r *_R x) = \phi(r) *_S \phi(x) = \phi(r) *_S 0_S = 0_S, $$
+     which proves that $r *_R x \in K$.
+   - For right multiplication:
+     $$ \phi(x *_R r) = \phi(x) *_S \phi(r) = 0_S *_S \phi(r) = 0_S, $$
+     which proves that $x *_R r \in K$.
+
+Since $K$ contains $0_R$, is closed under subtraction, and absorbs multiplication by all elements of $R$ from both the left and right, $K$ forms a two-sided ideal of $R$.
+"""
+Id: "bb4aa04b-a84c-4113-aebe-8b9dcda68ed1"
