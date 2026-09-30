@@ -172,6 +172,27 @@ Proof: """Each equality follows by converting the set membership condition
 Id: "aa8bf616-5e94-4976-a63a-132732577422"
 
 
+Theorem:
+given:
+. A, B, C is \set
+where:
+. A \:subset?:/ B
+then:
+. (.A \.set.intersect./ C.) \:subset?:/ (.B \.set.intersect./ C.)
+Documented:
+. called: "Monotonicity of Set Intersection"
+. description: "If $A$, $B$, and $C$ are sets and $A \subseteq B$, then
+                $A \cap C \subseteq B \cap C$."
+Proof: """Let $x \in A \cap C$. By the definition of intersection, $x \in A$ and
+          $x \in C$. Since $A \subseteq B$ and $x \in A$, we have $x \in B$.
+          Because $x \in B$ and $x \in C$, it follows that $x \in B \cap C$.
+          Since this holds for every element $x \in A \cap C$, we conclude that
+          $A \cap C \subseteq B \cap C$. Citations: David S. Dummit and Richard
+          M. Foote, Abstract Algebra (3rd ed., John Wiley & Sons, 2004, Chapter
+          0, Section 0.1, p. 2)."""
+Id: "8eef4e40-5929-41a3-ba81-74145b1e5bcd"
+
+
 [\indexed.union:of{A}:over{I}:in{U}]
 Defines: B \:subset:/ U
 when:
