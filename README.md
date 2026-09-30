@@ -30,9 +30,37 @@ Each run uses the newest Mathlingua source available at checkout time.
 Upstream Mathlingua pushes alone do not trigger a Mathlore deployment; use
 the manual workflow to rebuild without a Mathlore source change.
 
-## Local build
+## Continuous Integration
 
-Install Rust and keep a Mathlingua checkout alongside this repository:
+Every pull request and push to `main` runs `.github/workflows/check.yml`. It
+builds a hermetic container that checks out the latest default branch of
+`mathlingua/mathlingua`, builds the `mlg` tool, and runs `mlg check` on the
+Mathlore code being tested on each commit.
+
+To require this check before merging:
+
+1. In **Settings → Branches**, add or edit a branch protection rule for `main`
+   (or configure a Ruleset).
+2. Enable **Require status checks to pass before merging**.
+3. Select the **mlg check** status check.
+
+## Local build and check
+
+To check the collection locally in a hermetic container:
+
+```bash
+./check.sh
+```
+
+If Docker is not available, `./check.sh` falls back to building from a sibling
+`mathlingua` checkout or using `mlg` from `PATH`. You can also pass specific
+files or flags:
+
+```bash
+./check.sh content/00_logic/01_propositional_logic.mlg
+```
+
+To build and export the site locally, keep a Mathlingua checkout alongside this repository:
 
 ```text
 mathlingua/
@@ -43,3 +71,4 @@ Run `./build.sh` to build `mlg` from that sibling checkout and export the site
 to `docs/` with the `www.mathlore.org` domain. The script uses the local
 Mathlingua checkout as-is; pull that repository first when you want the latest
 source. Build or export failures stop the script and fail the Actions job.
+
