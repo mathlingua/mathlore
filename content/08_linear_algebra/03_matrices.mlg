@@ -33,8 +33,9 @@ Documented:
   as: "a?_{i?, j?}"
 . writing: a(i_, j_)
   as: "\left[ a?_{i_?, j_?} \right]"
-. description: "A matrix $A = [a_{i,j}]$ is a rectangular array of scalars
-                indexed by row and column."
+. description: "A rectangular array of scalars
+                $A = [a_{i,j}] \in M_{m \times n}(F)$, representing coordinate
+                representations of linear maps."
 Id: "9cfabd0d-3e74-46fa-989b-b8a7230a61f3"
 
 
@@ -53,8 +54,8 @@ satisfies:
 Documented:
 . called: "identity matrix of dimension $n?$ over $F?$"
 . written: "I_{n?}"
-. description: "The $n \times n$ identity matrix $I_n$ with ones on the main
-                diagonal and zeros elsewhere."
+. description: "The square identity matrix $I_n = [\delta_{i,j}]$, serving as
+                the neutral element under matrix multiplication."
 Id: "1e35b9e5-6fba-4b93-8a90-50ae1b86687a"
 
 
@@ -74,8 +75,8 @@ expresses:
 Documented:
 . called: "$A?$ plus $B?$"
 . written: "A? + B?"
-. description: "Componentwise addition of matrices of identical dimension:
-                $(A + B)_{i,j} = A_{i,j} + B_{i,j}$."
+. description: "Pointwise sum of matrices $(A + B)_{i,j} = A_{i,j} + B_{i,j}$,
+                conferring an abelian group structure on $M_{m \times n}(F)$."
 Id: "dd197d03-0f2e-4003-8330-a8c3e8e09dd6"
 
 
@@ -90,8 +91,9 @@ when:
 Documented:
 . called: "$A?$ times $B?$"
 . written: "A? B?"
-. description: "Matrix multiplication $C = AB$, where
-                $C_{i,j} = \sum_k A_{i,k} B_{k,j}$."
+. description: "Compositional matrix product
+                $(AB)_{i,j} = \sum_k A_{i,k} B_{k,j}$, representing the
+                composite operator $S \circ T$ in coordinates."
 Id: "ab389a4a-5187-4af5-b2f3-c62e0c3b08db"
 
 
@@ -107,8 +109,8 @@ expresses:
 Documented:
 . called: "transpose of $A?$"
 . written: "A?^{T}"
-. description: "The transpose $A^T$ obtained by reflecting $A$ across its main
-                diagonal: $(A^T)_{j,i} = A_{i,j}$."
+. description: "The transpose matrix $(A^T)_{j,i} = A_{i,j}$, representing the
+                dual operator $T^*: W^* \to V^*$ in dual coordinates."
 Id: "82ba3c4b-40a8-4dfc-8adc-69eabb25f1ec"
 
 
@@ -125,8 +127,8 @@ when: A is \matrix:of.dim{n, n}:over{F}
 Documented:
 . called: "determinant of $A?$"
 . written: "\det(A?)"
-. description: "The determinant $\det(A)$ is the unique alternating multilinear
-                function of the columns mapping $I_n$ to $1$."
+. description: "The unique multilinear alternating function $\det(A)$ mapping
+                $I_n \mapsto 1$, measuring oriented hypervolume scaling."
 Id: "0552914d-9a49-4089-88ba-72916ea96b3e"
 
 
@@ -139,8 +141,9 @@ when: A is \matrix:of.dim{n, n}:over{F}
 Documented:
 . called: "trace of $A?$"
 . written: "\operatorname{tr}(A?)"
-. description: "The trace $\operatorname{tr}(A) = \sum_{i=1}^n A_{i,i}$ is the
-                sum of the diagonal elements."
+. description: "The sum of the diagonal entries
+                $\operatorname{tr}(A) = \sum A_{i,i}$, invariant under cyclic
+                permutations and similarity transformations."
 Id: "88fa45dd-3b56-49ae-8617-08fbab297577"
 
 
@@ -156,8 +159,9 @@ satisfies:
 Documented:
 . called: "eigenvalue of $A?$"
 . written: "\lambda"
-. description: "A scalar $\lambda \in F$ such that $Av = \lambda v$ for some
-                nonzero column vector $v$."
+. description: "A field scalar $\lambda \in F$ admitting a nontrivial solution
+                $Av = \lambda v$, representing a direction of invariant linear
+                scaling."
 Id: "6ed950a4-63a3-437a-871c-23c49564425a"
 
 

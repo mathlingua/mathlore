@@ -38,9 +38,9 @@ Enables:
   written: "x_? \in R?"
 Documented:
 . called: "ring"
-. description: "A ring $(R, +, *, 0, 1)$ consists of an abelian addition group,
-                an associative multiplication with identity $1$, and two-sided
-                distributivity."
+. description: "A ring $(R, +, \cdot, 0, 1)$ consists of an abelian addition
+                group $(R, +, 0)$, a multiplicative monoid $(R, \cdot, 1)$, and
+                left/right distributivity laws."
 Id: "5ca5fdca-692d-4f04-8420-aa01c909955d"
 
 
@@ -54,7 +54,8 @@ Enables:
   written: "x_? *? y_?"
 Documented:
 . called: "element of ring $R?$"
-. description: "An element of a ring $R$ is a member of its carrier set $X$."
+. description: "An element $x \in X$ of a ring $R$, supporting arithmetic
+                operations $x + y$ and $x \cdot y$."
 Id: "7e51f2cf-8568-4819-af9d-80949b74d813"
 
 
@@ -76,8 +77,9 @@ Refines: R ::= (X, +, *, 0, 1)
 specifies: * is \(commutative)::binary.operation:on{X}
 Documented:
 . adjective: "commutative"
-. description: "A commutative ring is a ring in which $x * y = y * x$ for all
-                elements."
+. description: "A ring whose multiplication satisfies $x \cdot y = y \cdot x$,
+                forming the central objects of study in commutative algebra and
+                algebraic geometry."
 Id: "2ddbe95a-149f-4596-8496-b214741d64a4"
 
 
@@ -111,8 +113,9 @@ Enables:
   as: G := (X \.set.difference./ \singleton.set:of{0}, *, 1) is \(abelian)::group
 Documented:
 . called: "field"
-. description: "A field is a commutative ring $(F, +, *, 0, 1)$ with $0 \neq 1$
-                in which every non-zero element has a multiplicative inverse."
+. description: "A nontrivial commutative ring in which every nonzero element has
+                a multiplicative inverse, so that $F^\times = F \setminus \{0\}$
+                forms an abelian group."
 Id: "53a76a9b-97d9-4c4d-b6c6-cc00983cfcb2"
 
 
@@ -121,7 +124,8 @@ Declares: x is \ring.element:of{F}
 when: F is \field
 Documented:
 . called: "element of field $F?$"
-. description: "An element of a field $F$ is an element of its underlying ring."
+. description: "An element of a field $F$, admitting nonzero division and scalar
+                multiplication."
 Id: "1961828f-5a83-4c78-b8c9-a91c2e512d50"
 
 
@@ -148,8 +152,9 @@ satisfies:
   . i * r "in" I
 Documented:
 . called: "ideal of $R?$"
-. description: "An ideal is an additive subgroup closed under multiplication by
-                arbitrary ring elements."
+. description: "A two-sided ideal $I \subseteq R$: an additive subgroup
+                absorbing ring multiplication ($rI \subseteq I$ and
+                $Ir \subseteq I$), forming the kernels of ring homomorphisms."
 Id: "999d97fa-3609-4900-a19d-ab1f3345ca54"
 
 
@@ -164,6 +169,9 @@ satisfies:
   . a * b = 0
 Documented:
 . adjective: "zero divisor"
+. description: "A nonzero ring element $a \ne 0$ for which there exists a
+                nonzero $b \ne 0$ satisfying $a \cdot b = 0$, obstructing
+                multiplicative cancellation."
 Id: "cff0d878-33b9-4552-93c2-cee960162e9e"
 
 
@@ -176,7 +184,9 @@ satisfies:
   then: (. a * b = 0 .) \.implies./ (. a = 0 \.or./ b = 0 .)
 Documented:
 . called: "integral domain"
-. description: "A nontrivial commutative ring without zero divisors."
+. description: "A nontrivial commutative ring with no zero divisors
+                ($ab = 0 \implies a = 0 \lor b = 0$), in which nonzero elements
+                satisfy the cancellation law."
 Id: "be91bf4c-366f-430f-bff8-6f9c7225736d"
 
 

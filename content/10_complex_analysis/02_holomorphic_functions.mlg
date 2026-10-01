@@ -63,7 +63,8 @@ Documented:
 . called: "complex derivative of $f?$ at $z0?$"
 . written: "f?'(z0?)"
 . description: "The complex derivative
-                $f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}$."
+                $f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}$,
+                defining an isotropic similarity operator in the tangent space."
 Id: "7e3019a7-07f3-462e-bd30-6047f158b5de"
 
 
@@ -78,8 +79,8 @@ satisfies:
     suchThat: d = \complex.derivative:of{f}:at{z0}
 Documented:
 . adjective: "holomorphic"
-. description: "A function is holomorphic on $U$ if it is complex-differentiable
-                at every point in $U$."
+. description: "Holomorphic on open $U$: complex differentiable at every point
+                $z_0 \in U$, satisfying the Cauchy-Riemann equations."
 Id: "f2a708e1-6ee2-4072-aa11-08f5e90fe31f"
 
 

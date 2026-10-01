@@ -37,8 +37,9 @@ then:
       . phi(x)
 Documented:
 . called: "Axiom Schema of Separation"
-. description: "For every property $\varphi$, the elements of an existing set
-                $A$ satisfying $\varphi$ form a set."
+. description: "First-order schema asserting that for any formula $\varphi(x)$,
+                $\{x \in A : \varphi(x)\}$ is a set. Restricts comprehension to
+                subcollections of existing sets, preventing Russell's paradox."
 Id: "5077fbc7-a5c8-4d60-b1a7-a9d65097f003"
 
 
@@ -62,8 +63,10 @@ then:
         suchThat: phi(x, y)
 Documented:
 . called: "Axiom Schema of Replacement"
-. description: "The image of a set under a formula that assigns each input a
-                unique output is again a set."
+. description: "First-order schema asserting that the image $F[A]$ of a set
+                under any functional class operation is a set. Vital for
+                transfinite induction and forming limit ordinals such as
+                $\omega+\omega$ and $\aleph_\omega$."
 Id: "6e09ea04-f1dd-41c0-a0f5-4c962cd819ac"
 
 
@@ -101,7 +104,10 @@ then:
       . x "in"? a
 Documented:
 . called: "Axiom of Foundation"
-. description: "Every nonempty set $A$ has a member disjoint from $A$."
+. description: "The regularity postulate: every nonempty set $A$ contains an
+                $\in$-minimal element ($a \cap A = \emptyset$). Prohibits
+                infinite descending $\in$-chains $\dots \in x_2 \in x_1 \in x_0$
+                and self-containing sets $x \in x$."
 Id: "cc3fc1c3-8ea9-45a6-874c-9215525952f4"
 
 
@@ -127,10 +133,10 @@ then:
       . f(i) "in"? S
 Documented:
 . called: "Axiom of Choice"
-. description: "Every set-indexed family of nonempty subsets of an ambient set
-                admits a choice function selecting one element from each member
-                of the family. This ambient-set formulation is equivalent over
-                ZF to the usual formulation for arbitrary set-indexed families."
+. description: "The non-constructive choice postulate: every family of nonempty
+                pairwise disjoint sets admits a transversal selector. Guarantees
+                that every Cartesian product of nonempty sets is nonempty, and
+                every surjection has a right inverse."
 Id: "3f1ec40e-207c-431e-918e-7a8f4f23fa46"
 
 
@@ -167,8 +173,9 @@ that:
 Documented:
 . called: "$A?$ and $B?$ have the same cardinality"
 . written: "|A?| = |B?|"
-. description: "Two sets have the same cardinality when a bijection exists
-                between them."
+. description: "Cardinal equinumerosity $|A| = |B|$: existence of an invertible
+                set isomorphism (bijection) $f: A \to B$ witness to identical
+                cardinality in Set."
 Id: "5ba55513-d2b3-458e-afd9-2fbd7507d47f"
 
 
@@ -181,7 +188,9 @@ that:
 Documented:
 . called: "cardinality of $A?$ is at most cardinality of $B?$"
 . written: "|A?| \leq |B?|"
-. description: "$|A|\leq|B|$ means that an injection from $A$ to $B$ exists."
+. description: "Cardinal sub-dominance $|A| \le |B|$: existence of an injective
+                embedding $f: A \hookrightarrow B$, establishing a preorder on
+                cardinalities."
 Id: "d3cc912e-a944-4a5f-8cc8-cca18c511746"
 
 
@@ -192,8 +201,9 @@ satisfies:
   suchThat: X \.equinumerous.with./ \natural.initial.segment:before{n}
 Documented:
 . adjective: "finite"
-. description: "A set is finite when it is bijective with the natural numbers
-                strictly below some natural number $n$."
+. description: "Dedekind-finite cardinality: equinumerous with an initial
+                segment $\{0, 1, \dots, n-1\}$ of $\mathbb{N}$ for some
+                $n \in \mathbb{N}$."
 Id: "88d1e87d-f649-4246-b417-7d3ca4c7f24c"
 
 
@@ -202,8 +212,9 @@ Refines: X
 satisfies: X \.equinumerous.with./ \naturals
 Documented:
 . adjective: "countably infinite"
-. description: "A countably infinite set is one admitting a bijection with the
-                natural numbers."
+. description: "Denumerable cardinality $\aleph_0$: equinumerous with the full
+                set of natural numbers $\mathbb{N}$, admitting an exhaustive
+                infinite sequence listing."
 Id: "7337910a-2ecc-46f7-95a7-9cc5812af19e"
 
 
@@ -215,7 +226,8 @@ satisfies:
   . X is? \(countably.infinite)::set
 Documented:
 . adjective: "countable"
-. description: "A set is countable when it is finite or countably infinite."
+. description: "At most countable cardinality: $|X| \le \aleph_0$, being either
+                finite or denumerably infinite."
 Id: "9725d8a1-0c65-491e-901b-ee23b8e87888"
 
 
@@ -227,8 +239,9 @@ where:
 then: A \.equinumerous.with./ B
 Documented:
 . called: "Cantor--Schroeder--Bernstein Theorem"
-. description: "Mutual injections between two sets imply the existence of a
-                bijection."
+. description: "Antisymmetry of cardinal dominance: mutual injective embeddings
+                $A \hookrightarrow B$ and $B \hookrightarrow A$ guarantee the
+                existence of a bijection $A \cong B$, without requiring Choice."
 Id: "5ad0453f-1203-4467-949b-4c8a8697b5b3"
 
 
@@ -238,7 +251,10 @@ then:
 . not: A \.equinumerous.with./ \power.set:of{A}
 Documented:
 . called: "Cantor's Theorem"
-. description: "No set is equinumerous with its power set."
+. description: "The foundational strict cardinal inequality
+                $|A| < |\mathcal{P}(A)|$: diagonal argument proving no
+                surjection $A \twoheadrightarrow \mathcal{P}(A)$ can exist,
+                establishing an unending transfinite hierarchy of infinities."
 Proof: """Suppose for contradiction that there exists a bijection
           $f : A \to \mathcal{P}(A)$. In particular, $f$ must be surjective.
           Define the diagonal subset $D \subseteq A$ by Separation:

@@ -30,6 +30,9 @@ when:
 Documented:
 . called: "left coset of $H?$ by $g?$"
 . written: "g?H?"
+. description: "The left coset $gH = \{gh : h \in H\}$, forming an equivalence
+                class under the left congruence relation
+                $x \sim y \iff x^{-1}y \in H$."
 Id: "b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0"
 
 
@@ -42,6 +45,9 @@ when:
 Documented:
 . called: "right coset of $H?$ by $g?$"
 . written: "H?g?"
+. description: "The right coset $Hg = \{hg : h \in H\}$, forming an equivalence
+                class under the right congruence relation
+                $x \sim y \iff xy^{-1} \in H$."
 Id: "152ef2a9-044c-4687-8325-bc80ce2bfa12"
 
 
@@ -56,6 +62,9 @@ then:
   . \left.coset:of{H}:by{g1}:in{G} \.disjoint.from./ \left.coset:of{H}:by{g2}:in{G}
 Documented:
 . called: "Left Cosets are Equal or Disjoint"
+. description: "Any two left cosets $g_1 H$ and $g_2 H$ are either identical or
+                disjoint, partitioning the group $G$ into mutually disjoint
+                equivalence classes of uniform cardinality $|H|$."
 Proof: """Let $g_1, g_2 \in G$. Suppose that the left cosets $g_1H$ and $g_2H$
           are not disjoint. Then there exists at least one element
           $x \in g_1H \cap g_2H$. By definition of left cosets, there exist
@@ -97,8 +106,9 @@ Enables:
 Documented:
 . called: "normal subgroup of $G?$"
 . written: "H? \vartriangleleft G?"
-. description: "A subgroup is normal when its left and right cosets agree for
-                every group element."
+. description: "A subgroup $N \trianglelefteq G$ invariant under conjugation
+                ($gNg^{-1} = N$), guaranteeing that the quotient coset
+                multiplication $(gN)(hN) = (gh)N$ is well-defined."
 Id: "0e5638e1-1109-4980-a652-2e795bed2e44"
 
 
@@ -130,6 +140,8 @@ when:
 Documented:
 . called: "kernel of $phi?$"
 . written: "\ker(phi?)"
+. description: "The kernel $\ker(\phi) = \{g \in G_1 : \phi(g) = e_2\}$, forming
+                a normal subgroup of the domain group $G_1$."
 Id: "dbdd8045-535e-4d8b-b4d1-2f10e2d2648f"
 
 
@@ -141,6 +153,9 @@ when:
 Documented:
 . called: "image of $phi?$"
 . written: "\operatorname{im}(phi?)"
+. description: "The homomorphic image
+                $\operatorname{im}(\phi) = \{\phi(g) : g \in G_1\}$, forming a
+                subgroup of the codomain group $G_2$."
 Id: "f13b0e2b-be95-4735-b963-fbc91db6b175"
 
 
@@ -187,8 +202,10 @@ Documented:
 . called: "group action of $G?$ on $X?$"
 . writing: alpha(g_, x_)
   as: "g_? \cdot x_?"
-. description: "A left action represents each group element as a symmetry of the
-                set and respects identity and multiplication."
+. description: "A left group action $\alpha: G \times X \to X$ realizing group
+                elements as permutations of $X$ respecting identities and
+                composition: $e \cdot x = x$ and
+                $(gh) \cdot x = g \cdot (h \cdot x)$."
 Id: "fa043cd6-0ce8-4504-82bb-aba9ad2c8a30"
 
 
@@ -202,6 +219,9 @@ when:
 Documented:
 . called: "orbit of $x?$ under $alpha?$"
 . written: "G? \cdot x?"
+. description: "The orbit $G \cdot x = \{g \cdot x : g \in G\} \subseteq X$,
+                partitioning $X$ into transitive components under the action of
+                $G$."
 Id: "373a9fce-21a7-4155-9f1d-cfb662941906"
 
 
@@ -215,6 +235,9 @@ when:
 Documented:
 . called: "stabilizer of $x?$ under $alpha?$"
 . written: "G?_{x?}"
+. description: "The stabilizer subgroup
+                $G_x = \{g \in G : g \cdot x = x\} \le G$ of elements fixing
+                $x$."
 Id: "02a3fe2e-dbbf-49a6-8cf2-cc5cc85568f7"
 
 

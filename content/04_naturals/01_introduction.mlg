@@ -42,9 +42,9 @@ Enables:
 Documented:
 . called: "the naturals"
 . written: "\mathbb{N}"
-. description: "The natural numbers $(\mathbb{N}, 0, S)$ axiomatized via the
-                Peano postulates: $0$ is not a successor, the successor function
-                $S$ is injective, and induction holds."
+. description: "Dedekind--Peano axiomatic system $(\mathbb{N}, 0, S)$ for the
+                natural numbers: formalizes discrete induction, injectivity of
+                succession, and $0$ as the initial base element."
 Id: "502e2a50-cced-461a-bdcf-03e2221a598f"
 
 
@@ -55,7 +55,9 @@ Enables:
 Documented:
 . called: "natural"
 . written: "n? \in \mathbb{N}"
-. description: "A natural number is a member of the underlying set $\mathbb{N}$."
+. description: "An element of the Peano natural number carrier set $\mathbb{N}$,
+                representing finite cardinalities and discrete ordinal sequence
+                positions."
 Id: "6c240df6-c06d-4fc4-ab16-31fa5aebb4d7"
 
 
@@ -76,7 +78,8 @@ Defines: z := \naturals..0 is \natural
 Documented:
 . called: "natural zero"
 . written: "0"
-. description: "The distinguished element $0 \in \mathbb{N}$."
+. description: "The base identity element $0 \in \mathbb{N}$: the unique natural
+                number that is not the successor of any natural number."
 Id: "3c4f37ab-1bff-4a4a-90ea-8f808863dbfc"
 
 
@@ -85,7 +88,9 @@ Defines: o := \naturals..S(\natural.zero) is \natural
 Documented:
 . called: "natural one"
 . written: "1"
-. description: "The natural number $1$, defined as the successor $S(0)$."
+. description: "The multiplicative identity $1 = S(0) \in \mathbb{N}$: the
+                immediate successor of zero, serving as the discrete unit of
+                counting."
 Id: "8ced2d1f-741d-4996-84f8-b2c2afd293e8"
 
 
@@ -95,7 +100,9 @@ when: n is \natural
 Documented:
 . called: "successor of $n?$"
 . written: "S(n?)"
-. description: "The successor of the natural number $n$."
+. description: "The successor operator $S(n) = n + 1$: the foundational
+                generator of discrete arithmetic progression and transfinite
+                ordinal stepping."
 Id: "9e6169e7-03a2-4b46-8e49-9d7da97d0092"
 
 
@@ -125,8 +132,9 @@ expresses:
 Documented:
 . called: "$n_?$ plus $m_?$"
 . written: "n_? + m_?"
-. description: "Addition of natural numbers defined by recursion on the first
-                argument: $0 + m = m$ and $S(k) + m = S(k + m)$."
+. description: "Primitive recursive addition on $\mathbb{N}$: computes iterated
+                succession with $0 + m = m$ and $S(k) + m = S(k + m)$, forming a
+                commutative cancellative monoid."
 Id: "a8dda59b-29db-4ac2-8d70-e9010ccae3e7"
 
 
@@ -154,8 +162,10 @@ expresses:
 Documented:
 . called: "$n_?$ times $m_?$"
 . written: "n_? \cdot m_?"
-. description: "Multiplication of natural numbers defined by recursion:
-                $0 \cdot m = 0$ and $S(k) \cdot m = (k \cdot m) + m$."
+. description: "Primitive recursive multiplication on $\mathbb{N}$: computes
+                iterated addition with $0 \cdot m = 0$ and
+                $S(k) \cdot m = (k \cdot m) + m$, forming a commutative
+                semiring."
 Id: "46c21a80-12cd-45f6-8e74-07731d18d220"
 
 
@@ -182,8 +192,9 @@ satisfies:
 Documented:
 . called: "$n?$ is less than or equal to $m?$"
 . written: "n? \leq m?"
-. description: "The canonical order on natural numbers: $n \leq m$ if and only
-                if there exists $k \in \mathbb{N}$ such that $n + k = m$."
+. description: "Canonical linear order on $\mathbb{N}$: algebraic reachability
+                relation $n \le m \iff \exists k \in \mathbb{N}, n + k = m$,
+                making $\mathbb{N}$ a well-ordered set."
 Id: "8c997826-bcef-4032-816b-c6dd2aa635e7"
 
 
@@ -193,5 +204,7 @@ when: n is \natural
 Documented:
 . called: "natural initial segment before $n?$"
 . written: "\{0,\ldots,n?-1\}"
-. description: "The set of natural numbers strictly smaller than $n$."
+. description: "The finite bounded ordinal $\{0, 1, \dots, n-1\}$ of
+                predecessors of $n$, serving as the standard $n$-element
+                reference set for Dedekind finiteness."
 Id: "898f2850-dddb-43b0-809a-53b449cb04a3"

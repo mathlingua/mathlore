@@ -28,9 +28,10 @@ expresses:
 Documented:
 . called: "The singleton set of $X?$"
 . written: "\left \{ X? \right \}"
-. description: "The singleton $\{X\}$ is the set whose sole member is $X$: a set
-                $Z$ belongs to it exactly when $Z = X$. Its existence follows
-                from pairing applied to $X$ with itself."
+. description: "The atomic unit $\{X\}$ containing precisely $X$ as its sole
+                member. Distinguishes elementhood from containment
+                ($X \in \{X\}$ versus $X \subseteq \{X\}$) and serves as the
+                terminal object in the category of pointed sets."
 Id: "08f35257-d0a7-42af-9866-7d138c56fc4c"
 
 
@@ -54,8 +55,10 @@ expresses:
 Documented:
 . called: "unordered pair of $x?$ and $y?$"
 . written: "\left \{ x?, y? \right \}"
-. description: "The unordered pair $\{x, y\}$ is the set whose members are
-                precisely $x$ and $y$."
+. description: "The symmetrical binary ensemble $\{x, y\} = \{y, x\}$.
+                Extensionality renders element sequencing completely
+                transparent, serving as the raw material for Kuratowski ordered
+                pairs."
 Id: "17401045-fc72-4bd4-af7d-ab578690f81c"
 
 
@@ -88,10 +91,9 @@ expresses:
 Documented:
 . called: "The set successor of $X?$"
 . written: "X? \cup \left \{ X? \right \}"
-. description: "The successor of $X$ is the set $X \cup \{X\}$, whose members
-                are the members of $X$ together with $X$ itself. Starting from
-                $\emptyset$ and repeating this step generates the natural
-                numbers."
+. description: "The von Neumann inductive successor $S(X) = X \cup \{X\}$.
+                Generates the finite von Neumann ordinals $\omega$, where each
+                integer is the well-ordered set of its predecessors."
 Id: "002b9914-ad06-4f5a-a3fb-803bd86e6c4b"
 
 
@@ -114,9 +116,10 @@ Id: "b218d7dd-c01a-476d-9975-b05de57b8b8f"
 Declares: phi(X_) is (_ is \set) -> (_ is \\statement)
 Documented:
 . called: "set property"
-. description: "A set property is a predicate on sets: given a set it yields a
-                statement, true or false. Properties are what the specification
-                axiom uses to carve subsets out of existing sets."
+. description: "A first-order definable property $\varphi(X)$ in the language of
+                set theory. Used by the Axiom Schema of Separation (Zermelo) to
+                isolate bounded subcollections $\{x \in A : \varphi(x)\}$,
+                avoiding unrestricted comprehension paradoxes."
 Id: "cc680a81-3338-4848-8b9d-fcf368dd759e"
 
 
@@ -133,9 +136,9 @@ expresses:
 Documented:
 . called: "set of $\left \{ x? \right \}$"
 . written: "\left \{ x? \right \}"
-. description: "The set $\{x_1, \dots, x_n\}$ listed by its elements: a value
-                belongs to it exactly when it equals one of the listed $x_i$.
-                This is the finite, roster form of set-builder notation."
+. description: "Finite extensional listing $\{x_1, \dots, x_n\}$ defined by the
+                disjunction of coordinate identities. Forms the standard roster
+                notation for finite sets."
 Id: "61c901bc-5f36-479b-a32c-c37b7f98a9fb"
 
 
@@ -164,10 +167,10 @@ when: x, y is \\anything
 Documented:
 . called: "pair of $x?$ and $y?$"
 . written: "\langle x?, y? \rangle"
-. description: "The ordered pair $\langle x, y \rangle$, encoded as the set
-                $\{\{x\}, \{x, y\}\}$. This encoding lets the first and second
-                components be recovered from the set alone, so order is
-                meaningful even though sets are unordered."
+. description: "Kuratowski's set-theoretic encoding
+                $(x, y) = \{\{x\}, \{x, y\}\}$. Transforms asymmetric positional
+                ordering into symmetric set containment, enabling the formal
+                foundation of Cartesian products, relations, and functions."
 Id: "8fd9d494-2882-4639-bb50-44a56626d1c4"
 
 
@@ -187,10 +190,10 @@ when: A, B is \set
 Documented:
 . called: "Cartesian product of $A?$ and $B?$"
 . written: "A? \times B?"
-. description: "The Cartesian product $A \times B$ is the set of all ordered
-                pairs $(a, b)$ with $a \in A$ and $b \in B$. Relations on a set
-                are subsets of its product with itself, and functions are
-                relations of a special kind."
+. description: "The categorical product $A \times B$ in Set, collecting all
+                ordered pairs $(a, b)$ for $a \in A$ and $b \in B$. Acts as the
+                universal domain for binary operations, relations, and
+                multivariable maps."
 Id: "3bdd9cfb-f836-4d44-880a-873bb772cdef"
 
 
@@ -202,8 +205,10 @@ iff:
 . y = v
 Documented:
 . called: "coordinate equality for ordered pairs"
-. description: "Kuratowski ordered pairs are equal exactly when their
-                corresponding coordinates are equal."
+. description: "The fundamental theorem of ordered pairs:
+                $(x, y) = (u, v) \iff (x = u \land y = v)$. Guarantees that
+                Kuratowski's encoding faithfully captures positional asymmetry
+                without information loss."
 Proof: """If $x = u$ and $y = v$, then
           $\{\{x\}, \{x, y\}\} = \{\{u\}, \{u, v\}\}$ trivially. Conversely,
           suppose $\{\{x\}, \{x, y\}\} = \{\{u\}, \{u, v\}\}$. The intersection
@@ -233,10 +238,11 @@ then:
     then: phi(((a, b), c)) = (a, (b, c))
 Documented:
 . called: "Canonical Associativity Bijection for Cartesian Products"
-. description: "The map $((a,b),c)\mapsto(a,(b,c))$ is a canonical bijection
-                from $(A\times B)\times C$ to $A\times(B\times C)$. The two
-                products are therefore naturally identifiable but are not
-                literally equal under the ordered-pair encoding."
+. description: "The monoidal associator isomorphism
+                $\alpha_{A,B,C}: (A \times B) \times C \xrightarrow{\sim} A \times (B \times C)$.
+                Demonstrates that while Cartesian products are strictly
+                non-associative under set-theoretic encoding, they are naturally
+                isomorphic in the monoidal category $(\mathbf{Set}, \times, 1)$."
 Proof: """Define $\varphi : (A \times B) \times C \to A \times (B \times C)$ by
           $\varphi(((a, b), c)) = (a, (b, c))$. To show $\varphi$ is injective:
           if $\varphi(((a_1, b_1), c_1)) = \varphi(((a_2, b_2), c_2))$, then

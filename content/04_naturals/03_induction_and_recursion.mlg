@@ -34,6 +34,10 @@ then:
   then: P(n)
 Documented:
 . called: "Principle of Mathematical Induction"
+. description: "The foundational proof technique for universal statements on
+                $\mathbb{N}$: asserts that a property holding at $0$ and
+                preserved under succession holds for all natural numbers,
+                reflecting the lack of non-standard infinite chains."
 Proof: """Let $A = \{n \in \mathbb{N} : P(n)\}$. By hypothesis, $P(0)$ holds, so
           $0 \in A$. Furthermore, for any $n \in A$, $P(n)$ holds, which implies
           $P(S(n))$, so $S(n) \in A$. Thus $A$ contains $0$ and is closed under
@@ -60,8 +64,10 @@ then:
   then: P(n)
 Documented:
 . called: "Principle of Strong Induction"
-. description: "If $P(n)$ follows from the validity of $P(k)$ at every preceding
-                natural number $k<n$, then $P$ holds for every natural number."
+. description: "Course-of-values induction: asserts that $P(n)$ holds
+                universally if it holds whenever it holds for all strictly
+                smaller predecessors $k < n$. Equipotent to ordinary induction
+                via cumulative truth predicates."
 Proof: """Define the auxiliary predicate $Q(n)$ by
           $$Q(n) \iff \forall k < n, \, P(k)$$ We prove
           $\forall n \in \mathbb{N}, Q(n)$ by ordinary mathematical induction on
@@ -80,7 +86,7 @@ Id: "844c54eb-187b-4369-8fd2-84d5d7da2b4b"
 
 
 Text: "A rigorous inductive proof demands careful epistemic hygiene: the
-       *induction hypothesis* $P(n)$ is assumed strictly for a fixed, arbitrary
+       induction hypothesis $P(n)$ is assumed strictly for a fixed, arbitrary
        index $n$, and must be used solely to derive the subsequent assertion
        $P(n + 1)$. In strong induction (complete induction), all preceding
        instances $P(0), P(1), \dots, P(n-1)$ are available as simultaneous
@@ -100,7 +106,10 @@ then:
     then: m \:natural.leq?:/ n
 Documented:
 . called: "Well-Ordering Principle for the Natural Numbers"
-. description: "Every nonempty subset of $\mathbb{N}$ has a least element."
+. description: "The fundamental minimum principle: asserts that every nonempty
+                subset $A \subseteq \mathbb{N}$ contains a least element with
+                respect to $\le$. Equivalent to mathematical induction over the
+                Peano arithmetic base."
 Proof: """Suppose for contradiction that $A \subseteq \mathbb{N}$ is nonempty
           yet possesses no least element. Let $P(n)$ be the assertion that
           $n \notin A$. We prove that $P(n)$ holds for all $n \in \mathbb{N}$ by
@@ -134,9 +143,10 @@ when: X is \set
 Documented:
 . called: "sequence in $X?$"
 . written: "(a?_{n})_{n\in\mathbb{N}}"
-. description: "A sequence in $X$ is a function from $\mathbb{N}$ to $X$; its
-                indices record positions, so equal values may occur at different
-                indices."
+. description: "Denumerable family indexed by $\mathbb{N}$, viewed as an element
+                of the Cartesian power $X^\mathbb{N}$. Serves as the primary
+                vehicle for discrete dynamics, convergence in analysis, and
+                enumerations."
 Id: "d9daf505-ce5f-45be-baae-06c06602fa79"
 
 

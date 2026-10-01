@@ -53,8 +53,8 @@ Declares: gamma(t_) is \function:on{\reals}:to{\complex.numbers}
 when: a, b is \real
 Documented:
 . called: "complex path on $[a?, b?]$"
-. description: "A continuous parameterized curve
-                $\gamma : [a, b] \to \mathbb{C}$."
+. description: "A continuous parameterized path $\gamma : [a, b] \to \mathbb{C}$
+                traversing a directed contour in the complex plane."
 Id: "28c63b3c-de18-42f8-b10b-04695ee6410a"
 
 
@@ -65,7 +65,7 @@ specifies: gamma is \complex.path:on{a, b}
 satisfies: gamma(a) = gamma(b)
 Documented:
 . adjective: "closed"
-. description: "A complex path is closed if its endpoints coincide:
+. description: "A closed complex contour (loop) satisfying
                 $\gamma(a) = \gamma(b)$."
 Id: "f3a6c8ea-28b0-46a1-ac84-0499c7b6a970"
 
@@ -79,8 +79,9 @@ when:
 Documented:
 . called: "contour integral of $f?$ along $\gamma?$"
 . written: "\oint_{\gamma?} f?(z) \, dz"
-. description: "The contour integral $\oint_\gamma f(z) dz$ along curve
-                $\gamma$."
+. description: "The complex contour integral
+                $\oint_\gamma f(z)\,dz = \int_a^b f(\gamma(t))\gamma'(t)\,dt$
+                along directed contour $\gamma$."
 Id: "e6283364-d507-4dfb-bbeb-a2e09a538cef"
 
 
@@ -178,8 +179,9 @@ when:
 Documented:
 . called: "residue of $f?$ at $z0?$"
 . written: "\operatorname{Res}(f?, z0?)"
-. description: "The coefficient $a_{-1}$ in the Laurent expansion of $f$ around
-                isolated singularity $z_0$."
+. description: "The residue
+                $\operatorname{Res}(f, z_0) = a_{-1} = \frac{1}{2\pi i} \oint_\gamma f(z)\,dz$,
+                the solitary non-vanishing coefficient under loop integration."
 Id: "19aa67b3-3856-40b0-8d20-8fae7dd0ec19"
 
 

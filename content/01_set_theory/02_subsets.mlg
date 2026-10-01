@@ -28,9 +28,10 @@ Requires:
 Documented:
 . called: "$A?$ is a subset of $B?$"
 . written: "A? \subseteq B?"
-. description: "$A \subseteq B$ holds when every element of $A$ is also an
-                element of $B$. By extensionality, two sets are equal exactly
-                when each is a subset of the other."
+. description: "Universal containment relation $A \subseteq B$: every element
+                $x \in A$ satisfies $x \in B$. Imposes a canonical Boolean
+                lattice structure on power sets and acts as the categorical
+                subobject arrow in Set."
 Id: "2b2b89a1-d106-4377-ae48-14c704063e5e"
 
 
@@ -51,8 +52,9 @@ satisfies: A != B
 Documented:
 . adjective: "proper"
 . written: "A? \subsetneq B?"
-. description: "$A \subsetneq B$ holds when $A$ is a subset of $B$ but is not
-                equal to $B$; that is, $B$ has at least one element not in $A$."
+. description: "Strict containment $A \subsetneq B$: combines subset inclusion
+                with non-equality, guaranteeing the existence of an ambient
+                witness $b \in B \setminus A$."
 Id: "7d070f37-61a5-4c62-b8da-4831c222e4b2"
 
 
@@ -72,7 +74,9 @@ then:
 . A \:subset?:/ C
 Documented:
 . called: "Transitivity of Subset Relation"
-. description: "If $A \subseteq B$ and $B \subseteq C$, then $A \subseteq C$."
+. description: "Syllogistic chaining of containment: transitivity ensures that
+                subset inclusion forms a preorder on any collection of sets, and
+                a partial order modulo extensionality."
 Proof: """Assume $A \subseteq B$ and $B \subseteq C$. Let $x \in A$ be an
           arbitrary element. By definition of $A \subseteq B$, the condition
           $x \in A$ implies $x \in B$. Since $x \in B$, the condition
@@ -99,8 +103,10 @@ iff:
 . B \:subset?:/ A
 Documented:
 . called: "Set Equality via Mutual Inclusion"
-. description: "Two sets $A$ and $B$ are equal if and only if $A \subseteq B$
-                and $B \subseteq A$."
+. description: "The fundamental double-containment proof technique: establishes
+                $A = B$ by independently proving $A \subseteq B$ and
+                $B \subseteq A$, decomposing extensional identity into two
+                universal implications."
 Proof: """By the Axiom of Extensionality, $A = B$ if and only if for all $x$,
           $x \in A \iff x \in B$. Decomposing this universal biconditional into
           its two conditional directions yields
@@ -145,9 +151,11 @@ expresses:
     then: R(A, T)
 Documented:
 . called: "inclusion order on the power set of $U?$"
-. description: "Subset inclusion is a partial order on $\mathcal{P}(U)$, with
-                the empty set as its least element and $U$ as its greatest
-                element."
+. description: "The canonical Boolean algebra partial order
+                $(\mathcal{P}(U), \subseteq)$. Features $\emptyset$ as the
+                universal bottom element ($\bot$) and $U$ as the universal top
+                element ($\top$), with set operations realizing meet, join, and
+                complementation."
 Id: "ff6d7e2f-1927-4d30-b771-34ea8726711c"
 
 
@@ -156,8 +164,7 @@ Declares: A \:subset:/ \power.set:of{U}
 when: U is \set
 Documented:
 . called: "family of subsets of $U?$"
-. description: "A family of subsets of $U$ is a subset
-                $\mathcal{A}\subseteq\mathcal{P}(U)$. Thus $x\in A$ concerns an
-                element of one subset, while $A\in\mathcal{A}$ concerns one set
-                in the family."
+. description: "A higher-order collection $\mathcal{A} \subseteq \mathcal{P}(U)$
+                of subsets of $U$. Provides the structural substrate for
+                topologies, $\sigma$-algebras, uniformities, and filter bases."
 Id: "df5630a9-0ac4-4920-995a-7002bdccbf15"

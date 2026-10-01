@@ -70,8 +70,11 @@ Documented:
 . adjective:
   . "injective"
   . "one-to-one"
-. description: "An injective (one-to-one) function never sends two distinct
-                domain elements to the same codomain element."
+. description: "Monoclinic embedding preserving distinguishability: distinct
+                domain inputs map to distinct codomain outputs. In category
+                theory, injections correspond to monomorphisms in the category
+                of sets, admitting left inverses (retractions) whenever the
+                domain is non-empty."
 Id: "c33dd972-b742-4aed-8bbc-797ecdb2b5af"
 
 
@@ -86,7 +89,10 @@ Documented:
 . adjective:
   . "surjective"
   . "onto"
-. description: "A surjective (onto) function hits every element of its codomain."
+. description: "Epimorphic coverage spanning the entire codomain: every element
+                in $B$ possesses at least one domain preimage. Under the Axiom
+                of Choice, surjections correspond to split epimorphisms,
+                admitting right inverses (sections)."
 Id: "be68a628-8ca8-49c8-8780-bd7aa7401ef4"
 
 
@@ -95,9 +101,10 @@ Refines: f
 specifies: f is \(injective, surjective)::[[f]]
 Documented:
 . adjective: "bijective"
-. description: "A bijective function is both injective and surjective,
-                establishing a one-to-one correspondence between its domain and
-                codomain."
+. description: "Set-theoretic isomorphism: a simultaneous monomorphism and
+                epimorphism establishing an exact invertible correspondence.
+                Bijections preserve cardinal size and permit the transfer of
+                mathematical structure between $A$ and $B$."
 Id: "554dad1c-22e4-47ae-9d4f-b0fb088de488"
 
 
@@ -119,8 +126,9 @@ expresses: f(x__) := x__
 Documented:
 . called: "identity function on $A?$"
 . written: "\text{id}_{A?}"
-. description: "The identity function $\text{id}_A$ maps every element of $A$ to
-                itself: $\text{id}_A(x) = x$."
+. description: "The neutral identity morphism $1_A$ acting as the two-sided unit
+                for function composition: $f \circ \text{id}_A = f$ and
+                $\text{id}_A \circ g = g$."
 Id: "be488ff3-1570-44a8-8be0-2bc9cbcdd791"
 
 
@@ -145,8 +153,10 @@ expresses: h(x__) := g(f(x__))
 Documented:
 . called: "composition of $g?$ and $f?$"
 . written: "g? \circ f?"
-. description: "The composition $g \circ f : A \rightarrow C$ applies $f$ first
-                and then $g$, so $(g \circ f)(x) = g(f(x))$."
+. description: "Associative chaining of functional transformations
+                $(g \circ f)(x) = g(f(x))$. Composition realizes the fundamental
+                law of composition in the category of sets, endowing
+                endofunctions $\text{End}(X)$ with monoid structure."
 Id: "a5c4b516-227b-4893-aa18-5f04c1f005a4"
 
 
@@ -169,9 +179,10 @@ expresses:
 Documented:
 . called: "inverse function of $f?$"
 . written: "f+?^{-1}"
-. description: "The inverse function $f^{-1} : B \rightarrow A$ of a bijection
-                $f$ reverses the mapping, sending each output back to its unique
-                source input."
+. description: "The unique two-sided inverse morphism $f^{-1}$ satisfying
+                $f^{-1} \circ f = \text{id}_A$ and
+                $f \circ f^{-1} = \text{id}_B$. It completely reverses the
+                operational dynamics of $f$."
 Id: "894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf"
 
 
@@ -194,8 +205,9 @@ when:
 Documented:
 . called: "image of $X?$ under $f?$"
 . written: "f?[X?]"
-. description: "The direct image $f[X]$ is the set of all outputs obtained by
-                evaluating $f$ on elements of $X$."
+. description: "The push-forward or direct image functor
+                $f_*: \mathcal{P}(A) \to \mathcal{P}(B)$. It unconditionally
+                preserves arbitrary set-theoretic unions."
 Id: "70ff3a00-b34b-4e76-9bbe-5f3325a59f55"
 
 
@@ -207,8 +219,11 @@ when:
 Documented:
 . called: "preimage of $Y?$ under $f?$"
 . written: "f+?^{-1}[Y?]"
-. description: "The preimage (inverse image) $f^{-1}[Y]$ is the set of domain
-                elements mapped by $f$ into $Y$."
+. description: "The pull-back or inverse image functor
+                $f^*: \mathcal{P}(B) \to \mathcal{P}(A)$. Because it preserves
+                all Boolean operations (unions, intersections, complements),
+                continuity in topology is naturally characterized via open
+                preimages."
 Id: "d2bd7f7c-06f3-4aff-a5e1-3399e5392f20"
 
 
@@ -227,7 +242,9 @@ Declares: u(x__) is \function:on{X}:to{X}
 when: X is \set
 Documented:
 . called: "unary operation on $X?$"
-. description: "A unary operation on $X$ is an endofunction from $X$ to $X$."
+. description: "An endomorphism $u: X \to X$ mapping a mathematical universe
+                into itself. Iterating $u$ generates discrete dynamical systems,
+                discrete time orbits, and monoid actions."
 Id: "3e224a1e-0519-4e11-b080-e748b38de02a"
 
 
@@ -244,9 +261,9 @@ Declares: x_ * y_ is \function:on{X \.set.cross./ X}:to{X}
 when: X is \set
 Documented:
 . called: "binary operation on $X?$"
-. description: "A binary operation on $X$ takes two elements of $X$ and returns
-                an element of $X$. Formally it is a function from $X \times X$
-                to $X$, written in infix form as $x * y$."
+. description: "An internal composition law $*: X \times X \to X$ endowing $X$
+                with magma structure. It serves as the primitive engine for
+                groups, rings, and linear algebras."
 Id: "82c8948a-c30d-464b-8ab0-1c7bdb2ed770"
 
 
@@ -268,6 +285,10 @@ satisfies:
   then: (a * b) * c = a * (b * c)
 Documented:
 . adjective: "associative"
+. description: "Parenthesization invariance $(a * b) * c = a * (b * c)$.
+                Associativity eliminates ambiguity in iterated products,
+                collapsing the Stasheff associahedron of parenthesizations into
+                a unique linear product."
 Id: "e23d5d7d-eed8-4efc-bdda-d316af89684e"
 
 
@@ -279,6 +300,9 @@ satisfies:
   then: x * y = y * x
 Documented:
 . adjective: "commutative"
+. description: "Order invariance $x * y = y * x$. Commutativity renders
+                operations independent of argument sequencing, modeling abelian
+                groups and symmetric tensor products."
 Id: "fc0223f8-7053-44ae-a251-94b6c35bc31d"
 
 
@@ -299,10 +323,10 @@ expresses: f(x__) := g(x__)
 Documented:
 . called: "restriction of $g?$ on $X?$"
 . written: "g?\big |_{X?}"
-. description: "The restriction $g|_X$ of a function $g : A \rightarrow B$ to a
-                subset $X$ of $A$ is the function on $X$ that takes each input
-                to the same value $g$ does. It keeps the rule and shrinks the
-                domain."
+. description: "The pullback of $g$ along the canonical injection
+                $\iota: X \hookrightarrow A$, given by $g \circ \iota$. It
+                limits the operational scope to a subuniverse while preserving
+                point evaluations."
 Id: "ea7eab01-792c-427f-91dc-a75f43513b38"
 
 
@@ -318,8 +342,10 @@ when:
 Documented:
 . called: "fiber of $f?$ over $y?$"
 . written: "f+?^{-1}[\{y?\}]"
-. description: "The fiber over $y$ is the set of all domain elements mapped to
-                $y$."
+. description: "The inverse image singleton $f^{-1}[\{y\}]$. Fibers partition
+                the domain into level sets; in bundle theory and algebraic
+                geometry, studying how fibers vary over the base space reveals
+                global topological obstructions."
 Id: "e10a2ceb-8649-480a-9ab4-651ca4345f74"
 
 

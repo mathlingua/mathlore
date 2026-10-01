@@ -69,8 +69,10 @@ Enables:
 Documented:
 . called: "the rationals"
 . written: "\mathbb{Q}"
-. description: "The rational numbers as an abstract ordered-field tuple
-                $(Q,0,1,+,\cdot,-,(\cdot)^{-1},\leq)$."
+. description: "The field of fractions
+                $\mathbb{Q} = \operatorname{Frac}(\mathbb{Z})$: the initial
+                object in the category of characteristic-zero fields, forming an
+                Archimedean ordered field."
 Id: "8454e27c-2e90-4944-a36b-27b66be5f4cf"
 
 
@@ -83,8 +85,8 @@ Enables:
 . capability: a_ <= b_ :=> a_ \:rational.leq:/ b_
 Documented:
 . called: "rational"
-. description: "A rational number is a member of the underlying carrier
-                $\mathbb{Q}$."
+. description: "An element of $\mathbb{Q}$, representing a signed commensurable
+                ratio of integers $a/b$ with $b \ne 0$."
 Id: "2250d77e-8840-464c-be09-6a1768db38bc"
 
 
@@ -93,6 +95,8 @@ Defines: z := \rationals..0 is \rational
 Documented:
 . called: "rational zero"
 . written: "0"
+. description: "The additive identity $0 \in \mathbb{Q}$: represented by the
+                fraction $0/1$, satisfying $q + 0 = q$."
 Id: "129d3bee-fc92-48a9-8823-3f9a290a3540"
 
 
@@ -101,6 +105,8 @@ Defines: o := \rationals..1 is \rational
 Documented:
 . called: "rational one"
 . written: "1"
+. description: "The multiplicative identity $1 \in \mathbb{Q}$: represented by
+                the fraction $1/1$, satisfying $q \cdot 1 = q$."
 Id: "d561070d-99fb-41e0-966e-ede168509eb2"
 
 
@@ -110,6 +116,8 @@ expresses: a_ + b_ := \rationals..`+`(a_, b_)
 Documented:
 . called: "$a_?$ plus $b_?$"
 . written: "a_? + b_?"
+. description: "Addition on $\mathbb{Q}$: commutative group operation defined on
+                fractions by $\frac{a}{b} + \frac{c}{d} = \frac{ad+bc}{bd}$."
 Id: "44f276f5-5ec9-4d24-a891-ca3c18cba5b6"
 
 
@@ -119,6 +127,9 @@ expresses: a_ * b_ := \rationals..`*`(a_, b_)
 Documented:
 . called: "$a_?$ times $b_?$"
 . written: "a_? \cdot b_?"
+. description: "Multiplication on $\mathbb{Q}$: commutative group operation on
+                $\mathbb{Q}^\times$ defined by
+                $\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$."
 Id: "a63fb60f-01bb-49d3-815e-a85f721c9ac0"
 
 
@@ -127,6 +138,8 @@ Defines: n := \rationals..neg(a_) is \rational
 Documented:
 . called: "negative of $a_?$"
 . written: "-a_?"
+. description: "Additive inversion $-q$ on $\mathbb{Q}$:
+                $-\frac{a}{b} = \frac{-a}{b}$, satisfying $q + (-q) = 0$."
 Id: "b1356b4a-3178-43e1-8013-b993ba8b2c36"
 
 
@@ -135,6 +148,9 @@ Defines: i := \rationals..inv(a_) is \rational
 Documented:
 . called: "reciprocal of $a_?$"
 . written: "a_?^{-1}"
+. description: "Multiplicative inversion $q^{-1}$ on $\mathbb{Q}$:
+                $(\frac{a}{b})^{-1} = \frac{b}{a}$ for $a \ne 0$ (totalized with
+                $0^{-1} = 0$)."
 Id: "b567f507-0351-483f-9833-95109ab73409"
 
 
@@ -144,6 +160,7 @@ when: a_, b_ is \rational
 Documented:
 . called: "$a_?$ minus $b_?$"
 . written: "a_? - b_?"
+. description: "Subtraction on $\mathbb{Q}$: $a - b = a + (-b)$."
 Id: "03fffc82-39e3-4aba-b4e1-6cb950895674"
 
 
@@ -153,6 +170,8 @@ when: a_, b_ is \rational
 Documented:
 . called: "$a_?$ divided by $b_?$"
 . written: "\frac{a_?}{b_?}"
+. description: "Division on $\mathbb{Q}$: $\frac{a}{b} = a \cdot b^{-1}$ for
+                $b \ne 0$."
 Id: "02b2f688-232d-4451-aa55-d17214af0bf0"
 
 
@@ -163,6 +182,8 @@ satisfies: \rationals..leq(a, b)
 Documented:
 . called: "$a?$ is less than or equal to $b?$"
 . written: "a? \leq b?"
+. description: "The standard linear order $\le$ on $\mathbb{Q}$: compatible with
+                field addition and positive scaling."
 Id: "f7389fcf-20d8-4465-8bfa-ec1fbe033c51"
 
 
@@ -175,6 +196,8 @@ satisfies:
 Documented:
 . called: "$a?$ is less than $b?$"
 . written: "a? < b?"
+. description: "The strict linear order $<$ on $\mathbb{Q}$:
+                $a < b \iff (a \le b \land a \ne b)$."
 Id: "5a472809-b0d1-46c0-9a80-236ea2ab148f"
 
 
@@ -188,6 +211,8 @@ expresses:
 Documented:
 . called: "absolute value of $q_?$"
 . written: "\left|q_?\right|"
+. description: "The standard Archimedean absolute value $|q| = \max(q, -q)$ on
+                $\mathbb{Q}$, defining the metric $d(p, q) = |p - q|$."
 Id: "61cb32b3-cb61-43ac-8319-8cf7315fe9ab"
 
 
@@ -209,6 +234,9 @@ Defines: Zstar := \set@{z_ : z_ is \nonzero.integer} is \set
 Documented:
 . called: "nonzero integers"
 . written: "\mathbb{Z} \setminus \{0\}"
+. description: "The multiplicative monoid of nonzero integers
+                $\mathbb{Z} \setminus \{0\}$, serving as the denominators for
+                fraction formation."
 Id: "7632dfa6-b8a4-49a3-ae26-6efff1be4e24"
 
 
@@ -217,6 +245,8 @@ Defines: P := \set@{(a_, b_) : a_ is \integer; b_ is \nonzero.integer} is \set
 Documented:
 . called: "rational fraction pairs"
 . written: "\mathbb{Z} \times (\mathbb{Z} \setminus \{0\})"
+. description: "The product set $\mathbb{Z} \times (\mathbb{Z} \setminus \{0\})$
+                of formal numerator-denominator pairs."
 Id: "f7174275-17fc-4a81-a133-96bf1a5b956e"
 
 
@@ -231,7 +261,9 @@ expresses:
     iff: a \.integer.*./ d = c \.integer.*./ b
 Documented:
 . called: "rational equivalence relation"
-. description: "The relation $(a,b) \sim (c,d)$ exactly when $ad=cb$."
+. description: "Cross-multiplication equivalence relation
+                $(a, b) \sim (c, d) \iff ad = cb$ on formal fraction pairs,
+                quotienting by commensurable equality."
 Id: "24804175-428b-44db-8573-0165be44818c"
 
 
@@ -240,6 +272,9 @@ Defines: Q := \rational.pair.base \.mod./ \rationals.relation is \set
 Documented:
 . called: "rational pair quotient"
 . written: "(\mathbb{Z} \times (\mathbb{Z}\setminus\{0\}))/\sim"
+. description: "The fraction field quotient
+                $(\mathbb{Z} \times (\mathbb{Z} \setminus \{0\})) / \sim$, whose
+                equivalence classes form $\mathbb{Q}$."
 Id: "cb5afd49-aedb-4cf5-8832-249a80e90743"
 
 
@@ -251,6 +286,8 @@ when:
 Documented:
 . called: "rational class of $a?$ over $b?$"
 . written: "[(a?,b?)]_{\mathbb{Q}}"
+. description: "Equivalence class $[(a, b)]_{\mathbb{Q}}$ representing the
+                rational fraction $a/b$."
 Id: "a5808b94-fc5f-459d-8a3b-ab72b6650e80"
 
 
@@ -260,6 +297,9 @@ expresses: d = \integer.one
 Documented:
 . called: "unit denominator"
 . written: "1"
+. description: "Distinguished unit denominator
+                $1 \in \mathbb{Z} \setminus \{0\}$ for the canonical embedding
+                of integers."
 Id: "2b3d1b0d-1375-4a6b-8670-397c65be411d"
 
 
@@ -268,6 +308,8 @@ Defines: z := \rational.pair.class:of{\integer.zero, \rational.pair.denominator.
 Documented:
 . called: "fraction-pair zero"
 . written: "[(0,1)]_{\mathbb{Q}}"
+. description: "The fraction class $[(0, 1)]_{\mathbb{Q}}$ representing the
+                additive identity $0$."
 Id: "c3eea23f-dd4a-457e-8b79-c66e804059c1"
 
 
@@ -276,6 +318,8 @@ Defines: o := \rational.pair.class:of{\integer.one, \rational.pair.denominator.o
 Documented:
 . called: "fraction-pair one"
 . written: "[(1,1)]_{\mathbb{Q}}"
+. description: "The fraction class $[(1, 1)]_{\mathbb{Q}}$ representing the
+                multiplicative identity $1$."
 Id: "0286b427-e7ba-4c7b-baab-2e7f83324e52"
 
 
@@ -295,7 +339,8 @@ expresses:
     then: add(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d}) = \rational.pair.class:of{n, e}
 Documented:
 . called: "fraction-pair addition"
-. description: "$[(a,b)]+[(c,d)]=[(ad+cb,bd)]$."
+. description: "Fraction addition induced on equivalence classes:
+                $[(a, b)] + [(c, d)] = [(ad+cb, bd)]$."
 Id: "bb76baf9-98f2-4fae-9be3-7dd96eff0d8b"
 
 
@@ -315,7 +360,8 @@ expresses:
     then: mul(\rational.pair.class:of{a, b}, \rational.pair.class:of{c, d}) = \rational.pair.class:of{n, e}
 Documented:
 . called: "fraction-pair multiplication"
-. description: "$[(a,b)]\cdot[(c,d)]=[(ac,bd)]$."
+. description: "Fraction multiplication induced on equivalence classes:
+                $[(a, b)] \cdot [(c, d)] = [(ac, bd)]$."
 Id: "763fb9de-5327-499f-a3c9-aed218accf56"
 
 
@@ -328,7 +374,8 @@ expresses:
   then: neg(\rational.pair.class:of{a, b}) = \rational.pair.class:of{\integer.neg(a), b}
 Documented:
 . called: "fraction-pair negation"
-. description: "$-[(a,b)]=[(-a,b)]$."
+. description: "Fraction negation induced on equivalence classes:
+                $-[(a, b)] = [(-a, b)]$."
 Id: "31f2155e-d1ab-4a4c-b3a8-a319c5bc7097"
 
 
@@ -342,8 +389,8 @@ expresses:
   then: inv(\rational.pair.class:of{a, b}) = \rational.pair.class:of{b, a}
 Documented:
 . called: "fraction-pair reciprocal"
-. description: "Reciprocal swaps numerator and denominator for nonzero classes,
-                with zero sent to zero."
+. description: "Fraction inversion: $[(a, b)]^{-1} = [(b, a)]$ for $a \ne 0$,
+                with $[(0, 1)]^{-1} = [(0, 1)]$."
 Id: "196a8359-eaf0-4536-91c7-319787d07098"
 
 
@@ -371,8 +418,8 @@ expresses:
           . cb \:integer.leq?:/ ad
 Documented:
 . called: "fraction-pair order"
-. description: "Cross-multiplication defines the order, with the comparison
-                reversed when the denominator product is negative."
+. description: "Quotient order defined via cross-multiplication:
+                $[(a, b)] \le [(c, d)] \iff ad(bd) \le cb(bd)$."
 Id: "29f4443f-9ea6-4f02-a62d-b278fbc4501a"
 
 
@@ -391,8 +438,8 @@ Enables:
 . capability: q_ "in" Qb :<->: q_ "in" Q
 Documented:
 . called: "rationals as fractions of integers"
-. description: "The concrete realization of the abstract rational tuple by
-                equivalence classes of nonzero-denominator integer pairs."
+. description: "Canonical realization of $\mathbb{Q}$ as the field of fractions
+                of the integral domain $\mathbb{Z}$."
 Id: "6ef88cb1-eef6-4ced-8f2c-a4fdacaeea4e"
 
 
@@ -439,8 +486,9 @@ then:
   . r \:rational.less?:/ q
 Documented:
 . called: "Density of the Rational Order"
-. description: "Between any two distinct rational numbers lies another rational
-                number."
+. description: "Order density of $\mathbb{Q}$: between any two distinct
+                rationals $p < q$ lies their arithmetic mean
+                $r = \frac{p+q}{2} \in \mathbb{Q}$."
 Proof: """Let $p, q \in \mathbb{Q}$ with $p < q$. We define their midpoint
           (arithmetic mean) as: $$ r = (p + q) \cdot 2^{-1} = \frac{p + q}{2} $$
           where $2 = 1 + 1 \in \mathbb{Q}$. Since $1 > 0$, we have $2 > 0$, and

@@ -31,10 +31,10 @@ Enables:
   written: "x_? \in G?"
 Documented:
 . called: "group"
-. description: "A group is a monoid in which every element $x$ has an inverse
-                $y$, so that $x * y = e = y * x$. Equivalently it is an
-                associative structure with identity in which every element is
-                invertible; this makes it a quasigroup as well as a monoid."
+. description: "A monoid in which every element admits a two-sided inverse.
+                Encodes the mathematical concept of reversible symmetry and
+                group actions, serving as the foundational algebraic structure
+                of geometry, Galois theory, and representation theory."
 Id: "e4d7371d-29bd-431f-ab09-e114fe89e5cf"
 
 
@@ -53,6 +53,9 @@ implicitly:
 specifies: G is \(finite)::monoid
 Documented:
 . adjective: "finite"
+. description: "A group with finite underlying set, so that its order $|G|$ is a
+                natural number. Enables counting techniques such as Lagrange's
+                theorem, Sylow theory, and character theory."
 Id: "28d2a1c1-89a5-4163-93e3-fbc21c97ec9a"
 
 
@@ -232,6 +235,9 @@ satisfies:
   then: x * y = y * x
 Documented:
 . adjective: "abelian"
+. description: "Commutative group structure named for Niels Henrik Abel. All
+                subgroups are automatically normal, giving rise to abelian
+                categories, homology theory, and Pontryagin duality."
 Id: "1dc777cd-31a5-489a-8b5a-05b94c647fb9"
 
 
@@ -249,7 +255,10 @@ given:
 then: (x * y).inv = y.inv * x.inv
 Documented:
 . called: "Inverse of a Product"
-. description: "In any group, $(x * y)^{-1} = y^{-1} * x^{-1}$."
+. description: "Anti-homomorphism property of group inversion:
+                $(x * y)^{-1} = y^{-1} * x^{-1}$. The order of factors reverses
+                because $G$ is in general non-abelian, reflecting the
+                contravariant functoriality of group inversion."
 Proof: """
 To prove that $(x * y)^{-1} = y^{-1} * x^{-1}$, by the uniqueness of inverses it suffices
 to show that $y^{-1} * x^{-1}$ satisfies both defining inverse equations for $x * y$:
@@ -279,7 +288,9 @@ given:
 then: (x.inv).inv = x
 Documented:
 . called: "Double Inversion Law"
-. description: "$(x^{-1})^{-1} = x$ for every element in a group."
+. description: "Involutive property of inversion: $(x^{-1})^{-1} = x$.
+                Guarantees that the inversion map $\iota: G \to G$ is a
+                self-inverse bijection on the carrier set."
 Proof: """By definition, $(x^{-1})^{-1}$ is the unique element $z \in G$
           satisfying:
           $$ x^{-1} * z = e \quad \text{and} \quad z * x^{-1} = e. $$ However,
@@ -308,8 +319,9 @@ where:
 then: y1 = y2
 Documented:
 . called: "Uniqueness of Inverses"
-. description: "If $y_1$ and $y_2$ both act as inverses for $x$, then
-                $y_1 = y_2$."
+. description: "Categorical uniqueness of inverses in a monoid: if $y_1$ is a
+                left inverse and $y_2$ is a right inverse of $x$, associativity
+                forces $y_1 = y_1 * (x * y_2) = (y_1 * x) * y_2 = y_2$."
 Proof: """
 Suppose $y_1$ and $y_2$ both satisfy the equations for an inverse of $x$:
 $x * y_1 = e = y_1 * x$ and $x * y_2 = e = y_2 * x$.
@@ -333,7 +345,10 @@ then:
 . \right.cancellable{a}:in{G}
 Documented:
 . called: "Group Cancellation Laws"
-. description: "Every group element is both left and right cancellable."
+. description: "Regularity of group elements: left and right translation maps
+                $\lambda_a(x) = a * x$ and $\rho_a(x) = x * a$ are injective for
+                every $a \in G$, ensuring no information is lost in group
+                products."
 Proof: """
 Let $a \in G$. To demonstrate left cancellability, suppose $a * x = a * y$ for $x, y \in G$.
 Multiplying both sides on the left by $a^{-1}$ gives:
