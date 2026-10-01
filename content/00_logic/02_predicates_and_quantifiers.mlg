@@ -156,8 +156,10 @@ iff:
   . not: P(x)
 Documented:
 . called: "Negation of a Universal Quantifier"
-. description: "A universal assertion fails exactly when there is a
-                counterexample in its domain."
+. description: "De Morgan duality for infinite conjunctions: the negation of a
+                universal statement $\neg \forall x \in D \, P(x)$ is logically
+                equivalent to the existential assertion of a counterexample
+                $\exists x \in D \, \neg P(x)$."
 Proof: """By definition, the statement $\forall x \in D, P(x)$ is true if and
           only if $P(x)$ holds for every element $x \in D$. Its negation asserts
           that it is false that every element satisfies $P(x)$. This occurs
@@ -181,8 +183,10 @@ iff:
   . not: P(x)
 Documented:
 . called: "Negation of an Existential Quantifier"
-. description: "An existential assertion fails exactly when every element of its
-                domain fails the predicate."
+. description: "De Morgan duality for infinite disjunctions: the negation of an
+                existential statement $\neg \exists x \in D \, P(x)$ is
+                logically equivalent to the universal exhaustion of failures
+                $\forall x \in D \, \neg P(x)$."
 Proof: """By definition, the statement $\exists x \in D, P(x)$ is true if and
           only if there exists at least one witness $x \in D$ satisfying $P(x)$.
           The negation asserts that no such witness exists. In other words,

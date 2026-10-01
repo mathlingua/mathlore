@@ -31,10 +31,9 @@ expresses:
 Documented:
 . called: "direct product of groups $G1?$ and $G2?$"
 . written: "G1? \times G2?"
-. description: "The direct product $G_1 \times G_2$ has as elements the ordered
-                pairs $(x_1, x_2)$ with $x_i \in G_i$, and multiplies them
-                coordinatewise. Its identity is the pair of identities, and it
-                is itself a group."
+. description: "The categorical product $G_1 \times G_2$ in $\mathbf{Grp}$:
+                pairs $(x_1, x_2)$ multiplied componentwise, equipped with
+                canonical projection morphisms."
 Id: "3a354c63-fc8c-4873-9751-62ecc651a5a9"
 
 
@@ -49,6 +48,10 @@ given: G1, G2 is \group
 then: G1 \.group.direct.product./ G2 is? \group
 Documented:
 . called: "Direct Product of Groups is a Group"
+. description: "Componentwise verification that the Cartesian product of two
+                groups inherits associativity, coordinatewise identity
+                $(e_1, e_2)$, and coordinatewise inverses
+                $(x_1^{-1}, x_2^{-1})$."
 Proof: """
 Let $G_1 = (X_1, *_1, e_1)$ and $G_2 = (X_2, *_2, e_2)$ be groups.
 We verify the group axioms for the direct product $G_1 \times G_2$:
@@ -93,9 +96,9 @@ satisfies:
   then: phi(a *_1 b) = phi(a) *_2 phi(b)
 Documented:
 . called: "group homomorphism from $G1?$ to $G2?$"
-. description: "A group homomorphism $\phi : G_1 \rightarrow G_2$ is a
-                structure-preserving map satisfying
-                $\phi(a * b) = \phi(a) * \phi(b)$."
+. description: "A structure-preserving morphism $\phi: G_1 \to G_2$ satisfying
+                $\phi(a * b) = \phi(a) * \phi(b)$, forming the arrows in the
+                category $\mathbf{Grp}$."
 Id: "b3809339-6511-4a87-84eb-8e3278f3524b"
 
 
@@ -113,8 +116,9 @@ when: G is \group
 Documented:
 . called: "center of group $G?$"
 . written: "Z(G?)"
-. description: "The center $Z(G)$ is the subgroup of elements that commute with
-                all elements of $G$."
+. description: "The subgroup $Z(G) = \{z \in G : \forall g \in G, zg = gz\}$ of
+                elements commuting with the entire group, measuring the
+                commutativity of $G$."
 Id: "db5c05bc-8e04-4326-ba15-689df15c140a"
 
 
@@ -124,7 +128,9 @@ when: G1, G2 is \group
 satisfies: phi is? \(bijective)::function:?on{X1}:?to{X2}
 Documented:
 . called: "group isomorphism from $G1?$ to $G2?$"
-. description: "A group isomorphism is a bijective group homomorphism."
+. description: "An invertible group morphism $\phi: G_1 \to G_2$: a bijective
+                homomorphism whose inverse $\phi^{-1}$ is automatically a
+                homomorphism, identifying isomorphic group structures."
 Id: "433926bd-94c4-4124-9338-d0be367f5836"
 
 
@@ -133,6 +139,8 @@ Declares: phi(x__) is \group.isomorphism:from{G}:to{G}
 when: G is \group
 Documented:
 . called: "automorphism of $G?$"
+. description: "A self-isomorphism $\phi: G \to G$, forming the automorphism
+                group $\operatorname{Aut}(G)$ under functional composition."
 Id: "5a92734c-fbb5-481b-83a1-a945d6f59433"
 
 
@@ -151,8 +159,10 @@ then:
     . phi(x.inv) = y.inv
 Documented:
 . called: "Homomorphisms Preserve Identities and Inverses"
-. description: "A group homomorphism maps the identity to the identity and the
-                inverse of each element to the inverse of its image."
+. description: "Every group homomorphism $\phi$ automatically preserves
+                identities ($\phi(e_1) = e_2$) and inverses
+                ($\phi(x^{-1}) = \phi(x)^{-1}$), rendering separate axiomatic
+                conditions redundant."
 Proof: """
 Let $\varphi : G_1 \to G_2$ be a group homomorphism.
 
@@ -207,9 +217,9 @@ then:
     . g * z = m * g
 Documented:
 . called: "The Center is an Abelian Normal Subgroup"
-. description: "The center contains the identity, is closed under products and
-                inverses, is internally commutative, and is invariant under
-                conjugation."
+. description: "The center $Z(G)$ is an abelian characteristic (and hence
+                normal) subgroup of $G$, invariant under all inner automorphisms
+                $g z g^{-1} = z$."
 Proof: """
 Let $G = (X, *, e)$ be a group and $Z = Z(G) = \{z \in G : \forall g \in G, z * g = g * z\}$.
 

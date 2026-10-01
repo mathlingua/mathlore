@@ -30,8 +30,9 @@ satisfies:
   then: T(c \.vector.*./ v) = c \.vector.*./ T(v)
 Documented:
 . called: "linear map from $V?$ to $W?$"
-. description: "A linear transformation $T : V \to W$ is a map preserving vector
-                addition and scalar multiplication."
+. description: "A linear transformation $T: V \to W$ preserving vector addition
+                $T(u+v) = T(u)+T(v)$ and field scaling $T(cv) = cT(v)$, forming
+                morphisms in the category of vector spaces."
 Id: "e18d1a96-65a7-42f8-9f22-8458b4aab35f"
 
 
@@ -57,8 +58,9 @@ when: T is \function:on{V}:to{W}
 Documented:
 . called: "kernel of $T?$"
 . written: "\ker(T?)"
-. description: "The kernel $\ker(T) = \{v \in V \mid T(v) = 0_W\}$ is a subspace
-                of $V$."
+. description: "The null space
+                $\ker(T) = \{v \in V \mid T(v) = 0\} \subseteq V$, measuring
+                non-injectivity and the fibers of $T$."
 Id: "75e0201a-11d9-4c46-8b45-447b6610ca15"
 
 
@@ -79,8 +81,10 @@ when: T is \function:on{V}:to{W}
 Documented:
 . called: "image of $T?$"
 . written: "\operatorname{im}(T?)"
-. description: "The image $\operatorname{im}(T) = \{T(v) \mid v \in V\}$ is a
-                subspace of $W$."
+. description: "The range subspace
+                $\operatorname{im}(T) = \{T(v) \mid v \in V\} \subseteq W$
+                attained by $T$, whose dimension is the rank
+                $\operatorname{rank}(T)$."
 Id: "fa8a1bfb-bd31-4f60-8b55-02e1f4e878f7"
 
 
@@ -99,8 +103,9 @@ satisfies:
   suchThat: T is? \(bijective)::function:?on{V}:?to{W}
 Documented:
 . adjective: "isomorphic"
-. description: "Two vector spaces are isomorphic if there exists a bijective
-                linear transformation between them."
+. description: "Two vector spaces $V \cong W$ identified by an invertible
+                (bijective) linear transformation, equivalent to having
+                identical dimension when finite-dimensional."
 Id: "d1239479-6b9d-429a-b3e5-2e70a1529638"
 
 
@@ -126,8 +131,9 @@ then:
   . d1 = d2 \.natural.+./ d3
 Documented:
 . called: "Rank-Nullity Theorem"
-. description: "For any linear transformation on a finite-dimensional space,
-                $\dim(V) = \dim(\ker T) + \dim(\operatorname{im} T)$."
+. description: "The Fundamental Theorem of Linear Maps:
+                $\dim(V) = \dim(\ker T) + \dim(\operatorname{im} T)$,
+                partitioning domain dimensions between kernel and range."
 Proof: """
 Let $V$ be finite-dimensional with $n = \dim(V)$, and let $T : V \to W$ be a linear transformation.
 The kernel $\ker(T)$ is a subspace of $V$. Let $\{u_1, \dots, u_k\}$ be a basis for $\ker(T)$,
@@ -179,8 +185,9 @@ then: T is? \(injective)::function:?on{V}:?to{W}
 iff: T is? \(surjective)::function:?on{V}:?to{W}
 Documented:
 . called: "Injective--Surjective Equivalence in Equal Dimension"
-. description: "For a linear map between finite-dimensional spaces of equal
-                dimension, injectivity and surjectivity are equivalent."
+. description: "For a linear operator $T: V \to W$ between finite-dimensional
+                spaces with $\dim(V) = \dim(W)$, injectivity, surjectivity, and
+                invertibility are equivalent."
 Proof: """
 Let $\dim(V) = \dim(W) = n < \infty$.
 By the Rank-Nullity Theorem:
@@ -211,5 +218,7 @@ satisfies:
   then: P(P(v)) = P(v)
 Documented:
 . called: "projection on $V?$"
-. description: "A projection is an idempotent linear endomorphism."
+. description: "An idempotent linear operator $P: V \to V$ satisfying $P^2 = P$,
+                inducing a direct sum decomposition
+                $V = \operatorname{im}(P) \oplus \ker(P)$."
 Id: "a9208468-06d8-4617-baef-6970565693b4"

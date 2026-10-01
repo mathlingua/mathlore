@@ -47,7 +47,9 @@ expresses:
 Documented:
 . called: "limit of $f?$ at $x0?$"
 . written: "\lim_{x \to x0?} f?(x)"
-. description: "The limit of $f(x)$ as $x$ approaches $x_0$ equals $L$."
+. description: "The Cauchy-Weierstrass $\epsilon$-$\delta$ limit:
+                $\lim_{x \to x_0} f(x) = L$ asserts that $f(x)$ approaches $L$
+                as $x \to x_0$."
 Id: "3af5db3a-ae38-4af7-876b-a775e8f83089"
 
 
@@ -74,8 +76,8 @@ satisfies:
       then: \real.abs(f(x) \.real.-./ f(x0)) \:real.less?:/ epsilon
 Documented:
 . adjective: "continuous at $x0?$"
-. description: "A function is continuous at a point $x_0$ if small changes in
-                input yield arbitrarily small changes in output."
+. description: "Pointwise continuity at $x_0$: $\lim_{x \to x_0} f(x) = f(x_0)$,
+                preserving limits of convergent sequences."
 Id: "0596242b-c84c-4989-a566-a5e5d1a2c884"
 
 
@@ -88,8 +90,8 @@ satisfies:
   then: f is? \(continuous)::real.function:at{x0}
 Documented:
 . adjective: "continuous"
-. description: "A function is continuous on a domain $U$ if it is continuous at
-                every point of $U$."
+. description: "Global continuity on $U$: continuous at every point $x_0 \in U$,
+                pulling back open sets to open sets."
 Id: "5b60dfb1-186f-4583-9021-23830d2286df"
 
 
@@ -112,8 +114,8 @@ satisfies:
       then: \real.abs(f(x) \.real.-./ f(y)) \:real.less?:/ epsilon
 Documented:
 . adjective: "uniformly continuous"
-. description: "A function is uniformly continuous if a single $\delta$ works
-                across the entire domain."
+. description: "Uniform continuity: a single modulus $\delta(\epsilon) > 0$
+                bounds variation globally across all pairs $x, y \in U$."
 Id: "f69d925b-5ae6-4969-9d22-4d4eeea90a08"
 
 

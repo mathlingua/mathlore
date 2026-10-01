@@ -38,8 +38,9 @@ satisfies:
   then: \set.successor:of{X} "in"? I
 Documented:
 . adjective: "inductive"
-. description: "An inductive set is a set containing the empty set and closed
-                under the set successor operation $X \mapsto X \cup \{X\}$."
+. description: "Dedekind--von Neumann inductive set: contains the empty set
+                $\emptyset$ as initial point and is closed under the successor
+                operator $S(X) = X \cup \{X\}$."
 Id: "68ba43e9-1329-4103-819e-16e20e8e7c9f"
 
 
@@ -71,8 +72,10 @@ Enables:
 Documented:
 . called: "Von Neumann Numerals"
 . written: "\omega"
-. description: "The set $\omega$ of all Von Neumann numerals, the smallest
-                inductive set."
+. description: "The first transfinite limit ordinal $\omega = \mathbb{N}$:
+                defined as the minimal inductive set (the intersection of all
+                inductive supersets), serving as the set-theoretic foundation
+                for discrete counting."
 Justification:
 . [1]
   have: A is \(inductive)::set
@@ -90,8 +93,9 @@ expresses: S(n_) := \set.successor:of{n_}
 Documented:
 . written: "S(n_?)"
 . called: "Von Neumann Successor"
-. description: "The Von Neumann successor function $S(n) = n \cup \{n\}$ on
-                $\omega$."
+. description: "The von Neumann ordinal successor operator
+                $S(n) = n \cup \{n\}$: adjoins $n$ as an element to itself,
+                satisfying $n \in S(n)$ and $n \subsetneq S(n)$."
 Id: "431ccff0-c289-46a7-b739-211c8ae805b4"
 
 
@@ -105,8 +109,9 @@ Enables:
 . capability: x_ "in" Nb :<->: x_ "in" N
 Documented:
 . called: "Von Neumann Naturals"
-. description: "The concrete realization of the Peano natural numbers as the Von
-                Neumann ordinal structure $(\omega, \emptyset, S)$."
+. description: "Categorical realization $(\omega, \emptyset, S)$ validating the
+                second-order Dedekind--Peano axioms within pure
+                Zermelo--Fraenkel set theory."
 Id: "23196d3d-7a1f-44a8-899c-3c39d65bb331"
 
 
@@ -124,6 +129,7 @@ expresses:
 Documented:
 . called: "Von Neumann Numeral Equivalent of $n?$"
 . written: "[n?]"
-. description: "The canonical map from abstract Peano naturals to their Von
-                Neumann set-theoretic numeral representatives."
+. description: "The unique categorical isomorphism from abstract Peano naturals
+                to concrete von Neumann finite ordinals, mapping
+                $0 \mapsto \emptyset$ and intertwining succession."
 Id: "3aa2a394-dea8-48d6-8b73-6ad032408fe2"

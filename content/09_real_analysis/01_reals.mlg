@@ -83,8 +83,11 @@ Enables:
 Documented:
 . called: "the reals"
 . written: "\mathbb{R}"
-. description: "The real numbers $(\mathbb{R}, 0, 1, +, \cdot, \le)$ as a
-                complete ordered field."
+. description: "An ordered field $(\mathbb{R}, +, \cdot, \le, 0, 1)$ satisfying
+                the Dedekind completeness axiom: every non-empty subset bounded
+                above has a least upper bound (supremum). By Tarski's theorem,
+                any two complete Archimedean ordered fields are uniquely
+                isomorphic."
 Id: "aeec4453-1166-47cd-a5f4-3eed295b3d15"
 
 
@@ -98,8 +101,8 @@ Enables:
 . capability: -a_ :=> \real.neg(a_)
 Documented:
 . called: "real"
-. description: "A real number is a member of the underlying carrier set
-                $\mathbb{R}$."
+. description: "A real number in the continuum $\mathbb{R}$, representing a
+                point on the real line or a convergent limit of rationals."
 Id: "cc52bbbc-d925-469e-9252-2fad913ba14b"
 
 
@@ -108,6 +111,8 @@ Defines: z := \reals..0 is \real
 Documented:
 . called: "real zero"
 . written: "0"
+. description: "The additive identity $0 \in \mathbb{R}$ of the complete ordered
+                field of real numbers."
 Id: "945650d9-8dab-4716-b4f7-2714e2219af9"
 
 
@@ -116,6 +121,8 @@ Defines: o := \reals..1 is \real
 Documented:
 . called: "real one"
 . written: "1"
+. description: "The multiplicative identity $1 \in \mathbb{R}$ of the complete
+                ordered field of real numbers."
 Id: "1965d580-9b4d-4d19-93ee-82ebb75d1834"
 
 
@@ -124,6 +131,8 @@ Defines: a_ + b_ := \reals..`+`(a_, b_) is \real
 Documented:
 . called: "$a_?$ plus $b_?$"
 . written: "a_? + b_?"
+. description: "Addition of real numbers $a + b$, forming an abelian group under
+                addition."
 Id: "c6dc7fde-38f1-4e5b-a80a-2153567efe6f"
 
 
@@ -132,6 +141,7 @@ Defines: a_ - b_ := a_ \.real.+./ \real.neg(b_) is \real
 Documented:
 . called: "$a_?$ minus $b_?$"
 . written: "a_? - b_?"
+. description: "Subtraction of real numbers $a - b = a + (-b)$."
 Id: "6daad43c-b638-4a51-b600-4c17a3d9a066"
 
 
@@ -140,6 +150,8 @@ Defines: a_ * b_ := \reals..`*`(a_, b_) is \real
 Documented:
 . called: "$a_?$ times $b_?$"
 . written: "a_? \cdot b_?"
+. description: "Multiplication of real numbers $a \cdot b$, distributing over
+                addition."
 Id: "cde6b01e-d8c3-4996-b69a-1fdca9e69385"
 
 
@@ -148,6 +160,7 @@ Defines: a_ / b_ := a_ \.real.*./ \real.inv(b_) is \real
 Documented:
 . called: "$a_?$ divided by $b_?$"
 . written: "\frac{a_?}{b_?}"
+. description: "Division of real numbers $a / b = a \cdot b^{-1}$ for $b \ne 0$."
 Id: "33d587f9-8ec0-4f27-8c65-42daae86748a"
 
 
@@ -156,6 +169,7 @@ Defines: n := \reals..neg(a_) is \real
 Documented:
 . called: "negative of $a_?$"
 . written: "-a_?"
+. description: "Additive inverse $-a \in \mathbb{R}$ satisfying $a + (-a) = 0$."
 Id: "9b876af6-034f-4fb7-bc5f-af41345891fb"
 
 
@@ -164,6 +178,8 @@ Defines: i := \reals..inv(a_) is \real
 Documented:
 . called: "reciprocal of $a_?$"
 . written: "a_?^{-1}"
+. description: "Multiplicative inverse $a^{-1} \in \mathbb{R}$ satisfying
+                $a \cdot a^{-1} = 1$ for $a \ne 0$."
 Id: "87991f23-c868-4137-af54-b35e2e1d6067"
 
 
@@ -174,6 +190,8 @@ satisfies: \reals..leq(a, b)
 Documented:
 . called: "$a?$ is less than or equal to $b?$"
 . written: "a? \leq b?"
+. description: "The complete Archimedean total order relation $a \le b$ on the
+                real field."
 Id: "d6f542fa-34a7-4359-9b32-78bb28af098a"
 
 
@@ -186,6 +204,8 @@ satisfies:
 Documented:
 . called: "$a?$ is less than $b?$"
 . written: "a? < b?"
+. description: "Strict total order $a < b$ on the real numbers: $a \le b$ and
+                $a \ne b$."
 Id: "5b8f85c7-135a-4702-b5aa-1d61f526ae99"
 
 
@@ -196,6 +216,8 @@ satisfies: b \:real.leq?:/ a
 Documented:
 . called: "$a?$ is greater than or equal to $b?$"
 . written: "a? \geq b?"
+. description: "Converse weak order $a \ge b \iff b \le a$ on the real
+                continuum."
 Id: "53068503-7473-4378-a2bd-d6aa98d1f9d5"
 
 
@@ -206,6 +228,7 @@ satisfies: b \:real.less?:/ a
 Documented:
 . called: "$a?$ is greater than $b?$"
 . written: "a? > b?"
+. description: "Strict converse order $a > b \iff b < a$ on the real continuum."
 Id: "b0fef5ae-f1c8-46ab-b057-4000e9fda5d1"
 
 
@@ -223,7 +246,8 @@ expresses:
 Documented:
 . called: "absolute value of $x_?$"
 . written: "\left| x_? \right|"
-. description: "The absolute value $|x| = x$ if $x \ge 0$ and $-x$ if $x < 0$."
+. description: "The absolute value metric $|x| = \max(x, -x)$, defining the
+                Euclidean distance $d(x, y) = |x - y|$."
 Id: "f75ee806-0ba7-4585-8183-d7f6355ed4cc"
 
 
@@ -243,8 +267,8 @@ expresses:
 Documented:
 . called: "supremum of $S?$"
 . written: "\sup(S?)"
-. description: "The least upper bound (supremum) $\sup(S)$ of a set of real
-                numbers."
+. description: "The least upper bound $\sup(S)$: the unique minimal real number
+                bounding every element of $S$ from above."
 Id: "d9762902-b78e-43a8-981d-47ec829c9552"
 
 
@@ -264,8 +288,8 @@ expresses:
 Documented:
 . called: "infimum of $S?$"
 . written: "\inf(S?)"
-. description: "The greatest lower bound (infimum) $\inf(S)$ of a set of real
-                numbers."
+. description: "The greatest lower bound $\inf(S)$: the unique maximal real
+                number bounding every element of $S$ from below."
 Id: "181bf9bc-8b82-4962-9a70-1f64dd384ea7"
 
 
@@ -292,8 +316,8 @@ then:
   suchThat: sup = \real.supremum:of{S}
 Documented:
 . called: "Completeness of the Real Numbers"
-. description: "Every nonempty set of real numbers bounded above has a least
-                upper bound in $\mathbb{R}$."
+. description: "The Dedekind completeness axiom: every nonempty set of real
+                numbers bounded above has a least upper bound in $\mathbb{R}$."
 Proof: """In the axiomatic characterization of $\mathbb{R}$ as an abstract
           ordered field tuple $(R, 0, 1, +, \cdot, \leq)$, the Least Upper Bound
           property is directly stipulated: for every nonempty subset

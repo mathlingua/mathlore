@@ -24,8 +24,9 @@ when: A, B is \set
 Documented:
 . called: "union of $A?$ and $B?$"
 . written: "A? \cup B?"
-. description: "The union $A \cup B$ is the set containing all elements that
-                belong to $A$, to $B$, or to both."
+. description: "Binary join operation $A \cup B$ in the lattice of subsets:
+                computes the least upper bound of $A$ and $B$ under subset
+                containment."
 Id: "a08ae02b-7a4e-4911-863a-7d929540f193"
 
 
@@ -36,9 +37,9 @@ when: A, B is \set
 Documented:
 . called: "intersection of $A?$ and $B?$"
 . written: "A? \cap B?"
-. description: "The intersection $A \cap B$ is the set of elements common to
-                both $A$ and $B$, containing only those elements that belong to
-                both."
+. description: "Binary meet operation $A \cap B$ in the lattice of subsets:
+                computes the greatest lower bound of $A$ and $B$ under subset
+                containment."
 Id: "5d137355-ba4e-44ca-bf58-2f7b3f667dcc"
 
 
@@ -48,8 +49,9 @@ when: A, B is \set
 Documented:
 . called: "set difference of $A?$ and $B?$"
 . written: "A? \setminus B?"
-. description: "The set difference (relative complement) $A \setminus B$ is the
-                set of elements that belong to $A$ but do not belong to $B$."
+. description: "Relative complement $A \setminus B$ in the Boolean algebra of
+                subsets: removes all elements of $B$ from $A$, formalizing
+                $A \cap B^c$."
 Id: "186de027-9bf6-422d-a2ed-823c94a80b1b"
 
 
@@ -65,7 +67,10 @@ when: A is \set
 Documented:
 . called: "power set of $A?$"
 . written: "\mathcal{P}(A?)"
-. description: "The power set $\mathcal{P}(A)$ is the set of all subsets of $A$."
+. description: "The exponential Boolean algebra $\mathcal{P}(A) = 2^A$ of all
+                subsets of $A$. Endowed with union, intersection, and
+                complementation, it serves as the prototypical complete atomic
+                Boolean algebra."
 Id: "3c3133ac-1cc2-4c76-8e84-fb332c7b08af"
 
 
@@ -82,8 +87,9 @@ when: A, B is \set
 that: (.A \.set.intersect./ B.) = \empty.set
 Documented:
 . called: "$A?$ is disjoint from $B?$"
-. description: "Two sets $A$ and $B$ are disjoint if their intersection is
-                empty: $A \cap B = \emptyset$."
+. description: "Orthogonality relation in the subset lattice:
+                $A \cap B = \emptyset$. Asserts that $A$ and $B$ share no common
+                elements, partitioning their union into independent components."
 Id: "3607e1a0-1e2c-40e7-93f1-728cdec9968e"
 
 
@@ -106,8 +112,9 @@ then:
 . (.A \.set.intersect./ B.) = (.B \.set.intersect./ A.)
 Documented:
 . called: "Commutativity of Set Operations"
-. description: "Union and intersection are commutative: $A \cup B = B \cup A$
-                and $A \cap B = B \cap A$."
+. description: "Symmetry of binary lattice operations: $A \cup B = B \cup A$ and
+                $A \cap B = B \cap A$, inheriting the abelian symmetries of
+                propositional disjunction and conjunction."
 Proof: """By definition, $x \in A \cup B \iff x \in A \lor x \in B$.
           Because logical disjunction is commutative,
           $x \in A \lor x \in B \iff x \in B \lor x \in A \iff x \in B \cup A$.
@@ -128,8 +135,10 @@ given: A is \set
 then: (.A \.set.union./ \empty.set.) = A
 Documented:
 . called: "Empty Set Union Identity"
-. description: "Union of any set $A$ with the empty set yields $A$:
-                $A \cup \emptyset = A$."
+. description: "Absorption identity for the lattice bottom: the empty set acts
+                as the identity element for set union ($A \cup \emptyset = A$),
+                giving $(\mathcal{P}(U), \cup, \emptyset)$ the structure of a
+                commutative monoid."
 Proof: """An element $x$ belongs to $A \cup \emptyset$ if and only if
           $x \in A \lor x \in \emptyset$. Since $\emptyset$ has no members, the
           predicate $x \in \emptyset$ is identically false for all $x$. Thus
@@ -158,9 +167,10 @@ then:
 . (.U \.set.difference./ (.A \.set.intersect./ B.).) = (.(.U \.set.difference./ A.) \.set.union./ (.U \.set.difference./ B.).)
 Documented:
 . called: "Boolean Laws for Subsets"
-. description: "Relative to a fixed universe, union and intersection are
-                associative, commutative, idempotent, mutually distributive, and
-                satisfy De Morgan's laws for relative complements."
+. description: "The complete equational axiom system for the Boolean algebra
+                $(\mathcal{P}(U), \cup, \cap, \setminus, \emptyset, U)$:
+                associativity, commutativity, idempotence, absorption, mutual
+                distributivity, and De Morgan duality."
 Proof: """Each equality follows by converting the set membership condition
           into the corresponding propositional equivalence and invoking the
           Axiom of Extensionality. For De Morgan's first law,
@@ -181,15 +191,16 @@ then:
 . (.A \.set.intersect./ C.) \:subset?:/ (.B \.set.intersect./ C.)
 Documented:
 . called: "Monotonicity of Set Intersection"
-. description: "If $A$, $B$, and $C$ are sets and $A \subseteq B$, then
-                $A \cap C \subseteq B \cap C$."
+. description: "Order-preserving functoriality of intersection:
+                $A \subseteq B \implies A \cap C \subseteq B \cap C$, ensuring
+                monotonicity with respect to the subset inclusion order."
 Proof: "Let $x \in A \cap C$. By the definition of intersection, $x \in A$ and
         $x \in C$. Since $A \subseteq B$ and $x \in A$, we have $x \in B$.
-        Because $x \in B$ and $x \in C$, it follows that $x \in B \cap C$.
-        Since this holds for every element $x \in A \cap C$, we conclude that
-        $A \cap C \subseteq B \cap C$. Citations: David S. Dummit and Richard
-        M. Foote, Abstract Algebra (3rd ed., John Wiley & Sons, 2004, Chapter
-        0, Section 0.1, p. 2)."
+        Because $x \in B$ and $x \in C$, it follows that $x \in B \cap C$. Since
+        this holds for every element $x \in A \cap C$, we conclude that
+        $A \cap C \subseteq B \cap C$. Citations: David S. Dummit and Richard M.
+        Foote, Abstract Algebra (3rd ed., John Wiley & Sons, 2004, Chapter 0,
+        Section 0.1, p. 2)."
 Id: "8eef4e40-5929-41a3-ba81-74145b1e5bcd"
 
 
@@ -212,8 +223,9 @@ expresses:
 Documented:
 . called: "union of the family $A?$ over $I?$"
 . written: "\bigcup_{i?\in I?} A?_{i?}"
-. description: "An element belongs to the indexed union exactly when it belongs
-                to at least one member of the family."
+. description: "Arbitrary supremum $\bigcup_{i \in I} A_i$ in the complete
+                Boolean lattice $\mathcal{P}(U)$: collects all elements
+                belonging to at least one component of the indexed family."
 Id: "b256bfcd-6772-4a1f-9609-210bae9d3b11"
 
 
@@ -236,9 +248,9 @@ expresses:
 Documented:
 . called: "intersection of the family $A?$ over $I?$ in $U?$"
 . written: "\bigcap_{i?\in I?} A?_{i?}"
-. description: "An element of the ambient universe belongs to the indexed
-                intersection exactly when it belongs to every member of the
-                family. Naming $U$ makes the empty intersection unambiguous."
+. description: "Arbitrary infimum $\bigcap_{i \in I} A_i$ in the complete
+                Boolean lattice $\mathcal{P}(U)$: collects elements common to
+                all components of the indexed family relative to universe $U$."
 Id: "3afa1a1b-3d36-437f-baca-56a07eae43c0"
 
 
@@ -252,8 +264,10 @@ then:
 . \indexed.intersection:of{A}:over{I}:in{U} = U
 Documented:
 . called: "Empty Indexed Union and Intersection"
-. description: "The union of an empty family is empty, while its intersection is
-                the explicitly supplied ambient universe."
+. description: "Extremal boundary evaluations for empty index families: vacuous
+                quantification forces
+                $\bigcup_{i \in \emptyset} A_i = \emptyset = \bot$ and
+                $\bigcap_{i \in \emptyset} A_i = U = \top$."
 Proof: """For the indexed union, $x \in \bigcup_{i \in \emptyset} A_i$ requires
           the existence of an index $i \in \emptyset$ such that $x \in A_i$.
           Because $\emptyset$ contains no indices, this existential condition is

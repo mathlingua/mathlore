@@ -43,10 +43,11 @@ Enables:
   capability: x_ "in" X :<->: x_ member_of Y
 Documented:
 . called: "set"
-. description: "A set is the sole primitive object of the theory. The only
-                question one may put to a set is which sets are its members, and
-                two sets with the same members are the same set. Every other
-                object built in this collection is ultimately a set."
+. description: "The primitive ontological entity in Zermelo--Fraenkel set
+                theory. A pure set contains only other sets, completely
+                identified by its membership relation via extensionality,
+                providing the universal canvas for constructing mathematical
+                objects."
 Id: "a0759217-e1f6-412c-982a-0038cd17a3a1"
 
 
@@ -95,9 +96,10 @@ expresses:
 Documented:
 . called: "empty set"
 . written: "\emptyset"
-. description: "The empty set $\emptyset$ is the unique set having no members
-                whatsoever. It is the seed from which the entire universe of
-                sets -- and eventually the natural number $0$ -- is grown."
+. description: "The unique bottom element $\emptyset = \varnothing$ of the
+                subset lattice possessing no members. Serves as the base layer
+                $V_0$ of the von Neumann universe and represents the natural
+                number $0$."
 Id: "96908ddf-5fc5-455d-9cfd-eaf0fd6ada38"
 
 
@@ -163,10 +165,10 @@ where:
 then: X = Y
 Documented:
 . called: "Axiom of Extensionality"
-. description: "Two sets are equal if and only if they have exactly the same
-                elements. The identity of a set is therefore nothing more than
-                the collection of its members, so any two constructions that
-                yield the same elements yield the same set."
+. description: "The fundamental identity criterion in set theory: sets with
+                identical elements are identical ($X = Y$). Replaces intensional
+                definitions with purely extensional equality, asserting that
+                sets possess neither internal order nor multiplicity."
 Id: "6fc3a89f-f8ef-420e-b1b6-6e5ed4905611"
 
 
@@ -188,9 +190,10 @@ then:
     then: (.Z "in"? U.) \.iff./ ((.Z = X.) \.or./ (.Z = Y.))
 Documented:
 . called: "Axiom of Pairing"
-. description: "For any two sets $X$ and $Y$ there is a set $U$ whose members
-                are exactly $X$ and $Y$. Applying it with $X = Y$ produces the
-                set whose only member is $X$."
+. description: "The elementary aggregation mechanism forming the unordered pair
+                $\{X, Y\}$. When $X = Y$, it generates the singleton $\{X\}$,
+                enabling the construction of Kuratowski ordered pairs
+                $(X, Y) = \{\{X\}, \{X, Y\}\}$."
 Id: "3219aca1-fba1-42a6-9a1f-209aa430c677"
 
 
@@ -218,10 +221,9 @@ then:
         . Z "in"? W
 Documented:
 . called: "Axiom of Union"
-. description: "For a set $X$ whose members are themselves sets, there is a set
-                $U$ containing exactly those $Z$ that belong to some member $W$
-                of $X$. It flattens one level of nesting, combining the elements
-                of all the members of $X$."
+. description: "The monadic flattening operation $\bigcup X$ collapsing one
+                level of hierarchical nesting: collects every element belonging
+                to at least one member of $X$."
 Id: "60bcea09-6bf1-4917-b90f-64ceeb941558"
 
 
@@ -245,9 +247,10 @@ then:
     then: (.x "in"? P.) \.iff./ (.x \:subset?:/ A.)
 Documented:
 . called: "Axiom of Power Set"
-. description: "For every set $A$ there is a set $P$ whose members are exactly
-                the subsets of $A$. This power set collects together all of the
-                ways of selecting elements from $A$."
+. description: "The exponential size-escalation axiom forming
+                $\mathcal{P}(A) = 2^A$. By Cantor's diagonal theorem,
+                $|\mathcal{P}(A)| > |A|$, guaranteeing an unbounded hierarchy of
+                transfinite cardinalities."
 Id: "8557cdb3-e02f-4b75-aed1-3dfd1cdee895"
 
 
@@ -271,7 +274,8 @@ then:
       then: (.Y "in"? I.) \.implies./ (.\set.successor:of{Y} "in"? I.)
 Documented:
 . called: "Axiom of Infinity"
-. description: "There is a set $I$ that contains the empty set and is closed
-                under the successor operation. Such a set cannot be finite, so
-                this axiom is what first admits an infinite set into the theory."
+. description: "The transfinite bridge postulating a limit stage closed under
+                von Neumann succession $S(Y) = Y \cup \{Y\}$. Guarantees the
+                existence of an infinite Dedekind set, providing the foundation
+                for $\mathbb{N}$ and arithmetic analysis."
 Id: "a0f45971-fcc1-419b-bcd5-f4c4717bb37f"

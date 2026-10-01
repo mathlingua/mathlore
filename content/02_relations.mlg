@@ -39,9 +39,16 @@ Documented:
 Id: "5ace60a2-cc66-4cea-818a-538f877b5f97"
 
 
-Text: "A relation $R$ on $X$ is *reflexive* when every element is related to
-       itself: $\forall x \in X, x \mathrel{R} x$. In geometric terms, this
-       means $R$ contains the diagonal $\Delta_X = \{(x, x) : x \in X\}$."
+Text: "Relations furnish the primary mechanism for endowing raw sets with
+       geometric and algebraic architecture. Rather than treating reflexivity,
+       symmetry, and transitivity as isolated boolean flags, we view them as
+       foundational geometric constraints on the product graph
+       $R \subseteq X \times X$. Reflexivity ensures that every point is
+       anchored to the diagonal $\Delta_X$; symmetry guarantees invariance under
+       coordinate transposition $(x,y) \mapsto (y,x)$; and transitivity enforces
+       path connectivity across relational chains. When united, these three
+       properties partition the underlying universe into disjoint equivalence
+       classes, collapsing local indistinguishability into quotient spaces."
 Id: "35a87f95-8d23-44a0-ae4f-70d4384a3db6"
 
 
@@ -53,14 +60,18 @@ satisfies:
   then: R(x, x)
 Documented:
 . adjective: "reflexive"
-. description: "A relation $R$ on $X$ is reflexive if $x \mathrel{R} x$ for all
-                $x \in X$."
+. description: "Geometric containment of the diagonal relation
+                $\Delta_X \subseteq R$. In categorical and relational terms,
+                reflexivity guarantees that the identity morphism $1_X$ factors
+                through $R$, ensuring every element serves as an admissible
+                self-reference."
 Id: "8db6967b-79de-4fd6-8769-fcd651c7c6ee"
 
 
-Text: "A relation $R$ on $X$ is *symmetric* when the direction of relatedness is
-       bidirectional: $x \mathrel{R} y \implies y \mathrel{R} x$. In relational
-       algebra, symmetry is equivalent to the identity $R = R^{-1}$."
+Text: "Symmetry eliminates relational orientation, guaranteeing that every
+       directed edge $x \mathrel{R} y$ is accompanied by its return edge
+       $y \mathrel{R} x$. In the algebra of relations, symmetry signifies
+       complete self-adjointness: $R = R^{-1}$."
 Id: "b2c8da90-8a30-4542-a3a3-f81bf989953a"
 
 
@@ -73,16 +84,18 @@ satisfies:
   then: R(y, x)
 Documented:
 . adjective: "symmetric"
-. description: "A relation $R$ on $X$ is symmetric if $x \mathrel{R} y$ implies
-                $y \mathrel{R} x$."
+. description: "Invariance under relational inversion $R = R^{-1}$. Symmetry
+                guarantees that directed relational edges collapse into
+                unoriented geometric adjacency, eliminating arrow
+                directionality."
 Id: "273288f5-a313-4140-a28c-16ac7e8ba72b"
 
 
-Text: "A relation $R$ on $X$ is *transitive* when connections bridge across
-       intermediate nodes:
-       $x \mathrel{R} y \land y \mathrel{R} z \implies x \mathrel{R} z$.
-       Transitivity is the algebraic guarantee that local relationships cohere
-       into global reachability."
+Text: "Transitivity transforms localized pairwise steps into global
+       reachability: whenever $x$ connects to $y$ and $y$ connects to $z$, an
+       immediate shortcut connects $x$ directly to $z$. In terms of relational
+       composition, this guarantees idempotence under self-multiplication:
+       $R \circ R \subseteq R$."
 Id: "5965ba24-25b8-4a16-92fc-035988cfb21c"
 
 
@@ -97,16 +110,17 @@ satisfies:
   then: R(x, z)
 Documented:
 . adjective: "transitive"
-. description: "A relation $R$ on $X$ is transitive if $x \mathrel{R} y$ and
-                $y \mathrel{R} z$ imply $x \mathrel{R} z$."
+. description: "Idempotence under relational composition
+                $R \circ R \subseteq R$. Transitivity transforms localized
+                pairwise steps into global reachability, ensuring that
+                intermediate connective nodes do not obstruct direct relation."
 Id: "8baba6bf-25f4-48b4-84f9-4b2db59ccf47"
 
 
-Text: "A relation $R$ on $X$ is *antisymmetric* when cycles of length two can
-       only occur trivially:
-       $x \mathrel{R} y \land y \mathrel{R} x \implies x = y$. Antisymmetry
-       prohibits mutual preference between distinct elements, serving as the
-       defining non-symmetric property of orders."
+Text: "Antisymmetry imposes the strict absence of non-trivial 2-cycles: if $x$
+       and $y$ mutually relate to one another, they must collapse into the same
+       point. It stands as the polar opposite of symmetry, supplying the
+       directional rigidity required to define order and hierarchy."
 Id: "bdbeccce-dfdb-4d54-8b0c-92cae82c56d7"
 
 
@@ -121,13 +135,16 @@ satisfies:
   then: x = y
 Documented:
 . adjective: "antisymmetric"
-. description: "A relation $R$ on $X$ is antisymmetric if $x \mathrel{R} y$ and
-                $y \mathrel{R} x$ imply $x = y$."
+. description: "Obstruction to non-trivial cyclic 2-paths
+                $R \cap R^{-1} \subseteq \Delta_X$. Antisymmetry prevents mutual
+                dominance between distinct entities, establishing the
+                directional rigidity characteristic of orders."
 Id: "8ed4e2b2-f1b7-4131-8ae2-2834e71805fa"
 
 
-Text: "The *inverse relation* (or converse) $R^{-1}$ reverses the direction of
-       all ordered pairs: $(y, x) \in R^{-1} \iff (x, y) \in R$."
+Text: "The *inverse relation* (or converse) $R^{-1}$ reverses the orientation of
+       every relational pair: $(y, x) \in R^{-1} \iff (x, y) \in R$. It embodies
+       the contravariant operation that switches sources and targets."
 Id: "ece9bae3-c088-459e-9cd1-7a650d9b3681"
 
 
@@ -143,8 +160,10 @@ expresses:
 Documented:
 . called: "inverse relation of $R?$"
 . written: "R+?^{-1}"
-. description: "The inverse relation $R^{-1}$ consists of all pairs $(x, y)$
-                such that $(y, x) \in R$."
+. description: "The transpose or converse relation exchanging input and output
+                coordinates $(x, y) \mapsto (y, x)$. In relational algebra and
+                category theory, it realizes the contravariant dagger functor on
+                the category of relations."
 Id: "b182f12e-f94f-40e7-b5b7-c84dd243c262"
 
 
@@ -179,11 +198,11 @@ satisfies:
   then: R(x, z)
 Documented:
 . called: "equivalence relation on $X?$"
-. description: "An equivalence relation on $X$ is a relation that is reflexive
-                ($x \mathrel{R} x$), symmetric (if $x \mathrel{R} y$ then $y
-                \mathrel{R} x$), and transitive (if $x \mathrel{R} y$ and $y
-                \mathrel{R} z$ then $x \mathrel{R} z$). Such a relation sorts the
-                elements of $X$ into classes of mutually related elements."
+. description: "The relational abstraction of mathematical identity modulo an
+                invariant. By combining diagonal inclusion (reflexivity),
+                directional symmetry, and composite transitivity, an equivalence
+                relation decomposes the space $X$ into an exact partition of
+                mutually disjoint fibers."
 Id: "2394a97b-5960-4919-98db-b95ec3870343"
 
 
@@ -204,10 +223,9 @@ when:
 Documented:
 . called: "equivalence class of $x?$ on $R?$"
 . written: "\left [ x? \right ]_{R?}"
-. description: "The equivalence class $[x]_R$ of an element $x$ is the set of
-                all elements related to $x$ by $R$. Every element lies in
-                exactly one class, and two elements share a class precisely when
-                they are related."
+. description: "The fiber or cluster of all elements indistinguishable from $x$
+                under $R$. Equivalence classes form the atomic points of the
+                quotient geometry $X / R$."
 Id: "2fae575c-13c9-498b-b14a-e471f0e3cfdc"
 
 
@@ -228,10 +246,10 @@ when:
 Documented:
 . called: "$X?$ mod $R?$"
 . written: "X? / R?"
-. description: "The quotient set $X / R$ is the set whose elements are the
-                equivalence classes of $R$. It collapses each class to a single
-                point, so that elements related by $R$ become equal in the
-                quotient."
+. description: "The quotient space constructed by identifying mutually related
+                elements. The canonical projection $\pi: X \to X/R$
+                universalizes the process of structural abstraction by factoring
+                out irrelevant relational variation."
 Id: "cea0d898-a18d-44dc-b04c-ffb2f0cde26e"
 
 
@@ -248,8 +266,10 @@ satisfies:
     . x "in"? A
 Documented:
 . called: "partition of $X?$"
-. description: "A partition is a family of nonempty subsets in which every
-                element of $X$ lies in exactly one block."
+. description: "A decomposition of $X$ into mutually disjoint, collectively
+                exhaustive non-empty cells. The fundamental theorem of
+                equivalence relations establishes a canonical bijection between
+                equivalence relations on $X$ and partitions of $X$."
 Id: "4c2d728b-0359-432c-afc5-371028a71eba"
 
 
@@ -290,8 +310,10 @@ satisfies:
   then: R(x, z)
 Documented:
 . called: "partial order on $X?$"
-. description: "A partial order on $X$ is a reflexive, antisymmetric, and
-                transitive relation."
+. description: "An axiomatic model of hierarchical comparison. Combining
+                reflexivity, transitivity, and antisymmetry, a partial order
+                allows incomparable elements, serving as the foundation for
+                order theory, domain theory, and lattice theory."
 Id: "656a5a0a-77e8-42ea-857c-4f7d8eda00ac"
 
 
@@ -306,8 +328,9 @@ satisfies:
     . R(y, x)
 Documented:
 . called: "total order on $X?$"
-. description: "A total (or linear) order on $X$ is a partial order in which
-                every two elements are comparable."
+. description: "A linear order leaving no pairs incomparable (satisfying
+                totality). Models linear continua and discrete progressions such
+                as the natural numbers and the real number line."
 Id: "40d12e9b-449e-49b9-a292-9388147d3e69"
 
 
@@ -327,7 +350,9 @@ expresses:
   then: S \:subset?:/ T
 Documented:
 . called: "reflexive closure of $R?$ on $X?$"
-. description: "The least reflexive relation on $X$ containing $R$."
+. description: "The minimal reflexive enlargement $R \cup \Delta_X$. Adjoins
+                only the necessary self-loops to satisfy reflexivity without
+                introducing extraneous relations."
 Id: "38e1561b-dcdb-4e2e-8ba0-53ef665a0c33"
 
 
@@ -343,7 +368,9 @@ expresses:
   then: S \:subset?:/ T
 Documented:
 . called: "symmetric closure of $R?$ on $X?$"
-. description: "The least symmetric relation on $X$ containing $R$."
+. description: "The minimal symmetric enlargement $R \cup R^{-1}$. Forges
+                bidirectional edges across every existing directed pair,
+                rendering the relational graph undirected."
 Id: "ce0a9702-4034-4063-a435-5eafa76158cf"
 
 
@@ -359,7 +386,9 @@ expresses:
   then: S \:subset?:/ T
 Documented:
 . called: "transitive closure of $R?$ on $X?$"
-. description: "The least transitive relation on $X$ containing $R$."
+. description: "The minimal transitive enlargement $\bigcup_{n \ge 1} R^n$. In
+                graph theory, it computes complete path reachability across
+                arbitrary finite relational chains."
 Id: "bd748bdf-4d7a-442b-bf35-4724dd70775c"
 
 
@@ -375,8 +404,10 @@ expresses:
   then: S \:subset?:/ T
 Documented:
 . called: "reflexive--transitive closure of $R?$ on $X?$"
-. description: "The least reflexive and transitive relation on $X$ containing
-                $R$."
+. description: "The preorder closure $R^* = \bigcup_{n \ge 0} R^n$, combining
+                path reachability with trivial self-loops. Serves as the
+                operational semantics for multistep computational transitions
+                and reductions."
 Id: "374659d6-cfcc-4262-b98e-b50207d16c18"
 
 
@@ -395,8 +426,10 @@ given:
 then: X \.mod./ R is? \partition:of{X}
 Documented:
 . called: "Equivalence Classes Form a Partition"
-. description: "The quotient by an equivalence relation is the partition of the
-                domain into its equivalence classes."
+. description: "The canonical isomorphism between the quotient structure $X / R$
+                and a set-theoretic partition of $X$. Transitivity and symmetry
+                guarantee that overlapping equivalence classes must strictly
+                coincide."
 Proof: """Let $R$ be an equivalence relation on $X$. We verify the defining
           properties of a partition for the quotient $X / R$:
           1. *Nonemptiness of blocks*: For each $x \in X$, reflexivity gives
@@ -436,8 +469,9 @@ then:
         . y "in"? A
 Documented:
 . called: "A Partition Determines an Equivalence Relation"
-. description: "Two elements are equivalent precisely when they belong to the
-                same block of the partition."
+. description: "The inverse construction to quotienting: any partition of $X$
+                canonically reconstructs an equivalence relation whose classes
+                are precisely the partition blocks."
 Proof: """Let $P$ be a partition of $X$. Define a relation $R$ by
           $x \mathrel{R} y$ if and only if there exists a block $A \in P$ such
           that $x \in A$ and $y \in A$. We verify that $R$ is an equivalence
@@ -470,9 +504,10 @@ that:
     . R(m, x)
 Documented:
 . called: "$m?$ is maximal in $X?$ under $R?$"
-. description: "A maximal element has no distinct element strictly above it. In
-                a non-total poset, a set may possess multiple distinct maximal
-                elements."
+. description: "An element having no strictly greater successor. In partially
+                ordered structures, maximal elements need not be unique and need
+                not dominate all other elements, a crucial distinction in Zorn's
+                lemma."
 Id: "690ee3e8-39a6-4853-8df9-7d0b9e1cec5a"
 
 
@@ -487,9 +522,9 @@ that:
   then: R(x, g)
 Documented:
 . called: "$g?$ is the greatest element of $X?$ under $R?$"
-. description: "The greatest element (maximum) exceeds or equals every element
-                of $X$. If a greatest element exists, it is unique and is the
-                unique maximal element."
+. description: "The top element dominating all other elements in $X$. When it
+                exists, the greatest element is uniquely determined and
+                coincides with the sole maximal element."
 Id: "8c3b1160-03ac-4f70-856f-8dbdff0cba12"
 
 
@@ -507,7 +542,8 @@ that:
     . R(x, m)
 Documented:
 . called: "$m?$ is minimal in $X?$ under $R?$"
-. description: "A minimal element has no distinct element strictly below it."
+. description: "An element having no strictly smaller predecessor. Multiple
+                incomparable minimal elements can coexist in non-linear posets."
 Id: "3c3478fa-e156-4364-9c53-3577a60d7dd9"
 
 
@@ -522,9 +558,9 @@ that:
   then: R(l, x)
 Documented:
 . called: "$l?$ is the least element of $X?$ under $R?$"
-. description: "The least element (minimum) is smaller than or equal to every
-                element of $X$. If a least element exists, it is unique and is
-                the unique minimal element."
+. description: "The bottom element subordinate to every element in $X$. When
+                present, it is unique and forms the foundation for well-founded
+                induction and complete partial orders."
 Id: "33141ee6-c2fe-4116-8eff-3b6064d5d4e3"
 
 
@@ -557,6 +593,8 @@ satisfies:
   then: R(join(a, b), x)
 Documented:
 . called: "lattice"
-. description: "A lattice is a partially ordered set in which each pair has a
-                greatest lower bound and a least upper bound."
+. description: "An algebraic poset where every two-element subset possesses a
+                unique infimum (meet) and supremum (join). Unifies propositional
+                logic (Boolean algebras), topology (frames/locales), and
+                abstract geometry."
 Id: "1454c69c-e96e-4c4e-98e4-7736db0ef0a7"

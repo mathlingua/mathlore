@@ -60,8 +60,9 @@ Enables:
 Documented:
 . called: "the complex numbers"
 . written: "\mathbb{C}"
-. description: "The field of complex numbers, realizable as
-                $\mathbb{R}[t]/(t^2+1)$ with $i$ the residue class of $t$."
+. description: "The algebraically closed field $(\mathbb{C}, +, \cdot)$ obtained
+                by adjoining the imaginary unit $i = \sqrt{-1}$ to $\mathbb{R}$,
+                realizable as $\mathbb{R}[t]/(t^2+1)$ or $\mathbb{R}^2$."
 Id: "19cb593a-f9c4-4ac8-82b7-2f32e590b67a"
 
 
@@ -75,7 +76,8 @@ Enables:
 . capability: -a_ :=> \complex.neg(a_)
 Documented:
 . called: "complex"
-. description: "A complex number is an element of $\mathbb{C}$."
+. description: "A complex number $z = x + iy \in \mathbb{C}$, representing a
+                point in the Argand plane."
 Id: "af678a67-39ff-4563-a687-c4019d154b5a"
 
 
@@ -84,6 +86,7 @@ Defines: z := \complex.numbers..0 is \complex
 Documented:
 . called: "complex zero"
 . written: "0"
+. description: "The additive identity $0 \in \mathbb{C}$ of the complex field."
 Id: "f278c550-28e5-44ec-93d2-4842994848fb"
 
 
@@ -92,6 +95,8 @@ Defines: o := \complex.numbers..1 is \complex
 Documented:
 . called: "complex one"
 . written: "1"
+. description: "The multiplicative identity $1 \in \mathbb{C}$ of the complex
+                field."
 Id: "09630bb3-b7f2-4eb9-b9c7-b0ccb59b191f"
 
 
@@ -100,6 +105,8 @@ Defines: a_ + b_ := \complex.numbers..`+`(a_, b_) is \complex
 Documented:
 . called: "$a_?$ plus $b_?$"
 . written: "a_? + b_?"
+. description: "Addition of complex numbers
+                $(x_1 + i y_1) + (x_2 + i y_2) = (x_1 + x_2) + i(y_1 + y_2)$."
 Id: "10bb451f-8177-4d04-81a7-2ac67de483d0"
 
 
@@ -108,6 +115,7 @@ Defines: a_ - b_ := \complex.numbers..`-`(a_, b_) is \complex
 Documented:
 . called: "$a_?$ minus $b_?$"
 . written: "a_? - b_?"
+. description: "Subtraction of complex numbers $a - b = a + (-b)$."
 Id: "6fd7f728-8217-40bf-9d81-750e40ea2b6e"
 
 
@@ -116,6 +124,8 @@ Defines: a_ * b_ := \complex.numbers..`*`(a_, b_) is \complex
 Documented:
 . called: "$a_?$ times $b_?$"
 . written: "a_? \cdot b_?"
+. description: "Multiplication of complex numbers
+                $(x_1 + i y_1)(x_2 + i y_2) = (x_1 x_2 - y_1 y_2) + i(x_1 y_2 + x_2 y_1)$."
 Id: "27f9f3f8-5272-4083-9fa0-e7a4948a4362"
 
 
@@ -124,6 +134,8 @@ Defines: a_ / b_ := \complex.numbers..`/`(a_, b_) is \complex
 Documented:
 . called: "$a_?$ divided by $b_?$"
 . written: "\frac{a_?}{b_?}"
+. description: "Division of complex numbers
+                $a / b = a \cdot \overline{b} / |b|^2$ for $b \ne 0$."
 Id: "16fc3b48-1abc-4a63-b4d4-b4c5c144b20b"
 
 
@@ -132,6 +144,7 @@ Defines: n := \complex.numbers..neg(a_) is \complex
 Documented:
 . called: "negative of $a_?$"
 . written: "-a_?"
+. description: "Additive inverse $-z = -x - iy \in \mathbb{C}$."
 Id: "c849f3cc-4b38-40ae-8f55-aa9168f00682"
 
 
@@ -140,7 +153,7 @@ Defines: unit := \complex.numbers..i is \complex
 Documented:
 . called: "imaginary unit"
 . written: "i"
-. description: "The imaginary unit $i$ satisfying $i^2 = -1$."
+. description: "The imaginary unit $i = (0, 1)$ satisfying $i^2 = -1$."
 Id: "b5855839-892d-4a4b-a116-7a66ef02df5d"
 
 
@@ -156,7 +169,8 @@ expresses:
 Documented:
 . called: "real part of $z_?$"
 . written: "\operatorname{Re}(z_?)"
-. description: "The real component $\operatorname{Re}(z)$ of a complex number."
+. description: "The real projection
+                $\operatorname{Re}(z) = x = \frac{z + \overline{z}}{2}$."
 Id: "ac392c5f-3f42-42d6-8313-5e4cbd764f89"
 
 
@@ -168,8 +182,8 @@ expresses:
 Documented:
 . called: "imaginary part of $z_?$"
 . written: "\operatorname{Im}(z_?)"
-. description: "The imaginary component $\operatorname{Im}(z)$ of a complex
-                number."
+. description: "The imaginary projection
+                $\operatorname{Im}(z) = y = \frac{z - \overline{z}}{2i}$."
 Id: "962d90fc-e3db-40b5-8c43-91c21277ac0a"
 
 
@@ -179,8 +193,8 @@ expresses: zbar = \complex.real.part(z_) \.complex.-./ (\complex.imaginary.part(
 Documented:
 . called: "complex conjugate of $z_?$"
 . written: "\overline{z_?}"
-. description: "The complex conjugate
-                $\overline{z} = \operatorname{Re}(z) - i \operatorname{Im}(z)$."
+. description: "Complex conjugation $\overline{z} = x - iy$, the reflection
+                automorphism across the real axis."
 Id: "45f1544a-4db7-477a-8d89-b42698988732"
 
 
@@ -192,8 +206,9 @@ expresses:
 Documented:
 . called: "modulus of $z_?$"
 . written: "\left| z_? \right|"
-. description: "The modulus (absolute value)
-                $|z| = \sqrt{\operatorname{Re}(z)^2 + \operatorname{Im}(z)^2}$."
+. description: "The Euclidean modulus
+                $|z| = \sqrt{x^2 + y^2} = \sqrt{z\overline{z}}$, measuring
+                distance from the origin."
 Id: "e5faf733-3580-4323-921a-0809252cada9"
 
 
@@ -267,8 +282,8 @@ then:
   then: \complex.one \.complex.div./ z = \complex.conjugate(z) \.complex.div./ (\complex.modulus(z) \.real.*./ \complex.modulus(z))
 Documented:
 . called: "Algebraic Laws of Complex Conjugation"
-. description: "Conjugation preserves addition and multiplication, and its
-                product with the original number is the squared modulus."
+. description: "Fundamental algebraic laws of conjugation: additivity,
+                multiplicativity, and $z\overline{z} = |z|^2$."
 Proof: """
   Let $z = x_1 + i y_1$ and $w = x_2 + i y_2$ with $x_1, x_2, y_1, y_2 \in \mathbb{R}$.
 
@@ -320,7 +335,9 @@ then:
 . \complex.modulus(z \.complex.+./ w) \:real.leq?:/ \complex.modulus(z) \.real.+./ \complex.modulus(w)
 Documented:
 . called: "Multiplicativity and Triangle Inequality for the Complex Modulus"
-. description: "The complex modulus is multiplicative and subadditive."
+. description: "The modulus is strictly multiplicative $|zw| = |z||w|$ and
+                satisfies the subadditive triangle inequality
+                $|z + w| \le |z| + |w|$."
 Proof: """
   1. **Multiplicativity**: Using the algebraic properties of conjugation:
      $$ |zw|^2 = (zw)\overline{(zw)} = (zw)(\overline{z} \, \overline{w}) = (z\overline{z})(w\overline{w}) = |z|^2 |w|^2. $$

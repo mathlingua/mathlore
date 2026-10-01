@@ -49,8 +49,9 @@ then:
   . C \:subset?:/ T
 Documented:
 . called: "Basis Extension Theorem"
-. description: "Every linearly independent subset extends to a basis, and every
-                spanning subset contains a basis."
+. description: "The fundamental Steinitz-Zorn basis theorem: every linearly
+                independent subset extends to a basis, and every spanning subset
+                contains a basis, ensuring every vector space possesses a basis."
 Proof: """
 Let $V$ be a vector space over a field $F$.
 

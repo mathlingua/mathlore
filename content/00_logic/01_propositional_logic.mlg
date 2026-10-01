@@ -68,10 +68,11 @@ that:
 Documented:
 . called: "$P?$ implies $Q?$"
 . written: "P? \Rightarrow Q?"
-. description: "The conditional *if $P$ then $Q$*, written $P \Rightarrow Q$. It
-                asserts that whenever $P$ holds, $Q$ holds as well. It makes no
-                claim at all in the case that $P$ fails, so a conditional with a
-                false hypothesis is regarded as holding vacuously."
+. description: "Material implication asserting that truth of the antecedent $P$
+                is sufficient to guarantee the truth of the consequent $Q$. In
+                classical bivalence, a conditional with a false antecedent holds
+                vacuously, preventing false premises from generating formal
+                counterexamples."
 Id: "dc7e213d-76c2-43d7-acf1-c5978daaab33"
 
 
@@ -105,10 +106,10 @@ Documented:
   . "$P?$ if and only if $Q?$"
   . "$P?$ iff $Q?$"
 . written: "P? \iff Q?"
-. description: "The biconditional of $P$ and $Q$, read *$P$ if and only if $Q$*.
-                It holds exactly when $P$ and $Q$ have the same truth value --
-                each implies the other -- and it is the connective used to state
-                that two conditions are equivalent."
+. description: "Logical biconditional asserting identical truth values between
+                $P$ and $Q$. It provides the formal syntax for mathematical
+                definition and exact classification, establishing mutual
+                sufficiency and necessity."
 Id: "96440ac7-3331-4467-a7ac-593dbca0761b"
 
 
@@ -142,9 +143,9 @@ that:
 Documented:
 . called: "$P?$ and $Q?$"
 . written: "P? \land Q?"
-. description: "The conjunction of $P$ and $Q$. The statement $P \text{ and } Q$
-                holds precisely when $P$ holds and $Q$ holds; if either fails,
-                the conjunction fails."
+. description: "Truth-functional conjunction acting as the infimum in the
+                Boolean lattice of truth values. Holds strictly when both
+                constituent assertions hold simultaneously."
 Id: "e024d041-fcf1-476e-b29e-b75d88b04fa8"
 
 
@@ -176,9 +177,9 @@ that:
 Documented:
 . called: "$P?$ or $Q?$"
 . written: "P? \lor Q?"
-. description: "The disjunction of $P$ and $Q$. The statement $P \text{ or } Q$
-                holds when at least one of $P$ and $Q$ holds. As is standard in
-                mathematics, the *or* is inclusive: it also holds when both do."
+. description: "Inclusive disjunction acting as the supremum in the Boolean
+                lattice of truth values. Holds when at least one constituent
+                assertion holds, failing solely when both fail."
 Id: "f401f869-7009-411a-bc01-9a76ffa07901"
 
 
@@ -200,9 +201,9 @@ that:
 Documented:
 . called: "not $P?$"
 . written: "\neg P+?"
-. description: "The negation of $P$, written $\neg P$. It holds exactly when $P$
-                does not, and so reverses the truth value of the statement it is
-                applied to."
+. description: "Truth-functional negation acting as the complementation
+                involution $\neg: \{0,1\} \to \{0,1\}$. Inverts the truth value
+                under classical bivalence."
 Id: "c28b5247-41fe-455b-80df-261056c1eb02"
 
 
@@ -225,10 +226,9 @@ that: (P \.or./ Q) \.and./ \not{P \.and./ Q}
 Documented:
 . called: "$P?$ xor $Q?$"
 . written: "P? \text{ xor } Q?"
-. description: "The exclusive disjunction of $P$ and $Q$. It holds when $P$ or
-                $Q$ holds but *not* both, and is defined here as $(P \text{ or }
-                Q) \text{ and } \neg(P \text{ and } Q)$ -- inclusive *or* with
-                the both-true case removed."
+. description: "Exclusive disjunction realizing addition in the Galois field
+                $\mathbb{F}_2$. Holds precisely when propositions differ in
+                truth value, corresponding to the symmetric difference of sets."
 Id: "1c7bc638-0db8-416f-a0d0-f5c0d7d92842"
 
 
@@ -255,9 +255,9 @@ that: \not{P \.and./ Q}
 Documented:
 . called: "$P?$ nand $Q?$"
 . written: "P? \barwedge Q?"
-. description: "The alternative denial (Sheffer stroke) of $P$ and $Q$. It is
-                true if and only if at least one of the propositions is false,
-                failing only when both $P$ and $Q$ are simultaneously true."
+. description: "Alternative denial (Sheffer stroke) asserting that $P$ and $Q$
+                are not jointly true. Serves as a single functionally complete
+                universal connective for classical propositional logic."
 Id: "ac552ed6-48a1-4639-940a-9d9a291c76e4"
 
 
@@ -268,9 +268,9 @@ that: \not{P \.or./ Q}
 Documented:
 . called: "$P?$ nor $Q?$"
 . written: "P? \downarrow Q?"
-. description: "The joint denial (Peirce arrow) of $P$ and $Q$. It asserts that
-                neither $P$ nor $Q$ holds, being true precisely when both
-                statements are false."
+. description: "Joint denial (Peirce arrow) asserting that neither $P$ nor $Q$
+                holds. Dual to NAND, it constitutes a single functionally
+                complete basis generating all Boolean truth functions."
 Id: "a16193ad-6084-494c-afd2-b4f7c6a70a7d"
 
 
@@ -299,8 +299,9 @@ given: P is \\statement
 then: \not{\not{P}} \.iff./ P
 Documented:
 . called: "Law of Double Negation"
-. description: "A proposition $P$ is logically equivalent to the negation of its
-                negation $\neg(\neg P)$."
+. description: "Classical involution law asserting that denying a contradiction
+                recovers the positive proposition: $\neg(\neg P) \iff P$.
+                Foundational to non-constructive proof by contradiction."
 Proof: """Under classical bivalence, the statement {.P.} has two possible truth
           values. If {.P.} is true, its negation {.\not{P}.} is false, and the
           negation of that result {.\not{\not{P}}.} is true. Conversely, if
@@ -338,8 +339,10 @@ then:
 . \not{P \.or./ Q} \.iff./ (\not{P} \.and./ \not{Q})
 Documented:
 . called: "De Morgan's Laws for Logic"
-. description: "Negation interchanges conjunction and disjunction: $\neg(P \land Q)
-                \iff (\neg P \lor \neg Q)$ and $\neg(P \lor Q) \iff (\neg P \land \neg Q)$."
+. description: "Order-reversing duality isomorphisms between lattice meet
+                ($\land$) and join ($\lor$) mediated by negation:
+                $\neg(P \land Q) \iff \neg P \lor \neg Q$ and
+                $\neg(P \lor Q) \iff \neg P \land \neg Q$."
 Proof: """We evaluate the statements under all four assignments of truth values
           to {.P.} and {.Q.}:
 
