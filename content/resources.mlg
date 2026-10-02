@@ -2,6 +2,10 @@ Title: "Resources"
 Id: "0a7774b6-5749-4b17-8464-8831999b62ab"
 
 
+SectionTitle: "Mathematical Logic"
+Id: "3c05d78b-9b84-4437-95ee-a2795c7a5853"
+
+
 [$enderton.logic]
 Resource:
 . title: "A Mathematical Introduction to Logic"
@@ -10,6 +14,10 @@ Resource:
 . publisher: "Academic Press"
 . year: "2001"
 Id: "3066545b-672e-43d0-8539-a89e1cd1d693"
+
+
+SectionTitle: "Set Theory"
+Id: "63aea036-f9a7-44fd-884a-9277d692f819"
 
 
 [$enderton.set.theory]
@@ -30,6 +38,10 @@ Resource:
 Id: "d364201b-d3b5-4aa2-8da2-73fc4c7635ea"
 
 
+SectionTitle: "Foundations of Analysis"
+Id: "fd8f3327-b32f-4008-9308-7616a4109655"
+
+
 [$landau.foundations]
 Resource:
 . title: "Foundations of Analysis: The Arithmetic of Whole, Rational, Irrational
@@ -39,6 +51,10 @@ Resource:
 . publisher: "AMS Chelsea Publishing"
 . year: "1960"
 Id: "a474e770-0670-4228-a27a-e22898f51897"
+
+
+SectionTitle: "Abstract Algebra"
+Id: "b24b3569-1b58-4a62-9f7a-257a58c3ab95"
 
 
 [$dummit.foote]
@@ -70,14 +86,8 @@ Resource:
 Id: "4a63ae2a-7582-403b-afd2-21dfadea7f46"
 
 
-[$axler.linear.algebra]
-Resource:
-. title: "Linear Algebra Done Right"
-. author: "Sheldon Axler"
-. edition: "3rd"
-. publisher: "Springer"
-. year: "2015"
-Id: "d9c951ab-bd19-4faf-b8c5-fe76b19fd074"
+SectionTitle: "Linear Algebra"
+Id: "4aedaedc-bcaf-417d-b8d4-0012bd9dd171"
 
 
 [$hoffman.kunze]
@@ -90,14 +100,18 @@ Resource:
 Id: "c5a7e2b6-02af-4f18-8858-ed4cf0a7e02b"
 
 
-[$rudin.principles]
+[$axler.linear.algebra]
 Resource:
-. title: "Principles of Mathematical Analysis"
-. author: "Walter Rudin"
+. title: "Linear Algebra Done Right"
+. author: "Sheldon Axler"
 . edition: "3rd"
-. publisher: "McGraw-Hill"
-. year: "1976"
-Id: "077b9f56-5895-464d-9a71-33d1edb97bc7"
+. publisher: "Springer"
+. year: "2015"
+Id: "d9c951ab-bd19-4faf-b8c5-fe76b19fd074"
+
+
+SectionTitle: "Real Analysis"
+Id: "485a19dc-8597-42b9-bf2e-115e7a4f194a"
 
 
 [$apostol.analysis]
@@ -108,6 +122,20 @@ Resource:
 . publisher: "Addison-Wesley"
 . year: "1974"
 Id: "9d22f2d7-6dd5-4c33-9b05-eb6ac430a4e7"
+
+
+[$rudin.principles]
+Resource:
+. title: "Principles of Mathematical Analysis"
+. author: "Walter Rudin"
+. edition: "3rd"
+. publisher: "McGraw-Hill"
+. year: "1976"
+Id: "077b9f56-5895-464d-9a71-33d1edb97bc7"
+
+
+SectionTitle: "Complex Analysis"
+Id: "74e556f9-1c28-40c3-a714-f55120fbdd2b"
 
 
 [$ahlfors.complex]
@@ -127,6 +155,10 @@ Resource:
 . publisher: "Princeton University Press"
 . year: "2003"
 Id: "51ac3002-cbd9-4a99-9877-c03b370c243f"
+
+
+SectionTitle: "Number Theory"
+Id: "b474f85e-d459-4d53-98cd-a0d66405373e"
 
 
 [$hardy.wright]
