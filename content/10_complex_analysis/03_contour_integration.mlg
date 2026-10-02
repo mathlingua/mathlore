@@ -82,6 +82,9 @@ Documented:
 . description: "The complex contour integral
                 $\oint_\gamma f(z)\,dz = \int_a^b f(\gamma(t))\gamma'(t)\,dt$
                 along directed contour $\gamma$."
+References:
+. $ahlfors.complex:page{101}
+. $stein.shakarchi.complex:page{72}
 Id: "e6283364-d507-4dfb-bbeb-a2e09a538cef"
 
 

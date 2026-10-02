@@ -41,6 +41,8 @@ Documented:
 . description: "Dedekind--von Neumann inductive set: contains the empty set
                 $\emptyset$ as initial point and is closed under the successor
                 operator $S(X) = X \cup \{X\}$."
+References:
+. $enderton.set.theory:page{67}
 Id: "68ba43e9-1329-4103-819e-16e20e8e7c9f"
 
 
@@ -80,6 +82,8 @@ Justification:
 . [1]
   have: A is \(inductive)::set
   by: \axiom.of.infinity
+References:
+. $enderton.set.theory:page{67}
 Id: "c13f4641-0ed5-4ad7-b309-8ec13b4c6b77"
 
 
@@ -112,6 +116,8 @@ Documented:
 . description: "Categorical realization $(\omega, \emptyset, S)$ validating the
                 second-order Dedekind--Peano axioms within pure
                 Zermelo--Fraenkel set theory."
+References:
+. $enderton.set.theory:page{67}
 Id: "23196d3d-7a1f-44a8-899c-3c39d65bb331"
 
 

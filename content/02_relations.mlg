@@ -203,6 +203,8 @@ Documented:
                 directional symmetry, and composite transitivity, an equivalence
                 relation decomposes the space $X$ into an exact partition of
                 mutually disjoint fibers."
+References:
+. $enderton.set.theory:page{55}
 Id: "2394a97b-5960-4919-98db-b95ec3870343"
 
 
@@ -270,6 +272,8 @@ Documented:
                 exhaustive non-empty cells. The fundamental theorem of
                 equivalence relations establishes a canonical bijection between
                 equivalence relations on $X$ and partitions of $X$."
+References:
+. $enderton.set.theory:page{55}
 Id: "4c2d728b-0359-432c-afc5-371028a71eba"
 
 
@@ -314,6 +318,8 @@ Documented:
                 reflexivity, transitivity, and antisymmetry, a partial order
                 allows incomparable elements, serving as the foundation for
                 order theory, domain theory, and lattice theory."
+References:
+. $enderton.set.theory:page{55}
 Id: "656a5a0a-77e8-42ea-857c-4f7d8eda00ac"
 
 
@@ -331,6 +337,8 @@ Documented:
 . description: "A linear order leaving no pairs incomparable (satisfying
                 totality). Models linear continua and discrete progressions such
                 as the natural numbers and the real number line."
+References:
+. $enderton.set.theory:page{55}
 Id: "40d12e9b-449e-49b9-a292-9388147d3e69"
 
 
@@ -448,6 +456,8 @@ Proof: """Let $R$ be an equivalence relation on $X$. We verify the defining
              $[x]_R \subseteq [y]_R$, proving $[x]_R = [y]_R$. Hence distinct
              equivalence classes are strictly disjoint, and every element
              belongs to a unique block."""
+References:
+. $enderton.set.theory:page{55}
 Id: "c6cf2b6a-9343-4865-b41e-183b454edd24"
 
 
@@ -487,6 +497,8 @@ Proof: """Let $P$ be a partition of $X$. Define a relation $R$ by
              distinct blocks of a partition are mutually disjoint, $A = B$. Thus
              $x, z \in A$, which proves $x \mathrel{R} z$. Hence $R$ is an
              equivalence relation on $X$."""
+References:
+. $enderton.set.theory:page{55}
 Id: "97d1309a-6739-4ff9-a354-f0c6859df60f"
 
 
@@ -597,4 +609,6 @@ Documented:
                 unique infimum (meet) and supremum (join). Unifies propositional
                 logic (Boolean algebras), topology (frames/locales), and
                 abstract geometry."
+References:
+. $enderton.set.theory:page{55}
 Id: "1454c69c-e96e-4c4e-98e4-7736db0ef0a7"

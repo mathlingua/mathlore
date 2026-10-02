@@ -46,6 +46,8 @@ Documented:
                 $(n_1, m_1) \sim (n_2, m_2)$ whenever $n_1 + m_2 = n_2 + m_1$,
                 formalizing the difference $n_1 - m_1 = n_2 - m_2$ without
                 negative numbers."
+References:
+. $landau.foundations:page{19}
 Id: "fd0234b9-545e-4dcf-bc4f-8c1c6f306e25"
 
 
@@ -94,6 +96,9 @@ Documented:
 . description: "The ring of integers $(\mathbb{Z}, 0, 1, +, \cdot, -)$: the
                 prototypical commutative ring and principal ideal domain, formed
                 as the initial object in the category of rings with unity."
+References:
+. $landau.foundations:page{19}
+. $dummit.foote:page{228}
 Id: "fe3288e5-96fd-4839-bd2f-1bc13160214f"
 
 

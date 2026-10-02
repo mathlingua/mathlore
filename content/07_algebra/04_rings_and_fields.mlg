@@ -41,6 +41,10 @@ Documented:
 . description: "A ring $(R, +, \cdot, 0, 1)$ consists of an abelian addition
                 group $(R, +, 0)$, a multiplicative monoid $(R, \cdot, 1)$, and
                 left/right distributivity laws."
+References:
+. $dummit.foote:page{228}
+. $lang.algebra:page{83}
+. $bourbaki.algebra:page{91}
 Id: "5ca5fdca-692d-4f04-8420-aa01c909955d"
 
 
@@ -80,6 +84,10 @@ Documented:
 . description: "A ring whose multiplication satisfies $x \cdot y = y \cdot x$,
                 forming the central objects of study in commutative algebra and
                 algebraic geometry."
+References:
+. $dummit.foote:page{228}
+. $lang.algebra:page{83}
+. $bourbaki.algebra:page{91}
 Id: "2ddbe95a-149f-4596-8496-b214741d64a4"
 
 
@@ -116,6 +124,9 @@ Documented:
 . description: "A nontrivial commutative ring in which every nonzero element has
                 a multiplicative inverse, so that $F^\times = F \setminus \{0\}$
                 forms an abelian group."
+References:
+. $dummit.foote:page{228}
+. $lang.algebra:page{83}
 Id: "53a76a9b-97d9-4c4d-b6c6-cc00983cfcb2"
 
 
@@ -155,6 +166,9 @@ Documented:
 . description: "A two-sided ideal $I \subseteq R$: an additive subgroup
                 absorbing ring multiplication ($rI \subseteq I$ and
                 $Ir \subseteq I$), forming the kernels of ring homomorphisms."
+References:
+. $dummit.foote:page{242}
+. $lang.algebra:page{86}
 Id: "999d97fa-3609-4900-a19d-ab1f3345ca54"
 
 
@@ -187,6 +201,9 @@ Documented:
 . description: "A nontrivial commutative ring with no zero divisors
                 ($ab = 0 \implies a = 0 \lor b = 0$), in which nonzero elements
                 satisfy the cancellation law."
+References:
+. $dummit.foote:page{228}
+. $lang.algebra:page{91}
 Id: "be91bf4c-366f-430f-bff8-6f9c7225736d"
 
 
@@ -250,13 +267,11 @@ Documented:
                 mapping between rings that respects the additive group
                 structure, the multiplicative monoid structure, and identity
                 elements: $\phi(a +_R b) = \phi(a) +_S \phi(b)$,
-                $\phi(a *_R b) = \phi(a) *_S \phi(b)$, and $\phi(1_R) = 1_S$.
-                Citations: David S. Dummit and Richard M. Foote, Abstract
-                Algebra (3rd ed., John Wiley & Sons, 2004, Chapter 7, Section
-                7.3, p. 239); Serge Lang, Algebra (3rd ed., Springer, 2002,
-                Chapter II, Section 1, p. 83); Nicolas Bourbaki, Elements of
-                Mathematics: Algebra I, Chapters 1-3 (Springer-Verlag, 1989,
-                Chapter 1, Section 8, p. 96)."
+                $\phi(a *_R b) = \phi(a) *_S \phi(b)$, and $\phi(1_R) = 1_S$."
+References:
+. $dummit.foote:page{239}
+. $lang.algebra:page{83}
+. $bourbaki.algebra:page{96}
 Id: "052b0946-5f7e-4e0d-a686-530e39c328d1"
 
 
@@ -299,14 +314,11 @@ Documented:
                 its own right under the restricted operations of $R$.
                 Equivalently, $S$ contains $0_R$ and $1_R$ and is closed under
                 addition, additive inverses (subtraction), and multiplication,
-                with $0_S = 0_R$ and $1_S = 1_R$. Citations: David S. Dummit and
-                Richard M. Foote, Abstract Algebra (3rd ed., John Wiley & Sons,
-                2004, Chapter 7, Section 7.1, p. 228, ISBN: 978-0471433347);
-                Serge Lang, Algebra (3rd ed., Graduate Texts in Mathematics 211,
-                Springer, 2002, Chapter II, Section 1, p. 84, ISBN:
-                978-0387953854); Nicolas Bourbaki, Elements of Mathematics:
-                Algebra I, Chapters 1-3 (Springer-Verlag, 1989, Chapter 1,
-                Section 8, Definition 3, p. 97, ISBN: 978-3540642435)."
+                with $0_S = 0_R$ and $1_S = 1_R$."
+References:
+. $dummit.foote:page{228}
+. $lang.algebra:page{84}
+. $bourbaki.algebra:page{97}
 Id: "4021d04a-d013-43b6-89b9-c0c14dc688aa"
 
 
@@ -320,14 +332,11 @@ Documented:
 . written: "\ker(phi?)"
 . description: "The kernel of a ring homomorphism $\phi : R \to S$ is the
                 preimage of the additive zero of the codomain,
-                $\ker(\phi) = \{x \in R \mid \phi(x) = 0_S\}$. Citations: David
-                S. Dummit and Richard M. Foote, Abstract Algebra (3rd ed., John
-                Wiley & Sons, 2004, Chapter 7, Section 7.3, Definition p. 240,
-                ISBN: 978-0471433347); Serge Lang, Algebra (3rd ed., Graduate
-                Texts in Mathematics 211, Springer, 2002, Chapter II, Section 1,
-                p. 85, ISBN: 978-0387953854); Nicolas Bourbaki, Elements of
-                Mathematics: Algebra I, Chapters 1-3 (Springer-Verlag, 1989,
-                Chapter 1, Section 8, Section 8.1, p. 99, ISBN: 978-3540642435)."
+                $\ker(\phi) = \{x \in R \mid \phi(x) = 0_S\}$."
+References:
+. $dummit.foote:page{240}
+. $lang.algebra:page{85}
+. $bourbaki.algebra:page{99}
 Id: "bf16b567-97fa-44d4-8866-975d7643966a"
 
 
@@ -343,15 +352,7 @@ then:
 Documented:
 . called: "Kernel of a Ring Homomorphism is an Ideal"
 . description: "The kernel of any ring homomorphism $\phi : R \to S$ forms a
-                two-sided ideal of the domain ring $R$. Citations: David S.
-                Dummit and Richard M. Foote, Abstract Algebra (3rd ed., John
-                Wiley & Sons, 2004, Chapter 7, Section 7.3, Proposition 6, p.
-                240, ISBN: 978-0471433347); Serge Lang, Algebra (3rd ed.,
-                Graduate Texts in Mathematics 211, Springer, 2002, Chapter II,
-                Section 1, Theorem 1.1, p. 85, ISBN: 978-0387953854); Nicolas
-                Bourbaki, Elements of Mathematics: Algebra I, Chapters 1-3
-                (Springer-Verlag, 1989, Chapter 1, Section 8, Proposition 1, p.
-                99, ISBN: 978-3540642435)."
+                two-sided ideal of the domain ring $R$."
 Proof: """
 Let $R = (R_{\text{set}}, +_R, *_R, 0_R, 1_R)$ and $S = (S_{\text{set}}, +_S, *_S, 0_S, 1_S)$ be rings,
 and let $\phi : R \to S$ be a ring homomorphism.
@@ -390,4 +391,8 @@ we verify the defining conditions:
 
 Since $K$ contains $0_R$, is closed under subtraction, and absorbs multiplication by all elements of $R$ from both the left and right, $K$ forms a two-sided ideal of $R$.
 """
+References:
+. $dummit.foote:page{240}
+. $lang.algebra:page{85}
+. $bourbaki.algebra:page{99}
 Id: "bb4aa04b-a84c-4113-aebe-8b9dcda68ed1"

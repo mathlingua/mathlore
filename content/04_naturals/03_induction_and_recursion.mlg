@@ -44,6 +44,9 @@ Proof: """Let $A = \{n \in \mathbb{N} : P(n)\}$. By hypothesis, $P(0)$ holds, so
           successor. By the induction postulate of the Peano axioms,
           $A = \mathbb{N}$, which proves that $P(n)$ holds for all
           $n \in \mathbb{N}$."""
+References:
+. $enderton.set.theory:page{73}
+. $landau.foundations:page{2}
 Id: "3940cf8b-62b7-41cf-984a-62429aeb835e"
 
 
@@ -82,6 +85,9 @@ Proof: """Define the auxiliary predicate $Q(n)$ by
              precisely $Q(n + 1)$. By ordinary induction, $Q(n)$ holds for all
              $n \in \mathbb{N}$. Since $Q(n + 1)$ implies $P(n)$, it follows
              that $P(n)$ holds for every natural number $n$."""
+References:
+. $enderton.set.theory:page{73}
+. $landau.foundations:page{2}
 Id: "844c54eb-187b-4369-8fd2-84d5d7da2b4b"
 
 
@@ -121,6 +127,9 @@ Proof: """Suppose for contradiction that $A \subseteq \mathbb{N}$ is nonempty
           $n \notin A$, which establishes $P(n)$. By strong induction,
           $n \notin A$ for every $n \in \mathbb{N}$, which forces
           $A = \emptyset$. This contradicts the assumption that $A$ is nonempty."""
+References:
+. $enderton.set.theory:page{73}
+. $landau.foundations:page{2}
 Id: "dd21ebd6-0821-429e-af26-123c01ca0432"
 
 

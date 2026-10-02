@@ -73,6 +73,9 @@ Documented:
                 $\mathbb{Q} = \operatorname{Frac}(\mathbb{Z})$: the initial
                 object in the category of characteristic-zero fields, forming an
                 Archimedean ordered field."
+References:
+. $landau.foundations:page{43}
+. $dummit.foote:page{260}
 Id: "8454e27c-2e90-4944-a36b-27b66be5f4cf"
 
 
@@ -264,6 +267,8 @@ Documented:
 . description: "Cross-multiplication equivalence relation
                 $(a, b) \sim (c, d) \iff ad = cb$ on formal fraction pairs,
                 quotienting by commensurable equality."
+References:
+. $landau.foundations:page{43}
 Id: "24804175-428b-44db-8573-0165be44818c"
 
 

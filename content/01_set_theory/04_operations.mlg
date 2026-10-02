@@ -27,6 +27,8 @@ Documented:
 . description: "Binary join operation $A \cup B$ in the lattice of subsets:
                 computes the least upper bound of $A$ and $B$ under subset
                 containment."
+References:
+. $enderton.set.theory:page{22}
 Id: "a08ae02b-7a4e-4911-863a-7d929540f193"
 
 
@@ -40,6 +42,8 @@ Documented:
 . description: "Binary meet operation $A \cap B$ in the lattice of subsets:
                 computes the greatest lower bound of $A$ and $B$ under subset
                 containment."
+References:
+. $enderton.set.theory:page{22}
 Id: "5d137355-ba4e-44ca-bf58-2f7b3f667dcc"
 
 
@@ -52,6 +56,8 @@ Documented:
 . description: "Relative complement $A \setminus B$ in the Boolean algebra of
                 subsets: removes all elements of $B$ from $A$, formalizing
                 $A \cap B^c$."
+References:
+. $enderton.set.theory:page{22}
 Id: "186de027-9bf6-422d-a2ed-823c94a80b1b"
 
 
@@ -179,6 +185,8 @@ Proof: """Each equality follows by converting the set membership condition
           $x \in U \land (\neg(x \in A) \land \neg(x \in B)) \iff (x \in U \land x \notin A) \land (x \in U \land x \notin B)$,
           which is precisely the definition of $x \in (U \setminus A) \cap (U \setminus B)$.
           The dual laws follow symmetrically."""
+References:
+. $enderton.set.theory:page{22}
 Id: "aa8bf616-5e94-4976-a63a-132732577422"
 
 
@@ -198,9 +206,9 @@ Proof: "Let $x \in A \cap C$. By the definition of intersection, $x \in A$ and
         $x \in C$. Since $A \subseteq B$ and $x \in A$, we have $x \in B$.
         Because $x \in B$ and $x \in C$, it follows that $x \in B \cap C$. Since
         this holds for every element $x \in A \cap C$, we conclude that
-        $A \cap C \subseteq B \cap C$. Citations: David S. Dummit and Richard M.
-        Foote, Abstract Algebra (3rd ed., John Wiley & Sons, 2004, Chapter 0,
-        Section 0.1, p. 2)."
+        $A \cap C \subseteq B \cap C$."
+References:
+. $dummit.foote:page{2}
 Id: "8eef4e40-5929-41a3-ba81-74145b1e5bcd"
 
 

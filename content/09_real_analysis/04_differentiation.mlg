@@ -43,6 +43,8 @@ Documented:
 . description: "The derivative
                 $f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}$,
                 representing the best linear approximation to $f$ near $x_0$."
+References:
+. $rudin.principles:page{103}
 Id: "a8704cca-424a-4f17-a321-d5c3725e2090"
 
 
@@ -59,6 +61,8 @@ Documented:
 . adjective: "differentiable"
 . description: "A function $f: U \to \mathbb{R}$ that is differentiable at every
                 point $x_0 \in U$."
+References:
+. $rudin.principles:page{103}
 Id: "bddc1b83-707b-40f9-9b7f-c03513735f35"
 
 
@@ -74,6 +78,8 @@ Documented:
 . adjective: "differentiable at $x0?$"
 . description: "A function possessing a well-defined linear approximation at
                 $x_0$, admitting a finite derivative $f'(x_0)$."
+References:
+. $rudin.principles:page{103}
 Id: "d70418c0-8878-4799-b853-34eb30004a18"
 
 

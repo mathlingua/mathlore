@@ -49,6 +49,8 @@ Documented:
 . adjective: "prime"
 . description: "A prime is an integer greater than one whose only positive
                 divisors are one and itself."
+References:
+. $hardy.wright:page{1}
 Id: "133119f5-9771-4e7e-b84e-de640884b36e"
 
 
@@ -86,6 +88,8 @@ Documented:
 . called: "Strong Goldbach Conjecture"
 . description: "Every even integer greater than two is the sum of two primes;
                 the two primes are not required to be distinct."
+References:
+. $hardy.wright:page{19}
 Id: "1945a57b-f397-4f58-b515-fd8878910f2e"
 
 
@@ -104,6 +108,8 @@ Documented:
 . description: "Above every integer bound there is a prime $p$ for which $p+2$
                 is also prime. This unboundedness formulation is equivalent to
                 the existence of infinitely many twin-prime pairs."
+References:
+. $hardy.wright:page{5}
 Id: "565f765c-47cd-427f-a5b5-44c87d1a9794"
 
 

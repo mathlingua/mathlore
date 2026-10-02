@@ -45,6 +45,9 @@ Documented:
 . description: "Dedekind--Peano axiomatic system $(\mathbb{N}, 0, S)$ for the
                 natural numbers: formalizes discrete induction, injectivity of
                 succession, and $0$ as the initial base element."
+References:
+. $landau.foundations:page{1}
+. $enderton.set.theory:page{67}
 Id: "502e2a50-cced-461a-bdcf-03e2221a598f"
 
 
@@ -135,6 +138,8 @@ Documented:
 . description: "Primitive recursive addition on $\mathbb{N}$: computes iterated
                 succession with $0 + m = m$ and $S(k) + m = S(k + m)$, forming a
                 commutative cancellative monoid."
+References:
+. $landau.foundations:page{4}
 Id: "a8dda59b-29db-4ac2-8d70-e9010ccae3e7"
 
 
@@ -166,6 +171,8 @@ Documented:
                 iterated addition with $0 \cdot m = 0$ and
                 $S(k) \cdot m = (k \cdot m) + m$, forming a commutative
                 semiring."
+References:
+. $landau.foundations:page{14}
 Id: "46c21a80-12cd-45f6-8e74-07731d18d220"
 
 
@@ -195,6 +202,8 @@ Documented:
 . description: "Canonical linear order on $\mathbb{N}$: algebraic reachability
                 relation $n \le m \iff \exists k \in \mathbb{N}, n + k = m$,
                 making $\mathbb{N}$ a well-ordered set."
+References:
+. $landau.foundations:page{8}
 Id: "8c997826-bcef-4032-816b-c6dd2aa635e7"
 
 

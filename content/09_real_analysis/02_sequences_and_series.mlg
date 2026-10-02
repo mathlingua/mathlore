@@ -59,6 +59,8 @@ Documented:
 . description: "Convergence of sequence $a_n \to L$: for every $\epsilon > 0$,
                 terms eventually remain within an $\epsilon$-neighborhood
                 $|a_n - L| < \epsilon$."
+References:
+. $rudin.principles:page{47}
 Id: "f046faf8-5c18-4597-ac14-4feda980148d"
 
 
@@ -81,6 +83,8 @@ Documented:
 . description: "A Cauchy sequence of reals: for every $\epsilon > 0$,
                 $|a_n - a_m| < \epsilon$ for all sufficiently large $n, m$,
                 clustering without gaps."
+References:
+. $rudin.principles:page{53}
 Id: "3bf9fa3d-791d-4ebf-b585-68dbdb2755b1"
 
 
@@ -169,6 +173,8 @@ $(\implies)$: Suppose $(a_n)$ is Cauchy.
    $$ |a_n - L| \leq |a_n - a_{n_k}| + |a_{n_k} - L| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon. $$
 Thus $a_n \to L$, establishing Cauchy completeness.
 """
+References:
+. $rudin.principles:page{53}
 Id: "da1c56ad-7de6-4161-b806-99ead8e954be"
 
 
@@ -200,6 +206,8 @@ $$ L - \epsilon < a_N \leq a_n \leq L < L + \epsilon \implies |a_n - L| < \epsil
 for all $n \geq N$.
 Thus $(a_n)$ converges to $L = \sup\{a_n : n \in \mathbb{N}\}$.
 """
+References:
+. $rudin.principles:page{55}
 Id: "3d7b0ef1-4562-415e-bf44-74e324ce5f5c"
 
 

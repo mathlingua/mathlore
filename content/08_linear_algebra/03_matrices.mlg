@@ -36,6 +36,8 @@ Documented:
 . description: "A rectangular array of scalars
                 $A = [a_{i,j}] \in M_{m \times n}(F)$, representing coordinate
                 representations of linear maps."
+References:
+. $hoffman.kunze:page{86}
 Id: "9cfabd0d-3e74-46fa-989b-b8a7230a61f3"
 
 
@@ -94,6 +96,8 @@ Documented:
 . description: "Compositional matrix product
                 $(AB)_{i,j} = \sum_k A_{i,k} B_{k,j}$, representing the
                 composite operator $S \circ T$ in coordinates."
+References:
+. $hoffman.kunze:page{89}
 Id: "ab389a4a-5187-4af5-b2f3-c62e0c3b08db"
 
 
@@ -111,6 +115,8 @@ Documented:
 . written: "A?^{T}"
 . description: "The transpose matrix $(A^T)_{j,i} = A_{i,j}$, representing the
                 dual operator $T^*: W^* \to V^*$ in dual coordinates."
+References:
+. $hoffman.kunze:page{111}
 Id: "82ba3c4b-40a8-4dfc-8adc-69eabb25f1ec"
 
 
@@ -129,6 +135,8 @@ Documented:
 . written: "\det(A?)"
 . description: "The unique multilinear alternating function $\det(A)$ mapping
                 $I_n \mapsto 1$, measuring oriented hypervolume scaling."
+References:
+. $hoffman.kunze:page{144}
 Id: "0552914d-9a49-4089-88ba-72916ea96b3e"
 
 

@@ -65,6 +65,9 @@ Documented:
 . description: "The complex derivative
                 $f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}$,
                 defining an isotropic similarity operator in the tangent space."
+References:
+. $ahlfors.complex:page{24}
+. $stein.shakarchi.complex:page{8}
 Id: "7e3019a7-07f3-462e-bd30-6047f158b5de"
 
 
@@ -81,6 +84,9 @@ Documented:
 . adjective: "holomorphic"
 . description: "Holomorphic on open $U$: complex differentiable at every point
                 $z_0 \in U$, satisfying the Cauchy-Riemann equations."
+References:
+. $ahlfors.complex:page{24}
+. $stein.shakarchi.complex:page{8}
 Id: "f2a708e1-6ee2-4072-aa11-08f5e90fe31f"
 
 

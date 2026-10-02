@@ -63,6 +63,8 @@ Documented:
 . description: "The algebraically closed field $(\mathbb{C}, +, \cdot)$ obtained
                 by adjoining the imaginary unit $i = \sqrt{-1}$ to $\mathbb{R}$,
                 realizable as $\mathbb{R}[t]/(t^2+1)$ or $\mathbb{R}^2$."
+References:
+. $ahlfors.complex:page{1}
 Id: "19cb593a-f9c4-4ac8-82b7-2f32e590b67a"
 
 
@@ -195,6 +197,8 @@ Documented:
 . written: "\overline{z_?}"
 . description: "Complex conjugation $\overline{z} = x - iy$, the reflection
                 automorphism across the real axis."
+References:
+. $ahlfors.complex:page{6}
 Id: "45f1544a-4db7-477a-8d89-b42698988732"
 
 
@@ -209,6 +213,8 @@ Documented:
 . description: "The Euclidean modulus
                 $|z| = \sqrt{x^2 + y^2} = \sqrt{z\overline{z}}$, measuring
                 distance from the origin."
+References:
+. $ahlfors.complex:page{6}
 Id: "e5faf733-3580-4323-921a-0809252cada9"
 
 

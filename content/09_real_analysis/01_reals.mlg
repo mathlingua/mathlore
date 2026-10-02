@@ -88,6 +88,9 @@ Documented:
                 above has a least upper bound (supremum). By Tarski's theorem,
                 any two complete Archimedean ordered fields are uniquely
                 isomorphic."
+References:
+. $rudin.principles:page{1}
+. $apostol.analysis:page{17}
 Id: "aeec4453-1166-47cd-a5f4-3eed295b3d15"
 
 
@@ -339,6 +342,9 @@ Proof: """In the axiomatic characterization of $\mathbb{R}$ as an abstract
              element). Thus $D_{\sup}$ is a valid Dedekind cut that contains
              every $D \in \mathcal{S}$ and is contained in any other upper
              bound, establishing that $D_{\sup} = \sup(\mathcal{S})$."""
+References:
+. $rudin.principles:page{4}
+. $apostol.analysis:page{17}
 Id: "b4fc64c6-378b-4e44-87c5-610045a90fe3"
 
 
