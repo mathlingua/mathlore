@@ -32,6 +32,8 @@ Documented:
                 $x \in A$ satisfies $x \in B$. Imposes a canonical Boolean
                 lattice structure on power sets and acts as the categorical
                 subobject arrow in Set."
+References:
+. $enderton.set.theory:page{5}
 Id: "2b2b89a1-d106-4377-ae48-14c704063e5e"
 
 
@@ -55,6 +57,8 @@ Documented:
 . description: "Strict containment $A \subsetneq B$: combines subset inclusion
                 with non-equality, guaranteeing the existence of an ambient
                 witness $b \in B \setminus A$."
+References:
+. $enderton.set.theory:page{5}
 Id: "7d070f37-61a5-4c62-b8da-4831c222e4b2"
 
 
@@ -83,6 +87,8 @@ Proof: """Assume $A \subseteq B$ and $B \subseteq C$. Let $x \in A$ be an
           $B \subseteq C$ similarly implies $x \in C$. Because $x \in A$ was
           arbitrary, every element of $A$ belongs to $C$, which establishes
           $A \subseteq C$."""
+References:
+. $enderton.set.theory:page{5}
 Id: "6a4bcb50-97bc-4d1b-a9b2-750c963bb720"
 
 
@@ -113,6 +119,8 @@ Proof: """By the Axiom of Extensionality, $A = B$ if and only if for all $x$,
           $(\forall x, x \in A \implies x \in B) \land (\forall x, x \in B \implies x \in A)$.
           The first conjunct is precisely the definition of $A \subseteq B$, and
           the second conjunct is the definition of $B \subseteq A$."""
+References:
+. $enderton.set.theory:page{5}
 Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"
 
 

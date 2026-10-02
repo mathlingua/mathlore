@@ -73,6 +73,8 @@ Documented:
                 classical bivalence, a conditional with a false antecedent holds
                 vacuously, preventing false premises from generating formal
                 counterexamples."
+References:
+. $enderton.logic:page{17}
 Id: "dc7e213d-76c2-43d7-acf1-c5978daaab33"
 
 
@@ -110,6 +112,8 @@ Documented:
                 $P$ and $Q$. It provides the formal syntax for mathematical
                 definition and exact classification, establishing mutual
                 sufficiency and necessity."
+References:
+. $enderton.logic:page{17}
 Id: "96440ac7-3331-4467-a7ac-593dbca0761b"
 
 
@@ -146,6 +150,8 @@ Documented:
 . description: "Truth-functional conjunction acting as the infimum in the
                 Boolean lattice of truth values. Holds strictly when both
                 constituent assertions hold simultaneously."
+References:
+. $enderton.logic:page{17}
 Id: "e024d041-fcf1-476e-b29e-b75d88b04fa8"
 
 
@@ -180,6 +186,8 @@ Documented:
 . description: "Inclusive disjunction acting as the supremum in the Boolean
                 lattice of truth values. Holds when at least one constituent
                 assertion holds, failing solely when both fail."
+References:
+. $enderton.logic:page{17}
 Id: "f401f869-7009-411a-bc01-9a76ffa07901"
 
 
@@ -204,6 +212,8 @@ Documented:
 . description: "Truth-functional negation acting as the complementation
                 involution $\neg: \{0,1\} \to \{0,1\}$. Inverts the truth value
                 under classical bivalence."
+References:
+. $enderton.logic:page{17}
 Id: "c28b5247-41fe-455b-80df-261056c1eb02"
 
 
@@ -229,6 +239,8 @@ Documented:
 . description: "Exclusive disjunction realizing addition in the Galois field
                 $\mathbb{F}_2$. Holds precisely when propositions differ in
                 truth value, corresponding to the symmetric difference of sets."
+References:
+. $enderton.logic:page{17}
 Id: "1c7bc638-0db8-416f-a0d0-f5c0d7d92842"
 
 
@@ -258,6 +270,8 @@ Documented:
 . description: "Alternative denial (Sheffer stroke) asserting that $P$ and $Q$
                 are not jointly true. Serves as a single functionally complete
                 universal connective for classical propositional logic."
+References:
+. $enderton.logic:page{17}
 Id: "ac552ed6-48a1-4639-940a-9d9a291c76e4"
 
 
@@ -271,6 +285,8 @@ Documented:
 . description: "Joint denial (Peirce arrow) asserting that neither $P$ nor $Q$
                 holds. Dual to NAND, it constitutes a single functionally
                 complete basis generating all Boolean truth functions."
+References:
+. $enderton.logic:page{17}
 Id: "a16193ad-6084-494c-afd2-b4f7c6a70a7d"
 
 
@@ -308,6 +324,8 @@ Proof: """Under classical bivalence, the statement {.P.} has two possible truth
           {.P.} is false, {.\not{P}.} is true, and {.\not{\not{P}}.} is false.
           In both cases, {.\not{\not{P}}.} has the identical truth value as
           {.P.}. Therefore, {.\not{\not{P}} \.iff./ P.}."""
+References:
+. $enderton.logic:page{17}
 Id: "eb21571a-d245-427d-a014-d29407d09f9a"
 
 
@@ -360,6 +378,8 @@ Proof: """We evaluate the statements under all four assignments of truth values
           {.\not{P \.or./ Q} \.iff./ (\not{P} \.and./ \not{Q}).} follows by
           applying the first identity to {.\not{P}.} and {.\not{Q}.} together
           with the law of double negation."""
+References:
+. $enderton.logic:page{17}
 Id: "e4c6ef38-dd37-448b-a1f5-377df32138ce"
 
 

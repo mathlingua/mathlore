@@ -171,6 +171,8 @@ Documented:
                 $(x, y) = \{\{x\}, \{x, y\}\}$. Transforms asymmetric positional
                 ordering into symmetric set containment, enabling the formal
                 foundation of Cartesian products, relations, and functions."
+References:
+. $enderton.set.theory:page{35}
 Id: "8fd9d494-2882-4639-bb50-44a56626d1c4"
 
 
@@ -194,6 +196,8 @@ Documented:
                 ordered pairs $(a, b)$ for $a \in A$ and $b \in B$. Acts as the
                 universal domain for binary operations, relations, and
                 multivariable maps."
+References:
+. $enderton.set.theory:page{35}
 Id: "3bdd9cfb-f836-4d44-880a-873bb772cdef"
 
 
@@ -222,6 +226,8 @@ Proof: """If $x = u$ and $y = v$, then
              member $\{x, y\}$, which must equal the unique two-element member
              $\{u, v\}$ on the right. Since $x = u$ and $x \neq y$, it follows
              that $y = v$."""
+References:
+. $enderton.set.theory:page{35}
 Id: "31691bb2-e8e1-4218-be4f-759add2b7ab7"
 
 

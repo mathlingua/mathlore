@@ -64,6 +64,9 @@ Documented:
 . description: "The definite Riemann integral
                 $\int_a^b f(x)\,dx = \sup_P L(f, P) = \inf_P U(f, P)$, measuring
                 oriented area under $f$ over $[a, b]$."
+References:
+. $rudin.principles:page{120}
+. $apostol.analysis:page{140}
 Id: "06b220c2-ee50-4d69-8de7-c1cbbd81e3bb"
 
 

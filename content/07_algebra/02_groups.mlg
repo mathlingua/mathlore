@@ -35,6 +35,9 @@ Documented:
                 Encodes the mathematical concept of reversible symmetry and
                 group actions, serving as the foundational algebraic structure
                 of geometry, Galois theory, and representation theory."
+References:
+. $dummit.foote:page{16}
+. $lang.algebra:page{7}
 Id: "e4d7371d-29bd-431f-ab09-e114fe89e5cf"
 
 
@@ -194,6 +197,9 @@ Justification:
   asserting: (.X' \.set.cross./ X'.) \:subset?:/ (.G \.set.cross./ G.)
   because: X' \:subset?:/ X
   by: \cross.of.subset.is.subset.of.cross#given{X := X; Y := X'}
+References:
+. $dummit.foote:page{46}
+. $lang.algebra:page{9}
 Id: "d8fe82d3-6f50-4711-ad64-76d4eb0615ff"
 
 
@@ -238,6 +244,9 @@ Documented:
 . description: "Commutative group structure named for Niels Henrik Abel. All
                 subgroups are automatically normal, giving rise to abelian
                 categories, homology theory, and Pontryagin duality."
+References:
+. $dummit.foote:page{16}
+. $lang.algebra:page{7}
 Id: "1dc777cd-31a5-489a-8b5a-05b94c647fb9"
 
 

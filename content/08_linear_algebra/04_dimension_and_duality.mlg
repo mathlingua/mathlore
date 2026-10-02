@@ -75,6 +75,9 @@ Let $V$ be a vector space over a field $F$.
    Then $B \cup \{v\}$ is linearly independent and contains $S$, contradicting the maximality of $B$.
    Thus $\operatorname{span}(B) = V$, proving that $B$ is a basis for $V$ extending $S$.
 """
+References:
+. $axler.linear.algebra:page{34}
+. $hoffman.kunze:page{44}
 Id: "c1009158-a56f-4c29-8006-7e3a6bcc662d"
 
 

@@ -34,6 +34,9 @@ Documented:
 . description: "The categorical product $G_1 \times G_2$ in $\mathbf{Grp}$:
                 pairs $(x_1, x_2)$ multiplied componentwise, equipped with
                 canonical projection morphisms."
+References:
+. $dummit.foote:page{152}
+. $lang.algebra:page{12}
 Id: "3a354c63-fc8c-4873-9751-62ecc651a5a9"
 
 
@@ -99,6 +102,9 @@ Documented:
 . description: "A structure-preserving morphism $\phi: G_1 \to G_2$ satisfying
                 $\phi(a * b) = \phi(a) * \phi(b)$, forming the arrows in the
                 category $\mathbf{Grp}$."
+References:
+. $dummit.foote:page{73}
+. $lang.algebra:page{14}
 Id: "b3809339-6511-4a87-84eb-8e3278f3524b"
 
 
@@ -131,6 +137,9 @@ Documented:
 . description: "An invertible group morphism $\phi: G_1 \to G_2$: a bijective
                 homomorphism whose inverse $\phi^{-1}$ is automatically a
                 homomorphism, identifying isomorphic group structures."
+References:
+. $dummit.foote:page{73}
+. $lang.algebra:page{14}
 Id: "433926bd-94c4-4124-9338-d0be367f5836"
 
 
@@ -179,6 +188,9 @@ $$ \varphi(x) *_2 \varphi(x^{-1}) = \varphi(x *_1 x^{-1}) = \varphi(e_1) = e_2. 
 Similarly, $\varphi(x^{-1}) *_2 \varphi(x) = \varphi(x^{-1} *_1 x) = \varphi(e_1) = e_2$.
 By the uniqueness of inverses in $G_2$, it follows that $\varphi(x^{-1}) = \varphi(x)^{-1} = y^{-1}$.
 """
+References:
+. $dummit.foote:page{74}
+. $lang.algebra:page{15}
 Id: "238fe8f8-136f-4825-b650-3a1af432e140"
 
 

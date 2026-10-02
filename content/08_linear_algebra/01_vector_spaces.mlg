@@ -68,6 +68,9 @@ Documented:
                 multiplication by elements of a ground field $F$, satisfying
                 associativity, identity, and distributivity across both vector
                 and scalar additions."
+References:
+. $axler.linear.algebra:page{10}
+. $hoffman.kunze:page{28}
 Id: "6c32eba5-b1fe-456d-84db-058653584067"
 
 
@@ -129,6 +132,9 @@ Documented:
 . description: "A subset $W \subseteq V$ containing $0$ and closed under
                 addition and scalar multiplication ($cu + v \in W$), inheriting
                 the vector space structure."
+References:
+. $axler.linear.algebra:page{16}
+. $hoffman.kunze:page{34}
 Id: "2b68f78b-7c61-4e39-986d-34e50990ec8b"
 
 
@@ -162,6 +168,9 @@ Documented:
 . description: "The linear span $\operatorname{span}(S)$: the smallest subspace
                 containing $S$, consisting of all finite linear combinations
                 $\sum c_i v_i$."
+References:
+. $axler.linear.algebra:page{29}
+. $hoffman.kunze:page{36}
 Id: "f180282d-af11-4252-ab90-e3a6cc98fb78"
 
 
@@ -196,6 +205,9 @@ Documented:
 . adjective: "linearly independent"
 . description: "A subset of vectors with no redundant directions:
                 $\sum c_i v_i = 0$ implies each scalar $c_i = 0$."
+References:
+. $axler.linear.algebra:page{32}
+. $hoffman.kunze:page{40}
 Id: "949d5854-493f-4c4c-a571-e5022cc3d864"
 
 
@@ -219,6 +231,9 @@ Documented:
 . called: "basis for $V?$"
 . description: "A linearly independent spanning set $B \subseteq V$, providing
                 unique coordinate expansions $v = \sum c_i b_i$ for all vectors."
+References:
+. $axler.linear.algebra:page{39}
+. $hoffman.kunze:page{43}
 Id: "f26db264-6e91-499a-8d8d-8896acecadc9"
 
 
@@ -234,6 +249,9 @@ Documented:
 . written: "\dim(V?)"
 . description: "The cardinal number $\dim(V) = |B|$ of vectors in any basis of
                 $V$, invariant by the Steinitz exchange lemma."
+References:
+. $axler.linear.algebra:page{44}
+. $hoffman.kunze:page{44}
 Id: "bb259afa-cc97-4ed6-9e83-5ea9a2d2a224"
 
 

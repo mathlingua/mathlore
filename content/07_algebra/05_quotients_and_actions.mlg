@@ -33,6 +33,8 @@ Documented:
 . description: "The left coset $gH = \{gh : h \in H\}$, forming an equivalence
                 class under the left congruence relation
                 $x \sim y \iff x^{-1}y \in H$."
+References:
+. $dummit.foote:page{77}
 Id: "b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0"
 
 
@@ -48,6 +50,8 @@ Documented:
 . description: "The right coset $Hg = \{hg : h \in H\}$, forming an equivalence
                 class under the right congruence relation
                 $x \sim y \iff xy^{-1} \in H$."
+References:
+. $dummit.foote:page{77}
 Id: "152ef2a9-044c-4687-8325-bc80ce2bfa12"
 
 
@@ -84,6 +88,8 @@ Proof: """Let $g_1, g_2 \in G$. Suppose that the left cosets $g_1H$ and $g_2H$
           we obtain $g_2H \subseteq g_1H$. Consequently, $g_1H = g_2H$. Thus,
           any two left cosets are either identical or disjoint, partitioning the
           group $G$."""
+References:
+. $dummit.foote:page{77}
 Id: "4cafbd92-cf4d-4989-ac8f-e53ed45cb238"
 
 
@@ -109,6 +115,8 @@ Documented:
 . description: "A subgroup $N \trianglelefteq G$ invariant under conjugation
                 ($gNg^{-1} = N$), guaranteeing that the quotient coset
                 multiplication $(gN)(hN) = (gh)N$ is well-defined."
+References:
+. $dummit.foote:page{82}
 Id: "0e5638e1-1109-4980-a652-2e795bed2e44"
 
 
@@ -142,6 +150,8 @@ Documented:
 . written: "\ker(phi?)"
 . description: "The kernel $\ker(\phi) = \{g \in G_1 : \phi(g) = e_2\}$, forming
                 a normal subgroup of the domain group $G_1$."
+References:
+. $dummit.foote:page{73}
 Id: "dbdd8045-535e-4d8b-b4d1-2f10e2d2648f"
 
 
@@ -206,6 +216,8 @@ Documented:
                 elements as permutations of $X$ respecting identities and
                 composition: $e \cdot x = x$ and
                 $(gh) \cdot x = g \cdot (h \cdot x)$."
+References:
+. $dummit.foote:page{112}
 Id: "fa043cd6-0ce8-4504-82bb-aba9ad2c8a30"
 
 
@@ -222,6 +234,8 @@ Documented:
 . description: "The orbit $G \cdot x = \{g \cdot x : g \in G\} \subseteq X$,
                 partitioning $X$ into transitive components under the action of
                 $G$."
+References:
+. $dummit.foote:page{114}
 Id: "373a9fce-21a7-4155-9f1d-cfb662941906"
 
 
@@ -238,6 +252,8 @@ Documented:
 . description: "The stabilizer subgroup
                 $G_x = \{g \in G : g \cdot x = x\} \le G$ of elements fixing
                 $x$."
+References:
+. $dummit.foote:page{114}
 Id: "02a3fe2e-dbbf-49a6-8cf2-cc5cc85568f7"
 
 

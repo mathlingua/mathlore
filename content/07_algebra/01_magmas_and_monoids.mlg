@@ -148,6 +148,9 @@ Documented:
                 $(a * b) * c = a * (b * c)$, ensuring well-defined
                 parenthesization-free products across arbitrary finite
                 sequences."
+References:
+. $dummit.foote:page{16}
+. $bourbaki.algebra:page{1}
 Id: "6ec2faf5-7d2c-4918-a559-6415b94f2b1f"
 
 
@@ -193,6 +196,9 @@ Documented:
 . description: "A semigroup equipped with a neutral identity element $e \in X$:
                 forms a single-object category whose endomorphisms compose
                 associatively with identity $\operatorname{id}$."
+References:
+. $dummit.foote:page{16}
+. $bourbaki.algebra:page{1}
 Id: "034bf6ff-ba6e-4fac-b47e-65cc85d15642"
 
 

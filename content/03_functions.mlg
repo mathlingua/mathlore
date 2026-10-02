@@ -42,6 +42,9 @@ Documented:
                 The defining requirement is existence and uniqueness of the
                 output: for every $x \in A$ there is one and only one $y \in B$
                 with $f(x) = y$."
+References:
+. $enderton.set.theory:page{42}
+. $halmos.set.theory:page{28}
 Id: "1e0cb28d-bc8f-42db-bcfa-86a215e88c7a"
 
 
@@ -75,6 +78,9 @@ Documented:
                 theory, injections correspond to monomorphisms in the category
                 of sets, admitting left inverses (retractions) whenever the
                 domain is non-empty."
+References:
+. $enderton.set.theory:page{42}
+. $halmos.set.theory:page{28}
 Id: "c33dd972-b742-4aed-8bbc-797ecdb2b5af"
 
 
@@ -93,6 +99,9 @@ Documented:
                 in $B$ possesses at least one domain preimage. Under the Axiom
                 of Choice, surjections correspond to split epimorphisms,
                 admitting right inverses (sections)."
+References:
+. $enderton.set.theory:page{42}
+. $halmos.set.theory:page{28}
 Id: "be68a628-8ca8-49c8-8780-bd7aa7401ef4"
 
 
@@ -105,6 +114,9 @@ Documented:
                 epimorphism establishing an exact invertible correspondence.
                 Bijections preserve cardinal size and permit the transfer of
                 mathematical structure between $A$ and $B$."
+References:
+. $enderton.set.theory:page{42}
+. $halmos.set.theory:page{28}
 Id: "554dad1c-22e4-47ae-9d4f-b0fb088de488"
 
 
@@ -157,6 +169,9 @@ Documented:
                 $(g \circ f)(x) = g(f(x))$. Composition realizes the fundamental
                 law of composition in the category of sets, endowing
                 endofunctions $\text{End}(X)$ with monoid structure."
+References:
+. $enderton.set.theory:page{42}
+. $halmos.set.theory:page{28}
 Id: "a5c4b516-227b-4893-aa18-5f04c1f005a4"
 
 
@@ -183,6 +198,9 @@ Documented:
                 $f^{-1} \circ f = \text{id}_A$ and
                 $f \circ f^{-1} = \text{id}_B$. It completely reverses the
                 operational dynamics of $f$."
+References:
+. $enderton.set.theory:page{42}
+. $halmos.set.theory:page{28}
 Id: "894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf"
 
 
