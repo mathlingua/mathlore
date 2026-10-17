@@ -28,10 +28,10 @@ Id: "cbc6feb5-4f5e-41ef-bf59-342c981aa217"
 [\set]
 Declares: X
 satisfies:
-. \axiom.of.empty.set
 . \axiom.of.infinity
 . \axiom.of.union#given{X}
 . \axiom.of.power.set#given{X}
+. \axiom.of.empty.set
 . forAll: Y is \set
   then:
   . \axiom.of.extensionality#given{X := X; Y := Y}
