@@ -192,7 +192,7 @@ Documented:
                 operation is the restriction of that of $G$. Under these
                 conditions $H$ is again a group in its own right."
 Justification:
-. [1]
+. for: (:1:)
   have: *' := \restriction:of{`*`}:on{X' \.set.cross./ X'}
   asserting: (.X' \.set.cross./ X'.) \:subset?:/ (.G \.set.cross./ G.)
   because: X' \:subset?:/ X

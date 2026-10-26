@@ -79,7 +79,7 @@ Documented:
                 inductive supersets), serving as the set-theoretic foundation
                 for discrete counting."
 Justification:
-. [1]
+. for: (:1:)
   have: A is \(inductive)::set
   by: \axiom.of.infinity
 References:
