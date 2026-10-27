@@ -195,8 +195,8 @@ Justification:
 . for: (:1:)
   have: *' := \restriction:of{`*`}:on{X' \.set.cross./ X'}
   asserting: (.X' \.set.cross./ X'.) \:subset?:/ (.G \.set.cross./ G.)
-  rationale: X' \:subset?:/ X
   by: \cross.of.subset.is.subset.of.cross#given{X := X; Y := X'}
+  because: X' \:subset?:/ X
 References:
 . $dummit.foote:page{46}
 . $lang.algebra:page{9}
