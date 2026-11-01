@@ -71,4 +71,3 @@ Run `./build.sh` to build `mlg` from that sibling checkout and export the site
 to `docs/` with the `www.mathlore.org` domain. The script uses the local
 Mathlingua checkout as-is; pull that repository first when you want the latest
 source. Build or export failures stop the script and fail the Actions job.
-
