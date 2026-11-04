@@ -157,7 +157,11 @@ $(\impliedby)$: Suppose $a_n \to L$. Let $\epsilon > 0$.
 By definition of convergence, there exists $N \in \mathbb{N}$ such that for all $n \geq N$,
 $|a_n - L| < \epsilon/2$.
 Then for any $n, m \geq N$, applying the triangle inequality yields:
-$$ |a_n - a_m| = |(a_n - L) + (L - a_m)| \leq |a_n - L| + |a_m - L| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon. $$
+
+$$
+|a_n - a_m| = |(a_n - L) + (L - a_m)| \leq |a_n - L| + |a_m - L| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon.
+$$
+
 Thus $(a_n)$ is a Cauchy sequence.
 
 $(\implies)$: Suppose $(a_n)$ is Cauchy.
@@ -170,7 +174,11 @@ $(\implies)$: Suppose $(a_n)$ is Cauchy.
    such that $|a_n - a_m| < \epsilon/2$ for all $n, m \geq N_2$.
    Since $a_{n_k} \to L$, choose $k$ large enough so that $n_k \geq N_2$ and $|a_{n_k} - L| < \epsilon/2$.
    Then for any $n \geq N_2$:
-   $$ |a_n - L| \leq |a_n - a_{n_k}| + |a_{n_k} - L| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon. $$
+
+   $$
+   |a_n - L| \leq |a_n - a_{n_k}| + |a_{n_k} - L| < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon.
+   $$
+
 Thus $a_n \to L$, establishing Cauchy completeness.
 """
 References:
@@ -198,11 +206,19 @@ By the Completeness Axiom (Least Upper Bound Property), the supremum $L = \sup(A
 We prove that $a_n \to L$:
 Let $\epsilon > 0$. Since $L = \sup(A)$, the quantity $L - \epsilon < L$ cannot be an upper bound for $A$.
 Therefore, there exists some index $N \in \mathbb{N}$ such that:
-$$ a_N > L - \epsilon. $$
+
+$$
+a_N > L - \epsilon.
+$$
+
 Since $(a_n)$ is monotone increasing, for all $n \geq N$ we have $a_n \geq a_N$.
 Furthermore, since $L$ is an upper bound for $A$, $a_n \leq L < L + \epsilon$ for all $n$.
 Combining these inequalities gives:
-$$ L - \epsilon < a_N \leq a_n \leq L < L + \epsilon \implies |a_n - L| < \epsilon $$
+
+$$
+L - \epsilon < a_N \leq a_n \leq L < L + \epsilon \implies |a_n - L| < \epsilon
+$$
+
 for all $n \geq N$.
 Thus $(a_n)$ converges to $L = \sup\{a_n : n \in \mathbb{N}\}$.
 """
@@ -262,9 +278,20 @@ Proof: """Let $(a_n)$ converge to $L$, and let $b_k = a_{n_k}$ be a subsequence,
           $k \in \mathbb{N}$.
 
           Let $\epsilon > 0$. Since $a_n \to L$, there exists $N \in \mathbb{N}$
-          such that for all $n \geq N$: $$ |a_n - L| < \epsilon. $$ Then for any
+          such that for all $n \geq N$:
+
+          $$
+          |a_n - L| < \epsilon.
+          $$
+
+          Then for any
           $k \geq N$, the index satisfies $n_k \geq k \geq N$, which guarantees:
-          $$ |b_k - L| = |a_{n_k} - L| < \epsilon. $$ Therefore, the subsequence
+
+          $$
+          |b_k - L| = |a_{n_k} - L| < \epsilon.
+          $$
+
+          Therefore, the subsequence
           $(b_k)$ converges to the identical limit $L$."""
 Id: "cef832b6-22d8-4377-8e47-577ab1f7bb1d"
 
@@ -305,7 +332,12 @@ Proof: """Let $(a_n)$ be a bounded real sequence. Thus there exists a closed
 
           By the Nested Interval Theorem, $\bigcap_{k=1}^\infty I_k = \{L\}$ for
           a unique real number $L$. Since both $a_{n_k}$ and $L$ belong to
-          $I_k$, we have: $$ |a_{n_k} - L| \leq |I_k| = \frac{b - a}{2^k}. $$
+          $I_k$, we have:
+
+          $$
+          |a_{n_k} - L| \leq |I_k| = \frac{b - a}{2^k}.
+          $$
+
           Since $\lim_{k \to \infty} (b - a)/2^k = 0$, it follows that
           $a_{n_k} \to L$ as $k \to \infty$. Thus every bounded real sequence
           possesses a convergent subsequence."""

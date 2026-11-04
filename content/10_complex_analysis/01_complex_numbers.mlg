@@ -240,14 +240,35 @@ Proof: """Existence follows directly from the construction of
           To establish uniqueness, suppose that $z = x_1 + i y_1 = x_2 + i y_2$
           for real numbers $x_1, x_2, y_1, y_2 \in \mathbb{R}$. Rearranging this
           equality in the field $\mathbb{C}$ yields:
-          $$ (x_1 - x_2) = i(y_2 - y_1). $$ Squaring both sides and using
+
+          $$
+          (x_1 - x_2) = i(y_2 - y_1).
+          $$
+
+          Squaring both sides and using
           $i^2 = -1$, we obtain:
-          $$ (x_1 - x_2)^2 = i^2 (y_2 - y_1)^2 = -(y_2 - y_1)^2. $$ Since
+
+          $$
+          (x_1 - x_2)^2 = i^2 (y_2 - y_1)^2 = -(y_2 - y_1)^2.
+          $$
+
+          Since
           $x_1 - x_2$ and $y_2 - y_1$ are real numbers, their squares are
           non-negative: $(x_1 - x_2)^2 \ge 0$ and $-(y_2 - y_1)^2 \le 0$. The
           only real number that is simultaneously non-negative and non-positive
-          is zero. Therefore: $$ (x_1 - x_2)^2 = 0 \implies x_1 = x_2, $$ and
-          $$ -(y_2 - y_1)^2 = 0 \implies y_1 = y_2. $$ Thus the real and
+          is zero. Therefore:
+
+          $$
+          (x_1 - x_2)^2 = 0 \implies x_1 = x_2,
+          $$
+
+          and
+
+          $$
+          -(y_2 - y_1)^2 = 0 \implies y_1 = y_2.
+          $$
+
+          Thus the real and
           imaginary parts are uniquely determined."""
 Id: "cb72d0b1-7ab5-4a88-9a38-cc75cdeee392"
 
@@ -256,7 +277,11 @@ Text: "While the Cartesian representation $z = x + iy$ reflects the additive vec
        structure of $\mathbb{C} \cong \mathbb{R}^2$, multiplication is fundamentally geometric
        and best understood in polar coordinates $(r, \theta)$. Every nonzero complex number
        $z \in \mathbb{C} \setminus \{0\}$ admits a polar representation:
-       $$ z = r(\cos\theta + i\sin\theta) = r e^{i\theta}, $$
+
+       $$
+       z = r(\cos\theta + i\sin\theta) = r e^{i\theta},
+       $$
+
        where $r = |z| = \sqrt{x^2 + y^2} > 0$ is the uniquely determined modulus, and
        $\theta \in \mathbb{R}$ is the *argument*, denoted $\arg(z)$.
        
@@ -268,7 +293,11 @@ Text: "While the Cartesian representation $z = x + iy$ reflects the additive vec
        
        Euler's formula, $e^{i\theta} = \cos\theta + i\sin\theta$, reveals that complex multiplication
        acts as an infinitesimal rotation-dilation:
-       $$ (r_1 e^{i\theta_1}) \cdot (r_2 e^{i\theta_2}) = (r_1 r_2) e^{i(\theta_1 + \theta_2)}. $$
+
+       $$
+       (r_1 e^{i\theta_1}) \cdot (r_2 e^{i\theta_2}) = (r_1 r_2) e^{i(\theta_1 + \theta_2)}.
+       $$
+
        Moduli multiply, while arguments add. Consequently, the unit circle
        $\mathbb{T} = \{z \in \mathbb{C} : |z| = 1\}$ forms a multiplicative subgroup isomorphic to
        the circle group $U(1)$, and taking powers yields de Moivre's formula $(e^{i\theta})^n = e^{in\theta}$.
@@ -294,24 +323,50 @@ Proof: """
   Let $z = x_1 + i y_1$ and $w = x_2 + i y_2$ with $x_1, x_2, y_1, y_2 \in \mathbb{R}$.
 
   1. **Additivity**: We compute:
-     $$ z + w = (x_1 + x_2) + i(y_1 + y_2), $$
+
+     $$
+     z + w = (x_1 + x_2) + i(y_1 + y_2),
+     $$
+
      so by definition of conjugation:
-     $$ \overline{z + w} = (x_1 + x_2) - i(y_1 + y_2) = (x_1 - i y_1) + (x_2 - i y_2) = \overline{z} + \overline{w}. $$
+
+     $$
+     \overline{z + w} = (x_1 + x_2) - i(y_1 + y_2) = (x_1 - i y_1) + (x_2 - i y_2) = \overline{z} + \overline{w}.
+     $$
 
   2. **Multiplicativity**: By definition of complex multiplication:
-     $$ zw = (x_1 x_2 - y_1 y_2) + i(x_1 y_2 + x_2 y_1). $$
+
+     $$
+     zw = (x_1 x_2 - y_1 y_2) + i(x_1 y_2 + x_2 y_1).
+     $$
+
      Its conjugate is:
-     $$ \overline{zw} = (x_1 x_2 - y_1 y_2) - i(x_1 y_2 + x_2 y_1). $$
+
+     $$
+     \overline{zw} = (x_1 x_2 - y_1 y_2) - i(x_1 y_2 + x_2 y_1).
+     $$
+
      On the other hand, expanding $\overline{z} \cdot \overline{w}$:
-     $$ (x_1 - i y_1)(x_2 - i y_2) = (x_1 x_2 + (-y_1)(-y_2)i^2) - i(x_1 y_2 + x_2 y_1) = (x_1 x_2 - y_1 y_2) - i(x_1 y_2 + x_2 y_1). $$
+
+     $$
+     (x_1 - i y_1)(x_2 - i y_2) = (x_1 x_2 + (-y_1)(-y_2)i^2) - i(x_1 y_2 + x_2 y_1) = (x_1 x_2 - y_1 y_2) - i(x_1 y_2 + x_2 y_1).
+     $$
+
      Thus $\overline{zw} = \overline{z} \cdot \overline{w}$.
 
   3. **Product with Conjugate**: Computing directly:
-     $$ z \overline{z} = (x_1 + i y_1)(x_1 - i y_1) = x_1^2 - (i y_1)^2 = x_1^2 + y_1^2 = |z|^2. $$
+
+     $$
+     z \overline{z} = (x_1 + i y_1)(x_1 - i y_1) = x_1^2 - (i y_1)^2 = x_1^2 + y_1^2 = |z|^2.
+     $$
 
   4. **Multiplicative Inverse**: If $z \ne 0$, then $|z|^2 > 0$ is a non-zero real number.
      Dividing the identity $z \overline{z} = |z|^2$ by $z |z|^2$ yields:
-     $$ z^{-1} = \frac{1}{z} = \frac{\overline{z}}{|z|^2}. $$
+
+     $$
+     z^{-1} = \frac{1}{z} = \frac{\overline{z}}{|z|^2}.
+     $$
+
 """
 Id: "bdb7d794-5eb2-41f5-823f-5f4f719266a3"
 
@@ -346,20 +401,40 @@ Documented:
                 $|z + w| \le |z| + |w|$."
 Proof: """
   1. **Multiplicativity**: Using the algebraic properties of conjugation:
-     $$ |zw|^2 = (zw)\overline{(zw)} = (zw)(\overline{z} \, \overline{w}) = (z\overline{z})(w\overline{w}) = |z|^2 |w|^2. $$
+
+     $$
+     |zw|^2 = (zw)\overline{(zw)} = (zw)(\overline{z} \, \overline{w}) = (z\overline{z})(w\overline{w}) = |z|^2 |w|^2.
+     $$
+
      Taking the non-negative square root of both sides gives $|zw| = |z||w|$.
 
   2. **Triangle Inequality (Subadditivity)**: For any complex number $u$, we have
      $\operatorname{Re}(u) \le \sqrt{\operatorname{Re}(u)^2 + \operatorname{Im}(u)^2} = |u|$.
      Expanding the squared modulus of $z + w$:
-     $$ |z + w|^2 = (z + w)\overline{(z + w)} = (z + w)(\overline{z} + \overline{w}) = z\overline{z} + z\overline{w} + w\overline{z} + w\overline{w}. $$
+
+     $$
+     |z + w|^2 = (z + w)\overline{(z + w)} = (z + w)(\overline{z} + \overline{w}) = z\overline{z} + z\overline{w} + w\overline{z} + w\overline{w}.
+     $$
+
      Note that $w\overline{z} = \overline{z\overline{w}}$, so $z\overline{w} + w\overline{z} = 2\operatorname{Re}(z\overline{w})$.
      Therefore:
-     $$ |z + w|^2 = |z|^2 + 2\operatorname{Re}(z\overline{w}) + |w|^2. $$
+
+     $$
+     |z + w|^2 = |z|^2 + 2\operatorname{Re}(z\overline{w}) + |w|^2.
+     $$
+
      Applying the bound $\operatorname{Re}(z\overline{w}) \le |z\overline{w}| = |z||\overline{w}| = |z||w|$:
-     $$ |z + w|^2 \le |z|^2 + 2|z||w| + |w|^2 = (|z| + |w|)^2. $$
+
+     $$
+     |z + w|^2 \le |z|^2 + 2|z||w| + |w|^2 = (|z| + |w|)^2.
+     $$
+
      Taking the non-negative square root of both sides yields the triangle inequality:
-     $$ |z + w| \le |z| + |w|. $$
+
+     $$
+     |z + w| \le |z| + |w|.
+     $$
+
 """
 Id: "d366bd62-6a88-4090-9613-ac5843473195"
 
@@ -373,7 +448,11 @@ Text: "Equipped with the distance function $d(z, w) = |z - w|$, the complex plan
        *extended complex plane* $\widehat{\mathbb{C}} = \mathbb{C} \cup \{\infty\}$ is homeomorphic
        to the two-dimensional unit sphere $S^2 = \{(X, Y, Z) \in \mathbb{R}^3 : X^2 + Y^2 + Z^2 = 1\}$
        via *stereographic projection* from the north pole $(0, 0, 1)$:
-       $$ z = \frac{X + iY}{1 - Z}, \quad (X, Y, Z) = \left(\frac{2\operatorname{Re}(z)}{|z|^2 + 1}, \, \frac{2\operatorname{Im}(z)}{|z|^2 + 1}, \, \frac{|z|^2 - 1}{|z|^2 + 1}\right). $$
+
+       $$
+       z = \frac{X + iY}{1 - Z}, \quad (X, Y, Z) = \left(\frac{2\operatorname{Re}(z)}{|z|^2 + 1}, \, \frac{2\operatorname{Im}(z)}{|z|^2 + 1}, \, \frac{|z|^2 - 1}{|z|^2 + 1}\right).
+       $$
+
        Under this projection—known as the *Riemann sphere*—circles on the sphere correspond bijectively
        to circles and straight lines in the plane, and the group of conformal automorphisms is precisely
        the group of Möbius transformations $z \mapsto \frac{az + b}{cz + d}$ with $ad - bc \ne 0$."
@@ -387,7 +466,11 @@ TextTheorem: "Fundamental Theorem of Algebra. Let $P(z) = a_n z^n + a_{n-1} z^{n
               
               Consequently, by polynomial long division and induction on the degree, every degree-$n$
               polynomial factors completely into $n$ linear factors:
-              $$ P(z) = a_n (z - \alpha_1)(z - \alpha_2) \cdots (z - \alpha_n), $$
+
+              $$
+              P(z) = a_n (z - \alpha_1)(z - \alpha_2) \cdots (z - \alpha_n),
+              $$
+
               where $\alpha_1, \ldots, \alpha_n \in \mathbb{C}$ are the roots counted with multiplicity.
               In the language of field theory, this theorem establishes that $\mathbb{C}$ is *algebraically closed*,
               forming the algebraic closure of $\mathbb{R}$ with $[\mathbb{C} : \mathbb{R}] = 2$.

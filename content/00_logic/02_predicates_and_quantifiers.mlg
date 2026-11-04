@@ -132,8 +132,14 @@ Text: "Just as De Morgan's laws govern the interaction between negation,
        governs the negation of quantifiers. Negating a universal claim produces
        an existential claim, and negating an existential claim produces a
        universal claim:
-       $$\neg \forall x \in D \, P(x) \iff \exists x \in D \, \neg P(x)$$
-       $$\neg \exists x \in D \, P(x) \iff \forall x \in D \, \neg P(x)$$
+
+       $$
+       \neg \forall x \in D \, P(x) \iff \exists x \in D \, \neg P(x)
+       $$
+
+       $$
+       \neg \exists x \in D \, P(x) \iff \forall x \in D \, \neg P(x)
+       $$
 
        To deny that every swan is white is not to claim that every swan is
        black; it is to assert the existence of at least one non-white swan.
@@ -204,10 +210,20 @@ Text: "When multiple quantifiers appear in a single formula, their ordering is
        order records dependency*.
 
        Consider a binary relation $R(x, y)$ over a domain $D$. The statement:
-       $$\forall x \, \exists y \, R(x, y)$$ asserts that for each individual
+
+       $$
+       \forall x \, \exists y \, R(x, y)
+       $$
+
+       asserts that for each individual
        $x$, there exists a corresponding $y$. Crucially, the choice of $y$ is
        permitted to depend directly upon $x$. By contrast, the statement:
-       $$\exists y \, \forall x \, R(x, y)$$ demands that a single, universal
+
+       $$
+       \exists y \, \forall x \, R(x, y)
+       $$
+
+       demands that a single, universal
        witness $y$ must be chosen *in advance*, functioning simultaneously for
        all possible values of $x$.
 
@@ -266,8 +282,14 @@ Text: "Finally, we examine the formal structure of *restricted quantifiers*. Whe
        we write $\forall x \in D \, P(x)$ or $\exists x \in D \, P(x)$, the domain
        restriction is syntactic sugar whose underlying expansion uses the standard
        Boolean connectives:
-       $$\forall x \in D \, P(x) \quad \equiv \quad \forall x \, (x \in D \Rightarrow P(x))$$
-       $$\exists x \in D \, P(x) \quad \equiv \quad \exists x \, (x \in D \land P(x))$$
+
+       $$
+       \forall x \in D \, P(x) \quad \equiv \quad \forall x \, (x \in D \Rightarrow P(x))
+       $$
+
+       $$
+       \exists x \in D \, P(x) \quad \equiv \quad \exists x \, (x \in D \land P(x))
+       $$
 
        The change from conditional ($\Rightarrow$) in the universal quantifier to
        conjunction ($\land$) in the existential quantifier is of the utmost logical

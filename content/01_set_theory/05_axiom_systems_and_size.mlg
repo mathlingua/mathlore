@@ -271,7 +271,12 @@ Documented:
 Proof: """Suppose for contradiction that there exists a bijection
           $f : A \to \mathcal{P}(A)$. In particular, $f$ must be surjective.
           Define the diagonal subset $D \subseteq A$ by Separation:
-          $$D := \{x \in A : x \notin f(x)\}$$ Because $D \subseteq A$, $D$ is
+
+          $$
+          D := \{x \in A : x \notin f(x)\}
+          $$
+
+          Because $D \subseteq A$, $D$ is
           an element of the power set $\mathcal{P}(A)$. Since $f$ is surjective
           onto $\mathcal{P}(A)$, there must exist an element $d \in A$ such that
           $f(d) = D$. Now ask whether $d \in D$:
@@ -291,7 +296,11 @@ Text: "Cantor's diagonal argument is one of the grand turning points in
        intellectual history. It demonstrates that infinity is not a single
        monolith: there exists an unending, strictly increasing hierarchy of
        infinite cardinalities:
-       $$|A| < |\mathcal{P}(A)| < |\mathcal{P}(\mathcal{P}(A))| < \dots$$
+
+       $$
+       |A| < |\mathcal{P}(A)| < |\mathcal{P}(\mathcal{P}(A))| < \dots
+       $$
+
        Moreover, the diagonal technique introduced here is the conceptual
        ancestor of the most profound limitative results of modern thought:
        Bertrand Russell's refutation of naive comprehension, Kurt Gödel's First

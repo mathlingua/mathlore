@@ -60,14 +60,30 @@ Let $G_1 = (X_1, *_1, e_1)$ and $G_2 = (X_2, *_2, e_2)$ be groups.
 We verify the group axioms for the direct product $G_1 \times G_2$:
 1. **Associativity**: Let $(a_1, a_2), (b_1, b_2), (c_1, c_2) \in G_1 \times G_2$.
    By definition of the coordinatewise operation $*_3$:
-   $$ ((a_1, a_2) *_3 (b_1, b_2)) *_3 (c_1, c_2) = (a_1 *_1 b_1, a_2 *_2 b_2) *_3 (c_1, c_2) = ((a_1 *_1 b_1) *_1 c_1, (a_2 *_2 b_2) *_2 c_2). $$
+
+   $$
+   ((a_1, a_2) *_3 (b_1, b_2)) *_3 (c_1, c_2) = (a_1 *_1 b_1, a_2 *_2 b_2) *_3 (c_1, c_2) = ((a_1 *_1 b_1) *_1 c_1, (a_2 *_2 b_2) *_2 c_2).
+   $$
+
    By the associativity of $*_1$ in $G_1$ and $*_2$ in $G_2$, this equals:
-   $$ (a_1 *_1 (b_1 *_1 c_1), a_2 *_2 (b_2 *_2 c_2)) = (a_1, a_2) *_3 (b_1 *_1 c_1, b_2 *_2 c_2) = (a_1, a_2) *_3 ((b_1, b_2) *_3 (c_1, c_2)). $$
+
+   $$
+   (a_1 *_1 (b_1 *_1 c_1), a_2 *_2 (b_2 *_2 c_2)) = (a_1, a_2) *_3 (b_1 *_1 c_1, b_2 *_2 c_2) = (a_1, a_2) *_3 ((b_1, b_2) *_3 (c_1, c_2)).
+   $$
+
 2. **Identity**: The element $e_3 = (e_1, e_2)$ satisfies:
-   $$ (a_1, a_2) *_3 (e_1, e_2) = (a_1 *_1 e_1, a_2 *_2 e_2) = (a_1, a_2), $$
+
+   $$
+   (a_1, a_2) *_3 (e_1, e_2) = (a_1 *_1 e_1, a_2 *_2 e_2) = (a_1, a_2),
+   $$
+
    and symmetrically $(e_1, e_2) *_3 (a_1, a_2) = (a_1, a_2)$.
 3. **Inverses**: For any $(a_1, a_2) \in G_1 \times G_2$, the element $(a_1^{-1}, a_2^{-1})$ satisfies:
-   $$ (a_1, a_2) *_3 (a_1^{-1}, a_2^{-1}) = (a_1 *_1 a_1^{-1}, a_2 *_2 a_2^{-1}) = (e_1, e_2) = e_3, $$
+
+   $$
+   (a_1, a_2) *_3 (a_1^{-1}, a_2^{-1}) = (a_1 *_1 a_1^{-1}, a_2 *_2 a_2^{-1}) = (e_1, e_2) = e_3,
+   $$
+
    and $(a_1^{-1}, a_2^{-1}) *_3 (a_1, a_2) = (e_1, e_2) = e_3$.
 Thus $(G_1 \times G_2, *_3, e_3)$ is a group.
 """
@@ -177,14 +193,26 @@ Let $\varphi : G_1 \to G_2$ be a group homomorphism.
 
 First, by the identity axiom in $G_1$, $e_1 *_1 e_1 = e_1$.
 Applying $\varphi$ to both sides and using multiplicativity gives:
-$$ \varphi(e_1) = \varphi(e_1 *_1 e_1) = \varphi(e_1) *_2 \varphi(e_1). $$
+
+$$
+\varphi(e_1) = \varphi(e_1 *_1 e_1) = \varphi(e_1) *_2 \varphi(e_1).
+$$
+
 Multiplying both sides on the left by the group inverse $\varphi(e_1)^{-1} \in G_2$:
-$$ e_2 = \varphi(e_1)^{-1} *_2 \varphi(e_1) = \varphi(e_1)^{-1} *_2 (\varphi(e_1) *_2 \varphi(e_1)) = (\varphi(e_1)^{-1} *_2 \varphi(e_1)) *_2 \varphi(e_1) = e_2 *_2 \varphi(e_1) = \varphi(e_1). $$
+
+$$
+e_2 = \varphi(e_1)^{-1} *_2 \varphi(e_1) = \varphi(e_1)^{-1} *_2 (\varphi(e_1) *_2 \varphi(e_1)) = (\varphi(e_1)^{-1} *_2 \varphi(e_1)) *_2 \varphi(e_1) = e_2 *_2 \varphi(e_1) = \varphi(e_1).
+$$
+
 Thus $\varphi(e_1) = e_2$.
 
 Second, let $x \in G_1$ with $y = \varphi(x) \in G_2$. Since $x *_1 x^{-1} = e_1$,
 evaluating $\varphi$ yields:
-$$ \varphi(x) *_2 \varphi(x^{-1}) = \varphi(x *_1 x^{-1}) = \varphi(e_1) = e_2. $$
+
+$$
+\varphi(x) *_2 \varphi(x^{-1}) = \varphi(x *_1 x^{-1}) = \varphi(e_1) = e_2.
+$$
+
 Similarly, $\varphi(x^{-1}) *_2 \varphi(x) = \varphi(x^{-1} *_1 x) = \varphi(e_1) = e_2$.
 By the uniqueness of inverses in $G_2$, it follows that $\varphi(x^{-1}) = \varphi(x)^{-1} = y^{-1}$.
 """
@@ -238,7 +266,11 @@ Let $G = (X, *, e)$ be a group and $Z = Z(G) = \{z \in G : \forall g \in G, z * 
 1. **Identity**: For any $g \in G$, $e * g = g = g * e$, so $e \in Z$.
 2. **Closure and Internal Commutativity**: Let $x, y \in Z$. For any $g \in G$,
    applying associativity and the centrality of $x$ and $y$:
-   $$ (x * y) * g = x * (y * g) = x * (g * y) = (x * g) * y = (g * x) * y = g * (x * y). $$
+
+   $$
+   (x * y) * g = x * (y * g) = x * (g * y) = (x * g) * y = (g * x) * y = g * (x * y).
+   $$
+
    Thus $x * y \in Z$. Moreover, since $y \in G$, $x * y = y * x$, so $Z$ is abelian.
 3. **Inverses**: Let $x \in Z$. For any $g \in G$, $x * g^{-1} = g^{-1} * x$.
    Taking inverses of both sides yields $(x * g^{-1})^{-1} = (g^{-1} * x)^{-1}$,

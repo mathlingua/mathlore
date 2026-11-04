@@ -136,7 +136,10 @@ TextTheorem: "The Intermediate Value Theorem (Bolzano). Let
               interval with $a < b$. If $y$ lies between $f(a)$ and $f(b)$ (that
               is, $\min\{f(a), f(b)\} \leq y \leq \max\{f(a), f(b)\}$), then
               there exists at least one point $c \in [a, b]$ such that:
-              $$ f(c) = y. $$
+
+              $$
+              f(c) = y.
+              $$
 
               *Proof*: Assume without loss of generality that $f(a) < y < f(b)$.
               Define the auxiliary continuous function $g(x) = f(x) - y$, so
@@ -180,8 +183,11 @@ Id: "1c1dc16f-d9f4-431c-84ab-2a013263c6a4"
 TextTheorem: "The Extreme Value Theorem (Weierstrass). If $f : [a, b] \to \mathbb{R}$
               is continuous on a closed bounded interval, then $f$ is bounded and attains
               both an absolute maximum and an absolute minimum on $[a, b]$:
-              $$ \exists \, x_{\min}, x_{\max} \in [a, b] \quad \text{such that} \quad f(x_{\min}) \leq f(x) \leq f(x_{\max}) \quad \forall x \in [a, b]. $$
-              
+
+              $$
+              \exists \, x_{\min}, x_{\max} \in [a, b] \quad \text{such that} \quad f(x_{\min}) \leq f(x) \leq f(x_{\max}) \quad \forall x \in [a, b].
+              $$
+
               *Proof Sketch*: Let $M = \sup\{f(x) : x \in [a, b]\} \in \mathbb{R} \cup \{+\infty\}$.
               Choose a sequence $(x_n)$ in $[a, b]$ such that $f(x_n) \to M$.
               Since $[a, b]$ is bounded, by the Bolzano-Weierstrass theorem $(x_n)$ has a

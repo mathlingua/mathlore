@@ -72,7 +72,12 @@ Documented:
                 smaller predecessors $k < n$. Equipotent to ordinary induction
                 via cumulative truth predicates."
 Proof: """Define the auxiliary predicate $Q(n)$ by
-          $$Q(n) \iff \forall k < n, \, P(k)$$ We prove
+
+          $$
+          Q(n) \iff \forall k < n, \, P(k)
+          $$
+
+          We prove
           $\forall n \in \mathbb{N}, Q(n)$ by ordinary mathematical induction on
           $n$:
           1. *Base Case ($n = 0$)*: The statement $Q(0)$ asserts that $P(k)$

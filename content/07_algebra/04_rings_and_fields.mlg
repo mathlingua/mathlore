@@ -10,7 +10,11 @@ Text: "While groups formalize symmetries through a single invertible operation, 
        arbitrary translations and subtractions), multiplication forms a monoid
        (providing composition and an identity), and the two operations are bound
        together by the *distributive laws*:
-       $$ a \cdot (b + c) = a \cdot b + a \cdot c \quad \text{and} \quad (a + b) \cdot c = a \cdot c + b \cdot c. $$
+
+       $$
+       a \cdot (b + c) = a \cdot b + a \cdot c \quad \text{and} \quad (a + b) \cdot c = a \cdot c + b \cdot c.
+       $$
+
        The distributive property ensures that multiplication behaves as an endomorphism
        of the additive group. Conceived through the pioneering work of Richard Dedekind,
        David Hilbert, and Emmy Noether, rings provide the overarching framework for
@@ -357,15 +361,27 @@ Proof: """
 Let $R = (R_{\text{set}}, +_R, *_R, 0_R, 1_R)$ and $S = (S_{\text{set}}, +_S, *_S, 0_S, 1_S)$ be rings,
 and let $\phi : R \to S$ be a ring homomorphism.
 By definition, the kernel is
-$$ K = \ker(\phi) = \{x \in R_{\text{set}} \mid \phi(x) = 0_S\}. $$
+
+$$
+K = \ker(\phi) = \{x \in R_{\text{set}} \mid \phi(x) = 0_S\}.
+$$
+
 To establish that $K$ is an ideal of $R$ ($K \text{ is } \operatorname{ideal}(R)$),
 we verify the defining conditions:
 
 1. **Non-emptiness and Zero Element**:
    Since $\phi$ is a ring homomorphism, it preserves the additive group structure:
-   $$ \phi(0_R) = \phi(0_R +_R 0_R) = \phi(0_R) +_S \phi(0_R). $$
+
+   $$
+   \phi(0_R) = \phi(0_R +_R 0_R) = \phi(0_R) +_S \phi(0_R).
+   $$
+
    Subtracting $\phi(0_R)$ from both sides in the abelian additive group of $S$ gives:
-   $$ \phi(0_R) = 0_S. $$
+
+   $$
+   \phi(0_R) = 0_S.
+   $$
+
    Therefore, $0_R \in K$, so $K$ is non-empty.
 
 2. **Additive Subgroup**:
@@ -373,7 +389,11 @@ we verify the defining conditions:
    Because $\phi$ is a homomorphism between the underlying additive abelian groups of $R$ and $S$,
    it respects additive inverses: $\phi(-_R y) = -_S \phi(y) = -_S 0_S = 0_S$.
    Thus:
-   $$ \phi(x -_R y) = \phi(x +_R (-_R y)) = \phi(x) +_S \phi(-_R y) = \phi(x) -_S \phi(y) = 0_S -_S 0_S = 0_S. $$
+
+   $$
+   \phi(x -_R y) = \phi(x +_R (-_R y)) = \phi(x) +_S \phi(-_R y) = \phi(x) -_S \phi(y) = 0_S -_S 0_S = 0_S.
+   $$
+
    Consequently, $x -_R y \in K$.
    By the one-step subgroup test, $K$ is an additive subgroup of $(R_{\text{set}}, +_R, 0_R)$.
    In particular, $K$ is closed under addition ($x +_R y \in K$ for all $x, y \in K$)
@@ -383,10 +403,18 @@ we verify the defining conditions:
    Let $r \in R_{\text{set}}$ and $x \in K$. Since $x \in K$, $\phi(x) = 0_S$.
    Using the multiplicativity of the ring homomorphism $\phi$:
    - For left multiplication:
-     $$ \phi(r *_R x) = \phi(r) *_S \phi(x) = \phi(r) *_S 0_S = 0_S, $$
+
+     $$
+     \phi(r *_R x) = \phi(r) *_S \phi(x) = \phi(r) *_S 0_S = 0_S,
+     $$
+
      which proves that $r *_R x \in K$.
    - For right multiplication:
-     $$ \phi(x *_R r) = \phi(x) *_S \phi(r) = 0_S *_S \phi(r) = 0_S, $$
+
+     $$
+     \phi(x *_R r) = \phi(x) *_S \phi(r) = 0_S *_S \phi(r) = 0_S,
+     $$
+
      which proves that $x *_R r \in K$.
 
 Since $K$ contains $0_R$, is closed under subtraction, and absorbs multiplication by all elements of $R$ from both the left and right, $K$ forms a two-sided ideal of $R$.

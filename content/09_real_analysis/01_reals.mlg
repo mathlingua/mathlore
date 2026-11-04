@@ -843,7 +843,10 @@ TextTheorem: "The Density of Rationals and Irrationals. Between any two distinct
               real numbers $x < y$, there exists both a rational number
               $q \in \mathbb{Q}$ and an irrational number
               $r \in \mathbb{R} \setminus \mathbb{Q}$ satisfying:
-              $$ x < q < y \quad \text{and} \quad x < r < y. $$
+
+              $$
+              x < q < y \quad \text{and} \quad x < r < y.
+              $$
 
               *Proof Sketch*:
               1. **Rationals**: Since $y - x > 0$, by the Archimedean property
@@ -867,7 +870,13 @@ TextTheorem: "The Nested Interval Theorem (Cantor's Intersection Theorem). Let
               $I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots$ be a decreasing
               sequence of non-empty closed bounded intervals
               $I_n = [a_n, b_n] \subset \mathbb{R}$. Then their intersection is
-              non-empty: $$ \bigcap_{n=1}^\infty I_n \neq \emptyset. $$ If
+              non-empty:
+
+              $$
+              \bigcap_{n=1}^\infty I_n \neq \emptyset.
+              $$
+
+              If
               furthermore the lengths satisfy
               $\lim_{n \to \infty} (b_n - a_n) = 0$, then the intersection
               contains precisely one point $\xi \in \mathbb{R}$.

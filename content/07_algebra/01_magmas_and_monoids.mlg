@@ -269,7 +269,11 @@ TextTheorem: "In any monoid $(M, *, e)$, non-negative integer powers of an
               $a^{n+1} = a^n * a$ for $n \in \mathbb{N}$.
 
               By associativity, the classical index laws hold:
-              $$ a^{m+n} = a^m * a^n \quad \text{and} \quad (a^m)^n = a^{mn} $$
+
+              $$
+              a^{m+n} = a^m * a^n \quad \text{and} \quad (a^m)^n = a^{mn}
+              $$
+
               for all $m, n \in \mathbb{N}$. Although the ambient monoid $M$ may
               be non-commutative, any two powers of the same element commute:
               $a^m * a^n = a^{m+n} = a^{n+m} = a^n * a^m$. Thus the cyclic
@@ -281,7 +285,11 @@ Id: "005a116a-0754-4c0f-a020-97660010eb3f"
 Text: "The ladder from magma to semigroup to monoid represents a sequence of algebraic
        refinements that enrich the equational theory while preserving the underlying carrier
        and operation. Categorically, this hierarchy is governed by faithful forgetful functors:
-       $$ \mathbf{Mon} \longrightarrow \mathbf{SemiGrp} \longrightarrow \mathbf{Magma} \longrightarrow \mathbf{Set}. $$
+
+       $$
+       \mathbf{Mon} \longrightarrow \mathbf{SemiGrp} \longrightarrow \mathbf{Magma} \longrightarrow \mathbf{Set}.
+       $$
+
        Any equational theorem established for a less restrictive structure (such as
        generalized associativity in semigroups) holds universally across all subsequent
        specializations (including monoids, groups, rings, and fields) without separate

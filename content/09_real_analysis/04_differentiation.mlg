@@ -7,7 +7,11 @@ Text: "Differentiation investigates the first-order local linear approximation o
        
        Geometrically and conceptually, the derivative $f'(x_0)$ is far more than a
        limit of secant slopes: it is the unique scalar such that:
-       $$ f(x_0 + h) = f(x_0) + f'(x_0) \cdot h + r(h), \quad \text{where} \quad \lim_{h \to 0} \frac{r(h)}{h} = 0. $$
+
+       $$
+       f(x_0 + h) = f(x_0) + f'(x_0) \cdot h + r(h), \quad \text{where} \quad \lim_{h \to 0} \frac{r(h)}{h} = 0.
+       $$
+
        The linear map $h \mapsto f'(x_0) \cdot h$ represents the tangent linear approximation
        to $f$ at $x_0$, with an error $r(h) = o(h)$ that decays strictly faster than
        the displacement $h$ itself. This formulation generalizes seamlessly to multivariable
@@ -91,10 +95,18 @@ TextTheorem: "The Mean Value Theorem (Lagrange). Let $f : [a, b] \to \mathbb{R}$
               be continuous on the closed bounded interval $[a, b]$ and
               differentiable on the open interior $(a, b)$ with $a < b$. Then
               there exists at least one point $c \in (a, b)$ such that:
-              $$ f'(c) = \frac{f(b) - f(a)}{b - a}. $$
+
+              $$
+              f'(c) = \frac{f(b) - f(a)}{b - a}.
+              $$
 
               *Proof*: Consider the secant difference function:
-              $$ g(x) = f(x) - f(a) - \frac{f(b) - f(a)}{b - a}(x - a). $$ The
+
+              $$
+              g(x) = f(x) - f(a) - \frac{f(b) - f(a)}{b - a}(x - a).
+              $$
+
+              The
               function $g$ is continuous on $[a, b]$, differentiable on
               $(a, b)$, and satisfies $g(a) = 0 = g(b)$. By the Extreme Value
               Theorem, $g$ attains both an absolute maximum and an absolute
@@ -135,14 +147,21 @@ TextTheorem: "The Chain Rule. Let $U, V \subseteq \mathbb{R}$ be open intervals.
               If $f : U \to V$ is differentiable at $x_0 \in U$ and $g : V \to \mathbb{R}$
               is differentiable at $f(x_0) \in V$, then the composite function $g \circ f$
               is differentiable at $x_0$, with derivative given by:
-              $$ (g \circ f)'(x_0) = g'(f(x_0)) \cdot f'(x_0). $$
-              
+
+              $$
+              (g \circ f)'(x_0) = g'(f(x_0)) \cdot f'(x_0).
+              $$
+
               *Proof (Carathéodory's Formulation)*: Differentiability of $g$ at $y_0 = f(x_0)$
               is equivalent to the existence of a function $\psi : V \to \mathbb{R}$ continuous
               at $y_0$ such that $g(y) - g(y_0) = \psi(y)(y - y_0)$, with $\psi(y_0) = g'(y_0)$.
               Similarly, $f(x) - f(x_0) = \phi(x)(x - x_0)$ with $\phi$ continuous at $x_0$ and $\phi(x_0) = f'(x_0)$.
               Substituting $y = f(x)$ gives:
-              $$ (g \circ f)(x) - (g \circ f)(x_0) = \psi(f(x))(f(x) - f(x_0)) = [\psi(f(x)) \cdot \phi(x)](x - x_0). $$
+
+              $$
+              (g \circ f)(x) - (g \circ f)(x_0) = \psi(f(x))(f(x) - f(x_0)) = [\psi(f(x)) \cdot \phi(x)](x - x_0).
+              $$
+
               Since $f$ is continuous at $x_0$ and $\psi$ is continuous at $f(x_0)$, the product
               $\psi(f(x)) \cdot \phi(x)$ is continuous at $x_0$.
               Taking the limit as $x \to x_0$ yields $(g \circ f)'(x_0) = \psi(f(x_0)) \cdot \phi(x_0) = g'(f(x_0)) f'(x_0)$."

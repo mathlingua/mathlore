@@ -5,7 +5,11 @@ Id: "165a0b80-16b8-4616-9d9d-95efe4751d2d"
 Text: "A *linear transformation* (or linear map) $T : V \to W$ between vector spaces
        over the same field $F$ is a function that preserves vector addition and scalar
        multiplication:
-       $$ T(u + v) = T(u) + T(v) \quad \text{and} \quad T(c \cdot v) = c \cdot T(v). $$
+
+       $$
+       T(u + v) = T(u) + T(v) \quad \text{and} \quad T(c \cdot v) = c \cdot T(v).
+       $$
+
        Equivalently, $T$ preserves all linear combinations: $T(\sum c_i v_i) = \sum c_i T(v_i)$.
        Linear maps are the structure-preserving morphisms of linear algebra, forming
        the vector space $\mathcal{L}(V, W) = \operatorname{Hom}_F(V, W)$ under pointwise
@@ -150,20 +154,36 @@ so $n = k + m$.
 We claim that $S = \{T(v_1), \dots, T(v_m)\}$ is a basis for the image $\operatorname{im}(T)$:
 1. **Spanning**: Let $w \in \operatorname{im}(T)$, so $w = T(v)$ for some $v \in V$.
    Expanding $v$ in the basis of $V$:
-   $$ v = \sum_{i=1}^k a_i u_i + \sum_{j=1}^m b_j v_j. $$
+
+   $$
+   v = \sum_{i=1}^k a_i u_i + \sum_{j=1}^m b_j v_j.
+   $$
+
    Applying linearity and using $T(u_i) = 0$:
-   $$ w = T(v) = \sum_{i=1}^k a_i T(u_i) + \sum_{j=1}^m b_j T(v_j) = 0 + \sum_{j=1}^m b_j T(v_j). $$
+
+   $$
+   w = T(v) = \sum_{i=1}^k a_i T(u_i) + \sum_{j=1}^m b_j T(v_j) = 0 + \sum_{j=1}^m b_j T(v_j).
+   $$
+
    Thus $S$ spans $\operatorname{im}(T)$.
 2. **Linear Independence**: Suppose $\sum_{j=1}^m c_j T(v_j) = 0$.
    By linearity, $T(\sum_{j=1}^m c_j v_j) = 0$, so the vector $v^* = \sum_{j=1}^m c_j v_j \in \ker(T)$.
    Expanding $v^*$ in the basis $\{u_i\}$ of $\ker(T)$ gives $v^* = \sum_{i=1}^k d_i u_i$, so:
-   $$ \sum_{i=1}^k (-d_i) u_i + \sum_{j=1}^m c_j v_j = 0. $$
+
+   $$
+   \sum_{i=1}^k (-d_i) u_i + \sum_{j=1}^m c_j v_j = 0.
+   $$
+
    Since $\{u_1, \dots, u_k, v_1, \dots, v_m\}$ is linearly independent in $V$, all coefficients
    must vanish: in particular, $c_1 = \dots = c_m = 0$.
 
 Hence $S$ is a basis for $\operatorname{im}(T)$, establishing $\operatorname{rank}(T) = \dim(\operatorname{im} T) = m$.
 Therefore:
-$$ \dim(V) = k + m = \dim(\ker T) + \dim(\operatorname{im} T). $$
+
+$$
+\dim(V) = k + m = \dim(\ker T) + \dim(\operatorname{im} T).
+$$
+
 """
 References:
 . $axler.linear.algebra:page{62}
@@ -174,7 +194,13 @@ TextTheorem: "The First Isomorphism Theorem for Vector Spaces. For any linear
               map $T : V \to W$, the induced mapping
               $\widetilde{T} : V / \ker(T) \to \operatorname{im}(T)$ defined by
               $\widetilde{T}(v + \ker T) = T(v)$ is a well-defined vector space
-              isomorphism: $$ V / \ker(T) \cong \operatorname{im}(T). $$ The
+              isomorphism:
+
+              $$
+              V / \ker(T) \cong \operatorname{im}(T).
+              $$
+
+              The
               quotient removes precisely the directions collapsed by $T$,
               leaving a faithful copy of the image. Equating dimensions on both
               sides immediately recovers the Rank-Nullity Theorem:
@@ -199,7 +225,10 @@ Documented:
 Proof: """
 Let $\dim(V) = \dim(W) = n < \infty$.
 By the Rank-Nullity Theorem:
-$$ \dim(V) = \dim(\ker T) + \dim(\operatorname{im} T) \implies n = \dim(\ker T) + \dim(\operatorname{im} T). $$
+
+$$
+\dim(V) = \dim(\ker T) + \dim(\operatorname{im} T) \implies n = \dim(\ker T) + \dim(\operatorname{im} T).
+$$
 
 - $(\implies)$: Suppose $T$ is injective. Then $\ker(T) = \{0\}$, so $\dim(\ker T) = 0$.
   The formula yields $\dim(\operatorname{im} T) = n - 0 = n = \dim(W)$.

@@ -67,12 +67,16 @@ Text: "The *successor* of a set $X$, denoted $S(X) = X \cup \{X\}$, adjoins $X$
 
        This elegant construction, introduced by John von Neumann in 1923, forms
        the engine for encoding the natural numbers within pure set theory:
-       $$\begin{aligned}
+
+       $$
+       \begin{aligned}
        0 &:= \emptyset \\
        1 &:= S(0) = \emptyset \cup \{\emptyset\} = \{\emptyset\} = \{0\} \\
        2 &:= S(1) = \{0\} \cup \{1\} = \{0, 1\} \\
        3 &:= S(2) = \{0, 1\} \cup \{2\} = \{0, 1, 2\}
-       \end{aligned}$$
+       \end{aligned}
+       $$
+
        In this von Neumann ordinal representation, each natural number $n$ is
        literally the set of all preceding natural numbers, so that
        $n = \{0, 1, \dots, n-1\}$ and the cardinality $|n|$ is precisely $n$."
@@ -104,7 +108,13 @@ Id: "55851b31-9fa9-4b8e-b61b-315b7559c66d"
 Text: "In mathematical practice, sets are rarely specified by exhaustive
        enumeration. Instead, they are defined through *comprehension* (or
        set-builder) notation, which specifies a predicate characterizing
-       membership: $$\{x \in A : \varphi(x)\}$$ Here $\varphi$ is a predicate on
+       membership:
+
+       $$
+       \{x \in A : \varphi(x)\}
+       $$
+
+       Here $\varphi$ is a predicate on
        sets, and the Axiom Schema of Separation guarantees that the collection
        of all elements in the preexisting set $A$ satisfying $\varphi$ forms a
        legitimate set. For finite sets, we retain the familiar roster notation
@@ -153,7 +163,12 @@ Text: "While sets are inherently unordered collections, mathematics
 
        In 1921, Kazimierz Kuratowski solved the problem of encoding ordered
        pairs within pure set theory by defining:
-       $$(x, y) := \{\{x\}, \{x, y\}\}$$ This ingenious device encodes the first
+
+       $$
+       (x, y) := \{\{x\}, \{x, y\}\}
+       $$
+
+       This ingenious device encodes the first
        coordinate $x$ by placing it in a singleton, while the pair $\{x, y\}$
        bundles both coordinates together. The first coordinate can be uniquely
        recovered as the sole element in the intersection of all elements of the
@@ -179,7 +194,12 @@ Id: "8fd9d494-2882-4639-bb50-44a56626d1c4"
 Text: "With ordered pairs established, we can define the *Cartesian product*
        $A \times B$, named in honor of René Descartes. The Cartesian product
        gathers all ordered pairs $(a, b)$ such that $a \in A$ and $b \in B$:
-       $$A \times B := \{(a, b) : a \in A \land b \in B\}$$ The Cartesian
+
+       $$
+       A \times B := \{(a, b) : a \in A \land b \in B\}
+       $$
+
+       The Cartesian
        product is the foundational arena of modern mathematics: binary relations
        on $A$ are defined as subsets of $A \times A$, and functions from $A$ to
        $B$ are defined as special subsets of $A \times B$."

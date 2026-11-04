@@ -11,17 +11,24 @@ Text: "In 1923, John von Neumann provided a celebrated set-theoretic realization
 
        Von Neumann proposed that each natural number be realized as a concrete
        pure set whose elements are precisely the preceding natural numbers:
-       $$\begin{aligned}
+
+       $$
+       \begin{aligned}
        0 &:= \emptyset \\
        1 &:= \{0\} = \{\emptyset\} \\
        2 &:= \{0, 1\} = \{\emptyset, \{\emptyset\}\} \\
        3 &:= \{0, 1, 2\} = \{\emptyset, \{\emptyset\}, \{\emptyset, \{\emptyset\}\}\} \\
        S(n) &:= n \cup \{n\}
-       \end{aligned}$$
+       \end{aligned}
+       $$
+
        In this ingenious encoding, every numeral $n$ has cardinality $|n| = n$,
        and the membership relation $\in$ perfectly coincides with the strict
        order $<$:
-       $$m < n \iff m \in n, \qquad m \le n \iff m \subseteq n$$"
+
+       $$
+       m < n \iff m \in n, \qquad m \le n \iff m \subseteq n
+       $$"
 Id: "c7eca060-3bf4-4bc8-a372-210f25fb71cc"
 
 
@@ -50,7 +57,12 @@ Text: "The Axiom of Infinity guarantees the existence of at least one inductive
        set $A$. However, such a set may contain extraneous, non-standard
        elements. To isolate the natural numbers, we define $\omega$ as the
        intersection of all inductive sets:
-       $$\omega := \bigcap \{I \subseteq A : I \text{ is inductive}\}$$ By the
+
+       $$
+       \omega := \bigcap \{I \subseteq A : I \text{ is inductive}\}
+       $$
+
+       By the
        Axiom Schema of Separation, $\omega$ exists as a legitimate set
        independent of the initial choice of $A$. It is the unique *minimal
        inductive set*, representing the first transfinite limit ordinal."

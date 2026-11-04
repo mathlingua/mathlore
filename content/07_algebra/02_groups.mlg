@@ -271,12 +271,22 @@ Documented:
 Proof: """
 To prove that $(x * y)^{-1} = y^{-1} * x^{-1}$, by the uniqueness of inverses it suffices
 to show that $y^{-1} * x^{-1}$ satisfies both defining inverse equations for $x * y$:
-$$ (x * y) * (y^{-1} * x^{-1}) = e \quad \text{and} \quad (y^{-1} * x^{-1}) * (x * y) = e. $$
+
+$$
+(x * y) * (y^{-1} * x^{-1}) = e \quad \text{and} \quad (y^{-1} * x^{-1}) * (x * y) = e.
+$$
 
 Applying associativity repeatedly:
-$$ (x * y) * (y^{-1} * x^{-1}) = x * (y * y^{-1}) * x^{-1} = x * e * x^{-1} = x * x^{-1} = e. $$
+
+$$
+(x * y) * (y^{-1} * x^{-1}) = x * (y * y^{-1}) * x^{-1} = x * e * x^{-1} = x * x^{-1} = e.
+$$
+
 Similarly, multiplying on the left:
-$$ (y^{-1} * x^{-1}) * (x * y) = y^{-1} * (x^{-1} * x) * y = y^{-1} * e * y = y^{-1} * y = e. $$
+
+$$
+(y^{-1} * x^{-1}) * (x * y) = y^{-1} * (x^{-1} * x) * y = y^{-1} * e * y = y^{-1} * y = e.
+$$
 
 Therefore, $(x * y)^{-1} = y^{-1} * x^{-1}$. The order of factors is reversed:
 putting on socks and then shoes is undone by removing shoes first, then socks.
@@ -302,9 +312,19 @@ Documented:
                 self-inverse bijection on the carrier set."
 Proof: """By definition, $(x^{-1})^{-1}$ is the unique element $z \in G$
           satisfying:
-          $$ x^{-1} * z = e \quad \text{and} \quad z * x^{-1} = e. $$ However,
+
+          $$
+          x^{-1} * z = e \quad \text{and} \quad z * x^{-1} = e.
+          $$
+
+          However,
           the element $x$ itself satisfies:
-          $$ x^{-1} * x = e \quad \text{and} \quad x * x^{-1} = e. $$ By the
+
+          $$
+          x^{-1} * x = e \quad \text{and} \quad x * x^{-1} = e.
+          $$
+
+          By the
           uniqueness of inverses, it follows that $(x^{-1})^{-1} = x$. Thus
           inversion is an involutive bijection on $G$."""
 Id: "8c61fb44-d5ab-4be8-804a-0d6a95d83331"
@@ -335,7 +355,11 @@ Proof: """
 Suppose $y_1$ and $y_2$ both satisfy the equations for an inverse of $x$:
 $x * y_1 = e = y_1 * x$ and $x * y_2 = e = y_2 * x$.
 Using the identity property and associativity:
-$$ y_1 = y_1 * e = y_1 * (x * y_2) = (y_1 * x) * y_2 = e * y_2 = y_2. $$
+
+$$
+y_1 = y_1 * e = y_1 * (x * y_2) = (y_1 * x) * y_2 = e * y_2 = y_2.
+$$
+
 Thus any two elements satisfying the inverse equations must coincide.
 """
 Id: "a27fd487-85b4-4f18-b0ab-4be63db69f43"
@@ -361,13 +385,24 @@ Documented:
 Proof: """
 Let $a \in G$. To demonstrate left cancellability, suppose $a * x = a * y$ for $x, y \in G$.
 Multiplying both sides on the left by $a^{-1}$ gives:
-$$ a^{-1} * (a * x) = a^{-1} * (a * y). $$
+
+$$
+a^{-1} * (a * x) = a^{-1} * (a * y).
+$$
+
 By associativity and the definition of inverses:
-$$ (a^{-1} * a) * x = (a^{-1} * a) * y \implies e * x = e * y \implies x = y. $$
+
+$$
+(a^{-1} * a) * x = (a^{-1} * a) * y \implies e * x = e * y \implies x = y.
+$$
 
 Similarly, to demonstrate right cancellability, suppose $x * a = y * a$. Multiplying
 both sides on the right by $a^{-1}$ gives:
-$$ (x * a) * a^{-1} = (y * a) * a^{-1} \implies x * (a * a^{-1}) = y * (a * a^{-1}) \implies x * e = y * e \implies x = y. $$
+
+$$
+(x * a) * a^{-1} = (y * a) * a^{-1} \implies x * (a * a^{-1}) = y * (a * a^{-1}) \implies x * e = y * e \implies x = y.
+$$
+
 Thus every element in a group is both left and right cancellable.
 """
 Id: "24b48a0a-ec3e-49f2-acd4-80b979fcd209"

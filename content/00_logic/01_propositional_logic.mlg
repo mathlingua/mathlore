@@ -336,8 +336,15 @@ Text: "Next in importance are *De Morgan's laws*, named after the British
 
        De Morgan's laws state that negating a conjunction turns it into a
        disjunction of negations, while negating a disjunction turns it into a
-       conjunction of negations: $$\neg(P \land Q) \iff (\neg P \lor \neg Q)$$
-       $$\neg(P \lor Q) \iff (\neg P \land \neg Q)$$
+       conjunction of negations:
+
+       $$
+       \neg(P \land Q) \iff (\neg P \lor \neg Q)
+       $$
+
+       $$
+       \neg(P \lor Q) \iff (\neg P \land \neg Q)
+       $$
 
        The intuitive meaning is direct: to say that 'it is not the case that
        both $P$ and $Q$ hold' means that at least one of them must fail;

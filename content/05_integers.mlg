@@ -26,7 +26,13 @@ Id: "c4c04ee9-fb37-4bb1-9bfc-fbb273c455f7"
 Text: "Intuitively, two pairs $(n_1, m_1)$ and $(n_2, m_2)$ represent the same
        integer difference when $n_1 - m_1 = n_2 - m_2$. Because subtraction is
        not yet defined, we rearrange this equation using addition alone into the
-       equivalent *cross-sum condition*: $$n_1 + m_2 = n_2 + m_1$$ This relation
+       equivalent *cross-sum condition*:
+
+       $$
+       n_1 + m_2 = n_2 + m_1
+       $$
+
+       This relation
        is reflexive, symmetric, and transitive, forming a valid equivalence
        relation on $\mathbb{N} \times \mathbb{N}$."
 Id: "86f693bc-1d69-4bfd-bef4-c67033b73acb"
@@ -224,12 +230,16 @@ Text: "The formal difference construction supplies every component of the
        abstract integer tuple. The carrier set is the quotient
        $(\mathbb{N} \times \mathbb{N}) / {\sim}$. The arithmetic operations are
        induced on equivalence classes by:
-       $$\begin{aligned}
+
+       $$
+       \begin{aligned}
        [(a, b)] + [(c, d)] &:= [(a + c, b + d)] \\
        [(a, b)] \cdot [(c, d)] &:= [(ac + bd, ad + bc)] \\
        -[(a, b)] &:= [(b, a)] \\
        [(a, b)] \le [(c, d)] &\iff a + d \le c + b
-       \end{aligned}$$
+       \end{aligned}
+       $$
+
        Because these definitions operate on representative pairs, their
        well-definedness is a theorem: replacing $(a, b)$ with an equivalent pair
        $(a', b')$ produces identical output classes."
@@ -422,7 +432,13 @@ Documented:
                 $q$ and remainder $r$ such that $a = bq + r$ with $0 \le r < b$.
                 Establishes that $\mathbb{Z}$ is a Euclidean domain."
 Proof: """Let $b > 0$. Consider the set of non-negative integers of the form
-          $a - bk$: $$S := \{a - bk : k \in \mathbb{Z} \land a - bk \ge 0\}$$ To
+          $a - bk$:
+
+          $$
+          S := \{a - bk : k \in \mathbb{Z} \land a - bk \ge 0\}
+          $$
+
+          To
           see that $S$ is nonempty: if $a \ge 0$, taking $k = 0$ gives
           $a \in S$. If $a < 0$, taking $k = a$ gives $a - ba = a(1 - b) \ge 0$
           (since $b \ge 1$), so $a(1 - b) \in S$. Since $S$ is a nonempty subset

@@ -7,16 +7,28 @@ Text: "The transition from real multivariable calculus to complex analysis is ma
        a mapping $F(x, y) = (u(x,y), v(x,y))$ is differentiable at $(x_0, y_0)$ if its increments
        are linearly approximated by a total derivative represented by an arbitrary $2 \times 2$
        real Jacobian matrix:
-       $$ DF(x_0, y_0) = \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix}. $$
+
+       $$
+       DF(x_0, y_0) = \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix}.
+       $$
+
        Such a linear operator has four independent degrees of freedom; it can stretch different
        directions by different ratios and shear angles between intersecting curves.
 
        In complex analysis, by contrast, a function $f: U \to \mathbb{C}$ is complex differentiable
        if the limit of the difference quotient
-       $$ f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h} $$
+
+       $$
+       f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}
+       $$
+
        exists as a single complex number $a + ib$. Because multiplication by $a + ib$ corresponds
        in $\mathbb{R}^2$ to the rotation-dilation matrix
-       $$ \begin{pmatrix} a & -b \\ b & a \end{pmatrix}, $$
+
+       $$
+       \begin{pmatrix} a & -b \\ b & a \end{pmatrix},
+       $$
+
        the requirement of complex differentiability constrains the four entries of the Jacobian matrix
        to satisfy $u_x = v_y = a$ and $u_y = -v_x = -b$. These are the celebrated *Cauchy--Riemann equations*.
        This single geometric constraint forces $DF(x_0, y_0)$ to be an orientation-preserving similarity,
@@ -33,9 +45,17 @@ TextDefinition: "Let $U \subseteq \mathbb{C}$ be an open set and let $f: U \to \
                  $f$ is *complex differentiable* at a point $z_0 \in U$ if there exists a complex number
                  $f'(z_0) \in \mathbb{C}$ such that for every $\varepsilon > 0$, there exists $\delta > 0$
                  such that for all $h \in \mathbb{C}$ with $0 < |h| < \delta$,
-                 $$ \left| \frac{f(z_0 + h) - f(z_0)}{h} - f'(z_0) \right| < \varepsilon. $$
+
+                 $$
+                 \left| \frac{f(z_0 + h) - f(z_0)}{h} - f'(z_0) \right| < \varepsilon.
+                 $$
+
                  Equivalently, $f$ admits the first-order Taylor expansion:
-                 $$ f(z_0 + h) = f(z_0) + f'(z_0) h + \eta(h) h, \quad \text{where } \lim_{h \to 0} \eta(h) = 0. $$
+
+                 $$
+                 f(z_0 + h) = f(z_0) + f'(z_0) h + \eta(h) h, \quad \text{where } \lim_{h \to 0} \eta(h) = 0.
+                 $$
+
                  The function $f$ is said to be *holomorphic* (or *analytic*) on $U$ if it is complex
                  differentiable at every point of $U$. If $f$ is holomorphic on the entire complex plane
                  $\mathbb{C}$, it is called *entire*."
@@ -99,9 +119,16 @@ TextTheorem: "The Cauchy--Riemann Equations. Let $f(x + iy) = u(x, y) + i v(x, y
               
               1. **Necessity**: If $f$ is complex differentiable at $z_0 = x_0 + i y_0$, then the first-order
                  partial derivatives of $u$ and $v$ exist at $(x_0, y_0)$ and satisfy the Cauchy--Riemann equations:
-                 $$ \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} \quad \text{and} \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}. $$
+
+                 $$
+                 \frac{\partial u}{\partial x} = \frac{\partial v}{\partial y} \quad \text{and} \quad \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}.
+                 $$
+
                  Furthermore, the complex derivative may be computed via either partial derivative:
-                 $$ f'(z_0) = u_x(x_0, y_0) + i v_x(x_0, y_0) = v_y(x_0, y_0) - i u_y(x_0, y_0). $$
+
+                 $$
+                 f'(z_0) = u_x(x_0, y_0) + i v_x(x_0, y_0) = v_y(x_0, y_0) - i u_y(x_0, y_0).
+                 $$
 
               2. **Sufficiency**: Conversely, if the real partial derivatives $u_x, u_y, v_x, v_y$ exist on an
                  open neighborhood of $(x_0, y_0)$, are continuous at $(x_0, y_0)$ (so that $u$ and $v$ are
@@ -110,15 +137,31 @@ TextTheorem: "The Cauchy--Riemann Equations. Let $f(x + iy) = u(x, y) + i v(x, y
 
               *Proof of Necessity*: Compute the difference quotient along two orthogonal directions. First, let
               $h = \Delta x \in \mathbb{R}$ approach $0$ along the horizontal real axis:
-              $$ f'(z_0) = \lim_{\Delta x \to 0} \frac{u(x_0 + \Delta x, y_0) - u(x_0, y_0)}{\Delta x} + i \lim_{\Delta x \to 0} \frac{v(x_0 + \Delta x, y_0) - v(x_0, y_0)}{\Delta x} = u_x(x_0, y_0) + i v_x(x_0, y_0). $$
+
+              $$
+              f'(z_0) = \lim_{\Delta x \to 0} \frac{u(x_0 + \Delta x, y_0) - u(x_0, y_0)}{\Delta x} + i \lim_{\Delta x \to 0} \frac{v(x_0 + \Delta x, y_0) - v(x_0, y_0)}{\Delta x} = u_x(x_0, y_0) + i v_x(x_0, y_0).
+              $$
+
               Second, let $h = i \Delta y$ with $\Delta y \in \mathbb{R}$ approach $0$ along the vertical imaginary axis:
-              $$ f'(z_0) = \lim_{\Delta y \to 0} \frac{u(x_0, y_0 + \Delta y) - u(x_0, y_0)}{i \Delta y} + i \lim_{\Delta y \to 0} \frac{v(x_0, y_0 + \Delta y) - v(x_0, y_0)}{i \Delta y} = \frac{u_y + i v_y}{i} = v_y(x_0, y_0) - i u_y(x_0, y_0). $$
+
+              $$
+              f'(z_0) = \lim_{\Delta y \to 0} \frac{u(x_0, y_0 + \Delta y) - u(x_0, y_0)}{i \Delta y} + i \lim_{\Delta y \to 0} \frac{v(x_0, y_0 + \Delta y) - v(x_0, y_0)}{i \Delta y} = \frac{u_y + i v_y}{i} = v_y(x_0, y_0) - i u_y(x_0, y_0).
+              $$
+
               Equating the real and imaginary parts of these two expressions yields $u_x = v_y$ and $v_x = -u_y$.
               
               *Proof of Sufficiency*: If $u$ and $v$ are $C^1$, the multivariable mean value theorem guarantees:
-              $$ \Delta u = u_x \Delta x + u_y \Delta y + \varepsilon_1 \sqrt{\Delta x^2 + \Delta y^2}, \quad \Delta v = v_x \Delta x + v_y \Delta y + \varepsilon_2 \sqrt{\Delta x^2 + \Delta y^2}, $$
+
+              $$
+              \Delta u = u_x \Delta x + u_y \Delta y + \varepsilon_1 \sqrt{\Delta x^2 + \Delta y^2}, \quad \Delta v = v_x \Delta x + v_y \Delta y + \varepsilon_2 \sqrt{\Delta x^2 + \Delta y^2},
+              $$
+
               where $\varepsilon_1, \varepsilon_2 \to 0$ as $h = \Delta x + i \Delta y \to 0$. Substituting $u_y = -v_x$ and $v_y = u_x$:
-              $$ \Delta u + i \Delta v = (u_x \Delta x - v_x \Delta y) + i(v_x \Delta x + u_x \Delta y) + o(|h|) = (u_x + i v_x)(\Delta x + i \Delta y) + o(|h|) = (u_x + i v_x) h + o(|h|). $$
+
+              $$
+              \Delta u + i \Delta v = (u_x \Delta x - v_x \Delta y) + i(v_x \Delta x + u_x \Delta y) + o(|h|) = (u_x + i v_x)(\Delta x + i \Delta y) + o(|h|) = (u_x + i v_x) h + o(|h|).
+              $$
+
               Dividing by $h \ne 0$ and taking the limit $h \to 0$ proves that $f'(z_0) = u_x + i v_x$ exists."
 Id: "da109af8-129c-4931-86b0-9dfbc1b146d3"
 
@@ -126,13 +169,21 @@ Id: "da109af8-129c-4931-86b0-9dfbc1b146d3"
 TextDefinition: "Let $U \subseteq \mathbb{R}^2$ be an open set. A twice continuously differentiable function
                  $u: U \to \mathbb{R}$ is *harmonic* on $U$ if it satisfies Laplace's partial differential
                  equation throughout $U$:
-                 $$ \Delta u = \nabla^2 u = \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0. $$
+
+                 $$
+                 \Delta u = \nabla^2 u = \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} = 0.
+                 $$
+
                  If $f = u + iv$ is holomorphic on $U$, then both its real part $u$ and imaginary part $v$ are
                  harmonic. The function $v$ is called a *harmonic conjugate* of $u$.
                  
                  *Derivation*: Differentiating the Cauchy--Riemann equations and applying Clairaut's theorem
                  on the equality of mixed partial derivatives ($u_{xy} = u_{yx}$ and $v_{xy} = v_{yx}$):
-                 $$ u_{xx} = (u_x)_x = (v_y)_x = v_{yx} = v_{xy} = (-u_y)_y = -u_{yy} \implies u_{xx} + u_{yy} = 0. $$
+
+                 $$
+                 u_{xx} = (u_x)_x = (v_y)_x = v_{yx} = v_{xy} = (-u_y)_y = -u_{yy} \implies u_{xx} + u_{yy} = 0.
+                 $$
+
                  Furthermore, the gradients $\nabla u = (u_x, u_y)$ and $\nabla v = (v_x, v_y) = (-u_y, u_x)$
                  satisfy $\nabla u \cdot \nabla v = -u_x u_y + u_y u_x = 0$. Consequently, the level curves
                  $u(x,y) = c_1$ and $v(x,y) = c_2$ form two mutually orthogonal families of curves throughout $U$."
@@ -169,7 +220,11 @@ TextTheorem: "The Open Mapping Theorem and Maximum Modulus Principle.
                  $f: \overline{U} \to \mathbb{C}$ be continuous on the closure
                  $\overline{U}$ and holomorphic on $U$. Then the modulus
                  $|f(z)|$ attains its maximum on the boundary $\partial U$:
-                 $$ \sup_{z \in U} |f(z)| \le \max_{z \in \partial U} |f(z)|. $$
+
+                 $$
+                 \sup_{z \in U} |f(z)| \le \max_{z \in \partial U} |f(z)|.
+                 $$
+
                  Moreover, if $|f(z)|$ attains a local maximum at any interior
                  point $z_0 \in U$, then $f$ is identically constant on $U$.
 
@@ -195,11 +250,19 @@ TextTheorem: "Conformality and Complex Derivatives. Let $f: U \to \mathbb{C}$ be
               *Geometric Explanation*: Let $\gamma_1, \gamma_2: (-\varepsilon, \varepsilon) \to U$ be smooth curves
               with $\gamma_1(0) = \gamma_2(0) = z_0$ and tangent vectors $v_1 = \gamma_1'(0)$, $v_2 = \gamma_2'(0)$.
               The tangent vectors to the image curves $(f \circ \gamma_1)$ and $(f \circ \gamma_2)$ at $f(z_0)$ are:
-              $$ (f \circ \gamma_j)'(0) = f'(z_0) \gamma_j'(0) = f'(z_0) v_j. $$
+
+              $$
+              (f \circ \gamma_j)'(0) = f'(z_0) \gamma_j'(0) = f'(z_0) v_j.
+              $$
+
               Writing $f'(z_0) = R e^{i\alpha}$ with $R = |f'(z_0)| > 0$ and $\alpha = \arg(f'(z_0))$, each tangent
               vector is rotated by the identical angle $\alpha$ and multiplied by the scalar $R$. Therefore, the angle
               between the image tangent vectors is:
-              $$ \arg(f'(z_0) v_2) - \arg(f'(z_0) v_1) = (\alpha + \arg v_2) - (\alpha + \arg v_1) = \arg v_2 - \arg v_1. $$
+
+              $$
+              \arg(f'(z_0) v_2) - \arg(f'(z_0) v_1) = (\alpha + \arg v_2) - (\alpha + \arg v_1) = \arg v_2 - \arg v_1.
+              $$
+
               If $f'(z_0) = 0$ (a *critical point*), conformality fails: if $f(z) - f(z_0) = a_k (z - z_0)^k + O((z-z_0)^{k+1})$
               with $a_k \ne 0$ ($k \ge 2$), then angles between curves at $z_0$ are multiplied by $k$, as seen
               in $f(z) = z^k$ where the right angle between coordinate axes is mapped to an angle of $k \pi / 2$."

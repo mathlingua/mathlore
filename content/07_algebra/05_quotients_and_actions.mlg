@@ -72,15 +72,30 @@ Documented:
 Proof: """Let $g_1, g_2 \in G$. Suppose that the left cosets $g_1H$ and $g_2H$
           are not disjoint. Then there exists at least one element
           $x \in g_1H \cap g_2H$. By definition of left cosets, there exist
-          elements $h_1, h_2 \in H$ such that: $$ x = g_1 * h_1 = g_2 * h_2. $$
+          elements $h_1, h_2 \in H$ such that:
+
+          $$
+          x = g_1 * h_1 = g_2 * h_2.
+          $$
 
           Multiplying both sides on the right by $h_1^{-1}$ gives:
-          $$ g_1 = g_2 * (h_2 * h_1^{-1}). $$ Since $H$ is a subgroup and
+
+          $$
+          g_1 = g_2 * (h_2 * h_1^{-1}).
+          $$
+
+          Since $H$ is a subgroup and
           $h_1, h_2 \in H$, the element $h_3 = h_2 * h_1^{-1}$ belongs to $H$.
 
           Now let $y \in g_1H$ be an arbitrary element of $g_1H$. Then
           $y = g_1 * h$ for some $h \in H$. Substituting our expression for
-          $g_1$: $$ y = (g_2 * h_3) * h = g_2 * (h_3 * h). $$ Since $H$ is
+          $g_1$:
+
+          $$
+          y = (g_2 * h_3) * h = g_2 * (h_3 * h).
+          $$
+
+          Since $H$ is
           closed under multiplication, $h_3 * h \in H$, which proves that
           $y \in g_2H$. Therefore, $g_1H \subseteq g_2H$.
 
@@ -128,7 +143,12 @@ TextTheorem: "Let $N \trianglelefteq G$ be a normal subgroup. The set of left
               *Proof of Well-Definedness*: Suppose $g_1N = g_2N$ and
               $h_1N = h_2N$. Then $g_2 = g_1 n_1$ and $h_2 = h_1 n_2$ for some
               $n_1, n_2 \in N$. Then:
-              $$ g_2 h_2 = (g_1 n_1)(h_1 n_2) = g_1 (n_1 h_1) n_2. $$ Since $N$
+
+              $$
+              g_2 h_2 = (g_1 n_1)(h_1 n_2) = g_1 (n_1 h_1) n_2.
+              $$
+
+              Since $N$
               is normal, $n_1 h_1 = h_1 n_3$ for some $n_3 \in N$. Substituting
               gives $g_2 h_2 = g_1 (h_1 n_3) n_2 = (g_1 h_1)(n_3 n_2)$. Since
               $n_3 n_2 \in N$, we have $(g_2 h_2)N = (g_1 h_1)N$. Thus
@@ -176,8 +196,11 @@ TextTheorem: "The First Isomorphism Theorem for Groups. Let $\varphi : G \to H$ 
               3. The map $\widetilde{\varphi} : G / \ker(\varphi) \to \operatorname{im}(\varphi)$
                  defined by $\widetilde{\varphi}(g\ker(\varphi)) = \varphi(g)$ is a well-defined
                  group isomorphism:
-                 $$ G / \ker(\varphi) \cong \operatorname{im}(\varphi). $$
-                 
+
+                 $$
+                 G / \ker(\varphi) \cong \operatorname{im}(\varphi).
+                 $$
+
               *Proof*:
               - Normality: If $k \in \ker(\varphi)$ and $g \in G$, then
                 $\varphi(g * k * g^{-1}) = \varphi(g) * \varphi(k) * \varphi(g)^{-1} = \varphi(g) * e_H * \varphi(g)^{-1} = e_H$,
@@ -260,13 +283,24 @@ Id: "02a3fe2e-dbbf-49a6-8cf2-cc5cc85568f7"
 TextTheorem: "The Orbit-Stabilizer Theorem. Let a group $G$ act on a set $X$ via $\alpha$.
               For any element $x \in X$, there is a natural bijection between the left coset
               space $G / G_x$ and the orbit $G \cdot x$, given by:
-              $$ \Phi : G / G_x \longrightarrow G \cdot x, \quad \Phi(g G_x) = g \cdot x. $$
+
+              $$
+              \Phi : G / G_x \longrightarrow G \cdot x, \quad \Phi(g G_x) = g \cdot x.
+              $$
+
               Consequently, if $G$ is finite:
-              $$ |G| = |G \cdot x| \cdot |G_x| = [G : G_x] \cdot |G_x|. $$
-              
+
+              $$
+              |G| = |G \cdot x| \cdot |G_x| = [G : G_x] \cdot |G_x|.
+              $$
+
               *Proof*:
               - Well-Definedness and Injectivity: For $g, h \in G$:
-                $$ g \cdot x = h \cdot x \iff h^{-1} \cdot (g \cdot x) = x \iff (h^{-1} * g) \cdot x = x \iff h^{-1} * g \in G_x \iff g G_x = h G_x. $$
+
+                $$
+                g \cdot x = h \cdot x \iff h^{-1} \cdot (g \cdot x) = x \iff (h^{-1} * g) \cdot x = x \iff h^{-1} * g \in G_x \iff g G_x = h G_x.
+                $$
+
                 Reading left-to-right proves injectivity; reading right-to-left proves well-definedness.
               - Surjectivity: By definition of the orbit, every $y \in G \cdot x$ is of the form
                 $y = g \cdot x = \Phi(g G_x)$ for some $g \in G$.
@@ -286,7 +320,12 @@ Text: "Group actions translate abstract algebraic structure into concrete
 
        Applying the Orbit-Stabilizer theorem to this action yields the
        celebrated *Class Equation* for a finite group:
-       $$ |G| = |Z(G)| + \sum_{i=1}^k [G : C_G(x_i)], $$ where $x_1, \dots, x_k$
+
+       $$
+       |G| = |Z(G)| + \sum_{i=1}^k [G : C_G(x_i)],
+       $$
+
+       where $x_1, \dots, x_k$
        are representatives of the non-central conjugacy classes. The Class
        Equation is a cornerstone of finite group theory, proving for instance
        that every non-trivial finite $p$-group has a non-trivial center, and

@@ -111,10 +111,14 @@ Id: "9e6169e7-03a2-4b46-8e49-9d7da97d0092"
 
 Text: "Addition $+ : \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ is defined
        recursively on the first argument:
-       $$\begin{aligned}
+
+       $$
+       \begin{aligned}
        0 + m &:= m \\
        S(k) + m &:= S(k + m)
-       \end{aligned}$$
+       \end{aligned}
+       $$
+
        The base clause establishes $0$ as the left identity; the recursive
        clause formalizes addition as iterated succession. Thus, computing
        $n + m$ amounts to stepping the successor function $n$ times starting
@@ -145,10 +149,14 @@ Id: "a8dda59b-29db-4ac2-8d70-e9010ccae3e7"
 
 Text: "Multiplication $\cdot : \mathbb{N} \times \mathbb{N} \to \mathbb{N}$ is
        defined by primitive recursion as repeated addition:
-       $$\begin{aligned}
+
+       $$
+       \begin{aligned}
        0 \cdot m &:= 0 \\
        S(k) \cdot m &:= (k \cdot m) + m
-       \end{aligned}$$
+       \end{aligned}
+       $$
+
        Multiplying $n$ by $m$ computes the sum of $n$ copies of $m$, with $0$
        acting as the annihilating zero element."
 Id: "2334b955-ab67-4bb6-baf5-b7f8e72cae55"
@@ -183,7 +191,12 @@ Id: "c2be9441-a886-483d-ac05-cbf63c49eb49"
 Text: "The algebraic operation of addition induces the canonical linear order on
        $\mathbb{N}$. We define $n \le m$ if and only if $m$ can be reached from
        $n$ by adding some non-negative increment:
-       $$n \le m \iff \exists k \in \mathbb{N}, \, n + k = m$$ This relation
+
+       $$
+       n \le m \iff \exists k \in \mathbb{N}, \, n + k = m
+       $$
+
+       This relation
        $\le$ is reflexive, antisymmetric, and transitive, endowing $\mathbb{N}$
        with the structure of a totally ordered cancellative commutative
        semiring."

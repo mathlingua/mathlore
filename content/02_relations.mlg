@@ -210,7 +210,12 @@ Id: "2394a97b-5960-4919-98db-b95ec3870343"
 
 Text: "Given an equivalence relation $R$ on $X$, each element $x \in X$
        generates its *equivalence class*:
-       $$[x]_R := \{y \in X : x \mathrel{R} y\}$$ Every element belongs to its
+
+       $$
+       [x]_R := \{y \in X : x \mathrel{R} y\}
+       $$
+
+       Every element belongs to its
        own equivalence class (by reflexivity), and two classes $[x]_R$ and
        $[y]_R$ are either strictly identical or completely disjoint."
 Id: "308e4d46-7205-4977-9583-486771d4ca48"
@@ -232,7 +237,13 @@ Id: "2fae575c-13c9-498b-b14a-e471f0e3cfdc"
 
 
 Text: "Gathering all equivalence classes into a new set yields the *quotient
-       set*: $$X / R := \{[x]_R : x \in X\}$$ Passing to the quotient is
+       set*:
+
+       $$
+       X / R := \{[x]_R : x \in X\}
+       $$
+
+       Passing to the quotient is
        mathematics' universal engine of abstraction: it forgets irrelevant
        distinguishing details, collapsing entire equivalence classes into single
        points. The canonical quotient projection $\pi : X \to X / R$, defined by

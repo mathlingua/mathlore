@@ -369,7 +369,11 @@ Id: "e10a2ceb-8649-480a-9ab4-651ca4345f74"
 
 TextTheorem: "Every function $f : A \to B$ admits a canonical *first isomorphism
               factorization*:
-              $$A \twoheadrightarrow A / {\sim} \xrightarrow{\sim} f[A] \hookrightarrow B$$
+
+              $$
+              A \twoheadrightarrow A / {\sim} \xrightarrow{\sim} f[A] \hookrightarrow B
+              $$
+
               where $x \sim x'$ if and only if $f(x) = f(x')$.
               The three components decouple the structural actions of $f$:
               1. The canonical projection $\pi : A \twoheadrightarrow A / {\sim}$
@@ -397,7 +401,11 @@ TextTheorem: "Direct images and preimages interact with Boolean operations
               according to fundamental preservation laws:
               - *Preimages preserve all Boolean structure*: for any family of
               subsets $B_i \subseteq B$,
-              $$f^{-1}\left[\bigcup_{i \in I} B_i\right] = \bigcup_{i \in I} f^{-1}[B_i], \quad f^{-1}\left[\bigcap_{i \in I} B_i\right] = \bigcap_{i \in I} f^{-1}[B_i]$$
+
+              $$
+              f^{-1}\left[\bigcup_{i \in I} B_i\right] = \bigcup_{i \in I} f^{-1}[B_i], \quad f^{-1}\left[\bigcap_{i \in I} B_i\right] = \bigcap_{i \in I} f^{-1}[B_i]
+              $$
+
               and $f^{-1}[B \setminus Y] = A \setminus f^{-1}[Y]$.
               - *Direct images preserve unions*: $f\left[\bigcup_{i \in I} A_i\right] = \bigcup_{i \in I} f[A_i]$.
               - *Direct images preserve intersections only as inclusions in general*:
