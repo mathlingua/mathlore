@@ -74,6 +74,11 @@ References:
 Id: "6c32eba5-b1fe-456d-84db-058653584067"
 
 
+Text: "Any individual element belonging to the carrier set of a vector space is
+       designated as a *vector*:"
+Id: "ad150fbe-3039-4fd2-a5c2-a406788a752a"
+
+
 [\vector:in{V ::= (X, +, *, 0)}]
 Declares: v "in" X
 using: F is \field
@@ -86,6 +91,11 @@ Documented:
 . description: "An element $v \in V$ of a vector space over field $F$,
                 representing a state or geometric displacement."
 Id: "4bfc2779-4a8f-49ce-8a6c-514622cac0a3"
+
+
+Text: "Vectors are governed by internal addition and external scaling by scalars
+       from the underlying ground field:"
+Id: "9143b1f4-f1c8-4c17-a777-1c92ce74d142"
 
 
 [u_ \.vector.+./ v_]
@@ -114,6 +124,12 @@ SectionTitle: "Subspaces and Span"
 Id: "d4d9e665-ead1-49a5-ba7d-9a603c903544"
 
 
+Text: "A subset $W \subseteq V$ is a *subspace* if it is closed under vector
+       addition and scalar multiplication, inheriting the full vector space
+       structure:"
+Id: "8e0325b3-88cb-47c7-ba73-aa85a85a78b5"
+
+
 [W \:vector.subspace.of:/ V ::= (X, +, *, 0)]
 Declares: W \:(nonempty)::subset:/ X
 using: F is \field
@@ -138,18 +154,9 @@ References:
 Id: "2b68f78b-7c61-4e39-986d-34e50990ec8b"
 
 
-Text: "A subset $W \subseteq V$ is a *subspace* if it is closed under vector
-       addition and scalar multiplication.
-
-       By the *Subspace Criterion*, a non-empty subset $W \subseteq V$ is a
-       subspace if and only if for all scalars $\alpha, \beta \in F$ and vectors
-       $u, v \in W$, the linear combination $\alpha u + \beta v \in W$.
-
-       The *linear span* $\operatorname{span}(S)$ of an arbitrary subset
-       $S \subseteq V$ is the set of all finite linear combinations
-       $c_1 v_1 + \dots + c_k v_k$ of vectors in $S$. Span acts as a topological
-       closure operator: $\operatorname{span}(S)$ is the smallest subspace of
-       $V$ containing $S$."
+Text: "Given an arbitrary subset $S \subseteq V$, the smallest subspace
+       containing $S$ is its *linear span*, consisting of all finite linear
+       combinations of vectors from $S$:"
 Id: "aafaf29a-2c67-4b97-ae6f-ebc0f7ca78d0"
 
 
@@ -241,6 +248,12 @@ References:
 Id: "f26db264-6e91-499a-8d8d-8896acecadc9"
 
 
+Text: "By the Steinitz exchange lemma, any two bases of a finite-dimensional
+       vector space possess the exact same cardinality, defining its
+       *dimension*:"
+Id: "89701946-1be1-4eae-a1b6-5f3e0e947bc6"
+
+
 [\dimension:of{V}]
 Defines: d is \natural
 using: F is \field
@@ -276,6 +289,11 @@ TextTheorem: "The intersection $\bigcap_{i \in I} W_i$ of any family of
 Id: "ec4c128f-df87-4abf-bdd6-c07b626e4002"
 
 
+Text: "Two subspaces can be combined by taking all pairwise sums of their
+       elements, forming the join in the subspace lattice:"
+Id: "4b81c3a7-a3ab-4254-88ff-9795ace350b5"
+
+
 [\vector.subspace.sum:of{U}:and{W}:in{V ::= (X, +, *, 0)}]
 Defines: S := \set@{u_ + v_ : u_ "in" U; v_ "in" W}
 using: F is \field
@@ -290,6 +308,11 @@ Documented:
 . description: "The subspace sum $U + W = \{u + w : u \in U, w \in W\}$,
                 representing the join in the lattice of subspaces of $V$."
 Id: "b4590aa0-4e04-48c9-978a-5f42127058c4"
+
+
+Text: "When two subspaces intersect trivially at the zero vector, their sum is
+       *direct*, guaranteeing unique decomposition for each vector in the sum:"
+Id: "15e94881-c1e7-4e44-a95e-6392d3b183ee"
 
 
 [\direct.sum:of{U}:and{W}:in{V ::= (X, +, *, 0)}]

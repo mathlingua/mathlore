@@ -163,6 +163,13 @@ SectionTitle: "Real Part, Imaginary Part, and Conjugation"
 Id: "e5125a7d-d915-4ca8-a6ce-6c928e275445"
 
 
+Text: "Every complex number $z = x + iy$ uniquely decomposes into its real and
+       imaginary projections along the coordinate axes. Complex conjugation
+       reflects points across the real axis, establishing the canonical
+       involution of the complex plane."
+Id: "ce6a7637-8ed7-4d31-b8fb-dcfdcb7bf37b"
+
+
 [\complex.real.part(z_)]
 Defines: x is \real
 expresses:
@@ -220,6 +227,13 @@ Id: "e5faf733-3580-4323-921a-0809252cada9"
 
 SectionTitle: "Geometry and Polar Form"
 Id: "dfffea1e-10b7-4e61-a9af-08dec4a3de2e"
+
+
+Text: "Geometrically, the complex field is identified with the Cartesian plane
+       $\mathbb{R}^2$, often called the Argand plane. The linear independence of
+       the basis $\{1, i\}$ ensures that every complex number possesses a unique
+       Cartesian coordinate representation."
+Id: "068b99e0-b357-47d3-8a2d-a975e723aed3"
 
 
 Theorem:

@@ -33,6 +33,12 @@ SectionTitle: "Additive and Multiplicative Structure of Primes"
 Id: "67c5e464-3e6e-40d6-9da8-2be12e536dc9"
 
 
+Text: "Prime numbers form the irreducible multiplicative building blocks of the
+       integers. Once primes and parity are formalized, longstanding questions
+       arise regarding their additive combinations."
+Id: "7e0f83e3-0e2f-45c8-ab13-b626476f3a56"
+
+
 [\(prime)::integer]
 Refines: p
 satisfies:
@@ -72,6 +78,11 @@ Documented:
 Id: "90de84c3-1ed2-47f9-913e-1892c1976b5e"
 
 
+Text: "The simplest additive problem concerning primes is whether every even
+       integer beyond two decomposes as a sum of two primes."
+Id: "8d439dec-2e6f-49b3-8101-55238389f600"
+
+
 Conjecture:
 then:
 . forAll: n is \integer
@@ -91,6 +102,11 @@ Documented:
 References:
 . $hardy.wright:page{19}
 Id: "1945a57b-f397-4f58-b515-fd8878910f2e"
+
+
+Text: "Closely related is the question of minimal prime gaps: whether primes
+       differing by two recur indefinitely often."
+Id: "ad03191f-db00-4a0b-b21e-897e288ecad0"
 
 
 Conjecture:

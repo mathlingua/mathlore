@@ -79,6 +79,11 @@ References:
 Id: "8454e27c-2e90-4944-a36b-27b66be5f4cf"
 
 
+Text: "Any individual element belonging to the carrier set of this field is
+       designated as a *rational number*:"
+Id: "b27292a3-c1b5-4e47-8fd8-697e3be3a433"
+
+
 [\rational]
 Declares: q "in" \rationals
 Enables:
@@ -91,6 +96,11 @@ Documented:
 . description: "An element of $\mathbb{Q}$, representing a signed commensurable
                 ratio of integers $a/b$ with $b \ne 0$."
 Id: "2250d77e-8840-464c-be09-6a1768db38bc"
+
+
+Text: "The rational field is equipped with distinct additive and multiplicative
+       identity constants, zero and one:"
+Id: "13285fba-d3e0-42e8-b6b2-34b9ce1b7868"
 
 
 [\rational.zero]
@@ -111,6 +121,12 @@ Documented:
 . description: "The multiplicative identity $1 \in \mathbb{Q}$: represented by
                 the fraction $1/1$, satisfying $q \cdot 1 = q$."
 Id: "d561070d-99fb-41e0-966e-ede168509eb2"
+
+
+Text: "Addition and multiplication on $\mathbb{Q}$ form abelian groups on
+       $\mathbb{Q}$ and $\mathbb{Q} \setminus \{0\}$, respectively, coupled via
+       the distributive law:"
+Id: "2206c54b-4491-481f-a41f-aba073abe28e"
 
 
 [a_ \.rational.+./ b_]
@@ -134,6 +150,12 @@ Documented:
                 $\mathbb{Q}^\times$ defined by
                 $\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}$."
 Id: "a63fb60f-01bb-49d3-815e-a85f721c9ac0"
+
+
+Text: "Every rational number possesses an additive inverse, and every non-zero
+       rational admits a multiplicative reciprocal, yielding subtraction and
+       division:"
+Id: "3ee7cf3e-ec47-4654-9357-a5454ebae1ab"
 
 
 [\rational.neg(a_)]
@@ -178,6 +200,11 @@ Documented:
 Id: "02b2f688-232d-4451-aa55-d17214af0bf0"
 
 
+Text: "These field operations interact harmoniously with a translation-invariant
+       total order:"
+Id: "d73f449b-8785-4498-8bbd-8faef7ad5ed7"
+
+
 [a \:rational.leq:/ b]
 Declares: a is \rational
 when: b is \rational
@@ -204,6 +231,11 @@ Documented:
 Id: "5a472809-b0d1-46c0-9a80-236ea2ab148f"
 
 
+Text: "The order structure gives rise to the standard Archimedean absolute
+       value, measuring magnitude and metric distance on $\mathbb{Q}$:"
+Id: "ea0a626b-8ac8-4199-9f39-40ca488646b9"
+
+
 [\rational.abs(q_)]
 Defines: abs(q_) is \function:on{\rationals}:to{\rationals}
 expresses:
@@ -221,6 +253,11 @@ Id: "61cb32b3-cb61-43ac-8319-8cf7315fe9ab"
 
 SectionTitle: "Realization by Fractions of Integers"
 Id: "a34389fb-655b-4573-a3ab-85221cbea87c"
+
+
+Text: "To construct the field of fractions rigorously within set theory, we
+       first isolate the set of admissible denominators—the non-zero integers:"
+Id: "231c782b-8bd2-435d-a076-ec229f0bba12"
 
 
 [\nonzero.integer]
@@ -243,6 +280,11 @@ Documented:
 Id: "7632dfa6-b8a4-49a3-ae26-6efff1be4e24"
 
 
+Text: "Formal fractions are represented as ordered pairs consisting of an
+       arbitrary integer numerator and a strictly non-zero denominator:"
+Id: "36d581d3-d670-4ec9-ba04-5e4fefe7dcf9"
+
+
 [\rational.pair.base]
 Defines: P := \set@{(a_, b_) : a_ is \integer; b_ is \nonzero.integer} is \set
 Documented:
@@ -251,6 +293,12 @@ Documented:
 . description: "The product set $\mathbb{Z} \times (\mathbb{Z} \setminus \{0\})$
                 of formal numerator-denominator pairs."
 Id: "f7174275-17fc-4a81-a133-96bf1a5b956e"
+
+
+Text: "Two fraction pairs $(a, b)$ and $(c, d)$ represent the same rational
+       quantity precisely when their cross-products coincide, yielding an
+       equivalence relation:"
+Id: "f89dd67e-64cc-41b2-87af-ada893dd66a0"
 
 
 [\rationals.relation]
@@ -270,6 +318,11 @@ Documented:
 References:
 . $landau.foundations:page{43}
 Id: "24804175-428b-44db-8573-0165be44818c"
+
+
+Text: "Quotienting the pair set by this cross-multiplication equivalence
+       relation constructs the carrier set of the concrete rational numbers:"
+Id: "6296a4ad-55a6-4aa6-b59f-58caa33383a8"
 
 
 [\rational.pair.carrier]
@@ -306,6 +359,11 @@ Documented:
                 $1 \in \mathbb{Z} \setminus \{0\}$ for the canonical embedding
                 of integers."
 Id: "2b3d1b0d-1375-4a6b-8670-397c65be411d"
+
+
+Text: "The canonical embedding $n \mapsto [(n, 1)]$ identifies the integers
+       within the fraction carrier, supplying the neutral elements zero and one:"
+Id: "a7703365-6a85-4a94-92b2-dfa54b20bfb3"
 
 
 [\rational.pair.zero]
@@ -426,6 +484,12 @@ Documented:
 . description: "Quotient order defined via cross-multiplication:
                 $[(a, b)] \le [(c, d)] \iff ad(bd) \le cb(bd)$."
 Id: "29f4443f-9ea6-4f02-a62d-b278fbc4501a"
+
+
+Text: "Synthesizing these quotient operations and constants produces the
+       canonical realization of $\mathbb{Q}$ as the field of fractions of the
+       integers:"
+Id: "a7620ef1-a6cf-4cc7-a48b-541cd6fd0d7c"
 
 
 [\rational.pair.realization]

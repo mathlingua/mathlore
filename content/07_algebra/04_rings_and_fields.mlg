@@ -52,6 +52,11 @@ References:
 Id: "5ca5fdca-692d-4f04-8420-aa01c909955d"
 
 
+Text: "An element of the carrier set $X$ is designated as a ring element,
+       supporting infix addition and multiplication:"
+Id: "6bc8d95a-8bfc-4708-9e1c-3cbd5e708411"
+
+
 [\ring.element:of{R ::= (X, +, *, 0, 1)}]
 Declares: x "in" X
 when: R is \ring
@@ -134,6 +139,11 @@ References:
 Id: "53a76a9b-97d9-4c4d-b6c6-cc00983cfcb2"
 
 
+Text: "An element of a field admits nonzero division, enabling full scalar
+       arithmetic:"
+Id: "5abb01c8-3f63-436d-95c1-0b80c5643ecf"
+
+
 [\field.element:of{F ::= (X, +, *, 0, 1)}]
 Declares: x is \ring.element:of{F}
 when: F is \field
@@ -146,6 +156,13 @@ Id: "1961828f-5a83-4c78-b8c9-a91c2e512d50"
 
 SectionTitle: "Ideals, Quotients, and Characteristic"
 Id: "ca7d140b-b005-46b1-b844-511a2293e65d"
+
+
+Text: "In ring theory, the substructures that play the role of normal subgroups
+       are *ideals*. An ideal is an additive subgroup that absorbs
+       multiplication by all ring elements, forming the natural basis for
+       constructing quotients:"
+Id: "13a04a3e-6247-46dc-8ec6-0228329c9c85"
 
 
 [\ideal:of{R ::= (X, +, *, 0, 1)}]
@@ -176,6 +193,11 @@ References:
 Id: "999d97fa-3609-4900-a19d-ab1f3345ca54"
 
 
+Text: "Unlike fields, general rings may contain non-zero elements whose product
+       is zero. Such elements are called *zero divisors*:"
+Id: "efbe37f6-2c3e-41cc-b653-5462aac9d07a"
+
+
 [\(zero.divisor)::ring.element:of{R ::= (X, +, *, 0, 1)}]
 Refines: a
 when: R is \(commutative)::ring
@@ -191,6 +213,11 @@ Documented:
                 nonzero $b \ne 0$ satisfying $a \cdot b = 0$, obstructing
                 multiplicative cancellation."
 Id: "cff0d878-33b9-4552-93c2-cee960162e9e"
+
+
+Text: "A commutative ring with identity that contains no non-zero zero divisors
+       is an *integral domain*, restoring cancellation for non-zero factors:"
+Id: "98aed39c-3038-4161-9d0e-6c8108ece2a4"
 
 
 [\integral.domain]
@@ -256,6 +283,11 @@ TextTheorem: "Let $R$ be a commutative ring and $I \subsetneq R$ a proper ideal.
 Id: "81f097c0-c0ee-4819-8304-7f13856e2551"
 
 
+Text: "Structure-preserving maps between rings must respect both addition and
+       multiplication, as well as the multiplicative identity:"
+Id: "5434c629-78ce-4b49-8ef2-e786520cbefd"
+
+
 [\ring.homomorphism:from{R ::= (R_set, +_R, *_R, 0_R, 1_R)}:to{S ::= (S_set, +_S, *_S, 0_S, 1_S)}]
 Declares: phi(x__) is \function:on{R_set}:to{S_set}
 when: R, S is \ring
@@ -277,6 +309,11 @@ References:
 . $lang.algebra:page{83}
 . $bourbaki.algebra:page{96}
 Id: "052b0946-5f7e-4e0d-a686-530e39c328d1"
+
+
+Text: "A subset of a ring that contains the identity and forms a ring under the
+       restricted operations is a *subring*:"
+Id: "d237bb6f-8d70-4e2e-803f-4c494a36873e"
 
 
 [\subring:of{R ::= (R_set, +_R, *_R, 0_R, 1_R)}]
@@ -326,6 +363,11 @@ References:
 Id: "4021d04a-d013-43b6-89b9-c0c14dc688aa"
 
 
+Text: "The preimage of zero under a ring homomorphism isolates the elements that
+       are annihilated by the mapping:"
+Id: "12a9bb9c-57b1-4556-9461-87ae187231fe"
+
+
 [\ring.kernel:of{phi(x__)}:from{R ::= (R_set, +_R, *_R, 0_R, 1_R)}:to{S ::= (S_set, +_S, *_S, 0_S, 1_S)}]
 Defines: K := \set@{x_ : x_ "in" R_set | phi(x_) = 0_S}
 when:
@@ -342,6 +384,12 @@ References:
 . $lang.algebra:page{85}
 . $bourbaki.algebra:page{99}
 Id: "bf16b567-97fa-44d4-8866-975d7643966a"
+
+
+Text: "The algebraic significance of ideals is anchored by the fact that the
+       kernel of any ring homomorphism is an ideal, and every ideal arises as
+       such a kernel:"
+Id: "b919bc77-2358-4d22-a867-fa977c661a3b"
 
 
 Theorem:

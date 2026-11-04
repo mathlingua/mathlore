@@ -32,6 +32,12 @@ References:
 Id: "a08ae02b-7a4e-4911-863a-7d929540f193"
 
 
+Text: "Dual to union, which computes the least upper bound of two sets under
+       containment, intersection computes the greatest lower bound by isolating
+       the elements common to both:"
+Id: "57075eee-e7c8-4125-8b90-9640035ee522"
+
+
 [A \.set.intersect./ B]
 Defines: C := \set@{c_ : c_ "in" U | (.c_ "in"? A.) \.and./ (.c_ "in"? B.)}
 using: U is \set
@@ -45,6 +51,11 @@ Documented:
 References:
 . $enderton.set.theory:page{22}
 Id: "5d137355-ba4e-44ca-bf58-2f7b3f667dcc"
+
+
+Text: "Removing all elements belonging to a given set formalizes relative
+       complementation, corresponding to logical negation:"
+Id: "d068e07a-e5d1-4751-b758-2d65c3d9d7e4"
 
 
 [A \.set.difference./ B]
@@ -61,9 +72,8 @@ References:
 Id: "186de027-9bf6-422d-a2ed-823c94a80b1b"
 
 
-Text: "The power set constructor $\mathcal{P}(A)$ collects all subsets of $A$
-       into a single universe of discourse. It constitutes the carrier set for
-       the Boolean algebra associated with $A$."
+Text: "The totality of all subsets of $A$ forms the carrier of this Boolean
+       algebra, known as the power set:"
 Id: "e3164791-b17c-427a-8c8c-02ec40801629"
 
 
@@ -80,10 +90,9 @@ Documented:
 Id: "3c3133ac-1cc2-4c76-8e84-fb332c7b08af"
 
 
-Text: "Two sets $A$ and $B$ are said to be *disjoint* (or mutually exclusive)
-       when they share no members in common, so that their intersection is
-       empty: $A \cap B = \emptyset$. Disjointness is the set-theoretic
-       formulation of incompatibility."
+Text: "When two subsets share no elements in common, their intersection
+       evaluates to the bottom element $\emptyset$. This orthogonality relation
+       is disjointness:"
 Id: "185d9e5d-1d5e-4478-863e-792c9889a309"
 
 
@@ -103,11 +112,9 @@ SectionTitle: "Algebraic Properties of Set Operations"
 Id: "e8c4cfac-dbb8-4e62-a5c1-20dfcd50799e"
 
 
-Text: "Set union and intersection satisfy algebraic symmetries that mirror the
-       algebra of real numbers, including commutativity, associativity, and
-       distributivity. However, Boolean algebras exhibit unique dualities—such
-       as the mutual distributivity of union over intersection and intersection
-       over union—that have no analogue in numerical arithmetic."
+Text: "Set operations satisfy exact algebraic symmetries that mirror
+       propositional logic. The most basic of these are commutativity of union
+       and intersection, reflecting the symmetry of disjunction and conjunction:"
 Id: "aebe6956-53f1-4b24-af92-63732dfe1544"
 
 
@@ -130,9 +137,8 @@ Proof: """By definition, $x \in A \cup B \iff x \in A \lor x \in B$.
 Id: "a8b70f59-148f-4e51-bcc8-7ab889db86d4"
 
 
-Text: "In the monoid of subsets under union, the empty set $\emptyset$ serves as
-       the unique neutral identity element: adjoining nothing leaves any set
-       unchanged."
+Text: "In the algebraic structure of subsets, the empty set acts as the neutral
+       element for union:"
 Id: "20e77baa-c3d2-4104-a8dc-3fe1e02717e8"
 
 
@@ -151,6 +157,12 @@ Proof: """An element $x$ belongs to $A \cup \emptyset$ if and only if
           $x \in A \lor \text{false} \iff x \in A$. By Extensionality,
           $A \cup \emptyset = A$."""
 Id: "e0a17409-7d0a-4286-9a25-9c8eb00a40df"
+
+
+Text: "Together with associativity, absorption, distributivity, and De Morgan
+       duality, these operations establish that the power set $\mathcal{P}(U)$
+       is a complete Boolean algebra:"
+Id: "d20fb66c-eb98-488a-abe5-3530fbcd38e9"
 
 
 Theorem:
@@ -190,6 +202,11 @@ References:
 Id: "aa8bf616-5e94-4976-a63a-132732577422"
 
 
+Text: "A direct consequence of these lattice identities is monotonicity:
+       expanding a set can only enlarge its intersections with other sets:"
+Id: "eced3d04-f406-4fd7-9828-0ce0885688ff"
+
+
 Theorem:
 given:
 . A, B, C is \set
@@ -210,6 +227,13 @@ Proof: "Let $x \in A \cap C$. By the definition of intersection, $x \in A$ and
 References:
 . $dummit.foote:page{2}
 Id: "8eef4e40-5929-41a3-ba81-74145b1e5bcd"
+
+
+Text: "Beyond binary operations, mathematical analysis and topology require
+       taking unions and intersections over arbitrary, possibly infinite
+       indexing families. The supremum of an indexed family collects all
+       elements belonging to at least one component:"
+Id: "6259360b-203c-4efa-875c-8faf1282041e"
 
 
 [\indexed.union:of{A}:over{I}:in{U}]
@@ -237,6 +261,11 @@ Documented:
 Id: "b256bfcd-6772-4a1f-9609-210bae9d3b11"
 
 
+Text: "Dually, the infimum collects elements that belong simultaneously to every
+       component of the indexed family:"
+Id: "d2ba0a4e-877e-4983-bbbb-f653bc321e7f"
+
+
 [\indexed.intersection:of{A}:over{I}:in{U}]
 Defines: B \:subset:/ U
 when:
@@ -260,6 +289,12 @@ Documented:
                 Boolean lattice $\mathcal{P}(U)$: collects elements common to
                 all components of the indexed family relative to universe $U$."
 Id: "3afa1a1b-3d36-437f-baca-56a07eae43c0"
+
+
+Text: "When evaluated over the empty index set $I = \emptyset$, existential
+       quantification fails unconditionally while universal quantification holds
+       vacuously, leading to the dual boundary values:"
+Id: "bbca1339-e2a2-4492-bef5-fe1f19a189d2"
 
 
 Theorem:

@@ -24,6 +24,11 @@ SectionTitle: "Differentiation"
 Id: "d3e7ecb7-d361-4548-bbd1-4cf6cee3a2b5"
 
 
+Text: "The derivative formalizes the instantaneous rate of change of a real
+       function, defined as the limit of difference quotients."
+Id: "f31d68c9-3930-435b-ad9c-4e6d28f5fcfa"
+
+
 [\derivative:of{f}:at{x0}]
 Defines: d is \real
 when:
@@ -50,6 +55,11 @@ Documented:
 References:
 . $rudin.principles:page{103}
 Id: "a8704cca-424a-4f17-a321-d5c3725e2090"
+
+
+Text: "A function is differentiable when this local linear approximation exists
+       everywhere across its domain."
+Id: "526f1421-79f7-44a5-9d5b-3b5d32d6c3a8"
 
 
 [\(differentiable)::real.function:on{U}]

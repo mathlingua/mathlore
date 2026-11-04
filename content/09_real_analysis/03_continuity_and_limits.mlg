@@ -25,6 +25,12 @@ SectionTitle: "Function Limits"
 Id: "e33914da-aa4d-4409-a36b-9308d644ccc6"
 
 
+Text: "To analyze the local behavior of a function near a point—independent of
+       whether the function is even defined at that point—we formulate the
+       Weierstrass $\epsilon$-$\delta$ limit."
+Id: "60930582-c44c-4424-a13e-e07e75822eec"
+
+
 [\real.function.limit:at{x0}:of{f}]
 Defines: L is \real
 using: U \:subset:/ \reals
@@ -59,6 +65,11 @@ SectionTitle: "Continuity"
 Id: "550e6c6b-b2d6-4a7b-941c-de10e61ec6a1"
 
 
+Text: "When the limit of a function at a point exists and coincides with the
+       function's value, the graph possesses no breaks or jumps at that point."
+Id: "6c5426a1-6ad8-4917-987b-5ae2f525bced"
+
+
 [\(continuous)::real.function:at{x0}]
 Refines: f
 using: U \:subset:/ \reals
@@ -85,6 +96,12 @@ References:
 Id: "0596242b-c84c-4989-a566-a5e5d1a2c884"
 
 
+Text: "Extending this local property across an entire domain gives rise to
+       global continuity, the natural category of maps preserving topological
+       structure."
+Id: "190b772d-2309-434c-90da-c1719f1b8f91"
+
+
 [\(continuous)::real.function:on{U}]
 Refines: f
 when: U \:subset:/ \reals
@@ -99,6 +116,12 @@ Documented:
 References:
 . $rudin.principles:page{85}
 Id: "5b60dfb1-186f-4583-9021-23830d2286df"
+
+
+Text: "While pointwise continuity allows the response parameter $\delta$ to
+       depend on the base point $x_0$, uniform continuity demands a single
+       $\delta$ that serves the entire domain simultaneously."
+Id: "9ad48f0c-8944-4d9c-b722-cd480602be20"
 
 
 [\(uniformly.continuous)::real.function:on{U}]

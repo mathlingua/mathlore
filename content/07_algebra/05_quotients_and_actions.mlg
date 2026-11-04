@@ -21,6 +21,12 @@ SectionTitle: "Cosets and Normal Subgroups"
 Id: "7c8c60ce-9c18-4ea7-8447-9b47c9118f8b"
 
 
+Text: "Given a subgroup $H \le G$, translating $H$ by an element $g \in G$
+       produces a geometric shift of the subgroup. Multiplying on the left
+       yields a *left coset*:"
+Id: "ffcab597-21c7-48e6-b63c-0d65003d88db"
+
+
 [\left.coset:of{H}:by{g}:in{G ::= (X, *, e)}]
 Defines: C := \set@{g * h_ : h_ "in" H}
 when:
@@ -38,6 +44,11 @@ References:
 Id: "b0bd6ac9-937e-46cb-b2f0-9752c5d2a6e0"
 
 
+Text: "Dually, multiplying the subgroup by $g$ on the right yields a *right
+       coset*:"
+Id: "1774ab37-9be8-4e15-9e4f-625acb67093b"
+
+
 [\right.coset:of{H}:by{g}:in{G ::= (X, *, e)}]
 Defines: C := \set@{h_ * g : h_ "in" H}
 when:
@@ -53,6 +64,11 @@ Documented:
 References:
 . $dummit.foote:page{77}
 Id: "152ef2a9-044c-4687-8325-bc80ce2bfa12"
+
+
+Text: "Because left cosets are equivalence classes under left congruence, any
+       two cosets either coincide completely or share no elements at all:"
+Id: "f203f10b-37bb-4625-b4b6-bf6a0c5cb5e7"
 
 
 Theorem:
@@ -108,6 +124,12 @@ References:
 Id: "4cafbd92-cf4d-4989-ac8f-e53ed45cb238"
 
 
+Text: "To endow the coset collection with a well-defined group structure, the
+       subgroup must be invariant under conjugation. Such subgroups are
+       *normal*:"
+Id: "0edaf137-12dd-45dc-bc25-583432846a30"
+
+
 [\normal.subgroup:of{G ::= (X, *, e)}]
 Declares: N is \group
 when: G is \group
@@ -160,6 +182,11 @@ TextTheorem: "Let $N \trianglelefteq G$ be a normal subgroup. The set of left
 Id: "1c5bfe13-52ac-46ae-b75c-af1d8db93224"
 
 
+Text: "Under a group homomorphism, the collection of elements mapped to the
+       neutral element forms its kernel, which is always a normal subgroup:"
+Id: "948ce845-ec0a-483c-a58e-815b4b99534f"
+
+
 [\group.kernel:of{phi(x__)}:from{G1 ::= (X1, *_1, e1)}:to{G2 ::= (X2, *_2, e2)}]
 Defines: K := \set@{g_ : g_ "in" G1 | phi(g_) = e2}
 when:
@@ -173,6 +200,11 @@ Documented:
 References:
 . $dummit.foote:page{73}
 Id: "dbdd8045-535e-4d8b-b4d1-2f10e2d2648f"
+
+
+Text: "Dually, the set of values attained by the homomorphism forms its image,
+       which is a subgroup of the codomain:"
+Id: "1a852d14-17d3-49f0-a7ca-a116a2e36278"
 
 
 [\group.image:of{phi(x__)}:from{G1 ::= (X1, *_1, e1)}:to{G2 ::= (X2, *_2, e2)}]
@@ -219,6 +251,11 @@ SectionTitle: "Group Actions"
 Id: "3033f57e-9ff5-4da7-bf72-b3c09c27f533"
 
 
+Text: "A group action formalizes the realization of an abstract group as
+       concrete permutations of a geometric set:"
+Id: "879e5d6e-1905-4b43-a466-a1b82ecf0f27"
+
+
 [\group.action:of{G ::= (Y, *, e)}:on{X}]
 Declares: alpha(g_, x_) is \function:on{Y \.set.cross./ X}:to{X}
 when:
@@ -244,6 +281,11 @@ References:
 Id: "fa043cd6-0ce8-4504-82bb-aba9ad2c8a30"
 
 
+Text: "Under a group action, the collection of all points reachable from a
+       designated point $x$ forms its *orbit*:"
+Id: "2b911849-a054-4bb8-9664-2f2f1b3c1d12"
+
+
 [\orbit:of{x}:under{alpha}:of{G}:on{X}]
 Defines: O := \set@{alpha(g_, x) : g_ "in" G}
 when:
@@ -260,6 +302,11 @@ Documented:
 References:
 . $dummit.foote:page{114}
 Id: "373a9fce-21a7-4155-9f1d-cfb662941906"
+
+
+Text: "The collection of group elements that leave $x$ fixed forms its
+       *stabilizer* subgroup:"
+Id: "e0c71fb1-8eeb-4232-8f17-7e4e5210a228"
 
 
 [\stabilizer:of{x}:under{alpha}:of{G}:on{X}]

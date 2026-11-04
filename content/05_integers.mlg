@@ -108,6 +108,11 @@ References:
 Id: "fe3288e5-96fd-4839-bd2f-1bc13160214f"
 
 
+Text: "Any element belonging to the carrier set of this algebraic system is
+       designated as an *integer*:"
+Id: "837f5ab4-f2b7-4d37-b923-120d38a9554c"
+
+
 [\integer]
 Declares: z "in" \integers
 Enables:
@@ -127,9 +132,9 @@ SectionTitle: "Integer Constants and Operations"
 Id: "c0a1f8a4-c48a-4a84-8f81-0b741cd08c77"
 
 
-Text: "The integer zero ($0$) is the unique neutral identity element for
-       addition, and one ($1$) is the non-zero neutral identity element for
-       multiplication."
+Text: "The algebraic structure of $\mathbb{Z}$ begins with two neutral
+       constants. The integer zero ($0$) acts as the neutral element for
+       addition:"
 Id: "c29a27c7-6869-4b83-8183-70312240df75"
 
 
@@ -142,6 +147,11 @@ Documented:
                 addition satisfying $a + 0 = a$ and annihilator for
                 multiplication ($a \cdot 0 = 0$)."
 Id: "14e8b6fe-08ca-49d3-9cf9-152d052cb10d"
+
+
+Text: "The integer one ($1$) acts as the non-zero neutral identity element for
+       multiplication:"
+Id: "d02a8dd3-76a2-4645-800b-72af1f2ea0e6"
 
 
 [\integer.one]
@@ -209,6 +219,11 @@ Documented:
 Id: "c17b9934-2a9c-4ccc-8556-c76abd992020"
 
 
+Text: "Alongside addition and multiplication, the integers inherit a
+       translation-invariant total order from the natural numbers:"
+Id: "efda0757-b790-4682-881b-3e66b517638c"
+
+
 [a \:integer.leq:/ b]
 Declares: a is \integer
 when: b is \integer
@@ -257,6 +272,11 @@ Documented:
 Id: "84f19ae7-2d2d-4c34-93c7-a9c7386df968"
 
 
+Text: "Each individual equivalence class in this quotient carrier represents a
+       signed difference of natural numbers:"
+Id: "1b3bcc3e-1f5d-4980-9ebd-2889e97f53b6"
+
+
 [\integer.pair.class:of{a, b}]
 Defines: C := \equivalence.class:of{(a, b)}:over{\integers.relation}#using{X := \naturals \.set.cross./ \naturals} "in" \integer.pair.carrier
 when: a, b is \natural
@@ -266,6 +286,11 @@ Documented:
 . description: "Equivalence class $[(a, b)]_{\mathbb{Z}}$ representing the
                 signed integer difference $a - b$."
 Id: "5c228ea8-d53f-4460-8909-56b46f19be2a"
+
+
+Text: "The distinguished additive and multiplicative identities correspond to
+       the diagonal class and its unit offset:"
+Id: "3aef9c12-48e8-4126-a455-4288ec57f538"
 
 
 [\integer.pair.zero]
@@ -289,6 +314,11 @@ Documented:
                 representing the multiplicative identity of the pair
                 realization."
 Id: "46a6c27b-692f-4fb6-af09-dd9f9787d9d3"
+
+
+Text: "Addition and multiplication on equivalence classes are defined
+       componentwise and through formal cross-multiplication:"
+Id: "e78336a4-0ec6-49a6-afeb-c95b498c7871"
 
 
 [\integer.pair.add]
@@ -326,6 +356,11 @@ Documented:
 Id: "851822e5-633e-477d-aaa9-175898ceb06e"
 
 
+Text: "Negation corresponds to transposing coordinates, reversing the signed
+       direction of the difference:"
+Id: "7f913581-2c2c-4bb8-8591-88515ebacbe5"
+
+
 [\integer.pair.neg(a_)]
 Defines: n(a_) is \function:on{\integer.pair.carrier}:to{\integer.pair.carrier}
 expresses:
@@ -337,6 +372,11 @@ Documented:
 . description: "Coordinate transposition $-[(a, b)] = [(b, a)]$, reversing the
                 difference orientation."
 Id: "d3661a1d-1da3-47ef-9d54-cc841b4dcdda"
+
+
+Text: "The linear order is evaluated by comparing the cross-sums of natural
+       coordinates:"
+Id: "31e382be-4cda-468a-8a95-6c60dc6e8982"
 
 
 [\integer.pair.leq]
@@ -357,6 +397,11 @@ Documented:
 . description: "Induced linear order on formal differences:
                 $[(a, b)] \le [(c, d)] \iff a+d \le c+b$."
 Id: "58e8d2d9-b0e3-416b-8536-3fb3a8b9063a"
+
+
+Text: "Collecting these operations and constants yields the concrete realization
+       of the integers inside set theory:"
+Id: "65f258c0-1891-4205-aa97-aa94ed0e71c7"
 
 
 [\integer.pair.realization]
@@ -400,6 +445,11 @@ TextTheorem: "The additive monoid $\mathbb{N}$ embeds into the additive group
 Id: "507603fd-5d69-4a75-8c86-692c2bc5ae35"
 
 
+Text: "From the non-strict linear order, we obtain the strict inequality
+       relation on integers:"
+Id: "9cdf4ee4-7b51-4d22-afc8-365982df81b7"
+
+
 [a \:integer.less:/ b]
 Declares: a is \integer
 when: b is \integer
@@ -412,6 +462,12 @@ Documented:
 . description: "The strict linear order $<$ on $\mathbb{Z}$:
                 $a < b \iff (a \le b \land a \ne b)$."
 Id: "ad8694fc-bab4-469f-a127-2a6856e58faa"
+
+
+Text: "The algebraic and order structures of $\mathbb{Z}$ culminate in the
+       division algorithm. Dividing any integer by a strictly positive divisor
+       yields a unique quotient and a bounded non-negative remainder:"
+Id: "a83983b2-fa92-4537-b72b-f3c06bad5434"
 
 
 Theorem:
@@ -454,6 +510,11 @@ Proof: """Let $b > 0$. Consider the set of non-negative integers of the form
 Id: "5dd9f7fc-9815-4816-bc2a-737babe16bf9"
 
 
+Text: "Euclidean division leads directly to the concept of exact divisibility,
+       formalizing when one integer is an integral multiple of another:"
+Id: "c49e9624-8b24-44f8-b313-7ba33fb06c43"
+
+
 [a \.integer.divides./ b]
 States:
 when: a, b is \integer
@@ -467,6 +528,12 @@ Documented:
                 that $b$ is an integral multiple of $a$, defining the principal
                 ideal inclusion $(b) \subseteq (a)$."
 Id: "95d6d9fd-e095-4ebf-a659-6ab4ecc44fd0"
+
+
+Text: "The divisibility order on $\mathbb{Z}$ yields a greatest lower bound for
+       any pair of integers, which can be expressed linearly via Bézout's
+       identity:"
+Id: "c2b0edff-2255-4ee4-b5a9-37aeea77e4a5"
 
 
 [\greatest.common.divisor:of{a, b}]

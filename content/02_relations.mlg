@@ -24,6 +24,13 @@ SectionTitle: "Binary Relations and Their Properties"
 Id: "c43de393-3ca6-474f-9c32-2996cb1b320b"
 
 
+Text: "A bare set possesses neither geometry, order, nor algebraic structure. To
+       study interaction between elements, we introduce relations. Formally, a
+       binary relation is realized as a subset of a Cartesian product,
+       specifying which pairs of elements stand in relation:"
+Id: "497531b6-b304-4605-ad22-74e9efa58d6e"
+
+
 [\relation:?on{X}]
 Declares: R \:subset:/ (.X \.set.cross./ X.)
 when: X is \set
@@ -39,16 +46,10 @@ Documented:
 Id: "5ace60a2-cc66-4cea-818a-538f877b5f97"
 
 
-Text: "Relations furnish the primary mechanism for endowing raw sets with
-       geometric and algebraic architecture. Rather than treating reflexivity,
-       symmetry, and transitivity as isolated boolean flags, we view them as
-       foundational geometric constraints on the product graph
-       $R \subseteq X \times X$. Reflexivity ensures that every point is
-       anchored to the diagonal $\Delta_X$; symmetry guarantees invariance under
-       coordinate transposition $(x,y) \mapsto (y,x)$; and transitivity enforces
-       path connectivity across relational chains. When united, these three
-       properties partition the underlying universe into disjoint equivalence
-       classes, collapsing local indistinguishability into quotient spaces."
+Text: "The structural character of a relation is determined by geometric
+       constraints on its product graph $R \subseteq X \times X$. The first of
+       these is reflexivity, which demands that every element is related to
+       itself, so that the relation contains the diagonal $\Delta_X$:"
 Id: "35a87f95-8d23-44a0-ae4f-70d4384a3db6"
 
 
@@ -68,10 +69,8 @@ Documented:
 Id: "8db6967b-79de-4fd6-8769-fcd651c7c6ee"
 
 
-Text: "Symmetry eliminates relational orientation, guaranteeing that every
-       directed edge $x \mathrel{R} y$ is accompanied by its return edge
-       $y \mathrel{R} x$. In the algebra of relations, symmetry signifies
-       complete self-adjointness: $R = R^{-1}$."
+Text: "Symmetry eliminates relational directionality, requiring every link from
+       $x$ to $y$ to be accompanied by a return link from $y$ to $x$:"
 Id: "b2c8da90-8a30-4542-a3a3-f81bf989953a"
 
 
@@ -91,11 +90,9 @@ Documented:
 Id: "273288f5-a313-4140-a28c-16ac7e8ba72b"
 
 
-Text: "Transitivity transforms localized pairwise steps into global
-       reachability: whenever $x$ connects to $y$ and $y$ connects to $z$, an
-       immediate shortcut connects $x$ directly to $z$. In terms of relational
-       composition, this guarantees idempotence under self-multiplication:
-       $R \circ R \subseteq R$."
+Text: "Transitivity enforces path connectivity across relational chains:
+       whenever $x$ relates to $y$ and $y$ relates to $z$, an immediate shortcut
+       connects $x$ directly to $z$:"
 Id: "5965ba24-25b8-4a16-92fc-035988cfb21c"
 
 
@@ -117,10 +114,9 @@ Documented:
 Id: "8baba6bf-25f4-48b4-84f9-4b2db59ccf47"
 
 
-Text: "Antisymmetry imposes the strict absence of non-trivial 2-cycles: if $x$
-       and $y$ mutually relate to one another, they must collapse into the same
-       point. It stands as the polar opposite of symmetry, supplying the
-       directional rigidity required to define order and hierarchy."
+Text: "In stark contrast to symmetry, antisymmetry prohibits two distinct
+       elements from mutually relating to each other. It enforces the
+       directional rigidity required to establish order and hierarchy:"
 Id: "bdbeccce-dfdb-4d54-8b0c-92cae82c56d7"
 
 
@@ -142,9 +138,8 @@ Documented:
 Id: "8ed4e2b2-f1b7-4131-8ae2-2834e71805fa"
 
 
-Text: "The *inverse relation* (or converse) $R^{-1}$ reverses the orientation of
-       every relational pair: $(y, x) \in R^{-1} \iff (x, y) \in R$. It embodies
-       the contravariant operation that switches sources and targets."
+Text: "Exchanging the coordinates of each related pair produces the inverse
+       relation, reversing the orientation of every relational arrow:"
 Id: "ece9bae3-c088-459e-9cd1-7a650d9b3681"
 
 
@@ -171,11 +166,10 @@ SectionTitle: "Equivalence Relations and Quotients"
 Id: "66f53348-5a61-4763-9645-64390784903b"
 
 
-Text: "Among all binary relations, the most ubiquitous are *equivalence
-       relations*. An equivalence relation is simultaneously reflexive,
-       symmetric, and transitive. These three axioms distill the essential
-       properties of equality itself, allowing mathematicians to treat distinct
-       objects as 'the same' with respect to a specified invariant."
+Text: "Uniting reflexivity, symmetry, and transitivity yields the foundational
+       concept of an equivalence relation. These three postulates distill the
+       essential structural features of equality, allowing mathematicians to
+       identify distinct objects that share a common invariant:"
 Id: "b906ce0b-34d4-4b24-b168-d6a8d05efc92"
 
 
@@ -208,16 +202,8 @@ References:
 Id: "2394a97b-5960-4919-98db-b95ec3870343"
 
 
-Text: "Given an equivalence relation $R$ on $X$, each element $x \in X$
-       generates its *equivalence class*:
-
-       $$
-       [x]_R := \{y \in X : x \mathrel{R} y\}
-       $$
-
-       Every element belongs to its
-       own equivalence class (by reflexivity), and two classes $[x]_R$ and
-       $[y]_R$ are either strictly identical or completely disjoint."
+Text: "Under an equivalence relation, the set of all elements related to a given
+       point $x$ forms a cohesive cluster known as its equivalence class:"
 Id: "308e4d46-7205-4977-9583-486771d4ca48"
 
 
@@ -236,18 +222,9 @@ Documented:
 Id: "2fae575c-13c9-498b-b14a-e471f0e3cfdc"
 
 
-Text: "Gathering all equivalence classes into a new set yields the *quotient
-       set*:
-
-       $$
-       X / R := \{[x]_R : x \in X\}
-       $$
-
-       Passing to the quotient is
-       mathematics' universal engine of abstraction: it forgets irrelevant
-       distinguishing details, collapsing entire equivalence classes into single
-       points. The canonical quotient projection $\pi : X \to X / R$, defined by
-       $\pi(x) = [x]_R$, is the prototypical surjective homomorphism."
+Text: "Gathering the equivalence classes together produces the quotient set,
+       collapsing local indistinguishability to construct new mathematical
+       universes:"
 Id: "7435ef90-380d-4429-a369-37d652479b85"
 
 
@@ -264,6 +241,12 @@ Documented:
                 universalizes the process of structural abstraction by factoring
                 out irrelevant relational variation."
 Id: "cea0d898-a18d-44dc-b04c-ffb2f0cde26e"
+
+
+Text: "Complementary to the algebraic perspective of quotienting is the
+       geometric notion of a partition: decomposing a set into non-empty,
+       pairwise disjoint blocks that exhaustively cover the space:"
+Id: "5f182847-be56-443e-8fcb-dded5b95b5c3"
 
 
 [\partition:of{X}]
@@ -292,15 +275,10 @@ SectionTitle: "Order Relations"
 Id: "88c4093d-566b-48bb-baea-9926345a182f"
 
 
-Text: "While equivalence relations formalize symmetry and clustering, *order
-       relations* formalize comparison, ranking, and hierarchy.
-
-       A *partial order* is reflexive, antisymmetric, and transitive. It allows
-       incomparable elements: two elements $x, y$ may satisfy neither $x \le y$
-       nor $y \le x$ (as in subset inclusion $\mathcal{P}(U)$ or divisibility in
-       $\mathbb{N}$). A *total order* (or linear order) is a partial order in
-       which every pair of elements is comparable ($x \le y \lor y \le x$),
-       eliminating all ambiguity of precedence."
+Text: "While equivalence relations formalize symmetry and clustering, order
+       relations formalize comparison and hierarchy. Combining reflexivity,
+       transitivity, and antisymmetry produces a partial order, permitting
+       elements to be incomparable:"
 Id: "b69a5d44-be1d-4f87-bab6-f5c4eccf221c"
 
 
@@ -334,6 +312,11 @@ References:
 Id: "656a5a0a-77e8-42ea-857c-4f7d8eda00ac"
 
 
+Text: "When every pair of elements in a partially ordered set is comparable,
+       leaving no ambiguities of precedence, the order is total (or linear):"
+Id: "73b7e9c9-f2d8-4e94-8eb1-c4e5ffe0cce3"
+
+
 [\total.order:on{X}]
 Declares: R is \partial.order:on{X}
 when: X is \set
@@ -357,6 +340,14 @@ SectionTitle: "Closures and Order Structure"
 Id: "fde224c5-920b-4246-8da5-19dc66c144a2"
 
 
+Text: "Given an arbitrary binary relation $R$ on a set $X$, it frequently fails
+       to satisfy desirable algebraic properties such as reflexivity, symmetry,
+       or transitivity. In such cases, one seeks the minimal extension of $R$
+       that enjoys the required property—the *closure* of $R$. The reflexive
+       closure adjoins only the missing diagonal identity pairs:"
+Id: "2b156d2b-6b77-4bf1-9151-a8f560c66806"
+
+
 [\reflexive.closure:of{R}:on{X}]
 Defines: S is \(reflexive)::relation:?on{X}
 when:
@@ -373,6 +364,11 @@ Documented:
                 only the necessary self-loops to satisfy reflexivity without
                 introducing extraneous relations."
 Id: "38e1561b-dcdb-4e2e-8ba0-53ef665a0c33"
+
+
+Text: "Enforcing symmetry requires adjoining the reverse of each related pair,
+       ensuring that every directed link becomes bidirectional:"
+Id: "3cb60e65-d29f-4527-bbc1-4077b731ec82"
 
 
 [\symmetric.closure:of{R}:on{X}]
@@ -393,6 +389,12 @@ Documented:
 Id: "ce0a9702-4034-4063-a435-5eafa76158cf"
 
 
+Text: "Transitivity requires connecting any chain of interrelated elements by a
+       direct link, effectively synthesizing path reachability across relational
+       steps:"
+Id: "20687c04-7fd9-4e38-91b2-2d1d6ee39eb5"
+
+
 [\transitive.closure:of{R}:on{X}]
 Defines: S is \(transitive)::relation:?on{X}
 when:
@@ -409,6 +411,12 @@ Documented:
                 graph theory, it computes complete path reachability across
                 arbitrary finite relational chains."
 Id: "bd748bdf-4d7a-442b-bf35-4724dd70775c"
+
+
+Text: "Combining reflexivity and transitivity produces the preorder closure,
+       which forms the mathematical foundation for multi-step computation and
+       state reachability:"
+Id: "281dd003-4fea-4fb1-aea1-2500a1350405"
 
 
 [\reflexive.transitive.closure:of{R}:on{X}]
@@ -430,11 +438,10 @@ Documented:
 Id: "374659d6-cfcc-4262-b98e-b50207d16c18"
 
 
-Text: "In graph-theoretic terms, the reflexive--transitive closure $R^*$
-       corresponds to reachability in a directed graph: $x \mathrel{R^*} y$ if
-       and only if there exists a finite path
-       $x = v_0 \mathrel{R} v_1 \mathrel{R} \dots \mathrel{R} v_k = y$ of length
-       $k \ge 0$. Setting $k = 0$ provides reflexivity ($x = y$)."
+Text: "Having established the foundational properties of relations, we now turn
+       to the central duality between equivalence relations and partitions. The
+       following theorem demonstrates that any equivalence relation decomposes
+       its domain into a collection of mutually disjoint, exhaustive cells:"
 Id: "5fd1260e-1250-4b35-a679-218b2f4c0459"
 
 
@@ -470,6 +477,12 @@ Proof: """Let $R$ be an equivalence relation on $X$. We verify the defining
 References:
 . $enderton.set.theory:page{55}
 Id: "c6cf2b6a-9343-4865-b41e-183b454edd24"
+
+
+Text: "The converse holds with equal force: any partition of a set into
+       non-overlapping blocks naturally induces an equivalence relation whose
+       classes coincide with those blocks:"
+Id: "3802f317-8196-4afd-85e6-edc888f3b5f3"
 
 
 Theorem:
@@ -513,6 +526,13 @@ References:
 Id: "97d1309a-6739-4ff9-a354-f0c6859df60f"
 
 
+Text: "In a partially ordered set, elements need not be mutually comparable.
+       Consequently, there is an important mathematical distinction between an
+       element that has no strict upper bound (a *maximal* element) and an
+       element that lies above all other elements (a *greatest* element):"
+Id: "e99ddb2c-2fd9-489e-9a83-cd828eb57c39"
+
+
 [\is.maximal{m}:in{X}:under{R}]
 States:
 when:
@@ -534,6 +554,11 @@ Documented:
 Id: "690ee3e8-39a6-4853-8df9-7d0b9e1cec5a"
 
 
+Text: "By contrast, a greatest element must dominate every element in the poset,
+       rendering it unique whenever it exists:"
+Id: "f99b6241-2e23-4bb4-a709-248157e6592f"
+
+
 [\is.greatest{g}:in{X}:under{R}]
 States:
 when:
@@ -549,6 +574,11 @@ Documented:
                 exists, the greatest element is uniquely determined and
                 coincides with the sole maximal element."
 Id: "8c3b1160-03ac-4f70-856f-8dbdff0cba12"
+
+
+Text: "Dually, a minimal element has no strictly smaller predecessor, although
+       other incomparable elements may exist alongside it:"
+Id: "544af7bc-3f1e-4827-8dc8-a3a85885063e"
 
 
 [\is.minimal{m}:in{X}:under{R}]
@@ -570,6 +600,11 @@ Documented:
 Id: "3c3478fa-e156-4364-9c53-3577a60d7dd9"
 
 
+Text: "A least element sits below every member of the poset, providing an
+       absolute foundation for order-theoretic constructions:"
+Id: "e3b3e952-6c6d-4069-ad99-e930f08263a6"
+
+
 [\is.least{l}:in{X}:under{R}]
 States:
 when:
@@ -585,6 +620,13 @@ Documented:
                 present, it is unique and forms the foundation for well-founded
                 induction and complete partial orders."
 Id: "33141ee6-c2fe-4116-8eff-3b6064d5d4e3"
+
+
+Text: "When every pair of elements in a poset admits both a unique greatest
+       lower bound (the meet or infimum) and a unique least upper bound (the
+       join or supremum), the order takes on rich algebraic duality as a
+       *lattice*:"
+Id: "3fab3256-b041-4b07-b0e9-02107bdc33d9"
 
 
 [\lattice]

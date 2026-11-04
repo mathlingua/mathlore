@@ -78,6 +78,11 @@ Documented:
 Id: "f3a6c8ea-28b0-46a1-ac84-0499c7b6a970"
 
 
+Text: "With paths established, we define the line integral of a complex function
+       along a directed contour."
+Id: "b3de7e92-4793-4f36-b9db-e1f071faf700"
+
+
 [\contour.integral:of{f}:along{gamma}]
 Defines: I is \complex
 using: a, b is \real
@@ -221,6 +226,12 @@ TextTheorem: "Cauchy's Integral Formula and Higher Derivatives.
               This immediately proves the Fundamental Theorem of Algebra: if a nonconstant polynomial $P(z)$ had no roots,
               then $1/P(z)$ would be a bounded entire function, hence constant, contradiction!"
 Id: "6b44eb1b-43c8-497e-a408-348353760216"
+
+
+Text: "When a function fails to be holomorphic at isolated points, the
+       obstruction to path independence is concentrated entirely in the residue
+       at each singularity."
+Id: "7637824e-9d5c-4d55-9811-8a10459231a0"
 
 
 [\residue:of{f}:at{z0}]

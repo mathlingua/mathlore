@@ -35,7 +35,7 @@ satisfies:
   . existsUnique: y "in" B
     suchThat: f(x) = y
 Documented:
-. called: "function@[A]{ on $A?$}@[B]{ to $B?}$"
+. called: "function@[A]{ on $A?$}@[B]{ to $B?$}"
 . written: "@[A, B]{f? \: : \: A? \rightarrow B?}"
 . description: "A function $f : A \rightarrow B$ assigns to each element $x$ of
                 the domain $A$ exactly one element $f(x)$ of the codomain $B$.
@@ -49,16 +49,9 @@ Id: "1e0cb28d-bc8f-42db-bcfa-86a215e88c7a"
 
 
 Text: "Functions are classified by how their mapping action behaves across the
-       domain and codomain:
-       - An *injective* (one-to-one) function preserves distinctness: no two
-         distinct inputs share a common output. An injection embeds the domain
-         into the codomain without loss of information.
-       - A *surjective* (onto) function covers the codomain entirely: every
-         element in $B$ is realized as the output of at least one input in $A$.
-       - A *bijective* function is simultaneously injective and surjective. A
-         bijection establishes an exact one-to-one correspondence between the
-         sets $A$ and $B$, demonstrating that they possess identical cardinal
-         size and abstract set-theoretic structure."
+       domain and codomain. The first fundamental property is *injectivity*,
+       which demands that distinct domain elements never collapse to the same
+       target value:"
 Id: "252ce10f-e09f-4133-9110-e59fe497ce9c"
 
 
@@ -84,6 +77,11 @@ References:
 Id: "c33dd972-b742-4aed-8bbc-797ecdb2b5af"
 
 
+Text: "Dually, a function is *surjective* when its range exhausts the entire
+       codomain, leaving no target element unhit:"
+Id: "ac23e76b-6029-461a-ae33-469383b9004c"
+
+
 [\(surjective)::function:?on{A}:?to{B}]
 Refines: f(x__) ::= y_
 satisfies:
@@ -103,6 +101,13 @@ References:
 . $enderton.set.theory:page{42}
 . $halmos.set.theory:page{28}
 Id: "be68a628-8ca8-49c8-8780-bd7aa7401ef4"
+
+
+Text: "When a function is simultaneously injective and surjective, it is a
+       *bijection*. Such mappings establish a one-to-one correspondence between
+       sets, demonstrating that they share identical cardinality and enabling
+       structure-preserving isomorphisms:"
+Id: "8d7c408f-298d-4172-9fe2-b4f03e152c6c"
 
 
 [\(bijective)::function:?on{A}:?to{B}]
@@ -204,14 +209,10 @@ References:
 Id: "894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf"
 
 
-Text: "Beyond mapping individual points, a function induces actions on the power
-       sets of its domain and codomain:
-       - The *direct image* $f[X]$ pushes a subset $X \subseteq A$ forward into
-         $B$, collecting all evaluations $f(x)$ for $x \in X$.
-       - The *preimage* (or inverse image) $f^{-1}[Y]$ pulls a subset
-         $Y \subseteq B$ back into $A$, collecting all inputs that map into $Y$.
-         Crucially, the preimage $f^{-1}[Y]$ is well-defined for *any* function,
-         requiring no invertibility of $f$."
+Text: "Beyond mapping individual points, any function $f : A \to B$ induces
+       operations on entire subsets of its domain and codomain. The *direct
+       image* pushes a subset of the domain forward into the codomain by
+       gathering the evaluations of all its elements:"
 Id: "14fa61b4-4f94-4156-aaf3-cefefc0af688"
 
 
@@ -227,6 +228,13 @@ Documented:
                 $f_*: \mathcal{P}(A) \to \mathcal{P}(B)$. It unconditionally
                 preserves arbitrary set-theoretic unions."
 Id: "70ff3a00-b34b-4e76-9bbe-5f3325a59f55"
+
+
+Text: "Conversely, the *preimage* (or inverse image) pulls a subset of the
+       codomain back to the domain by collecting every input mapped into it.
+       Significantly, preimages are well-defined for all functions without
+       requiring invertibility, and they preserve all Boolean set operations:"
+Id: "6f046d16-b51f-4ce3-ba75-72081046003b"
 
 
 [\function.preimage:of{f(x__)}:on{Y}]
@@ -285,13 +293,10 @@ Documented:
 Id: "82c8948a-c30d-464b-8ab0-1c7bdb2ed770"
 
 
-Text: "Two algebraic properties of binary operations recur constantly across
-       higher mathematics:
-       - *Associativity*: $(a * b) * c = a * (b * c)$, which ensures that
-         bracket grouping is irrelevant, permitting unambiguous expressions such
-         as $a * b * c$.
-       - *Commutativity*: $x * y = y * x$, which ensures that input ordering is
-         symmetric."
+Text: "An internal binary operation may satisfy fundamental symmetry and
+       grouping principles. The first is *associativity*, which guarantees that
+       parenthesization does not alter the evaluated outcome, permitting
+       unambiguous multi-term products:"
 Id: "ded59881-7811-4fef-a95c-77f9801814e2"
 
 
@@ -308,6 +313,11 @@ Documented:
                 collapsing the Stasheff associahedron of parenthesizations into
                 a unique linear product."
 Id: "e23d5d7d-eed8-4efc-bdda-d316af89684e"
+
+
+Text: "A binary operation is *commutative* when the sequencing of its arguments
+       is symmetric, allowing factors to be permuted freely:"
+Id: "5b082690-2623-4f3d-84b4-c7c7266e4a9b"
 
 
 [\(commutative)::binary.operation:on{X}]
@@ -350,6 +360,13 @@ Id: "ea7eab01-792c-427f-91dc-a75f43513b38"
 
 SectionTitle: "Fibers and Factorization"
 Id: "f8667ec9-767f-4c75-87a7-07d9ec2fb533"
+
+
+Text: "For any target element $y$ in the codomain, the subset of domain elements
+       that map directly to $y$ constitutes its *fiber*. Fibers decompose the
+       domain into level sets, providing geometric insight into the structure
+       and complexity of the mapping:"
+Id: "6b737548-1db6-4ca4-ad8d-b16cdf8067b7"
 
 
 [\fiber:of{f(x__)}:over{y}]

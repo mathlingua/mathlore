@@ -239,6 +239,13 @@ SectionTitle: "Absolute Value and Bounds"
 Id: "231d1127-646d-4845-88b1-f0ee9114a0a4"
 
 
+Text: "With arithmetic and order firmly established, we can define the geometric
+       metric on the real line. The absolute value function measures distance
+       from the origin, inducing the standard Euclidean topology on
+       $\mathbb{R}$."
+Id: "a2f61cb9-8e08-4553-84ae-7dac4e55b658"
+
+
 [\real.abs(x_)]
 Defines: a is \real
 expresses:
@@ -252,6 +259,12 @@ Documented:
 . description: "The absolute value metric $|x| = \max(x, -x)$, defining the
                 Euclidean distance $d(x, y) = |x - y|$."
 Id: "f75ee806-0ba7-4585-8183-d7f6355ed4cc"
+
+
+Text: "A distinguishing feature of ordered sets is whether bounded subsets admit
+       optimal bounding elements. The supremum captures the notion of the least
+       upper bound of a set."
+Id: "c2fe941b-4d9e-4df7-b6e6-c6b79e897e54"
 
 
 [\real.supremum:of{S}]
@@ -273,6 +286,11 @@ Documented:
 . description: "The least upper bound $\sup(S)$: the unique minimal real number
                 bounding every element of $S$ from above."
 Id: "d9762902-b78e-43a8-981d-47ec829c9552"
+
+
+Text: "Dually, the greatest lower bound of a bounded-below subset is its
+       infimum."
+Id: "a8183f5e-eac4-4602-8788-dc1f191d0d8b"
 
 
 [\real.infimum:of{S}]
@@ -352,11 +370,11 @@ SectionTitle: "Realization by Cauchy Sequences"
 Id: "92086a5a-de67-4ccf-bbd7-dfb720e13253"
 
 
-Text: "A concrete real is an equivalence class of Cauchy sequences of rational
-       numbers. Two sequences are equivalent when their difference converges to
-       zero. Constants and arithmetic are induced term by term; reciprocal is
-       applied to a representative of a nonzero class, with the zero class
-       handled separately."
+Text: "While the axiomatic specification defines $\mathbb{R}$ by its universal
+       properties, foundational rigor demands a concrete model built from the
+       rationals. Cantor and Méray achieved this by completing $\mathbb{Q}$ via
+       Cauchy sequences, formalizing the intuition that every real number is the
+       limit of rational approximations."
 Id: "4b60c150-1dcd-4f73-ab04-d1de404930a6"
 
 
@@ -371,6 +389,12 @@ Documented:
   as: "a?_{n?}"
 . description: "A sequence of rational numbers indexed by the naturals."
 Id: "94c86080-9c65-4b25-bbba-ee56fdfee3a4"
+
+
+Text: "A rational sequence represents an impending point on the continuum if its
+       terms eventually cluster arbitrarily close together, independent of any
+       hypothetical limit point."
+Id: "50e83bb1-5f7e-43e6-bacb-b6a469e6940a"
 
 
 [\cauchy.rational.sequence]
@@ -411,6 +435,12 @@ Documented:
 Id: "b77feec6-c586-452f-804e-6ec2b591ac1f"
 
 
+Text: "Distinct rational sequences can approach the exact same real number. We
+       identify two Cauchy sequences whenever their termwise difference
+       converges to zero."
+Id: "d3e3340a-8264-4d9e-a9a4-5469912178c2"
+
+
 [\real.cauchy.relation]
 Defines: E is \equivalence.relation:on{\rational.cauchy.sequences}
 expresses:
@@ -435,6 +465,11 @@ Documented:
 Id: "24cd9c1f-5185-495b-8107-e9cce4d5dc76"
 
 
+Text: "Taking the quotient of the set of Cauchy sequences modulo this
+       equivalence relation produces the carrier set of Cauchy reals."
+Id: "f371e147-5ff9-487a-86df-aeb26bd06bf1"
+
+
 [\real.cauchy.carrier]
 Defines: R := \rational.cauchy.sequences \.mod./ \real.cauchy.relation is \set
 Documented:
@@ -452,6 +487,11 @@ Documented:
 Id: "ec3f6cc5-a1e6-4a36-8001-9e06b1270512"
 
 
+Text: "The rational field embeds naturally into the Cauchy carrier by mapping
+       each rational number to its constant sequence."
+Id: "377ca579-04b7-44ba-afec-2a1ed5283847"
+
+
 [\rational.constant.cauchy.sequence:of{q}]
 Defines: C ::= c(n_) is \cauchy.rational.sequence
 when: q is \rational
@@ -460,6 +500,12 @@ Documented:
 . called: "constant rational Cauchy sequence at $q?$"
 . written: "(q?)_{n\in\mathbb{N}}"
 Id: "c195139a-50b8-480b-944a-bd5db899eee6"
+
+
+Text: "Arithmetic on the quotient is defined by lifting operations termwise to
+       representative sequences and verifying that the results are well-defined
+       modulo null sequences."
+Id: "f7dbd71e-f8da-4cd8-8f00-bf2791fd768a"
 
 
 [\rational.cauchy.sequence.add{A ::= a(n_), B ::= b(n_)}]
@@ -517,6 +563,11 @@ Documented:
 . description: "A rational Cauchy sequence whose real equivalence class is not
                 the zero class."
 Id: "6d5bf51a-cbb7-4b8b-8fc3-895af897a8a7"
+
+
+Text: "The algebraic identities and field operations of $\mathbb{R}$ are now
+       instantiated directly on the equivalence classes."
+Id: "7610dea4-3417-4345-b2d2-3f93a35c3adb"
 
 
 [\real.cauchy.zero]
@@ -587,6 +638,12 @@ Documented:
 Id: "b7a4d100-4eeb-4e9c-a332-6b3ec447991a"
 
 
+Text: "The linear order is induced on classes by declaring $[(a_n)] \le [(b_n)]$
+       when $a_n$ is eventually bounded above by $b_n + \epsilon$ for every
+       positive rational $\epsilon$."
+Id: "18183bc3-3668-4acd-a65f-1f9ecde33024"
+
+
 [\real.cauchy.leq]
 Defines: leq(x_, y_) is \total.order:on{\real.cauchy.carrier}
 expresses:
@@ -614,6 +671,11 @@ Documented:
 Id: "dc1bc46f-e4ed-4968-b4f9-42abbe838ec3"
 
 
+Text: "Gathering these carrier, operations, and order relations together yields
+       the Cauchy completion model of the real continuum."
+Id: "807aa2b3-1294-4810-8e49-bd5b785ad34d"
+
+
 [\real.cauchy.realization]
 Realizes: Rb ::= (R, 0, 1, +, *, neg(x_), inv(x_), leq(a_, b_)) := \reals
 specifies:
@@ -639,11 +701,10 @@ SectionTitle: "Realization by Dedekind Cuts"
 Id: "783f1fa2-7254-441a-8e24-41c10acee7d8"
 
 
-Text: "A Dedekind cut is a nonempty proper lower subset of the rationals with no
-       greatest element. Every Cauchy-real class determines the cut of rationals
-       lying strictly below its limit. The canonical correspondence is
-       bijective, so the Cauchy operations above can be transported across it to
-       give the cut carrier the same complete ordered-field structure."
+Text: "Richard Dedekind provided an alternative, geometric construction of the
+       reals by partitioning the rational line. Rather than using sequences, a
+       real number is identified with the initial segment of all rational
+       numbers lying strictly to its left."
 Id: "b6ed3b04-895c-4c2f-af12-9a5d670e2a66"
 
 
@@ -682,6 +743,12 @@ Documented:
 . called: "Dedekind-cut carrier"
 . written: "\mathcal{D}(\mathbb{Q})"
 Id: "760a04d0-6a51-432c-8e32-830b8614c5cc"
+
+
+Text: "The two classical constructions of the real continuum are naturally
+       isomorphic. Every Cauchy equivalence class determines a unique Dedekind
+       cut consisting of all rationals bounded below by its terms."
+Id: "5660bba9-06d5-4c0f-ae62-e8847d93d86b"
 
 
 [\dedekind.from.cauchy(x_)]
@@ -746,6 +813,12 @@ Documented:
 Id: "5f0b2c73-9459-4fa0-9a85-fa405eccfbda"
 
 
+Text: "The complete ordered field structure transfers seamlessly across this
+       canonical correspondence, equipping Dedekind cuts with arithmetic and
+       order."
+Id: "07ff1744-1a48-4d72-bbaa-6862827c3e57"
+
+
 [\dedekind.add]
 Defines: add(D_, E_) is \binary.operation:on{\dedekind.cut.carrier}
 expresses: add(D_, E_) := \dedekind.from.cauchy(\real.cauchy.realization..`+`(\cauchy.from.dedekind(D_), \cauchy.from.dedekind(E_)))
@@ -791,6 +864,11 @@ Documented:
 . description: "The total order transported from the Cauchy-sequence
                 realization; equivalently, it is inclusion of lower cuts."
 Id: "a1a11645-dd09-42f8-aaa4-b44588aed399"
+
+
+Text: "This completes the realization of $\mathbb{R}$ via Dedekind cuts,
+       providing an intrinsic, order-theoretic foundation for the continuum."
+Id: "a190d8ad-17fa-4d05-8bad-cbf212ff85ad"
 
 
 [\real.dedekind.realization]

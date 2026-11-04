@@ -102,6 +102,12 @@ SectionTitle: "Isomorphisms and Rank-Nullity"
 Id: "bf47d72c-46ac-41b4-874d-89923f888495"
 
 
+Text: "When a linear transformation between two vector spaces is bijective, it
+       constitutes an *isomorphism*, showing that the spaces are structurally
+       identical as linear universes:"
+Id: "d2d29956-7a4f-42ee-acf5-fb307c3ab14b"
+
+
 [\(isomorphic)::vector.space:over{F}]
 Refines: V
 when: F is \field
@@ -208,6 +214,12 @@ TextTheorem: "The First Isomorphism Theorem for Vector Spaces. For any linear
 Id: "a615de22-89bb-4bf1-aa10-3b1b919191a4"
 
 
+Text: "A direct consequence of the Rank-Nullity Theorem is that for linear
+       operators between spaces of equal finite dimension, injectivity and
+       surjectivity are equivalent:"
+Id: "bf7fecb4-0144-4618-b3d0-78f27a167d8a"
+
+
 Theorem:
 given:
 . F is \field
@@ -244,6 +256,11 @@ Hence for linear operators on equal finite-dimensional spaces, injectivity, surj
 and invertibility (bijectivity) are all equivalent.
 """
 Id: "9519b138-f788-4156-8fd1-7d01b955decf"
+
+
+Text: "An idempotent linear operator $P$ satisfying $P^2 = P$ is a *projection*,
+       decomposing the vector space into the direct sum of its image and kernel:"
+Id: "c26212bf-14c7-428f-a060-0cb6c8598388"
 
 
 [\projection:on{V}]

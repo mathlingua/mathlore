@@ -23,6 +23,14 @@ SectionTitle: "Consequence, Validity, and Equivalence"
 Id: "065af088-3182-4cff-b43c-6b707fb9efc1"
 
 
+Text: "Deductive mathematics rests on the relation of logical consequence:
+       determining when an assertion is inevitably forced by an initial
+       collection of hypotheses. This relationship is evaluated semantically by
+       inspecting the truth of assertions across all admissible mathematical
+       models:"
+Id: "1461ac37-672d-4bba-88ed-036fc2cfa3b6"
+
+
 TextDefinition: "Let $\Gamma$ be a collection of sentences and let $\varphi$ be a
                  sentence in a common formal language. We say that $\varphi$ is
                  a *semantic consequence* of $\Gamma$, written $\Gamma \models
@@ -39,6 +47,12 @@ TextDefinition: "Let $\Gamma$ be a collection of sentences and let $\varphi$ be 
                  is known classically as *ex falso quodlibet* (from a
                  contradiction, anything follows)."
 Id: "d6351c2e-8774-461d-8365-533a09dd2951"
+
+
+Text: "When an assertion is true not merely under a specific set of hypotheses,
+       but under every conceivable interpretation, it constitutes a universal
+       law of logic:"
+Id: "f88da596-7fd4-4835-9255-5a2f4336355d"
 
 
 TextDefinition: "A sentence $\varphi$ is *valid* (or a *tautology* in
@@ -59,6 +73,12 @@ TextDefinition: "A sentence $\varphi$ is *valid* (or a *tautology* in
 Id: "41277ec7-a7ee-44ac-bb2e-9d9726088e35"
 
 
+Text: "Extending validity to pairs of sentences yields the metalogical relation
+       of equivalence, which governs when two formulas can be freely substituted
+       for one another without altering truth values:"
+Id: "e91bb9b4-602b-48d3-bdc6-2609b86a3c5e"
+
+
 TextDefinition: "Two formulas $\varphi$ and $\psi$ are *logically equivalent*,
                  written $\varphi \equiv \psi$ or $\models \varphi \iff \psi$,
                  when they receive identical truth values under every common
@@ -75,6 +95,13 @@ Id: "345f73c4-8464-4554-8e3f-6c4e36c545df"
 
 SectionTitle: "Derivations and Proof Methods"
 Id: "c2a58271-331c-4b14-b657-13f3e9d4d66f"
+
+
+Text: "While semantics concerns truth across the totality of models—a collection
+       often too vast to inspect directly—syntactic deduction provides the
+       finite, combinatorial mechanism by which proofs are generated and checked
+       step by step:"
+Id: "f15cfe40-da15-4ecb-bba1-0d04bdf4d78e"
 
 
 TextDefinition: "Fix a formal deductive system equipped with a collection of
@@ -96,6 +123,12 @@ TextDefinition: "Fix a formal deductive system equipped with a collection of
 Id: "5f0b2406-0146-4015-91b9-8875e70395fb"
 
 
+Text: "The ultimate coherence of mathematical reasoning depends on the exact
+       correspondence between syntactic proof and semantic truth, as settled by
+       the twin notions of soundness and completeness:"
+Id: "52f5d2df-5310-4df1-9f83-b20383762f5a"
+
+
 TextTheorem: "A deductive system is *sound* if every formally provable sentence
               is a semantic consequence: $\Gamma \vdash \varphi \implies \Gamma
               \models \varphi$. It is *complete* if every semantic consequence
@@ -109,6 +142,12 @@ TextTheorem: "A deductive system is *sound* if every formally provable sentence
               mathematical models can always be captured by finite symbolic
               manipulation."
 Id: "d694227c-82c0-433b-acc2-8223d8b7954c"
+
+
+Text: "With formal deduction aligned with model-theoretic truth, classical
+       mathematical argumentation organizes its derivations into several
+       canonical strategic architectures:"
+Id: "4e97ca66-d4bb-47b2-b87e-0133fc1433e6"
 
 
 TextDefinition: "Mathematical proofs employ several foundational strategic
@@ -147,6 +186,13 @@ SectionTitle: "Definitions and Mathematical Practice"
 Id: "fe8bed61-7f39-45dc-92aa-50272e52c082"
 
 
+Text: "Beyond the formal mechanics of inference, the development of a
+       mathematical theory proceeds by introducing new vocabulary to name
+       repeating patterns. To maintain deductive rigor, definitions must satisfy
+       strict criteria of eliminability and conservatism:"
+Id: "67e76ee9-b2c9-477d-b270-0ac285dfb840"
+
+
 TextDefinition: "An *explicit definition* introduces a new symbol or syntactic
                  shorthand by equating it with an expression formed entirely
                  from previously established concepts. A legitimate definition
@@ -165,6 +211,12 @@ TextDefinition: "An *explicit definition* introduces a new symbol or syntactic
 Id: "ea09b276-1d50-471e-a821-738fe3172a3f"
 
 
+Text: "Once concepts are defined, the resulting assertions are organized into
+       conventional expository ranks reflecting their structural role within a
+       deductive theory:"
+Id: "a66a54bf-9f54-4d6d-a430-b1cd6f871770"
+
+
 TextDefinition: "Mathematical literature organizes assertions into conventional
                  hierarchical categories that reflect their expository function:
                  - *Theorem*: A major result of paramount importance,
@@ -181,6 +233,12 @@ TextDefinition: "Mathematical literature organizes assertions into conventional
                  - *Scholium*: An explanatory remark, commentary, or historical
                    note clarifying the wider significance of a result."
 Id: "bfe0b849-abd6-45f4-9979-5c67f50ae5d2"
+
+
+Text: "At the frontier of mathematical research, statements often arise that
+       appear true from computational data or heuristic arguments, yet lack
+       deductive confirmation:"
+Id: "c28b5247-41fe-455b-80df-261056c1eb03"
 
 
 TextDefinition: "A *conjecture* is a precisely formulated mathematical statement

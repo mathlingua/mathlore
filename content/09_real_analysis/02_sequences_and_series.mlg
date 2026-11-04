@@ -39,6 +39,12 @@ SectionTitle: "Convergence and Cauchy Criteria"
 Id: "ba357d68-8e6f-41c5-970e-7c5663288c82"
 
 
+Text: "The central concept of real analysis is convergence. A sequence tends to
+       a limit if its terms eventually remain within any prescribed positive
+       distance from that limit."
+Id: "efb49301-65f7-4807-98cd-c7166d497327"
+
+
 [\converges.to{L}:for{S ::= a(n_)}]
 States:
 when:
@@ -62,6 +68,12 @@ Documented:
 References:
 . $rudin.principles:page{47}
 Id: "f046faf8-5c18-4597-ac14-4feda980148d"
+
+
+Text: "Verifying convergence directly from the definition requires knowing the
+       candidate limit in advance. Cauchy introduced an internal criterion that
+       detects convergence by comparing terms solely against each other."
+Id: "b8618ea6-8fb9-4441-b3b0-69d2cf1b8bb5"
 
 
 [\(cauchy)::real.sequence]
@@ -88,6 +100,11 @@ References:
 Id: "3bf9fa3d-791d-4ebf-b585-68dbdb2755b1"
 
 
+Text: "A primary structural constraint on a sequence is boundedness, which
+       confines all its values to a finite interval."
+Id: "b6600f91-0284-47af-a16c-195eb80fa3c4"
+
+
 [\(bounded)::real.sequence]
 Refines: S ::= a(n_)
 specifies: S is \real.sequence
@@ -101,6 +118,11 @@ Documented:
 . description: "A bounded sequence whose range is contained in a compact
                 interval $[-M, M]$ for some finite $M \in \mathbb{R}$."
 Id: "e2633f12-6e7f-401a-a4f1-d55bec7d279c"
+
+
+Text: "When combined with order direction, boundedness becomes a decisive engine
+       of convergence. Monotonicity prevents terms from oscillating."
+Id: "ef036472-01ab-42dc-9cc0-6994f1ec51e5"
 
 
 [\(monotone.increasing)::real.sequence]
@@ -126,6 +148,11 @@ SectionTitle: "Series and Completeness"
 Id: "beec2879-0d3c-4393-acf2-01f8bf37ba09"
 
 
+Text: "Infinite series extend addition from finite tuples to countably infinite
+       sequences by taking the limit of partial sums."
+Id: "d401e185-d18e-4d7a-be3a-230264567a3f"
+
+
 [\series.sum:of{S ::= a(n_)}]
 Defines: s is \real
 when: S is \real.sequence
@@ -136,6 +163,12 @@ Documented:
                 $\sum_{n=1}^\infty a_n = \lim_{N \to \infty} \sum_{n=1}^N a_n$,
                 defined as the limit of partial sums."
 Id: "d9cbb77c-c12f-40ab-9a47-2e72f8efc719"
+
+
+Text: "In the real numbers, Cauchy's intrinsic criterion is necessary and
+       sufficient for convergence, a fundamental equivalence known as Cauchy
+       completeness."
+Id: "e20dff4d-e31a-4993-9a82-a242da5e318c"
 
 
 [\cauchy.completeness.theorem]
@@ -186,6 +219,11 @@ References:
 Id: "da1c56ad-7de6-4161-b806-99ead8e954be"
 
 
+Text: "Another pillar of real analysis is the Monotone Convergence Theorem,
+       which guarantees that every bounded monotone sequence attains a limit."
+Id: "992a65ab-659d-41fd-911d-4d44556a5187"
+
+
 [\monotone.convergence.theorem]
 Theorem:
 given: S ::= a(n_) is \real.sequence
@@ -229,6 +267,12 @@ Id: "3d7b0ef1-4562-415e-bf44-74e324ce5f5c"
 
 SectionTitle: "Subsequences and Infinite Sums"
 Id: "444dcd3d-8c00-4c65-b55b-29b727f143dd"
+
+
+Text: "Selecting an infinite subset of indices in increasing order produces a
+       subsequence, allowing one to extract orderly asymptotic behavior from
+       oscillating sequences."
+Id: "1cb0a5c1-4e8c-4c58-b094-2304239934c4"
 
 
 [\subsequence:of{S ::= a(n_)}]
@@ -294,6 +338,12 @@ Proof: """Let $(a_n)$ converge to $L$, and let $b_k = a_{n_k}$ be a subsequence,
           Therefore, the subsequence
           $(b_k)$ converges to the identical limit $L$."""
 Id: "cef832b6-22d8-4377-8e47-577ab1f7bb1d"
+
+
+Text: "The hallmark compactness property of closed bounded subsets of
+       $\mathbb{R}$ is expressed sequentially by the Bolzano–Weierstrass
+       Theorem."
+Id: "a366f92a-7452-48e2-9b62-a3480b4260b4"
 
 
 Theorem:

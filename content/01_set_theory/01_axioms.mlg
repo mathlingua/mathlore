@@ -14,14 +14,11 @@ Text: "The entirety of classical mathematics can be systematically constructed
 Id: "a5b9d42b-f22f-4fd4-a867-29de537158c3"
 
 
-Text: "In formal axiomatic set theory, a set is taken as an undefined primitive.
-       We do not define what a set 'is' in terms of simpler components; instead,
-       its nature is entirely characterized by the membership relation: for any
-       objects $x$ and $X$, either $x \in X$ or $x \notin X$. Under the
-       principle of *pure* set theory adopted here, there are no 'atoms' or
-       'urelements' (entities with no members that are not themselves sets);
-       every element of a set is itself a set. The declaration below formalizes
-       the core structural commitments that define a set."
+Text: "In formal axiomatic set theory, the notion of a set is taken as an
+       undefined primitive. We do not define what a set 'is' in terms of simpler
+       components; instead, its behavior is entirely characterized by the
+       membership relation $\in$, under which every element of a set is itself a
+       set. We declare this foundational entity:"
 Id: "cbc6feb5-4f5e-41ef-bf59-342c981aa217"
 
 
@@ -54,9 +51,9 @@ References:
 Id: "a0759217-e1f6-412c-982a-0038cd17a3a1"
 
 
-Text: "We write $x \notin X$ as standard shorthand for the negation
-       $\neg (x \in X)$. The non-membership relation asserts that $x$ does not
-       belong to the collection $X$."
+Text: "Complementary to membership is the assertion that an object fails to
+       belong to a given collection. By classical bivalence, non-membership is
+       the direct negation of the membership predicate:"
 Id: "48b22b9f-2acc-4e80-9148-667489d48ee1"
 
 
@@ -79,14 +76,11 @@ SectionTitle: "The Empty Set"
 Id: "8dc697a3-2ef0-4af9-8852-a994bdd8882d"
 
 
-Text: "To construct a universe of sets, the deductive machinery must possess an
-       initial seed—an object upon which subsequent operations can act. The
-       simplest imaginable set is the one having no members whatsoever: the
-       *empty set*, denoted $\emptyset$. The Axiom of the Empty Set guarantees
-       that such a set exists, while the Axiom of Extensionality ensures that it
-       is unique. In the cumulative hierarchy of sets, the empty set serves as
-       the absolute base layer $V_0 = \emptyset$ from which all higher sets are
-       iteratively generated."
+Text: "To construct a universe of sets, the deductive machinery requires an
+       initial seed upon which subsequent operations can act. The simplest
+       imaginable set is the one having no members whatsoever, serving as the
+       base layer $V_0$ of the cumulative hierarchy from which all higher sets
+       are generated:"
 Id: "7a54c26a-ea2e-4e38-ac69-3426f651c4d4"
 
 
@@ -109,11 +103,10 @@ References:
 Id: "96908ddf-5fc5-455d-9cfd-eaf0fd6ada38"
 
 
-Text: "A set is termed *nonempty* if it contains at least one element. In
-       mathematical analysis and abstract algebra, nonemptiness is often an
-       indispensable hypothesis: choice functions cannot select from empty sets,
-       maximal elements require nonempty partially ordered sets, and sub-
-       structures must contain identity elements."
+Text: "In contrast to the empty set, many mathematical constructions require the
+       presence of at least one element: choice functions cannot select from
+       empty sets, and algebraic structures require identity elements. We
+       distinguish this condition as a refinement:"
 Id: "6a19c255-0426-440b-a2e3-c97b1fe06bc4"
 
 
@@ -129,9 +122,10 @@ SectionTitle: "The Core Axioms"
 Id: "f2e995e5-7f69-49c8-90bc-46d8f77811f1"
 
 
-Text: "We now present the core axiomatic postulates of Zermelo--Fraenkel set
-       theory. The first postulate asserts the baseline existence of a
-       memberless set, preventing the theory from describing an empty universe."
+Text: "The cumulative hierarchy of sets is governed by the axiomatic postulates
+       of Zermelo--Fraenkel theory. To ensure that our formal universe is not
+       trivial, the first axiom guarantees the existence of at least one set,
+       namely a set with no members:"
 Id: "287b3b2f-e440-43b5-98be-b7310daf6aaf"
 
 
@@ -154,14 +148,11 @@ References:
 Id: "f2180719-568d-4084-982b-a71c5f195bf6"
 
 
-Text: "The Axiom of Extensionality articulates the fundamental identity
-       criterion of set theory: a set is completely and exhaustively determined
-       by its members. Extensionality contrasts sharply with *intensional*
-       descriptions: two descriptions that appear entirely distinct (such as
-       'the set of even prime numbers' and 'the positive square root of $4$ in
-       singleton form') represent the identical set $\{2\}$. Sets possess no
-       internal ordering, no spatial arrangement, and no multiplicity of
-       membership."
+Text: "Having secured the existence of a set, we require an identity criterion
+       to determine when two sets are identical. Under the extensional viewpoint
+       of mathematics, a set possesses no internal ordering, multiplicity, or
+       hidden structure: it is completely determined by the elements it
+       contains:"
 Id: "7f76409d-9233-44bf-984a-ede2358dcee5"
 
 
@@ -184,11 +175,11 @@ References:
 Id: "6fc3a89f-f8ef-420e-b1b6-6e5ed4905611"
 
 
-Text: "The Axiom of Pairing provides the basic mechanism for assembling distinct
-       entities into a higher-order collection. Given any two sets $X$ and $Y$,
-       pairing asserts the existence of the unordered pair $\{X, Y\}$. When
-       specialized to $X = Y$, it yields the singleton set $\{X\}$, allowing any
-       individual set to be treated as an element of a new set."
+Text: "Extensionality dictates when two given sets coincide, but it cannot
+       produce new sets from existing ones. To populate the universe beyond the
+       empty set, we require generative principles. The simplest mechanism
+       collects any two given sets into an unordered pair, which in particular
+       yields singleton sets when the two arguments coincide:"
 Id: "7b45fe82-a42a-4591-9453-350baec1df28"
 
 
@@ -212,11 +203,11 @@ References:
 Id: "3219aca1-fba1-42a6-9a1f-209aa430c677"
 
 
-Text: "While pairing constructs sets of size two, the Axiom of Union enables the
-       consolidation of arbitrarily many sets. Given a set $X$ whose elements
-       are themselves sets, the union $\bigcup X$ collects every element
-       belonging to at least one member of $X$. In effect, the union axiom
-       flattens nested set structures by one level of containment."
+Text: "Pairing builds sets of at most two elements. To construct larger
+       collections, or to dissolve one layer of containment in a nested
+       collection of sets, we require an operation of arbitrary aggregation. The
+       union axiom collapses a family of sets into a single set containing all
+       their constituent elements:"
 Id: "c0f76644-e25f-4e0c-8cf0-6daf86ad59df"
 
 
@@ -245,13 +236,10 @@ References:
 Id: "60bcea09-6bf1-4917-b90f-64ceeb941558"
 
 
-Text: "The operations of pairing and union allow us to assemble finite
-       collections from existing elements, but they cannot escape the finite
-       realm if all starting sets are finite. The Axiom of the Power Set
-       provides an explosive leap in set-theoretic size: it asserts that all
-       possible subcollections of a set $A$ can be gathered into a new set
-       $\mathcal{P}(A)$. As Cantor's theorem will demonstrate, the power set of
-       any set is strictly greater in cardinality than the set itself."
+Text: "While pairing and union assemble elements side by side, they cannot
+       generate collections of all subcollections. To form the continuum and
+       unlock higher cardinalities, we postulate that the collection of all
+       subsets of a given set forms a legitimate set in its own right:"
 Id: "139b6eca-d1e5-4fae-97a4-1b05d96726f1"
 
 
@@ -275,12 +263,11 @@ References:
 Id: "8557cdb3-e02f-4b75-aed1-3dfd1cdee895"
 
 
-Text: "The axioms introduced thus far cannot prove the existence of any infinite
-       set. The Axiom of Infinity bridges the chasm between the finite and the
-       transfinite by postulating a set $I$ containing the empty set $\emptyset$
-       and closed under the von Neumann successor operation
-       $S(Y) = Y \cup \{Y\}$. This inductive structure provides the foundational
-       representation of the natural numbers $\mathbb{N}$."
+Text: "Although the power set operation escalates cardinalities, beginning from
+       the empty set produces only hereditarily finite sets. To bridge the chasm
+       to the transfinite, we must explicitly postulate the existence of an
+       infinite set containing the empty set and closed under successor
+       formation, providing the substrate for the natural numbers:"
 Id: "9196ed0a-391f-4fb5-af13-ac8c65db0ae9"
 
 

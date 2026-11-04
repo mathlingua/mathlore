@@ -22,6 +22,11 @@ SectionTitle: "Matrix Definitions"
 Id: "030a4360-39bf-4fb0-844f-5c5644f15392"
 
 
+Text: "A matrix is a two-dimensional rectangular array of scalars representing a
+       linear transformation in coordinates:"
+Id: "ec3f2eec-c705-42c3-8822-3796943e510c"
+
+
 [\matrix:of.dim{m, n}:over{F}]
 Declares: A ::= a(i_, j_)
 when:
@@ -39,6 +44,11 @@ Documented:
 References:
 . $hoffman.kunze:page{86}
 Id: "9cfabd0d-3e74-46fa-989b-b8a7230a61f3"
+
+
+Text: "The neutral element for square matrix multiplication is the *identity
+       matrix*, with ones along the diagonal and zeros elsewhere:"
+Id: "d7a43643-03f2-4aa0-a440-bbc1586a9305"
 
 
 [\identity.matrix:of.dim{n}:over{F}]
@@ -65,6 +75,11 @@ SectionTitle: "Matrix Operations"
 Id: "998a9c55-04b9-48eb-89f3-cbe064c230cf"
 
 
+Text: "Matrices of identical dimension can be added entrywise, endowing
+       $M_{m \times n}(F)$ with abelian group structure:"
+Id: "73eaeea3-7eb2-4015-8981-f3b5144d2d10"
+
+
 [A(i_, j_) \.matrix.+./ B(i_, j_)]
 Defines: C(i_, j_) is \matrix:of.dim{m, n}:over{F}
 using:
@@ -80,6 +95,11 @@ Documented:
 . description: "Pointwise sum of matrices $(A + B)_{i,j} = A_{i,j} + B_{i,j}$,
                 conferring an abelian group structure on $M_{m \times n}(F)$."
 Id: "dd197d03-0f2e-4003-8330-a8c3e8e09dd6"
+
+
+Text: "Matrix multiplication corresponds directly to the composition of linear
+       maps, multiplying rows by columns:"
+Id: "cb929d1d-77df-4dc2-82f1-5101fb5de435"
 
 
 [A(i_, k_) \.matrix.*./ B(k_, j_)]
@@ -99,6 +119,11 @@ Documented:
 References:
 . $hoffman.kunze:page{89}
 Id: "ab389a4a-5187-4af5-b2f3-c62e0c3b08db"
+
+
+Text: "Transposition reflects a matrix across its main diagonal, interchanging
+       rows and columns to represent the dual operator:"
+Id: "80551318-7aac-42c3-81b0-11d09e7f4dee"
 
 
 [\matrix.transpose:of{A(i_, j_)}]
@@ -124,6 +149,11 @@ SectionTitle: "Determinants, Trace, and Eigenvalues"
 Id: "d2d9444b-7931-4501-80cf-6a9dcb0337ef"
 
 
+Text: "The *determinant* assigns a scalar to every square matrix, measuring
+       oriented volume scaling and invertibility:"
+Id: "d4afb3fe-617e-4fa2-a03e-900c0c286bc7"
+
+
 [\determinant:of{A(i_, j_)}]
 Defines: d "in" F
 using:
@@ -140,6 +170,11 @@ References:
 Id: "0552914d-9a49-4089-88ba-72916ea96b3e"
 
 
+Text: "The *trace* computes the sum of the diagonal entries, providing a
+       basis-independent linear functional on square matrices:"
+Id: "f6e676bd-4f5b-4054-b0fa-538b8ce6589b"
+
+
 [\matrix.trace:of{A(i_, j_)}]
 Defines: tr "in" F
 using:
@@ -153,6 +188,11 @@ Documented:
                 $\operatorname{tr}(A) = \sum A_{i,i}$, invariant under cyclic
                 permutations and similarity transformations."
 Id: "88fa45dd-3b56-49ae-8617-08fbab297577"
+
+
+Text: "An *eigenvalue* represents a scalar factor by which a matrix dilates an
+       invariant non-zero directional vector:"
+Id: "6193aaa7-ec80-47b4-89b2-7bb40fd3ddba"
 
 
 [\eigenvalue:of{A(i_, j_)}]

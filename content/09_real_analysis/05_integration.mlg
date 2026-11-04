@@ -117,7 +117,10 @@ TextTheorem: "Algebraic and Order Properties of the Integral.
 
                  $$
                  \left| \int_a^b f(x) \, dx \right| \leq \int_a^b |f(x)| \, dx.
-                 $$"
+                 $$
+
+                 Together, linearity and monotonicity establish the Riemann
+                 integral as a positive linear functional on bounded integrable functions."
 Id: "93332ffc-3ecf-4c11-8d40-0c8124dc7057"
 
 

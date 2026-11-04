@@ -369,6 +369,12 @@ SectionTitle: "Structural Consequences"
 Id: "191bffbb-05de-4543-95d1-5161df7a4c17"
 
 
+Text: "The existence of two-sided inverses gives rise to powerful structural and
+       computational laws. The first is that every group element can be
+       cancelled from either side of an equality:"
+Id: "083b4691-f438-482f-a3e0-26fdb6310f96"
+
+
 Theorem:
 given:
 . G is \group

@@ -22,6 +22,13 @@ SectionTitle: "Inductive Proofs"
 Id: "29a987cf-22cb-4dc0-ad8c-4281456e5f57"
 
 
+Text: "The Peano axioms culminate in the induction postulate, which asserts that
+       any property containing zero and closed under succession holds
+       universally across $\mathbb{N}$. In mathematical practice, this becomes
+       the primary proof technique for discrete systems:"
+Id: "d008a3b1-09e7-415e-a045-f8240e3ff5e3"
+
+
 Theorem:
 given: P(n_) is (_ is \natural) -> (_ is \\statement)
 where:
@@ -48,6 +55,13 @@ References:
 . $enderton.set.theory:page{73}
 . $landau.foundations:page{2}
 Id: "3940cf8b-62b7-41cf-984a-62429aeb835e"
+
+
+Text: "In many inductive arguments, the induction step requires assuming that
+       the property holds for all predecessors strictly smaller than $n$, rather
+       than merely the immediate predecessor. This yields the equivalent
+       *principle of strong induction* (or course-of-values induction):"
+Id: "9f7118d0-10e7-4580-8bea-9ea766ec8c90"
 
 
 Theorem:
@@ -96,13 +110,11 @@ References:
 Id: "844c54eb-187b-4369-8fd2-84d5d7da2b4b"
 
 
-Text: "A rigorous inductive proof demands careful epistemic hygiene: the
-       induction hypothesis $P(n)$ is assumed strictly for a fixed, arbitrary
-       index $n$, and must be used solely to derive the subsequent assertion
-       $P(n + 1)$. In strong induction (complete induction), all preceding
-       instances $P(0), P(1), \dots, P(n-1)$ are available as simultaneous
-       hypotheses, which is particularly powerful when dealing with recurrences
-       like the Fibonacci sequence or the prime factorization of integers."
+Text: "The logical validity of mathematical induction is fundamentally
+       intertwined with the order structure of $\mathbb{N}$. Specifically,
+       induction is logically equivalent to the *Well-Ordering Principle*, which
+       guarantees that every nonempty collection of natural numbers possesses an
+       absolute least element:"
 Id: "a73f0f65-b93a-4380-8623-255523e3a354"
 
 
@@ -149,6 +161,12 @@ TextTheorem: "Recursion theorem on $\mathbb{N}$. Let $X$ be a set, choose
               existence and uniqueness; recursive equations alone should not be
               treated as a definition until this result is available."
 Id: "15ab06d1-8e34-450b-8e17-e985c387bd96"
+
+
+Text: "The recursion theorem provides the mathematical bedrock for defining
+       infinite mathematical structures term-by-term. An infinite list of
+       elements in $X$ indexed systematically by $\mathbb{N}$ is a *sequence*:"
+Id: "9ee8395f-9bfc-4733-b36a-3c8a0f37c164"
 
 
 [\sequence:in{X}]

@@ -51,6 +51,12 @@ References:
 Id: "502e2a50-cced-461a-bdcf-03e2221a598f"
 
 
+Text: "With the axiomatic system $(\mathbb{N}, 0, S)$ defined, any individual
+       element belonging to the carrier set $\mathbb{N}$ is designated as a
+       *natural number*:"
+Id: "a37b659b-6c66-474d-b3b0-0fdc65ff46e7"
+
+
 [\natural]
 Declares: n "in" \naturals
 Enables:
@@ -68,11 +74,8 @@ SectionTitle: "Constants and Arithmetic"
 Id: "d11de551-8fdb-461b-bb19-787caa038d69"
 
 
-Text: "The initial natural number is zero ($0$), representing the base of the
-       inductive hierarchy. The number one ($1$) is defined as its immediate
-       successor, $1 := S(0)$. The successor function $S$ acts as the atomic
-       step of discrete arithmetic, generating each numeral from its
-       predecessor."
+Text: "The system begins with zero ($0$), the distinguished base element that is
+       never the successor of any number. It anchors the discrete hierarchy:"
 Id: "428700ea-91a3-4f0a-9418-1e0bd3a8c0d7"
 
 
@@ -86,6 +89,11 @@ Documented:
 Id: "3c4f37ab-1bff-4a4a-90ea-8f808863dbfc"
 
 
+Text: "The immediate successor of zero is one ($1 := S(0)$), which serves as the
+       multiplicative unit and the atomic increment of discrete enumeration:"
+Id: "cf20ac8c-c856-4d24-991f-5519cb6d7ad1"
+
+
 [\natural.one]
 Defines: o := \naturals..S(\natural.zero) is \natural
 Documented:
@@ -95,6 +103,11 @@ Documented:
                 immediate successor of zero, serving as the discrete unit of
                 counting."
 Id: "8ced2d1f-741d-4996-84f8-b2c2afd293e8"
+
+
+Text: "More generally, the successor operator $S(n)$ advances any natural number
+       $n$ to the next entry in the discrete progression:"
+Id: "33158ca9-fef1-466e-a45f-2803f7d4ed27"
 
 
 [\natural.successor:of{n}]
@@ -218,6 +231,13 @@ Documented:
 References:
 . $landau.foundations:page{8}
 Id: "8c997826-bcef-4032-816b-c6dd2aa635e7"
+
+
+Text: "Using this linear order, we isolate the collection of all natural numbers
+       strictly smaller than $n$. This finite set constitutes the canonical
+       *initial segment* before $n$, serving as the standard reference set of
+       size $n$ for finite counting and induction:"
+Id: "f1b90b8a-6fe0-4894-989f-58e2a3bb05ec"
 
 
 [\natural.initial.segment:before{n}]

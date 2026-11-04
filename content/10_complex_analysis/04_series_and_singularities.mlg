@@ -68,7 +68,10 @@ TextDefinition: "Let $U \subseteq \mathbb{C}$ be an open set. A function $f: U \
 
                  $$
                  a_n = \frac{f^{(n)}(z_0)}{n!}.
-                 $$"
+                 $$
+
+                 Consequently, any local power series expansion of a complex function
+                 is automatically its Taylor series."
 Id: "15856db1-4ad8-4d94-821c-d5f3d9027940"
 
 

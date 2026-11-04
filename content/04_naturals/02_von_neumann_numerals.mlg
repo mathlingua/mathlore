@@ -28,12 +28,22 @@ Text: "In 1923, John von Neumann provided a celebrated set-theoretic realization
 
        $$
        m < n \iff m \in n, \qquad m \le n \iff m \subseteq n
-       $$"
+       $$
+
+       This alignment of membership and order makes the Von Neumann construction
+       the standard foundation for ordinal arithmetic."
 Id: "c7eca060-3bf4-4bc8-a372-210f25fb71cc"
 
 
 SectionTitle: "Inductive Sets and the Minimal Inductive Set"
 Id: "ce4cc152-49d8-4c94-a23e-7c5d615e1d11"
+
+
+Text: "To construct the natural numbers within pure set theory, we first isolate
+       the structural conditions required for induction. A set is *inductive* if
+       it contains the empty set and is closed under adjoining each element to
+       itself as a new member:"
+Id: "ac420c92-f110-410e-a537-5761662995c3"
 
 
 [\(inductive)::set]
@@ -103,6 +113,12 @@ SectionTitle: "Successor and Canonical Realization"
 Id: "54bc28ae-1234-4b56-8a90-33cd78912ef0"
 
 
+Text: "With $\omega$ established as the minimal inductive set, the operation
+       $n \mapsto n \cup \{n\}$ restricts to an internal function on $\omega$,
+       serving as the concrete successor operator:"
+Id: "4001396c-3c3e-42cf-834a-416167562796"
+
+
 [\von.neumann.S(n_)]
 Defines: S(n_) is \function:on{\von.neumann.omega}:to{\von.neumann.omega}
 expresses: S(n_) := \set.successor:of{n_}
@@ -113,6 +129,12 @@ Documented:
                 $S(n) = n \cup \{n\}$: adjoins $n$ as an element to itself,
                 satisfying $n \in S(n)$ and $n \subsetneq S(n)$."
 Id: "431ccff0-c289-46a7-b739-211c8ae805b4"
+
+
+Text: "Taking the empty set $\emptyset$ as zero and this successor operator as
+       succession, $\omega$ furnishes an explicit set-theoretic model satisfying
+       all the Peano axioms:"
+Id: "c955fec7-7583-443e-bb67-7522fa821280"
 
 
 [\von.neumann.naturals]
@@ -131,6 +153,12 @@ Documented:
 References:
 . $enderton.set.theory:page{67}
 Id: "23196d3d-7a1f-44a8-899c-3c39d65bb331"
+
+
+Text: "Every abstract system of Peano natural numbers admits a unique
+       structure-preserving isomorphism onto this concrete von Neumann
+       hierarchy:"
+Id: "4315d050-0283-47a6-8c3b-4a0f02414f95"
 
 
 [\to.von.neumann.natural{n}]

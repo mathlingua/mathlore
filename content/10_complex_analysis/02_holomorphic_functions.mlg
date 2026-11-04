@@ -91,6 +91,11 @@ References:
 Id: "7e3019a7-07f3-462e-bd30-6047f158b5de"
 
 
+Text: "When this complex derivative exists at every point of an open domain, the
+       function is termed holomorphic, unlocking powerful rigidity properties."
+Id: "cf11bbb1-54ec-4a9f-841d-7c3f5917a628"
+
+
 [\(holomorphic)::complex.function:on{U}]
 Refines: f
 when: U \:subset:/ \complex.numbers

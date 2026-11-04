@@ -33,29 +33,16 @@ SectionTitle: "Conditionals and Equivalence"
 Id: "706c5ccb-8690-478e-b0fd-90e906f0276e"
 
 
-Text: "The primary connective of mathematical deduction is the *conditional* or
-       *material implication*, denoted $P \Rightarrow Q$ and read *if $P$, then
-       $Q$*. Virtually every mathematical theorem is cast in this mold: given a
-       collection of hypotheses $P$, we establish that a conclusion $Q$
-       necessarily follows.
+Text: "Virtually every mathematical theorem is formulated as a conditional
+       deduction: under the hypothesis that a premise $P$ holds, we guarantee
+       that a conclusion $Q$ necessarily follows. In formal logic, this
+       relationship is captured by material implication, which is purely
+       truth-functional: the implication fails if and only if the antecedent is
+       verified while the consequent is refuted.
 
-       In colloquial speech, saying 'if it rains, I will bring an umbrella'
-       suggests a causal or temporal link. In mathematical logic, however, the
-       conditional is purely *truth-functional*: its truth value depends solely
-       on the truth values of $P$ and $Q$, free of any requirement of
-       psychological or causal connection. The conditional $P \Rightarrow Q$
-       makes a very precise claim: it is violated if and only if the hypothesis
-       $P$ is true while the conclusion $Q$ is false.
-
-       Consequently, whenever the antecedent $P$ is false, the conditional
-       $P \Rightarrow Q$ is automatically regarded as true. This convention is
-       known as *vacuous truth*. If a mathematician promises, 'Every element of
-       the empty set is an even integer,' the assertion is true because there
-       are no counterexamples—the premise that an element belongs to the empty
-       set is unconditionally false. Vacuous truth is not an arbitrary quirk of
-       formalization; it is essential for mathematical consistency, guaranteeing
-       that general laws apply uniformly to boundary cases without requiring
-       countless ad hoc exceptions."
+       When the antecedent $P$ is false, the implication holds vacuously—an
+       essential convention ensuring that universal mathematical statements
+       remain valid without requiring artificial provisos for degenerate cases:"
 Id: "7529a4ce-e5cc-46c7-85b9-fdcd19351351"
 
 
@@ -78,22 +65,13 @@ References:
 Id: "dc7e213d-76c2-43d7-acf1-c5978daaab33"
 
 
-Text: "A one-way implication $P \Rightarrow Q$ tells us that $P$ is a
-       *sufficient condition* for $Q$, and that $Q$ is a *necessary condition*
-       for $P$. Frequently in mathematics, however, two conditions are so
-       intimately linked that each implies the other. When both
-       $P \Rightarrow Q$ and $Q \Rightarrow P$ hold, the statements $P$ and $Q$
-       stand or fall together.
-
-       This two-way implication is the *biconditional*, written
-       $P \Leftrightarrow Q$ and read *$P$ if and only if $Q$* (often
-       abbreviated as *$P$ iff $Q$*). The biconditional asserts that $P$ and $Q$
-       have identical truth values: both are true, or both are false. It is the
-       logical expression of *equivalence*. Most mathematical definitions are
-       implicit biconditionals: to say that a triangle is equilateral if and
-       only if all three of its sides have equal length is to establish a
-       complete mutual equivalence between the concept named and the condition
-       characterizing it."
+Text: "While a one-way conditional establishes sufficiency in one direction and
+       necessity in the other, mathematical definitions and exact
+       characterizations require mutual entailment. When two assertions imply
+       each other, they stand or fall together, possessing identical truth
+       values under every valuation. This mutual implication is formalized as
+       the biconditional, providing the foundational grammar for definitions and
+       classifications across mathematics:"
 Id: "b60eca2f-6be8-4e23-a2f2-b56e2378684b"
 
 
@@ -121,19 +99,12 @@ SectionTitle: "Boolean Connectives"
 Id: "faacb189-b227-404c-8a8a-b6e976fc828a"
 
 
-Text: "In 1854, George Boole demonstrated that the laws of thought could be
-       expressed as an algebra: propositions could be added, multiplied, and
-       negated according to precise mathematical rules. The three primary
-       *Boolean connectives*—conjunction ($\land$), disjunction ($\lor$), and
-       negation ($\neg$)—form the computational engine of propositional logic.
-       Together, they allow us to assemble arbitrarily complex truth-functional
-       statements from atomic parts.
-
-       Conjunction represents the logical 'and': a compound statement
-       $P \land Q$ is true if and only if both $P$ and $Q$ are simultaneously
-       true. In algebraic analogies, conjunction behaves like multiplication in
-       the two-element field $\{0, 1\}$: the product is $1$ only when both
-       factors are $1$."
+Text: "Beyond conditional deduction, mathematical reasoning requires combining
+       assertions into compound statements. In his 1854 treatise *The Laws of
+       Thought*, George Boole demonstrated that logical propositions satisfy
+       algebraic laws analogous to the arithmetic of numbers. The most
+       elementary combination demands that two statements hold in concert,
+       behaving as a logical meet or product:"
 Id: "1d61c6bd-bf4c-4c3e-a6dd-769d5c662a6f"
 
 
@@ -155,21 +126,12 @@ References:
 Id: "e024d041-fcf1-476e-b29e-b75d88b04fa8"
 
 
-Text: "Disjunction represents the logical 'or', written $P \lor Q$. In natural
-       language, the word 'or' is notoriously ambiguous: a menu offering 'soup
-       or salad' implies an exclusive choice, whereas a job requirement stating
-       'applicants must speak French or German' clearly welcomes applicants who
-       speak both.
-
-       Mathematics resolves this ambiguity decisively: unless explicitly
-       qualified, the mathematical connective $\lor$ is always *inclusive*. The
-       statement $P \lor Q$ is true when $P$ is true, when $Q$ is true, or when
-       both are true; it fails only when both $P$ and $Q$ are false. This
-       inclusive convention is indispensable in mathematical reasoning. For
-       example, the theorem stating that for every real number $x$, either
-       $x \ge 0$ or $x \le 0$, is valid without awkward qualifications for
-       $x = 0$ precisely because the connective permits both alternatives to
-       hold at once."
+Text: "In contrast to conjunction, which requires the simultaneous truth of both
+       assertions, mathematical statements frequently guarantee only that at
+       least one of several alternatives obtains. In colloquial speech, the word
+       'or' often connotes mutual exclusivity, but mathematics decisively adopts
+       the inclusive interpretation: an alternative holds provided at least one
+       constituent assertion is verified, failing solely when both fail:"
 Id: "fd7a79c3-4380-4621-a699-eb6902667669"
 
 
@@ -191,13 +153,10 @@ References:
 Id: "f401f869-7009-411a-bc01-9a76ffa07901"
 
 
-Text: "The final primary connective is *negation*, written $\neg P$ and read
-       *not $P$*. Unlike conjunction and disjunction, which are binary
-       operations combining two arguments, negation is a unary operation acting
-       on a single statement. It acts as an involution on truth values: if $P$
-       is true, $\neg P$ is false; if $P$ is false, $\neg P$ is true. Under
-       classical bivalence, asserting $\neg P$ is entirely equivalent to
-       asserting that $P$ fails to hold."
+Text: "Complementing binary combinations that synthesize pairs of statements,
+       negation is the fundamental unary operation of logic. Governed by the
+       classical principle of bivalence, denying an assertion reverses its truth
+       value, leaving no intermediate status:"
 Id: "856ad9cc-c17e-4cff-ad32-10ee78ab20c4"
 
 
@@ -217,15 +176,12 @@ References:
 Id: "c28b5247-41fe-455b-80df-261056c1eb02"
 
 
-Text: "Although the trio $\{\neg, \land, \lor\}$ is more than adequate to
-       express every truth function, it is often conceptually clarifying to
-       introduce specialized connectives for common patterns of thought.
-
-       When we wish to capture the everyday 'either-or but not both', we use the
-       *exclusive disjunction*, written $P \oplus Q$ or $P \text{ xor } Q$. An
-       exclusive disjunction holds when the two statements have opposite truth
-       values. Algebraically, it represents the symmetric difference in set
-       theory and addition modulo $2$ in the field $\mathbb{F}_2$."
+Text: "Although conjunction, disjunction, and negation suffice to generate all
+       truth functions, mathematical practice frequently encounters cases where
+       alternatives are strictly incompatible—such as an integer being either
+       even or odd. This strict dichotomy is formalized as exclusive
+       disjunction, which mirrors symmetric difference in set theory and
+       addition in the two-element field $\mathbb{F}_2$:"
 Id: "009e13c8-8dba-4b31-9958-f8531eb5ec04"
 
 
@@ -244,19 +200,12 @@ References:
 Id: "1c7bc638-0db8-416f-a0d0-f5c0d7d92842"
 
 
-Text: "From the standpoint of expressive economy, we may ask: what is the minimal
-       collection of connectives needed to generate all possible Boolean functions?
-       While neither conjunction alone nor disjunction alone suffices, Charles
-       Sanders Peirce (around 1880) and Henry Sheffer (1913) independently
-       discovered that a single binary connective can generate the entire system of
-       logic.
-
-       The two canonical operators with this property are *alternative denial*
-       (the Sheffer stroke or $\text{NAND}$, written $\barwedge$) and *joint denial*
-       (the Peirce arrow or $\text{NOR}$, written $\downarrow$). Because
-       $P \barwedge P \Leftrightarrow \neg P$ and $(P \barwedge Q) \barwedge
-       (P \barwedge Q) \Leftrightarrow P \land Q$, a logician or circuit designer
-       can build all of classical propositional calculus using NAND gates alone."
+Text: "From the perspective of logical economy, one may ask what minimal set of
+       connectives suffices to generate all Boolean truth functions. In
+       pioneering work by Charles Sanders Peirce and Henry Sheffer, it was shown
+       that a single binary operation can generate the entire propositional
+       calculus. The first of these universal operators is alternative denial,
+       or NAND, which asserts that two statements cannot both be true:"
 Id: "2d5efb63-58bb-436f-9aa6-648a2c05e6b6"
 
 
@@ -273,6 +222,12 @@ Documented:
 References:
 . $enderton.logic:page{17}
 Id: "ac552ed6-48a1-4639-940a-9d9a291c76e4"
+
+
+Text: "Dual to alternative denial is joint denial, or NOR, which asserts that
+       neither of two statements holds. Like NAND, it constitutes a single
+       functionally complete connective:"
+Id: "80e4835a-9179-499e-8fe0-aeeb0cf83679"
 
 
 [P \.nor./ Q]
@@ -294,19 +249,12 @@ SectionTitle: "Fundamental Laws of Propositional Logic"
 Id: "1b3ef4fc-1add-407c-84c2-ac7234d8e0f9"
 
 
-Text: "Under the relation of logical equivalence ($\Leftrightarrow$),
-       propositions satisfy a rich system of algebraic identities. In fact, when
-       propositions are identified modulo equivalence, the resulting
-       mathematical structure is a *Boolean algebra*—an algebraic system sharing
-       deep structural parallels with the algebra of sets under intersection,
-       union, and complementation.
-
-       The first foundational law is the *law of double negation*: denying a
-       denial restores the original assertion. In classical logic, where every
-       statement is either true or false, there is no third epistemic status;
-       hence, to demonstrate that it is false that $P$ is false is to establish
-       that $P$ is true. This equivalence underpins the method of proof by
-       contradiction."
+Text: "When propositions are considered up to logical equivalence, the
+       connectives satisfy algebraic identities that give the collection of
+       propositions the structure of a Boolean algebra. The most elementary
+       identity governs repeated negation: under classical bivalence, denying a
+       denial restores the original assertion, providing the logical foundation
+       for indirect proof:"
 Id: "ddf66eda-3e4a-4b16-a628-eaa5d5dbc270"
 
 
@@ -329,31 +277,13 @@ References:
 Id: "eb21571a-d245-427d-a014-d29407d09f9a"
 
 
-Text: "Next in importance are *De Morgan's laws*, named after the British
-       mathematician Augustus De Morgan (1806–1871). These laws reveal a
-       profound duality between conjunction and disjunction mediated by
-       negation.
-
-       De Morgan's laws state that negating a conjunction turns it into a
-       disjunction of negations, while negating a disjunction turns it into a
-       conjunction of negations:
-
-       $$
-       \neg(P \land Q) \iff (\neg P \lor \neg Q)
-       $$
-
-       $$
-       \neg(P \lor Q) \iff (\neg P \land \neg Q)
-       $$
-
-       The intuitive meaning is direct: to say that 'it is not the case that
-       both $P$ and $Q$ hold' means that at least one of them must fail;
-       similarly, to say that 'neither $P$ nor $Q$ holds' means that $P$ fails
-       and $Q$ fails. These laws appear in every domain of mathematics: in set
-       theory, as the laws governing complements of unions and intersections
-       ($(A \cup B)^c = A^c \cap B^c$), and in predicate calculus, as the
-       duality between universal and existential quantifiers
-       ($\neg \forall x P(x) \iff \exists x \neg P(x)$)."
+Text: "The interaction of negation with conjunction and disjunction reveals a
+       profound order-reversing duality: negating a conjunction yields a
+       disjunction of negations, while negating a disjunction yields a
+       conjunction of negations. Formulated by Augustus De Morgan, these
+       identities anticipate the complementary behavior of unions and
+       intersections in set theory, as well as the duality between universal and
+       existential quantifiers:"
 Id: "2f552add-aa29-4824-b7d0-40345e29c312"
 
 
@@ -418,9 +348,12 @@ TextDefinition: "A *truth assignment* (or valuation) on a set of propositional
 Id: "e6a57aaf-f2e1-43ce-9979-261056c1eba7"
 
 
-Text: "A central question of mathematical syntax is *canonical representation*:
-       can an arbitrary propositional formula be rewritten in a standard, easily
-       analyzable form? The answer is provided by the normal form theorems."
+Text: "A central question of logical syntax is whether an arbitrary compound
+       proposition can be reduced to a canonical, structured form. The following
+       theorem guarantees that every formula can be presented in two dual normal
+       forms: a disjunction of elementary conjunctions (useful in disjunctive
+       case analysis) and a conjunction of elementary disjunctions (essential
+       for automated theorem proving and clausal resolution):"
 Id: "81e3a647-38ae-4f70-b184-a134d193d501"
 
 
@@ -443,8 +376,10 @@ TextTheorem: "Every propositional formula is logically equivalent to one in
 Id: "a415c422-9e69-431e-b2fe-8a833231b229"
 
 
-Text: "Finally, we record the foundational theorem regarding the expressive
-       power of minimal connective sets."
+Text: "The constructive procedure for converting any truth table into normal
+       form establishes that the classical connectives can express every
+       conceivable truth function. From this, we obtain the decisive
+       completeness theorem for the Sheffer stroke and Peirce arrow:"
 Id: "5b736e47-8a4d-451e-9a18-971c26a57891"
 
 

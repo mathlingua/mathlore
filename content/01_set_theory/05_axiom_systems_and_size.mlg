@@ -22,6 +22,14 @@ SectionTitle: "Separation and Replacement"
 Id: "b04301f4-2e38-4797-b6cd-626d4be8bcb7"
 
 
+Text: "To prevent Russell's paradox while preserving the ability to define sets
+       by properties, Ernst Zermelo replaced naive comprehension with the Axiom
+       Schema of Separation. Rather than forming collections from thin air,
+       Separation allows a definite mathematical property to carve out a subset
+       from an already existing set:"
+Id: "43390b84-bd99-411d-873e-aa658d157974"
+
+
 Axiom:
 given:
 . A is \set
@@ -41,6 +49,15 @@ Documented:
                 $\{x \in A : \varphi(x)\}$ is a set. Restricts comprehension to
                 subcollections of existing sets, preventing Russell's paradox."
 Id: "5077fbc7-a5c8-4d60-b1a7-a9d65097f003"
+
+
+Text: "While Separation is conservative—it can never create sets of greater rank
+       than the set from which elements are carved—advanced mathematics requires
+       assembling the full image of a set under a definable functional
+       assignment. The Axiom Schema of Replacement, formulated by Abraham
+       Fraenkel and Thoralf Skolem, guarantees that the image of any set under a
+       class function is again a set:"
+Id: "5b27a9c9-14c9-4070-8360-1adc66d8a79f"
 
 
 Axiom:
@@ -72,25 +89,25 @@ References:
 Id: "6e09ea04-f1dd-41c0-a0f5-4c962cd819ac"
 
 
-Text: "The distinction between Separation and Replacement is of paramount
-       foundational importance. The Axiom Schema of Separation (Zermelo's
-       *Aussonderungsaxiom*) is conservative: it can only carve out subsets of an
-       already existing set $A$. It can never leave the rank of $A$ or construct
-       sets of larger size.
-
-       The Axiom Schema of Replacement, introduced by Abraham Fraenkel and
-       Thoralf Skolem in 1922, is an expansive generative principle: if a
-       definable class operation associates each element of a set $A$ with a
-       uniquely determined set $y$, then the entire collection of outputs
-       $\{F(x) : x \in A\}$ forms a valid set. Replacement is indispensable for
-       transfinite recursion and ordinal arithmetic, guaranteeing that sequences
-       indexed by ordinals (such as $\aleph_\omega = \bigcup_{n < \omega}
-       \aleph_n$) cohere into genuine sets."
+Text: "The distinction between Separation and Replacement is foundational.
+       Separation can only construct subsets of an existing set, remaining
+       strictly within its rank. Replacement, by contrast, is an expansive
+       generative principle: it allows transfinite recursion to step across
+       limit stages, ensuring that sequences indexed by ordinals (such as
+       $\aleph_\omega = \bigcup_{n < \omega} \aleph_n$) cohere into genuine
+       sets."
 Id: "1cbdad45-8bc2-4388-8a12-19b187499517"
 
 
 SectionTitle: "Foundation and Choice"
 Id: "960e9966-e880-421a-afa0-c8c753476a7c"
+
+
+Text: "To exclude pathological circularities such as sets containing themselves
+       ($x \in x$) or infinite descending membership chains, Zermelo--Fraenkel
+       set theory includes the Axiom of Foundation (or Regularity), ensuring
+       that the membership relation is well-founded:"
+Id: "b37d951b-845d-43a7-8047-7e6c18a0c843"
 
 
 Axiom:
@@ -113,6 +130,13 @@ Documented:
 References:
 . $enderton.set.theory:page{206}
 Id: "cc3fc1c3-8ea9-45a6-874c-9215525952f4"
+
+
+Text: "Finally, mathematics requires a principle for making infinitely many
+       arbitrary selections simultaneously. Formulated by Ernst Zermelo in 1904,
+       the Axiom of Choice guarantees that every family of nonempty sets admits
+       a choice function that selects an element from each member:"
+Id: "1f78bcd7-a146-4c2b-be56-cca4a18411cc"
 
 
 Axiom:
@@ -147,6 +171,11 @@ References:
 Id: "3f1ec40e-207c-431e-918e-7a8f4f23fa46"
 
 
+Text: "Over the base theory ZF, the Axiom of Choice is equivalent to numerous
+       core structural principles that permeate classical mathematics:"
+Id: "83bfdbdc-942f-4d36-bb15-abee8ec6e6ba"
+
+
 TextTheorem: "Over the base theory ZF, the Axiom of Choice (AC) is equivalent to
               a vast constellation of fundamental mathematical principles across
               algebra, topology, and analysis. Among the most prominent are:
@@ -171,6 +200,13 @@ SectionTitle: "Cardinality and Cantor's Theorem"
 Id: "ce8978c6-895a-4528-bc27-a1796c5fc751"
 
 
+Text: "The concept of size for infinite sets cannot rely on counting elements.
+       In 1874, Georg Cantor established that two sets have the same size—or
+       cardinality—if and only if their elements can be placed in exact
+       one-to-one correspondence:"
+Id: "c80e9001-f0e8-4308-bffd-d6b0d40fd2ac"
+
+
 [A \.equinumerous.with./ B]
 States:
 when: A, B is \set
@@ -186,6 +222,11 @@ Documented:
 References:
 . $enderton.set.theory:page{132}
 Id: "5ba55513-d2b3-458e-afd9-2fbd7507d47f"
+
+
+Text: "Similarly, one set is at most as large as another if it can be embedded
+       injectively into it:"
+Id: "0ee0a342-4975-42ba-816a-c38368bc5e4d"
 
 
 [A \.cardinality.leq./ B]
@@ -205,6 +246,12 @@ References:
 Id: "d3cc912e-a944-4a5f-8cc8-cca18c511746"
 
 
+Text: "Using initial segments of the natural numbers as standard measuring rods,
+       a set is finite if it can be put in bijection with some
+       $\{0, 1, \dots, n-1\}$:"
+Id: "06972eb0-e907-4e46-a5b0-1487c82006b5"
+
+
 [\(finite)::set]
 Refines: X
 satisfies:
@@ -218,6 +265,13 @@ Documented:
 Id: "88d1e87d-f649-4246-b417-7d3ca4c7f24c"
 
 
+Text: "When an infinite set can be placed in one-to-one correspondence with the
+       totality of natural numbers $\mathbb{N}$, its elements can be arranged in
+       an exhaustive sequence, defining the first infinite cardinality
+       $\aleph_0$:"
+Id: "7f2e20f7-9700-4143-91c3-ef33ca489141"
+
+
 [\(countably.infinite)::set]
 Refines: X
 satisfies: X \.equinumerous.with./ \naturals
@@ -227,6 +281,11 @@ Documented:
                 set of natural numbers $\mathbb{N}$, admitting an exhaustive
                 infinite sequence listing."
 Id: "7337910a-2ecc-46f7-95a7-9cc5812af19e"
+
+
+Text: "Combining finite sets and countably infinite sets yields the class of
+       countable sets:"
+Id: "88b7f640-5a5a-4435-a973-296d802663a2"
 
 
 [\(countable)::set]
@@ -240,6 +299,14 @@ Documented:
 . description: "At most countable cardinality: $|X| \le \aleph_0$, being either
                 finite or denumerably infinite."
 Id: "9725d8a1-0c65-491e-901b-ee23b8e87888"
+
+
+Text: "A natural question is whether cardinal dominance behaves as a partial
+       order: if $A$ injects into $B$ and $B$ injects into $A$, must there exist
+       a bijection between them? Remarkably, this holds without requiring the
+       Axiom of Choice, as proved by Cantor, Felix Bernstein, and Ernst
+       Schröder:"
+Id: "99dbff35-92d4-4a5a-8db0-3d80f675f102"
 
 
 Theorem:
@@ -256,6 +323,14 @@ Documented:
 References:
 . $enderton.set.theory:page{143}
 Id: "5ad0453f-1203-4467-949b-4c8a8697b5b3"
+
+
+Text: "While $\mathbb{N}$, $\mathbb{Z}$, and $\mathbb{Q}$ all share the same
+       countable cardinality $\aleph_0$, Cantor demonstrated that not all
+       infinities are equal. The following landmark theorem proves by diagonal
+       argument that no set can be placed in bijection with its own power set,
+       establishing that $|\mathcal{P}(A)| > |A|$ unconditionally:"
+Id: "2ad7a192-3850-48e0-bb14-9988b1ccf201"
 
 
 Theorem:

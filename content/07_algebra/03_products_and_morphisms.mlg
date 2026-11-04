@@ -144,6 +144,11 @@ Documented:
 Id: "db5c05bc-8e04-4326-ba15-689df15c140a"
 
 
+Text: "When a group homomorphism is bijective, its set-theoretic inverse is
+       automatically a homomorphism, yielding an *isomorphism* of groups:"
+Id: "7e55ee2d-348e-46b8-ae19-e4297181dc3c"
+
+
 [\group.isomorphism:from{G1 ::= (X1, *_1, e1)}:to{G2 ::= (X2, *_2, e2)}]
 Declares: phi(x__) is \group.homomorphism:from{G1}:to{G2}
 when: G1, G2 is \group
@@ -159,6 +164,11 @@ References:
 Id: "433926bd-94c4-4124-9338-d0be367f5836"
 
 
+Text: "An isomorphism from a group onto itself is an *automorphism*, formalizing
+       an intrinsic symmetry of the algebraic structure:"
+Id: "1b2d5a94-9172-42d3-9969-7d7282ecd97c"
+
+
 [\group.automorphism:of{G}]
 Declares: phi(x__) is \group.isomorphism:from{G}:to{G}
 when: G is \group
@@ -167,6 +177,11 @@ Documented:
 . description: "A self-isomorphism $\phi: G \to G$, forming the automorphism
                 group $\operatorname{Aut}(G)$ under functional composition."
 Id: "5a92734c-fbb5-481b-83a1-a945d6f59433"
+
+
+Text: "Although homomorphisms are defined solely by preserving the binary
+       operation, they automatically preserve all auxiliary structure as well:"
+Id: "755d17c2-8e39-4e09-94ba-a7bc06d48ef5"
 
 
 Theorem:

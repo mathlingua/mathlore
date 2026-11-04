@@ -25,18 +25,11 @@ SectionTitle: "Predicates, Domains, and Variables"
 Id: "76392982-4763-4264-aea1-c7bac3d909fa"
 
 
-Text: "A *predicate* is an incomplete statement containing one or more open
-       variables. On its own, an open expression such as '$x^2 < 2$' or '$x$
-       divides $y$' is neither true nor false; it becomes a definite proposition
-       only when specific objects are substituted for its variables, or when
-       those variables are bound by quantifiers.
-
-       Crucially, every variable in mathematics belongs to an explicit or
-       implicit *universe of discourse* or *domain*. The statement '$x^2 = 2$'
-       has solutions if the domain of $x$ is the real numbers $\mathbb{R}$, but
-       has no solutions if the domain is restricted to the rational numbers
-       $\mathbb{Q}$. Specifying the domain is not an incidental detail; it is an
-       organic part of the predicate's definition."
+Text: "In contrast to propositional logic, which treats entire statements as
+       opaque atoms, mathematical reasoning requires analyzing the internal
+       components of an assertion. By viewing mathematical properties as
+       functions mapping objects of a domain to truth values, we arrive at the
+       foundational concept of a predicate:"
 Id: "2498f869-7009-411a-bc01-9a76ffa07912"
 
 
@@ -50,13 +43,10 @@ TextDefinition: "Let $D_1,\ldots,D_n$ be domains. An $n$-ary predicate $P$ on
 Id: "5425d771-9398-4949-aeac-86991b073f13"
 
 
-Text: "In any formula involving variables, we must scrupulously distinguish
-       between *free* variables and *bound* variables. A free variable acts as
-       an open slot or parameter: it can be assigned different values from its
-       domain, and the truth of the formula varies with the assignment. A bound
-       variable, by contrast, is governed by a quantifier ($\forall$ or
-       $\exists$); it is an internal dummy variable whose scope is restricted to
-       the quantified expression."
+Text: "When an open formula is constructed, the variables appearing within it
+       can function in two fundamentally distinct capacities. A variable may
+       serve as an open parameter whose value can be varied, or it may be bound
+       to a quantifier that limits its scope to an internal dummy index:"
 Id: "7820a647-38ae-4f70-b184-a134d193d502"
 
 
@@ -90,10 +80,10 @@ SectionTitle: "Universal and Existential Quantification"
 Id: "dc40bcba-5c18-4126-86c9-56e178a65d78"
 
 
-Text: "Quantifiers turn open predicates into closed propositions by asserting
-       how widely a condition holds across its domain. Predicate logic
-       introduces two fundamental quantifiers: the universal quantifier
-       ($\forall$) and the existential quantifier ($\exists$)."
+Text: "Quantifiers transform open predicates into closed propositions by
+       specifying how widely a condition holds across its domain. The most
+       demanding condition requires the predicate to be satisfied by every
+       member of the domain without exception:"
 Id: "64738a4d-451e-9a18-971c-26a578912301"
 
 
@@ -109,6 +99,13 @@ TextDefinition: "For a predicate $P(x)$ on a domain $D$, the universal statement
                  universal assertion, one need only exhibit a single
                  *counterexample*—an element $c \in D$ for which $P(c)$ fails."
 Id: "549d47c5-700f-4cd5-86a2-26533b189178"
+
+
+Text: "While universal quantification demands that a predicate hold without
+       exception across an entire domain, mathematical theorems just as often
+       assert the presence of at least one object fulfilling a condition. This
+       requirement is formalized by existential quantification:"
+Id: "370df2d8-20d4-4f4a-bb3c-0874dc5eb8bd"
 
 
 TextDefinition: "For a predicate $P(x)$ on a domain $D$, the existential
@@ -127,24 +124,11 @@ TextDefinition: "For a predicate $P(x)$ on a domain $D$, the existential
 Id: "60a3796d-d17b-4e3f-b2a1-1878e1468e61"
 
 
-Text: "Just as De Morgan's laws govern the interaction between negation,
-       conjunction, and disjunction in propositional logic, an identical duality
-       governs the negation of quantifiers. Negating a universal claim produces
-       an existential claim, and negating an existential claim produces a
-       universal claim:
-
-       $$
-       \neg \forall x \in D \, P(x) \iff \exists x \in D \, \neg P(x)
-       $$
-
-       $$
-       \neg \exists x \in D \, P(x) \iff \forall x \in D \, \neg P(x)
-       $$
-
-       To deny that every swan is white is not to claim that every swan is
-       black; it is to assert the existence of at least one non-white swan.
-       Dually, to deny that a system of equations has a solution is to assert
-       that every proposed candidate fails to solve it."
+Text: "The duality between conjunction and disjunction in propositional logic
+       extends directly to quantifiers over infinite domains. A universal claim
+       functions as a generalized conjunction indexed across the domain;
+       refuting such an assertion requires only exhibiting a single
+       counterexample:"
 Id: "3748291a-bc01-411a-7009-9a76ffa07999"
 
 
@@ -175,6 +159,12 @@ Proof: """By definition, the statement $\forall x \in D, P(x)$ is true if and
 References:
 . $enderton.logic:page{82}
 Id: "bf4df541-b2ff-4fff-9f32-e0565e88a24a"
+
+
+Text: "Dually, an existential claim behaves as an infinite disjunction. Negating
+       an existential claim therefore asserts that no witness exists—which is to
+       say, every candidate in the domain fails the condition:"
+Id: "0f8d3291-af61-46f0-ad31-dbaba27d7d5d"
 
 
 Theorem:
@@ -246,9 +236,10 @@ SectionTitle: "Existence and Uniqueness"
 Id: "cdaab479-a146-47b9-b147-de10ed82aa04"
 
 
-Text: "Mathematics frequently encounters situations where an object satisfying a
-       given condition is not merely present, but unique. We denote this by the
-       quantifier $\exists!$, read *there exists a unique*."
+Text: "A common mathematical requirement is that an object satisfying a given
+       condition is not merely present, but unique. This combined assertion of
+       existence and uniqueness is encapsulated by the unique existential
+       quantifier:"
 Id: "4810a647-38ae-4f70-b184-a134d193d503"
 
 
@@ -262,12 +253,11 @@ TextDefinition: "The notation $\exists!x\in D\,P(x)$ asserts existence and
 Id: "730615eb-feb0-45d1-8ca7-82c3138f5eb7"
 
 
-Text: "The quantifier $\exists!$ is the logical license for introducing
-       *definite descriptions* and functional notations. In his landmark 1905
-       theory of descriptions, Bertrand Russell emphasized that an expression
-       such as 'the identity element of $G$' or 'the limit of $f(x)$ as
-       $x \to a$' is meaningless unless both existence and uniqueness have been
-       established."
+Text: "The verification of uniqueness is what entitles mathematicians to
+       introduce definite names and functional notation. As Bertrand Russell
+       observed, an expression such as 'the identity element' or 'the inverse'
+       is legitimate only when both existence and uniqueness have been formally
+       secured:"
 Id: "5912a647-38ae-4f70-b184-a134d193d504"
 
 

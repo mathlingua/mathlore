@@ -56,6 +56,11 @@ Documented:
 Id: "91ffd40c-72fa-4a93-83f3-80ceb1ae124a"
 
 
+Text: "Any element belonging to the carrier set $X$ is designated as an element
+       of the magma, admitting infix operator notation for composition:"
+Id: "0a21c888-fceb-4421-9acb-ba3de7a34312"
+
+
 [\magma.element:of{M ::= (X, *)}]
 Declares: x
 when: M is \magma
@@ -103,6 +108,11 @@ Documented:
                 right translation maps $L_a(x) = a * x$ and $R_a(y) = y * a$ are
                 bijections for every $a \in X$."
 Id: "49582242-a047-48ae-aced-77654d9a48aa"
+
+
+Text: "An element of a quasigroup enjoys the property that left and right
+       translations across it are bijective mappings:"
+Id: "3eef8185-5005-4fd3-9e59-08c139cc3233"
 
 
 [\quasigroup.element:of{Q ::= (X, *)}]
@@ -154,6 +164,11 @@ References:
 Id: "6ec2faf5-7d2c-4918-a559-6415b94f2b1f"
 
 
+Text: "An element belonging to a semigroup inherits parenthesization-free
+       multiplication across arbitrary finite sequences:"
+Id: "99eefac9-f0eb-4050-b55b-a8b5c966ef58"
+
+
 [\semigroup.element:of{S ::= (X, *)}]
 Declares: x
 when: S is \semigroup
@@ -202,6 +217,11 @@ References:
 Id: "034bf6ff-ba6e-4fac-b47e-65cc85d15642"
 
 
+Text: "When the underlying carrier set of a monoid is finite, the powers of any
+       element must eventually recur, creating periodic cyclic submonoids:"
+Id: "9f8d214e-930b-42b7-b061-d64dd36544d8"
+
+
 [\(finite)::monoid]
 Refines: M ::= (X, *, e)
 satisfies: X is? \(finite)::set
@@ -211,6 +231,11 @@ Documented:
                 which every element generates an eventually periodic sequence of
                 powers."
 Id: "dea32728-601d-4c8d-9ae0-f99e16039263"
+
+
+Text: "An element of a monoid supports non-negative integer powers, with the
+       zero power defined as the identity element:"
+Id: "034af19b-ed1b-46aa-b293-75443a37f829"
 
 
 [\monoid.element:of{M}]
@@ -226,6 +251,12 @@ Id: "fee7d2ca-5ebc-48a6-8eed-06d623b5520f"
 
 SectionTitle: "Cancellation and Powers"
 Id: "7800d4d9-71b2-4f3e-8672-f62600eb234d"
+
+
+Text: "Even in the absence of full inverses, an element may still be cancellable
+       from equations. An element is *left cancellable* when left multiplication
+       by it is an injective map:"
+Id: "527d2782-cb65-4d07-b43b-13a0e3e31dcd"
 
 
 [\left.cancellable{a}:in{M ::= (X, *)}]
@@ -244,6 +275,11 @@ Documented:
                 ($L_a(x) = a * x$), allowing elimination of $a$ from the left of
                 an equation."
 Id: "3ef04eda-e9d8-4859-8379-094b08b6b51a"
+
+
+Text: "Dually, an element is *right cancellable* when right multiplication by it
+       preserves distinctness:"
+Id: "58987e16-dd7c-449b-b05e-41b6e7174a5f"
 
 
 [\right.cancellable{a}:in{M ::= (X, *)}]

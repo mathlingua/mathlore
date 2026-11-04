@@ -2,17 +2,11 @@ Title: "Set Constructions"
 Id: "b49297d0-a6d3-4843-85a0-2241c30b5a05"
 
 
-Text: "Equipped with the core axioms of Zermelo--Fraenkel theory, we can now
-       define the canonical elementary constructors of mathematics.
-
-       The simplest non-trivial set formed from an existing entity $X$ is its
-       *singleton set*, denoted $\{X\}$, whose solitary member is $X$. The
-       existence of $\{X\}$ follows immediately from the Axiom of Pairing by
-       setting $Y = X$, so that $\{X\} = \{X, X\}$. It is conceptually vital to
-       maintain the ontological distinction between an element $X$ and its
-       singleton collection $\{X\}$: while $X \in \{X\}$, they are never
-       identical (indeed, the Axiom of Foundation forbids $X = \{X\}$ since that
-       would imply $X \in X$)."
+Text: "Equipped with the core axioms of Zermelo--Fraenkel theory, we can
+       construct the canonical objects of elementary mathematics. Specializing
+       the Axiom of Pairing to identical arguments produces a set containing
+       exactly one member, establishing the vital ontological distinction
+       between an object $X$ and the collection $\{X\}$ containing it:"
 Id: "032576ab-7fc3-4075-b24a-cd06583d18cd"
 
 
@@ -35,11 +29,9 @@ Documented:
 Id: "08f35257-d0a7-42af-9866-7d138c56fc4c"
 
 
-Text: "Applying the Axiom of Pairing to two distinct sets $x$ and $y$ produces
-       the *unordered pair* $\{x, y\}$. By the Axiom of Extensionality, the
-       identity of $\{x, y\}$ depends solely on its elements, which implies
-       $\{x, y\} = \{y, x\}$: the order of listing carries no mathematical
-       significance."
+Text: "Applying pairing to distinct objects yields an unordered pair whose
+       identity, by Extensionality, is completely symmetric and independent of
+       listing order:"
 Id: "c128a6a8-b892-4177-8622-29ba3cfa473a"
 
 
@@ -62,24 +54,10 @@ Documented:
 Id: "17401045-fc72-4bd4-af7d-ab578690f81c"
 
 
-Text: "The *successor* of a set $X$, denoted $S(X) = X \cup \{X\}$, adjoins $X$
-       itself as a new member to the elements already in $X$.
-
-       This elegant construction, introduced by John von Neumann in 1923, forms
-       the engine for encoding the natural numbers within pure set theory:
-
-       $$
-       \begin{aligned}
-       0 &:= \emptyset \\
-       1 &:= S(0) = \emptyset \cup \{\emptyset\} = \{\emptyset\} = \{0\} \\
-       2 &:= S(1) = \{0\} \cup \{1\} = \{0, 1\} \\
-       3 &:= S(2) = \{0, 1\} \cup \{2\} = \{0, 1, 2\}
-       \end{aligned}
-       $$
-
-       In this von Neumann ordinal representation, each natural number $n$ is
-       literally the set of all preceding natural numbers, so that
-       $n = \{0, 1, \dots, n-1\}$ and the cardinality $|n|$ is precisely $n$."
+Text: "Adjoining a set to its own elements produces its successor. In 1923, John
+       von Neumann realized that this inductive operation provides the exact
+       mechanism for realizing the natural numbers as finite ordinals, where
+       each number is the set of all predecessors:"
 Id: "f49b05f5-b826-45d0-b327-b248946e28fc"
 
 
@@ -105,20 +83,10 @@ SectionTitle: "Set-Builder Notation"
 Id: "55851b31-9fa9-4b8e-b61b-315b7559c66d"
 
 
-Text: "In mathematical practice, sets are rarely specified by exhaustive
-       enumeration. Instead, they are defined through *comprehension* (or
-       set-builder) notation, which specifies a predicate characterizing
-       membership:
-
-       $$
-       \{x \in A : \varphi(x)\}
-       $$
-
-       Here $\varphi$ is a predicate on
-       sets, and the Axiom Schema of Separation guarantees that the collection
-       of all elements in the preexisting set $A$ satisfying $\varphi$ forms a
-       legitimate set. For finite sets, we retain the familiar roster notation
-       $\{x_1, x_2, \dots, x_n\}$."
+Text: "In mathematical practice, sets are rarely defined by explicit
+       enumeration. Instead, the Axiom Schema of Separation allows us to carve
+       out subcollections using set properties: formulas that assign a definite
+       truth value to any candidate element:"
 Id: "b218d7dd-c01a-476d-9975-b05de57b8b8f"
 
 
@@ -131,6 +99,11 @@ Documented:
                 isolate bounded subcollections $\{x \in A : \varphi(x)\}$,
                 avoiding unrestricted comprehension paradoxes."
 Id: "cc680a81-3338-4848-8b9d-fcf368dd759e"
+
+
+Text: "When an extensional list is desired, a finite collection can be defined
+       directly by listing its coordinates:"
+Id: "2d5cffd6-d094-4eac-99b1-e2c05b5557b9"
 
 
 [\set:of{x[i_ := 1...n]}]
@@ -156,23 +129,11 @@ SectionTitle: "Ordered Pairs and Products"
 Id: "b61f3f41-454a-4ea1-a69c-35fe7fb2ceb3"
 
 
-Text: "While sets are inherently unordered collections, mathematics
-       fundamentally requires ordered structures where the first coordinate can
-       be distinguished from the second—such as geometric coordinates $(x, y)$,
-       directed graphs, relations, and input-output pairings of functions.
-
-       In 1921, Kazimierz Kuratowski solved the problem of encoding ordered
-       pairs within pure set theory by defining:
-
-       $$
-       (x, y) := \{\{x\}, \{x, y\}\}
-       $$
-
-       This ingenious device encodes the first
-       coordinate $x$ by placing it in a singleton, while the pair $\{x, y\}$
-       bundles both coordinates together. The first coordinate can be uniquely
-       recovered as the sole element in the intersection of all elements of the
-       pair: $\bigcap (x, y) = \{x\}$."
+Text: "While sets are inherently symmetric and unordered, mathematics
+       fundamentally requires directional structures where the first component
+       is distinguished from the second. In 1921, Kazimierz Kuratowski showed
+       that ordered pairs can be encoded within pure set theory by nesting
+       singletons and pairs:"
 Id: "da7d91b3-693b-4ca2-ac2a-e94555b18c5f"
 
 
@@ -191,18 +152,10 @@ References:
 Id: "8fd9d494-2882-4639-bb50-44a56626d1c4"
 
 
-Text: "With ordered pairs established, we can define the *Cartesian product*
-       $A \times B$, named in honor of René Descartes. The Cartesian product
-       gathers all ordered pairs $(a, b)$ such that $a \in A$ and $b \in B$:
-
-       $$
-       A \times B := \{(a, b) : a \in A \land b \in B\}
-       $$
-
-       The Cartesian
-       product is the foundational arena of modern mathematics: binary relations
-       on $A$ are defined as subsets of $A \times A$, and functions from $A$ to
-       $B$ are defined as special subsets of $A \times B$."
+Text: "With ordered pairs available, we can gather all pairs formed by choosing
+       a first coordinate from $A$ and a second coordinate from $B$. Named for
+       René Descartes, the Cartesian product provides the foundational domain
+       for relations, multivariable calculus, and operations:"
 Id: "331daec2-edc7-4316-8fb6-0c801c3692ed"
 
 
@@ -219,6 +172,12 @@ Documented:
 References:
 . $enderton.set.theory:page{35}
 Id: "3bdd9cfb-f836-4d44-880a-873bb772cdef"
+
+
+Text: "The legitimacy of Kuratowski's encoding rests entirely on whether it
+       satisfies the characteristic property of ordered pairs: two pairs are
+       identical if and only if their respective coordinates coincide:"
+Id: "7ff735fd-e6ea-4af7-b4f6-df89e3068b6d"
 
 
 Theorem:
@@ -249,6 +208,14 @@ Proof: """If $x = u$ and $y = v$, then
 References:
 . $enderton.set.theory:page{35}
 Id: "31691bb2-e8e1-4218-be4f-759add2b7ab7"
+
+
+Text: "Because $(A \times B) \times C$ consists of pairs of the form
+       $((a, b), c)$ whereas $A \times (B \times C)$ consists of $(a, (b, c))$,
+       the Cartesian product is not strictly associative as a set-theoretic
+       operation. However, the two products are naturally and canonically
+       isomorphic via coordinate regrouping:"
+Id: "cd332b77-e7cc-4e59-92e6-40decc503be9"
 
 
 Theorem:
