@@ -176,23 +176,22 @@ Text: "Over the base theory ZF, the Axiom of Choice is equivalent to numerous
 Id: "83bfdbdc-942f-4d36-bb15-abee8ec6e6ba"
 
 
-TextTheorem: "Over the base theory ZF, the Axiom of Choice (AC) is equivalent to
-              a vast constellation of fundamental mathematical principles across
-              algebra, topology, and analysis. Among the most prominent are:
-              1. *Zermelo's Well-Ordering Theorem*: Every set can be endowed
-                 with a well-ordering.
-              2. *Zorn's Lemma*: Every non-empty partially ordered set in which
-                 every chain possesses an upper bound contains at least one
-                 maximal element.
-              3. *Right Inverses*: Every surjective function admits a right
-                 inverse (a section).
-              4. *Linear Algebra*: Every vector space possesses a Hamel basis.
-              5. *Topology*: Tychonoff's Theorem, asserting that any product of
-                 compact topological spaces is compact.
+Text: "**Theorem.** Over the base theory ZF, the Axiom of Choice (AC) is
+       equivalent to a vast constellation of fundamental mathematical principles
+       across algebra, topology, and analysis. Among the most prominent are:
+       1. *Zermelo's Well-Ordering Theorem*: Every set can be endowed with a
+          well-ordering.
+       2. *Zorn's Lemma*: Every non-empty partially ordered set in which every
+          chain possesses an upper bound contains at least one maximal element.
+       3. *Right Inverses*: Every surjective function admits a right inverse (a
+          section).
+       4. *Linear Algebra*: Every vector space possesses a Hamel basis.
+       5. *Topology*: Tychonoff's Theorem, asserting that any product of compact
+          topological spaces is compact.
 
-              The equivalence of these formulations permits mathematicians to
-              invoke Choice in whichever structural guise is best suited to the
-              problem at hand."
+       The equivalence of these formulations permits mathematicians to invoke
+       Choice in whichever structural guise is best suited to the problem at
+       hand."
 Id: "694788bb-a939-406b-8a3f-62730d8d0399"
 
 

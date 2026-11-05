@@ -154,12 +154,12 @@ SectionTitle: "Recursive Definitions"
 Id: "fc540913-8908-49b4-b6bf-253901c18952"
 
 
-TextTheorem: "Recursion theorem on $\mathbb{N}$. Let $X$ be a set, choose
-              $x_0\in X$, and let $F:\mathbb{N}\times X\to X$. There exists a
-              unique function $a:\mathbb{N}\to X$ satisfying $a(0)=x_0$ and
-              $a(n+1)=F(n,a(n))$ for every $n$. The theorem provides both
-              existence and uniqueness; recursive equations alone should not be
-              treated as a definition until this result is available."
+Text: "**Theorem (Recursion Theorem on $\mathbb{N}$).** Let $X$ be a set, choose
+       $x_0\in X$, and let $F:\mathbb{N}\times X\to X$. There exists a unique
+       function $a:\mathbb{N}\to X$ satisfying $a(0)=x_0$ and $a(n+1)=F(n,a(n))$
+       for every $n$. The theorem provides both existence and uniqueness;
+       recursive equations alone should not be treated as a definition until
+       this result is available."
 Id: "15ab06d1-8e34-450b-8e17-e985c387bd96"
 
 
@@ -195,12 +195,11 @@ SectionTitle: "Minimality and Universal Character"
 Id: "ede13b47-dfdb-4898-bc0e-3043dc9712dd"
 
 
-TextTheorem: "Any two Peano systems are uniquely isomorphic by a map preserving
-              zero and successor. More precisely, if $(N,0,S)$ and $(N',0',S')$
-              satisfy the Peano axioms, there is a unique bijection $f:N\to N'$
-              such that $f(0)=0'$ and $f(S(n))=S'(f(n))$. Thus the natural
-              numbers are determined up to unique structure-preserving
-              isomorphism."
+Text: "**Theorem.** Any two Peano systems are uniquely isomorphic by a map
+       preserving zero and successor. More precisely, if $(N,0,S)$ and
+       $(N',0',S')$ satisfy the Peano axioms, there is a unique bijection
+       $f:N\to N'$ such that $f(0)=0'$ and $f(S(n))=S'(f(n))$. Thus the natural
+       numbers are determined up to unique structure-preserving isomorphism."
 Id: "3d9d5fae-a692-4d51-8b38-1f39fde29d68"
 
 

@@ -384,48 +384,47 @@ Documented:
 Id: "e10a2ceb-8649-480a-9ab4-651ca4345f74"
 
 
-TextTheorem: "Every function $f : A \to B$ admits a canonical *first isomorphism
-              factorization*:
+Text: "**Theorem.** Every function $f : A \to B$ admits a canonical *first isomorphism
+       factorization*:
 
-              $$
-              A \twoheadrightarrow A / {\sim} \xrightarrow{\sim} f[A] \hookrightarrow B
-              $$
+       $$
+       A \twoheadrightarrow A / {\sim} \xrightarrow{\sim} f[A] \hookrightarrow B
+       $$
 
-              where $x \sim x'$ if and only if $f(x) = f(x')$.
-              The three components decouple the structural actions of $f$:
-              1. The canonical projection $\pi : A \twoheadrightarrow A / {\sim}$
-              is a surjection identifying elements with identical values.
-              2. The induced map $\bar{f} : A / {\sim} \xrightarrow{\sim} f[A]$,
-              given by $\bar{f}([x]) = f(x)$, is a bijection.
-              3. The canonical inclusion $\iota : f[A] \hookrightarrow B$ is an
-              injection embedding the image into the ambient codomain."
+       where $x \sim x'$ if and only if $f(x) = f(x')$.
+       The three components decouple the structural actions of $f$:
+       1. The canonical projection $\pi : A \twoheadrightarrow A / {\sim}$
+       is a surjection identifying elements with identical values.
+       2. The induced map $\bar{f} : A / {\sim} \xrightarrow{\sim} f[A]$,
+       given by $\bar{f}([x]) = f(x)$, is a bijection.
+       3. The canonical inclusion $\iota : f[A] \hookrightarrow B$ is an
+       injection embedding the image into the ambient codomain."
 Id: "cff9bfde-5ee9-4942-97a5-50b99637c887"
 
 
-TextTheorem: "A function $f : A \to B$ with nonempty domain $A$ has a *left
-              inverse* (retraction) $g : B \to A$ satisfying
-              $g \circ f = \text{id}_A$ if and only if $f$ is injective. Dually,
-              $f$ has a *right inverse* (section) $h : B \to A$ satisfying
-              $f \circ h = \text{id}_B$ if and only if $f$ is surjective; the
-              assertion that every surjection admits a right inverse is
-              logically equivalent to the Axiom of Choice. A function possesses
-              a two-sided inverse if and only if it is bijective, in which case
-              the inverse is unique."
+Text: "**Theorem.** A function $f : A \to B$ with nonempty domain $A$ has a
+       *left inverse* (retraction) $g : B \to A$ satisfying
+       $g \circ f = \text{id}_A$ if and only if $f$ is injective. Dually, $f$
+       has a *right inverse* (section) $h : B \to A$ satisfying
+       $f \circ h = \text{id}_B$ if and only if $f$ is surjective; the assertion
+       that every surjection admits a right inverse is logically equivalent to
+       the Axiom of Choice. A function possesses a two-sided inverse if and only
+       if it is bijective, in which case the inverse is unique."
 Id: "b0b5de59-0d45-45ea-ac3f-6abe4b3e8af1"
 
 
-TextTheorem: "Direct images and preimages interact with Boolean operations
-              according to fundamental preservation laws:
-              - *Preimages preserve all Boolean structure*: for any family of
-              subsets $B_i \subseteq B$,
+Text: "**Theorem.** Direct images and preimages interact with Boolean operations
+       according to fundamental preservation laws:
+       - *Preimages preserve all Boolean structure*: for any family of
+       subsets $B_i \subseteq B$,
 
-              $$
-              f^{-1}\left[\bigcup_{i \in I} B_i\right] = \bigcup_{i \in I} f^{-1}[B_i], \quad f^{-1}\left[\bigcap_{i \in I} B_i\right] = \bigcap_{i \in I} f^{-1}[B_i]
-              $$
+       $$
+       f^{-1}\left[\bigcup_{i \in I} B_i\right] = \bigcup_{i \in I} f^{-1}[B_i], \quad f^{-1}\left[\bigcap_{i \in I} B_i\right] = \bigcap_{i \in I} f^{-1}[B_i]
+       $$
 
-              and $f^{-1}[B \setminus Y] = A \setminus f^{-1}[Y]$.
-              - *Direct images preserve unions*: $f\left[\bigcup_{i \in I} A_i\right] = \bigcup_{i \in I} f[A_i]$.
-              - *Direct images preserve intersections only as inclusions in general*:
-              $f\left[\bigcap_{i \in I} A_i\right] \subseteq \bigcap_{i \in I} f[A_i]$.
-              Equality holds for all families if and only if $f$ is injective."
+       and $f^{-1}[B \setminus Y] = A \setminus f^{-1}[Y]$.
+       - *Direct images preserve unions*: $f\left[\bigcup_{i \in I} A_i\right] = \bigcup_{i \in I} f[A_i]$.
+       - *Direct images preserve intersections only as inclusions in general*:
+       $f\left[\bigcap_{i \in I} A_i\right] \subseteq \bigcap_{i \in I} f[A_i]$.
+       Equality holds for all families if and only if $f$ is injective."
 Id: "f143d5e8-5f5b-4208-a0b0-f8720288e434"

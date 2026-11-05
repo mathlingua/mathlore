@@ -896,94 +896,92 @@ SectionTitle: "Consequences of Completeness"
 Id: "c7e3ce84-b112-44c7-aecd-7903f25f6f48"
 
 
-TextTheorem: "The Archimedean Property. For every real number
-              $x \in \mathbb{R}$, there exists a natural number
-              $n \in \mathbb{N}$ such that $n > x$. Equivalently, for every
-              $\epsilon > 0$, there exists $n \in \mathbb{N}$ such that
-              $0 < 1/n < \epsilon$.
+Text: "**Theorem (Archimedean Property).** For every real number
+       $x \in \mathbb{R}$, there exists a natural number $n \in \mathbb{N}$ such
+       that $n > x$. Equivalently, for every $\epsilon > 0$, there exists
+       $n \in \mathbb{N}$ such that $0 < 1/n < \epsilon$.
 
-              *Proof*: Suppose for contradiction that $\mathbb{N}$ is bounded
-              above in $\mathbb{R}$. Since $\mathbb{N} \neq \emptyset$, the
-              Completeness Axiom guarantees that $\alpha = \sup(\mathbb{N})$
-              exists in $\mathbb{R}$. Since $\alpha - 1 < \alpha$, $\alpha - 1$
-              is not an upper bound for $\mathbb{N}$. Thus there exists some
-              $m \in \mathbb{N}$ such that $m > \alpha - 1$. Adding $1$ to both
-              sides gives $m + 1 > \alpha$. Since $m + 1 \in \mathbb{N}$, this
-              contradicts that $\alpha$ is an upper bound for $\mathbb{N}$.
+       *Proof*: Suppose for contradiction that $\mathbb{N}$ is bounded above in
+       $\mathbb{R}$. Since $\mathbb{N} \neq \emptyset$, the Completeness Axiom
+       guarantees that $\alpha = \sup(\mathbb{N})$ exists in $\mathbb{R}$. Since
+       $\alpha - 1 < \alpha$, $\alpha - 1$ is not an upper bound for
+       $\mathbb{N}$. Thus there exists some $m \in \mathbb{N}$ such that
+       $m > \alpha - 1$. Adding $1$ to both sides gives $m + 1 > \alpha$. Since
+       $m + 1 \in \mathbb{N}$, this contradicts that $\alpha$ is an upper bound
+       for $\mathbb{N}$.
 
-              Hence $\mathbb{N}$ is unbounded above in $\mathbb{R}$. The
-              Archimedean property rules out actual infinitesimals and actual
-              infinities in the standard real field."
+       Hence $\mathbb{N}$ is unbounded above in $\mathbb{R}$. The Archimedean
+       property rules out actual infinitesimals and actual infinities in the
+       standard real field."
 Id: "b1263e32-5964-4429-bd0c-7ed965ffa9a1"
 
 
-TextTheorem: "The Density of Rationals and Irrationals. Between any two distinct
-              real numbers $x < y$, there exists both a rational number
-              $q \in \mathbb{Q}$ and an irrational number
-              $r \in \mathbb{R} \setminus \mathbb{Q}$ satisfying:
+Text: "**Theorem (Density of Rationals and Irrationals).** Between any two distinct
+       real numbers $x < y$, there exists both a rational number
+       $q \in \mathbb{Q}$ and an irrational number
+       $r \in \mathbb{R} \setminus \mathbb{Q}$ satisfying:
 
-              $$
-              x < q < y \quad \text{and} \quad x < r < y.
-              $$
+       $$
+       x < q < y \quad \text{and} \quad x < r < y.
+       $$
 
-              *Proof Sketch*:
-              1. **Rationals**: Since $y - x > 0$, by the Archimedean property
-                 there exists $n \in \mathbb{N}$ such that $n(y - x) > 1$, so
-                 $ny - nx > 1$. Let $m = \lfloor nx \rfloor + 1 \in \mathbb{Z}$.
-                 Then $nx < m \leq nx + 1 < ny$. Dividing by $n > 0$ yields
-                 $x < m/n < y$. Setting $q = m/n \in \mathbb{Q}$ proves density
-                 of $\mathbb{Q}$.
-              2. **Irrationals**: Since $x < y$, consider
-                 $x/\sqrt{2} < y/\sqrt{2}$. By density of rationals, choose a
-                 nonzero rational $q' \in \mathbb{Q}$ with
-                 $x/\sqrt{2} < q' < y/\sqrt{2}$. Then $r = q'\sqrt{2}$ is
-                 irrational and satisfies $x < r < y$.
+       *Proof Sketch*:
+       1. **Rationals**: Since $y - x > 0$, by the Archimedean property
+       there exists $n \in \mathbb{N}$ such that $n(y - x) > 1$, so
+       $ny - nx > 1$. Let $m = \lfloor nx \rfloor + 1 \in \mathbb{Z}$.
+       Then $nx < m \leq nx + 1 < ny$. Dividing by $n > 0$ yields
+       $x < m/n < y$. Setting $q = m/n \in \mathbb{Q}$ proves density
+       of $\mathbb{Q}$.
+       2. **Irrationals**: Since $x < y$, consider
+       $x/\sqrt{2} < y/\sqrt{2}$. By density of rationals, choose a
+       nonzero rational $q' \in \mathbb{Q}$ with
+       $x/\sqrt{2} < q' < y/\sqrt{2}$. Then $r = q'\sqrt{2}$ is
+       irrational and satisfies $x < r < y$.
 
-              Thus every open interval $(x, y) \subseteq \mathbb{R}$ contains
-              infinitely many rational and infinitely many irrational numbers."
+       Thus every open interval $(x, y) \subseteq \mathbb{R}$ contains
+       infinitely many rational and infinitely many irrational numbers."
 Id: "fad49d51-ff50-4127-806b-8f246765c4df"
 
 
-TextTheorem: "The Nested Interval Theorem (Cantor's Intersection Theorem). Let
-              $I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots$ be a decreasing
-              sequence of non-empty closed bounded intervals
-              $I_n = [a_n, b_n] \subset \mathbb{R}$. Then their intersection is
-              non-empty:
+Text: "**Theorem (Nested Interval Theorem / Cantor's Intersection Theorem).** Let
+       $I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots$ be a decreasing
+       sequence of non-empty closed bounded intervals
+       $I_n = [a_n, b_n] \subset \mathbb{R}$. Then their intersection is
+       non-empty:
 
-              $$
-              \bigcap_{n=1}^\infty I_n \neq \emptyset.
-              $$
+       $$
+       \bigcap_{n=1}^\infty I_n \neq \emptyset.
+       $$
 
-              If
-              furthermore the lengths satisfy
-              $\lim_{n \to \infty} (b_n - a_n) = 0$, then the intersection
-              contains precisely one point $\xi \in \mathbb{R}$.
+       If
+       furthermore the lengths satisfy
+       $\lim_{n \to \infty} (b_n - a_n) = 0$, then the intersection
+       contains precisely one point $\xi \in \mathbb{R}$.
 
-              *Proof*: Since $I_{n+1} \subseteq I_n$, the sequence of left
-              endpoints $(a_n)$ is non-decreasing, and the sequence of right
-              endpoints $(b_n)$ is non-increasing, with $a_n \leq b_m$ for all
-              $n, m$. The set $A = \{a_n : n \in \mathbb{N}\}$ is nonempty and
-              bounded above by each $b_m$. By completeness, $\xi = \sup(A)$
-              exists. For every $n \in \mathbb{N}$, $a_n \leq \xi$. Moreover,
-              since each $b_n$ is an upper bound for $A$, $\xi \leq b_n$. Thus
-              $a_n \leq \xi \leq b_n$ for all $n$, meaning
-              $\xi \in [a_n, b_n] = I_n$ for all $n$. Hence
-              $\xi \in \bigcap_{n=1}^\infty I_n$. If $\lim (b_n - a_n) = 0$, any
-              two points $\xi_1, \xi_2 \in \bigcap I_n$ satisfy
-              $|\xi_1 - \xi_2| \leq b_n - a_n \to 0$, forcing $\xi_1 = \xi_2$."
+       *Proof*: Since $I_{n+1} \subseteq I_n$, the sequence of left
+       endpoints $(a_n)$ is non-decreasing, and the sequence of right
+       endpoints $(b_n)$ is non-increasing, with $a_n \leq b_m$ for all
+       $n, m$. The set $A = \{a_n : n \in \mathbb{N}\}$ is nonempty and
+       bounded above by each $b_m$. By completeness, $\xi = \sup(A)$
+       exists. For every $n \in \mathbb{N}$, $a_n \leq \xi$. Moreover,
+       since each $b_n$ is an upper bound for $A$, $\xi \leq b_n$. Thus
+       $a_n \leq \xi \leq b_n$ for all $n$, meaning
+       $\xi \in [a_n, b_n] = I_n$ for all $n$. Hence
+       $\xi \in \bigcap_{n=1}^\infty I_n$. If $\lim (b_n - a_n) = 0$, any
+       two points $\xi_1, \xi_2 \in \bigcap I_n$ satisfy
+       $|\xi_1 - \xi_2| \leq b_n - a_n \to 0$, forcing $\xi_1 = \xi_2$."
 Id: "b160143e-4ba6-481c-9a52-3e03fdee7bc5"
 
 
-TextTheorem: "Categoricity of the Real Continuum. Up to a unique
-              order-preserving field isomorphism, there exists exactly one
-              complete ordered field.
+Text: "**Theorem (Categoricity of the Real Continuum).** Up to a unique
+       order-preserving field isomorphism, there exists exactly one complete
+       ordered field.
 
-              Consequently, the concrete models of the real numbers—whether
-              realized via Dedekind cuts in $\mathbb{Q}$, Cantor equivalence
-              classes of rational Cauchy sequences, or positional decimal
-              expansions—are all mutually isomorphic as ordered fields. The
-              specific set-theoretic construction serves solely as an existence
-              proof of the structure; the deductive theorems of analysis depend
-              exclusively on the universal axiomatic properties of the complete
-              ordered field $\mathbb{R}$."
+       Consequently, the concrete models of the real numbers—whether realized
+       via Dedekind cuts in $\mathbb{Q}$, Cantor equivalence classes of rational
+       Cauchy sequences, or positional decimal expansions—are all mutually
+       isomorphic as ordered fields. The specific set-theoretic construction
+       serves solely as an existence proof of the structure; the deductive
+       theorems of analysis depend exclusively on the universal axiomatic
+       properties of the complete ordered field $\mathbb{R}$."
 Id: "59879fc7-468d-4926-8c40-43fe85a7713b"

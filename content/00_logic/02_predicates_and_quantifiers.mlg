@@ -33,13 +33,13 @@ Text: "In contrast to propositional logic, which treats entire statements as
 Id: "2498f869-7009-411a-bc01-9a76ffa07912"
 
 
-TextDefinition: "Let $D_1,\ldots,D_n$ be domains. An $n$-ary predicate $P$ on
-                 these domains is an expression for which $P(a_1,\ldots,a_n)$ is
-                 a statement whenever $a_i\in D_i$ for every $i$. Equivalently,
-                 after a semantics has been fixed, $P$ determines a truth-valued
-                 function on $D_1\times\cdots\times D_n$. The domains are part
-                 of the specification: the same formula may define different
-                 predicates when its variables range over different objects."
+Text: "**Definition.** Let $D_1,\ldots,D_n$ be domains. An $n$-ary predicate $P$
+       on these domains is an expression for which $P(a_1,\ldots,a_n)$ is a
+       statement whenever $a_i\in D_i$ for every $i$. Equivalently, after a
+       semantics has been fixed, $P$ determines a truth-valued function on
+       $D_1\times\cdots\times D_n$. The domains are part of the specification:
+       the same formula may define different predicates when its variables range
+       over different objects."
 Id: "5425d771-9398-4949-aeac-86991b073f13"
 
 
@@ -50,14 +50,13 @@ Text: "When an open formula is constructed, the variables appearing within it
 Id: "7820a647-38ae-4f70-b184-a134d193d502"
 
 
-TextDefinition: "An occurrence of a variable is *bound* if it lies within the
-                 scope of a quantifier that binds that variable; otherwise it is
-                 *free*. A formula with no free variables is a sentence and
-                 therefore has a truth value in a fixed interpretation. A
-                 formula with free variables denotes a condition on possible
-                 assignments to those variables. Renaming a bound variable does
-                 not change meaning, provided the new name does not capture a
-                 formerly free occurrence."
+Text: "**Definition.** An occurrence of a variable is *bound* if it lies within
+       the scope of a quantifier that binds that variable; otherwise it is
+       *free*. A formula with no free variables is a sentence and therefore has
+       a truth value in a fixed interpretation. A formula with free variables
+       denotes a condition on possible assignments to those variables. Renaming
+       a bound variable does not change meaning, provided the new name does not
+       capture a formerly free occurrence."
 Id: "4d77ab37-a8da-4d6b-b9c7-d5dc9036755d"
 
 
@@ -87,17 +86,15 @@ Text: "Quantifiers transform open predicates into closed propositions by
 Id: "64738a4d-451e-9a18-971c-26a578912301"
 
 
-TextDefinition: "For a predicate $P(x)$ on a domain $D$, the universal statement
-                 $\forall x\in D\,P(x)$ (read *for all $x$ in $D$, $P(x)$*) is
-                 true exactly when $P(a)$ is true for every single element
-                 $a\in D$.
+Text: "**Definition.** For a predicate $P(x)$ on a domain $D$, the universal
+       statement $\forall x\in D\,P(x)$ (read *for all $x$ in $D$, $P(x)$*) is
+       true exactly when $P(a)$ is true for every single element $a\in D$.
 
-                 To prove a universal assertion, one must consider an
-                 *arbitrary* element $x \in D$ and prove that $P(x)$ holds using
-                 only the defining properties of $D$, without assuming any
-                 special traits of the chosen element. Conversely, to refute a
-                 universal assertion, one need only exhibit a single
-                 *counterexample*—an element $c \in D$ for which $P(c)$ fails."
+       To prove a universal assertion, one must consider an *arbitrary* element
+       $x \in D$ and prove that $P(x)$ holds using only the defining properties
+       of $D$, without assuming any special traits of the chosen element.
+       Conversely, to refute a universal assertion, one need only exhibit a
+       single *counterexample*—an element $c \in D$ for which $P(c)$ fails."
 Id: "549d47c5-700f-4cd5-86a2-26533b189178"
 
 
@@ -108,19 +105,17 @@ Text: "While universal quantification demands that a predicate hold without
 Id: "370df2d8-20d4-4f4a-bb3c-0874dc5eb8bd"
 
 
-TextDefinition: "For a predicate $P(x)$ on a domain $D$, the existential
-                 statement $\exists x\in D\,P(x)$ (read *there exists $x$ in $D$
-                 such that $P(x)$*) is true exactly when at least one element
-                 $a\in D$ satisfies $P(a)$. Such an element is called a
-                 *witness*.
+Text: "**Definition.** For a predicate $P(x)$ on a domain $D$, the existential
+       statement $\exists x\in D\,P(x)$ (read *there exists $x$ in $D$ such that
+       $P(x)$*) is true exactly when at least one element $a\in D$ satisfies
+       $P(a)$. Such an element is called a *witness*.
 
-                 An existential claim can be proved *constructively* by
-                 explicitly producing a witness and verifying that it satisfies
-                 $P$, or *non-constructively* by demonstrating that the
-                 assumption that no witness exists leads to an insurmountable
-                 contradiction. Note that an existential assertion guarantees
-                 only that *at least one* witness exists; it makes no claim
-                 regarding whether the witness is unique."
+       An existential claim can be proved *constructively* by explicitly
+       producing a witness and verifying that it satisfies $P$, or
+       *non-constructively* by demonstrating that the assumption that no witness
+       exists leads to an insurmountable contradiction. Note that an existential
+       assertion guarantees only that *at least one* witness exists; it makes no
+       claim regarding whether the witness is unique."
 Id: "60a3796d-d17b-4e3f-b2a1-1878e1468e61"
 
 
@@ -243,13 +238,12 @@ Text: "A common mathematical requirement is that an object satisfying a given
 Id: "4810a647-38ae-4f70-b184-a134d193d503"
 
 
-TextDefinition: "The notation $\exists!x\in D\,P(x)$ asserts existence and
-                 uniqueness: there is an $a\in D$ satisfying $P(a)$, and any
-                 $b\in D$ satisfying $P(b)$ equals $a$. A proof therefore has
-                 two logically independent parts. It is often useful to prove
-                 uniqueness conditionally before constructing an object, because
-                 the uniqueness argument identifies which properties a
-                 successful construction must have."
+Text: "**Definition.** The notation $\exists!x\in D\,P(x)$ asserts existence and
+       uniqueness: there is an $a\in D$ satisfying $P(a)$, and any $b\in D$
+       satisfying $P(b)$ equals $a$. A proof therefore has two logically
+       independent parts. It is often useful to prove uniqueness conditionally
+       before constructing an object, because the uniqueness argument identifies
+       which properties a successful construction must have."
 Id: "730615eb-feb0-45d1-8ca7-82c3138f5eb7"
 
 
@@ -261,10 +255,10 @@ Text: "The verification of uniqueness is what entitles mathematicians to
 Id: "5912a647-38ae-4f70-b184-a134d193d504"
 
 
-TextTheorem: "If $\exists!x\in D\,P(x)$, then a definition of the form 'let $a$
-              be the unique element of $D$ satisfying $P$' is unambiguous.
-              Without prior existence and uniqueness, the same phrase does not
-              define an object: it merely presupposes one."
+Text: "**Theorem.** If $\exists!x\in D\,P(x)$, then a definition of the form
+       'let $a$ be the unique element of $D$ satisfying $P$' is unambiguous.
+       Without prior existence and uniqueness, the same phrase does not define
+       an object: it merely presupposes one."
 Id: "09f10995-86d7-409a-8411-247d4acef1f4"
 
 

@@ -394,51 +394,48 @@ Proof: """Let $(a_n)$ be a bounded real sequence. Thus there exists a closed
 Id: "1f6fac61-9b16-4828-942f-293b25792dcf"
 
 
-TextDefinition: "An infinite series $\sum_{n=1}^{\infty} a_n$ converges to sum
-                 $S \in \mathbb{R}$ if the sequence of partial sums
-                 $s_N = \sum_{n=1}^N a_n$ converges to $S$ as $N \to \infty$.
+Text: "**Definition.** An infinite series $\sum_{n=1}^{\infty} a_n$ converges to
+       sum $S \in \mathbb{R}$ if the sequence of partial sums
+       $s_N = \sum_{n=1}^N a_n$ converges to $S$ as $N \to \infty$.
 
-                 An infinite sum is thus fundamentally defined as the limit of
-                 finite algebraic sums. A necessary condition for convergence is
-                 that the terms vanish: $\lim_{n \to \infty} a_n = 0$. However,
-                 this condition is famously insufficient: the Harmonic Series
-                 $\sum_{n=1}^\infty \frac{1}{n}$ diverges to infinity despite
-                 its terms tending to zero."
+       An infinite sum is thus fundamentally defined as the limit of finite
+       algebraic sums. A necessary condition for convergence is that the terms
+       vanish: $\lim_{n \to \infty} a_n = 0$. However, this condition is
+       famously insufficient: the Harmonic Series
+       $\sum_{n=1}^\infty \frac{1}{n}$ diverges to infinity despite its terms
+       tending to zero."
 Id: "4dbd15d0-16cc-4668-993b-2f06d6c77b0e"
 
 
-TextTheorem: "Absolute Convergence and the Riemann Rearrangement Theorem. A
-              series $\sum a_n$ converges *absolutely* if $\sum |a_n| < \infty$.
+Text: "**Theorem (Riemann Rearrangement Theorem).** A series $\sum a_n$
+       converges *absolutely* if $\sum |a_n| < \infty$.
 
-              1. **Absolute Convergence Implies Convergence**: By the Cauchy
-                 criterion,
-                 $|\sum_{k=m}^n a_k| \leq \sum_{k=m}^n |a_k| < \epsilon$, so
-                 absolute convergence guarantees convergence in $\mathbb{R}$.
-              2. **Unconditional Convergence**: For any absolutely convergent
-                 series, every permutation $\sigma : \mathbb{N} \to \mathbb{N}$
-                 produces a rearranged series $\sum a_{\sigma(n)}$ that
-                 converges to the exact same sum.
-              3. **Riemann Rearrangement Theorem**: If a series converges
-                 conditionally (meaning $\sum a_n$ converges, but
-                 $\sum |a_n| = \infty$, as in the alternating harmonic series
-                 $\sum (-1)^{n+1}/n = \ln 2$), then for *any* extended real
-                 number $M \in \mathbb{R} \cup \{-\infty, +\infty\}$, there
-                 exists a permutation $\sigma$ such that the rearranged series
-                 $\sum a_{\sigma(n)}$ converges to $M$."
+       1. **Absolute Convergence Implies Convergence**: By the Cauchy criterion,
+          $|\sum_{k=m}^n a_k| \leq \sum_{k=m}^n |a_k| < \epsilon$, so absolute
+          convergence guarantees convergence in $\mathbb{R}$.
+       2. **Unconditional Convergence**: For any absolutely convergent series,
+          every permutation $\sigma : \mathbb{N} \to \mathbb{N}$ produces a
+          rearranged series $\sum a_{\sigma(n)}$ that converges to the exact
+          same sum.
+       3. **Riemann Rearrangement Theorem**: If a series converges conditionally
+          (meaning $\sum a_n$ converges, but $\sum |a_n| = \infty$, as in the
+          alternating harmonic series $\sum (-1)^{n+1}/n = \ln 2$), then for
+          *any* extended real number
+          $M \in \mathbb{R} \cup \{-\infty, +\infty\}$, there exists a
+          permutation $\sigma$ such that the rearranged series
+          $\sum a_{\sigma(n)}$ converges to $M$."
 Id: "9dc7b0a0-bc7a-4b06-b8a8-7ee8d0e33b13"
 
 
-TextTheorem: "The Comparison Tests. Let $(a_n)$ and $(b_n)$ be non-negative real
-              sequences.
-              1. **Direct Comparison**: If $0 \leq a_n \leq b_n$ for all
-                 $n \geq N_0$:
-                 - If $\sum b_n$ converges, then $\sum a_n$ converges.
-                 - If $\sum a_n$ diverges, then $\sum b_n$ diverges.
-              2. **Limit Comparison**: If
-                 $\lim_{n \to \infty} \frac{a_n}{b_n} = c \in (0, \infty)$, then
-                 either both series $\sum a_n$ and $\sum b_n$ converge, or both
-                 diverge.
+Text: "**Theorem (Comparison Tests).** Let $(a_n)$ and $(b_n)$ be non-negative
+       real sequences.
+       1. **Direct Comparison**: If $0 \leq a_n \leq b_n$ for all $n \geq N_0$:
+       - If $\sum b_n$ converges, then $\sum a_n$ converges.
+       - If $\sum a_n$ diverges, then $\sum b_n$ diverges.
+       2. **Limit Comparison**: If
+          $\lim_{n \to \infty} \frac{a_n}{b_n} = c \in (0, \infty)$, then either
+          both series $\sum a_n$ and $\sum b_n$ converge, or both diverge.
 
-              The presence of finitely many exceptional initial terms never
-              affects the convergence or divergence of an infinite series."
+       The presence of finitely many exceptional initial terms never affects the
+       convergence or divergence of an infinite series."
 Id: "41c2dd84-b1bf-4c85-a9e8-1e47fdc92bbf"

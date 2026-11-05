@@ -154,35 +154,35 @@ SectionTitle: "The Intermediate Value Theorem"
 Id: "53d3e7df-fd04-4eb3-9f05-149c234f9485"
 
 
-TextTheorem: "The Intermediate Value Theorem (Bolzano). Let
-              $f : [a, b] \to \mathbb{R}$ be a continuous function on a closed
-              interval with $a < b$. If $y$ lies between $f(a)$ and $f(b)$ (that
-              is, $\min\{f(a), f(b)\} \leq y \leq \max\{f(a), f(b)\}$), then
-              there exists at least one point $c \in [a, b]$ such that:
+Text: "**Theorem (Intermediate Value Theorem).** Let
+       $f : [a, b] \to \mathbb{R}$ be a continuous function on a closed
+       interval with $a < b$. If $y$ lies between $f(a)$ and $f(b)$ (that
+       is, $\min\{f(a), f(b)\} \leq y \leq \max\{f(a), f(b)\}$), then
+       there exists at least one point $c \in [a, b]$ such that:
 
-              $$
-              f(c) = y.
-              $$
+       $$
+       f(c) = y.
+       $$
 
-              *Proof*: Assume without loss of generality that $f(a) < y < f(b)$.
-              Define the auxiliary continuous function $g(x) = f(x) - y$, so
-              that $g(a) < 0 < g(b)$. We seek $c \in (a, b)$ with $g(c) = 0$.
+       *Proof*: Assume without loss of generality that $f(a) < y < f(b)$.
+       Define the auxiliary continuous function $g(x) = f(x) - y$, so
+       that $g(a) < 0 < g(b)$. We seek $c \in (a, b)$ with $g(c) = 0$.
 
-              We construct a sequence of nested intervals $I_k = [a_k, b_k]$ via
-              bisection, starting with $I_0 = [a, b]$. Having constructed $I_k$
-              with $g(a_k) \leq 0 \leq g(b_k)$:
-              1. Compute the midpoint $m = (a_k + b_k)/2$.
-              2. If $g(m) = 0$, we are done: set $c = m$.
-              3. If $g(m) < 0$, set $I_{k+1} = [m, b_k]$ (so
-                 $a_{k+1} = m, b_{k+1} = b_k$).
-              4. If $g(m) > 0$, set $I_{k+1} = [a_k, m]$ (so
-                 $a_{k+1} = a_k, b_{k+1} = m$).
+       We construct a sequence of nested intervals $I_k = [a_k, b_k]$ via
+       bisection, starting with $I_0 = [a, b]$. Having constructed $I_k$
+       with $g(a_k) \leq 0 \leq g(b_k)$:
+       1. Compute the midpoint $m = (a_k + b_k)/2$.
+       2. If $g(m) = 0$, we are done: set $c = m$.
+       3. If $g(m) < 0$, set $I_{k+1} = [m, b_k]$ (so
+       $a_{k+1} = m, b_{k+1} = b_k$).
+       4. If $g(m) > 0$, set $I_{k+1} = [a_k, m]$ (so
+       $a_{k+1} = a_k, b_{k+1} = m$).
 
-              By the Nested Interval Theorem,
-              $\bigcap_{k=0}^\infty [a_k, b_k] = \{c\}$ for a unique point
-              $c \in [a, b]$, with $\lim a_k = c = \lim b_k$. By continuity of
-              $g$, $g(c) = \lim g(a_k) \leq 0$ and $g(c) = \lim g(b_k) \geq 0$.
-              Consequently, $g(c) = 0$, which yields $f(c) = y$."
+       By the Nested Interval Theorem,
+       $\bigcap_{k=0}^\infty [a_k, b_k] = \{c\}$ for a unique point
+       $c \in [a, b]$, with $\lim a_k = c = \lim b_k$. By continuity of
+       $g$, $g(c) = \lim g(a_k) \leq 0$ and $g(c) = \lim g(b_k) \geq 0$.
+       Consequently, $g(c) = 0$, which yields $f(c) = y$."
 Id: "f29c7f02-8e4f-46da-ac4e-3df62dca57f0"
 
 
@@ -203,47 +203,46 @@ SectionTitle: "Compactness and Uniform Control"
 Id: "1c1dc16f-d9f4-431c-84ab-2a013263c6a4"
 
 
-TextTheorem: "The Extreme Value Theorem (Weierstrass). If $f : [a, b] \to \mathbb{R}$
-              is continuous on a closed bounded interval, then $f$ is bounded and attains
-              both an absolute maximum and an absolute minimum on $[a, b]$:
+Text: "**Theorem (Extreme Value Theorem).** If $f : [a, b] \to \mathbb{R}$
+       is continuous on a closed bounded interval, then $f$ is bounded and attains
+       both an absolute maximum and an absolute minimum on $[a, b]$:
 
-              $$
-              \exists \, x_{\min}, x_{\max} \in [a, b] \quad \text{such that} \quad f(x_{\min}) \leq f(x) \leq f(x_{\max}) \quad \forall x \in [a, b].
-              $$
+       $$
+       \exists \, x_{\min}, x_{\max} \in [a, b] \quad \text{such that} \quad f(x_{\min}) \leq f(x) \leq f(x_{\max}) \quad \forall x \in [a, b].
+       $$
 
-              *Proof Sketch*: Let $M = \sup\{f(x) : x \in [a, b]\} \in \mathbb{R} \cup \{+\infty\}$.
-              Choose a sequence $(x_n)$ in $[a, b]$ such that $f(x_n) \to M$.
-              Since $[a, b]$ is bounded, by the Bolzano-Weierstrass theorem $(x_n)$ has a
-              convergent subsequence $x_{n_k} \to x_{\max}$.
-              Since $[a, b]$ is closed, $x_{\max} \in [a, b]$.
-              By continuity of $f$, $f(x_{\max}) = \lim_{k \to \infty} f(x_{n_k}) = M$.
-              Since $f(x_{\max}) \in \mathbb{R}$, $M$ is finite and attained.
-              The minimum is attained symmetrically by considering $-f$."
+       *Proof Sketch*: Let $M = \sup\{f(x) : x \in [a, b]\} \in \mathbb{R} \cup \{+\infty\}$.
+       Choose a sequence $(x_n)$ in $[a, b]$ such that $f(x_n) \to M$.
+       Since $[a, b]$ is bounded, by the Bolzano-Weierstrass theorem $(x_n)$ has a
+       convergent subsequence $x_{n_k} \to x_{\max}$.
+       Since $[a, b]$ is closed, $x_{\max} \in [a, b]$.
+       By continuity of $f$, $f(x_{\max}) = \lim_{k \to \infty} f(x_{n_k}) = M$.
+       Since $f(x_{\max}) \in \mathbb{R}$, $M$ is finite and attained.
+       The minimum is attained symmetrically by considering $-f$."
 Id: "1de7e719-9ad4-4acd-a197-fe41c36077ea"
 
 
-TextTheorem: "The Heine-Cantor Theorem. Every continuous function
-              $f : [a, b] \to \mathbb{R}$ on a closed bounded interval is
-              *uniformly continuous*.
+Text: "**Theorem (Heine-Cantor Theorem).** Every continuous function
+       $f : [a, b] \to \mathbb{R}$ on a closed bounded interval is *uniformly
+       continuous*.
 
-              *Significance*: Pointwise continuity allows $\delta$ to shrink
-              toward zero as $x$ approaches steep regions of the graph. On a
-              compact interval $[a, b]$, no such unbounded steepening can occur:
-              for any given $\epsilon > 0$, a single global $\delta > 0$
-              suffices for all points simultaneously. This uniform control is
-              the key technical requirement for proving the integrability of
-              continuous functions."
+       *Significance*: Pointwise continuity allows $\delta$ to shrink toward
+       zero as $x$ approaches steep regions of the graph. On a compact interval
+       $[a, b]$, no such unbounded steepening can occur: for any given
+       $\epsilon > 0$, a single global $\delta > 0$ suffices for all points
+       simultaneously. This uniform control is the key technical requirement for
+       proving the integrability of continuous functions."
 Id: "bbd033d2-9fa7-47d7-9354-35da690e0f8e"
 
 
-TextTheorem: "The Sequential Criterion for Limits and Continuity. Let
-              $f : U \to \mathbb{R}$ and let $x_0$ be an accumulation point of
-              $U$. Then $\lim_{x \to x_0} f(x) = L$ if and only if for every
-              sequence $(x_n)$ in $U \setminus \{x_0\}$ converging to $x_0$, the
-              sequence of outputs satisfies $f(x_n) \to L$.
+Text: "**Theorem (Sequential Criterion for Limits and Continuity).** Let
+       $f : U \to \mathbb{R}$ and let $x_0$ be an accumulation point of $U$.
+       Then $\lim_{x \to x_0} f(x) = L$ if and only if for every sequence
+       $(x_n)$ in $U \setminus \{x_0\}$ converging to $x_0$, the sequence of
+       outputs satisfies $f(x_n) \to L$.
 
-              Consequently, $f$ is continuous at $x_0$ if and only if
-              $f(\lim x_n) = \lim f(x_n)$ for every sequence converging to
-              $x_0$. This criterion provides the operational bridge converting
-              continuous analytical assertions into discrete sequence problems."
+       Consequently, $f$ is continuous at $x_0$ if and only if
+       $f(\lim x_n) = \lim f(x_n)$ for every sequence converging to $x_0$. This
+       criterion provides the operational bridge converting continuous
+       analytical assertions into discrete sequence problems."
 Id: "66ebdb25-bc98-4ea5-be68-0e57e72aa22e"

@@ -536,16 +536,16 @@ Text: "The formal fraction-pair construction realizes a rational number as an
 Id: "694343ad-950a-425c-9b62-705e6bb66956"
 
 
-TextTheorem: "The embedding $\iota : \mathbb{Z} \hookrightarrow \mathbb{Q}$
-              identifies each integer $a$ with $a/1$. The field of fractions
-              $\mathbb{Q}$ satisfies a universal property: if $F$ is any field
-              and $\varphi : \mathbb{Z} \to F$ is a non-trivial ring
-              homomorphism, there exists a unique field homomorphism
-              $\widetilde{\varphi} : \mathbb{Q} \to F$ such that
-              $\widetilde{\varphi} \circ \iota = \varphi$. Specifically,
-              $\widetilde{\varphi}(a/b) = \varphi(a) \cdot \varphi(b)^{-1}$.
-              Thus $\mathbb{Q}$ is the initial object in the category of fields
-              of characteristic zero."
+Text: "**Theorem.** The embedding
+       $\iota : \mathbb{Z} \hookrightarrow \mathbb{Q}$ identifies each integer
+       $a$ with $a/1$. The field of fractions $\mathbb{Q}$ satisfies a universal
+       property: if $F$ is any field and $\varphi : \mathbb{Z} \to F$ is a
+       non-trivial ring homomorphism, there exists a unique field homomorphism
+       $\widetilde{\varphi} : \mathbb{Q} \to F$ such that
+       $\widetilde{\varphi} \circ \iota = \varphi$. Specifically,
+       $\widetilde{\varphi}(a/b) = \varphi(a) \cdot \varphi(b)^{-1}$. Thus
+       $\mathbb{Q}$ is the initial object in the category of fields of
+       characteristic zero."
 Id: "90b5985b-53fa-4b79-b315-eaae93791621"
 
 
@@ -627,18 +627,17 @@ Text: "Although the rational order is dense—meaning there are no 'gaps' in the
 Id: "f9d776ab-08da-44ec-a49e-93c8c2257dad"
 
 
-TextTheorem: "Every rational number has a decimal expansion that either
-              terminates (has only finitely many nonzero fractional digits) or
-              is eventually periodic. Conversely, every eventually periodic
-              decimal expansion represents a rational number.
+Text: "**Theorem.** Every rational number has a decimal expansion that either
+       terminates (has only finitely many nonzero fractional digits) or is
+       eventually periodic. Conversely, every eventually periodic decimal
+       expansion represents a rational number.
 
-              This dichotomy follows from the division algorithm: when dividing
-              integer $a$ by nonzero integer $b$, each step produces a remainder
-              in $\{0, 1, \dots, |b|-1\}$. By the Pigeonhole Principle, after at
-              most $|b|$ division steps, either a remainder of $0$ is reached
-              (yielding a terminating expansion) or a previously seen remainder
-              recurs, forcing all subsequent quotient digits to repeat in a
-              cycle of length at most $|b|-1$. Conversely, an eventually
-              periodic expansion can be summed via a geometric series into a
-              closed-form ratio of integers."
+       This dichotomy follows from the division algorithm: when dividing integer
+       $a$ by nonzero integer $b$, each step produces a remainder in
+       $\{0, 1, \dots, |b|-1\}$. By the Pigeonhole Principle, after at most
+       $|b|$ division steps, either a remainder of $0$ is reached (yielding a
+       terminating expansion) or a previously seen remainder recurs, forcing all
+       subsequent quotient digits to repeat in a cycle of length at most
+       $|b|-1$. Conversely, an eventually periodic expansion can be summed via a
+       geometric series into a closed-form ratio of integers."
 Id: "ca42d107-8793-4115-9298-b49f3e8e348a"

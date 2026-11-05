@@ -167,74 +167,70 @@ SectionTitle: "Zeros of the Zeta Function"
 Id: "1ce51384-d4ed-4ff8-ae1f-1a249702737c"
 
 
-TextDefinition: "The Riemann Zeta Function and Euler's Golden Key.
-                 
-                 For complex numbers $s$ with $\operatorname{Re}(s) > 1$, the *Riemann zeta function* is defined
-                 by the Dirichlet series:
+Text: "**Definition (Riemann Zeta Function and Euler's Golden Key).** For complex numbers $s$ with $\operatorname{Re}(s) > 1$, the *Riemann zeta function* is defined
+       by the Dirichlet series:
 
-                 $$
-                 \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}.
-                 $$
+       $$
+       \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}.
+       $$
 
-                 In 1737, Leonhard Euler discovered the fundamental identity connecting the zeta function to the
-                 prime numbers—the *Euler product formula*:
+       In 1737, Leonhard Euler discovered the fundamental identity connecting the zeta function to the
+       prime numbers—the *Euler product formula*:
 
-                 $$
-                 \zeta(s) = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}}.
-                 $$
+       $$
+       \zeta(s) = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}}.
+       $$
 
-                 In his landmark 1859 memoir, Bernhard Riemann demonstrated that $\zeta(s)$ extends meromorphically
-                 to the entire complex plane $\mathbb{C}$, possessing a single simple pole at $s = 1$ with residue $1$.
-                 Riemann proved that $\zeta(s)$ satisfies the majestic functional equation:
+       In his landmark 1859 memoir, Bernhard Riemann demonstrated that $\zeta(s)$ extends meromorphically
+       to the entire complex plane $\mathbb{C}$, possessing a single simple pole at $s = 1$ with residue $1$.
+       Riemann proved that $\zeta(s)$ satisfies the majestic functional equation:
 
-                 $$
-                 \xi(s) := \frac{1}{2} s(s-1) \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \xi(1 - s),
-                 $$
+       $$
+       \xi(s) := \frac{1}{2} s(s-1) \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \xi(1 - s),
+       $$
 
-                 where $\Gamma(s)$ is Euler's gamma function.
-                 
-                 The zeros of $\zeta(s)$ fall into two distinct families:
-                 1. **Trivial Zeros**: The points $s = -2, -4, -6, \ldots$ at the negative even integers, arising
-                    from the poles of the gamma function $\Gamma(s/2)$.
-                 2. **Nontrivial Zeros**: Infinitely many zeros lying within the *critical strip* $0 < \operatorname{Re}(s) < 1$,
-                    distributed symmetrically about the real axis and the *critical line* $\operatorname{Re}(s) = 1/2$."
+       where $\Gamma(s)$ is Euler's gamma function.
+
+       The zeros of $\zeta(s)$ fall into two distinct families:
+       1. **Trivial Zeros**: The points $s = -2, -4, -6, \ldots$ at the negative even integers, arising
+       from the poles of the gamma function $\Gamma(s/2)$.
+       2. **Nontrivial Zeros**: Infinitely many zeros lying within the *critical strip* $0 < \operatorname{Re}(s) < 1$,
+       distributed symmetrically about the real axis and the *critical line* $\operatorname{Re}(s) = 1/2$."
 Id: "6afb5d40-7bb1-43d7-b2e1-c4d5691fe031"
 
 
-TextConjecture: "The Riemann Hypothesis.
-                 
-                 Every nontrivial zero $\rho$ of the Riemann zeta function satisfies:
+Text: "**Conjecture (The Riemann Hypothesis).** Every nontrivial zero $\rho$ of the Riemann zeta function satisfies:
 
-                 $$
-                 \operatorname{Re}(\rho) = \frac{1}{2}.
-                 $$
+       $$
+       \operatorname{Re}(\rho) = \frac{1}{2}.
+       $$
 
-                 That is, all non-trivial zeros lie precisely on the critical vertical line $\operatorname{Re}(s) = 1/2$.
-                 
-                 *Significance for Prime Number Distribution*:
-                 The Prime Number Theorem—proved independently by Jacques Hadamard and Charles Jean de la Vallée Poussin
-                 in 1896—is equivalent to the non-vanishing of $\zeta(s)$ on the boundary line $\operatorname{Re}(s) = 1$:
+       That is, all non-trivial zeros lie precisely on the critical vertical line $\operatorname{Re}(s) = 1/2$.
 
-                 $$
-                 \pi(x) \sim \operatorname{li}(x) = \int_2^x \frac{dt}{\ln t}.
-                 $$
+       *Significance for Prime Number Distribution*:
+       The Prime Number Theorem—proved independently by Jacques Hadamard and Charles Jean de la Vallée Poussin
+       in 1896—is equivalent to the non-vanishing of $\zeta(s)$ on the boundary line $\operatorname{Re}(s) = 1$:
 
-                 In 1901, Helge von Koch proved that the Riemann Hypothesis is mathematically equivalent to the
-                 sharpest possible square-root error bound in the Prime Number Theorem:
+       $$
+       \pi(x) \sim \operatorname{li}(x) = \int_2^x \frac{dt}{\ln t}.
+       $$
 
-                 $$
-                 \pi(x) = \operatorname{li}(x) + O(\sqrt{x} \ln x).
-                 $$
+       In 1901, Helge von Koch proved that the Riemann Hypothesis is mathematically equivalent to the
+       sharpest possible square-root error bound in the Prime Number Theorem:
 
-                 In this sense, the Riemann Hypothesis asserts that the primes are distributed as uniformly and
-                 randomly as quantum noise around their smooth logarithmic integral trend.
-                 
-                 *Deep Connections across Mathematics*:
-                 The spacing of the zeros on the critical line exhibits statistical correlations identical to
-                 the eigenvalues of random Hermitian matrices in the Gaussian Unitary Ensemble (Montgomery's Pair
-                 Correlation Conjecture and Freeman Dyson, 1972). This striking connection suggests the *Hilbert--Pólya
-                 conjecture*: that the imaginary parts of the nontrivial zeros correspond to the eigenvalues of a
-                 self-adjoint Hamiltonian operator in quantum mechanics."
+       $$
+       \pi(x) = \operatorname{li}(x) + O(\sqrt{x} \ln x).
+       $$
+
+       In this sense, the Riemann Hypothesis asserts that the primes are distributed as uniformly and
+       randomly as quantum noise around their smooth logarithmic integral trend.
+
+       *Deep Connections across Mathematics*:
+       The spacing of the zeros on the critical line exhibits statistical correlations identical to
+       the eigenvalues of random Hermitian matrices in the Gaussian Unitary Ensemble (Montgomery's Pair
+       Correlation Conjecture and Freeman Dyson, 1972). This striking connection suggests the *Hilbert--Pólya
+       conjecture*: that the imaginary parts of the nontrivial zeros correspond to the eigenvalues of a
+       self-adjoint Hamiltonian operator in quantum mechanics."
 Id: "2315cd43-c1d4-4518-bb73-1e2aa34b2df0"
 
 

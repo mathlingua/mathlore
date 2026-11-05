@@ -31,21 +31,21 @@ Text: "Deductive mathematics rests on the relation of logical consequence:
 Id: "1461ac37-672d-4bba-88ed-036fc2cfa3b6"
 
 
-TextDefinition: "Let $\Gamma$ be a collection of sentences and let $\varphi$ be a
-                 sentence in a common formal language. We say that $\varphi$ is
-                 a *semantic consequence* of $\Gamma$, written $\Gamma \models
-                 \varphi$, if every interpretation (model) in which every
-                 sentence of $\Gamma$ evaluates to true also makes $\varphi$
-                 true.
+Text: "**Definition.** Let $\Gamma$ be a collection of sentences and let $\varphi$ be a
+       sentence in a common formal language. We say that $\varphi$ is
+       a *semantic consequence* of $\Gamma$, written $\Gamma \models
+       \varphi$, if every interpretation (model) in which every
+       sentence of $\Gamma$ evaluates to true also makes $\varphi$
+       true.
 
-                 Semantic consequence asserts that it is impossible for the
-                 premises to be simultaneously true while the conclusion is
-                 false. If no interpretation can satisfy all sentences in
-                 $\Gamma$ simultaneously—that is, if $\Gamma$ is inconsistent—the
-                 condition holds vacuously, and every sentence $\varphi$ in the
-                 language is a semantic consequence of $\Gamma$. This phenomenon
-                 is known classically as *ex falso quodlibet* (from a
-                 contradiction, anything follows)."
+       Semantic consequence asserts that it is impossible for the
+       premises to be simultaneously true while the conclusion is
+       false. If no interpretation can satisfy all sentences in
+       $\Gamma$ simultaneously—that is, if $\Gamma$ is inconsistent—the
+       condition holds vacuously, and every sentence $\varphi$ in the
+       language is a semantic consequence of $\Gamma$. This phenomenon
+       is known classically as *ex falso quodlibet* (from a
+       contradiction, anything follows)."
 Id: "d6351c2e-8774-461d-8365-533a09dd2951"
 
 
@@ -55,21 +55,19 @@ Text: "When an assertion is true not merely under a specific set of hypotheses,
 Id: "f88da596-7fd4-4835-9255-5a2f4336355d"
 
 
-TextDefinition: "A sentence $\varphi$ is *valid* (or a *tautology* in
-                 propositional contexts), written $\models \varphi$, if it is
-                 true in every conceivable interpretation. Conversely, $\varphi$
-                 is *satisfiable* if there exists at least one interpretation in
-                 which it is true.
+Text: "**Definition.** A sentence $\varphi$ is *valid* (or a *tautology* in
+       propositional contexts), written $\models \varphi$, if it is true in
+       every conceivable interpretation. Conversely, $\varphi$ is *satisfiable*
+       if there exists at least one interpretation in which it is true.
 
-                 A theory $\Gamma$ is satisfiable if its axioms possess a shared
-                 model. Satisfiability is an inherently global property: every
-                 finite subcollection of axioms may possess a model without the
-                 entire theory being satisfiable, although in first-order logic
-                 the celebrated Compactness Theorem guarantees that global
-                 satisfiability is equivalent to finite satisfiability. The
-                 construction of explicit models remains mathematics' principal
-                 technique for proving that an assertion is independent of a
-                 given set of axioms."
+       A theory $\Gamma$ is satisfiable if its axioms possess a shared model.
+       Satisfiability is an inherently global property: every finite
+       subcollection of axioms may possess a model without the entire theory
+       being satisfiable, although in first-order logic the celebrated
+       Compactness Theorem guarantees that global satisfiability is equivalent
+       to finite satisfiability. The construction of explicit models remains
+       mathematics' principal technique for proving that an assertion is
+       independent of a given set of axioms."
 Id: "41277ec7-a7ee-44ac-bb2e-9d9726088e35"
 
 
@@ -79,17 +77,17 @@ Text: "Extending validity to pairs of sentences yields the metalogical relation
 Id: "e91bb9b4-602b-48d3-bdc6-2609b86a3c5e"
 
 
-TextDefinition: "Two formulas $\varphi$ and $\psi$ are *logically equivalent*,
-                 written $\varphi \equiv \psi$ or $\models \varphi \iff \psi$,
-                 when they receive identical truth values under every common
-                 interpretation and variable assignment.
+Text: "**Definition.** Two formulas $\varphi$ and $\psi$ are *logically
+       equivalent*, written $\varphi \equiv \psi$ or
+       $\models \varphi \iff \psi$, when they receive identical truth values
+       under every common interpretation and variable assignment.
 
-                 Logical equivalence is a metalogical relationship between
-                 sentences; it licenses the substitution of equivalents in any
-                 extensional context without altering the truth value of the
-                 enclosing formula. It must not be conflated with the object-
-                 language equality relation $x = y$, which asserts that two
-                 syntactic names designate the same entity within a domain."
+       Logical equivalence is a metalogical relationship between sentences; it
+       licenses the substitution of equivalents in any extensional context
+       without altering the truth value of the enclosing formula. It must not be
+       conflated with the object- language equality relation $x = y$, which
+       asserts that two syntactic names designate the same entity within a
+       domain."
 Id: "345f73c4-8464-4554-8e3f-6c4e36c545df"
 
 
@@ -104,22 +102,20 @@ Text: "While semantics concerns truth across the totality of models—a collecti
 Id: "f15cfe40-da15-4ecb-bba1-0d04bdf4d78e"
 
 
-TextDefinition: "Fix a formal deductive system equipped with a collection of
-                 logical axioms and rules of inference. A *derivation* (or
-                 formal deduction) of a sentence $\varphi$ from a set of
-                 premises $\Gamma$ is a finite tree or sequence of sentences
-                 $\varphi_1, \varphi_2, \dots, \varphi_n = \varphi$ such that
-                 each $\varphi_i$ is either an axiom, an element of $\Gamma$, or
-                 the direct result of applying an allowable inference rule to
-                 earlier members of the sequence.
+Text: "**Definition.** Fix a formal deductive system equipped with a collection
+       of logical axioms and rules of inference. A *derivation* (or formal
+       deduction) of a sentence $\varphi$ from a set of premises $\Gamma$ is a
+       finite tree or sequence of sentences
+       $\varphi_1, \varphi_2, \dots, \varphi_n = \varphi$ such that each
+       $\varphi_i$ is either an axiom, an element of $\Gamma$, or the direct
+       result of applying an allowable inference rule to earlier members of the
+       sequence.
 
-                 When such a derivation exists, we write
-                 $\Gamma \vdash \varphi$. Whereas the relation
-                 $\Gamma \models \varphi$ is semantic and concerns infinite
-                 classes of interpretations, the relation
-                 $\Gamma \vdash \varphi$ is purely syntactic and finite: a
-                 computer algorithm can inspect and verify every step of a
-                 formal derivation in finite time."
+       When such a derivation exists, we write $\Gamma \vdash \varphi$. Whereas
+       the relation $\Gamma \models \varphi$ is semantic and concerns infinite
+       classes of interpretations, the relation $\Gamma \vdash \varphi$ is
+       purely syntactic and finite: a computer algorithm can inspect and verify
+       every step of a formal derivation in finite time."
 Id: "5f0b2406-0146-4015-91b9-8875e70395fb"
 
 
@@ -129,18 +125,18 @@ Text: "The ultimate coherence of mathematical reasoning depends on the exact
 Id: "52f5d2df-5310-4df1-9f83-b20383762f5a"
 
 
-TextTheorem: "A deductive system is *sound* if every formally provable sentence
-              is a semantic consequence: $\Gamma \vdash \varphi \implies \Gamma
-              \models \varphi$. It is *complete* if every semantic consequence
-              is formally provable: $\Gamma \models \varphi \implies \Gamma
-              \vdash \varphi$.
+Text: "**Theorem.** A deductive system is *sound* if every formally provable sentence
+       is a semantic consequence: $\Gamma \vdash \varphi \implies \Gamma
+       \models \varphi$. It is *complete* if every semantic consequence
+       is formally provable: $\Gamma \models \varphi \implies \Gamma
+       \vdash \varphi$.
 
-              Soundness ensures that the formal rules never introduce falsity
-              from true premises. Completeness, established for first-order
-              logic by Kurt Gödel in 1929, is one of the crowning intellectual
-              achievements of modern logic: it guarantees that truth across all
-              mathematical models can always be captured by finite symbolic
-              manipulation."
+       Soundness ensures that the formal rules never introduce falsity
+       from true premises. Completeness, established for first-order
+       logic by Kurt Gödel in 1929, is one of the crowning intellectual
+       achievements of modern logic: it guarantees that truth across all
+       mathematical models can always be captured by finite symbolic
+       manipulation."
 Id: "d694227c-82c0-433b-acc2-8223d8b7954c"
 
 
@@ -150,21 +146,21 @@ Text: "With formal deduction aligned with model-theoretic truth, classical
 Id: "4e97ca66-d4bb-47b2-b87e-0133fc1433e6"
 
 
-TextDefinition: "Mathematical proofs employ several foundational strategic
-                 architectures:
-                 1. *Direct Proof*: To establish $P \implies Q$, assume $P$ as a
-                 temporary hypothesis and deduce $Q$ via inference rules. The
-                 Deduction Theorem guarantees that this syntactic deduction
-                 yields a proof of the implication $P \implies Q$.
-                 2. *Proof by Contraposition*: To establish $P \implies Q$,
-                 assume $\neg Q$ and derive $\neg P$. This strategy relies upon
-                 the classical equivalence $(P \implies Q) \iff (\neg Q \implies
-                 \neg P)$ and is particularly effective when the negation of $Q$
-                 provides more constructive information than $P$.
-                 3. *Proof by Contradiction (Reductio ad Absurdum)*: To establish
-                 $P$, assume $\neg P$ and derive a logical contradiction
-                 ($Q \land \neg Q$). In classical logic, this guarantees the truth
-                 of $P$ through the law of excluded middle."
+Text: "**Definition.** Mathematical proofs employ several foundational strategic
+       architectures:
+       1. *Direct Proof*: To establish $P \implies Q$, assume $P$ as a
+       temporary hypothesis and deduce $Q$ via inference rules. The
+       Deduction Theorem guarantees that this syntactic deduction
+       yields a proof of the implication $P \implies Q$.
+       2. *Proof by Contraposition*: To establish $P \implies Q$,
+       assume $\neg Q$ and derive $\neg P$. This strategy relies upon
+       the classical equivalence $(P \implies Q) \iff (\neg Q \implies
+       \neg P)$ and is particularly effective when the negation of $Q$
+       provides more constructive information than $P$.
+       3. *Proof by Contradiction (Reductio ad Absurdum)*: To establish
+       $P$, assume $\neg P$ and derive a logical contradiction
+       ($Q \land \neg Q$). In classical logic, this guarantees the truth
+       of $P$ through the law of excluded middle."
 Id: "35da6ee6-020c-4586-968e-c8ca0c29d984"
 
 
@@ -193,21 +189,19 @@ Text: "Beyond the formal mechanics of inference, the development of a
 Id: "67e76ee9-b2c9-477d-b270-0ac285dfb840"
 
 
-TextDefinition: "An *explicit definition* introduces a new symbol or syntactic
-                 shorthand by equating it with an expression formed entirely
-                 from previously established concepts. A legitimate definition
-                 must satisfy Stanisław Leśniewski's dual criteria of
-                 *eliminability* (any occurrence of the new symbol can be
-                 systematically replaced by its definiens) and *non-creativity*
-                 (the definition cannot enable the proof of any new theorem in
-                 the original vocabulary).
+Text: "**Definition.** An *explicit definition* introduces a new symbol or
+       syntactic shorthand by equating it with an expression formed entirely
+       from previously established concepts. A legitimate definition must
+       satisfy Stanisław Leśniewski's dual criteria of *eliminability* (any
+       occurrence of the new symbol can be systematically replaced by its
+       definiens) and *non-creativity* (the definition cannot enable the proof
+       of any new theorem in the original vocabulary).
 
-                 An *implicit definition* or axiomatic specification
-                 characterizes an entity by the system of relations it satisfies
-                 with other objects. Implicit definitions are mathematically
-                 permissible only when existence and uniqueness have been
-                 rigorously established, ensuring that the defined entity is
-                 neither impossible nor ambiguous."
+       An *implicit definition* or axiomatic specification characterizes an
+       entity by the system of relations it satisfies with other objects.
+       Implicit definitions are mathematically permissible only when existence
+       and uniqueness have been rigorously established, ensuring that the
+       defined entity is neither impossible nor ambiguous."
 Id: "ea09b276-1d50-471e-a821-738fe3172a3f"
 
 
@@ -217,21 +211,20 @@ Text: "Once concepts are defined, the resulting assertions are organized into
 Id: "a66a54bf-9f54-4d6d-a430-b1cd6f871770"
 
 
-TextDefinition: "Mathematical literature organizes assertions into conventional
-                 hierarchical categories that reflect their expository function:
-                 - *Theorem*: A major result of paramount importance,
-                   representing a substantial mathematical advance or structural
-                   milestone.
-                 - *Proposition*: A significant mathematical assertion that is
-                   of genuine interest in its own right, though less sweeping
-                   than a primary theorem.
-                 - *Lemma*: A preparatory result whose principal purpose is to
-                   clarify, streamline, or isolate a difficult step in the proof
-                   of a subsequent theorem.
-                 - *Corollary*: An immediate or short deduction that follows
-                   with minimal effort from a previously established theorem.
-                 - *Scholium*: An explanatory remark, commentary, or historical
-                   note clarifying the wider significance of a result."
+Text: "**Definition.** Mathematical literature organizes assertions into
+       conventional hierarchical categories that reflect their expository
+       function:
+       - *Theorem*: A major result of paramount importance, representing a
+         substantial mathematical advance or structural milestone.
+       - *Proposition*: A significant mathematical assertion that is of genuine
+         interest in its own right, though less sweeping than a primary theorem.
+       - *Lemma*: A preparatory result whose principal purpose is to clarify,
+         streamline, or isolate a difficult step in the proof of a subsequent
+         theorem.
+       - *Corollary*: An immediate or short deduction that follows with minimal
+         effort from a previously established theorem.
+       - *Scholium*: An explanatory remark, commentary, or historical note
+         clarifying the wider significance of a result."
 Id: "bfe0b849-abd6-45f4-9979-5c67f50ae5d2"
 
 
@@ -241,16 +234,16 @@ Text: "At the frontier of mathematical research, statements often arise that
 Id: "c28b5247-41fe-455b-80df-261056c1eb03"
 
 
-TextDefinition: "A *conjecture* is a precisely formulated mathematical statement
-                 that is believed to be true based on compelling heuristic
-                 arguments, computational evidence, or structural symmetry, but
-                 for which no valid formal proof yet exists.
+Text: "**Definition.** A *conjecture* is a precisely formulated mathematical
+       statement that is believed to be true based on compelling heuristic
+       arguments, computational evidence, or structural symmetry, but for which
+       no valid formal proof yet exists.
 
-                 No amount of empirical verification or inductive confirmation
-                 can transform a conjecture into a theorem. Conversely, a single
-                 *counterexample*—a single entity in the domain that violates
-                 the conjectured condition—instantly and definitively disproves
-                 a universal conjecture."
+       No amount of empirical verification or inductive confirmation can
+       transform a conjecture into a theorem. Conversely, a single
+       *counterexample*—a single entity in the domain that violates the
+       conjectured condition—instantly and definitively disproves a universal
+       conjecture."
 Id: "685ecb26-0195-4a43-a5cd-efe88b92004a"
 
 

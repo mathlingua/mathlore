@@ -196,21 +196,21 @@ References:
 Id: "13696819-0077-4466-954d-be89bc6a62af"
 
 
-TextTheorem: "The First Isomorphism Theorem for Vector Spaces. For any linear
-              map $T : V \to W$, the induced mapping
-              $\widetilde{T} : V / \ker(T) \to \operatorname{im}(T)$ defined by
-              $\widetilde{T}(v + \ker T) = T(v)$ is a well-defined vector space
-              isomorphism:
+Text: "**Theorem (First Isomorphism Theorem for Vector Spaces).** For any linear
+       map $T : V \to W$, the induced mapping
+       $\widetilde{T} : V / \ker(T) \to \operatorname{im}(T)$ defined by
+       $\widetilde{T}(v + \ker T) = T(v)$ is a well-defined vector space
+       isomorphism:
 
-              $$
-              V / \ker(T) \cong \operatorname{im}(T).
-              $$
+       $$
+       V / \ker(T) \cong \operatorname{im}(T).
+       $$
 
-              The
-              quotient removes precisely the directions collapsed by $T$,
-              leaving a faithful copy of the image. Equating dimensions on both
-              sides immediately recovers the Rank-Nullity Theorem:
-              $\dim(V) - \dim(\ker T) = \dim(\operatorname{im} T)$."
+       The
+       quotient removes precisely the directions collapsed by $T$,
+       leaving a faithful copy of the image. Equating dimensions on both
+       sides immediately recovers the Rank-Nullity Theorem:
+       $\dim(V) - \dim(\ker T) = \dim(\operatorname{im} T)$."
 Id: "a615de22-89bb-4bf1-aa10-3b1b919191a4"
 
 

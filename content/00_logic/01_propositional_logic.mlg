@@ -332,19 +332,18 @@ Text: "Having defined individual connectives and their algebraic laws, we now
 Id: "3e84617a-51ea-42ce-9065-27a36e676101"
 
 
-TextDefinition: "A *truth assignment* (or valuation) on a set of propositional
-                 variables is a function mapping each variable to one of the
-                 values $\{\text{true}, \text{false}\}$. Any truth assignment
-                 extends uniquely and recursively to all compound formulas
-                 according to the truth tables of their connectives.
+Text: "**Definition.** A *truth assignment* (or valuation) on a set of
+       propositional variables is a function mapping each variable to one of the
+       values $\{\text{true}, \text{false}\}$. Any truth assignment extends
+       uniquely and recursively to all compound formulas according to the truth
+       tables of their connectives.
 
-                 A formula is called a *tautology* (or logically valid) if it
-                 evaluates to true under every possible truth assignment; it is
-                 a *contradiction* (or unsatisfiable) if it evaluates to false
-                 under every assignment; and it is *contingent* if it is true
-                 under some assignments and false under others. Tautologies
-                 represent universal logical truths, independent of any factual
-                 state of affairs."
+       A formula is called a *tautology* (or logically valid) if it evaluates to
+       true under every possible truth assignment; it is a *contradiction* (or
+       unsatisfiable) if it evaluates to false under every assignment; and it is
+       *contingent* if it is true under some assignments and false under others.
+       Tautologies represent universal logical truths, independent of any
+       factual state of affairs."
 Id: "e6a57aaf-f2e1-43ce-9979-261056c1eba7"
 
 
@@ -357,22 +356,21 @@ Text: "A central question of logical syntax is whether an arbitrary compound
 Id: "81e3a647-38ae-4f70-b184-a134d193d501"
 
 
-TextTheorem: "Every propositional formula is logically equivalent to one in
-              *Disjunctive Normal Form* (DNF) and to one in *Conjunctive Normal
-              Form* (CNF).
+Text: "**Theorem.** Every propositional formula is logically equivalent to one
+       in *Disjunctive Normal Form* (DNF) and to one in *Conjunctive Normal
+       Form* (CNF).
 
-              A formula in DNF is a disjunction of conjunctions of literals
-              (variables or their negations), analogous to a sum-of-products in
-              elementary algebra. It can be constructed directly from the
-              formula's truth table by taking a conjunction for each row where
-              the formula evaluates to true, and forming the disjunction of
-              these conjunctions.
+       A formula in DNF is a disjunction of conjunctions of literals (variables
+       or their negations), analogous to a sum-of-products in elementary
+       algebra. It can be constructed directly from the formula's truth table by
+       taking a conjunction for each row where the formula evaluates to true,
+       and forming the disjunction of these conjunctions.
 
-              Dually, a formula in CNF is a conjunction of disjunctions of
-              literals (a product-of-sums). Although the transformation into
-              either normal form can produce an exponential increase in formula
-              length, the normal forms guarantee that every Boolean truth
-              function admits a completely explicit, canonical representation."
+       Dually, a formula in CNF is a conjunction of disjunctions of literals (a
+       product-of-sums). Although the transformation into either normal form can
+       produce an exponential increase in formula length, the normal forms
+       guarantee that every Boolean truth function admits a completely explicit,
+       canonical representation."
 Id: "a415c422-9e69-431e-b2fe-8a833231b229"
 
 
@@ -383,15 +381,14 @@ Text: "The constructive procedure for converting any truth table into normal
 Id: "5b736e47-8a4d-451e-9a18-971c26a57891"
 
 
-TextTheorem: "The singleton connective sets consisting only of NAND
-              ($\{\barwedge\}$) or only of NOR ($\{\downarrow\}$) are
-              *functionally complete*: every Boolean truth function of any
-              number of variables can be expressed using formulas containing
-              that single connective alone.
+Text: "**Theorem.** The singleton connective sets consisting only of NAND
+       ($\{\barwedge\}$) or only of NOR ($\{\downarrow\}$) are *functionally
+       complete*: every Boolean truth function of any number of variables can be
+       expressed using formulas containing that single connective alone.
 
-              Functional completeness guarantees that our logical universe lacks
-              nothing in expressive reach. In subsequent chapters, when we speak
-              of mathematical definitions, properties, and constraints, we do so
-              with the certainty that any finite truth condition can be
-              formulated rigorously within the language of propositional logic."
+       Functional completeness guarantees that our logical universe lacks
+       nothing in expressive reach. In subsequent chapters, when we speak of
+       mathematical definitions, properties, and constraints, we do so with the
+       certainty that any finite truth condition can be formulated rigorously
+       within the language of propositional logic."
 Id: "e5bdaf8f-ebd3-4925-ac4c-5e7cad6e9f64"

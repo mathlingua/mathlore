@@ -473,29 +473,29 @@ Text: "Equipped with the distance function $d(z, w) = |z - w|$, the complex plan
 Id: "bef527e9-6799-4ccb-95e3-708a6e326e89"
 
 
-TextTheorem: "Fundamental Theorem of Algebra. Let $P(z) = a_n z^n + a_{n-1} z^{n-1} + \cdots + a_1 z + a_0$
-              be a nonconstant polynomial with complex coefficients ($a_n \ne 0$ and $n \ge 1$).
-              Then $P(z)$ has at least one root in $\mathbb{C}$, that is, there exists $z_0 \in \mathbb{C}$
-              such that $P(z_0) = 0$.
-              
-              Consequently, by polynomial long division and induction on the degree, every degree-$n$
-              polynomial factors completely into $n$ linear factors:
+Text: "**Theorem (Fundamental Theorem of Algebra).** Let $P(z) = a_n z^n + a_{n-1} z^{n-1} + \cdots + a_1 z + a_0$
+       be a nonconstant polynomial with complex coefficients ($a_n \ne 0$ and $n \ge 1$).
+       Then $P(z)$ has at least one root in $\mathbb{C}$, that is, there exists $z_0 \in \mathbb{C}$
+       such that $P(z_0) = 0$.
 
-              $$
-              P(z) = a_n (z - \alpha_1)(z - \alpha_2) \cdots (z - \alpha_n),
-              $$
+       Consequently, by polynomial long division and induction on the degree, every degree-$n$
+       polynomial factors completely into $n$ linear factors:
 
-              where $\alpha_1, \ldots, \alpha_n \in \mathbb{C}$ are the roots counted with multiplicity.
-              In the language of field theory, this theorem establishes that $\mathbb{C}$ is *algebraically closed*,
-              forming the algebraic closure of $\mathbb{R}$ with $[\mathbb{C} : \mathbb{R}] = 2$.
-              
-              *Historical and Conceptual Proof Idea*: First claimed by Peter Roth (1608) and Albert Girard (1629),
-              and partially proved by Jean le Rond d'Alembert (1746), the first rigorous proof was completed
-              by Carl Friedrich Gauss in 1799. Despite its name, every known proof requires topological or
-              analytic input: the continuous growth of $|P(z)| \to \infty$ as $|z| \to \infty$ forces $|P(z)|$
-              to attain its global minimum at some point $z_0 \in \mathbb{C}$. If $P(z_0) = c \ne 0$, a local
-              Taylor expansion $P(z_0 + h) = c + b h^k + O(h^{k+1})$ allows choosing $h$ so that $b h^k$ has
-              direction opposite to $c$, producing a value $|P(z_0 + h)| < |c|$, which contradicts the
-              minimality of $|P(z_0)|$ (d'Alembert's Lemma). In subsequent sections, we shall witness how
-              Liouville's Theorem and Cauchy's Residue Theorem yield effortless one-line proofs of this milestone."
+       $$
+       P(z) = a_n (z - \alpha_1)(z - \alpha_2) \cdots (z - \alpha_n),
+       $$
+
+       where $\alpha_1, \ldots, \alpha_n \in \mathbb{C}$ are the roots counted with multiplicity.
+       In the language of field theory, this theorem establishes that $\mathbb{C}$ is *algebraically closed*,
+       forming the algebraic closure of $\mathbb{R}$ with $[\mathbb{C} : \mathbb{R}] = 2$.
+
+       *Historical and Conceptual Proof Idea*: First claimed by Peter Roth (1608) and Albert Girard (1629),
+       and partially proved by Jean le Rond d'Alembert (1746), the first rigorous proof was completed
+       by Carl Friedrich Gauss in 1799. Despite its name, every known proof requires topological or
+       analytic input: the continuous growth of $|P(z)| \to \infty$ as $|z| \to \infty$ forces $|P(z)|$
+       to attain its global minimum at some point $z_0 \in \mathbb{C}$. If $P(z_0) = c \ne 0$, a local
+       Taylor expansion $P(z_0 + h) = c + b h^k + O(h^{k+1})$ allows choosing $h$ so that $b h^k$ has
+       direction opposite to $c$, producing a value $|P(z_0 + h)| < |c|$, which contradicts the
+       minimality of $|P(z_0)|$ (d'Alembert's Lemma). In subsequent sections, we shall witness how
+       Liouville's Theorem and Cauchy's Residue Theorem yield effortless one-line proofs of this milestone."
 Id: "78bb4229-6dba-4214-be87-a716e457565a"

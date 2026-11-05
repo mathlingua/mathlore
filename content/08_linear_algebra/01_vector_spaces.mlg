@@ -272,20 +272,19 @@ References:
 Id: "bb259afa-cc97-4ed6-9e83-5ea9a2d2a224"
 
 
-TextTheorem: "The intersection $\bigcap_{i \in I} W_i$ of any family of
-              subspaces of $V$ is itself a subspace of $V$.
+Text: "**Theorem.** The intersection $\bigcap_{i \in I} W_i$ of any family of
+       subspaces of $V$ is itself a subspace of $V$.
 
-              *Proof*: Since each $W_i$ is a subspace, $0 \in W_i$ for all
-              $i \in I$, so $0 \in \bigcap_{i \in I} W_i$. If
-              $u, v \in \bigcap_{i \in I} W_i$ and $\alpha, \beta \in F$, then
-              for each $i \in I$, $u, v \in W_i$. Since each $W_i$ is a
-              subspace, $\alpha u + \beta v \in W_i$ for every $i \in I$.
-              Therefore, $\alpha u + \beta v \in \bigcap_{i \in I} W_i$.
+       *Proof*: Since each $W_i$ is a subspace, $0 \in W_i$ for all $i \in I$,
+       so $0 \in \bigcap_{i \in I} W_i$. If $u, v \in \bigcap_{i \in I} W_i$ and
+       $\alpha, \beta \in F$, then for each $i \in I$, $u, v \in W_i$. Since
+       each $W_i$ is a subspace, $\alpha u + \beta v \in W_i$ for every
+       $i \in I$. Therefore, $\alpha u + \beta v \in \bigcap_{i \in I} W_i$.
 
-              Consequently, the span $\operatorname{span}(S)$ of any subset
-              $S \subseteq V$ coincides with the intersection of all subspaces
-              of $V$ that contain $S$, which is precisely the set of all finite
-              linear combinations of vectors in $S$."
+       Consequently, the span $\operatorname{span}(S)$ of any subset
+       $S \subseteq V$ coincides with the intersection of all subspaces of $V$
+       that contain $S$, which is precisely the set of all finite linear
+       combinations of vectors in $S$."
 Id: "ec4c128f-df87-4abf-bdd6-c07b626e4002"
 
 
@@ -331,34 +330,34 @@ Documented:
 Id: "334cb00b-efec-489d-959f-6d349983f365"
 
 
-TextTheorem: "Grassmann's Dimension Formula. If $U$ and $W$ are finite-dimensional
-              subspaces of a vector space $V$, then:
+Text: "**Theorem (Grassmann's Dimension Formula).** If $U$ and $W$ are finite-dimensional
+       subspaces of a vector space $V$, then:
 
-              $$
-              \dim(U + W) + \dim(U \cap W) = \dim(U) + \dim(W).
-              $$
+       $$
+       \dim(U + W) + \dim(U \cap W) = \dim(U) + \dim(W).
+       $$
 
-              *Proof*: Let $\{v_1, \dots, v_k\}$ be a basis for the intersection $U \cap W$,
-              so $\dim(U \cap W) = k$. By the Basis Extension Theorem, extend this basis to
-              a basis $\{v_1, \dots, v_k, u_1, \dots, u_r\}$ for $U$ (so $\dim(U) = k + r$),
-              and to a basis $\{v_1, \dots, v_k, w_1, \dots, w_s\}$ for $W$ (so $\dim(W) = k + s$).
-              
-              We claim that $B = \{v_1, \dots, v_k, u_1, \dots, u_r, w_1, \dots, w_s\}$ is a
-              basis for $U + W$:
-              1. **Spanning**: Any $x \in U + W$ is $x = u + w$ with $u \in U, w \in W$.
-                 Expanding $u$ in the basis of $U$ and $w$ in the basis of $W$ shows $x \in \operatorname{span}(B)$.
-              2. **Linear Independence**: Suppose $\sum \alpha_i v_i + \sum \beta_j u_j + \sum \gamma_l w_l = 0$.
-                 Then $\sum \gamma_l w_l = -(\sum \alpha_i v_i + \sum \beta_j u_j) \in U$.
-                 Since also $\sum \gamma_l w_l \in W$, this vector lies in $U \cap W$.
-                 Expressing it in the basis $\{v_i\}$ and using linear independence forces
-                 all $\gamma_l = 0$, which then forces all $\beta_j = 0$ and $\alpha_i = 0$.
-              
-              Thus $B$ is a basis of $U + W$, giving:
+       *Proof*: Let $\{v_1, \dots, v_k\}$ be a basis for the intersection $U \cap W$,
+       so $\dim(U \cap W) = k$. By the Basis Extension Theorem, extend this basis to
+       a basis $\{v_1, \dots, v_k, u_1, \dots, u_r\}$ for $U$ (so $\dim(U) = k + r$),
+       and to a basis $\{v_1, \dots, v_k, w_1, \dots, w_s\}$ for $W$ (so $\dim(W) = k + s$).
 
-              $$
-              \dim(U + W) = k + r + s = (k + r) + (k + s) - k = \dim(U) + \dim(W) - \dim(U \cap W).
-              $$
+       We claim that $B = \{v_1, \dots, v_k, u_1, \dots, u_r, w_1, \dots, w_s\}$ is a
+       basis for $U + W$:
+       1. **Spanning**: Any $x \in U + W$ is $x = u + w$ with $u \in U, w \in W$.
+       Expanding $u$ in the basis of $U$ and $w$ in the basis of $W$ shows $x \in \operatorname{span}(B)$.
+       2. **Linear Independence**: Suppose $\sum \alpha_i v_i + \sum \beta_j u_j + \sum \gamma_l w_l = 0$.
+       Then $\sum \gamma_l w_l = -(\sum \alpha_i v_i + \sum \beta_j u_j) \in U$.
+       Since also $\sum \gamma_l w_l \in W$, this vector lies in $U \cap W$.
+       Expressing it in the basis $\{v_i\}$ and using linear independence forces
+       all $\gamma_l = 0$, which then forces all $\beta_j = 0$ and $\alpha_i = 0$.
 
-              For an internal direct sum $U \oplus W$, the intersection is $\{0\}$ with dimension $0$,
-              yielding $\dim(U \oplus W) = \dim(U) + \dim(W)$."
+       Thus $B$ is a basis of $U + W$, giving:
+
+       $$
+       \dim(U + W) = k + r + s = (k + r) + (k + s) - k = \dim(U) + \dim(W) - \dim(U \cap W).
+       $$
+
+       For an internal direct sum $U \oplus W$, the intersection is $\{0\}$ with dimension $0$,
+       yielding $\dim(U \oplus W) = \dim(U) + \dim(W)$."
 Id: "80b18cfd-d52b-4556-987e-18b4fc36d00b"
