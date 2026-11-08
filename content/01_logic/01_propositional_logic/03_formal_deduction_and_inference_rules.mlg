@@ -1,0 +1,103 @@
+Title: "Formal Deduction and Inference Rules"
+Id: "7de07e56-fe25-4fbd-9d17-0f7f466ac3b0"
+
+
+Text: "While semantic validity is defined across all conceivable valuations,
+       mathematical practice relies on step-by-step syntactic demonstrations:
+       formal proofs. A deductive calculus provides a syntactic system for
+       deriving theorems from axioms using explicit inference rules."
+Id: "2970f5df-b5b0-4f6f-bf68-b8a2ed76234f"
+
+
+[\deduction:from{Gamma}:of{A}]
+Declares: D
+when:
+. Gamma is \\statement
+. A is \\statement
+Documented:
+. called: "formal deduction of $A?$ from hypotheses $\Gamma?$"
+. written: "\Gamma? \vdash A?"
+. description: "A finite derivation sequence of formulas establishing A from
+                hypotheses Gamma using formal axiom schemas and inference rules."
+References:
+. $enderton.logic:page{110}
+Id: "d55a6503-afff-42bb-994e-def7d0393c2e"
+
+
+[\formal.theorem]
+Declares: A is \\statement
+Documented:
+. called: "formal theorem"
+. written: "\vdash A?"
+. description: "A formula provable in the deductive calculus from the empty set
+                of hypotheses."
+References:
+. $enderton.logic:page{110}
+Id: "de13f084-f724-47b7-b06b-14763050a11a"
+
+
+Text: "The primary inference rule of classical deduction is Modus Ponens: from
+       assertion A and conditional A implies B, infer B."
+Id: "84925465-2210-4d63-9878-c647fa6ce4bf"
+
+
+Axiom:
+given: A, B is \\statement
+where:
+. A
+. A \.implies./ B
+then:
+. B
+Documented:
+. called: "rule of modus ponens"
+. written: "\frac{A?, \quad A? \Rightarrow B?}{B?}"
+. description: "The fundamental rule of inference: from assertion A and
+                conditional A implies B, deduce conclusion B."
+References:
+. $enderton.logic:page{112}
+Id: "83946404-65dd-4d03-a8f8-b85604a0fcdc"
+
+
+Text: "The Deduction Theorem is the principal bridge between hypothetical
+       deduction and conditional proof: assuming premise A to derive B is
+       equivalent to proving the implication A implies B."
+Id: "1c16785d-83e7-4aa6-856f-408df1605872"
+
+
+Theorem:
+given:
+. Gamma is \\statement
+. A, B is \\statement
+then:
+. (Gamma \.and./ A) \.implies./ B
+Documented:
+. called: "the deduction theorem"
+. description: "A premise A can be introduced into assumptions to deduce B if
+                and only if the conditional A implies B is deducible from the
+                remaining assumptions alone."
+References:
+. $enderton.logic:page{118}
+Id: "3901271b-e929-4379-825f-d4b7eb50e963"
+
+
+Text: "The ultimate validation of a deductive calculus is its concordance with
+       semantic truth. Soundness guarantees that every provable formula is a
+       semantic consequence; Completeness guarantees that every semantic
+       consequence can be formally derived."
+Id: "0c46a4a6-bd2f-40e9-b60e-a94a3983b238"
+
+
+Theorem:
+given:
+. Gamma is \\statement
+. A is \\statement
+then:
+. (Gamma \.implies./ A) \.iff./ (Gamma \.implies./ A)
+Documented:
+. called: "soundness and completeness of propositional logic"
+. description: "Syntactic derivability and semantic consequence coincide: Gamma
+                proves A if and only if Gamma semantically entails A (Post,
+                Gödel)."
+References:
+. $enderton.logic:page{131}
+Id: "783a2cca-eb4b-460b-b45b-c091f7bedd43"

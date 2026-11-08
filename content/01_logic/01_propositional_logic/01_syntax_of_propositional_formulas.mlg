@@ -1,0 +1,130 @@
+Title: "Syntax of Propositional Formulas"
+Id: "013e019e-95a0-4f56-9ab7-22549bbdd013"
+
+
+Text: "Every formal mathematical language begins with an explicit, unambiguous
+       specification of its vocabulary and grammatical formation rules. The
+       syntax of propositional logic is designed so that whether a symbolic
+       string is grammatically admissible is entirely decidable through
+       combinatorial rules, completely independent of any consideration of truth
+       or meaning."
+Id: "62b46f95-2a7d-4660-91cb-5d63953f76f9"
+
+
+[\prop.variable]
+Declares: p is \\statement
+Documented:
+. called: "propositional variable"
+. description: "An atomic propositional symbol that serves as an indivisible
+                building block for compound assertions."
+References:
+. $enderton.logic:page{14}
+Id: "2aaa0620-6cbe-4451-9aec-3ab12757a1ef"
+
+
+Text: "From atomic propositional variables, we construct compound formulas
+       through the application of logical connectives according to explicit
+       inductive rules. The resulting well-formed expressions constitute the
+       formal language of propositional logic."
+Id: "7eb84402-2692-4456-ab73-35783d2364c8"
+
+
+[\prop.formula]
+Declares: alpha is \\statement
+Documented:
+. called: "well-formed propositional formula"
+. written: "\alpha"
+. description: "A grammatically well-formed propositional formula generated
+                inductively from propositional variables and Boolean
+                connectives."
+References:
+. $enderton.logic:page{14}
+Id: "3a01676a-6b51-4bd2-8940-9e7a4949505b"
+
+
+Text: "To analyze the depth and structure of a formula, we assign each
+       well-formed formula an integer complexity, measuring the total count of
+       logical connectives it contains."
+Id: "8a065d82-8539-48b4-8099-50036be49510"
+
+
+[\prop.complexity{A}]
+Defines: c is \integer
+when: A is \\statement
+Documented:
+. called: "complexity of formula $A?$"
+. written: "\operatorname{comp}(A?)"
+. description: "The total number of logical connective occurrences in formula A,
+                used as the metric for induction on formula length."
+References:
+. $enderton.logic:page{14}
+Id: "a1cd63dd-e94b-49b5-ac88-52d38b879e6a"
+
+
+Text: "Every formula can be uniquely decomposed into its constituent
+       subformulas. The Unique Readability Theorem guarantees that propositional
+       formulas are unambiguous: there is exactly one way to parse any
+       well-formed formula."
+Id: "6a04adc9-26e3-4469-ae00-1e1d9c22aaa5"
+
+
+Theorem:
+given: alpha is \\statement
+then:
+. anyOf:
+  . exists: p is \prop.variable
+    suchThat: alpha = p
+  . exists: beta is \\statement
+    suchThat: alpha = \not{beta}
+  . exists: beta is \\statement
+    suchThat:
+    . exists: gamma is \\statement
+      suchThat:
+      . anyOf:
+        . alpha = (beta \.and./ gamma)
+        . alpha = (beta \.or./ gamma)
+        . alpha = (beta \.implies./ gamma)
+        . alpha = (beta \.iff./ gamma)
+Documented:
+. called: "unique readability of propositional formulas"
+. description: "Every well-formed propositional formula is either an atomic
+                variable, a negation, or a unique binary connective combination
+                of subformulas."
+References:
+. $enderton.logic:page{15}
+Id: "bf33a971-1761-4f9b-b30a-76272f77f316"
+
+
+Text: "The inductive definition of formulas gives rise to a universal proof
+       technique: structural induction. To verify that a mathematical property
+       holds for all formulas, it suffices to prove the property for atomic
+       variables and establish that each connective preserves the property."
+Id: "ccfb1b84-98e4-419d-b075-3c3231c761f1"
+
+
+Theorem:
+given: P(x_) is (_ is \\statement) -> (_ is \\statement)
+where:
+. forAll: p is \prop.variable
+  then: P(p)
+. forAll: alpha is \\statement
+  where: P(alpha)
+  then: P(\not{alpha})
+. forAll: alpha is \\statement
+  then:
+  . forAll: beta is \\statement
+    where:
+    . P(alpha)
+    . P(beta)
+    then: P(alpha \.and./ beta)
+then:
+. forAll: alpha is \\statement
+  then: P(alpha)
+Documented:
+. called: "principle of structural induction for propositional formulas"
+. description: "If a property holds for all atomic propositional variables and
+                is preserved under negation and binary connectives, then it
+                holds for every well-formed formula."
+References:
+. $enderton.logic:page{16}
+Id: "f7ef750c-03f4-4777-9027-fce1af244783"

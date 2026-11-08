@@ -1,0 +1,18 @@
+Text: "Mathematical reasoning does not begin with unexamined intuitions or arbitrary
+       notational conventions. It begins with the rigorous formalization of assertion,
+       inference, and deductive consequence. This chapter establishes the foundational
+       framework upon which all modern mathematical architecture rests:
+
+       1. **Propositional Logic and Boolean Connectives**: The formalization of
+          declarative propositions, formal alphabets, well-formed formulas (WFFs),
+          truth valuations, tautologies, normal forms, and deductive calculi.
+          
+       2. **First-Order Predicate Logic and Quantifiers**: The expressive extension
+          incorporating predicates, function symbols, object terms, universal (\forall)
+          and existential (\exists) quantifiers, and Tarskian model-theoretic
+          semantics.
+          
+       3. **Methods of Mathematical Proof**: The formal mechanics of direct demonstration,
+          contraposition, contradiction, mathematical induction, and structural
+          generalization across mathematical disciplines."
+Id: "1063b5d5-c667-47d9-b0bf-80f05fd3f450"

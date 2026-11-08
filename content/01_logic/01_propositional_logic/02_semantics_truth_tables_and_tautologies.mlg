@@ -1,0 +1,189 @@
+Title: "Semantics, Truth Tables, and Tautologies"
+Id: "3cc2220f-22ed-4dff-adb7-0ce12e5ac761"
+
+
+Text: "Syntax defines the combinatorial universe of formulas; semantics assigns
+       truth values to those symbolic forms. Classical propositional logic is
+       truth-functional: the truth value of a compound proposition is uniquely
+       determined by the truth values of its constituent variables."
+Id: "086b636f-e282-44fb-bedb-9ee8c7a540f4"
+
+
+[\truth.value]
+Declares: v
+satisfies:
+. anyOf:
+  . v = 0
+  . v = 1
+Documented:
+. called: "Boolean truth value"
+. written: "\{0, 1\}"
+. description: "A classical Boolean truth value, where 1 denotes truth and 0
+                denotes falsity."
+References:
+. $enderton.logic:page{21}
+Id: "a73bb4ad-1ea6-4545-828a-95b7d62e54d6"
+
+
+Text: "A truth assignment assigns a truth value to each atomic variable. By the
+       Unique Readability Theorem, this assignment extends uniquely to evaluate
+       every well-formed formula."
+Id: "a2356352-fa54-4da0-8486-f4010f48cf51"
+
+
+[\truth.valuation]
+Declares: v is (_ is \\statement) -> (_ is \truth.value)
+Documented:
+. called: "truth valuation"
+. written: "v: \text{Var} \to \{0, 1\}"
+. description: "A truth assignment on propositional variables extended
+                homomorphically to evaluate every formula according to classical
+                truth-table equations."
+References:
+. $enderton.logic:page{21}
+Id: "fe694d65-86c9-454b-8a04-49d67739cee3"
+
+
+Text: "A valuation satisfies a formula when the formula evaluates to truth under
+       that assignment. Formulas that are true under every valuation are
+       tautologies, representing universal laws of logic."
+Id: "9b3ea74c-409d-4620-bfab-eb8b05df4ab1"
+
+
+[v \.models./ A]
+States:
+when:
+. v is \truth.valuation
+. A is \\statement
+that:
+. have: v(A) = 1
+Documented:
+. called: "valuation $v?$ satisfies formula $A?$"
+. written: "v? \models A?"
+. description: "The assertion that formula A evaluates to truth (1) under truth
+                valuation v."
+References:
+. $enderton.logic:page{22}
+Id: "f439fb4e-4a08-46b3-a065-f01f1270f79c"
+
+
+[\tautology]
+Declares: A is \\statement
+satisfies:
+. forAll: v is \truth.valuation
+  then: (v \.models./ A)
+Documented:
+. called: "tautology"
+. written: "\models A?"
+. description: "A propositional formula that evaluates to true under every
+                conceivable truth valuation."
+References:
+. $enderton.logic:page{22}
+Id: "02f33b27-1aaf-4578-8477-fc913288b216"
+
+
+[\satisfiable]
+Declares: A is \\statement
+satisfies:
+. exists: v is \truth.valuation
+  suchThat: (v \.models./ A)
+Documented:
+. called: "satisfiable formula"
+. description: "A formula that evaluates to true under at least one truth
+                valuation."
+References:
+. $enderton.logic:page{22}
+Id: "841a33c5-ddd0-4f99-9c29-07653fd9d74e"
+
+
+Text: "Two formulas are logically equivalent when they yield identical truth
+       values across all valuations. Logical equivalence partitions formulas
+       into a Boolean algebra under conjunction, disjunction, and negation."
+Id: "cea67ba0-bac3-419d-b94e-5b560a3cb798"
+
+
+[A \.logically.equivalent./ B]
+States:
+when: A, B is \\statement
+that:
+. forAll: v is \truth.valuation
+  then: (v(A) = v(B))
+Documented:
+. called: "$A?$ is logically equivalent to $B?$"
+. written: "A? \equiv B?"
+. description: "Formulas A and B that assume identical truth values under every
+                truth valuation."
+References:
+. $enderton.logic:page{24}
+Id: "128c1a2f-3b26-40c7-ab77-ae953e1d6b7c"
+
+
+Text: "Every truth-functional formula can be reduced to canonical normal forms:
+       Disjunctive Normal Form (a disjunction of conjunctions of literals) and
+       Conjunctive Normal Form (a conjunction of disjunctions of literals)."
+Id: "9d73f2e4-d28b-4442-81ea-edad5e59f7b5"
+
+
+[\in.disjunctive.normal.form]
+Declares: A is \\statement
+Documented:
+. called: "formula in disjunctive normal form"
+. written: "A? \in \mathrm{DNF}"
+. description: "A formula expressed as a disjunction of clauses, each consisting
+                of a conjunction of literals."
+References:
+. $enderton.logic:page{50}
+Id: "ff8b2ea5-38ab-4535-a106-f5c48ec6d26a"
+
+
+[\in.conjunctive.normal.form]
+Declares: A is \\statement
+Documented:
+. called: "formula in conjunctive normal form"
+. written: "A? \in \mathrm{CNF}"
+. description: "A formula expressed as a conjunction of clauses, each consisting
+                of a disjunction of literals."
+References:
+. $enderton.logic:page{50}
+Id: "107f67ae-7f59-41eb-92d3-4d203e8766ac"
+
+
+Theorem:
+given: A is \\statement
+then:
+. exists: D is \in.disjunctive.normal.form
+  suchThat:
+  . exists: C is \in.conjunctive.normal.form
+    suchThat:
+    . A \.logically.equivalent./ D
+    . A \.logically.equivalent./ C
+Documented:
+. called: "existence of disjunctive and conjunctive normal forms"
+. description: "Every propositional formula is logically equivalent to a formula
+                in Disjunctive Normal Form (DNF) and to a formula in Conjunctive
+                Normal Form (CNF)."
+References:
+. $enderton.logic:page{50}
+Id: "413566b8-93dc-4fc9-914b-e2f1cf635e04"
+
+
+Text: "A set of connectives is functionally complete when it suffices to
+       represent every finite Boolean truth function. The classical connectives
+       can be reduced to minimal bases, including singleton Sheffer stroke
+       (NAND) and Peirce arrow (NOR)."
+Id: "0f072328-775d-49ff-8c67-6582858fa465"
+
+
+Theorem:
+given: A is \\statement
+then:
+. exists: D is \in.disjunctive.normal.form
+  suchThat: A \.logically.equivalent./ D
+Documented:
+. called: "functional completeness theorem"
+. description: "Every Boolean function can be expressed by formulas using
+                exclusively {not, and, or}, {not, and}, {not, implies}, the
+                Sheffer stroke (NAND), or the Peirce arrow (NOR)."
+References:
+. $enderton.logic:page{52}
+Id: "ef197ba1-bdc1-4db9-b93b-d25f29350441"

@@ -1,0 +1,14 @@
+Text: "Propositional logic formalizes the grammar of compound assertions. In this
+       section, atomic assertions are abstracted as propositional variables and combined
+       via truth-functional connectives. We examine the subject through three distinct
+       yet harmonic lenses:
+
+       - **Syntax**: The combinatorial rules generating well-formed formulas (WFFs),
+         analyzed via unique readability and structural induction.
+       - **Semantics**: The evaluation of formulas under truth valuations
+         v: Var -> {0, 1}, satisfiability, tautologies, logical equivalence, and
+         functional completeness.
+       - **Deductive Calculi**: The syntactic derivation of theorems via Hilbert-style
+         axiom schemas, Modus Ponens, and the Deduction Theorem, culminating in
+         Soundness and Completeness."
+Id: "ae8b6f43-95f7-4cd6-8faf-b21cf97e1a4a"
