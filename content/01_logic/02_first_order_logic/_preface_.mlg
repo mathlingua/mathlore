@@ -1,0 +1,29 @@
+Text: "While propositional logic provides the governing principles for composing
+       indivisible assertions, it cannot penetrate their internal structure.
+       Mathematical statements such as 'for every real number x > 0, there exists
+       y such that y^2 = x' require analyzing objects, functions, relations,
+       and universal or existential quantification over domains of discourse.
+
+       First-order predicate logic supplies this indispensable expressive power.
+       Originating in Gottlob Frege's 1879 Begriffsschrift and refined by Charles
+       Sanders Peirce, Giuseppe Peano, and Alfred Tarski, first-order logic provides
+       a completely formal syntactic language along with a rigorous model-theoretic
+       semantics.
+
+       This section systematically develops the architecture of first-order logic:
+
+       1. **First-Order Alphabets, Terms, and Formulas**: The syntactic categories of
+          variables, constants, function symbols, predicate symbols, inductively
+          defined terms, atomic formulas, quantifiers, free versus bound variable
+          occurrences, and capture-free substitution.
+
+       2. **Semantics of First-Order Logic: Structures and Satisfaction**: Tarski's
+          celebrated model-theoretic framework, including structures M = (M, I),
+          variable assignment functions, inductive truth definition M |= \phi[\sigma],
+          validity, and semantic entailment.
+
+       3. **Proof Techniques and Formal Arguments**: Classical quantifier deduction rules
+          (Universal/Existential Generalization and Instantiation), equality axioms,
+          direct proof, contraposition, contradiction, counterexamples, mathematical
+          induction, and analysis of prevalent logical fallacies."
+Id: "0c768953-b99e-446a-90e6-5ea35aee1fc5"

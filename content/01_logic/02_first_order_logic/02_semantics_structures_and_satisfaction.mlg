@@ -1,0 +1,241 @@
+Title: "Semantics of First-Order Logic: Structures and Satisfaction"
+Id: "90325db2-66f2-40b1-88d5-ff674dab6a06"
+
+
+Text: "Syntax defines the combinatorial universe of formulas; semantics assigns
+       truth values to those symbolic forms. In propositional logic, truth
+       valuations assigned truth values directly to propositional atoms. In
+       first-order predicate logic, statements assert properties of individual
+       objects and relationships among them. Consequently, first-order semantics
+       requires specifying a universe of objects—a structure—together with an
+       interpretation mapping symbols to entities, functions, and relations."
+Id: "e7358686-e10c-485f-9e11-2716cfe9a712"
+
+
+[\fol.structure]
+Declares: M
+Documented:
+. called: "first-order structure"
+. written: "\mathcal{M}"
+. description: "A first-order interpretation structure comprising a non-empty
+                domain of discourse together with interpretations for constant,
+                function, and predicate symbols."
+References:
+. $enderton.logic:page{80}
+Id: "b38b6dcc-ac7c-4b19-8dcc-45eb0f68cddc"
+
+
+[\fol.domain{M}]
+Defines: D is \set
+when: M is \fol.structure
+Documented:
+. called: "domain of discourse of $\mathcal{M}?$"
+. written: "|\mathcal{M}?|"
+. description: "The non-empty underlying set of objects over which variables and
+                quantifiers in structure \mathcal{M} range."
+References:
+. $enderton.logic:page{80}
+Id: "97d2459a-9abe-49f9-bf28-52f084be0224"
+
+
+Text: "A structure interprets each non-logical symbol in the signature: every
+       constant symbol c denotes a specific element in the domain, each n-ary
+       function symbol f denotes an actual operation from the n-fold Cartesian
+       product of the domain into the domain, and each n-ary predicate symbol P
+       denotes an n-ary relation on the domain."
+Id: "6f327333-bc73-49a2-b4fd-9fd4264fca27"
+
+
+[\fol.interpretation{M}]
+Declares: I
+when: M is \fol.structure
+Documented:
+. called: "interpretation mapping of $\mathcal{M}?$"
+. written: "I^\mathcal{M}?"
+. description: "The mapping that assigns concrete domain elements, operations,
+                and relations to non-logical symbols in structure \mathcal{M}."
+References:
+. $enderton.logic:page{80}
+Id: "d029e240-0588-443b-a53a-4ee714787614"
+
+
+Text: "Because first-order formulas may contain free variables, the truth of an
+       expression cannot be determined in isolation from variable assignments. A
+       variable assignment function s maps the infinite set of all individual
+       variables into the domain of the structure."
+Id: "9bce35b3-3c43-446b-be46-2a34f63eaddc"
+
+
+[\fol.assignment{M}]
+Declares: s
+when: M is \fol.structure
+Documented:
+. called: "variable assignment into $\mathcal{M}?$"
+. written: "s: \text{Var} \to |\mathcal{M}?|"
+. description: "A function assigning a concrete element of domain |\mathcal{M}|
+                to each individual variable."
+References:
+. $enderton.logic:page{83}
+Id: "fcf67774-a97f-4284-8ac2-41af9f264303"
+
+
+Text: "Every term represents an object in the domain. Given a variable
+       assignment s, the denotation of a term is computed recursively: variables
+       evaluate according to s, constants evaluate according to their
+       interpretation in the structure, and composite terms evaluate by applying
+       function interpretations to subterm values."
+Id: "6a6956df-3faa-4183-917f-603e021473c5"
+
+
+[\fol.term.value{t}:in{M}:under{s}]
+Declares: val
+when:
+. t is \fol.term
+. M is \fol.structure
+. s is \fol.assignment{M}
+Documented:
+. called: "term evaluation $\bar{s}(t)$"
+. written: "\bar{s}?(t?)"
+. description: "The unique element of |\mathcal{M}| obtained by recursively
+                evaluating term t in structure \mathcal{M} under assignment s."
+References:
+. $enderton.logic:page{83}
+Id: "e0e94825-7453-4b82-9ad4-d7bc26ae6e04"
+
+
+Text: "In 1933, Alfred Tarski formalized the semantics of truth for formal
+       languages by defining the satisfaction relation inductively on formula
+       complexity. A structure satisfies a formula under assignment s if the
+       condition asserted by the formula holds in the interpretation."
+Id: "d7e4275d-5f0f-4c7c-a7e6-3c9e0edc32f8"
+
+
+[\fol.truth{phi}:in{M}:under{s}]
+States:
+when:
+. phi is \\statement
+. M is \fol.structure
+. s is \fol.assignment{M}
+that:
+. have: (phi is \\statement)
+Documented:
+. called: "satisfaction $\mathcal{M} \models \varphi[s]$"
+. written: "\mathcal{M}? \models \varphi?[s?]"
+. description: "Tarski's satisfaction relation stating that structure
+                \mathcal{M} satisfies formula \varphi under variable assignment
+                s."
+References:
+. $enderton.logic:page{84}
+Id: "d81d8382-7586-48a6-a2d6-1b2e860cc695"
+
+
+Text: "When \sigma is a sentence (possessing no free variables), satisfaction is
+       entirely independent of the variable assignment: either \mathcal{M}
+       satisfies \sigma under all assignments, or under none. When satisfied, we
+       state that \mathcal{M} is a model of \sigma."
+Id: "c921f1a3-f147-42c6-bab7-63fa7bb58fb1"
+
+
+[M \.models.fol./ sigma]
+States:
+when:
+. M is \fol.structure
+. sigma is \fol.sentence
+that:
+. forAll: s is \fol.assignment{M}
+  then: \fol.truth{sigma}:in{M}:under{s}
+Documented:
+. called: "model relation $\mathcal{M} \models \sigma$"
+. written: "\mathcal{M}? \models \sigma?"
+. description: "Structure \mathcal{M} is a model of sentence \sigma, meaning
+                \mathcal{M} satisfies \sigma under every variable assignment."
+References:
+. $enderton.logic:page{88}
+Id: "61b8691f-9868-43ef-8d46-ed9e9989c5dd"
+
+
+Text: "A formula is logically valid if it is true in every first-order structure
+       under every variable assignment. Logically valid formulas are the
+       first-order counterparts to propositional tautologies, representing
+       universal truths of pure logic."
+Id: "bd67d256-041a-4528-85e9-2093fe8ab76e"
+
+
+[\fol.valid]
+Declares: phi is \\statement
+satisfies:
+. forAll: M is \fol.structure
+  then:
+  . forAll: s is \fol.assignment{M}
+    then: \fol.truth{phi}:in{M}:under{s}
+Documented:
+. called: "logically valid formula"
+. written: "\models \varphi?"
+. description: "A first-order formula that is true in every structure under
+                every variable assignment."
+References:
+. $enderton.logic:page{88}
+Id: "28635b0c-9251-4aae-8ec5-80d474655f54"
+
+
+Text: "A formula or set of formulas is satisfiable if there exists at least one
+       structure and variable assignment under which it evaluates to true."
+Id: "6dd9702d-4b9d-4d62-9943-8601b129d8ec"
+
+
+[\fol.satisfiable]
+Declares: phi is \\statement
+satisfies:
+. exists: M is \fol.structure
+  suchThat:
+  . exists: s is \fol.assignment{M}
+    suchThat: \fol.truth{phi}:in{M}:under{s}
+Documented:
+. called: "satisfiable first-order formula"
+. description: "A formula that is satisfied by at least one structure under at
+                least one variable assignment."
+References:
+. $enderton.logic:page{88}
+Id: "447569b3-4e16-4737-af02-b9cc48c23edb"
+
+
+Text: "A formula \varphi is a semantic consequence of a theory \Sigma, written
+       \Sigma \models \varphi, if every structure and assignment that satisfies
+       all sentences in \Sigma also satisfies \varphi."
+Id: "0008bf76-baf5-4239-9d88-cdec8adb67c6"
+
+
+[Sigma \.semantic.entails./ phi]
+States:
+when:
+. Sigma is \set
+. phi is \\statement
+that:
+. forAll: M is \fol.structure
+  then:
+  . forAll: s is \fol.assignment{M}
+    then: \fol.truth{phi}:in{M}:under{s}
+Documented:
+. called: "semantic consequence $\Sigma \models \varphi$"
+. written: "\Sigma? \models \varphi?"
+. description: "The relation asserting that every model of theory \Sigma is also
+                a model of formula \varphi."
+References:
+. $enderton.logic:page{88}
+Id: "1e902afa-ae63-4cae-9505-a70082883f21"
+
+
+Theorem:
+given:
+. M is \fol.structure
+. sigma is \fol.sentence
+then:
+. (sigma is \\statement)
+Documented:
+. called: "bivalence of first-order truth for sentences"
+. description: "For any first-order structure \mathcal{M} and sentence \sigma,
+                the sentence is either satisfied by \mathcal{M} under all
+                assignments or refuted under all assignments."
+References:
+. $enderton.logic:page{86}
+Id: "26784b1a-e888-4527-8e9e-7e48554470ca"

@@ -1,0 +1,298 @@
+Title: "Proof Techniques and Formal Arguments"
+Id: "1bcff66d-8661-4a2b-b6fe-7643a0399ee4"
+
+
+Text: "A mathematical proof is a finite, mechanically verifiable demonstration
+       that a target proposition follows inescapably from accepted axioms,
+       definitions, and previously established theorems through sound inference
+       rules. By Gödel's Completeness Theorem (1929), the syntactic notion of
+       formal provability coincides with semantic consequence in first-order
+       logic: a sentence is provable if and only if it is true in every possible
+       interpretation."
+Id: "a1fac498-1922-4ad6-9feb-6c914797e431"
+
+
+Text: "First-order deduction extends propositional calculi by adding inference
+       rules that govern universal and existential quantifiers. Universal
+       Instantiation allows a universal assertion to be instantiated to any
+       valid object term, while Universal Generalization allows an assertion
+       verified for an arbitrary, unconstrained object to be generalized to all
+       domain members."
+Id: "e1832150-4dfa-4aa7-82be-45c15f6b4945"
+
+
+[\rule.universal.instantiation]
+Axiom:
+given:
+. phi is \\statement
+. x is \fol.variable
+. t is \fol.term
+. D is \set
+where:
+. \fol.for.all{x}:in{D}{phi}
+then:
+. \fol.substitution{t}:for{x}:in{phi}
+Documented:
+. called: "Universal Instantiation (UI)"
+. written: "\frac{\forall x \in D, \varphi(x)}{\varphi(t)}"
+. description: "The inference rule allowing deduction of \varphi(t) for any
+                substitutable term t from universal premise \forall x \in D,
+                \varphi(x)."
+References:
+. $enderton.logic:page{112}
+Id: "507d82be-1548-4c89-a8ac-553f1304ef98"
+
+
+[\rule.universal.generalization]
+Axiom:
+given:
+. phi is \\statement
+. y is \fol.variable
+. D is \set
+where:
+. phi
+then:
+. \fol.for.all{y}:in{D}{phi}
+Documented:
+. called: "Universal Generalization (UG)"
+. written: "\frac{\varphi(y)}{\forall x \in D, \varphi(x)}"
+. description: "The inference rule permitting universal generalization \forall x
+                \in D, \varphi(x) when \varphi(y) has been demonstrated for an
+                arbitrary object y unconstrained by hypotheses."
+References:
+. $enderton.logic:page{117}
+Id: "d150a8be-978d-443f-92c0-aacc6bb05022"
+
+
+Text: "Dual to the universal rules are the existential quantifier rules.
+       Existential Generalization allows deducing that some element satisfies a
+       property whenever an explicit witness is produced. Existential
+       Instantiation allows introducing a fresh dummy constant to denote an
+       unnamed witness guaranteed by an existential claim."
+Id: "cd0b93a0-4de2-4145-bf45-632357bf3316"
+
+
+[\rule.existential.generalization]
+Axiom:
+given:
+. phi is \\statement
+. x is \fol.variable
+. t is \fol.term
+. D is \set
+where:
+. \fol.substitution{t}:for{x}:in{phi}
+then:
+. \fol.exists{x}:in{D}{phi}
+Documented:
+. called: "Existential Generalization (EG)"
+. written: "\frac{\varphi(t)}{\exists x \in D, \varphi(x)}"
+. description: "The inference rule allowing deduction of existential claim
+                \exists x \in D, \varphi(x) from an explicit witness \varphi(t)."
+References:
+. $enderton.logic:page{118}
+Id: "92313939-a286-4583-99ce-207adf0f9123"
+
+
+[\rule.existential.instantiation]
+Axiom:
+given:
+. phi is \\statement
+. x is \fol.variable
+. c is \fol.term
+. D is \set
+where:
+. \fol.exists{x}:in{D}{phi}
+then:
+. \fol.substitution{c}:for{x}:in{phi}
+Documented:
+. called: "Existential Instantiation (EI)"
+. written: "\frac{\exists x \in D, \varphi(x)}{\varphi(c)}"
+. description: "The inference rule introducing a fresh witness constant c
+                satisfying \varphi(c) from existential assertion \exists x \in
+                D, \varphi(x)."
+References:
+. $enderton.logic:page{120}
+Id: "16121138-a3a2-46d7-b2f5-639dea55ac6b"
+
+
+Text: "In first-order logic with equality, the identity symbol = is governed by
+       equality axioms ensuring that equality is an equivalence relation and
+       that equal terms are interchangeable across all formulas (Leibniz's
+       principle of the indiscernibility of identicals)."
+Id: "8404c8cf-a3d6-498d-8bd9-99cafe23190e"
+
+
+[\fol.equality.reflexive]
+Axiom:
+given: x is \fol.term
+then: (x = x)
+Documented:
+. called: "reflexivity of equality"
+. written: "\forall x\,(x = x)"
+. description: "Every object is identical to itself."
+References:
+. $enderton.logic:page{94}
+Id: "445ddb1f-5429-4a19-bcd3-df6c67ab542a"
+
+
+[\fol.equality.congruence]
+Axiom:
+given:
+. x is \fol.variable
+. y is \fol.term
+. phi is \\statement
+where:
+. x = y
+. phi
+then:
+. \fol.substitution{y}:for{x}:in{phi}
+Documented:
+. called: "congruence / substitution of equals"
+. written: "x = y \to (\varphi(x) \leftrightarrow \varphi(y))"
+. description: "Equal terms may be substituted for each other in any formula
+                without changing its truth value."
+References:
+. $enderton.logic:page{94}
+Id: "9bc137c3-af5d-4f32-8adf-bdfa77341276"
+
+
+Text: "Beyond quantifier rules, working mathematicians rely on several canonical
+       methods of proof tailored to the structural architecture of the
+       proposition under examination: direct proof, proof by contraposition,
+       proof by contradiction, counterexamples, and proof by cases."
+Id: "cbd519b2-ea92-403e-92f6-6e2c1ef631bf"
+
+
+Text: "A direct proof demonstrates a conditional proposition P \implies Q by
+       assuming premise P as a local hypothesis and deducing a valid deductive
+       chain culminating in Q."
+Id: "3a03b640-90c3-4fdc-87fa-26698bbe288a"
+
+
+[\proof.contraposition]
+Theorem:
+given: P, Q is \\statement
+then: (P \.implies./ Q) \.iff./ ((\not{Q}) \.implies./ (\not{P}))
+Documented:
+. called: "proof by contraposition"
+. written: "(P \implies Q) \iff (\neg Q \implies \neg P)"
+. description: "The logical equivalence justifying proof of conditional P
+                \implies Q by establishing its contrapositive \neg Q \implies
+                \neg P."
+References:
+. $enderton.logic:page{27}
+Id: "d2301427-4df9-46e7-9e14-74735a8a2b9f"
+
+
+[\proof.contradiction]
+Theorem:
+given: P is \\statement
+then: (P is \\statement)
+Documented:
+. called: "proof by contradiction (reductio ad absurdum)"
+. written: "(\neg P \implies \bot) \implies P"
+. description: "The classical deductive principle establishing P by showing that
+                assuming its negation \neg P yields a formal logical
+                contradiction."
+References:
+. $enderton.logic:page{28}
+Id: "3a45c656-83dc-4700-a4d9-88c9ca76468e"
+
+
+Text: "To refute a universal proposition \forall x \in D, P(x), one is not
+       required to show that P(x) is universally false; it is sufficient to
+       exhibit a single concrete element c \in D—termed a counterexample—for
+       which P(c) fails."
+Id: "93f1ed4c-c32f-41df-9a25-b56e5c23e3b5"
+
+
+[\proof.by.cases]
+Theorem:
+given: P1, P2, Q is \\statement
+where:
+. P1 \.or./ P2
+. P1 \.implies./ Q
+. P2 \.implies./ Q
+then: Q
+Documented:
+. called: "proof by cases (disjunction elimination)"
+. written: "((P_1 \lor P_2) \land (P_1 \implies Q) \land (P_2 \implies Q))
+            \implies Q"
+. description: "Establishing conclusion Q by verifying it across exhaustive
+                alternative cases."
+References:
+. $enderton.logic:page{28}
+Id: "2f63c904-bc17-4054-bc21-9c839c42e909"
+
+
+Text: "When asserting propositions quantified over the natural numbers
+       \mathbb{N}, the Principle of Mathematical Induction serves as the supreme
+       proof technique: verifying a property for zero and establishing that its
+       truth is preserved under the successor operation guarantees universal
+       truth across \mathbb{N}."
+Id: "04cfc8e1-90af-4a39-81bd-e53773c0a26e"
+
+
+[\proof.mathematical.induction]
+Theorem:
+given: P(n_) is (_ is \natural) -> (_ is \\statement)
+where:
+. P(\natural.zero)
+. forAll: n is \natural
+  where: P(n)
+  then: P(\natural.successor:of{n})
+then:
+. forAll: n is \natural
+  then: P(n)
+Documented:
+. called: "principle of mathematical induction"
+. written: "P(0) \land (\forall n \in \mathbb{N}\,(P(n) \implies P(n+1)))
+            \implies \forall n \in \mathbb{N}\,P(n)"
+. description: "The foundational induction theorem stating that a property
+                holding at zero and preserved under successors holds for all
+                natural numbers."
+References:
+. $enderton.set.theory:page{67}
+Id: "3e6323da-c7b4-428e-a71f-144a2b90dfe4"
+
+
+Text: "Sound mathematical demonstration demands vigilant avoidance of logical
+       fallacies. Common pitfalls include formal fallacies in conditional
+       reasoning (such as affirming the consequent and denying the antecedent)
+       and quantifier fallacies in predicate logic.
+
+       The most insidious quantifier error is the illicit quantifier swap:
+       confusing \forall x\,\exists y\,P(x, y) with \exists y\,\forall x\,P(x,
+       y). The assertion that every continuous function on [a, b] is bounded
+       (pointwise) does not imply that a single bound bounds every continuous
+       function simultaneously."
+Id: "2a86eba0-8b33-4be3-a487-b0368e635a39"
+
+
+[\fallacy.affirming.consequent]
+Theorem:
+given: P, Q is \\statement
+then: (P is \\statement)
+Documented:
+. called: "fallacy of affirming the consequent"
+. written: "((P \implies Q) \land Q) \not\implies P"
+. description: "The invalid formal inference of concluding antecedent P merely
+                from conditional P \implies Q and consequent Q."
+References:
+. $enderton.logic:page{34}
+Id: "4f73c3b0-5e90-4bba-a5c5-33749971f94f"
+
+
+[\fallacy.quantifier.swap]
+Theorem:
+given: P is \\statement
+then: (P is \\statement)
+Documented:
+. called: "fallacy of the illicit quantifier swap"
+. written: "(\forall x\,\exists y\,P(x, y)) \not\implies (\exists y\,\forall
+            x\,P(x, y))"
+. description: "The fallacy of interchanging universal and existential
+                quantifiers, conflating local dependence with global uniformity."
+References:
+. $enderton.logic:page{92}
+Id: "ea4bcfa5-9a88-4b66-925c-2009e16c0e77"

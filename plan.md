@@ -27,19 +27,19 @@ This document specifies the comprehensive curriculum roadmap for **Mathlore**, s
 ---
 
 ### Section 1.2: First-Order Predicate Logic and Quantifiers
-*Status:* TODO
+*Status:* DONE
 *Description:* Extends propositional logic to first-order languages with variables, predicates, function symbols, and quantifiers.
 
 #### Subsection 1.2.1: First-Order Alphabets, Terms, and Formulas
-*Status:* TODO
+*Status:* DONE
 *Description:* Covers constants, variables, $n$-ary function symbols, $n$-ary predicate symbols, terms as expressions representing objects, atomic formulas, universal ($\forall$) and existential ($\exists$) quantifiers, free versus bound variable occurrences, and sentence formation.
 
 #### Subsection 1.2.2: Semantics of First-Order Logic: Structures and Satisfaction
-*Status:* TODO
+*Status:* DONE
 *Description:* Covers first-order interpretations (structures $\mathcal{M} = (M, I)$), domains of discourse, interpretation of constants, functions, and relations, variable assignment functions, Tarski's formal definition of truth and satisfaction $\mathcal{M} \models \varphi[\sigma]$, validity, and logical consequence.
 
 #### Subsection 1.2.3: Proof Techniques and Formal Arguments
-*Status:* TODO
+*Status:* DONE
 *Description:* Covers universal generalization and instantiation, existential generalization and instantiation, direct proof, proof by contraposition, proof by contradiction, counterexamples, mathematical induction, and common logical fallacies.
 
 ---
