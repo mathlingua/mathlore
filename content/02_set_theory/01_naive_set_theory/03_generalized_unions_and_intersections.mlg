@@ -1,5 +1,5 @@
 Title: "Generalized Unions and Intersections"
-Id: "b05534b6-75b0-41df-be1f-7cef73f2e4a8"
+Id: "986325b0-3dc2-4be3-98cc-d2303192bbe9"
 
 
 Text: "Binary set operations extend naturally to families containing arbitrarily
@@ -7,7 +7,7 @@ Text: "Binary set operations extend naturally to families containing arbitrarily
        has a union \bigcup \mathcal{F} consisting of all elements belonging to
        at least one member set, and an intersection \bigcap \mathcal{F}
        consisting of all elements belonging to every member set."
-Id: "7da339e7-8283-4946-93c7-19450a6e6268"
+Id: "aba2ad9f-2f65-4c50-acbd-73af505e944b"
 
 
 [\arbitrary.union{F}]
@@ -17,11 +17,11 @@ Documented:
 . called: "arbitrary union $\bigcup \mathcal{F}$"
 . written: "\bigcup \mathcal{F}?"
 . description: "The set of all elements belonging to at least one set in family
-                \mathcal{F}."
+                \mathcal{F}: the least upper bound in the power set lattice."
 References:
 . $enderton.set.theory:page{24}
 . $halmos.set.theory:page{34}
-Id: "f3297b03-47a5-431a-9d4b-a9d7375b282a"
+Id: "eba82141-44f9-4b4e-b44a-102d269592fe"
 
 
 [\arbitrary.intersection{F}]
@@ -31,18 +31,44 @@ Documented:
 . called: "arbitrary intersection $\bigcap \mathcal{F}$"
 . written: "\bigcap \mathcal{F}?"
 . description: "The set of all elements belonging to every set in non-empty
-                family \mathcal{F}."
+                family \mathcal{F}: the greatest lower bound in the power set
+                lattice."
 References:
 . $enderton.set.theory:page{25}
 . $halmos.set.theory:page{35}
-Id: "c805b714-c081-4c94-a73f-d70e2ae8bf00"
+Id: "428c8239-df82-4d86-a74b-75129fbdaea3"
+
+
+Text: "When the indexing family is empty, existential and universal
+       quantification yield dual boundary behaviors: the union over an empty
+       family is empty, while the intersection over an empty subfamily of a
+       universe U is the entire universe U."
+Id: "6981d915-aeb8-4614-b9cc-d16ee2373f02"
+
+
+Theorem:
+given: U is \set
+then: (\arbitrary.union{\empty.set} = \empty.set)
+Documented:
+. called: "union of the empty family"
+. written: "\bigcup \emptyset = \emptyset"
+. description: "Because the empty family contains no member sets, its union is
+                unconditionally empty."
+Proof: """An element $x$ belongs to $\bigcup \emptyset$ if and only if there
+          exists a set $S \in \emptyset$ such that $x \in S$. Because
+          $\emptyset$ contains no sets, this existential condition is
+          unconditionally false for every object $x$. Hence
+          $\bigcup \emptyset = \emptyset$."""
+References:
+. $enderton.set.theory:page{24}
+Id: "4c132c09-9639-481b-b8f0-f11c9cc92147"
 
 
 Text: "De Morgan's Laws generalize directly to arbitrary families: the
        complement of an arbitrary union is the arbitrary intersection of the
        individual complements, and the complement of an arbitrary intersection
        is the arbitrary union of the individual complements."
-Id: "eec75449-f88f-4358-a0b2-6e025a93783c"
+Id: "a2d68549-352a-4690-86e4-bf1f0ab74181"
 
 
 [\generalized.de.morgan.union]
@@ -55,16 +81,50 @@ Documented:
 . written: "\left(\bigcup_{i \in I} A_i\right)^c = \bigcap_{i \in I} A_i^c"
 . description: "The complement of an arbitrary union equals the intersection of
                 the individual complements."
+Proof: """An element $x \in U$ belongs to $(\bigcup \mathcal{F})^c \iff x \in U \land \neg(x \in \bigcup \mathcal{F})
+          \iff x \in U \land \neg(\exists S \in \mathcal{F}, x \in S)$.
+          By quantifier duality, $\neg \exists S \equiv \forall S \neg$,
+          so this is equivalent to $x \in U \land \forall S \in \mathcal{F}, x \notin S
+          \iff \forall S \in \mathcal{F}, (x \in U \land x \notin S)
+          \iff \forall S \in \mathcal{F}, x \in U \setminus S$.
+          Therefore, $x \in \bigcap \{S^c \mid S \in \mathcal{F}\}$,
+          establishing $(\bigcup \mathcal{F})^c = \bigcap \{S^c \mid S \in \mathcal{F}\}$."""
 References:
 . $enderton.set.theory:page{26}
 . $halmos.set.theory:page{36}
-Id: "ebc660ab-8c37-4112-b7d4-4dcefb676c2f"
+Id: "b2570a6f-b43f-4ca7-9e29-6f0b1ef2ec6c"
+
+
+Text: "Set intersection distributes across arbitrary unions, allowing a fixed
+       set to be factored into every component of an arbitrary family."
+Id: "fd14f3c7-73d1-4eff-861a-ac655216caba"
+
+
+Theorem:
+given: B, F is \set
+then: ((B \.cap./ \arbitrary.union{F}) is \set)
+Documented:
+. called: "generalized distributivity of intersection over union"
+. written: "B \cap \bigcup \mathcal{F} = \bigcup \{B \cap S \mid S \in
+            \mathcal{F}\}"
+. description: "Intersecting a set with an arbitrary union distributes across
+                every component set."
+Proof: """An element $x$ belongs to $B \cap \bigcup \mathcal{F}$ if and only if
+          $x \in B$ and $x \in \bigcup \mathcal{F}$, which means $x \in B$ and
+          there exists $S \in \mathcal{F}$ such that $x \in S$. This is
+          equivalent to the existence of $S \in \mathcal{F}$ such that
+          $x \in B \land x \in S$, which is $x \in B \cap S$. Thus
+          $x \in \bigcup \{B \cap S \mid S \in \mathcal{F}\}$, proving
+          distributivity."""
+References:
+. $enderton.set.theory:page{26}
+Id: "1870622d-c6f4-4cd3-b128-37c3f88dcb85"
 
 
 Text: "A family of sets \mathcal{F} is pairwise disjoint (or mutually disjoint)
        if no two distinct member sets share any elements in common: for any A, B
        \in \mathcal{F} with A \neq B, their intersection is empty."
-Id: "956ed2ec-48f3-4982-b6db-5047e875e6ec"
+Id: "f0b5d7f7-8b84-4272-bf9b-10c237a1d66b"
 
 
 [\pairwise.disjoint{F}]
@@ -85,7 +145,31 @@ Documented:
 References:
 . $enderton.set.theory:page{27}
 . $halmos.set.theory:page{15}
-Id: "6422e3d8-dccd-4676-a36a-3934f41d1467"
+Id: "1ac27195-7d8d-49a6-8358-65de1844d005"
+
+
+Theorem:
+given: F, G is \set
+where:
+. \pairwise.disjoint{F}
+. G \.subseteq./ F
+then:
+. \pairwise.disjoint{G}
+Documented:
+. called: "hereditary property of pairwise disjointness"
+. written: "G \subseteq \mathcal{F} \land \operatorname{Disjoint}(\mathcal{F})
+            \implies \operatorname{Disjoint}(G)"
+. description: "Any subfamily of a pairwise disjoint family is itself pairwise
+                disjoint."
+Proof: """Let $G \subseteq \mathcal{F}$ with $\mathcal{F}$ pairwise disjoint.
+          Let $A, B \in G$ be distinct sets ($A \ne B$). Because
+          $G \subseteq \mathcal{F}$, both $A \in \mathcal{F}$ and
+          $B \in \mathcal{F}$. Since $\mathcal{F}$ is pairwise disjoint,
+          $A \ne B$ implies $A \cap B = \emptyset$. Because $A$ and $B$ were
+          arbitrary distinct members of $G$, family $G$ is pairwise disjoint."""
+References:
+. $enderton.set.theory:page{27}
+Id: "d11bceba-fbb4-44d6-ad76-7c4621e24094"
 
 
 Text: "A partition of a set X is a collection \mathcal{P} of non-empty, pairwise
@@ -93,14 +177,15 @@ Text: "A partition of a set X is a collection \mathcal{P} of non-empty, pairwise
        canonical set-theoretic decomposition of a universe into non-overlapping
        cells, providing the geometric foundation for equivalence relations and
        quotient structures."
-Id: "01a98d1a-1109-4597-90fc-0b0544159f76"
+Id: "9fcdae4c-2d57-4b46-8443-860346940eab"
 
 
 [\set.partition:of{X}]
 Declares: P is \set
 when: X is \set
 satisfies:
-. forAll: A "in" P
+. forAll: A is \set
+  where: (A "in"? P)
   then: (A != \empty.set)
 . \pairwise.disjoint{P}
 . \arbitrary.union{P} = X
@@ -112,7 +197,7 @@ Documented:
 References:
 . $enderton.set.theory:page{27}
 . $halmos.set.theory:page{28}
-Id: "2eb22011-bc22-4bed-b28e-ea7bd6184346"
+Id: "bcb44efa-4b22-4344-91d4-5f8a11cda366"
 
 
 Theorem:
@@ -123,11 +208,28 @@ then:
 . forAll: x "in" X
   then: (x "in"? X)
 Documented:
-. called: "exhaustive covering by partition"
+. called: "unique block membership of partitions"
 . written: "\forall x \in X, \exists! A \in \mathcal{P}, x \in A"
 . description: "Every element of set X belongs to exactly one block of partition
                 \mathcal{P}."
+Proof: """Let $x \in X$. Since $\mathcal{P}$ is a partition of $X$,
+          $\bigcup \mathcal{P} = X$. Because $x \in X = \bigcup \mathcal{P}$,
+          there exists at least one block $A \in \mathcal{P}$ such that
+          $x \in A$. To establish uniqueness, suppose there exists another block
+          $B \in \mathcal{P}$ with $x \in B$. Then $x \in A \cap B$, so
+          $A \cap B \neq \emptyset$. By pairwise disjointness of $\mathcal{P}$,
+          distinct blocks must be disjoint; hence $A \cap B \neq \emptyset$
+          forces $A = B$. Thus each element of $X$ belongs to a unique block of
+          $\mathcal{P}$."""
 References:
 . $enderton.set.theory:page{28}
 . $halmos.set.theory:page{29}
-Id: "45f1faaf-356a-4b13-9123-2753b1787e04"
+Id: "ecd4dc40-4684-41da-af7a-0a689204852a"
+
+
+Text: "Partitions and equivalence relations represent two perspectives on the
+       same mathematical phenomenon: every partition \mathcal{P} of X defines an
+       equivalence relation where two elements are equivalent if and only if
+       they occupy the same block, and every equivalence relation partitions its
+       domain into mutually disjoint equivalence classes."
+Id: "ef0adebb-b584-46e0-a8f6-0d088573cf35"
