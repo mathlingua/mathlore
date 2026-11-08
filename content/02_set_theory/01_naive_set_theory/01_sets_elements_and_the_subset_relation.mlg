@@ -1,0 +1,221 @@
+Title: "Sets, Elements, and the Subset Relation"
+Id: "6a5f2490-ada4-47d3-98ea-c640ff3a5e43"
+
+
+Text: "Set theory begins with the intuitive notion of a set as an aggregate of
+       definite, distinct objects of thought or perception into a unified whole.
+       Formulated by Georg Cantor in 1895, this foundational discipline provides
+       the ontology upon which all modern mathematical structures are erected.
+       The fundamental relationship between an object x and a set A is
+       elementhood, denoted x \in A."
+Id: "3a1b02c6-9b42-49dd-bca2-ba1b572d37e5"
+
+
+[\set.builder{x}:such.that{P}]
+Defines: S is \set
+when:
+. x is \\anything
+. P is \\statement
+Documented:
+. called: "set-builder comprehension $\{x \mid P(x)\}$"
+. written: "\{x \mid P(x)\}"
+. description: "The collection of all objects x satisfying the property P(x)."
+References:
+. $enderton.set.theory:page{2}
+. $halmos.set.theory:page{4}
+Id: "80890007-c804-4fa3-9290-dfe48b5944ca"
+
+
+Text: "A set is entirely characterized by the elements it contains, without
+       regard to order, repetition, or internal structure. This fundamental
+       principle is the Extensionality Principle: two sets are equal if and only
+       if they possess exactly the same elements."
+Id: "68a75c06-9082-443f-b9cc-ab188a8fa4d1"
+
+
+[\extensionality.equality{A, B}]
+States:
+when: A, B is \set
+that:
+. forAll: x
+  then: ((x "in"? A) \.iff./ (x "in"? B))
+Documented:
+. called: "extensional equivalence of sets"
+. written: "\forall x\,(x \in A \leftrightarrow x \in B)"
+. description: "The condition stating that sets A and B share identical members,
+                which by extensionality implies A = B."
+References:
+. $enderton.set.theory:page{2}
+. $halmos.set.theory:page{2}
+Id: "ab793ae4-4007-4dec-ab7e-5421540f4447"
+
+
+Text: "The simplest set is the empty set, denoted \emptyset, possessing no
+       elements whatever. By the Extensionality Principle, any two sets having
+       no elements must be equal; hence the empty set is unique."
+Id: "6df807fe-87f5-4624-80e2-38c13a559869"
+
+
+Theorem:
+given: A, B is \set
+where:
+. forAll: x
+  then: (x \.not.in./ A)
+. forAll: x
+  then: (x \.not.in./ B)
+then: (A = B)
+Documented:
+. called: "uniqueness of the empty set"
+. written: "A = \emptyset \land B = \emptyset \implies A = B"
+. description: "By the Principle of Extensionality, any two sets possessing no
+                elements are identical."
+References:
+. $enderton.set.theory:page{4}
+. $halmos.set.theory:page{8}
+Id: "a7e0c01d-b7b0-4a53-a718-5797d5efa1ee"
+
+
+Text: "Beyond membership, the primary comparison between two sets is
+       containment. Set A is a subset of set B, written A \subseteq B, if every
+       element of A is also an element of B. It is vital to distinguish between
+       primitive elementhood (x \in A) and subset inclusion (A \subseteq B)."
+Id: "eb8cde50-39ee-4b0b-9396-e11c138ab8ea"
+
+
+[A \.subseteq./ B]
+States:
+when: A, B is \set
+that:
+. forAll: x "in" A
+  then: (x "in"? B)
+Documented:
+. called: "subset relation $A \subseteq B$"
+. written: "A? \subseteq B?"
+. description: "Set A is a subset of set B, meaning every element of A is also
+                an element of B."
+References:
+. $enderton.set.theory:page{5}
+. $halmos.set.theory:page{11}
+Id: "77076483-512a-4e52-ba80-67514dc0ea46"
+
+
+Theorem:
+given: A, B, C is \set
+where:
+. A \.subseteq./ B
+. B \.subseteq./ C
+then: (A \.subseteq./ C)
+Documented:
+. called: "transitivity of subset inclusion"
+. written: "A \subseteq B \land B \subseteq C \implies A \subseteq C"
+. description: "The subset relation is transitive across all sets."
+References:
+. $enderton.set.theory:page{5}
+. $halmos.set.theory:page{12}
+Id: "9a221ca4-9915-4c71-babc-686f00d528c3"
+
+
+Text: "When containment holds without equality, the smaller set is strictly
+       contained within the larger. We say A is a proper subset of B, written A
+       \subsetneq B, guaranteeing the existence of an element in B that does not
+       belong to A."
+Id: "be69c934-cebd-455e-9940-db93d7778e6d"
+
+
+[A \.subset.proper./ B]
+States:
+when: A, B is \set
+that:
+. have: (A \.subseteq./ B)
+. have: (A != B)
+Documented:
+. called: "proper subset $A \subsetneq B$"
+. written: "A? \subsetneq B?"
+. description: "Set A is strictly contained in set B: A \subseteq B and A \neq
+                B."
+References:
+. $enderton.set.theory:page{6}
+. $halmos.set.theory:page{12}
+Id: "7131e709-9181-4991-abfc-d06f6551033d"
+
+
+Text: "Given any set A, we can form the collection of all its subsets. This
+       collection is the power set of A, denoted \mathcal{P}(A). If A has n
+       elements, its power set \mathcal{P}(A) possesses 2^n elements."
+Id: "396ccdec-6c14-4d09-aa52-a708a8d771f6"
+
+
+[\power.set.of{A}]
+Defines: P is \set
+when: A is \set
+Documented:
+. called: "power set $\mathcal{P}(A)$"
+. written: "\mathcal{P}(A?)"
+. description: "The set whose elements are all the subsets of set A."
+References:
+. $enderton.set.theory:page{6}
+. $halmos.set.theory:page{19}
+Id: "9765f0b8-d94d-40e6-a5a0-ea374b863475"
+
+
+Theorem:
+given:
+. A is \set
+. E is \set
+. P is \set
+where:
+. E = \empty.set
+. P = \power.set.of{A}
+then:
+. E "in"? P
+Documented:
+. called: "empty set belongs to the power set"
+. written: "\emptyset \in \mathcal{P}(A)"
+. description: "Because the empty set is a subset of every set, \emptyset is an
+                element of \mathcal{P}(A) for every set A."
+References:
+. $enderton.set.theory:page{6}
+Id: "e33b662f-0b08-4b5b-a62f-a0db82c2bc15"
+
+
+Text: "In early formulations of set theory, unrestricted comprehension was taken
+       for granted: any condition P(x) was assumed to determine a valid set \{x
+       \mid P(x)\}. In 1901, Bertrand Russell revealed a fatal flaw in this
+       assumption by examining the set of all sets that do not contain
+       themselves: R = \{x \mid x \notin x\}.
+
+       Evaluating whether R belongs to itself produces the immediate
+       contradiction R \in R \iff R \notin R. This result, Russell's Paradox,
+       demonstrated that unrestricted comprehension is inconsistent,
+       necessitating the rigorous axiomatic foundations of Zermelo--Fraenkel set
+       theory."
+Id: "a2469238-6eb0-419e-9e52-286e7132889f"
+
+
+[\russell.set]
+Declares: R is \set
+Documented:
+. called: "Russell's set $R = \{x \mid x \notin x\}$"
+. written: "R = \{x \mid x \notin x\}"
+. description: "The collection of all sets that do not contain themselves as
+                members, formulated by Bertrand Russell to demonstrate the
+                inconsistency of unrestricted comprehension."
+References:
+. $enderton.set.theory:page{1}
+. $halmos.set.theory:page{6}
+Id: "58f6f7cb-cc45-4838-a25f-943fa1b57f0c"
+
+
+[\russell.paradox]
+Theorem:
+given: R is \set
+then: ((R "in"? R) \.iff./ (R \.not.in./ R))
+Documented:
+. called: "Russell's Paradox"
+. written: "R \in R \iff R \notin R"
+. description: "The foundational contradiction of naive set theory establishing
+                the impossibility of unrestricted set comprehension."
+References:
+. $enderton.set.theory:page{1}
+. $halmos.set.theory:page{7}
+Id: "9fbe7f26-365c-491e-86e2-92328740db2a"

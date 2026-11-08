@@ -1,0 +1,133 @@
+Title: "Generalized Unions and Intersections"
+Id: "b05534b6-75b0-41df-be1f-7cef73f2e4a8"
+
+
+Text: "Binary set operations extend naturally to families containing arbitrarily
+       many—even uncountably many—sets. An arbitrary family \mathcal{F} of sets
+       has a union \bigcup \mathcal{F} consisting of all elements belonging to
+       at least one member set, and an intersection \bigcap \mathcal{F}
+       consisting of all elements belonging to every member set."
+Id: "7da339e7-8283-4946-93c7-19450a6e6268"
+
+
+[\arbitrary.union{F}]
+Defines: U is \set
+when: F is \set
+Documented:
+. called: "arbitrary union $\bigcup \mathcal{F}$"
+. written: "\bigcup \mathcal{F}?"
+. description: "The set of all elements belonging to at least one set in family
+                \mathcal{F}."
+References:
+. $enderton.set.theory:page{24}
+. $halmos.set.theory:page{34}
+Id: "f3297b03-47a5-431a-9d4b-a9d7375b282a"
+
+
+[\arbitrary.intersection{F}]
+Defines: I is \set
+when: F is \set
+Documented:
+. called: "arbitrary intersection $\bigcap \mathcal{F}$"
+. written: "\bigcap \mathcal{F}?"
+. description: "The set of all elements belonging to every set in non-empty
+                family \mathcal{F}."
+References:
+. $enderton.set.theory:page{25}
+. $halmos.set.theory:page{35}
+Id: "c805b714-c081-4c94-a73f-d70e2ae8bf00"
+
+
+Text: "De Morgan's Laws generalize directly to arbitrary families: the
+       complement of an arbitrary union is the arbitrary intersection of the
+       individual complements, and the complement of an arbitrary intersection
+       is the arbitrary union of the individual complements."
+Id: "eec75449-f88f-4358-a0b2-6e025a93783c"
+
+
+[\generalized.de.morgan.union]
+Theorem:
+given: F, U is \set
+then:
+. (\absolute.complement:of{\arbitrary.union{F}}:in{U} is \set)
+Documented:
+. called: "Generalized De Morgan's Law for Unions"
+. written: "\left(\bigcup_{i \in I} A_i\right)^c = \bigcap_{i \in I} A_i^c"
+. description: "The complement of an arbitrary union equals the intersection of
+                the individual complements."
+References:
+. $enderton.set.theory:page{26}
+. $halmos.set.theory:page{36}
+Id: "ebc660ab-8c37-4112-b7d4-4dcefb676c2f"
+
+
+Text: "A family of sets \mathcal{F} is pairwise disjoint (or mutually disjoint)
+       if no two distinct member sets share any elements in common: for any A, B
+       \in \mathcal{F} with A \neq B, their intersection is empty."
+Id: "956ed2ec-48f3-4982-b6db-5047e875e6ec"
+
+
+[\pairwise.disjoint{F}]
+States:
+when: F is \set
+that:
+. forAll: A, B is \set
+  where:
+  . A "in"? F
+  . B "in"? F
+  . A != B
+  then: ((A \.cap./ B) = \empty.set)
+Documented:
+. called: "pairwise disjoint family"
+. written: "\operatorname{Disjoint}(\mathcal{F}?)"
+. description: "The condition asserting that every pair of distinct sets in
+                family \mathcal{F} has empty intersection."
+References:
+. $enderton.set.theory:page{27}
+. $halmos.set.theory:page{15}
+Id: "6422e3d8-dccd-4676-a36a-3934f41d1467"
+
+
+Text: "A partition of a set X is a collection \mathcal{P} of non-empty, pairwise
+       disjoint subsets of X whose union equals X. Partitions represent the
+       canonical set-theoretic decomposition of a universe into non-overlapping
+       cells, providing the geometric foundation for equivalence relations and
+       quotient structures."
+Id: "01a98d1a-1109-4597-90fc-0b0544159f76"
+
+
+[\set.partition:of{X}]
+Declares: P is \set
+when: X is \set
+satisfies:
+. forAll: A "in" P
+  then: (A != \empty.set)
+. \pairwise.disjoint{P}
+. \arbitrary.union{P} = X
+Documented:
+. called: "partition of set $X?$"
+. written: "\operatorname{Partition}(X?)"
+. description: "A family of non-empty, pairwise disjoint subsets of set X whose
+                union equals X."
+References:
+. $enderton.set.theory:page{27}
+. $halmos.set.theory:page{28}
+Id: "2eb22011-bc22-4bed-b28e-ea7bd6184346"
+
+
+Theorem:
+given:
+. X is \set
+. P is \set.partition:of{X}
+then:
+. forAll: x "in" X
+  then: (x "in"? X)
+Documented:
+. called: "exhaustive covering by partition"
+. written: "\forall x \in X, \exists! A \in \mathcal{P}, x \in A"
+. description: "Every element of set X belongs to exactly one block of partition
+                \mathcal{P}."
+References:
+. $enderton.set.theory:page{28}
+. $halmos.set.theory:page{29}
+Id: "45f1faaf-356a-4b13-9123-2753b1787e04"

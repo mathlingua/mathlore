@@ -1,0 +1,19 @@
+Text: "Mathematics in its modern formulation is built upon the foundational
+       framework of set theory. Every mathematical structure—from the natural
+       numbers and real continuum to abstract groups, topological spaces, and
+       differentiable manifolds—is formally constructed as a set equipped with
+       relations and operations.
+
+       This chapter develops set theory through two complementary stages:
+
+       1. **Naive Set Theory and Core Operations**: The intuitive conception of sets
+          as collections of objects, the subset relation, power sets, Boolean
+          operations (union, intersection, set difference, symmetric difference),
+          arbitrary indexed families, and the foundational discovery of Russell's
+          Paradox demonstrating the necessity of formal constraints on comprehension.
+
+       2. **Axiomatic Set Theory (ZFC Foundations)**: The rigorous resolution of
+          paradoxes within the formal first-order Zermelo--Fraenkel axiom system
+          with the Axiom of Choice, well-founded relations, and the cumulative
+          hierarchy."
+Id: "dbad39bd-9026-478c-b29b-989c929d3e57"

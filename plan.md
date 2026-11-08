@@ -47,19 +47,19 @@ This document specifies the comprehensive curriculum roadmap for **Mathlore**, s
 ## Chapter 2: Set Theory and Basic Set Operations
 
 ### Section 2.1: Naive Set Theory and Core Operations
-*Status:* TODO
+*Status:* DONE
 *Description:* Introduces the foundational vocabulary of sets, elements, inclusion, and Boolean operations on sets.
 
 #### Subsection 2.1.1: Sets, Elements, and the Subset Relation
-*Status:* TODO
+*Status:* DONE
 *Description:* Covers set-builder notation, the elementhood relation ($\in$), extensionality principle (two sets are equal if and only if they share the same elements), the empty set ($\emptyset$), subsets ($A \subseteq B$), proper subsets, power sets $\mathcal{P}(A)$, and Russell's Paradox as a demonstration of the inconsistency of unrestricted comprehension.
 
 #### Subsection 2.1.2: Boolean Set Operations
-*Status:* TODO
+*Status:* DONE
 *Description:* Covers union ($A \cup B$), intersection ($A \cap B$), set difference ($A \setminus B$), symmetric difference ($A \mathbin{\Delta} B$), universal sets, absolute complements ($A^c$), Venn diagrams, de Morgan's Laws for sets, distributive laws, and the Boolean algebra $(\mathcal{P}(X), \cup, \cap, {}^c, \emptyset, X)$.
 
 #### Subsection 2.1.3: Generalized Unions and Intersections
-*Status:* TODO
+*Status:* DONE
 *Description:* Covers indexed families of sets $\{A_i\}_{i \in I}$, arbitrary unions $\bigcup_{i \in I} A_i$, arbitrary intersections $\bigcap_{i \in I} A_i$, generalized de Morgan laws, pairwise disjoint families, and partitions of a set.
 
 ---

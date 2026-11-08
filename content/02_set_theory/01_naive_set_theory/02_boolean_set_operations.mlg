@@ -1,0 +1,175 @@
+Title: "Boolean Set Operations"
+Id: "455f0c6a-e9f8-48c7-af05-4885209a1483"
+
+
+Text: "From basic sets, we construct new sets through systematic Boolean
+       operations analogous to propositional connectives. The most fundamental
+       operations are union, corresponding to logical disjunction, and
+       intersection, corresponding to logical conjunction."
+Id: "22fc007f-953e-4b7d-9b81-5955ecef969a"
+
+
+[A \.cup./ B]
+Defines: C is \set
+when: A, B is \set
+Documented:
+. called: "set union $A \cup B$"
+. written: "A? \cup B?"
+. description: "The set containing all elements belonging to set A, set B, or
+                both."
+References:
+. $enderton.set.theory:page{17}
+. $halmos.set.theory:page{14}
+Id: "aa8fc235-5ae6-43ce-9640-514787dbc8d2"
+
+
+[A \.cap./ B]
+Defines: C is \set
+when: A, B is \set
+Documented:
+. called: "set intersection $A \cap B$"
+. written: "A? \cap B?"
+. description: "The set containing all elements belonging simultaneously to both
+                A and B."
+References:
+. $enderton.set.theory:page{17}
+. $halmos.set.theory:page{15}
+Id: "cad89972-0b51-46b5-b6d4-f591760b2871"
+
+
+Text: "Set difference, or relative complement, subtracts the elements of one set
+       from another. Symmetric difference captures elements that belong to
+       exactly one of two sets, corresponding to the Boolean exclusive-or (XOR)."
+Id: "5e84704d-1692-4427-b36d-f2a1555bff14"
+
+
+[A \.setminus./ B]
+Defines: C is \set
+when: A, B is \set
+Documented:
+. called: "set difference $A \setminus B$"
+. written: "A? \setminus B?"
+. description: "The relative complement of B in A: the set of all elements in A
+                that do not belong to B."
+References:
+. $enderton.set.theory:page{18}
+. $halmos.set.theory:page{17}
+Id: "93ab3dc0-f227-4368-a9a8-fd1978906b99"
+
+
+[A \.symm.diff./ B]
+Defines: C is \set
+when: A, B is \set
+Documented:
+. called: "symmetric difference $A \mathbin{\Delta} B$"
+. written: "A? \mathbin{\Delta} B?"
+. description: "The set of elements belonging to either A or B but not both: (A
+                \setminus B) \cup (B \setminus A)."
+References:
+. $enderton.set.theory:page{18}
+. $halmos.set.theory:page{18}
+Id: "eb83af5b-db23-4696-8e6f-c9ef1c437885"
+
+
+Text: "When all sets under investigation are subsets of a designated universal
+       set U, the complement of subset A relative to U is called the absolute
+       complement of A, denoted A^c = U \setminus A."
+Id: "436a7c7b-31d4-4487-b429-1d8116ca0473"
+
+
+[\absolute.complement:of{A}:in{U}]
+Defines: Ac is \set
+when:
+. A is \set
+. U is \set
+Documented:
+. called: "absolute complement $A^c$ in universal set $U$"
+. written: "A?^c"
+. description: "The complement of subset A with respect to ambient universal set
+                U: U \setminus A."
+References:
+. $enderton.set.theory:page{19}
+. $halmos.set.theory:page{19}
+Id: "63751815-dca6-4f7e-b9c3-e344bcca83a6"
+
+
+Text: "The duality between union and intersection is captured by De Morgan's
+       Laws for sets: the complement of a union is the intersection of the
+       complements, and the complement of an intersection is the union of the
+       complements."
+Id: "0d8573f7-0135-4b3f-81ae-33c7208397c4"
+
+
+[\de.morgan.set.union]
+Theorem:
+given: A, B, U is \set
+then:
+. (\absolute.complement:of{(A \.cup./ B)}:in{U} = (\absolute.complement:of{A}:in{U} \.cap./ \absolute.complement:of{B}:in{U}))
+Documented:
+. called: "De Morgan's First Law for Sets"
+. written: "(A \cup B)^c = A^c \cap B^c"
+. description: "The complement of a union is the intersection of the individual
+                complements."
+References:
+. $enderton.set.theory:page{20}
+Id: "fb474876-26a9-4dc7-81ae-cc120b2ae5ef"
+
+
+[\de.morgan.set.intersection]
+Theorem:
+given: A, B, U is \set
+then:
+. (\absolute.complement:of{(A \.cap./ B)}:in{U} = (\absolute.complement:of{A}:in{U} \.cup./ \absolute.complement:of{B}:in{U}))
+Documented:
+. called: "De Morgan's Second Law for Sets"
+. written: "(A \cap B)^c = A^c \cup B^c"
+. description: "The complement of an intersection is the union of the individual
+                complements."
+References:
+. $enderton.set.theory:page{20}
+Id: "84519427-0855-4f12-9c11-b2e9c78386b7"
+
+
+Text: "Set operations satisfy algebraic identities directly mirroring those of
+       propositional logic. In particular, intersection distributes over union,
+       and union distributes over intersection."
+Id: "a696048c-3a26-45a0-bacb-7e6ed8519935"
+
+
+[\distributive.law.sets]
+Theorem:
+given: A, B, C is \set
+then:
+. ((A \.cap./ (B \.cup./ C)) = ((A \.cap./ B) \.cup./ (A \.cap./ C)))
+Documented:
+. called: "distributivity of intersection over union"
+. written: "A \cap (B \cup C) = (A \cap B) \cup (A \cap C)"
+. description: "The algebraic distributive law of set intersection over set
+                union."
+References:
+. $enderton.set.theory:page{20}
+Id: "32516ef7-bbcc-4244-8e05-b0f4ffb6730c"
+
+
+Text: "Under these operations, the power set \mathcal{P}(U) forms a Boolean
+       algebra (\mathcal{P}(U), \cup, \cap, {}^c, \emptyset, U). The empty set
+       acts as zero (bottom), U acts as unit (top), and each subset A satisfies
+       the complementation laws."
+Id: "17d25f33-de0a-4f0e-93ad-f283a31a0a8d"
+
+
+Theorem:
+given: A, U is \set
+where:
+. A \.subseteq./ U
+then:
+. ((A \.cup./ \absolute.complement:of{A}:in{U}) = U)
+. ((A \.cap./ \absolute.complement:of{A}:in{U}) = \empty.set)
+Documented:
+. called: "complementation identities of the Boolean algebra of sets"
+. written: "A \cup A^c = U \land A \cap A^c = \emptyset"
+. description: "The fundamental lattice complementation laws guaranteeing that a
+                subset and its complement partition the universal set."
+References:
+. $enderton.set.theory:page{21}
+Id: "a275e13b-840d-4f75-8db1-94577eee586f"

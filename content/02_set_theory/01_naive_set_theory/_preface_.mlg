@@ -1,0 +1,20 @@
+Text: "Naive set theory begins with the intuitive notion of a set as an
+       aggregate or collection of distinct objects into a unified whole.
+       Conceived by Georg Cantor in the late nineteenth century, this framework
+       revolutionized mathematical thought by treating infinite collections as
+       actual, completed mathematical entities.
+
+       This section introduces the foundational concepts and core operations of
+       set theory:
+
+       1. **Sets, Elements, and the Subset Relation**: Elementhood (\in), set-builder
+          comprehension, the extensionality principle, subsets (A \subseteq B),
+          proper subsets, power sets, and Russell's Paradox.
+
+       2. **Boolean Set Operations**: Union, intersection, set difference, symmetric
+          difference, universal sets, absolute complements, De Morgan's laws, and
+          the Boolean algebra structure on the power set.
+
+       3. **Generalized Unions and Intersections**: Indexed families of sets, arbitrary
+          unions and intersections, pairwise disjoint families, and partitions."
+Id: "23fe9680-e266-43e2-8434-8a07277cabbb"
