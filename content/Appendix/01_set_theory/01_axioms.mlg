@@ -37,7 +37,7 @@ Requires:
 . capability: x_ "in" X :-> \\abstract
 Enables:
 . from: Y ::= {y__ : ...}
-  capability: x_ "in" X :<->: x_ member_of Y
+  capability: x_ "in" X :<->: x_ memberOf Y
 Documented:
 . called: "set"
 . description: "The primitive ontological entity in Zermelo--Fraenkel set
