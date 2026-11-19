@@ -233,3 +233,10 @@ Text: "Partitions and equivalence relations represent two perspectives on the
        they occupy the same block, and every equivalence relation partitions its
        domain into mutually disjoint equivalence classes."
 Id: "ef0adebb-b584-46e0-a8f6-0d088573cf35"
+
+
+Theorem:
+given: X is \set
+then: X is? \set
+Id: "6ed66d9b-cb79-47b1-ba88-af0f33b05def"
+
