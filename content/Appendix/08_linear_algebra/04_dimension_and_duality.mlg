@@ -52,11 +52,6 @@ then:
   suchThat:
   . C is? \basis:for{V}
   . C \:subset?:/ T
-Documented:
-. called: "Basis Extension Theorem"
-. description: "The fundamental Steinitz-Zorn basis theorem: every linearly
-                independent subset extends to a basis, and every spanning subset
-                contains a basis, ensuring every vector space possesses a basis."
 Proof: """
 Let $V$ be a vector space over a field $F$.
 
@@ -80,9 +75,16 @@ Let $V$ be a vector space over a field $F$.
    Then $B \cup \{v\}$ is linearly independent and contains $S$, contradicting the maximality of $B$.
    Thus $\operatorname{span}(B) = V$, proving that $B$ is a basis for $V$ extending $S$.
 """
-References:
-. $axler.linear.algebra:page{34}
-. $hoffman.kunze:page{44}
+Appendix:
+. documented:
+  . called: "Basis Extension Theorem"
+  . description: "The fundamental Steinitz-Zorn basis theorem: every linearly
+                  independent subset extends to a basis, and every spanning
+                  subset contains a basis, ensuring every vector space possesses
+                  a basis."
+. references:
+  . $axler.linear.algebra:page{34}
+  . $hoffman.kunze:page{44}
 Id: "c1009158-a56f-4c29-8006-7e3a6bcc662d"
 
 

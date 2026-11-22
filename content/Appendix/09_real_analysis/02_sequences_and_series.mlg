@@ -24,14 +24,15 @@ Id: "ce15af9b-016e-4053-ab26-af72a29c45a6"
 [\real.sequence]
 Declares: X ::= x(i_)
 specifies: X is \function:on{\naturals}:to{\reals}
-Documented:
-. called: "real sequence"
-. writing: x(i)
-  as: "x?_{i?}"
-. writing: x(i_)
-  as: "\left\{ x?_{i_?} \right\}_{i_?=1}^{\infty}"
-. description: "A sequence of real numbers $a: \mathbb{N} \to \mathbb{R}$,
-                indexing discrete approximations $\{a_n\}_{n=1}^\infty$."
+Appendix:
+. documented:
+  . called: "real sequence"
+  . writing: x(i)
+    as: "x?_{i?}"
+  . writing: x(i_)
+    as: "\left\{ x?_{i_?} \right\}_{i_?=1}^{\infty}"
+  . description: "A sequence of real numbers $a: \mathbb{N} \to \mathbb{R}$,
+                  indexing discrete approximations $\{a_n\}_{n=1}^\infty$."
 Id: "c9649b07-c881-4f5e-9f9b-0c396e55f046"
 
 
@@ -59,14 +60,15 @@ that:
     . forAll: n is \natural
       where: N \:natural.leq?:/ n
       then: \real.abs(a(n) \.real.-./ L) \:real.less?:/ epsilon
-Documented:
-. called: "$S?$ converges to $L?$"
-. written: "a?_{n_?} \to L?"
-. description: "Convergence of sequence $a_n \to L$: for every $\epsilon > 0$,
-                terms eventually remain within an $\epsilon$-neighborhood
-                $|a_n - L| < \epsilon$."
-References:
-. $rudin.principles:page{47}
+Appendix:
+. documented:
+  . called: "$S?$ converges to $L?$"
+  . written: "a?_{n_?} \to L?"
+  . description: "Convergence of sequence $a_n \to L$: for every $\epsilon > 0$,
+                  terms eventually remain within an $\epsilon$-neighborhood
+                  $|a_n - L| < \epsilon$."
+. references:
+  . $rudin.principles:page{47}
 Id: "f046faf8-5c18-4597-ac14-4feda980148d"
 
 
@@ -90,13 +92,14 @@ satisfies:
       . N \:natural.leq?:/ n
       . N \:natural.leq?:/ m
       then: \real.abs(a(n) \.real.-./ a(m)) \:real.less?:/ epsilon
-Documented:
-. adjective: "Cauchy"
-. description: "A Cauchy sequence of reals: for every $\epsilon > 0$,
-                $|a_n - a_m| < \epsilon$ for all sufficiently large $n, m$,
-                clustering without gaps."
-References:
-. $rudin.principles:page{53}
+Appendix:
+. documented:
+  . adjective: "Cauchy"
+  . description: "A Cauchy sequence of reals: for every $\epsilon > 0$,
+                  $|a_n - a_m| < \epsilon$ for all sufficiently large $n, m$,
+                  clustering without gaps."
+. references:
+  . $rudin.principles:page{53}
 Id: "3bf9fa3d-791d-4ebf-b585-68dbdb2755b1"
 
 
@@ -113,10 +116,11 @@ satisfies:
   suchThat:
   . forAll: n is \natural
     then: \real.abs(a(n)) \:real.leq?:/ M
-Documented:
-. adjective: "bounded"
-. description: "A bounded sequence whose range is contained in a compact
-                interval $[-M, M]$ for some finite $M \in \mathbb{R}$."
+Appendix:
+. documented:
+  . adjective: "bounded"
+  . description: "A bounded sequence whose range is contained in a compact
+                  interval $[-M, M]$ for some finite $M \in \mathbb{R}$."
 Id: "e2633f12-6e7f-401a-a4f1-d55bec7d279c"
 
 
@@ -137,10 +141,12 @@ satisfies:
     . let: v is \real
       where: v = a(k)
       then: a(n) \:real.leq?:/ v
-Documented:
-. adjective: "monotone increasing"
-. description: "A monotone non-decreasing sequence satisfying $a_n \le a_{n+1}$,
-                ensuring convergence whenever bounded above."
+Appendix:
+. documented:
+  . adjective: "monotone increasing"
+  . description: "A monotone non-decreasing sequence satisfying
+                  $a_n \le a_{n+1}$, ensuring convergence whenever bounded
+                  above."
 Id: "7316aa91-53ee-4313-b8d4-0bceb5001242"
 
 
@@ -156,12 +162,13 @@ Id: "d401e185-d18e-4d7a-be3a-230264567a3f"
 [\series.sum:of{S ::= a(n_)}]
 Defines: s is \real
 when: S is \real.sequence
-Documented:
-. called: "sum of series $S?$"
-. written: "\sum_{n_?=1}^{\infty} a?_{n_?}"
-. description: "The infinite series sum
-                $\sum_{n=1}^\infty a_n = \lim_{N \to \infty} \sum_{n=1}^N a_n$,
-                defined as the limit of partial sums."
+Appendix:
+. documented:
+  . called: "sum of series $S?$"
+  . written: "\sum_{n_?=1}^{\infty} a?_{n_?}"
+  . description: "The infinite series sum
+                  $\sum_{n=1}^\infty a_n = \lim_{N \to \infty} \sum_{n=1}^N a_n$,
+                  defined as the limit of partial sums."
 Id: "d9cbb77c-c12f-40ab-9a47-2e72f8efc719"
 
 
@@ -178,11 +185,6 @@ then: S is? \(cauchy)::real.sequence
 iff:
 . exists: L is \real
   suchThat: \converges.to{L}:for{S}
-Documented:
-. called: "Cauchy Completeness of the Real Numbers"
-. description: "The Cauchy Completeness Theorem: a real sequence converges if
-                and only if it is Cauchy, equivalent to the metric completeness
-                of $\mathbb{R}$."
 Proof: """
 Let $(a_n)$ be a real sequence.
 
@@ -214,8 +216,14 @@ $(\implies)$: Suppose $(a_n)$ is Cauchy.
 
 Thus $a_n \to L$, establishing Cauchy completeness.
 """
-References:
-. $rudin.principles:page{53}
+Appendix:
+. documented:
+  . called: "Cauchy Completeness of the Real Numbers"
+  . description: "The Cauchy Completeness Theorem: a real sequence converges if
+                  and only if it is Cauchy, equivalent to the metric
+                  completeness of $\mathbb{R}$."
+. references:
+  . $rudin.principles:page{53}
 Id: "da1c56ad-7de6-4161-b806-99ead8e954be"
 
 
@@ -232,10 +240,6 @@ where:
 then:
 . exists: L is \real
   suchThat: \converges.to{L}:for{S}
-Documented:
-. called: "Monotone Convergence Theorem"
-. description: "The Monotone Convergence Theorem: every bounded monotone real
-                sequence converges to its supremum (or infimum)."
 Proof: """
 Let $(a_n)$ be a bounded, monotone increasing real sequence.
 The set of its values $A = \{a_n : n \in \mathbb{N}\} \subset \mathbb{R}$ is non-empty and bounded above.
@@ -260,8 +264,13 @@ $$
 for all $n \geq N$.
 Thus $(a_n)$ converges to $L = \sup\{a_n : n \in \mathbb{N}\}$.
 """
-References:
-. $rudin.principles:page{55}
+Appendix:
+. documented:
+  . called: "Monotone Convergence Theorem"
+  . description: "The Monotone Convergence Theorem: every bounded monotone real
+                  sequence converges to its supremum (or infimum)."
+. references:
+  . $rudin.principles:page{55}
 Id: "3d7b0ef1-4562-415e-bf44-74e324ce5f5c"
 
 
@@ -298,10 +307,11 @@ satisfies:
       . m = n(l)
       . j \:natural.leq?:/ m
       . j != m
-Documented:
-. called: "subsequence of $S?$"
-. description: "A subsequence $a_{n_k} = (a \circ n)_k$ determined by a strictly
-                increasing index map $n: \mathbb{N} \to \mathbb{N}$."
+Appendix:
+. documented:
+  . called: "subsequence of $S?$"
+  . description: "A subsequence $a_{n_k} = (a \circ n)_k$ determined by a
+                  strictly increasing index map $n: \mathbb{N} \to \mathbb{N}$."
 Id: "57868fa6-364f-4ecb-9c1a-9b45b53fff96"
 
 
@@ -312,10 +322,6 @@ given:
 . L is \real
 where: \converges.to{L}:for{S}
 then: \converges.to{L}:for{T}
-Documented:
-. called: "Convergence is Inherited by Subsequences"
-. description: "Every subsequence of a convergent real sequence converges to the
-                identical limit $L$."
 Proof: """Let $(a_n)$ converge to $L$, and let $b_k = a_{n_k}$ be a subsequence,
           where $n : \mathbb{N} \to \mathbb{N}$ is strictly increasing:
           $n_1 < n_2 < n_3 < \cdots$. By induction on $k$, $n_k \geq k$ for all
@@ -337,6 +343,11 @@ Proof: """Let $(a_n)$ converge to $L$, and let $b_k = a_{n_k}$ be a subsequence,
 
           Therefore, the subsequence
           $(b_k)$ converges to the identical limit $L$."""
+Appendix:
+. documented:
+  . called: "Convergence is Inherited by Subsequences"
+  . description: "Every subsequence of a convergent real sequence converges to
+                  the identical limit $L$."
 Id: "cef832b6-22d8-4377-8e47-577ab1f7bb1d"
 
 
@@ -353,11 +364,6 @@ then:
   . T ::= b(k_) is \subsequence:of{S}
   . L is \real
   suchThat: \converges.to{L}:for{T}
-Documented:
-. called: "Bolzano--Weierstrass Theorem"
-. description: "The Bolzano-Weierstrass Theorem: every bounded real sequence has
-                a convergent subsequence, establishing sequential compactness of
-                closed intervals."
 Proof: """Let $(a_n)$ be a bounded real sequence. Thus there exists a closed
           bounded interval $I_0 = [a, b]$ containing every term: $a_n \in I_0$
           for all $n \in \mathbb{N}$.
@@ -391,6 +397,12 @@ Proof: """Let $(a_n)$ be a bounded real sequence. Thus there exists a closed
           Since $\lim_{k \to \infty} (b - a)/2^k = 0$, it follows that
           $a_{n_k} \to L$ as $k \to \infty$. Thus every bounded real sequence
           possesses a convergent subsequence."""
+Appendix:
+. documented:
+  . called: "Bolzano--Weierstrass Theorem"
+  . description: "The Bolzano-Weierstrass Theorem: every bounded real sequence
+                  has a convergent subsequence, establishing sequential
+                  compactness of closed intervals."
 Id: "1f6fac61-9b16-4828-942f-293b25792dcf"
 
 

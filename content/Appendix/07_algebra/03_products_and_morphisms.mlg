@@ -28,15 +28,16 @@ expresses:
 . X3 := {(x1, x2) : x1 "in" X1; x2 "in" X2}
 . (a1_, a2_) *_3 (b1_, b2_) := (a1_ *_1 b1_, a2_ *_2 b2_)
 . e3 := (e1, e2)
-Documented:
-. called: "direct product of groups $G1?$ and $G2?$"
-. written: "G1? \times G2?"
-. description: "The categorical product $G_1 \times G_2$ in $\mathbf{Grp}$:
-                pairs $(x_1, x_2)$ multiplied componentwise, equipped with
-                canonical projection morphisms."
-References:
-. $dummit.foote:page{152}
-. $lang.algebra:page{12}
+Appendix:
+. documented:
+  . called: "direct product of groups $G1?$ and $G2?$"
+  . written: "G1? \times G2?"
+  . description: "The categorical product $G_1 \times G_2$ in $\mathbf{Grp}$:
+                  pairs $(x_1, x_2)$ multiplied componentwise, equipped with
+                  canonical projection morphisms."
+. references:
+  . $dummit.foote:page{152}
+  . $lang.algebra:page{12}
 Id: "3a354c63-fc8c-4873-9751-62ecc651a5a9"
 
 
@@ -49,12 +50,6 @@ Id: "16235348-2acd-494b-ae40-6814eab32507"
 Theorem:
 given: G1, G2 is \group
 then: G1 \.group.direct.product./ G2 is? \group
-Documented:
-. called: "Direct Product of Groups is a Group"
-. description: "Componentwise verification that the Cartesian product of two
-                groups inherits associativity, coordinatewise identity
-                $(e_1, e_2)$, and coordinatewise inverses
-                $(x_1^{-1}, x_2^{-1})$."
 Proof: """
 Let $G_1 = (X_1, *_1, e_1)$ and $G_2 = (X_2, *_2, e_2)$ be groups.
 We verify the group axioms for the direct product $G_1 \times G_2$:
@@ -87,6 +82,13 @@ We verify the group axioms for the direct product $G_1 \times G_2$:
    and $(a_1^{-1}, a_2^{-1}) *_3 (a_1, a_2) = (e_1, e_2) = e_3$.
 Thus $(G_1 \times G_2, *_3, e_3)$ is a group.
 """
+Appendix:
+. documented:
+  . called: "Direct Product of Groups is a Group"
+  . description: "Componentwise verification that the Cartesian product of two
+                  groups inherits associativity, coordinatewise identity
+                  $(e_1, e_2)$, and coordinatewise inverses
+                  $(x_1^{-1}, x_2^{-1})$."
 Id: "d65025cf-8bf1-454f-9507-55890ab9f88c"
 
 
@@ -113,14 +115,15 @@ when: G1, G2 is \group
 satisfies:
 . forAll: a, b "in" G1
   then: phi(a *_1 b) = phi(a) *_2 phi(b)
-Documented:
-. called: "group homomorphism from $G1?$ to $G2?$"
-. description: "A structure-preserving morphism $\phi: G_1 \to G_2$ satisfying
-                $\phi(a * b) = \phi(a) * \phi(b)$, forming the arrows in the
-                category $\mathbf{Grp}$."
-References:
-. $dummit.foote:page{73}
-. $lang.algebra:page{14}
+Appendix:
+. documented:
+  . called: "group homomorphism from $G1?$ to $G2?$"
+  . description: "A structure-preserving morphism $\phi: G_1 \to G_2$ satisfying
+                  $\phi(a * b) = \phi(a) * \phi(b)$, forming the arrows in the
+                  category $\mathbf{Grp}$."
+. references:
+  . $dummit.foote:page{73}
+  . $lang.algebra:page{14}
 Id: "b3809339-6511-4a87-84eb-8e3278f3524b"
 
 
@@ -135,12 +138,13 @@ Id: "625a71c4-ff3b-411f-aa1c-85d6db7642e7"
 [\center:of{G ::= (X, *, e)}]
 Defines: Z := \set@{z_ : z_ "in" G | \\forAll{g "in" G}:then{z * g = g * z}}
 when: G is \group
-Documented:
-. called: "center of group $G?$"
-. written: "Z(G?)"
-. description: "The subgroup $Z(G) = \{z \in G : \forall g \in G, zg = gz\}$ of
-                elements commuting with the entire group, measuring the
-                commutativity of $G$."
+Appendix:
+. documented:
+  . called: "center of group $G?$"
+  . written: "Z(G?)"
+  . description: "The subgroup $Z(G) = \{z \in G : \forall g \in G, zg = gz\}$
+                  of elements commuting with the entire group, measuring the
+                  commutativity of $G$."
 Id: "db5c05bc-8e04-4326-ba15-689df15c140a"
 
 
@@ -153,14 +157,15 @@ Id: "7e55ee2d-348e-46b8-ae19-e4297181dc3c"
 Declares: phi(x__) is \group.homomorphism:from{G1}:to{G2}
 when: G1, G2 is \group
 satisfies: phi is? \(bijective)::function:?on{X1}:?to{X2}
-Documented:
-. called: "group isomorphism from $G1?$ to $G2?$"
-. description: "An invertible group morphism $\phi: G_1 \to G_2$: a bijective
-                homomorphism whose inverse $\phi^{-1}$ is automatically a
-                homomorphism, identifying isomorphic group structures."
-References:
-. $dummit.foote:page{73}
-. $lang.algebra:page{14}
+Appendix:
+. documented:
+  . called: "group isomorphism from $G1?$ to $G2?$"
+  . description: "An invertible group morphism $\phi: G_1 \to G_2$: a bijective
+                  homomorphism whose inverse $\phi^{-1}$ is automatically a
+                  homomorphism, identifying isomorphic group structures."
+. references:
+  . $dummit.foote:page{73}
+  . $lang.algebra:page{14}
 Id: "433926bd-94c4-4124-9338-d0be367f5836"
 
 
@@ -172,10 +177,11 @@ Id: "1b2d5a94-9172-42d3-9969-7d7282ecd97c"
 [\group.automorphism:of{G}]
 Declares: phi(x__) is \group.isomorphism:from{G}:to{G}
 when: G is \group
-Documented:
-. called: "automorphism of $G?$"
-. description: "A self-isomorphism $\phi: G \to G$, forming the automorphism
-                group $\operatorname{Aut}(G)$ under functional composition."
+Appendix:
+. documented:
+  . called: "automorphism of $G?$"
+  . description: "A self-isomorphism $\phi: G \to G$, forming the automorphism
+                  group $\operatorname{Aut}(G)$ under functional composition."
 Id: "5a92734c-fbb5-481b-83a1-a945d6f59433"
 
 
@@ -197,12 +203,6 @@ then:
     suchThat:
     . y = phi(x)
     . phi(x.inv) = y.inv
-Documented:
-. called: "Homomorphisms Preserve Identities and Inverses"
-. description: "Every group homomorphism $\phi$ automatically preserves
-                identities ($\phi(e_1) = e_2$) and inverses
-                ($\phi(x^{-1}) = \phi(x)^{-1}$), rendering separate axiomatic
-                conditions redundant."
 Proof: """
 Let $\varphi : G_1 \to G_2$ be a group homomorphism.
 
@@ -231,9 +231,16 @@ $$
 Similarly, $\varphi(x^{-1}) *_2 \varphi(x) = \varphi(x^{-1} *_1 x) = \varphi(e_1) = e_2$.
 By the uniqueness of inverses in $G_2$, it follows that $\varphi(x^{-1}) = \varphi(x)^{-1} = y^{-1}$.
 """
-References:
-. $dummit.foote:page{74}
-. $lang.algebra:page{15}
+Appendix:
+. documented:
+  . called: "Homomorphisms Preserve Identities and Inverses"
+  . description: "Every group homomorphism $\phi$ automatically preserves
+                  identities ($\phi(e_1) = e_2$) and inverses
+                  ($\phi(x^{-1}) = \phi(x)^{-1}$), rendering separate axiomatic
+                  conditions redundant."
+. references:
+  . $dummit.foote:page{74}
+  . $lang.algebra:page{15}
 Id: "238fe8f8-136f-4825-b650-3a1af432e140"
 
 
@@ -270,11 +277,6 @@ then:
     suchThat:
     . m "in"? Z
     . g * z = m * g
-Documented:
-. called: "The Center is an Abelian Normal Subgroup"
-. description: "The center $Z(G)$ is an abelian characteristic (and hence
-                normal) subgroup of $G$, invariant under all inner automorphisms
-                $g z g^{-1} = z$."
 Proof: """
 Let $G = (X, *, e)$ be a group and $Z = Z(G) = \{z \in G : \forall g \in G, z * g = g * z\}$.
 
@@ -296,6 +298,12 @@ Let $G = (X, *, e)$ be a group and $Z = Z(G) = \{z \in G : \forall g \in G, z * 
    $g * z * g^{-1} = z \in Z$.
 Therefore, $Z(G)$ is an abelian normal subgroup of $G$.
 """
+Appendix:
+. documented:
+  . called: "The Center is an Abelian Normal Subgroup"
+  . description: "The center $Z(G)$ is an abelian characteristic (and hence
+                  normal) subgroup of $G$, invariant under all inner
+                  automorphisms $g z g^{-1} = z$."
 Id: "636bc6b8-be24-41fe-9833-6bc18420ed97"
 
 

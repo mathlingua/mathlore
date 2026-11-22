@@ -40,15 +40,16 @@ satisfies:
 Enables:
 . capability: x_ "in" R :<->: x_ is \ring.element:of{R}
   written: "x_? \in R?"
-Documented:
-. called: "ring"
-. description: "A ring $(R, +, \cdot, 0, 1)$ consists of an abelian addition
-                group $(R, +, 0)$, a multiplicative monoid $(R, \cdot, 1)$, and
-                left/right distributivity laws."
-References:
-. $dummit.foote:page{228}
-. $lang.algebra:page{83}
-. $bourbaki.algebra:page{91}
+Appendix:
+. documented:
+  . called: "ring"
+  . description: "A ring $(R, +, \cdot, 0, 1)$ consists of an abelian addition
+                  group $(R, +, 0)$, a multiplicative monoid $(R, \cdot, 1)$,
+                  and left/right distributivity laws."
+. references:
+  . $dummit.foote:page{228}
+  . $lang.algebra:page{83}
+  . $bourbaki.algebra:page{91}
 Id: "5ca5fdca-692d-4f04-8420-aa01c909955d"
 
 
@@ -65,10 +66,11 @@ Enables:
   written: "x_? +? y_?"
 . capability: x_ [*] y_ :=> x_ |R.*| y_
   written: "x_? *? y_?"
-Documented:
-. called: "element of ring $R?$"
-. description: "An element $x \in X$ of a ring $R$, supporting arithmetic
-                operations $x + y$ and $x \cdot y$."
+Appendix:
+. documented:
+  . called: "element of ring $R?$"
+  . description: "An element $x \in X$ of a ring $R$, supporting arithmetic
+                  operations $x + y$ and $x \cdot y$."
 Id: "7e51f2cf-8568-4819-af9d-80949b74d813"
 
 
@@ -88,15 +90,16 @@ Id: "64b4ac6a-9629-4aa7-89e2-9f0ea27e9a48"
 [\(commutative)::ring]
 Refines: R ::= (X, +, *, 0, 1)
 specifies: * is \(commutative)::binary.operation:on{X}
-Documented:
-. adjective: "commutative"
-. description: "A ring whose multiplication satisfies $x \cdot y = y \cdot x$,
-                forming the central objects of study in commutative algebra and
-                algebraic geometry."
-References:
-. $dummit.foote:page{228}
-. $lang.algebra:page{83}
-. $bourbaki.algebra:page{91}
+Appendix:
+. documented:
+  . adjective: "commutative"
+  . description: "A ring whose multiplication satisfies $x \cdot y = y \cdot x$,
+                  forming the central objects of study in commutative algebra
+                  and algebraic geometry."
+. references:
+  . $dummit.foote:page{228}
+  . $lang.algebra:page{83}
+  . $bourbaki.algebra:page{91}
 Id: "2ddbe95a-149f-4596-8496-b214741d64a4"
 
 
@@ -128,14 +131,15 @@ Enables:
   written: "x_? \in F?"
 . view:
   as: G := (X \.set.difference./ \singleton.set:of{0}, *, 1) is \(abelian)::group
-Documented:
-. called: "field"
-. description: "A nontrivial commutative ring in which every nonzero element has
-                a multiplicative inverse, so that $F^\times = F \setminus \{0\}$
-                forms an abelian group."
-References:
-. $dummit.foote:page{228}
-. $lang.algebra:page{83}
+Appendix:
+. documented:
+  . called: "field"
+  . description: "A nontrivial commutative ring in which every nonzero element
+                  has a multiplicative inverse, so that
+                  $F^\times = F \setminus \{0\}$ forms an abelian group."
+. references:
+  . $dummit.foote:page{228}
+  . $lang.algebra:page{83}
 Id: "53a76a9b-97d9-4c4d-b6c6-cc00983cfcb2"
 
 
@@ -147,10 +151,11 @@ Id: "5abb01c8-3f63-436d-95c1-0b80c5643ecf"
 [\field.element:of{F ::= (X, +, *, 0, 1)}]
 Declares: x is \ring.element:of{F}
 when: F is \field
-Documented:
-. called: "element of field $F?$"
-. description: "An element of a field $F$, admitting nonzero division and scalar
-                multiplication."
+Appendix:
+. documented:
+  . called: "element of field $F?$"
+  . description: "An element of a field $F$, admitting nonzero division and
+                  scalar multiplication."
 Id: "1961828f-5a83-4c78-b8c9-a91c2e512d50"
 
 
@@ -182,14 +187,15 @@ satisfies:
   then:
   . r * i "in" I
   . i * r "in" I
-Documented:
-. called: "ideal of $R?$"
-. description: "A two-sided ideal $I \subseteq R$: an additive subgroup
-                absorbing ring multiplication ($rI \subseteq I$ and
-                $Ir \subseteq I$), forming the kernels of ring homomorphisms."
-References:
-. $dummit.foote:page{242}
-. $lang.algebra:page{86}
+Appendix:
+. documented:
+  . called: "ideal of $R?$"
+  . description: "A two-sided ideal $I \subseteq R$: an additive subgroup
+                  absorbing ring multiplication ($rI \subseteq I$ and
+                  $Ir \subseteq I$), forming the kernels of ring homomorphisms."
+. references:
+  . $dummit.foote:page{242}
+  . $lang.algebra:page{86}
 Id: "999d97fa-3609-4900-a19d-ab1f3345ca54"
 
 
@@ -207,11 +213,12 @@ satisfies:
   suchThat:
   . b != 0
   . a * b = 0
-Documented:
-. adjective: "zero divisor"
-. description: "A nonzero ring element $a \ne 0$ for which there exists a
-                nonzero $b \ne 0$ satisfying $a \cdot b = 0$, obstructing
-                multiplicative cancellation."
+Appendix:
+. documented:
+  . adjective: "zero divisor"
+  . description: "A nonzero ring element $a \ne 0$ for which there exists a
+                  nonzero $b \ne 0$ satisfying $a \cdot b = 0$, obstructing
+                  multiplicative cancellation."
 Id: "cff0d878-33b9-4552-93c2-cee960162e9e"
 
 
@@ -227,14 +234,15 @@ satisfies:
 . 0 != 1
 . forAll: a, b "in" D
   then: (. a * b = 0 .) \.implies./ (. a = 0 \.or./ b = 0 .)
-Documented:
-. called: "integral domain"
-. description: "A nontrivial commutative ring with no zero divisors
-                ($ab = 0 \implies a = 0 \lor b = 0$), in which nonzero elements
-                satisfy the cancellation law."
-References:
-. $dummit.foote:page{228}
-. $lang.algebra:page{91}
+Appendix:
+. documented:
+  . called: "integral domain"
+  . description: "A nontrivial commutative ring with no zero divisors
+                  ($ab = 0 \implies a = 0 \lor b = 0$), in which nonzero
+                  elements satisfy the cancellation law."
+. references:
+  . $dummit.foote:page{228}
+  . $lang.algebra:page{91}
 Id: "be91bf4c-366f-430f-bff8-6f9c7225736d"
 
 
@@ -291,17 +299,18 @@ satisfies:
 . forAll: a, b "in" R_set
   then: phi(a *_R b) = phi(a) *_S phi(b)
 . phi(1_R) = 1_S
-Documented:
-. called: "ring homomorphism from $R?$ to $S?$"
-. description: "A ring homomorphism $\phi : R \to S$ is a structure-preserving
-                mapping between rings that respects the additive group
-                structure, the multiplicative monoid structure, and identity
-                elements: $\phi(a +_R b) = \phi(a) +_S \phi(b)$,
-                $\phi(a *_R b) = \phi(a) *_S \phi(b)$, and $\phi(1_R) = 1_S$."
-References:
-. $dummit.foote:page{239}
-. $lang.algebra:page{83}
-. $bourbaki.algebra:page{96}
+Appendix:
+. documented:
+  . called: "ring homomorphism from $R?$ to $S?$"
+  . description: "A ring homomorphism $\phi : R \to S$ is a structure-preserving
+                  mapping between rings that respects the additive group
+                  structure, the multiplicative monoid structure, and identity
+                  elements: $\phi(a +_R b) = \phi(a) +_S \phi(b)$,
+                  $\phi(a *_R b) = \phi(a) *_S \phi(b)$, and $\phi(1_R) = 1_S$."
+. references:
+  . $dummit.foote:page{239}
+  . $lang.algebra:page{83}
+  . $bourbaki.algebra:page{96}
 Id: "052b0946-5f7e-4e0d-a686-530e39c328d1"
 
 
@@ -341,19 +350,20 @@ satisfies:
 Enables:
 . view:
   as: S' := S is \ring
-Documented:
-. called: "subring of $R?$"
-. written: "S? \leq R?"
-. description: "A subring $S \subseteq R$ is a subset of a ring $R$ containing
-                the ambient multiplicative identity $1_R$ that forms a ring in
-                its own right under the restricted operations of $R$.
-                Equivalently, $S$ contains $0_R$ and $1_R$ and is closed under
-                addition, additive inverses (subtraction), and multiplication,
-                with $0_S = 0_R$ and $1_S = 1_R$."
-References:
-. $dummit.foote:page{228}
-. $lang.algebra:page{84}
-. $bourbaki.algebra:page{97}
+Appendix:
+. documented:
+  . called: "subring of $R?$"
+  . written: "S? \leq R?"
+  . description: "A subring $S \subseteq R$ is a subset of a ring $R$ containing
+                  the ambient multiplicative identity $1_R$ that forms a ring in
+                  its own right under the restricted operations of $R$.
+                  Equivalently, $S$ contains $0_R$ and $1_R$ and is closed under
+                  addition, additive inverses (subtraction), and multiplication,
+                  with $0_S = 0_R$ and $1_S = 1_R$."
+. references:
+  . $dummit.foote:page{228}
+  . $lang.algebra:page{84}
+  . $bourbaki.algebra:page{97}
 Id: "4021d04a-d013-43b6-89b9-c0c14dc688aa"
 
 
@@ -367,16 +377,17 @@ Defines: K := \set@{x_ : x_ "in" R_set | phi(x_) = 0_S}
 when:
 . R, S is \ring
 . phi is \ring.homomorphism:from{R}:to{S}
-Documented:
-. called: "kernel of $phi?$"
-. written: "\ker(phi?)"
-. description: "The kernel of a ring homomorphism $\phi : R \to S$ is the
-                preimage of the additive zero of the codomain,
-                $\ker(\phi) = \{x \in R \mid \phi(x) = 0_S\}$."
-References:
-. $dummit.foote:page{240}
-. $lang.algebra:page{85}
-. $bourbaki.algebra:page{99}
+Appendix:
+. documented:
+  . called: "kernel of $phi?$"
+  . written: "\ker(phi?)"
+  . description: "The kernel of a ring homomorphism $\phi : R \to S$ is the
+                  preimage of the additive zero of the codomain,
+                  $\ker(\phi) = \{x \in R \mid \phi(x) = 0_S\}$."
+. references:
+  . $dummit.foote:page{240}
+  . $lang.algebra:page{85}
+  . $bourbaki.algebra:page{99}
 Id: "bf16b567-97fa-44d4-8866-975d7643966a"
 
 
@@ -395,10 +406,6 @@ where:
 . K := \ring.kernel:of{phi}:from{R}:to{S}
 then:
 . K is? \ideal:of{R}
-Documented:
-. called: "Kernel of a Ring Homomorphism is an Ideal"
-. description: "The kernel of any ring homomorphism $\phi : R \to S$ forms a
-                two-sided ideal of the domain ring $R$."
 Proof: """
 Let $R = (R_{\text{set}}, +_R, *_R, 0_R, 1_R)$ and $S = (S_{\text{set}}, +_S, *_S, 0_S, 1_S)$ be rings,
 and let $\phi : R \to S$ be a ring homomorphism.
@@ -461,8 +468,13 @@ we verify the defining conditions:
 
 Since $K$ contains $0_R$, is closed under subtraction, and absorbs multiplication by all elements of $R$ from both the left and right, $K$ forms a two-sided ideal of $R$.
 """
-References:
-. $dummit.foote:page{240}
-. $lang.algebra:page{85}
-. $bourbaki.algebra:page{99}
+Appendix:
+. documented:
+  . called: "Kernel of a Ring Homomorphism is an Ideal"
+  . description: "The kernel of any ring homomorphism $\phi : R \to S$ forms a
+                  two-sided ideal of the domain ring $R$."
+. references:
+  . $dummit.foote:page{240}
+  . $lang.algebra:page{85}
+  . $bourbaki.algebra:page{99}
 Id: "bb4aa04b-a84c-4113-aebe-8b9dcda68ed1"

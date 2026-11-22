@@ -32,14 +32,15 @@ where:
 . \fol.for.all{x}:in{D}{phi}
 then:
 . \fol.substitution{t}:for{x}:in{phi}
-Documented:
-. called: "Universal Instantiation (UI)"
-. written: "\frac{\forall x \in D, \varphi(x)}{\varphi(t)}"
-. description: "The inference rule allowing deduction of \varphi(t) for any
-                substitutable term t from universal premise \forall x \in D,
-                \varphi(x)."
-References:
-. $enderton.logic:page{112}
+Appendix:
+. documented:
+  . called: "Universal Instantiation (UI)"
+  . written: "\frac{\forall x \in D, \varphi(x)}{\varphi(t)}"
+  . description: "The inference rule allowing deduction of \varphi(t) for any
+                  substitutable term t from universal premise \forall x \in D,
+                  \varphi(x)."
+. references:
+  . $enderton.logic:page{112}
 Id: "507d82be-1548-4c89-a8ac-553f1304ef98"
 
 
@@ -53,14 +54,15 @@ where:
 . phi
 then:
 . \fol.for.all{y}:in{D}{phi}
-Documented:
-. called: "Universal Generalization (UG)"
-. written: "\frac{\varphi(y)}{\forall x \in D, \varphi(x)}"
-. description: "The inference rule permitting universal generalization \forall x
-                \in D, \varphi(x) when \varphi(y) has been demonstrated for an
-                arbitrary object y unconstrained by hypotheses."
-References:
-. $enderton.logic:page{117}
+Appendix:
+. documented:
+  . called: "Universal Generalization (UG)"
+  . written: "\frac{\varphi(y)}{\forall x \in D, \varphi(x)}"
+  . description: "The inference rule permitting universal generalization \forall
+                  x \in D, \varphi(x) when \varphi(y) has been demonstrated for
+                  an arbitrary object y unconstrained by hypotheses."
+. references:
+  . $enderton.logic:page{117}
 Id: "d150a8be-978d-443f-92c0-aacc6bb05022"
 
 
@@ -83,13 +85,15 @@ where:
 . \fol.substitution{t}:for{x}:in{phi}
 then:
 . \fol.exists{x}:in{D}{phi}
-Documented:
-. called: "Existential Generalization (EG)"
-. written: "\frac{\varphi(t)}{\exists x \in D, \varphi(x)}"
-. description: "The inference rule allowing deduction of existential claim
-                \exists x \in D, \varphi(x) from an explicit witness \varphi(t)."
-References:
-. $enderton.logic:page{118}
+Appendix:
+. documented:
+  . called: "Existential Generalization (EG)"
+  . written: "\frac{\varphi(t)}{\exists x \in D, \varphi(x)}"
+  . description: "The inference rule allowing deduction of existential claim
+                  \exists x \in D, \varphi(x) from an explicit witness
+                  \varphi(t)."
+. references:
+  . $enderton.logic:page{118}
 Id: "92313939-a286-4583-99ce-207adf0f9123"
 
 
@@ -104,14 +108,15 @@ where:
 . \fol.exists{x}:in{D}{phi}
 then:
 . \fol.substitution{c}:for{x}:in{phi}
-Documented:
-. called: "Existential Instantiation (EI)"
-. written: "\frac{\exists x \in D, \varphi(x)}{\varphi(c)}"
-. description: "The inference rule introducing a fresh witness constant c
-                satisfying \varphi(c) from existential assertion \exists x \in
-                D, \varphi(x)."
-References:
-. $enderton.logic:page{120}
+Appendix:
+. documented:
+  . called: "Existential Instantiation (EI)"
+  . written: "\frac{\exists x \in D, \varphi(x)}{\varphi(c)}"
+  . description: "The inference rule introducing a fresh witness constant c
+                  satisfying \varphi(c) from existential assertion \exists x \in
+                  D, \varphi(x)."
+. references:
+  . $enderton.logic:page{120}
 Id: "16121138-a3a2-46d7-b2f5-639dea55ac6b"
 
 
@@ -126,12 +131,13 @@ Id: "8404c8cf-a3d6-498d-8bd9-99cafe23190e"
 Axiom:
 given: x is \fol.term
 then: (x = x)
-Documented:
-. called: "reflexivity of equality"
-. written: "\forall x\,(x = x)"
-. description: "Every object is identical to itself."
-References:
-. $enderton.logic:page{94}
+Appendix:
+. documented:
+  . called: "reflexivity of equality"
+  . written: "\forall x\,(x = x)"
+  . description: "Every object is identical to itself."
+. references:
+  . $enderton.logic:page{94}
 Id: "445ddb1f-5429-4a19-bcd3-df6c67ab542a"
 
 
@@ -146,13 +152,14 @@ where:
 . phi
 then:
 . \fol.substitution{y}:for{x}:in{phi}
-Documented:
-. called: "congruence / substitution of equals"
-. written: "x = y \to (\varphi(x) \leftrightarrow \varphi(y))"
-. description: "Equal terms may be substituted for each other in any formula
-                without changing its truth value."
-References:
-. $enderton.logic:page{94}
+Appendix:
+. documented:
+  . called: "congruence / substitution of equals"
+  . written: "x = y \to (\varphi(x) \leftrightarrow \varphi(y))"
+  . description: "Equal terms may be substituted for each other in any formula
+                  without changing its truth value."
+. references:
+  . $enderton.logic:page{94}
 Id: "9bc137c3-af5d-4f32-8adf-bdfa77341276"
 
 
@@ -173,14 +180,15 @@ Id: "3a03b640-90c3-4fdc-87fa-26698bbe288a"
 Theorem:
 given: P, Q is \\statement
 then: (P \.implies./ Q) \.iff./ ((\not{Q}) \.implies./ (\not{P}))
-Documented:
-. called: "proof by contraposition"
-. written: "(P \implies Q) \iff (\neg Q \implies \neg P)"
-. description: "The logical equivalence justifying proof of conditional P
-                \implies Q by establishing its contrapositive \neg Q \implies
-                \neg P."
-References:
-. $enderton.logic:page{27}
+Appendix:
+. documented:
+  . called: "proof by contraposition"
+  . written: "(P \implies Q) \iff (\neg Q \implies \neg P)"
+  . description: "The logical equivalence justifying proof of conditional P
+                  \implies Q by establishing its contrapositive \neg Q \implies
+                  \neg P."
+. references:
+  . $enderton.logic:page{27}
 Id: "d2301427-4df9-46e7-9e14-74735a8a2b9f"
 
 
@@ -188,14 +196,15 @@ Id: "d2301427-4df9-46e7-9e14-74735a8a2b9f"
 Theorem:
 given: P is \\statement
 then: (P is \\statement)
-Documented:
-. called: "proof by contradiction (reductio ad absurdum)"
-. written: "(\neg P \implies \bot) \implies P"
-. description: "The classical deductive principle establishing P by showing that
-                assuming its negation \neg P yields a formal logical
-                contradiction."
-References:
-. $enderton.logic:page{28}
+Appendix:
+. documented:
+  . called: "proof by contradiction (reductio ad absurdum)"
+  . written: "(\neg P \implies \bot) \implies P"
+  . description: "The classical deductive principle establishing P by showing
+                  that assuming its negation \neg P yields a formal logical
+                  contradiction."
+. references:
+  . $enderton.logic:page{28}
 Id: "3a45c656-83dc-4700-a4d9-88c9ca76468e"
 
 
@@ -214,14 +223,15 @@ where:
 . P1 \.implies./ Q
 . P2 \.implies./ Q
 then: Q
-Documented:
-. called: "proof by cases (disjunction elimination)"
-. written: "((P_1 \lor P_2) \land (P_1 \implies Q) \land (P_2 \implies Q))
-            \implies Q"
-. description: "Establishing conclusion Q by verifying it across exhaustive
-                alternative cases."
-References:
-. $enderton.logic:page{28}
+Appendix:
+. documented:
+  . called: "proof by cases (disjunction elimination)"
+  . written: "((P_1 \lor P_2) \land (P_1 \implies Q) \land (P_2 \implies Q))
+              \implies Q"
+  . description: "Establishing conclusion Q by verifying it across exhaustive
+                  alternative cases."
+. references:
+  . $enderton.logic:page{28}
 Id: "2f63c904-bc17-4054-bc21-9c839c42e909"
 
 
@@ -244,15 +254,16 @@ where:
 then:
 . forAll: n is \natural
   then: P(n)
-Documented:
-. called: "principle of mathematical induction"
-. written: "P(0) \land (\forall n \in \mathbb{N}\,(P(n) \implies P(n+1)))
-            \implies \forall n \in \mathbb{N}\,P(n)"
-. description: "The foundational induction theorem stating that a property
-                holding at zero and preserved under successors holds for all
-                natural numbers."
-References:
-. $enderton.set.theory:page{67}
+Appendix:
+. documented:
+  . called: "principle of mathematical induction"
+  . written: "P(0) \land (\forall n \in \mathbb{N}\,(P(n) \implies P(n+1)))
+              \implies \forall n \in \mathbb{N}\,P(n)"
+  . description: "The foundational induction theorem stating that a property
+                  holding at zero and preserved under successors holds for all
+                  natural numbers."
+. references:
+  . $enderton.set.theory:page{67}
 Id: "3e6323da-c7b4-428e-a71f-144a2b90dfe4"
 
 
@@ -273,13 +284,14 @@ Id: "2a86eba0-8b33-4be3-a487-b0368e635a39"
 Theorem:
 given: P, Q is \\statement
 then: (P is \\statement)
-Documented:
-. called: "fallacy of affirming the consequent"
-. written: "((P \implies Q) \land Q) \not\implies P"
-. description: "The invalid formal inference of concluding antecedent P merely
-                from conditional P \implies Q and consequent Q."
-References:
-. $enderton.logic:page{34}
+Appendix:
+. documented:
+  . called: "fallacy of affirming the consequent"
+  . written: "((P \implies Q) \land Q) \not\implies P"
+  . description: "The invalid formal inference of concluding antecedent P merely
+                  from conditional P \implies Q and consequent Q."
+. references:
+  . $enderton.logic:page{34}
 Id: "4f73c3b0-5e90-4bba-a5c5-33749971f94f"
 
 
@@ -287,12 +299,14 @@ Id: "4f73c3b0-5e90-4bba-a5c5-33749971f94f"
 Theorem:
 given: P is \\statement
 then: (P is \\statement)
-Documented:
-. called: "fallacy of the illicit quantifier swap"
-. written: "(\forall x\,\exists y\,P(x, y)) \not\implies (\exists y\,\forall
-            x\,P(x, y))"
-. description: "The fallacy of interchanging universal and existential
-                quantifiers, conflating local dependence with global uniformity."
-References:
-. $enderton.logic:page{92}
+Appendix:
+. documented:
+  . called: "fallacy of the illicit quantifier swap"
+  . written: "(\forall x\,\exists y\,P(x, y)) \not\implies (\exists y\,\forall
+              x\,P(x, y))"
+  . description: "The fallacy of interchanging universal and existential
+                  quantifiers, conflating local dependence with global
+                  uniformity."
+. references:
+  . $enderton.logic:page{92}
 Id: "ea4bcfa5-9a88-4b66-925c-2009e16c0e77"

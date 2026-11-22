@@ -43,11 +43,13 @@ then:
       iff:
       . x "in"? A
       . phi(x)
-Documented:
-. called: "Axiom Schema of Separation"
-. description: "First-order schema asserting that for any formula $\varphi(x)$,
-                $\{x \in A : \varphi(x)\}$ is a set. Restricts comprehension to
-                subcollections of existing sets, preventing Russell's paradox."
+Appendix:
+. documented:
+  . called: "Axiom Schema of Separation"
+  . description: "First-order schema asserting that for any formula
+                  $\varphi(x)$, $\{x \in A : \varphi(x)\}$ is a set. Restricts
+                  comprehension to subcollections of existing sets, preventing
+                  Russell's paradox."
 Id: "5077fbc7-a5c8-4d60-b1a7-a9d65097f003"
 
 
@@ -78,14 +80,15 @@ then:
       iff:
       . exists: x "in" A
         suchThat: phi(x, y)
-Documented:
-. called: "Axiom Schema of Replacement"
-. description: "First-order schema asserting that the image $F[A]$ of a set
-                under any functional class operation is a set. Vital for
-                transfinite induction and forming limit ordinals such as
-                $\omega+\omega$ and $\aleph_\omega$."
-References:
-. $enderton.set.theory:page{179}
+Appendix:
+. documented:
+  . called: "Axiom Schema of Replacement"
+  . description: "First-order schema asserting that the image $F[A]$ of a set
+                  under any functional class operation is a set. Vital for
+                  transfinite induction and forming limit ordinals such as
+                  $\omega+\omega$ and $\aleph_\omega$."
+. references:
+  . $enderton.set.theory:page{179}
 Id: "6e09ea04-f1dd-41c0-a0f5-4c962cd819ac"
 
 
@@ -121,14 +124,16 @@ then:
       suchThat:
       . x "in"? A
       . x "in"? a
-Documented:
-. called: "Axiom of Foundation"
-. description: "The regularity postulate: every nonempty set $A$ contains an
-                $\in$-minimal element ($a \cap A = \emptyset$). Prohibits
-                infinite descending $\in$-chains $\dots \in x_2 \in x_1 \in x_0$
-                and self-containing sets $x \in x$."
-References:
-. $enderton.set.theory:page{206}
+Appendix:
+. documented:
+  . called: "Axiom of Foundation"
+  . description: "The regularity postulate: every nonempty set $A$ contains an
+                  $\in$-minimal element ($a \cap A = \emptyset$). Prohibits
+                  infinite descending $\in$-chains
+                  $\dots \in x_2 \in x_1 \in x_0$ and self-containing sets
+                  $x \in x$."
+. references:
+  . $enderton.set.theory:page{206}
 Id: "cc3fc1c3-8ea9-45a6-874c-9215525952f4"
 
 
@@ -159,15 +164,16 @@ then:
       suchThat:
       . S = A(i)
       . f(i) "in"? S
-Documented:
-. called: "Axiom of Choice"
-. description: "The non-constructive choice postulate: every family of nonempty
-                pairwise disjoint sets admits a transversal selector. Guarantees
-                that every Cartesian product of nonempty sets is nonempty, and
-                every surjection has a right inverse."
-References:
-. $enderton.set.theory:page{151}
-. $halmos.set.theory:page{59}
+Appendix:
+. documented:
+  . called: "Axiom of Choice"
+  . description: "The non-constructive choice postulate: every family of
+                  nonempty pairwise disjoint sets admits a transversal selector.
+                  Guarantees that every Cartesian product of nonempty sets is
+                  nonempty, and every surjection has a right inverse."
+. references:
+  . $enderton.set.theory:page{151}
+  . $halmos.set.theory:page{59}
 Id: "3f1ec40e-207c-431e-918e-7a8f4f23fa46"
 
 
@@ -212,14 +218,15 @@ when: A, B is \set
 that:
 . exists: f(x__) is \function:on{A}:to{B}
   suchThat: f is? \(bijective)::function:?on{A}:?to{B}
-Documented:
-. called: "$A?$ and $B?$ have the same cardinality"
-. written: "|A?| = |B?|"
-. description: "Cardinal equinumerosity $|A| = |B|$: existence of an invertible
-                set isomorphism (bijection) $f: A \to B$ witness to identical
-                cardinality in Set."
-References:
-. $enderton.set.theory:page{132}
+Appendix:
+. documented:
+  . called: "$A?$ and $B?$ have the same cardinality"
+  . written: "|A?| = |B?|"
+  . description: "Cardinal equinumerosity $|A| = |B|$: existence of an
+                  invertible set isomorphism (bijection) $f: A \to B$ witness to
+                  identical cardinality in Set."
+. references:
+  . $enderton.set.theory:page{132}
 Id: "5ba55513-d2b3-458e-afd9-2fbd7507d47f"
 
 
@@ -234,14 +241,15 @@ when: A, B is \set
 that:
 . exists: f(x__) is \function:on{A}:to{B}
   suchThat: f is? \(injective)::function:?on{A}:?to{B}
-Documented:
-. called: "cardinality of $A?$ is at most cardinality of $B?$"
-. written: "|A?| \leq |B?|"
-. description: "Cardinal sub-dominance $|A| \le |B|$: existence of an injective
-                embedding $f: A \hookrightarrow B$, establishing a preorder on
-                cardinalities."
-References:
-. $enderton.set.theory:page{132}
+Appendix:
+. documented:
+  . called: "cardinality of $A?$ is at most cardinality of $B?$"
+  . written: "|A?| \leq |B?|"
+  . description: "Cardinal sub-dominance $|A| \le |B|$: existence of an
+                  injective embedding $f: A \hookrightarrow B$, establishing a
+                  preorder on cardinalities."
+. references:
+  . $enderton.set.theory:page{132}
 Id: "d3cc912e-a944-4a5f-8cc8-cca18c511746"
 
 
@@ -256,11 +264,12 @@ Refines: X
 satisfies:
 . exists: n is \natural
   suchThat: X \.equinumerous.with./ \natural.initial.segment:before{n}
-Documented:
-. adjective: "finite"
-. description: "Dedekind-finite cardinality: equinumerous with an initial
-                segment $\{0, 1, \dots, n-1\}$ of $\mathbb{N}$ for some
-                $n \in \mathbb{N}$."
+Appendix:
+. documented:
+  . adjective: "finite"
+  . description: "Dedekind-finite cardinality: equinumerous with an initial
+                  segment $\{0, 1, \dots, n-1\}$ of $\mathbb{N}$ for some
+                  $n \in \mathbb{N}$."
 Id: "88d1e87d-f649-4246-b417-7d3ca4c7f24c"
 
 
@@ -274,11 +283,12 @@ Id: "7f2e20f7-9700-4143-91c3-ef33ca489141"
 [\(countably.infinite)::set]
 Refines: X
 satisfies: X \.equinumerous.with./ \naturals
-Documented:
-. adjective: "countably infinite"
-. description: "Denumerable cardinality $\aleph_0$: equinumerous with the full
-                set of natural numbers $\mathbb{N}$, admitting an exhaustive
-                infinite sequence listing."
+Appendix:
+. documented:
+  . adjective: "countably infinite"
+  . description: "Denumerable cardinality $\aleph_0$: equinumerous with the full
+                  set of natural numbers $\mathbb{N}$, admitting an exhaustive
+                  infinite sequence listing."
 Id: "7337910a-2ecc-46f7-95a7-9cc5812af19e"
 
 
@@ -293,10 +303,11 @@ satisfies:
 . anyOf:
   . X is? \(finite)::set
   . X is? \(countably.infinite)::set
-Documented:
-. adjective: "countable"
-. description: "At most countable cardinality: $|X| \le \aleph_0$, being either
-                finite or denumerably infinite."
+Appendix:
+. documented:
+  . adjective: "countable"
+  . description: "At most countable cardinality: $|X| \le \aleph_0$, being
+                  either finite or denumerably infinite."
 Id: "9725d8a1-0c65-491e-901b-ee23b8e87888"
 
 
@@ -314,13 +325,15 @@ where:
 . A \.cardinality.leq./ B
 . B \.cardinality.leq./ A
 then: A \.equinumerous.with./ B
-Documented:
-. called: "Cantor--Schroeder--Bernstein Theorem"
-. description: "Antisymmetry of cardinal dominance: mutual injective embeddings
-                $A \hookrightarrow B$ and $B \hookrightarrow A$ guarantee the
-                existence of a bijection $A \cong B$, without requiring Choice."
-References:
-. $enderton.set.theory:page{143}
+Appendix:
+. documented:
+  . called: "Cantor--Schroeder--Bernstein Theorem"
+  . description: "Antisymmetry of cardinal dominance: mutual injective
+                  embeddings $A \hookrightarrow B$ and $B \hookrightarrow A$
+                  guarantee the existence of a bijection $A \cong B$, without
+                  requiring Choice."
+. references:
+  . $enderton.set.theory:page{143}
 Id: "5ad0453f-1203-4467-949b-4c8a8697b5b3"
 
 
@@ -336,12 +349,6 @@ Theorem:
 given: A is \set
 then:
 . not: A \.equinumerous.with./ \power.set:of{A}
-Documented:
-. called: "Cantor's Theorem"
-. description: "The foundational strict cardinal inequality
-                $|A| < |\mathcal{P}(A)|$: diagonal argument proving no
-                surjection $A \twoheadrightarrow \mathcal{P}(A)$ can exist,
-                establishing an unending transfinite hierarchy of infinities."
 Proof: """Suppose for contradiction that there exists a bijection
           $f : A \to \mathcal{P}(A)$. In particular, $f$ must be surjective.
           Define the diagonal subset $D \subseteq A$ by Separation:
@@ -361,8 +368,15 @@ Proof: """Suppose for contradiction that there exists a bijection
             $d \in D \iff d \notin D$, which is a logical impossibility.
             Therefore no surjective function from $A$ to $\mathcal{P}(A)$ can
             exist, proving that $A$ is not equinumerous with $\mathcal{P}(A)$."""
-References:
-. $enderton.set.theory:page{132}
+Appendix:
+. documented:
+  . called: "Cantor's Theorem"
+  . description: "The foundational strict cardinal inequality
+                  $|A| < |\mathcal{P}(A)|$: diagonal argument proving no
+                  surjection $A \twoheadrightarrow \mathcal{P}(A)$ can exist,
+                  establishing an unending transfinite hierarchy of infinities."
+. references:
+  . $enderton.set.theory:page{132}
 Id: "83a30248-2172-45d8-934a-e7a54be66b12"
 
 

@@ -32,17 +32,18 @@ Declares: A ::= a(i_, j_)
 when:
 . m, n is \\anything
 . F is \field
-Documented:
-. called: "matrix of dimension $m? \times n?$ over $F?$"
-. writing: a(i, j)
-  as: "a?_{i?, j?}"
-. writing: a(i_, j_)
-  as: "\left[ a?_{i_?, j_?} \right]"
-. description: "A rectangular array of scalars
-                $A = [a_{i,j}] \in M_{m \times n}(F)$, representing coordinate
-                representations of linear maps."
-References:
-. $hoffman.kunze:page{86}
+Appendix:
+. documented:
+  . called: "matrix of dimension $m? \times n?$ over $F?$"
+  . writing: a(i, j)
+    as: "a?_{i?, j?}"
+  . writing: a(i_, j_)
+    as: "\left[ a?_{i_?, j_?} \right]"
+  . description: "A rectangular array of scalars
+                  $A = [a_{i,j}] \in M_{m \times n}(F)$, representing coordinate
+                  representations of linear maps."
+. references:
+  . $hoffman.kunze:page{86}
 Id: "9cfabd0d-3e74-46fa-989b-b8a7230a61f3"
 
 
@@ -63,11 +64,12 @@ satisfies:
     if: i = j
     then: delta(i, j) = 1
     else: delta(i, j) = 0
-Documented:
-. called: "identity matrix of dimension $n?$ over $F?$"
-. written: "I_{n?}"
-. description: "The square identity matrix $I_n = [\delta_{i,j}]$, serving as
-                the neutral element under matrix multiplication."
+Appendix:
+. documented:
+  . called: "identity matrix of dimension $n?$ over $F?$"
+  . written: "I_{n?}"
+  . description: "The square identity matrix $I_n = [\delta_{i,j}]$, serving as
+                  the neutral element under matrix multiplication."
 Id: "1e35b9e5-6fba-4b93-8a90-50ae1b86687a"
 
 
@@ -89,11 +91,12 @@ when: A, B is \matrix:of.dim{m, n}:over{F}
 expresses:
 . forAll: i, j is \natural
   then: C(i, j) = A(i, j) + B(i, j)
-Documented:
-. called: "$A?$ plus $B?$"
-. written: "A? + B?"
-. description: "Pointwise sum of matrices $(A + B)_{i,j} = A_{i,j} + B_{i,j}$,
-                conferring an abelian group structure on $M_{m \times n}(F)$."
+Appendix:
+. documented:
+  . called: "$A?$ plus $B?$"
+  . written: "A? + B?"
+  . description: "Pointwise sum of matrices $(A + B)_{i,j} = A_{i,j} + B_{i,j}$,
+                  conferring an abelian group structure on $M_{m \times n}(F)$."
 Id: "dd197d03-0f2e-4003-8330-a8c3e8e09dd6"
 
 
@@ -110,14 +113,15 @@ using:
 when:
 . A is \matrix:of.dim{m, n}:over{F}
 . B is \matrix:of.dim{n, p}:over{F}
-Documented:
-. called: "$A?$ times $B?$"
-. written: "A? B?"
-. description: "Compositional matrix product
-                $(AB)_{i,j} = \sum_k A_{i,k} B_{k,j}$, representing the
-                composite operator $S \circ T$ in coordinates."
-References:
-. $hoffman.kunze:page{89}
+Appendix:
+. documented:
+  . called: "$A?$ times $B?$"
+  . written: "A? B?"
+  . description: "Compositional matrix product
+                  $(AB)_{i,j} = \sum_k A_{i,k} B_{k,j}$, representing the
+                  composite operator $S \circ T$ in coordinates."
+. references:
+  . $hoffman.kunze:page{89}
 Id: "ab389a4a-5187-4af5-b2f3-c62e0c3b08db"
 
 
@@ -135,13 +139,14 @@ when: A is \matrix:of.dim{m, n}:over{F}
 expresses:
 . forAll: i, j is \natural
   then: At(j, i) = A(i, j)
-Documented:
-. called: "transpose of $A?$"
-. written: "A?^{T}"
-. description: "The transpose matrix $(A^T)_{j,i} = A_{i,j}$, representing the
-                dual operator $T^*: W^* \to V^*$ in dual coordinates."
-References:
-. $hoffman.kunze:page{111}
+Appendix:
+. documented:
+  . called: "transpose of $A?$"
+  . written: "A?^{T}"
+  . description: "The transpose matrix $(A^T)_{j,i} = A_{i,j}$, representing the
+                  dual operator $T^*: W^* \to V^*$ in dual coordinates."
+. references:
+  . $hoffman.kunze:page{111}
 Id: "82ba3c4b-40a8-4dfc-8adc-69eabb25f1ec"
 
 
@@ -160,13 +165,14 @@ using:
 . n is \\anything
 . F is \field
 when: A is \matrix:of.dim{n, n}:over{F}
-Documented:
-. called: "determinant of $A?$"
-. written: "\det(A?)"
-. description: "The unique multilinear alternating function $\det(A)$ mapping
-                $I_n \mapsto 1$, measuring oriented hypervolume scaling."
-References:
-. $hoffman.kunze:page{144}
+Appendix:
+. documented:
+  . called: "determinant of $A?$"
+  . written: "\det(A?)"
+  . description: "The unique multilinear alternating function $\det(A)$ mapping
+                  $I_n \mapsto 1$, measuring oriented hypervolume scaling."
+. references:
+  . $hoffman.kunze:page{144}
 Id: "0552914d-9a49-4089-88ba-72916ea96b3e"
 
 
@@ -181,12 +187,13 @@ using:
 . n is \\anything
 . F is \field
 when: A is \matrix:of.dim{n, n}:over{F}
-Documented:
-. called: "trace of $A?$"
-. written: "\operatorname{tr}(A?)"
-. description: "The sum of the diagonal entries
-                $\operatorname{tr}(A) = \sum A_{i,i}$, invariant under cyclic
-                permutations and similarity transformations."
+Appendix:
+. documented:
+  . called: "trace of $A?$"
+  . written: "\operatorname{tr}(A?)"
+  . description: "The sum of the diagonal entries
+                  $\operatorname{tr}(A) = \sum A_{i,i}$, invariant under cyclic
+                  permutations and similarity transformations."
 Id: "88fa45dd-3b56-49ae-8617-08fbab297577"
 
 
@@ -204,12 +211,13 @@ when: A is \matrix:of.dim{n, n}:over{F}
 satisfies:
 . exists: v is \matrix:of.dim{n, 1}:over{F}
   suchThat: v != \identity.matrix:of.dim{n}:over{F}
-Documented:
-. called: "eigenvalue of $A?$"
-. written: "\lambda"
-. description: "A field scalar $\lambda \in F$ admitting a nontrivial solution
-                $Av = \lambda v$, representing a direction of invariant linear
-                scaling."
+Appendix:
+. documented:
+  . called: "eigenvalue of $A?$"
+  . written: "\lambda"
+  . description: "A field scalar $\lambda \in F$ admitting a nontrivial solution
+                  $Av = \lambda v$, representing a direction of invariant linear
+                  scaling."
 Id: "6ed950a4-63a3-437a-871c-23c49564425a"
 
 

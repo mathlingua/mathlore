@@ -53,13 +53,14 @@ satisfies:
 . forAll: X is \set
   where: X "in"? I
   then: \set.successor:of{X} "in"? I
-Documented:
-. adjective: "inductive"
-. description: "Dedekind--von Neumann inductive set: contains the empty set
-                $\emptyset$ as initial point and is closed under the successor
-                operator $S(X) = X \cup \{X\}$."
-References:
-. $enderton.set.theory:page{67}
+Appendix:
+. documented:
+  . adjective: "inductive"
+  . description: "Dedekind--von Neumann inductive set: contains the empty set
+                  $\emptyset$ as initial point and is closed under the successor
+                  operator $S(X) = X \cup \{X\}$."
+. references:
+  . $enderton.set.theory:page{67}
 Id: "68ba43e9-1329-4103-819e-16e20e8e7c9f"
 
 
@@ -93,19 +94,20 @@ expresses:
       then: X "in"? I
 Enables:
 . capability: X_ "in" omega :-> X_ is \set
-Documented:
-. called: "Von Neumann Numerals"
-. written: "\omega"
-. description: "The first transfinite limit ordinal $\omega = \mathbb{N}$:
-                defined as the minimal inductive set (the intersection of all
-                inductive supersets), serving as the set-theoretic foundation
-                for discrete counting."
-Justification:
-. for: (:1:)
-  have: A is \(inductive)::set
-  by: \axiom.of.infinity
-References:
-. $enderton.set.theory:page{67}
+Appendix:
+. documented:
+  . called: "Von Neumann Numerals"
+  . written: "\omega"
+  . description: "The first transfinite limit ordinal $\omega = \mathbb{N}$:
+                  defined as the minimal inductive set (the intersection of all
+                  inductive supersets), serving as the set-theoretic foundation
+                  for discrete counting."
+. justification:
+  . for: (:1:)
+    have: A is \(inductive)::set
+    by: \axiom.of.infinity
+. references:
+  . $enderton.set.theory:page{67}
 Id: "c13f4641-0ed5-4ad7-b309-8ec13b4c6b77"
 
 
@@ -122,12 +124,13 @@ Id: "4001396c-3c3e-42cf-834a-416167562796"
 [\von.neumann.S(n_)]
 Defines: S(n_) is \function:on{\von.neumann.omega}:to{\von.neumann.omega}
 expresses: S(n_) := \set.successor:of{n_}
-Documented:
-. written: "S(n_?)"
-. called: "Von Neumann Successor"
-. description: "The von Neumann ordinal successor operator
-                $S(n) = n \cup \{n\}$: adjoins $n$ as an element to itself,
-                satisfying $n \in S(n)$ and $n \subsetneq S(n)$."
+Appendix:
+. documented:
+  . written: "S(n_?)"
+  . called: "Von Neumann Successor"
+  . description: "The von Neumann ordinal successor operator
+                  $S(n) = n \cup \{n\}$: adjoins $n$ as an element to itself,
+                  satisfying $n \in S(n)$ and $n \subsetneq S(n)$."
 Id: "431ccff0-c289-46a7-b739-211c8ae805b4"
 
 
@@ -145,13 +148,14 @@ specifies:
 . S(n_) := \von.neumann.S(n_)
 Enables:
 . capability: x_ "in" Nb :<->: x_ "in" N
-Documented:
-. called: "Von Neumann Naturals"
-. description: "Categorical realization $(\omega, \emptyset, S)$ validating the
-                second-order Dedekind--Peano axioms within pure
-                Zermelo--Fraenkel set theory."
-References:
-. $enderton.set.theory:page{67}
+Appendix:
+. documented:
+  . called: "Von Neumann Naturals"
+  . description: "Categorical realization $(\omega, \emptyset, S)$ validating
+                  the second-order Dedekind--Peano axioms within pure
+                  Zermelo--Fraenkel set theory."
+. references:
+  . $enderton.set.theory:page{67}
 Id: "23196d3d-7a1f-44a8-899c-3c39d65bb331"
 
 
@@ -172,10 +176,11 @@ expresses:
   . let: k is \natural
     where: n = \naturals..S(k)
     then: m = \set.successor:of{\to.von.neumann.natural{k}}
-Documented:
-. called: "Von Neumann Numeral Equivalent of $n?$"
-. written: "[n?]"
-. description: "The unique categorical isomorphism from abstract Peano naturals
-                to concrete von Neumann finite ordinals, mapping
-                $0 \mapsto \emptyset$ and intertwining succession."
+Appendix:
+. documented:
+  . called: "Von Neumann Numeral Equivalent of $n?$"
+  . written: "[n?]"
+  . description: "The unique categorical isomorphism from abstract Peano
+                  naturals to concrete von Neumann finite ordinals, mapping
+                  $0 \mapsto \emptyset$ and intertwining succession."
 Id: "3aa2a394-dea8-48d6-8b73-6ad032408fe2"

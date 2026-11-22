@@ -19,64 +19,69 @@ Id: "f693c2ec-7a4c-4d9b-baf7-ae51116b2238"
 
 [\fol.variable]
 Declares: x
-Documented:
-. called: "first-order individual variable"
-. written: "x"
-. description: "A formal variable symbol representing an unspecified element of
-                the domain of discourse."
-References:
-. $enderton.logic:page{67}
+Appendix:
+. documented:
+  . called: "first-order individual variable"
+  . written: "x"
+  . description: "A formal variable symbol representing an unspecified element
+                  of the domain of discourse."
+. references:
+  . $enderton.logic:page{67}
 Id: "24f9ca50-7f34-4a9f-8314-e10e92fb9e3b"
 
 
 [\fol.term]
 Declares: t
-Documented:
-. called: "first-order term"
-. written: "t"
-. description: "A syntactically valid expression representing an object,
-                generated inductively from individual variables, constants, and
-                function applications."
-References:
-. $enderton.logic:page{68}
+Appendix:
+. documented:
+  . called: "first-order term"
+  . written: "t"
+  . description: "A syntactically valid expression representing an object,
+                  generated inductively from individual variables, constants,
+                  and function applications."
+. references:
+  . $enderton.logic:page{68}
 Id: "ef278f0b-7cdf-48be-ab28-e95ed37d77fc"
 
 
 [\fol.constant]
 Declares: c is \fol.term
-Documented:
-. called: "individual constant symbol"
-. written: "c"
-. description: "A 0-ary non-logical symbol designating a specific fixed element
-                of the universe of discourse."
-References:
-. $enderton.logic:page{68}
+Appendix:
+. documented:
+  . called: "individual constant symbol"
+  . written: "c"
+  . description: "A 0-ary non-logical symbol designating a specific fixed
+                  element of the universe of discourse."
+. references:
+  . $enderton.logic:page{68}
 Id: "5c8d7bf5-96c9-4ef7-9abe-582719704c05"
 
 
 [\fol.function.symbol{n}]
 Defines: f is \function
 when: n is \natural
-Documented:
-. called: "n-ary function symbol"
-. written: "f"
-. description: "An n-ary non-logical function symbol representing a mapping from
-                n-tuples of domain objects to domain objects."
-References:
-. $enderton.logic:page{68}
+Appendix:
+. documented:
+  . called: "n-ary function symbol"
+  . written: "f"
+  . description: "An n-ary non-logical function symbol representing a mapping
+                  from n-tuples of domain objects to domain objects."
+. references:
+  . $enderton.logic:page{68}
 Id: "ae0b4305-25ce-4762-8077-2aa9011bfb31"
 
 
 [\fol.predicate.symbol{n}]
 Defines: P is \relation
 when: n is \natural
-Documented:
-. called: "n-ary predicate symbol"
-. written: "P"
-. description: "An n-ary non-logical relation symbol representing an n-place
-                condition or relation on the domain of discourse."
-References:
-. $enderton.logic:page{68}
+Appendix:
+. documented:
+  . called: "n-ary predicate symbol"
+  . written: "P"
+  . description: "An n-ary non-logical relation symbol representing an n-place
+                  condition or relation on the domain of discourse."
+. references:
+  . $enderton.logic:page{68}
 Id: "65ee7c1a-423b-4566-90df-2ed0b6152613"
 
 
@@ -89,14 +94,15 @@ Id: "158fc1f1-9e11-4942-a81f-413c1fe1fbe5"
 
 [\fol.atomic.formula]
 Declares: A is \\statement
-Documented:
-. called: "atomic first-order formula"
-. written: "A"
-. description: "An atomic assertion formed either by the equality of two terms
-                (t_1 = t_2) or by an n-ary predicate symbol applied to an
-                n-tuple of terms P(t_1, ..., t_n)."
-References:
-. $enderton.logic:page{69}
+Appendix:
+. documented:
+  . called: "atomic first-order formula"
+  . written: "A"
+  . description: "An atomic assertion formed either by the equality of two terms
+                  (t_1 = t_2) or by an n-ary predicate symbol applied to an
+                  n-tuple of terms P(t_1, ..., t_n)."
+. references:
+  . $enderton.logic:page{69}
 Id: "bcefeed4-b24c-4360-baff-726ed0c200f3"
 
 
@@ -109,14 +115,15 @@ Id: "9bf821ac-da6b-4c9f-b157-6753e59ab766"
 
 [\fol.formula]
 Declares: phi is \\statement
-Documented:
-. called: "well-formed first-order formula"
-. written: "\varphi"
-. description: "A grammatically valid first-order formula generated inductively
-                from atomic formulas via propositional connectives and
-                quantifiers."
-References:
-. $enderton.logic:page{69}
+Appendix:
+. documented:
+  . called: "well-formed first-order formula"
+  . written: "\varphi"
+  . description: "A grammatically valid first-order formula generated
+                  inductively from atomic formulas via propositional connectives
+                  and quantifiers."
+. references:
+  . $enderton.logic:page{69}
 Id: "f3a79b3e-557a-4ae5-a297-8992961a0b25"
 
 
@@ -126,13 +133,14 @@ when:
 . x is \fol.variable
 . D is \set
 . P is \\statement
-Documented:
-. called: "universal quantification $\forall x \in D, P$"
-. written: "\forall x \in D, P"
-. description: "The assertion that condition P holds for every element x in
-                domain D."
-References:
-. $enderton.logic:page{70}
+Appendix:
+. documented:
+  . called: "universal quantification $\forall x \in D, P$"
+  . written: "\forall x \in D, P"
+  . description: "The assertion that condition P holds for every element x in
+                  domain D."
+. references:
+  . $enderton.logic:page{70}
 Id: "b9365ecb-30f9-42f8-a988-4405d7a8dcd2"
 
 
@@ -142,13 +150,14 @@ when:
 . x is \fol.variable
 . D is \set
 . P is \\statement
-Documented:
-. called: "existential quantification $\exists x \in D, P$"
-. written: "\exists x \in D, P"
-. description: "The assertion that condition P holds for at least one element x
-                in domain D."
-References:
-. $enderton.logic:page{70}
+Appendix:
+. documented:
+  . called: "existential quantification $\exists x \in D, P$"
+  . written: "\exists x \in D, P"
+  . description: "The assertion that condition P holds for at least one element
+                  x in domain D."
+. references:
+  . $enderton.logic:page{70}
 Id: "362f5cff-4461-4466-9fce-06a26a84fa45"
 
 
@@ -163,13 +172,14 @@ Id: "58440b62-ef99-4c2f-8718-85350b1ca225"
 [\fol.free.variables{phi}]
 Defines: V is \set
 when: phi is \\statement
-Documented:
-. called: "set of free variables $\operatorname{FV}(\varphi)$"
-. written: "\operatorname{FV}(\varphi?)"
-. description: "The finite set of individual variables having at least one free
-                occurrence in formula \varphi."
-References:
-. $enderton.logic:page{75}
+Appendix:
+. documented:
+  . called: "set of free variables $\operatorname{FV}(\varphi)$"
+  . written: "\operatorname{FV}(\varphi?)"
+  . description: "The finite set of individual variables having at least one
+                  free occurrence in formula \varphi."
+. references:
+  . $enderton.logic:page{75}
 Id: "9ef664a1-0491-4232-92a5-cea2eb417736"
 
 
@@ -186,13 +196,14 @@ Id: "48aa4a07-2723-444d-ba57-735c4e848f83"
 Declares: sigma is \\statement
 satisfies:
 . \fol.free.variables{sigma} = \empty.set
-Documented:
-. called: "first-order sentence"
-. written: "\sigma"
-. description: "A closed first-order formula possessing no free variable
-                occurrences."
-References:
-. $enderton.logic:page{75}
+Appendix:
+. documented:
+  . called: "first-order sentence"
+  . written: "\sigma"
+  . description: "A closed first-order formula possessing no free variable
+                  occurrences."
+. references:
+  . $enderton.logic:page{75}
 Id: "6bb9bf01-0b9a-4e77-8313-71ce58314919"
 
 
@@ -212,14 +223,15 @@ when:
 . t is \fol.term
 . x is \fol.variable
 . phi is \\statement
-Documented:
-. called: "substitution $\varphi[t/x]$"
-. written: "\varphi?[t?/x?]"
-. description: "The formula obtained by replacing every free occurrence of
-                variable x in \varphi with term t, renaming bound variables as
-                necessary to avoid capture."
-References:
-. $enderton.logic:page{112}
+Appendix:
+. documented:
+  . called: "substitution $\varphi[t/x]$"
+  . written: "\varphi?[t?/x?]"
+  . description: "The formula obtained by replacing every free occurrence of
+                  variable x in \varphi with term t, renaming bound variables as
+                  necessary to avoid capture."
+. references:
+  . $enderton.logic:page{112}
 Id: "2cf6b23a-d67d-4c08-8f64-ff0053d5ff71"
 
 
@@ -230,11 +242,12 @@ given:
 . t is \fol.term
 then:
 . (\fol.substitution{t}:for{x}:in{phi} is \\statement)
-Documented:
-. called: "syntactic closure of capture-free substitution"
-. description: "For any well-formed formula \varphi, variable x, and term t, the
-                capture-free substitution \varphi[t/x] produces a unique,
-                well-formed first-order formula."
-References:
-. $enderton.logic:page{112}
+Appendix:
+. documented:
+  . called: "syntactic closure of capture-free substitution"
+  . description: "For any well-formed formula \varphi, variable x, and term t,
+                  the capture-free substitution \varphi[t/x] produces a unique,
+                  well-formed first-order formula."
+. references:
+  . $enderton.logic:page{112}
 Id: "450ebf1a-df9c-490f-bc21-a785cd09bda4"

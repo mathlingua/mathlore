@@ -51,20 +51,22 @@ satisfies:
   . anyOf:
     . d = \integer.one
     . d = p
-Documented:
-. adjective: "prime"
-. description: "A prime is an integer greater than one whose only positive
-                divisors are one and itself."
-References:
-. $hardy.wright:page{1}
+Appendix:
+. documented:
+  . adjective: "prime"
+  . description: "A prime is an integer greater than one whose only positive
+                  divisors are one and itself."
+. references:
+  . $hardy.wright:page{1}
 Id: "133119f5-9771-4e7e-b84e-de640884b36e"
 
 
 [\integer.two]
 Defines: t := \integer.one \.integer.+./ \integer.one is \integer
-Documented:
-. called: "integer two"
-. written: "2"
+Appendix:
+. documented:
+  . called: "integer two"
+  . written: "2"
 Id: "4574a4f5-93f4-4a1b-ab6c-31750b94003a"
 
 
@@ -73,8 +75,9 @@ Refines: n
 satisfies:
 . exists: k is \integer
   suchThat: n = \integer.two \.integer.*./ k
-Documented:
-. adjective: "even"
+Appendix:
+. documented:
+  . adjective: "even"
 Id: "90de84c3-1ed2-47f9-913e-1892c1976b5e"
 
 
@@ -95,12 +98,13 @@ then:
     . p is? \(prime)::integer
     . q is? \(prime)::integer
     . n = p \.integer.+./ q
-Documented:
-. called: "Strong Goldbach Conjecture"
-. description: "Every even integer greater than two is the sum of two primes;
-                the two primes are not required to be distinct."
-References:
-. $hardy.wright:page{19}
+Appendix:
+. documented:
+  . called: "Strong Goldbach Conjecture"
+  . description: "Every even integer greater than two is the sum of two primes;
+                  the two primes are not required to be distinct."
+. references:
+  . $hardy.wright:page{19}
 Id: "1945a57b-f397-4f58-b515-fd8878910f2e"
 
 
@@ -119,13 +123,14 @@ then:
     . p is? \(prime)::integer
     . q = p \.integer.+./ \integer.two
     . q is? \(prime)::integer
-Documented:
-. called: "Twin Prime Conjecture"
-. description: "Above every integer bound there is a prime $p$ for which $p+2$
-                is also prime. This unboundedness formulation is equivalent to
-                the existence of infinitely many twin-prime pairs."
-References:
-. $hardy.wright:page{5}
+Appendix:
+. documented:
+  . called: "Twin Prime Conjecture"
+  . description: "Above every integer bound there is a prime $p$ for which $p+2$
+                  is also prime. This unboundedness formulation is equivalent to
+                  the existence of infinitely many twin-prime pairs."
+. references:
+  . $hardy.wright:page{5}
 Id: "565f765c-47cd-427f-a5b5-44c87d1a9794"
 
 

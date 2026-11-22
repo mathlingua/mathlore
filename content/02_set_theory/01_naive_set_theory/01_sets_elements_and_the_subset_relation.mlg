@@ -16,13 +16,14 @@ Defines: S is \set
 when:
 . x is \\anything
 . P is \\statement
-Documented:
-. called: "set-builder comprehension $\{x \mid P(x)\}$"
-. written: "\{x \mid P(x)\}"
-. description: "The collection of all objects x satisfying the property P(x)."
-References:
-. $enderton.set.theory:page{2}
-. $halmos.set.theory:page{4}
+Appendix:
+. documented:
+  . called: "set-builder comprehension $\{x \mid P(x)\}$"
+  . written: "\{x \mid P(x)\}"
+  . description: "The collection of all objects x satisfying the property P(x)."
+. references:
+  . $enderton.set.theory:page{2}
+  . $halmos.set.theory:page{4}
 Id: "5fddffef-249a-4dbc-9750-3f05b86d2b4b"
 
 
@@ -39,14 +40,15 @@ when: A, B is \set
 that:
 . forAll: x
   then: ((x "in"? A) \.iff./ (x "in"? B))
-Documented:
-. called: "extensional equivalence of sets"
-. written: "\forall x\,(x \in A \leftrightarrow x \in B)"
-. description: "The condition stating that sets A and B share identical members,
-                which by extensionality implies A = B."
-References:
-. $enderton.set.theory:page{2}
-. $halmos.set.theory:page{2}
+Appendix:
+. documented:
+  . called: "extensional equivalence of sets"
+  . written: "\forall x\,(x \in A \leftrightarrow x \in B)"
+  . description: "The condition stating that sets A and B share identical
+                  members, which by extensionality implies A = B."
+. references:
+  . $enderton.set.theory:page{2}
+  . $halmos.set.theory:page{2}
 Id: "78042aa3-8251-414e-b963-aab2e5e3f00e"
 
 
@@ -63,20 +65,22 @@ then: (A = B)
 iff:
 . A \.subseteq./ B
 . B \.subseteq./ A
-Documented:
-. called: "set equality via mutual inclusion (double containment)"
-. written: "A = B \iff (A \subseteq B \land B \subseteq A)"
-. description: "The fundamental double-containment proof technique: establishes
-                identity A = B by independently verifying that every element of
-                A belongs to B and every element of B belongs to A."
 Proof: """By the Principle of Extensionality, $A = B$ if and only if for all $x$,
           $x \in A \iff x \in B$. Decomposing this biconditional into two
           conditional implications yields
           $(\forall x, x \in A \implies x \in B) \land (\forall x, x \in B \implies x \in A)$.
           The first conjunct is precisely the definition of $A \subseteq B$, and
           the second conjunct is the definition of $B \subseteq A$."""
-References:
-. $enderton.set.theory:page{5}
+Appendix:
+. documented:
+  . called: "set equality via mutual inclusion (double containment)"
+  . written: "A = B \iff (A \subseteq B \land B \subseteq A)"
+  . description: "The fundamental double-containment proof technique:
+                  establishes identity A = B by independently verifying that
+                  every element of A belongs to B and every element of B belongs
+                  to A."
+. references:
+  . $enderton.set.theory:page{5}
 Id: "ca4dff1e-4702-4ba1-acd8-23a22bbfa9d9"
 
 
@@ -94,19 +98,20 @@ where:
 . forAll: x
   then: (x \.not.in./ B)
 then: (A = B)
-Documented:
-. called: "uniqueness of the empty set"
-. written: "A = \emptyset \land B = \emptyset \implies A = B"
-. description: "By the Principle of Extensionality, any two sets possessing no
-                elements are identical."
 Proof: """Suppose $A$ and $B$ are sets containing no members. To show $A = B$,
           we verify by Extensionality that for all $x$, $x \in A \iff x \in B$.
           Since both $x \in A$ and $x \in B$ are false for every object $x$, the
           biconditional $\text{false} \iff \text{false}$ is identically true.
           Thus $A = B$."""
-References:
-. $enderton.set.theory:page{4}
-. $halmos.set.theory:page{8}
+Appendix:
+. documented:
+  . called: "uniqueness of the empty set"
+  . written: "A = \emptyset \land B = \emptyset \implies A = B"
+  . description: "By the Principle of Extensionality, any two sets possessing no
+                  elements are identical."
+. references:
+  . $enderton.set.theory:page{4}
+  . $halmos.set.theory:page{8}
 Id: "74611e81-12a5-46af-a43f-7a1749bd6107"
 
 
@@ -119,19 +124,20 @@ Id: "77ff87f1-bdb7-4f96-b13c-459e844c2e17"
 Theorem:
 given: A is \set
 then: (\empty.set \.subseteq./ A)
-Documented:
-. called: "empty set is a subset of every set"
-. written: "\emptyset \subseteq A"
-. description: "Vacuous inclusion: because the empty set possesses no elements,
-                the condition that every element of \emptyset belongs to A holds
-                vacuously."
 Proof: """Let $A$ be any set. By definition, $\emptyset \subseteq A$ requires
           that for every object $x$, if $x \in \emptyset$ then $x \in A$.
           Because $x \in \emptyset$ is false for all $x$, the implication
           $\text{false} \implies x \in A$ is vacuously true. Hence
           $\emptyset \subseteq A$."""
-References:
-. $enderton.set.theory:page{5}
+Appendix:
+. documented:
+  . called: "empty set is a subset of every set"
+  . written: "\emptyset \subseteq A"
+  . description: "Vacuous inclusion: because the empty set possesses no
+                  elements, the condition that every element of \emptyset
+                  belongs to A holds vacuously."
+. references:
+  . $enderton.set.theory:page{5}
 Id: "aa5dcc51-7122-4b76-bb78-ed4a459ae538"
 
 
@@ -148,14 +154,15 @@ when: A, B is \set
 that:
 . forAll: x "in" A
   then: (x "in"? B)
-Documented:
-. called: "subset relation $A \subseteq B$"
-. written: "A? \subseteq B?"
-. description: "Set A is a subset of set B, meaning every element of A is also
-                an element of B."
-References:
-. $enderton.set.theory:page{5}
-. $halmos.set.theory:page{11}
+Appendix:
+. documented:
+  . called: "subset relation $A \subseteq B$"
+  . written: "A? \subseteq B?"
+  . description: "Set A is a subset of set B, meaning every element of A is also
+                  an element of B."
+. references:
+  . $enderton.set.theory:page{5}
+  . $halmos.set.theory:page{11}
 Id: "cea0a3d7-737b-4692-bc6f-0540e2908396"
 
 
@@ -167,15 +174,16 @@ Id: "9565d822-0c81-4eb1-8299-f75a3607e9fa"
 Theorem:
 given: A is \set
 then: (A \.subseteq./ A)
-Documented:
-. called: "reflexivity of subset inclusion"
-. written: "A \subseteq A"
-. description: "Every set contains itself as a subset."
 Proof: """For any element $x \in A$, the assertion $x \in A$ holds by
           reflexivity of implication. Thus every element of A belongs to A,
           establishing $A \subseteq A$."""
-References:
-. $enderton.set.theory:page{5}
+Appendix:
+. documented:
+  . called: "reflexivity of subset inclusion"
+  . written: "A \subseteq A"
+  . description: "Every set contains itself as a subset."
+. references:
+  . $enderton.set.theory:page{5}
 Id: "db059e90-4659-43b1-8065-075775534352"
 
 
@@ -185,17 +193,18 @@ where:
 . A \.subseteq./ B
 . B \.subseteq./ C
 then: (A \.subseteq./ C)
-Documented:
-. called: "transitivity of subset inclusion"
-. written: "A \subseteq B \land B \subseteq C \implies A \subseteq C"
-. description: "The subset relation is transitive across all sets."
 Proof: """Assume $A \subseteq B$ and $B \subseteq C$. Let $x \in A$. Since
           $A \subseteq B$, it follows that $x \in B$. Since $B \subseteq C$ and
           $x \in B$, it follows that $x \in C$. Because $x \in A$ was arbitrary,
           every element of $A$ belongs to $C$, establishing $A \subseteq C$."""
-References:
-. $enderton.set.theory:page{5}
-. $halmos.set.theory:page{12}
+Appendix:
+. documented:
+  . called: "transitivity of subset inclusion"
+  . written: "A \subseteq B \land B \subseteq C \implies A \subseteq C"
+  . description: "The subset relation is transitive across all sets."
+. references:
+  . $enderton.set.theory:page{5}
+  . $halmos.set.theory:page{12}
 Id: "05b4a4e8-be2d-45bb-ad40-913a78d78685"
 
 
@@ -212,30 +221,32 @@ when: A, B is \set
 that:
 . have: (A \.subseteq./ B)
 . have: (A != B)
-Documented:
-. called: "proper subset $A \subsetneq B$"
-. written: "A? \subsetneq B?"
-. description: "Set A is strictly contained in set B: A \subseteq B and A \neq
-                B."
-References:
-. $enderton.set.theory:page{6}
-. $halmos.set.theory:page{12}
+Appendix:
+. documented:
+  . called: "proper subset $A \subsetneq B$"
+  . written: "A? \subsetneq B?"
+  . description: "Set A is strictly contained in set B: A \subseteq B and A \neq
+                  B."
+. references:
+  . $enderton.set.theory:page{6}
+  . $halmos.set.theory:page{12}
 Id: "310f0d95-0325-4cd7-96af-29afd5683a58"
 
 
 Theorem:
 given: A is \set
 then: (A = A)
-Documented:
-. called: "irreflexivity of proper containment"
-. written: "A \not\subsetneq A"
-. description: "No set can be a proper subset of itself."
 Proof: """By definition, $A \subsetneq A$ requires both $A \subseteq A$ and
           $A \neq A$. Since $A = A$ is identically true by reflexivity of
           equality, the second condition is unconditionally false. Thus
           $A \subsetneq A$ cannot hold for any set $A$."""
-References:
-. $enderton.set.theory:page{6}
+Appendix:
+. documented:
+  . called: "irreflexivity of proper containment"
+  . written: "A \not\subsetneq A"
+  . description: "No set can be a proper subset of itself."
+. references:
+  . $enderton.set.theory:page{6}
 Id: "44f195ef-0584-4325-b5d3-24805e92e608"
 
 
@@ -248,13 +259,14 @@ Id: "5048ee57-64c1-4574-9e4a-a47e9b4915c2"
 [\power.set.of{A}]
 Defines: P is \set
 when: A is \set
-Documented:
-. called: "power set $\mathcal{P}(A)$"
-. written: "\mathcal{P}(A?)"
-. description: "The set whose elements are all the subsets of set A."
-References:
-. $enderton.set.theory:page{6}
-. $halmos.set.theory:page{19}
+Appendix:
+. documented:
+  . called: "power set $\mathcal{P}(A)$"
+  . written: "\mathcal{P}(A?)"
+  . description: "The set whose elements are all the subsets of set A."
+. references:
+  . $enderton.set.theory:page{6}
+  . $halmos.set.theory:page{19}
 Id: "14b1cef0-c9e1-412d-b741-888b01615a56"
 
 
@@ -263,18 +275,19 @@ given: A is \set
 then:
 . (\empty.set \.subseteq./ A)
 . (A \.subseteq./ A)
-Documented:
-. called: "extremal elements of the power set"
-. written: "\emptyset \in \mathcal{P}(A) \land A \in \mathcal{P}(A)"
-. description: "The empty set and the entire set A are always elements of the
-                power set \mathcal{P}(A)."
 Proof: """By the Empty Set Subset Theorem, $\emptyset \subseteq A$. By the
           Reflexivity of Inclusion Theorem, $A \subseteq A$. By definition of
           the power set, an object $X$ belongs to $\mathcal{P}(A)$ if and only
           if $X \subseteq A$. Thus both $\emptyset \in \mathcal{P}(A)$ and
           $A \in \mathcal{P}(A)$ hold for every set $A$."""
-References:
-. $enderton.set.theory:page{6}
+Appendix:
+. documented:
+  . called: "extremal elements of the power set"
+  . written: "\emptyset \in \mathcal{P}(A) \land A \in \mathcal{P}(A)"
+  . description: "The empty set and the entire set A are always elements of the
+                  power set \mathcal{P}(A)."
+. references:
+  . $enderton.set.theory:page{6}
 Id: "3a9bca74-5ee2-4193-8917-78ea58963f0e"
 
 
@@ -284,10 +297,6 @@ where:
 . A \.subseteq./ B
 then:
 . (\power.set.of{A} \.subseteq./ \power.set.of{B})
-Documented:
-. called: "monotonicity of the power set operation"
-. written: "A \subseteq B \implies \mathcal{P}(A) \subseteq \mathcal{P}(B)"
-. description: "The power set operation preserves subset inclusion."
 Proof: """Assume $A \subseteq B$. Let $X \in \mathcal{P}(A)$. By definition of
           the power set, $X \subseteq A$. By transitivity of subset inclusion,
           since $X \subseteq A$ and $A \subseteq B$, we have $X \subseteq B$.
@@ -295,8 +304,13 @@ Proof: """Assume $A \subseteq B$. Let $X \in \mathcal{P}(A)$. By definition of
           arbitrary, every element of $\mathcal{P}(A)$ belongs to
           $\mathcal{P}(B)$, which establishes
           $\mathcal{P}(A) \subseteq \mathcal{P}(B)$."""
-References:
-. $enderton.set.theory:page{6}
+Appendix:
+. documented:
+  . called: "monotonicity of the power set operation"
+  . written: "A \subseteq B \implies \mathcal{P}(A) \subseteq \mathcal{P}(B)"
+  . description: "The power set operation preserves subset inclusion."
+. references:
+  . $enderton.set.theory:page{6}
 Id: "91cab3e8-67d4-4f55-badf-51f581e4a034"
 
 
@@ -316,15 +330,16 @@ Id: "5261bcde-542c-4e83-a1f2-db24d3631d06"
 
 [\russell.set]
 Declares: R is \set
-Documented:
-. called: "Russell's set $R = \{x \mid x \notin x\}$"
-. written: "R = \{x \mid x \notin x\}"
-. description: "The collection of all sets that do not contain themselves as
-                members, formulated by Bertrand Russell to demonstrate the
-                inconsistency of unrestricted comprehension."
-References:
-. $enderton.set.theory:page{1}
-. $halmos.set.theory:page{6}
+Appendix:
+. documented:
+  . called: "Russell's set $R = \{x \mid x \notin x\}$"
+  . written: "R = \{x \mid x \notin x\}"
+  . description: "The collection of all sets that do not contain themselves as
+                  members, formulated by Bertrand Russell to demonstrate the
+                  inconsistency of unrestricted comprehension."
+. references:
+  . $enderton.set.theory:page{1}
+  . $halmos.set.theory:page{6}
 Id: "202c0c72-93c4-4259-a06c-7096afac0fff"
 
 
@@ -332,11 +347,6 @@ Id: "202c0c72-93c4-4259-a06c-7096afac0fff"
 Theorem:
 given: R is \set
 then: ((R "in"? R) \.iff./ (R \.not.in./ R))
-Documented:
-. called: "Russell's Paradox"
-. written: "R \in R \iff R \notin R"
-. description: "The foundational contradiction of naive set theory establishing
-                the impossibility of unrestricted set comprehension."
 Proof: """Assume the naive comprehension schema holds without restriction. Then
           the predicate $P(x) \equiv x \notin x$ defines a set
           $R = \{x \mid x \notin x\}$. For any object $x$,
@@ -345,9 +355,16 @@ Proof: """Assume the naive comprehension schema holds without restriction. Then
           form $Q \iff \neg Q$ is identically false. Thus the assumption that
           $R$ is a set yields a formal contradiction, proving that unrestricted
           comprehension is inconsistent."""
-References:
-. $enderton.set.theory:page{1}
-. $halmos.set.theory:page{7}
+Appendix:
+. documented:
+  . called: "Russell's Paradox"
+  . written: "R \in R \iff R \notin R"
+  . description: "The foundational contradiction of naive set theory
+                  establishing the impossibility of unrestricted set
+                  comprehension."
+. references:
+  . $enderton.set.theory:page{1}
+  . $halmos.set.theory:page{7}
 Id: "08d22705-73b2-4ee2-b913-9fcd2541b843"
 
 
@@ -361,11 +378,6 @@ Id: "f95ae9c5-3a79-47f1-bea1-e1c02b671f07"
 Theorem:
 given: U is \set
 then: (U = U)
-Documented:
-. called: "non-existence of the universal set of all sets"
-. written: "\neg \exists U \text{ such that } \forall x, x \in U"
-. description: "Demonstration via Russell's argument that there is no set
-                containing all sets."
 Proof: """Suppose for contradiction that a universal set $U$ exists such that
           every set $x$ is an element of $U$. By Zermelo's Axiom of
           Specification, we can construct the set
@@ -374,7 +386,13 @@ Proof: """Suppose for contradiction that a universal set $U$ exists such that
           then since $R \in U$, $R$ satisfies the defining condition of $R$, so
           $R \in R$, again a contradiction. Therefore, no such set $U$ can exist
           in any consistent set theory."""
-References:
-. $enderton.set.theory:page{7}
-. $halmos.set.theory:page{7}
+Appendix:
+. documented:
+  . called: "non-existence of the universal set of all sets"
+  . written: "\neg \exists U \text{ such that } \forall x, x \in U"
+  . description: "Demonstration via Russell's argument that there is no set
+                  containing all sets."
+. references:
+  . $enderton.set.theory:page{7}
+  . $halmos.set.theory:page{7}
 Id: "95d109b2-2852-4fa6-a747-8e4d9cb1b6fe"

@@ -34,17 +34,18 @@ satisfies:
   then:
   . existsUnique: y "in" B
     suchThat: f(x) = y
-Documented:
-. called: "function@[A]{ on $A?$}@[B]{ to $B?$}"
-. written: "@[A, B]{f? \: : \: A? \rightarrow B?}"
-. description: "A function $f : A \rightarrow B$ assigns to each element $x$ of
-                the domain $A$ exactly one element $f(x)$ of the codomain $B$.
-                The defining requirement is existence and uniqueness of the
-                output: for every $x \in A$ there is one and only one $y \in B$
-                with $f(x) = y$."
-References:
-. $enderton.set.theory:page{42}
-. $halmos.set.theory:page{28}
+Appendix:
+. documented:
+  . called: "function@[A]{ on $A?$}@[B]{ to $B?$}"
+  . written: "@[A, B]{f? \: : \: A? \rightarrow B?}"
+  . description: "A function $f : A \rightarrow B$ assigns to each element $x$
+                  of the domain $A$ exactly one element $f(x)$ of the codomain
+                  $B$. The defining requirement is existence and uniqueness of
+                  the output: for every $x \in A$ there is one and only one
+                  $y \in B$ with $f(x) = y$."
+. references:
+  . $enderton.set.theory:page{42}
+  . $halmos.set.theory:page{28}
 Id: "1e0cb28d-bc8f-42db-bcfa-86a215e88c7a"
 
 
@@ -62,18 +63,19 @@ satisfies:
   then:
   . if: f(x1) = f(x2)
     then: x1 = x2
-Documented:
-. adjective:
-  . "injective"
-  . "one-to-one"
-. description: "Monoclinic embedding preserving distinguishability: distinct
-                domain inputs map to distinct codomain outputs. In category
-                theory, injections correspond to monomorphisms in the category
-                of sets, admitting left inverses (retractions) whenever the
-                domain is non-empty."
-References:
-. $enderton.set.theory:page{42}
-. $halmos.set.theory:page{28}
+Appendix:
+. documented:
+  . adjective:
+    . "injective"
+    . "one-to-one"
+  . description: "Monoclinic embedding preserving distinguishability: distinct
+                  domain inputs map to distinct codomain outputs. In category
+                  theory, injections correspond to monomorphisms in the category
+                  of sets, admitting left inverses (retractions) whenever the
+                  domain is non-empty."
+. references:
+  . $enderton.set.theory:page{42}
+  . $halmos.set.theory:page{28}
 Id: "c33dd972-b742-4aed-8bbc-797ecdb2b5af"
 
 
@@ -89,17 +91,18 @@ satisfies:
   then:
   . exists: x "in" A
     suchThat: f(x) = y
-Documented:
-. adjective:
-  . "surjective"
-  . "onto"
-. description: "Epimorphic coverage spanning the entire codomain: every element
-                in $B$ possesses at least one domain preimage. Under the Axiom
-                of Choice, surjections correspond to split epimorphisms,
-                admitting right inverses (sections)."
-References:
-. $enderton.set.theory:page{42}
-. $halmos.set.theory:page{28}
+Appendix:
+. documented:
+  . adjective:
+    . "surjective"
+    . "onto"
+  . description: "Epimorphic coverage spanning the entire codomain: every
+                  element in $B$ possesses at least one domain preimage. Under
+                  the Axiom of Choice, surjections correspond to split
+                  epimorphisms, admitting right inverses (sections)."
+. references:
+  . $enderton.set.theory:page{42}
+  . $halmos.set.theory:page{28}
 Id: "be68a628-8ca8-49c8-8780-bd7aa7401ef4"
 
 
@@ -113,15 +116,16 @@ Id: "8d7c408f-298d-4172-9fe2-b4f03e152c6c"
 [\(bijective)::function:?on{A}:?to{B}]
 Refines: f
 specifies: f is \(injective, surjective)::[[f]]
-Documented:
-. adjective: "bijective"
-. description: "Set-theoretic isomorphism: a simultaneous monomorphism and
-                epimorphism establishing an exact invertible correspondence.
-                Bijections preserve cardinal size and permit the transfer of
-                mathematical structure between $A$ and $B$."
-References:
-. $enderton.set.theory:page{42}
-. $halmos.set.theory:page{28}
+Appendix:
+. documented:
+  . adjective: "bijective"
+  . description: "Set-theoretic isomorphism: a simultaneous monomorphism and
+                  epimorphism establishing an exact invertible correspondence.
+                  Bijections preserve cardinal size and permit the transfer of
+                  mathematical structure between $A$ and $B$."
+. references:
+  . $enderton.set.theory:page{42}
+  . $halmos.set.theory:page{28}
 Id: "554dad1c-22e4-47ae-9d4f-b0fb088de488"
 
 
@@ -140,12 +144,13 @@ Id: "a698fee3-f3a3-4fc8-bb89-3d83f72b6bc9"
 Defines: f is \function:on{A}:to{A}
 when: A is \set
 expresses: f(x__) := x__
-Documented:
-. called: "identity function on $A?$"
-. written: "\text{id}_{A?}"
-. description: "The neutral identity morphism $1_A$ acting as the two-sided unit
-                for function composition: $f \circ \text{id}_A = f$ and
-                $\text{id}_A \circ g = g$."
+Appendix:
+. documented:
+  . called: "identity function on $A?$"
+  . written: "\text{id}_{A?}"
+  . description: "The neutral identity morphism $1_A$ acting as the two-sided
+                  unit for function composition: $f \circ \text{id}_A = f$ and
+                  $\text{id}_A \circ g = g$."
 Id: "be488ff3-1570-44a8-8be0-2bc9cbcdd791"
 
 
@@ -167,16 +172,17 @@ when:
 . f is \function:on{A?}:to{B?}
 . g is \function:on{B}:to{C?}
 expresses: h(x__) := g(f(x__))
-Documented:
-. called: "composition of $g?$ and $f?$"
-. written: "g? \circ f?"
-. description: "Associative chaining of functional transformations
-                $(g \circ f)(x) = g(f(x))$. Composition realizes the fundamental
-                law of composition in the category of sets, endowing
-                endofunctions $\text{End}(X)$ with monoid structure."
-References:
-. $enderton.set.theory:page{42}
-. $halmos.set.theory:page{28}
+Appendix:
+. documented:
+  . called: "composition of $g?$ and $f?$"
+  . written: "g? \circ f?"
+  . description: "Associative chaining of functional transformations
+                  $(g \circ f)(x) = g(f(x))$. Composition realizes the
+                  fundamental law of composition in the category of sets,
+                  endowing endofunctions $\text{End}(X)$ with monoid structure."
+. references:
+  . $enderton.set.theory:page{42}
+  . $halmos.set.theory:page{28}
 Id: "a5c4b516-227b-4893-aa18-5f04c1f005a4"
 
 
@@ -196,16 +202,17 @@ expresses:
   then: g(f(x)) = x
 . forAll: y "in" B
   then: f(g(y)) = y
-Documented:
-. called: "inverse function of $f?$"
-. written: "f+?^{-1}"
-. description: "The unique two-sided inverse morphism $f^{-1}$ satisfying
-                $f^{-1} \circ f = \text{id}_A$ and
-                $f \circ f^{-1} = \text{id}_B$. It completely reverses the
-                operational dynamics of $f$."
-References:
-. $enderton.set.theory:page{42}
-. $halmos.set.theory:page{28}
+Appendix:
+. documented:
+  . called: "inverse function of $f?$"
+  . written: "f+?^{-1}"
+  . description: "The unique two-sided inverse morphism $f^{-1}$ satisfying
+                  $f^{-1} \circ f = \text{id}_A$ and
+                  $f \circ f^{-1} = \text{id}_B$. It completely reverses the
+                  operational dynamics of $f$."
+. references:
+  . $enderton.set.theory:page{42}
+  . $halmos.set.theory:page{28}
 Id: "894fbbc8-5e3d-4fb0-b8c7-124bc834ebcf"
 
 
@@ -221,12 +228,13 @@ Defines: Y := \set@{f(x__) : x__ "in" X}
 when:
 . f is \function:on{A?}:to{B?}
 . X \:subset:/ A
-Documented:
-. called: "image of $X?$ under $f?$"
-. written: "f?[X?]"
-. description: "The push-forward or direct image functor
-                $f_*: \mathcal{P}(A) \to \mathcal{P}(B)$. It unconditionally
-                preserves arbitrary set-theoretic unions."
+Appendix:
+. documented:
+  . called: "image of $X?$ under $f?$"
+  . written: "f?[X?]"
+  . description: "The push-forward or direct image functor
+                  $f_*: \mathcal{P}(A) \to \mathcal{P}(B)$. It unconditionally
+                  preserves arbitrary set-theoretic unions."
 Id: "70ff3a00-b34b-4e76-9bbe-5f3325a59f55"
 
 
@@ -242,14 +250,15 @@ Defines: X := \set@{x__ : x__ "in" A | f(x__) "in"? Y}
 when:
 . f is \function:on{A?}:to{B?}
 . Y \:subset:/ B
-Documented:
-. called: "preimage of $Y?$ under $f?$"
-. written: "f+?^{-1}[Y?]"
-. description: "The pull-back or inverse image functor
-                $f^*: \mathcal{P}(B) \to \mathcal{P}(A)$. Because it preserves
-                all Boolean operations (unions, intersections, complements),
-                continuity in topology is naturally characterized via open
-                preimages."
+Appendix:
+. documented:
+  . called: "preimage of $Y?$ under $f?$"
+  . written: "f+?^{-1}[Y?]"
+  . description: "The pull-back or inverse image functor
+                  $f^*: \mathcal{P}(B) \to \mathcal{P}(A)$. Because it preserves
+                  all Boolean operations (unions, intersections, complements),
+                  continuity in topology is naturally characterized via open
+                  preimages."
 Id: "d2bd7f7c-06f3-4aff-a5e1-3399e5392f20"
 
 
@@ -266,11 +275,12 @@ Id: "4e45bf5d-1f34-4700-8d12-3a34c1eee921"
 [\unary.operation:on{X}]
 Declares: u(x__) is \function:on{X}:to{X}
 when: X is \set
-Documented:
-. called: "unary operation on $X?$"
-. description: "An endomorphism $u: X \to X$ mapping a mathematical universe
-                into itself. Iterating $u$ generates discrete dynamical systems,
-                discrete time orbits, and monoid actions."
+Appendix:
+. documented:
+  . called: "unary operation on $X?$"
+  . description: "An endomorphism $u: X \to X$ mapping a mathematical universe
+                  into itself. Iterating $u$ generates discrete dynamical
+                  systems, discrete time orbits, and monoid actions."
 Id: "3e224a1e-0519-4e11-b080-e748b38de02a"
 
 
@@ -285,11 +295,12 @@ Id: "dd492fce-0357-4b6a-810f-40764b5245f9"
 [\binary.operation:on{X}]
 Declares: x_ * y_ is \function:on{X \.set.cross./ X}:to{X}
 when: X is \set
-Documented:
-. called: "binary operation on $X?$"
-. description: "An internal composition law $*: X \times X \to X$ endowing $X$
-                with magma structure. It serves as the primitive engine for
-                groups, rings, and linear algebras."
+Appendix:
+. documented:
+  . called: "binary operation on $X?$"
+  . description: "An internal composition law $*: X \times X \to X$ endowing $X$
+                  with magma structure. It serves as the primitive engine for
+                  groups, rings, and linear algebras."
 Id: "82c8948a-c30d-464b-8ab0-1c7bdb2ed770"
 
 
@@ -306,12 +317,13 @@ when: X is \set
 satisfies:
 . forAll: a, b, c "in" X
   then: (a * b) * c = a * (b * c)
-Documented:
-. adjective: "associative"
-. description: "Parenthesization invariance $(a * b) * c = a * (b * c)$.
-                Associativity eliminates ambiguity in iterated products,
-                collapsing the Stasheff associahedron of parenthesizations into
-                a unique linear product."
+Appendix:
+. documented:
+  . adjective: "associative"
+  . description: "Parenthesization invariance $(a * b) * c = a * (b * c)$.
+                  Associativity eliminates ambiguity in iterated products,
+                  collapsing the Stasheff associahedron of parenthesizations
+                  into a unique linear product."
 Id: "e23d5d7d-eed8-4efc-bdda-d316af89684e"
 
 
@@ -326,11 +338,12 @@ when: X is \set
 satisfies:
 . forAll: x, y "in" X
   then: x * y = y * x
-Documented:
-. adjective: "commutative"
-. description: "Order invariance $x * y = y * x$. Commutativity renders
-                operations independent of argument sequencing, modeling abelian
-                groups and symmetric tensor products."
+Appendix:
+. documented:
+  . adjective: "commutative"
+  . description: "Order invariance $x * y = y * x$. Commutativity renders
+                  operations independent of argument sequencing, modeling
+                  abelian groups and symmetric tensor products."
 Id: "fc0223f8-7053-44ae-a251-94b6c35bc31d"
 
 
@@ -348,13 +361,14 @@ when:
 . g is \function:on{A?}:to{B?}
 . X \:subset:/ A
 expresses: f(x__) := g(x__)
-Documented:
-. called: "restriction of $g?$ on $X?$"
-. written: "g?\big |_{X?}"
-. description: "The pullback of $g$ along the canonical injection
-                $\iota: X \hookrightarrow A$, given by $g \circ \iota$. It
-                limits the operational scope to a subuniverse while preserving
-                point evaluations."
+Appendix:
+. documented:
+  . called: "restriction of $g?$ on $X?$"
+  . written: "g?\big |_{X?}"
+  . description: "The pullback of $g$ along the canonical injection
+                  $\iota: X \hookrightarrow A$, given by $g \circ \iota$. It
+                  limits the operational scope to a subuniverse while preserving
+                  point evaluations."
 Id: "ea7eab01-792c-427f-91dc-a75f43513b38"
 
 
@@ -374,13 +388,14 @@ Defines: X := \set@{x_ : x_ "in" A | f(x_) = y}
 when:
 . f is \function:on{A?}:to{B?}
 . y "in" B
-Documented:
-. called: "fiber of $f?$ over $y?$"
-. written: "f+?^{-1}[\{y?\}]"
-. description: "The inverse image singleton $f^{-1}[\{y\}]$. Fibers partition
-                the domain into level sets; in bundle theory and algebraic
-                geometry, studying how fibers vary over the base space reveals
-                global topological obstructions."
+Appendix:
+. documented:
+  . called: "fiber of $f?$ over $y?$"
+  . written: "f+?^{-1}[\{y?\}]"
+  . description: "The inverse image singleton $f^{-1}[\{y\}]$. Fibers partition
+                  the domain into level sets; in bundle theory and algebraic
+                  geometry, studying how fibers vary over the base space reveals
+                  global topological obstructions."
 Id: "e10a2ceb-8649-480a-9ab4-651ca4345f74"
 
 

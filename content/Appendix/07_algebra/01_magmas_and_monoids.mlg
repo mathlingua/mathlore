@@ -48,11 +48,12 @@ specifies: * is \binary.operation:on{M}
 Enables:
 . capability: x_ "in" M :<->: x_ is \magma.element:of{M}
   written: "x_? \in M?"
-Documented:
-. called: "magma"
-. description: "A magma is a carrier set $X$ equipped with a closed binary
-                operation $*: X \times X \to X$, forming the foundational
-                unconstrained algebraic structure."
+Appendix:
+. documented:
+  . called: "magma"
+  . description: "A magma is a carrier set $X$ equipped with a closed binary
+                  operation $*: X \times X \to X$, forming the foundational
+                  unconstrained algebraic structure."
 Id: "91ffd40c-72fa-4a93-83f3-80ceb1ae124a"
 
 
@@ -68,10 +69,11 @@ extends: x "in" X
 Enables:
 . capability: x_ [*] y_ :=> x_ |M.*| y_
   written: "x_? *? y_?"
-Documented:
-. called: "element of magma $M?$"
-. description: "An element $x \in X$ of a magma $M$, enabling infix notation
-                $x * y$ for magma composition."
+Appendix:
+. documented:
+  . called: "element of magma $M?$"
+  . description: "An element $x \in X$ of a magma $M$, enabling infix notation
+                  $x * y$ for magma composition."
 Id: "d9405849-68a5-4721-9090-42eb0b9775d2"
 
 
@@ -102,11 +104,12 @@ satisfies:
 Enables:
 . capability: x_ "in" Q :<->: x_ is \quasigroup.element:of{Q}
   written: "x_? \in Q?"
-Documented:
-. called: "quasigroup"
-. description: "A magma $(X, *)$ satisfying Latin square division: left and
-                right translation maps $L_a(x) = a * x$ and $R_a(y) = y * a$ are
-                bijections for every $a \in X$."
+Appendix:
+. documented:
+  . called: "quasigroup"
+  . description: "A magma $(X, *)$ satisfying Latin square division: left and
+                  right translation maps $L_a(x) = a * x$ and $R_a(y) = y * a$
+                  are bijections for every $a \in X$."
 Id: "49582242-a047-48ae-aced-77654d9a48aa"
 
 
@@ -119,10 +122,11 @@ Id: "3eef8185-5005-4fd3-9e59-08c139cc3233"
 Declares: x
 when: Q is \quasigroup
 extends: x is \magma.element:of{Q}
-Documented:
-. called: "element of quasigroup $Q?$"
-. description: "An element of a quasigroup $Q$, possessing unique left and right
-                quotients with respect to any other element."
+Appendix:
+. documented:
+  . called: "element of quasigroup $Q?$"
+  . description: "An element of a quasigroup $Q$, possessing unique left and
+                  right quotients with respect to any other element."
 Id: "2f5a9f56-286c-4703-a953-316fa32e57dc"
 
 
@@ -152,15 +156,16 @@ specifies: * is \(associative)::binary.operation:on{X}
 Enables:
 . capability: x_ "in" S :<->: x_ is \semigroup.element:of{S}
   written: "x_? \in S?"
-Documented:
-. called: "semigroup"
-. description: "An associative magma $(X, *)$: satisfies
-                $(a * b) * c = a * (b * c)$, ensuring well-defined
-                parenthesization-free products across arbitrary finite
-                sequences."
-References:
-. $dummit.foote:page{16}
-. $bourbaki.algebra:page{1}
+Appendix:
+. documented:
+  . called: "semigroup"
+  . description: "An associative magma $(X, *)$: satisfies
+                  $(a * b) * c = a * (b * c)$, ensuring well-defined
+                  parenthesization-free products across arbitrary finite
+                  sequences."
+. references:
+  . $dummit.foote:page{16}
+  . $bourbaki.algebra:page{1}
 Id: "6ec2faf5-7d2c-4918-a559-6415b94f2b1f"
 
 
@@ -173,10 +178,11 @@ Id: "99eefac9-f0eb-4050-b55b-a8b5c966ef58"
 Declares: x
 when: S is \semigroup
 extends: x is \magma.element:of{S}
-Documented:
-. called: "element of semigroup $S?$"
-. description: "An element belonging to the underlying set of an associative
-                semigroup $S$."
+Appendix:
+. documented:
+  . called: "element of semigroup $S?$"
+  . description: "An element belonging to the underlying set of an associative
+                  semigroup $S$."
 Id: "5ce95378-5760-4728-b0d2-334848109a32"
 
 
@@ -206,14 +212,15 @@ satisfies:
 Enables:
 . capability: x_ "in" M :<->: x is \monoid.element:of{M}
   written: "x_? \in M?"
-Documented:
-. called: "monoid"
-. description: "A semigroup equipped with a neutral identity element $e \in X$:
-                forms a single-object category whose endomorphisms compose
-                associatively with identity $\operatorname{id}$."
-References:
-. $dummit.foote:page{16}
-. $bourbaki.algebra:page{1}
+Appendix:
+. documented:
+  . called: "monoid"
+  . description: "A semigroup equipped with a neutral identity element
+                  $e \in X$: forms a single-object category whose endomorphisms
+                  compose associatively with identity $\operatorname{id}$."
+. references:
+  . $dummit.foote:page{16}
+  . $bourbaki.algebra:page{1}
 Id: "034bf6ff-ba6e-4fac-b47e-65cc85d15642"
 
 
@@ -225,11 +232,12 @@ Id: "9f8d214e-930b-42b7-b061-d64dd36544d8"
 [\(finite)::monoid]
 Refines: M ::= (X, *, e)
 satisfies: X is? \(finite)::set
-Documented:
-. adjective: "finite"
-. description: "A monoid with finite carrier cardinality $|X| < \infty$, in
-                which every element generates an eventually periodic sequence of
-                powers."
+Appendix:
+. documented:
+  . adjective: "finite"
+  . description: "A monoid with finite carrier cardinality $|X| < \infty$, in
+                  which every element generates an eventually periodic sequence
+                  of powers."
 Id: "dea32728-601d-4c8d-9ae0-f99e16039263"
 
 
@@ -242,10 +250,11 @@ Id: "034af19b-ed1b-46aa-b293-75443a37f829"
 Declares: x
 when: M is \monoid
 extends: x is \semigroup.element:of{M}
-Documented:
-. called: "element of monoid $M?$"
-. description: "An element of a monoid $M$, supporting non-negative integer
-                power operations $x^n$ with $x^0 = e$."
+Appendix:
+. documented:
+  . called: "element of monoid $M?$"
+  . description: "An element of a monoid $M$, supporting non-negative integer
+                  power operations $x^n$ with $x^0 = e$."
 Id: "fee7d2ca-5ebc-48a6-8eed-06d623b5520f"
 
 
@@ -269,11 +278,12 @@ that:
   then:
   . if: a * x = a * y
     then: x = y
-Documented:
-. called: "$a?$ is left cancellable in $M?$"
-. description: "Injectivity of left translation $L_a: M \to M$
-                ($L_a(x) = a * x$), allowing elimination of $a$ from the left of
-                an equation."
+Appendix:
+. documented:
+  . called: "$a?$ is left cancellable in $M?$"
+  . description: "Injectivity of left translation $L_a: M \to M$
+                  ($L_a(x) = a * x$), allowing elimination of $a$ from the left
+                  of an equation."
 Id: "3ef04eda-e9d8-4859-8379-094b08b6b51a"
 
 
@@ -292,11 +302,12 @@ that:
   then:
   . if: x * a = y * a
     then: x = y
-Documented:
-. called: "$a?$ is right cancellable in $M?$"
-. description: "Injectivity of right translation $R_a: M \to M$
-                ($R_a(x) = x * a$), allowing elimination of $a$ from the right
-                of an equation."
+Appendix:
+. documented:
+  . called: "$a?$ is right cancellable in $M?$"
+  . description: "Injectivity of right translation $R_a: M \to M$
+                  ($R_a(x) = x * a$), allowing elimination of $a$ from the right
+                  of an equation."
 Id: "a2faa25a-1cbb-412a-9d97-67ba33c6a4e0"
 
 

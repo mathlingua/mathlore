@@ -74,15 +74,16 @@ Defines: I is \real
 when:
 . a, b is \real
 . f is \function:on{\reals}:to{\reals}
-Documented:
-. called: "Riemann integral of $f?$ on $[a?, b?]$"
-. written: "\int_{a?}^{b?} f?(x) \, dx"
-. description: "The definite Riemann integral
-                $\int_a^b f(x)\,dx = \sup_P L(f, P) = \inf_P U(f, P)$, measuring
-                oriented area under $f$ over $[a, b]$."
-References:
-. $rudin.principles:page{120}
-. $apostol.analysis:page{140}
+Appendix:
+. documented:
+  . called: "Riemann integral of $f?$ on $[a?, b?]$"
+  . written: "\int_{a?}^{b?} f?(x) \, dx"
+  . description: "The definite Riemann integral
+                  $\int_a^b f(x)\,dx = \sup_P L(f, P) = \inf_P U(f, P)$,
+                  measuring oriented area under $f$ over $[a, b]$."
+. references:
+  . $rudin.principles:page{120}
+  . $apostol.analysis:page{140}
 Id: "06b220c2-ee50-4d69-8de7-c1cbbd81e3bb"
 
 

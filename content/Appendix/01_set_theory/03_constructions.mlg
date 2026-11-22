@@ -19,13 +19,14 @@ expresses:
   then:
   . have: Z "in"? Y
     iff: Z = X
-Documented:
-. called: "The singleton set of $X?$"
-. written: "\left \{ X? \right \}"
-. description: "The atomic unit $\{X\}$ containing precisely $X$ as its sole
-                member. Distinguishes elementhood from containment
-                ($X \in \{X\}$ versus $X \subseteq \{X\}$) and serves as the
-                terminal object in the category of pointed sets."
+Appendix:
+. documented:
+  . called: "The singleton set of $X?$"
+  . written: "\left \{ X? \right \}"
+  . description: "The atomic unit $\{X\}$ containing precisely $X$ as its sole
+                  member. Distinguishes elementhood from containment
+                  ($X \in \{X\}$ versus $X \subseteq \{X\}$) and serves as the
+                  terminal object in the category of pointed sets."
 Id: "08f35257-d0a7-42af-9866-7d138c56fc4c"
 
 
@@ -44,13 +45,14 @@ expresses:
   then:
   . have: z "in"? Z
     iff: (.z = x.) \.or./ (.z = y.)
-Documented:
-. called: "unordered pair of $x?$ and $y?$"
-. written: "\left \{ x?, y? \right \}"
-. description: "The symmetrical binary ensemble $\{x, y\} = \{y, x\}$.
-                Extensionality renders element sequencing completely
-                transparent, serving as the raw material for Kuratowski ordered
-                pairs."
+Appendix:
+. documented:
+  . called: "unordered pair of $x?$ and $y?$"
+  . written: "\left \{ x?, y? \right \}"
+  . description: "The symmetrical binary ensemble $\{x, y\} = \{y, x\}$.
+                  Extensionality renders element sequencing completely
+                  transparent, serving as the raw material for Kuratowski
+                  ordered pairs."
 Id: "17401045-fc72-4bd4-af7d-ab578690f81c"
 
 
@@ -70,12 +72,13 @@ expresses:
   . have: Z "in"? Y
     iff:
     . (.Z "in"? X.) \.or./ (.Z = X.)
-Documented:
-. called: "The set successor of $X?$"
-. written: "X? \cup \left \{ X? \right \}"
-. description: "The von Neumann inductive successor $S(X) = X \cup \{X\}$.
-                Generates the finite von Neumann ordinals $\omega$, where each
-                integer is the well-ordered set of its predecessors."
+Appendix:
+. documented:
+  . called: "The set successor of $X?$"
+  . written: "X? \cup \left \{ X? \right \}"
+  . description: "The von Neumann inductive successor $S(X) = X \cup \{X\}$.
+                  Generates the finite von Neumann ordinals $\omega$, where each
+                  integer is the well-ordered set of its predecessors."
 Id: "002b9914-ad06-4f5a-a3fb-803bd86e6c4b"
 
 
@@ -92,12 +95,14 @@ Id: "b218d7dd-c01a-476d-9975-b05de57b8b8f"
 
 [\set.property(X_)]
 Declares: phi(X_) is (_ is \set) -> (_ is \\statement)
-Documented:
-. called: "set property"
-. description: "A first-order definable property $\varphi(X)$ in the language of
-                set theory. Used by the Axiom Schema of Separation (Zermelo) to
-                isolate bounded subcollections $\{x \in A : \varphi(x)\}$,
-                avoiding unrestricted comprehension paradoxes."
+Appendix:
+. documented:
+  . called: "set property"
+  . description: "A first-order definable property $\varphi(X)$ in the language
+                  of set theory. Used by the Axiom Schema of Separation
+                  (Zermelo) to isolate bounded subcollections
+                  $\{x \in A : \varphi(x)\}$, avoiding unrestricted
+                  comprehension paradoxes."
 Id: "cc680a81-3338-4848-8b9d-fcf368dd759e"
 
 
@@ -116,12 +121,13 @@ expresses:
     iff:
     . anyOf:
       . x[1...n] = y
-Documented:
-. called: "set of $\left \{ x? \right \}$"
-. written: "\left \{ x? \right \}"
-. description: "Finite extensional listing $\{x_1, \dots, x_n\}$ defined by the
-                disjunction of coordinate identities. Forms the standard roster
-                notation for finite sets."
+Appendix:
+. documented:
+  . called: "set of $\left \{ x? \right \}$"
+  . written: "\left \{ x? \right \}"
+  . description: "Finite extensional listing $\{x_1, \dots, x_n\}$ defined by
+                  the disjunction of coordinate identities. Forms the standard
+                  roster notation for finite sets."
 Id: "61c901bc-5f36-479b-a32c-c37b7f98a9fb"
 
 
@@ -140,15 +146,17 @@ Id: "da7d91b3-693b-4ca2-ac2a-e94555b18c5f"
 [\pair:of{x, y}]
 Defines: p := \set:of{\set:of{x}, \set:of{x, y}} is \set
 when: x, y is \\anything
-Documented:
-. called: "pair of $x?$ and $y?$"
-. written: "\langle x?, y? \rangle"
-. description: "Kuratowski's set-theoretic encoding
-                $(x, y) = \{\{x\}, \{x, y\}\}$. Transforms asymmetric positional
-                ordering into symmetric set containment, enabling the formal
-                foundation of Cartesian products, relations, and functions."
-References:
-. $enderton.set.theory:page{35}
+Appendix:
+. documented:
+  . called: "pair of $x?$ and $y?$"
+  . written: "\langle x?, y? \rangle"
+  . description: "Kuratowski's set-theoretic encoding
+                  $(x, y) = \{\{x\}, \{x, y\}\}$. Transforms asymmetric
+                  positional ordering into symmetric set containment, enabling
+                  the formal foundation of Cartesian products, relations, and
+                  functions."
+. references:
+  . $enderton.set.theory:page{35}
 Id: "8fd9d494-2882-4639-bb50-44a56626d1c4"
 
 
@@ -162,15 +170,16 @@ Id: "331daec2-edc7-4316-8fb6-0c801c3692ed"
 [A \.set.cross./ B]
 Defines: X := \set@{(a_, b_) : a_ "in" A; b_ "in" B}
 when: A, B is \set
-Documented:
-. called: "Cartesian product of $A?$ and $B?$"
-. written: "A? \times B?"
-. description: "The categorical product $A \times B$ in Set, collecting all
-                ordered pairs $(a, b)$ for $a \in A$ and $b \in B$. Acts as the
-                universal domain for binary operations, relations, and
-                multivariable maps."
-References:
-. $enderton.set.theory:page{35}
+Appendix:
+. documented:
+  . called: "Cartesian product of $A?$ and $B?$"
+  . written: "A? \times B?"
+  . description: "The categorical product $A \times B$ in Set, collecting all
+                  ordered pairs $(a, b)$ for $a \in A$ and $b \in B$. Acts as
+                  the universal domain for binary operations, relations, and
+                  multivariable maps."
+. references:
+  . $enderton.set.theory:page{35}
 Id: "3bdd9cfb-f836-4d44-880a-873bb772cdef"
 
 
@@ -186,12 +195,6 @@ then: \pair:of{x, y} = \pair:of{u, v}
 iff:
 . x = u
 . y = v
-Documented:
-. called: "coordinate equality for ordered pairs"
-. description: "The fundamental theorem of ordered pairs:
-                $(x, y) = (u, v) \iff (x = u \land y = v)$. Guarantees that
-                Kuratowski's encoding faithfully captures positional asymmetry
-                without information loss."
 Proof: """If $x = u$ and $y = v$, then
           $\{\{x\}, \{x, y\}\} = \{\{u\}, \{u, v\}\}$ trivially. Conversely,
           suppose $\{\{x\}, \{x, y\}\} = \{\{u\}, \{u, v\}\}$. The intersection
@@ -205,8 +208,15 @@ Proof: """If $x = u$ and $y = v$, then
              member $\{x, y\}$, which must equal the unique two-element member
              $\{u, v\}$ on the right. Since $x = u$ and $x \neq y$, it follows
              that $y = v$."""
-References:
-. $enderton.set.theory:page{35}
+Appendix:
+. documented:
+  . called: "coordinate equality for ordered pairs"
+  . description: "The fundamental theorem of ordered pairs:
+                  $(x, y) = (u, v) \iff (x = u \land y = v)$. Guarantees that
+                  Kuratowski's encoding faithfully captures positional asymmetry
+                  without information loss."
+. references:
+  . $enderton.set.theory:page{35}
 Id: "31691bb2-e8e1-4218-be4f-759add2b7ab7"
 
 
@@ -229,13 +239,6 @@ then:
     . b "in" B
     . c "in" C
     then: phi(((a, b), c)) = (a, (b, c))
-Documented:
-. called: "Canonical Associativity Bijection for Cartesian Products"
-. description: "The monoidal associator isomorphism
-                $\alpha_{A,B,C}: (A \times B) \times C \xrightarrow{\sim} A \times (B \times C)$.
-                Demonstrates that while Cartesian products are strictly
-                non-associative under set-theoretic encoding, they are naturally
-                isomorphic in the monoidal category $(\mathbf{Set}, \times, 1)$."
 Proof: """Define $\varphi : (A \times B) \times C \to A \times (B \times C)$ by
           $\varphi(((a, b), c)) = (a, (b, c))$. To show $\varphi$ is injective:
           if $\varphi(((a_1, b_1), c_1)) = \varphi(((a_2, b_2), c_2))$, then
@@ -246,4 +249,12 @@ Proof: """Define $\varphi : (A \times B) \times C \to A \times (B \times C)$ by
           surjective: for any $(a, (b, c)) \in A \times (B \times C)$, the
           element $((a, b), c) \in (A \times B) \times C$ maps directly to
           $(a, (b, c))$ under $\varphi$. Hence $\varphi$ is a bijection."""
+Appendix:
+. documented:
+  . called: "Canonical Associativity Bijection for Cartesian Products"
+  . description: "The monoidal associator isomorphism
+                  $\alpha_{A,B,C}: (A \times B) \times C \xrightarrow{\sim} A \times (B \times C)$.
+                  Demonstrates that while Cartesian products are strictly
+                  non-associative under set-theoretic encoding, they are naturally
+                  isomorphic in the monoidal category $(\mathbf{Set}, \times, 1)$."
 Id: "cd332b77-e7cc-4e59-92e6-40decc503be8"

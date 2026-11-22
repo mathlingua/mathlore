@@ -39,15 +39,16 @@ Enables:
 . capability: n_ "in" Nb :-> n_ is \natural
 . view:
   as: X := N is \set
-Documented:
-. called: "the naturals"
-. written: "\mathbb{N}"
-. description: "Dedekind--Peano axiomatic system $(\mathbb{N}, 0, S)$ for the
-                natural numbers: formalizes discrete induction, injectivity of
-                succession, and $0$ as the initial base element."
-References:
-. $landau.foundations:page{1}
-. $enderton.set.theory:page{67}
+Appendix:
+. documented:
+  . called: "the naturals"
+  . written: "\mathbb{N}"
+  . description: "Dedekind--Peano axiomatic system $(\mathbb{N}, 0, S)$ for the
+                  natural numbers: formalizes discrete induction, injectivity of
+                  succession, and $0$ as the initial base element."
+. references:
+  . $landau.foundations:page{1}
+  . $enderton.set.theory:page{67}
 Id: "502e2a50-cced-461a-bdcf-03e2221a598f"
 
 
@@ -61,12 +62,13 @@ Id: "a37b659b-6c66-474d-b3b0-0fdc65ff46e7"
 Declares: n "in" \naturals
 Enables:
 . capability: n_ + m_ :=> n_ \.natural.+./ m_
-Documented:
-. called: "natural"
-. written: "n? \in \mathbb{N}"
-. description: "An element of the Peano natural number carrier set $\mathbb{N}$,
-                representing finite cardinalities and discrete ordinal sequence
-                positions."
+Appendix:
+. documented:
+  . called: "natural"
+  . written: "n? \in \mathbb{N}"
+  . description: "An element of the Peano natural number carrier set
+                  $\mathbb{N}$, representing finite cardinalities and discrete
+                  ordinal sequence positions."
 Id: "6c240df6-c06d-4fc4-ab16-31fa5aebb4d7"
 
 
@@ -81,11 +83,13 @@ Id: "428700ea-91a3-4f0a-9418-1e0bd3a8c0d7"
 
 [\natural.zero]
 Defines: z := \naturals..0 is \natural
-Documented:
-. called: "natural zero"
-. written: "0"
-. description: "The base identity element $0 \in \mathbb{N}$: the unique natural
-                number that is not the successor of any natural number."
+Appendix:
+. documented:
+  . called: "natural zero"
+  . written: "0"
+  . description: "The base identity element $0 \in \mathbb{N}$: the unique
+                  natural number that is not the successor of any natural
+                  number."
 Id: "3c4f37ab-1bff-4a4a-90ea-8f808863dbfc"
 
 
@@ -96,12 +100,13 @@ Id: "cf20ac8c-c856-4d24-991f-5519cb6d7ad1"
 
 [\natural.one]
 Defines: o := \naturals..S(\natural.zero) is \natural
-Documented:
-. called: "natural one"
-. written: "1"
-. description: "The multiplicative identity $1 = S(0) \in \mathbb{N}$: the
-                immediate successor of zero, serving as the discrete unit of
-                counting."
+Appendix:
+. documented:
+  . called: "natural one"
+  . written: "1"
+  . description: "The multiplicative identity $1 = S(0) \in \mathbb{N}$: the
+                  immediate successor of zero, serving as the discrete unit of
+                  counting."
 Id: "8ced2d1f-741d-4996-84f8-b2c2afd293e8"
 
 
@@ -113,12 +118,13 @@ Id: "33158ca9-fef1-466e-a45f-2803f7d4ed27"
 [\natural.successor:of{n}]
 Defines: m := \naturals..S(n) is \natural
 when: n is \natural
-Documented:
-. called: "successor of $n?$"
-. written: "S(n?)"
-. description: "The successor operator $S(n) = n + 1$: the foundational
-                generator of discrete arithmetic progression and transfinite
-                ordinal stepping."
+Appendix:
+. documented:
+  . called: "successor of $n?$"
+  . written: "S(n?)"
+  . description: "The successor operator $S(n) = n + 1$: the foundational
+                  generator of discrete arithmetic progression and transfinite
+                  ordinal stepping."
 Id: "9e6169e7-03a2-4b46-8e49-9d7da97d0092"
 
 
@@ -149,14 +155,16 @@ expresses:
   . let: k is \natural
     where: n_ = \naturals..S(k)
     then: n_ + m_ := \naturals..S(k \.natural.+./ m_)
-Documented:
-. called: "$n_?$ plus $m_?$"
-. written: "n_? + m_?"
-. description: "Primitive recursive addition on $\mathbb{N}$: computes iterated
-                succession with $0 + m = m$ and $S(k) + m = S(k + m)$, forming a
-                commutative cancellative monoid."
-References:
-. $landau.foundations:page{4}
+Appendix:
+. documented:
+  . called: "$n_?$ plus $m_?$"
+  . written: "n_? + m_?"
+  . description: "Primitive recursive addition on $\mathbb{N}$: computes
+                  iterated succession with $0 + m = m$ and
+                  $S(k) + m = S(k + m)$, forming a commutative cancellative
+                  monoid."
+. references:
+  . $landau.foundations:page{4}
 Id: "a8dda59b-29db-4ac2-8d70-e9010ccae3e7"
 
 
@@ -185,15 +193,16 @@ expresses:
   . let: k is \natural
     where: n_ = \naturals..S(k)
     then: n_ * m_ := (k \.natural.*./ m_) \.natural.+./ m_
-Documented:
-. called: "$n_?$ times $m_?$"
-. written: "n_? \cdot m_?"
-. description: "Primitive recursive multiplication on $\mathbb{N}$: computes
-                iterated addition with $0 \cdot m = 0$ and
-                $S(k) \cdot m = (k \cdot m) + m$, forming a commutative
-                semiring."
-References:
-. $landau.foundations:page{14}
+Appendix:
+. documented:
+  . called: "$n_?$ times $m_?$"
+  . written: "n_? \cdot m_?"
+  . description: "Primitive recursive multiplication on $\mathbb{N}$: computes
+                  iterated addition with $0 \cdot m = 0$ and
+                  $S(k) \cdot m = (k \cdot m) + m$, forming a commutative
+                  semiring."
+. references:
+  . $landau.foundations:page{14}
 Id: "46c21a80-12cd-45f6-8e74-07731d18d220"
 
 
@@ -222,14 +231,15 @@ when: m is \natural
 satisfies:
 . exists: k is \natural
   suchThat: n \.natural.+./ k = m
-Documented:
-. called: "$n?$ is less than or equal to $m?$"
-. written: "n? \leq m?"
-. description: "Canonical linear order on $\mathbb{N}$: algebraic reachability
-                relation $n \le m \iff \exists k \in \mathbb{N}, n + k = m$,
-                making $\mathbb{N}$ a well-ordered set."
-References:
-. $landau.foundations:page{8}
+Appendix:
+. documented:
+  . called: "$n?$ is less than or equal to $m?$"
+  . written: "n? \leq m?"
+  . description: "Canonical linear order on $\mathbb{N}$: algebraic reachability
+                  relation $n \le m \iff \exists k \in \mathbb{N}, n + k = m$,
+                  making $\mathbb{N}$ a well-ordered set."
+. references:
+  . $landau.foundations:page{8}
 Id: "8c997826-bcef-4032-816b-c6dd2aa635e7"
 
 
@@ -243,10 +253,11 @@ Id: "f1b90b8a-6fe0-4894-989f-58e2a3bb05ec"
 [\natural.initial.segment:before{n}]
 Defines: I := \set@{k_ : k_ "in" \naturals | (.k_ \:natural.leq?:/ n.) \.and./ (.k_ != n.)}
 when: n is \natural
-Documented:
-. called: "natural initial segment before $n?$"
-. written: "\{0,\ldots,n?-1\}"
-. description: "The finite bounded ordinal $\{0, 1, \dots, n-1\}$ of
-                predecessors of $n$, serving as the standard $n$-element
-                reference set for Dedekind finiteness."
+Appendix:
+. documented:
+  . called: "natural initial segment before $n?$"
+  . written: "\{0,\ldots,n?-1\}"
+  . description: "The finite bounded ordinal $\{0, 1, \dots, n-1\}$ of
+                  predecessors of $n$, serving as the standard $n$-element
+                  reference set for Dedekind finiteness."
 Id: "898f2850-dddb-43b0-809a-53b449cb04a3"
