@@ -76,12 +76,10 @@ Let $V$ be a vector space over a field $F$.
    Thus $\operatorname{span}(B) = V$, proving that $B$ is a basis for $V$ extending $S$.
 """
 Appendix:
-. documented:
-  . called: "Basis Extension Theorem"
-  . description: "The fundamental Steinitz-Zorn basis theorem: every linearly
-                  independent subset extends to a basis, and every spanning
-                  subset contains a basis, ensuring every vector space possesses
-                  a basis."
+. called: "Basis Extension Theorem"
+. description: "The fundamental Steinitz-Zorn basis theorem: every linearly
+                independent subset extends to a basis, and every spanning subset
+                contains a basis, ensuring every vector space possesses a basis."
 . references:
   . $axler.linear.algebra:page{34}
   . $hoffman.kunze:page{44}

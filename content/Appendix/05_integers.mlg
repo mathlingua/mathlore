@@ -46,13 +46,12 @@ expresses:
   . have: R((n1, m1), (n2, m2))
     iff: (n1 \.natural.+./ m2) = (n2 \.natural.+./ m1)
 Appendix:
-. documented:
-  . called: "integer equivalence relation"
-  . description: "Grothendieck completion congruence on
-                  $\mathbb{N} \times \mathbb{N}$: identifies pairs
-                  $(n_1, m_1) \sim (n_2, m_2)$ whenever $n_1 + m_2 = n_2 + m_1$,
-                  formalizing the difference $n_1 - m_1 = n_2 - m_2$ without
-                  negative numbers."
+. called: "integer equivalence relation"
+. description: "Grothendieck completion congruence on
+                $\mathbb{N} \times \mathbb{N}$: identifies pairs
+                $(n_1, m_1) \sim (n_2, m_2)$ whenever $n_1 + m_2 = n_2 + m_1$,
+                formalizing the difference $n_1 - m_1 = n_2 - m_2$ without
+                negative numbers."
 . references:
   . $landau.foundations:page{19}
 Id: "fd0234b9-545e-4dcf-bc4f-8c1c6f306e25"
@@ -98,13 +97,11 @@ Enables:
 . view:
   as: S := Z is \set
 Appendix:
-. documented:
-  . called: "the integers"
-  . written: "\mathbb{Z}"
-  . description: "The ring of integers $(\mathbb{Z}, 0, 1, +, \cdot, -)$: the
-                  prototypical commutative ring and principal ideal domain,
-                  formed as the initial object in the category of rings with
-                  unity."
+. called: "the integers"
+. written: "\mathbb{Z}"
+. description: "The ring of integers $(\mathbb{Z}, 0, 1, +, \cdot, -)$: the
+                prototypical commutative ring and principal ideal domain, formed
+                as the initial object in the category of rings with unity."
 . references:
   . $landau.foundations:page{19}
   . $dummit.foote:page{228}
@@ -124,11 +121,10 @@ Enables:
 . capability: -a_ :=> \integer.neg(a_)
 . capability: a_ <= b_ :=> a_ \:integer.leq:/ b_
 Appendix:
-. documented:
-  . called: "integer"
-  . description: "An element of the carrier set $\mathbb{Z}$, representing
-                  discrete quantities with signed direction and integral
-                  magnitude."
+. called: "integer"
+. description: "An element of the carrier set $\mathbb{Z}$, representing
+                discrete quantities with signed direction and integral
+                magnitude."
 Id: "a97ad153-f94d-4eb6-b91e-84f49114ab6e"
 
 
@@ -145,12 +141,11 @@ Id: "c29a27c7-6869-4b83-8183-70312240df75"
 [\integer.zero]
 Defines: z := \integers..0 is \integer
 Appendix:
-. documented:
-  . called: "integer zero"
-  . written: "0"
-  . description: "The additive identity $0 \in \mathbb{Z}$: neutral element for
-                  addition satisfying $a + 0 = a$ and annihilator for
-                  multiplication ($a \cdot 0 = 0$)."
+. called: "integer zero"
+. written: "0"
+. description: "The additive identity $0 \in \mathbb{Z}$: neutral element for
+                addition satisfying $a + 0 = a$ and annihilator for
+                multiplication ($a \cdot 0 = 0$)."
 Id: "14e8b6fe-08ca-49d3-9cf9-152d052cb10d"
 
 
@@ -163,12 +158,11 @@ Id: "d02a8dd3-76a2-4645-800b-72af1f2ea0e6"
 Defines: o := \integers..1 is \integer
 expresses: o != \integer.zero
 Appendix:
-. documented:
-  . called: "integer one"
-  . written: "1"
-  . description: "The multiplicative identity $1 \in \mathbb{Z}$: the unit
-                  element satisfying $a \cdot 1 = a$, generating the infinite
-                  cyclic group $(\mathbb{Z}, +)$."
+. called: "integer one"
+. written: "1"
+. description: "The multiplicative identity $1 \in \mathbb{Z}$: the unit element
+                satisfying $a \cdot 1 = a$, generating the infinite cyclic group
+                $(\mathbb{Z}, +)$."
 Id: "5cda05b0-3930-47cc-b00c-386456f52ab0"
 
 
@@ -182,13 +176,11 @@ Id: "66a4fe57-0841-4c98-afd8-1ab256038d71"
 Defines: a_ + b_ is \binary.operation:on{\integers}
 expresses: a_ + b_ := \integers..`+`(a_, b_)
 Appendix:
-. documented:
-  . called: "$a_?$ plus $b_?$"
-  . written: "a_? + b_?"
-  . description: "The abelian group operation
-                  $+: \mathbb{Z} \times \mathbb{Z} \to \mathbb{Z}$: associative,
-                  commutative, and invertible translation on the integer
-                  lattice."
+. called: "$a_?$ plus $b_?$"
+. written: "a_? + b_?"
+. description: "The abelian group operation
+                $+: \mathbb{Z} \times \mathbb{Z} \to \mathbb{Z}$: associative,
+                commutative, and invertible translation on the integer lattice."
 Id: "d2bd8cc9-3dd0-4a49-8e85-cf5009edb9a4"
 
 
@@ -202,12 +194,11 @@ Id: "52cc558f-f07b-4b85-a932-7f4448a88b65"
 Defines: a_ * b_ is \binary.operation:on{\integers}
 expresses: a_ * b_ := \integers..`*`(a_, b_)
 Appendix:
-. documented:
-  . called: "$a_?$ times $b_?$"
-  . written: "a_? \cdot b_?"
-  . description: "Multiplication on $\mathbb{Z}$: associative, commutative
-                  bilinear operator distributing over addition, making
-                  $\mathbb{Z}$ an integral domain."
+. called: "$a_?$ times $b_?$"
+. written: "a_? \cdot b_?"
+. description: "Multiplication on $\mathbb{Z}$: associative, commutative
+                bilinear operator distributing over addition, making
+                $\mathbb{Z}$ an integral domain."
 Id: "155efde4-346b-4674-8578-dfbffcdc188d"
 
 
@@ -220,12 +211,11 @@ Id: "667c2087-7c50-4b19-b052-b9fa56d77656"
 [\integer.neg(a_)]
 Defines: n := \integers..neg(a_) is \integer
 Appendix:
-. documented:
-  . called: "negative of $a_?$"
-  . written: "-a_?"
-  . description: "Additive inversion $-a$: reflections across the origin $0$,
-                  satisfying $a + (-a) = 0$ and providing the additive inverse
-                  required for an abelian group."
+. called: "negative of $a_?$"
+. written: "-a_?"
+. description: "Additive inversion $-a$: reflections across the origin $0$,
+                satisfying $a + (-a) = 0$ and providing the additive inverse
+                required for an abelian group."
 Id: "c17b9934-2a9c-4ccc-8556-c76abd992020"
 
 
@@ -239,12 +229,11 @@ Declares: a is \integer
 when: b is \integer
 satisfies: \integers..leq(a, b)
 Appendix:
-. documented:
-  . called: "$a?$ is less than or equal to $b?$"
-  . written: "a? \leq b?"
-  . description: "The standard translation-invariant total order $\le$ on
-                  $\mathbb{Z}$: compatible with addition
-                  ($a \le b \implies a+c \le b+c$) and positive multiplication."
+. called: "$a?$ is less than or equal to $b?$"
+. written: "a? \leq b?"
+. description: "The standard translation-invariant total order $\le$ on
+                $\mathbb{Z}$: compatible with addition
+                ($a \le b \implies a+c \le b+c$) and positive multiplication."
 Id: "26ed2caa-2e69-428c-8a1b-0e4c09a48dbc"
 
 
@@ -275,12 +264,11 @@ Id: "f23b6e0a-72bf-47a9-8ba0-6b48734992d1"
 [\integer.pair.carrier]
 Defines: Z := (\naturals \.set.cross./ \naturals) \.mod./ \integers.relation is \set
 Appendix:
-. documented:
-  . called: "integer pair quotient"
-  . written: "(\mathbb{N} \times \mathbb{N}) / {\sim}_{\mathbb{Z}}"
-  . description: "The Grothendieck quotient carrier
-                  $(\mathbb{N} \times \mathbb{N}) / \sim$: formal differences of
-                  natural numbers whose equivalence classes form $\mathbb{Z}$."
+. called: "integer pair quotient"
+. written: "(\mathbb{N} \times \mathbb{N}) / {\sim}_{\mathbb{Z}}"
+. description: "The Grothendieck quotient carrier
+                $(\mathbb{N} \times \mathbb{N}) / \sim$: formal differences of
+                natural numbers whose equivalence classes form $\mathbb{Z}$."
 Id: "84f19ae7-2d2d-4c34-93c7-a9c7386df968"
 
 
@@ -293,11 +281,10 @@ Id: "1b3bcc3e-1f5d-4980-9ebd-2889e97f53b6"
 Defines: C := \equivalence.class:of{(a, b)}:over{\integers.relation}#using{X := \naturals \.set.cross./ \naturals} "in" \integer.pair.carrier
 when: a, b is \natural
 Appendix:
-. documented:
-  . called: "integer class of $a?$ and $b?$"
-  . written: "[(a?, b?)]_{\mathbb{Z}}"
-  . description: "Equivalence class $[(a, b)]_{\mathbb{Z}}$ representing the
-                  signed integer difference $a - b$."
+. called: "integer class of $a?$ and $b?$"
+. written: "[(a?, b?)]_{\mathbb{Z}}"
+. description: "Equivalence class $[(a, b)]_{\mathbb{Z}}$ representing the
+                signed integer difference $a - b$."
 Id: "5c228ea8-d53f-4460-8909-56b46f19be2a"
 
 
@@ -309,25 +296,23 @@ Id: "3aef9c12-48e8-4126-a455-4288ec57f538"
 [\integer.pair.zero]
 Defines: z := \integer.pair.class:of{\natural.zero, \natural.zero} "in" \integer.pair.carrier
 Appendix:
-. documented:
-  . called: "integer-pair zero"
-  . written: "[(0,0)]_{\mathbb{Z}}"
-  . description: "The diagonal class
-                  $[(0, 0)]_{\mathbb{Z}} = \{(n, n) : n \in \mathbb{N}\}$,
-                  representing the additive identity of the pair realization."
+. called: "integer-pair zero"
+. written: "[(0,0)]_{\mathbb{Z}}"
+. description: "The diagonal class
+                $[(0, 0)]_{\mathbb{Z}} = \{(n, n) : n \in \mathbb{N}\}$,
+                representing the additive identity of the pair realization."
 Id: "c79011b3-a5f5-4225-b491-e9a4df1889b0"
 
 
 [\integer.pair.one]
 Defines: o := \integer.pair.class:of{\natural.one, \natural.zero} "in" \integer.pair.carrier
 Appendix:
-. documented:
-  . called: "integer-pair one"
-  . written: "[(1,0)]_{\mathbb{Z}}"
-  . description: "The successor class
-                  $[(1, 0)]_{\mathbb{Z}} = \{(n+1, n) : n \in \mathbb{N}\}$,
-                  representing the multiplicative identity of the pair
-                  realization."
+. called: "integer-pair one"
+. written: "[(1,0)]_{\mathbb{Z}}"
+. description: "The successor class
+                $[(1, 0)]_{\mathbb{Z}} = \{(n+1, n) : n \in \mathbb{N}\}$,
+                representing the multiplicative identity of the pair
+                realization."
 Id: "46a6c27b-692f-4fb6-af09-dd9f9787d9d3"
 
 
@@ -342,12 +327,11 @@ expresses:
 . forAll: a1, b1, a2, b2 is \natural
   then: add(\integer.pair.class:of{a1, b1}, \integer.pair.class:of{a2, b2}) = \integer.pair.class:of{a1 \.natural.+./ a2, b1 \.natural.+./ b2}
 Appendix:
-. documented:
-  . called: "integer-pair addition"
-  . written: "a_? +_{\mathbb{Z}} b_?"
-  . description: "Componentwise addition on formal differences:
-                  $[(a, b)] + [(c, d)] = [(a+c, b+d)]$, well-defined on
-                  equivalence classes."
+. called: "integer-pair addition"
+. written: "a_? +_{\mathbb{Z}} b_?"
+. description: "Componentwise addition on formal differences:
+                $[(a, b)] + [(c, d)] = [(a+c, b+d)]$, well-defined on
+                equivalence classes."
 Id: "720771d7-3535-4c2a-864a-868fb794656c"
 
 
@@ -364,12 +348,11 @@ expresses:
     . bc = b1 \.natural.*./ a2
     then: mul(\integer.pair.class:of{a1, b1}, \integer.pair.class:of{a2, b2}) = \integer.pair.class:of{ac \.natural.+./ bd, ad \.natural.+./ bc}
 Appendix:
-. documented:
-  . called: "integer-pair multiplication"
-  . written: "a_? \cdot_{\mathbb{Z}} b_?"
-  . description: "Convolution multiplication on formal differences:
-                  $[(a, b)] \cdot [(c, d)] = [(ac+bd, ad+bc)]$, reflecting
-                  $(a-b)(c-d) = (ac+bd) - (ad+bc)$."
+. called: "integer-pair multiplication"
+. written: "a_? \cdot_{\mathbb{Z}} b_?"
+. description: "Convolution multiplication on formal differences:
+                $[(a, b)] \cdot [(c, d)] = [(ac+bd, ad+bc)]$, reflecting
+                $(a-b)(c-d) = (ac+bd) - (ad+bc)$."
 Id: "851822e5-633e-477d-aaa9-175898ceb06e"
 
 
@@ -384,11 +367,10 @@ expresses:
 . forAll: p, q is \natural
   then: n(\integer.pair.class:of{p, q}) = \integer.pair.class:of{q, p}
 Appendix:
-. documented:
-  . called: "integer-pair negation"
-  . written: "-_{\mathbb{Z}} a_?"
-  . description: "Coordinate transposition $-[(a, b)] = [(b, a)]$, reversing the
-                  difference orientation."
+. called: "integer-pair negation"
+. written: "-_{\mathbb{Z}} a_?"
+. description: "Coordinate transposition $-[(a, b)] = [(b, a)]$, reversing the
+                difference orientation."
 Id: "d3661a1d-1da3-47ef-9d54-cc841b4dcdda"
 
 
@@ -410,11 +392,10 @@ expresses:
     . have: leq(\integer.pair.class:of{a1, b1}, \integer.pair.class:of{a2, b2})
       iff: lhs \:natural.leq?:/ rhs
 Appendix:
-. documented:
-  . called: "integer-pair order"
-  . written: "a_? \leq_{\mathbb{Z}} b_?"
-  . description: "Induced linear order on formal differences:
-                  $[(a, b)] \le [(c, d)] \iff a+d \le c+b$."
+. called: "integer-pair order"
+. written: "a_? \leq_{\mathbb{Z}} b_?"
+. description: "Induced linear order on formal differences:
+                $[(a, b)] \le [(c, d)] \iff a+d \le c+b$."
 Id: "58e8d2d9-b0e3-416b-8536-3fb3a8b9063a"
 
 
@@ -436,11 +417,10 @@ specifies:
 Enables:
 . capability: x_ "in" Zb :<->: x_ "in" Z
 Appendix:
-. documented:
-  . called: "integers as differences of naturals"
-  . description: "Canonical realization of $\mathbb{Z}$ via the Grothendieck
-                  group of $\mathbb{N}$: demonstrates existence and categoricity
-                  of the integers within set theory."
+. called: "integers as differences of naturals"
+. description: "Canonical realization of $\mathbb{Z}$ via the Grothendieck group
+                of $\mathbb{N}$: demonstrates existence and categoricity of the
+                integers within set theory."
 Id: "b28cb699-77da-4c6f-92a3-3ffdec43ffcc"
 
 
@@ -477,11 +457,10 @@ satisfies:
 . a \:integer.leq:/ b
 . a != b
 Appendix:
-. documented:
-  . called: "$a?$ is less than $b?$"
-  . written: "a? < b?"
-  . description: "The strict linear order $<$ on $\mathbb{Z}$:
-                  $a < b \iff (a \le b \land a \ne b)$."
+. called: "$a?$ is less than $b?$"
+. written: "a? < b?"
+. description: "The strict linear order $<$ on $\mathbb{Z}$:
+                $a < b \iff (a \le b \land a \ne b)$."
 Id: "ad8694fc-bab4-469f-a127-2a6856e58faa"
 
 
@@ -523,13 +502,11 @@ Proof: """Let $b > 0$. Consider the set of non-negative integers of the form
           strictly between $-b$ and $b$ is $0$. Therefore $r_2 - r_1 = 0$, so
           $r_1 = r_2$, which in turn forces $q_1 = q_2$."""
 Appendix:
-. documented:
-  . called: "Euclidean Division"
-  . description: "The division algorithm in $\mathbb{Z}$: for any
-                  $a, b \in \mathbb{Z}$ with $b > 0$, there exist unique
-                  quotient $q$ and remainder $r$ such that $a = bq + r$ with
-                  $0 \le r < b$. Establishes that $\mathbb{Z}$ is a Euclidean
-                  domain."
+. called: "Euclidean Division"
+. description: "The division algorithm in $\mathbb{Z}$: for any
+                $a, b \in \mathbb{Z}$ with $b > 0$, there exist unique quotient
+                $q$ and remainder $r$ such that $a = bq + r$ with $0 \le r < b$.
+                Establishes that $\mathbb{Z}$ is a Euclidean domain."
 Id: "5dd9f7fc-9815-4816-bc2a-737babe16bf9"
 
 
@@ -545,12 +522,11 @@ that:
 . exists: k is \integer
   suchThat: b = a \.integer.*./ k
 Appendix:
-. documented:
-  . called: "$a?$ divides $b?$"
-  . written: "a? \mid b?"
-  . description: "The divisibility relation $a \mid b$ in $\mathbb{Z}$: asserts
-                  that $b$ is an integral multiple of $a$, defining the
-                  principal ideal inclusion $(b) \subseteq (a)$."
+. called: "$a?$ divides $b?$"
+. written: "a? \mid b?"
+. description: "The divisibility relation $a \mid b$ in $\mathbb{Z}$: asserts
+                that $b$ is an integral multiple of $a$, defining the principal
+                ideal inclusion $(b) \subseteq (a)$."
 Id: "95d6d9fd-e095-4ebf-a659-6ab4ecc44fd0"
 
 
@@ -584,11 +560,9 @@ expresses:
 . exists: x, y is \integer
   suchThat: d = (a \.integer.*./ x) \.integer.+./ (b \.integer.*./ y)
 Appendix:
-. documented:
-  . called: "greatest common divisor of $a?$ and $b?$"
-  . written: "\gcd(a?, b?)"
-  . description: "The lattice meet in the divisibility preorder: $\gcd(a, b)$ is
-                  the positive generator of the ideal
-                  $a\mathbb{Z} + b\mathbb{Z}$, satisfying Bézout's identity
-                  $d = ax + by$."
+. called: "greatest common divisor of $a?$ and $b?$"
+. written: "\gcd(a?, b?)"
+. description: "The lattice meet in the divisibility preorder: $\gcd(a, b)$ is
+                the positive generator of the ideal $a\mathbb{Z} + b\mathbb{Z}$,
+                satisfying Bézout's identity $d = ax + by$."
 Id: "3f6acf7f-8ea8-4080-a9bc-23cddc72bdd5"

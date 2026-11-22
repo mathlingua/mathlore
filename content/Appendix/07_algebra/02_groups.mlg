@@ -30,12 +30,11 @@ Enables:
 . capability: x_ "in" G :<->: x_ is \group.element:of{G}
   written: "x_? \in G?"
 Appendix:
-. documented:
-  . called: "group"
-  . description: "A monoid in which every element admits a two-sided inverse.
-                  Encodes the mathematical concept of reversible symmetry and
-                  group actions, serving as the foundational algebraic structure
-                  of geometry, Galois theory, and representation theory."
+. called: "group"
+. description: "A monoid in which every element admits a two-sided inverse.
+                Encodes the mathematical concept of reversible symmetry and
+                group actions, serving as the foundational algebraic structure
+                of geometry, Galois theory, and representation theory."
 . references:
   . $dummit.foote:page{16}
   . $lang.algebra:page{7}
@@ -56,11 +55,10 @@ Refines: G
 implicitly:
 specifies: G is \(finite)::monoid
 Appendix:
-. documented:
-  . adjective: "finite"
-  . description: "A group with finite underlying set, so that its order $|G|$ is
-                  a natural number. Enables counting techniques such as
-                  Lagrange's theorem, Sylow theory, and character theory."
+. adjective: "finite"
+. description: "A group with finite underlying set, so that its order $|G|$ is a
+                natural number. Enables counting techniques such as Lagrange's
+                theorem, Sylow theory, and character theory."
 Id: "28d2a1c1-89a5-4163-93e3-fbc21c97ec9a"
 
 
@@ -80,12 +78,11 @@ Enables:
 . capability: x.inv :=> \group.inverse:of{x}:in{G}
   written: "x+?^{-1}"
 Appendix:
-. documented:
-  . called: "element of group $G?$"
-  . description: "An element of a group is a member of its underlying set.
-                  Because the ambient structure is a group, each such element
-                  $x$ has a well-defined inverse $x^{-1}$, accessible through
-                  its inverse operation."
+. called: "element of group $G?$"
+. description: "An element of a group is a member of its underlying set. Because
+                the ambient structure is a group, each such element $x$ has a
+                well-defined inverse $x^{-1}$, accessible through its inverse
+                operation."
 Id: "858abdda-c416-4a4e-a0bf-27ecf84cf008"
 
 
@@ -98,13 +95,12 @@ expresses:
 . x * y = e
 . y * x = e
 Appendix:
-. documented:
-  . called: "group inverse of $x?$"
-  . written: "x+?^{-1}"
-  . description: "The inverse $x^{-1}$ of an element $x$ of a group is the
-                  unique element $y$ satisfying $x * y = e = y * x$. Its
-                  uniqueness is proved below; it is what allows every equation
-                  in a group to be solved."
+. called: "group inverse of $x?$"
+. written: "x+?^{-1}"
+. description: "The inverse $x^{-1}$ of an element $x$ of a group is the unique
+                element $y$ satisfying $x * y = e = y * x$. Its uniqueness is
+                proved below; it is what allows every equation in a group to be
+                solved."
 Id: "9b52b844-0cfa-4238-8c73-8b38265cca81"
 
 
@@ -125,11 +121,10 @@ when:
 . x, y "in" M
 that: x * y = y * x
 Appendix:
-. documented:
-  . called: "$x?$ commutes with $y?$@[M]{ in $M?$}"
-  . description: "Two elements $x$ and $y$ of a magma commute when $x * y = y *
-                  x$. An operation in which every pair of elements commutes is
-                  exactly a commutative one."
+. called: "$x?$ commutes with $y?$@[M]{ in $M?$}"
+. description: "Two elements $x$ and $y$ of a magma commute when $x * y = y *
+                x$. An operation in which every pair of elements commutes is
+                exactly a commutative one."
 Id: "3d7a204c-966d-47e7-a5b4-8f9e20fd749c"
 
 
@@ -190,13 +185,12 @@ Enables:
 . view:
   as: H' := H is \group
 Appendix:
-. documented:
-  . called: "$H?$ is a subgroup of $G?$"
-  . written: "H? \leq G?"
-  . description: "A subgroup $H \leq G$ is a nonempty subset of $G$ that is
-                  closed under the group operation and under taking inverses,
-                  and whose operation is the restriction of that of $G$. Under
-                  these conditions $H$ is again a group in its own right."
+. called: "$H?$ is a subgroup of $G?$"
+. written: "H? \leq G?"
+. description: "A subgroup $H \leq G$ is a nonempty subset of $G$ that is closed
+                under the group operation and under taking inverses, and whose
+                operation is the restriction of that of $G$. Under these
+                conditions $H$ is again a group in its own right."
 . justification:
   . for: (:1:)
     have: *' := \restriction:of{`*`}:on{X' \.set.cross./ X'}
@@ -246,11 +240,10 @@ satisfies:
 . forAll: x, y "in" G
   then: x * y = y * x
 Appendix:
-. documented:
-  . adjective: "abelian"
-  . description: "Commutative group structure named for Niels Henrik Abel. All
-                  subgroups are automatically normal, giving rise to abelian
-                  categories, homology theory, and Pontryagin duality."
+. adjective: "abelian"
+. description: "Commutative group structure named for Niels Henrik Abel. All
+                subgroups are automatically normal, giving rise to abelian
+                categories, homology theory, and Pontryagin duality."
 . references:
   . $dummit.foote:page{16}
   . $lang.algebra:page{7}
@@ -293,12 +286,11 @@ Therefore, $(x * y)^{-1} = y^{-1} * x^{-1}$. The order of factors is reversed:
 putting on socks and then shoes is undone by removing shoes first, then socks.
 """
 Appendix:
-. documented:
-  . called: "Inverse of a Product"
-  . description: "Anti-homomorphism property of group inversion:
-                  $(x * y)^{-1} = y^{-1} * x^{-1}$. The order of factors
-                  reverses because $G$ is in general non-abelian, reflecting the
-                  contravariant functoriality of group inversion."
+. called: "Inverse of a Product"
+. description: "Anti-homomorphism property of group inversion:
+                $(x * y)^{-1} = y^{-1} * x^{-1}$. The order of factors reverses
+                because $G$ is in general non-abelian, reflecting the
+                contravariant functoriality of group inversion."
 Id: "ef1b2ca8-1e12-4779-8e32-ed5cf8787c68"
 
 
@@ -331,11 +323,10 @@ Proof: """By definition, $(x^{-1})^{-1}$ is the unique element $z \in G$
           uniqueness of inverses, it follows that $(x^{-1})^{-1} = x$. Thus
           inversion is an involutive bijection on $G$."""
 Appendix:
-. documented:
-  . called: "Double Inversion Law"
-  . description: "Involutive property of inversion: $(x^{-1})^{-1} = x$.
-                  Guarantees that the inversion map $\iota: G \to G$ is a
-                  self-inverse bijection on the carrier set."
+. called: "Double Inversion Law"
+. description: "Involutive property of inversion: $(x^{-1})^{-1} = x$.
+                Guarantees that the inversion map $\iota: G \to G$ is a
+                self-inverse bijection on the carrier set."
 Id: "8c61fb44-d5ab-4be8-804a-0d6a95d83331"
 
 
@@ -367,12 +358,10 @@ $$
 Thus any two elements satisfying the inverse equations must coincide.
 """
 Appendix:
-. documented:
-  . called: "Uniqueness of Inverses"
-  . description: "Categorical uniqueness of inverses in a monoid: if $y_1$ is a
-                  left inverse and $y_2$ is a right inverse of $x$,
-                  associativity forces
-                  $y_1 = y_1 * (x * y_2) = (y_1 * x) * y_2 = y_2$."
+. called: "Uniqueness of Inverses"
+. description: "Categorical uniqueness of inverses in a monoid: if $y_1$ is a
+                left inverse and $y_2$ is a right inverse of $x$, associativity
+                forces $y_1 = y_1 * (x * y_2) = (y_1 * x) * y_2 = y_2$."
 Id: "a27fd487-85b4-4f18-b0ab-4be63db69f43"
 
 
@@ -417,12 +406,11 @@ $$
 Thus every element in a group is both left and right cancellable.
 """
 Appendix:
-. documented:
-  . called: "Group Cancellation Laws"
-  . description: "Regularity of group elements: left and right translation maps
-                  $\lambda_a(x) = a * x$ and $\rho_a(x) = x * a$ are injective
-                  for every $a \in G$, ensuring no information is lost in group
-                  products."
+. called: "Group Cancellation Laws"
+. description: "Regularity of group elements: left and right translation maps
+                $\lambda_a(x) = a * x$ and $\rho_a(x) = x * a$ are injective for
+                every $a \in G$, ensuring no information is lost in group
+                products."
 Id: "24b48a0a-ec3e-49f2-acd4-80b979fcd209"
 
 

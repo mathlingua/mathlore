@@ -62,13 +62,12 @@ Enables:
 . capability: v_ "in" V :<->: v_ is \vector:in{V}
   written: "v_? \in V?"
 Appendix:
-. documented:
-  . called: "vector space over $F?$"
-  . description: "An algebraic structure consisting of a set of vectors equipped
-                  with vector addition (forming an abelian group) and scalar
-                  multiplication by elements of a ground field $F$, satisfying
-                  associativity, identity, and distributivity across both vector
-                  and scalar additions."
+. called: "vector space over $F?$"
+. description: "An algebraic structure consisting of a set of vectors equipped
+                with vector addition (forming an abelian group) and scalar
+                multiplication by elements of a ground field $F$, satisfying
+                associativity, identity, and distributivity across both vector
+                and scalar additions."
 . references:
   . $axler.linear.algebra:page{10}
   . $hoffman.kunze:page{28}
@@ -88,10 +87,9 @@ Enables:
 . capability: u_ + v_ :=> u_ \.vector.+./ v_
 . capability: c_ * v_ :=> c_ \.vector.*./ v_
 Appendix:
-. documented:
-  . called: "vector in $V?$"
-  . description: "An element $v \in V$ of a vector space over field $F$,
-                  representing a state or geometric displacement."
+. called: "vector in $V?$"
+. description: "An element $v \in V$ of a vector space over field $F$,
+                representing a state or geometric displacement."
 Id: "4bfc2779-4a8f-49ce-8a6c-514622cac0a3"
 
 
@@ -104,11 +102,10 @@ Id: "9143b1f4-f1c8-4c17-a777-1c92ce74d142"
 Defines: w is \set
 when: u_, v_ is \\anything
 Appendix:
-. documented:
-  . called: "$u_?$ plus $v_?$"
-  . written: "u_? + v_?"
-  . description: "Abelian addition of vectors $u + v$ satisfying commutativity,
-                  associativity, zero element, and additive inverses."
+. called: "$u_?$ plus $v_?$"
+. written: "u_? + v_?"
+. description: "Abelian addition of vectors $u + v$ satisfying commutativity,
+                associativity, zero element, and additive inverses."
 Id: "6a975825-0383-4615-b864-c755aad672c2"
 
 
@@ -116,11 +113,10 @@ Id: "6a975825-0383-4615-b864-c755aad672c2"
 Defines: w is \set
 when: c_, v_ is \\anything
 Appendix:
-. documented:
-  . called: "$c_?$ times $v_?$"
-  . written: "c_? \cdot v_?"
-  . description: "Scaling of a vector $v$ by a field scalar $c \in F$,
-                  satisfying unit action $1v = v$ and distributivity."
+. called: "$c_?$ times $v_?$"
+. written: "c_? \cdot v_?"
+. description: "Scaling of a vector $v$ by a field scalar $c \in F$, satisfying
+                unit action $1v = v$ and distributivity."
 Id: "bdf7a2f0-a5f1-44b2-ba54-64bca36463bb"
 
 
@@ -147,12 +143,11 @@ satisfies:
   . v "in" W
   then: c * v "in" W
 Appendix:
-. documented:
-  . called: "$W?$ is a vector subspace of $V?$"
-  . written: "W? \le V?"
-  . description: "A subset $W \subseteq V$ containing $0$ and closed under
-                  addition and scalar multiplication ($cu + v \in W$),
-                  inheriting the vector space structure."
+. called: "$W?$ is a vector subspace of $V?$"
+. written: "W? \le V?"
+. description: "A subset $W \subseteq V$ containing $0$ and closed under
+                addition and scalar multiplication ($cu + v \in W$), inheriting
+                the vector space structure."
 . references:
   . $axler.linear.algebra:page{16}
   . $hoffman.kunze:page{34}
@@ -175,12 +170,11 @@ expresses:
 . W \:vector.subspace.of:/ V
 . S \:subset:/ V
 Appendix:
-. documented:
-  . called: "linear span of $S?$ in $V?$"
-  . written: "\operatorname{span}(S?)"
-  . description: "The linear span $\operatorname{span}(S)$: the smallest
-                  subspace containing $S$, consisting of all finite linear
-                  combinations $\sum c_i v_i$."
+. called: "linear span of $S?$ in $V?$"
+. written: "\operatorname{span}(S?)"
+. description: "The linear span $\operatorname{span}(S)$: the smallest subspace
+                containing $S$, consisting of all finite linear combinations
+                $\sum c_i v_i$."
 . references:
   . $axler.linear.algebra:page{29}
   . $hoffman.kunze:page{36}
@@ -219,10 +213,9 @@ satisfies:
     . c1 = 0
     . c2 = 0
 Appendix:
-. documented:
-  . adjective: "linearly independent"
-  . description: "A subset of vectors with no redundant directions:
-                  $\sum c_i v_i = 0$ implies each scalar $c_i = 0$."
+. adjective: "linearly independent"
+. description: "A subset of vectors with no redundant directions:
+                $\sum c_i v_i = 0$ implies each scalar $c_i = 0$."
 . references:
   . $axler.linear.algebra:page{32}
   . $hoffman.kunze:page{40}
@@ -246,11 +239,9 @@ using: F is \field
 when: V is \vector.space:over{F}
 satisfies: \span:of{B}:in{V} = V
 Appendix:
-. documented:
-  . called: "basis for $V?$"
-  . description: "A linearly independent spanning set $B \subseteq V$, providing
-                  unique coordinate expansions $v = \sum c_i b_i$ for all
-                  vectors."
+. called: "basis for $V?$"
+. description: "A linearly independent spanning set $B \subseteq V$, providing
+                unique coordinate expansions $v = \sum c_i b_i$ for all vectors."
 . references:
   . $axler.linear.algebra:page{39}
   . $hoffman.kunze:page{43}
@@ -271,11 +262,10 @@ expresses:
 . exists: B is \basis:for{V}
   suchThat: d is \natural
 Appendix:
-. documented:
-  . called: "dimension of $V?$"
-  . written: "\dim(V?)"
-  . description: "The cardinal number $\dim(V) = |B|$ of vectors in any basis of
-                  $V$, invariant by the Steinitz exchange lemma."
+. called: "dimension of $V?$"
+. written: "\dim(V?)"
+. description: "The cardinal number $\dim(V) = |B|$ of vectors in any basis of
+                $V$, invariant by the Steinitz exchange lemma."
 . references:
   . $axler.linear.algebra:page{44}
   . $hoffman.kunze:page{44}
@@ -312,11 +302,10 @@ when:
 . W \:vector.subspace.of:/ V
 expresses: S \:vector.subspace.of:/ V
 Appendix:
-. documented:
-  . called: "sum of $U?$ and $W?$ in $V?$"
-  . written: "U? + W?"
-  . description: "The subspace sum $U + W = \{u + w : u \in U, w \in W\}$,
-                  representing the join in the lattice of subspaces of $V$."
+. called: "sum of $U?$ and $W?$ in $V?$"
+. written: "U? + W?"
+. description: "The subspace sum $U + W = \{u + w : u \in U, w \in W\}$,
+                representing the join in the lattice of subspaces of $V$."
 Id: "b4590aa0-4e04-48c9-978a-5f42127058c4"
 
 
@@ -334,12 +323,10 @@ when:
 . W \:vector.subspace.of:/ V
 that: (.U \.set.intersect./ W.) = \singleton.set:of{0}
 Appendix:
-. documented:
-  . called: "sum of $U?$ and $W?$ is direct in $V?$"
-  . written: "U? \oplus W?"
-  . description: "An internal direct sum $U \oplus W$, where $U \cap W = \{0\}$,
-                  guaranteeing unique decomposition of every vector into
-                  $u + w$."
+. called: "sum of $U?$ and $W?$ is direct in $V?$"
+. written: "U? \oplus W?"
+. description: "An internal direct sum $U \oplus W$, where $U \cap W = \{0\}$,
+                guaranteeing unique decomposition of every vector into $u + w$."
 Id: "334cb00b-efec-489d-959f-6d349983f365"
 
 

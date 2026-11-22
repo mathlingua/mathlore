@@ -14,10 +14,9 @@ Id: "62b46f95-2a7d-4660-91cb-5d63953f76f9"
 [\prop.variable]
 Declares: p is \\statement
 Appendix:
-. documented:
-  . called: "propositional variable"
-  . description: "An atomic propositional symbol that serves as an indivisible
-                  building block for compound assertions."
+. called: "propositional variable"
+. description: "An atomic propositional symbol that serves as an indivisible
+                building block for compound assertions."
 . references:
   . $enderton.logic:page{14}
 Id: "2aaa0620-6cbe-4451-9aec-3ab12757a1ef"
@@ -33,12 +32,11 @@ Id: "7eb84402-2692-4456-ab73-35783d2364c8"
 [\prop.formula]
 Declares: alpha is \\statement
 Appendix:
-. documented:
-  . called: "well-formed propositional formula"
-  . written: "\alpha"
-  . description: "A grammatically well-formed propositional formula generated
-                  inductively from propositional variables and Boolean
-                  connectives."
+. called: "well-formed propositional formula"
+. written: "\alpha"
+. description: "A grammatically well-formed propositional formula generated
+                inductively from propositional variables and Boolean
+                connectives."
 . references:
   . $enderton.logic:page{14}
 Id: "3a01676a-6b51-4bd2-8940-9e7a4949505b"
@@ -54,11 +52,10 @@ Id: "8a065d82-8539-48b4-8099-50036be49510"
 Defines: c is \integer
 when: A is \\statement
 Appendix:
-. documented:
-  . called: "complexity of formula $A?$"
-  . written: "\operatorname{comp}(A?)"
-  . description: "The total number of logical connective occurrences in formula
-                  A, used as the metric for induction on formula length."
+. called: "complexity of formula $A?$"
+. written: "\operatorname{comp}(A?)"
+. description: "The total number of logical connective occurrences in formula A,
+                used as the metric for induction on formula length."
 . references:
   . $enderton.logic:page{14}
 Id: "a1cd63dd-e94b-49b5-ac88-52d38b879e6a"
@@ -89,11 +86,10 @@ then:
         . alpha = (beta \.implies./ gamma)
         . alpha = (beta \.iff./ gamma)
 Appendix:
-. documented:
-  . called: "unique readability of propositional formulas"
-  . description: "Every well-formed propositional formula is either an atomic
-                  variable, a negation, or a unique binary connective
-                  combination of subformulas."
+. called: "unique readability of propositional formulas"
+. description: "Every well-formed propositional formula is either an atomic
+                variable, a negation, or a unique binary connective combination
+                of subformulas."
 . references:
   . $enderton.logic:page{15}
 Id: "bf33a971-1761-4f9b-b30a-76272f77f316"
@@ -125,11 +121,10 @@ then:
 . forAll: alpha is \\statement
   then: P(alpha)
 Appendix:
-. documented:
-  . called: "principle of structural induction for propositional formulas"
-  . description: "If a property holds for all atomic propositional variables and
-                  is preserved under negation and binary connectives, then it
-                  holds for every well-formed formula."
+. called: "principle of structural induction for propositional formulas"
+. description: "If a property holds for all atomic propositional variables and
+                is preserved under negation and binary connectives, then it
+                holds for every well-formed formula."
 . references:
   . $enderton.logic:page{16}
 Id: "f7ef750c-03f4-4777-9027-fce1af244783"

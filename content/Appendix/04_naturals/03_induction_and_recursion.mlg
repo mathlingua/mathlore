@@ -46,12 +46,11 @@ Proof: """Let $A = \{n \in \mathbb{N} : P(n)\}$. By hypothesis, $P(0)$ holds, so
           $A = \mathbb{N}$, which proves that $P(n)$ holds for all
           $n \in \mathbb{N}$."""
 Appendix:
-. documented:
-  . called: "Principle of Mathematical Induction"
-  . description: "The foundational proof technique for universal statements on
-                  $\mathbb{N}$: asserts that a property holding at $0$ and
-                  preserved under succession holds for all natural numbers,
-                  reflecting the lack of non-standard infinite chains."
+. called: "Principle of Mathematical Induction"
+. description: "The foundational proof technique for universal statements on
+                $\mathbb{N}$: asserts that a property holding at $0$ and
+                preserved under succession holds for all natural numbers,
+                reflecting the lack of non-standard infinite chains."
 . references:
   . $enderton.set.theory:page{73}
   . $landau.foundations:page{2}
@@ -100,12 +99,11 @@ Proof: """Define the auxiliary predicate $Q(n)$ by
              $n \in \mathbb{N}$. Since $Q(n + 1)$ implies $P(n)$, it follows
              that $P(n)$ holds for every natural number $n$."""
 Appendix:
-. documented:
-  . called: "Principle of Strong Induction"
-  . description: "Course-of-values induction: asserts that $P(n)$ holds
-                  universally if it holds whenever it holds for all strictly
-                  smaller predecessors $k < n$. Equipotent to ordinary induction
-                  via cumulative truth predicates."
+. called: "Principle of Strong Induction"
+. description: "Course-of-values induction: asserts that $P(n)$ holds
+                universally if it holds whenever it holds for all strictly
+                smaller predecessors $k < n$. Equipotent to ordinary induction
+                via cumulative truth predicates."
 . references:
   . $enderton.set.theory:page{73}
   . $landau.foundations:page{2}
@@ -141,12 +139,11 @@ Proof: """Suppose for contradiction that $A \subseteq \mathbb{N}$ is nonempty
           $n \notin A$ for every $n \in \mathbb{N}$, which forces
           $A = \emptyset$. This contradicts the assumption that $A$ is nonempty."""
 Appendix:
-. documented:
-  . called: "Well-Ordering Principle for the Natural Numbers"
-  . description: "The fundamental minimum principle: asserts that every nonempty
-                  subset $A \subseteq \mathbb{N}$ contains a least element with
-                  respect to $\le$. Equivalent to mathematical induction over
-                  the Peano arithmetic base."
+. called: "Well-Ordering Principle for the Natural Numbers"
+. description: "The fundamental minimum principle: asserts that every nonempty
+                subset $A \subseteq \mathbb{N}$ contains a least element with
+                respect to $\le$. Equivalent to mathematical induction over the
+                Peano arithmetic base."
 . references:
   . $enderton.set.theory:page{73}
   . $landau.foundations:page{2}
@@ -176,13 +173,12 @@ Id: "9ee8395f-9bfc-4733-b36a-3c8a0f37c164"
 Declares: a(n__) is \function:on{\naturals}:to{X}
 when: X is \set
 Appendix:
-. documented:
-  . called: "sequence in $X?$"
-  . written: "(a?_{n})_{n\in\mathbb{N}}"
-  . description: "Denumerable family indexed by $\mathbb{N}$, viewed as an
-                  element of the Cartesian power $X^\mathbb{N}$. Serves as the
-                  primary vehicle for discrete dynamics, convergence in
-                  analysis, and enumerations."
+. called: "sequence in $X?$"
+. written: "(a?_{n})_{n\in\mathbb{N}}"
+. description: "Denumerable family indexed by $\mathbb{N}$, viewed as an element
+                of the Cartesian power $X^\mathbb{N}$. Serves as the primary
+                vehicle for discrete dynamics, convergence in analysis, and
+                enumerations."
 Id: "d9daf505-ce5f-45be-baae-06c06602fa79"
 
 

@@ -59,11 +59,9 @@ Id: "6298206c-1aa2-49a7-b2c9-6f92d0a831f8"
 Declares: gamma(t_) is \function:on{\reals}:to{\complex.numbers}
 when: a, b is \real
 Appendix:
-. documented:
-  . called: "complex path on $[a?, b?]$"
-  . description: "A continuous parameterized path
-                  $\gamma : [a, b] \to \mathbb{C}$ traversing a directed contour
-                  in the complex plane."
+. called: "complex path on $[a?, b?]$"
+. description: "A continuous parameterized path $\gamma : [a, b] \to \mathbb{C}$
+                traversing a directed contour in the complex plane."
 Id: "28c63b3c-de18-42f8-b10b-04695ee6410a"
 
 
@@ -73,10 +71,9 @@ when: a, b is \real
 specifies: gamma is \complex.path:on{a, b}
 satisfies: gamma(a) = gamma(b)
 Appendix:
-. documented:
-  . adjective: "closed"
-  . description: "A closed complex contour (loop) satisfying
-                  $\gamma(a) = \gamma(b)$."
+. adjective: "closed"
+. description: "A closed complex contour (loop) satisfying
+                $\gamma(a) = \gamma(b)$."
 Id: "f3a6c8ea-28b0-46a1-ac84-0499c7b6a970"
 
 
@@ -92,12 +89,11 @@ when:
 . gamma is \complex.path:on{a, b}
 . f is \function:on{\complex.numbers}:to{\complex.numbers}
 Appendix:
-. documented:
-  . called: "contour integral of $f?$ along $\gamma?$"
-  . written: "\oint_{\gamma?} f?(z) \, dz"
-  . description: "The complex contour integral
-                  $\oint_\gamma f(z)\,dz = \int_a^b f(\gamma(t))\gamma'(t)\,dt$
-                  along directed contour $\gamma$."
+. called: "contour integral of $f?$ along $\gamma?$"
+. written: "\oint_{\gamma?} f?(z) \, dz"
+. description: "The complex contour integral
+                $\oint_\gamma f(z)\,dz = \int_a^b f(\gamma(t))\gamma'(t)\,dt$
+                along directed contour $\gamma$."
 . references:
   . $ahlfors.complex:page{101}
   . $stein.shakarchi.complex:page{72}
@@ -237,12 +233,11 @@ when:
 . z0 is \complex
 . f is \function:on{\complex.numbers}:to{\complex.numbers}
 Appendix:
-. documented:
-  . called: "residue of $f?$ at $z0?$"
-  . written: "\operatorname{Res}(f?, z0?)"
-  . description: "The residue
-                  $\operatorname{Res}(f, z_0) = a_{-1} = \frac{1}{2\pi i} \oint_\gamma f(z)\,dz$,
-                  the solitary non-vanishing coefficient under loop integration."
+. called: "residue of $f?$ at $z0?$"
+. written: "\operatorname{Res}(f?, z0?)"
+. description: "The residue
+                $\operatorname{Res}(f, z_0) = a_{-1} = \frac{1}{2\pi i} \oint_\gamma f(z)\,dz$,
+                the solitary non-vanishing coefficient under loop integration."
 Id: "19aa67b3-3856-40b0-8d20-8fae7dd0ec19"
 
 

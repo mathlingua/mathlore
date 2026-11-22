@@ -53,14 +53,13 @@ that:
 . if: P
   then: Q
 Appendix:
-. documented:
-  . called: "$P?$ implies $Q?$"
-  . written: "P? \Rightarrow Q?"
-  . description: "Material implication asserting that truth of the antecedent
-                  $P$ is sufficient to guarantee the truth of the consequent
-                  $Q$. In classical bivalence, a conditional with a false
-                  antecedent holds vacuously, preventing false premises from
-                  generating formal counterexamples."
+. called: "$P?$ implies $Q?$"
+. written: "P? \Rightarrow Q?"
+. description: "Material implication asserting that truth of the antecedent $P$
+                is sufficient to guarantee the truth of the consequent $Q$. In
+                classical bivalence, a conditional with a false antecedent holds
+                vacuously, preventing false premises from generating formal
+                counterexamples."
 . references:
   . $enderton.logic:page{17}
 Id: "dc7e213d-76c2-43d7-acf1-c5978daaab33"
@@ -83,15 +82,14 @@ that:
 . have: P
   iff: Q
 Appendix:
-. documented:
-  . called:
-    . "$P?$ if and only if $Q?$"
-    . "$P?$ iff $Q?$"
-  . written: "P? \iff Q?"
-  . description: "Logical biconditional asserting identical truth values between
-                  $P$ and $Q$. It provides the formal syntax for mathematical
-                  definition and exact classification, establishing mutual
-                  sufficiency and necessity."
+. called:
+  . "$P?$ if and only if $Q?$"
+  . "$P?$ iff $Q?$"
+. written: "P? \iff Q?"
+. description: "Logical biconditional asserting identical truth values between
+                $P$ and $Q$. It provides the formal syntax for mathematical
+                definition and exact classification, establishing mutual
+                sufficiency and necessity."
 . references:
   . $enderton.logic:page{17}
 Id: "96440ac7-3331-4467-a7ac-593dbca0761b"
@@ -118,12 +116,11 @@ that:
   . P
   . Q
 Appendix:
-. documented:
-  . called: "$P?$ and $Q?$"
-  . written: "P? \land Q?"
-  . description: "Truth-functional conjunction acting as the infimum in the
-                  Boolean lattice of truth values. Holds strictly when both
-                  constituent assertions hold simultaneously."
+. called: "$P?$ and $Q?$"
+. written: "P? \land Q?"
+. description: "Truth-functional conjunction acting as the infimum in the
+                Boolean lattice of truth values. Holds strictly when both
+                constituent assertions hold simultaneously."
 . references:
   . $enderton.logic:page{17}
 Id: "e024d041-fcf1-476e-b29e-b75d88b04fa8"
@@ -146,12 +143,11 @@ that:
   . P
   . Q
 Appendix:
-. documented:
-  . called: "$P?$ or $Q?$"
-  . written: "P? \lor Q?"
-  . description: "Inclusive disjunction acting as the supremum in the Boolean
-                  lattice of truth values. Holds when at least one constituent
-                  assertion holds, failing solely when both fail."
+. called: "$P?$ or $Q?$"
+. written: "P? \lor Q?"
+. description: "Inclusive disjunction acting as the supremum in the Boolean
+                lattice of truth values. Holds when at least one constituent
+                assertion holds, failing solely when both fail."
 . references:
   . $enderton.logic:page{17}
 Id: "f401f869-7009-411a-bc01-9a76ffa07901"
@@ -170,12 +166,11 @@ when: P is \\statement
 that:
 . not: P
 Appendix:
-. documented:
-  . called: "not $P?$"
-  . written: "\neg P+?"
-  . description: "Truth-functional negation acting as the complementation
-                  involution $\neg: \{0,1\} \to \{0,1\}$. Inverts the truth
-                  value under classical bivalence."
+. called: "not $P?$"
+. written: "\neg P+?"
+. description: "Truth-functional negation acting as the complementation
+                involution $\neg: \{0,1\} \to \{0,1\}$. Inverts the truth value
+                under classical bivalence."
 . references:
   . $enderton.logic:page{17}
 Id: "c28b5247-41fe-455b-80df-261056c1eb02"
@@ -195,13 +190,11 @@ States:
 when: P, Q is \\statement
 that: (P \.or./ Q) \.and./ \not{P \.and./ Q}
 Appendix:
-. documented:
-  . called: "$P?$ xor $Q?$"
-  . written: "P? \text{ xor } Q?"
-  . description: "Exclusive disjunction realizing addition in the Galois field
-                  $\mathbb{F}_2$. Holds precisely when propositions differ in
-                  truth value, corresponding to the symmetric difference of
-                  sets."
+. called: "$P?$ xor $Q?$"
+. written: "P? \text{ xor } Q?"
+. description: "Exclusive disjunction realizing addition in the Galois field
+                $\mathbb{F}_2$. Holds precisely when propositions differ in
+                truth value, corresponding to the symmetric difference of sets."
 . references:
   . $enderton.logic:page{17}
 Id: "1c7bc638-0db8-416f-a0d0-f5c0d7d92842"
@@ -221,12 +214,11 @@ States:
 when: P, Q is \\statement
 that: \not{P \.and./ Q}
 Appendix:
-. documented:
-  . called: "$P?$ nand $Q?$"
-  . written: "P? \barwedge Q?"
-  . description: "Alternative denial (Sheffer stroke) asserting that $P$ and $Q$
-                  are not jointly true. Serves as a single functionally complete
-                  universal connective for classical propositional logic."
+. called: "$P?$ nand $Q?$"
+. written: "P? \barwedge Q?"
+. description: "Alternative denial (Sheffer stroke) asserting that $P$ and $Q$
+                are not jointly true. Serves as a single functionally complete
+                universal connective for classical propositional logic."
 . references:
   . $enderton.logic:page{17}
 Id: "ac552ed6-48a1-4639-940a-9d9a291c76e4"
@@ -243,12 +235,11 @@ States:
 when: P, Q is \\statement
 that: \not{P \.or./ Q}
 Appendix:
-. documented:
-  . called: "$P?$ nor $Q?$"
-  . written: "P? \downarrow Q?"
-  . description: "Joint denial (Peirce arrow) asserting that neither $P$ nor $Q$
-                  holds. Dual to NAND, it constitutes a single functionally
-                  complete basis generating all Boolean truth functions."
+. called: "$P?$ nor $Q?$"
+. written: "P? \downarrow Q?"
+. description: "Joint denial (Peirce arrow) asserting that neither $P$ nor $Q$
+                holds. Dual to NAND, it constitutes a single functionally
+                complete basis generating all Boolean truth functions."
 . references:
   . $enderton.logic:page{17}
 Id: "a16193ad-6084-494c-afd2-b4f7c6a70a7d"
@@ -277,12 +268,10 @@ Proof: """Under classical bivalence, the statement {.P.} has two possible truth
           In both cases, {.\not{\not{P}}.} has the identical truth value as
           {.P.}. Therefore, {.\not{\not{P}} \.iff./ P.}."""
 Appendix:
-. documented:
-  . called: "Law of Double Negation"
-  . description: "Classical involution law asserting that denying a
-                  contradiction recovers the positive proposition:
-                  $\neg(\neg P) \iff P$. Foundational to non-constructive proof
-                  by contradiction."
+. called: "Law of Double Negation"
+. description: "Classical involution law asserting that denying a contradiction
+                recovers the positive proposition: $\neg(\neg P) \iff P$.
+                Foundational to non-constructive proof by contradiction."
 . references:
   . $enderton.logic:page{17}
 Id: "eb21571a-d245-427d-a014-d29407d09f9a"
@@ -321,12 +310,11 @@ Proof: """We evaluate the statements under all four assignments of truth values
           applying the first identity to {.\not{P}.} and {.\not{Q}.} together
           with the law of double negation."""
 Appendix:
-. documented:
-  . called: "De Morgan's Laws for Logic"
-  . description: "Order-reversing duality isomorphisms between lattice meet
-                  ($\land$) and join ($\lor$) mediated by negation:
-                  $\neg(P \land Q) \iff \neg P \lor \neg Q$ and
-                  $\neg(P \lor Q) \iff \neg P \land \neg Q$."
+. called: "De Morgan's Laws for Logic"
+. description: "Order-reversing duality isomorphisms between lattice meet
+                ($\land$) and join ($\lor$) mediated by negation:
+                $\neg(P \land Q) \iff \neg P \lor \neg Q$ and
+                $\neg(P \lor Q) \iff \neg P \land \neg Q$."
 . references:
   . $enderton.logic:page{17}
 Id: "e4c6ef38-dd37-448b-a1f5-377df32138ce"

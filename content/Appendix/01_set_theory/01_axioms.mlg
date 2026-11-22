@@ -39,13 +39,12 @@ Enables:
 . from: Y ::= {y__ : ...}
   capability: x_ "in" X :<->: x_ memberOf Y
 Appendix:
-. documented:
-  . called: "set"
-  . description: "The primitive ontological entity in Zermelo--Fraenkel set
-                  theory. A pure set contains only other sets, completely
-                  identified by its membership relation via extensionality,
-                  providing the universal canvas for constructing mathematical
-                  objects."
+. called: "set"
+. description: "The primitive ontological entity in Zermelo--Fraenkel set
+                theory. A pure set contains only other sets, completely
+                identified by its membership relation via extensionality,
+                providing the universal canvas for constructing mathematical
+                objects."
 . references:
   . $enderton.set.theory:page{17}
   . $halmos.set.theory:page{1}
@@ -66,11 +65,10 @@ when:
 that:
 . not: x "in"? X
 Appendix:
-. documented:
-  . written: "x? \notin X?"
-  . description: "The negation of membership: $x \notin X$ asserts that the set
-                  $x$ is not an element of the set $X$. It is shorthand for the
-                  statement that $x \in X$ fails to hold."
+. written: "x? \notin X?"
+. description: "The negation of membership: $x \notin X$ asserts that the set
+                $x$ is not an element of the set $X$. It is shorthand for the
+                statement that $x \in X$ fails to hold."
 Id: "756e0f48-1c0e-4e05-b97a-9c4fcd577603"
 
 
@@ -93,13 +91,12 @@ expresses:
   . exists: Y is \\anything
     suchThat: Y "in" X
 Appendix:
-. documented:
-  . called: "empty set"
-  . written: "\emptyset"
-  . description: "The unique bottom element $\emptyset = \varnothing$ of the
-                  subset lattice possessing no members. Serves as the base layer
-                  $V_0$ of the von Neumann universe and represents the natural
-                  number $0$."
+. called: "empty set"
+. written: "\emptyset"
+. description: "The unique bottom element $\emptyset = \varnothing$ of the
+                subset lattice possessing no members. Serves as the base layer
+                $V_0$ of the von Neumann universe and represents the natural
+                number $0$."
 . references:
   . $enderton.set.theory:page{17}
   . $halmos.set.theory:page{1}
@@ -117,8 +114,7 @@ Id: "6a19c255-0426-440b-a2e3-c97b1fe06bc4"
 Refines: X
 satisfies: X != \empty.set
 Appendix:
-. documented:
-  . adjective: "nonempty"
+. adjective: "nonempty"
 Id: "616950f0-7d70-48ff-a5ac-9d5d49272150"
 
 
@@ -142,11 +138,10 @@ then:
     then:
     . not: Z "in"? X
 Appendix:
-. documented:
-  . called: "Axiom of Empty Set"
-  . description: "There is a set having no members: for every set $Z$, $Z \notin
-                  X$. Extensionality makes this set unique, so any construction
-                  with no members denotes the same empty set."
+. called: "Axiom of Empty Set"
+. description: "There is a set having no members: for every set $Z$, $Z \notin
+                X$. Extensionality makes this set unique, so any construction
+                with no members denotes the same empty set."
 . references:
   . $enderton.set.theory:page{17}
   . $halmos.set.theory:page{1}
@@ -169,13 +164,11 @@ where:
   then: (.Z "in"? X.) \.iff./ (.Z "in"? Y.)
 then: X = Y
 Appendix:
-. documented:
-  . called: "Axiom of Extensionality"
-  . description: "The fundamental identity criterion in set theory: sets with
-                  identical elements are identical ($X = Y$). Replaces
-                  intensional definitions with purely extensional equality,
-                  asserting that sets possess neither internal order nor
-                  multiplicity."
+. called: "Axiom of Extensionality"
+. description: "The fundamental identity criterion in set theory: sets with
+                identical elements are identical ($X = Y$). Replaces intensional
+                definitions with purely extensional equality, asserting that
+                sets possess neither internal order nor multiplicity."
 . references:
   . $enderton.set.theory:page{17}
   . $halmos.set.theory:page{1}
@@ -199,12 +192,11 @@ then:
   . forAll: Z is \set
     then: (.Z "in"? U.) \.iff./ ((.Z = X.) \.or./ (.Z = Y.))
 Appendix:
-. documented:
-  . called: "Axiom of Pairing"
-  . description: "The elementary aggregation mechanism forming the unordered
-                  pair $\{X, Y\}$. When $X = Y$, it generates the singleton
-                  $\{X\}$, enabling the construction of Kuratowski ordered pairs
-                  $(X, Y) = \{\{X\}, \{X, Y\}\}$."
+. called: "Axiom of Pairing"
+. description: "The elementary aggregation mechanism forming the unordered pair
+                $\{X, Y\}$. When $X = Y$, it generates the singleton $\{X\}$,
+                enabling the construction of Kuratowski ordered pairs
+                $(X, Y) = \{\{X\}, \{X, Y\}\}$."
 . references:
   . $enderton.set.theory:page{17}
   . $halmos.set.theory:page{1}
@@ -234,11 +226,10 @@ then:
         . W "in"? X
         . Z "in"? W
 Appendix:
-. documented:
-  . called: "Axiom of Union"
-  . description: "The monadic flattening operation $\bigcup X$ collapsing one
-                  level of hierarchical nesting: collects every element
-                  belonging to at least one member of $X$."
+. called: "Axiom of Union"
+. description: "The monadic flattening operation $\bigcup X$ collapsing one
+                level of hierarchical nesting: collects every element belonging
+                to at least one member of $X$."
 . references:
   . $enderton.set.theory:page{17}
   . $halmos.set.theory:page{1}
@@ -261,12 +252,11 @@ then:
   . forAll: x is \set
     then: (.x "in"? P.) \.iff./ (.x \:subset?:/ A.)
 Appendix:
-. documented:
-  . called: "Axiom of Power Set"
-  . description: "The exponential size-escalation axiom forming
-                  $\mathcal{P}(A) = 2^A$. By Cantor's diagonal theorem,
-                  $|\mathcal{P}(A)| > |A|$, guaranteeing an unbounded hierarchy
-                  of transfinite cardinalities."
+. called: "Axiom of Power Set"
+. description: "The exponential size-escalation axiom forming
+                $\mathcal{P}(A) = 2^A$. By Cantor's diagonal theorem,
+                $|\mathcal{P}(A)| > |A|$, guaranteeing an unbounded hierarchy of
+                transfinite cardinalities."
 . references:
   . $enderton.set.theory:page{17}
   . $halmos.set.theory:page{1}
@@ -291,12 +281,11 @@ then:
     . forAll: Y is \set
       then: (.Y "in"? I.) \.implies./ (.\set.successor:of{Y} "in"? I.)
 Appendix:
-. documented:
-  . called: "Axiom of Infinity"
-  . description: "The transfinite bridge postulating a limit stage closed under
-                  von Neumann succession $S(Y) = Y \cup \{Y\}$. Guarantees the
-                  existence of an infinite Dedekind set, providing the
-                  foundation for $\mathbb{N}$ and arithmetic analysis."
+. called: "Axiom of Infinity"
+. description: "The transfinite bridge postulating a limit stage closed under
+                von Neumann succession $S(Y) = Y \cup \{Y\}$. Guarantees the
+                existence of an infinite Dedekind set, providing the foundation
+                for $\mathbb{N}$ and arithmetic analysis."
 . references:
   . $enderton.set.theory:page{67}
   . $halmos.set.theory:page{44}

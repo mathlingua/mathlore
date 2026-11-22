@@ -15,11 +15,10 @@ Id: "d50dcf2b-bbbf-4ded-a031-ec2f0a6d32c3"
 Defines: C is \set
 when: A, B is \set
 Appendix:
-. documented:
-  . called: "set union $A \cup B$"
-  . written: "A? \cup B?"
-  . description: "The set containing all elements belonging to set A, set B, or
-                  both: the least upper bound in the subset lattice."
+. called: "set union $A \cup B$"
+. written: "A? \cup B?"
+. description: "The set containing all elements belonging to set A, set B, or
+                both: the least upper bound in the subset lattice."
 . references:
   . $enderton.set.theory:page{17}
   . $halmos.set.theory:page{14}
@@ -30,11 +29,10 @@ Id: "a9493947-81ae-4cbc-be10-b8b8f6159d57"
 Defines: C is \set
 when: A, B is \set
 Appendix:
-. documented:
-  . called: "set intersection $A \cap B$"
-  . written: "A? \cap B?"
-  . description: "The set containing all elements belonging simultaneously to
-                  both A and B: the greatest lower bound in the subset lattice."
+. called: "set intersection $A \cap B$"
+. written: "A? \cap B?"
+. description: "The set containing all elements belonging simultaneously to both
+                A and B: the greatest lower bound in the subset lattice."
 . references:
   . $enderton.set.theory:page{17}
   . $halmos.set.theory:page{15}
@@ -51,11 +49,10 @@ Id: "665f7f96-3ede-4ead-aa76-e67180e44fe4"
 Defines: C is \set
 when: A, B is \set
 Appendix:
-. documented:
-  . called: "set difference $A \setminus B$"
-  . written: "A? \setminus B?"
-  . description: "The relative complement of B in A: the set of all elements in
-                  A that do not belong to B."
+. called: "set difference $A \setminus B$"
+. written: "A? \setminus B?"
+. description: "The relative complement of B in A: the set of all elements in A
+                that do not belong to B."
 . references:
   . $enderton.set.theory:page{18}
   . $halmos.set.theory:page{17}
@@ -66,11 +63,10 @@ Id: "f71218dd-3918-473f-89b7-1de7d8c3f511"
 Defines: C is \set
 when: A, B is \set
 Appendix:
-. documented:
-  . called: "symmetric difference $A \mathbin{\Delta} B$"
-  . written: "A? \mathbin{\Delta} B?"
-  . description: "The set of elements belonging to either A or B but not both:
-                  (A \setminus B) \cup (B \setminus A)."
+. called: "symmetric difference $A \mathbin{\Delta} B$"
+. written: "A? \mathbin{\Delta} B?"
+. description: "The set of elements belonging to either A or B but not both: (A
+                \setminus B) \cup (B \setminus A)."
 . references:
   . $enderton.set.theory:page{18}
   . $halmos.set.theory:page{18}
@@ -88,11 +84,10 @@ Proof: """An element $x$ belongs to $A \mathbin{\Delta} B$ if and only if
           $x \in (A \setminus B) \cup (B \setminus A)$. By Extensionality, the
           two sets are identical."""
 Appendix:
-. documented:
-  . called: "symmetric difference decomposition"
-  . written: "A \mathbin{\Delta} B = (A \setminus B) \cup (B \setminus A)"
-  . description: "Decomposing symmetric difference into the union of disjoint
-                  relative complements."
+. called: "symmetric difference decomposition"
+. written: "A \mathbin{\Delta} B = (A \setminus B) \cup (B \setminus A)"
+. description: "Decomposing symmetric difference into the union of disjoint
+                relative complements."
 . references:
   . $enderton.set.theory:page{18}
 Id: "e8479484-ad51-4cc9-ba51-e2f97edfd620"
@@ -110,11 +105,10 @@ when:
 . A is \set
 . U is \set
 Appendix:
-. documented:
-  . called: "absolute complement $A^c$ in universal set $U$"
-  . written: "{A?}^c"
-  . description: "The complement of subset A with respect to ambient universal
-                  set U: U \setminus A."
+. called: "absolute complement $A^c$ in universal set $U$"
+. written: "{A?}^c"
+. description: "The complement of subset A with respect to ambient universal set
+                U: U \setminus A."
 . references:
   . $enderton.set.theory:page{19}
   . $halmos.set.theory:page{19}
@@ -133,11 +127,10 @@ Proof: """For any element $x \in U$, $x \in (A^c)^c \iff x \in U \setminus A^c
           Since $A \subseteq U$, this simplifies to $x \in U \land x \in A \iff x \in A$.
           By Extensionality, $(A^c)^c = A$."""
 Appendix:
-. documented:
-  . called: "involution of complementation"
-  . written: "(A^c)^c = A"
-  . description: "Complementing twice relative to universe U recovers the
-                  original set."
+. called: "involution of complementation"
+. written: "(A^c)^c = A"
+. description: "Complementing twice relative to universe U recovers the original
+                set."
 . references:
   . $enderton.set.theory:page{19}
 Id: "983c6114-e31b-4a03-8e93-82ec208db82d"
@@ -154,11 +147,10 @@ Proof: """By definition, $\emptyset^c = U \setminus \emptyset = \{x \in U \mid x
           $U^c = U \setminus U = \{x \in U \mid x \notin U\}$, which has no
           members and is thus $\emptyset$."""
 Appendix:
-. documented:
-  . called: "boundary complements"
-  . written: "\emptyset^c = U \land U^c = \emptyset"
-  . description: "The complement of the empty set is the entire universe, and
-                  the complement of the universe is empty."
+. called: "boundary complements"
+. written: "\emptyset^c = U \land U^c = \emptyset"
+. description: "The complement of the empty set is the entire universe, and the
+                complement of the universe is empty."
 . references:
   . $enderton.set.theory:page{19}
 Id: "a572985a-b09d-41d1-8e51-80b8ed62e66c"
@@ -182,11 +174,10 @@ Proof: """By definition, $x \in A \cup B \iff x \in A \lor x \in B$. Since
           $x \in A \cap B \iff x \in A \land x \in B \iff x \in B \land x \in A \iff x \in B \cap A$,
           so $A \cap B = B \cap A$."""
 Appendix:
-. documented:
-  . called: "commutativity of set union and intersection"
-  . written: "A \cup B = B \cup A \land A \cap B = B \cap A"
-  . description: "Symmetry of binary lattice operations: order of operands does
-                  not affect the resulting union or intersection."
+. called: "commutativity of set union and intersection"
+. written: "A \cup B = B \cup A \land A \cap B = B \cap A"
+. description: "Symmetry of binary lattice operations: order of operands does
+                not affect the resulting union or intersection."
 . references:
   . $enderton.set.theory:page{19}
 Id: "8e9fb35c-e79a-4126-b989-03299def1991"
@@ -202,12 +193,11 @@ Proof: """For any $x$, $x \in (A \cup B) \cup C \iff (x \in A \lor x \in B) \lor
           by associativity of logical disjunction. The intersection identity
           follows symmetrically from associativity of logical conjunction."""
 Appendix:
-. documented:
-  . called: "associativity of set union and intersection"
-  . written: "(A \cup B) \cup C = A \cup (B \cup C) \land (A \cap B) \cap C = A
-              \cap (B \cap C)"
-  . description: "Grouping of operations does not affect compound unions or
-                  intersections."
+. called: "associativity of set union and intersection"
+. written: "(A \cup B) \cup C = A \cup (B \cup C) \land (A \cap B) \cap C = A
+            \cap (B \cap C)"
+. description: "Grouping of operations does not affect compound unions or
+                intersections."
 . references:
   . $enderton.set.theory:page{19}
 Id: "37f2aea8-bf02-4bda-a310-fc0d764a54fb"
@@ -225,11 +215,10 @@ Proof: """Idempotence follows from the propositional tautologies $P \lor P \iff 
           $x \in A \cup (A \cap B) \iff x \in A \lor (x \in A \land x \in B) \iff x \in A$.
           Dually, $x \in A \cap (A \cup B) \iff x \in A \land (x \in A \lor x \in B) \iff x \in A$."""
 Appendix:
-. documented:
-  . called: "idempotence and absorption laws for sets"
-  . written: "A \cup A = A \land A \cap A = A \land A \cup (A \cap B) = A \land
-              A \cap (A \cup B) = A"
-  . description: "Idempotence and lattice absorption identities for subsets."
+. called: "idempotence and absorption laws for sets"
+. written: "A \cup A = A \land A \cap A = A \land A \cup (A \cap B) = A \land A
+            \cap (A \cup B) = A"
+. description: "Idempotence and lattice absorption identities for subsets."
 . references:
   . $enderton.set.theory:page{19}
 Id: "c73a775b-e9b5-4ef6-93f3-8a30184d1fa4"
@@ -253,11 +242,10 @@ Proof: """An element $x$ belongs to $A \cap (B \cup C)$ if and only if
           The second identity follows dually from the distributivity of
           disjunction over conjunction."""
 Appendix:
-. documented:
-  . called: "mutual distributivity of union and intersection"
-  . written: "A \cap (B \cup C) = (A \cap B) \cup (A \cap C) \land A \cup (B
-              \cap C) = (A \cup B) \cap (A \cup C)"
-  . description: "The algebraic distributive laws of set intersection and union."
+. called: "mutual distributivity of union and intersection"
+. written: "A \cap (B \cup C) = (A \cap B) \cup (A \cap C) \land A \cup (B \cap
+            C) = (A \cup B) \cap (A \cup C)"
+. description: "The algebraic distributive laws of set intersection and union."
 . references:
   . $enderton.set.theory:page{20}
 Id: "54ef7b69-c0c3-4185-9b0d-f003e0293f1b"
@@ -280,11 +268,10 @@ Proof: """For any element $x \in U$, $x \in (A \cup B)^c \iff x \in U \land \neg
           Thus $x \in U \land (\neg(x \in A) \land \neg(x \in B)) \iff (x \in U \land x \notin A) \land (x \in U \land x \notin B) \iff x \in A^c \cap B^c$.
           By Extensionality, $(A \cup B)^c = A^c \cap B^c$."""
 Appendix:
-. documented:
-  . called: "De Morgan's First Law for Sets"
-  . written: "(A \cup B)^c = A^c \cap B^c"
-  . description: "The complement of a union is the intersection of the
-                  individual complements."
+. called: "De Morgan's First Law for Sets"
+. written: "(A \cup B)^c = A^c \cap B^c"
+. description: "The complement of a union is the intersection of the individual
+                complements."
 . references:
   . $enderton.set.theory:page{20}
 Id: "44f801af-ef75-423f-9d0c-b61fb58bc265"
@@ -300,11 +287,10 @@ Proof: """For any $x \in U$, $x \in (A \cap B)^c \iff x \in U \land \neg(x \in A
           $x \in U \land (\neg(x \in A) \lor \neg(x \in B)) \iff (x \in U \land x \notin A) \lor (x \in U \land x \notin B) \iff x \in A^c \cup B^c$.
           Extensionality completes the proof."""
 Appendix:
-. documented:
-  . called: "De Morgan's Second Law for Sets"
-  . written: "(A \cap B)^c = A^c \cup B^c"
-  . description: "The complement of an intersection is the union of the
-                  individual complements."
+. called: "De Morgan's Second Law for Sets"
+. written: "(A \cap B)^c = A^c \cup B^c"
+. description: "The complement of an intersection is the union of the individual
+                complements."
 . references:
   . $enderton.set.theory:page{20}
 Id: "30e886dd-37b3-44e7-89d6-39c1a6f03abb"
@@ -331,12 +317,11 @@ Proof: """Assume $A \subseteq B$. If $x \in A \cap B$, then $x \in A$.
           $A \setminus B = \{x \in A \mid x \notin B\} = \emptyset$ because no
           element of $A$ can fail to belong to $B$."""
 Appendix:
-. documented:
-  . called: "equational characterizations of subset inclusion"
-  . written: "A \subseteq B \iff A \cap B = A \iff A \cup B = B \iff A \setminus
-              B = \emptyset"
-  . description: "Translating containment into lattice meet, join, and
-                  difference equations."
+. called: "equational characterizations of subset inclusion"
+. written: "A \subseteq B \iff A \cap B = A \iff A \cup B = B \iff A \setminus B
+            = \emptyset"
+. description: "Translating containment into lattice meet, join, and difference
+                equations."
 . references:
   . $enderton.set.theory:page{20}
 Id: "a5376470-2bbb-407d-9b53-8b6711e382a8"
@@ -356,12 +341,11 @@ Proof: """Assume $A \subseteq B$. If $x \in A \cup C$, then $x \in A$ or
           $x \in A \cap C$, then $x \in A$ and $x \in C$. Since $A \subseteq B$,
           $x \in B$, so $x \in B \cap C$. Thus $A \cap C \subseteq B \cap C$."""
 Appendix:
-. documented:
-  . called: "monotonicity of union and intersection"
-  . written: "A \subseteq B \implies (A \cup C \subseteq B \cup C \land A \cap C
-              \subseteq B \cap C)"
-  . description: "Order-preserving functoriality of set operations with respect
-                  to inclusion."
+. called: "monotonicity of union and intersection"
+. written: "A \subseteq B \implies (A \cup C \subseteq B \cup C \land A \cap C
+            \subseteq B \cap C)"
+. description: "Order-preserving functoriality of set operations with respect to
+                inclusion."
 . references:
   . $enderton.set.theory:page{20}
 Id: "33545b66-5f0f-4ec7-ab63-71086f54aeb9"
@@ -388,11 +372,10 @@ Proof: """Let $x \in U$. By excluded middle, either $x \in A$ or $x \notin A$.
           satisfy $x \in A \land x \notin A$, which is impossible by
           non-contradiction. Thus $A \cap A^c = \emptyset$."""
 Appendix:
-. documented:
-  . called: "complementation identities of the Boolean algebra of sets"
-  . written: "A \cup A^c = U \land A \cap A^c = \emptyset"
-  . description: "The fundamental lattice complementation laws guaranteeing that
-                  a subset and its complement partition the universal set."
+. called: "complementation identities of the Boolean algebra of sets"
+. written: "A \cup A^c = U \land A \cap A^c = \emptyset"
+. description: "The fundamental lattice complementation laws guaranteeing that a
+                subset and its complement partition the universal set."
 . references:
   . $enderton.set.theory:page{21}
 Id: "d401689f-279d-4aec-ad59-e453aaba9806"

@@ -146,12 +146,11 @@ Proof: """By definition, the statement $\forall x \in D, P(x)$ is true if and
           $P(x)$ fails to hold, which is the definition of
           $\exists x \in D, \neg P(x)$."""
 Appendix:
-. documented:
-  . called: "Negation of a Universal Quantifier"
-  . description: "De Morgan duality for infinite conjunctions: the negation of a
-                  universal statement $\neg \forall x \in D \, P(x)$ is
-                  logically equivalent to the existential assertion of a
-                  counterexample $\exists x \in D \, \neg P(x)$."
+. called: "Negation of a Universal Quantifier"
+. description: "De Morgan duality for infinite conjunctions: the negation of a
+                universal statement $\neg \forall x \in D \, P(x)$ is logically
+                equivalent to the existential assertion of a counterexample
+                $\exists x \in D \, \neg P(x)$."
 . references:
   . $enderton.logic:page{82}
 Id: "bf4df541-b2ff-4fff-9f32-e0565e88a24a"
@@ -181,12 +180,11 @@ Proof: """By definition, the statement $\exists x \in D, P(x)$ is true if and
           every candidate $x \in D$ fails to satisfy $P(x)$, which is precisely
           the assertion $\forall x \in D, \neg P(x)$."""
 Appendix:
-. documented:
-  . called: "Negation of an Existential Quantifier"
-  . description: "De Morgan duality for infinite disjunctions: the negation of
-                  an existential statement $\neg \exists x \in D \, P(x)$ is
-                  logically equivalent to the universal exhaustion of failures
-                  $\forall x \in D \, \neg P(x)$."
+. called: "Negation of an Existential Quantifier"
+. description: "De Morgan duality for infinite disjunctions: the negation of an
+                existential statement $\neg \exists x \in D \, P(x)$ is
+                logically equivalent to the universal exhaustion of failures
+                $\forall x \in D \, \neg P(x)$."
 . references:
   . $enderton.logic:page{82}
 Id: "4396c679-4735-45fb-ba6a-704ee55fc63b"

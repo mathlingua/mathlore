@@ -75,12 +75,11 @@ when:
 . a, b is \real
 . f is \function:on{\reals}:to{\reals}
 Appendix:
-. documented:
-  . called: "Riemann integral of $f?$ on $[a?, b?]$"
-  . written: "\int_{a?}^{b?} f?(x) \, dx"
-  . description: "The definite Riemann integral
-                  $\int_a^b f(x)\,dx = \sup_P L(f, P) = \inf_P U(f, P)$,
-                  measuring oriented area under $f$ over $[a, b]$."
+. called: "Riemann integral of $f?$ on $[a?, b?]$"
+. written: "\int_{a?}^{b?} f?(x) \, dx"
+. description: "The definite Riemann integral
+                $\int_a^b f(x)\,dx = \sup_P L(f, P) = \inf_P U(f, P)$, measuring
+                oriented area under $f$ over $[a, b]$."
 . references:
   . $rudin.principles:page{120}
   . $apostol.analysis:page{140}

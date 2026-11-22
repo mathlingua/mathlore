@@ -80,13 +80,11 @@ expresses:
       . \complex.modulus(h) \:real.less?:/ delta
       then: \complex.modulus(((f(z0 \.complex.+./ h) \.complex.-./ f(z0)) \.complex.div./ h) \.complex.-./ d) \:real.less?:/ epsilon
 Appendix:
-. documented:
-  . called: "complex derivative of $f?$ at $z0?$"
-  . written: "f?'(z0?)"
-  . description: "The complex derivative
-                  $f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}$,
-                  defining an isotropic similarity operator in the tangent
-                  space."
+. called: "complex derivative of $f?$ at $z0?$"
+. written: "f?'(z0?)"
+. description: "The complex derivative
+                $f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h}$,
+                defining an isotropic similarity operator in the tangent space."
 . references:
   . $ahlfors.complex:page{24}
   . $stein.shakarchi.complex:page{8}
@@ -108,10 +106,9 @@ satisfies:
   . exists: d is \complex
     suchThat: d = \complex.derivative:of{f}:at{z0}
 Appendix:
-. documented:
-  . adjective: "holomorphic"
-  . description: "Holomorphic on open $U$: complex differentiable at every point
-                  $z_0 \in U$, satisfying the Cauchy-Riemann equations."
+. adjective: "holomorphic"
+. description: "Holomorphic on open $U$: complex differentiable at every point
+                $z_0 \in U$, satisfying the Cauchy-Riemann equations."
 . references:
   . $ahlfors.complex:page{24}
   . $stein.shakarchi.complex:page{8}

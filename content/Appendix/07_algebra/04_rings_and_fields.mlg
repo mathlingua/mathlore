@@ -41,11 +41,10 @@ Enables:
 . capability: x_ "in" R :<->: x_ is \ring.element:of{R}
   written: "x_? \in R?"
 Appendix:
-. documented:
-  . called: "ring"
-  . description: "A ring $(R, +, \cdot, 0, 1)$ consists of an abelian addition
-                  group $(R, +, 0)$, a multiplicative monoid $(R, \cdot, 1)$,
-                  and left/right distributivity laws."
+. called: "ring"
+. description: "A ring $(R, +, \cdot, 0, 1)$ consists of an abelian addition
+                group $(R, +, 0)$, a multiplicative monoid $(R, \cdot, 1)$, and
+                left/right distributivity laws."
 . references:
   . $dummit.foote:page{228}
   . $lang.algebra:page{83}
@@ -67,10 +66,9 @@ Enables:
 . capability: x_ [*] y_ :=> x_ |R.*| y_
   written: "x_? *? y_?"
 Appendix:
-. documented:
-  . called: "element of ring $R?$"
-  . description: "An element $x \in X$ of a ring $R$, supporting arithmetic
-                  operations $x + y$ and $x \cdot y$."
+. called: "element of ring $R?$"
+. description: "An element $x \in X$ of a ring $R$, supporting arithmetic
+                operations $x + y$ and $x \cdot y$."
 Id: "7e51f2cf-8568-4819-af9d-80949b74d813"
 
 
@@ -91,11 +89,10 @@ Id: "64b4ac6a-9629-4aa7-89e2-9f0ea27e9a48"
 Refines: R ::= (X, +, *, 0, 1)
 specifies: * is \(commutative)::binary.operation:on{X}
 Appendix:
-. documented:
-  . adjective: "commutative"
-  . description: "A ring whose multiplication satisfies $x \cdot y = y \cdot x$,
-                  forming the central objects of study in commutative algebra
-                  and algebraic geometry."
+. adjective: "commutative"
+. description: "A ring whose multiplication satisfies $x \cdot y = y \cdot x$,
+                forming the central objects of study in commutative algebra and
+                algebraic geometry."
 . references:
   . $dummit.foote:page{228}
   . $lang.algebra:page{83}
@@ -132,11 +129,10 @@ Enables:
 . view:
   as: G := (X \.set.difference./ \singleton.set:of{0}, *, 1) is \(abelian)::group
 Appendix:
-. documented:
-  . called: "field"
-  . description: "A nontrivial commutative ring in which every nonzero element
-                  has a multiplicative inverse, so that
-                  $F^\times = F \setminus \{0\}$ forms an abelian group."
+. called: "field"
+. description: "A nontrivial commutative ring in which every nonzero element has
+                a multiplicative inverse, so that $F^\times = F \setminus \{0\}$
+                forms an abelian group."
 . references:
   . $dummit.foote:page{228}
   . $lang.algebra:page{83}
@@ -152,10 +148,9 @@ Id: "5abb01c8-3f63-436d-95c1-0b80c5643ecf"
 Declares: x is \ring.element:of{F}
 when: F is \field
 Appendix:
-. documented:
-  . called: "element of field $F?$"
-  . description: "An element of a field $F$, admitting nonzero division and
-                  scalar multiplication."
+. called: "element of field $F?$"
+. description: "An element of a field $F$, admitting nonzero division and scalar
+                multiplication."
 Id: "1961828f-5a83-4c78-b8c9-a91c2e512d50"
 
 
@@ -188,11 +183,10 @@ satisfies:
   . r * i "in" I
   . i * r "in" I
 Appendix:
-. documented:
-  . called: "ideal of $R?$"
-  . description: "A two-sided ideal $I \subseteq R$: an additive subgroup
-                  absorbing ring multiplication ($rI \subseteq I$ and
-                  $Ir \subseteq I$), forming the kernels of ring homomorphisms."
+. called: "ideal of $R?$"
+. description: "A two-sided ideal $I \subseteq R$: an additive subgroup
+                absorbing ring multiplication ($rI \subseteq I$ and
+                $Ir \subseteq I$), forming the kernels of ring homomorphisms."
 . references:
   . $dummit.foote:page{242}
   . $lang.algebra:page{86}
@@ -214,11 +208,10 @@ satisfies:
   . b != 0
   . a * b = 0
 Appendix:
-. documented:
-  . adjective: "zero divisor"
-  . description: "A nonzero ring element $a \ne 0$ for which there exists a
-                  nonzero $b \ne 0$ satisfying $a \cdot b = 0$, obstructing
-                  multiplicative cancellation."
+. adjective: "zero divisor"
+. description: "A nonzero ring element $a \ne 0$ for which there exists a
+                nonzero $b \ne 0$ satisfying $a \cdot b = 0$, obstructing
+                multiplicative cancellation."
 Id: "cff0d878-33b9-4552-93c2-cee960162e9e"
 
 
@@ -235,11 +228,10 @@ satisfies:
 . forAll: a, b "in" D
   then: (. a * b = 0 .) \.implies./ (. a = 0 \.or./ b = 0 .)
 Appendix:
-. documented:
-  . called: "integral domain"
-  . description: "A nontrivial commutative ring with no zero divisors
-                  ($ab = 0 \implies a = 0 \lor b = 0$), in which nonzero
-                  elements satisfy the cancellation law."
+. called: "integral domain"
+. description: "A nontrivial commutative ring with no zero divisors
+                ($ab = 0 \implies a = 0 \lor b = 0$), in which nonzero elements
+                satisfy the cancellation law."
 . references:
   . $dummit.foote:page{228}
   . $lang.algebra:page{91}
@@ -300,13 +292,12 @@ satisfies:
   then: phi(a *_R b) = phi(a) *_S phi(b)
 . phi(1_R) = 1_S
 Appendix:
-. documented:
-  . called: "ring homomorphism from $R?$ to $S?$"
-  . description: "A ring homomorphism $\phi : R \to S$ is a structure-preserving
-                  mapping between rings that respects the additive group
-                  structure, the multiplicative monoid structure, and identity
-                  elements: $\phi(a +_R b) = \phi(a) +_S \phi(b)$,
-                  $\phi(a *_R b) = \phi(a) *_S \phi(b)$, and $\phi(1_R) = 1_S$."
+. called: "ring homomorphism from $R?$ to $S?$"
+. description: "A ring homomorphism $\phi : R \to S$ is a structure-preserving
+                mapping between rings that respects the additive group
+                structure, the multiplicative monoid structure, and identity
+                elements: $\phi(a +_R b) = \phi(a) +_S \phi(b)$,
+                $\phi(a *_R b) = \phi(a) *_S \phi(b)$, and $\phi(1_R) = 1_S$."
 . references:
   . $dummit.foote:page{239}
   . $lang.algebra:page{83}
@@ -351,15 +342,14 @@ Enables:
 . view:
   as: S' := S is \ring
 Appendix:
-. documented:
-  . called: "subring of $R?$"
-  . written: "S? \leq R?"
-  . description: "A subring $S \subseteq R$ is a subset of a ring $R$ containing
-                  the ambient multiplicative identity $1_R$ that forms a ring in
-                  its own right under the restricted operations of $R$.
-                  Equivalently, $S$ contains $0_R$ and $1_R$ and is closed under
-                  addition, additive inverses (subtraction), and multiplication,
-                  with $0_S = 0_R$ and $1_S = 1_R$."
+. called: "subring of $R?$"
+. written: "S? \leq R?"
+. description: "A subring $S \subseteq R$ is a subset of a ring $R$ containing
+                the ambient multiplicative identity $1_R$ that forms a ring in
+                its own right under the restricted operations of $R$.
+                Equivalently, $S$ contains $0_R$ and $1_R$ and is closed under
+                addition, additive inverses (subtraction), and multiplication,
+                with $0_S = 0_R$ and $1_S = 1_R$."
 . references:
   . $dummit.foote:page{228}
   . $lang.algebra:page{84}
@@ -378,12 +368,11 @@ when:
 . R, S is \ring
 . phi is \ring.homomorphism:from{R}:to{S}
 Appendix:
-. documented:
-  . called: "kernel of $phi?$"
-  . written: "\ker(phi?)"
-  . description: "The kernel of a ring homomorphism $\phi : R \to S$ is the
-                  preimage of the additive zero of the codomain,
-                  $\ker(\phi) = \{x \in R \mid \phi(x) = 0_S\}$."
+. called: "kernel of $phi?$"
+. written: "\ker(phi?)"
+. description: "The kernel of a ring homomorphism $\phi : R \to S$ is the
+                preimage of the additive zero of the codomain,
+                $\ker(\phi) = \{x \in R \mid \phi(x) = 0_S\}$."
 . references:
   . $dummit.foote:page{240}
   . $lang.algebra:page{85}
@@ -469,10 +458,9 @@ we verify the defining conditions:
 Since $K$ contains $0_R$, is closed under subtraction, and absorbs multiplication by all elements of $R$ from both the left and right, $K$ forms a two-sided ideal of $R$.
 """
 Appendix:
-. documented:
-  . called: "Kernel of a Ring Homomorphism is an Ideal"
-  . description: "The kernel of any ring homomorphism $\phi : R \to S$ forms a
-                  two-sided ideal of the domain ring $R$."
+. called: "Kernel of a Ring Homomorphism is an Ideal"
+. description: "The kernel of any ring homomorphism $\phi : R \to S$ forms a
+                two-sided ideal of the domain ring $R$."
 . references:
   . $dummit.foote:page{240}
   . $lang.algebra:page{85}

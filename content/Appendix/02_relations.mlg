@@ -38,12 +38,11 @@ Enables:
 . capability: R(x_, y_) :=> (x_, y_) "in"? R
   written: "x_? \: R \: y_?"
 Appendix:
-. documented:
-  . called: "relation on $X?$"
-  . description: "A relation on a set $X$ is a subset $R$ of $X \times X$. One
-                  writes $x \mathrel{R} y$ to mean that the pair $(x, y)$
-                  belongs to $R$, so a relation is just a precise record of
-                  which ordered pairs are related."
+. called: "relation on $X?$"
+. description: "A relation on a set $X$ is a subset $R$ of $X \times X$. One
+                writes $x \mathrel{R} y$ to mean that the pair $(x, y)$ belongs
+                to $R$, so a relation is just a precise record of which ordered
+                pairs are related."
 Id: "5ace60a2-cc66-4cea-818a-538f877b5f97"
 
 
@@ -61,13 +60,12 @@ satisfies:
 . forAll: x "in" X
   then: R(x, x)
 Appendix:
-. documented:
-  . adjective: "reflexive"
-  . description: "Geometric containment of the diagonal relation
-                  $\Delta_X \subseteq R$. In categorical and relational terms,
-                  reflexivity guarantees that the identity morphism $1_X$
-                  factors through $R$, ensuring every element serves as an
-                  admissible self-reference."
+. adjective: "reflexive"
+. description: "Geometric containment of the diagonal relation
+                $\Delta_X \subseteq R$. In categorical and relational terms,
+                reflexivity guarantees that the identity morphism $1_X$ factors
+                through $R$, ensuring every element serves as an admissible
+                self-reference."
 Id: "8db6967b-79de-4fd6-8769-fcd651c7c6ee"
 
 
@@ -84,12 +82,11 @@ satisfies:
   where: R(x, y)
   then: R(y, x)
 Appendix:
-. documented:
-  . adjective: "symmetric"
-  . description: "Invariance under relational inversion $R = R^{-1}$. Symmetry
-                  guarantees that directed relational edges collapse into
-                  unoriented geometric adjacency, eliminating arrow
-                  directionality."
+. adjective: "symmetric"
+. description: "Invariance under relational inversion $R = R^{-1}$. Symmetry
+                guarantees that directed relational edges collapse into
+                unoriented geometric adjacency, eliminating arrow
+                directionality."
 Id: "273288f5-a313-4140-a28c-16ac7e8ba72b"
 
 
@@ -109,12 +106,11 @@ satisfies:
   . R(y, z)
   then: R(x, z)
 Appendix:
-. documented:
-  . adjective: "transitive"
-  . description: "Idempotence under relational composition
-                  $R \circ R \subseteq R$. Transitivity transforms localized
-                  pairwise steps into global reachability, ensuring that
-                  intermediate connective nodes do not obstruct direct relation."
+. adjective: "transitive"
+. description: "Idempotence under relational composition
+                $R \circ R \subseteq R$. Transitivity transforms localized
+                pairwise steps into global reachability, ensuring that
+                intermediate connective nodes do not obstruct direct relation."
 Id: "8baba6bf-25f4-48b4-84f9-4b2db59ccf47"
 
 
@@ -134,12 +130,11 @@ satisfies:
   . R(y, x)
   then: x = y
 Appendix:
-. documented:
-  . adjective: "antisymmetric"
-  . description: "Obstruction to non-trivial cyclic 2-paths
-                  $R \cap R^{-1} \subseteq \Delta_X$. Antisymmetry prevents
-                  mutual dominance between distinct entities, establishing the
-                  directional rigidity characteristic of orders."
+. adjective: "antisymmetric"
+. description: "Obstruction to non-trivial cyclic 2-paths
+                $R \cap R^{-1} \subseteq \Delta_X$. Antisymmetry prevents mutual
+                dominance between distinct entities, establishing the
+                directional rigidity characteristic of orders."
 Id: "8ed4e2b2-f1b7-4131-8ae2-2834e71805fa"
 
 
@@ -158,13 +153,12 @@ expresses:
   . have: S(x, y)
     iff: R(y, x)
 Appendix:
-. documented:
-  . called: "inverse relation of $R?$"
-  . written: "R+?^{-1}"
-  . description: "The transpose or converse relation exchanging input and output
-                  coordinates $(x, y) \mapsto (y, x)$. In relational algebra and
-                  category theory, it realizes the contravariant dagger functor
-                  on the category of relations."
+. called: "inverse relation of $R?$"
+. written: "R+?^{-1}"
+. description: "The transpose or converse relation exchanging input and output
+                coordinates $(x, y) \mapsto (y, x)$. In relational algebra and
+                category theory, it realizes the contravariant dagger functor on
+                the category of relations."
 Id: "b182f12e-f94f-40e7-b5b7-c84dd243c262"
 
 
@@ -197,13 +191,12 @@ satisfies:
   . R(y, z)
   then: R(x, z)
 Appendix:
-. documented:
-  . called: "equivalence relation on $X?$"
-  . description: "The relational abstraction of mathematical identity modulo an
-                  invariant. By combining diagonal inclusion (reflexivity),
-                  directional symmetry, and composite transitivity, an
-                  equivalence relation decomposes the space $X$ into an exact
-                  partition of mutually disjoint fibers."
+. called: "equivalence relation on $X?$"
+. description: "The relational abstraction of mathematical identity modulo an
+                invariant. By combining diagonal inclusion (reflexivity),
+                directional symmetry, and composite transitivity, an equivalence
+                relation decomposes the space $X$ into an exact partition of
+                mutually disjoint fibers."
 . references:
   . $enderton.set.theory:page{55}
 Id: "2394a97b-5960-4919-98db-b95ec3870343"
@@ -221,12 +214,11 @@ when:
 . x "in" X
 . R is \equivalence.relation:on{X}
 Appendix:
-. documented:
-  . called: "equivalence class of $x?$ on $R?$"
-  . written: "\left [ x? \right ]_{R?}"
-  . description: "The fiber or cluster of all elements indistinguishable from
-                  $x$ under $R$. Equivalence classes form the atomic points of
-                  the quotient geometry $X / R$."
+. called: "equivalence class of $x?$ on $R?$"
+. written: "\left [ x? \right ]_{R?}"
+. description: "The fiber or cluster of all elements indistinguishable from $x$
+                under $R$. Equivalence classes form the atomic points of the
+                quotient geometry $X / R$."
 Id: "2fae575c-13c9-498b-b14a-e471f0e3cfdc"
 
 
@@ -242,13 +234,12 @@ when:
 . X is \set
 . R is \equivalence.relation:on{X}
 Appendix:
-. documented:
-  . called: "$X?$ mod $R?$"
-  . written: "X? / R?"
-  . description: "The quotient space constructed by identifying mutually related
-                  elements. The canonical projection $\pi: X \to X/R$
-                  universalizes the process of structural abstraction by
-                  factoring out irrelevant relational variation."
+. called: "$X?$ mod $R?$"
+. written: "X? / R?"
+. description: "The quotient space constructed by identifying mutually related
+                elements. The canonical projection $\pi: X \to X/R$
+                universalizes the process of structural abstraction by factoring
+                out irrelevant relational variation."
 Id: "cea0d898-a18d-44dc-b04c-ffb2f0cde26e"
 
 
@@ -270,12 +261,11 @@ satisfies:
     . A "in"? P
     . x "in"? A
 Appendix:
-. documented:
-  . called: "partition of $X?$"
-  . description: "A decomposition of $X$ into mutually disjoint, collectively
-                  exhaustive non-empty cells. The fundamental theorem of
-                  equivalence relations establishes a canonical bijection
-                  between equivalence relations on $X$ and partitions of $X$."
+. called: "partition of $X?$"
+. description: "A decomposition of $X$ into mutually disjoint, collectively
+                exhaustive non-empty cells. The fundamental theorem of
+                equivalence relations establishes a canonical bijection between
+                equivalence relations on $X$ and partitions of $X$."
 . references:
   . $enderton.set.theory:page{55}
 Id: "4c2d728b-0359-432c-afc5-371028a71eba"
@@ -312,12 +302,11 @@ satisfies:
   . R(y, z)
   then: R(x, z)
 Appendix:
-. documented:
-  . called: "partial order on $X?$"
-  . description: "An axiomatic model of hierarchical comparison. Combining
-                  reflexivity, transitivity, and antisymmetry, a partial order
-                  allows incomparable elements, serving as the foundation for
-                  order theory, domain theory, and lattice theory."
+. called: "partial order on $X?$"
+. description: "An axiomatic model of hierarchical comparison. Combining
+                reflexivity, transitivity, and antisymmetry, a partial order
+                allows incomparable elements, serving as the foundation for
+                order theory, domain theory, and lattice theory."
 . references:
   . $enderton.set.theory:page{55}
 Id: "656a5a0a-77e8-42ea-857c-4f7d8eda00ac"
@@ -338,11 +327,10 @@ satisfies:
     . R(x, y)
     . R(y, x)
 Appendix:
-. documented:
-  . called: "total order on $X?$"
-  . description: "A linear order leaving no pairs incomparable (satisfying
-                  totality). Models linear continua and discrete progressions
-                  such as the natural numbers and the real number line."
+. called: "total order on $X?$"
+. description: "A linear order leaving no pairs incomparable (satisfying
+                totality). Models linear continua and discrete progressions such
+                as the natural numbers and the real number line."
 . references:
   . $enderton.set.theory:page{55}
 Id: "40d12e9b-449e-49b9-a292-9388147d3e69"
@@ -371,11 +359,10 @@ expresses:
   where: R \:subset?:/ T
   then: S \:subset?:/ T
 Appendix:
-. documented:
-  . called: "reflexive closure of $R?$ on $X?$"
-  . description: "The minimal reflexive enlargement $R \cup \Delta_X$. Adjoins
-                  only the necessary self-loops to satisfy reflexivity without
-                  introducing extraneous relations."
+. called: "reflexive closure of $R?$ on $X?$"
+. description: "The minimal reflexive enlargement $R \cup \Delta_X$. Adjoins
+                only the necessary self-loops to satisfy reflexivity without
+                introducing extraneous relations."
 Id: "38e1561b-dcdb-4e2e-8ba0-53ef665a0c33"
 
 
@@ -395,11 +382,10 @@ expresses:
   where: R \:subset?:/ T
   then: S \:subset?:/ T
 Appendix:
-. documented:
-  . called: "symmetric closure of $R?$ on $X?$"
-  . description: "The minimal symmetric enlargement $R \cup R^{-1}$. Forges
-                  bidirectional edges across every existing directed pair,
-                  rendering the relational graph undirected."
+. called: "symmetric closure of $R?$ on $X?$"
+. description: "The minimal symmetric enlargement $R \cup R^{-1}$. Forges
+                bidirectional edges across every existing directed pair,
+                rendering the relational graph undirected."
 Id: "ce0a9702-4034-4063-a435-5eafa76158cf"
 
 
@@ -420,11 +406,10 @@ expresses:
   where: R \:subset?:/ T
   then: S \:subset?:/ T
 Appendix:
-. documented:
-  . called: "transitive closure of $R?$ on $X?$"
-  . description: "The minimal transitive enlargement $\bigcup_{n \ge 1} R^n$. In
-                  graph theory, it computes complete path reachability across
-                  arbitrary finite relational chains."
+. called: "transitive closure of $R?$ on $X?$"
+. description: "The minimal transitive enlargement $\bigcup_{n \ge 1} R^n$. In
+                graph theory, it computes complete path reachability across
+                arbitrary finite relational chains."
 Id: "bd748bdf-4d7a-442b-bf35-4724dd70775c"
 
 
@@ -445,12 +430,11 @@ expresses:
   where: R \:subset?:/ T
   then: S \:subset?:/ T
 Appendix:
-. documented:
-  . called: "reflexive--transitive closure of $R?$ on $X?$"
-  . description: "The preorder closure $R^* = \bigcup_{n \ge 0} R^n$, combining
-                  path reachability with trivial self-loops. Serves as the
-                  operational semantics for multistep computational transitions
-                  and reductions."
+. called: "reflexive--transitive closure of $R?$ on $X?$"
+. description: "The preorder closure $R^* = \bigcup_{n \ge 0} R^n$, combining
+                path reachability with trivial self-loops. Serves as the
+                operational semantics for multistep computational transitions
+                and reductions."
 Id: "374659d6-cfcc-4262-b98e-b50207d16c18"
 
 
@@ -485,12 +469,11 @@ Proof: """Let $R$ be an equivalence relation on $X$. We verify the defining
              equivalence classes are strictly disjoint, and every element
              belongs to a unique block."""
 Appendix:
-. documented:
-  . called: "Equivalence Classes Form a Partition"
-  . description: "The canonical isomorphism between the quotient structure
-                  $X / R$ and a set-theoretic partition of $X$. Transitivity and
-                  symmetry guarantee that overlapping equivalence classes must
-                  strictly coincide."
+. called: "Equivalence Classes Form a Partition"
+. description: "The canonical isomorphism between the quotient structure $X / R$
+                and a set-theoretic partition of $X$. Transitivity and symmetry
+                guarantee that overlapping equivalence classes must strictly
+                coincide."
 . references:
   . $enderton.set.theory:page{55}
 Id: "c6cf2b6a-9343-4865-b41e-183b454edd24"
@@ -534,11 +517,10 @@ Proof: """Let $P$ be a partition of $X$. Define a relation $R$ by
              $x, z \in A$, which proves $x \mathrel{R} z$. Hence $R$ is an
              equivalence relation on $X$."""
 Appendix:
-. documented:
-  . called: "A Partition Determines an Equivalence Relation"
-  . description: "The inverse construction to quotienting: any partition of $X$
-                  canonically reconstructs an equivalence relation whose classes
-                  are precisely the partition blocks."
+. called: "A Partition Determines an Equivalence Relation"
+. description: "The inverse construction to quotienting: any partition of $X$
+                canonically reconstructs an equivalence relation whose classes
+                are precisely the partition blocks."
 . references:
   . $enderton.set.theory:page{55}
 Id: "97d1309a-6739-4ff9-a354-f0c6859df60f"
@@ -564,12 +546,11 @@ that:
     . m != x
     . R(m, x)
 Appendix:
-. documented:
-  . called: "$m?$ is maximal in $X?$ under $R?$"
-  . description: "An element having no strictly greater successor. In partially
-                  ordered structures, maximal elements need not be unique and
-                  need not dominate all other elements, a crucial distinction in
-                  Zorn's lemma."
+. called: "$m?$ is maximal in $X?$ under $R?$"
+. description: "An element having no strictly greater successor. In partially
+                ordered structures, maximal elements need not be unique and need
+                not dominate all other elements, a crucial distinction in Zorn's
+                lemma."
 Id: "690ee3e8-39a6-4853-8df9-7d0b9e1cec5a"
 
 
@@ -588,11 +569,10 @@ that:
 . forAll: x "in" X
   then: R(x, g)
 Appendix:
-. documented:
-  . called: "$g?$ is the greatest element of $X?$ under $R?$"
-  . description: "The top element dominating all other elements in $X$. When it
-                  exists, the greatest element is uniquely determined and
-                  coincides with the sole maximal element."
+. called: "$g?$ is the greatest element of $X?$ under $R?$"
+. description: "The top element dominating all other elements in $X$. When it
+                exists, the greatest element is uniquely determined and
+                coincides with the sole maximal element."
 Id: "8c3b1160-03ac-4f70-856f-8dbdff0cba12"
 
 
@@ -614,11 +594,9 @@ that:
     . m != x
     . R(x, m)
 Appendix:
-. documented:
-  . called: "$m?$ is minimal in $X?$ under $R?$"
-  . description: "An element having no strictly smaller predecessor. Multiple
-                  incomparable minimal elements can coexist in non-linear
-                  posets."
+. called: "$m?$ is minimal in $X?$ under $R?$"
+. description: "An element having no strictly smaller predecessor. Multiple
+                incomparable minimal elements can coexist in non-linear posets."
 Id: "3c3478fa-e156-4364-9c53-3577a60d7dd9"
 
 
@@ -637,11 +615,10 @@ that:
 . forAll: x "in" X
   then: R(l, x)
 Appendix:
-. documented:
-  . called: "$l?$ is the least element of $X?$ under $R?$"
-  . description: "The bottom element subordinate to every element in $X$. When
-                  present, it is unique and forms the foundation for
-                  well-founded induction and complete partial orders."
+. called: "$l?$ is the least element of $X?$ under $R?$"
+. description: "The bottom element subordinate to every element in $X$. When
+                present, it is unique and forms the foundation for well-founded
+                induction and complete partial orders."
 Id: "33141ee6-c2fe-4116-8eff-3b6064d5d4e3"
 
 
@@ -680,12 +657,11 @@ satisfies:
   . R(b, x)
   then: R(join(a, b), x)
 Appendix:
-. documented:
-  . called: "lattice"
-  . description: "An algebraic poset where every two-element subset possesses a
-                  unique infimum (meet) and supremum (join). Unifies
-                  propositional logic (Boolean algebras), topology
-                  (frames/locales), and abstract geometry."
+. called: "lattice"
+. description: "An algebraic poset where every two-element subset possesses a
+                unique infimum (meet) and supremum (join). Unifies propositional
+                logic (Boolean algebras), topology (frames/locales), and
+                abstract geometry."
 . references:
   . $enderton.set.theory:page{55}
 Id: "1454c69c-e96e-4c4e-98e4-7736db0ef0a7"

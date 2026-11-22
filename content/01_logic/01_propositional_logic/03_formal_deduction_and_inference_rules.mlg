@@ -15,12 +15,10 @@ when:
 . Gamma is \\statement
 . A is \\statement
 Appendix:
-. documented:
-  . called: "formal deduction of $A?$ from hypotheses $\Gamma?$"
-  . written: "\Gamma? \vdash A?"
-  . description: "A finite derivation sequence of formulas establishing A from
-                  hypotheses Gamma using formal axiom schemas and inference
-                  rules."
+. called: "formal deduction of $A?$ from hypotheses $\Gamma?$"
+. written: "\Gamma? \vdash A?"
+. description: "A finite derivation sequence of formulas establishing A from
+                hypotheses Gamma using formal axiom schemas and inference rules."
 . references:
   . $enderton.logic:page{110}
 Id: "d55a6503-afff-42bb-994e-def7d0393c2e"
@@ -29,11 +27,10 @@ Id: "d55a6503-afff-42bb-994e-def7d0393c2e"
 [\formal.theorem]
 Declares: A is \\statement
 Appendix:
-. documented:
-  . called: "formal theorem"
-  . written: "\vdash A?"
-  . description: "A formula provable in the deductive calculus from the empty
-                  set of hypotheses."
+. called: "formal theorem"
+. written: "\vdash A?"
+. description: "A formula provable in the deductive calculus from the empty set
+                of hypotheses."
 . references:
   . $enderton.logic:page{110}
 Id: "de13f084-f724-47b7-b06b-14763050a11a"
@@ -52,11 +49,10 @@ where:
 then:
 . B
 Appendix:
-. documented:
-  . called: "rule of modus ponens"
-  . written: "\frac{A?, \quad A? \Rightarrow B?}{B?}"
-  . description: "The fundamental rule of inference: from assertion A and
-                  conditional A implies B, deduce conclusion B."
+. called: "rule of modus ponens"
+. written: "\frac{A?, \quad A? \Rightarrow B?}{B?}"
+. description: "The fundamental rule of inference: from assertion A and
+                conditional A implies B, deduce conclusion B."
 . references:
   . $enderton.logic:page{112}
 Id: "83946404-65dd-4d03-a8f8-b85604a0fcdc"
@@ -75,11 +71,10 @@ given:
 then:
 . (Gamma \.and./ A) \.implies./ B
 Appendix:
-. documented:
-  . called: "the deduction theorem"
-  . description: "A premise A can be introduced into assumptions to deduce B if
-                  and only if the conditional A implies B is deducible from the
-                  remaining assumptions alone."
+. called: "the deduction theorem"
+. description: "A premise A can be introduced into assumptions to deduce B if
+                and only if the conditional A implies B is deducible from the
+                remaining assumptions alone."
 . references:
   . $enderton.logic:page{118}
 Id: "3901271b-e929-4379-825f-d4b7eb50e963"
@@ -99,11 +94,10 @@ given:
 then:
 . (Gamma \.implies./ A) \.iff./ (Gamma \.implies./ A)
 Appendix:
-. documented:
-  . called: "soundness and completeness of propositional logic"
-  . description: "Syntactic derivability and semantic consequence coincide:
-                  Gamma proves A if and only if Gamma semantically entails A
-                  (Post, Gödel)."
+. called: "soundness and completeness of propositional logic"
+. description: "Syntactic derivability and semantic consequence coincide: Gamma
+                proves A if and only if Gamma semantically entails A (Post,
+                Gödel)."
 . references:
   . $enderton.logic:page{131}
 Id: "783a2cca-eb4b-460b-b45b-c091f7bedd43"

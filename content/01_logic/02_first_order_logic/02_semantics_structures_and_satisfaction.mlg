@@ -15,12 +15,11 @@ Id: "e7358686-e10c-485f-9e11-2716cfe9a712"
 [\fol.structure]
 Declares: M
 Appendix:
-. documented:
-  . called: "first-order structure"
-  . written: "\mathcal{M}"
-  . description: "A first-order interpretation structure comprising a non-empty
-                  domain of discourse together with interpretations for
-                  constant, function, and predicate symbols."
+. called: "first-order structure"
+. written: "\mathcal{M}"
+. description: "A first-order interpretation structure comprising a non-empty
+                domain of discourse together with interpretations for constant,
+                function, and predicate symbols."
 . references:
   . $enderton.logic:page{80}
 Id: "b38b6dcc-ac7c-4b19-8dcc-45eb0f68cddc"
@@ -30,11 +29,10 @@ Id: "b38b6dcc-ac7c-4b19-8dcc-45eb0f68cddc"
 Defines: D is \set
 when: M is \fol.structure
 Appendix:
-. documented:
-  . called: "domain of discourse of $\mathcal{M}?$"
-  . written: "|\mathcal{M}?|"
-  . description: "The non-empty underlying set of objects over which variables
-                  and quantifiers in structure \mathcal{M} range."
+. called: "domain of discourse of $\mathcal{M}?$"
+. written: "|\mathcal{M}?|"
+. description: "The non-empty underlying set of objects over which variables and
+                quantifiers in structure \mathcal{M} range."
 . references:
   . $enderton.logic:page{80}
 Id: "97d2459a-9abe-49f9-bf28-52f084be0224"
@@ -52,11 +50,10 @@ Id: "6f327333-bc73-49a2-b4fd-9fd4264fca27"
 Declares: I
 when: M is \fol.structure
 Appendix:
-. documented:
-  . called: "interpretation mapping of $\mathcal{M}?$"
-  . written: "I^\mathcal{M}?"
-  . description: "The mapping that assigns concrete domain elements, operations,
-                  and relations to non-logical symbols in structure \mathcal{M}."
+. called: "interpretation mapping of $\mathcal{M}?$"
+. written: "I^\mathcal{M}?"
+. description: "The mapping that assigns concrete domain elements, operations,
+                and relations to non-logical symbols in structure \mathcal{M}."
 . references:
   . $enderton.logic:page{80}
 Id: "d029e240-0588-443b-a53a-4ee714787614"
@@ -73,11 +70,10 @@ Id: "9bce35b3-3c43-446b-be46-2a34f63eaddc"
 Declares: s
 when: M is \fol.structure
 Appendix:
-. documented:
-  . called: "variable assignment into $\mathcal{M}?$"
-  . written: "s: \text{Var} \to |\mathcal{M}?|"
-  . description: "A function assigning a concrete element of domain
-                  |\mathcal{M}| to each individual variable."
+. called: "variable assignment into $\mathcal{M}?$"
+. written: "s: \text{Var} \to |\mathcal{M}?|"
+. description: "A function assigning a concrete element of domain |\mathcal{M}|
+                to each individual variable."
 . references:
   . $enderton.logic:page{83}
 Id: "fcf67774-a97f-4284-8ac2-41af9f264303"
@@ -98,11 +94,10 @@ when:
 . M is \fol.structure
 . s is \fol.assignment{M}
 Appendix:
-. documented:
-  . called: "term evaluation $\bar{s}(t)$"
-  . written: "\bar{s}?(t?)"
-  . description: "The unique element of |\mathcal{M}| obtained by recursively
-                  evaluating term t in structure \mathcal{M} under assignment s."
+. called: "term evaluation $\bar{s}(t)$"
+. written: "\bar{s}?(t?)"
+. description: "The unique element of |\mathcal{M}| obtained by recursively
+                evaluating term t in structure \mathcal{M} under assignment s."
 . references:
   . $enderton.logic:page{83}
 Id: "e0e94825-7453-4b82-9ad4-d7bc26ae6e04"
@@ -124,12 +119,11 @@ when:
 that:
 . have: (phi is \\statement)
 Appendix:
-. documented:
-  . called: "satisfaction $\mathcal{M} \models \varphi[s]$"
-  . written: "\mathcal{M}? \models \varphi?[s?]"
-  . description: "Tarski's satisfaction relation stating that structure
-                  \mathcal{M} satisfies formula \varphi under variable
-                  assignment s."
+. called: "satisfaction $\mathcal{M} \models \varphi[s]$"
+. written: "\mathcal{M}? \models \varphi?[s?]"
+. description: "Tarski's satisfaction relation stating that structure
+                \mathcal{M} satisfies formula \varphi under variable assignment
+                s."
 . references:
   . $enderton.logic:page{84}
 Id: "d81d8382-7586-48a6-a2d6-1b2e860cc695"
@@ -151,11 +145,10 @@ that:
 . forAll: s is \fol.assignment{M}
   then: \fol.truth{sigma}:in{M}:under{s}
 Appendix:
-. documented:
-  . called: "model relation $\mathcal{M} \models \sigma$"
-  . written: "\mathcal{M}? \models \sigma?"
-  . description: "Structure \mathcal{M} is a model of sentence \sigma, meaning
-                  \mathcal{M} satisfies \sigma under every variable assignment."
+. called: "model relation $\mathcal{M} \models \sigma$"
+. written: "\mathcal{M}? \models \sigma?"
+. description: "Structure \mathcal{M} is a model of sentence \sigma, meaning
+                \mathcal{M} satisfies \sigma under every variable assignment."
 . references:
   . $enderton.logic:page{88}
 Id: "61b8691f-9868-43ef-8d46-ed9e9989c5dd"
@@ -176,11 +169,10 @@ satisfies:
   . forAll: s is \fol.assignment{M}
     then: \fol.truth{phi}:in{M}:under{s}
 Appendix:
-. documented:
-  . called: "logically valid formula"
-  . written: "\models \varphi?"
-  . description: "A first-order formula that is true in every structure under
-                  every variable assignment."
+. called: "logically valid formula"
+. written: "\models \varphi?"
+. description: "A first-order formula that is true in every structure under
+                every variable assignment."
 . references:
   . $enderton.logic:page{88}
 Id: "28635b0c-9251-4aae-8ec5-80d474655f54"
@@ -199,10 +191,9 @@ satisfies:
   . exists: s is \fol.assignment{M}
     suchThat: \fol.truth{phi}:in{M}:under{s}
 Appendix:
-. documented:
-  . called: "satisfiable first-order formula"
-  . description: "A formula that is satisfied by at least one structure under at
-                  least one variable assignment."
+. called: "satisfiable first-order formula"
+. description: "A formula that is satisfied by at least one structure under at
+                least one variable assignment."
 . references:
   . $enderton.logic:page{88}
 Id: "447569b3-4e16-4737-af02-b9cc48c23edb"
@@ -225,11 +216,10 @@ that:
   . forAll: s is \fol.assignment{M}
     then: \fol.truth{phi}:in{M}:under{s}
 Appendix:
-. documented:
-  . called: "semantic consequence $\Sigma \models \varphi$"
-  . written: "\Sigma? \models \varphi?"
-  . description: "The relation asserting that every model of theory \Sigma is
-                  also a model of formula \varphi."
+. called: "semantic consequence $\Sigma \models \varphi$"
+. written: "\Sigma? \models \varphi?"
+. description: "The relation asserting that every model of theory \Sigma is also
+                a model of formula \varphi."
 . references:
   . $enderton.logic:page{88}
 Id: "1e902afa-ae63-4cae-9505-a70082883f21"
@@ -242,11 +232,10 @@ given:
 then:
 . (sigma is \\statement)
 Appendix:
-. documented:
-  . called: "bivalence of first-order truth for sentences"
-  . description: "For any first-order structure \mathcal{M} and sentence \sigma,
-                  the sentence is either satisfied by \mathcal{M} under all
-                  assignments or refuted under all assignments."
+. called: "bivalence of first-order truth for sentences"
+. description: "For any first-order structure \mathcal{M} and sentence \sigma,
+                the sentence is either satisfied by \mathcal{M} under all
+                assignments or refuted under all assignments."
 . references:
   . $enderton.logic:page{86}
 Id: "26784b1a-e888-4527-8e9e-7e48554470ca"
