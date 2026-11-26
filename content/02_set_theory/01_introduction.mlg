@@ -410,6 +410,9 @@ Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"
 Defines: C := A \.set.union:in{U}./ B
 using: U is \set
 when: A, B is \set
+assumes:
+. A \:subset?:/ U
+. B \:subset?:/ U
 Appendix:
 . called: "Union of $A?$ and $B$"
 . written: "A? \cup B?"
