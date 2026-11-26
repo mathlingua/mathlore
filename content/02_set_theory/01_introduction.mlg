@@ -1,0 +1,462 @@
+Title: "Set Theory: Axioms"
+Id: "4b9a150c-46bd-49da-83b4-b106f402c3a4"
+
+
+Text: "The entirety of classical mathematics can be systematically constructed
+       from a single primitive notion—the *set*—and a single primitive binary
+       relation—*membership*, denoted by $\in$. Numbers, algebraic structures,
+       geometric spaces, and continuous functions are not independent
+       ontological primitives; rather, each is formally realized as a set
+       equipped with relations that are themselves collections of ordered pairs.
+       This chapter establishes the axiomatic foundation of this universe, known
+       as Zermelo--Fraenkel set theory (ZF), and introduces the fundamental
+       operations that govern set formation."
+Id: "a5b9d42b-f22f-4fd4-a867-29de537158c3"
+
+
+Text: "In formal axiomatic set theory, the notion of a set is taken as an
+       undefined primitive. We do not define what a set 'is' in terms of simpler
+       components; instead, its behavior is entirely characterized by the
+       membership relation $\in$, under which every element of a set is itself a
+       set. We declare this foundational entity:"
+Id: "cbc6feb5-4f5e-41ef-bf59-342c981aa217"
+
+
+[\set]
+Declares: X
+satisfies:
+. \axiom.of.infinity
+. \axiom.of.union#given{X}
+. \axiom.of.power.set#given{X}
+. \axiom.of.empty.set
+. forAll: Y is \set
+  then:
+  . \axiom.of.extensionality#given{X := X; Y := Y}
+  . \axiom.of.pairing#given{X := X; Y := Y}
+Requires:
+. capability: x_ "in" X :-> \\abstract
+Enables:
+. from: Y ::= {y__ : ...}
+  capability: x_ "in" X :<->: x_ memberOf Y
+Appendix:
+. called: "set"
+. description: "The primitive ontological entity in Zermelo--Fraenkel set
+                theory. A pure set contains only other sets, completely
+                identified by its membership relation via extensionality,
+                providing the universal canvas for constructing mathematical
+                objects."
+. references:
+  . $enderton.set.theory:page{17}
+  . $halmos.set.theory:page{1}
+Id: "a0759217-e1f6-412c-982a-0038cd17a3a1"
+
+
+Text: "Complementary to membership is the assertion that an object fails to
+       belong to a given collection. By classical bivalence, non-membership is
+       the direct negation of the membership predicate:"
+Id: "48b22b9f-2acc-4e80-9148-667489d48ee1"
+
+
+[x \.not.in./ X]
+States:
+when:
+. x is \\anything
+. X is \set
+that:
+. not: x "in"? X
+Appendix:
+. written: "x? \notin X?"
+. description: "The negation of membership: $x \notin X$ asserts that the set
+                $x$ is not an element of the set $X$. It is shorthand for the
+                statement that $x \in X$ fails to hold."
+Id: "756e0f48-1c0e-4e05-b97a-9c4fcd577603"
+
+
+SectionTitle: "The Empty Set"
+Id: "8dc697a3-2ef0-4af9-8852-a994bdd8882d"
+
+
+Text: "To construct a universe of sets, the deductive machinery requires an
+       initial seed upon which subsequent operations can act. The simplest
+       imaginable set is the one having no members whatsoever, serving as the
+       base layer $V_0$ of the cumulative hierarchy from which all higher sets
+       are generated:"
+Id: "7a54c26a-ea2e-4e38-ac69-3426f651c4d4"
+
+
+[\empty.set]
+Defines: X is \set
+expresses:
+. not:
+  . exists: Y is \\anything
+    suchThat: Y "in" X
+Appendix:
+. called: "empty set"
+. written: "\emptyset"
+. description: "The unique bottom element $\emptyset = \varnothing$ of the
+                subset lattice possessing no members. Serves as the base layer
+                $V_0$ of the von Neumann universe and represents the natural
+                number $0$."
+. references:
+  . $enderton.set.theory:page{17}
+  . $halmos.set.theory:page{1}
+Id: "96908ddf-5fc5-455d-9cfd-eaf0fd6ada38"
+
+
+Text: "In contrast to the empty set, many mathematical constructions require the
+       presence of at least one element: choice functions cannot select from
+       empty sets, and algebraic structures require identity elements. We
+       distinguish this condition as a refinement:"
+Id: "6a19c255-0426-440b-a2e3-c97b1fe06bc4"
+
+
+[\(nonempty)::set]
+Refines: X
+satisfies: X != \empty.set
+Appendix:
+. adjective: "nonempty"
+Id: "616950f0-7d70-48ff-a5ac-9d5d49272150"
+
+
+SectionTitle: "The Core Axioms"
+Id: "f2e995e5-7f69-49c8-90bc-46d8f77811f1"
+
+
+Text: "The cumulative hierarchy of sets is governed by the axiomatic postulates
+       of Zermelo--Fraenkel theory. To ensure that our formal universe is not
+       trivial, the first axiom guarantees the existence of at least one set,
+       namely a set with no members:"
+Id: "287b3b2f-e440-43b5-98be-b7310daf6aaf"
+
+
+[\axiom.of.empty.set]
+Axiom:
+then:
+. exists: X is \set
+  suchThat:
+  . forAll: Z is \set
+    then:
+    . not: Z "in"? X
+Appendix:
+. called: "Axiom of Empty Set"
+. description: "There is a set having no members: for every set $Z$, $Z \notin
+                X$. Extensionality makes this set unique, so any construction
+                with no members denotes the same empty set."
+. references:
+  . $enderton.set.theory:page{17}
+  . $halmos.set.theory:page{1}
+Id: "f2180719-568d-4084-982b-a71c5f195bf6"
+
+
+Text: "Having secured the existence of a set, we require an identity criterion
+       to determine when two sets are identical. Under the extensional viewpoint
+       of mathematics, a set possesses no internal ordering, multiplicity, or
+       hidden structure: it is completely determined by the elements it
+       contains:"
+Id: "7f76409d-9233-44bf-984a-ede2358dcee5"
+
+
+[\axiom.of.extensionality]
+Axiom:
+given: X, Y is \set
+where:
+. forAll: Z is \set
+  then: (.Z "in"? X.) \.iff./ (.Z "in"? Y.)
+then: X = Y
+Appendix:
+. called: "Axiom of Extensionality"
+. description: "The fundamental identity criterion in set theory: sets with
+                identical elements are identical ($X = Y$). Replaces intensional
+                definitions with purely extensional equality, asserting that
+                sets possess neither internal order nor multiplicity."
+. references:
+  . $enderton.set.theory:page{17}
+  . $halmos.set.theory:page{1}
+Id: "6fc3a89f-f8ef-420e-b1b6-6e5ed4905611"
+
+
+Text: "Extensionality dictates when two given sets coincide, but it cannot
+       produce new sets from existing ones. To populate the universe beyond the
+       empty set, we require generative principles. The simplest mechanism
+       collects any two given sets into an unordered pair, which in particular
+       yields singleton sets when the two arguments coincide:"
+Id: "7b45fe82-a42a-4591-9453-350baec1df28"
+
+
+[\axiom.of.pairing]
+Axiom:
+given: X, Y is \set
+then:
+. exists: U is \set
+  suchThat:
+  . forAll: Z is \set
+    then: (.Z "in"? U.) \.iff./ ((.Z = X.) \.or./ (.Z = Y.))
+Appendix:
+. called: "Axiom of Pairing"
+. description: "The elementary aggregation mechanism forming the unordered pair
+                $\{X, Y\}$. When $X = Y$, it generates the singleton $\{X\}$,
+                enabling the construction of Kuratowski ordered pairs
+                $(X, Y) = \{\{X\}, \{X, Y\}\}$."
+. references:
+  . $enderton.set.theory:page{17}
+  . $halmos.set.theory:page{1}
+Id: "3219aca1-fba1-42a6-9a1f-209aa430c677"
+
+
+Text: "Pairing builds sets of at most two elements. To construct larger
+       collections, or to dissolve one layer of containment in a nested
+       collection of sets, we require an operation of arbitrary aggregation. The
+       union axiom collapses a family of sets into a single set containing all
+       their constituent elements:"
+Id: "c0f76644-e25f-4e0c-8cf0-6daf86ad59df"
+
+
+[\axiom.of.union]
+Axiom:
+given: X is \set
+then:
+. exists: U is \set
+  suchThat:
+  . forAll: Z is \set
+    then:
+    . have: Z "in" U
+      iff:
+      . exists: W is \set
+        suchThat:
+        . W "in"? X
+        . Z "in"? W
+Appendix:
+. called: "Axiom of Union"
+. description: "The monadic flattening operation $\bigcup X$ collapsing one
+                level of hierarchical nesting: collects every element belonging
+                to at least one member of $X$."
+. references:
+  . $enderton.set.theory:page{17}
+  . $halmos.set.theory:page{1}
+Id: "60bcea09-6bf1-4917-b90f-64ceeb941558"
+
+
+Text: "While pairing and union assemble elements side by side, they cannot
+       generate collections of all subcollections. To form the continuum and
+       unlock higher cardinalities, we postulate that the collection of all
+       subsets of a given set forms a legitimate set in its own right:"
+Id: "139b6eca-d1e5-4fae-97a4-1b05d96726f1"
+
+
+[\axiom.of.power.set]
+Axiom:
+given: A is \set
+then:
+. exists: P is \set
+  suchThat:
+  . forAll: x is \set
+    then: (.x "in"? P.) \.iff./ (.x \:subset?:/ A.)
+Appendix:
+. called: "Axiom of Power Set"
+. description: "The exponential size-escalation axiom forming
+                $\mathcal{P}(A) = 2^A$. By Cantor's diagonal theorem,
+                $|\mathcal{P}(A)| > |A|$, guaranteeing an unbounded hierarchy of
+                transfinite cardinalities."
+. references:
+  . $enderton.set.theory:page{17}
+  . $halmos.set.theory:page{1}
+Id: "8557cdb3-e02f-4b75-aed1-3dfd1cdee895"
+
+
+Text: "Although the power set operation escalates cardinalities, beginning from
+       the empty set produces only hereditarily finite sets. To bridge the chasm
+       to the transfinite, we must explicitly postulate the existence of an
+       infinite set containing the empty set and closed under successor
+       formation, providing the substrate for the natural numbers:"
+Id: "9196ed0a-391f-4fb5-af13-ac8c65db0ae9"
+
+
+[\axiom.of.infinity]
+Axiom:
+then:
+. exists: I is \set
+  suchThat:
+  . allOf:
+    . \empty.set "in"? I
+    . forAll: Y is \set
+      then: (.Y "in"? I.) \.implies./ (.\set.successor:of{Y} "in"? I.)
+Appendix:
+. called: "Axiom of Infinity"
+. description: "The transfinite bridge postulating a limit stage closed under
+                von Neumann succession $S(Y) = Y \cup \{Y\}$. Guarantees the
+                existence of an infinite Dedekind set, providing the foundation
+                for $\mathbb{N}$ and arithmetic analysis."
+. references:
+  . $enderton.set.theory:page{67}
+  . $halmos.set.theory:page{44}
+Id: "a0f45971-fcc1-419b-bcd5-f4c4717bb37f"
+
+
+Title: "Subsets"
+Id: "d1d71d30-1ce6-427e-bbc4-dd3ccf53fe53"
+
+
+Text: "Beyond membership, the fundamental comparison between two sets is
+       containment. It is vital to distinguish between primitive membership
+       ($x \in A$) and inclusion ($A \subseteq B$): membership relates an object
+       to a collection and is non-transitive, whereas inclusion is a universal
+       relation between sets that is both reflexive and transitive:"
+Id: "7bfbdad3-bf51-4e2d-ae06-8dd2fa3a220d"
+
+
+[A \:subset:/ B]
+Declares: A is \set
+when: B is \set
+satisfies:
+. forAll: X "in" A
+  then: X "in"? B
+Requires:
+. capability: x_ "in" A :-> x_ "in" B
+Appendix:
+. called: "$A?$ is a subset of $B?$"
+. written: "A? \subseteq B?"
+. description: "Universal containment relation $A \subseteq B$: every element
+                $x \in A$ satisfies $x \in B$. Imposes a canonical Boolean
+                lattice structure on power sets and acts as the categorical
+                subobject arrow in Set."
+. references:
+  . $enderton.set.theory:page{5}
+Id: "2b2b89a1-d106-4377-ae48-14c704063e5e"
+
+
+Text: "When containment holds without equality, the smaller set is strictly
+       contained within the larger, guaranteeing the existence of elements in
+       the ambient set that do not belong to the subset:"
+Id: "c27fbf42-311e-4efd-b4c8-2da3ad6370a7"
+
+
+[A \:(proper)::subset:/ B]
+Refines: A
+when: B is \set
+specifies: A \:subset:/ B
+satisfies: A != B
+Appendix:
+. adjective: "proper"
+. written: "A? \subsetneq B?"
+. description: "Strict containment $A \subsetneq B$: combines subset inclusion
+                with non-equality, guaranteeing the existence of an ambient
+                witness $b \in B \setminus A$."
+. references:
+  . $enderton.set.theory:page{5}
+Id: "7d070f37-61a5-4c62-b8da-4831c222e4b2"
+
+
+Text: "The universal nature of subset inclusion ensures that containment can be
+       chained: whenever one collection is nested inside a second, and that
+       second within a third, the first is necessarily contained within the
+       third:"
+Id: "370b0f76-ab0f-4f7f-80fa-120bb7ffe9e2"
+
+
+Theorem:
+given:
+. C is \set
+. B \:subset:/ C
+. A \:subset:/ B
+then:
+. A \:subset?:/ C
+Proof: """Assume $A \subseteq B$ and $B \subseteq C$. Let $x \in A$ be an
+          arbitrary element. By definition of $A \subseteq B$, the condition
+          $x \in A$ implies $x \in B$. Since $x \in B$, the condition
+          $B \subseteq C$ similarly implies $x \in C$. Because $x \in A$ was
+          arbitrary, every element of $A$ belongs to $C$, which establishes
+          $A \subseteq C$."""
+Appendix:
+. called: "Transitivity of Subset Relation"
+. description: "Syllogistic chaining of containment: transitivity ensures that
+                subset inclusion forms a preorder on any collection of sets, and
+                a partial order modulo extensionality."
+. references:
+  . $enderton.set.theory:page{5}
+Id: "6a4bcb50-97bc-4d1b-a9b2-750c963bb720"
+
+
+Text: "Connecting subset inclusion back to Extensionality yields the
+       double-containment principle, the standard technique for establishing the
+       identity of two sets by demonstrating that each is contained within the
+       other:"
+Id: "a0b6d62f-1f1d-4be5-997b-40aa03cc4ac7"
+
+
+Theorem:
+given: A, B is \set
+then: A = B
+iff:
+. A \:subset?:/ B
+. B \:subset?:/ A
+Proof: """By the Axiom of Extensionality, $A = B$ if and only if for all $x$,
+          $x \in A \iff x \in B$. Decomposing this universal biconditional into
+          its two conditional directions yields
+          $(\forall x, x \in A \implies x \in B) \land (\forall x, x \in B \implies x \in A)$.
+          The first conjunct is precisely the definition of $A \subseteq B$, and
+          the second conjunct is the definition of $B \subseteq A$."""
+Appendix:
+. called: "Set Equality via Mutual Inclusion"
+. description: "The fundamental double-containment proof technique: establishes
+                $A = B$ by independently proving $A \subseteq B$ and
+                $B \subseteq A$, decomposing extensional identity into two
+                universal implications."
+. references:
+  . $enderton.set.theory:page{5}
+Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"
+
+
+[A \.set.Union./ B]
+Defines: C := A \.set.union:in{U}./ B
+using: U is \set
+when: A, B is \set
+Appendix:
+. called: "Union of $A?$ and $B$"
+. written: "A? \cup B?"
+Id: "418d61d1-d7e8-416e-b62c-05a51e645326"
+
+
+[A \.set.union:?in{U}./ B]
+Defines: C := \set@{c_ : c_ "in" U | (.c_ "in"? A.) \.or./ (.c_ "in"? B.)}
+when:
+. U is \set
+. A \:subset:/ U
+. B \:subset:/ U
+Appendix:
+. called: "Union of $A?$ and $B$ @[U]{in $U?$}"
+. written: "A? \cup@[U]{_{U?}} B?"
+Id: "16a2306d-79ab-453d-94e3-7119fe6d52a4"
+
+
+[A \.set.intersect:?in{U}./ B]
+Defines: C := \set@{c_ : x_ "in" U | (.c_ "in"? A.) \.and./ (.c_ "in"? B.)}
+when:
+. U is \set
+. A \:subset:/ U
+. B \:subset:/ U
+Appendix:
+. called: "Intersection of $A?$ and $B$ @[U]{in $U?$}"
+. written: "A? \cap@[U]{_{U?}} B?"
+Id: "16c7a319-53b5-44eb-9cda-7df86c45c7ef"
+
+
+[\set:of{X[i_ := 1...n]}]
+Defines: Y is \set
+when: X... is \\anything
+expresses:
+. let: A is \\anything
+  then:
+  . have: A "in"? Y
+    iff: A = X...
+Appendix:
+. written: "\left \{ X?{...,...} \right \}"
+Id: "aadaac08-969e-417d-a507-e664c5816204"
+
+
+[\set.successor:of{X}]
+Defines: Y := \set:of{X, \set:of{X}}
+when: X is \set
+Appendix:
+. called: "set successor of $X?$"
+. written: "X? \cup \{X?\}"
+Id: "ea0af5a7-12b5-49b2-94a0-8578ec0b3758"
