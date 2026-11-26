@@ -406,11 +406,11 @@ Appendix:
 Id: "d3ee9362-d0be-47f0-bf0e-ecea7416d100"
 
 
-[A \.set.Union./ B]
+[A \.union./ B]
 Defines: C := A \.set.union:in{U}./ B
 using: U is \set
 when: A, B is \set
-assumes:
+assuming:
 . A \:subset?:/ U
 . B \:subset?:/ U
 Appendix:
